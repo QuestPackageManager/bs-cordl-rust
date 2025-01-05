@@ -39,10 +39,10 @@ impl crate::Zenject::IPrefabInstantiator {
     pub fn Instantiate(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        injectAction: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
-        injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
@@ -71,16 +71,13 @@ impl crate::Zenject::IPrefabInstantiator {
     pub fn get_ExtraArguments(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        > = __cordl_object.invoke("get_ExtraArguments", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair> = __cordl_object
+            .invoke("get_ExtraArguments", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_GameObjectCreationParameters(

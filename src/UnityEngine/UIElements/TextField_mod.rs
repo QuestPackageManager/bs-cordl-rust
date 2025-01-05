@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextField {
-    __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextField")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TextField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextField {
-    type Target = crate::UnityEngine::UIElements::TextInputBaseField_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -52,7 +52,7 @@ impl crate::UnityEngine::UIElements::TextField {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -61,7 +61,7 @@ impl crate::UnityEngine::UIElements::TextField {
             .invoke_void(".ctor", (label))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_i32__cordl_bool__cordl_bool__cordl_char2(
+    pub fn New_Gc_i32__cordl_bool__cordl_bool__cordl_char2(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
         multiline: bool,
@@ -146,7 +146,7 @@ impl crate::UnityEngine::UIElements::TextField {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -157,7 +157,7 @@ impl crate::UnityEngine::UIElements::TextField {
             .invoke(".ctor", (label))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_i32__cordl_bool__cordl_bool__cordl_char2(
+    pub fn _ctor_Gc_i32__cordl_bool__cordl_bool__cordl_char2(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
@@ -234,8 +234,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TextF
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextField_TextInput {
-    __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextField+TextInput")]
@@ -245,8 +245,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TextField+TextInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextField_TextInput {
-    type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -328,9 +328,9 @@ for crate::UnityEngine::UIElements::TextField_TextInput {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextField_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::TextField,
-        *mut crate::UnityEngine::UIElements::TextField_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextField>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextField_UxmlTraits>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextField+UxmlFactory")]
@@ -340,9 +340,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TextField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextField_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::TextField,
-        *mut crate::UnityEngine::UIElements::TextField_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextField>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextField_UxmlTraits>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -388,8 +388,8 @@ for crate::UnityEngine::UIElements::TextField_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextField_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub m_Multiline: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
@@ -402,8 +402,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TextField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextField_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

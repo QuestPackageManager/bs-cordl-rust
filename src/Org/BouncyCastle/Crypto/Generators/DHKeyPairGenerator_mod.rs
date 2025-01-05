@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DHKeyPairGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub param: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Parameters::DHKeyGenerationParameters,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+DHKeyPairGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::DHKeyPairGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,20 +87,30 @@ for crate::Org::BouncyCastle::Crypto::Generators::DHKeyPairGenerator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+DHKeyPairGenerator")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator>
-for crate::Org::BouncyCastle::Crypto::Generators::DHKeyPairGenerator {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator,
+    >,
+> for crate::Org::BouncyCastle::Crypto::Generators::DHKeyPairGenerator {
     fn as_ref(
         &self,
-    ) -> &crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+DHKeyPairGenerator")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator>
-for crate::Org::BouncyCastle::Crypto::Generators::DHKeyPairGenerator {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator,
+    >,
+> for crate::Org::BouncyCastle::Crypto::Generators::DHKeyPairGenerator {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,16 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleDialogPromptViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _titleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _messageText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _buttons: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Button>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+        >,
     >,
     pub _buttonTexts: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshProUGUI>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+        >,
     >,
-    pub _didFinishAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub _didFinishAction: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "SimpleDialogPromptViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -21,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SimpleDialogPromptViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SimpleDialogPromptViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,27 +66,13 @@ impl crate::GlobalNamespace::SimpleDialogPromptViewController {
             .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Action_1_0(
-        &mut self,
-        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        buttonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        didFinishAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (title, message, buttonText, didFinishAction))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Init_Il2CppString_Action_1_1(
+    pub fn Init_Gc1(
         &mut self,
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         firstButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         secondButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        didFinishAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        didFinishAction: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -94,14 +84,14 @@ impl crate::GlobalNamespace::SimpleDialogPromptViewController {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Il2CppString_Il2CppString_Action_1_2(
+    pub fn Init_Gc_Gc2(
         &mut self,
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         firstButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         secondButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         thirdButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        didFinishAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        didFinishAction: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,6 +108,20 @@ impl crate::GlobalNamespace::SimpleDialogPromptViewController {
                     didFinishAction,
                 ),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Init_Gc_Gc_Gc_Gc0(
+        &mut self,
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        buttonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        didFinishAction: quest_hook::libil2cpp::Gc<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (title, message, buttonText, didFinishAction))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

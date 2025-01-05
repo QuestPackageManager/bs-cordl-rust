@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleSystem {
-    __cordl_parent: crate::UnityEngine::Component,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
 }
 #[cfg(feature = "UnityEngine+ParticleSystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ParticleSystem")]
 impl std::ops::Deref for crate::UnityEngine::ParticleSystem {
-    type Target = crate::UnityEngine::Component;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -233,9 +233,7 @@ impl crate::UnityEngine::ParticleSystem {
     }
     pub fn GetCustomParticleData(
         &mut self,
-        customData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+        customData: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
         streamIndex: crate::UnityEngine::ParticleSystemCustomData,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -379,8 +377,10 @@ impl crate::UnityEngine::ParticleSystem {
     pub fn GetParticles_ByRefMut2(
         &mut self,
         particles: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::ParticleSystem_Particle,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::ParticleSystem_Particle,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -407,8 +407,10 @@ impl crate::UnityEngine::ParticleSystem {
     pub fn GetParticles_i32_1(
         &mut self,
         particles: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::ParticleSystem_Particle,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::ParticleSystem_Particle,
+                >,
             >,
         >,
         _cordl_size: i32,
@@ -439,8 +441,10 @@ impl crate::UnityEngine::ParticleSystem {
     pub fn GetParticles_i32_i32_0(
         &mut self,
         particles: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::ParticleSystem_Particle,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::ParticleSystem_Particle,
+                >,
             >,
         >,
         _cordl_size: i32,
@@ -626,9 +630,7 @@ impl crate::UnityEngine::ParticleSystem {
     }
     pub fn SetCustomParticleData(
         &mut self,
-        customData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+        customData: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
         streamIndex: crate::UnityEngine::ParticleSystemCustomData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -691,8 +693,10 @@ impl crate::UnityEngine::ParticleSystem {
     pub fn SetParticles_ByRefMut2(
         &mut self,
         particles: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::ParticleSystem_Particle,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::ParticleSystem_Particle,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -721,8 +725,10 @@ impl crate::UnityEngine::ParticleSystem {
     pub fn SetParticles_i32_1(
         &mut self,
         particles: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::ParticleSystem_Particle,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::ParticleSystem_Particle,
+                >,
             >,
         >,
         _cordl_size: i32,
@@ -753,8 +759,10 @@ impl crate::UnityEngine::ParticleSystem {
     pub fn SetParticles_i32_i32_0(
         &mut self,
         particles: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::ParticleSystem_Particle,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::ParticleSystem_Particle,
+                >,
             >,
         >,
         _cordl_size: i32,
@@ -958,14 +966,10 @@ impl crate::UnityEngine::ParticleSystem {
             .invoke("TriggerSubEmitter", (subEmitterIndex, particle))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TriggerSubEmitter_List_1_2(
+    pub fn TriggerSubEmitter_Gc2(
         &mut self,
         subEmitterIndex: i32,
-        particles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
+        particles: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem_Particle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -3791,21 +3795,11 @@ impl crate::UnityEngine::ParticleSystem_TrailModule {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct ParticleSystem_Trails {
-    pub positions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-    >,
-    pub frontPositions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub backPositions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub positionCounts: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub textureOffsets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<f32>,
-    >,
+    pub positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+    pub frontPositions: quest_hook::libil2cpp::Gc<i32>,
+    pub backPositions: quest_hook::libil2cpp::Gc<i32>,
+    pub positionCounts: quest_hook::libil2cpp::Gc<i32>,
+    pub textureOffsets: quest_hook::libil2cpp::Gc<f32>,
     pub maxTrailCount: i32,
     pub maxPositionsPerTrailCount: i32,
 }

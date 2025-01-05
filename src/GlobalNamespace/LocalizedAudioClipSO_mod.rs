@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizedAudioClipSO {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub _localizedAudioClipInfo: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo,
+            >,
         >,
     >,
     pub _lastLocalizedAudioClipInfo: quest_hook::libil2cpp::Gc<
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LocalizedAudioClipSO")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalizedAudioClipSO {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,7 +79,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LocalizedAudi
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizedAudioClipSO_LocalizedAudioClipInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub language: crate::BGLib::Polyglot::Language,
     pub localizedAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
 }
@@ -90,7 +92,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LocalizedAudioClipSO+LocalizedAudioClipInfo")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

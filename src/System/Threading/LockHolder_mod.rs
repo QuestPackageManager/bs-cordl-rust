@@ -41,14 +41,16 @@ impl crate::System::Threading::LockHolder {
     }
 }
 #[cfg(feature = "System+Threading+LockHolder")]
-impl AsRef<crate::System::IDisposable> for crate::System::Threading::LockHolder {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::Threading::LockHolder {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+LockHolder")]
-impl AsMut<crate::System::IDisposable> for crate::System::Threading::LockHolder {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::Threading::LockHolder {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }

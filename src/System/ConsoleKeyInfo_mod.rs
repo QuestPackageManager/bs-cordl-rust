@@ -34,7 +34,7 @@ impl crate::System::ConsoleKeyInfo {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {

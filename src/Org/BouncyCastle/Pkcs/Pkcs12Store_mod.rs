@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs12Store {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub keys: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable,
     >,
@@ -36,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -180,7 +180,9 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Pkcs::X509CertificateEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Pkcs::X509CertificateEntry,
+                >,
             >,
         >,
     > {
@@ -189,7 +191,9 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Pkcs::X509CertificateEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Pkcs::X509CertificateEntry,
+                >,
             >,
         > = __cordl_object.invoke("GetCertificateChain", (alias))?;
         Ok(__cordl_ret.into())
@@ -294,7 +298,17 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DerObjectIdentifier_DerObjectIdentifier_DerObjectIdentifier_DerObjectIdentifier__cordl_bool1(
+    pub fn New_Gc_Gc3(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (input, password))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc_Gc_Gc__cordl_bool1(
         keyAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -324,7 +338,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DerObjectIdentifier_DerObjectIdentifier__cordl_bool0(
+    pub fn New_Gc_Gc__cordl_bool0(
         keyAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -337,16 +351,6 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (keyAlgorithm, certAlgorithm, useDerEncoding))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Stream_Il2CppArray3(
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (input, password))?;
         Ok(__cordl_object.into())
     }
     pub fn Save(
@@ -386,7 +390,9 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
         >,
         chain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Pkcs::X509CertificateEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Pkcs::X509CertificateEntry,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -414,7 +420,19 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerObjectIdentifier_DerObjectIdentifier_DerObjectIdentifier_DerObjectIdentifier__cordl_bool1(
+    pub fn _ctor_Gc_Gc3(
+        &mut self,
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (input, password))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc_Gc_Gc__cordl_bool1(
         &mut self,
         keyAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -446,7 +464,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerObjectIdentifier_DerObjectIdentifier__cordl_bool0(
+    pub fn _ctor_Gc_Gc__cordl_bool0(
         &mut self,
         keyAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -461,18 +479,6 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (keyAlgorithm, certAlgorithm, useDerEncoding))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Stream_Il2CppArray3(
-        &mut self,
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (input, password))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Aliases(
@@ -509,7 +515,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Pkcs::Pkcs1
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs12Store_CertId {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
@@ -519,7 +525,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -549,7 +555,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_AsymmetricKeyParameter0(
+    pub fn New_Gc0(
         pubKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
@@ -560,7 +566,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
             .invoke_void(".ctor", (pubKey))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray1(
+    pub fn New_Gc1(
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -569,7 +575,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
             .invoke_void(".ctor", (id))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_AsymmetricKeyParameter0(
+    pub fn _ctor_Gc0(
         &mut self,
         pubKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -582,7 +588,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
             .invoke(".ctor", (pubKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray1(
+    pub fn _ctor_Gc1(
         &mut self,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -621,7 +627,7 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs12Store_IgnoresCaseHashtable {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub orig: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     pub keys: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
@@ -634,7 +640,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -773,16 +779,20 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
-impl AsRef<crate::System::Collections::IEnumerable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
-impl AsMut<crate::System::Collections::IEnumerable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }

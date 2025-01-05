@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRCustomSkeleton {
-    __cordl_parent: crate::GlobalNamespace::OVRSkeleton,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSkeleton>,
     pub _customBones_V2: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Transform>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     pub retargetingType: crate::GlobalNamespace::OVRCustomSkeleton_RetargetingType,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRCustomSkeleton")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRCustomSkeleton {
-    type Target = crate::GlobalNamespace::OVRSkeleton;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSkeleton>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -108,18 +108,14 @@ impl crate::GlobalNamespace::OVRCustomSkeleton {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Transform,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Transform,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         > = __cordl_object.invoke("get_CustomBones", ())?;
         Ok(__cordl_ret.into())
     }
@@ -134,16 +130,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRCustomSkel
     }
 }
 #[cfg(feature = "OVRCustomSkeleton")]
-impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::GlobalNamespace::OVRCustomSkeleton {
-    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRCustomSkeleton")]
-impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::GlobalNamespace::OVRCustomSkeleton {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ISerializationCallbackReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

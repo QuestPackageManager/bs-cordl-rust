@@ -2,14 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectPool_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_List: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<T>,
-    >,
-    pub m_CreateFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-    pub m_ActionOnGet: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
-    pub m_ActionOnRelease: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
-    pub m_ActionOnDestroy: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_List: quest_hook::libil2cpp::Gc<T>,
+    pub m_CreateFunc: quest_hook::libil2cpp::Gc<T>,
+    pub m_ActionOnGet: quest_hook::libil2cpp::Gc<T>,
+    pub m_ActionOnRelease: quest_hook::libil2cpp::Gc<T>,
+    pub m_ActionOnDestroy: quest_hook::libil2cpp::Gc<T>,
     pub m_MaxSize: i32,
     pub m_CollectionCheck: bool,
     pub _CountAll_k__BackingField: i32,
@@ -23,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::Pool::ObjectPool_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,10 +88,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::ObjectPool_1<T> {
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        createFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-        actionOnGet: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
-        actionOnRelease: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
-        actionOnDestroy: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        createFunc: quest_hook::libil2cpp::Gc<T>,
+        actionOnGet: quest_hook::libil2cpp::Gc<T>,
+        actionOnRelease: quest_hook::libil2cpp::Gc<T>,
+        actionOnDestroy: quest_hook::libil2cpp::Gc<T>,
         collectionCheck: bool,
         defaultCapacity: i32,
         maxSize: i32,
@@ -136,10 +134,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::ObjectPool_1<T> {
     }
     pub fn _ctor(
         &mut self,
-        createFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-        actionOnGet: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
-        actionOnRelease: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
-        actionOnDestroy: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        createFunc: quest_hook::libil2cpp::Gc<T>,
+        actionOnGet: quest_hook::libil2cpp::Gc<T>,
+        actionOnRelease: quest_hook::libil2cpp::Gc<T>,
+        actionOnDestroy: quest_hook::libil2cpp::Gc<T>,
         collectionCheck: bool,
         defaultCapacity: i32,
         maxSize: i32,
@@ -215,30 +213,34 @@ for crate::UnityEngine::Pool::ObjectPool_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
 for crate::UnityEngine::Pool::ObjectPool_1<T> {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
 for crate::UnityEngine::Pool::ObjectPool_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::UnityEngine::Pool::IObjectPool_1<T>>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::Pool::ObjectPool_1<T> {
-    fn as_ref(&self) -> &crate::UnityEngine::Pool::IObjectPool_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::Pool::IObjectPool_1<T>>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::Pool::ObjectPool_1<T> {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Pool::IObjectPool_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

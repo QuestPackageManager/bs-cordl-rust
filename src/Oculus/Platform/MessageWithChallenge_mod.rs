@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithChallenge {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::Challenge,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
     >,
 }
 #[cfg(feature = "Oculus+Platform+MessageWithChallenge")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+MessageWithChallenge")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithChallenge {
-    type Target = crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::Challenge,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

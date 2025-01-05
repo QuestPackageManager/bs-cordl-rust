@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "ListExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ListExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::ListExtensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,10 +25,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ListExtensions {
 #[cfg(feature = "ListExtensions")]
 impl crate::GlobalNamespace::ListExtensions {
     pub fn FindIndex<T>(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        list: quest_hook::libil2cpp::Gc<T>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -39,9 +37,7 @@ impl crate::GlobalNamespace::ListExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf<T>(
-        _cordl_self: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
+        _cordl_self: quest_hook::libil2cpp::Gc<T>,
         item: T,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -53,9 +49,7 @@ impl crate::GlobalNamespace::ListExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn InsertIntoSortedListFromEnd<T>(
-        sortedList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        sortedList: quest_hook::libil2cpp::Gc<T>,
         newItem: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

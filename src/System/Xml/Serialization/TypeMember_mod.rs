@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeMember {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub member: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+TypeMember")]
 impl std::ops::Deref for crate::System::Xml::Serialization::TypeMember {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::TypeMember {
 }
 #[cfg(feature = "System+Xml+Serialization+TypeMember")]
 impl crate::System::Xml::Serialization::TypeMember {
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -36,7 +36,7 @@ impl crate::System::Xml::Serialization::TypeMember {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_TypeMember_TypeMember1(
+    pub fn Equals_Gc1(
         tm1: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeMember>,
         tm2: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeMember>,
     ) -> quest_hook::libil2cpp::Result<bool> {

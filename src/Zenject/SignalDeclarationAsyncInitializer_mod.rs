@@ -2,14 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalDeclarationAsyncInitializer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _tickManager: quest_hook::libil2cpp::Gc<
-        crate::Zenject::LazyInject_1<*mut crate::Zenject::TickableManager>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::TickableManager>,
     >,
     pub _declarations: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::SignalDeclaration,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     >,
 }
 #[cfg(feature = "Zenject+SignalDeclarationAsyncInitializer")]
@@ -19,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SignalDeclarationAsyncInitializer")]
 impl std::ops::Deref for crate::Zenject::SignalDeclarationAsyncInitializer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,12 +42,10 @@ impl crate::Zenject::SignalDeclarationAsyncInitializer {
     }
     pub fn New(
         declarations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Zenject::SignalDeclaration,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
         >,
         tickManager: quest_hook::libil2cpp::Gc<
-            crate::Zenject::LazyInject_1<*mut crate::Zenject::TickableManager>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::TickableManager>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -60,7 +56,9 @@ impl crate::Zenject::SignalDeclarationAsyncInitializer {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -80,12 +78,10 @@ impl crate::Zenject::SignalDeclarationAsyncInitializer {
     pub fn _ctor(
         &mut self,
         declarations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Zenject::SignalDeclaration,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
         >,
         tickManager: quest_hook::libil2cpp::Gc<
-            crate::Zenject::LazyInject_1<*mut crate::Zenject::TickableManager>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::TickableManager>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -107,16 +103,18 @@ for crate::Zenject::SignalDeclarationAsyncInitializer {
     }
 }
 #[cfg(feature = "Zenject+SignalDeclarationAsyncInitializer")]
-impl AsRef<crate::Zenject::IInitializable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
 for crate::Zenject::SignalDeclarationAsyncInitializer {
-    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+SignalDeclarationAsyncInitializer")]
-impl AsMut<crate::Zenject::IInitializable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
 for crate::Zenject::SignalDeclarationAsyncInitializer {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
         unsafe { std::mem::transmute(self) }
     }
 }

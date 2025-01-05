@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSceneLoader {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub sceneCheckIntervalSeconds: f32,
     pub logCloseTime: f32,
     pub mainCanvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
@@ -19,7 +19,7 @@ pub struct OVRSceneLoader {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub loadedAssetBundles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::AssetBundle>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
     >,
     pub currentSceneInfo: crate::GlobalNamespace::OVRSceneLoader_SceneInfo,
 }
@@ -30,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSceneLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneLoader {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -190,9 +190,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneLoade
 #[derive(Debug, Clone, Default)]
 pub struct OVRSceneLoader_SceneInfo {
     pub scenes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub version: i64,
 }
@@ -217,9 +215,7 @@ impl crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     pub fn _ctor(
         &mut self,
         sceneList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         currentSceneEpochVersion: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

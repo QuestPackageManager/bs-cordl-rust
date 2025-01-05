@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CertificateCollection {
-    __cordl_parent: crate::System::Collections::CollectionBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::CollectionBase,
+    >,
 }
 #[cfg(
     feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection"
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection {
-    type Target = crate::System::Collections::CollectionBase;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Collections::CollectionBase>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -83,7 +85,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509CertificateCol
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_X509CertificateCollection1(
+    pub fn New_Gc1(
         value: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         >,
@@ -104,7 +106,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509CertificateCol
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_X509CertificateCollection1(
+    pub fn _ctor_Gc1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
@@ -152,7 +154,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateColl
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CertificateCollection_X509CertificateEnumerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
 }
 #[cfg(
@@ -169,7 +171,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection_X509CertificateEnumerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -282,18 +284,22 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateColl
 #[cfg(
     feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
 )]
-impl AsRef<crate::System::Collections::IEnumerator>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection_X509CertificateEnumerator {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
 )]
-impl AsMut<crate::System::Collections::IEnumerator>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection_X509CertificateEnumerator {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }

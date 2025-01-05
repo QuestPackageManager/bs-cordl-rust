@@ -17,10 +17,8 @@ pub struct GetMultiplayerInstanceRequest {
     pub platform: crate::GlobalNamespace::AuthenticationToken_Platform,
     pub authUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub gameliftRegionLatencies: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            i64,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        i64,
     >,
     pub ticketId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub placementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -61,10 +59,8 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
         >,
         privateGameCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         gameliftRegionLatencies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i64,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
         >,
         ticketId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         placementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

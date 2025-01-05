@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CancellationCallbackInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Callback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub StateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub TargetExecutionContext: quest_hook::libil2cpp::Gc<
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+CancellationCallbackInfo")]
 impl std::ops::Deref for crate::System::Threading::CancellationCallbackInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,7 +55,7 @@ impl crate::System::Threading::CancellationCallbackInfo {
     }
     pub fn New(
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         targetExecutionContext: quest_hook::libil2cpp::Gc<
@@ -82,7 +82,7 @@ impl crate::System::Threading::CancellationCallbackInfo {
     pub fn _ctor(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         targetExecutionContext: quest_hook::libil2cpp::Gc<

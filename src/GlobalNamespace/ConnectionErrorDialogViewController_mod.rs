@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectionErrorDialogViewController {
-    __cordl_parent: crate::GlobalNamespace::SimpleDialogPromptViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleDialogPromptViewController,
+    >,
 }
 #[cfg(feature = "ConnectionErrorDialogViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ConnectionErrorDialogViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectionErrorDialogViewController {
-    type Target = crate::GlobalNamespace::SimpleDialogPromptViewController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleDialogPromptViewController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

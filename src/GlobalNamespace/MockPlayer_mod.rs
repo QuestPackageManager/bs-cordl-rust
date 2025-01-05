@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlayer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _isMe_k__BackingField: bool,
     pub _isConnected_k__BackingField: bool,
     pub _multiplayerAvatarsData_k__BackingField: crate::GlobalNamespace::MultiplayerAvatarsData,
@@ -22,9 +22,7 @@ pub struct MockPlayer {
     pub _canUnblock_k__BackingField: bool,
     pub _isReady: bool,
     pub _playerState: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _settings: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
     pub _fsm: quest_hook::libil2cpp::Gc<
@@ -40,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlayer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -141,7 +139,7 @@ impl crate::GlobalNamespace::MockPlayer {
             .invoke("Join", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Join_Il2CppString0(
+    pub fn Join_Gc0(
         &mut self,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -850,30 +848,38 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockPlayer {
     }
 }
 #[cfg(feature = "MockPlayer")]
-impl AsRef<crate::GlobalNamespace::IConnectedPlayer>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>>
 for crate::GlobalNamespace::MockPlayer {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IConnectedPlayer {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockPlayer")]
-impl AsMut<crate::GlobalNamespace::IConnectedPlayer>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>>
 for crate::GlobalNamespace::MockPlayer {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectedPlayer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockPlayer")]
-impl AsRef<crate::GlobalNamespace::INetworkPlayer>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>>
 for crate::GlobalNamespace::MockPlayer {
-    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPlayer {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockPlayer")]
-impl AsMut<crate::GlobalNamespace::INetworkPlayer>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>>
 for crate::GlobalNamespace::MockPlayer {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkPlayer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationWriter {
-    __cordl_parent: crate::System::Xml::Serialization::XmlSerializationGeneratedCode,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializationGeneratedCode,
+    >,
     pub idGenerator: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::ObjectIDGenerator,
     >,
@@ -24,7 +26,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlSerializationWriter {
-    type Target = crate::System::Xml::Serialization::XmlSerializationGeneratedCode;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializationGeneratedCode,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -89,7 +93,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
             .invoke("CreateUnknownAnyElementException", (name, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateUnknownTypeException_Il2CppObject0(
+    pub fn CreateUnknownTypeException_Gc0(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -102,7 +106,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
             .invoke("CreateUnknownTypeException", (o))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateUnknownTypeException_Type1(
+    pub fn CreateUnknownTypeException_Gc1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -236,7 +240,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
             .invoke("WriteArray", (o, td))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAttribute_Il2CppString1(
+    pub fn WriteAttribute_Gc1(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -250,7 +254,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
             .invoke("WriteAttribute", (prefix, localName, ns, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAttribute_Il2CppString_Il2CppString_Il2CppString0(
+    pub fn WriteAttribute_Gc_Gc_Gc0(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -293,20 +297,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
             .invoke("WriteElementLiteral", (node, name, ns, isNullable, any))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteElementQualifiedName_Il2CppString_Il2CppString_XmlQualifiedName0(
-        &mut self,
-        localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        value: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteElementQualifiedName", (localName, ns, value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteElementQualifiedName_XmlQualifiedName1(
+    pub fn WriteElementQualifiedName_Gc1(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -320,20 +311,20 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
             .invoke("WriteElementQualifiedName", (localName, ns, value, xsiType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteElementString_Il2CppString_Il2CppString_Il2CppString0(
+    pub fn WriteElementQualifiedName_Gc_Gc_Gc0(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteElementString", (localName, ns, value))?;
+            .invoke("WriteElementQualifiedName", (localName, ns, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteElementString_XmlQualifiedName1(
+    pub fn WriteElementString_Gc1(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -347,6 +338,19 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
             .invoke("WriteElementString", (localName, ns, value, xsiType))?;
         Ok(__cordl_ret.into())
     }
+    pub fn WriteElementString_Gc_Gc_Gc0(
+        &mut self,
+        localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteElementString", (localName, ns, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn WriteEndElement_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -357,7 +361,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
             .invoke("WriteEndElement", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteEndElement_Il2CppObject1(
+    pub fn WriteEndElement_Gc1(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -502,7 +506,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
             .invoke("WriteReferencingElement", (n, ns, o, isNullable))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteSerializable_IXmlSerializable_Il2CppString_Il2CppString__cordl_bool0(
+    pub fn WriteSerializable_Gc_Gc_Gc__cordl_bool0(
         &mut self,
         serializable: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Serialization::IXmlSerializable,
@@ -545,7 +549,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
             .invoke("WriteStartDocument", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteStartElement_Il2CppObject2(
+    pub fn WriteStartElement_Gc2(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -558,7 +562,19 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
             .invoke("WriteStartElement", (name, ns, o))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteStartElement_Il2CppObject__cordl_bool3(
+    pub fn WriteStartElement_Gc_Gc0(
+        &mut self,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteStartElement", (name, ns))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteStartElement_Gc__cordl_bool3(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -572,7 +588,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
             .invoke("WriteStartElement", (name, ns, o, writePrefixed))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteStartElement_Il2CppObject__cordl_bool_ICollection4(
+    pub fn WriteStartElement_Gc__cordl_bool_Gc4(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -585,18 +601,6 @@ impl crate::System::Xml::Serialization::XmlSerializationWriter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteStartElement", (name, ns, o, writePrefixed, namespaces))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteStartElement_Il2CppString_Il2CppString0(
-        &mut self,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteStartElement", (name, ns))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteStartElement__cordl_bool1(
@@ -709,7 +713,7 @@ for crate::System::Xml::Serialization::XmlSerializationWriter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationWriter_WriteCallbackInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub TypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub TypeNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -726,7 +730,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationWriter_WriteCallbackInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

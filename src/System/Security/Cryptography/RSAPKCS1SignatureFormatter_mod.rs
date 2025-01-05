@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RSAPKCS1SignatureFormatter {
-    __cordl_parent: crate::System::Security::Cryptography::AsymmetricSignatureFormatter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::AsymmetricSignatureFormatter,
+    >,
 }
 #[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RSAPKCS1SignatureFormatter {
-    type Target = crate::System::Security::Cryptography::AsymmetricSignatureFormatter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::AsymmetricSignatureFormatter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GcmUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+GcmUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+GcmUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUti
 impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
     pub const E1: u32 = 240u32;
     pub const E1L: u64 = 16212958658533785600u64;
-    pub fn AsBytes_Il2CppArray0(
+    pub fn AsBytes_Gc0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -37,7 +37,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("AsBytes", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsBytes_Il2CppArray1(
+    pub fn AsBytes_Gc1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("AsBytes", (x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsBytes_Il2CppArray2(
+    pub fn AsBytes_Gc2(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -55,7 +55,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("AsBytes", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsBytes_Il2CppArray3(
+    pub fn AsBytes_Gc3(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -63,7 +63,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("AsBytes", (x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsUints_Il2CppArray0(
+    pub fn AsUints_Gc0(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -73,7 +73,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("AsUints", (bs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsUints_Il2CppArray1(
+    pub fn AsUints_Gc1(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -81,7 +81,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("AsUints", (bs, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsUlongs_Il2CppArray0(
+    pub fn AsUlongs_Gc0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -91,7 +91,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("AsUlongs", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsUlongs_Il2CppArray1(
+    pub fn AsUlongs_Gc1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -107,14 +107,14 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GenerateLookup", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn MultiplyP8_Il2CppArray0(
+    pub fn MultiplyP8_Gc0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("MultiplyP8", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MultiplyP8_Il2CppArray1(
+    pub fn MultiplyP8_Gc1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -122,14 +122,14 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("MultiplyP8", (x, y))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MultiplyP_Il2CppArray0(
+    pub fn MultiplyP_Gc0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("MultiplyP", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MultiplyP_Il2CppArray1(
+    pub fn MultiplyP_Gc1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -137,7 +137,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("MultiplyP", (x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Multiply_Il2CppArray_Il2CppArray0(
+    pub fn Multiply_Gc_Gc0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -145,7 +145,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("Multiply", (x, y))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Multiply_Il2CppArray_Il2CppArray1(
+    pub fn Multiply_Gc_Gc1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -153,7 +153,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("Multiply", (x, y))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Multiply_Il2CppArray_Il2CppArray2(
+    pub fn Multiply_Gc_Gc2(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -192,7 +192,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("OneAsUlongs", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftRightN_Il2CppArray1(
+    pub fn ShiftRightN_Gc1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         n: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -201,7 +201,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("ShiftRightN", (x, n, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftRightN_Il2CppArray_i32_0(
+    pub fn ShiftRightN_Gc_i32_0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         n: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -209,14 +209,14 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("ShiftRightN", (x, n))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftRight_Il2CppArray0(
+    pub fn ShiftRight_Gc0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ShiftRight", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftRight_Il2CppArray1(
+    pub fn ShiftRight_Gc1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -224,7 +224,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("ShiftRight", (x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Xor_Il2CppArray0(
+    pub fn Xor_Gc0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -232,7 +232,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("Xor", (x, y))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Xor_Il2CppArray6(
+    pub fn Xor_Gc6(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -240,7 +240,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("Xor", (x, y))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Xor_Il2CppArray8(
+    pub fn Xor_Gc8(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -248,7 +248,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("Xor", (x, y))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Xor_Il2CppArray_Il2CppArray5(
+    pub fn Xor_Gc_Gc5(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -257,7 +257,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("Xor", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Xor_Il2CppArray_Il2CppArray7(
+    pub fn Xor_Gc_Gc7(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -266,7 +266,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("Xor", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Xor_Il2CppArray_Il2CppArray9(
+    pub fn Xor_Gc_Gc9(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -275,7 +275,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("Xor", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Xor_Il2CppArray_i32_1(
+    pub fn Xor_Gc_i32_1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         yOff: i32,
@@ -284,7 +284,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("Xor", (x, y, yOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Xor_Il2CppArray_i32_i32_3(
+    pub fn Xor_Gc_i32_i32_3(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         yOff: i32,
@@ -294,7 +294,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("Xor", (x, y, yOff, yLen))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Xor_i32_Il2CppArray_i32_Il2CppArray_i32_2(
+    pub fn Xor_i32_Gc_i32_Gc_i32_2(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         xOff: i32,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -306,7 +306,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
             .invoke("Xor", (x, xOff, y, yOff, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Xor_i32_Il2CppArray_i32_i32_4(
+    pub fn Xor_i32_Gc_i32_i32_4(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         xOff: i32,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

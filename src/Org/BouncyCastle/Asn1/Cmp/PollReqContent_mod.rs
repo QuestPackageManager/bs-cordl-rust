@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PollReqContent {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub content: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PollReqContent")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PollReqContent")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cmp::PollReqContent {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,8 +34,12 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PollReqContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::DerInteger,
+                        >,
+                    >,
                 >,
             >,
         >,
@@ -41,8 +49,12 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PollReqContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::DerInteger,
+                        >,
+                    >,
                 >,
             >,
         > = __cordl_object.invoke("GetCertReqIDs", ())?;
@@ -72,13 +84,13 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PollReqContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SequenceToDerIntegerArray", (seq))?;

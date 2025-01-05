@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrimitiveParameterExpression_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Linq::Expressions::ParameterExpression,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::ParameterExpression,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Linq+Expressions+PrimitiveParameterExpression_1")]
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+PrimitiveParameterExpression_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Expressions::PrimitiveParameterExpression_1<T> {
-    type Target = crate::System::Linq::Expressions::ParameterExpression;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::ParameterExpression,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

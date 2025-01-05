@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppDomain {
-    __cordl_parent: crate::System::MarshalByRefObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
     pub _mono_app_domain: crate::System::IntPtr,
     pub _evidence: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _granted: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -17,8 +17,8 @@ pub struct AppDomain {
         crate::System::UnhandledExceptionEventHandler,
     >,
     pub FirstChanceException: quest_hook::libil2cpp::Gc<
-        crate::System::EventHandler_1<
-            *mut crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs,
         >,
     >,
     pub _domain_manager: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -30,9 +30,7 @@ pub struct AppDomain {
         quest_hook::libil2cpp::Il2CppObject,
     >,
     pub compatibility_switch: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "System+AppDomain")]
@@ -41,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+AppDomain")]
 impl std::ops::Deref for crate::System::AppDomain {
-    type Target = crate::System::MarshalByRefObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -112,14 +110,18 @@ impl crate::System::AppDomain {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            >,
         > = __cordl_object.invoke("GetAssemblies", ())?;
         Ok(__cordl_ret.into())
     }
@@ -128,14 +130,18 @@ impl crate::System::AppDomain {
         refOnly: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            >,
         > = __cordl_object.invoke("GetAssemblies", (refOnly))?;
         Ok(__cordl_ret.into())
     }
@@ -273,7 +279,9 @@ impl crate::System::AppDomain {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -321,7 +329,21 @@ impl crate::System::AppDomain {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Load_Evidence__cordl_bool_ByRefMut1(
+    pub fn Load_Gc0(
+        &mut self,
+        assemblyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::Assembly,
+        > = __cordl_object.invoke("Load", (assemblyString))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Load_Gc__cordl_bool_ByRefMut1(
         &mut self,
         assemblyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         assemblySecurity: quest_hook::libil2cpp::Gc<
@@ -343,20 +365,6 @@ impl crate::System::AppDomain {
             .invoke("Load", (assemblyString, assemblySecurity, refonly, stackMark))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Load_Il2CppString0(
-        &mut self,
-        assemblyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::Assembly,
-        > = __cordl_object.invoke("Load", (assemblyString))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -371,10 +379,12 @@ impl crate::System::AppDomain {
             crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage,
         >,
         arrResponse: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
         cadMrm: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

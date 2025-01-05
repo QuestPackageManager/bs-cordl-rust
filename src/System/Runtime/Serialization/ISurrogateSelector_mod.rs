@@ -30,7 +30,9 @@ impl crate::System::Runtime::Serialization::ISurrogateSelector {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         context: crate::System::Runtime::Serialization::StreamingContext,
         selector: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Runtime::Serialization::ISurrogateSelector,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::Serialization::ISurrogateSelector,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<

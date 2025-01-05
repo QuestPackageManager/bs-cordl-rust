@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Switch {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub switchValueString: quest_hook::libil2cpp::Gc<
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+Switch")]
 impl std::ops::Deref for crate::System::Diagnostics::Switch {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl std::ops::DerefMut for crate::System::Diagnostics::Switch {
 }
 #[cfg(feature = "System+Diagnostics+Switch")]
 impl crate::System::Diagnostics::Switch {
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultSwitchValue: quest_hook::libil2cpp::Gc<
@@ -43,7 +43,7 @@ impl crate::System::Diagnostics::Switch {
             .invoke_void(".ctor", (displayName, description, defaultSwitchValue))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString0(
+    pub fn New_Gc_Gc0(
         displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -53,7 +53,7 @@ impl crate::System::Diagnostics::Switch {
             .invoke_void(".ctor", (displayName, description))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -68,7 +68,7 @@ impl crate::System::Diagnostics::Switch {
             .invoke(".ctor", (displayName, description, defaultSwitchValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

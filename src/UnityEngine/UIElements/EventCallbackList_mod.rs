@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventCallbackList {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_List: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackFunctorBase,
         >,
     >,
     pub _trickleDownCallbackCount_k__BackingField: i32,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+EventCallbackList")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventCallbackList {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -105,7 +105,7 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_EventCallbackList1(
+    pub fn New_Gc1(
         source: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventCallbackList,
         >,
@@ -139,7 +139,7 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_EventCallbackList1(
+    pub fn _ctor_Gc1(
         &mut self,
         source: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventCallbackList,

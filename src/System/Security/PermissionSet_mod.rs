@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PermissionSet {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub state: crate::System::Security::Permissions::PermissionState,
     pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _declsec: bool,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+PermissionSet")]
 impl std::ops::Deref for crate::System::Security::PermissionSet {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -112,7 +112,7 @@ impl crate::System::Security::PermissionSet {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IPermission2(
+    pub fn New_Gc2(
         perm: quest_hook::libil2cpp::Gc<crate::System::Security::IPermission>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -180,7 +180,7 @@ impl crate::System::Security::PermissionSet {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IPermission2(
+    pub fn _ctor_Gc2(
         &mut self,
         perm: quest_hook::libil2cpp::Gc<crate::System::Security::IPermission>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -240,62 +240,84 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Security::PermissionSe
     }
 }
 #[cfg(feature = "System+Security+PermissionSet")]
-impl AsRef<crate::System::Collections::ICollection>
-for crate::System::Security::PermissionSet {
-    fn as_ref(&self) -> &crate::System::Collections::ICollection {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Security+PermissionSet")]
-impl AsMut<crate::System::Collections::ICollection>
-for crate::System::Security::PermissionSet {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Security+PermissionSet")]
-impl AsRef<crate::System::Collections::IEnumerable>
-for crate::System::Security::PermissionSet {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Security+PermissionSet")]
-impl AsMut<crate::System::Collections::IEnumerable>
-for crate::System::Security::PermissionSet {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Security+PermissionSet")]
-impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::System::Security::PermissionSet {
     fn as_ref(
         &self,
-    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+PermissionSet")]
-impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::System::Security::PermissionSet {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+PermissionSet")]
-impl AsRef<crate::System::Security::ISecurityEncodable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::Security::PermissionSet {
-    fn as_ref(&self) -> &crate::System::Security::ISecurityEncodable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+PermissionSet")]
-impl AsMut<crate::System::Security::ISecurityEncodable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::Security::PermissionSet {
-    fn as_mut(&mut self) -> &mut crate::System::Security::ISecurityEncodable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+PermissionSet")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    >,
+> for crate::System::Security::PermissionSet {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+PermissionSet")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    >,
+> for crate::System::Security::PermissionSet {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+PermissionSet")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Security::ISecurityEncodable>>
+for crate::System::Security::PermissionSet {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Security::ISecurityEncodable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+PermissionSet")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Security::ISecurityEncodable>>
+for crate::System::Security::PermissionSet {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Security::ISecurityEncodable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509V1CertificateGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub tbsGen: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+X509V1CertificateGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509V1CertificateGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,7 +57,7 @@ impl crate::Org::BouncyCastle::X509::X509V1CertificateGenerator {
         > = __cordl_object.invoke("GenerateJcaObject", (tbsCert, sigAlg, signature))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_AsymmetricKeyParameter0(
+    pub fn Generate_Gc0(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -73,7 +73,7 @@ impl crate::Org::BouncyCastle::X509::X509V1CertificateGenerator {
         > = __cordl_object.invoke("Generate", (privateKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_AsymmetricKeyParameter_SecureRandom1(
+    pub fn Generate_Gc1(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -92,7 +92,7 @@ impl crate::Org::BouncyCastle::X509::X509V1CertificateGenerator {
         > = __cordl_object.invoke("Generate", (privateKey, random))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_ISignatureFactory2(
+    pub fn Generate_Gc2(
         &mut self,
         signatureCalculatorFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ISignatureFactory,

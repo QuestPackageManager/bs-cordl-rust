@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArgConditionCopyNonLazyBinder {
-    __cordl_parent: crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+    >,
 }
 #[cfg(feature = "Zenject+ArgConditionCopyNonLazyBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ArgConditionCopyNonLazyBinder")]
 impl std::ops::Deref for crate::Zenject::ArgConditionCopyNonLazyBinder {
-    type Target = crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,11 +39,7 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
     }
     pub fn WithArgumentsExplicit(
         &mut self,
-        extraArgs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::Zenject::TypeValuePair,
-            >,
-        >,
+        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
@@ -53,10 +53,12 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
         > = __cordl_object.invoke("WithArgumentsExplicit", (extraArgs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WithArguments_Il2CppArray6(
+    pub fn WithArguments_Gc6(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<

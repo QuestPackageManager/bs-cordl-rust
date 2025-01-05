@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509PalImpl {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+X509PalImpl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+X509PalImpl")]
 impl std::ops::Deref for crate::Mono::X509PalImpl {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +47,7 @@ impl crate::Mono::X509PalImpl {
             .invoke("GetCertContentType", (rawData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImportFallback_Il2CppArray0(
+    pub fn ImportFallback_Gc0(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -63,7 +63,7 @@ impl crate::Mono::X509PalImpl {
         > = __cordl_object.invoke("ImportFallback", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImportFallback_SafePasswordHandle_X509KeyStorageFlags1(
+    pub fn ImportFallback_Gc_X509KeyStorageFlags1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         password: quest_hook::libil2cpp::Gc<
@@ -83,7 +83,7 @@ impl crate::Mono::X509PalImpl {
         > = __cordl_object.invoke("ImportFallback", (data, password, keyStorageFlags))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Import_Il2CppArray0(
+    pub fn Import_Gc0(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -99,7 +99,25 @@ impl crate::Mono::X509PalImpl {
         > = __cordl_object.invoke("Import", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Import_Il2CppArray_SafePasswordHandle_X509KeyStorageFlags1(
+    pub fn Import_Gc2(
+        &mut self,
+        cert: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
+        > = __cordl_object.invoke("Import", (cert))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Import_Gc_X509KeyStorageFlags1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         password: quest_hook::libil2cpp::Gc<
@@ -117,24 +135,6 @@ impl crate::Mono::X509PalImpl {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
         > = __cordl_object.invoke("Import", (data, password, keyStorageFlags))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Import_X509Certificate2(
-        &mut self,
-        cert: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
-        > = __cordl_object.invoke("Import", (cert))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

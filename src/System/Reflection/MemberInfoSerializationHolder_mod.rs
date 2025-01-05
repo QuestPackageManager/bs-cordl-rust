@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemberInfoSerializationHolder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_reflectedType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
     pub m_signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+MemberInfoSerializationHolder")]
 impl std::ops::Deref for crate::System::Reflection::MemberInfoSerializationHolder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,7 +61,7 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
         > = __cordl_object.invoke("GetRealObject", (context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSerializationInfo_Il2CppString_MemberTypes_Il2CppArray1(
+    pub fn GetSerializationInfo_Gc_MemberTypes_Gc1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -71,7 +71,9 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
         signature2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: crate::System::Reflection::MemberTypes,
         genericArguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -143,32 +145,50 @@ for crate::System::Reflection::MemberInfoSerializationHolder {
     }
 }
 #[cfg(feature = "System+Reflection+MemberInfoSerializationHolder")]
-impl AsRef<crate::System::Runtime::Serialization::IObjectReference>
-for crate::System::Reflection::MemberInfoSerializationHolder {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::IObjectReference {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IObjectReference>,
+> for crate::System::Reflection::MemberInfoSerializationHolder {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IObjectReference,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Reflection+MemberInfoSerializationHolder")]
-impl AsMut<crate::System::Runtime::Serialization::IObjectReference>
-for crate::System::Reflection::MemberInfoSerializationHolder {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IObjectReference>,
+> for crate::System::Reflection::MemberInfoSerializationHolder {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Serialization::IObjectReference {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IObjectReference,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Reflection+MemberInfoSerializationHolder")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Reflection::MemberInfoSerializationHolder {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Reflection::MemberInfoSerializationHolder {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Reflection+MemberInfoSerializationHolder")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Reflection::MemberInfoSerializationHolder {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Reflection::MemberInfoSerializationHolder {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicGcmMultiplier {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub H: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmMultiplier")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmMultiplier")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmMultiplier {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,18 +79,30 @@ for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmMultiplier {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmMultiplier")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmMultiplier>
-for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmMultiplier {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmMultiplier {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmMultiplier,
+    >,
+> for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmMultiplier {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmMultiplier,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmMultiplier")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmMultiplier>
-for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmMultiplier {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmMultiplier,
+    >,
+> for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmMultiplier {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmMultiplier {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmMultiplier,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PskTlsServer {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer,
+    >,
     pub mPskIdentityManager: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentityManager,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+PskTlsServer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::PskTlsServer {
-    type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -110,7 +114,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::PskTlsServer {
         > = __cordl_object.invoke("GetRsaEncryptionCredentials", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_TlsCipherFactory_TlsPskIdentityManager1(
+    pub fn New_Gc0(
+        pskIdentityManager: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentityManager,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (pskIdentityManager))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc1(
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
         >,
@@ -124,18 +139,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::PskTlsServer {
             .invoke_void(".ctor", (cipherFactory, pskIdentityManager))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_TlsPskIdentityManager0(
+    pub fn _ctor_Gc0(
+        &mut self,
         pskIdentityManager: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentityManager,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (pskIdentityManager))?;
-        Ok(__cordl_object.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pskIdentityManager))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn _ctor_TlsCipherFactory_TlsPskIdentityManager1(
+    pub fn _ctor_Gc1(
         &mut self,
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
@@ -149,19 +166,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::PskTlsServer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (cipherFactory, pskIdentityManager))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_TlsPskIdentityManager0(
-        &mut self,
-        pskIdentityManager: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentityManager,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pskIdentityManager))?;
         Ok(__cordl_ret.into())
     }
 }

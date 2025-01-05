@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::ColorSerializable {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -111,34 +111,38 @@ impl crate::GlobalNamespace::ColorSerializable {
     }
 }
 #[cfg(feature = "ColorSerializable")]
-impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
-for crate::GlobalNamespace::ColorSerializable {
-    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
-        todo!()
-    }
-}
-#[cfg(feature = "ColorSerializable")]
-impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
-for crate::GlobalNamespace::ColorSerializable {
-    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
-        todo!()
-    }
-}
-#[cfg(feature = "ColorSerializable")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::ColorSerializable>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSerializable>>
 for crate::GlobalNamespace::ColorSerializable {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::ColorSerializable> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSerializable> {
         todo!()
     }
 }
 #[cfg(feature = "ColorSerializable")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::ColorSerializable>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSerializable>>
 for crate::GlobalNamespace::ColorSerializable {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::ColorSerializable> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSerializable> {
+        todo!()
+    }
+}
+#[cfg(feature = "ColorSerializable")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
+for crate::GlobalNamespace::ColorSerializable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
+        todo!()
+    }
+}
+#[cfg(feature = "ColorSerializable")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
+for crate::GlobalNamespace::ColorSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
         todo!()
     }
 }

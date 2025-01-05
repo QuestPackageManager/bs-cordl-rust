@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsECDheKeyExchange {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::TlsECDHKeyExchange,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsECDHKeyExchange,
+    >,
     pub mServerCredentials: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials,
     >,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsECDheKeyExchange")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsECDheKeyExchange {
-    type Target = crate::Org::BouncyCastle::Crypto::Tls::TlsECDHKeyExchange;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsECDHKeyExchange,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

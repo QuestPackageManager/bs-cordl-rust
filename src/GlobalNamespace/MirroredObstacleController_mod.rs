@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredObstacleController {
-    __cordl_parent: crate::GlobalNamespace::ObstacleControllerBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObstacleControllerBase,
+    >,
     pub _stretchableObstacle: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StretchableObstacle,
     >,
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MirroredObstacleController")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredObstacleController {
-    type Target = crate::GlobalNamespace::ObstacleControllerBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObstacleControllerBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -154,8 +158,8 @@ for crate::GlobalNamespace::MirroredObstacleController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredObstacleController_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
-        *mut crate::GlobalNamespace::MirroredObstacleController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredObstacleController>,
     >,
 }
 #[cfg(feature = "MirroredObstacleController+Pool")]
@@ -165,8 +169,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MirroredObstacleController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredObstacleController_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<
-        *mut crate::GlobalNamespace::MirroredObstacleController,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredObstacleController>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

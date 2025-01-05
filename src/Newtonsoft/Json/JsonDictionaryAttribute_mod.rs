@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonDictionaryAttribute {
-    __cordl_parent: crate::Newtonsoft::Json::JsonContainerAttribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::JsonContainerAttribute,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonDictionaryAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+JsonDictionaryAttribute")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonDictionaryAttribute {
-    type Target = crate::Newtonsoft::Json::JsonContainerAttribute;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::JsonContainerAttribute,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +35,7 @@ impl crate::Newtonsoft::Json::JsonDictionaryAttribute {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -50,7 +54,7 @@ impl crate::Newtonsoft::Json::JsonDictionaryAttribute {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

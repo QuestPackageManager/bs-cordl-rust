@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValueAnimation_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_StartTimeMs: i64,
     pub m_DurationMs: i32,
-    pub _easingCurve_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<f32, f32>,
-    >,
+    pub _easingCurve_k__BackingField: quest_hook::libil2cpp::Gc<f32, f32>,
     pub _isRunning_k__BackingField: bool,
     pub _onAnimationCompleted_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Action,
@@ -18,14 +16,14 @@ pub struct ValueAnimation_1<T: quest_hook::libil2cpp::Type> {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub _valueUpdated_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<*mut crate::UnityEngine::UIElements::VisualElement, T>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        T,
     >,
     pub _initialValue_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<*mut crate::UnityEngine::UIElements::VisualElement, T>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        T,
     >,
-    pub _interpolator_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_4<T, T, f32, T>,
-    >,
+    pub _interpolator_k__BackingField: quest_hook::libil2cpp::Gc<T, T, f32, T>,
     pub _from: T,
     pub fromValueSet: bool,
     pub _to_k__BackingField: T,
@@ -40,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+Experimental+ValueAnimation_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,29 +70,19 @@ impl<
     }
     pub fn Create(
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        interpolator: quest_hook::libil2cpp::Gc<crate::System::Func_4<T, T, f32, T>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T>,
-        >,
-    >
+        interpolator: quest_hook::libil2cpp::Gc<T, T, f32, T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Create", (e, interpolator))?;
         Ok(__cordl_ret.into())
     }
     pub fn KeepAlive(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -102,9 +90,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T>,
-        > = __cordl_object.invoke("KeepAlive", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
+            .invoke("KeepAlive", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -267,9 +254,7 @@ impl<
     }
     pub fn get_easingCurve(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<f32, f32>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -277,7 +262,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<f32, f32> = __cordl_object
             .invoke("get_easingCurve", ())?;
         Ok(__cordl_ret.into())
     }
@@ -296,7 +281,8 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<*mut crate::UnityEngine::UIElements::VisualElement, T>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            T,
         >,
     >
     where
@@ -307,15 +293,14 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<*mut crate::UnityEngine::UIElements::VisualElement, T>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            T,
         > = __cordl_object.invoke("get_initialValue", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_interpolator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Func_4<T, T, f32, T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T, T, f32, T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -323,9 +308,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_4<T, T, f32, T>,
-        > = __cordl_object.invoke("get_interpolator", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T, T, f32, T> = __cordl_object
+            .invoke("get_interpolator", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_isRunning(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -396,10 +380,8 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::UnityEngine::UIElements::VisualElement,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            T,
         >,
     >
     where
@@ -410,10 +392,8 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::UnityEngine::UIElements::VisualElement,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            T,
         > = __cordl_object.invoke("get_valueUpdated", ())?;
         Ok(__cordl_ret.into())
     }
@@ -449,7 +429,7 @@ impl<
     }
     pub fn set_easingCurve(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+        value: quest_hook::libil2cpp::Gc<f32, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -480,7 +460,8 @@ impl<
     pub fn set_initialValue(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<*mut crate::UnityEngine::UIElements::VisualElement, T>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            T,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -496,7 +477,7 @@ impl<
     }
     pub fn set_interpolator(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Func_4<T, T, f32, T>>,
+        value: quest_hook::libil2cpp::Gc<T, T, f32, T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -587,10 +568,8 @@ impl<
     pub fn set_valueUpdated(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::UnityEngine::UIElements::VisualElement,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            T,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -618,22 +597,32 @@ for crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+Experimental+ValueAnimation_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate>
-for crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T> {
+> AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
+    >,
+> for crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T> {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Experimental+ValueAnimation_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate>
-for crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T> {
+> AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
+    >,
+> for crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

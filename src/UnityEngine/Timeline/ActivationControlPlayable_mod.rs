@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActivationControlPlayable {
-    __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableBehaviour,
+    >,
     pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub postPlayback: crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState,
     pub m_InitialState: crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ActivationControlPlayable {
-    type Target = crate::UnityEngine::Playables::PlayableBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,11 +41,15 @@ impl crate::UnityEngine::Timeline::ActivationControlPlayable {
         postPlaybackState: crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Playables::ScriptPlayable_1<
-            *mut crate::UnityEngine::Timeline::ActivationControlPlayable,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Timeline::ActivationControlPlayable,
+            >,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
-            *mut crate::UnityEngine::Timeline::ActivationControlPlayable,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Timeline::ActivationControlPlayable,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Create", (graph, gameObject, postPlaybackState))?;
         Ok(__cordl_ret.into())

@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventSystemListener {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub pointerDidEnterEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::UnityEngine::EventSystems::PointerEventData>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     >,
     pub pointerDidExitEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::UnityEngine::EventSystems::PointerEventData>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     >,
 }
 #[cfg(feature = "HMUI+EventSystemListener")]
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+EventSystemListener")]
 impl std::ops::Deref for crate::HMUI::EventSystemListener {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,9 +76,7 @@ impl crate::HMUI::EventSystemListener {
     pub fn add_pointerDidEnterEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::EventSystems::PointerEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -91,9 +89,7 @@ impl crate::HMUI::EventSystemListener {
     pub fn add_pointerDidExitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::EventSystems::PointerEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -106,9 +102,7 @@ impl crate::HMUI::EventSystemListener {
     pub fn remove_pointerDidEnterEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::EventSystems::PointerEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -121,9 +115,7 @@ impl crate::HMUI::EventSystemListener {
     pub fn remove_pointerDidExitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::EventSystems::PointerEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -144,44 +136,74 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::EventSystemListener {
     }
 }
 #[cfg(feature = "HMUI+EventSystemListener")]
-impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::HMUI::EventSystemListener {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::HMUI::EventSystemListener {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+EventSystemListener")]
-impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::HMUI::EventSystemListener {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::HMUI::EventSystemListener {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+EventSystemListener")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
-for crate::HMUI::EventSystemListener {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
+> for crate::HMUI::EventSystemListener {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerEnterHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+EventSystemListener")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
-for crate::HMUI::EventSystemListener {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
+> for crate::HMUI::EventSystemListener {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerEnterHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+EventSystemListener")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerExitHandler>
-for crate::HMUI::EventSystemListener {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerExitHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
+> for crate::HMUI::EventSystemListener {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerExitHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+EventSystemListener")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerExitHandler>
-for crate::HMUI::EventSystemListener {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerExitHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
+> for crate::HMUI::EventSystemListener {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerExitHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

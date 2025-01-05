@@ -42,44 +42,60 @@ for crate::GlobalNamespace::INodePoseSyncStateManager {
 }
 #[cfg(feature = "INodePoseSyncStateManager")]
 impl AsRef<
-    crate::GlobalNamespace::INodePoseSyncStateManager_5<
+    quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,
-        *mut crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
-        *mut crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
+        >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+        >,
     >,
 > for crate::GlobalNamespace::INodePoseSyncStateManager {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::INodePoseSyncStateManager_5<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,
-        *mut crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
-        *mut crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
+        >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+        >,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "INodePoseSyncStateManager")]
 impl AsMut<
-    crate::GlobalNamespace::INodePoseSyncStateManager_5<
+    quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,
-        *mut crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
-        *mut crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
+        >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+        >,
     >,
 > for crate::GlobalNamespace::INodePoseSyncStateManager {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::INodePoseSyncStateManager_5<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,
-        *mut crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
-        *mut crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
+        >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+        >,
     > {
         unsafe { std::mem::transmute(self) }
     }

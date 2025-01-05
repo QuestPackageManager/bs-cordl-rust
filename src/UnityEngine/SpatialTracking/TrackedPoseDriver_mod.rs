@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackedPoseDriver {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub m_Device: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
     pub m_PoseSource: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
     pub m_PoseProviderComponent: quest_hook::libil2cpp::Gc<
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver")]
 impl std::ops::Deref for crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

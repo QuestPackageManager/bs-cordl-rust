@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DateTimeUtils {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeUtils")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::DateTimeUtils {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -201,7 +201,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
             .invoke("TryParseDateTimeOffsetMicrosoft", (text, dt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParseDateTimeOffset_Il2CppString1(
+    pub fn TryParseDateTimeOffset_Gc1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         dateFormatString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
@@ -221,7 +221,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
             .invoke("TryParseDateTimeOffset", (s, dateFormatString, culture, dt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParseDateTime_Il2CppString1(
+    pub fn TryParseDateTime_Gc1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         dateTimeZoneHandling: crate::Newtonsoft::Json::DateTimeZoneHandling,
         dateFormatString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -299,19 +299,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteDateTimeString_Il2CppArray_i32_DateTime_Nullable_1_DateTimeKind_DateFormatHandling1(
-        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        start: i32,
-        value: crate::System::DateTime,
-        offset: crate::System::Nullable_1<crate::System::TimeSpan>,
-        kind: crate::System::DateTimeKind,
-        format: crate::Newtonsoft::Json::DateFormatHandling,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteDateTimeString", (chars, start, value, offset, kind, format))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteDateTimeString_TextWriter_DateTime_DateFormatHandling_Il2CppString_CultureInfo0(
+    pub fn WriteDateTimeString_DateTime_DateFormatHandling_Gc_Gc0(
         writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
         value: crate::System::DateTime,
         format: crate::Newtonsoft::Json::DateFormatHandling,
@@ -323,6 +311,18 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                 "WriteDateTimeString",
                 (writer, value, format, formatString, culture),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteDateTimeString_i32_DateTime_Nullable_1_DateTimeKind_DateFormatHandling1(
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        start: i32,
+        value: crate::System::DateTime,
+        offset: crate::System::Nullable_1<crate::System::TimeSpan>,
+        kind: crate::System::DateTimeKind,
+        format: crate::Newtonsoft::Json::DateFormatHandling,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteDateTimeString", (chars, start, value, offset, kind, format))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteDefaultIsoDate(

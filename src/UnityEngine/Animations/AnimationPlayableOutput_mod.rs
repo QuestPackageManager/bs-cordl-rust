@@ -125,16 +125,20 @@ impl crate::UnityEngine::Animations::AnimationPlayableOutput {
     }
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationPlayableOutput")]
-impl AsRef<crate::UnityEngine::Playables::IPlayableOutput>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableOutput>>
 for crate::UnityEngine::Animations::AnimationPlayableOutput {
-    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableOutput {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableOutput> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationPlayableOutput")]
-impl AsMut<crate::UnityEngine::Playables::IPlayableOutput>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableOutput>>
 for crate::UnityEngine::Animations::AnimationPlayableOutput {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableOutput {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableOutput> {
         todo!()
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlDocument {
-    __cordl_parent: crate::System::Xml::XmlNode,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     pub implementation: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlImplementation>,
     pub domNameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::DomNameTable>,
     pub lastChild: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlLinkedNode>,
@@ -73,7 +73,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlDocument")]
 impl std::ops::Deref for crate::System::Xml::XmlDocument {
-    type Target = crate::System::Xml::XmlNode;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -232,7 +232,7 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CloneNode", (deep))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateAttribute_Il2CppString0(
+    pub fn CreateAttribute_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -245,7 +245,7 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CreateAttribute", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateAttribute_Il2CppString1(
+    pub fn CreateAttribute_Gc1(
         &mut self,
         qualifiedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -259,7 +259,7 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CreateAttribute", (qualifiedName, namespaceURI))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateAttribute_Il2CppString_Il2CppString2(
+    pub fn CreateAttribute_Gc_Gc2(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -347,7 +347,7 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CreateDocumentType", (name, publicId, systemId, internalSubset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateElement_Il2CppString0(
+    pub fn CreateElement_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -360,7 +360,7 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CreateElement", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateElement_Il2CppString1(
+    pub fn CreateElement_Gc1(
         &mut self,
         qualifiedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -374,7 +374,7 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CreateElement", (qualifiedName, namespaceURI))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateElement_Il2CppString_Il2CppString2(
+    pub fn CreateElement_Gc_Gc2(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -728,22 +728,22 @@ impl crate::System::Xml::XmlDocument {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XmlImplementation2(
-        imp: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlImplementation>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (imp))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_XmlNameTable1(
+    pub fn New_Gc1(
         nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (nt))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc2(
+        imp: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlImplementation>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (imp))?;
         Ok(__cordl_object.into())
     }
     pub fn PrepareDefaultAttribute(
@@ -817,7 +817,7 @@ impl crate::System::Xml::XmlDocument {
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -872,18 +872,7 @@ impl crate::System::Xml::XmlDocument {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XmlImplementation2(
-        &mut self,
-        imp: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlImplementation>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (imp))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_XmlNameTable1(
+    pub fn _ctor_Gc1(
         &mut self,
         nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -892,6 +881,17 @@ impl crate::System::Xml::XmlDocument {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (nt))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc2(
+        &mut self,
+        imp: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlImplementation>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (imp))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ActualLoadingStatus(&mut self) -> quest_hook::libil2cpp::Result<bool> {

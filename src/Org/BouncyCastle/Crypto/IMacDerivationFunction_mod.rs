@@ -55,16 +55,26 @@ for crate::Org::BouncyCastle::Crypto::IMacDerivationFunction {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IMacDerivationFunction")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IDerivationFunction>
-for crate::Org::BouncyCastle::Crypto::IMacDerivationFunction {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDerivationFunction {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationFunction>,
+> for crate::Org::BouncyCastle::Crypto::IMacDerivationFunction {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationFunction,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IMacDerivationFunction")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IDerivationFunction>
-for crate::Org::BouncyCastle::Crypto::IMacDerivationFunction {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDerivationFunction {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationFunction>,
+> for crate::Org::BouncyCastle::Crypto::IMacDerivationFunction {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationFunction,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

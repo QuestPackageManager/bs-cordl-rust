@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataCommonEventSource {
-    __cordl_parent: crate::System::Diagnostics::Tracing::EventSource,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Diagnostics::Tracing::EventSource,
+    >,
 }
 #[cfg(feature = "System+Data+DataCommonEventSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataCommonEventSource")]
 impl std::ops::Deref for crate::System::Data::DataCommonEventSource {
-    type Target = crate::System::Diagnostics::Tracing::EventSource;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Diagnostics::Tracing::EventSource,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +28,7 @@ impl std::ops::DerefMut for crate::System::Data::DataCommonEventSource {
 }
 #[cfg(feature = "System+Data+DataCommonEventSource")]
 impl crate::System::Data::DataCommonEventSource {
-    pub fn EnterScope_Il2CppString0(
+    pub fn EnterScope_Gc0(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i64> {
@@ -133,7 +137,7 @@ impl crate::System::Data::DataCommonEventSource {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Trace_Il2CppString0(
+    pub fn Trace_Gc0(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

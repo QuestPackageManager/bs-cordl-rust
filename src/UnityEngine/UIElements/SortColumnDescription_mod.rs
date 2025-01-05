@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortColumnDescription {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_ColumnIndex: i32,
     pub m_ColumnName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_SortDirection: crate::UnityEngine::UIElements::SortDirection,
@@ -10,9 +10,7 @@ pub struct SortColumnDescription {
         crate::UnityEngine::UIElements::Column,
     >,
     pub changed: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::SortColumnDescription,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::SortColumnDescription>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription")]
@@ -22,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::SortColumnDescription {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +48,7 @@ impl crate::UnityEngine::UIElements::SortColumnDescription {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_SortDirection2(
+    pub fn New_Gc_SortDirection2(
         columnName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         direction: crate::UnityEngine::UIElements::SortDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -80,7 +78,7 @@ impl crate::UnityEngine::UIElements::SortColumnDescription {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_SortDirection2(
+    pub fn _ctor_Gc_SortDirection2(
         &mut self,
         columnName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         direction: crate::UnityEngine::UIElements::SortDirection,
@@ -107,8 +105,8 @@ impl crate::UnityEngine::UIElements::SortColumnDescription {
     pub fn add_changed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::UIElements::SortColumnDescription,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -165,8 +163,8 @@ impl crate::UnityEngine::UIElements::SortColumnDescription {
     pub fn remove_changed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::UIElements::SortColumnDescription,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -236,10 +234,7 @@ for crate::UnityEngine::UIElements::SortColumnDescription {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortColumnDescription_UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlObjectFactory_2<
-        T,
-        *mut crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectTraits_1<T>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, quest_hook::libil2cpp::Gc<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription+UxmlObjectFactory_1")]
@@ -251,10 +246,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription+UxmlObjectFactory_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectFactory_1<T> {
-    type Target = crate::UnityEngine::UIElements::UxmlObjectFactory_2<
-        T,
-        *mut crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectTraits_1<T>,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<T, quest_hook::libil2cpp::Gc<T>>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -308,7 +300,7 @@ for crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectFactory_1<T>
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortColumnDescription_UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlObjectTraits_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
     pub m_ColumnName: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
@@ -316,9 +308,7 @@ pub struct SortColumnDescription_UxmlObjectTraits_1<T: quest_hook::libil2cpp::Ty
         crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     >,
     pub m_SortDescription: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::SortDirection,
-        >,
+        crate::UnityEngine::UIElements::SortDirection,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -331,7 +321,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription+UxmlObjectTraits_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectTraits_1<T> {
-    type Target = crate::UnityEngine::UIElements::UxmlObjectTraits_1<T>;
+    type Target = quest_hook::libil2cpp::Gc<T>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

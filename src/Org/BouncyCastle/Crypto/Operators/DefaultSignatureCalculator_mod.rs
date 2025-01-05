@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultSignatureCalculator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mSignerSink: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::IO::SignerSink,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,16 +87,26 @@ for crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IStreamCalculator>
-for crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IStreamCalculator {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCalculator>,
+> for crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IStreamCalculator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultSignatureCalculator")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IStreamCalculator>
-for crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IStreamCalculator {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCalculator>,
+> for crate::Org::BouncyCastle::Crypto::Operators::DefaultSignatureCalculator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IStreamCalculator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JSONBool {
-    __cordl_parent: crate::HoudiniEngineUnity::JSONNode,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
     pub m_Data: bool,
 }
 #[cfg(feature = "HoudiniEngineUnity+JSONBool")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+JSONBool")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::JSONBool {
-    type Target = crate::HoudiniEngineUnity::JSONNode;
+    type Target = quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,7 +52,7 @@ impl crate::HoudiniEngineUnity::JSONBool {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         aData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -84,7 +84,7 @@ impl crate::HoudiniEngineUnity::JSONBool {
             .invoke("WriteToStringBuilder", (aSB, aIndent, aIndentInc, aMode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         aData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

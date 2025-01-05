@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BcpgInputStream {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
+    >,
     pub m_in: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub next: bool,
     pub nextB: i32,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
-    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseInputStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,7 +94,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
         let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadFully_Il2CppArray1(
+    pub fn ReadFully_Gc1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -163,7 +167,9 @@ for crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BcpgInputStream_PartialInputStream {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
+    >,
     pub m_in: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgInputStream>,
     pub partial: bool,
     pub dataLength: i32,
@@ -177,7 +183,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {
-    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseInputStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

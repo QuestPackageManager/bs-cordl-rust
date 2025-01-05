@@ -30,19 +30,13 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::GetAssetBundleFileResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GetAssetBundleFileResult>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::GetAssetBundleFileResult,
-            >,
+            crate::GlobalNamespace::GetAssetBundleFileResult,
         > = __cordl_object
             .invoke(
                 "GetAssetBundleFileForBeatmapLevelAsync",
@@ -55,15 +49,11 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
             .invoke(
                 "TryDeleteAssetBundleFileForBeatmapLevelAsync",
                 (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
@@ -73,7 +63,7 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
     pub fn add_levelDataAssetDownloadUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
+            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -91,7 +81,7 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
     pub fn remove_levelDataAssetDownloadUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
+            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

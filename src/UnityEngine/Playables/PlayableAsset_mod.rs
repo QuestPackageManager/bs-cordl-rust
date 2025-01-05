@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayableAsset {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Playables+PlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Playables::PlayableAsset {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,19 +81,13 @@ impl crate::UnityEngine::Playables::PlayableAsset {
     pub fn get_outputs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::Playables::PlayableBinding,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableBinding>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::Playables::PlayableBinding,
-            >,
+            crate::UnityEngine::Playables::PlayableBinding,
         > = __cordl_object.invoke("get_outputs", ())?;
         Ok(__cordl_ret.into())
     }
@@ -108,16 +102,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Playables::Playab
     }
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableAsset")]
-impl AsRef<crate::UnityEngine::Playables::IPlayableAsset>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableAsset>>
 for crate::UnityEngine::Playables::PlayableAsset {
-    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableAsset {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableAsset> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableAsset")]
-impl AsMut<crate::UnityEngine::Playables::IPlayableAsset>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableAsset>>
 for crate::UnityEngine::Playables::PlayableAsset {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableAsset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableAsset> {
         unsafe { std::mem::transmute(self) }
     }
 }

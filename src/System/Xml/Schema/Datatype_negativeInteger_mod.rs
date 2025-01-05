@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_negativeInteger {
-    __cordl_parent: crate::System::Xml::Schema::Datatype_nonPositiveInteger,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Datatype_nonPositiveInteger,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_negativeInteger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Datatype_negativeInteger")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_negativeInteger {
-    type Target = crate::System::Xml::Schema::Datatype_nonPositiveInteger;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Datatype_nonPositiveInteger,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

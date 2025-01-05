@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageEffectController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _renderImageCallback: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ImageEffectController_RenderImageCallback,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ImageEffectController")]
 impl std::ops::Deref for crate::GlobalNamespace::ImageEffectController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -86,7 +86,7 @@ for crate::GlobalNamespace::ImageEffectController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageEffectController_RenderImageCallback {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "ImageEffectController+RenderImageCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -97,7 +97,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ImageEffectController+RenderImageCallback")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ImageEffectController_RenderImageCallback {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

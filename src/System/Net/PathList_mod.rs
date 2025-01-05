@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PathList {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_list: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
 }
 #[cfg(feature = "System+Net+PathList")]
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+PathList")]
 impl std::ops::Deref for crate::System::Net::PathList {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -136,7 +136,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::PathList {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PathList_PathListComparer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+PathList+PathListComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -145,7 +145,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+PathList+PathListComparer")]
 impl std::ops::Deref for crate::System::Net::PathList_PathListComparer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -199,16 +199,20 @@ for crate::System::Net::PathList_PathListComparer {
     }
 }
 #[cfg(feature = "System+Net+PathList+PathListComparer")]
-impl AsRef<crate::System::Collections::IComparer>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
 for crate::System::Net::PathList_PathListComparer {
-    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+PathList+PathListComparer")]
-impl AsMut<crate::System::Collections::IComparer>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
 for crate::System::Net::PathList_PathListComparer {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
         unsafe { std::mem::transmute(self) }
     }
 }

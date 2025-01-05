@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EulaViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _agreeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _doNotAgreeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
@@ -24,7 +24,7 @@ pub struct EulaViewController {
         crate::GlobalNamespace::ICoroutineStarter,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::EulaViewController_ButtonType>,
+        crate::GlobalNamespace::EulaViewController_ButtonType,
     >,
     pub _showUpdate: bool,
     pub _showOnlyContinueButton: bool,
@@ -37,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EulaViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::EulaViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -168,9 +168,7 @@ impl crate::GlobalNamespace::EulaViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::GlobalNamespace::EulaViewController_ButtonType,
-            >,
+            crate::GlobalNamespace::EulaViewController_ButtonType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -183,9 +181,7 @@ impl crate::GlobalNamespace::EulaViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::GlobalNamespace::EulaViewController_ButtonType,
-            >,
+            crate::GlobalNamespace::EulaViewController_ButtonType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -222,7 +218,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct EulaViewController_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub showDoNotAgreeButton: bool,
 }
 #[cfg(feature = "EulaViewController+InitData")]
@@ -232,7 +228,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EulaViewController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::EulaViewController_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

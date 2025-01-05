@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyHelper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+Serialization+KeyHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+KeyHelper")]
 impl std::ops::Deref for crate::System::Xml::Serialization::KeyHelper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::KeyHelper {
 }
 #[cfg(feature = "System+Xml+Serialization+KeyHelper")]
 impl crate::System::Xml::Serialization::KeyHelper {
-    pub fn AddField_Il2CppString0(
+    pub fn AddField_Gc0(
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         n: i32,
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -33,7 +33,16 @@ impl crate::System::Xml::Serialization::KeyHelper {
             .invoke("AddField", (sb, n, val))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddField_Il2CppString_Il2CppString1(
+    pub fn AddField_Gc5(
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        n: i32,
+        val: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddField", (sb, n, val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddField_Gc_Gc1(
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         n: i32,
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -41,15 +50,6 @@ impl crate::System::Xml::Serialization::KeyHelper {
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AddField", (sb, n, val, def))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddField_Type5(
-        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-        n: i32,
-        val: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddField", (sb, n, val))?;
         Ok(__cordl_ret.into())
     }
     pub fn AddField__cordl_bool2(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Decoder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub decoder: crate::System::IntPtr,
     pub channels: crate::UnityOpus::NumChannels,
     pub softclipMem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityOpus+Decoder")]
 impl std::ops::Deref for crate::UnityOpus::Decoder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -106,14 +106,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityOpus::Decoder {
     }
 }
 #[cfg(feature = "UnityOpus+Decoder")]
-impl AsRef<crate::System::IDisposable> for crate::UnityOpus::Decoder {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::UnityOpus::Decoder {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityOpus+Decoder")]
-impl AsMut<crate::System::IDisposable> for crate::UnityOpus::Decoder {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::UnityOpus::Decoder {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKMacStreamCalculator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _stream: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::IO::MacSink,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,16 +84,26 @@ for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IStreamCalculator>
-for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IStreamCalculator {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCalculator>,
+> for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IStreamCalculator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IStreamCalculator>
-for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IStreamCalculator {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCalculator>,
+> for crate::Org::BouncyCastle::Crmf::PKMacStreamCalculator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IStreamCalculator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

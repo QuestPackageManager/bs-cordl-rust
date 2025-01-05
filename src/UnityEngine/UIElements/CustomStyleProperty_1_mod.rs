@@ -42,7 +42,7 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -118,11 +118,11 @@ impl<
 impl<
     T: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::UIElements::CustomStyleProperty_1<T>>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::CustomStyleProperty_1<T>>,
 > for crate::UnityEngine::UIElements::CustomStyleProperty_1<T> {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::CustomStyleProperty_1<T>,
     > {
         todo!()
@@ -132,11 +132,11 @@ impl<
 impl<
     T: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::UIElements::CustomStyleProperty_1<T>>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::CustomStyleProperty_1<T>>,
 > for crate::UnityEngine::UIElements::CustomStyleProperty_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::CustomStyleProperty_1<T>,
     > {
         todo!()

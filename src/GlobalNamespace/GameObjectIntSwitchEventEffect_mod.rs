@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameObjectIntSwitchEventEffect {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _defaultValue: i32,
     pub _gameObjectsValueLists: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList,
+            >,
         >,
     >,
     pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
@@ -17,9 +19,9 @@ pub struct GameObjectIntSwitchEventEffect {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
     pub _valueToListMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList,
+        i32,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList,
         >,
     >,
     pub _previousActiveIdx: i32,
@@ -31,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameObjectIntSwitchEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -112,10 +114,12 @@ for crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameObjectIntSwitchEventEffect_GameObjectValueList {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub value: i32,
     pub gameObjects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _isActive_k__BackingField: bool,
 }
@@ -128,7 +132,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "GameObjectIntSwitchEventEffect+GameObjectValueList")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

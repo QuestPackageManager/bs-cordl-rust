@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightmapLightWithIds {
-    __cordl_parent: crate::GlobalNamespace::LightWithIds,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds>,
     pub _bakeId: crate::GlobalNamespace::LightConstants_BakeId,
     pub _intensity: f32,
     pub _probeIntensity: f32,
     pub _lightIntensityData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::LightmapLightWithIds_LightIntensitiesWithId,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LightmapLightWithIds_LightIntensitiesWithId,
+            >,
         >,
     >,
     pub _mixType: crate::GlobalNamespace::ColorMixAndWeightingApproach,
@@ -30,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightmapLightWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::LightmapLightWithIds {
-    type Target = crate::GlobalNamespace::LightWithIds;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,18 +71,14 @@ impl crate::GlobalNamespace::LightmapLightWithIds {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::LightWithIds_LightWithId,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds_LightWithId>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::LightWithIds_LightWithId,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds_LightWithId>,
         > = __cordl_object.invoke("GetLightWithIds", ())?;
         Ok(__cordl_ret.into())
     }
@@ -226,7 +224,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightmapLight
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightmapLightWithIds_LightIntensitiesWithId {
-    __cordl_parent: crate::GlobalNamespace::LightWithIds_LightWithId,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightWithIds_LightWithId,
+    >,
     pub _intensity: f32,
     pub _probeHighlightsIntensityMultiplier: f32,
 }
@@ -239,7 +239,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LightmapLightWithIds+LightIntensitiesWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LightmapLightWithIds_LightIntensitiesWithId {
-    type Target = crate::GlobalNamespace::LightWithIds_LightWithId;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightWithIds_LightWithId,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

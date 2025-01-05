@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
-    __cordl_parent: crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+    >,
 }
 #[cfg(
     feature = "Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
-    type Target = crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

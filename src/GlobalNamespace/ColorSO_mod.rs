@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorSO {
-    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >,
 }
 #[cfg(feature = "ColorSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +12,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColorSO")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorSO {
-    type Target = crate::GlobalNamespace::PersistentScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

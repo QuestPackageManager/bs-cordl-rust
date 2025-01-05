@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _spawnEffect: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Playables::PlayableDirector,
     >,
@@ -13,7 +13,9 @@ pub struct MultiplayerLobbyAvatarController {
     pub _despawnAvatarDelay: f32,
     pub _destroyAvatarDelay: f32,
     pub _visualObjects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController")]
@@ -24,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerLobbyAvatarController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -143,9 +145,11 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarController_Factory {
-    __cordl_parent: crate::Zenject::PlaceholderFactory_2<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
-        *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLobbyAvatarController,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
@@ -157,9 +161,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
-    type Target = crate::Zenject::PlaceholderFactory_2<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
-        *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLobbyAvatarController,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

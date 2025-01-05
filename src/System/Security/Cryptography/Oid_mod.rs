@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Oid {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _friendlyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _group: crate::System::Security::Cryptography::OidGroup,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+Oid")]
 impl std::ops::Deref for crate::System::Security::Cryptography::Oid {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +46,7 @@ impl crate::System::Security::Cryptography::Oid {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -55,7 +55,16 @@ impl crate::System::Security::Cryptography::Oid {
             .invoke_void(".ctor", (oid))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString2(
+    pub fn New_Gc3(
+        oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (oid))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc2(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         friendlyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -65,7 +74,7 @@ impl crate::System::Security::Cryptography::Oid {
             .invoke_void(".ctor", (value, friendlyName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString_OidGroup4(
+    pub fn New_Gc_Gc_OidGroup4(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         friendlyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         group: crate::System::Security::Cryptography::OidGroup,
@@ -74,15 +83,6 @@ impl crate::System::Security::Cryptography::Oid {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (value, friendlyName, group))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Oid3(
-        oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (oid))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
@@ -95,7 +95,7 @@ impl crate::System::Security::Cryptography::Oid {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -106,7 +106,18 @@ impl crate::System::Security::Cryptography::Oid {
             .invoke(".ctor", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString2(
+    pub fn _ctor_Gc3(
+        &mut self,
+        oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         friendlyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -118,7 +129,7 @@ impl crate::System::Security::Cryptography::Oid {
             .invoke(".ctor", (value, friendlyName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString_OidGroup4(
+    pub fn _ctor_Gc_Gc_OidGroup4(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         friendlyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -129,17 +140,6 @@ impl crate::System::Security::Cryptography::Oid {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (value, friendlyName, group))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Oid3(
-        &mut self,
-        oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (oid))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_FriendlyName(

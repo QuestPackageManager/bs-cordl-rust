@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_RamText {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub m_allocatedSystemMemorySizeText: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::Text,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tayx+Graphy+Ram+G_RamText")]
 impl std::ops::Deref for crate::Tayx::Graphy::Ram::G_RamText {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

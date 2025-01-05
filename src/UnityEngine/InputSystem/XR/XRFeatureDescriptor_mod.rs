@@ -4,9 +4,7 @@
 pub struct XRFeatureDescriptor {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub usageHints: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::InputSystem::XR::UsageHint,
-        >,
+        crate::UnityEngine::InputSystem::XR::UsageHint,
     >,
     pub featureType: crate::UnityEngine::InputSystem::XR::FeatureType,
     pub customSize: u32,

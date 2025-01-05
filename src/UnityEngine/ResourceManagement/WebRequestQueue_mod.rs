@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebRequestQueue {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+WebRequestQueue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ResourceManagement+WebRequestQueue")]
 impl std::ops::Deref for crate::UnityEngine::ResourceManagement::WebRequestQueue {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,14 +42,14 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
             .invoke("DequeueRequest", (operation))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnWebAsyncOpComplete_AsyncOperation0(
+    pub fn OnWebAsyncOpComplete_Gc0(
         operation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("OnWebAsyncOpComplete", (operation))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnWebAsyncOpComplete_UnityWebRequestAsyncOperation1(
+    pub fn OnWebAsyncOpComplete_Gc1(
         operation: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
         >,

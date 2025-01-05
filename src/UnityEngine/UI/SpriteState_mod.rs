@@ -129,20 +129,18 @@ impl crate::UnityEngine::UI::SpriteState {
     }
 }
 #[cfg(feature = "UnityEngine+UI+SpriteState")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UI::SpriteState>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::SpriteState>>
 for crate::UnityEngine::UI::SpriteState {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UI::SpriteState> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::SpriteState> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UI+SpriteState")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UI::SpriteState>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::SpriteState>>
 for crate::UnityEngine::UI::SpriteState {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UI::SpriteState> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::SpriteState> {
         todo!()
     }
 }

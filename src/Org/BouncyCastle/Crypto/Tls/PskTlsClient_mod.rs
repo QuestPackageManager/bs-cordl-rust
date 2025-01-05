@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PskTlsClient {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient,
+    >,
     pub mDHVerifier: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
     >,
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+PskTlsClient")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::PskTlsClient {
-    type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,7 +89,32 @@ impl crate::Org::BouncyCastle::Crypto::Tls::PskTlsClient {
         > = __cordl_object.invoke("GetKeyExchange", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_TlsCipherFactory_TlsDHVerifier_TlsPskIdentity2(
+    pub fn New_Gc0(
+        pskIdentity: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (pskIdentity))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc1(
+        cipherFactory: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
+        >,
+        pskIdentity: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (cipherFactory, pskIdentity))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc2(
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
         >,
@@ -102,32 +131,36 @@ impl crate::Org::BouncyCastle::Crypto::Tls::PskTlsClient {
             .invoke_void(".ctor", (cipherFactory, dhVerifier, pskIdentity))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_TlsCipherFactory_TlsPskIdentity1(
+    pub fn _ctor_Gc0(
+        &mut self,
+        pskIdentity: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (pskIdentity))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc1(
+        &mut self,
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
         >,
         pskIdentity: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (cipherFactory, pskIdentity))?;
-        Ok(__cordl_object.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (cipherFactory, pskIdentity))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New_TlsPskIdentity0(
-        pskIdentity: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (pskIdentity))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn _ctor_TlsCipherFactory_TlsDHVerifier_TlsPskIdentity2(
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
@@ -144,35 +177,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::PskTlsClient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (cipherFactory, dhVerifier, pskIdentity))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_TlsCipherFactory_TlsPskIdentity1(
-        &mut self,
-        cipherFactory: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
-        >,
-        pskIdentity: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (cipherFactory, pskIdentity))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_TlsPskIdentity0(
-        &mut self,
-        pskIdentity: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pskIdentity))?;
         Ok(__cordl_ret.into())
     }
 }

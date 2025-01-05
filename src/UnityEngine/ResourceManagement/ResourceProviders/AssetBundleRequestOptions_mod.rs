@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetBundleRequestOptions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Hash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Crc: u32,
     pub m_Timeout: i32,
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -337,22 +337,34 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReques
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
 )]
-impl AsRef<crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData>
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData,
+    >,
+>
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
 )]
-impl AsMut<crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData>
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData,
+    >,
+>
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

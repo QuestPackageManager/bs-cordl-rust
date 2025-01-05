@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReaderPositionInfo {
-    __cordl_parent: crate::System::Xml::PositionInfo,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::PositionInfo>,
     pub lineInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,
 }
 #[cfg(feature = "System+Xml+ReaderPositionInfo")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+ReaderPositionInfo")]
 impl std::ops::Deref for crate::System::Xml::ReaderPositionInfo {
-    type Target = crate::System::Xml::PositionInfo;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::PositionInfo>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

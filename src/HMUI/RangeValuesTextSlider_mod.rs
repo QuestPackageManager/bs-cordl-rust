@@ -2,13 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RangeValuesTextSlider {
-    __cordl_parent: crate::HMUI::TextSlider,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::TextSlider>,
     pub _minValue: f32,
     pub _maxValue: f32,
     pub _decButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _incButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<*mut crate::HMUI::RangeValuesTextSlider, f32>,
+        quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+        f32,
     >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
@@ -19,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+RangeValuesTextSlider")]
 impl std::ops::Deref for crate::HMUI::RangeValuesTextSlider {
-    type Target = crate::HMUI::TextSlider;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::TextSlider>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -153,7 +154,8 @@ impl crate::HMUI::RangeValuesTextSlider {
     pub fn add_valueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut crate::HMUI::RangeValuesTextSlider, f32>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+            f32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -187,7 +189,8 @@ impl crate::HMUI::RangeValuesTextSlider {
     pub fn remove_valueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut crate::HMUI::RangeValuesTextSlider, f32>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+            f32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

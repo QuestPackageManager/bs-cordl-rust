@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerSettingsPanelController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _serverCodeView: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ServerCodeView,
     >,
@@ -18,9 +18,7 @@ pub struct MultiplayerSettingsPanelController {
         crate::GlobalNamespace::ILobbyPlayerData,
     >,
     pub _refreshed: bool,
-    pub playerActiveStateChangedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<bool>,
-    >,
+    pub playerActiveStateChangedEvent: quest_hook::libil2cpp::Gc<bool>,
 }
 #[cfg(feature = "MultiplayerSettingsPanelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -30,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerSettingsPanelController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerSettingsPanelController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -160,7 +158,7 @@ impl crate::GlobalNamespace::MultiplayerSettingsPanelController {
     }
     pub fn add_playerActiveStateChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -171,7 +169,7 @@ impl crate::GlobalNamespace::MultiplayerSettingsPanelController {
     }
     pub fn remove_playerActiveStateChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -192,16 +190,20 @@ for crate::GlobalNamespace::MultiplayerSettingsPanelController {
     }
 }
 #[cfg(feature = "MultiplayerSettingsPanelController")]
-impl AsRef<crate::GlobalNamespace::IRefreshable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>>
 for crate::GlobalNamespace::MultiplayerSettingsPanelController {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IRefreshable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerSettingsPanelController")]
-impl AsMut<crate::GlobalNamespace::IRefreshable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>>
 for crate::GlobalNamespace::MultiplayerSettingsPanelController {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRefreshable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerConnection {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub m_PlayerEditorConnectionEvents: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents,
     >,
-    pub m_connectedPlayers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub m_connectedPlayers: quest_hook::libil2cpp::Gc<i32>,
     pub m_IsInitilized: bool,
 }
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]
@@ -20,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -124,8 +122,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         &mut self,
         messageId: crate::System::Guid,
         callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<
-                *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -138,9 +136,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     }
     pub fn RegisterConnection(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<i32>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -151,9 +147,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     }
     pub fn RegisterDisconnection(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<i32>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -189,8 +183,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         &mut self,
         messageId: crate::System::Guid,
         callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<
-                *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -203,9 +197,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     }
     pub fn UnregisterConnection(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<i32>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -216,9 +208,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     }
     pub fn UnregisterDisconnection(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<i32>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -266,20 +256,30 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     }
 }
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]
-impl AsRef<crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection>
-for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection,
+    >,
+> for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]
-impl AsMut<crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection>
-for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection,
+    >,
+> for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

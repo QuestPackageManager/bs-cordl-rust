@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BpmTimeProcessor {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _bpmChangeDataList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData,
-        >,
+        crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData,
     >,
     pub currentBpmChangesDataIdx: i32,
 }
@@ -17,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BpmTimeProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::BpmTimeProcessor {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +48,7 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
         let __cordl_ret: f32 = __cordl_object.invoke("ConvertBeatToTime", (beat))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_AudioSaveData2(
+    pub fn New_Gc2(
         audioSaveData: quest_hook::libil2cpp::Gc<
             crate::BeatmapLevelSaveDataVersion4::AudioSaveData,
         >,
@@ -61,11 +59,11 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
             .invoke_void(".ctor", (audioSaveData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_f32_IReadOnlyList_1_0(
+    pub fn New_f32_Gc0(
         startBpm: f32,
         events: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -75,12 +73,10 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
             .invoke_void(".ctor", (startBpm, events))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_f32_IReadOnlyList_1_1(
+    pub fn New_f32_Gc1(
         startBpm: f32,
         bpmEventsSaveData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::BeatmapSaveDataVersion3::BpmChangeEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BpmChangeEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -99,7 +95,7 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
             .invoke("Reset", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AudioSaveData2(
+    pub fn _ctor_Gc2(
         &mut self,
         audioSaveData: quest_hook::libil2cpp::Gc<
             crate::BeatmapLevelSaveDataVersion4::AudioSaveData,
@@ -112,12 +108,12 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
             .invoke(".ctor", (audioSaveData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_f32_IReadOnlyList_1_0(
+    pub fn _ctor_f32_Gc0(
         &mut self,
         startBpm: f32,
         events: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -128,13 +124,11 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
             .invoke(".ctor", (startBpm, events))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_f32_IReadOnlyList_1_1(
+    pub fn _ctor_f32_Gc1(
         &mut self,
         startBpm: f32,
         bpmEventsSaveData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::BeatmapSaveDataVersion3::BpmChangeEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BpmChangeEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -155,16 +149,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BpmTimeProces
     }
 }
 #[cfg(feature = "BpmTimeProcessor")]
-impl AsRef<crate::GlobalNamespace::IBeatToTimeConverter>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatToTimeConverter>>
 for crate::GlobalNamespace::BpmTimeProcessor {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatToTimeConverter {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatToTimeConverter> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BpmTimeProcessor")]
-impl AsMut<crate::GlobalNamespace::IBeatToTimeConverter>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatToTimeConverter>>
 for crate::GlobalNamespace::BpmTimeProcessor {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatToTimeConverter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatToTimeConverter> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,16 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleTextDropdown {
-    __cordl_parent: crate::HMUI::DropdownWithTableView,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _cellPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SimpleTextTableCell,
     >,
     pub _cellSize: f32,
     pub _texts: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _initialized: bool,
 }
@@ -22,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+SimpleTextDropdown")]
 impl std::ops::Deref for crate::HMUI::SimpleTextDropdown {
-    type Target = crate::HMUI::DropdownWithTableView;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -119,9 +117,7 @@ impl crate::HMUI::SimpleTextDropdown {
     pub fn SetTexts(
         &mut self,
         texts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -152,14 +148,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SimpleTextDropdown {
     }
 }
 #[cfg(feature = "HMUI+SimpleTextDropdown")]
-impl AsRef<crate::HMUI::TableView_IDataSource> for crate::HMUI::SimpleTextDropdown {
-    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
+for crate::HMUI::SimpleTextDropdown {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+SimpleTextDropdown")]
-impl AsMut<crate::HMUI::TableView_IDataSource> for crate::HMUI::SimpleTextDropdown {
-    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
+for crate::HMUI::SimpleTextDropdown {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }

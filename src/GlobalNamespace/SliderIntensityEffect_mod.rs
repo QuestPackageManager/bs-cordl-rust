@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderIntensityEffect {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _longSliderHeadIntensity: f32,
     pub _shortSliderHeadIntensity: f32,
     pub _tailIntensity: f32,
@@ -24,12 +24,16 @@ pub struct SliderIntensityEffect {
     >,
     pub _dipEffectFadeElements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+            >,
         >,
     >,
     pub _fadeInEffectFadeElements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+            >,
         >,
     >,
 }
@@ -40,7 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderIntensityEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderIntensityEffect {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -104,8 +108,8 @@ impl crate::GlobalNamespace::SliderIntensityEffect {
     pub fn ProcessEffectCoroutine(
         &mut self,
         fadeElements: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -220,7 +224,7 @@ for crate::GlobalNamespace::SliderIntensityEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderIntensityEffect_FadeElement {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub duration: f32,
     pub startIntensity: f32,
     pub endIntensity: f32,
@@ -235,7 +239,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderIntensityEffect+FadeElement")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -292,7 +296,7 @@ for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderIntensityEffect_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub sliderColorIntensity: f32,
     pub hapticFeedback: f32,
 }
@@ -303,7 +307,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderIntensityEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderIntensityEffect_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -353,7 +357,7 @@ for crate::GlobalNamespace::SliderIntensityEffect_InitData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderIntensityEffect_IntensityCalculationDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -364,7 +368,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

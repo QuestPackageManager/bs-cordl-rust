@@ -7,14 +7,10 @@ pub struct InputDeviceBuilder {
     >,
     pub m_LayoutCacheRef: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance,
     pub m_ChildControlOverrides: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
     >,
-    pub m_StateOffsetToControlMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<u32>,
-    >,
+    pub m_StateOffsetToControlMap: quest_hook::libil2cpp::Gc<u32>,
     pub m_StringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
@@ -232,7 +228,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         controlIndex: i32,
         allControls: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputControl,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
             >,
         >,
         noisy: bool,
@@ -360,7 +356,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateLayout_InputControlLayout1(
+    pub fn InstantiateLayout_Gc1(
         &mut self,
         layout: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
@@ -484,16 +480,16 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
@@ -532,16 +528,16 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }

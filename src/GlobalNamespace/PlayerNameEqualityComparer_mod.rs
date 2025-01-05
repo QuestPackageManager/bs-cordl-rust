@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerNameEqualityComparer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "PlayerNameEqualityComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerNameEqualityComparer")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerNameEqualityComparer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,28 +81,36 @@ for crate::GlobalNamespace::PlayerNameEqualityComparer {
 }
 #[cfg(feature = "PlayerNameEqualityComparer")]
 impl AsRef<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+        >,
     >,
 > for crate::GlobalNamespace::PlayerNameEqualityComparer {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
-        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+        >,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PlayerNameEqualityComparer")]
 impl AsMut<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+        >,
     >,
 > for crate::GlobalNamespace::PlayerNameEqualityComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
-        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+        >,
     > {
         unsafe { std::mem::transmute(self) }
     }

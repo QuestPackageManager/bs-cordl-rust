@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteJumpDurationTypeSettingsDropdown {
-    __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NoteJumpDurationTypeSettings,
     >,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteJumpDurationTypeSettingsDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteJumpDurationTypeSettingsDropdown {
-    type Target = crate::GlobalNamespace::ValueDropdownController_1<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NoteJumpDurationTypeSettings,
     >;
     fn deref(&self) -> &Self::Target {
@@ -34,11 +34,9 @@ impl crate::GlobalNamespace::NoteJumpDurationTypeSettingsDropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Tuple_2<
-                    crate::GlobalNamespace::NoteJumpDurationTypeSettings,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NoteJumpDurationTypeSettings,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -46,11 +44,9 @@ impl crate::GlobalNamespace::NoteJumpDurationTypeSettingsDropdown {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Tuple_2<
-                    crate::GlobalNamespace::NoteJumpDurationTypeSettings,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NoteJumpDurationTypeSettings,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = __cordl_object.invoke("GetNamedValues", ())?;
         Ok(__cordl_ret.into())

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncodingProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Text+EncodingProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+EncodingProvider")]
 impl std::ops::Deref for crate::System::Text::EncodingProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::System::Text::EncodingProvider {
 }
 #[cfg(feature = "System+Text+EncodingProvider")]
 impl crate::System::Text::EncodingProvider {
-    pub fn GetEncodingFromProvider_Il2CppString1(
+    pub fn GetEncodingFromProvider_Gc1(
         encodingName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -42,7 +42,7 @@ impl crate::System::Text::EncodingProvider {
             .invoke("GetEncodingFromProvider", (codepage))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetEncodingFromProvider_i32_EncoderFallback_DecoderFallback2(
+    pub fn GetEncodingFromProvider_i32_Gc_Gc2(
         codepage: i32,
         enc: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderFallback>,
         dec: quest_hook::libil2cpp::Gc<crate::System::Text::DecoderFallback>,
@@ -53,7 +53,7 @@ impl crate::System::Text::EncodingProvider {
             .invoke("GetEncodingFromProvider", (codepage, enc, dec))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetEncoding_Il2CppString0(
+    pub fn GetEncoding_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -79,7 +79,7 @@ impl crate::System::Text::EncodingProvider {
             .invoke("GetEncoding", (codepage))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetEncoding_i32_EncoderFallback_DecoderFallback2(
+    pub fn GetEncoding_i32_Gc_Gc2(
         &mut self,
         codepage: i32,
         encoderFallback: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderFallback>,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,8 +54,8 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
     pub type WaypointConverter = crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_WaypointConverter;
     pub fn BeatmapSaveDataAreSorted(
         beatmapSaveData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -89,15 +89,11 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
         beatmapJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::BeatmapDataBasicInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::BeatmapDataBasicInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetBeatmapDataBasicInfoFromSaveDataJsonAsync", (beatmapJson))?;
         Ok(__cordl_ret.into())
@@ -206,15 +202,11 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::BeatmapData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::BeatmapData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "GetBeatmapDataFromSaveDataJsonAsync",
@@ -266,7 +258,9 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_BasicEventConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatToTimeConverter,
+    >,
     pub _specialEventsFilter: quest_hook::libil2cpp::Gc<
         crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SpecialEventsFilter,
     >,
@@ -285,7 +279,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_BasicEventConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeConverter;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatToTimeConverter>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -384,7 +378,9 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_BasicEvent
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_ColorNoteConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeAndRotationConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatToTimeAndRotationConverter,
+    >,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+ColorNoteConverter"
@@ -399,7 +395,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ColorNoteConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeAndRotationConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatToTimeAndRotationConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -482,7 +480,9 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ColorNoteC
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_ObstacleConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeAndRotationConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatToTimeAndRotationConverter,
+    >,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+ObstacleConverter"
@@ -497,7 +497,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ObstacleConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeAndRotationConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatToTimeAndRotationConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -594,7 +596,9 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ObstacleCo
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_SliderConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeAndRotationConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatToTimeAndRotationConverter,
+    >,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+SliderConverter"
@@ -609,7 +613,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SliderConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeAndRotationConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatToTimeAndRotationConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -691,11 +697,9 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SliderConv
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_SpecialEventsFilter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _eventTypesToFilter: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            crate::BeatmapSaveDataCommon::BeatmapEventType,
-        >,
+        crate::BeatmapSaveDataCommon::BeatmapEventType,
     >,
 }
 #[cfg(
@@ -711,7 +715,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SpecialEventsFilter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -789,7 +793,9 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SpecialEve
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_WaypointConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeAndRotationConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatToTimeAndRotationConverter,
+    >,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+WaypointConverter"
@@ -804,7 +810,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_WaypointConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeAndRotationConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatToTimeAndRotationConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

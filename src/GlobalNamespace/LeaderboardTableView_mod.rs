@@ -2,16 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardTableView {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _cellPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LeaderboardTableCell,
     >,
     pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     pub _rowHeight: f32,
     pub _scores: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::LeaderboardTableView_ScoreData,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardTableView_ScoreData>,
     >,
     pub _specialScorePos: i32,
 }
@@ -22,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LeaderboardTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardTableView {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,8 +74,8 @@ impl crate::GlobalNamespace::LeaderboardTableView {
     pub fn SetScores(
         &mut self,
         scores: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::LeaderboardTableView_ScoreData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LeaderboardTableView_ScoreData,
             >,
         >,
         specialScorePos: i32,
@@ -110,16 +108,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LeaderboardTa
     }
 }
 #[cfg(feature = "LeaderboardTableView")]
-impl AsRef<crate::HMUI::TableView_IDataSource>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
 for crate::GlobalNamespace::LeaderboardTableView {
-    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LeaderboardTableView")]
-impl AsMut<crate::HMUI::TableView_IDataSource>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
 for crate::GlobalNamespace::LeaderboardTableView {
-    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -127,7 +127,7 @@ for crate::GlobalNamespace::LeaderboardTableView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardTableView_ScoreData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _score_k__BackingField: i32,
     pub _playerName_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -142,7 +142,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LeaderboardTableView+ScoreData")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardTableView_ScoreData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

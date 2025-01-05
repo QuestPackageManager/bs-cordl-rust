@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkixCertPathBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub certPathException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathBuilder")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathBuilder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkix::PkixCertPathBuilder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkix::PkixCertPathBuilder 
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathBuilder")]
 impl crate::Org::BouncyCastle::Pkix::PkixCertPathBuilder {
-    pub fn Build_PkixBuilderParameters0(
+    pub fn Build_Gc0(
         &mut self,
         pkixParams: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkix::PkixBuilderParameters,
@@ -43,7 +43,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathBuilder {
         > = __cordl_object.invoke("Build", (pkixParams))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Build_X509Certificate_PkixBuilderParameters_IList1(
+    pub fn Build_Gc_Gc1(
         &mut self,
         tbvCert: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::X509Certificate,

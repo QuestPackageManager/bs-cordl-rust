@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListViewReorderableDragAndDropController {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseReorderableDragAndDropController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseReorderableDragAndDropController,
+    >,
     pub m_ListView: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::BaseListView,
     >,
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+ListViewReorderableDragAndDropController")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::ListViewReorderableDragAndDropController {
-    type Target = crate::UnityEngine::UIElements::BaseReorderableDragAndDropController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseReorderableDragAndDropController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

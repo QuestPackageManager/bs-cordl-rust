@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DateTimeConstantAttribute {
-    __cordl_parent: crate::System::Runtime::CompilerServices::CustomConstantAttribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::CustomConstantAttribute,
+    >,
     pub _date: crate::System::DateTime,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+DateTimeConstantAttribute")]
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+CompilerServices+DateTimeConstantAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::DateTimeConstantAttribute {
-    type Target = crate::System::Runtime::CompilerServices::CustomConstantAttribute;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::CustomConstantAttribute,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

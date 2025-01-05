@@ -23,7 +23,7 @@ for crate::UnityEngine::UIElements::TimeValue {
 }
 #[cfg(feature = "UnityEngine+UIElements+TimeValue")]
 impl crate::UnityEngine::UIElements::TimeValue {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -129,20 +129,20 @@ impl crate::UnityEngine::UIElements::TimeValue {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TimeValue")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimeValue>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>>
 for crate::UnityEngine::UIElements::TimeValue {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimeValue> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TimeValue")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimeValue>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>>
 for crate::UnityEngine::UIElements::TimeValue {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimeValue> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue> {
         todo!()
     }
 }

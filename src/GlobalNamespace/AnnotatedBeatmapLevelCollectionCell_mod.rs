@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnnotatedBeatmapLevelCollectionCell {
-    __cordl_parent: crate::HMUI::SelectableCell,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
     pub _infoText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _coverImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     pub _selectionImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
@@ -30,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
 impl std::ops::Deref for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
-    type Target = crate::HMUI::SelectableCell;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRowCollection {
-    __cordl_parent: crate::System::Data::InternalDataCollectionBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Data::InternalDataCollectionBase,
+    >,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _list: quest_hook::libil2cpp::Gc<
         crate::System::Data::DataRowCollection_DataRowTree,
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataRowCollection")]
 impl std::ops::Deref for crate::System::Data::DataRowCollection {
-    type Target = crate::System::Data::InternalDataCollectionBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Data::InternalDataCollectionBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +49,9 @@ impl crate::System::Data::DataRowCollection {
     pub fn AddWithColumnEvents(
         &mut self,
         values: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -101,7 +107,7 @@ impl crate::System::Data::DataRowCollection {
             .invoke("ArrayRemove", (row))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTo_Array0(
+    pub fn CopyTo_Gc_i32_0(
         &mut self,
         ar: quest_hook::libil2cpp::Gc<crate::System::Array>,
         index: i32,
@@ -113,10 +119,12 @@ impl crate::System::Data::DataRowCollection {
             .invoke("CopyTo", (ar, index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTo_Il2CppArray1(
+    pub fn CopyTo_Gc_i32_1(
         &mut self,
         array: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRow>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            >,
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -216,7 +224,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataRowCollectio
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRowCollection_DataRowTree {
-    __cordl_parent: crate::System::Data::RBTree_1<*mut crate::System::Data::DataRow>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+    >,
 }
 #[cfg(feature = "System+Data+DataRowCollection+DataRowTree")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -225,7 +235,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataRowCollection+DataRowTree")]
 impl std::ops::Deref for crate::System::Data::DataRowCollection_DataRowTree {
-    type Target = crate::System::Data::RBTree_1<*mut crate::System::Data::DataRow>;
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

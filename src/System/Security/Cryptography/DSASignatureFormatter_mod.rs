@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DSASignatureFormatter {
-    __cordl_parent: crate::System::Security::Cryptography::AsymmetricSignatureFormatter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::AsymmetricSignatureFormatter,
+    >,
     pub _oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Security+Cryptography+DSASignatureFormatter")]
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+DSASignatureFormatter")]
 impl std::ops::Deref for crate::System::Security::Cryptography::DSASignatureFormatter {
-    type Target = crate::System::Security::Cryptography::AsymmetricSignatureFormatter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::AsymmetricSignatureFormatter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

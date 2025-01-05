@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioMixerProperties {
-    __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableBehaviour,
+    >,
     pub volume: f32,
     pub stereoPan: f32,
     pub spatialBlend: f32,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+AudioMixerProperties")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AudioMixerProperties {
-    type Target = crate::UnityEngine::Playables::PlayableBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

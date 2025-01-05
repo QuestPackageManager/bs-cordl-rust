@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassLight {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _lightType: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BloomPrePassLightTypeSO,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomPrePassLight")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassLight {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -159,20 +159,16 @@ impl crate::GlobalNamespace::BloomPrePassLight {
     }
     pub fn get_bloomLightsDict() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
-                *mut crate::System::Collections::Generic::HashSet_1<
-                    *mut crate::GlobalNamespace::BloomPrePassLight,
-                >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLightTypeSO>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
-                *mut crate::System::Collections::Generic::HashSet_1<
-                    *mut crate::GlobalNamespace::BloomPrePassLight,
-                >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLightTypeSO>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_bloomLightsDict", ())?;
@@ -180,14 +176,14 @@ impl crate::GlobalNamespace::BloomPrePassLight {
     }
     pub fn get_lightsDataItems() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BloomPrePassLight_LightsDataItem,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassLight_LightsDataItem,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BloomPrePassLight_LightsDataItem,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassLight_LightsDataItem,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_lightsDataItems", ())?;
@@ -207,14 +203,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePassL
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassLight_LightsDataItem {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub lightType: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BloomPrePassLightTypeSO,
     >,
     pub lights: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            *mut crate::GlobalNamespace::BloomPrePassLight,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
     >,
 }
 #[cfg(feature = "BloomPrePassLight+LightsDataItem")]
@@ -225,7 +219,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomPrePassLight+LightsDataItem")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -243,9 +237,7 @@ impl crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
             crate::GlobalNamespace::BloomPrePassLightTypeSO,
         >,
         lights: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::GlobalNamespace::BloomPrePassLight,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -260,9 +252,7 @@ impl crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
             crate::GlobalNamespace::BloomPrePassLightTypeSO,
         >,
         lights: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::GlobalNamespace::BloomPrePassLight,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

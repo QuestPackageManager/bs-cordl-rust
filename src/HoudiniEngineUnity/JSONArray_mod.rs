@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JSONArray {
-    __cordl_parent: crate::HoudiniEngineUnity::JSONNode,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
     pub m_List: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::JSONNode,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
     >,
     pub _cordl_inline: bool,
 }
@@ -17,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+JSONArray")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::JSONArray {
-    type Target = crate::HoudiniEngineUnity::JSONNode;
+    type Target = quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -59,7 +57,7 @@ impl crate::HoudiniEngineUnity::JSONArray {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Remove_JSONNode1(
+    pub fn Remove_Gc1(
         &mut self,
         aNode: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<
@@ -115,18 +113,14 @@ impl crate::HoudiniEngineUnity::JSONArray {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::HoudiniEngineUnity::JSONNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::HoudiniEngineUnity::JSONNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
         > = __cordl_object.invoke("get_Children", ())?;
         Ok(__cordl_ret.into())
     }
@@ -151,7 +145,7 @@ impl crate::HoudiniEngineUnity::JSONArray {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsArray", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_Il2CppString1(
+    pub fn get_Item_Gc1(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -200,7 +194,7 @@ impl crate::HoudiniEngineUnity::JSONArray {
             .invoke("set_Inline", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn set_Item_Il2CppString1(
+    pub fn set_Item_Gc1(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,

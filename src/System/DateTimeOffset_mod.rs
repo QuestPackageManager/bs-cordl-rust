@@ -63,7 +63,7 @@ impl crate::System::DateTimeOffset {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -115,7 +115,7 @@ impl crate::System::DateTimeOffset {
             .invoke("Parse", (input, formatProvider, styles))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_Il2CppString_IFormatProvider0(
+    pub fn Parse_Gc_Gc0(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
@@ -190,7 +190,7 @@ impl crate::System::DateTimeOffset {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_IFormatProvider1(
+    pub fn ToString_Gc1(
         &mut self,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<
@@ -205,7 +205,7 @@ impl crate::System::DateTimeOffset {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider2(
+    pub fn ToString_Gc_Gc2(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -255,20 +255,7 @@ impl crate::System::DateTimeOffset {
             .invoke("TryParse", (input, formatProvider, styles, result))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParseExact_Il2CppArray1(
-        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        formats: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-        styles: crate::System::Globalization::DateTimeStyles,
-        result: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParseExact", (input, formats, formatProvider, styles, result))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn TryParseExact_Il2CppString0(
+    pub fn TryParseExact_Gc_Gc_Gc_DateTimeStyles_ByRefMut0(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -277,6 +264,21 @@ impl crate::System::DateTimeOffset {
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryParseExact", (input, format, formatProvider, styles, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseExact_Gc_Gc_Gc_DateTimeStyles_ByRefMut1(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formats: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        styles: crate::System::Globalization::DateTimeStyles,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseExact", (input, formats, formatProvider, styles, result))?;
         Ok(__cordl_ret.into())
     }
     pub fn ValidateDate(
@@ -325,7 +327,7 @@ impl crate::System::DateTimeOffset {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext6(
+    pub fn _ctor_Gc_StreamingContext6(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -356,7 +358,7 @@ impl crate::System::DateTimeOffset {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_i32_i32_i32_i32_i32_Calendar_TimeSpan5(
+    pub fn _ctor_i32_i32_i32_i32_i32_i32_i32_Gc_TimeSpan5(
         &mut self,
         year: i32,
         month: i32,
@@ -567,102 +569,130 @@ impl crate::System::DateTimeOffset {
     }
 }
 #[cfg(feature = "System+DateTimeOffset")]
-impl AsRef<crate::System::IComparable> for crate::System::DateTimeOffset {
-    fn as_ref(&self) -> &crate::System::IComparable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+DateTimeOffset")]
-impl AsMut<crate::System::IComparable> for crate::System::DateTimeOffset {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+DateTimeOffset")]
-impl AsRef<crate::System::IComparable_1<crate::System::DateTimeOffset>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::DateTimeOffset>>
 for crate::System::DateTimeOffset {
-    fn as_ref(&self) -> &crate::System::IComparable_1<crate::System::DateTimeOffset> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::DateTimeOffset> {
         todo!()
     }
 }
 #[cfg(feature = "System+DateTimeOffset")]
-impl AsMut<crate::System::IComparable_1<crate::System::DateTimeOffset>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::DateTimeOffset>>
 for crate::System::DateTimeOffset {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<crate::System::DateTimeOffset> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::DateTimeOffset> {
         todo!()
     }
 }
 #[cfg(feature = "System+DateTimeOffset")]
-impl AsRef<crate::System::IEquatable_1<crate::System::DateTimeOffset>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::DateTimeOffset>>
 for crate::System::DateTimeOffset {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::DateTimeOffset> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::DateTimeOffset> {
         todo!()
     }
 }
 #[cfg(feature = "System+DateTimeOffset")]
-impl AsMut<crate::System::IEquatable_1<crate::System::DateTimeOffset>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::DateTimeOffset>>
 for crate::System::DateTimeOffset {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::System::DateTimeOffset> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::DateTimeOffset> {
         todo!()
     }
 }
 #[cfg(feature = "System+DateTimeOffset")]
-impl AsRef<crate::System::IFormattable> for crate::System::DateTimeOffset {
-    fn as_ref(&self) -> &crate::System::IFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+DateTimeOffset")]
-impl AsMut<crate::System::IFormattable> for crate::System::DateTimeOffset {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+DateTimeOffset")]
-impl AsRef<crate::System::ISpanFormattable> for crate::System::DateTimeOffset {
-    fn as_ref(&self) -> &crate::System::ISpanFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+DateTimeOffset")]
-impl AsMut<crate::System::ISpanFormattable> for crate::System::DateTimeOffset {
-    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+DateTimeOffset")]
-impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::DateTimeOffset {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::System::DateTimeOffset {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::System::DateTimeOffset {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::System::DateTimeOffset {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
+for crate::System::DateTimeOffset {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
+for crate::System::DateTimeOffset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+DateTimeOffset")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    >,
+> for crate::System::DateTimeOffset {
     fn as_ref(
         &self,
-    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "System+DateTimeOffset")]
-impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
-for crate::System::DateTimeOffset {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    >,
+> for crate::System::DateTimeOffset {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "System+DateTimeOffset")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::DateTimeOffset {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::DateTimeOffset {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "System+DateTimeOffset")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::DateTimeOffset {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::DateTimeOffset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         todo!()
     }
 }

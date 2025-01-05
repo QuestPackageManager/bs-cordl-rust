@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerSpectatingSpotManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _spectatingSpots: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
     >,
     pub _spotIndexBySpot: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
+        i32,
     >,
 }
 #[cfg(feature = "MultiplayerSpectatingSpotManager")]
@@ -23,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerSpectatingSpotManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -136,18 +132,14 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
         > = __cordl_object.invoke("get_spectatingSpots", ())?;
         Ok(__cordl_ret.into())
     }

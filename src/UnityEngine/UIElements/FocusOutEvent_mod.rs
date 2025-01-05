@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FocusOutEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::FocusEventBase_1<
-        *mut crate::UnityEngine::UIElements::FocusOutEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusOutEvent>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+FocusOutEvent")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+FocusOutEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FocusOutEvent {
-    type Target = crate::UnityEngine::UIElements::FocusEventBase_1<
-        *mut crate::UnityEngine::UIElements::FocusOutEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusOutEvent>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

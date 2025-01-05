@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SchemaEntity {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub pubid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+SchemaEntity")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaEntity {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -463,16 +463,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaEnt
     }
 }
 #[cfg(feature = "System+Xml+Schema+SchemaEntity")]
-impl AsRef<crate::System::Xml::IDtdEntityInfo>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdEntityInfo>>
 for crate::System::Xml::Schema::SchemaEntity {
-    fn as_ref(&self) -> &crate::System::Xml::IDtdEntityInfo {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdEntityInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+SchemaEntity")]
-impl AsMut<crate::System::Xml::IDtdEntityInfo>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdEntityInfo>>
 for crate::System::Xml::Schema::SchemaEntity {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdEntityInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdEntityInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }

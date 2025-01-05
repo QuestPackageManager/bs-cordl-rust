@@ -21,7 +21,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::PhysicsS
 }
 #[cfg(feature = "UnityEngine+PhysicsScene2D")]
 impl crate::UnityEngine::PhysicsScene2D {
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -87,7 +87,7 @@ impl crate::UnityEngine::PhysicsScene2D {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetRayIntersection_Il2CppArray_i32_1(
+    pub fn GetRayIntersection_Gc_i32_1(
         &mut self,
         ray: crate::UnityEngine::Ray,
         distance: f32,
@@ -191,9 +191,7 @@ impl crate::UnityEngine::PhysicsScene2D {
         direction: crate::UnityEngine::Vector2,
         distance: f32,
         contactFilter: crate::UnityEngine::ContactFilter2D,
-        results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::RaycastHit2D>,
-        >,
+        results: quest_hook::libil2cpp::Gc<crate::UnityEngine::RaycastHit2D>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -212,9 +210,7 @@ impl crate::UnityEngine::PhysicsScene2D {
         contactFilter: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ContactFilter2D,
         >,
-        results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::RaycastHit2D>,
-        >,
+        results: quest_hook::libil2cpp::Gc<crate::UnityEngine::RaycastHit2D>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -237,7 +233,7 @@ impl crate::UnityEngine::PhysicsScene2D {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Raycast_ContactFilter2D_Il2CppArray2(
+    pub fn Raycast_ContactFilter2D_Gc2(
         &mut self,
         origin: crate::UnityEngine::Vector2,
         direction: crate::UnityEngine::Vector2,
@@ -254,15 +250,13 @@ impl crate::UnityEngine::PhysicsScene2D {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Raycast_ContactFilter2D_List_1_3(
+    pub fn Raycast_ContactFilter2D_Gc3(
         &mut self,
         origin: crate::UnityEngine::Vector2,
         direction: crate::UnityEngine::Vector2,
         distance: f32,
         contactFilter: crate::UnityEngine::ContactFilter2D,
-        results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::RaycastHit2D>,
-        >,
+        results: quest_hook::libil2cpp::Gc<crate::UnityEngine::RaycastHit2D>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -330,20 +324,18 @@ impl crate::UnityEngine::PhysicsScene2D {
     }
 }
 #[cfg(feature = "UnityEngine+PhysicsScene2D")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene2D>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicsScene2D>>
 for crate::UnityEngine::PhysicsScene2D {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene2D> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicsScene2D> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+PhysicsScene2D")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene2D>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicsScene2D>>
 for crate::UnityEngine::PhysicsScene2D {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene2D> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicsScene2D> {
         todo!()
     }
 }

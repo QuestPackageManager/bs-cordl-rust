@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseFieldMouseDragger {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseFieldMouseDragger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BaseFieldMouseDragger")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseFieldMouseDragger {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,6 +31,19 @@ impl crate::UnityEngine::UIElements::BaseFieldMouseDragger {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn SetDragZone_Gc0(
+        &mut self,
+        dragElement: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetDragZone", (dragElement))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetDragZone_Rect1(
         &mut self,
         dragElement: quest_hook::libil2cpp::Gc<
@@ -43,19 +56,6 @@ impl crate::UnityEngine::UIElements::BaseFieldMouseDragger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetDragZone", (dragElement, hotZone))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetDragZone_VisualElement0(
-        &mut self,
-        dragElement: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDragZone", (dragElement))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

@@ -10,7 +10,9 @@ pub struct MonoEventInfo {
     pub raise_method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     pub attrs: crate::System::Reflection::EventAttributes,
     pub other_methods: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::MethodInfo>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        >,
     >,
 }
 #[cfg(feature = "System+Reflection+MonoEventInfo")]

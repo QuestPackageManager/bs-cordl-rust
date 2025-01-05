@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListChangedEventArgs {
-    __cordl_parent: crate::System::EventArgs,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
     pub _ListChangedType_k__BackingField: crate::System::ComponentModel::ListChangedType,
     pub _NewIndex_k__BackingField: i32,
     pub _OldIndex_k__BackingField: i32,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+ListChangedEventArgs")]
 impl std::ops::Deref for crate::System::ComponentModel::ListChangedEventArgs {
-    type Target = crate::System::EventArgs;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::EventArgs>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl std::ops::DerefMut for crate::System::ComponentModel::ListChangedEventArgs 
 }
 #[cfg(feature = "System+ComponentModel+ListChangedEventArgs")]
 impl crate::System::ComponentModel::ListChangedEventArgs {
-    pub fn New_PropertyDescriptor2(
+    pub fn New_Gc2(
         listChangedType: crate::System::ComponentModel::ListChangedType,
         propDesc: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptor,
@@ -52,7 +52,7 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
             .invoke_void(".ctor", (listChangedType, newIndex))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_PropertyDescriptor1(
+    pub fn New_i32_Gc1(
         listChangedType: crate::System::ComponentModel::ListChangedType,
         newIndex: i32,
         propDesc: quest_hook::libil2cpp::Gc<
@@ -76,7 +76,7 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
             .invoke_void(".ctor", (listChangedType, newIndex, oldIndex))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_PropertyDescriptor2(
+    pub fn _ctor_Gc2(
         &mut self,
         listChangedType: crate::System::ComponentModel::ListChangedType,
         propDesc: quest_hook::libil2cpp::Gc<
@@ -102,7 +102,7 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
             .invoke(".ctor", (listChangedType, newIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_PropertyDescriptor1(
+    pub fn _ctor_i32_Gc1(
         &mut self,
         listChangedType: crate::System::ComponentModel::ListChangedType,
         newIndex: i32,

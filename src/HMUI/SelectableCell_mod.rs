@@ -2,23 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectableCell {
-    __cordl_parent: crate::HMUI::Interactable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
     pub _wasPressedSignal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
     pub selectionDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_3<
-            *mut crate::HMUI::SelectableCell,
-            crate::HMUI::SelectableCell_TransitionType,
-            *mut quest_hook::libil2cpp::Il2CppObject,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+        crate::HMUI::SelectableCell_TransitionType,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub highlightDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::HMUI::SelectableCell,
-            crate::HMUI::SelectableCell_TransitionType,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+        crate::HMUI::SelectableCell_TransitionType,
     >,
     pub nonInteractableCellWasPressedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::HMUI::SelectableCell>,
+        quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
     >,
     pub _highlighted_k__BackingField: bool,
     pub _selected_k__BackingField: bool,
@@ -29,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+SelectableCell")]
 impl std::ops::Deref for crate::HMUI::SelectableCell {
-    type Target = crate::HMUI::Interactable;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -209,10 +205,8 @@ impl crate::HMUI::SelectableCell {
     pub fn add_highlightDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::HMUI::SelectableCell,
-                crate::HMUI::SelectableCell_TransitionType,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+            crate::HMUI::SelectableCell_TransitionType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -225,7 +219,7 @@ impl crate::HMUI::SelectableCell {
     pub fn add_nonInteractableCellWasPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::HMUI::SelectableCell>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -238,11 +232,9 @@ impl crate::HMUI::SelectableCell {
     pub fn add_selectionDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                *mut crate::HMUI::SelectableCell,
-                crate::HMUI::SelectableCell_TransitionType,
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+            crate::HMUI::SelectableCell_TransitionType,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -269,10 +261,8 @@ impl crate::HMUI::SelectableCell {
     pub fn remove_highlightDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::HMUI::SelectableCell,
-                crate::HMUI::SelectableCell_TransitionType,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+            crate::HMUI::SelectableCell_TransitionType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -285,7 +275,7 @@ impl crate::HMUI::SelectableCell {
     pub fn remove_nonInteractableCellWasPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::HMUI::SelectableCell>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -298,11 +288,9 @@ impl crate::HMUI::SelectableCell {
     pub fn remove_selectionDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                *mut crate::HMUI::SelectableCell,
-                crate::HMUI::SelectableCell_TransitionType,
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+            crate::HMUI::SelectableCell_TransitionType,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -345,72 +333,118 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SelectableCell {
     }
 }
 #[cfg(feature = "HMUI+SelectableCell")]
-impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::HMUI::SelectableCell {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::HMUI::SelectableCell {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+SelectableCell")]
-impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::HMUI::SelectableCell {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::HMUI::SelectableCell {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+SelectableCell")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
-for crate::HMUI::SelectableCell {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
+> for crate::HMUI::SelectableCell {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerClickHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+SelectableCell")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
-for crate::HMUI::SelectableCell {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
+> for crate::HMUI::SelectableCell {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerClickHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+SelectableCell")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
-for crate::HMUI::SelectableCell {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
+> for crate::HMUI::SelectableCell {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerEnterHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+SelectableCell")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
-for crate::HMUI::SelectableCell {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
+> for crate::HMUI::SelectableCell {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerEnterHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+SelectableCell")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerExitHandler>
-for crate::HMUI::SelectableCell {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerExitHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
+> for crate::HMUI::SelectableCell {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerExitHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+SelectableCell")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerExitHandler>
-for crate::HMUI::SelectableCell {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerExitHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
+> for crate::HMUI::SelectableCell {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerExitHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+SelectableCell")]
-impl AsRef<crate::UnityEngine::EventSystems::ISubmitHandler>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
 for crate::HMUI::SelectableCell {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISubmitHandler {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+SelectableCell")]
-impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
 for crate::HMUI::SelectableCell {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISubmitHandler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::ISubmitHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

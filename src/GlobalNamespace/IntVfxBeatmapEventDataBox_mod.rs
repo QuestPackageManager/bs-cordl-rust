@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntVfxBeatmapEventDataBox {
-    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapEventDataBox,
+    >,
     pub _vfxBaseDataList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::IntFxBaseData,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IntFxBaseData>,
     >,
     pub _beatStep: f32,
 }
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "IntVfxBeatmapEventDataBox")]
 impl std::ops::Deref for crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
-    type Target = crate::GlobalNamespace::BeatmapEventDataBox;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBox>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,9 +39,7 @@ impl crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
         eventDistributionShouldAffectFirstBaseEvent: bool,
         eventDistributionEaseType: crate::GlobalNamespace::EaseType,
         vfxBaseDataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::IntFxBaseData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IntFxBaseData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -77,9 +75,7 @@ impl crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
             crate::GlobalNamespace::IBeatmapLightEventConverter,
         >,
         output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BeatmapEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -112,9 +108,7 @@ impl crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
         eventDistributionShouldAffectFirstBaseEvent: bool,
         eventDistributionEaseType: crate::GlobalNamespace::EaseType,
         vfxBaseDataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::IntFxBaseData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IntFxBaseData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

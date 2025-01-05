@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalOnPointerClick {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _inputFieldClickedSignal: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::Signal,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SignalOnPointerClick")]
 impl std::ops::Deref for crate::GlobalNamespace::SignalOnPointerClick {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,30 +68,50 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SignalOnPoint
     }
 }
 #[cfg(feature = "SignalOnPointerClick")]
-impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::GlobalNamespace::SignalOnPointerClick {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::GlobalNamespace::SignalOnPointerClick {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "SignalOnPointerClick")]
-impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::GlobalNamespace::SignalOnPointerClick {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::GlobalNamespace::SignalOnPointerClick {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "SignalOnPointerClick")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
-for crate::GlobalNamespace::SignalOnPointerClick {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
+> for crate::GlobalNamespace::SignalOnPointerClick {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerClickHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "SignalOnPointerClick")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
-for crate::GlobalNamespace::SignalOnPointerClick {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
+> for crate::GlobalNamespace::SignalOnPointerClick {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerClickHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

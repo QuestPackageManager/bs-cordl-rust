@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteMissInfoNetSerializable {
-    __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PoolableSerializable,
+    >,
     pub _colorType_k__BackingField: crate::GlobalNamespace::ColorType,
     pub _noteTime_k__BackingField: f32,
     pub _noteLineIndex_k__BackingField: i32,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteMissInfoNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteMissInfoNetSerializable {
-    type Target = crate::GlobalNamespace::PoolableSerializable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PoolableSerializable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,7 +61,7 @@ impl crate::GlobalNamespace::NoteMissInfoNetSerializable {
             .invoke("Init", (colorType, lineLayer, noteLineIndex, noteTime))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_NoteData0(
+    pub fn Init_Gc0(
         &mut self,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     ) -> quest_hook::libil2cpp::Result<

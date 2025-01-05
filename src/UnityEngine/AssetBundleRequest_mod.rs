@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetBundleRequest {
-    __cordl_parent: crate::UnityEngine::ResourceRequest,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceRequest>,
 }
 #[cfg(feature = "UnityEngine+AssetBundleRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AssetBundleRequest")]
 impl std::ops::Deref for crate::UnityEngine::AssetBundleRequest {
-    type Target = crate::UnityEngine::ResourceRequest;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceRequest>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,14 +57,18 @@ impl crate::UnityEngine::AssetBundleRequest {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = __cordl_object.invoke("get_allAssets", ())?;
         Ok(__cordl_ret.into())
     }

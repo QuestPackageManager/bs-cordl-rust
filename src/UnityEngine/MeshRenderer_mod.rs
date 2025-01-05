@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MeshRenderer {
-    __cordl_parent: crate::UnityEngine::Renderer,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
 }
 #[cfg(feature = "UnityEngine+MeshRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+MeshRenderer")]
 impl std::ops::Deref for crate::UnityEngine::MeshRenderer {
-    type Target = crate::UnityEngine::Renderer;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

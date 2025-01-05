@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RC2CryptoServiceProvider {
-    __cordl_parent: crate::System::Security::Cryptography::RC2,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::RC2,
+    >,
     pub m_use40bitSalt: bool,
 }
 #[cfg(feature = "System+Security+Cryptography+RC2CryptoServiceProvider")]
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+RC2CryptoServiceProvider")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RC2CryptoServiceProvider {
-    type Target = crate::System::Security::Cryptography::RC2;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RC2>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DHParameters {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Parameters::DHPara
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
     pub const DefaultMinimumLength: i32 = 160i32;
-    pub fn Equals_DHParameters1(
+    pub fn Equals_Gc0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
@@ -45,16 +55,6 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Il2CppObject0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultMParam(lParam: i32) -> quest_hook::libil2cpp::Result<i32> {
@@ -69,7 +69,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_BigInteger1(
+    pub fn New_Gc1(
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -80,7 +80,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
             .invoke_void(".ctor", (p, g, q))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_BigInteger_BigInteger0(
+    pub fn New_Gc_Gc0(
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -90,7 +90,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
             .invoke_void(".ctor", (p, g))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_BigInteger_BigInteger_DHValidationParameters4(
+    pub fn New_Gc_Gc_Gc4(
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -105,7 +105,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
             .invoke_void(".ctor", (p, g, q, j, validation))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_BigInteger_i32_2(
+    pub fn New_Gc_i32_2(
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -117,7 +117,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
             .invoke_void(".ctor", (p, g, q, l))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_BigInteger_i32_i32_3(
+    pub fn New_Gc_i32_i32_3(
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -130,7 +130,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
             .invoke_void(".ctor", (p, g, q, m, l))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_BigInteger_i32_i32_BigInteger_DHValidationParameters5(
+    pub fn New_Gc_i32_i32_Gc_Gc5(
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -147,7 +147,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
             .invoke_void(".ctor", (p, g, q, m, l, j, validation))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_BigInteger1(
+    pub fn _ctor_Gc1(
         &mut self,
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -160,7 +160,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
             .invoke(".ctor", (p, g, q))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger_BigInteger0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -172,7 +172,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
             .invoke(".ctor", (p, g))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger_BigInteger_DHValidationParameters4(
+    pub fn _ctor_Gc_Gc_Gc4(
         &mut self,
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -189,7 +189,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
             .invoke(".ctor", (p, g, q, j, validation))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger_i32_2(
+    pub fn _ctor_Gc_i32_2(
         &mut self,
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -203,7 +203,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
             .invoke(".ctor", (p, g, q, l))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger_i32_i32_3(
+    pub fn _ctor_Gc_i32_i32_3(
         &mut self,
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -218,7 +218,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
             .invoke(".ctor", (p, g, q, m, l))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger_i32_i32_BigInteger_DHValidationParameters5(
+    pub fn _ctor_Gc_i32_i32_Gc_Gc5(
         &mut self,
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -330,16 +330,26 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHParameters")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::ICipherParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ICipherParameters {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHParameters")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::ICipherParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ICipherParameters {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

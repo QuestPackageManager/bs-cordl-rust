@@ -2,52 +2,36 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarPartsModel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _headTopCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
     >,
     pub _eyesCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-            *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO>,
     >,
     pub _mouthCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-            *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO>,
     >,
     pub _glassesCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
     >,
     pub _facialHairCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
     >,
     pub _handsCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
     >,
     pub _clothesCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
     >,
     pub _skinColors_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::SkinColorSO>,
         >,
     >,
     pub _indexById: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        i32,
     >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartsModel")]
@@ -57,7 +41,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartsModel")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -141,18 +125,14 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
         > = __cordl_object.invoke("get_clothesCollection", ())?;
         Ok(__cordl_ret.into())
     }
@@ -160,8 +140,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
             >,
         >,
     > {
@@ -169,8 +149,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
             >,
         > = __cordl_object.invoke("get_eyesCollection", ())?;
         Ok(__cordl_ret.into())
@@ -179,18 +159,14 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
         > = __cordl_object.invoke("get_facialHairCollection", ())?;
         Ok(__cordl_ret.into())
     }
@@ -198,18 +174,14 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
         > = __cordl_object.invoke("get_glassesCollection", ())?;
         Ok(__cordl_ret.into())
     }
@@ -217,18 +189,14 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
         > = __cordl_object.invoke("get_handsCollection", ())?;
         Ok(__cordl_ret.into())
     }
@@ -236,18 +204,14 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
         > = __cordl_object.invoke("get_headTopCollection", ())?;
         Ok(__cordl_ret.into())
     }
@@ -255,8 +219,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
             >,
         >,
     > {
@@ -264,8 +228,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
             >,
         > = __cordl_object.invoke("get_mouthCollection", ())?;
         Ok(__cordl_ret.into())
@@ -275,7 +239,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::SkinColorSO>,
             >,
         >,
     > {
@@ -284,7 +248,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::SkinColorSO>,
             >,
         > = __cordl_object.invoke("get_skinColors", ())?;
         Ok(__cordl_ret.into())

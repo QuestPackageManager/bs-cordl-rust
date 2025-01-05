@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UTF16Decoder {
-    __cordl_parent: crate::System::Text::Decoder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Text::Decoder>,
     pub bigEndian: bool,
     pub lastByte: i32,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+UTF16Decoder")]
 impl std::ops::Deref for crate::System::Xml::UTF16Decoder {
-    type Target = crate::System::Text::Decoder;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Text::Decoder>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::System::Xml::UTF16Decoder {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCharCount_Il2CppArray_i32_i32_0(
+    pub fn GetCharCount_Gc_i32_i32_0(
         &mut self,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,

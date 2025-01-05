@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionInfoTypeInfoConverter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Zenject+Internal+ReflectionInfoTypeInfoConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+Internal+ReflectionInfoTypeInfoConverter")]
 impl std::ops::Deref for crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,15 +85,11 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
         flags: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Reflection::FieldInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Reflection::FieldInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetAllFields", (t, flags))?;
         Ok(__cordl_ret.into())

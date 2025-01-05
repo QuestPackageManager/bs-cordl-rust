@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderSpawnInfoNetSerializable {
-    __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PoolableSerializable,
+    >,
     pub colorType: crate::GlobalNamespace::ColorType,
     pub sliderType: crate::GlobalNamespace::SliderData_Type,
     pub hasHeadNote: bool,
@@ -38,7 +40,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderSpawnInfoNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderSpawnInfoNetSerializable {
-    type Target = crate::GlobalNamespace::PoolableSerializable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PoolableSerializable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

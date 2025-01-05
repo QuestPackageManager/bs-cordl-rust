@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ViveLighthouse {
-    __cordl_parent: crate::UnityEngine::InputSystem::TrackedDevice,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::TrackedDevice,
+    >,
 }
 #[cfg(feature = "Unity+XR+OpenVR+ViveLighthouse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+OpenVR+ViveLighthouse")]
 impl std::ops::Deref for crate::Unity::XR::OpenVR::ViveLighthouse {
-    type Target = crate::UnityEngine::InputSystem::TrackedDevice;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::TrackedDevice,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

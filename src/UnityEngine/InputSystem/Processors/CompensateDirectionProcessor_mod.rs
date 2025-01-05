@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CompensateDirectionProcessor {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputProcessor_1<
-        crate::UnityEngine::Vector3,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Processors+CompensateDirectionProcessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Processors+CompensateDirectionProcessor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Processors::CompensateDirectionProcessor {
-    type Target = crate::UnityEngine::InputSystem::InputProcessor_1<
-        crate::UnityEngine::Vector3,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

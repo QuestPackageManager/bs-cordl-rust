@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MeshUtility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+MeshUtility")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::MeshUtility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         vertices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -78,13 +78,13 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GeneratePerTriangleMesh", (mesh))?;
@@ -114,7 +114,8 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
     pub fn GetMeshChannel<T>(
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         attributeGetter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<*mut crate::UnityEngine::Mesh, T>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+            T,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -137,13 +138,13 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetVertices", (mesh))?;
@@ -169,9 +170,7 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
     pub fn PrintAttribute<T>(
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        attrib: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        attrib: quest_hook::libil2cpp::Gc<T>,
         fmt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -189,22 +188,18 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
             .invoke("RestoreParticleSystem", (pbmesh))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SanityCheck_IList_1_2(
-        vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
-            >,
-        >,
+    pub fn SanityCheck_Gc0(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SanityCheck", (vertices))?;
+            .invoke("SanityCheck", (mesh))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SanityCheck_Mesh1(
+    pub fn SanityCheck_Gc1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -215,15 +210,17 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
             .invoke("SanityCheck", (mesh))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SanityCheck_ProBuilderMesh0(
-        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    pub fn SanityCheck_Gc2(
+        vertices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SanityCheck", (mesh))?;
+            .invoke("SanityCheck", (vertices))?;
         Ok(__cordl_ret.into())
     }
 }

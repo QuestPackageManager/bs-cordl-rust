@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionObjectivesGameUIController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _missionObjectiveGameUIViewPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MissionObjectiveGameUIView,
     >,
@@ -12,9 +12,7 @@ pub struct MissionObjectivesGameUIController {
         crate::GlobalNamespace::MissionObjectiveCheckersManager,
     >,
     pub _missionObjectiveGameUIViews: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::MissionObjectiveGameUIView,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveGameUIView>,
     >,
 }
 #[cfg(feature = "MissionObjectivesGameUIController")]
@@ -25,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MissionObjectivesGameUIController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionObjectivesGameUIController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

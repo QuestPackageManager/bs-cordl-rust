@@ -5,7 +5,7 @@ pub struct PropertyGetter_2<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -19,7 +19,7 @@ impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Unity::Properties::PropertyGetter_2<TContainer, TValue> {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

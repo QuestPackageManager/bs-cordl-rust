@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DHDomainParameters {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
     pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
     pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+DHDomainParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X9::DHDomainParameters {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +35,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X9::DHDomainParamete
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+DHDomainParameters")]
 impl crate::Org::BouncyCastle::Asn1::X9::DHDomainParameters {
-    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
+    pub fn GetInstance_Gc1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::DHDomainParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X9::DHDomainParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance__cordl_bool0(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         isExplicit: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -41,16 +55,6 @@ impl crate::Org::BouncyCastle::Asn1::X9::DHDomainParameters {
             crate::Org::BouncyCastle::Asn1::X9::DHDomainParameters,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetInstance", (obj, isExplicit))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetInstance_Il2CppObject1(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::DHDomainParameters>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X9::DHDomainParameters,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetNext(
@@ -63,7 +67,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::DHDomainParameters {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetNext", (e))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1Sequence1(
+    pub fn New_Gc1(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -72,7 +76,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::DHDomainParameters {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DerInteger_DerInteger_DerInteger_DerInteger_DHValidationParms0(
+    pub fn New_Gc_Gc_Gc_Gc0(
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
@@ -100,7 +104,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::DHDomainParameters {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Sequence1(
+    pub fn _ctor_Gc1(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -111,7 +115,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::DHDomainParameters {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerInteger_DerInteger_DerInteger_DerInteger_DHValidationParms0(
+    pub fn _ctor_Gc_Gc_Gc_Gc0(
         &mut self,
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,

@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeSerializationManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_serializedStates: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub m_savedSerializationInfo: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::SerializationInfo,
@@ -14,8 +12,8 @@ pub struct SafeSerializationManager {
     pub m_realObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_realType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
     pub SerializeObjectState: quest_hook::libil2cpp::Gc<
-        crate::System::EventHandler_1<
-            *mut crate::System::Runtime::Serialization::SafeSerializationEventArgs,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SafeSerializationEventArgs,
         >,
     >,
 }
@@ -28,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+SafeSerializationManager")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::SafeSerializationManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,7 +76,7 @@ impl crate::System::Runtime::Serialization::SafeSerializationManager {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext1(
+    pub fn New_Gc_StreamingContext1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -146,7 +144,7 @@ impl crate::System::Runtime::Serialization::SafeSerializationManager {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext1(
+    pub fn _ctor_Gc_StreamingContext1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -179,32 +177,50 @@ for crate::System::Runtime::Serialization::SafeSerializationManager {
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+SafeSerializationManager")]
-impl AsRef<crate::System::Runtime::Serialization::IObjectReference>
-for crate::System::Runtime::Serialization::SafeSerializationManager {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::IObjectReference {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IObjectReference>,
+> for crate::System::Runtime::Serialization::SafeSerializationManager {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IObjectReference,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+SafeSerializationManager")]
-impl AsMut<crate::System::Runtime::Serialization::IObjectReference>
-for crate::System::Runtime::Serialization::SafeSerializationManager {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IObjectReference>,
+> for crate::System::Runtime::Serialization::SafeSerializationManager {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Serialization::IObjectReference {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IObjectReference,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+SafeSerializationManager")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Runtime::Serialization::SafeSerializationManager {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Runtime::Serialization::SafeSerializationManager {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+SafeSerializationManager")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Runtime::Serialization::SafeSerializationManager {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Runtime::Serialization::SafeSerializationManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

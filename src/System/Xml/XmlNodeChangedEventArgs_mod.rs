@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlNodeChangedEventArgs {
-    __cordl_parent: crate::System::EventArgs,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
     pub action: crate::System::Xml::XmlNodeChangedAction,
     pub node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     pub oldParent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlNodeChangedEventArgs")]
 impl std::ops::Deref for crate::System::Xml::XmlNodeChangedEventArgs {
-    type Target = crate::System::EventArgs;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::EventArgs>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

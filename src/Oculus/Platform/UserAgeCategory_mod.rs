@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UserAgeCategory {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Oculus+Platform+UserAgeCategory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+UserAgeCategory")]
 impl std::ops::Deref for crate::Oculus::Platform::UserAgeCategory {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,14 +26,14 @@ impl std::ops::DerefMut for crate::Oculus::Platform::UserAgeCategory {
 impl crate::Oculus::Platform::UserAgeCategory {
     pub fn Get() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserAccountAgeCategory,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserAccountAgeCategory,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserAccountAgeCategory,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserAccountAgeCategory,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Get", ())?;
         Ok(__cordl_ret.into())

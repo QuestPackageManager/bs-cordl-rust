@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChannelServices {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+ChannelServices")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Channels+ChannelServices")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Channels::ChannelServices {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,38 +56,13 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
             .invoke("CheckReturnMessage", (callMsg, retMsg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateClientChannelSinkChain_IChannelSender_Il2CppString_Il2CppArray_ByRefMut1(
-        sender: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Channels::IChannelSender,
-        >,
-        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        channelDataArray: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
-        >,
-        objectUri: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Messaging::IMessageSink,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Messaging::IMessageSink,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CreateClientChannelSinkChain",
-                (sender, url, channelDataArray, objectUri),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreateClientChannelSinkChain_Il2CppString_Il2CppObject_ByRefMut0(
+    pub fn CreateClientChannelSinkChain_ByRefMut0(
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         remoteChannelData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
         objectUri: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -100,6 +75,33 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
             .invoke(
                 "CreateClientChannelSinkChain",
                 (url, remoteChannelData, objectUri),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateClientChannelSinkChain_Gc_ByRefMut1(
+        sender: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Channels::IChannelSender,
+        >,
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        channelDataArray: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
+        objectUri: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessageSink,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateClientChannelSinkChain",
+                (sender, url, channelDataArray, objectUri),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -116,11 +118,15 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
     }
     pub fn GetCurrentChannelInfo() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetCurrentChannelInfo", ())?;
         Ok(__cordl_ret.into())
@@ -141,7 +147,7 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
             .invoke("RegisterChannelConfig", (channel))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterChannel_IChannel0(
+    pub fn RegisterChannel_Gc0(
         chnl: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Channels::IChannel,
         >,

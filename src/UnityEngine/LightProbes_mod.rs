@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightProbes {
-    __cordl_parent: crate::UnityEngine::Object,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
 }
 #[cfg(feature = "UnityEngine+LightProbes")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+LightProbes")]
 impl std::ops::Deref for crate::UnityEngine::LightProbes {
-    type Target = crate::UnityEngine::Object;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ impl crate::UnityEngine::LightProbes {
             .invoke("AreLightProbesAllowed", (renderer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CalculateInterpolatedLightAndOcclusionProbes_Il2CppArray_Il2CppArray_Il2CppArray0(
+    pub fn CalculateInterpolatedLightAndOcclusionProbes_Gc_Gc_Gc0(
         positions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
@@ -43,6 +43,20 @@ impl crate::UnityEngine::LightProbes {
         occlusionProbes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
         >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CalculateInterpolatedLightAndOcclusionProbes",
+                (positions, lightProbes, occlusionProbes),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateInterpolatedLightAndOcclusionProbes_Gc_Gc_Gc1(
+        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        lightProbes: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Rendering::SphericalHarmonicsL2,
+        >,
+        occlusionProbes: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -69,26 +83,6 @@ impl crate::UnityEngine::LightProbes {
             .invoke(
                 "CalculateInterpolatedLightAndOcclusionProbes_Internal",
                 (positions, positionsCount, lightProbes, occlusionProbes),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CalculateInterpolatedLightAndOcclusionProbes_List_1_List_1_List_1_1(
-        positions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        lightProbes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::Rendering::SphericalHarmonicsL2,
-            >,
-        >,
-        occlusionProbes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CalculateInterpolatedLightAndOcclusionProbes",
-                (positions, lightProbes, occlusionProbes),
             )?;
         Ok(__cordl_ret.into())
     }

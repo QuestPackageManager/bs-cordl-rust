@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionResultsViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _failedBannerGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _clearedBannerGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _missionNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -29,14 +29,10 @@ pub struct MissionResultsViewController {
         crate::GlobalNamespace::SongPreviewPlayer,
     >,
     pub continueButtonPressedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::GlobalNamespace::MissionResultsViewController,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionResultsViewController>,
     >,
     pub retryButtonPressedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::GlobalNamespace::MissionResultsViewController,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionResultsViewController>,
     >,
     pub _missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     pub _missionCompletionResults: quest_hook::libil2cpp::Gc<
@@ -53,7 +49,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MissionResultsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionResultsViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -172,8 +168,8 @@ impl crate::GlobalNamespace::MissionResultsViewController {
     pub fn add_continueButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MissionResultsViewController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionResultsViewController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -187,8 +183,8 @@ impl crate::GlobalNamespace::MissionResultsViewController {
     pub fn add_retryButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MissionResultsViewController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionResultsViewController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -202,8 +198,8 @@ impl crate::GlobalNamespace::MissionResultsViewController {
     pub fn remove_continueButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MissionResultsViewController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionResultsViewController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -217,8 +213,8 @@ impl crate::GlobalNamespace::MissionResultsViewController {
     pub fn remove_retryButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MissionResultsViewController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionResultsViewController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

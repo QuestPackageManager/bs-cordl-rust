@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Compiler {
-    __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseProcessor>,
     pub restrictionErrorMsg: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -48,7 +48,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Compiler")]
 impl std::ops::Deref for crate::System::Xml::Schema::Compiler {
-    type Target = crate::System::Xml::Schema::BaseProcessor;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseProcessor>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -222,7 +222,7 @@ impl crate::System::Xml::Schema::Compiler {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckParticleDerivation_XmlSchemaComplexType0(
+    pub fn CheckParticleDerivation_Gc0(
         &mut self,
         complexType: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaComplexType,
@@ -235,7 +235,7 @@ impl crate::System::Xml::Schema::Compiler {
             .invoke("CheckParticleDerivation", (complexType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckParticleDerivation_XmlSchemaParticle_XmlSchemaParticle1(
+    pub fn CheckParticleDerivation_Gc1(
         &mut self,
         derivedParticle: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaParticle,
@@ -439,7 +439,9 @@ impl crate::System::Xml::Schema::Compiler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         >,
     > {
@@ -448,7 +450,9 @@ impl crate::System::Xml::Schema::Compiler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         > = __cordl_object.invoke("CompileBaseMemberTypes", (simpleType))?;
         Ok(__cordl_ret.into())
@@ -616,7 +620,7 @@ impl crate::System::Xml::Schema::Compiler {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompileParticleElements_XmlSchemaComplexType_XmlSchemaParticle0(
+    pub fn CompileParticleElements_Gc0(
         &mut self,
         complexType: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaComplexType,
@@ -632,7 +636,7 @@ impl crate::System::Xml::Schema::Compiler {
             .invoke("CompileParticleElements", (complexType, particle))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompileParticleElements_XmlSchemaParticle1(
+    pub fn CompileParticleElements_Gc1(
         &mut self,
         particle: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaParticle,
@@ -1027,7 +1031,7 @@ impl crate::System::Xml::Schema::Compiler {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsValidOccurrenceRangeRestriction_XmlSchemaParticle_XmlSchemaParticle0(
+    pub fn IsValidOccurrenceRangeRestriction_Gc_Gc0(
         &mut self,
         derivedParticle: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaParticle,

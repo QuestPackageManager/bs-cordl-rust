@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultEventSystem {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Input: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
     >,
@@ -42,7 +42,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DefaultEventSystem {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -186,7 +186,8 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
     pub fn SendFocusBasedEvent<TArg>(
         &mut self,
         evtFactory: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<TArg, *mut crate::UnityEngine::UIElements::EventBase>,
+            TArg,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         >,
         arg: TArg,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -228,12 +229,10 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         pointerId: i32,
         targetDisplay: crate::System::Nullable_1<i32>,
         evtFactory: quest_hook::libil2cpp::Gc<
-            crate::System::Func_4<
-                crate::UnityEngine::Vector3,
-                crate::UnityEngine::Vector3,
-                TArg,
-                *mut crate::UnityEngine::UIElements::EventBase,
-            >,
+            crate::UnityEngine::Vector3,
+            crate::UnityEngine::Vector3,
+            TArg,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         >,
         arg: TArg,
         deselectIfNoTarget: bool,
@@ -430,18 +429,18 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceC
 #[cfg(
     feature = "UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"
 )]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceContext {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(
     feature = "UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"
 )]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceContext {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
@@ -615,7 +614,7 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultEventSystem_Input {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+Input")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -625,7 +624,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+Input")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -790,18 +789,26 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+Input")]
-impl AsRef<crate::UnityEngine::UIElements::DefaultEventSystem_IInput>
-for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DefaultEventSystem_IInput>,
+> for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+Input")]
-impl AsMut<crate::UnityEngine::UIElements::DefaultEventSystem_IInput>
-for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DefaultEventSystem_IInput>,
+> for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -809,7 +816,7 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultEventSystem_NoInput {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -819,7 +826,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -984,18 +991,26 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]
-impl AsRef<crate::UnityEngine::UIElements::DefaultEventSystem_IInput>
-for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DefaultEventSystem_IInput>,
+> for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]
-impl AsMut<crate::UnityEngine::UIElements::DefaultEventSystem_IInput>
-for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DefaultEventSystem_IInput>,
+> for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

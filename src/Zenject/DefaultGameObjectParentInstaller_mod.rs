@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultGameObjectParentInstaller {
-    __cordl_parent: crate::Zenject::Installer_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Zenject::DefaultGameObjectParentInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::DefaultGameObjectParentInstaller>,
     >,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -15,9 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
 impl std::ops::Deref for crate::Zenject::DefaultGameObjectParentInstaller {
-    type Target = crate::Zenject::Installer_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Zenject::DefaultGameObjectParentInstaller,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::DefaultGameObjectParentInstaller>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -56,7 +56,9 @@ impl crate::Zenject::DefaultGameObjectParentInstaller {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -99,7 +101,7 @@ for crate::Zenject::DefaultGameObjectParentInstaller {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
@@ -111,7 +113,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
 impl std::ops::Deref
 for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -146,7 +148,9 @@ impl crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroy
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -186,16 +190,16 @@ for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroye
     }
 }
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

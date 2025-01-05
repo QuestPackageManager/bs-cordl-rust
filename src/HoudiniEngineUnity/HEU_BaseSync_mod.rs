@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_BaseSync {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _cookNodeID: i32,
     pub _sessionID: i64,
     pub _nodeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -10,17 +10,13 @@ pub struct HEU_BaseSync {
     pub _syncing: bool,
     pub _deleteParent: bool,
     pub _generatedOutputs: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::HEU_GeneratedOutput,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
     >,
     pub _outputCacheDirectory: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _outputCacheFilePaths: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _generateOptions: crate::HoudiniEngineUnity::HEU_GenerateOptions,
     pub _log: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -39,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_BaseSync")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_BaseSync {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,7 +64,9 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         geoID: i32,
         partId: i32,
-        go: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::GameObject>,
+        go: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,7 +117,9 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
             crate::HoudiniEngineUnity::HAPI_Transform,
         >,
         instancePrefixes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         instanceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         collisionSourceGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -187,9 +187,7 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
         &mut self,
         cookNodeId: i32,
         instancerBuffers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferInstancer>,
         >,
         loadData: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadData,
@@ -223,10 +221,8 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
             crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
         >,
         idBuffersMap: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                i32,
-                *mut crate::HoudiniEngineUnity::HEU_LoadBufferBase,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -260,10 +256,8 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
             crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
         >,
         idBuffersMap: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                i32,
-                *mut crate::HoudiniEngineUnity::HEU_LoadBufferBase,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferBase>,
         >,
         instanceRootTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -281,9 +275,7 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
         &mut self,
         cookNodeId: i32,
         meshBuffers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_LoadBufferMesh,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -310,9 +302,7 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
         &mut self,
         cookNodeId: i32,
         terrainBuffers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferVolume>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

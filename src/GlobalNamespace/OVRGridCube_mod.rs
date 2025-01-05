@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRGridCube {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub GridKey: crate::UnityEngine::KeyCode,
     pub CubeGrid: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub CubeGridOn: bool,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRGridCube")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRGridCube {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::OVRGridCube {
     pub fn SetOVRCameraController(
         &mut self,
         cameraController: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::GlobalNamespace::OVRCameraRig,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MACTripleDES {
-    __cordl_parent: crate::System::Security::Cryptography::KeyedHashAlgorithm,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::KeyedHashAlgorithm,
+    >,
     pub m_encryptor: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::ICryptoTransform,
     >,
@@ -22,7 +24,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+MACTripleDES")]
 impl std::ops::Deref for crate::System::Security::Cryptography::MACTripleDES {
-    type Target = crate::System::Security::Cryptography::KeyedHashAlgorithm;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::KeyedHashAlgorithm,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -5,15 +5,11 @@ pub struct RegexWriter {
     pub _emitted: crate::System::Collections::Generic::ValueListBuilder_1<i32>,
     pub _intStack: crate::System::Collections::Generic::ValueListBuilder_1<i32>,
     pub _stringHash: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        i32,
     >,
     pub _stringTable: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _trackCount: i32,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct V1TbsCertificateGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub version: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::DerTaggedObject,
     >,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+V1TbsCertificateGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,9 +69,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn SetEndDate_DerUtcTime1(
+    pub fn SetEndDate_Gc0(
         &mut self,
-        endDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerUtcTime>,
+        endDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -80,9 +80,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
             .invoke("SetEndDate", (endDate))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetEndDate_Time0(
+    pub fn SetEndDate_Gc1(
         &mut self,
-        endDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
+        endDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerUtcTime>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -128,9 +128,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
             .invoke("SetSignature", (signature))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetStartDate_DerUtcTime1(
+    pub fn SetStartDate_Gc0(
         &mut self,
-        startDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerUtcTime>,
+        startDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -139,9 +139,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator {
             .invoke("SetStartDate", (startDate))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetStartDate_Time0(
+    pub fn SetStartDate_Gc1(
         &mut self,
-        startDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
+        startDate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerUtcTime>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

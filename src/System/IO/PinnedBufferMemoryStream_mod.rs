@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PinnedBufferMemoryStream {
-    __cordl_parent: crate::System::IO::UnmanagedMemoryStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::UnmanagedMemoryStream>,
     pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _pinningHandle: crate::System::Runtime::InteropServices::GCHandle,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+PinnedBufferMemoryStream")]
 impl std::ops::Deref for crate::System::IO::PinnedBufferMemoryStream {
-    type Target = crate::System::IO::UnmanagedMemoryStream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::UnmanagedMemoryStream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

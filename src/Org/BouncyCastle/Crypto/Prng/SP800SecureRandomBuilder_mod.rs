@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SP800SecureRandomBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mRandom: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Security::SecureRandom,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -115,7 +115,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IEntropySourceProvider2(
+    pub fn New_Gc2(
         entropySourceProvider: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
         >,
@@ -126,7 +126,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
             .invoke_void(".ctor", (entropySourceProvider))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SecureRandom__cordl_bool1(
+    pub fn New_Gc__cordl_bool1(
         entropySource: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
@@ -198,7 +198,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IEntropySourceProvider2(
+    pub fn _ctor_Gc2(
         &mut self,
         entropySourceProvider: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
@@ -211,7 +211,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
             .invoke(".ctor", (entropySourceProvider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SecureRandom__cordl_bool1(
+    pub fn _ctor_Gc__cordl_bool1(
         &mut self,
         entropySource: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
@@ -240,7 +240,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SP800SecureRandomBuilder_CtrDrbgProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mBlockCipher: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::IBlockCipher,
     >,
@@ -260,7 +260,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -358,16 +358,26 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProv
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
-for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>,
+> for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
-for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>,
+> for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -377,7 +387,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProv
 #[repr(C)]
 #[derive(Debug)]
 pub struct SP800SecureRandomBuilder_HMacDrbgProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mHMac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     pub mNonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mPersonalizationString: quest_hook::libil2cpp::Gc<
@@ -398,7 +408,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -483,18 +493,28 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPro
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
 )]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
-for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>,
+> for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
 )]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
-for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>,
+> for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -504,7 +524,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPro
 #[repr(C)]
 #[derive(Debug)]
 pub struct SP800SecureRandomBuilder_HashDrbgProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mDigest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub mNonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mPersonalizationString: quest_hook::libil2cpp::Gc<
@@ -525,7 +545,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -610,18 +630,28 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgPro
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
 )]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
-for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>,
+> for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
 )]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
-for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>,
+> for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

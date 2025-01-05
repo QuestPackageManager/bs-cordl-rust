@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataSet {
-    __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::MarshalByValueComponent,
+    >,
     pub _defaultViewManager: quest_hook::libil2cpp::Gc<
         crate::System::Data::DataViewManager,
     >,
@@ -55,7 +57,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataSet")]
 impl std::ops::Deref for crate::System::Data::DataSet {
-    type Target = crate::System::ComponentModel::MarshalByValueComponent;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::MarshalByValueComponent,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -203,7 +207,9 @@ impl crate::System::Data::DataSet {
         baseTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         props: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::PropertyDescriptor,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
             >,
         >,
         propStart: i32,
@@ -274,7 +280,9 @@ impl crate::System::Data::DataSet {
         &mut self,
         xdoc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
         excludedNamespaces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         mode: crate::System::Data::XmlReadMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -302,7 +310,7 @@ impl crate::System::Data::DataSet {
         let __cordl_ret: bool = __cordl_object.invoke("IsEmpty", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Merge_DataSet0(
+    pub fn Merge_Gc0(
         &mut self,
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -326,7 +334,7 @@ impl crate::System::Data::DataSet {
             .invoke("Merge", (dataSet, preserveChanges, missingSchemaAction))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MoveToElement_XmlReader1(
+    pub fn MoveToElement_Gc1(
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -351,7 +359,7 @@ impl crate::System::Data::DataSet {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         dataSetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -360,7 +368,7 @@ impl crate::System::Data::DataSet {
             .invoke_void(".ctor", (dataSetName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext2(
+    pub fn New_Gc_StreamingContext2(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -372,7 +380,7 @@ impl crate::System::Data::DataSet {
             .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext__cordl_bool3(
+    pub fn New_Gc_StreamingContext__cordl_bool3(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -544,7 +552,7 @@ impl crate::System::Data::DataSet {
             .invoke("ReadXmlDiffgram", (reader))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadXmlSchema_XmlReader0(
+    pub fn ReadXmlSchema_Gc0(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -578,6 +586,17 @@ impl crate::System::Data::DataSet {
             .invoke("ReadXmlSerializable", (reader))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ReadXml_Gc0(
+        &mut self,
+        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::XmlReadMode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Data::XmlReadMode = __cordl_object
+            .invoke("ReadXml", (reader))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ReadXml_XmlReadMode2(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
@@ -601,17 +620,6 @@ impl crate::System::Data::DataSet {
         );
         let __cordl_ret: crate::System::Data::XmlReadMode = __cordl_object
             .invoke("ReadXml", (reader, mode, denyResolving))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ReadXml_XmlReader0(
-        &mut self,
-        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Data::XmlReadMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Data::XmlReadMode = __cordl_object
-            .invoke("ReadXml", (reader))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReadXml__cordl_bool1(
@@ -749,14 +757,18 @@ impl crate::System::Data::DataSet {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         > = __cordl_object.invoke("TopLevelTables", ())?;
         Ok(__cordl_ret.into())
     }
@@ -765,14 +777,18 @@ impl crate::System::Data::DataSet {
         forSchema: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         > = __cordl_object.invoke("TopLevelTables", (forSchema))?;
         Ok(__cordl_ret.into())
     }
@@ -807,10 +823,8 @@ impl crate::System::Data::DataSet {
         writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
         schemaFormat: crate::System::Data::SchemaFormat,
         multipleTargetConverter: quest_hook::libil2cpp::Gc<
-            crate::System::Converter_2<
-                *mut crate::System::Type,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -830,7 +844,7 @@ impl crate::System::Data::DataSet {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         dataSetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -841,7 +855,7 @@ impl crate::System::Data::DataSet {
             .invoke(".ctor", (dataSetName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext2(
+    pub fn _ctor_Gc_StreamingContext2(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -855,7 +869,7 @@ impl crate::System::Data::DataSet {
             .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext__cordl_bool3(
+    pub fn _ctor_Gc_StreamingContext__cordl_bool3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -1127,30 +1141,50 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataSet {
     }
 }
 #[cfg(feature = "System+Data+DataSet")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Data::DataSet {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Data::DataSet {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+DataSet")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Data::DataSet {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Data::DataSet {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+DataSet")]
-impl AsRef<crate::System::Xml::Serialization::IXmlSerializable>
-for crate::System::Data::DataSet {
-    fn as_ref(&self) -> &crate::System::Xml::Serialization::IXmlSerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::IXmlSerializable>,
+> for crate::System::Data::DataSet {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::IXmlSerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+DataSet")]
-impl AsMut<crate::System::Xml::Serialization::IXmlSerializable>
-for crate::System::Data::DataSet {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::Serialization::IXmlSerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::IXmlSerializable>,
+> for crate::System::Data::DataSet {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::IXmlSerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

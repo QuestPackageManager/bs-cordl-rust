@@ -2,25 +2,25 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ElementUnderPointer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_PendingTopElementUnderPointer: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::VisualElement,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     >,
     pub m_TopElementUnderPointer: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::VisualElement,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     >,
     pub m_TriggerPointerEvent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::IPointerEvent,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
         >,
     >,
     pub m_TriggerMouseEvent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::IMouseEvent,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMouseEvent>,
         >,
     >,
     pub m_PickingPointerPositions: quest_hook::libil2cpp::Gc<
@@ -37,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ElementUnderPointer")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ElementUnderPointer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -118,7 +118,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn SetElementUnderPointer_EventBase1(
+    pub fn SetElementUnderPointer_Gc1(
         &mut self,
         newElementUnderPointer: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
@@ -138,7 +138,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetElementUnderPointer_EventBase__cordl_bool2(
+    pub fn SetElementUnderPointer_Gc__cordl_bool2(
         &mut self,
         newElementUnderPointer: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GradientImage {
-    __cordl_parent: crate::UnityEngine::UI::Image,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub _color0: crate::UnityEngine::Color,
     pub _color1: crate::UnityEngine::Color,
     pub _curvedCanvasSettingsHelper: quest_hook::libil2cpp::Gc<
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+GradientImage")]
 impl std::ops::Deref for crate::HMUI::GradientImage {
-    type Target = crate::UnityEngine::UI::Image;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::HMUI::GradientImage {
 }
 #[cfg(feature = "HMUI+GradientImage")]
 impl crate::HMUI::GradientImage {
-    pub fn AddQuad_Il2CppArray_Color32_Il2CppArray0(
+    pub fn AddQuad_Gc_Color32_Gc0(
         vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
         quadPositions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
@@ -171,7 +171,7 @@ impl crate::HMUI::GradientImage {
             .invoke("OnPopulateMesh", (toFill))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RadialCut_Il2CppArray0(
+    pub fn RadialCut_Gc0(
         xy: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,

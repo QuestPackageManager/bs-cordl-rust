@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KdfCounterParameters {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub fixedInputDataCounterPrefix: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfCounterParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::KdfCounterParameters {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::KdfCounterParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfCounterParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::KdfCounterParameters {
-    pub fn New_Il2CppArray_i32_1(
+    pub fn New_Gc_i32_1(
         ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         fixedInputDataCounterPrefix: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -67,7 +67,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::KdfCounterParameters {
             .invoke_void(".ctor", (ki, fixedInputDataCounterSuffix, r))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppArray_i32_1(
+    pub fn _ctor_Gc_i32_1(
         &mut self,
         ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         fixedInputDataCounterPrefix: quest_hook::libil2cpp::Gc<
@@ -174,18 +174,26 @@ for crate::Org::BouncyCastle::Crypto::Parameters::KdfCounterParameters {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfCounterParameters")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IDerivationParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::KdfCounterParameters {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDerivationParameters {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::KdfCounterParameters {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfCounterParameters")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IDerivationParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::KdfCounterParameters {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::KdfCounterParameters {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crypto::IDerivationParameters {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

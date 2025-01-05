@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifiersConfiguration {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "GameplayModifiersConfiguration")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameplayModifiersConfiguration")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersConfiguration {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifiersConfiguration_CutAngleTolerance {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -56,7 +56,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,7 +87,7 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifiersConfiguration_NoteUniformScale {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "GameplayModifiersConfiguration+NoteUniformScale")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -98,7 +98,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "GameplayModifiersConfiguration+NoteUniformScale")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -129,7 +129,7 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifiersConfiguration_SongSpeed {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "GameplayModifiersConfiguration+SongSpeed")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -140,7 +140,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "GameplayModifiersConfiguration+SongSpeed")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

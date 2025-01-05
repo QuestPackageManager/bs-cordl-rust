@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PbeParametersGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mPassword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mSalt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mIterationCount: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+PbeParametersGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::PbeParametersGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,7 +42,7 @@ impl crate::Org::BouncyCastle::Crypto::PbeParametersGenerator {
         > = __cordl_object.invoke("GenerateDerivedMacParameters", (keySize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateDerivedParameters_Il2CppString_i32_1(
+    pub fn GenerateDerivedParameters_Gc_i32_1(
         &mut self,
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keySize: i32,
@@ -57,7 +57,7 @@ impl crate::Org::BouncyCastle::Crypto::PbeParametersGenerator {
         > = __cordl_object.invoke("GenerateDerivedParameters", (algorithm, keySize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateDerivedParameters_Il2CppString_i32_i32_3(
+    pub fn GenerateDerivedParameters_Gc_i32_i32_3(
         &mut self,
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keySize: i32,
@@ -149,7 +149,7 @@ impl crate::Org::BouncyCastle::Crypto::PbeParametersGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Pkcs12PasswordToBytes_Il2CppArray0(
+    pub fn Pkcs12PasswordToBytes_Gc0(
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -172,7 +172,7 @@ impl crate::Org::BouncyCastle::Crypto::PbeParametersGenerator {
             .invoke("Pkcs12PasswordToBytes", (password, wrongPkcs12Zero))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Pkcs5PasswordToBytes_Il2CppArray0(
+    pub fn Pkcs5PasswordToBytes_Gc0(
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -183,7 +183,7 @@ impl crate::Org::BouncyCastle::Crypto::PbeParametersGenerator {
             .invoke("Pkcs5PasswordToBytes", (password))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Pkcs5PasswordToBytes_Il2CppString1(
+    pub fn Pkcs5PasswordToBytes_Gc1(
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -194,7 +194,7 @@ impl crate::Org::BouncyCastle::Crypto::PbeParametersGenerator {
             .invoke("Pkcs5PasswordToBytes", (password))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Pkcs5PasswordToUtf8Bytes_Il2CppArray0(
+    pub fn Pkcs5PasswordToUtf8Bytes_Gc0(
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -205,7 +205,7 @@ impl crate::Org::BouncyCastle::Crypto::PbeParametersGenerator {
             .invoke("Pkcs5PasswordToUtf8Bytes", (password))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Pkcs5PasswordToUtf8Bytes_Il2CppString1(
+    pub fn Pkcs5PasswordToUtf8Bytes_Gc1(
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

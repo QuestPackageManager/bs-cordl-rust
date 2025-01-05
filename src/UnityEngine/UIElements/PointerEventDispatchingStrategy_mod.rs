@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerEventDispatchingStrategy {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerEventDispatchingStrategy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+PointerEventDispatchingStrategy")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::PointerEventDispatchingStrategy {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +76,7 @@ impl crate::UnityEngine::UIElements::PointerEventDispatchingStrategy {
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         elementUnderPointer: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::VisualElement,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -105,18 +105,26 @@ for crate::UnityEngine::UIElements::PointerEventDispatchingStrategy {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerEventDispatchingStrategy")]
-impl AsRef<crate::UnityEngine::UIElements::IEventDispatchingStrategy>
-for crate::UnityEngine::UIElements::PointerEventDispatchingStrategy {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IEventDispatchingStrategy {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventDispatchingStrategy>,
+> for crate::UnityEngine::UIElements::PointerEventDispatchingStrategy {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerEventDispatchingStrategy")]
-impl AsMut<crate::UnityEngine::UIElements::IEventDispatchingStrategy>
-for crate::UnityEngine::UIElements::PointerEventDispatchingStrategy {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventDispatchingStrategy>,
+> for crate::UnityEngine::UIElements::PointerEventDispatchingStrategy {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::IEventDispatchingStrategy {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

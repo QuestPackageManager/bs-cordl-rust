@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThrowStub {
-    __cordl_parent: crate::System::ObjectDisposedException,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::ObjectDisposedException>,
 }
 #[cfg(feature = "Unity+ThrowStub")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+ThrowStub")]
 impl std::ops::Deref for crate::Unity::ThrowStub {
-    type Target = crate::System::ObjectDisposedException;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::ObjectDisposedException>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

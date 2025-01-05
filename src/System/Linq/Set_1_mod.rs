@@ -2,16 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Set_1<TElement: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub buckets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub slots: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::System::Linq::Set_1_Slot<TElement>>,
     >,
     pub count: i32,
     pub freeList: i32,
-    pub comparer: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEqualityComparer_1<TElement>,
-    >,
+    pub comparer: quest_hook::libil2cpp::Gc<TElement>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
 #[cfg(feature = "System+Linq+Set_1")]
@@ -22,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Set_1")]
 impl<TElement: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Set_1<TElement> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,9 +77,7 @@ impl<TElement: quest_hook::libil2cpp::Type> crate::System::Linq::Set_1<TElement>
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEqualityComparer_1<TElement>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<TElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -120,9 +116,7 @@ impl<TElement: quest_hook::libil2cpp::Type> crate::System::Linq::Set_1<TElement>
     }
     pub fn _ctor(
         &mut self,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEqualityComparer_1<TElement>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<TElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

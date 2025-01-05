@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FxEventBoxGroup {
-    __cordl_parent: crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
-        *mut crate::BeatmapSaveDataVersion3::FxEventBox,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBox>,
     >,
     pub t: crate::BeatmapSaveDataVersion3::FxEventType,
 }
@@ -14,8 +14,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion3+FxEventBoxGroup")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
-    type Target = crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
-        *mut crate::BeatmapSaveDataVersion3::FxEventBox,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBox>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -34,9 +34,7 @@ impl crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
         groupId: i32,
         _cordl_type: crate::BeatmapSaveDataVersion3::FxEventType,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::BeatmapSaveDataVersion3::FxEventBox,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBox>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -51,9 +49,7 @@ impl crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
         groupId: i32,
         _cordl_type: crate::BeatmapSaveDataVersion3::FxEventType,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::BeatmapSaveDataVersion3::FxEventBox,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBox>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

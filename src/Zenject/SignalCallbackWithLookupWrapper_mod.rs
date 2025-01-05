@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalCallbackWithLookupWrapper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
     pub _lookupId: crate::System::Guid,
     pub _methodGetter: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     >,
     pub _objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SignalCallbackWithLookupWrapper")]
 impl std::ops::Deref for crate::Zenject::SignalCallbackWithLookupWrapper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,9 +51,9 @@ impl crate::Zenject::SignalCallbackWithLookupWrapper {
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         lookupId: crate::System::Guid,
         methodGetter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-                *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
         signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
@@ -88,7 +88,9 @@ impl crate::Zenject::SignalCallbackWithLookupWrapper {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -111,9 +113,9 @@ impl crate::Zenject::SignalCallbackWithLookupWrapper {
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         lookupId: crate::System::Guid,
         methodGetter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-                *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
         signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
@@ -148,16 +150,16 @@ for crate::Zenject::SignalCallbackWithLookupWrapper {
     }
 }
 #[cfg(feature = "Zenject+SignalCallbackWithLookupWrapper")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::Zenject::SignalCallbackWithLookupWrapper {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+SignalCallbackWithLookupWrapper")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::Zenject::SignalCallbackWithLookupWrapper {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

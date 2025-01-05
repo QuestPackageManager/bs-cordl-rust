@@ -6,11 +6,15 @@ pub struct InstructionArray {
     pub MaxContinuationDepth: i32,
     pub Instructions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::Instruction,
+            >,
         >,
     >,
     pub Objects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub Labels: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -18,11 +22,9 @@ pub struct InstructionArray {
         >,
     >,
     pub DebugCookies: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                i32,
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+        crate::System::Collections::Generic::KeyValuePair_2<
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     >,
 }
@@ -53,11 +55,15 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
         maxContinuationDepth: i32,
         instructions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::Instruction,
+                >,
             >,
         >,
         objects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         labels: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -65,11 +71,9 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
             >,
         >,
         debugCookies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    i32,
-                    *mut quest_hook::libil2cpp::Il2CppObject,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                i32,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -92,7 +96,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstructionArray_DebugView {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _array: crate::System::Linq::Expressions::Interpreter::InstructionArray,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray+DebugView")]
@@ -104,7 +108,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray+DebugView")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

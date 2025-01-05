@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ByRefParameterExpression {
-    __cordl_parent: crate::System::Linq::Expressions::TypedParameterExpression,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::TypedParameterExpression,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+ByRefParameterExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+ByRefParameterExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::ByRefParameterExpression {
-    type Target = crate::System::Linq::Expressions::TypedParameterExpression;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::TypedParameterExpression,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

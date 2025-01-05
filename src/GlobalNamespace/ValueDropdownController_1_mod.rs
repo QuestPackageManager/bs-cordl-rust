@@ -2,14 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValueDropdownController_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
-    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<i32, T>,
-    >,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<i32, T>,
     pub _namedValues: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<T, *mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
+            T,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -22,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ValueDropdownController_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::ValueDropdownController_1<T> {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,8 +52,9 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Tuple_2<T, *mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     >
@@ -66,8 +66,9 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Tuple_2<T, *mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = __cordl_object.invoke("GetNamedValues", ())?;
         Ok(__cordl_ret.into())
@@ -170,7 +171,7 @@ impl<
     }
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, T>>,
+        value: quest_hook::libil2cpp::Gc<i32, T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -203,8 +204,9 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Tuple_2<T, *mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     >
@@ -216,15 +218,16 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Tuple_2<T, *mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = __cordl_object.invoke("get_namedValues", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, T>>,
+        value: quest_hook::libil2cpp::Gc<i32, T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

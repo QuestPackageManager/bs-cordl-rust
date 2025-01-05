@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_GeoNode {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub _geoInfo: crate::HoudiniEngineUnity::HAPI_GeoInfo,
     pub _geoName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _parts: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::HEU_PartData,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
     >,
     pub _containerObjectNode: quest_hook::libil2cpp::Gc<
         crate::HoudiniEngineUnity::HEU_ObjectNode,
@@ -19,9 +17,7 @@ pub struct HEU_GeoNode {
         crate::HoudiniEngineUnity::HEU_VolumeCache,
     >,
     pub _volumeCaches: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCache>,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
@@ -31,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GeoNode {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -181,9 +177,7 @@ impl crate::HoudiniEngineUnity::HEU_GeoNode {
     pub fn GetClonableParts(
         &mut self,
         clonableParts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_PartData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -196,9 +190,7 @@ impl crate::HoudiniEngineUnity::HEU_GeoNode {
     pub fn GetCurves(
         &mut self,
         curves: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_Curve,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
         >,
         bEditableOnly: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -237,9 +229,7 @@ impl crate::HoudiniEngineUnity::HEU_GeoNode {
     pub fn GetOutput(
         &mut self,
         outputs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_GeneratedOutput,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -252,9 +242,7 @@ impl crate::HoudiniEngineUnity::HEU_GeoNode {
     pub fn GetOutputGameObjects(
         &mut self,
         outputObjects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::GameObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -282,32 +270,24 @@ impl crate::HoudiniEngineUnity::HEU_GeoNode {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_PartData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_PartData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
         > = __cordl_object.invoke("GetParts", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetPartsByOutputType(
         &mut self,
         meshParts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_PartData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
         >,
         volumeParts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_PartData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -477,7 +457,7 @@ impl crate::HoudiniEngineUnity::HEU_GeoNode {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
         partData: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::HoudiniEngineUnity::HEU_PartData,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -502,9 +482,7 @@ impl crate::HoudiniEngineUnity::HEU_GeoNode {
         &mut self,
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         volumeParts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_PartData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
         >,
         bRebuild: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -691,18 +669,14 @@ impl crate::HoudiniEngineUnity::HEU_GeoNode {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCache>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCache>,
         > = __cordl_object.invoke("get_VolumeCaches", ())?;
         Ok(__cordl_ret.into())
     }
@@ -717,40 +691,50 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_GeoNod
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
+for crate::HoudiniEngineUnity::HEU_GeoNode {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
+for crate::HoudiniEngineUnity::HEU_GeoNode {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ISerializationCallbackReceiver,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<*mut crate::HoudiniEngineUnity::HEU_GeoNode>,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoNode>,
+    >,
 > for crate::HoudiniEngineUnity::HEU_GeoNode {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_GeoNode,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoNode>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<*mut crate::HoudiniEngineUnity::HEU_GeoNode>,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoNode>,
+    >,
 > for crate::HoudiniEngineUnity::HEU_GeoNode {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_GeoNode,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoNode>,
     > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
-impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
-for crate::HoudiniEngineUnity::HEU_GeoNode {
-    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]
-impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
-for crate::HoudiniEngineUnity::HEU_GeoNode {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }

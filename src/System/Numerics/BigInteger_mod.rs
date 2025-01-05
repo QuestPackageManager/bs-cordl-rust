@@ -45,7 +45,7 @@ impl crate::System::Numerics::BigInteger {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareTo_Il2CppObject2(
+    pub fn CompareTo_Gc2(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -75,7 +75,7 @@ impl crate::System::Numerics::BigInteger {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -114,7 +114,7 @@ impl crate::System::Numerics::BigInteger {
     pub fn GetPartsForBitManipulation(
         x: quest_hook::libil2cpp::ByRefMut<crate::System::Numerics::BigInteger>,
         xd: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         >,
         xl: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -122,7 +122,7 @@ impl crate::System::Numerics::BigInteger {
             .invoke("GetPartsForBitManipulation", (x, xd, xl))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_IFormatProvider0(
+    pub fn Parse_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
@@ -130,7 +130,7 @@ impl crate::System::Numerics::BigInteger {
             .invoke("Parse", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_NumberStyles_IFormatProvider1(
+    pub fn Parse_NumberStyles_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         style: crate::System::Globalization::NumberStyles,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -185,7 +185,7 @@ impl crate::System::Numerics::BigInteger {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_IFormatProvider1(
+    pub fn ToString_Gc1(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<
@@ -196,7 +196,7 @@ impl crate::System::Numerics::BigInteger {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider2(
+    pub fn ToString_Gc_Gc2(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -270,7 +270,7 @@ impl crate::System::Numerics::BigInteger {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray7(
+    pub fn _ctor_Gc7(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -281,7 +281,7 @@ impl crate::System::Numerics::BigInteger {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray__cordl_bool10(
+    pub fn _ctor_Gc__cordl_bool10(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         negative: bool,
@@ -339,7 +339,7 @@ impl crate::System::Numerics::BigInteger {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Il2CppArray9(
+    pub fn _ctor_i32_Gc9(
         &mut self,
         n: i32,
         rgu: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -668,62 +668,62 @@ impl crate::System::Numerics::BigInteger {
     }
 }
 #[cfg(feature = "System+Numerics+BigInteger")]
-impl AsRef<crate::System::IComparable> for crate::System::Numerics::BigInteger {
-    fn as_ref(&self) -> &crate::System::IComparable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Numerics+BigInteger")]
-impl AsMut<crate::System::IComparable> for crate::System::Numerics::BigInteger {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Numerics+BigInteger")]
-impl AsRef<crate::System::IComparable_1<crate::System::Numerics::BigInteger>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::Numerics::BigInteger {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IComparable_1<crate::System::Numerics::BigInteger> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Numerics+BigInteger")]
-impl AsMut<crate::System::IComparable_1<crate::System::Numerics::BigInteger>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::Numerics::BigInteger {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IComparable_1<crate::System::Numerics::BigInteger> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Numerics+BigInteger")]
-impl AsRef<crate::System::IEquatable_1<crate::System::Numerics::BigInteger>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
 for crate::System::Numerics::BigInteger {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::System::Numerics::BigInteger> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Numerics+BigInteger")]
-impl AsMut<crate::System::IEquatable_1<crate::System::Numerics::BigInteger>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::System::Numerics::BigInteger {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Numerics+BigInteger")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Numerics::BigInteger>>
+for crate::System::Numerics::BigInteger {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Numerics::BigInteger> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Numerics+BigInteger")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Numerics::BigInteger>>
 for crate::System::Numerics::BigInteger {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::System::Numerics::BigInteger> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Numerics::BigInteger> {
         todo!()
     }
 }
 #[cfg(feature = "System+Numerics+BigInteger")]
-impl AsRef<crate::System::IFormattable> for crate::System::Numerics::BigInteger {
-    fn as_ref(&self) -> &crate::System::IFormattable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Numerics::BigInteger>>
+for crate::System::Numerics::BigInteger {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Numerics::BigInteger> {
         todo!()
     }
 }
 #[cfg(feature = "System+Numerics+BigInteger")]
-impl AsMut<crate::System::IFormattable> for crate::System::Numerics::BigInteger {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Numerics::BigInteger>>
+for crate::System::Numerics::BigInteger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Numerics::BigInteger> {
         todo!()
     }
 }

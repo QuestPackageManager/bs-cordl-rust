@@ -4,10 +4,8 @@
 pub struct ContinuationTaskFromResultTask_1<
     TAntecedentResult: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Threading::Tasks::Task,
-    pub m_antecedent: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    pub m_antecedent: quest_hook::libil2cpp::Gc<TAntecedentResult>,
     __cordl_phantom_TAntecedentResult: std::marker::PhantomData<TAntecedentResult>,
 }
 #[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
@@ -21,7 +19,7 @@ impl<TAntecedentResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::ContinuationTaskFromResultTask_1<
     TAntecedentResult,
 > {
-    type Target = crate::System::Threading::Tasks::Task;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,9 +52,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        antecedent: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
-        >,
+        antecedent: quest_hook::libil2cpp::Gc<TAntecedentResult>,
         action: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
@@ -77,9 +73,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        antecedent: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
-        >,
+        antecedent: quest_hook::libil2cpp::Gc<TAntecedentResult>,
         action: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,

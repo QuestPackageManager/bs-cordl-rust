@@ -2,17 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeSocketHandle {
-    __cordl_parent: crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid,
+    >,
     pub blocking_threads: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::System::Threading::Thread,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     >,
     pub threads_stacktraces: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Threading::Thread,
-            *mut crate::System::Diagnostics::StackTrace,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+        quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackTrace>,
     >,
     pub in_cleanup: bool,
 }
@@ -23,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Sockets+SafeSocketHandle")]
 impl std::ops::Deref for crate::System::Net::Sockets::SafeSocketHandle {
-    type Target = crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

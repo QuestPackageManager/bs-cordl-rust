@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContractAnnotationAttribute {
-    __cordl_parent: crate::System::Attribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     pub _Contract_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "JetBrains+Annotations+ContractAnnotationAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::ContractAnnotationAttribute {
-    type Target = crate::System::Attribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::JetBrains::Annotations::ContractAnnotationAtt
 }
 #[cfg(feature = "JetBrains+Annotations+ContractAnnotationAttribute")]
 impl crate::JetBrains::Annotations::ContractAnnotationAttribute {
-    pub fn New_Il2CppString0(
+    pub fn New_Gc0(
         contract: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -48,7 +48,7 @@ impl crate::JetBrains::Annotations::ContractAnnotationAttribute {
             .invoke_void(".ctor", (contract, forceFullStates))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppString0(
+    pub fn _ctor_Gc0(
         &mut self,
         contract: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

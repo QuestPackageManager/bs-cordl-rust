@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Character {
-    __cordl_parent: crate::TMPro::TMP_TextElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextElement>,
 }
 #[cfg(feature = "TMPro+TMP_Character")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_Character")]
 impl std::ops::Deref for crate::TMPro::TMP_Character {
-    type Target = crate::TMPro::TMP_TextElement;
+    type Target = quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextElement>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl crate::TMPro::TMP_Character {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_u32_Glyph1(
+    pub fn New_u32_Gc1(
         unicode: u32,
         glyph: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -40,7 +40,7 @@ impl crate::TMPro::TMP_Character {
             .invoke_void(".ctor", (unicode, glyph))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_u32_TMP_FontAsset_Glyph2(
+    pub fn New_u32_Gc_Gc2(
         unicode: u32,
         fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         glyph: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
@@ -71,7 +71,7 @@ impl crate::TMPro::TMP_Character {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_u32_Glyph1(
+    pub fn _ctor_u32_Gc1(
         &mut self,
         unicode: u32,
         glyph: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
@@ -83,7 +83,7 @@ impl crate::TMPro::TMP_Character {
             .invoke(".ctor", (unicode, glyph))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_u32_TMP_FontAsset_Glyph2(
+    pub fn _ctor_u32_Gc_Gc2(
         &mut self,
         unicode: u32,
         fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,

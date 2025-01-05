@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteMovement {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _waiting: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteWaiting>,
     pub _floorMovement: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NoteFloorMovement,
@@ -18,7 +18,7 @@ pub struct NoteMovement {
     pub noteDidPassMissedMarkerEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub noteDidPassHalfJumpEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub noteDidPassJumpThreeQuartersEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::NoteMovement>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
     >,
     pub noteDidMoveInJumpPhaseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _position: crate::UnityEngine::Vector3,
@@ -34,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteMovement")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteMovement {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -222,7 +222,7 @@ impl crate::GlobalNamespace::NoteMovement {
     pub fn add_noteDidPassJumpThreeQuartersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::NoteMovement>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -405,7 +405,7 @@ impl crate::GlobalNamespace::NoteMovement {
     pub fn remove_noteDidPassJumpThreeQuartersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::NoteMovement>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

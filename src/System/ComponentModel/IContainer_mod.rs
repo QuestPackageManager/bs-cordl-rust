@@ -64,14 +64,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::IConta
     }
 }
 #[cfg(feature = "System+ComponentModel+IContainer")]
-impl AsRef<crate::System::IDisposable> for crate::System::ComponentModel::IContainer {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::ComponentModel::IContainer {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+IContainer")]
-impl AsMut<crate::System::IDisposable> for crate::System::ComponentModel::IContainer {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::ComponentModel::IContainer {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

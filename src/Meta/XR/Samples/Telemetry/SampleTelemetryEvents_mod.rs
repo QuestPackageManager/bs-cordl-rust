@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SampleTelemetryEvents {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
 impl std::ops::Deref for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SampleTelemetryEvents_AnnotationTypes {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+AnnotationTypes")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -55,7 +55,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+AnnotationTypes")]
 impl std::ops::Deref
 for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_AnnotationTypes {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,7 +90,7 @@ for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_AnnotationTypes {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SampleTelemetryEvents_EventTypes {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+EventTypes")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -101,7 +101,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+EventTypes")]
 impl std::ops::Deref
 for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_EventTypes {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

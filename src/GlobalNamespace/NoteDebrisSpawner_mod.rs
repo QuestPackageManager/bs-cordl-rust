@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteDebrisSpawner {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _rotation: f32,
     pub _cutDirMultiplier: f32,
     pub _fromCenterSpeed: f32,
@@ -21,16 +21,12 @@ pub struct NoteDebrisSpawner {
         crate::GlobalNamespace::DeterminismConfig,
     >,
     pub _poolForNoteGameplayType: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::GlobalNamespace::NoteData_GameplayType,
-            *mut crate::GlobalNamespace::NoteDebris_Pool,
-        >,
+        crate::GlobalNamespace::NoteData_GameplayType,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris_Pool>,
     >,
     pub _poolForNoteDebris: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::GlobalNamespace::NoteDebris,
-            *mut crate::GlobalNamespace::NoteDebris_Pool,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris_Pool>,
     >,
 }
 #[cfg(feature = "NoteDebrisSpawner")]
@@ -40,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteDebrisSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteDebrisSpawner {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -125,9 +121,11 @@ impl crate::GlobalNamespace::NoteDebrisSpawner {
         &mut self,
         noteGameplayType: crate::GlobalNamespace::NoteData_GameplayType,
         debris0: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::GlobalNamespace::NoteDebris,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
         >,
-        debris1: quest_hook::libil2cpp::ByRefMut<*mut crate::GlobalNamespace::NoteDebris>,
+        debris1: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -167,16 +165,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteDebrisSpa
     }
 }
 #[cfg(feature = "NoteDebrisSpawner")]
-impl AsRef<crate::GlobalNamespace::INoteDebrisDidFinishEvent>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteDebrisDidFinishEvent>>
 for crate::GlobalNamespace::NoteDebrisSpawner {
-    fn as_ref(&self) -> &crate::GlobalNamespace::INoteDebrisDidFinishEvent {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteDebrisDidFinishEvent> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NoteDebrisSpawner")]
-impl AsMut<crate::GlobalNamespace::INoteDebrisDidFinishEvent>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteDebrisDidFinishEvent>>
 for crate::GlobalNamespace::NoteDebrisSpawner {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteDebrisDidFinishEvent {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INoteDebrisDidFinishEvent,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

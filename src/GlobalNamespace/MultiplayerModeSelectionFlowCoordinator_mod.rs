@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerModeSelectionFlowCoordinator {
-    __cordl_parent: crate::HMUI::FlowCoordinator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     pub _ambienceAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub _songPackMasksModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SongPackMasksModel,
@@ -71,8 +71,8 @@ pub struct MultiplayerModeSelectionFlowCoordinator {
         crate::GlobalNamespace::XPlatformAuthFeatureFlag,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
         >,
     >,
     pub _joiningLobbyCancellationTokenSource: quest_hook::libil2cpp::Gc<
@@ -81,12 +81,8 @@ pub struct MultiplayerModeSelectionFlowCoordinator {
     pub _modeSelectionCancellationTokenSource: quest_hook::libil2cpp::Gc<
         crate::System::Threading::CancellationTokenSource,
     >,
-    pub _transitionFinishedTaskSource: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
-    >,
-    pub _checkingAvailabilityTaskSource: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
-    >,
+    pub _transitionFinishedTaskSource: quest_hook::libil2cpp::Gc<bool>,
+    pub _checkingAvailabilityTaskSource: quest_hook::libil2cpp::Gc<bool>,
     pub _quickPlaySetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::QuickPlaySetupData,
     >,
@@ -103,7 +99,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerModeSelectionFlowCoordinator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
-    type Target = crate::HMUI::FlowCoordinator;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -484,8 +480,8 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -499,8 +495,8 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

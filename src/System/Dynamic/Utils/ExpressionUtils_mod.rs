@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionUtils {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Dynamic+Utils+ExpressionUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+Utils+ExpressionUtils")]
 impl std::ops::Deref for crate::System::Dynamic::Utils::ExpressionUtils {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,19 +30,19 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetParametersForValidation", (method, nodeKind))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RequiresCanRead_Expression_Il2CppString0(
+    pub fn RequiresCanRead_Gc_Gc0(
         expression: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Expression,
         >,
@@ -75,31 +75,19 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn ReturnReadOnly<T>(
-        collection: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        >,
-    >
+        collection: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReturnReadOnly", (collection))?;
         Ok(__cordl_ret.into())
     }
     pub fn SameElements<T>(
-        replacement: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
-        current: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
+        replacement: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
+        current: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -110,12 +98,8 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn SameElementsInCollection<T>(
-        replacement: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<T>,
-        >,
-        current: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
+        replacement: quest_hook::libil2cpp::Gc<T>,
+        current: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -128,14 +112,28 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
     pub fn TryQuote(
         parameterType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         argument: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Linq::Expressions::Expression,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryQuote", (parameterType, argument))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ValidateArgumentCount_LambdaExpression1(
+    pub fn ValidateArgumentCount_ExpressionType_i32_Gc0(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        nodeKind: crate::System::Linq::Expressions::ExpressionType,
+        count: i32,
+        pis: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateArgumentCount", (method, nodeKind, count, pis))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateArgumentCount_Gc1(
         lambda: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::LambdaExpression,
         >,
@@ -144,26 +142,12 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
             .invoke("ValidateArgumentCount", (lambda))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ValidateArgumentCount_MethodBase_ExpressionType_i32_Il2CppArray0(
-        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
-        nodeKind: crate::System::Linq::Expressions::ExpressionType,
-        count: i32,
-        pis: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ValidateArgumentCount", (method, nodeKind, count, pis))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn ValidateArgumentTypes(
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
         nodeKind: crate::System::Linq::Expressions::ExpressionType,
         arguments: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                *mut crate::System::Linq::Expressions::Expression,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
         methodParamName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

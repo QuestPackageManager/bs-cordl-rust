@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RequiredArgument_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::GlobalNamespace::ArgumentBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
     pub _value: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "RequiredArgument_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::RequiredArgument_1<T> {
-    type Target = crate::GlobalNamespace::ArgumentBase;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -75,7 +75,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RequiredArgument_1<
         &mut self,
         inValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         outError: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -128,9 +128,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RequiredArgument_1<
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
-        requiredArgument: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::RequiredArgument_1<T>,
-        >,
+        requiredArgument: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

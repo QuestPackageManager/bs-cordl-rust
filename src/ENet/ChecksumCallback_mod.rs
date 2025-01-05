@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChecksumCallback {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "ENet+ChecksumCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ENet+ChecksumCallback")]
 impl std::ops::Deref for crate::ENet::ChecksumCallback {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

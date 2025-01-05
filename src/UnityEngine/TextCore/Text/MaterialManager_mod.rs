@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+MaterialManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+MaterialManager")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::MaterialManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,17 @@ impl crate::UnityEngine::TextCore::Text::MaterialManager {
             .invoke("CopyMaterialPresetProperties", (source, destination))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetFallbackMaterial_FontAsset_i32_1(
+    pub fn GetFallbackMaterial_Gc_Gc0(
+        sourceMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        targetMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFallbackMaterial", (sourceMaterial, targetMaterial))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFallbackMaterial_i32_1(
         fontAsset: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::FontAsset,
         >,
@@ -43,16 +53,6 @@ impl crate::UnityEngine::TextCore::Text::MaterialManager {
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetFallbackMaterial", (fontAsset, sourceMaterial, atlasIndex))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetFallbackMaterial_Material0(
-        sourceMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-        targetMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFallbackMaterial", (sourceMaterial, targetMaterial))?;
         Ok(__cordl_ret.into())
     }
 }

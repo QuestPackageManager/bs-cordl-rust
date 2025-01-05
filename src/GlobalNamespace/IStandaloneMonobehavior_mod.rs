@@ -65,7 +65,7 @@ impl crate::GlobalNamespace::IStandaloneMonobehavior {
     pub fn WhenReadyAsync(
         &mut self,
         action: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<*mut crate::System::Threading::Tasks::Task>,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,

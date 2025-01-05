@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManagerConfig {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+ResourceManagerConfig")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+ResourceManagerConfig")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,9 +27,23 @@ for crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+ResourceManagerConfig")]
 impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
-    pub fn CreateArrayResult_Il2CppArray1<TObject>(
+    pub fn CreateArrayResult_Gc0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         allAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateArrayResult", (_cordl_type, allAssets))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateArrayResult_Gc1<TObject>(
+        allAssets: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<TObject>
     where
@@ -40,19 +54,25 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
             .invoke("CreateArrayResult", (allAssets))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateArrayResult_Type_Il2CppArray0(
+    pub fn CreateListResult_Gc0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         allAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateArrayResult", (_cordl_type, allAssets))?;
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateListResult", (_cordl_type, allAssets))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateListResult_Il2CppArray1<TObject>(
+    pub fn CreateListResult_Gc1<TObject>(
         allAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<TObject>
     where
@@ -63,24 +83,14 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
             .invoke("CreateListResult", (allAssets))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateListResult_Type_Il2CppArray0(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        allAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateListResult", (_cordl_type, allAssets))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn ExtractKeyAndSubKey(
         keyObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         mainKey: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
-        subKey: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        subKey: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ExtractKeyAndSubKey", (keyObj, mainKey, subKey))?;

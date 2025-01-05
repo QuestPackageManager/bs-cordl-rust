@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EndoUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,13 +47,13 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DecomposeScalar", (p, k))?;
@@ -105,7 +105,7 @@ for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EndoUtilities_MapPointCallback {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_endomorphism: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
     >,
@@ -120,7 +120,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -206,20 +206,30 @@ for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
-impl AsRef<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
-for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback,
+    >,
+> for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
     fn as_ref(
         &self,
-    ) -> &crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
-impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
-for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback,
+    >,
+> for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

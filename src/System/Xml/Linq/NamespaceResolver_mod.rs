@@ -95,7 +95,7 @@ impl crate::System::Xml::Linq::NamespaceResolver {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamespaceResolver_NamespaceDeclaration {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ns: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
     pub scope: i32,
@@ -112,7 +112,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
 impl std::ops::Deref
 for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

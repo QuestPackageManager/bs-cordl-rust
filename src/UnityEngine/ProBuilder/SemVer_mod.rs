@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SemVer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Major: i32,
     pub m_Minor: i32,
     pub m_Patch: i32,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::SemVer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::SemVer {
 #[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
 impl crate::UnityEngine::ProBuilder::SemVer {
     pub const DefaultStringFormat: &'static str = "M.m.p-t.b";
-    pub fn CompareTo_Il2CppObject0(
+    pub fn CompareTo_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -42,7 +42,7 @@ impl crate::UnityEngine::ProBuilder::SemVer {
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareTo_SemVer1(
+    pub fn CompareTo_Gc1(
         &mut self,
         version: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -52,7 +52,7 @@ impl crate::UnityEngine::ProBuilder::SemVer {
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (version))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -62,7 +62,7 @@ impl crate::UnityEngine::ProBuilder::SemVer {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (o))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_SemVer1(
+    pub fn Equals_Gc1(
         &mut self,
         version: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -100,7 +100,7 @@ impl crate::UnityEngine::ProBuilder::SemVer {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString1(
+    pub fn New_Gc_Gc1(
         formatted: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         date: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -110,7 +110,7 @@ impl crate::UnityEngine::ProBuilder::SemVer {
             .invoke_void(".ctor", (formatted, date))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_i32_i32_i32_Il2CppString_Il2CppString_Il2CppString2(
+    pub fn New_i32_i32_i32_i32_Gc_Gc_Gc2(
         major: i32,
         minor: i32,
         patch: i32,
@@ -141,7 +141,7 @@ impl crate::UnityEngine::ProBuilder::SemVer {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString0(
+    pub fn ToString_Gc0(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -158,7 +158,7 @@ impl crate::UnityEngine::ProBuilder::SemVer {
     pub fn TryGetVersionInfo(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         version: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::ProBuilder::SemVer,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -180,7 +180,7 @@ impl crate::UnityEngine::ProBuilder::SemVer {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString1(
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         formatted: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         date: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -192,7 +192,7 @@ impl crate::UnityEngine::ProBuilder::SemVer {
             .invoke(".ctor", (formatted, date))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_i32_i32_Il2CppString_Il2CppString_Il2CppString2(
+    pub fn _ctor_i32_i32_i32_i32_Gc_Gc_Gc2(
         &mut self,
         major: i32,
         minor: i32,
@@ -348,50 +348,72 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::SemVe
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
-impl AsRef<crate::System::IComparable> for crate::UnityEngine::ProBuilder::SemVer {
-    fn as_ref(&self) -> &crate::System::IComparable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
-impl AsMut<crate::System::IComparable> for crate::UnityEngine::ProBuilder::SemVer {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
-impl AsRef<crate::System::IComparable_1<*mut crate::UnityEngine::ProBuilder::SemVer>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::UnityEngine::ProBuilder::SemVer {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::UnityEngine::ProBuilder::SemVer {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    >,
+> for crate::UnityEngine::ProBuilder::SemVer {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<*mut crate::UnityEngine::ProBuilder::SemVer> {
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
-impl AsMut<crate::System::IComparable_1<*mut crate::UnityEngine::ProBuilder::SemVer>>
-for crate::UnityEngine::ProBuilder::SemVer {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    >,
+> for crate::UnityEngine::ProBuilder::SemVer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<*mut crate::UnityEngine::ProBuilder::SemVer> {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
-impl AsRef<crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::SemVer>>
-for crate::UnityEngine::ProBuilder::SemVer {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    >,
+> for crate::UnityEngine::ProBuilder::SemVer {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::SemVer> {
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
-impl AsMut<crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::SemVer>>
-for crate::UnityEngine::ProBuilder::SemVer {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    >,
+> for crate::UnityEngine::ProBuilder::SemVer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::SemVer> {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

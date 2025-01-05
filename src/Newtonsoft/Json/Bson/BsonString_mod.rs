@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BsonString {
-    __cordl_parent: crate::Newtonsoft::Json::Bson::BsonValue,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonValue>,
     pub _ByteCount_k__BackingField: i32,
     pub _IncludeLength_k__BackingField: bool,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonString")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonString {
-    type Target = crate::Newtonsoft::Json::Bson::BsonValue;
+    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonValue>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

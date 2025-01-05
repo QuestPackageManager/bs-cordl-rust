@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Helper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Helper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Helper")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Helper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Helper {
             .invoke("GetInvalidContextException", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Import_Il2CppArray0(
+    pub fn Import_Gc0(
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -46,7 +46,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Helper {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Import", (rawData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Import_SafePasswordHandle_X509KeyStorageFlags1(
+    pub fn Import_Gc_X509KeyStorageFlags1(
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         password: quest_hook::libil2cpp::Gc<
             crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
@@ -63,7 +63,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Helper {
             .invoke("Import", (rawData, password, keyStorageFlags))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitFromCertificate_X509Certificate0(
+    pub fn InitFromCertificate_Gc0(
         cert: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
@@ -78,7 +78,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Helper {
             .invoke("InitFromCertificate", (cert))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitFromCertificate_X509CertificateImpl1(
+    pub fn InitFromCertificate_Gc1(
         _cordl_impl: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
         >,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CallContextSecurityData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _principal: quest_hook::libil2cpp::Gc<
         crate::System::Security::Principal::IPrincipal,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CallContextSecurityData")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::CallContextSecurityData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,16 +79,16 @@ for crate::System::Runtime::Remoting::Messaging::CallContextSecurityData {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CallContextSecurityData")]
-impl AsRef<crate::System::ICloneable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Runtime::Remoting::Messaging::CallContextSecurityData {
-    fn as_ref(&self) -> &crate::System::ICloneable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CallContextSecurityData")]
-impl AsMut<crate::System::ICloneable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Runtime::Remoting::Messaging::CallContextSecurityData {
-    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }

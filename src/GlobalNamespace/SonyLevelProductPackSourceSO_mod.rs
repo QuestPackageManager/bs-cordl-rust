@@ -2,13 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductPackSourceSO {
-    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >,
     pub _levelProductPackSource: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource,
     >,
     pub _levelProductRedirectionSources: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+            >,
         >,
     >,
 }
@@ -19,7 +23,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SonyLevelProductPackSourceSO")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLevelProductPackSourceSO {
-    type Target = crate::GlobalNamespace::PersistentScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -74,8 +80,8 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
             >,
         >,
     > {
@@ -83,8 +89,8 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
             >,
         > = __cordl_object.invoke("get_redirectionSources", ())?;
         Ok(__cordl_ret.into())
@@ -117,14 +123,16 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductPackSourceSO_LevelProductPackSource {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _packIndex: i32,
     pub _levelPack: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelPackSO,
     >,
     pub _levelProductsData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+            >,
         >,
     >,
 }
@@ -137,7 +145,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductPackSource")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -191,7 +199,9 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+                >,
             >,
         >,
     > {
@@ -200,7 +210,9 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+                >,
             >,
         > = __cordl_object.invoke("get_levelProductsData", ())?;
         Ok(__cordl_ret.into())
@@ -216,7 +228,9 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -242,7 +256,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource 
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductPackSourceSO_LevelProductRedirectionSource {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _sourceLevelPackId: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -260,7 +274,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductRedirectionSource")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -345,7 +359,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirection
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductPackSourceSO_LevelProductSource {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _levelIndex: i32,
     pub _ps5SieeDcCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _ps5SieaAcCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -362,7 +376,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductSource")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

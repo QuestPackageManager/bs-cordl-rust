@@ -33,7 +33,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvide
             crate::UnityEngine::ResourceManagement::ResourceManager,
         >,
         prefabHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
         instantiateParameters: crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters,
     ) -> quest_hook::libil2cpp::Result<

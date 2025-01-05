@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _tutorialSongController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::TutorialSongController,
     >,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TutorialController")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::TutorialController {
     }
     pub fn HandlePauseControllerCanPause(
         &mut self,
-        canPause: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        canPause: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -182,16 +182,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TutorialContr
     }
 }
 #[cfg(feature = "TutorialController")]
-impl AsRef<crate::GlobalNamespace::ILevelStartController>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelStartController>>
 for crate::GlobalNamespace::TutorialController {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelStartController {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelStartController> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TutorialController")]
-impl AsMut<crate::GlobalNamespace::ILevelStartController>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelStartController>>
 for crate::GlobalNamespace::TutorialController {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelStartController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelStartController> {
         unsafe { std::mem::transmute(self) }
     }
 }

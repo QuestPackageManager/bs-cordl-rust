@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerEnvironmentSpectatingSpot {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _preferredSpectatingSpot: bool,
     pub _displaySpotNumber: bool,
     pub _spotNumber: i32,
@@ -13,7 +13,7 @@ pub struct MultiplayerEnvironmentSpectatingSpot {
         crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage,
     >,
     pub hasBeenRemovedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
     >,
 }
 #[cfg(feature = "MultiplayerEnvironmentSpectatingSpot")]
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerEnvironmentSpectatingSpot")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,9 +101,7 @@ impl crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
     pub fn add_hasBeenRemovedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -149,9 +147,7 @@ impl crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
     pub fn remove_hasBeenRemovedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -173,16 +169,22 @@ for crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
     }
 }
 #[cfg(feature = "MultiplayerEnvironmentSpectatingSpot")]
-impl AsRef<crate::GlobalNamespace::IMultiplayerSpectatingSpot>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>>
 for crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerSpectatingSpot {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerEnvironmentSpectatingSpot")]
-impl AsMut<crate::GlobalNamespace::IMultiplayerSpectatingSpot>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>>
 for crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMultiplayerSpectatingSpot {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,15 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlatformAdditionalContentModelInitialDataSO {
-    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >,
     pub _levelsEntitlements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MockPlatformEntitlement,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlatformEntitlement>,
         >,
     >,
     pub _levelPacksEntitlements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MockPlatformEntitlement,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlatformEntitlement>,
         >,
     >,
     pub _packBetterBuyThanLevel: bool,
@@ -24,7 +26,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MockPlatformAdditionalContentModelInitialDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO {
-    type Target = crate::GlobalNamespace::PersistentScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -59,18 +63,14 @@ impl crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MockPlatformEntitlement,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlatformEntitlement>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MockPlatformEntitlement,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlatformEntitlement>,
         > = __cordl_object.invoke("get_levelPacksEntitlements", ())?;
         Ok(__cordl_ret.into())
     }
@@ -78,18 +78,14 @@ impl crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MockPlatformEntitlement,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlatformEntitlement>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MockPlatformEntitlement,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlatformEntitlement>,
         > = __cordl_object.invoke("get_levelsEntitlements", ())?;
         Ok(__cordl_ret.into())
     }

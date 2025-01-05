@@ -7,7 +7,7 @@ pub struct Tuple_4<
     T3: quest_hook::libil2cpp::Type,
     T4: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Item1: T1,
     pub m_Item2: T2,
     pub m_Item3: T3,
@@ -29,7 +29,7 @@ impl<
     T3: quest_hook::libil2cpp::Type,
     T4: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Tuple_4<T1, T2, T3, T4> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -387,9 +387,11 @@ impl<
     T2: quest_hook::libil2cpp::Type,
     T3: quest_hook::libil2cpp::Type,
     T4: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IStructuralComparable>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IStructuralComparable>>
 for crate::System::Tuple_4<T1, T2, T3, T4> {
-    fn as_ref(&self) -> &crate::System::Collections::IStructuralComparable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IStructuralComparable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -399,9 +401,13 @@ impl<
     T2: quest_hook::libil2cpp::Type,
     T3: quest_hook::libil2cpp::Type,
     T4: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IStructuralComparable>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IStructuralComparable>>
 for crate::System::Tuple_4<T1, T2, T3, T4> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IStructuralComparable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IStructuralComparable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -411,9 +417,11 @@ impl<
     T2: quest_hook::libil2cpp::Type,
     T3: quest_hook::libil2cpp::Type,
     T4: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IStructuralEquatable>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IStructuralEquatable>>
 for crate::System::Tuple_4<T1, T2, T3, T4> {
-    fn as_ref(&self) -> &crate::System::Collections::IStructuralEquatable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IStructuralEquatable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -423,9 +431,13 @@ impl<
     T2: quest_hook::libil2cpp::Type,
     T3: quest_hook::libil2cpp::Type,
     T4: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IStructuralEquatable>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IStructuralEquatable>>
 for crate::System::Tuple_4<T1, T2, T3, T4> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IStructuralEquatable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IStructuralEquatable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -435,53 +447,9 @@ impl<
     T2: quest_hook::libil2cpp::Type,
     T3: quest_hook::libil2cpp::Type,
     T4: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IComparable> for crate::System::Tuple_4<T1, T2, T3, T4> {
-    fn as_ref(&self) -> &crate::System::IComparable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Tuple_4")]
-impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IComparable> for crate::System::Tuple_4<T1, T2, T3, T4> {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Tuple_4")]
-impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::ITupleInternal> for crate::System::Tuple_4<T1, T2, T3, T4> {
-    fn as_ref(&self) -> &crate::System::ITupleInternal {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Tuple_4")]
-impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::ITupleInternal> for crate::System::Tuple_4<T1, T2, T3, T4> {
-    fn as_mut(&mut self) -> &mut crate::System::ITupleInternal {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Tuple_4")]
-impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Runtime::CompilerServices::ITuple>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::Tuple_4<T1, T2, T3, T4> {
-    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::ITuple {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -491,9 +459,65 @@ impl<
     T2: quest_hook::libil2cpp::Type,
     T3: quest_hook::libil2cpp::Type,
     T4: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Runtime::CompilerServices::ITuple>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::Tuple_4<T1, T2, T3, T4> {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::CompilerServices::ITuple {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Tuple_4")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+    T4: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::ITupleInternal>>
+for crate::System::Tuple_4<T1, T2, T3, T4> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ITupleInternal> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Tuple_4")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+    T4: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::ITupleInternal>>
+for crate::System::Tuple_4<T1, T2, T3, T4> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ITupleInternal> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Tuple_4")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+    T4: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Runtime::CompilerServices::ITuple>>
+for crate::System::Tuple_4<T1, T2, T3, T4> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Runtime::CompilerServices::ITuple> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Tuple_4")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+    T4: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Runtime::CompilerServices::ITuple>>
+for crate::System::Tuple_4<T1, T2, T3, T4> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::ITuple,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

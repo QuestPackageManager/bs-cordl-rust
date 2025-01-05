@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+BeatmapDataLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataLoaderVersion4+BeatmapDataLoader")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -114,15 +114,11 @@ impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
         beatmapJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::BeatmapDataBasicInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::BeatmapDataBasicInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetBeatmapDataBasicInfoFromSaveDataJsonAsync", (beatmapJson))?;
         Ok(__cordl_ret.into())
@@ -258,15 +254,11 @@ impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::BeatmapData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::BeatmapData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "GetBeatmapDataFromSaveDataJsonAsync",

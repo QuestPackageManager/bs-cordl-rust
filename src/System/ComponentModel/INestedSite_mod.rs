@@ -53,30 +53,36 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::INeste
     }
 }
 #[cfg(feature = "System+ComponentModel+INestedSite")]
-impl AsRef<crate::System::ComponentModel::ISite>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ISite>>
 for crate::System::ComponentModel::INestedSite {
-    fn as_ref(&self) -> &crate::System::ComponentModel::ISite {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ISite> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+INestedSite")]
-impl AsMut<crate::System::ComponentModel::ISite>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ISite>>
 for crate::System::ComponentModel::INestedSite {
-    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::ISite {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ISite> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+INestedSite")]
-impl AsRef<crate::System::IServiceProvider>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IServiceProvider>>
 for crate::System::ComponentModel::INestedSite {
-    fn as_ref(&self) -> &crate::System::IServiceProvider {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IServiceProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+INestedSite")]
-impl AsMut<crate::System::IServiceProvider>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IServiceProvider>>
 for crate::System::ComponentModel::INestedSite {
-    fn as_mut(&mut self) -> &mut crate::System::IServiceProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::IServiceProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }

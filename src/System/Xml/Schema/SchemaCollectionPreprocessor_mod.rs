@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SchemaCollectionPreprocessor {
-    __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseProcessor>,
     pub schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     pub targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub buildinIncluded: bool,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaCollectionPreprocessor {
-    type Target = crate::System::Xml::Schema::BaseProcessor;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseProcessor>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

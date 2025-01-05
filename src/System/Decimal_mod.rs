@@ -316,7 +316,7 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareTo_Il2CppObject0(
+    pub fn CompareTo_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -353,7 +353,7 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -432,7 +432,7 @@ impl crate::System::Decimal {
             .invoke("Negate", (d))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_IFormatProvider0(
+    pub fn Parse_Gc0(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
@@ -440,7 +440,7 @@ impl crate::System::Decimal {
             .invoke("Parse", (s, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_NumberStyles_IFormatProvider1(
+    pub fn Parse_NumberStyles_Gc1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         style: crate::System::Globalization::NumberStyles,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -692,7 +692,7 @@ impl crate::System::Decimal {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_IFormatProvider1(
+    pub fn ToString_Gc1(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<
@@ -703,7 +703,7 @@ impl crate::System::Decimal {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider2(
+    pub fn ToString_Gc_Gc2(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -786,7 +786,7 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray6(
+    pub fn _ctor_Gc6(
         &mut self,
         bits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1134,96 +1134,116 @@ impl crate::System::Decimal {
     }
 }
 #[cfg(feature = "System+Decimal")]
-impl AsRef<crate::System::IComparable> for crate::System::Decimal {
-    fn as_ref(&self) -> &crate::System::IComparable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Decimal")]
-impl AsMut<crate::System::IComparable> for crate::System::Decimal {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Decimal")]
-impl AsRef<crate::System::IComparable_1<crate::System::Decimal>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Decimal>>
 for crate::System::Decimal {
-    fn as_ref(&self) -> &crate::System::IComparable_1<crate::System::Decimal> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Decimal> {
         todo!()
     }
 }
 #[cfg(feature = "System+Decimal")]
-impl AsMut<crate::System::IComparable_1<crate::System::Decimal>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Decimal>>
 for crate::System::Decimal {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<crate::System::Decimal> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::Decimal> {
         todo!()
     }
 }
 #[cfg(feature = "System+Decimal")]
-impl AsRef<crate::System::IConvertible> for crate::System::Decimal {
-    fn as_ref(&self) -> &crate::System::IConvertible {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Decimal")]
-impl AsMut<crate::System::IConvertible> for crate::System::Decimal {
-    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Decimal")]
-impl AsRef<crate::System::IEquatable_1<crate::System::Decimal>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Decimal>>
 for crate::System::Decimal {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Decimal> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Decimal> {
         todo!()
     }
 }
 #[cfg(feature = "System+Decimal")]
-impl AsMut<crate::System::IEquatable_1<crate::System::Decimal>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Decimal>>
 for crate::System::Decimal {
-    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::Decimal> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::Decimal> {
         todo!()
     }
 }
 #[cfg(feature = "System+Decimal")]
-impl AsRef<crate::System::IFormattable> for crate::System::Decimal {
-    fn as_ref(&self) -> &crate::System::IFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Decimal")]
-impl AsMut<crate::System::IFormattable> for crate::System::Decimal {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Decimal")]
-impl AsRef<crate::System::ISpanFormattable> for crate::System::Decimal {
-    fn as_ref(&self) -> &crate::System::ISpanFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Decimal")]
-impl AsMut<crate::System::ISpanFormattable> for crate::System::Decimal {
-    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Decimal")]
-impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::Decimal {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Decimal")]
-impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::System::Decimal {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
+for crate::System::Decimal {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
+for crate::System::Decimal {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::System::Decimal {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::System::Decimal {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
+for crate::System::Decimal {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
 for crate::System::Decimal {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    >,
+> for crate::System::Decimal {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    >,
+> for crate::System::Decimal {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    > {
         todo!()
     }
 }

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FeatureAsyncInstaller {
-    __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
-        *mut crate::Zenject::ScriptableObjectInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     >,
 }
 #[cfg(feature = "BGLib+AppFlow+FeatureAsyncInstaller")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+AppFlow+FeatureAsyncInstaller")]
 impl std::ops::Deref for crate::BGLib::AppFlow::FeatureAsyncInstaller {
-    type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
-        *mut crate::Zenject::ScriptableObjectInstaller,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -42,9 +42,7 @@ impl crate::BGLib::AppFlow::FeatureAsyncInstaller {
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         scriptableObjectInstallers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::Zenject::ScriptableObjectInstaller,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
         >,
         registry: quest_hook::libil2cpp::Gc<
             crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UriHelper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+UriHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+UriHelper")]
 impl std::ops::Deref for crate::System::UriHelper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -148,43 +148,7 @@ impl crate::System::UriHelper {
             .invoke("TestForSubPath", (pMe, meLength, pShe, sheLength, ignoreCase))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UnescapeString_Il2CppObject1(
-        pStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        start: i32,
-        end: i32,
-        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        destPosition: quest_hook::libil2cpp::ByRefMut<i32>,
-        rsvd1: char,
-        rsvd2: char,
-        rsvd3: char,
-        unescapeMode: crate::System::UnescapeMode,
-        syntax: quest_hook::libil2cpp::Gc<crate::System::UriParser>,
-        isQuery: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<char>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "UnescapeString",
-                (
-                    pStr,
-                    start,
-                    end,
-                    dest,
-                    destPosition,
-                    rsvd1,
-                    rsvd2,
-                    rsvd3,
-                    unescapeMode,
-                    syntax,
-                    isQuery,
-                ),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn UnescapeString_Il2CppString0(
+    pub fn UnescapeString_Gc_i32_i32_Gc_ByRefMut__cordl_char__cordl_char__cordl_char_UnescapeMode_Gc__cordl_bool0(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: i32,
         end: i32,
@@ -206,6 +170,42 @@ impl crate::System::UriHelper {
                 "UnescapeString",
                 (
                     input,
+                    start,
+                    end,
+                    dest,
+                    destPosition,
+                    rsvd1,
+                    rsvd2,
+                    rsvd3,
+                    unescapeMode,
+                    syntax,
+                    isQuery,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnescapeString_Gc_i32_i32_Gc_ByRefMut__cordl_char__cordl_char__cordl_char_UnescapeMode_Gc__cordl_bool1(
+        pStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        start: i32,
+        end: i32,
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        destPosition: quest_hook::libil2cpp::ByRefMut<i32>,
+        rsvd1: char,
+        rsvd2: char,
+        rsvd3: char,
+        unescapeMode: crate::System::UnescapeMode,
+        syntax: quest_hook::libil2cpp::Gc<crate::System::UriParser>,
+        isQuery: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<char>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "UnescapeString",
+                (
+                    pStr,
                     start,
                     end,
                     dest,

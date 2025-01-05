@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CurveAnimation {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _bezierCurve: quest_hook::libil2cpp::Gc<
         crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurve,
     >,
@@ -16,11 +16,7 @@ pub struct CurveAnimation {
     pub afterDelay: quest_hook::libil2cpp::Gc<
         crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent,
     >,
-    pub onIterate: quest_hook::libil2cpp::Gc<
-        crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<
-            crate::UnityEngine::Vector3,
-        >,
-    >,
+    pub onIterate: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     pub onFinish: quest_hook::libil2cpp::Gc<
         crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent,
     >,
@@ -34,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -149,7 +145,7 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CurveAnimation_CurveEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
 }
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -160,7 +156,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent")]
 impl std::ops::Deref
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -206,7 +202,7 @@ for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CurveAnimation_CurveEvent_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1")]
@@ -218,7 +214,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<T> {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<T>;
+    type Target = quest_hook::libil2cpp::Gc<T>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

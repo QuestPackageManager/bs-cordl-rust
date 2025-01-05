@@ -25,7 +25,7 @@ for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
 }
 #[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
 impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -55,7 +55,7 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn HasModifiers_IMouseEvent0(
+    pub fn HasModifiers_Gc0(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMouseEvent>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -66,7 +66,7 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn HasModifiers_IPointerEvent1(
+    pub fn HasModifiers_Gc1(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -91,7 +91,7 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Matches_IMouseEvent0(
+    pub fn Matches_Gc0(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMouseEvent>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -102,7 +102,7 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Matches_IPointerEvent1(
+    pub fn Matches_Gc1(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -166,13 +166,13 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
 }
 #[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ManipulatorActivationFilter,
     >,
 > for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ManipulatorActivationFilter,
     > {
         todo!()
@@ -180,13 +180,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ManipulatorActivationFilter,
     >,
 > for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ManipulatorActivationFilter,
     > {
         todo!()

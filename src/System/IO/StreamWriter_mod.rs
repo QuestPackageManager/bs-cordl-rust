@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StreamWriter {
-    __cordl_parent: crate::System::IO::TextWriter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
     pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub _encoder: quest_hook::libil2cpp::Gc<crate::System::Text::Encoder>,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+StreamWriter")]
 impl std::ops::Deref for crate::System::IO::StreamWriter {
-    type Target = crate::System::IO::TextWriter;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -112,7 +112,7 @@ impl crate::System::IO::StreamWriter {
         > = __cordl_object.invoke("FlushAsync", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn FlushAsyncInternal_StreamWriter__cordl_bool_Il2CppArray_i32__cordl_bool_Encoding_Encoder_Il2CppArray_Stream_CancellationToken1(
+    pub fn FlushAsyncInternal_Gc__cordl_bool_Gc_i32__cordl_bool_Gc_Gc_Gc_Gc_CancellationToken1(
         _this: quest_hook::libil2cpp::Gc<crate::System::IO::StreamWriter>,
         flushStream: bool,
         flushEncoder: bool,
@@ -148,7 +148,7 @@ impl crate::System::IO::StreamWriter {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn FlushAsyncInternal__cordl_bool_Il2CppArray_i32_CancellationToken0(
+    pub fn FlushAsyncInternal__cordl_bool_Gc_i32_CancellationToken0(
         &mut self,
         flushStream: bool,
         flushEncoder: bool,
@@ -213,49 +213,7 @@ impl crate::System::IO::StreamWriter {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString5(
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (path))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppString__cordl_bool6(
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        append: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (path, append))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppString__cordl_bool_Encoding7(
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        append: bool,
-        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (path, append, encoding))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppString__cordl_bool_Encoding_i32_8(
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        append: bool,
-        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-        bufferSize: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (path, append, encoding, bufferSize))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Stream1(
+    pub fn New_Gc1(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -264,7 +222,16 @@ impl crate::System::IO::StreamWriter {
             .invoke_void(".ctor", (stream))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream_Encoding2(
+    pub fn New_Gc5(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc2(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -274,7 +241,7 @@ impl crate::System::IO::StreamWriter {
             .invoke_void(".ctor", (stream, encoding))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream_Encoding_i32_3(
+    pub fn New_Gc_Gc_i32_3(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
         bufferSize: i32,
@@ -285,7 +252,7 @@ impl crate::System::IO::StreamWriter {
             .invoke_void(".ctor", (stream, encoding, bufferSize))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream_Encoding_i32__cordl_bool4(
+    pub fn New_Gc_Gc_i32__cordl_bool4(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
         bufferSize: i32,
@@ -297,6 +264,39 @@ impl crate::System::IO::StreamWriter {
             .invoke_void(".ctor", (stream, encoding, bufferSize, leaveOpen))?;
         Ok(__cordl_object.into())
     }
+    pub fn New_Gc__cordl_bool6(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        append: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path, append))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc__cordl_bool_Gc7(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        append: bool,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path, append, encoding))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc__cordl_bool_Gc_i32_8(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        append: bool,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+        bufferSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path, append, encoding, bufferSize))?;
+        Ok(__cordl_object.into())
+    }
     pub fn ThrowAsyncIOInProgress() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
@@ -304,7 +304,7 @@ impl crate::System::IO::StreamWriter {
             .invoke("ThrowAsyncIOInProgress", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAsyncInternal_Il2CppString1(
+    pub fn WriteAsyncInternal_Gc1(
         _this: quest_hook::libil2cpp::Gc<crate::System::IO::StreamWriter>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         charBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -396,7 +396,21 @@ impl crate::System::IO::StreamWriter {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAsync_Il2CppArray_i32_i32_2(
+    pub fn WriteAsync_Gc1(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("WriteAsync", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteAsync_Gc_i32_i32_2(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
@@ -410,20 +424,6 @@ impl crate::System::IO::StreamWriter {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
         > = __cordl_object.invoke("WriteAsync", (buffer, index, count))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteAsync_Il2CppString1(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = __cordl_object.invoke("WriteAsync", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteAsync__cordl_char0(
@@ -463,7 +463,7 @@ impl crate::System::IO::StreamWriter {
             .invoke("WriteSpan", (buffer, appendNewLine))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Il2CppArray1(
+    pub fn Write_Gc1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -474,7 +474,18 @@ impl crate::System::IO::StreamWriter {
             .invoke("Write", (buffer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Il2CppArray_i32_i32_2(
+    pub fn Write_Gc3(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Write_Gc_i32_i32_2(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
@@ -485,17 +496,6 @@ impl crate::System::IO::StreamWriter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (buffer, index, count))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Write_Il2CppString3(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn Write__cordl_char0(
@@ -519,57 +519,7 @@ impl crate::System::IO::StreamWriter {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString5(
-        &mut self,
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (path))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString__cordl_bool6(
-        &mut self,
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        append: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (path, append))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString__cordl_bool_Encoding7(
-        &mut self,
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        append: bool,
-        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (path, append, encoding))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString__cordl_bool_Encoding_i32_8(
-        &mut self,
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        append: bool,
-        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-        bufferSize: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (path, append, encoding, bufferSize))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Stream1(
+    pub fn _ctor_Gc1(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -580,7 +530,18 @@ impl crate::System::IO::StreamWriter {
             .invoke(".ctor", (stream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream_Encoding2(
+    pub fn _ctor_Gc5(
+        &mut self,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -592,7 +553,7 @@ impl crate::System::IO::StreamWriter {
             .invoke(".ctor", (stream, encoding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream_Encoding_i32_3(
+    pub fn _ctor_Gc_Gc_i32_3(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -605,7 +566,7 @@ impl crate::System::IO::StreamWriter {
             .invoke(".ctor", (stream, encoding, bufferSize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream_Encoding_i32__cordl_bool4(
+    pub fn _ctor_Gc_Gc_i32__cordl_bool4(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -617,6 +578,45 @@ impl crate::System::IO::StreamWriter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (stream, encoding, bufferSize, leaveOpen))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc__cordl_bool6(
+        &mut self,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        append: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (path, append))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc__cordl_bool_Gc7(
+        &mut self,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        append: bool,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (path, append, encoding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc__cordl_bool_Gc_i32_8(
+        &mut self,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        append: bool,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+        bufferSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (path, append, encoding, bufferSize))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_BaseStream(

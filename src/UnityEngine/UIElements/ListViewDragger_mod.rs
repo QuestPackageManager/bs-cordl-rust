@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListViewDragger {
-    __cordl_parent: crate::UnityEngine::UIElements::DragEventsProcessor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DragEventsProcessor,
+    >,
     pub m_LastDragPosition: crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
     pub m_DragHoverBar: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
@@ -26,7 +28,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ListViewDragger")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ListViewDragger {
-    type Target = crate::UnityEngine::UIElements::DragEventsProcessor;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DragEventsProcessor,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -402,7 +406,7 @@ for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
 impl crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -435,13 +439,13 @@ impl crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
     >,
 > for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
     > {
         todo!()
@@ -449,13 +453,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
     >,
 > for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
     > {
         todo!()

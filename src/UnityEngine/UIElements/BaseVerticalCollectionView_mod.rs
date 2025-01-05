@@ -2,49 +2,40 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseVerticalCollectionView {
-    __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement,
+    >,
     pub itemsChosen: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     >,
     pub selectionChanged: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     >,
     pub selectedIndicesChanged: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        quest_hook::libil2cpp::Gc<i32>,
     >,
-    pub itemIndexChanged: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
+    pub itemIndexChanged: quest_hook::libil2cpp::Gc<i32, i32>,
     pub itemsSourceChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub selectionNotChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub canStartDrag: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<crate::UnityEngine::UIElements::CanStartDragArgs, bool>,
+        crate::UnityEngine::UIElements::CanStartDragArgs,
+        bool,
     >,
     pub setupDragAndDrop: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            crate::UnityEngine::UIElements::SetupDragAndDropArgs,
-            crate::UnityEngine::UIElements::StartDragArgs,
-        >,
+        crate::UnityEngine::UIElements::SetupDragAndDropArgs,
+        crate::UnityEngine::UIElements::StartDragArgs,
     >,
     pub dragAndDropUpdate: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            crate::UnityEngine::UIElements::HandleDragAndDropArgs,
-            crate::UnityEngine::UIElements::DragVisualMode,
-        >,
+        crate::UnityEngine::UIElements::HandleDragAndDropArgs,
+        crate::UnityEngine::UIElements::DragVisualMode,
     >,
     pub handleDrop: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            crate::UnityEngine::UIElements::HandleDragAndDropArgs,
-            crate::UnityEngine::UIElements::DragVisualMode,
-        >,
+        crate::UnityEngine::UIElements::HandleDragAndDropArgs,
+        crate::UnityEngine::UIElements::DragVisualMode,
     >,
     pub m_SelectionType: crate::UnityEngine::UIElements::SelectionType,
     pub m_HorizontalScrollingEnabled: bool,
@@ -67,25 +58,17 @@ pub struct BaseVerticalCollectionView {
     pub serializedVirtualizationData: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::SerializedVirtualizationData,
     >,
-    pub m_SelectedIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub m_SelectedIndices: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub m_SelectedIds: quest_hook::libil2cpp::Gc<i32>,
+    pub m_SelectedIndices: quest_hook::libil2cpp::Gc<i32>,
     pub m_SelectedItems: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub m_LastHeight: f32,
     pub m_IsRangeSelectionDirectionUp: bool,
     pub m_Dragger: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ListViewDragger,
     >,
-    pub m_ItemIndexChangedCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<i32, i32>,
-    >,
+    pub m_ItemIndexChangedCallback: quest_hook::libil2cpp::Gc<i32, i32>,
     pub m_ItemsSourceChangedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_TouchDownPosition: crate::UnityEngine::Vector3,
 }
@@ -97,7 +80,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
-    type Target = crate::UnityEngine::UIElements::BindableElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,11 +108,9 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
             .invoke("AddToSelectionWithoutValidation", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddToSelection_IList_1_1(
+    pub fn AddToSelection_Gc1(
         &mut self,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -147,7 +130,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
             .invoke("AddToSelection", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Apply_EventBase1(
+    pub fn Apply_Gc1(
         &mut self,
         op: crate::UnityEngine::UIElements::KeyboardNavigationOperation,
         sourceEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
@@ -377,9 +360,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     }
     pub fn MatchesExistingSelection(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -395,7 +376,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IList_f32_1(
+    pub fn New_Gc_f32_1(
         itemsSource: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         itemHeight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -604,9 +585,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
         item: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ReusableCollectionItem,
         >,
-        ids: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        ids: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -643,9 +622,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
         item: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ReusableCollectionItem,
         >,
-        ids: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        ids: quest_hook::libil2cpp::Gc<i32>,
         args: crate::UnityEngine::UIElements::StartDragArgs,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -762,9 +739,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     }
     pub fn SetSelectionInternal(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
         sendNotification: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -776,9 +751,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     }
     pub fn SetSelectionWithoutNotify(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -787,11 +760,9 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
             .invoke("SetSelectionWithoutNotify", (indices))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetSelection_IEnumerable_1_1(
+    pub fn SetSelection_Gc1(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -851,7 +822,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
         &mut self,
         index: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -867,7 +838,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     pub fn _RefreshSelection_g__NotifyIfChanged_170_0(
         &mut self,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -901,7 +872,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IList_f32_1(
+    pub fn _ctor_Gc_f32_1(
         &mut self,
         itemsSource: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         itemHeight: f32,
@@ -917,8 +888,8 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ReusableCollectionItem,
             >,
         >,
     > {
@@ -926,8 +897,8 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ReusableCollectionItem,
             >,
         > = __cordl_object.invoke("get_activeItems", ())?;
         Ok(__cordl_ret.into())
@@ -1006,17 +977,12 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     }
     pub fn get_selectedIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = __cordl_object.invoke("get_selectedIds", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("get_selectedIds", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_selectedIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -1028,17 +994,12 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     }
     pub fn get_selectedIndices(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = __cordl_object.invoke("get_selectedIndices", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("get_selectedIndices", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_selectionType(
@@ -1216,16 +1177,22 @@ for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView")]
-impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
-    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView")]
-impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ISerializationCallbackReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1233,27 +1200,23 @@ for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseVerticalCollectionView_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    >,
     pub m_FixedItemHeight: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     >,
     pub m_VirtualizationMethod: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::CollectionVirtualizationMethod,
-        >,
+        crate::UnityEngine::UIElements::CollectionVirtualizationMethod,
     >,
     pub m_ShowBorder: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
     pub m_SelectionType: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::SelectionType,
-        >,
+        crate::UnityEngine::UIElements::SelectionType,
     >,
     pub m_ShowAlternatingRowBackgrounds: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::AlternatingRowBackground,
-        >,
+        crate::UnityEngine::UIElements::AlternatingRowBackground,
     >,
     pub m_Reorderable: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
@@ -1271,7 +1234,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

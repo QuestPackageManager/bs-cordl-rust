@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HashUnsafeUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+HashUnsafeUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+HashUnsafeUtilities")]
 impl std::ops::Deref for crate::UnityEngine::HashUnsafeUtilities {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::UnityEngine::HashUnsafeUtilities {
 }
 #[cfg(feature = "UnityEngine+HashUnsafeUtilities")]
 impl crate::UnityEngine::HashUnsafeUtilities {
-    pub fn ComputeHash128_Il2CppObject0(
+    pub fn ComputeHash128_Gc0(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         dataSize: u64,
         hash1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -34,7 +34,7 @@ impl crate::UnityEngine::HashUnsafeUtilities {
             .invoke("ComputeHash128", (data, dataSize, hash1, hash2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ComputeHash128_Il2CppObject_u64_Il2CppObject1(
+    pub fn ComputeHash128_Gc_u64_Gc1(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         dataSize: u64,
         hash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

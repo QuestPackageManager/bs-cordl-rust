@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionProbe {
-    __cordl_parent: crate::UnityEngine::Behaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
 }
 #[cfg(feature = "UnityEngine+ReflectionProbe")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ReflectionProbe")]
 impl std::ops::Deref for crate::UnityEngine::ReflectionProbe {
-    type Target = crate::UnityEngine::Behaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +76,7 @@ impl crate::UnityEngine::ReflectionProbe {
         let __cordl_ret: i32 = __cordl_object.invoke("RenderProbe", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn RenderProbe_RenderTexture1(
+    pub fn RenderProbe_Gc1(
         &mut self,
         targetTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -127,7 +127,7 @@ impl crate::UnityEngine::ReflectionProbe {
     }
     pub fn add_defaultReflectionSet(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Cubemap>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -136,7 +136,7 @@ impl crate::UnityEngine::ReflectionProbe {
     }
     pub fn add_defaultReflectionTexture(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Texture>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -145,10 +145,8 @@ impl crate::UnityEngine::ReflectionProbe {
     }
     pub fn add_reflectionProbeChanged(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::UnityEngine::ReflectionProbe,
-                crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ReflectionProbe>,
+            crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -478,7 +476,7 @@ impl crate::UnityEngine::ReflectionProbe {
     }
     pub fn remove_defaultReflectionSet(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Cubemap>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -487,7 +485,7 @@ impl crate::UnityEngine::ReflectionProbe {
     }
     pub fn remove_defaultReflectionTexture(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Texture>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -496,10 +494,8 @@ impl crate::UnityEngine::ReflectionProbe {
     }
     pub fn remove_reflectionProbeChanged(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::UnityEngine::ReflectionProbe,
-                crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ReflectionProbe>,
+            crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

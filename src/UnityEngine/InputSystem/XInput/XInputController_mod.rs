@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XInputController {
-    __cordl_parent: crate::UnityEngine::InputSystem::Gamepad,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Gamepad>,
     pub _menu_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XInput::XInputController {
-    type Target = crate::UnityEngine::InputSystem::Gamepad;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Gamepad>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

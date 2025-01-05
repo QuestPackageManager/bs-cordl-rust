@@ -2,10 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PacketPool_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bag: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Concurrent::ConcurrentBag_1<T>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _bag: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "PacketPool_1")]
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PacketPool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::PacketPool_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -131,30 +129,36 @@ for crate::GlobalNamespace::PacketPool_1<T> {
     }
 }
 #[cfg(feature = "PacketPool_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::GlobalNamespace::IPacketPool>
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
 for crate::GlobalNamespace::PacketPool_1<T> {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IPacketPool {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PacketPool_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::IPacketPool>
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
 for crate::GlobalNamespace::PacketPool_1<T> {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPacketPool {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PacketPool_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::GlobalNamespace::IPacketPool_1<T>>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool>>
 for crate::GlobalNamespace::PacketPool_1<T> {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IPacketPool_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PacketPool_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::IPacketPool_1<T>>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool>>
 for crate::GlobalNamespace::PacketPool_1<T> {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPacketPool_1<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool> {
         unsafe { std::mem::transmute(self) }
     }
 }

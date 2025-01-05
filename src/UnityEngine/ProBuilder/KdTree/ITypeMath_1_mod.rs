@@ -40,7 +40,7 @@ impl<
         let __cordl_ret: T = __cordl_object.invoke("Add", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AreEqual_Il2CppArray_Il2CppArray1(
+    pub fn AreEqual_Gc_Gc1(
         &mut self,
         a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,

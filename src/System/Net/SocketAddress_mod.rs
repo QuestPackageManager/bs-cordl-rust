@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SocketAddress {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Size: i32,
     pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub m_changed: bool,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+SocketAddress")]
 impl std::ops::Deref for crate::System::Net::SocketAddress {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,7 +79,7 @@ impl crate::System::Net::SocketAddress {
             .invoke_void(".ctor", (family, _cordl_size))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IPAddress1(
+    pub fn New_Gc1(
         ipAddress: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -88,7 +88,7 @@ impl crate::System::Net::SocketAddress {
             .invoke_void(".ctor", (ipAddress))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IPAddress_i32_2(
+    pub fn New_Gc_i32_2(
         ipaddress: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
         port: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -123,7 +123,7 @@ impl crate::System::Net::SocketAddress {
             .invoke(".ctor", (family, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IPAddress1(
+    pub fn _ctor_Gc1(
         &mut self,
         ipAddress: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -134,7 +134,7 @@ impl crate::System::Net::SocketAddress {
             .invoke(".ctor", (ipAddress))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IPAddress_i32_2(
+    pub fn _ctor_Gc_i32_2(
         &mut self,
         ipaddress: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
         port: i32,

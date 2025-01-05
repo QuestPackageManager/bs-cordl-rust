@@ -4,13 +4,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContentCatalogProvider {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
+    >,
     pub DisableCatalogUpdateOnStart: bool,
     pub IsLocalCatalogInBundle: bool,
     pub m_LocationToCatalogLoadOpMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-            *mut crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp,
         >,
     >,
     pub m_RM: quest_hook::libil2cpp::Gc<
@@ -30,7 +34,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider {
-    type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -144,7 +150,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContentCatalogProvider_InternalOp {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_LocalDataPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_RemoteHashValue: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -155,7 +161,9 @@ pub struct ContentCatalogProvider_InternalOp {
         crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
     >,
     pub m_ContentCatalogDataLoadOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+        >,
     >,
     pub m_BundledCatalog: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_ContentCatalogProvider_BundledCatalog,
@@ -178,7 +186,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -218,7 +226,9 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
     pub fn CatalogLoadOpCompleteCallback(
         &mut self,
         op: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -234,9 +244,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
         dependencyObjects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         disableCatalogUpdateOnStart: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -377,7 +385,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalOp_ContentCatalogProvider_BundledCatalog {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_BundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_OpInProgress: bool,
     pub m_LoadBundleRequest: quest_hook::libil2cpp::Gc<
@@ -398,8 +406,8 @@ pub struct InternalOp_ContentCatalogProvider_BundledCatalog {
     >,
     pub m_WebRequestTimeout: i32,
     pub OnLoaded: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
         >,
     >,
 }
@@ -417,7 +425,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_ContentCatalogProvider_BundledCatalog {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -543,8 +551,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Conten
     pub fn add_OnLoaded(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -572,8 +580,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Conten
     pub fn remove_OnLoaded(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

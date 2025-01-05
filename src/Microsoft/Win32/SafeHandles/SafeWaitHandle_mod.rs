@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeWaitHandle {
-    __cordl_parent: crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid,
+    >,
 }
 #[cfg(feature = "Microsoft+Win32+SafeHandles+SafeWaitHandle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Microsoft+Win32+SafeHandles+SafeWaitHandle")]
 impl std::ops::Deref for crate::Microsoft::Win32::SafeHandles::SafeWaitHandle {
-    type Target = crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

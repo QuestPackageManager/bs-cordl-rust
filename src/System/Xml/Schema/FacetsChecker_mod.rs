@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FacetsChecker {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+Schema+FacetsChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+FacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::FacetsChecker {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl crate::System::Xml::Schema::FacetsChecker {
     pub fn CheckLexicalFacets(
         &mut self,
         parseString: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         datatype: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaDatatype,
@@ -92,23 +92,7 @@ impl crate::System::Xml::Schema::FacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckValueFacets_Il2CppArray9(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        datatype: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaDatatype,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
-            .invoke("CheckValueFacets", (value, datatype))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CheckValueFacets_Il2CppObject0(
+    pub fn CheckValueFacets_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         datatype: quest_hook::libil2cpp::Gc<
@@ -124,9 +108,41 @@ impl crate::System::Xml::Schema::FacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckValueFacets_Il2CppString8(
+    pub fn CheckValueFacets_Gc11(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+        datatype: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
+            .invoke("CheckValueFacets", (value, datatype))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckValueFacets_Gc8(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        datatype: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
+            .invoke("CheckValueFacets", (value, datatype))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckValueFacets_Gc9(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         datatype: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaDatatype,
         >,
@@ -143,22 +159,6 @@ impl crate::System::Xml::Schema::FacetsChecker {
     pub fn CheckValueFacets_TimeSpan10(
         &mut self,
         value: crate::System::TimeSpan,
-        datatype: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaDatatype,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
-            .invoke("CheckValueFacets", (value, datatype))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CheckValueFacets_XmlQualifiedName11(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
         datatype: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaDatatype,
         >,
@@ -254,7 +254,9 @@ impl crate::System::Xml::Schema::FacetsChecker {
     }
     pub fn CheckWhitespaceFacets(
         &mut self,
-        s: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        s: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
         datatype: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaDatatype,
         >,
@@ -620,18 +622,7 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
             .invoke("Preprocess", (pattern))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFlag_RestrictionFlags1(
-        &mut self,
-        flag: crate::System::Xml::Schema::RestrictionFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetFlag",
-            (flag),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetFlag_XmlSchemaFacet_RestrictionFlags0(
+    pub fn SetFlag_Gc_RestrictionFlags0(
         &mut self,
         facet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaFacet>,
         flag: crate::System::Xml::Schema::RestrictionFlags,
@@ -640,6 +631,17 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
             self,
             "SetFlag",
             (facet, flag),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetFlag_RestrictionFlags1(
+        &mut self,
+        flag: crate::System::Xml::Schema::RestrictionFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetFlag",
+            (flag),
         )?;
         Ok(__cordl_ret.into())
     }

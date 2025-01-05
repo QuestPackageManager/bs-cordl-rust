@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeAreaFocusedSimpleDialogPromptViewController {
-    __cordl_parent: crate::GlobalNamespace::SimpleDialogPromptViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleDialogPromptViewController,
+    >,
 }
 #[cfg(feature = "SafeAreaFocusedSimpleDialogPromptViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SafeAreaFocusedSimpleDialogPromptViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController {
-    type Target = crate::GlobalNamespace::SimpleDialogPromptViewController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleDialogPromptViewController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnnotatedBeatmapLevelCollectionsGridView {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _gridView: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GridView>,
     pub _pageControl: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PageControl>,
     pub _animator: quest_hook::libil2cpp::Gc<
@@ -36,14 +36,12 @@ pub struct AnnotatedBeatmapLevelCollectionsGridView {
         crate::System::Action,
     >,
     pub didSelectAnnotatedBeatmapLevelCollectionEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::BeatmapLevelPack>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     >,
     pub _isInitialized: bool,
     pub _isHovering: bool,
     pub _annotatedBeatmapLevelCollections: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::BeatmapLevelPack,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     >,
     pub _selectedCellIndex: i32,
 }
@@ -56,7 +54,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
 impl std::ops::Deref
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -228,9 +226,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
     pub fn SetData(
         &mut self,
         annotatedBeatmapLevelCollections: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::BeatmapLevelPack,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -292,7 +288,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
     pub fn add_didSelectAnnotatedBeatmapLevelCollectionEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::BeatmapLevelPack>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -348,7 +344,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
     pub fn remove_didSelectAnnotatedBeatmapLevelCollectionEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::BeatmapLevelPack>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -370,58 +366,92 @@ for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
-impl AsRef<crate::GlobalNamespace::GridView_IDataSource>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GridView_IDataSource>>
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
-    fn as_ref(&self) -> &crate::GlobalNamespace::GridView_IDataSource {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GridView_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
-impl AsMut<crate::GlobalNamespace::GridView_IDataSource>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GridView_IDataSource>>
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::GridView_IDataSource {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GridView_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
-impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
-impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
-for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
+> for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerEnterHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
-for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
+> for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerEnterHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerExitHandler>
-for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerExitHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
+> for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerExitHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerExitHandler>
-for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerExitHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
+> for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerExitHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

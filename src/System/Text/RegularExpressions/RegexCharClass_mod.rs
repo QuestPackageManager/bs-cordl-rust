@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexCharClass {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _rangelist: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
-        >,
+        crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
     >,
     pub _categories: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _canonical: bool,
@@ -22,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexCharClass {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -335,12 +333,10 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool_List_1_StringBuilder_RegexCharClass1(
+    pub fn New__cordl_bool_Gc_Gc_Gc1(
         negate: bool,
         ranges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
-            >,
+            crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
         >,
         categories: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         subtraction: quest_hook::libil2cpp::Gc<
@@ -429,13 +425,11 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_List_1_StringBuilder_RegexCharClass1(
+    pub fn _ctor__cordl_bool_Gc_Gc_Gc1(
         &mut self,
         negate: bool,
         ranges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
-            >,
+            crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
         >,
         categories: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         subtraction: quest_hook::libil2cpp::Gc<
@@ -564,7 +558,7 @@ impl crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexCharClass_SingleRangeComparer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -575,7 +569,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
 impl std::ops::Deref
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -630,13 +624,13 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer 
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
 impl AsRef<
-    crate::System::Collections::Generic::IComparer_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
     >,
 > for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IComparer_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
     > {
         unsafe { std::mem::transmute(self) }
@@ -644,13 +638,13 @@ impl AsRef<
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
 impl AsMut<
-    crate::System::Collections::Generic::IComparer_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
     >,
 > for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
     > {
         unsafe { std::mem::transmute(self) }

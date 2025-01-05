@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FpFieldElement {
-    __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement,
+    >,
     pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub r: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+FpFieldElement")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::FpFieldElement {
-    type Target = crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,7 +97,17 @@ impl crate::Org::BouncyCastle::Math::EC::FpFieldElement {
         > = __cordl_object.invoke("Divide", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_FpFieldElement1(
+    pub fn Equals_Gc0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::FpFieldElement,
@@ -103,16 +117,6 @@ impl crate::Org::BouncyCastle::Math::EC::FpFieldElement {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Il2CppObject0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -143,7 +147,7 @@ impl crate::Org::BouncyCastle::Math::EC::FpFieldElement {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
@@ -152,7 +156,7 @@ impl crate::Org::BouncyCastle::Math::EC::FpFieldElement {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = __cordl_object.invoke("LucasSequence", (P, Q, k))?;
         Ok(__cordl_ret.into())
@@ -331,7 +335,7 @@ impl crate::Org::BouncyCastle::Math::EC::FpFieldElement {
         > = __cordl_object.invoke("Negate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_BigInteger1(
+    pub fn New_Gc1(
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         r: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -342,7 +346,7 @@ impl crate::Org::BouncyCastle::Math::EC::FpFieldElement {
             .invoke_void(".ctor", (q, r, x))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_BigInteger_BigInteger0(
+    pub fn New_Gc_Gc0(
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -435,7 +439,7 @@ impl crate::Org::BouncyCastle::Math::EC::FpFieldElement {
         > = __cordl_object.invoke("ToBigInteger", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger1(
+    pub fn _ctor_Gc1(
         &mut self,
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         r: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -448,7 +452,7 @@ impl crate::Org::BouncyCastle::Math::EC::FpFieldElement {
             .invoke(".ctor", (q, r, x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger_BigInteger0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,

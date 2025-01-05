@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X501 {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+Security+X509+X501")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+X509+X501")]
 impl std::ops::Deref for crate::Mono::Security::X509::X501 {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +33,7 @@ impl crate::Mono::Security::X509::X501 {
             .invoke("AppendEntry", (sb, entry, quotes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_ASN1_0(
+    pub fn ToString_Gc0(
         seq: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -43,7 +43,7 @@ impl crate::Mono::Security::X509::X501 {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToString", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString__cordl_bool_Il2CppString__cordl_bool1(
+    pub fn ToString__cordl_bool_Gc__cordl_bool1(
         seq: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
         reversed: bool,
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

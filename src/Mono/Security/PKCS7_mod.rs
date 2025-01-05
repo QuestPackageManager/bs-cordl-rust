@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS7 {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+Security+PKCS7")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+PKCS7")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7 {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS7_ContentInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub contentType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub content: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
 }
@@ -56,7 +56,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_ContentInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -88,16 +88,16 @@ impl crate::Mono::Security::PKCS7_ContentInfo {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ASN1_3(
-        asn1: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    pub fn New_Gc1(
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (asn1))?;
+            .invoke_void(".ctor", (oid))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray2(
+    pub fn New_Gc2(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -106,13 +106,13 @@ impl crate::Mono::Security::PKCS7_ContentInfo {
             .invoke_void(".ctor", (data))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
-        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fn New_Gc3(
+        asn1: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (oid))?;
+            .invoke_void(".ctor", (asn1))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
@@ -125,18 +125,18 @@ impl crate::Mono::Security::PKCS7_ContentInfo {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ASN1_3(
+    pub fn _ctor_Gc1(
         &mut self,
-        asn1: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (asn1))?;
+            .invoke(".ctor", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray2(
+    pub fn _ctor_Gc2(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -147,15 +147,15 @@ impl crate::Mono::Security::PKCS7_ContentInfo {
             .invoke(".ctor", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc3(
         &mut self,
-        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        asn1: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (oid))?;
+            .invoke(".ctor", (asn1))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ASN1(
@@ -231,7 +231,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_ContentI
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS7_EncryptedData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _version: u8,
     pub _content: quest_hook::libil2cpp::Gc<crate::Mono::Security::PKCS7_ContentInfo>,
     pub _encryptionAlgorithm: quest_hook::libil2cpp::Gc<
@@ -246,7 +246,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_EncryptedData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -266,7 +266,7 @@ impl crate::Mono::Security::PKCS7_EncryptedData {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ASN1_1(
+    pub fn New_Gc1(
         asn1: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -285,7 +285,7 @@ impl crate::Mono::Security::PKCS7_EncryptedData {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ASN1_1(
+    pub fn _ctor_Gc1(
         &mut self,
         asn1: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -336,7 +336,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_Encrypte
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS7_SignedData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub version: u8,
     pub hashAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub contentInfo: quest_hook::libil2cpp::Gc<crate::Mono::Security::PKCS7_ContentInfo>,
@@ -354,7 +354,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+PKCS7+SignedData")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_SignedData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -465,7 +465,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_SignedDa
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS7_SignerInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub version: u8,
     pub hashAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub authenticatedAttributes: quest_hook::libil2cpp::Gc<
@@ -486,7 +486,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_SignerInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -506,7 +506,7 @@ impl crate::Mono::Security::PKCS7_SignerInfo {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ASN1_1(
+    pub fn New_Gc1(
         asn1: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -525,7 +525,7 @@ impl crate::Mono::Security::PKCS7_SignerInfo {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ASN1_1(
+    pub fn _ctor_Gc1(
         &mut self,
         asn1: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

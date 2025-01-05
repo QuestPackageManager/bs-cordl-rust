@@ -2,17 +2,21 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TabBarViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _segmentedControll: quest_hook::libil2cpp::Gc<crate::HMUI::TextSegmentedControl>,
     pub _contentSizeFilter: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::ContentSizeFitter,
     >,
     pub _labels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _items: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::TabBarViewController_TabBarItem,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::TabBarViewController_TabBarItem,
+            >,
         >,
     >,
     pub _shouldReloadData: bool,
@@ -24,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TabBarViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::TabBarViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -109,7 +113,9 @@ impl crate::GlobalNamespace::TabBarViewController {
         &mut self,
         items: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::TabBarViewController_TabBarItem,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::TabBarViewController_TabBarItem,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -169,7 +175,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TabBarViewCon
 #[repr(C)]
 #[derive(Debug)]
 pub struct TabBarViewController_TabBarItem {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub action: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
@@ -180,7 +186,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TabBarViewController+TabBarItem")]
 impl std::ops::Deref for crate::GlobalNamespace::TabBarViewController_TabBarItem {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

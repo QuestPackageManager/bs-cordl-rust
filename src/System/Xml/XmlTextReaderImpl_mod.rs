@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl {
-    __cordl_parent: crate::System::Xml::XmlReader,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     pub useAsync: bool,
     pub laterInitParam: quest_hook::libil2cpp::Gc<
         crate::System::Xml::XmlTextReaderImpl_LaterInitParam,
@@ -14,7 +14,7 @@ pub struct XmlTextReaderImpl {
     pub nextNextParsingFunction: crate::System::Xml::XmlTextReaderImpl_ParsingFunction,
     pub nodes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl_NodeData>,
         >,
     >,
     pub curNode: quest_hook::libil2cpp::Gc<
@@ -29,7 +29,7 @@ pub struct XmlTextReaderImpl {
     pub fullAttrCleanup: bool,
     pub attrDuplSortingArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl_NodeData>,
         >,
     >,
     pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
@@ -102,10 +102,8 @@ pub struct XmlTextReaderImpl {
     pub charactersInDocument: i64,
     pub charactersFromEntities: i64,
     pub currentEntities: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Xml::IDtdEntityInfo,
-            *mut crate::System::Xml::IDtdEntityInfo,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdEntityInfo>,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdEntityInfo>,
     >,
     pub disableUndeclaredEntityCheck: bool,
     pub outerReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
@@ -113,9 +111,7 @@ pub struct XmlTextReaderImpl {
     pub Xml: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub XmlNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub parseText_dummyTask: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Tuple_4<i32, i32, i32, bool>,
-        >,
+        quest_hook::libil2cpp::Gc<i32, i32, i32, bool>,
     >,
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl")]
@@ -125,7 +121,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextReaderImpl")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl {
-    type Target = crate::System::Xml::XmlReader;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -173,7 +169,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
         attr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl_NodeData>,
         chunk: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl_NodeData>,
         lastChunk: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl_NodeData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -198,7 +194,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
         > = __cordl_object.invoke("AddAttributeNoChecks", (name, attrDepth))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddAttribute_Il2CppString_Il2CppString_Il2CppString1(
+    pub fn AddAttribute_Gc_Gc_Gc1(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -237,7 +233,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
         definedInDtd: bool,
         nameSortedNodeData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl_NodeData>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -548,7 +544,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
     pub fn DtdParserProxy_PopEntity(
         &mut self,
         oldEntity: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Xml::IDtdEntityInfo,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdEntityInfo>,
         >,
         newEntityId: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -753,7 +749,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("FullAttributeCleanup", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Il2CppString0(
+    pub fn GetAttribute_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -767,7 +763,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
         > = __cordl_object.invoke("GetAttribute", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Il2CppString_Il2CppString1(
+    pub fn GetAttribute_Gc_Gc1(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -833,20 +829,16 @@ impl crate::System::Xml::XmlTextReaderImpl {
         scope: crate::System::Xml::XmlNamespaceScope,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret.into())
     }
@@ -978,7 +970,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitStreamInput_Il2CppString_Stream_Encoding1(
+    pub fn InitStreamInput_Gc1(
         &mut self,
         baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -991,7 +983,20 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("InitStreamInput", (baseUriStr, stream, encoding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitStreamInput_Stream_Encoding0(
+    pub fn InitStreamInput_Gc2(
+        &mut self,
+        baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitStreamInput", (baseUri, stream, encoding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitStreamInput_Gc_Gc0(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -1003,7 +1008,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("InitStreamInput", (stream, encoding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitStreamInput_Uri_Il2CppString_Stream_Encoding3(
+    pub fn InitStreamInput_Gc_Gc3(
         &mut self,
         baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1017,7 +1022,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("InitStreamInput", (baseUri, baseUriStr, stream, encoding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitStreamInput_Uri_Il2CppString_Stream_Il2CppArray_i32_Encoding4(
+    pub fn InitStreamInput_Gc_Gc_i32_Gc4(
         &mut self,
         baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1036,19 +1041,6 @@ impl crate::System::Xml::XmlTextReaderImpl {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitStreamInput_Uri_Stream_Encoding2(
-        &mut self,
-        baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitStreamInput", (baseUri, stream, encoding))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn InitStringInput(
         &mut self,
         baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1062,19 +1054,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("InitStringInput", (baseUriStr, originalEncoding, str))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitTextReaderInput_TextReader0(
-        &mut self,
-        baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitTextReaderInput", (baseUriStr, input))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn InitTextReaderInput_Uri_TextReader1(
+    pub fn InitTextReaderInput_Gc1(
         &mut self,
         baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -1085,6 +1065,18 @@ impl crate::System::Xml::XmlTextReaderImpl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitTextReaderInput", (baseUriStr, baseUri, input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitTextReaderInput_Gc_Gc0(
+        &mut self,
+        baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitTextReaderInput", (baseUriStr, input))?;
         Ok(__cordl_ret.into())
     }
     pub fn InvalidCharRecovery(
@@ -1099,7 +1091,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("InvalidCharRecovery", (bytesCount, charsCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LookupNamespace_Il2CppString0(
+    pub fn LookupNamespace_Gc0(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1113,7 +1105,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
         > = __cordl_object.invoke("LookupNamespace", (prefix))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LookupNamespace_XmlTextReaderImpl_NodeData1(
+    pub fn LookupNamespace_Gc1(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl_NodeData>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1151,7 +1143,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("MoveOffEntityReference", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn MoveToAttribute_Il2CppString0(
+    pub fn MoveToAttribute_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1204,40 +1196,44 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("MoveToNextContentNode", (moveIfOnContentNode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString_Stream_XmlNameTable3(
-        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub fn New_Gc0(
         nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (url, input, nt))?;
+            .invoke_void(".ctor", (nt))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_TextReader_XmlNameTable6(
-        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fn New_Gc2(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (input))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc4(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (input))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc5(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
         nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (url, input, nt))?;
+            .invoke_void(".ctor", (input, nt))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_XmlNodeType_XmlParserContext7(
-        xmlFragment: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        fragType: crate::System::Xml::XmlNodeType,
-        context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (xmlFragment, fragType, context))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppString_XmlParserContext8(
+    pub fn New_Gc8(
         xmlFragment: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1247,7 +1243,18 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke_void(".ctor", (xmlFragment, context))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_XmlParserContext_XmlReaderSettings11(
+    pub fn New_Gc_Gc1(
+        resolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
+        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+        context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (resolver, settings, context))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc11(
         xmlFragment: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
         settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
@@ -1258,16 +1265,41 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke_void(".ctor", (xmlFragment, context, settings))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream2(
+    pub fn New_Gc_Gc3(
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (input))?;
+            .invoke_void(".ctor", (url, input, nt))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream_Il2CppArray_i32_XmlReaderSettings_Uri_Il2CppString_XmlParserContext__cordl_bool9(
+    pub fn New_Gc_Gc6(
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+        nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (url, input, nt))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc_Gc10(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+        baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (input, settings, baseUriStr, context))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_i32_Gc_Gc_Gc_Gc__cordl_bool9(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         byteCount: i32,
@@ -1295,55 +1327,15 @@ impl crate::System::Xml::XmlTextReaderImpl {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_TextReader4(
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (input))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_TextReader_XmlNameTable5(
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
-        nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (input, nt))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_TextReader_XmlReaderSettings_Il2CppString_XmlParserContext10(
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
-        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
-        baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fn New_XmlNodeType_Gc7(
+        xmlFragment: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fragType: crate::System::Xml::XmlNodeType,
         context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (input, settings, baseUriStr, context))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_XmlNameTable0(
-        nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (nt))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_XmlResolver_XmlReaderSettings_XmlParserContext1(
-        resolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
-        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
-        context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (resolver, settings, context))?;
+            .invoke_void(".ctor", (xmlFragment, fragType, context))?;
         Ok(__cordl_object.into())
     }
     pub fn OnDefaultNamespaceDecl(
@@ -1705,7 +1697,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
         let __cordl_ret: bool = __cordl_object.invoke("ParsePI", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ParsePI_StringBuilder1(
+    pub fn ParsePI_Gc1(
         &mut self,
         piInDtdStringBuilder: quest_hook::libil2cpp::Gc<
             crate::System::Text::StringBuilder,
@@ -2038,7 +2030,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("ResolveEntity", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_Il2CppString_Il2CppString_i32_i32_0(
+    pub fn SendValidationEvent_Gc_i32_i32_0(
         &mut self,
         severity: crate::System::Xml::Schema::XmlSeverityType,
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2053,7 +2045,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("SendValidationEvent", (severity, code, arg, lineNo, linePos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_XmlSchemaException1(
+    pub fn SendValidationEvent_XmlSeverityType_Gc1(
         &mut self,
         severity: crate::System::Xml::Schema::XmlSeverityType,
         exception: quest_hook::libil2cpp::Gc<
@@ -2196,16 +2188,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("SkipUntil", (stopChar, recognizeLiterals))?;
         Ok(__cordl_ret.into())
     }
-    pub fn StripSpaces_Il2CppArray_i32_ByRefMut1(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        index: i32,
-        len: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("StripSpaces", (value, index, len))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn StripSpaces_Il2CppString0(
+    pub fn StripSpaces_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2214,6 +2197,15 @@ impl crate::System::Xml::XmlTextReaderImpl {
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("StripSpaces", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StripSpaces_i32_ByRefMut1(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        index: i32,
+        len: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StripSpaces", (value, index, len))?;
         Ok(__cordl_ret.into())
     }
     pub fn SwitchEncoding(
@@ -2242,20 +2234,16 @@ impl crate::System::Xml::XmlTextReaderImpl {
         scope: crate::System::Xml::XmlNamespaceScope,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object
             .invoke("System.Xml.IXmlNamespaceResolver.GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret.into())
@@ -2337,7 +2325,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("ThrowUnclosedElements", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowUnexpectedToken_Il2CppString1(
+    pub fn ThrowUnexpectedToken_Gc1(
         &mut self,
         expectedToken1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2348,7 +2336,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("ThrowUnexpectedToken", (expectedToken1))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowUnexpectedToken_Il2CppString_Il2CppString3(
+    pub fn ThrowUnexpectedToken_Gc_Gc3(
         &mut self,
         expectedToken1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         expectedToken2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2360,7 +2348,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("ThrowUnexpectedToken", (expectedToken1, expectedToken2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowUnexpectedToken_i32_Il2CppString0(
+    pub fn ThrowUnexpectedToken_i32_Gc0(
         &mut self,
         pos: i32,
         expectedToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2372,7 +2360,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("ThrowUnexpectedToken", (pos, expectedToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowUnexpectedToken_i32_Il2CppString_Il2CppString2(
+    pub fn ThrowUnexpectedToken_i32_Gc_Gc2(
         &mut self,
         pos: i32,
         expectedToken1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2385,22 +2373,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("ThrowUnexpectedToken", (pos, expectedToken1, expectedToken2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowWithoutLineInfo_Il2CppArray_Exception2(
-        &mut self,
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ThrowWithoutLineInfo", (res, args, innerException))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ThrowWithoutLineInfo_Il2CppString0(
+    pub fn ThrowWithoutLineInfo_Gc0(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2411,7 +2384,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("ThrowWithoutLineInfo", (res))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowWithoutLineInfo_Il2CppString1(
+    pub fn ThrowWithoutLineInfo_Gc1(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2423,7 +2396,24 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("ThrowWithoutLineInfo", (res, arg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Throw_Exception10(
+    pub fn ThrowWithoutLineInfo_Gc_Gc2(
+        &mut self,
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ThrowWithoutLineInfo", (res, args, innerException))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Throw_Gc10(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2434,7 +2424,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("Throw", (e))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Throw_Il2CppString3(
+    pub fn Throw_Gc3(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2445,36 +2435,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("Throw", (res))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Throw_Il2CppString_Il2CppArray7(
-        &mut self,
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Throw", (res, args))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Throw_Il2CppString_Il2CppArray_Exception9(
-        &mut self,
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Throw", (res, args, innerException))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Throw_Il2CppString_Il2CppString5(
+    pub fn Throw_Gc_Gc5(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2486,7 +2447,23 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("Throw", (res, arg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Throw_Il2CppString_Il2CppString_Exception8(
+    pub fn Throw_Gc_Gc7(
+        &mut self,
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Throw", (res, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Throw_Gc_Gc_Gc8(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2499,7 +2476,24 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("Throw", (res, arg, innerException))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Throw_Il2CppString_Il2CppString_i32_i32_6(
+    pub fn Throw_Gc_Gc_Gc9(
+        &mut self,
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Throw", (res, args, innerException))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Throw_Gc_Gc_i32_i32_6(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2513,7 +2507,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("Throw", (res, arg, lineNo, linePos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Throw_Il2CppString_i32_i32_4(
+    pub fn Throw_Gc_i32_i32_4(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         lineNo: i32,
@@ -2526,7 +2520,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("Throw", (res, lineNo, linePos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Throw_i32_Il2CppString2(
+    pub fn Throw_i32_Gc2(
         &mut self,
         pos: i32,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2538,22 +2532,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("Throw", (pos, res))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Throw_i32_Il2CppString_Il2CppArray1(
-        &mut self,
-        pos: i32,
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Throw", (pos, res, args))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Throw_i32_Il2CppString_Il2CppString0(
+    pub fn Throw_i32_Gc_Gc0(
         &mut self,
         pos: i32,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2564,6 +2543,23 @@ impl crate::System::Xml::XmlTextReaderImpl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Throw", (pos, res, arg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Throw_i32_Gc_Gc1(
+        &mut self,
+        pos: i32,
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Throw", (pos, res, args))?;
         Ok(__cordl_ret.into())
     }
     pub fn UnDecodeChars(
@@ -2607,22 +2603,41 @@ impl crate::System::Xml::XmlTextReaderImpl {
         let __cordl_ret: bool = __cordl_object.invoke("ZeroEndingStream", (pos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Stream_XmlNameTable3(
+    pub fn _ctor_Gc0(
         &mut self,
-        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (url, input, nt))?;
+            .invoke(".ctor", (nt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_TextReader_XmlNameTable6(
+    pub fn _ctor_Gc2(
         &mut self,
-        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc4(
+        &mut self,
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc5(
+        &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
         nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2630,23 +2645,10 @@ impl crate::System::Xml::XmlTextReaderImpl {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (url, input, nt))?;
+            .invoke(".ctor", (input, nt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_XmlNodeType_XmlParserContext7(
-        &mut self,
-        xmlFragment: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        fragType: crate::System::Xml::XmlNodeType,
-        context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (xmlFragment, fragType, context))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString_XmlParserContext8(
+    pub fn _ctor_Gc8(
         &mut self,
         xmlFragment: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
@@ -2658,7 +2660,20 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke(".ctor", (xmlFragment, context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_XmlParserContext_XmlReaderSettings11(
+    pub fn _ctor_Gc_Gc1(
+        &mut self,
+        resolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
+        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+        context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (resolver, settings, context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc11(
         &mut self,
         xmlFragment: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
@@ -2671,18 +2686,47 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke(".ctor", (xmlFragment, context, settings))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream2(
+    pub fn _ctor_Gc_Gc3(
         &mut self,
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (input))?;
+            .invoke(".ctor", (url, input, nt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream_Il2CppArray_i32_XmlReaderSettings_Uri_Il2CppString_XmlParserContext__cordl_bool9(
+    pub fn _ctor_Gc_Gc6(
+        &mut self,
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+        nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (url, input, nt))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc_Gc10(
+        &mut self,
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+        baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (input, settings, baseUriStr, context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_i32_Gc_Gc_Gc_Gc__cordl_bool9(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2712,65 +2756,17 @@ impl crate::System::Xml::XmlTextReaderImpl {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_TextReader4(
+    pub fn _ctor_XmlNodeType_Gc7(
         &mut self,
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (input))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_TextReader_XmlNameTable5(
-        &mut self,
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
-        nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (input, nt))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_TextReader_XmlReaderSettings_Il2CppString_XmlParserContext10(
-        &mut self,
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
-        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
-        baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        xmlFragment: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fragType: crate::System::Xml::XmlNodeType,
         context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (input, settings, baseUriStr, context))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_XmlNameTable0(
-        &mut self,
-        nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (nt))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_XmlResolver_XmlReaderSettings_XmlParserContext1(
-        &mut self,
-        resolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
-        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
-        context: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (resolver, settings, context))?;
+            .invoke(".ctor", (xmlFragment, fragType, context))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_AttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -3424,28 +3420,36 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlTextReaderImpl
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl")]
-impl AsRef<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::XmlTextReaderImpl {
-    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
-impl AsMut<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::XmlTextReaderImpl {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
-impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>>
 for crate::System::Xml::XmlTextReaderImpl {
-    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl")]
-impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>>
 for crate::System::Xml::XmlTextReaderImpl {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>>
+for crate::System::Xml::XmlTextReaderImpl {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>>
+for crate::System::Xml::XmlTextReaderImpl {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -3455,7 +3459,7 @@ for crate::System::Xml::XmlTextReaderImpl {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
     feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
@@ -3470,7 +3474,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3518,15 +3522,11 @@ impl crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComp
     }
     pub fn get_Instance() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
@@ -3547,14 +3547,14 @@ for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataCompa
     feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
 )]
 impl AsRef<
-    crate::System::Collections::Generic::IComparer_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
 > for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IComparer_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         unsafe { std::mem::transmute(self) }
     }
@@ -3563,14 +3563,14 @@ impl AsRef<
     feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
 )]
 impl AsMut<
-    crate::System::Collections::Generic::IComparer_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
 > for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IComparer_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         unsafe { std::mem::transmute(self) }
     }
@@ -3579,7 +3579,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_DtdParserProxy {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl>,
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
@@ -3589,7 +3589,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3769,7 +3769,7 @@ impl crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
     pub fn System_Xml_IDtdParserAdapter_PopEntity(
         &mut self,
         oldEntity: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Xml::IDtdEntityInfo,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdEntityInfo>,
         >,
         newEntityId: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -3996,44 +3996,62 @@ for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
-impl AsRef<crate::System::Xml::IDtdParserAdapter>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>>
 for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
-    fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapter {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
-impl AsMut<crate::System::Xml::IDtdParserAdapter>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>>
 for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
-impl AsRef<crate::System::Xml::IDtdParserAdapterV1>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapterV1>>
 for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
-    fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapterV1 {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapterV1> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
-impl AsMut<crate::System::Xml::IDtdParserAdapterV1>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapterV1>>
 for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapterV1 {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapterV1> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
-impl AsRef<crate::System::Xml::IDtdParserAdapterWithValidation>
-for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
-    fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapterWithValidation {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapterWithValidation>,
+> for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IDtdParserAdapterWithValidation,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
-impl AsMut<crate::System::Xml::IDtdParserAdapterWithValidation>
-for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapterWithValidation {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapterWithValidation>,
+> for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IDtdParserAdapterWithValidation,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -4116,7 +4134,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_LaterInitParam {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub useAsync: bool,
     pub inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub inputBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -4135,7 +4153,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4180,7 +4198,7 @@ for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_NoNamespaceManager {
-    __cordl_parent: crate::System::Xml::XmlNamespaceManager,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4190,7 +4208,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
-    type Target = crate::System::Xml::XmlNamespaceManager;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4233,20 +4251,16 @@ impl crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
         scope: crate::System::Xml::XmlNamespaceScope,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret.into())
     }
@@ -4352,7 +4366,7 @@ for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_NodeData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _cordl_type: crate::System::Xml::XmlNodeType,
     pub localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4382,7 +4396,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_NodeData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4416,7 +4430,19 @@ impl crate::System::Xml::XmlTextReaderImpl_NodeData {
             .invoke("ClearName", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTo_Il2CppArray_i32_i32_1(
+    pub fn CopyTo_i32_Gc0(
+        &mut self,
+        valueOffset: i32,
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CopyTo", (valueOffset, sb))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopyTo_i32_i32_1(
         &mut self,
         valueOffset: i32,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -4428,18 +4454,6 @@ impl crate::System::Xml::XmlTextReaderImpl_NodeData {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("CopyTo", (valueOffset, buffer, offset, length))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CopyTo_StringBuilder0(
-        &mut self,
-        valueOffset: i32,
-        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyTo", (valueOffset, sb))?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateNameWPrefix(
@@ -4511,7 +4525,7 @@ impl crate::System::Xml::XmlTextReaderImpl_NodeData {
             .invoke("SetLineInfo2", (lineNo, linePos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetNamedNode_Il2CppString_Il2CppString1(
+    pub fn SetNamedNode_Gc_Gc1(
         &mut self,
         _cordl_type: crate::System::Xml::XmlNodeType,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4525,7 +4539,7 @@ impl crate::System::Xml::XmlTextReaderImpl_NodeData {
             .invoke("SetNamedNode", (_cordl_type, localName, prefix, nameWPrefix))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetNamedNode_XmlNodeType_Il2CppString0(
+    pub fn SetNamedNode_XmlNodeType_Gc0(
         &mut self,
         _cordl_type: crate::System::Xml::XmlNodeType,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4537,7 +4551,19 @@ impl crate::System::Xml::XmlTextReaderImpl_NodeData {
             .invoke("SetNamedNode", (_cordl_type, localName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetValueNode_Il2CppArray_i32_i32_1(
+    pub fn SetValueNode_XmlNodeType_Gc0(
+        &mut self,
+        _cordl_type: crate::System::Xml::XmlNodeType,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetValueNode", (_cordl_type, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetValueNode_i32_i32_1(
         &mut self,
         _cordl_type: crate::System::Xml::XmlNodeType,
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -4551,19 +4577,18 @@ impl crate::System::Xml::XmlTextReaderImpl_NodeData {
             .invoke("SetValueNode", (_cordl_type, chars, startPos, len))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetValueNode_Il2CppString0(
+    pub fn SetValue_Gc0(
         &mut self,
-        _cordl_type: crate::System::Xml::XmlNodeType,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValueNode", (_cordl_type, value))?;
+            .invoke("SetValue", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetValue_Il2CppArray_i32_i32_1(
+    pub fn SetValue_i32_i32_1(
         &mut self,
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         startPos: i32,
@@ -4574,17 +4599,6 @@ impl crate::System::Xml::XmlTextReaderImpl_NodeData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetValue", (chars, startPos, len))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetValue_Il2CppString0(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValue", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_IComparable_CompareTo(
@@ -4708,16 +4722,16 @@ for crate::System::Xml::XmlTextReaderImpl_NodeData {
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
-impl AsRef<crate::System::IComparable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::Xml::XmlTextReaderImpl_NodeData {
-    fn as_ref(&self) -> &crate::System::IComparable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
-impl AsMut<crate::System::IComparable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::Xml::XmlTextReaderImpl_NodeData {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -4725,7 +4739,7 @@ for crate::System::Xml::XmlTextReaderImpl_NodeData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4736,7 +4750,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
 impl std::ops::Deref
 for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4934,7 +4948,7 @@ impl crate::System::Xml::XmlTextReaderImpl_ParsingState {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_XmlContext {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub xmlSpace: crate::System::Xml::XmlSpace,
     pub xmlLang: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub defaultNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4949,7 +4963,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_XmlContext {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4969,7 +4983,7 @@ impl crate::System::Xml::XmlTextReaderImpl_XmlContext {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XmlTextReaderImpl_XmlContext1(
+    pub fn New_Gc1(
         previousContext: quest_hook::libil2cpp::Gc<
             crate::System::Xml::XmlTextReaderImpl_XmlContext,
         >,
@@ -4990,7 +5004,7 @@ impl crate::System::Xml::XmlTextReaderImpl_XmlContext {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XmlTextReaderImpl_XmlContext1(
+    pub fn _ctor_Gc1(
         &mut self,
         previousContext: quest_hook::libil2cpp::Gc<
             crate::System::Xml::XmlTextReaderImpl_XmlContext,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionNodesHelper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "MissionNodesHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MissionNodesHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionNodesHelper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,41 +24,37 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MissionNodesHelper {
 }
 #[cfg(feature = "MissionNodesHelper")]
 impl crate::GlobalNamespace::MissionNodesHelper {
-    pub fn CycleDetection_MissionNode0(
+    pub fn CycleDetection_Gc0(
         node: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CycleDetection", (node))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CycleDetection_i32_Dictionary_2_1(
+    pub fn CycleDetection_i32_Gc1(
         node: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         layer: i32,
         layers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut crate::GlobalNamespace::MissionNode,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CycleDetection", (node, layer, layers))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FinalNodeIsFinal_HashSet_1_1(
+    pub fn FinalNodeIsFinal_Gc1(
         finalNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         node: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         visitedNodes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::GlobalNamespace::MissionNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FinalNodeIsFinal", (finalNode, node, visitedNodes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FinalNodeIsFinal_MissionNode_MissionNode0(
+    pub fn FinalNodeIsFinal_Gc_Gc0(
         finalNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         rootNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -70,15 +66,11 @@ impl crate::GlobalNamespace::MissionNodesHelper {
         root: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::GlobalNamespace::MissionNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::GlobalNamespace::MissionNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetAllNodesFromRoot", (root))?;
         Ok(__cordl_ret.into())
@@ -93,9 +85,7 @@ impl crate::GlobalNamespace::MissionNodesHelper {
     pub fn VisitAllTree(
         node: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         visitedNodes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::GlobalNamespace::MissionNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

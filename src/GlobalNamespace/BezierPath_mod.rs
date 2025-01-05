@@ -2,15 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BezierPath {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub bezierPathWasModifiedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub _points: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-    >,
+    pub _points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     pub _controlMode: crate::GlobalNamespace::BezierPath_ControlMode,
-    pub _perAnchorNormalsAngle: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<f32>,
-    >,
+    pub _perAnchorNormalsAngle: quest_hook::libil2cpp::Gc<f32>,
     pub _neighbourDistances: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
@@ -21,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BezierPath")]
 impl std::ops::Deref for crate::GlobalNamespace::BezierPath {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -131,7 +127,9 @@ impl crate::GlobalNamespace::BezierPath {
         &mut self,
         segmentIndex: i32,
         points: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -195,11 +193,7 @@ impl crate::GlobalNamespace::BezierPath {
     }
     pub fn UpdateByAnchorPoints(
         &mut self,
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::UnityEngine::Vector3,
-            >,
-        >,
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -210,11 +204,7 @@ impl crate::GlobalNamespace::BezierPath {
     }
     pub fn UpdateControlPoints(
         &mut self,
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::UnityEngine::Vector3,
-            >,
-        >,
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -5,10 +5,8 @@ pub struct ContinuationResultTaskFromResultTask_2<
     TAntecedentResult: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Threading::Tasks::Task_1<TResult>,
-    pub m_antecedent: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TResult>,
+    pub m_antecedent: quest_hook::libil2cpp::Gc<TAntecedentResult>,
     __cordl_phantom_TAntecedentResult: std::marker::PhantomData<TAntecedentResult>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
@@ -28,7 +26,7 @@ for crate::System::Threading::Tasks::ContinuationResultTaskFromResultTask_2<
     TAntecedentResult,
     TResult,
 > {
-    type Target = crate::System::Threading::Tasks::Task_1<TResult>;
+    type Target = quest_hook::libil2cpp::Gc<TResult>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,9 +69,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        antecedent: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
-        >,
+        antecedent: quest_hook::libil2cpp::Gc<TAntecedentResult>,
         function: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
@@ -96,9 +92,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        antecedent: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
-        >,
+        antecedent: quest_hook::libil2cpp::Gc<TAntecedentResult>,
         function: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,

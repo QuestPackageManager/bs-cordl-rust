@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct __Il2CppComDelegate {
-    __cordl_parent: crate::System::__Il2CppComObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::__Il2CppComObject>,
 }
 #[cfg(feature = "System+__Il2CppComDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+__Il2CppComDelegate")]
 impl std::ops::Deref for crate::System::__Il2CppComDelegate {
-    type Target = crate::System::__Il2CppComObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::__Il2CppComObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

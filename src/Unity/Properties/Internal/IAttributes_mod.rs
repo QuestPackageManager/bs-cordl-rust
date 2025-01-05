@@ -38,9 +38,7 @@ impl crate::Unity::Properties::Internal::IAttributes {
     pub fn AddAttributes(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Attribute,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

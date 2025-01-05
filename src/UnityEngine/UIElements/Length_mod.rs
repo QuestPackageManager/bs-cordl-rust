@@ -33,7 +33,7 @@ impl crate::UnityEngine::UIElements::Length {
             .invoke("Auto", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -192,20 +192,20 @@ impl crate::UnityEngine::UIElements::Length {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Length")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length>>
 for crate::UnityEngine::UIElements::Length {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Length")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length>>
 for crate::UnityEngine::UIElements::Length {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length> {
         todo!()
     }
 }

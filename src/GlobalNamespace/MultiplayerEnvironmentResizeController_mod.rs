@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerEnvironmentResizeController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _platformEnd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _resizeData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData,
+            >,
         >,
     >,
     pub _centerResizeController: quest_hook::libil2cpp::Gc<
@@ -28,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerEnvironmentResizeController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -172,16 +174,18 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerEnvironmentResizeController_ResizeData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _resizeType: crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType,
     pub _offset: f32,
     pub _lights: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
         >,
     >,
     pub _otherTransforms: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeData")]
@@ -193,7 +197,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -229,7 +233,7 @@ impl crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
             >,
         >,
     > {
@@ -238,7 +242,7 @@ impl crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
             >,
         > = __cordl_object.invoke("get_lights", ())?;
         Ok(__cordl_ret.into())
@@ -254,14 +258,18 @@ impl crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         > = __cordl_object.invoke("get_otherTransforms", ())?;
         Ok(__cordl_ret.into())
     }

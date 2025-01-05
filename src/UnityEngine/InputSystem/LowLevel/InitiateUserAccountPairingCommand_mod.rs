@@ -56,20 +56,30 @@ impl crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingComman
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
-for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
-for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    > {
         todo!()
     }
 }

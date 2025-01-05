@@ -39,7 +39,7 @@ impl crate::UnityEngine::BoneWeight {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -212,18 +212,18 @@ impl crate::UnityEngine::BoneWeight {
     }
 }
 #[cfg(feature = "UnityEngine+BoneWeight")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::BoneWeight>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::BoneWeight>>
 for crate::UnityEngine::BoneWeight {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::BoneWeight> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::BoneWeight> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+BoneWeight")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::BoneWeight>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::BoneWeight>>
 for crate::UnityEngine::BoneWeight {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::BoneWeight> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::BoneWeight> {
         todo!()
     }
 }

@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VectorImageRenderInfoPool {
-    __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPool_1<
-        *mut crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
@@ -14,8 +16,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfoPool {
-    type Target = crate::UnityEngine::UIElements::UIR::LinkedPool_1<
-        *mut crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

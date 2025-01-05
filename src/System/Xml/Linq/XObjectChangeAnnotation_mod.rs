@@ -2,16 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XObjectChangeAnnotation {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub changing: quest_hook::libil2cpp::Gc<
-        crate::System::EventHandler_1<
-            *mut crate::System::Xml::Linq::XObjectChangeEventArgs,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObjectChangeEventArgs>,
     >,
     pub changed: quest_hook::libil2cpp::Gc<
-        crate::System::EventHandler_1<
-            *mut crate::System::Xml::Linq::XObjectChangeEventArgs,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObjectChangeEventArgs>,
     >,
 }
 #[cfg(feature = "System+Xml+Linq+XObjectChangeAnnotation")]
@@ -21,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XObjectChangeAnnotation")]
 impl std::ops::Deref for crate::System::Xml::Linq::XObjectChangeAnnotation {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

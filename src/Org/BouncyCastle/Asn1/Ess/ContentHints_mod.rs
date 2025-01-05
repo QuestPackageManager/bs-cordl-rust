@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContentHints {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub contentDescription: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::DerUtf8String,
     >,
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ess+ContentHints")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Ess::ContentHints {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +44,7 @@ impl crate::Org::BouncyCastle::Asn1::Ess::ContentHints {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (o))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1Sequence0(
+    pub fn New_Gc0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -49,7 +53,7 @@ impl crate::Org::BouncyCastle::Asn1::Ess::ContentHints {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DerObjectIdentifier1(
+    pub fn New_Gc1(
         contentType: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -60,7 +64,7 @@ impl crate::Org::BouncyCastle::Asn1::Ess::ContentHints {
             .invoke_void(".ctor", (contentType))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DerObjectIdentifier_DerUtf8String2(
+    pub fn New_Gc2(
         contentType: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -87,7 +91,7 @@ impl crate::Org::BouncyCastle::Asn1::Ess::ContentHints {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Sequence0(
+    pub fn _ctor_Gc0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -98,7 +102,7 @@ impl crate::Org::BouncyCastle::Asn1::Ess::ContentHints {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerObjectIdentifier1(
+    pub fn _ctor_Gc1(
         &mut self,
         contentType: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -111,7 +115,7 @@ impl crate::Org::BouncyCastle::Asn1::Ess::ContentHints {
             .invoke(".ctor", (contentType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerObjectIdentifier_DerUtf8String2(
+    pub fn _ctor_Gc2(
         &mut self,
         contentType: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,

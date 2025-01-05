@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CurrentSystemTimeZone {
-    __cordl_parent: crate::System::TimeZone,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::TimeZone>,
     pub m_ticksOffset: i64,
     pub m_standardName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_daylightName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+CurrentSystemTimeZone")]
 impl std::ops::Deref for crate::System::CurrentSystemTimeZone {
-    type Target = crate::System::TimeZone;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::TimeZone>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,11 +72,13 @@ impl crate::System::CurrentSystemTimeZone {
     pub fn GetTimeZoneData(
         year: i32,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
         >,
         names: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
         daylight_inverted: quest_hook::libil2cpp::ByRefMut<bool>,

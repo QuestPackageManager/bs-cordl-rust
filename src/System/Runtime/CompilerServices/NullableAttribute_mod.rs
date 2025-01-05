@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NullableAttribute {
-    __cordl_parent: crate::System::Attribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     pub NullableFlags: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+NullableAttribute")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+CompilerServices+NullableAttribute")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::NullableAttribute {
-    type Target = crate::System::Attribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::NullableAt
 }
 #[cfg(feature = "System+Runtime+CompilerServices+NullableAttribute")]
 impl crate::System::Runtime::CompilerServices::NullableAttribute {
-    pub fn New_Il2CppArray1(
+    pub fn New_Gc1(
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
@@ -46,7 +46,7 @@ impl crate::System::Runtime::CompilerServices::NullableAttribute {
             .invoke_void(".ctor", (_cordl_fixed_empty_name_whitespace))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppArray1(
+    pub fn _ctor_Gc1(
         &mut self,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,

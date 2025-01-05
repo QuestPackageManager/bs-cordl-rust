@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexNode {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub NType: i32,
     pub Children: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::System::Text::RegularExpressions::RegexNode,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexNode>,
     >,
     pub Str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Ch: char,
@@ -25,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexNode")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexNode {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,7 +99,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
             .invoke("MakeRep", (_cordl_type, min, max))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString2(
+    pub fn New_Gc2(
         _cordl_type: i32,
         options: crate::System::Text::RegularExpressions::RegexOptions,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -275,7 +273,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         let __cordl_ret: bool = __cordl_object.invoke("UseOptionR", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString2(
+    pub fn _ctor_Gc2(
         &mut self,
         _cordl_type: i32,
         options: crate::System::Text::RegularExpressions::RegexOptions,

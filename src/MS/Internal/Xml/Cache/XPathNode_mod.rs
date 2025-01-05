@@ -33,8 +33,10 @@ impl crate::MS::Internal::Xml::Cache::XPathNode {
     pub fn GetParent(
         &mut self,
         pageNode: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::MS::Internal::Xml::Cache::XPathNode,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::MS::Internal::Xml::Cache::XPathNode,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -48,8 +50,10 @@ impl crate::MS::Internal::Xml::Cache::XPathNode {
     pub fn GetSibling(
         &mut self,
         pageNode: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::MS::Internal::Xml::Cache::XPathNode,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::MS::Internal::Xml::Cache::XPathNode,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {

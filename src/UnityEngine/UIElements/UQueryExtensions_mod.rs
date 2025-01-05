@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UQueryExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UQueryExtensions")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQueryExtensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQueryExtensions {
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryExtensions")]
 impl crate::UnityEngine::UIElements::UQueryExtensions {
-    pub fn Q_VisualElement_Il2CppString_Il2CppString0<T>(
+    pub fn Q_Gc_Gc_Gc0<T>(
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -37,7 +37,7 @@ impl crate::UnityEngine::UIElements::UQueryExtensions {
             .invoke("Q", (e, name, className))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Q_VisualElement_Il2CppString_Il2CppString1(
+    pub fn Q_Gc_Gc_Gc1(
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

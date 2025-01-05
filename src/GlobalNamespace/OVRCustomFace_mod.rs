@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRCustomFace {
-    __cordl_parent: crate::GlobalNamespace::OVRFace,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRFace>,
     pub _mappings: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRCustomFace")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRCustomFace {
-    type Target = crate::GlobalNamespace::OVRFace;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRFace>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,11 +37,15 @@ impl crate::GlobalNamespace::OVRCustomFace {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::ValueTuple_2<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
+                >,
             >,
         >,
     > {
@@ -49,11 +53,15 @@ impl crate::GlobalNamespace::OVRCustomFace {
             self,
         );
         let __cordl_ret: crate::System::ValueTuple_2<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
+                >,
             >,
         > = __cordl_object.invoke("GetCustomBlendShapeNameAndExpressionPairs", ())?;
         Ok(__cordl_ret.into())

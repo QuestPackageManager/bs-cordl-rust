@@ -435,7 +435,7 @@ impl crate::OVR::OpenVR::IVROverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__ClearOverlayTexture {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ClearOverlayTexture")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -444,7 +444,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ClearOverlayTexture")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -531,7 +531,7 @@ for crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__CloseMessageOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_CloseMessageOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -540,7 +540,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_CloseMessageOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__CloseMessageOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -625,7 +625,7 @@ for crate::OVR::OpenVR::IVROverlay__CloseMessageOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__ComputeOverlayIntersection {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ComputeOverlayIntersection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -635,7 +635,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ComputeOverlayIntersection")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -743,7 +743,7 @@ for crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__CreateDashboardOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_CreateDashboardOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -752,7 +752,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_CreateDashboardOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__CreateDashboardOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -864,7 +864,7 @@ for crate::OVR::OpenVR::IVROverlay__CreateDashboardOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__CreateOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_CreateOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -873,7 +873,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_CreateOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__CreateOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -968,7 +968,7 @@ for crate::OVR::OpenVR::IVROverlay__CreateOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__DestroyOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_DestroyOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -977,7 +977,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_DestroyOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__DestroyOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1064,7 +1064,7 @@ for crate::OVR::OpenVR::IVROverlay__DestroyOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__FindOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_FindOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1073,7 +1073,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_FindOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__FindOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1162,7 +1162,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__FindO
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetDashboardOverlaySceneProcess {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetDashboardOverlaySceneProcess")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1173,7 +1173,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetDashboardOverlaySceneProcess")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1264,7 +1264,7 @@ for crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetGamepadFocusOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetGamepadFocusOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1273,7 +1273,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetGamepadFocusOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetGamepadFocusOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1354,7 +1354,7 @@ for crate::OVR::OpenVR::IVROverlay__GetGamepadFocusOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetHighQualityOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetHighQualityOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1363,7 +1363,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetHighQualityOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetHighQualityOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1444,7 +1444,7 @@ for crate::OVR::OpenVR::IVROverlay__GetHighQualityOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetKeyboardText {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetKeyboardText")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1453,7 +1453,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetKeyboardText")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetKeyboardText {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1540,7 +1540,7 @@ for crate::OVR::OpenVR::IVROverlay__GetKeyboardText {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayAlpha {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayAlpha")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1549,7 +1549,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayAlpha")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1639,7 +1639,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayAutoCurveDistanceRangeInMeters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1650,7 +1650,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayAutoCurveDistanceRangeInMeters")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1759,7 +1759,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayColor {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayColor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1768,7 +1768,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayColor")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayColor {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1867,7 +1867,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayColor {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayDualAnalogTransform {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayDualAnalogTransform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1877,7 +1877,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayDualAnalogTransform")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1976,7 +1976,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayErrorNameFromEnum {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayErrorNameFromEnum")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1986,7 +1986,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayErrorNameFromEnum")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayErrorNameFromEnum {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2073,7 +2073,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayErrorNameFromEnum {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayFlag {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayFlag")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2082,7 +2082,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayFlag")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayFlag {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2177,7 +2177,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayFlag {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayFlags {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayFlags")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2186,7 +2186,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayFlags")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayFlags {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2276,7 +2276,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayFlags {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayImageData {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayImageData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2285,7 +2285,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayImageData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayImageData {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2396,7 +2396,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayImageData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayInputMethod {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayInputMethod")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2405,7 +2405,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayInputMethod")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2501,7 +2501,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayKey {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2510,7 +2510,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayKey")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayKey {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2606,7 +2606,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayKey {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayMouseScale {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayMouseScale")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2615,7 +2615,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayMouseScale")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2709,7 +2709,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayName {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2718,7 +2718,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayName {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2814,7 +2814,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayName {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayRenderModel {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayRenderModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2823,7 +2823,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayRenderModel")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayRenderModel {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2934,7 +2934,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayRenderModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayRenderingPid {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayRenderingPid")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2943,7 +2943,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayRenderingPid")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingPid {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3028,7 +3028,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingPid {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlaySortOrder {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlaySortOrder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3037,7 +3037,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlaySortOrder")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3127,7 +3127,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayTexelAspect {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTexelAspect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3136,7 +3136,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTexelAspect")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3226,7 +3226,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayTexture {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTexture")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3235,7 +3235,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTexture")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayTexture {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3391,7 +3391,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTexture {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayTextureBounds {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureBounds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3400,7 +3400,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureBounds")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3499,7 +3499,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayTextureColorSpace {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureColorSpace")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3509,7 +3509,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureColorSpace")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3608,7 +3608,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayTextureSize {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureSize")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3617,7 +3617,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTextureSize")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3713,7 +3713,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayTransformAbsolute {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformAbsolute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3723,7 +3723,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformAbsolute")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3843,7 +3843,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayTransformOverlayRelative {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformOverlayRelative")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3854,7 +3854,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformOverlayRelative")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3973,7 +3973,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayTransformTrackedDeviceComponent {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformTrackedDeviceComponent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3984,7 +3984,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformTrackedDeviceComponent")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4092,7 +4092,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayTransformTrackedDeviceRelative {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformTrackedDeviceRelative")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4103,7 +4103,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformTrackedDeviceRelative")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceRelative {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4218,7 +4218,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceRelative {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayTransformType {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4227,7 +4227,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayTransformType")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4326,7 +4326,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetOverlayWidthInMeters {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayWidthInMeters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4335,7 +4335,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetOverlayWidthInMeters")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4428,7 +4428,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetPrimaryDashboardDevice {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetPrimaryDashboardDevice")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4438,7 +4438,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetPrimaryDashboardDevice")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__GetPrimaryDashboardDevice {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4519,7 +4519,7 @@ for crate::OVR::OpenVR::IVROverlay__GetPrimaryDashboardDevice {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__GetTransformForOverlayCoordinates {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetTransformForOverlayCoordinates")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4530,7 +4530,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_GetTransformForOverlayCoordinates")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4642,7 +4642,7 @@ for crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__HideKeyboard {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_HideKeyboard")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4651,7 +4651,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_HideKeyboard")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__HideKeyboard {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4735,7 +4735,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__HideK
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__HideOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_HideOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4744,7 +4744,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_HideOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__HideOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4830,7 +4830,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__HideO
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__IsActiveDashboardOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsActiveDashboardOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4840,7 +4840,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsActiveDashboardOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__IsActiveDashboardOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4925,7 +4925,7 @@ for crate::OVR::OpenVR::IVROverlay__IsActiveDashboardOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__IsDashboardVisible {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsDashboardVisible")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4934,7 +4934,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsDashboardVisible")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__IsDashboardVisible {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5015,7 +5015,7 @@ for crate::OVR::OpenVR::IVROverlay__IsDashboardVisible {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__IsHoverTargetOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsHoverTargetOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5024,7 +5024,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsHoverTargetOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__IsHoverTargetOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5109,7 +5109,7 @@ for crate::OVR::OpenVR::IVROverlay__IsHoverTargetOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__IsOverlayVisible {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsOverlayVisible")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5118,7 +5118,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_IsOverlayVisible")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__IsOverlayVisible {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5203,7 +5203,7 @@ for crate::OVR::OpenVR::IVROverlay__IsOverlayVisible {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__MoveGamepadFocusToNeighbor {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_MoveGamepadFocusToNeighbor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5213,7 +5213,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_MoveGamepadFocusToNeighbor")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNeighbor {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5302,7 +5302,7 @@ for crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNeighbor {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__PollNextOverlayEvent {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_PollNextOverlayEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5311,7 +5311,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_PollNextOverlayEvent")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5405,7 +5405,7 @@ for crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__ReleaseNativeOverlayHandle {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ReleaseNativeOverlayHandle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5415,7 +5415,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ReleaseNativeOverlayHandle")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5507,7 +5507,7 @@ for crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetDashboardOverlaySceneProcess {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetDashboardOverlaySceneProcess")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5518,7 +5518,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetDashboardOverlaySceneProcess")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5608,7 +5608,7 @@ for crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetGamepadFocusOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetGamepadFocusOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5617,7 +5617,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetGamepadFocusOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetGamepadFocusOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5704,7 +5704,7 @@ for crate::OVR::OpenVR::IVROverlay__SetGamepadFocusOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetHighQualityOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetHighQualityOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5713,7 +5713,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetHighQualityOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetHighQualityOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5800,7 +5800,7 @@ for crate::OVR::OpenVR::IVROverlay__SetHighQualityOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetKeyboardPositionForOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetKeyboardPositionForOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5810,7 +5810,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetKeyboardPositionForOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5900,7 +5900,7 @@ for crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetKeyboardTransformAbsolute {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetKeyboardTransformAbsolute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5910,7 +5910,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetKeyboardTransformAbsolute")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6015,7 +6015,7 @@ for crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayAlpha {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayAlpha")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6024,7 +6024,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayAlpha")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6113,7 +6113,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayAutoCurveDistanceRangeInMeters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6124,7 +6124,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayAutoCurveDistanceRangeInMeters")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6228,7 +6228,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayColor {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayColor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6237,7 +6237,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayColor")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayColor {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6333,7 +6333,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayColor {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayDualAnalogTransform {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayDualAnalogTransform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6343,7 +6343,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayDualAnalogTransform")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6440,7 +6440,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayFlag {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayFlag")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6449,7 +6449,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayFlag")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayFlag {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6543,7 +6543,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayFlag {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayFromFile {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayFromFile")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6552,7 +6552,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayFromFile")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayFromFile {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6641,7 +6641,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayFromFile {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayInputMethod {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayInputMethod")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6650,7 +6650,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayInputMethod")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayInputMethod {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6739,7 +6739,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayInputMethod {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayIntersectionMask {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayIntersectionMask")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6749,7 +6749,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayIntersectionMask")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6862,7 +6862,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayMouseScale {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayMouseScale")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6871,7 +6871,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayMouseScale")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6965,7 +6965,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayName {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6974,7 +6974,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayName {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7063,7 +7063,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayName {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayNeighbor {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayNeighbor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7072,7 +7072,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayNeighbor")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7163,7 +7163,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayRaw {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRaw")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7172,7 +7172,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRaw")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayRaw {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7270,7 +7270,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayRaw {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayRenderModel {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRenderModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7279,7 +7279,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRenderModel")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7374,7 +7374,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayRenderingPid {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRenderingPid")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7383,7 +7383,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayRenderingPid")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingPid {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7472,7 +7472,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingPid {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlaySortOrder {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlaySortOrder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7481,7 +7481,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlaySortOrder")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7570,7 +7570,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayTexelAspect {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTexelAspect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7579,7 +7579,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTexelAspect")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayTexelAspect {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7668,7 +7668,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTexelAspect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayTexture {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTexture")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7677,7 +7677,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTexture")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayTexture {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7767,7 +7767,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTexture {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayTextureBounds {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTextureBounds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7776,7 +7776,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTextureBounds")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7875,7 +7875,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayTextureColorSpace {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTextureColorSpace")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7885,7 +7885,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTextureColorSpace")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7977,7 +7977,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayTransformAbsolute {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformAbsolute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7987,7 +7987,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformAbsolute")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -8097,7 +8097,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayTransformOverlayRelative {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformOverlayRelative")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -8108,7 +8108,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformOverlayRelative")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -8223,7 +8223,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayTransformTrackedDeviceComponent {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceComponent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -8234,7 +8234,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceComponent")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -8329,7 +8329,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayTransformTrackedDeviceRelative {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceRelative")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -8340,7 +8340,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceRelative")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -8451,7 +8451,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__SetOverlayWidthInMeters {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayWidthInMeters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -8460,7 +8460,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_SetOverlayWidthInMeters")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -8549,7 +8549,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__ShowDashboard {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowDashboard")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -8558,7 +8558,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowDashboard")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__ShowDashboard {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -8645,7 +8645,7 @@ for crate::OVR::OpenVR::IVROverlay__ShowDashboard {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__ShowKeyboard {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowKeyboard")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -8654,7 +8654,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowKeyboard")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__ShowKeyboard {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -8776,7 +8776,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__ShowK
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__ShowKeyboardForOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowKeyboardForOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -8785,7 +8785,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowKeyboardForOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -8912,7 +8912,7 @@ for crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__ShowMessageOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowMessageOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -8921,7 +8921,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowMessageOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -9040,7 +9040,7 @@ for crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVROverlay__ShowOverlay {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowOverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -9049,7 +9049,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVROverlay+_ShowOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVROverlay__ShowOverlay {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

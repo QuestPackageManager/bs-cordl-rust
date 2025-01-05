@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackLaneRingsManager {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _trackLaneRingPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::TrackLaneRing,
     >,
@@ -11,7 +11,9 @@ pub struct TrackLaneRingsManager {
     pub _spawnAsChildren: bool,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _rings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::TrackLaneRing>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TrackLaneRing>,
+        >,
     >,
 }
 #[cfg(feature = "TrackLaneRingsManager")]
@@ -21,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TrackLaneRingsManager")]
 impl std::ops::Deref for crate::GlobalNamespace::TrackLaneRingsManager {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -96,7 +98,7 @@ impl crate::GlobalNamespace::TrackLaneRingsManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::TrackLaneRing,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TrackLaneRing>,
             >,
         >,
     > {
@@ -105,7 +107,7 @@ impl crate::GlobalNamespace::TrackLaneRingsManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::TrackLaneRing,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TrackLaneRing>,
             >,
         > = __cordl_object.invoke("get_Rings", ())?;
         Ok(__cordl_ret.into())

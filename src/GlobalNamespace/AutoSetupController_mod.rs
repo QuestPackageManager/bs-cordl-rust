@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AutoSetupController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _closeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _selectBasedOnSuggestionsToggle: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::Toggle,
@@ -17,7 +17,7 @@ pub struct AutoSetupController {
         crate::UnityEngine::UI::Toggle,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::AutoSetupData>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AutoSetupData>,
     >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
@@ -30,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AutoSetupController")]
 impl std::ops::Deref for crate::GlobalNamespace::AutoSetupController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -148,7 +148,7 @@ impl crate::GlobalNamespace::AutoSetupController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::AutoSetupData>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AutoSetupData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -161,7 +161,7 @@ impl crate::GlobalNamespace::AutoSetupController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::AutoSetupData>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AutoSetupData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

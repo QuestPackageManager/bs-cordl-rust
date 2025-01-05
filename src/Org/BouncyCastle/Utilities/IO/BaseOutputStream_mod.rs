@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseOutputStream {
-    __cordl_parent: crate::System::IO::Stream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub closed: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+BaseOutputStream")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+BaseOutputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream {
-    type Target = crate::System::IO::Stream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -98,7 +98,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream {
             .invoke("WriteByte", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Il2CppArray1(
+    pub fn Write_Gc1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainEffectController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _mainEffectContainer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MainEffectContainerSO,
     >,
     pub _fadeValue: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatSO>,
     pub afterImageEffectEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::UnityEngine::RenderTexture>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     >,
     pub _imageEffectController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ImageEffectController,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MainEffectController")]
 impl std::ops::Deref for crate::GlobalNamespace::MainEffectController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -127,7 +127,7 @@ impl crate::GlobalNamespace::MainEffectController {
     pub fn add_afterImageEffectEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::RenderTexture>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -147,7 +147,7 @@ impl crate::GlobalNamespace::MainEffectController {
     pub fn remove_afterImageEffectEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::RenderTexture>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

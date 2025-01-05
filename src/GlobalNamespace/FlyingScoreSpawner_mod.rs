@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingScoreSpawner {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _flyingScoreEffectPool: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::FlyingScoreEffect_Pool,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FlyingScoreSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingScoreSpawner {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -121,18 +121,26 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingScoreSp
     }
 }
 #[cfg(feature = "FlyingScoreSpawner")]
-impl AsRef<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>
-for crate::GlobalNamespace::FlyingScoreSpawner {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>,
+> for crate::GlobalNamespace::FlyingScoreSpawner {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "FlyingScoreSpawner")]
-impl AsMut<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>
-for crate::GlobalNamespace::FlyingScoreSpawner {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>,
+> for crate::GlobalNamespace::FlyingScoreSpawner {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -140,7 +148,7 @@ for crate::GlobalNamespace::FlyingScoreSpawner {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingScoreSpawner_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub spawnPosition: crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition,
 }
 #[cfg(feature = "FlyingScoreSpawner+InitData")]
@@ -150,7 +158,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FlyingScoreSpawner+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

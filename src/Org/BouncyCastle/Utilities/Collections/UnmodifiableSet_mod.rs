@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnmodifiableSet {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableSet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableSet")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -193,44 +193,62 @@ for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableSet")]
-impl AsRef<crate::Org::BouncyCastle::Utilities::Collections::ISet>
-for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Utilities::Collections::ISet {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
+> for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableSet")]
-impl AsMut<crate::Org::BouncyCastle::Utilities::Collections::ISet>
-for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Utilities::Collections::ISet {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
+> for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableSet")]
-impl AsRef<crate::System::Collections::ICollection>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet {
-    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableSet")]
-impl AsMut<crate::System::Collections::ICollection>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableSet")]
-impl AsRef<crate::System::Collections::IEnumerable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableSet")]
-impl AsMut<crate::System::Collections::IEnumerable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }

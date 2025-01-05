@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SoapFieldAttribute {
-    __cordl_parent: crate::System::Runtime::Remoting::Metadata::SoapAttribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Metadata::SoapAttribute,
+    >,
     pub _elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _isElement: bool,
 }
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Metadata+SoapFieldAttribute")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Metadata::SoapFieldAttribute {
-    type Target = crate::System::Runtime::Remoting::Metadata::SoapAttribute;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Metadata::SoapAttribute,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

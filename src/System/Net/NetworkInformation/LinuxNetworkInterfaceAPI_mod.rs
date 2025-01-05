@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LinuxNetworkInterfaceAPI {
-    __cordl_parent: crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI,
+    >,
 }
 #[cfg(feature = "System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
-    type Target = crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +43,9 @@ impl crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::NetworkInformation::NetworkInterface,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::NetworkInformation::NetworkInterface,
+                >,
             >,
         >,
     > {
@@ -48,7 +54,9 @@ impl crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::NetworkInformation::NetworkInterface,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::NetworkInformation::NetworkInterface,
+                >,
             >,
         > = __cordl_object.invoke("GetAllNetworkInterfaces", ())?;
         Ok(__cordl_ret.into())

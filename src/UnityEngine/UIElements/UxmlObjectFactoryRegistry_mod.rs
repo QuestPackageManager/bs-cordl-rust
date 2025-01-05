@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlObjectFactoryRegistry {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactoryRegistry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactoryRegistry")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,8 +51,10 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
     pub fn TryGetFactories(
         fullTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         factoryList: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -62,19 +64,19 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
     }
     pub fn get_factories() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::System::Collections::Generic::List_1<
-                    *mut crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
                 >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::System::Collections::Generic::List_1<
-                    *mut crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
                 >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_factories", ())?;

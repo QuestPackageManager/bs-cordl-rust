@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidationEventArgs {
-    __cordl_parent: crate::System::EventArgs,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
     pub ex: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
     pub severity: crate::System::Xml::Schema::XmlSeverityType,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+ValidationEventArgs")]
 impl std::ops::Deref for crate::System::Xml::Schema::ValidationEventArgs {
-    type Target = crate::System::EventArgs;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::EventArgs>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::ValidationEventArgs {
 }
 #[cfg(feature = "System+Xml+Schema+ValidationEventArgs")]
 impl crate::System::Xml::Schema::ValidationEventArgs {
-    pub fn New_XmlSchemaException0(
+    pub fn New_Gc0(
         ex: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -45,7 +45,7 @@ impl crate::System::Xml::Schema::ValidationEventArgs {
             .invoke_void(".ctor", (ex, severity))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_XmlSchemaException0(
+    pub fn _ctor_Gc0(
         &mut self,
         ex: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

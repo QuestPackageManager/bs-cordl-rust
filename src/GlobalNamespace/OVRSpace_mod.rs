@@ -22,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRS
 impl crate::GlobalNamespace::OVRSpace {
     #[cfg(feature = "OVRSpace+StorageLocation")]
     pub type StorageLocation = crate::GlobalNamespace::OVRSpace_StorageLocation;
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -132,18 +132,18 @@ impl crate::GlobalNamespace::OVRSpace {
     }
 }
 #[cfg(feature = "OVRSpace")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpace>>
 for crate::GlobalNamespace::OVRSpace {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpace> {
         todo!()
     }
 }
 #[cfg(feature = "OVRSpace")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpace>>
 for crate::GlobalNamespace::OVRSpace {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpace> {
         todo!()
     }
 }

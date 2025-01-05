@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Unsafe {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+Unsafe")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+CompilerServices+Unsafe")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::Unsafe {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,7 +72,7 @@ impl crate::System::Runtime::CompilerServices::Unsafe {
             .invoke("Add", (source, elementOffset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Il2CppObject_i32_2<T>(
+    pub fn Add_Gc_i32_2<T>(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         elementOffset: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -125,7 +125,7 @@ impl crate::System::Runtime::CompilerServices::Unsafe {
             .invoke("AsRef", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsRef_Il2CppObject0<T>(
+    pub fn AsRef_Gc0<T>(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
     where
@@ -149,7 +149,7 @@ impl crate::System::Runtime::CompilerServices::Unsafe {
             .invoke("As", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn As_Il2CppObject0<T>(
+    pub fn As_Gc0<T>(
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<T>
     where

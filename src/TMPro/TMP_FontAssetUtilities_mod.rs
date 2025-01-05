@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_FontAssetUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "TMPro+TMP_FontAssetUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_FontAssetUtilities")]
 impl std::ops::Deref for crate::TMPro::TMP_FontAssetUtilities {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +76,7 @@ impl crate::TMPro::TMP_FontAssetUtilities {
         unicode: u32,
         sourceFontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         fontAssets: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_FontAsset>,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         >,
         includeFallbacks: bool,
         fontStyle: crate::TMPro::FontStyles,

@@ -44,50 +44,82 @@ for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
-impl AsRef<crate::System::Runtime::Remoting::Messaging::IMessage>
-for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
-    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMessage {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
-impl AsMut<crate::System::Runtime::Remoting::Messaging::IMessage>
-for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Messaging::IMessage {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
-impl AsRef<crate::System::Runtime::Remoting::Messaging::IMethodMessage>
-for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
-    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMethodMessage {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
-impl AsMut<crate::System::Runtime::Remoting::Messaging::IMethodMessage>
-for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMethodMessage {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
-impl AsRef<crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage>
-for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
+> for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
     fn as_ref(
         &self,
-    ) -> &crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessage,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
-impl AsMut<crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage>
-for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
+> for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessage,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+    >,
+> for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+    >,
+> for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage,
+    >,
+> for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Activation+IConstructionReturnMessage")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage,
+    >,
+> for crate::System::Runtime::Remoting::Activation::IConstructionReturnMessage {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

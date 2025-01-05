@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleBigDecimal {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub bigInt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub scale: i32,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,9 +27,11 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDe
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]
 impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
-    pub fn Add_BigInteger1(
+    pub fn Add_Gc0(
         &mut self,
-        b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        b: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -43,11 +45,9 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         > = __cordl_object.invoke("Add", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_SimpleBigDecimal0(
+    pub fn Add_Gc1(
         &mut self,
-        b: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        >,
+        b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -90,17 +90,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             .invoke("CheckScale", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareTo_BigInteger1(
-        &mut self,
-        val: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (val))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CompareTo_SimpleBigDecimal0(
+    pub fn CompareTo_Gc0(
         &mut self,
         val: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -112,9 +102,21 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (val))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Divide_BigInteger1(
+    pub fn CompareTo_Gc1(
         &mut self,
-        b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        val: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Divide_Gc0(
+        &mut self,
+        b: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -128,11 +130,9 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         > = __cordl_object.invoke("Divide", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Divide_SimpleBigDecimal0(
+    pub fn Divide_Gc1(
         &mut self,
-        b: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        >,
+        b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -190,9 +190,11 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             .invoke("GetInstance", (val, scale))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Multiply_BigInteger1(
+    pub fn Multiply_Gc0(
         &mut self,
-        b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        b: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -206,11 +208,9 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         > = __cordl_object.invoke("Multiply", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Multiply_SimpleBigDecimal0(
+    pub fn Multiply_Gc1(
         &mut self,
-        b: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        >,
+        b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -239,17 +239,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         > = __cordl_object.invoke("Negate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_BigInteger_i32_0(
-        bigInt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
-        scale: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bigInt, scale))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SimpleBigDecimal1(
+    pub fn New_Gc1(
         limBigDec: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
@@ -258,6 +248,16 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (limBigDec))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_i32_0(
+        bigInt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        scale: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bigInt, scale))?;
         Ok(__cordl_object.into())
     }
     pub fn Round(
@@ -289,9 +289,11 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         > = __cordl_object.invoke("ShiftLeft", (n))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Subtract_BigInteger1(
+    pub fn Subtract_Gc0(
         &mut self,
-        b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        b: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -305,11 +307,9 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         > = __cordl_object.invoke("Subtract", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Subtract_SimpleBigDecimal0(
+    pub fn Subtract_Gc1(
         &mut self,
-        b: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        >,
+        b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -336,19 +336,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger_i32_0(
-        &mut self,
-        bigInt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
-        scale: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bigInt, scale))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SimpleBigDecimal1(
+    pub fn _ctor_Gc1(
         &mut self,
         limBigDec: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -359,6 +347,18 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (limBigDec))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_i32_0(
+        &mut self,
+        bigInt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        scale: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bigInt, scale))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IntValue(&mut self) -> quest_hook::libil2cpp::Result<i32> {

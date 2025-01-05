@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActivationTrack {
-    __cordl_parent: crate::UnityEngine::Timeline::TrackAsset,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     pub m_PostPlaybackState: crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState,
     pub m_ActivationMixer: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Timeline::ActivationMixerPlayable,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+ActivationTrack")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ActivationTrack {
-    type Target = crate::UnityEngine::Timeline::TrackAsset;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

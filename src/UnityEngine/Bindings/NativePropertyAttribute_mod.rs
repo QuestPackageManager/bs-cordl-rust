@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativePropertyAttribute {
-    __cordl_parent: crate::UnityEngine::Bindings::NativeMethodAttribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Bindings::NativeMethodAttribute,
+    >,
     pub _TargetType_k__BackingField: crate::UnityEngine::Bindings::TargetType,
 }
 #[cfg(feature = "UnityEngine+Bindings+NativePropertyAttribute")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Bindings+NativePropertyAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::NativePropertyAttribute {
-    type Target = crate::UnityEngine::Bindings::NativeMethodAttribute;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Bindings::NativeMethodAttribute,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +36,7 @@ impl crate::UnityEngine::Bindings::NativePropertyAttribute {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -41,7 +45,7 @@ impl crate::UnityEngine::Bindings::NativePropertyAttribute {
             .invoke_void(".ctor", (name))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString__cordl_bool_TargetType2(
+    pub fn New_Gc__cordl_bool_TargetType2(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isFree: bool,
         targetType: crate::UnityEngine::Bindings::TargetType,
@@ -52,7 +56,7 @@ impl crate::UnityEngine::Bindings::NativePropertyAttribute {
             .invoke_void(".ctor", (name, isFree, targetType))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString__cordl_bool_TargetType__cordl_bool3(
+    pub fn New_Gc__cordl_bool_TargetType__cordl_bool3(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isFree: bool,
         targetType: crate::UnityEngine::Bindings::TargetType,
@@ -74,7 +78,7 @@ impl crate::UnityEngine::Bindings::NativePropertyAttribute {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -85,7 +89,7 @@ impl crate::UnityEngine::Bindings::NativePropertyAttribute {
             .invoke(".ctor", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString__cordl_bool_TargetType2(
+    pub fn _ctor_Gc__cordl_bool_TargetType2(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isFree: bool,
@@ -98,7 +102,7 @@ impl crate::UnityEngine::Bindings::NativePropertyAttribute {
             .invoke(".ctor", (name, isFree, targetType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString__cordl_bool_TargetType__cordl_bool3(
+    pub fn _ctor_Gc__cordl_bool_TargetType__cordl_bool3(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isFree: bool,

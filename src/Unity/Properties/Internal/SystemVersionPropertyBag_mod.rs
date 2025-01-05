@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag {
-    __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
-        *mut crate::System::Version,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
@@ -14,8 +14,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
-    type Target = crate::Unity::Properties::ContainerPropertyBag_1<
-        *mut crate::System::Version,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -72,8 +72,8 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag_BuildProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
-        *mut crate::System::Version,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >,
 }
@@ -86,7 +86,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
-    type Target = crate::Unity::Properties::Property_2<*mut crate::System::Version, i32>;
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+        i32,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -145,8 +148,8 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag_MajorProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
-        *mut crate::System::Version,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >,
 }
@@ -159,7 +162,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
-    type Target = crate::Unity::Properties::Property_2<*mut crate::System::Version, i32>;
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+        i32,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -218,8 +224,8 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag_MinorProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
-        *mut crate::System::Version,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >,
 }
@@ -232,7 +238,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
-    type Target = crate::Unity::Properties::Property_2<*mut crate::System::Version, i32>;
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+        i32,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -291,8 +300,8 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag_RevisionProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
-        *mut crate::System::Version,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >,
 }
@@ -305,7 +314,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty {
-    type Target = crate::Unity::Properties::Property_2<*mut crate::System::Version, i32>;
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+        i32,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

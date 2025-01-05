@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IncrementInstruction_IncrementInt64 {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::IncrementInstruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::IncrementInstruction,
+    >,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt64"
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
     feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt64"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::IncrementInstruction_IncrementInt64 {
-    type Target = crate::System::Linq::Expressions::Interpreter::IncrementInstruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::IncrementInstruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

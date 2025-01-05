@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatingTransformEffect {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _positionMultiplier: crate::UnityEngine::Vector3,
     pub _rotationMultiplier: crate::UnityEngine::Vector3,
     pub _rotationTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FloatingTransformEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatingTransformEffect {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -116,16 +116,16 @@ for crate::GlobalNamespace::FloatingTransformEffect {
     }
 }
 #[cfg(feature = "FloatingTransformEffect")]
-impl AsRef<crate::Zenject::ITickable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
 for crate::GlobalNamespace::FloatingTransformEffect {
-    fn as_ref(&self) -> &crate::Zenject::ITickable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "FloatingTransformEffect")]
-impl AsMut<crate::Zenject::ITickable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
 for crate::GlobalNamespace::FloatingTransformEffect {
-    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
         unsafe { std::mem::transmute(self) }
     }
 }

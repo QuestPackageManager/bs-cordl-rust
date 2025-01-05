@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WindowsIdentity {
-    __cordl_parent: crate::System::Security::Claims::ClaimsIdentity,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Claims::ClaimsIdentity,
+    >,
     pub _token: crate::System::IntPtr,
     pub _type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _account: crate::System::Security::Principal::WindowsAccountType,
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Principal+WindowsIdentity")]
 impl std::ops::Deref for crate::System::Security::Principal::WindowsIdentity {
-    type Target = crate::System::Security::Claims::ClaimsIdentity;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Claims::ClaimsIdentity,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -104,7 +108,7 @@ impl crate::System::Security::Principal::WindowsIdentity {
         > = __cordl_object.invoke("Impersonate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_ClaimsIdentity_IntPtr2(
+    pub fn New_Gc_IntPtr2(
         claimsIdentity: quest_hook::libil2cpp::Gc<
             crate::System::Security::Claims::ClaimsIdentity,
         >,
@@ -116,19 +120,7 @@ impl crate::System::Security::Principal::WindowsIdentity {
             .invoke_void(".ctor", (claimsIdentity, userToken))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IntPtr_Il2CppString_WindowsAccountType__cordl_bool0(
-        userToken: crate::System::IntPtr,
-        _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        acctType: crate::System::Security::Principal::WindowsAccountType,
-        isAuthenticated: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (userToken, _cordl_type, acctType, isAuthenticated))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SerializationInfo_StreamingContext1(
+    pub fn New_Gc_StreamingContext1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -138,6 +130,18 @@ impl crate::System::Security::Principal::WindowsIdentity {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, context))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_IntPtr_Gc_WindowsAccountType__cordl_bool0(
+        userToken: crate::System::IntPtr,
+        _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        acctType: crate::System::Security::Principal::WindowsAccountType,
+        isAuthenticated: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (userToken, _cordl_type, acctType, isAuthenticated))?;
         Ok(__cordl_object.into())
     }
     pub fn SetToken(
@@ -182,7 +186,7 @@ impl crate::System::Security::Principal::WindowsIdentity {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ClaimsIdentity_IntPtr2(
+    pub fn _ctor_Gc_IntPtr2(
         &mut self,
         claimsIdentity: quest_hook::libil2cpp::Gc<
             crate::System::Security::Claims::ClaimsIdentity,
@@ -196,21 +200,7 @@ impl crate::System::Security::Principal::WindowsIdentity {
             .invoke(".ctor", (claimsIdentity, userToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IntPtr_Il2CppString_WindowsAccountType__cordl_bool0(
-        &mut self,
-        userToken: crate::System::IntPtr,
-        _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        acctType: crate::System::Security::Principal::WindowsAccountType,
-        isAuthenticated: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (userToken, _cordl_type, acctType, isAuthenticated))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SerializationInfo_StreamingContext1(
+    pub fn _ctor_Gc_StreamingContext1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -222,6 +212,20 @@ impl crate::System::Security::Principal::WindowsIdentity {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (info, context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_IntPtr_Gc_WindowsAccountType__cordl_bool0(
+        &mut self,
+        userToken: crate::System::IntPtr,
+        _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        acctType: crate::System::Security::Principal::WindowsAccountType,
+        isAuthenticated: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (userToken, _cordl_type, acctType, isAuthenticated))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_AuthenticationType(
@@ -262,62 +266,86 @@ for crate::System::Security::Principal::WindowsIdentity {
     }
 }
 #[cfg(feature = "System+Security+Principal+WindowsIdentity")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Security::Principal::WindowsIdentity {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Principal+WindowsIdentity")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Security::Principal::WindowsIdentity {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Principal+WindowsIdentity")]
-impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    >,
+> for crate::System::Security::Principal::WindowsIdentity {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    >,
+> for crate::System::Security::Principal::WindowsIdentity {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Security::Principal::WindowsIdentity {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Security::Principal::WindowsIdentity {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IIdentity>>
 for crate::System::Security::Principal::WindowsIdentity {
     fn as_ref(
         &self,
-    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IIdentity> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Principal+WindowsIdentity")]
-impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IIdentity>>
 for crate::System::Security::Principal::WindowsIdentity {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Security::Principal::WindowsIdentity {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Security::Principal::WindowsIdentity {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
-impl AsRef<crate::System::Security::Principal::IIdentity>
-for crate::System::Security::Principal::WindowsIdentity {
-    fn as_ref(&self) -> &crate::System::Security::Principal::IIdentity {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Security+Principal+WindowsIdentity")]
-impl AsMut<crate::System::Security::Principal::IIdentity>
-for crate::System::Security::Principal::WindowsIdentity {
-    fn as_mut(&mut self) -> &mut crate::System::Security::Principal::IIdentity {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IIdentity> {
         unsafe { std::mem::transmute(self) }
     }
 }

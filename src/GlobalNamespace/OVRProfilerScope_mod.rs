@@ -43,14 +43,16 @@ impl crate::GlobalNamespace::OVRProfilerScope {
     }
 }
 #[cfg(feature = "OVRProfilerScope")]
-impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::OVRProfilerScope {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::GlobalNamespace::OVRProfilerScope {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "OVRProfilerScope")]
-impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRProfilerScope {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::GlobalNamespace::OVRProfilerScope {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }

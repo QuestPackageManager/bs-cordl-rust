@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DragEventsProcessor {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_IsRegistered: bool,
     pub m_DragState: crate::UnityEngine::UIElements::DragEventsProcessor_DragState,
     pub m_Start: crate::UnityEngine::Vector3,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DragEventsProcessor")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DragEventsProcessor {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -168,7 +168,7 @@ impl crate::UnityEngine::UIElements::DragEventsProcessor {
             .invoke("RegisterCallbacksFromTarget", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterCallbacksFromTarget_AttachToPanelEvent0(
+    pub fn RegisterCallbacksFromTarget_Gc0(
         &mut self,
         evt: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::AttachToPanelEvent,
@@ -192,7 +192,7 @@ impl crate::UnityEngine::UIElements::DragEventsProcessor {
             .invoke("StartDrag", (pointerPosition))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UnregisterCallbacksFromTarget_DetachFromPanelEvent0(
+    pub fn UnregisterCallbacksFromTarget_Gc0(
         &mut self,
         evt: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::DetachFromPanelEvent,

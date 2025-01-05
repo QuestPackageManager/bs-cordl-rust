@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalc
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+IDsaKCalculator")]
 impl crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator {
-    pub fn Init_BigInteger_Il2CppArray1(
+    pub fn Init_Gc1(
         &mut self,
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         d: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -38,7 +38,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator {
             .invoke("Init", (n, d, message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_SecureRandom0(
+    pub fn Init_Gc_Gc0(
         &mut self,
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         random: quest_hook::libil2cpp::Gc<

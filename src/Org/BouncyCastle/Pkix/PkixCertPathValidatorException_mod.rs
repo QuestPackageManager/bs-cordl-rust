@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkixCertPathValidatorException {
-    __cordl_parent: crate::Org::BouncyCastle::Security::GeneralSecurityException,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::GeneralSecurityException,
+    >,
     pub cause: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     pub certPath: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Pkix::PkixCertPath,
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathValidatorException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorException {
-    type Target = crate::Org::BouncyCastle::Security::GeneralSecurityException;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::GeneralSecurityException,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +42,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -47,7 +51,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorException {
             .invoke_void(".ctor", (message))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Exception2(
+    pub fn New_Gc_Gc2(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cause: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -57,7 +61,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorException {
             .invoke_void(".ctor", (message, cause))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Exception_PkixCertPath_i32_3(
+    pub fn New_Gc_Gc_Gc_i32_3(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cause: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         certPath: quest_hook::libil2cpp::Gc<
@@ -81,7 +85,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -92,7 +96,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorException {
             .invoke(".ctor", (message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Exception2(
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cause: quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -104,7 +108,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorException {
             .invoke(".ctor", (message, cause))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Exception_PkixCertPath_i32_3(
+    pub fn _ctor_Gc_Gc_Gc_i32_3(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cause: quest_hook::libil2cpp::Gc<crate::System::Exception>,

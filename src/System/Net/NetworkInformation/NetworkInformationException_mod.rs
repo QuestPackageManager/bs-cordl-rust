@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkInformationException {
-    __cordl_parent: crate::System::ComponentModel::Win32Exception,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::Win32Exception,
+    >,
 }
 #[cfg(feature = "System+Net+NetworkInformation+NetworkInformationException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+NetworkInformation+NetworkInformationException")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::NetworkInformationException {
-    type Target = crate::System::ComponentModel::Win32Exception;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::Win32Exception,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +38,7 @@ impl crate::System::Net::NetworkInformation::NetworkInformationException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext1(
+    pub fn New_Gc_StreamingContext1(
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -56,7 +60,7 @@ impl crate::System::Net::NetworkInformation::NetworkInformationException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext1(
+    pub fn _ctor_Gc_StreamingContext1(
         &mut self,
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

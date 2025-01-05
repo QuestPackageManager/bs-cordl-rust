@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoSslServerAuthenticationOptions {
-    __cordl_parent: crate::Mono::Net::Security::MonoSslAuthenticationOptions,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MonoSslAuthenticationOptions,
+    >,
     pub _Options_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Net::Security::SslServerAuthenticationOptions,
     >,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+MonoSslServerAuthenticationOptions")]
 impl std::ops::Deref for crate::Mono::Net::Security::MonoSslServerAuthenticationOptions {
-    type Target = crate::Mono::Net::Security::MonoSslAuthenticationOptions;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MonoSslAuthenticationOptions,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageViewBase {
-    __cordl_parent: crate::UnityEngine::UI::Image,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
 #[cfg(feature = "HMUI+ImageViewBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ImageViewBase")]
 impl std::ops::Deref for crate::HMUI::ImageViewBase {
-    type Target = crate::UnityEngine::UI::Image;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

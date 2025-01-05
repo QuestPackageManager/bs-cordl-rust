@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionLevelNoTransitionInstaller {
-    __cordl_parent: crate::Zenject::NoTransitionInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::NoTransitionInstaller>,
     pub _beatmapLevelSo: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelSO,
     >,
@@ -12,7 +12,9 @@ pub struct MissionLevelNoTransitionInstaller {
     pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
     pub _missionObjectives: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionObjective>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
+        >,
     >,
     pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiers,
@@ -36,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MissionLevelNoTransitionInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelNoTransitionInstaller {
-    type Target = crate::Zenject::NoTransitionInstaller;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::NoTransitionInstaller>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -194,7 +194,7 @@ impl<
     TParam7: quest_hook::libil2cpp::Type,
     TParam8: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Zenject::IFactory>
+> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IFactory>>
 for crate::Zenject::IFactory_9<
     TParam1,
     TParam2,
@@ -206,7 +206,7 @@ for crate::Zenject::IFactory_9<
     TParam8,
     TValue,
 > {
-    fn as_ref(&self) -> &crate::Zenject::IFactory {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IFactory> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -221,7 +221,7 @@ impl<
     TParam7: quest_hook::libil2cpp::Type,
     TParam8: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Zenject::IFactory>
+> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IFactory>>
 for crate::Zenject::IFactory_9<
     TParam1,
     TParam2,
@@ -233,7 +233,7 @@ for crate::Zenject::IFactory_9<
     TParam8,
     TValue,
 > {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IFactory> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,11 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct AsyncOperationHandle_1<TObject: quest_hook::libil2cpp::Type> {
-    pub m_InternalOp: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-            TObject,
-        >,
-    >,
+    pub m_InternalOp: quest_hook::libil2cpp::Gc<TObject>,
     pub m_Version: i32,
     pub m_LocationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_UnloadSceneOpExcludeReleaseCallback: bool,
@@ -74,9 +70,7 @@ impl<
     pub fn GetDependencies(
         &mut self,
         deps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -121,9 +115,7 @@ impl<
     pub fn InternalGetDownloadStatus(
         &mut self,
         visited: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -223,13 +215,9 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AsyncOperationBase_1_0(
+    pub fn _ctor_Gc0(
         &mut self,
-        op: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-                TObject,
-            >,
-        >,
+        op: quest_hook::libil2cpp::Gc<TObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -242,7 +230,7 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IAsyncOperation1(
+    pub fn _ctor_Gc1(
         &mut self,
         op: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
@@ -259,7 +247,7 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IAsyncOperation_Il2CppString3(
+    pub fn _ctor_Gc3(
         &mut self,
         op: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
@@ -277,7 +265,7 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IAsyncOperation_i32_2(
+    pub fn _ctor_i32_2(
         &mut self,
         op: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
@@ -295,7 +283,7 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IAsyncOperation_i32_Il2CppString4(
+    pub fn _ctor_i32_Gc4(
         &mut self,
         op: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
@@ -317,10 +305,8 @@ impl<
     pub fn add_Completed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                    TObject,
-                >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                TObject,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -338,9 +324,7 @@ impl<
     pub fn add_CompletedTypeless(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -357,9 +341,7 @@ impl<
     pub fn add_Destroyed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -389,22 +371,16 @@ impl<
     }
     pub fn get_InternalOp(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-                TObject,
-            >,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TObject>>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-                TObject,
-            >,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_InternalOp", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TObject> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_InternalOp",
+            (),
+        )?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsDone(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -503,16 +479,16 @@ impl<
     }
     pub fn get_Task(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TObject>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TObject>>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TObject>,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Task", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TObject> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Task",
+            (),
+        )?;
         Ok(__cordl_ret.into())
     }
     pub fn get_UnloadSceneOpExcludeReleaseCallback(
@@ -547,10 +523,8 @@ impl<
     pub fn remove_Completed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                    TObject,
-                >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                TObject,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -568,9 +542,7 @@ impl<
     pub fn remove_CompletedTypeless(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -587,9 +559,7 @@ impl<
     pub fn remove_Destroyed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -635,20 +605,28 @@ impl<
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle_1")]
-impl<TObject: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+impl<
+    TObject: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
     TObject,
 > {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle_1")]
-impl<TObject: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+impl<
+    TObject: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
     TObject,
 > {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         todo!()
     }
 }
@@ -656,7 +634,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandl
 impl<
     TObject: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
         >,
@@ -667,7 +645,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandl
 > {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
         >,
@@ -679,7 +657,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandl
 impl<
     TObject: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
         >,
@@ -690,7 +668,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandl
 > {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
         >,

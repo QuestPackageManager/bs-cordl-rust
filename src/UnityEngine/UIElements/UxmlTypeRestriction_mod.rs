@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlTypeRestriction {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlTypeRestriction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UxmlTypeRestriction")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlTypeRestriction {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,24 +66,28 @@ for crate::UnityEngine::UIElements::UxmlTypeRestriction {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlTypeRestriction")]
 impl AsRef<
-    crate::System::IEquatable_1<*mut crate::UnityEngine::UIElements::UxmlTypeRestriction>,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlTypeRestriction>,
+    >,
 > for crate::UnityEngine::UIElements::UxmlTypeRestriction {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        *mut crate::UnityEngine::UIElements::UxmlTypeRestriction,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlTypeRestriction>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlTypeRestriction")]
 impl AsMut<
-    crate::System::IEquatable_1<*mut crate::UnityEngine::UIElements::UxmlTypeRestriction>,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlTypeRestriction>,
+    >,
 > for crate::UnityEngine::UIElements::UxmlTypeRestriction {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        *mut crate::UnityEngine::UIElements::UxmlTypeRestriction,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlTypeRestriction>,
     > {
         unsafe { std::mem::transmute(self) }
     }

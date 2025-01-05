@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExprException {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Data+ExprException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+ExprException")]
 impl std::ops::Deref for crate::System::Data::ExprException {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -392,7 +392,7 @@ impl crate::System::Data::ExprException {
             .invoke("UndefinedFunction", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UnknownToken_Il2CppString_i32_0(
+    pub fn UnknownToken_Gc_i32_0(
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         position: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -441,7 +441,17 @@ impl crate::System::Data::ExprException {
             .invoke("UnsupportedOperator", (op))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Eval_Exception1(
+    pub fn _Eval_Gc0(
+        error: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::EvaluateException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Data::EvaluateException,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("_Eval", (error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _Eval_Gc1(
         error: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<
@@ -451,16 +461,6 @@ impl crate::System::Data::ExprException {
             crate::System::Data::EvaluateException,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("_Eval", (error, innerException))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _Eval_Il2CppString0(
-        error: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Data::EvaluateException>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Data::EvaluateException,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("_Eval", (error))?;
         Ok(__cordl_ret.into())
     }
     pub fn _Expr(

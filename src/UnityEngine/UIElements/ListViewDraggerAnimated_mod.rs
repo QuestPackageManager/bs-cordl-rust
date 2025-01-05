@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListViewDraggerAnimated {
-    __cordl_parent: crate::UnityEngine::UIElements::ListViewDragger,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ListViewDragger,
+    >,
     pub m_DragStartIndex: i32,
     pub m_CurrentIndex: i32,
     pub m_SelectionHeight: f32,
@@ -23,7 +25,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ListViewDraggerAnimated")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ListViewDraggerAnimated {
-    type Target = crate::UnityEngine::UIElements::ListViewDragger;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ListViewDragger,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

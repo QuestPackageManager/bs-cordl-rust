@@ -52,18 +52,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeName {
     }
 }
 #[cfg(feature = "System+TypeName")]
-impl AsRef<crate::System::IEquatable_1<*mut crate::System::TypeName>>
+impl AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TypeName>>>
 for crate::System::TypeName {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<*mut crate::System::TypeName> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TypeName>> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+TypeName")]
-impl AsMut<crate::System::IEquatable_1<*mut crate::System::TypeName>>
+impl AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TypeName>>>
 for crate::System::TypeName {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<*mut crate::System::TypeName> {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::TypeName>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

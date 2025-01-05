@@ -2,15 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleControllerBase {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IVariableMovementDataProvider,
     >,
     pub didInitEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleControllerBase>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
     >,
     pub didStartDissolvingEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<*mut crate::GlobalNamespace::ObstacleControllerBase, f32>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
+        f32,
     >,
 }
 #[cfg(feature = "ObstacleControllerBase")]
@@ -20,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ObstacleControllerBase")]
 impl std::ops::Deref for crate::GlobalNamespace::ObstacleControllerBase {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,7 +81,7 @@ impl crate::GlobalNamespace::ObstacleControllerBase {
     pub fn add_didInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleControllerBase>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -93,10 +94,8 @@ impl crate::GlobalNamespace::ObstacleControllerBase {
     pub fn add_didStartDissolvingEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::ObstacleControllerBase,
-                f32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
+            f32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -109,7 +108,7 @@ impl crate::GlobalNamespace::ObstacleControllerBase {
     pub fn remove_didInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleControllerBase>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -122,10 +121,8 @@ impl crate::GlobalNamespace::ObstacleControllerBase {
     pub fn remove_didStartDissolvingEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::ObstacleControllerBase,
-                f32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
+            f32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

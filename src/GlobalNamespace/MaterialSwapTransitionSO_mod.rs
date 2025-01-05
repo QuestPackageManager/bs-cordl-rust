@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialSwapTransitionSO {
-    __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BaseTransitionSO>,
     pub _normalMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _highlightedMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _pressedMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MaterialSwapTransitionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialSwapTransitionSO {
-    type Target = crate::GlobalNamespace::BaseTransitionSO;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BaseTransitionSO>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

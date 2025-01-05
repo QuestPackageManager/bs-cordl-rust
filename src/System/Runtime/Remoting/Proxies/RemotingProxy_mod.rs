@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemotingProxy {
-    __cordl_parent: crate::System::Runtime::Remoting::Proxies::RealProxy,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Proxies::RealProxy,
+    >,
     pub _sink: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Remoting::Messaging::IMessageSink,
     >,
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Proxies+RemotingProxy")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Proxies::RemotingProxy {
-    type Target = crate::System::Runtime::Remoting::Proxies::RealProxy;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Proxies::RealProxy,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -96,7 +100,22 @@ impl crate::System::Runtime::Remoting::Proxies::RemotingProxy {
         > = __cordl_object.invoke("Invoke", (request))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_ClientIdentity0(
+    pub fn New_Gc1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        activationUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        activationAttributes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, activationUrl, activationAttributes))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         identity: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ClientIdentity,
@@ -108,20 +127,24 @@ impl crate::System::Runtime::Remoting::Proxies::RemotingProxy {
             .invoke_void(".ctor", (_cordl_type, identity))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppArray1(
+    pub fn _ctor_Gc1(
+        &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         activationUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         activationAttributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, activationUrl, activationAttributes))?;
-        Ok(__cordl_object.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type, activationUrl, activationAttributes))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ClientIdentity0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         identity: quest_hook::libil2cpp::Gc<
@@ -133,21 +156,6 @@ impl crate::System::Runtime::Remoting::Proxies::RemotingProxy {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_type, identity))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString_Il2CppArray1(
-        &mut self,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        activationUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        activationAttributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type, activationUrl, activationAttributes))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_TypeName(
@@ -175,16 +183,26 @@ for crate::System::Runtime::Remoting::Proxies::RemotingProxy {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Proxies+RemotingProxy")]
-impl AsRef<crate::System::Runtime::Remoting::IRemotingTypeInfo>
-for crate::System::Runtime::Remoting::Proxies::RemotingProxy {
-    fn as_ref(&self) -> &crate::System::Runtime::Remoting::IRemotingTypeInfo {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IRemotingTypeInfo>,
+> for crate::System::Runtime::Remoting::Proxies::RemotingProxy {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::IRemotingTypeInfo,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Proxies+RemotingProxy")]
-impl AsMut<crate::System::Runtime::Remoting::IRemotingTypeInfo>
-for crate::System::Runtime::Remoting::Proxies::RemotingProxy {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::IRemotingTypeInfo {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IRemotingTypeInfo>,
+> for crate::System::Runtime::Remoting::Proxies::RemotingProxy {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::IRemotingTypeInfo,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

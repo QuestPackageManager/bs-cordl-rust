@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactoryFromBinder6Extensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Zenject+FactoryFromBinder6Extensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+FactoryFromBinder6Extensions")]
 impl std::ops::Deref for crate::Zenject::FactoryFromBinder6Extensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,28 +26,24 @@ impl std::ops::DerefMut for crate::Zenject::FactoryFromBinder6Extensions {
 impl crate::Zenject::FactoryFromBinder6Extensions {
     pub fn FromIFactory<TParam1, TParam2, TParam3, TParam4, TParam5, TParam6, TContract>(
         fromBinder: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_7<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TContract,
         >,
         factoryBindGenerator: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::Zenject::ConcreteBinderGeneric_1<
-                    *mut crate::Zenject::IFactory_7<
-                        TParam1,
-                        TParam2,
-                        TParam3,
-                        TParam4,
-                        TParam5,
-                        TParam6,
-                        TContract,
-                    >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<
+                    TParam1,
+                    TParam2,
+                    TParam3,
+                    TParam4,
+                    TParam5,
+                    TParam6,
+                    TContract,
                 >,
             >,
         >,
@@ -76,7 +72,7 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
             .invoke("FromIFactory", (fromBinder, factoryBindGenerator))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromMonoPoolableMemoryPool_Action_1_1<
+    pub fn FromMonoPoolableMemoryPool_Gc0<
         TParam1,
         TParam2,
         TParam3,
@@ -86,65 +82,13 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
         TContract,
     >(
         fromBinder: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_7<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TContract,
-            >,
-        >,
-        poolBindGenerator: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::Zenject::MemoryPoolInitialSizeMaxSizeBinder_1<TContract>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
-    >
-    where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromMonoPoolableMemoryPool", (fromBinder, poolBindGenerator))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn FromMonoPoolableMemoryPool_FactoryFromBinder_7_0<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TParam6,
-        TContract,
-    >(
-        fromBinder: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_7<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TContract,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
@@ -171,7 +115,7 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
             .invoke("FromMonoPoolableMemoryPool", (fromBinder))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromPoolableMemoryPool_Action_1_1<
+    pub fn FromMonoPoolableMemoryPool_Gc1<
         TParam1,
         TParam2,
         TParam3,
@@ -181,20 +125,16 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
         TContract,
     >(
         fromBinder: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_7<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TContract,
         >,
         poolBindGenerator: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::Zenject::MemoryPoolInitialSizeMaxSizeBinder_1<TContract>,
-            >,
+            quest_hook::libil2cpp::Gc<TContract>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
@@ -218,63 +158,10 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ArgConditionCopyNonLazyBinder,
         > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromPoolableMemoryPool", (fromBinder, poolBindGenerator))?;
+            .invoke("FromMonoPoolableMemoryPool", (fromBinder, poolBindGenerator))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromPoolableMemoryPool_Action_1_3<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TParam6,
-        TContract,
-        TMemoryPool,
-    >(
-        fromBinder: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_7<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TContract,
-            >,
-        >,
-        poolBindGenerator: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::Zenject::MemoryPoolInitialSizeMaxSizeBinder_1<TContract>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
-    >
-    where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TMemoryPool: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromPoolableMemoryPool", (fromBinder, poolBindGenerator))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn FromPoolableMemoryPool_FactoryFromBinder_7_0<
+    pub fn FromPoolableMemoryPool_Gc0<
         TParam1,
         TParam2,
         TParam3,
@@ -284,15 +171,13 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
         TContract,
     >(
         fromBinder: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_7<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TContract,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
@@ -319,7 +204,53 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
             .invoke("FromPoolableMemoryPool", (fromBinder))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromPoolableMemoryPool_FactoryFromBinder_7_2<
+    pub fn FromPoolableMemoryPool_Gc1<
+        TParam1,
+        TParam2,
+        TParam3,
+        TParam4,
+        TParam5,
+        TParam6,
+        TContract,
+    >(
+        fromBinder: quest_hook::libil2cpp::Gc<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TContract,
+        >,
+        poolBindGenerator: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<TContract>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
+    >
+    where
+        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ArgConditionCopyNonLazyBinder,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromPoolableMemoryPool", (fromBinder, poolBindGenerator))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromPoolableMemoryPool_Gc2<
         TParam1,
         TParam2,
         TParam3,
@@ -330,15 +261,13 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
         TMemoryPool,
     >(
         fromBinder: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_7<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TContract,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
@@ -365,6 +294,55 @@ impl crate::Zenject::FactoryFromBinder6Extensions {
             crate::Zenject::ArgConditionCopyNonLazyBinder,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FromPoolableMemoryPool", (fromBinder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromPoolableMemoryPool_Gc3<
+        TParam1,
+        TParam2,
+        TParam3,
+        TParam4,
+        TParam5,
+        TParam6,
+        TContract,
+        TMemoryPool,
+    >(
+        fromBinder: quest_hook::libil2cpp::Gc<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TContract,
+        >,
+        poolBindGenerator: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<TContract>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
+    >
+    where
+        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TMemoryPool: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ArgConditionCopyNonLazyBinder,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromPoolableMemoryPool", (fromBinder, poolBindGenerator))?;
         Ok(__cordl_ret.into())
     }
 }

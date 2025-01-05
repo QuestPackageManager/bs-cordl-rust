@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Group {
-    __cordl_parent: crate::System::Text::RegularExpressions::Capture,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::Capture,
+    >,
     pub _caps: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _capcount: i32,
     pub _capcoll: quest_hook::libil2cpp::Gc<
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+Group")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::Group {
-    type Target = crate::System::Text::RegularExpressions::Capture;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::Capture,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +43,7 @@ impl crate::System::Text::RegularExpressions::Group {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppArray_i32_Il2CppString0(
+    pub fn New_Gc_Gc_i32_Gc0(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         caps: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         capcount: i32,
@@ -61,7 +65,7 @@ impl crate::System::Text::RegularExpressions::Group {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppArray_i32_Il2CppString0(
+    pub fn _ctor_Gc_Gc_i32_Gc0(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         caps: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

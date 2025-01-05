@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputBindingComposite_1<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputBindingComposite,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputBindingComposite,
+    >,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingComposite_1")]
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingComposite_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::InputBindingComposite_1<TValue> {
-    type Target = crate::UnityEngine::InputSystem::InputBindingComposite;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputBindingComposite,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,7 +81,7 @@ impl<
         let __cordl_ret: TValue = __cordl_object.invoke("ReadValue", (context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadValue_Il2CppObject_i32_1(
+    pub fn ReadValue_Gc_i32_1(
         &mut self,
         context: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputBindingCompositeContext,

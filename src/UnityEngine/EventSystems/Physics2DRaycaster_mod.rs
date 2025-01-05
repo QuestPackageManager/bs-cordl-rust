@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Physics2DRaycaster {
-    __cordl_parent: crate::UnityEngine::EventSystems::PhysicsRaycaster,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PhysicsRaycaster,
+    >,
     pub m_Hits: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+Physics2DRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::Physics2DRaycaster {
-    type Target = crate::UnityEngine::EventSystems::PhysicsRaycaster;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PhysicsRaycaster,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,9 +44,7 @@ impl crate::UnityEngine::EventSystems::Physics2DRaycaster {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::EventSystems::RaycastResult,
-            >,
+            crate::UnityEngine::EventSystems::RaycastResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LobbyPlayerData {
-    __cordl_parent: crate::GlobalNamespace::LevelGameplaySetupData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelGameplaySetupData,
+    >,
     pub _isPartyOwner_k__BackingField: bool,
     pub _isActive_k__BackingField: bool,
     pub _isReady_k__BackingField: bool,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LobbyPlayerData")]
 impl std::ops::Deref for crate::GlobalNamespace::LobbyPlayerData {
-    type Target = crate::GlobalNamespace::LevelGameplaySetupData;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelGameplaySetupData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -128,30 +132,40 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LobbyPlayerDa
     }
 }
 #[cfg(feature = "LobbyPlayerData")]
-impl AsRef<crate::GlobalNamespace::ILevelGameplaySetupData>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>>
 for crate::GlobalNamespace::LobbyPlayerData {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelGameplaySetupData {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LobbyPlayerData")]
-impl AsMut<crate::GlobalNamespace::ILevelGameplaySetupData>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>>
 for crate::GlobalNamespace::LobbyPlayerData {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelGameplaySetupData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILevelGameplaySetupData,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LobbyPlayerData")]
-impl AsRef<crate::GlobalNamespace::ILobbyPlayerData>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>>
 for crate::GlobalNamespace::LobbyPlayerData {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ILobbyPlayerData {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LobbyPlayerData")]
-impl AsMut<crate::GlobalNamespace::ILobbyPlayerData>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>>
 for crate::GlobalNamespace::LobbyPlayerData {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILobbyPlayerData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData> {
         unsafe { std::mem::transmute(self) }
     }
 }

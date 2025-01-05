@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventCallbackRegistry {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Callbacks: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::EventCallbackList,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+EventCallbackRegistry")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventCallbackRegistry {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -103,33 +103,12 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn RegisterCallback_EventCallback_1_TrickleDown_InvokePolicy0<TEventType>(
-        &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
-        >,
-        useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
-        invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TEventType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterCallback", (callback, useTrickleDown, invokePolicy))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn RegisterCallback_EventCallback_2_TCallbackArgs_TrickleDown_InvokePolicy1<
+    pub fn RegisterCallback_TCallbackArgs_TrickleDown_InvokePolicy1<
         TEventType,
         TCallbackArgs,
     >(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<TEventType, TCallbackArgs>,
         userArgs: TCallbackArgs,
         useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
         invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
@@ -150,6 +129,23 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn RegisterCallback_TrickleDown_InvokePolicy0<TEventType>(
+        &mut self,
+        callback: quest_hook::libil2cpp::Gc<TEventType>,
+        useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
+        invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TEventType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterCallback", (callback, useTrickleDown, invokePolicy))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ReleaseCallbackList(
         toRelease: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventCallbackList,
@@ -159,11 +155,9 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
             .invoke("ReleaseCallbackList", (toRelease))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UnregisterCallback_EventCallback_1_TrickleDown1<TEventType>(
+    pub fn UnregisterCallback_Gc_TrickleDown1<TEventType>(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<TEventType>,
         useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -177,7 +171,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
             .invoke("UnregisterCallback", (callback, useTrickleDown))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UnregisterCallback_i64_Delegate_TrickleDown0(
+    pub fn UnregisterCallback_i64_Gc_TrickleDown0(
         &mut self,
         eventTypeId: i64,
         callback: quest_hook::libil2cpp::Gc<crate::System::Delegate>,

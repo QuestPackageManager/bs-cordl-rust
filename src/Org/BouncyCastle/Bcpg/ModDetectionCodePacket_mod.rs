@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ModDetectionCodePacket {
-    __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::ContainedPacket,
+    >,
     pub digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+ModDetectionCodePacket")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+ModDetectionCodePacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::ModDetectionCodePacket {
-    type Target = crate::Org::BouncyCastle::Bcpg::ContainedPacket;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::ContainedPacket,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +55,7 @@ impl crate::Org::BouncyCastle::Bcpg::ModDetectionCodePacket {
         > = __cordl_object.invoke("GetDigest", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_BcpgInputStream0(
+    pub fn New_Gc0(
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
         >,
@@ -62,7 +66,7 @@ impl crate::Org::BouncyCastle::Bcpg::ModDetectionCodePacket {
             .invoke_void(".ctor", (bcpgIn))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray1(
+    pub fn New_Gc1(
         digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -71,7 +75,7 @@ impl crate::Org::BouncyCastle::Bcpg::ModDetectionCodePacket {
             .invoke_void(".ctor", (digest))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_BcpgInputStream0(
+    pub fn _ctor_Gc0(
         &mut self,
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
@@ -84,7 +88,7 @@ impl crate::Org::BouncyCastle::Bcpg::ModDetectionCodePacket {
             .invoke(".ctor", (bcpgIn))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray1(
+    pub fn _ctor_Gc1(
         &mut self,
         digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

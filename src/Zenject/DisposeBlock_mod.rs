@@ -2,14 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisposeBlock {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _disposables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::IDisposable>,
+        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     >,
     pub _objectPoolPairs: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::Zenject::DisposeBlock_SpawnedObjectPoolPair,
-        >,
+        crate::Zenject::DisposeBlock_SpawnedObjectPoolPair,
     >,
 }
 #[cfg(feature = "Zenject+DisposeBlock")]
@@ -19,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+DisposeBlock")]
 impl std::ops::Deref for crate::Zenject::DisposeBlock {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,9 +45,7 @@ impl crate::Zenject::DisposeBlock {
     }
     pub fn AddRange<T>(
         &mut self,
-        disposables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<T>,
-        >,
+        disposables: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -116,9 +112,7 @@ impl crate::Zenject::DisposeBlock {
     }
     pub fn SpawnList_1<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -126,19 +120,14 @@ impl crate::Zenject::DisposeBlock {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = __cordl_object.invoke("SpawnList", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
+            .invoke("SpawnList", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SpawnList_IEnumerable_1_0<T>(
+    pub fn SpawnList_Gc0<T>(
         &mut self,
-        elements: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+        elements: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -146,9 +135,8 @@ impl crate::Zenject::DisposeBlock {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = __cordl_object.invoke("SpawnList", (elements))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
+            .invoke("SpawnList", (elements))?;
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_8() -> quest_hook::libil2cpp::Result<
@@ -158,9 +146,9 @@ impl crate::Zenject::DisposeBlock {
             .invoke("Spawn", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_1_0<T>(
+    pub fn Spawn_Gc0<T>(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>,
+        pool: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -172,9 +160,9 @@ impl crate::Zenject::DisposeBlock {
         let __cordl_ret: T = __cordl_object.invoke("Spawn", (pool))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_2_TParam1_1<TValue, TParam1>(
+    pub fn Spawn_Gc_TParam1_1<TValue, TParam1>(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_2<TParam1, TValue>>,
+        pool: quest_hook::libil2cpp::Gc<TParam1, TValue>,
         p1: TParam1,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -189,11 +177,9 @@ impl crate::Zenject::DisposeBlock {
         let __cordl_ret: TValue = __cordl_object.invoke("Spawn", (pool, p1))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_3_TParam1_TParam2_2<TValue, TParam1, TParam2>(
+    pub fn Spawn_Gc_TParam1_TParam2_2<TValue, TParam1, TParam2>(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<
-            crate::Zenject::IMemoryPool_3<TParam1, TParam2, TValue>,
-        >,
+        pool: quest_hook::libil2cpp::Gc<TParam1, TParam2, TValue>,
         p1: TParam1,
         p2: TParam2,
     ) -> quest_hook::libil2cpp::Result<TValue>
@@ -211,16 +197,9 @@ impl crate::Zenject::DisposeBlock {
         let __cordl_ret: TValue = __cordl_object.invoke("Spawn", (pool, p1, p2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_4_TParam1_TParam2_TParam3_3<
-        TValue,
-        TParam1,
-        TParam2,
-        TParam3,
-    >(
+    pub fn Spawn_Gc_TParam1_TParam2_TParam3_3<TValue, TParam1, TParam2, TParam3>(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<
-            crate::Zenject::IMemoryPool_4<TParam1, TParam2, TParam3, TValue>,
-        >,
+        pool: quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TValue>,
         p1: TParam1,
         p2: TParam2,
         p3: TParam3,
@@ -241,7 +220,7 @@ impl crate::Zenject::DisposeBlock {
         let __cordl_ret: TValue = __cordl_object.invoke("Spawn", (pool, p1, p2, p3))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_5_TParam1_TParam2_TParam3_TParam4_4<
+    pub fn Spawn_Gc_TParam1_TParam2_TParam3_TParam4_4<
         TValue,
         TParam1,
         TParam2,
@@ -249,9 +228,7 @@ impl crate::Zenject::DisposeBlock {
         TParam4,
     >(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<
-            crate::Zenject::IMemoryPool_5<TParam1, TParam2, TParam3, TParam4, TValue>,
-        >,
+        pool: quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TValue>,
         p1: TParam1,
         p2: TParam2,
         p3: TParam3,
@@ -276,7 +253,7 @@ impl crate::Zenject::DisposeBlock {
             .invoke("Spawn", (pool, p1, p2, p3, p4))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_6_TParam1_TParam2_TParam3_TParam4_TParam5_5<
+    pub fn Spawn_Gc_TParam1_TParam2_TParam3_TParam4_TParam5_5<
         TValue,
         TParam1,
         TParam2,
@@ -286,14 +263,12 @@ impl crate::Zenject::DisposeBlock {
     >(
         &mut self,
         pool: quest_hook::libil2cpp::Gc<
-            crate::Zenject::IMemoryPool_6<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TValue,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TValue,
         >,
         p1: TParam1,
         p2: TParam2,
@@ -322,7 +297,7 @@ impl crate::Zenject::DisposeBlock {
             .invoke("Spawn", (pool, p1, p2, p3, p4, p5))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_7_TParam1_TParam2_TParam3_TParam4_TParam5_TParam6_6<
+    pub fn Spawn_Gc_TParam1_TParam2_TParam3_TParam4_TParam5_TParam6_6<
         TValue,
         TParam1,
         TParam2,
@@ -333,15 +308,13 @@ impl crate::Zenject::DisposeBlock {
     >(
         &mut self,
         pool: quest_hook::libil2cpp::Gc<
-            crate::Zenject::IMemoryPool_7<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TValue,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TValue,
         >,
         p1: TParam1,
         p2: TParam2,
@@ -373,7 +346,7 @@ impl crate::Zenject::DisposeBlock {
             .invoke("Spawn", (pool, p1, p2, p3, p4, p5, p6))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_8_TParam1_TParam2_TParam3_TParam4_TParam5_TParam6_TParam7_7<
+    pub fn Spawn_Gc_TParam1_TParam2_TParam3_TParam4_TParam5_TParam6_TParam7_7<
         TValue,
         TParam1,
         TParam2,
@@ -385,16 +358,14 @@ impl crate::Zenject::DisposeBlock {
     >(
         &mut self,
         pool: quest_hook::libil2cpp::Gc<
-            crate::Zenject::IMemoryPool_8<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TParam7,
-                TValue,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TValue,
         >,
         p1: TParam1,
         p2: TParam2,
@@ -432,7 +403,7 @@ impl crate::Zenject::DisposeBlock {
     pub fn StoreSpawnedObject<T>(
         &mut self,
         obj: T,
-        pool: quest_hook::libil2cpp::Gc<crate::Zenject::IDespawnableMemoryPool_1<T>>,
+        pool: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -466,14 +437,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::DisposeBlock {
     }
 }
 #[cfg(feature = "Zenject+DisposeBlock")]
-impl AsRef<crate::System::IDisposable> for crate::Zenject::DisposeBlock {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::Zenject::DisposeBlock {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+DisposeBlock")]
-impl AsMut<crate::System::IDisposable> for crate::Zenject::DisposeBlock {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::Zenject::DisposeBlock {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,14 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamedColorListController {
-    __cordl_parent: crate::GlobalNamespace::ListColorController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ListColorController,
+    >,
     pub _textValuePairs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+            >,
         >,
     >,
     pub _value: i32,
-    pub valueChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub valueChangedEvent: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "NamedColorListController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -18,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NamedColorListController")]
 impl std::ops::Deref for crate::GlobalNamespace::NamedColorListController {
-    type Target = crate::GlobalNamespace::ListColorController;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ListColorController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,7 +75,9 @@ impl crate::GlobalNamespace::NamedColorListController {
         &mut self,
         values: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+                >,
             >,
         >,
         value: i32,
@@ -113,7 +119,7 @@ impl crate::GlobalNamespace::NamedColorListController {
     }
     pub fn add_valueChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,7 +130,7 @@ impl crate::GlobalNamespace::NamedColorListController {
     }
     pub fn remove_valueChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -145,16 +151,16 @@ for crate::GlobalNamespace::NamedColorListController {
     }
 }
 #[cfg(feature = "NamedColorListController")]
-impl AsRef<crate::HMUI::IValueChanger_1<i32>>
+impl AsRef<quest_hook::libil2cpp::Gc<i32>>
 for crate::GlobalNamespace::NamedColorListController {
-    fn as_ref(&self) -> &crate::HMUI::IValueChanger_1<i32> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<i32> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NamedColorListController")]
-impl AsMut<crate::HMUI::IValueChanger_1<i32>>
+impl AsMut<quest_hook::libil2cpp::Gc<i32>>
 for crate::GlobalNamespace::NamedColorListController {
-    fn as_mut(&mut self) -> &mut crate::HMUI::IValueChanger_1<i32> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<i32> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -162,7 +168,7 @@ for crate::GlobalNamespace::NamedColorListController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamedColorListController_ColorValuePair {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub color: crate::UnityEngine::Color,
     pub value: i32,
 }
@@ -175,7 +181,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "NamedColorListController+ColorValuePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NamedColorListController_ColorValuePair {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

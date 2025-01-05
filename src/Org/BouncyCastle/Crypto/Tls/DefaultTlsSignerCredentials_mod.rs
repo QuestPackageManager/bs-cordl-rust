@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultTlsSignerCredentials {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials,
+    >,
     pub mContext: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
     >,
@@ -28,7 +30,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSignerCredentials")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
-    type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +60,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
         > = __cordl_object.invoke("GenerateCertificateSignature", (hash))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_SignatureAndHashAlgorithm1(
+    pub fn New_Gc1(
         context: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
         >,
@@ -79,7 +83,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_TlsContext_Certificate_AsymmetricKeyParameter0(
+    pub fn New_Gc_Gc_Gc0(
         context: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
         >,
@@ -96,7 +100,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
             .invoke_void(".ctor", (context, certificate, privateKey))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_SignatureAndHashAlgorithm1(
+    pub fn _ctor_Gc1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
@@ -121,7 +125,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_TlsContext_Certificate_AsymmetricKeyParameter0(
+    pub fn _ctor_Gc_Gc_Gc0(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,

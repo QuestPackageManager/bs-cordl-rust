@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Animator {
-    __cordl_parent: crate::UnityEngine::Behaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
 }
 #[cfg(feature = "UnityEngine+Animator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Animator")]
 impl std::ops::Deref for crate::UnityEngine::Animator {
-    type Target = crate::UnityEngine::Behaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +56,9 @@ impl crate::UnityEngine::Animator {
     }
     pub fn ConvertStateMachineBehaviour<T>(
         rawObjects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ScriptableObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -71,7 +73,7 @@ impl crate::UnityEngine::Animator {
             .invoke("ConvertStateMachineBehaviour", (rawObjects))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CrossFadeInFixedTime_Il2CppString0(
+    pub fn CrossFadeInFixedTime_Gc0(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fixedTransitionDuration: f32,
@@ -83,7 +85,7 @@ impl crate::UnityEngine::Animator {
             .invoke("CrossFadeInFixedTime", (stateName, fixedTransitionDuration))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CrossFadeInFixedTime_Il2CppString_i32_1(
+    pub fn CrossFadeInFixedTime_Gc_i32_1(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fixedTransitionDuration: f32,
@@ -99,7 +101,7 @@ impl crate::UnityEngine::Animator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CrossFadeInFixedTime_Il2CppString_i32_f32_2(
+    pub fn CrossFadeInFixedTime_Gc_i32_f32_2(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fixedTransitionDuration: f32,
@@ -116,7 +118,7 @@ impl crate::UnityEngine::Animator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CrossFadeInFixedTime_Il2CppString_i32_f32_f32_3(
+    pub fn CrossFadeInFixedTime_Gc_i32_f32_f32_3(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fixedTransitionDuration: f32,
@@ -209,7 +211,7 @@ impl crate::UnityEngine::Animator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CrossFade_Il2CppString2(
+    pub fn CrossFade_Gc2(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         normalizedTransitionDuration: f32,
@@ -221,7 +223,7 @@ impl crate::UnityEngine::Animator {
             .invoke("CrossFade", (stateName, normalizedTransitionDuration))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CrossFade_Il2CppString_i32_1(
+    pub fn CrossFade_Gc_i32_1(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         normalizedTransitionDuration: f32,
@@ -234,7 +236,7 @@ impl crate::UnityEngine::Animator {
             .invoke("CrossFade", (stateName, normalizedTransitionDuration, layer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CrossFade_Il2CppString_i32_f32_0(
+    pub fn CrossFade_Gc_i32_f32_0(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         normalizedTransitionDuration: f32,
@@ -251,7 +253,7 @@ impl crate::UnityEngine::Animator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CrossFade_Il2CppString_i32_f32_f32_3(
+    pub fn CrossFade_Gc_i32_f32_f32_3(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         normalizedTransitionDuration: f32,
@@ -465,7 +467,7 @@ impl crate::UnityEngine::Animator {
         let __cordl_ret: T = __cordl_object.invoke("GetBehaviour", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBehaviour_Type0(
+    pub fn GetBehaviour_Gc0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -503,7 +505,7 @@ impl crate::UnityEngine::Animator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::StateMachineBehaviour,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::StateMachineBehaviour>,
             >,
         >,
     > {
@@ -512,7 +514,7 @@ impl crate::UnityEngine::Animator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::StateMachineBehaviour,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::StateMachineBehaviour>,
             >,
         > = __cordl_object.invoke("GetBehaviours", (fullPathHash, layerIndex))?;
         Ok(__cordl_ret.into())
@@ -560,7 +562,7 @@ impl crate::UnityEngine::Animator {
         let __cordl_ret: bool = __cordl_object.invoke("GetBoolString", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBool_Il2CppString0(
+    pub fn GetBool_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -588,14 +590,10 @@ impl crate::UnityEngine::Animator {
             .invoke("GetCurrentAnimatorClipInfoCount", (layerIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCurrentAnimatorClipInfo_List_1_1(
+    pub fn GetCurrentAnimatorClipInfo_Gc1(
         &mut self,
         layerIndex: i32,
-        clips: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::AnimatorClipInfo,
-            >,
-        >,
+        clips: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimatorClipInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -675,7 +673,7 @@ impl crate::UnityEngine::Animator {
         let __cordl_ret: f32 = __cordl_object.invoke("GetFloatString", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetFloat_Il2CppString0(
+    pub fn GetFloat_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -871,7 +869,7 @@ impl crate::UnityEngine::Animator {
         let __cordl_ret: i32 = __cordl_object.invoke("GetIntegerString", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInteger_Il2CppString0(
+    pub fn GetInteger_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -933,14 +931,10 @@ impl crate::UnityEngine::Animator {
             .invoke("GetNextAnimatorClipInfoCount", (layerIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetNextAnimatorClipInfo_List_1_1(
+    pub fn GetNextAnimatorClipInfo_Gc1(
         &mut self,
         layerIndex: i32,
-        clips: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::AnimatorClipInfo,
-            >,
-        >,
+        clips: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimatorClipInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1018,7 +1012,7 @@ impl crate::UnityEngine::Animator {
         > = __cordl_object.invoke("GetParameterInternal", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetQuaternion_Il2CppString0(
+    pub fn GetQuaternion_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
@@ -1067,7 +1061,7 @@ impl crate::UnityEngine::Animator {
         > = __cordl_object.invoke("GetStats", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetVector_Il2CppString0(
+    pub fn GetVector_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -1106,14 +1100,18 @@ impl crate::UnityEngine::Animator {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ScriptableObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ScriptableObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            >,
         > = __cordl_object.invoke("InternalGetBehaviours", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
@@ -1124,14 +1122,18 @@ impl crate::UnityEngine::Animator {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ScriptableObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ScriptableObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            >,
         > = __cordl_object
             .invoke(
                 "InternalGetBehavioursByKey",
@@ -1219,7 +1221,7 @@ impl crate::UnityEngine::Animator {
             .invoke("IsParameterControlledByCurveString", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsParameterControlledByCurve_Il2CppString0(
+    pub fn IsParameterControlledByCurve_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1404,7 +1406,7 @@ impl crate::UnityEngine::Animator {
             .invoke("OnUpdateModeChanged", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn PlayInFixedTime_Il2CppString1(
+    pub fn PlayInFixedTime_Gc1(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1415,7 +1417,7 @@ impl crate::UnityEngine::Animator {
             .invoke("PlayInFixedTime", (stateName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PlayInFixedTime_Il2CppString_i32_0(
+    pub fn PlayInFixedTime_Gc_i32_0(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         layer: i32,
@@ -1427,7 +1429,7 @@ impl crate::UnityEngine::Animator {
             .invoke("PlayInFixedTime", (stateName, layer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PlayInFixedTime_Il2CppString_i32_f32_2(
+    pub fn PlayInFixedTime_Gc_i32_f32_2(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         layer: i32,
@@ -1476,7 +1478,7 @@ impl crate::UnityEngine::Animator {
             .invoke("PlayInFixedTime", (stateNameHash, layer, fixedTime))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Play_Il2CppString1(
+    pub fn Play_Gc1(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1487,7 +1489,7 @@ impl crate::UnityEngine::Animator {
             .invoke("Play", (stateName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Play_Il2CppString_i32_0(
+    pub fn Play_Gc_i32_0(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         layer: i32,
@@ -1499,7 +1501,7 @@ impl crate::UnityEngine::Animator {
             .invoke("Play", (stateName, layer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Play_Il2CppString_i32_f32_2(
+    pub fn Play_Gc_i32_f32_2(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         layer: i32,
@@ -1591,7 +1593,7 @@ impl crate::UnityEngine::Animator {
             .invoke("ResetTriggerString", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ResetTrigger_Il2CppString0(
+    pub fn ResetTrigger_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1687,7 +1689,7 @@ impl crate::UnityEngine::Animator {
             .invoke("SetBoolString", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetBool_Il2CppString0(
+    pub fn SetBool_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: bool,
@@ -1763,7 +1765,7 @@ impl crate::UnityEngine::Animator {
             .invoke("SetFloatStringDamp", (name, value, dampTime, deltaTime))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFloat_Il2CppString0(
+    pub fn SetFloat_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: f32,
@@ -1775,7 +1777,7 @@ impl crate::UnityEngine::Animator {
             .invoke("SetFloat", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFloat_Il2CppString_f32_f32_1(
+    pub fn SetFloat_Gc_f32_f32_1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: f32,
@@ -2019,7 +2021,7 @@ impl crate::UnityEngine::Animator {
             .invoke("SetIntegerString", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetInteger_Il2CppString0(
+    pub fn SetInteger_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: i32,
@@ -2174,7 +2176,7 @@ impl crate::UnityEngine::Animator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetQuaternion_Il2CppString0(
+    pub fn SetQuaternion_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: crate::UnityEngine::Quaternion,
@@ -2232,7 +2234,7 @@ impl crate::UnityEngine::Animator {
             .invoke("SetTriggerString", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetTrigger_Il2CppString0(
+    pub fn SetTrigger_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2254,7 +2256,7 @@ impl crate::UnityEngine::Animator {
             .invoke("SetTrigger", (id))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetVector_Il2CppString0(
+    pub fn SetVector_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: crate::UnityEngine::Vector3,
@@ -2704,7 +2706,9 @@ impl crate::UnityEngine::Animator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::AnimatorControllerParameter,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::AnimatorControllerParameter,
+                >,
             >,
         >,
     > {
@@ -2713,7 +2717,9 @@ impl crate::UnityEngine::Animator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::AnimatorControllerParameter,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::AnimatorControllerParameter,
+                >,
             >,
         > = __cordl_object.invoke("get_parameters", ())?;
         Ok(__cordl_ret.into())

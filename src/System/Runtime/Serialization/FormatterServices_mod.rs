@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormatterServices {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Runtime+Serialization+FormatterServices")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Serialization+FormatterServices")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::FormatterServices {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -86,16 +86,20 @@ impl crate::System::Runtime::Serialization::FormatterServices {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         members: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetObjectData", (obj, members))?;
         Ok(__cordl_ret.into())
@@ -103,7 +107,11 @@ impl crate::System::Runtime::Serialization::FormatterServices {
     pub fn GetParentTypes(
         parentType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
         parentTypes: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::RuntimeType>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+                >,
+            >,
         >,
         parentTypeCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -111,36 +119,36 @@ impl crate::System::Runtime::Serialization::FormatterServices {
             .invoke("GetParentTypes", (parentType, parentTypes, parentTypeCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSerializableMembers_RuntimeType0(
+    pub fn GetSerializableMembers_Gc0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetSerializableMembers", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSerializableMembers_Type_StreamingContext1(
+    pub fn GetSerializableMembers_StreamingContext1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetSerializableMembers", (_cordl_type, context))?;
@@ -170,13 +178,13 @@ impl crate::System::Runtime::Serialization::FormatterServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InternalGetSerializableMembers", (_cordl_type))?;
@@ -208,11 +216,13 @@ impl crate::System::Runtime::Serialization::FormatterServices {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         members: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         >,
         data: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReliableChannel {
-    __cordl_parent: crate::LiteNetLib::BaseChannel,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>,
     pub _outgoingAcks: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     pub _pendingPackets: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -10,7 +10,9 @@ pub struct ReliableChannel {
         >,
     >,
     pub _receivedPackets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::LiteNetLib::NetPacket>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+        >,
     >,
     pub _earlyReceived: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<bool>,
@@ -32,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+ReliableChannel")]
 impl std::ops::Deref for crate::LiteNetLib::ReliableChannel {
-    type Target = crate::LiteNetLib::BaseChannel;
+    type Target = quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

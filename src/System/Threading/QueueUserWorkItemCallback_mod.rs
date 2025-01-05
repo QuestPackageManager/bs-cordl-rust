@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QueueUserWorkItemCallback {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub callback: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitCallback>,
     pub context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
     pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+QueueUserWorkItemCallback")]
 impl std::ops::Deref for crate::System::Threading::QueueUserWorkItemCallback {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -97,16 +97,20 @@ for crate::System::Threading::QueueUserWorkItemCallback {
     }
 }
 #[cfg(feature = "System+Threading+QueueUserWorkItemCallback")]
-impl AsRef<crate::System::Threading::IThreadPoolWorkItem>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>>
 for crate::System::Threading::QueueUserWorkItemCallback {
-    fn as_ref(&self) -> &crate::System::Threading::IThreadPoolWorkItem {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+QueueUserWorkItemCallback")]
-impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>>
 for crate::System::Threading::QueueUserWorkItemCallback {
-    fn as_mut(&mut self) -> &mut crate::System::Threading::IThreadPoolWorkItem {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem> {
         unsafe { std::mem::transmute(self) }
     }
 }

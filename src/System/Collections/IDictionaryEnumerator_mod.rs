@@ -77,16 +77,20 @@ for crate::System::Collections::IDictionaryEnumerator {
     }
 }
 #[cfg(feature = "System+Collections+IDictionaryEnumerator")]
-impl AsRef<crate::System::Collections::IEnumerator>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::Collections::IDictionaryEnumerator {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+IDictionaryEnumerator")]
-impl AsMut<crate::System::Collections::IEnumerator>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::Collections::IDictionaryEnumerator {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }

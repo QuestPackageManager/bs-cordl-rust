@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SegmentedControlCell {
-    __cordl_parent: crate::HMUI::SelectableCell,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
     pub _cellNumber_k__BackingField: i32,
     pub _segmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+SegmentedControlCell")]
 impl std::ops::Deref for crate::HMUI::SegmentedControlCell {
-    type Target = crate::HMUI::SelectableCell;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

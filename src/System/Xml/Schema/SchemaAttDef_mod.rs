@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SchemaAttDef {
-    __cordl_parent: crate::System::Xml::Schema::SchemaDeclBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SchemaDeclBase,
+    >,
     pub defExpanded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub lineNum: i32,
     pub linePos: i32,
@@ -21,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaAttDef {
-    type Target = crate::System::Xml::Schema::SchemaDeclBase;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaDeclBase>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,7 +71,7 @@ impl crate::System::Xml::Schema::SchemaAttDef {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XmlQualifiedName1(
+    pub fn New_Gc1(
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -78,7 +80,7 @@ impl crate::System::Xml::Schema::SchemaAttDef {
             .invoke_void(".ctor", (name))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XmlQualifiedName_Il2CppString0(
+    pub fn New_Gc_Gc0(
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -222,7 +224,7 @@ impl crate::System::Xml::Schema::SchemaAttDef {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XmlQualifiedName1(
+    pub fn _ctor_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -233,7 +235,7 @@ impl crate::System::Xml::Schema::SchemaAttDef {
             .invoke(".ctor", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XmlQualifiedName_Il2CppString0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -427,30 +429,38 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaAtt
     }
 }
 #[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
-impl AsRef<crate::System::Xml::IDtdAttributeInfo>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdAttributeInfo>>
 for crate::System::Xml::Schema::SchemaAttDef {
-    fn as_ref(&self) -> &crate::System::Xml::IDtdAttributeInfo {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdAttributeInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
-impl AsMut<crate::System::Xml::IDtdAttributeInfo>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdAttributeInfo>>
 for crate::System::Xml::Schema::SchemaAttDef {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdAttributeInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdAttributeInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
-impl AsRef<crate::System::Xml::IDtdDefaultAttributeInfo>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdDefaultAttributeInfo>>
 for crate::System::Xml::Schema::SchemaAttDef {
-    fn as_ref(&self) -> &crate::System::Xml::IDtdDefaultAttributeInfo {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdDefaultAttributeInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
-impl AsMut<crate::System::Xml::IDtdDefaultAttributeInfo>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdDefaultAttributeInfo>>
 for crate::System::Xml::Schema::SchemaAttDef {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdDefaultAttributeInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdDefaultAttributeInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }

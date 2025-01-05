@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Path {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+IO+Path")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+Path")]
 impl std::ops::Deref for crate::System::IO::Path {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,19 +56,7 @@ impl crate::System::IO::Path {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CleanPath", (s))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Combine_Il2CppArray1(
-        paths: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Combine", (paths))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Combine_Il2CppString_Il2CppString0(
+    pub fn Combine_Gc0(
         path1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         path2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -80,7 +68,21 @@ impl crate::System::IO::Path {
             .invoke("Combine", (path1, path2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Combine_Il2CppString_Il2CppString_Il2CppString2(
+    pub fn Combine_Gc1(
+        paths: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Combine", (paths))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Combine_Gc_Gc2(
         path1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         path2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         path3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -93,7 +95,7 @@ impl crate::System::IO::Path {
             .invoke("Combine", (path1, path2, path3))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Combine_Il2CppString_Il2CppString_Il2CppString_Il2CppString3(
+    pub fn Combine_Gc_Gc_Gc3(
         path1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         path2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         path3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -107,7 +109,7 @@ impl crate::System::IO::Path {
             .invoke("Combine", (path1, path2, path3, path4))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDirectoryName_Il2CppString0(
+    pub fn GetDirectoryName_Gc0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -147,7 +149,7 @@ impl crate::System::IO::Path {
             .invoke("GetFileNameWithoutExtension", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetFileName_Il2CppString0(
+    pub fn GetFileName_Gc0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -240,7 +242,7 @@ impl crate::System::IO::Path {
             .invoke("IsDirectorySeparator", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsPathRooted_Il2CppString1(
+    pub fn IsPathRooted_Gc1(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()

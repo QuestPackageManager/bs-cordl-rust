@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Logger {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _logHandler_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ILogHandler,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Logger")]
 impl std::ops::Deref for crate::UnityEngine::Logger {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,28 +73,15 @@ impl crate::UnityEngine::Logger {
             .invoke("LogException", (exception, context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LogFormat_Il2CppString_Il2CppArray0(
-        &mut self,
-        logType: crate::UnityEngine::LogType,
-        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LogFormat", (logType, format, args))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn LogFormat_Object_Il2CppString_Il2CppArray1(
+    pub fn LogFormat_Gc1(
         &mut self,
         logType: crate::UnityEngine::LogType,
         context: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -104,19 +91,24 @@ impl crate::UnityEngine::Logger {
             .invoke("LogFormat", (logType, context, format, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Log_LogType_Il2CppObject0(
+    pub fn LogFormat_LogType_Gc_Gc0(
         &mut self,
         logType: crate::UnityEngine::LogType,
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Log", (logType, message))?;
+            .invoke("LogFormat", (logType, format, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Log_Object1(
+    pub fn Log_Gc1(
         &mut self,
         logType: crate::UnityEngine::LogType,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -127,6 +119,18 @@ impl crate::UnityEngine::Logger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Log", (logType, message, context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Log_LogType_Gc0(
+        &mut self,
+        logType: crate::UnityEngine::LogType,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Log", (logType, message))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -222,26 +226,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Logger {
     }
 }
 #[cfg(feature = "UnityEngine+Logger")]
-impl AsRef<crate::UnityEngine::ILogHandler> for crate::UnityEngine::Logger {
-    fn as_ref(&self) -> &crate::UnityEngine::ILogHandler {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ILogHandler>>
+for crate::UnityEngine::Logger {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ILogHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Logger")]
-impl AsMut<crate::UnityEngine::ILogHandler> for crate::UnityEngine::Logger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::ILogHandler {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ILogHandler>>
+for crate::UnityEngine::Logger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ILogHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Logger")]
-impl AsRef<crate::UnityEngine::ILogger> for crate::UnityEngine::Logger {
-    fn as_ref(&self) -> &crate::UnityEngine::ILogger {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ILogger>>
+for crate::UnityEngine::Logger {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ILogger> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Logger")]
-impl AsMut<crate::UnityEngine::ILogger> for crate::UnityEngine::Logger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::ILogger {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ILogger>>
+for crate::UnityEngine::Logger {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ILogger> {
         unsafe { std::mem::transmute(self) }
     }
 }

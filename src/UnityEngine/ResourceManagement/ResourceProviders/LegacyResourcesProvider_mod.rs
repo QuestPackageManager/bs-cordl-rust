@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacyResourcesProvider {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
+    >,
 }
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider {
-    type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -102,7 +106,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesPr
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacyResourcesProvider_InternalOp {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_RequestOperation: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceRequest,
     >,
@@ -122,7 +126,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider_InternalOp {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

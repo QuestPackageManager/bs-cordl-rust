@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpEncryptedData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub encData: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedData")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -99,7 +99,9 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpEncryptedData_TruncatedStream {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
+    >,
     pub inStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub lookAhead: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub bufStart: i32,
@@ -114,7 +116,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedData+TruncatedStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData_TruncatedStream {
-    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseInputStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

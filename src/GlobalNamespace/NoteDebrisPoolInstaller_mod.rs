@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteDebrisPoolInstaller {
-    __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     pub _normalNoteDebrisHDPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NoteDebris,
     >,
@@ -32,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteDebrisPoolInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteDebrisPoolInstaller {
-    type Target = crate::Zenject::ScriptableObjectInstaller;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationGroup {
-    __cordl_parent: crate::GlobalNamespace::LightTransformGroup_3<
-        *mut crate::GlobalNamespace::LightGroupRotationXTransform,
-        *mut crate::GlobalNamespace::LightGroupRotationYTransform,
-        *mut crate::GlobalNamespace::LightGroupRotationZTransform,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationXTransform>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationYTransform>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationZTransform>,
     >,
 }
 #[cfg(feature = "LightRotationGroup")]
@@ -15,10 +15,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightRotationGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::LightRotationGroup {
-    type Target = crate::GlobalNamespace::LightTransformGroup_3<
-        *mut crate::GlobalNamespace::LightGroupRotationXTransform,
-        *mut crate::GlobalNamespace::LightGroupRotationYTransform,
-        *mut crate::GlobalNamespace::LightGroupRotationZTransform,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationXTransform>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationYTransform>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationZTransform>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

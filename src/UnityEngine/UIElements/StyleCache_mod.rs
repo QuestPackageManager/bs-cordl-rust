@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleCache {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleCache")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+StyleCache")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleCache {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,22 +24,22 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleCache {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleCache")]
 impl crate::UnityEngine::UIElements::StyleCache {
-    pub fn SetValue_i32_Il2CppArray2(
+    pub fn SetValue_i32_Gc1(
         hash: i32,
         data: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::UIElements::ComputedTransitionProperty,
-            >,
+            crate::UnityEngine::UIElements::StyleVariableContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SetValue", (hash, data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetValue_i32_StyleVariableContext1(
+    pub fn SetValue_i32_Gc2(
         hash: i32,
         data: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StyleVariableContext,
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::ComputedTransitionProperty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -59,7 +59,9 @@ impl crate::UnityEngine::UIElements::StyleCache {
     pub fn TryGetValue_i32_1(
         hash: i32,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::StyleVariableContext,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StyleVariableContext,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -69,8 +71,10 @@ impl crate::UnityEngine::UIElements::StyleCache {
     pub fn TryGetValue_i32_2(
         hash: i32,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::UIElements::ComputedTransitionProperty,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::UIElements::ComputedTransitionProperty,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeSlider {
-    __cordl_parent: crate::HMUI::RangeValuesTextSlider,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
     pub _timeType: crate::HMUI::TimeSlider_TimeType,
     pub _valuesValid: bool,
     pub _lowerValue: f32,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+TimeSlider")]
 impl std::ops::Deref for crate::HMUI::TimeSlider {
-    type Target = crate::HMUI::RangeValuesTextSlider;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataItem {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _time_k__BackingField: f32,
     pub _executionOrder_k__BackingField: i32,
     pub _subtypeIdentifier_k__BackingField: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataItem")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataItem {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -169,21 +169,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapDataIt
     }
 }
 #[cfg(feature = "BeatmapDataItem")]
-impl AsRef<crate::System::IComparable_1<*mut crate::GlobalNamespace::BeatmapDataItem>>
-for crate::GlobalNamespace::BeatmapDataItem {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+    >,
+> for crate::GlobalNamespace::BeatmapDataItem {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<*mut crate::GlobalNamespace::BeatmapDataItem> {
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapDataItem")]
-impl AsMut<crate::System::IComparable_1<*mut crate::GlobalNamespace::BeatmapDataItem>>
-for crate::GlobalNamespace::BeatmapDataItem {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+    >,
+> for crate::GlobalNamespace::BeatmapDataItem {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::BeatmapDataItem,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     > {
         unsafe { std::mem::transmute(self) }
     }

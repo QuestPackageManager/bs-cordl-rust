@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlayerAuthenticationTokenProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _hashedUserId_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,19 +39,13 @@ impl crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
     pub fn GetAuthenticationToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::AuthenticationToken,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AuthenticationToken>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::AuthenticationToken,
-            >,
+            crate::GlobalNamespace::AuthenticationToken,
         > = __cordl_object.invoke("GetAuthenticationToken", ())?;
         Ok(__cordl_ret.into())
     }
@@ -73,19 +67,13 @@ impl crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
         cancellationToken: crate::System::Threading::CancellationToken,
         skipCache: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::XPlatformAccessTokenData,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::XPlatformAccessTokenData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::XPlatformAccessTokenData,
-            >,
+            crate::GlobalNamespace::XPlatformAccessTokenData,
         > = __cordl_object
             .invoke("GetXPlatformAccessToken", (cancellationToken, skipCache))?;
         Ok(__cordl_ret.into())
@@ -166,30 +154,46 @@ for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
     }
 }
 #[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
-impl AsRef<crate::BGNet::Core::IPlatformAccessTokenFetcher>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::BGNet::Core::IPlatformAccessTokenFetcher>>
 for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
-    fn as_ref(&self) -> &crate::BGNet::Core::IPlatformAccessTokenFetcher {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::BGNet::Core::IPlatformAccessTokenFetcher> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
-impl AsMut<crate::BGNet::Core::IPlatformAccessTokenFetcher>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::BGNet::Core::IPlatformAccessTokenFetcher>>
 for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
-    fn as_mut(&mut self) -> &mut crate::BGNet::Core::IPlatformAccessTokenFetcher {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::BGNet::Core::IPlatformAccessTokenFetcher,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
-impl AsRef<crate::GlobalNamespace::IAuthenticationTokenProvider>
-for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IAuthenticationTokenProvider {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAuthenticationTokenProvider>,
+> for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAuthenticationTokenProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
-impl AsMut<crate::GlobalNamespace::IAuthenticationTokenProvider>
-for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAuthenticationTokenProvider {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAuthenticationTokenProvider>,
+> for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAuthenticationTokenProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

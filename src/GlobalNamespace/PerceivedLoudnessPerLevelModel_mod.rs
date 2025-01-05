@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerceivedLoudnessPerLevelModel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _loudnessLevelPerLevelId: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            f32,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        f32,
     >,
 }
 #[cfg(feature = "PerceivedLoudnessPerLevelModel")]
@@ -17,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PerceivedLoudnessPerLevelModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,9 +76,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     }
     pub fn New(
         loudnessPerLeveDataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::PerceivedLoudnessSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerceivedLoudnessSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -92,9 +88,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     pub fn _ctor(
         &mut self,
         loudnessPerLeveDataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::PerceivedLoudnessSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerceivedLoudnessSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

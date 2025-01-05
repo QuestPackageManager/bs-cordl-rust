@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_SyncHashtable {
-    __cordl_parent: crate::System::Collections::Hashtable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
 impl std::ops::Deref for crate::GlobalNamespace::Hashtable_SyncHashtable {
-    type Target = crate::System::Collections::Hashtable;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -119,7 +119,7 @@ impl crate::GlobalNamespace::Hashtable_SyncHashtable {
             .invoke("GetObjectData", (info, context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Hashtable0(
+    pub fn New_Gc0(
         table: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -128,7 +128,7 @@ impl crate::GlobalNamespace::Hashtable_SyncHashtable {
             .invoke_void(".ctor", (table))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext1(
+    pub fn New_StreamingContext1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -175,7 +175,7 @@ impl crate::GlobalNamespace::Hashtable_SyncHashtable {
         > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Hashtable0(
+    pub fn _ctor_Gc0(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -186,7 +186,7 @@ impl crate::GlobalNamespace::Hashtable_SyncHashtable {
             .invoke(".ctor", (table))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext1(
+    pub fn _ctor_StreamingContext1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -305,16 +305,20 @@ for crate::GlobalNamespace::Hashtable_SyncHashtable {
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
-impl AsRef<crate::System::Collections::IEnumerable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::GlobalNamespace::Hashtable_SyncHashtable {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
-impl AsMut<crate::System::Collections::IEnumerable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::GlobalNamespace::Hashtable_SyncHashtable {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }

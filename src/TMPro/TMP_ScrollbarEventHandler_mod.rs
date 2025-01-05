@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_ScrollbarEventHandler {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub isSelected: bool,
 }
 #[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
 impl std::ops::Deref for crate::TMPro::TMP_ScrollbarEventHandler {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,58 +92,90 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_ScrollbarEventHandl
     }
 }
 #[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
-impl AsRef<crate::UnityEngine::EventSystems::IDeselectHandler>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler>>
 for crate::TMPro::TMP_ScrollbarEventHandler {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDeselectHandler {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
-impl AsMut<crate::UnityEngine::EventSystems::IDeselectHandler>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler>>
 for crate::TMPro::TMP_ScrollbarEventHandler {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDeselectHandler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IDeselectHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
-impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::TMPro::TMP_ScrollbarEventHandler {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::TMPro::TMP_ScrollbarEventHandler {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
-impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::TMPro::TMP_ScrollbarEventHandler {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::TMPro::TMP_ScrollbarEventHandler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
-for crate::TMPro::TMP_ScrollbarEventHandler {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
+> for crate::TMPro::TMP_ScrollbarEventHandler {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerClickHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
-for crate::TMPro::TMP_ScrollbarEventHandler {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
+> for crate::TMPro::TMP_ScrollbarEventHandler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerClickHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
-impl AsRef<crate::UnityEngine::EventSystems::ISelectHandler>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler>>
 for crate::TMPro::TMP_ScrollbarEventHandler {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISelectHandler {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_ScrollbarEventHandler")]
-impl AsMut<crate::UnityEngine::EventSystems::ISelectHandler>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler>>
 for crate::TMPro::TMP_ScrollbarEventHandler {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISelectHandler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::ISelectHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrivateKeyInfoFactory {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+PrivateKeyInfoFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkcs+PrivateKeyInfoFactory")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactor
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+PrivateKeyInfoFactory")]
 impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
-    pub fn CreatePrivateKeyInfo_AsymmetricKeyParameter0(
+    pub fn CreatePrivateKeyInfo_Gc0(
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
@@ -37,7 +37,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
             .invoke("CreatePrivateKeyInfo", (privateKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreatePrivateKeyInfo_AsymmetricKeyParameter_Asn1Set1(
+    pub fn CreatePrivateKeyInfo_Gc1(
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
             .invoke("CreatePrivateKeyInfo", (privateKey, attributes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreatePrivateKeyInfo_Il2CppArray_EncryptedPrivateKeyInfo2(
+    pub fn CreatePrivateKeyInfo_Gc2(
         passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         encInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
@@ -65,7 +65,7 @@ impl crate::Org::BouncyCastle::Pkcs::PrivateKeyInfoFactory {
             .invoke("CreatePrivateKeyInfo", (passPhrase, encInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreatePrivateKeyInfo_Il2CppArray__cordl_bool_EncryptedPrivateKeyInfo3(
+    pub fn CreatePrivateKeyInfo__cordl_bool_Gc3(
         passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         wrongPkcs12Zero: bool,
         encInfo: quest_hook::libil2cpp::Gc<

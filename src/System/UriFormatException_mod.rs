@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UriFormatException {
-    __cordl_parent: crate::System::FormatException,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::FormatException>,
 }
 #[cfg(feature = "System+UriFormatException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+UriFormatException")]
 impl std::ops::Deref for crate::System::UriFormatException {
-    type Target = crate::System::FormatException;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::FormatException>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ impl crate::System::UriFormatException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         textString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -40,7 +40,7 @@ impl crate::System::UriFormatException {
             .invoke_void(".ctor", (textString))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext2(
+    pub fn New_Gc_StreamingContext2(
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -79,7 +79,7 @@ impl crate::System::UriFormatException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         textString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -90,7 +90,7 @@ impl crate::System::UriFormatException {
             .invoke(".ctor", (textString))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext2(
+    pub fn _ctor_Gc_StreamingContext2(
         &mut self,
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -115,16 +115,26 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::UriFormatException {
     }
 }
 #[cfg(feature = "System+UriFormatException")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::UriFormatException {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::UriFormatException {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+UriFormatException")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::UriFormatException {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::UriFormatException {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

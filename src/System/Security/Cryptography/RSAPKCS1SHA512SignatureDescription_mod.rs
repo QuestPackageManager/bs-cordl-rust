@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RSAPKCS1SHA512SignatureDescription {
-    __cordl_parent: crate::System::Security::Cryptography::RSAPKCS1SignatureDescription,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::RSAPKCS1SignatureDescription,
+    >,
 }
 #[cfg(feature = "System+Security+Cryptography+RSAPKCS1SHA512SignatureDescription")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+RSAPKCS1SHA512SignatureDescription")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RSAPKCS1SHA512SignatureDescription {
-    type Target = crate::System::Security::Cryptography::RSAPKCS1SignatureDescription;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::RSAPKCS1SignatureDescription,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

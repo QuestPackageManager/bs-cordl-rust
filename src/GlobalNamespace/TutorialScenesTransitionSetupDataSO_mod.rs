@@ -2,23 +2,21 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialScenesTransitionSetupDataSO {
-    __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    >,
     pub _environmentInfo: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            *mut crate::GlobalNamespace::EnvironmentInfoSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
     >,
     pub _tutorialSceneInfo: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            *mut crate::GlobalNamespace::SceneInfo,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
     >,
     pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
-            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
         >,
+        crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
     >,
     pub _playerSpecificSettings_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerSpecificSettings,
@@ -38,7 +36,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TutorialScenesTransitionSetupDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
-    type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -97,10 +97,10 @@ impl crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
-                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
             >,
+            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -126,10 +126,10 @@ impl crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
-                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
             >,
+            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

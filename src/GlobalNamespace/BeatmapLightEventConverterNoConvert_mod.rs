@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLightEventConverterNoConvert {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "BeatmapLightEventConverterNoConvert")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLightEventConverterNoConvert")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,9 +28,7 @@ impl crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
     pub fn ConvertBasicBeatmapEvent(
         &mut self,
         output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BeatmapEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
         >,
         subtypeIdentifier: i32,
         _cordl_time: f32,
@@ -58,9 +56,7 @@ impl crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
     pub fn ConvertLightColorBeatmapEvent(
         &mut self,
         output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BeatmapEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
         >,
         subtypeIdentifier: i32,
         _cordl_time: f32,
@@ -100,9 +96,7 @@ impl crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
     pub fn ConvertLightRotationBeatmapEvent(
         &mut self,
         output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BeatmapEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
         >,
         subtypeIdentifier: i32,
         _cordl_time: f32,
@@ -166,16 +160,26 @@ for crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
     }
 }
 #[cfg(feature = "BeatmapLightEventConverterNoConvert")]
-impl AsRef<crate::GlobalNamespace::IBeatmapLightEventConverter>
-for crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapLightEventConverter {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLightEventConverter>,
+> for crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatmapLightEventConverter,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapLightEventConverterNoConvert")]
-impl AsMut<crate::GlobalNamespace::IBeatmapLightEventConverter>
-for crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapLightEventConverter {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLightEventConverter>,
+> for crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatmapLightEventConverter,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

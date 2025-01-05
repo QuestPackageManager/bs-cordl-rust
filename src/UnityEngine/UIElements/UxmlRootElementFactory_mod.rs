@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlRootElementFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        *mut crate::UnityEngine::UIElements::UxmlRootElementTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlRootElementTraits>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlRootElementFactory")]
@@ -14,9 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UxmlRootElementFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlRootElementFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        *mut crate::UnityEngine::UIElements::UxmlRootElementTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlRootElementTraits>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

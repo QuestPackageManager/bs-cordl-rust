@@ -2,15 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionNodeSelectionManager {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _missionNodesManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MissionNodesManager,
     >,
     pub didSelectMissionNodeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::MissionNodeVisualController>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNodeVisualController>,
     >,
     pub _missionNodes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+        >,
     >,
     pub _selectedNode: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MissionNodeVisualController,
@@ -23,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MissionNodeSelectionManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionNodeSelectionManager {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -112,8 +114,8 @@ impl crate::GlobalNamespace::MissionNodeSelectionManager {
     pub fn add_didSelectMissionNodeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MissionNodeVisualController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionNodeVisualController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -127,8 +129,8 @@ impl crate::GlobalNamespace::MissionNodeSelectionManager {
     pub fn remove_didSelectMissionNodeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MissionNodeVisualController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionNodeVisualController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

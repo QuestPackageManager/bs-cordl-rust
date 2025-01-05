@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleSaberSparkleEffectManager {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _obstacleSaberSparkleEffectPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ObstacleSaberSparkleEffect,
     >,
@@ -18,18 +18,20 @@ pub struct ObstacleSaberSparkleEffectManager {
     >,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _sabers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::Saber>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+        >,
     >,
     pub _effects: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::ObstacleSaberSparkleEffect,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleSaberSparkleEffect>,
         >,
     >,
     pub sparkleEffectDidStartEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::SaberType>,
+        crate::GlobalNamespace::SaberType,
     >,
     pub sparkleEffectDidEndEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::SaberType>,
+        crate::GlobalNamespace::SaberType,
     >,
 }
 #[cfg(feature = "ObstacleSaberSparkleEffectManager")]
@@ -40,7 +42,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ObstacleSaberSparkleEffectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,9 +97,7 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     pub fn IntersectSaberWithObstacles(
         saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
         obstacles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ObstacleController,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         >,
         intersectObstacleSurface: quest_hook::libil2cpp::ByRefMut<bool>,
         hit: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
@@ -148,9 +148,7 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     }
     pub fn add_sparkleEffectDidEndEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::SaberType>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -161,9 +159,7 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     }
     pub fn add_sparkleEffectDidStartEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::SaberType>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -174,9 +170,7 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     }
     pub fn remove_sparkleEffectDidEndEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::SaberType>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -187,9 +181,7 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     }
     pub fn remove_sparkleEffectDidStartEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::SaberType>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -213,7 +205,7 @@ for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleSaberSparkleEffectManager_BoxSideRotations {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "ObstacleSaberSparkleEffectManager+BoxSideRotations")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -224,7 +216,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ObstacleSaberSparkleEffectManager+BoxSideRotations")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ObstacleSaberSparkleEffectManager_BoxSideRotations {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

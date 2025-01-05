@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Object {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_CachedPtr: crate::System::IntPtr,
 }
 #[cfg(feature = "UnityEngine+Object")]
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Object")]
 impl std::ops::Deref for crate::UnityEngine::Object {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +47,7 @@ impl crate::UnityEngine::Object {
             .invoke("CurrentThreadIsMainThread", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn DestroyImmediate_Object1(
+    pub fn DestroyImmediate_Gc1(
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -62,7 +62,7 @@ impl crate::UnityEngine::Object {
             .invoke("DestroyImmediate", (obj, allowDestroyingAssets))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DestroyObject_Object1(
+    pub fn DestroyObject_Gc1(
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -77,7 +77,7 @@ impl crate::UnityEngine::Object {
             .invoke("DestroyObject", (obj, t))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Destroy_Object1(
+    pub fn Destroy_Gc1(
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -146,7 +146,7 @@ impl crate::UnityEngine::Object {
             .invoke("FindAnyObjectByType", (findObjectsInactive))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindAnyObjectByType_Type2(
+    pub fn FindAnyObjectByType_Gc2(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -155,7 +155,7 @@ impl crate::UnityEngine::Object {
             .invoke("FindAnyObjectByType", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindAnyObjectByType_Type_FindObjectsInactive3(
+    pub fn FindAnyObjectByType_Gc_FindObjectsInactive3(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         findObjectsInactive: crate::UnityEngine::FindObjectsInactive,
     ) -> quest_hook::libil2cpp::Result<
@@ -185,7 +185,7 @@ impl crate::UnityEngine::Object {
             .invoke("FindFirstObjectByType", (findObjectsInactive))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindFirstObjectByType_Type2(
+    pub fn FindFirstObjectByType_Gc2(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -194,7 +194,7 @@ impl crate::UnityEngine::Object {
             .invoke("FindFirstObjectByType", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindFirstObjectByType_Type_FindObjectsInactive3(
+    pub fn FindFirstObjectByType_Gc_FindObjectsInactive3(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         findObjectsInactive: crate::UnityEngine::FindObjectsInactive,
     ) -> quest_hook::libil2cpp::Result<
@@ -222,7 +222,7 @@ impl crate::UnityEngine::Object {
             .invoke("FindObjectOfType", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindObjectOfType_Type2(
+    pub fn FindObjectOfType_Gc2(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -231,7 +231,7 @@ impl crate::UnityEngine::Object {
             .invoke("FindObjectOfType", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindObjectOfType_Type__cordl_bool3(
+    pub fn FindObjectOfType_Gc__cordl_bool3(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -283,31 +283,39 @@ impl crate::UnityEngine::Object {
             .invoke("FindObjectsByType", (sortMode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindObjectsByType_Type_FindObjectsInactive_FindObjectsSortMode1(
+    pub fn FindObjectsByType_Gc_FindObjectsInactive_FindObjectsSortMode1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         findObjectsInactive: crate::UnityEngine::FindObjectsInactive,
         sortMode: crate::UnityEngine::FindObjectsSortMode,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsByType", (_cordl_type, findObjectsInactive, sortMode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindObjectsByType_Type_FindObjectsSortMode0(
+    pub fn FindObjectsByType_Gc_FindObjectsSortMode0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         sortMode: crate::UnityEngine::FindObjectsSortMode,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsByType", (_cordl_type, sortMode))?;
         Ok(__cordl_ret.into())
@@ -316,11 +324,15 @@ impl crate::UnityEngine::Object {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsOfTypeAll", (_cordl_type))?;
         Ok(__cordl_ret.into())
@@ -329,11 +341,15 @@ impl crate::UnityEngine::Object {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsOfTypeIncludingAssets", (_cordl_type))?;
         Ok(__cordl_ret.into())
@@ -351,29 +367,37 @@ impl crate::UnityEngine::Object {
             .invoke("FindObjectsOfType", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindObjectsOfType_Type0(
+    pub fn FindObjectsOfType_Gc0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsOfType", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindObjectsOfType_Type__cordl_bool1(
+    pub fn FindObjectsOfType_Gc__cordl_bool1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsOfType", (_cordl_type, includeInactive))?;
         Ok(__cordl_ret.into())
@@ -397,11 +421,15 @@ impl crate::UnityEngine::Object {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindSceneObjectsOfType", (_cordl_type))?;
         Ok(__cordl_ret.into())
@@ -456,86 +484,112 @@ impl crate::UnityEngine::Object {
             .invoke("GetOffsetOfInstanceIDInCPlusPlusObject", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateAsync_T0<T>(
-        original: T,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InstantiateAsync", (original))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn InstantiateAsync_Transform1<T>(
+    pub fn InstantiateAsync_Gc1<T>(
         original: T,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InstantiateAsync", (original, parent))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateAsync_Transform_Vector3_Quaternion3<T>(
+    pub fn InstantiateAsync_Gc_Vector3_Quaternion3<T>(
         original: T,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InstantiateAsync", (original, parent, position, rotation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateAsync_T0<T>(
+        original: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InstantiateAsync", (original))?;
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateAsync_Vector3_Quaternion2<T>(
         original: T,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InstantiateAsync", (original, position, rotation))?;
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateAsync_i32_4<T>(
         original: T,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InstantiateAsync", (original, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateAsync_i32_Gc5<T>(
+        original: T,
+        count: i32,
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InstantiateAsync", (original, count, parent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateAsync_i32_Gc_ReadOnlySpan_1_ReadOnlySpan_1_9<T>(
+        original: T,
+        count: i32,
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        positions: crate::System::ReadOnlySpan_1<crate::UnityEngine::Vector3>,
+        rotations: crate::System::ReadOnlySpan_1<crate::UnityEngine::Quaternion>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InstantiateAsync",
+                (original, count, parent, positions, rotations),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateAsync_i32_Gc_Vector3_Quaternion8<T>(
+        original: T,
+        count: i32,
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InstantiateAsync", (original, count, parent, position, rotation))?;
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateAsync_i32_ReadOnlySpan_1_ReadOnlySpan_1_7<T>(
@@ -543,75 +597,13 @@ impl crate::UnityEngine::Object {
         count: i32,
         positions: crate::System::ReadOnlySpan_1<crate::UnityEngine::Vector3>,
         rotations: crate::System::ReadOnlySpan_1<crate::UnityEngine::Quaternion>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InstantiateAsync", (original, count, positions, rotations))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn InstantiateAsync_i32_Transform5<T>(
-        original: T,
-        count: i32,
-        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InstantiateAsync", (original, count, parent))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn InstantiateAsync_i32_Transform_ReadOnlySpan_1_ReadOnlySpan_1_9<T>(
-        original: T,
-        count: i32,
-        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        positions: crate::System::ReadOnlySpan_1<crate::UnityEngine::Vector3>,
-        rotations: crate::System::ReadOnlySpan_1<crate::UnityEngine::Quaternion>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "InstantiateAsync",
-                (original, count, parent, positions, rotations),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn InstantiateAsync_i32_Transform_Vector3_Quaternion8<T>(
-        original: T,
-        count: i32,
-        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        position: crate::UnityEngine::Vector3,
-        rotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InstantiateAsync", (original, count, parent, position, rotation))?;
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateAsync_i32_Vector3_Quaternion6<T>(
@@ -619,20 +611,16 @@ impl crate::UnityEngine::Object {
         count: i32,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InstantiateAsync", (original, count, position, rotation))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Object2(
+    pub fn Instantiate_Gc2(
         original: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -641,17 +629,7 @@ impl crate::UnityEngine::Object {
             .invoke("Instantiate", (original))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Object_Scene3(
-        original: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-        scene: crate::UnityEngine::SceneManagement::Scene,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Instantiate", (original, scene))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Instantiate_Object_Transform4(
+    pub fn Instantiate_Gc_Gc4(
         original: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<
@@ -661,7 +639,7 @@ impl crate::UnityEngine::Object {
             .invoke("Instantiate", (original, parent))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Object_Transform__cordl_bool5(
+    pub fn Instantiate_Gc_Gc__cordl_bool5(
         original: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         instantiateInWorldSpace: bool,
@@ -672,7 +650,17 @@ impl crate::UnityEngine::Object {
             .invoke("Instantiate", (original, parent, instantiateInWorldSpace))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Object_Vector3_Quaternion0(
+    pub fn Instantiate_Gc_Scene3(
+        original: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        scene: crate::UnityEngine::SceneManagement::Scene,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Instantiate", (original, scene))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Instantiate_Gc_Vector3_Quaternion0(
         original: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
@@ -683,7 +671,7 @@ impl crate::UnityEngine::Object {
             .invoke("Instantiate", (original, position, rotation))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Object_Vector3_Quaternion_Transform1(
+    pub fn Instantiate_Gc_Vector3_Quaternion_Gc1(
         original: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
@@ -704,7 +692,7 @@ impl crate::UnityEngine::Object {
             .invoke("Instantiate", (original))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_T_Transform9<T>(
+    pub fn Instantiate_T_Gc9<T>(
         original: T,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -716,7 +704,7 @@ impl crate::UnityEngine::Object {
             .invoke("Instantiate", (original, parent))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_T_Transform__cordl_bool10<T>(
+    pub fn Instantiate_T_Gc__cordl_bool10<T>(
         original: T,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         worldPositionStays: bool,
@@ -742,7 +730,7 @@ impl crate::UnityEngine::Object {
             .invoke("Instantiate", (original, position, rotation))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_T_Vector3_Quaternion_Transform8<T>(
+    pub fn Instantiate_T_Vector3_Quaternion_Gc8<T>(
         original: T,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
@@ -930,7 +918,7 @@ impl crate::UnityEngine::Object {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Object1(
+    pub fn ToString_Gc1(
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

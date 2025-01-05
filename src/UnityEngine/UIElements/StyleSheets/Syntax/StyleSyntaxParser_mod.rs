@@ -2,26 +2,24 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleSyntaxParser {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_ProcessExpressionList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
         >,
     >,
     pub m_ExpressionStack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<
-            *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
         >,
     >,
     pub m_CombinatorStack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<
-            crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator,
-        >,
+        crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator,
     >,
     pub m_ParsedExpressionCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
         >,
     >,
 }
@@ -34,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxParser")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,14 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamedIntListController {
-    __cordl_parent: crate::GlobalNamespace::ListSettingsController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ListSettingsController,
+    >,
     pub _textValuePairs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::NamedIntListController_TextValuePair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NamedIntListController_TextValuePair,
+            >,
         >,
     >,
     pub _value: i32,
-    pub valueChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub valueChangedEvent: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "NamedIntListController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -18,7 +22,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NamedIntListController")]
 impl std::ops::Deref for crate::GlobalNamespace::NamedIntListController {
-    type Target = crate::GlobalNamespace::ListSettingsController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ListSettingsController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +66,9 @@ impl crate::GlobalNamespace::NamedIntListController {
         &mut self,
         values: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::NamedIntListController_TextValuePair,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::NamedIntListController_TextValuePair,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -115,7 +123,7 @@ impl crate::GlobalNamespace::NamedIntListController {
     }
     pub fn add_valueChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -126,7 +134,7 @@ impl crate::GlobalNamespace::NamedIntListController {
     }
     pub fn remove_valueChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -147,16 +155,16 @@ for crate::GlobalNamespace::NamedIntListController {
     }
 }
 #[cfg(feature = "NamedIntListController")]
-impl AsRef<crate::HMUI::IValueChanger_1<i32>>
+impl AsRef<quest_hook::libil2cpp::Gc<i32>>
 for crate::GlobalNamespace::NamedIntListController {
-    fn as_ref(&self) -> &crate::HMUI::IValueChanger_1<i32> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<i32> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NamedIntListController")]
-impl AsMut<crate::HMUI::IValueChanger_1<i32>>
+impl AsMut<quest_hook::libil2cpp::Gc<i32>>
 for crate::GlobalNamespace::NamedIntListController {
-    fn as_mut(&mut self) -> &mut crate::HMUI::IValueChanger_1<i32> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<i32> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -164,7 +172,7 @@ for crate::GlobalNamespace::NamedIntListController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamedIntListController_TextValuePair {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub value: i32,
 }
@@ -176,7 +184,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NamedIntListController+TextValuePair")]
 impl std::ops::Deref for crate::GlobalNamespace::NamedIntListController_TextValuePair {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

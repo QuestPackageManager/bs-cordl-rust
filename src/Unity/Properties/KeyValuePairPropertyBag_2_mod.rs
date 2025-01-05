@@ -5,7 +5,7 @@ pub struct KeyValuePairPropertyBag_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Unity::Properties::PropertyBag_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
@@ -21,7 +21,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Unity::Properties::KeyValuePairPropertyBag_2<TKey, TValue> {
-    type Target = crate::Unity::Properties::PropertyBag_1<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >;
     fn deref(&self) -> &Self::Target {

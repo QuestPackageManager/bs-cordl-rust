@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_HAPIUtility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HAPIUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_HAPIUtility")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_HAPIUtility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -331,13 +331,17 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             crate::HoudiniEngineUnity::HAPI_NodeInfo,
         >,
         objectInfos: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::HoudiniEngineUnity::HAPI_ObjectInfo,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::HoudiniEngineUnity::HAPI_ObjectInfo,
+                >,
             >,
         >,
         objectTransforms: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::HoudiniEngineUnity::HAPI_Transform,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::HoudiniEngineUnity::HAPI_Transform,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -497,8 +501,10 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         assetPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         assetLibraryID: quest_hook::libil2cpp::ByRefMut<i32>,
         assetNames: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -506,7 +512,18 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             .invoke("LoadHDAFile", (session, assetPath, assetLibraryID, assetNames))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LocateValidFilePath_Il2CppString_Il2CppString1(
+    pub fn LocateValidFilePath_Gc0(
+        inObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LocateValidFilePath", (inObject))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LocateValidFilePath_Gc1(
         assetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         inFilePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -516,17 +533,6 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LocateValidFilePath", (assetName, inFilePath))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn LocateValidFilePath_Object0(
-        inObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LocateValidFilePath", (inObject))?;
         Ok(__cordl_ret.into())
     }
     pub fn Log(
@@ -560,9 +566,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     }
     pub fn SetAnimationCurveTangentModes(
         animCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
-        tangentValues: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        tangentValues: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SetAnimationCurveTangentModes", (animCurve, tangentValues))?;

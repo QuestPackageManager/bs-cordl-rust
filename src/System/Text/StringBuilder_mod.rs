@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_ChunkChars: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<char>,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+StringBuilder")]
 impl std::ops::Deref for crate::System::Text::StringBuilder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,69 +69,7 @@ impl crate::System::Text::StringBuilder {
             .invoke("AppendFormatHelper", (provider, format, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AppendFormat_IFormatProvider_Il2CppString_Il2CppObject4(
-        &mut self,
-        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
-            .invoke("AppendFormat", (provider, format, arg0))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AppendFormat_IFormatProvider_Il2CppString_Il2CppObject_Il2CppObject_Il2CppObject5(
-        &mut self,
-        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
-            .invoke("AppendFormat", (provider, format, arg0, arg1, arg2))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AppendFormat_Il2CppString_Il2CppArray3(
-        &mut self,
-        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
-            .invoke("AppendFormat", (format, args))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AppendFormat_Il2CppString_Il2CppObject0(
-        &mut self,
-        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
-            .invoke("AppendFormat", (format, arg0))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AppendFormat_Il2CppString_Il2CppObject_Il2CppObject1(
+    pub fn AppendFormat_Gc1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -146,7 +84,36 @@ impl crate::System::Text::StringBuilder {
             .invoke("AppendFormat", (format, arg0, arg1))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AppendFormat_Il2CppString_Il2CppObject_Il2CppObject_Il2CppObject2(
+    pub fn AppendFormat_Gc4(
+        &mut self,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
+            .invoke("AppendFormat", (provider, format, arg0))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AppendFormat_Gc_Gc0(
+        &mut self,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
+            .invoke("AppendFormat", (format, arg0))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AppendFormat_Gc_Gc2(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -160,6 +127,41 @@ impl crate::System::Text::StringBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
             .invoke("AppendFormat", (format, arg0, arg1, arg2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AppendFormat_Gc_Gc3(
+        &mut self,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
+            .invoke("AppendFormat", (format, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AppendFormat_Gc_Gc_Gc5(
+        &mut self,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
+            .invoke("AppendFormat", (provider, format, arg0, arg1, arg2))?;
         Ok(__cordl_ret.into())
     }
     pub fn AppendHelper(
@@ -185,7 +187,7 @@ impl crate::System::Text::StringBuilder {
             .invoke("AppendLine", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn AppendLine_Il2CppString1(
+    pub fn AppendLine_Gc1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -215,7 +217,20 @@ impl crate::System::Text::StringBuilder {
             .invoke("AppendSpanFormattable", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Append_Il2CppArray14(
+    pub fn Append_Gc13(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
+            .invoke("Append", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Append_Gc14(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -228,7 +243,47 @@ impl crate::System::Text::StringBuilder {
             .invoke("Append", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Append_Il2CppArray_i32_i32_1(
+    pub fn Append_Gc2(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
+            .invoke("Append", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Append_Gc4(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
+            .invoke("Append", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Append_Gc_i32_16(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        valueCount: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
+            .invoke("Append", (value, valueCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Append_Gc_i32_i32_1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         startIndex: i32,
@@ -243,47 +298,7 @@ impl crate::System::Text::StringBuilder {
             .invoke("Append", (value, startIndex, charCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Append_Il2CppObject13(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
-            .invoke("Append", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Append_Il2CppObject_i32_16(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        valueCount: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
-            .invoke("Append", (value, valueCount))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Append_Il2CppString2(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
-            .invoke("Append", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Append_Il2CppString_i32_i32_3(
+    pub fn Append_Gc_i32_i32_3(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         startIndex: i32,
@@ -301,19 +316,6 @@ impl crate::System::Text::StringBuilder {
     pub fn Append_ReadOnlySpan_1_15(
         &mut self,
         value: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
-            .invoke("Append", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Append_StringBuilder4(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     > {
@@ -506,20 +508,7 @@ impl crate::System::Text::StringBuilder {
             .invoke("FormatError", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Insert_Il2CppObject_i32_2(
-        &mut self,
-        index: i32,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        valueCount: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Insert", (index, value, valueCount))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Insert_Il2CppString0(
+    pub fn Insert_Gc0(
         &mut self,
         index: i32,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -531,6 +520,19 @@ impl crate::System::Text::StringBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = __cordl_object
             .invoke("Insert", (index, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Insert_Gc_i32_2(
+        &mut self,
+        index: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        valueCount: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Insert", (index, value, valueCount))?;
         Ok(__cordl_ret.into())
     }
     pub fn Insert__cordl_char1(
@@ -551,7 +553,9 @@ impl crate::System::Text::StringBuilder {
         &mut self,
         index: i32,
         count: i32,
-        chunk: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Text::StringBuilder>,
+        chunk: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        >,
         indexInChunk: quest_hook::libil2cpp::ByRefMut<i32>,
         doNotMoveFollowingChars: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -572,7 +576,7 @@ impl crate::System::Text::StringBuilder {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString2(
+    pub fn New_Gc2(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -581,29 +585,16 @@ impl crate::System::Text::StringBuilder {
             .invoke_void(".ctor", (value))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_i32_3(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        capacity: i32,
+    pub fn New_Gc7(
+        from: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (value, capacity))?;
+            .invoke_void(".ctor", (from))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_i32_i32_i32_4(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        startIndex: i32,
-        length: i32,
-        capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (value, startIndex, length, capacity))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SerializationInfo_StreamingContext6(
+    pub fn New_Gc_StreamingContext6(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -615,13 +606,26 @@ impl crate::System::Text::StringBuilder {
             .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_StringBuilder7(
-        from: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub fn New_Gc_i32_3(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (from))?;
+            .invoke_void(".ctor", (value, capacity))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_i32_i32_i32_4(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        startIndex: i32,
+        length: i32,
+        capacity: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (value, startIndex, length, capacity))?;
         Ok(__cordl_object.into())
     }
     pub fn New_i32_1(
@@ -643,7 +647,7 @@ impl crate::System::Text::StringBuilder {
             .invoke_void(".ctor", (capacity, maxCapacity))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_i32_StringBuilder8(
+    pub fn New_i32_i32_Gc8(
         _cordl_size: i32,
         maxCapacity: i32,
         previousBlock: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -671,7 +675,9 @@ impl crate::System::Text::StringBuilder {
         &mut self,
         startIndex: i32,
         count: i32,
-        chunk: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Text::StringBuilder>,
+        chunk: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        >,
         indexInChunk: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -715,7 +721,9 @@ impl crate::System::Text::StringBuilder {
     }
     pub fn ReplaceInPlaceAtChunk(
         &mut self,
-        chunk: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Text::StringBuilder>,
+        chunk: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        >,
         indexInChunk: quest_hook::libil2cpp::ByRefMut<i32>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
@@ -727,7 +735,7 @@ impl crate::System::Text::StringBuilder {
             .invoke("ReplaceInPlaceAtChunk", (chunk, indexInChunk, value, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Replace_Il2CppString_Il2CppString0(
+    pub fn Replace_Gc_Gc0(
         &mut self,
         oldValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         newValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -788,7 +796,20 @@ impl crate::System::Text::StringBuilder {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThreadSafeCopy_Il2CppArray_i32_Span_1_i32_1(
+    pub fn ThreadSafeCopy_Gc_i32_0(
+        sourcePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        destinationIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ThreadSafeCopy",
+                (sourcePtr, destination, destinationIndex, count),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThreadSafeCopy_i32_Span_1_i32_1(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         sourceIndex: i32,
         destination: crate::System::Span_1<char>,
@@ -799,19 +820,6 @@ impl crate::System::Text::StringBuilder {
             .invoke(
                 "ThreadSafeCopy",
                 (source, sourceIndex, destination, destinationIndex, count),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ThreadSafeCopy_Il2CppObject_Il2CppArray_i32_0(
-        sourcePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        destinationIndex: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ThreadSafeCopy",
-                (sourcePtr, destination, destinationIndex, count),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -853,7 +861,7 @@ impl crate::System::Text::StringBuilder {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString2(
+    pub fn _ctor_Gc2(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -864,33 +872,18 @@ impl crate::System::Text::StringBuilder {
             .invoke(".ctor", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_i32_3(
+    pub fn _ctor_Gc7(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        capacity: i32,
+        from: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value, capacity))?;
+            .invoke(".ctor", (from))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_i32_i32_i32_4(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        startIndex: i32,
-        length: i32,
-        capacity: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value, startIndex, length, capacity))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SerializationInfo_StreamingContext6(
+    pub fn _ctor_Gc_StreamingContext6(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -904,15 +897,30 @@ impl crate::System::Text::StringBuilder {
             .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_StringBuilder7(
+    pub fn _ctor_Gc_i32_3(
         &mut self,
-        from: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (from))?;
+            .invoke(".ctor", (value, capacity))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_i32_i32_i32_4(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        startIndex: i32,
+        length: i32,
+        capacity: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (value, startIndex, length, capacity))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_1(
@@ -938,7 +946,7 @@ impl crate::System::Text::StringBuilder {
             .invoke(".ctor", (capacity, maxCapacity))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_StringBuilder8(
+    pub fn _ctor_i32_i32_Gc8(
         &mut self,
         _cordl_size: i32,
         maxCapacity: i32,
@@ -1034,16 +1042,26 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Text::StringBuilder {
     }
 }
 #[cfg(feature = "System+Text+StringBuilder")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Text::StringBuilder {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Text::StringBuilder {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Text+StringBuilder")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Text::StringBuilder {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Text::StringBuilder {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

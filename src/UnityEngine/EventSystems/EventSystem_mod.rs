@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventSystem {
-    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >,
     pub m_SystemInputModules: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::EventSystems::BaseInputModule,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseInputModule>,
     >,
     pub m_CurrentInputModule: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::BaseInputModule,
@@ -30,7 +30,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+EventSystem")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::EventSystem {
-    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -133,9 +135,7 @@ impl crate::UnityEngine::EventSystems::EventSystem {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         raycastResults: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::EventSystems::RaycastResult,
-            >,
+            crate::UnityEngine::EventSystems::RaycastResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -153,7 +153,7 @@ impl crate::UnityEngine::EventSystems::EventSystem {
             .invoke("RaycastComparer", (lhs, rhs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetSelectedGameObject_BaseEventData0(
+    pub fn SetSelectedGameObject_Gc0(
         &mut self,
         selected: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         pointer: quest_hook::libil2cpp::Gc<
@@ -167,7 +167,7 @@ impl crate::UnityEngine::EventSystems::EventSystem {
             .invoke("SetSelectedGameObject", (selected, pointer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetSelectedGameObject_GameObject1(
+    pub fn SetSelectedGameObject_Gc1(
         &mut self,
         selected: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

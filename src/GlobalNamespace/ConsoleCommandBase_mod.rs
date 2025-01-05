@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConsoleCommandBase {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _console: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::DebugConsoleController,
     >,
     pub _arguments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::ArgumentBase>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
+        >,
     >,
 }
 #[cfg(feature = "ConsoleCommandBase")]
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ConsoleCommandBase")]
 impl std::ops::Deref for crate::GlobalNamespace::ConsoleCommandBase {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,12 +35,12 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
     pub fn AreArgumentsValid(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         messages: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
-            >,
+            crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -58,15 +60,15 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (other))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExecuteAsync_Il2CppArray_List_1_0(
+    pub fn ExecuteAsync_Gc0(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         messages: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
-            >,
+            crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -79,12 +81,10 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
         > = __cordl_object.invoke("ExecuteAsync", (args, messages))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExecuteAsync_List_1_1(
+    pub fn ExecuteAsync_Gc1(
         &mut self,
         messages: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
-            >,
+            crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -101,14 +101,18 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::ArgumentBase>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::ArgumentBase>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
+            >,
         > = __cordl_object.invoke("GetArguments", ())?;
         Ok(__cordl_ret.into())
     }
@@ -140,14 +144,10 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
     pub fn GetInvalidArgumentMessage(
         &mut self,
         missingArguments: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::ArgumentBase,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
         >,
         messages: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
-            >,
+            crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -201,59 +201,49 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
     pub fn ParseMatchedArguments(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         messages: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
-            >,
+            crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ArgumentBase,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ArgumentBase,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
         > = __cordl_object.invoke("ParseMatchedArguments", (args, messages))?;
         Ok(__cordl_ret.into())
     }
     pub fn ParseUnmatchedArguments(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         matchedArguments: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ArgumentBase,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
         >,
         messages: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
-            >,
+            crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ArgumentBase,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ArgumentBase,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
         > = __cordl_object
             .invoke("ParseUnmatchedArguments", (args, matchedArguments, messages))?;
         Ok(__cordl_ret.into())
@@ -289,21 +279,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ConsoleComman
     }
 }
 #[cfg(feature = "ConsoleCommandBase")]
-impl AsRef<crate::System::IComparable_1<*mut crate::GlobalNamespace::ConsoleCommandBase>>
-for crate::GlobalNamespace::ConsoleCommandBase {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+    >,
+> for crate::GlobalNamespace::ConsoleCommandBase {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<*mut crate::GlobalNamespace::ConsoleCommandBase> {
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ConsoleCommandBase")]
-impl AsMut<crate::System::IComparable_1<*mut crate::GlobalNamespace::ConsoleCommandBase>>
-for crate::GlobalNamespace::ConsoleCommandBase {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+    >,
+> for crate::GlobalNamespace::ConsoleCommandBase {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::ConsoleCommandBase,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
     > {
         unsafe { std::mem::transmute(self) }
     }

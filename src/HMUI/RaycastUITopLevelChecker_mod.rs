@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RaycastUITopLevelChecker {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub results: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::EventSystems::RaycastResult,
-        >,
+        crate::UnityEngine::EventSystems::RaycastResult,
     >,
     pub _canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
 }
@@ -17,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+RaycastUITopLevelChecker")]
 impl std::ops::Deref for crate::HMUI::RaycastUITopLevelChecker {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRCompositionUtil {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRCompositionUtil")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRCompositionUtil")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRCompositionUtil {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::OVRCompositionUtil {
             .invoke("GetMaximumBoundaryDistance", (camera, boundaryType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetWorldPosition_Camera_Vector3_1(
+    pub fn GetWorldPosition_Gc_Vector3_1(
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         trackingSpacePosition: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -66,13 +66,15 @@ impl crate::GlobalNamespace::OVRCompositionUtil {
         Ok(__cordl_object.into())
     }
     pub fn SafeDestroy_ByRefMut1(
-        obj: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::GameObject>,
+        obj: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SafeDestroy", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SafeDestroy_GameObject0(
+    pub fn SafeDestroy_Gc0(
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

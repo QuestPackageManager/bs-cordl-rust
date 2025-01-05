@@ -32,18 +32,14 @@ impl crate::GlobalNamespace::IMockBeatmapDataProvider {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::MockBeatmapData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::MockBeatmapData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
         > = __cordl_object.invoke("GetBeatmapData", (beatmap, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -64,16 +60,16 @@ for crate::GlobalNamespace::IMockBeatmapDataProvider {
     }
 }
 #[cfg(feature = "IMockBeatmapDataProvider")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::IMockBeatmapDataProvider {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IMockBeatmapDataProvider")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::IMockBeatmapDataProvider {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

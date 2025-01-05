@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LayoutRebuilder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_ToRebuild: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_CachedHashFromTransform: i32,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+LayoutRebuilder")]
 impl std::ops::Deref for crate::UnityEngine::UI::LayoutRebuilder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,7 +123,7 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
         &mut self,
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         action: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<*mut crate::UnityEngine::Component>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -137,7 +137,7 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
         &mut self,
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         action: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<*mut crate::UnityEngine::Component>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -167,9 +167,7 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
     }
     pub fn StripDisabledBehavioursFromList(
         components: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Component,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -192,9 +190,7 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
     pub fn ValidController(
         layoutRoot: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         comps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Component,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -234,16 +230,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::LayoutRebuild
     }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutRebuilder")]
-impl AsRef<crate::UnityEngine::UI::ICanvasElement>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
 for crate::UnityEngine::UI::LayoutRebuilder {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutRebuilder")]
-impl AsMut<crate::UnityEngine::UI::ICanvasElement>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
 for crate::UnityEngine::UI::LayoutRebuilder {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
         unsafe { std::mem::transmute(self) }
     }
 }

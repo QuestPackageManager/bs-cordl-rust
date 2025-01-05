@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Voip {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Oculus+Platform+Voip")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Voip")]
 impl std::ops::Deref for crate::Oculus::Platform::Voip {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,14 +47,14 @@ impl crate::Oculus::Platform::Voip {
     }
     pub fn GetMicrophoneAvailability() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetMicrophoneAvailability", ())?;
@@ -83,9 +83,7 @@ impl crate::Oculus::Platform::Voip {
     }
     pub fn SetMicrophoneAvailabilityStateUpdateNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1_Callback<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -118,9 +116,7 @@ impl crate::Oculus::Platform::Voip {
     }
     pub fn SetSystemVoipStateNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1_Callback<
-                *mut crate::Oculus::Platform::Models::SystemVoipState,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SystemVoipState>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -131,15 +127,11 @@ impl crate::Oculus::Platform::Voip {
         suppressed: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::SystemVoipState,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SystemVoipState>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::SystemVoipState,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SystemVoipState>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SetSystemVoipSuppressed", (suppressed))?;
         Ok(__cordl_ret.into())

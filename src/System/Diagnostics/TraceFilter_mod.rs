@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TraceFilter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Diagnostics+TraceFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+TraceFilter")]
 impl std::ops::Deref for crate::System::Diagnostics::TraceFilter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::System::Diagnostics::TraceFilter {
 }
 #[cfg(feature = "System+Diagnostics+TraceFilter")]
 impl crate::System::Diagnostics::TraceFilter {
-    pub fn ShouldTrace_Il2CppArray_Il2CppObject_Il2CppArray0(
+    pub fn ShouldTrace_Gc_Gc_Gc0(
         &mut self,
         cache: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::TraceEventCache>,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -32,11 +32,15 @@ impl crate::System::Diagnostics::TraceFilter {
         id: i32,
         formatOrMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         data1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         data: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -49,7 +53,7 @@ impl crate::System::Diagnostics::TraceFilter {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShouldTrace_TraceEventCache_Il2CppString_TraceEventType_i32_Il2CppString1(
+    pub fn ShouldTrace_Gc_Gc_TraceEventType_i32_Gc1(
         &mut self,
         cache: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::TraceEventCache>,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

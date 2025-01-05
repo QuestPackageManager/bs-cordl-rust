@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Host {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub nativeHost: crate::System::IntPtr,
 }
 #[cfg(feature = "ENet+Host")]
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ENet+Host")]
 impl std::ops::Deref for crate::ENet::Host {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::ENet::Host {
 }
 #[cfg(feature = "ENet+Host")]
 impl crate::ENet::Host {
-    pub fn Broadcast_Il2CppArray2(
+    pub fn Broadcast_Gc2(
         &mut self,
         channelID: u8,
         packet: quest_hook::libil2cpp::ByRefMut<crate::ENet::Packet>,
@@ -231,7 +231,7 @@ impl crate::ENet::Host {
             .invoke("SetChannelLimit", (channelLimit))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetChecksumCallback_ChecksumCallback1(
+    pub fn SetChecksumCallback_Gc1(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<crate::ENet::ChecksumCallback>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -253,9 +253,9 @@ impl crate::ENet::Host {
             .invoke("SetChecksumCallback", (callback))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetInterceptCallback_IntPtr0(
+    pub fn SetInterceptCallback_Gc1(
         &mut self,
-        callback: crate::System::IntPtr,
+        callback: quest_hook::libil2cpp::Gc<crate::ENet::InterceptCallback>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -264,9 +264,9 @@ impl crate::ENet::Host {
             .invoke("SetInterceptCallback", (callback))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetInterceptCallback_InterceptCallback1(
+    pub fn SetInterceptCallback_IntPtr0(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<crate::ENet::InterceptCallback>,
+        callback: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -387,14 +387,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::ENet::Host {
     }
 }
 #[cfg(feature = "ENet+Host")]
-impl AsRef<crate::System::IDisposable> for crate::ENet::Host {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>> for crate::ENet::Host {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ENet+Host")]
-impl AsMut<crate::System::IDisposable> for crate::ENet::Host {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>> for crate::ENet::Host {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MobileAuthenticatedStream {
-    __cordl_parent: crate::System::Net::Security::AuthenticatedStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Security::AuthenticatedStream,
+    >,
     pub xobileTlsContext: quest_hook::libil2cpp::Gc<
         crate::Mono::Net::Security::MobileTlsContext,
     >,
@@ -49,7 +51,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream")]
 impl std::ops::Deref for crate::Mono::Net::Security::MobileAuthenticatedStream {
-    type Target = crate::System::Net::Security::AuthenticatedStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Net::Security::AuthenticatedStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -229,15 +233,11 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         sync: bool,
         requestedSize: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
             .invoke("InnerRead", (sync, requestedSize, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -256,7 +256,7 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         > = __cordl_object.invoke("InnerWrite", (sync, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InternalRead_AsyncProtocolRequest_BufferOffsetSize_Il2CppArray_i32_i32_1(
+    pub fn InternalRead_Gc_Gc_i32_i32_1(
         &mut self,
         asyncRequest: quest_hook::libil2cpp::Gc<
             crate::Mono::Net::Security::AsyncProtocolRequest,
@@ -278,7 +278,7 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn InternalRead_Il2CppArray_i32_i32_ByRefMut0(
+    pub fn InternalRead_i32_i32_ByRefMut0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -292,7 +292,7 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
             .invoke("InternalRead", (buffer, offset, _cordl_size, outWantMore))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InternalWrite_AsyncProtocolRequest_BufferOffsetSize2_Il2CppArray_i32_i32_1(
+    pub fn InternalWrite_Gc_Gc_i32_i32_1(
         &mut self,
         asyncRequest: quest_hook::libil2cpp::Gc<
             crate::Mono::Net::Security::AsyncProtocolRequest,
@@ -314,7 +314,7 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn InternalWrite_Il2CppArray_i32_i32_0(
+    pub fn InternalWrite_i32_i32_0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -427,15 +427,11 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
             .invoke("ReadAsync", (buffer, offset, count, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -484,15 +480,11 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
             crate::Mono::Net::Security::AsyncProtocolRequest,
         >,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
             .invoke("StartOperation", (_cordl_type, asyncRequest, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -760,16 +752,16 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream {
     }
 }
 #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::Mono::Net::Security::MobileAuthenticatedStream {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::Mono::Net::Security::MobileAuthenticatedStream {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

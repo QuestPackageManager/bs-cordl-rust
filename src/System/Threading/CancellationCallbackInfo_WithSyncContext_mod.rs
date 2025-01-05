@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CancellationCallbackInfo_WithSyncContext {
-    __cordl_parent: crate::System::Threading::CancellationCallbackInfo,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationCallbackInfo,
+    >,
     pub TargetSyncContext: quest_hook::libil2cpp::Gc<
         crate::System::Threading::SynchronizationContext,
     >,
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+CancellationCallbackInfo+WithSyncContext")]
 impl std::ops::Deref
 for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
-    type Target = crate::System::Threading::CancellationCallbackInfo;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationCallbackInfo,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +36,7 @@ for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
 impl crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     pub fn New(
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         targetExecutionContext: quest_hook::libil2cpp::Gc<
@@ -63,7 +67,7 @@ impl crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     pub fn _ctor(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         targetExecutionContext: quest_hook::libil2cpp::Gc<

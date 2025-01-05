@@ -2,14 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodMultipleProviderUntyped {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _method: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            *mut crate::Zenject::InjectContext,
-            *mut crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     >,
 }
@@ -20,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+MethodMultipleProviderUntyped")]
 impl std::ops::Deref for crate::Zenject::MethodMultipleProviderUntyped {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,14 +34,12 @@ impl crate::Zenject::MethodMultipleProviderUntyped {
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        injectAction: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
-        injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
         buffer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -69,11 +65,9 @@ impl crate::Zenject::MethodMultipleProviderUntyped {
     }
     pub fn New(
         method: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::Zenject::InjectContext,
-                *mut crate::System::Collections::Generic::IEnumerable_1<
-                    *mut quest_hook::libil2cpp::Il2CppObject,
-                >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -87,11 +81,9 @@ impl crate::Zenject::MethodMultipleProviderUntyped {
     pub fn _ctor(
         &mut self,
         method: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::Zenject::InjectContext,
-                *mut crate::System::Collections::Generic::IEnumerable_1<
-                    *mut quest_hook::libil2cpp::Il2CppObject,
-                >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -132,14 +124,16 @@ for crate::Zenject::MethodMultipleProviderUntyped {
     }
 }
 #[cfg(feature = "Zenject+MethodMultipleProviderUntyped")]
-impl AsRef<crate::Zenject::IProvider> for crate::Zenject::MethodMultipleProviderUntyped {
-    fn as_ref(&self) -> &crate::Zenject::IProvider {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>>
+for crate::Zenject::MethodMultipleProviderUntyped {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+MethodMultipleProviderUntyped")]
-impl AsMut<crate::Zenject::IProvider> for crate::Zenject::MethodMultipleProviderUntyped {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IProvider {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>>
+for crate::Zenject::MethodMultipleProviderUntyped {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }

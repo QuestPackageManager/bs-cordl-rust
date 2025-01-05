@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Physics2D {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+Physics2D")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Physics2D")]
 impl std::ops::Deref for crate::UnityEngine::Physics2D {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -117,7 +117,7 @@ impl crate::UnityEngine::Physics2D {
             .invoke("GetRayIntersectionAll", (ray, distance, layerMask))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetRayIntersectionNonAlloc_Ray_Il2CppArray0(
+    pub fn GetRayIntersectionNonAlloc_Ray_Gc0(
         ray: crate::UnityEngine::Ray,
         results: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
@@ -150,7 +150,7 @@ impl crate::UnityEngine::Physics2D {
             .invoke("GetRayIntersectionNonAlloc", (ray, results, distance, layerMask))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Raycast_ContactFilter2D_Il2CppArray5(
+    pub fn Raycast_ContactFilter2D_Gc5(
         origin: crate::UnityEngine::Vector2,
         direction: crate::UnityEngine::Vector2,
         contactFilter: crate::UnityEngine::ContactFilter2D,
@@ -162,7 +162,7 @@ impl crate::UnityEngine::Physics2D {
             .invoke("Raycast", (origin, direction, contactFilter, results))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Raycast_ContactFilter2D_Il2CppArray_f32_6(
+    pub fn Raycast_ContactFilter2D_Gc_f32_6(
         origin: crate::UnityEngine::Vector2,
         direction: crate::UnityEngine::Vector2,
         contactFilter: crate::UnityEngine::ContactFilter2D,
@@ -175,13 +175,11 @@ impl crate::UnityEngine::Physics2D {
             .invoke("Raycast", (origin, direction, contactFilter, results, distance))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Raycast_ContactFilter2D_List_1_f32_7(
+    pub fn Raycast_ContactFilter2D_Gc_f32_7(
         origin: crate::UnityEngine::Vector2,
         direction: crate::UnityEngine::Vector2,
         contactFilter: crate::UnityEngine::ContactFilter2D,
-        results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::RaycastHit2D>,
-        >,
+        results: quest_hook::libil2cpp::Gc<crate::UnityEngine::RaycastHit2D>,
         distance: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()

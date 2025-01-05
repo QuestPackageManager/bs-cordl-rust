@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OcspReq {
-    __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::X509ExtensionBase,
+    >,
     pub req: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Ocsp::OcspRequest,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReq")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::OcspReq {
-    type Target = crate::Org::BouncyCastle::X509::X509ExtensionBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::X509ExtensionBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +62,9 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReq {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         >,
     > {
@@ -67,7 +73,9 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReq {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         > = __cordl_object.invoke("GetCerts", ())?;
         Ok(__cordl_ret.into())
@@ -89,14 +97,18 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReq {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::Org::BouncyCastle::Ocsp::Req>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::Req>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::Org::BouncyCastle::Ocsp::Req>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::Req>,
+            >,
         > = __cordl_object.invoke("GetRequestList", ())?;
         Ok(__cordl_ret.into())
     }
@@ -139,25 +151,7 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReq {
         > = __cordl_object.invoke("GetX509Extensions", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1InputStream3(
-        aIn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1InputStream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (aIn))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppArray1(
-        req: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (req))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_OcspRequest0(
+    pub fn New_Gc0(
         req: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ocsp::OcspRequest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -166,13 +160,31 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReq {
             .invoke_void(".ctor", (req))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream2(
+    pub fn New_Gc1(
+        req: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (req))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc2(
         inStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (inStr))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc3(
+        aIn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1InputStream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (aIn))?;
         Ok(__cordl_object.into())
     }
     pub fn Verify(
@@ -187,29 +199,7 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReq {
         let __cordl_ret: bool = __cordl_object.invoke("Verify", (publicKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1InputStream3(
-        &mut self,
-        aIn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1InputStream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (aIn))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppArray1(
-        &mut self,
-        req: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (req))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_OcspRequest0(
+    pub fn _ctor_Gc0(
         &mut self,
         req: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ocsp::OcspRequest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -220,7 +210,18 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReq {
             .invoke(".ctor", (req))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream2(
+    pub fn _ctor_Gc1(
+        &mut self,
+        req: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (req))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc2(
         &mut self,
         inStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -229,6 +230,17 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReq {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (inStr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc3(
+        &mut self,
+        aIn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1InputStream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (aIn))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsSigned(&mut self) -> quest_hook::libil2cpp::Result<bool> {

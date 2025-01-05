@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Light {
-    __cordl_parent: crate::UnityEngine::Behaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
     pub m_BakedIndex: i32,
 }
 #[cfg(feature = "UnityEngine+Light")]
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Light")]
 impl std::ops::Deref for crate::UnityEngine::Light {
-    type Target = crate::UnityEngine::Behaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

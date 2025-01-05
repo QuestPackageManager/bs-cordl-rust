@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemberMemberBinding {
-    __cordl_parent: crate::System::Linq::Expressions::MemberBinding,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::MemberBinding,
+    >,
     pub _Bindings_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            *mut crate::System::Linq::Expressions::MemberBinding,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberBinding>,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+MemberMemberBinding")]
@@ -16,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+MemberMemberBinding")]
 impl std::ops::Deref for crate::System::Linq::Expressions::MemberMemberBinding {
-    type Target = crate::System::Linq::Expressions::MemberBinding;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::MemberBinding,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,18 +35,14 @@ impl crate::System::Linq::Expressions::MemberMemberBinding {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                *mut crate::System::Linq::Expressions::MemberBinding,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberBinding>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                *mut crate::System::Linq::Expressions::MemberBinding,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberBinding>,
         > = __cordl_object.invoke("get_Bindings", ())?;
         Ok(__cordl_ret.into())
     }

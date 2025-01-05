@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleExecutionRating {
-    __cordl_parent: crate::GlobalNamespace::BeatmapObjectExecutionRating,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectExecutionRating,
+    >,
     pub _rating_k__BackingField: crate::GlobalNamespace::ObstacleExecutionRating_Rating,
 }
 #[cfg(feature = "ObstacleExecutionRating")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ObstacleExecutionRating")]
 impl std::ops::Deref for crate::GlobalNamespace::ObstacleExecutionRating {
-    type Target = crate::GlobalNamespace::BeatmapObjectExecutionRating;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectExecutionRating,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

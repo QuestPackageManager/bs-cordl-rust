@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidationEventArgs {
-    __cordl_parent: crate::System::EventArgs,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
     pub _ex: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Schema::JsonSchemaException,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Schema+ValidationEventArgs")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::ValidationEventArgs {
-    type Target = crate::System::EventArgs;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::EventArgs>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

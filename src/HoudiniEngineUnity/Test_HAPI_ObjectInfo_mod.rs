@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Test_HAPI_ObjectInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _cordl_self: crate::HoudiniEngineUnity::HAPI_ObjectInfo,
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,28 +68,28 @@ for crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo>,
     >,
 > for crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo>,
     >,
 > for crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo>,
     > {
         unsafe { std::mem::transmute(self) }
     }

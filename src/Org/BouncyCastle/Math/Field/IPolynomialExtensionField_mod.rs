@@ -57,30 +57,50 @@ for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Field+IPolynomialExtensionField")]
-impl AsRef<crate::Org::BouncyCastle::Math::Field::IExtensionField>
-for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::Field::IExtensionField {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::Field::IExtensionField>,
+> for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::Field::IExtensionField,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Field+IPolynomialExtensionField")]
-impl AsMut<crate::Org::BouncyCastle::Math::Field::IExtensionField>
-for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Math::Field::IExtensionField {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::Field::IExtensionField>,
+> for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::Field::IExtensionField,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Field+IPolynomialExtensionField")]
-impl AsRef<crate::Org::BouncyCastle::Math::Field::IFiniteField>
-for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::Field::IFiniteField {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::Field::IFiniteField>,
+> for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::Field::IFiniteField,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Field+IPolynomialExtensionField")]
-impl AsMut<crate::Org::BouncyCastle::Math::Field::IFiniteField>
-for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Math::Field::IFiniteField {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::Field::IFiniteField>,
+> for crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::Field::IFiniteField,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

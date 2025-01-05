@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Collision {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Header: crate::UnityEngine::ContactPairHeader,
     pub m_Pair: crate::UnityEngine::ContactPair,
     pub m_Flipped: bool,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Collision")]
 impl std::ops::Deref for crate::UnityEngine::Collision {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +41,7 @@ impl crate::UnityEngine::Collision {
             .invoke("GetContact", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetContacts_Il2CppArray0(
+    pub fn GetContacts_Gc0(
         &mut self,
         contacts: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ContactPoint>,
@@ -53,11 +53,9 @@ impl crate::UnityEngine::Collision {
         let __cordl_ret: i32 = __cordl_object.invoke("GetContacts", (contacts))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetContacts_List_1_1(
+    pub fn GetContacts_Gc1(
         &mut self,
-        contacts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::ContactPoint>,
-        >,
+        contacts: quest_hook::libil2cpp::Gc<crate::UnityEngine::ContactPoint>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

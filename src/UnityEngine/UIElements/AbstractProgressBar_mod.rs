@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractProgressBar {
-    __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement,
+    >,
     pub m_Background: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -21,7 +23,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::AbstractProgressBar {
-    type Target = crate::UnityEngine::UIElements::BindableElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -175,18 +179,16 @@ for crate::UnityEngine::UIElements::AbstractProgressBar {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
-impl AsRef<crate::UnityEngine::UIElements::INotifyValueChanged_1<f32>>
+impl AsRef<quest_hook::libil2cpp::Gc<f32>>
 for crate::UnityEngine::UIElements::AbstractProgressBar {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::INotifyValueChanged_1<f32> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<f32> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
-impl AsMut<crate::UnityEngine::UIElements::INotifyValueChanged_1<f32>>
+impl AsMut<quest_hook::libil2cpp::Gc<f32>>
 for crate::UnityEngine::UIElements::AbstractProgressBar {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::INotifyValueChanged_1<f32> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<f32> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -194,7 +196,9 @@ for crate::UnityEngine::UIElements::AbstractProgressBar {
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractProgressBar_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    >,
     pub m_LowValue: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
@@ -216,7 +220,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::AbstractProgressBar_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

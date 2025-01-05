@@ -22,7 +22,7 @@ for crate::GlobalNamespace::OVRRoomLayout {
 }
 #[cfg(feature = "OVRRoomLayout")]
 impl crate::GlobalNamespace::OVRRoomLayout {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -46,11 +46,7 @@ impl crate::GlobalNamespace::OVRRoomLayout {
     }
     pub fn FetchLayoutAnchorsAsync(
         &mut self,
-        anchors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::OVRAnchor,
-            >,
-        >,
+        anchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -127,7 +123,9 @@ impl crate::GlobalNamespace::OVRRoomLayout {
         ceiling: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
         floor: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
         walls: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -202,44 +200,38 @@ impl crate::GlobalNamespace::OVRRoomLayout {
     }
 }
 #[cfg(feature = "OVRRoomLayout")]
-impl AsRef<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRRoomLayout>,
-> for crate::GlobalNamespace::OVRRoomLayout {
-    fn as_ref(
-        &self,
-    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRRoomLayout,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRRoomLayout")]
-impl AsMut<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRRoomLayout>,
-> for crate::GlobalNamespace::OVRRoomLayout {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRRoomLayout,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRRoomLayout")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRRoomLayout>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRoomLayout>>
 for crate::GlobalNamespace::OVRRoomLayout {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRRoomLayout> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRoomLayout> {
         todo!()
     }
 }
 #[cfg(feature = "OVRRoomLayout")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRRoomLayout>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRoomLayout>>
 for crate::GlobalNamespace::OVRRoomLayout {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRRoomLayout> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRoomLayout> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRRoomLayout")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRoomLayout>>
+for crate::GlobalNamespace::OVRRoomLayout {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRoomLayout> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRRoomLayout")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRoomLayout>>
+for crate::GlobalNamespace::OVRRoomLayout {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRoomLayout> {
         todo!()
     }
 }

@@ -2,19 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PDGAssetLink {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _assetPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _assetGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _assetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _assetID: i32,
     pub _heu: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     pub _topNetworks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::HEU_TOPNetworkData,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNetworkData>,
     >,
     pub _topNetworkNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _selectedTOPNetwork: i32,
     pub _linkState: crate::HoudiniEngineUnity::HEU_PDGAssetLink_LinkState,
@@ -39,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PDGAssetLink {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -236,9 +236,7 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
     pub fn GetTOPNetworkByName(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         topNetworks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_TOPNetworkData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNetworkData>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNetworkData>,
@@ -266,9 +264,7 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
     pub fn GetTOPNodeByName(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         topNodes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNodeData>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNodeData>,
@@ -344,7 +340,7 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn NotifyAssetCooked_HEU_CookedEventData1(
+    pub fn NotifyAssetCooked_Gc1(
         &mut self,
         cookedEventData: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_CookedEventData,
@@ -357,24 +353,7 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
             .invoke("NotifyAssetCooked", (cookedEventData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn NotifyAssetCooked_HEU_HoudiniAsset__cordl_bool_List_1_0(
-        &mut self,
-        asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
-        bSuccess: bool,
-        generatedOutputs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::GameObject,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("NotifyAssetCooked", (asset, bSuccess, generatedOutputs))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn NotifyAssetCooked_HEU_ReloadEventData2(
+    pub fn NotifyAssetCooked_Gc2(
         &mut self,
         reloadEventData: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_ReloadEventData,
@@ -385,6 +364,21 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NotifyAssetCooked", (reloadEventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NotifyAssetCooked__cordl_bool_Gc0(
+        &mut self,
+        asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
+        bSuccess: bool,
+        generatedOutputs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("NotifyAssetCooked", (asset, bSuccess, generatedOutputs))?;
         Ok(__cordl_ret.into())
     }
     pub fn OnAfterDeserialize(
@@ -424,7 +418,7 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
             crate::HoudiniEngineUnity::HAPI_NodeInfo,
         >,
         nodeTags: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::HoudiniEngineUnity::TOPNodeTags,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::TOPNodeTags>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -626,16 +620,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_PDGAss
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink")]
-impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::HoudiniEngineUnity::HEU_PDGAssetLink {
-    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink")]
-impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::HoudiniEngineUnity::HEU_PDGAssetLink {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ISerializationCallbackReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -658,7 +658,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PDGAssetLink_UpdateUIDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink+UpdateUIDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -668,7 +668,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink+UpdateUIDelegate")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PDGAssetLink_UpdateUIDelegate {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

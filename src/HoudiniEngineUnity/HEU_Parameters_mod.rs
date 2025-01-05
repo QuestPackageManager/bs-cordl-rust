@@ -2,31 +2,27 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_Parameters {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub _nodeID: i32,
     pub _uiLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _paramInts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _paramFloats: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub _paramStrings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _paramChoices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             crate::HoudiniEngineUnity::HAPI_ParmChoiceInfo,
         >,
     >,
-    pub _rootParameters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub _rootParameters: quest_hook::libil2cpp::Gc<i32>,
     pub _parameterList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::HEU_ParameterData,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterData>,
     >,
     pub _parameterModifiers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::HEU_ParameterModifier,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterModifier>,
     >,
     pub _regenerateParameters: bool,
     pub _presetData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -44,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_Parameters")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_Parameters {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -136,9 +132,7 @@ impl crate::HoudiniEngineUnity::HEU_Parameters {
     pub fn GetInputNodeConnectionObjects(
         &mut self,
         inputNodeObjects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::GameObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -151,16 +145,12 @@ impl crate::HoudiniEngineUnity::HEU_Parameters {
     pub fn GetParameterDataForUIRestore(
         &mut self,
         folderParams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::HoudiniEngineUnity::HEU_ParameterData,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterData>,
         >,
         inputNodeParams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::HoudiniEngineUnity::HEU_InputNode,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -184,7 +174,7 @@ impl crate::HoudiniEngineUnity::HEU_Parameters {
         > = __cordl_object.invoke("GetParameterWithParmID", (parmID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetParameter_Il2CppString1(
+    pub fn GetParameter_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -216,18 +206,14 @@ impl crate::HoudiniEngineUnity::HEU_Parameters {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_ParameterData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterData>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_ParameterData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterData>,
         > = __cordl_object.invoke("GetParameters", ())?;
         Ok(__cordl_ret.into())
     }
@@ -280,16 +266,12 @@ impl crate::HoudiniEngineUnity::HEU_Parameters {
             crate::HoudiniEngineUnity::HAPI_NodeInfo,
         >,
         previousParamFolders: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::HoudiniEngineUnity::HEU_ParameterData,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterData>,
         >,
         previousParamInputNodes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::HoudiniEngineUnity::HEU_InputNode,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
         >,
         parentAsset: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
@@ -526,18 +508,14 @@ impl crate::HoudiniEngineUnity::HEU_Parameters {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_ParameterModifier,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterModifier>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_ParameterModifier,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterModifier>,
         > = __cordl_object.invoke("get_ParameterModifiers", ())?;
         Ok(__cordl_ret.into())
     }
@@ -557,15 +535,12 @@ impl crate::HoudiniEngineUnity::HEU_Parameters {
     }
     pub fn get_RootParameters(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        > = __cordl_object.invoke("get_RootParameters", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("get_RootParameters", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ShowParameters(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -578,9 +553,7 @@ impl crate::HoudiniEngineUnity::HEU_Parameters {
     pub fn set_ParameterModifiers(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_ParameterModifier,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterModifier>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -614,9 +587,7 @@ impl crate::HoudiniEngineUnity::HEU_Parameters {
     }
     pub fn set_RootParameters(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -648,28 +619,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Parame
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Parameters")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_Parameters,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Parameters>,
     >,
 > for crate::HoudiniEngineUnity::HEU_Parameters {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_Parameters,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Parameters>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Parameters")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_Parameters,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Parameters>,
     >,
 > for crate::HoudiniEngineUnity::HEU_Parameters {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_Parameters,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Parameters>,
     > {
         unsafe { std::mem::transmute(self) }
     }

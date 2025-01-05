@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPointerEventData {
-    __cordl_parent: crate::UnityEngine::EventSystems::PointerEventData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PointerEventData,
+    >,
     pub worldSpaceRay: crate::UnityEngine::Ray,
     pub swipeStart: crate::UnityEngine::Vector2,
 }
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+OVRPointerEventData")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::OVRPointerEventData {
-    type Target = crate::UnityEngine::EventSystems::PointerEventData;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PointerEventData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

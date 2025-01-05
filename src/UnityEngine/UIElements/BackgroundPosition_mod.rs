@@ -34,7 +34,7 @@ impl crate::UnityEngine::UIElements::BackgroundPosition {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -111,24 +111,20 @@ impl crate::UnityEngine::UIElements::BackgroundPosition {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BackgroundPosition")]
-impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundPosition>,
-> for crate::UnityEngine::UIElements::BackgroundPosition {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundPosition>>
+for crate::UnityEngine::UIElements::BackgroundPosition {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::UnityEngine::UIElements::BackgroundPosition,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundPosition> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BackgroundPosition")]
-impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundPosition>,
-> for crate::UnityEngine::UIElements::BackgroundPosition {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundPosition>>
+for crate::UnityEngine::UIElements::BackgroundPosition {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::BackgroundPosition,
     > {
         todo!()

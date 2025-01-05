@@ -28,7 +28,7 @@ for crate::UnityEngine::Rendering::RenderTargetIdentifier {
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
 impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -79,7 +79,7 @@ impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Texture2(
+    pub fn _ctor_Gc2(
         &mut self,
         tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -110,7 +110,7 @@ impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
             .invoke("op_Implicit", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Texture2(
+    pub fn op_Implicit_Gc2(
         tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::RenderTargetIdentifier,
@@ -131,11 +131,11 @@ impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::RenderTargetIdentifier>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RenderTargetIdentifier>,
 > for crate::UnityEngine::Rendering::RenderTargetIdentifier {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::RenderTargetIdentifier,
     > {
         todo!()
@@ -143,11 +143,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::RenderTargetIdentifier>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RenderTargetIdentifier>,
 > for crate::UnityEngine::Rendering::RenderTargetIdentifier {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::RenderTargetIdentifier,
     > {
         todo!()

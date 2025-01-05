@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalLeaderboardViewController {
-    __cordl_parent: crate::GlobalNamespace::LeaderboardViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardViewController,
+    >,
     pub _maxNumberOfCells: i32,
     pub _leaderboardTableView: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LocalLeaderboardTableView,
@@ -36,7 +38,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LocalLeaderboardViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardViewController {
-    type Target = crate::GlobalNamespace::LeaderboardViewController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardViewController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

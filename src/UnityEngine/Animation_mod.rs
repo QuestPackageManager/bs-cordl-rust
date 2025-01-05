@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Animation {
-    __cordl_parent: crate::UnityEngine::Behaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
 }
 #[cfg(feature = "UnityEngine+Animation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Animation")]
 impl std::ops::Deref for crate::UnityEngine::Animation {
-    type Target = crate::UnityEngine::Behaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Animation {
 impl crate::UnityEngine::Animation {
     #[cfg(feature = "UnityEngine+Animation+Enumerator")]
     pub type Enumerator = crate::UnityEngine::Animation_Enumerator;
-    pub fn AddClip_AnimationClip_Il2CppString0(
+    pub fn AddClip_Gc_Gc0(
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
         newName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -67,7 +67,7 @@ impl crate::UnityEngine::Animation {
             .invoke("AddClip", (clip, newName, firstFrame, lastFrame, addLoopFrame))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Blend_Il2CppString0(
+    pub fn Blend_Gc0(
         &mut self,
         animation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -103,7 +103,7 @@ impl crate::UnityEngine::Animation {
             .invoke("Blend", (animation, targetWeight, fadeLength))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CrossFadeQueued_Il2CppString0(
+    pub fn CrossFadeQueued_Gc0(
         &mut self,
         animation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -161,7 +161,7 @@ impl crate::UnityEngine::Animation {
             .invoke("CrossFadeQueued", (animation, fadeLength, queue, mode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CrossFade_Il2CppString0(
+    pub fn CrossFade_Gc0(
         &mut self,
         animation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -290,7 +290,7 @@ impl crate::UnityEngine::Animation {
         let __cordl_ret: bool = __cordl_object.invoke("PlayDefaultAnimation", (mode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PlayQueued_Il2CppString0(
+    pub fn PlayQueued_Gc0(
         &mut self,
         animation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -349,7 +349,7 @@ impl crate::UnityEngine::Animation {
         let __cordl_ret: bool = __cordl_object.invoke("Play", (mode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Play_Il2CppString2(
+    pub fn Play_Gc2(
         &mut self,
         animation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -359,7 +359,7 @@ impl crate::UnityEngine::Animation {
         let __cordl_ret: bool = __cordl_object.invoke("Play", (animation))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Play_Il2CppString_AnimationPlayMode5(
+    pub fn Play_Gc_AnimationPlayMode5(
         &mut self,
         animation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::UnityEngine::AnimationPlayMode,
@@ -370,7 +370,7 @@ impl crate::UnityEngine::Animation {
         let __cordl_ret: bool = __cordl_object.invoke("Play", (animation, mode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Play_Il2CppString_PlayMode3(
+    pub fn Play_Gc_PlayMode3(
         &mut self,
         animation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::UnityEngine::PlayMode,
@@ -402,7 +402,7 @@ impl crate::UnityEngine::Animation {
             .invoke("RemoveClipNamed", (clipName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveClip_AnimationClip0(
+    pub fn RemoveClip_Gc0(
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -413,7 +413,7 @@ impl crate::UnityEngine::Animation {
             .invoke("RemoveClip", (clip))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveClip_Il2CppString1(
+    pub fn RemoveClip_Gc1(
         &mut self,
         clipName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -445,7 +445,7 @@ impl crate::UnityEngine::Animation {
             .invoke("Rewind", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Rewind_Il2CppString1(
+    pub fn Rewind_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -487,7 +487,7 @@ impl crate::UnityEngine::Animation {
             .invoke("Stop", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Stop_Il2CppString1(
+    pub fn Stop_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -712,14 +712,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Animation {
     }
 }
 #[cfg(feature = "UnityEngine+Animation")]
-impl AsRef<crate::System::Collections::IEnumerable> for crate::UnityEngine::Animation {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+for crate::UnityEngine::Animation {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Animation")]
-impl AsMut<crate::System::Collections::IEnumerable> for crate::UnityEngine::Animation {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+for crate::UnityEngine::Animation {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -727,7 +733,7 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::UnityEngine::Anim
 #[repr(C)]
 #[derive(Debug)]
 pub struct Animation_Enumerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Outer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animation>,
     pub m_CurrentIndex: i32,
 }
@@ -738,7 +744,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Animation+Enumerator")]
 impl std::ops::Deref for crate::UnityEngine::Animation_Enumerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -812,16 +818,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Animation_Enumera
     }
 }
 #[cfg(feature = "UnityEngine+Animation+Enumerator")]
-impl AsRef<crate::System::Collections::IEnumerator>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::UnityEngine::Animation_Enumerator {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Animation+Enumerator")]
-impl AsMut<crate::System::Collections::IEnumerator>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::UnityEngine::Animation_Enumerator {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }

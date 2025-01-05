@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncryptedPrivateKeyInfoFactory {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+EncryptedPrivateKeyInfoFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkcs+EncryptedPrivateKeyInfoFactory")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::EncryptedPrivateKeyInfoFactory {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ for crate::Org::BouncyCastle::Pkcs::EncryptedPrivateKeyInfoFactory {
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+EncryptedPrivateKeyInfoFactory")]
 impl crate::Org::BouncyCastle::Pkcs::EncryptedPrivateKeyInfoFactory {
-    pub fn CreateEncryptedPrivateKeyInfo_DerObjectIdentifier_DerObjectIdentifier_Il2CppArray_i32_SecureRandom_AsymmetricKeyParameter3(
+    pub fn CreateEncryptedPrivateKeyInfo_Gc_i32_Gc_Gc3(
         cipherAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -64,7 +64,7 @@ impl crate::Org::BouncyCastle::Pkcs::EncryptedPrivateKeyInfoFactory {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateEncryptedPrivateKeyInfo_DerObjectIdentifier_DerObjectIdentifier_Il2CppArray_i32_SecureRandom_PrivateKeyInfo4(
+    pub fn CreateEncryptedPrivateKeyInfo_Gc_i32_Gc_Gc4(
         cipherAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -102,7 +102,7 @@ impl crate::Org::BouncyCastle::Pkcs::EncryptedPrivateKeyInfoFactory {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateEncryptedPrivateKeyInfo_DerObjectIdentifier_Il2CppArray_i32_AsymmetricKeyParameter0(
+    pub fn CreateEncryptedPrivateKeyInfo_i32_Gc0(
         algorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -126,7 +126,7 @@ impl crate::Org::BouncyCastle::Pkcs::EncryptedPrivateKeyInfoFactory {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateEncryptedPrivateKeyInfo_Il2CppString_Il2CppArray_i32_AsymmetricKeyParameter1(
+    pub fn CreateEncryptedPrivateKeyInfo_i32_Gc1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -148,7 +148,7 @@ impl crate::Org::BouncyCastle::Pkcs::EncryptedPrivateKeyInfoFactory {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateEncryptedPrivateKeyInfo_Il2CppString_Il2CppArray_i32_PrivateKeyInfo2(
+    pub fn CreateEncryptedPrivateKeyInfo_i32_Gc2(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

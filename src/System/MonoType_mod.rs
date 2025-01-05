@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoType {
-    __cordl_parent: crate::System::RuntimeType,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
 }
 #[cfg(feature = "System+MonoType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+MonoType")]
 impl std::ops::Deref for crate::System::MonoType {
-    type Target = crate::System::RuntimeType;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::RuntimeType>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

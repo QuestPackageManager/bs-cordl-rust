@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlUtf8RawTextWriterIndent {
-    __cordl_parent: crate::System::Xml::XmlUtf8RawTextWriter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlUtf8RawTextWriter>,
     pub indentLevel: i32,
     pub newLineOnAttributes: bool,
     pub indentChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlUtf8RawTextWriterIndent")]
 impl std::ops::Deref for crate::System::Xml::XmlUtf8RawTextWriterIndent {
-    type Target = crate::System::Xml::XmlUtf8RawTextWriter;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlUtf8RawTextWriter>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -204,7 +204,18 @@ impl crate::System::Xml::XmlUtf8RawTextWriterIndent {
             .invoke("WriteProcessingInstruction", (target, text))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteRaw_Il2CppArray_i32_i32_0(
+    pub fn WriteRaw_Gc1(
+        &mut self,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteRaw", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteRaw_i32_i32_0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
@@ -215,17 +226,6 @@ impl crate::System::Xml::XmlUtf8RawTextWriterIndent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteRaw", (buffer, index, count))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteRaw_Il2CppString1(
-        &mut self,
-        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteRaw", (data))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteStartAttribute(

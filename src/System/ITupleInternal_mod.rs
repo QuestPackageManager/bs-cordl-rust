@@ -54,16 +54,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ITupleInternal {
     }
 }
 #[cfg(feature = "System+ITupleInternal")]
-impl AsRef<crate::System::Runtime::CompilerServices::ITuple>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Runtime::CompilerServices::ITuple>>
 for crate::System::ITupleInternal {
-    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::ITuple {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Runtime::CompilerServices::ITuple> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ITupleInternal")]
-impl AsMut<crate::System::Runtime::CompilerServices::ITuple>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Runtime::CompilerServices::ITuple>>
 for crate::System::ITupleInternal {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::CompilerServices::ITuple {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::ITuple,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

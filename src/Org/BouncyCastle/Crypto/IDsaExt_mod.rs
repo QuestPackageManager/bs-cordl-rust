@@ -53,16 +53,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Crypto::IDs
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IDsaExt")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IDsa>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa>>
 for crate::Org::BouncyCastle::Crypto::IDsaExt {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDsa {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IDsaExt")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IDsa>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa>>
 for crate::Org::BouncyCastle::Crypto::IDsaExt {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDsa {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa> {
         unsafe { std::mem::transmute(self) }
     }
 }

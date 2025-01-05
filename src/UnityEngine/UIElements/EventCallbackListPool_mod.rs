@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventCallbackListPool {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Stack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<
-            *mut crate::UnityEngine::UIElements::EventCallbackList,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventCallbackList>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+EventCallbackListPool")]
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+EventCallbackListPool")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventCallbackListPool {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

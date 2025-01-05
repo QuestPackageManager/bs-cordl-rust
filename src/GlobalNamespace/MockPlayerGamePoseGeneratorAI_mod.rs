@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlayerGamePoseGeneratorAI {
-    __cordl_parent: crate::GlobalNamespace::MockPlayerGamePoseGenerator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MockPlayerGamePoseGenerator,
+    >,
     pub _scoreCalculator: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IMockPlayerScoreCalculator,
     >,
@@ -20,16 +22,24 @@ pub struct MockPlayerGamePoseGeneratorAI {
     pub _lastSongTime: f32,
     pub _lineCount: i32,
     pub _leftNotes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+        >,
     >,
     pub _rightNotes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+        >,
     >,
     pub _bombNotes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+        >,
     >,
     pub _obstacles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockObstacleData>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockObstacleData>,
+        >,
     >,
     pub _leftNoteIndex: i32,
     pub _rightNoteIndex: i32,
@@ -53,7 +63,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockPlayerGamePoseGeneratorAI")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
-    type Target = crate::GlobalNamespace::MockPlayerGamePoseGenerator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MockPlayerGamePoseGenerator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -207,14 +219,18 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
     pub fn ProcessNotes(
         &mut self,
         notes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+            >,
         >,
         handDirection: crate::UnityEngine::Vector3,
         noteIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         prevHitScore: quest_hook::libil2cpp::ByRefMut<i32>,
         nextHitScore: quest_hook::libil2cpp::ByRefMut<i32>,
         bombs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+            >,
         >,
         bombIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         lineCount: i32,
@@ -246,7 +262,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
         &mut self,
         obstacles: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MockObstacleData,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockObstacleData>,
             >,
         >,
         obstacleIndex: quest_hook::libil2cpp::ByRefMut<i32>,

@@ -32,10 +32,8 @@ impl<
 #[repr(C)]
 #[derive(Debug)]
 pub struct XHashtable_1<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _state: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _state: quest_hook::libil2cpp::Gc<TValue>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Xml+Linq+XHashtable_1")]
@@ -46,7 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Linq+XHashtable_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Xml::Linq::XHashtable_1<TValue> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -82,9 +80,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        extractKey: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue>,
-        >,
+        extractKey: quest_hook::libil2cpp::Gc<TValue>,
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -117,9 +113,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        extractKey: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue>,
-        >,
+        extractKey: quest_hook::libil2cpp::Gc<TValue>,
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -148,7 +142,7 @@ for crate::System::Xml::Linq::XHashtable_1<TValue> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XHashtable_1_ExtractKeyDelegate<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+ExtractKeyDelegate")]
@@ -160,7 +154,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+ExtractKeyDelegate")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue> {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -239,7 +233,7 @@ for crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XHashtable_1_XHashtableState<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _buckets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _entries: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -247,9 +241,7 @@ pub struct XHashtable_1_XHashtableState<TValue: quest_hook::libil2cpp::Type> {
         >,
     >,
     pub _numEntries: i32,
-    pub _extractKey: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue>,
-    >,
+    pub _extractKey: quest_hook::libil2cpp::Gc<TValue>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+XHashtableState")]
@@ -260,7 +252,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+XHashtableState")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -313,9 +305,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        extractKey: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue>,
-        >,
+        extractKey: quest_hook::libil2cpp::Gc<TValue>,
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -330,11 +320,7 @@ impl<
     }
     pub fn Resize(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -342,9 +328,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue>,
-        > = __cordl_object.invoke("Resize", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = __cordl_object
+            .invoke("Resize", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn TryAdd(
@@ -382,9 +367,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        extractKey: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue>,
-        >,
+        extractKey: quest_hook::libil2cpp::Gc<TValue>,
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

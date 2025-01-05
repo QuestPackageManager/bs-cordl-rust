@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SurrogateForCyclicalReference {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub innerSurrogate: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::ISerializationSurrogate,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+SurrogateForCyclicalReference")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,18 +78,30 @@ for crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+SurrogateForCyclicalReference")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializationSurrogate>
-for crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializationSurrogate {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializationSurrogate,
+    >,
+> for crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializationSurrogate,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+SurrogateForCyclicalReference")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializationSurrogate>
-for crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializationSurrogate,
+    >,
+> for crate::System::Runtime::Serialization::SurrogateForCyclicalReference {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Serialization::ISerializationSurrogate {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializationSurrogate,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

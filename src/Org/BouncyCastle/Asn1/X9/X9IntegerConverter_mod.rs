@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X9IntegerConverter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9IntegerConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9IntegerConverter")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X9::X9IntegerConverter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,18 +24,18 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X9::X9IntegerConvert
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9IntegerConverter")]
 impl crate::Org::BouncyCastle::Asn1::X9::X9IntegerConverter {
-    pub fn GetByteLength_ECCurve1(
-        c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetByteLength", (c))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetByteLength_ECFieldElement0(
+    pub fn GetByteLength_Gc0(
         fe: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetByteLength", (fe))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetByteLength_Gc1(
+        c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetByteLength", (c))?;
         Ok(__cordl_ret.into())
     }
     pub fn IntegerToBytes(

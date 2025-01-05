@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Certificate {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub decoder: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
     pub m_encodedcert: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub m_from: crate::System::DateTime,
@@ -43,7 +43,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+X509+X509Certificate")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509Certificate {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -116,19 +116,7 @@ impl crate::Mono::Security::X509::X509Certificate {
             .invoke("Parse", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn VerifySignature_AsymmetricAlgorithm2(
-        &mut self,
-        aa: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::AsymmetricAlgorithm,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("VerifySignature", (aa))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn VerifySignature_DSA0(
+    pub fn VerifySignature_Gc0(
         &mut self,
         dsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -138,7 +126,7 @@ impl crate::Mono::Security::X509::X509Certificate {
         let __cordl_ret: bool = __cordl_object.invoke("VerifySignature", (dsa))?;
         Ok(__cordl_ret.into())
     }
-    pub fn VerifySignature_RSA1(
+    pub fn VerifySignature_Gc1(
         &mut self,
         rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -146,6 +134,18 @@ impl crate::Mono::Security::X509::X509Certificate {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("VerifySignature", (rsa))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerifySignature_Gc2(
+        &mut self,
+        aa: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::AsymmetricAlgorithm,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("VerifySignature", (aa))?;
         Ok(__cordl_ret.into())
     }
     pub fn WasCurrent(
@@ -410,16 +410,26 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::X509::X509Cert
     }
 }
 #[cfg(feature = "Mono+Security+X509+X509Certificate")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::Mono::Security::X509::X509Certificate {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::Mono::Security::X509::X509Certificate {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Security+X509+X509Certificate")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::Mono::Security::X509::X509Certificate {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::Mono::Security::X509::X509Certificate {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

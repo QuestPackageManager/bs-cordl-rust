@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseMoveEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::MouseEventBase_1<
-        *mut crate::UnityEngine::UIElements::MouseMoveEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseMoveEvent>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+MouseMoveEvent")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+MouseMoveEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseMoveEvent {
-    type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
-        *mut crate::UnityEngine::UIElements::MouseMoveEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseMoveEvent>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

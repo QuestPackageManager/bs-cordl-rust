@@ -2,15 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonPropertyCollection {
-    __cordl_parent: crate::System::Collections::ObjectModel::KeyedCollection_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonProperty>,
     >,
     pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _list: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonProperty>,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
@@ -21,9 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
-    type Target = crate::System::Collections::ObjectModel::KeyedCollection_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonProperty>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -109,7 +107,9 @@ impl crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         item: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonProperty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

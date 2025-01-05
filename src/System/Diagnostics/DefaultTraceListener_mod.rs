@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultTraceListener {
-    __cordl_parent: crate::System::Diagnostics::TraceListener,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::TraceListener>,
     pub logFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Diagnostics+DefaultTraceListener")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+DefaultTraceListener")]
 impl std::ops::Deref for crate::System::Diagnostics::DefaultTraceListener {
-    type Target = crate::System::Diagnostics::TraceListener;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Diagnostics::TraceListener>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

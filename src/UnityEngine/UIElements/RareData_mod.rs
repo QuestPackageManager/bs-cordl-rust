@@ -52,7 +52,7 @@ impl crate::UnityEngine::UIElements::RareData {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -92,48 +92,38 @@ impl crate::UnityEngine::UIElements::RareData {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RareData")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::RareData>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RareData>>
 for crate::UnityEngine::UIElements::RareData {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::RareData> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RareData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RareData")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::RareData>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RareData>>
 for crate::UnityEngine::UIElements::RareData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::RareData> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RareData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RareData")]
-impl AsRef<
-    crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::RareData,
-    >,
-> for crate::UnityEngine::UIElements::RareData {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RareData>>
+for crate::UnityEngine::UIElements::RareData {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::RareData,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RareData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RareData")]
-impl AsMut<
-    crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::RareData,
-    >,
-> for crate::UnityEngine::UIElements::RareData {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RareData>>
+for crate::UnityEngine::UIElements::RareData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::RareData,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RareData> {
         todo!()
     }
 }

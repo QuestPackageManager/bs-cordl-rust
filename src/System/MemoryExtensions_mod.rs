@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoryExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+MemoryExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+MemoryExtensions")]
 impl std::ops::Deref for crate::System::MemoryExtensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,14 @@ impl std::ops::DerefMut for crate::System::MemoryExtensions {
 }
 #[cfg(feature = "System+MemoryExtensions")]
 impl crate::System::MemoryExtensions {
-    pub fn AsSpan_Il2CppArray_i32_0<T>(
+    pub fn AsSpan_Gc1(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AsSpan", (text))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AsSpan_i32_0<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         start: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Span_1<T>>
@@ -36,7 +43,24 @@ impl crate::System::MemoryExtensions {
             .invoke("AsSpan", (array, start))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsSpan_Il2CppArray_i32_i32_4<T>(
+    pub fn AsSpan_i32_2(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        start: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AsSpan", (text, start))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AsSpan_i32_i32_3(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        start: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AsSpan", (text, start, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AsSpan_i32_i32_4<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         start: i32,
         length: i32,
@@ -47,30 +71,6 @@ impl crate::System::MemoryExtensions {
     {
         let __cordl_ret: crate::System::Span_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AsSpan", (array, start, length))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AsSpan_Il2CppString1(
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsSpan", (text))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AsSpan_Il2CppString_i32_2(
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        start: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsSpan", (text, start))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AsSpan_Il2CppString_i32_i32_3(
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        start: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsSpan", (text, start, length))?;
         Ok(__cordl_ret.into())
     }
     pub fn Contains(

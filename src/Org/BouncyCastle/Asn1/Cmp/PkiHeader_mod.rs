@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkiHeader {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub pvno: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
     pub sender: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -45,7 +47,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PkiHeader")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +67,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                >,
             >,
         >,
     > {
@@ -72,7 +78,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                >,
             >,
         > = __cordl_object.invoke("GetGeneralInfo", ())?;
         Ok(__cordl_ret.into())
@@ -87,7 +95,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1Sequence0(
+    pub fn New_Gc0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -96,7 +104,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DerInteger_GeneralName_GeneralName2(
+    pub fn New_Gc_Gc_Gc2(
         pvno: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
         sender: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -111,7 +119,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader {
             .invoke_void(".ctor", (pvno, sender, recipient))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_GeneralName_GeneralName1(
+    pub fn New_i32_Gc_Gc1(
         pvno: i32,
         sender: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -139,7 +147,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Sequence0(
+    pub fn _ctor_Gc0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -150,7 +158,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerInteger_GeneralName_GeneralName2(
+    pub fn _ctor_Gc_Gc_Gc2(
         &mut self,
         pvno: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
         sender: quest_hook::libil2cpp::Gc<
@@ -167,7 +175,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader {
             .invoke(".ctor", (pvno, sender, recipient))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_GeneralName_GeneralName1(
+    pub fn _ctor_i32_Gc_Gc1(
         &mut self,
         pvno: i32,
         sender: quest_hook::libil2cpp::Gc<

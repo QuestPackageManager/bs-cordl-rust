@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecurityIdentifier {
-    __cordl_parent: crate::System::Security::Principal::IdentityReference,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Principal::IdentityReference,
+    >,
     pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+Security+Principal+SecurityIdentifier")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Principal+SecurityIdentifier")]
 impl std::ops::Deref for crate::System::Security::Principal::SecurityIdentifier {
-    type Target = crate::System::Security::Principal::IdentityReference;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Principal::IdentityReference,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +53,7 @@ impl crate::System::Security::Principal::SecurityIdentifier {
             .invoke("CreateFromBinaryForm", (binaryForm, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -59,7 +63,7 @@ impl crate::System::Security::Principal::SecurityIdentifier {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (o))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_SecurityIdentifier1(
+    pub fn Equals_Gc1(
         &mut self,
         sid: quest_hook::libil2cpp::Gc<
             crate::System::Security::Principal::SecurityIdentifier,
@@ -114,7 +118,16 @@ impl crate::System::Security::Principal::SecurityIdentifier {
         let __cordl_ret: u8 = __cordl_object.invoke("GetSidSubAuthorityCount", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppArray_i32_1(
+    pub fn New_Gc0(
+        sddlForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sddlForm))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_i32_1(
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -122,15 +135,6 @@ impl crate::System::Security::Principal::SecurityIdentifier {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (binaryForm, offset))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppString0(
-        sddlForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sddlForm))?;
         Ok(__cordl_object.into())
     }
     pub fn ParseSddlForm(
@@ -187,7 +191,18 @@ impl crate::System::Security::Principal::SecurityIdentifier {
             .invoke("TryParseSubAuthority", (s, result))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_1(
+    pub fn _ctor_Gc0(
+        &mut self,
+        sddlForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (sddlForm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_i32_1(
         &mut self,
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -197,17 +212,6 @@ impl crate::System::Security::Principal::SecurityIdentifier {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (binaryForm, offset))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString0(
-        &mut self,
-        sddlForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (sddlForm))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_BinaryLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -255,28 +259,28 @@ for crate::System::Security::Principal::SecurityIdentifier {
 }
 #[cfg(feature = "System+Security+Principal+SecurityIdentifier")]
 impl AsRef<
-    crate::System::IComparable_1<
-        *mut crate::System::Security::Principal::SecurityIdentifier,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Principal::SecurityIdentifier>,
     >,
 > for crate::System::Security::Principal::SecurityIdentifier {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
-        *mut crate::System::Security::Principal::SecurityIdentifier,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Principal::SecurityIdentifier>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Principal+SecurityIdentifier")]
 impl AsMut<
-    crate::System::IComparable_1<
-        *mut crate::System::Security::Principal::SecurityIdentifier,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Principal::SecurityIdentifier>,
     >,
 > for crate::System::Security::Principal::SecurityIdentifier {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
-        *mut crate::System::Security::Principal::SecurityIdentifier,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Principal::SecurityIdentifier>,
     > {
         unsafe { std::mem::transmute(self) }
     }

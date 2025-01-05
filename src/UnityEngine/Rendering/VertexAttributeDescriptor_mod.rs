@@ -26,7 +26,7 @@ for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
 }
 #[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
 impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -165,11 +165,11 @@ impl crate::UnityEngine::Rendering::VertexAttributeDescriptor {
 }
 #[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::VertexAttributeDescriptor>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::VertexAttributeDescriptor>,
 > for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::VertexAttributeDescriptor,
     > {
         todo!()
@@ -177,11 +177,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::VertexAttributeDescriptor>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::VertexAttributeDescriptor>,
 > for crate::UnityEngine::Rendering::VertexAttributeDescriptor {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::VertexAttributeDescriptor,
     > {
         todo!()

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TestPlatformLeaderboardsHandler {
-    __cordl_parent: crate::GlobalNamespace::PlatformLeaderboardsHandler,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlatformLeaderboardsHandler,
+    >,
 }
 #[cfg(feature = "TestPlatformLeaderboardsHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TestPlatformLeaderboardsHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::TestPlatformLeaderboardsHandler {
-    type Target = crate::GlobalNamespace::PlatformLeaderboardsHandler;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlatformLeaderboardsHandler,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

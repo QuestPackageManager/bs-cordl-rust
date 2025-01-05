@@ -25,7 +25,7 @@ for crate::System::Numerics::Vector_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::System::Numerics::Vector_1<T> {
     #[cfg(feature = "System+Numerics+Vector_1+VectorSizeHelper")]
     pub type VectorSizeHelper = crate::System::Numerics::Vector_1_VectorSizeHelper<T>;
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -129,7 +129,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Numerics::Vector_1<T> {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider1(
+    pub fn ToString_Gc_Gc1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -166,7 +166,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Numerics::Vector_1<T> {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject1(
+    pub fn _ctor_Gc1(
         &mut self,
         dataPointer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -181,7 +181,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Numerics::Vector_1<T> {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject_i32_2(
+    pub fn _ctor_Gc_i32_2(
         &mut self,
         dataPointer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         offset: i32,
@@ -283,36 +283,40 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Numerics::Vector_1<T> {
 #[cfg(feature = "System+Numerics+Vector_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IEquatable_1<crate::System::Numerics::Vector_1<T>>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
 for crate::System::Numerics::Vector_1<T> {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::System::Numerics::Vector_1<T>> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Numerics+Vector_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IEquatable_1<crate::System::Numerics::Vector_1<T>>>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::System::Numerics::Vector_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Numerics+Vector_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Numerics::Vector_1<T>>>
+for crate::System::Numerics::Vector_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Numerics::Vector_1<T>> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Numerics+Vector_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Numerics::Vector_1<T>>>
 for crate::System::Numerics::Vector_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::System::Numerics::Vector_1<T>> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Numerics+Vector_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IFormattable>
-for crate::System::Numerics::Vector_1<T> {
-    fn as_ref(&self) -> &crate::System::IFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Numerics+Vector_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IFormattable>
-for crate::System::Numerics::Vector_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Numerics::Vector_1<T>> {
         todo!()
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelCompletionResults {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub gameplayModifiers: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiers,
     >,
@@ -38,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelCompletionResults")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelCompletionResults {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,7 +101,7 @@ impl crate::GlobalNamespace::LevelCompletionResults {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_GameplayModifiers_i32_i32_RankModel_Rank__cordl_bool_f32_f32_f32_f32_LevelCompletionResults_LevelEndStateType_LevelCompletionResults_LevelEndAction_f32_i32_i32_i32_i32_i32_i32_i32_i32_f32_f32_i32_f32__cordl_bool1(
+    pub fn New_Gc_i32_i32_RankModel_Rank__cordl_bool_f32_f32_f32_f32_LevelCompletionResults_LevelEndStateType_LevelCompletionResults_LevelEndAction_f32_i32_i32_i32_i32_i32_i32_i32_i32_f32_f32_i32_f32__cordl_bool1(
         gameplayModifiers: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiers,
         >,
@@ -186,7 +186,7 @@ impl crate::GlobalNamespace::LevelCompletionResults {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_GameplayModifiers_i32_i32_RankModel_Rank__cordl_bool_f32_f32_f32_f32_LevelCompletionResults_LevelEndStateType_LevelCompletionResults_LevelEndAction_f32_i32_i32_i32_i32_i32_i32_i32_i32_f32_f32_i32_f32__cordl_bool1(
+    pub fn _ctor_Gc_i32_i32_RankModel_Rank__cordl_bool_f32_f32_f32_f32_LevelCompletionResults_LevelEndStateType_LevelCompletionResults_LevelEndAction_f32_i32_i32_i32_i32_i32_i32_i32_i32_f32_f32_i32_f32__cordl_bool1(
         &mut self,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiers,
@@ -271,44 +271,44 @@ for crate::GlobalNamespace::LevelCompletionResults {
     }
 }
 #[cfg(feature = "LevelCompletionResults")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::GlobalNamespace::LevelCompletionResults {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LevelCompletionResults")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::GlobalNamespace::LevelCompletionResults {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LevelCompletionResults")]
 impl AsRef<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        *mut crate::GlobalNamespace::LevelCompletionResults,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     >,
 > for crate::GlobalNamespace::LevelCompletionResults {
     fn as_ref(
         &self,
-    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        *mut crate::GlobalNamespace::LevelCompletionResults,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LevelCompletionResults")]
 impl AsMut<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        *mut crate::GlobalNamespace::LevelCompletionResults,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     >,
 > for crate::GlobalNamespace::LevelCompletionResults {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        *mut crate::GlobalNamespace::LevelCompletionResults,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "LevelCompletionResults")]
-impl AsRef<crate::System::IComparable>
-for crate::GlobalNamespace::LevelCompletionResults {
-    fn as_ref(&self) -> &crate::System::IComparable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "LevelCompletionResults")]
-impl AsMut<crate::System::IComparable>
-for crate::GlobalNamespace::LevelCompletionResults {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }

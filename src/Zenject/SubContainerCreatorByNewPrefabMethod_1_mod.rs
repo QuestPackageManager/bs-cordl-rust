@@ -2,9 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewPrefabMethod_1<TParam1: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext,
+    >,
     pub _installerMethod: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<*mut crate::Zenject::DiContainer, TParam1>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        TParam1,
     >,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
 }
@@ -16,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod_1")]
 impl<TParam1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::SubContainerCreatorByNewPrefabMethod_1<TParam1> {
-    type Target = crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,9 +39,7 @@ impl<
 > crate::Zenject::SubContainerCreatorByNewPrefabMethod_1<TParam1> {
     pub fn AddInstallers(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -57,7 +60,8 @@ impl<
             crate::Zenject::GameObjectCreationParameters,
         >,
         installerMethod: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut crate::Zenject::DiContainer, TParam1>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            TParam1,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -81,7 +85,8 @@ impl<
             crate::Zenject::GameObjectCreationParameters,
         >,
         installerMethod: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut crate::Zenject::DiContainer, TParam1>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            TParam1,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

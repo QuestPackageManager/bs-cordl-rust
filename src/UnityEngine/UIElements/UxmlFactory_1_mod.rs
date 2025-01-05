@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlFactory_1<TCreatedType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         TCreatedType,
-        *mut crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+        >,
     >,
     __cordl_phantom_TCreatedType: std::marker::PhantomData<TCreatedType>,
 }
@@ -16,9 +18,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+UxmlFactory_1")]
 impl<TCreatedType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         TCreatedType,
-        *mut crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

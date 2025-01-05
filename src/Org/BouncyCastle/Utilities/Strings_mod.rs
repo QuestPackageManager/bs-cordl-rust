@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Strings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Strings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+Strings")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Strings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,9 @@ impl crate::Org::BouncyCastle::Utilities::Strings {
     pub fn IsOneOf(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         candidates: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -74,7 +76,7 @@ impl crate::Org::BouncyCastle::Utilities::Strings {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ToAsciiByteArray_Il2CppArray0(
+    pub fn ToAsciiByteArray_Gc0(
         cs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -85,7 +87,7 @@ impl crate::Org::BouncyCastle::Utilities::Strings {
             .invoke("ToAsciiByteArray", (cs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToAsciiByteArray_Il2CppString1(
+    pub fn ToAsciiByteArray_Gc1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -96,7 +98,7 @@ impl crate::Org::BouncyCastle::Utilities::Strings {
             .invoke("ToAsciiByteArray", (s))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToByteArray_Il2CppArray0(
+    pub fn ToByteArray_Gc0(
         cs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -106,7 +108,7 @@ impl crate::Org::BouncyCastle::Utilities::Strings {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToByteArray", (cs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToByteArray_Il2CppString1(
+    pub fn ToByteArray_Gc1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -127,7 +129,7 @@ impl crate::Org::BouncyCastle::Utilities::Strings {
             .invoke("ToUpperCase", (original))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUtf8ByteArray_Il2CppArray0(
+    pub fn ToUtf8ByteArray_Gc0(
         cs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -138,7 +140,7 @@ impl crate::Org::BouncyCastle::Utilities::Strings {
             .invoke("ToUtf8ByteArray", (cs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUtf8ByteArray_Il2CppString1(
+    pub fn ToUtf8ByteArray_Gc1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

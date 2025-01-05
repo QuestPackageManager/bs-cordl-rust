@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationEventBox {
-    __cordl_parent: crate::BeatmapSaveDataVersion3::EventBox,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::EventBox>,
     pub s: f32,
     pub t: crate::BeatmapSaveDataCommon::DistributionParamType,
     pub a: crate::BeatmapSaveDataCommon::Axis,
@@ -10,8 +10,8 @@ pub struct LightTranslationEventBox {
     pub b: i32,
     pub i: crate::BeatmapSaveDataCommon::EaseType,
     pub l: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
         >,
     >,
 }
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion3+LightTranslationEventBox")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
-    type Target = crate::BeatmapSaveDataVersion3::EventBox;
+    type Target = quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::EventBox>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,8 +49,8 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
         axis: crate::BeatmapSaveDataCommon::Axis,
         flipTranslation: bool,
         lightTranslationBaseDataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -88,8 +88,8 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
         axis: crate::BeatmapSaveDataCommon::Axis,
         flipTranslation: bool,
         lightTranslationBaseDataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -174,8 +174,8 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
             >,
         >,
     > {
@@ -183,8 +183,8 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
             >,
         > = __cordl_object.invoke("get_lightTranslationBaseDataList", ())?;
         Ok(__cordl_ret.into())

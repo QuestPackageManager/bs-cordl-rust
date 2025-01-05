@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECMqvBasicAgreement {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub privParams: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Parameters::MqvPrivateParameters,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECMqvBasicAgreement")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Agreement::ECMqvBasicAgreement {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,16 +123,22 @@ for crate::Org::BouncyCastle::Crypto::Agreement::ECMqvBasicAgreement {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECMqvBasicAgreement")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IBasicAgreement>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBasicAgreement>>
 for crate::Org::BouncyCastle::Crypto::Agreement::ECMqvBasicAgreement {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IBasicAgreement {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBasicAgreement> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECMqvBasicAgreement")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IBasicAgreement>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBasicAgreement>>
 for crate::Org::BouncyCastle::Crypto::Agreement::ECMqvBasicAgreement {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IBasicAgreement {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBasicAgreement,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

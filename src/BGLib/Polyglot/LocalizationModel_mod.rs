@@ -2,18 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizationModel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub localization: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Localization>,
     pub inputFiles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::BGLib::Polyglot::LocalizationAsset,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
     >,
     pub selectedCulture: quest_hook::libil2cpp::Gc<
         crate::System::Globalization::CultureInfo,
     >,
     pub _onChangeLanguage: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::BGLib::Polyglot::LocalizationModel>,
+        quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationModel>,
     >,
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizationModel")]
@@ -23,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+Polyglot+LocalizationModel")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizationModel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,7 +77,9 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -123,7 +123,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
             .invoke("IsValueValid", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn KeyExist_Il2CppString0(
+    pub fn KeyExist_Gc0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -145,9 +145,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         localization: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Localization>,
         language: crate::BGLib::Polyglot::Language,
         inputFiles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::BGLib::Polyglot::LocalizationAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -171,7 +169,9 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         language: crate::BGLib::Polyglot::Language,
-        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -184,9 +184,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         localization: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Localization>,
         language: crate::BGLib::Polyglot::Language,
         inputFiles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::BGLib::Polyglot::LocalizationAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -199,7 +197,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
     pub fn add__onChangeLanguage(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::BGLib::Polyglot::LocalizationModel>,
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -213,18 +211,14 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("get_EnglishLanguageNames", ())?;
         Ok(__cordl_ret.into())
     }
@@ -232,18 +226,14 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::BGLib::Polyglot::LocalizationAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::BGLib::Polyglot::LocalizationAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
         > = __cordl_object.invoke("get_InputFiles", ())?;
         Ok(__cordl_ret.into())
     }
@@ -251,18 +241,14 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("get_LocalizedLanguageNames", ())?;
         Ok(__cordl_ret.into())
     }
@@ -309,20 +295,13 @@ impl crate::BGLib::Polyglot::LocalizationModel {
     pub fn get_SupportedLanguages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::BGLib::Polyglot::Language,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::BGLib::Polyglot::Language,
-            >,
-        > = __cordl_object.invoke("get_SupportedLanguages", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language> = __cordl_object
+            .invoke("get_SupportedLanguages", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_fallbackLanguage(
@@ -338,7 +317,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
     pub fn remove__onChangeLanguage(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::BGLib::Polyglot::LocalizationModel>,
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

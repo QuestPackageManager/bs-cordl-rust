@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContainerPropertyBag_1<TContainer: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Unity::Properties::PropertyBag_1<TContainer>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TContainer>,
     pub m_PropertiesList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::Unity::Properties::IProperty_1<TContainer>,
-        >,
+        quest_hook::libil2cpp::Gc<TContainer>,
     >,
     pub m_PropertiesHash: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::Unity::Properties::IProperty_1<TContainer>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<TContainer>,
     >,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
 }
@@ -24,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Unity+Properties+ContainerPropertyBag_1")]
 impl<TContainer: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Properties::ContainerPropertyBag_1<TContainer> {
-    type Target = crate::Unity::Properties::PropertyBag_1<TContainer>;
+    type Target = quest_hook::libil2cpp::Gc<TContainer>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,9 +38,7 @@ impl<
 > crate::Unity::Properties::ContainerPropertyBag_1<TContainer> {
     pub fn AddProperty<TValue>(
         &mut self,
-        property: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::Property_2<TContainer, TValue>,
-        >,
+        property: quest_hook::libil2cpp::Gc<TContainer, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -74,9 +68,7 @@ impl<
         &mut self,
         container: quest_hook::libil2cpp::ByRefMut<TContainer>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        property: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Unity::Properties::IProperty_1<TContainer>,
-        >,
+        property: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<TContainer>>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

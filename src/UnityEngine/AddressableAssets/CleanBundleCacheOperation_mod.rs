@@ -2,21 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CleanBundleCacheOperation {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        bool,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
     pub m_Addressables: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AddressableAssets::AddressablesImpl,
     >,
     pub m_DepOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        *mut crate::System::Collections::Generic::IList_1<
+        quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     >,
     pub m_CacheDirsForRemoval: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub m_EnumerationThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     pub m_BaseCachePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -31,9 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+AddressableAssets+CleanBundleCacheOperation")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::CleanBundleCacheOperation {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        bool,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<bool>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,22 +64,7 @@ impl crate::UnityEngine::AddressableAssets::CleanBundleCacheOperation {
             .invoke("Destroy", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn DetermineCacheDirsNotInUse_HashSet_1_1(
-        &mut self,
-        cacheDirsInUse: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DetermineCacheDirsNotInUse", (cacheDirsInUse))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn DetermineCacheDirsNotInUse_Il2CppObject0(
+    pub fn DetermineCacheDirsNotInUse_Gc0(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -94,6 +73,19 @@ impl crate::UnityEngine::AddressableAssets::CleanBundleCacheOperation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DetermineCacheDirsNotInUse", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DetermineCacheDirsNotInUse_Gc1(
+        &mut self,
+        cacheDirsInUse: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DetermineCacheDirsNotInUse", (cacheDirsInUse))?;
         Ok(__cordl_ret.into())
     }
     pub fn Execute(
@@ -109,33 +101,25 @@ impl crate::UnityEngine::AddressableAssets::CleanBundleCacheOperation {
     pub fn GetCacheDirsInUse(
         &mut self,
         catalogOps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetCacheDirsInUse", (catalogOps))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetDependencies(
         &mut self,
         dependencies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -177,7 +161,7 @@ impl crate::UnityEngine::AddressableAssets::CleanBundleCacheOperation {
     pub fn Start(
         &mut self,
         depOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,
@@ -234,18 +218,26 @@ for crate::UnityEngine::AddressableAssets::CleanBundleCacheOperation {
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+CleanBundleCacheOperation")]
-impl AsRef<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
-for crate::UnityEngine::AddressableAssets::CleanBundleCacheOperation {
-    fn as_ref(&self) -> &crate::UnityEngine::ResourceManagement::IUpdateReceiver {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceManagement::IUpdateReceiver>,
+> for crate::UnityEngine::AddressableAssets::CleanBundleCacheOperation {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::IUpdateReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+CleanBundleCacheOperation")]
-impl AsMut<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
-for crate::UnityEngine::AddressableAssets::CleanBundleCacheOperation {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceManagement::IUpdateReceiver>,
+> for crate::UnityEngine::AddressableAssets::CleanBundleCacheOperation {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::IUpdateReceiver {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::IUpdateReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

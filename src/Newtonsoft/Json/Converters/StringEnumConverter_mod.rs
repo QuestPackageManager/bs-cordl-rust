@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringEnumConverter {
-    __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
     pub _NamingStrategy_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Serialization::NamingStrategy,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Converters+StringEnumConverter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::StringEnumConverter {
-    type Target = crate::Newtonsoft::Json::JsonConverter;
+    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,19 +46,7 @@ impl crate::Newtonsoft::Json::Converters::StringEnumConverter {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_NamingStrategy__cordl_bool2(
-        namingStrategy: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Serialization::NamingStrategy,
-        >,
-        allowIntegerValues: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (namingStrategy, allowIntegerValues))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Type3(
+    pub fn New_Gc3(
         namingStrategyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -67,10 +55,12 @@ impl crate::Newtonsoft::Json::Converters::StringEnumConverter {
             .invoke_void(".ctor", (namingStrategyType))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Type_Il2CppArray4(
+    pub fn New_Gc_Gc4(
         namingStrategyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         namingStrategyParameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -79,10 +69,12 @@ impl crate::Newtonsoft::Json::Converters::StringEnumConverter {
             .invoke_void(".ctor", (namingStrategyType, namingStrategyParameters))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Type_Il2CppArray__cordl_bool5(
+    pub fn New_Gc_Gc__cordl_bool5(
         namingStrategyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         namingStrategyParameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         allowIntegerValues: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -93,6 +85,18 @@ impl crate::Newtonsoft::Json::Converters::StringEnumConverter {
                 ".ctor",
                 (namingStrategyType, namingStrategyParameters, allowIntegerValues),
             )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc__cordl_bool2(
+        namingStrategy: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::NamingStrategy,
+        >,
+        allowIntegerValues: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (namingStrategy, allowIntegerValues))?;
         Ok(__cordl_object.into())
     }
     pub fn New__cordl_bool1(
@@ -145,21 +149,7 @@ impl crate::Newtonsoft::Json::Converters::StringEnumConverter {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_NamingStrategy__cordl_bool2(
-        &mut self,
-        namingStrategy: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Serialization::NamingStrategy,
-        >,
-        allowIntegerValues: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (namingStrategy, allowIntegerValues))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Type3(
+    pub fn _ctor_Gc3(
         &mut self,
         namingStrategyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -170,11 +160,13 @@ impl crate::Newtonsoft::Json::Converters::StringEnumConverter {
             .invoke(".ctor", (namingStrategyType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Type_Il2CppArray4(
+    pub fn _ctor_Gc_Gc4(
         &mut self,
         namingStrategyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         namingStrategyParameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -184,11 +176,13 @@ impl crate::Newtonsoft::Json::Converters::StringEnumConverter {
             .invoke(".ctor", (namingStrategyType, namingStrategyParameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Type_Il2CppArray__cordl_bool5(
+    pub fn _ctor_Gc_Gc__cordl_bool5(
         &mut self,
         namingStrategyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         namingStrategyParameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         allowIntegerValues: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -200,6 +194,20 @@ impl crate::Newtonsoft::Json::Converters::StringEnumConverter {
                 ".ctor",
                 (namingStrategyType, namingStrategyParameters, allowIntegerValues),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc__cordl_bool2(
+        &mut self,
+        namingStrategy: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::NamingStrategy,
+        >,
+        allowIntegerValues: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (namingStrategy, allowIntegerValues))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool1(

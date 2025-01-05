@@ -6,7 +6,9 @@ pub struct ScriptableObjectInstaller_3<
     TParam2: quest_hook::libil2cpp::Type,
     TDerived: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::ScriptableObjectInstallerBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Zenject::ScriptableObjectInstallerBase,
+    >,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
     __cordl_phantom_TDerived: std::marker::PhantomData<TDerived>,
@@ -24,7 +26,9 @@ impl<
     TDerived: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Zenject::ScriptableObjectInstaller_3<TParam1, TParam2, TDerived> {
-    type Target = crate::Zenject::ScriptableObjectInstallerBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Zenject::ScriptableObjectInstallerBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,24 +50,7 @@ impl<
     TParam2: quest_hook::libil2cpp::Type,
     TDerived: quest_hook::libil2cpp::Type,
 > crate::Zenject::ScriptableObjectInstaller_3<TParam1, TParam2, TDerived> {
-    pub fn InstallFromResource_DiContainer_TParam1_TParam2_0(
-        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-        p1: TParam1,
-        p2: TParam2,
-    ) -> quest_hook::libil2cpp::Result<TDerived>
-    where
-        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TDerived: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: TDerived = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InstallFromResource", (container, p1, p2))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn InstallFromResource_Il2CppString_DiContainer_TParam1_TParam2_1(
+    pub fn InstallFromResource_Gc_TParam1_TParam2_1(
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         p1: TParam1,
@@ -79,6 +66,23 @@ impl<
     {
         let __cordl_ret: TDerived = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InstallFromResource", (resourcePath, container, p1, p2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstallFromResource_TParam1_TParam2_0(
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        p1: TParam1,
+        p2: TParam2,
+    ) -> quest_hook::libil2cpp::Result<TDerived>
+    where
+        TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TDerived: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TDerived = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InstallFromResource", (container, p1, p2))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -98,7 +102,9 @@ impl<
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

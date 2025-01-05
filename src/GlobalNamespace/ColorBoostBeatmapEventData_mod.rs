@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorBoostBeatmapEventData {
-    __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
     pub boostColorsAreOn: bool,
 }
 #[cfg(feature = "ColorBoostBeatmapEventData")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColorBoostBeatmapEventData")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorBoostBeatmapEventData {
-    type Target = crate::GlobalNamespace::BeatmapEventData;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

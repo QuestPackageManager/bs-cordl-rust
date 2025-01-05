@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Asn1Sequence {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Object,
+    >,
     pub elements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
         >,
     >,
 }
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Asn1Sequence {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Object;
+    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,7 +63,17 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInstance_Asn1TaggedObject__cordl_bool1(
+    pub fn GetInstance_Gc0(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance__cordl_bool1(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         explicitly: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -73,16 +85,6 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
             .invoke("GetInstance", (obj, explicitly))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInstance_Il2CppObject0(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -90,7 +92,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Asn1Encodable1(
+    pub fn New_Gc1(
         element: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -99,7 +101,20 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
             .invoke_void(".ctor", (element))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Asn1EncodableVector3(
+    pub fn New_Gc2(
+        elements: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (elements))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc3(
         elementVector: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
         >,
@@ -110,25 +125,12 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
             .invoke_void(".ctor", (elementVector))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray2(
-        elements: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (elements))?;
-        Ok(__cordl_object.into())
-    }
     pub fn ToArray(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     > {
@@ -137,7 +139,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         > = __cordl_object.invoke("ToArray", ())?;
         Ok(__cordl_ret.into())
@@ -165,7 +167,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Encodable1(
+    pub fn _ctor_Gc1(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -176,7 +178,22 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
             .invoke(".ctor", (element))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1EncodableVector3(
+    pub fn _ctor_Gc2(
+        &mut self,
+        elements: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (elements))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc3(
         &mut self,
         elementVector: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
@@ -187,21 +204,6 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (elementVector))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppArray2(
-        &mut self,
-        elements: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (elements))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -249,16 +251,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Asn1::Asn1S
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence")]
-impl AsRef<crate::System::Collections::IEnumerable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Org::BouncyCastle::Asn1::Asn1Sequence {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence")]
-impl AsMut<crate::System::Collections::IEnumerable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Org::BouncyCastle::Asn1::Asn1Sequence {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -266,7 +272,7 @@ for crate::Org::BouncyCastle::Asn1::Asn1Sequence {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Asn1Sequence_Asn1SequenceParserImpl {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     pub max: i32,
     pub index: i32,
@@ -280,7 +286,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -352,30 +358,42 @@ for crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
-impl AsRef<crate::Org::BouncyCastle::Asn1::Asn1SequenceParser>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1SequenceParser>>
 for crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::Asn1SequenceParser {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1SequenceParser> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
-impl AsMut<crate::Org::BouncyCastle::Asn1::Asn1SequenceParser>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1SequenceParser>>
 for crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::Asn1SequenceParser {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
-impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>>
 for crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Convertible {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
-impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>>
 for crate::Org::BouncyCastle::Asn1::Asn1Sequence_Asn1SequenceParserImpl {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

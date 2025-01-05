@@ -2,19 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalDataStoreMgr {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_SlotInfoTable: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<bool>,
     >,
     pub m_FirstAvailableSlot: i32,
     pub m_ManagedLocalDataStores: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::LocalDataStore>,
+        quest_hook::libil2cpp::Gc<crate::System::LocalDataStore>,
     >,
     pub m_KeyToSlotMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::System::LocalDataStoreSlot,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
     >,
     pub m_CookieGenerator: i64,
 }
@@ -25,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+LocalDataStoreMgr")]
 impl std::ops::Deref for crate::System::LocalDataStoreMgr {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

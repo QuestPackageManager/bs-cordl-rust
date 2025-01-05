@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightGroupLinearLayouter {
-    __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightGroupSubsystem,
+    >,
     pub _movementStep: crate::UnityEngine::Vector3,
     pub _defaultRotation: crate::UnityEngine::Vector3,
     pub _startFromCenter: bool,
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightGroupLinearLayouter")]
 impl std::ops::Deref for crate::GlobalNamespace::LightGroupLinearLayouter {
-    type Target = crate::GlobalNamespace::LightGroupSubsystem;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSubsystem>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,16 +58,20 @@ for crate::GlobalNamespace::LightGroupLinearLayouter {
     }
 }
 #[cfg(feature = "LightGroupLinearLayouter")]
-impl AsRef<crate::GlobalNamespace::IEditTimeValidated>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEditTimeValidated>>
 for crate::GlobalNamespace::LightGroupLinearLayouter {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IEditTimeValidated {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEditTimeValidated> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LightGroupLinearLayouter")]
-impl AsMut<crate::GlobalNamespace::IEditTimeValidated>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEditTimeValidated>>
 for crate::GlobalNamespace::LightGroupLinearLayouter {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEditTimeValidated {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEditTimeValidated> {
         unsafe { std::mem::transmute(self) }
     }
 }

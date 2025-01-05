@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlayerController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub Acceleration: f32,
     pub Damping: f32,
     pub BackAndSideDampen: f32,
@@ -18,7 +18,7 @@ pub struct OVRPlayerController {
     pub useProfileData: bool,
     pub CameraHeight: f32,
     pub TransformUpdated: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::UnityEngine::Transform>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     pub Teleported: bool,
     pub CameraUpdated: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -51,7 +51,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlayerController")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlayerController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -302,7 +302,7 @@ impl crate::GlobalNamespace::OVRPlayerController {
     pub fn add_TransformUpdated(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Transform>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -344,7 +344,7 @@ impl crate::GlobalNamespace::OVRPlayerController {
     pub fn remove_TransformUpdated(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Transform>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

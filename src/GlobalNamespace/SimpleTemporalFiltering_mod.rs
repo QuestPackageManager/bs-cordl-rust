@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleTemporalFiltering {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _temporalFilteringTextures: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        >,
     >,
     pub _prevTemporalFilteringTextureIdx: i32,
     pub _temporalFilteringMaterial: quest_hook::libil2cpp::Gc<
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SimpleTemporalFiltering")]
 impl std::ops::Deref for crate::GlobalNamespace::SimpleTemporalFiltering {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

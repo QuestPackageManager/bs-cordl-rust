@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeMath_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+TypeMath_1")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+TypeMath_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +41,7 @@ impl<
         let __cordl_ret: T = __cordl_object.invoke("Add", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AreEqual_Il2CppArray_Il2CppArray1(
+    pub fn AreEqual_Gc_Gc1(
         &mut self,
         a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -228,20 +228,16 @@ for crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+TypeMath_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
 for crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<T> {
-    fn as_ref(&self) -> &crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+TypeMath_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
 for crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<T> {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }

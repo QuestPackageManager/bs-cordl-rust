@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlElementAttribute {
-    __cordl_parent: crate::System::Attribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     pub dataType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub form: crate::System::Xml::Schema::XmlSchemaForm,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlElementAttribute")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlElementAttribute {
-    type Target = crate::System::Attribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,7 +42,7 @@ impl crate::System::Xml::Serialization::XmlElementAttribute {
             .invoke("AddKeyHash", (sb))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString0(
+    pub fn New_Gc0(
         elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -51,7 +51,7 @@ impl crate::System::Xml::Serialization::XmlElementAttribute {
             .invoke_void(".ctor", (elementName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Type1(
+    pub fn New_Gc1(
         elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -61,7 +61,7 @@ impl crate::System::Xml::Serialization::XmlElementAttribute {
             .invoke_void(".ctor", (elementName, _cordl_type))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppString0(
+    pub fn _ctor_Gc0(
         &mut self,
         elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -72,7 +72,7 @@ impl crate::System::Xml::Serialization::XmlElementAttribute {
             .invoke(".ctor", (elementName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Type1(
+    pub fn _ctor_Gc1(
         &mut self,
         elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,

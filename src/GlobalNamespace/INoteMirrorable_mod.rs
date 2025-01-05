@@ -45,8 +45,8 @@ impl crate::GlobalNamespace::INoteMirrorable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                *mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
             >,
         >,
     > {
@@ -54,8 +54,8 @@ impl crate::GlobalNamespace::INoteMirrorable {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                *mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
             >,
         > = __cordl_object.invoke("get_noteDidStartDissolvingEvent", ())?;
         Ok(__cordl_ret.into())

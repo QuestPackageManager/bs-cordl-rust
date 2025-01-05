@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AttributePkcs {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub attrType: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     >,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+AttributePkcs")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Pkcs::AttributePkcs {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +42,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::AttributePkcs {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1Sequence0(
+    pub fn New_Gc0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -47,7 +51,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::AttributePkcs {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DerObjectIdentifier_Asn1Set1(
+    pub fn New_Gc1(
         attrType: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -72,7 +76,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::AttributePkcs {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Sequence0(
+    pub fn _ctor_Gc0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -83,7 +87,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::AttributePkcs {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerObjectIdentifier_Asn1Set1(
+    pub fn _ctor_Gc1(
         &mut self,
         attrType: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,

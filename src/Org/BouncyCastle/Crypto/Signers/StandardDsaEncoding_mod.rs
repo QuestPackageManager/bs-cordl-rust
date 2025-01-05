@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardDsaEncoding {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+StandardDsaEncoding")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+StandardDsaEncoding")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Signers::StandardDsaEncoding {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::StandardDsaEncoding {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
@@ -57,7 +57,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::StandardDsaEncoding {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = __cordl_object.invoke("Decode", (n, encoding))?;
         Ok(__cordl_ret.into())
@@ -138,18 +138,26 @@ for crate::Org::BouncyCastle::Crypto::Signers::StandardDsaEncoding {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+StandardDsaEncoding")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding>
-for crate::Org::BouncyCastle::Crypto::Signers::StandardDsaEncoding {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding>,
+> for crate::Org::BouncyCastle::Crypto::Signers::StandardDsaEncoding {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+StandardDsaEncoding")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding>
-for crate::Org::BouncyCastle::Crypto::Signers::StandardDsaEncoding {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding>,
+> for crate::Org::BouncyCastle::Crypto::Signers::StandardDsaEncoding {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

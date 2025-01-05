@@ -3,9 +3,7 @@
 #[derive(Debug, Clone, Default)]
 pub struct AsyncTaskMethodBuilder_1<TResult: quest_hook::libil2cpp::Type> {
     pub m_coreState: crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore,
-    pub m_task: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<TResult>,
-    >,
+    pub m_task: quest_hook::libil2cpp::Gc<TResult>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncTaskMethodBuilder_1")]
@@ -63,16 +61,12 @@ impl<
     }
     pub fn GetTaskForResult(
         result: TResult,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TResult>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetTaskForResult", (result))?;
         Ok(__cordl_ret.into())
     }
@@ -91,6 +85,21 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetResult_Gc1(
+        &mut self,
+        completedTask: quest_hook::libil2cpp::Gc<TResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetResult",
+            (completedTask),
+        )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetResult_TResult0(
         &mut self,
         result: TResult,
@@ -103,23 +112,6 @@ impl<
             self,
             "SetResult",
             (result),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetResult_Task_1_1(
-        &mut self,
-        completedTask: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TResult>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetResult",
-            (completedTask),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -159,16 +151,16 @@ impl<
     }
     pub fn get_Task(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TResult>,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Task", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Task",
+            (),
+        )?;
         Ok(__cordl_ret.into())
     }
 }

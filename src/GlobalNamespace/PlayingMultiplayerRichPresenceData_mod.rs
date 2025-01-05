@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayingMultiplayerRichPresenceData {
-    __cordl_parent: crate::GlobalNamespace::InMultiplayerRichPresenceData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::InMultiplayerRichPresenceData,
+    >,
 }
 #[cfg(feature = "PlayingMultiplayerRichPresenceData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayingMultiplayerRichPresenceData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayingMultiplayerRichPresenceData {
-    type Target = crate::GlobalNamespace::InMultiplayerRichPresenceData;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::InMultiplayerRichPresenceData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

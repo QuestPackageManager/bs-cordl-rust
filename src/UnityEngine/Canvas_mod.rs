@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Canvas {
-    __cordl_parent: crate::UnityEngine::Behaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
 }
 #[cfg(feature = "UnityEngine+Canvas")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Canvas")]
 impl std::ops::Deref for crate::UnityEngine::Canvas {
-    type Target = crate::UnityEngine::Behaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -158,23 +158,23 @@ impl crate::UnityEngine::Canvas {
         Ok(__cordl_ret.into())
     }
     pub fn get_externBeginRenderOverlays() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        quest_hook::libil2cpp::Gc<i32>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_externBeginRenderOverlays", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_externEndRenderOverlays() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        quest_hook::libil2cpp::Gc<i32>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_externEndRenderOverlays", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_externRenderOverlaysBefore() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
+        quest_hook::libil2cpp::Gc<i32, i32>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32, i32> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_externRenderOverlaysBefore", ())?;
         Ok(__cordl_ret.into())
     }
@@ -410,21 +410,21 @@ impl crate::UnityEngine::Canvas {
         Ok(__cordl_ret.into())
     }
     pub fn set_externBeginRenderOverlays(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("set_externBeginRenderOverlays", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_externEndRenderOverlays(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("set_externEndRenderOverlays", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_externRenderOverlaysBefore(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
+        value: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("set_externRenderOverlaysBefore", (value))?;
@@ -620,7 +620,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Canvas {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Canvas_WillRenderCanvases {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "UnityEngine+Canvas+WillRenderCanvases")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -629,7 +629,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Canvas+WillRenderCanvases")]
 impl std::ops::Deref for crate::UnityEngine::Canvas_WillRenderCanvases {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

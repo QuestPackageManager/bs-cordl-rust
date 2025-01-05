@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithSystemVoipState {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::SystemVoipState,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SystemVoipState>,
     >,
 }
 #[cfg(feature = "Oculus+Platform+MessageWithSystemVoipState")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+MessageWithSystemVoipState")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithSystemVoipState {
-    type Target = crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::SystemVoipState,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SystemVoipState>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

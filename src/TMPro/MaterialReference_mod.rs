@@ -29,15 +29,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::MaterialRefere
 }
 #[cfg(feature = "TMPro+MaterialReference")]
 impl crate::TMPro::MaterialReference {
-    pub fn AddMaterialReference_TMP_FontAsset0(
+    pub fn AddMaterialReference_Gc_Gc_ByRefMut_Gc0(
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         materialReferences: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::MaterialReference>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::MaterialReference>,
+            >,
         >,
-        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
+        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -46,15 +46,15 @@ impl crate::TMPro::MaterialReference {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddMaterialReference_TMP_SpriteAsset1(
+    pub fn AddMaterialReference_Gc_Gc_ByRefMut_Gc1(
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
         materialReferences: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::MaterialReference>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::MaterialReference>,
+            >,
         >,
-        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
+        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(

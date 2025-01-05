@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LinqExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "ModestTree+LinqExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ModestTree+LinqExtensions")]
 impl std::ops::Deref for crate::ModestTree::LinqExtensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,9 +25,7 @@ impl std::ops::DerefMut for crate::ModestTree::LinqExtensions {
 #[cfg(feature = "ModestTree+LinqExtensions")]
 impl crate::ModestTree::LinqExtensions {
     pub fn ContainsItem<T>(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        list: quest_hook::libil2cpp::Gc<T>,
         value: T,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -39,44 +37,30 @@ impl crate::ModestTree::LinqExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn Except<T>(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        list: quest_hook::libil2cpp::Gc<T>,
         item: T,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Except", (list, item))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetDuplicates<T>(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
-    >
+        list: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetDuplicates", (list))?;
         Ok(__cordl_ret.into())
     }
     pub fn HasAtLeast<T>(
-        enumerable: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        enumerable: quest_hook::libil2cpp::Gc<T>,
         amount: i32,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -88,9 +72,7 @@ impl crate::ModestTree::LinqExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn HasAtMost<T>(
-        enumerable: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        enumerable: quest_hook::libil2cpp::Gc<T>,
         amount: i32,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -102,9 +84,7 @@ impl crate::ModestTree::LinqExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn HasLessThan<T>(
-        enumerable: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        enumerable: quest_hook::libil2cpp::Gc<T>,
         amount: i32,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -116,9 +96,7 @@ impl crate::ModestTree::LinqExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn HasMoreThan<T>(
-        enumerable: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        enumerable: quest_hook::libil2cpp::Gc<T>,
         amount: i32,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -129,21 +107,8 @@ impl crate::ModestTree::LinqExtensions {
             .invoke("HasMoreThan", (enumerable, amount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsEmpty_IEnumerable_1_1<T>(
-        enumerable: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsEmpty", (enumerable))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn IsEmpty_List_1_0<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    pub fn IsEmpty_Gc0<T>(
+        list: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -153,10 +118,19 @@ impl crate::ModestTree::LinqExtensions {
             .invoke("IsEmpty", (list))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsEmpty_Gc1<T>(
+        enumerable: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsEmpty", (enumerable))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn OnlyOrDefault<TSource>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        >,
+        source: quest_hook::libil2cpp::Gc<TSource>,
     ) -> quest_hook::libil2cpp::Result<TSource>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -168,16 +142,13 @@ impl crate::ModestTree::LinqExtensions {
     }
     pub fn Yield<T>(
         item: T,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Yield", (item))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Yield", (item))?;
         Ok(__cordl_ret.into())
     }
 }

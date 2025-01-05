@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerDataModel {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _playerData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
     pub _playerDataFileModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerDataFileModel,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerDataModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerDataModel {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -165,16 +165,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerDataMod
     }
 }
 #[cfg(feature = "PlayerDataModel")]
-impl AsRef<crate::GlobalNamespace::IPlayerDataModel>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlayerDataModel>>
 for crate::GlobalNamespace::PlayerDataModel {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IPlayerDataModel {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlayerDataModel> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PlayerDataModel")]
-impl AsMut<crate::GlobalNamespace::IPlayerDataModel>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlayerDataModel>>
 for crate::GlobalNamespace::PlayerDataModel {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPlayerDataModel {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlayerDataModel> {
         unsafe { std::mem::transmute(self) }
     }
 }

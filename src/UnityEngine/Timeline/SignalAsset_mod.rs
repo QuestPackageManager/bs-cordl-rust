@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalAsset {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
 }
 #[cfg(feature = "UnityEngine+Timeline+SignalAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+SignalAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::SignalAsset {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,7 +53,7 @@ impl crate::UnityEngine::Timeline::SignalAsset {
     }
     pub fn add_OnEnableCallback(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Timeline::SignalAsset>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -62,7 +62,7 @@ impl crate::UnityEngine::Timeline::SignalAsset {
     }
     pub fn remove_OnEnableCallback(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Timeline::SignalAsset>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

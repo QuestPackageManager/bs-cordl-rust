@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KdfDoublePipelineIterationParameters {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub useCounter: bool,
     pub r: i32,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationParameters {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -160,20 +160,30 @@ for crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationPara
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Parameters+KdfDoublePipelineIterationParameters"
 )]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IDerivationParameters>
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
+>
 for crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationParameters {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDerivationParameters {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Parameters+KdfDoublePipelineIterationParameters"
 )]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IDerivationParameters>
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
+>
 for crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationParameters {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crypto::IDerivationParameters {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

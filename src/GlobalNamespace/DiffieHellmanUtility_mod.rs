@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiffieHellmanUtility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "DiffieHellmanUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DiffieHellmanUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::DiffieHellmanUtility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,20 +73,16 @@ impl crate::GlobalNamespace::DiffieHellmanUtility {
         keyType: crate::GlobalNamespace::DiffieHellmanUtility_KeyType,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::IDiffieHellmanKeyPair,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::IDiffieHellmanKeyPair,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GenerateKeysAsync", (taskUtility, cancellationToken, keyType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPreMasterSecret_DHBasicAgreement0(
+    pub fn GetPreMasterSecret_Gc_Gc0(
         dhBasicAgreement: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement,
         >,
@@ -102,7 +98,7 @@ impl crate::GlobalNamespace::DiffieHellmanUtility {
             .invoke("GetPreMasterSecret", (dhBasicAgreement, clientPublicKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPreMasterSecret_ECDHBasicAgreement1(
+    pub fn GetPreMasterSecret_Gc_Gc1(
         ecdhBasicAgreement: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
         >,
@@ -132,7 +128,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DiffieHellman
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiffieHellmanUtility_DiffieHellmanKeyPair {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _dhBasicAgreement: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement,
     >,
@@ -147,7 +143,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -185,18 +181,14 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         > = __cordl_object
             .invoke("GetPreMasterSecretAsync", (taskUtility, clientPublicKey))?;
         Ok(__cordl_ret.into())
@@ -252,16 +244,20 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
-impl AsRef<crate::GlobalNamespace::IDiffieHellmanKeyPair>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair>>
 for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IDiffieHellmanKeyPair {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
-impl AsMut<crate::GlobalNamespace::IDiffieHellmanKeyPair>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair>>
 for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IDiffieHellmanKeyPair {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -269,7 +265,7 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiffieHellmanUtility_ElipticalCurveKeyPair {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _ecdhBasicAgreement: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
     >,
@@ -284,7 +280,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -322,18 +318,14 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         > = __cordl_object
             .invoke("GetPreMasterSecretAsync", (taskUtility, clientPublicKey))?;
         Ok(__cordl_ret.into())
@@ -389,16 +381,20 @@ for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
-impl AsRef<crate::GlobalNamespace::IDiffieHellmanKeyPair>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair>>
 for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IDiffieHellmanKeyPair {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
-impl AsMut<crate::GlobalNamespace::IDiffieHellmanKeyPair>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair>>
 for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IDiffieHellmanKeyPair {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -419,7 +415,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiffieHellmanUtility_OperationTimer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _stopwatch: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Stopwatch>,
     pub _operationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -431,7 +427,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
 impl std::ops::Deref for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -498,16 +494,16 @@ for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseTreeView {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    pub m_AutoExpand: bool,
-    pub m_ExpandedItemIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVerticalCollectionView,
     >,
+    pub m_AutoExpand: bool,
+    pub m_ExpandedItemIds: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseTreeView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BaseTreeView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseTreeView {
-    type Target = crate::UnityEngine::UIElements::BaseVerticalCollectionView;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -192,11 +194,9 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
             .invoke("OnViewDataReady", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetSelectionById_IEnumerable_1_1(
+    pub fn SetSelectionById_Gc1(
         &mut self,
-        ids: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        ids: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -218,9 +218,7 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
     }
     pub fn SetSelectionInternalById(
         &mut self,
-        ids: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        ids: quest_hook::libil2cpp::Gc<i32>,
         sendNotification: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -284,15 +282,12 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
     }
     pub fn get_expandedItemIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        > = __cordl_object.invoke("get_expandedItemIds", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("get_expandedItemIds", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_itemsSource(
@@ -333,9 +328,7 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
     }
     pub fn set_expandedItemIds(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -358,7 +351,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::BaseT
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseTreeView_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits,
+    >,
     pub m_AutoExpand: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
@@ -370,7 +365,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BaseTreeView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseTreeView_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

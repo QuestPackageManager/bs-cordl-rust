@@ -42,7 +42,7 @@ impl crate::System::Runtime::InteropServices::GCHandle {
             .invoke("Alloc", (value, _cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Alloc_Il2CppObject0(
+    pub fn Alloc_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::InteropServices::GCHandle,
@@ -137,7 +137,7 @@ impl crate::System::Runtime::InteropServices::GCHandle {
             .invoke("ToIntPtr", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject1(
+    pub fn _ctor_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -148,7 +148,7 @@ impl crate::System::Runtime::InteropServices::GCHandle {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject_GCHandleType2(
+    pub fn _ctor_Gc_GCHandleType2(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_type: crate::System::Runtime::InteropServices::GCHandleType,

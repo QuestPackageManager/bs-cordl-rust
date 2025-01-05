@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerScoreProvider {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _scoreSyncStateManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IScoreSyncStateManager,
     >,
@@ -10,20 +10,20 @@ pub struct MultiplayerScoreProvider {
         crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
     >,
     pub firstPlayerDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
         >,
     >,
     pub _sharedOffsetSyncTime: i64,
     pub _rankedPlayers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
         >,
     >,
     pub _players: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
         >,
     >,
 }
@@ -34,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerScoreProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreProvider {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,7 +70,9 @@ impl crate::GlobalNamespace::MultiplayerScoreProvider {
         &mut self,
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -102,8 +104,8 @@ impl crate::GlobalNamespace::MultiplayerScoreProvider {
     pub fn add_firstPlayerDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -133,8 +135,8 @@ impl crate::GlobalNamespace::MultiplayerScoreProvider {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
             >,
         >,
     > {
@@ -142,8 +144,8 @@ impl crate::GlobalNamespace::MultiplayerScoreProvider {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
             >,
         > = __cordl_object.invoke("get_rankedPlayers", ())?;
         Ok(__cordl_ret.into())
@@ -158,8 +160,8 @@ impl crate::GlobalNamespace::MultiplayerScoreProvider {
     pub fn remove_firstPlayerDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -198,13 +200,11 @@ for crate::GlobalNamespace::MultiplayerScoreProvider {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerScoreProvider_RankedPlayer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _multiplayerSyncState: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerSyncState_3<
-            crate::GlobalNamespace::StandardScoreSyncState,
-            crate::GlobalNamespace::StandardScoreSyncState_Score,
-            i32,
-        >,
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
     >,
     pub _scoreSyncManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerScoreProvider,
@@ -218,7 +218,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerScoreProvider+RankedPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -246,11 +246,9 @@ impl crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
     }
     pub fn New(
         multiplayerSyncState: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerSyncState_3<
-                crate::GlobalNamespace::StandardScoreSyncState,
-                crate::GlobalNamespace::StandardScoreSyncState_Score,
-                i32,
-            >,
+            crate::GlobalNamespace::StandardScoreSyncState,
+            crate::GlobalNamespace::StandardScoreSyncState_Score,
+            i32,
         >,
         scoreSyncManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerScoreProvider,
@@ -265,11 +263,9 @@ impl crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
     pub fn _ctor(
         &mut self,
         multiplayerSyncState: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerSyncState_3<
-                crate::GlobalNamespace::StandardScoreSyncState,
-                crate::GlobalNamespace::StandardScoreSyncState_Score,
-                i32,
-            >,
+            crate::GlobalNamespace::StandardScoreSyncState,
+            crate::GlobalNamespace::StandardScoreSyncState_Score,
+            i32,
         >,
         scoreSyncManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerScoreProvider,
@@ -377,28 +373,36 @@ for crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
 }
 #[cfg(feature = "MultiplayerScoreProvider+RankedPlayer")]
 impl AsRef<
-    crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+        >,
     >,
 > for crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+        >,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerScoreProvider+RankedPlayer")]
 impl AsMut<
-    crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+        >,
     >,
 > for crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+        >,
     > {
         unsafe { std::mem::transmute(self) }
     }

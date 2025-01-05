@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GreaterThanInstruction_GreaterThanSByte {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction,
+    >,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanSByte"
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanSByte {
-    type Target = crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

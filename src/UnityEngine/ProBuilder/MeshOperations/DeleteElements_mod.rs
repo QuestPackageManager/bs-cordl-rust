@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeleteElements {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+DeleteElements")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+DeleteElements")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,12 +38,10 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
             .invoke("DeleteFace", (mesh, face))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DeleteFaces_IEnumerable_1_0(
+    pub fn DeleteFaces_Gc_Gc0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -54,11 +52,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
             .invoke("DeleteFaces", (mesh, faces))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DeleteFaces_IList_1_1(
+    pub fn DeleteFaces_Gc_Gc1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        faceIndexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        faceIndexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
@@ -70,9 +66,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
     }
     pub fn DeleteVertices(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        distinctIndexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        distinctIndexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DeleteVertices", (mesh, distinctIndexes))?;

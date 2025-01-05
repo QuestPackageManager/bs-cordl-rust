@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimePanel {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseRuntimePanel,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseRuntimePanel,
+    >,
     pub m_PanelSettings: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::PanelSettings,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RuntimePanel {
-    type Target = crate::UnityEngine::UIElements::BaseRuntimePanel;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseRuntimePanel,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

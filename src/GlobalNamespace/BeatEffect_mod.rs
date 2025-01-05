@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatEffect {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _spriteRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
     pub _spriteTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _tubeBloomPrePassLight: quest_hook::libil2cpp::Gc<
@@ -21,9 +21,7 @@ pub struct BeatEffect {
         crate::UnityEngine::AnimationCurve,
     >,
     pub _didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LazyCopyHashSet_1<
-            *mut crate::GlobalNamespace::IBeatEffectDidFinishEvent,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatEffectDidFinishEvent>,
     >,
     pub _animationDuration: f32,
     pub _elapsedTime: f32,
@@ -35,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatEffect {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,18 +93,14 @@ impl crate::GlobalNamespace::BeatEffect {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                *mut crate::GlobalNamespace::IBeatEffectDidFinishEvent,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatEffectDidFinishEvent>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                *mut crate::GlobalNamespace::IBeatEffectDidFinishEvent,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatEffectDidFinishEvent>,
         > = __cordl_object.invoke("get_didFinishEvent", ())?;
         Ok(__cordl_ret.into())
     }
@@ -124,8 +118,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatEffect_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
-        *mut crate::GlobalNamespace::BeatEffect,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatEffect>,
     >,
 }
 #[cfg(feature = "BeatEffect+Pool")]
@@ -135,8 +129,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatEffect_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<
-        *mut crate::GlobalNamespace::BeatEffect,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatEffect>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

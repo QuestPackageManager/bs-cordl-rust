@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SceneProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -173,38 +173,58 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
-impl AsRef<crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider>
-for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2,
+    >,
+> for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
-impl AsMut<crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider>
-for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2,
+    >,
+> for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
-impl AsRef<crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2>
-for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider,
+    >,
+> for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2 {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
-impl AsMut<crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2>
-for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider,
+    >,
+> for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2 {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -214,7 +234,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SceneProvider_SceneOp {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
     >,
     pub m_ActivateOnLoad: bool,
@@ -225,7 +245,7 @@ pub struct SceneProvider_SceneOp {
     pub m_LoadSceneParameters: crate::UnityEngine::SceneManagement::LoadSceneParameters,
     pub m_Priority: i32,
     pub m_DepOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        *mut crate::System::Collections::Generic::IList_1<
+        quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     >,
@@ -246,7 +266,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
     >;
     fn deref(&self) -> &Self::Target {
@@ -289,9 +309,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
     pub fn GetDependencies(
         &mut self,
         deps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -304,9 +322,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
     pub fn GetDownloadStatus(
         &mut self,
         visited: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -327,7 +343,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
         activateOnLoad: bool,
         priority: i32,
         depOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,
@@ -348,7 +364,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
         activateOnLoad: bool,
         priority: i32,
         depOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,
@@ -487,20 +503,28 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
-impl AsRef<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
-for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
-    fn as_ref(&self) -> &crate::UnityEngine::ResourceManagement::IUpdateReceiver {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceManagement::IUpdateReceiver>,
+> for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::IUpdateReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
-impl AsMut<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
-for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceManagement::IUpdateReceiver>,
+> for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::IUpdateReceiver {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::IUpdateReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -510,7 +534,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
 #[repr(C)]
 #[derive(Debug)]
 pub struct SceneProvider_UnloadSceneOp {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
     >,
     pub m_Instance: crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
@@ -532,7 +556,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
     >;
     fn deref(&self) -> &Self::Target {

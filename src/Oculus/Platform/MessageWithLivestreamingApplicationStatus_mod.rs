@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithLivestreamingApplicationStatus {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::LivestreamingApplicationStatus,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LivestreamingApplicationStatus,
+        >,
     >,
 }
 #[cfg(feature = "Oculus+Platform+MessageWithLivestreamingApplicationStatus")]
@@ -15,8 +17,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Oculus+Platform+MessageWithLivestreamingApplicationStatus")]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithLivestreamingApplicationStatus {
-    type Target = crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::LivestreamingApplicationStatus,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LivestreamingApplicationStatus,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

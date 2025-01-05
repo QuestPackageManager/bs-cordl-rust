@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_MaterialManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "TMPro+TMP_MaterialManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_MaterialManager")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,7 +84,7 @@ impl crate::TMPro::TMP_MaterialManager {
             .invoke("GetBaseMaterial", (stencilMaterial))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetFallbackMaterial_Material1(
+    pub fn GetFallbackMaterial_Gc_Gc1(
         sourceMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         targetMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<
@@ -94,7 +94,7 @@ impl crate::TMPro::TMP_MaterialManager {
             .invoke("GetFallbackMaterial", (sourceMaterial, targetMaterial))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetFallbackMaterial_TMP_FontAsset_i32_0(
+    pub fn GetFallbackMaterial_i32_0(
         fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         sourceMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         atlasIndex: i32,
@@ -196,7 +196,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_MaterialManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_MaterialManager_FallbackMaterial {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub fallbackID: i64,
     pub sourceMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub sourceMaterialCRC: i32,
@@ -210,7 +210,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -255,7 +255,7 @@ for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_MaterialManager_MaskingMaterial {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub baseMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub stencilMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub count: i32,
@@ -268,7 +268,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

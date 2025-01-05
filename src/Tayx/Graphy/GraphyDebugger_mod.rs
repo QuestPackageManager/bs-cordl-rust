@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphyDebugger {
-    __cordl_parent: crate::Tayx::Graphy::Utils::G_Singleton_1<
-        *mut crate::Tayx::Graphy::GraphyDebugger,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyDebugger>,
     >,
     pub m_debugPackets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyDebugger_DebugPacket>,
     >,
     pub m_fpsMonitor: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Fps::G_FpsMonitor>,
     pub m_ramMonitor: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Ram::G_RamMonitor>,
@@ -23,8 +21,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger")]
 impl std::ops::Deref for crate::Tayx::Graphy::GraphyDebugger {
-    type Target = crate::Tayx::Graphy::Utils::G_Singleton_1<
-        *mut crate::Tayx::Graphy::GraphyDebugger,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyDebugger>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -74,7 +72,7 @@ impl crate::Tayx::Graphy::GraphyDebugger {
             .invoke("AddCallbackToFirstDebugPacketWithId", (callback, id))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddNewDebugPacket_GraphyDebugger_DebugPacket0(
+    pub fn AddNewDebugPacket_Gc0(
         &mut self,
         newDebugPacket: quest_hook::libil2cpp::Gc<
             crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
@@ -87,10 +85,12 @@ impl crate::Tayx::Graphy::GraphyDebugger {
             .invoke("AddNewDebugPacket", (newDebugPacket))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddNewDebugPacket_i32_GraphyDebugger_DebugCondition_GraphyDebugger_MessageType_Il2CppString__cordl_bool_Action1(
+    pub fn AddNewDebugPacket_i32_Gc_GraphyDebugger_MessageType_Gc__cordl_bool_Gc2(
         &mut self,
         newId: i32,
-        newDebugCondition: crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
+        newDebugConditions: quest_hook::libil2cpp::Gc<
+            crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
+        >,
         newMessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
         newMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         newDebugBreak: bool,
@@ -104,7 +104,7 @@ impl crate::Tayx::Graphy::GraphyDebugger {
                 "AddNewDebugPacket",
                 (
                     newId,
-                    newDebugCondition,
+                    newDebugConditions,
                     newMessageType,
                     newMessage,
                     newDebugBreak,
@@ -113,15 +113,17 @@ impl crate::Tayx::Graphy::GraphyDebugger {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddNewDebugPacket_i32_GraphyDebugger_DebugCondition_GraphyDebugger_MessageType_Il2CppString__cordl_bool_List_1_3(
+    pub fn AddNewDebugPacket_i32_Gc_GraphyDebugger_MessageType_Gc__cordl_bool_Gc4(
         &mut self,
         newId: i32,
-        newDebugCondition: crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
+        newDebugConditions: quest_hook::libil2cpp::Gc<
+            crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
+        >,
         newMessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
         newMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         newDebugBreak: bool,
         newCallbacks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::System::Action>,
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -132,7 +134,7 @@ impl crate::Tayx::Graphy::GraphyDebugger {
                 "AddNewDebugPacket",
                 (
                     newId,
-                    newDebugCondition,
+                    newDebugConditions,
                     newMessageType,
                     newMessage,
                     newDebugBreak,
@@ -141,14 +143,10 @@ impl crate::Tayx::Graphy::GraphyDebugger {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddNewDebugPacket_i32_List_1_GraphyDebugger_MessageType_Il2CppString__cordl_bool_Action2(
+    pub fn AddNewDebugPacket_i32_GraphyDebugger_DebugCondition_GraphyDebugger_MessageType_Gc__cordl_bool_Gc1(
         &mut self,
         newId: i32,
-        newDebugConditions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
-            >,
-        >,
+        newDebugCondition: crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
         newMessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
         newMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         newDebugBreak: bool,
@@ -162,7 +160,7 @@ impl crate::Tayx::Graphy::GraphyDebugger {
                 "AddNewDebugPacket",
                 (
                     newId,
-                    newDebugConditions,
+                    newDebugCondition,
                     newMessageType,
                     newMessage,
                     newDebugBreak,
@@ -171,19 +169,15 @@ impl crate::Tayx::Graphy::GraphyDebugger {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddNewDebugPacket_i32_List_1_GraphyDebugger_MessageType_Il2CppString__cordl_bool_List_1_4(
+    pub fn AddNewDebugPacket_i32_GraphyDebugger_DebugCondition_GraphyDebugger_MessageType_Gc__cordl_bool_Gc3(
         &mut self,
         newId: i32,
-        newDebugConditions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
-            >,
-        >,
+        newDebugCondition: crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
         newMessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
         newMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         newDebugBreak: bool,
         newCallbacks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::System::Action>,
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -194,7 +188,7 @@ impl crate::Tayx::Graphy::GraphyDebugger {
                 "AddNewDebugPacket",
                 (
                     newId,
-                    newDebugConditions,
+                    newDebugCondition,
                     newMessageType,
                     newMessage,
                     newDebugBreak,
@@ -242,18 +236,14 @@ impl crate::Tayx::Graphy::GraphyDebugger {
         packetId: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyDebugger_DebugPacket>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyDebugger_DebugPacket>,
         > = __cordl_object.invoke("GetAllDebugPacketsWithId", (packetId))?;
         Ok(__cordl_ret.into())
     }
@@ -410,7 +400,7 @@ impl crate::Tayx::Graphy::GraphyDebugger_DebugCondition {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphyDebugger_DebugPacket {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Active: bool,
     pub Id: i32,
     pub ExecuteOnce: bool,
@@ -418,9 +408,7 @@ pub struct GraphyDebugger_DebugPacket {
     pub ExecuteSleepTime: f32,
     pub ConditionEvaluation: crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation,
     pub DebugConditions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
-        >,
+        crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
     >,
     pub MessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
     pub Message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -431,7 +419,7 @@ pub struct GraphyDebugger_DebugPacket {
     pub DebugBreak: bool,
     pub UnityEvents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
     pub Callbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::Action>,
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
     >,
     pub canBeChecked: bool,
     pub executed: bool,
@@ -444,7 +432,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
 impl std::ops::Deref for crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

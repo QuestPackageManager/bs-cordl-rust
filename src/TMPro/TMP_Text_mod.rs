@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Text {
-    __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>,
     pub m_text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_IsTextBackingStringDirty: bool,
     pub m_TextPreprocessor: quest_hook::libil2cpp::Gc<crate::TMPro::ITextPreprocessor>,
@@ -14,11 +14,15 @@ pub struct TMP_Text {
     pub m_currentMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_currentMaterialIndex: i32,
     pub m_fontSharedMaterials: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     >,
     pub m_fontMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_fontMaterials: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     >,
     pub m_isMaterialDirty: bool,
     pub m_fontColor32: crate::UnityEngine::Color32,
@@ -139,7 +143,7 @@ pub struct TMP_Text {
     pub m_mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub m_isVolumetricText: bool,
     pub OnPreRenderText: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::TMPro::TMP_TextInfo>,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
     >,
     pub m_spriteAnimator: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAnimator>,
     pub m_flexibleHeight: f32,
@@ -215,7 +219,7 @@ pub struct TMP_Text {
         crate::TMPro::TMP_ColorGradient,
     >,
     pub m_colorGradientStack: crate::TMPro::TMP_TextProcessingStack_1<
-        *mut crate::TMPro::TMP_ColorGradient,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_ColorGradient>,
     >,
     pub m_colorGradientPresetIsTinted: bool,
     pub m_tabSpacing: f32,
@@ -252,7 +256,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_Text")]
 impl std::ops::Deref for crate::TMPro::TMP_Text {
-    type Target = crate::UnityEngine::UI::MaskableGraphic;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -383,7 +387,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("ConvertToFloat", (chars, startIndex, length, lastIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertToFloat_Il2CppArray_i32_i32_0(
+    pub fn ConvertToFloat_Gc_i32_i32_0(
         &mut self,
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         startIndex: i32,
@@ -548,7 +552,7 @@ impl crate::TMPro::TMP_Text {
         startIndex: i32,
         length: i32,
         parameters: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -602,7 +606,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("GetFontAssetForWeight", (fontWeight))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMarkupTagHashCode_Il2CppArray0(
+    pub fn GetMarkupTagHashCode_Gc0(
         &mut self,
         tagDefinition: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -644,18 +648,24 @@ impl crate::TMPro::TMP_Text {
     pub fn GetMaterials(
         &mut self,
         mats: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         > = __cordl_object.invoke("GetMaterials", (mats))?;
         Ok(__cordl_ret.into())
     }
@@ -666,7 +676,7 @@ impl crate::TMPro::TMP_Text {
         let __cordl_ret: f32 = __cordl_object.invoke("GetPaddingForMaterial", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPaddingForMaterial_Material1(
+    pub fn GetPaddingForMaterial_Gc1(
         &mut self,
         mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -716,7 +726,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("GetPreferredValues", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPreferredValues_Il2CppString2(
+    pub fn GetPreferredValues_Gc2(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
@@ -727,7 +737,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("GetPreferredValues", (text))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPreferredValues_Il2CppString_f32_f32_3(
+    pub fn GetPreferredValues_Gc_f32_f32_3(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         width: f32,
@@ -830,14 +840,18 @@ impl crate::TMPro::TMP_Text {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         > = __cordl_object.invoke("GetSharedMaterials", ())?;
         Ok(__cordl_ret.into())
     }
@@ -868,7 +882,7 @@ impl crate::TMPro::TMP_Text {
     pub fn GetStyleHashCode_ByRefMut_i32_ByRefMut0(
         &mut self,
         text: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         index: i32,
         closeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -964,29 +978,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("GetTextInfo", (text))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUTF16_Il2CppArray1(
-        &mut self,
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetUTF16", (text, i))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetUTF16_Il2CppArray2(
-        &mut self,
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetUTF16", (text, i))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetUTF16_Il2CppString0(
+    pub fn GetUTF16_Gc0(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         i: i32,
@@ -997,7 +989,29 @@ impl crate::TMPro::TMP_Text {
         let __cordl_ret: i32 = __cordl_object.invoke("GetUTF16", (text, i))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUTF16_StringBuilder3(
+    pub fn GetUTF16_Gc1(
+        &mut self,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetUTF16", (text, i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUTF16_Gc2(
+        &mut self,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetUTF16", (text, i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUTF16_Gc3(
         &mut self,
         text: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         i: i32,
@@ -1019,29 +1033,7 @@ impl crate::TMPro::TMP_Text {
         let __cordl_ret: i32 = __cordl_object.invoke("GetUTF16", (text, i))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUTF32_Il2CppArray1(
-        &mut self,
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetUTF32", (text, i))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetUTF32_Il2CppArray2(
-        &mut self,
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetUTF32", (text, i))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetUTF32_Il2CppString0(
+    pub fn GetUTF32_Gc0(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         i: i32,
@@ -1052,7 +1044,29 @@ impl crate::TMPro::TMP_Text {
         let __cordl_ret: i32 = __cordl_object.invoke("GetUTF32", (text, i))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUTF32_StringBuilder3(
+    pub fn GetUTF32_Gc1(
+        &mut self,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetUTF32", (text, i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUTF32_Gc2(
+        &mut self,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetUTF32", (text, i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUTF32_Gc3(
         &mut self,
         text: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         i: i32,
@@ -1085,7 +1099,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("GetUnderlineSpecialCharacter", (fontAsset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn HexCharsToColor_Il2CppArray_i32_0(
+    pub fn HexCharsToColor_Gc_i32_0(
         &mut self,
         hexChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         tagCount: i32,
@@ -1120,7 +1134,9 @@ impl crate::TMPro::TMP_Text {
     pub fn InsertClosingStyleTag(
         &mut self,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1172,7 +1188,9 @@ impl crate::TMPro::TMP_Text {
         style: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Style>,
         srcIndex: i32,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1308,20 +1326,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("ParseInputText", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn PopulateTextBackingArray_Il2CppArray_i32_i32_3(
-        &mut self,
-        sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        start: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PopulateTextBackingArray", (sourceText, start, length))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn PopulateTextBackingArray_Il2CppString0(
+    pub fn PopulateTextBackingArray_Gc0(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1332,7 +1337,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("PopulateTextBackingArray", (sourceText))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PopulateTextBackingArray_Il2CppString_i32_i32_1(
+    pub fn PopulateTextBackingArray_i32_i32_1(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: i32,
@@ -1345,9 +1350,22 @@ impl crate::TMPro::TMP_Text {
             .invoke("PopulateTextBackingArray", (sourceText, start, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PopulateTextBackingArray_StringBuilder_i32_i32_2(
+    pub fn PopulateTextBackingArray_i32_i32_2(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        start: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PopulateTextBackingArray", (sourceText, start, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PopulateTextBackingArray_i32_i32_3(
+        &mut self,
+        sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1386,7 +1404,9 @@ impl crate::TMPro::TMP_Text {
         >,
         srcIndex: i32,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1403,11 +1423,13 @@ impl crate::TMPro::TMP_Text {
     pub fn ReplaceClosingStyleTag_ByRefMut_i32_ByRefMut_ByRefMut1(
         &mut self,
         sourceText: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         srcIndex: i32,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1429,7 +1451,9 @@ impl crate::TMPro::TMP_Text {
         srcIndex: i32,
         srcOffset: quest_hook::libil2cpp::ByRefMut<i32>,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1446,12 +1470,14 @@ impl crate::TMPro::TMP_Text {
     pub fn ReplaceOpeningStyleTag_ByRefMut_i32_ByRefMut_ByRefMut_ByRefMut1(
         &mut self,
         sourceText: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         srcIndex: i32,
         srcOffset: quest_hook::libil2cpp::ByRefMut<i32>,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1482,7 +1508,7 @@ impl crate::TMPro::TMP_Text {
     pub fn ResizeInternalArray_ByRefMut0<T>(
         &mut self,
         array: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<T>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1499,7 +1525,7 @@ impl crate::TMPro::TMP_Text {
     pub fn ResizeInternalArray_i32_1<T>(
         &mut self,
         array: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<T>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -1596,7 +1622,7 @@ impl crate::TMPro::TMP_Text {
         let __cordl_ret: i32 = __cordl_object.invoke("SetArraySizes", (unicodeChars))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetCharArray_Il2CppArray0(
+    pub fn SetCharArray_Gc0(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1698,7 +1724,9 @@ impl crate::TMPro::TMP_Text {
     pub fn SetSharedMaterials(
         &mut self,
         materials: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1719,7 +1747,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("SetTextInternal", (sourceText))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetTextSortingOrder_Il2CppArray1(
+    pub fn SetTextSortingOrder_Gc1(
         &mut self,
         order: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1741,7 +1769,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("SetTextSortingOrder", (order))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppArray11(
+    pub fn SetText_Gc11(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1752,20 +1780,18 @@ impl crate::TMPro::TMP_Text {
             .invoke("SetText", (sourceText))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppArray_i32_i32_12(
+    pub fn SetText_Gc9(
         &mut self,
-        sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        start: i32,
-        length: i32,
+        sourceText: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetText", (sourceText, start, length))?;
+            .invoke("SetText", (sourceText))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString__cordl_bool0(
+    pub fn SetText__cordl_bool0(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         syncTextInputBox: bool,
@@ -1777,7 +1803,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("SetText", (sourceText, syncTextInputBox))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_1(
+    pub fn SetText_f32_1(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -1789,7 +1815,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("SetText", (sourceText, arg0))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_2(
+    pub fn SetText_f32_f32_2(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -1802,7 +1828,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("SetText", (sourceText, arg0, arg1))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_f32_3(
+    pub fn SetText_f32_f32_f32_3(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -1816,7 +1842,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("SetText", (sourceText, arg0, arg1, arg2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_f32_f32_4(
+    pub fn SetText_f32_f32_f32_f32_4(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -1831,7 +1857,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("SetText", (sourceText, arg0, arg1, arg2, arg3))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_f32_f32_f32_5(
+    pub fn SetText_f32_f32_f32_f32_f32_5(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -1847,7 +1873,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("SetText", (sourceText, arg0, arg1, arg2, arg3, arg4))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_f32_f32_f32_f32_6(
+    pub fn SetText_f32_f32_f32_f32_f32_f32_6(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -1864,7 +1890,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("SetText", (sourceText, arg0, arg1, arg2, arg3, arg4, arg5))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_f32_f32_f32_f32_f32_7(
+    pub fn SetText_f32_f32_f32_f32_f32_f32_f32_7(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -1882,7 +1908,7 @@ impl crate::TMPro::TMP_Text {
             .invoke("SetText", (sourceText, arg0, arg1, arg2, arg3, arg4, arg5, arg6))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_f32_f32_f32_f32_f32_f32_8(
+    pub fn SetText_f32_f32_f32_f32_f32_f32_f32_f32_8(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -1904,20 +1930,22 @@ impl crate::TMPro::TMP_Text {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_StringBuilder9(
+    pub fn SetText_i32_i32_10(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        start: i32,
+        length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetText", (sourceText))?;
+            .invoke("SetText", (sourceText, start, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_StringBuilder_i32_i32_10(
+    pub fn SetText_i32_i32_12(
         &mut self,
-        sourceText: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2032,11 +2060,9 @@ impl crate::TMPro::TMP_Text {
     }
     pub fn add_OnFontAssetRequest(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                i32,
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::TMPro::TMP_FontAsset,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -2046,7 +2072,7 @@ impl crate::TMPro::TMP_Text {
     pub fn add_OnPreRenderText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::TMPro::TMP_TextInfo>,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2058,11 +2084,9 @@ impl crate::TMPro::TMP_Text {
     }
     pub fn add_OnSpriteAssetRequest(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                i32,
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::TMPro::TMP_SpriteAsset,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -2263,14 +2287,18 @@ impl crate::TMPro::TMP_Text {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         > = __cordl_object.invoke("get_fontMaterials", ())?;
         Ok(__cordl_ret.into())
     }
@@ -2290,14 +2318,18 @@ impl crate::TMPro::TMP_Text {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         > = __cordl_object.invoke("get_fontSharedMaterials", ())?;
         Ok(__cordl_ret.into())
     }
@@ -2865,11 +2897,9 @@ impl crate::TMPro::TMP_Text {
     }
     pub fn remove_OnFontAssetRequest(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                i32,
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::TMPro::TMP_FontAsset,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -2879,7 +2909,7 @@ impl crate::TMPro::TMP_Text {
     pub fn remove_OnPreRenderText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::TMPro::TMP_TextInfo>,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2891,11 +2921,9 @@ impl crate::TMPro::TMP_Text {
     }
     pub fn remove_OnSpriteAssetRequest(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                i32,
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::TMPro::TMP_SpriteAsset,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -3103,7 +3131,9 @@ impl crate::TMPro::TMP_Text {
     pub fn set_fontMaterials(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -3127,7 +3157,9 @@ impl crate::TMPro::TMP_Text {
     pub fn set_fontSharedMaterials(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

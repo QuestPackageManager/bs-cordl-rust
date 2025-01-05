@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpListenerRequest {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub accept_types: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub content_length: i64,
     pub cl_set: bool,
@@ -20,7 +22,9 @@ pub struct HttpListenerRequest {
     pub url: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub referrer: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub user_languages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub context: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerContext>,
     pub is_chunked: bool,
@@ -34,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpListenerRequest")]
 impl std::ops::Deref for crate::System::Net::HttpListenerRequest {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

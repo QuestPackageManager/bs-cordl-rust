@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventSource {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+Tracing+EventSource")]
 impl std::ops::Deref for crate::System::Diagnostics::Tracing::EventSource {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,7 +85,16 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Guid_Il2CppString2(
+    pub fn New_Gc1(
+        eventSourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (eventSourceName))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Guid_Gc2(
         eventSourceGuid: crate::System::Guid,
         eventSourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -93,15 +102,6 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (eventSourceGuid, eventSourceName))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppString1(
-        eventSourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (eventSourceName))?;
         Ok(__cordl_object.into())
     }
     pub fn WriteEventCore(
@@ -117,21 +117,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .invoke("WriteEventCore", (eventId, eventDataCount, data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteEvent_Il2CppArray7(
-        &mut self,
-        eventId: i32,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteEvent", (eventId, args))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteEvent_Il2CppString2(
+    pub fn WriteEvent_Gc2(
         &mut self,
         eventId: i32,
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -143,7 +129,23 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .invoke("WriteEvent", (eventId, arg1))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteEvent_Il2CppString_Il2CppString_Il2CppString8(
+    pub fn WriteEvent_Gc7(
+        &mut self,
+        eventId: i32,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteEvent", (eventId, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteEvent_Gc_Gc_Gc8(
         &mut self,
         eventId: i32,
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -219,7 +221,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .invoke("WriteEvent", (eventId, arg1))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteEvent_i64_Il2CppString6(
+    pub fn WriteEvent_i64_Gc6(
         &mut self,
         eventId: i32,
         arg1: i64,
@@ -242,7 +244,18 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Guid_Il2CppString2(
+    pub fn _ctor_Gc1(
+        &mut self,
+        eventSourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (eventSourceName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Guid_Gc2(
         &mut self,
         eventSourceGuid: crate::System::Guid,
         eventSourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -252,17 +265,6 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (eventSourceGuid, eventSourceName))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString1(
-        &mut self,
-        eventSourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (eventSourceName))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_Name(
@@ -288,16 +290,16 @@ for crate::System::Diagnostics::Tracing::EventSource {
     }
 }
 #[cfg(feature = "System+Diagnostics+Tracing+EventSource")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Diagnostics::Tracing::EventSource {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Diagnostics+Tracing+EventSource")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Diagnostics::Tracing::EventSource {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

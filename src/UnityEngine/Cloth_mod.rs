@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Cloth {
-    __cordl_parent: crate::UnityEngine::Component,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
     pub _useContinuousCollision_k__BackingField: f32,
     pub _selfCollision_k__BackingField: bool,
 }
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Cloth")]
 impl std::ops::Deref for crate::UnityEngine::Cloth {
-    type Target = crate::UnityEngine::Component;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

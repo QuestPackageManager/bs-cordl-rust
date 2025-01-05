@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerBrowserStackedController {
-    __cordl_parent: crate::HMUI::StackedController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::StackedController>,
 }
 #[cfg(feature = "GameServerBrowserStackedController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameServerBrowserStackedController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerBrowserStackedController {
-    type Target = crate::HMUI::StackedController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::StackedController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

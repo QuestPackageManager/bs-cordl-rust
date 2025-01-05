@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OneModifierComposite {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputBindingComposite,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputBindingComposite,
+    >,
     pub modifier: i32,
     pub binding: i32,
     pub overrideModifiersNeedToBePressedFirst: bool,
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Composites+OneModifierComposite")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
-    type Target = crate::UnityEngine::InputSystem::InputBindingComposite;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputBindingComposite,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +42,9 @@ impl crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
             crate::UnityEngine::InputSystem::InputBindingCompositeContext,
         >,
         part: i32,
-        valueType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        valueType: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
         valueSizeInBytes: quest_hook::libil2cpp::ByRefMut<i32>,
         isButton: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

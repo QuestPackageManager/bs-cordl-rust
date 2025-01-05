@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Slider {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseSlider_1<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
 }
 #[cfg(feature = "UnityEngine+UIElements+Slider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Slider")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Slider {
-    type Target = crate::UnityEngine::UIElements::BaseSlider_1<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::UnityEngine::UIElements::Slider {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_f32_f32_SliderDirection_f32_2(
+    pub fn New_Gc_f32_f32_SliderDirection_f32_2(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: f32,
         end: f32,
@@ -133,7 +133,7 @@ impl crate::UnityEngine::UIElements::Slider {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_f32_f32_SliderDirection_f32_2(
+    pub fn _ctor_Gc_f32_f32_SliderDirection_f32_2(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: f32,
@@ -176,9 +176,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Slide
 #[repr(C)]
 #[derive(Debug)]
 pub struct Slider_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::Slider,
-        *mut crate::UnityEngine::UIElements::Slider_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Slider>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Slider_UxmlTraits>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Slider+UxmlFactory")]
@@ -188,9 +188,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Slider+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Slider_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::Slider,
-        *mut crate::UnityEngine::UIElements::Slider_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Slider>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Slider_UxmlTraits>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -236,7 +236,7 @@ for crate::UnityEngine::UIElements::Slider_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Slider_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
     pub m_LowValue: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
@@ -250,9 +250,7 @@ pub struct Slider_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
     pub m_Direction: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::SliderDirection,
-        >,
+        crate::UnityEngine::UIElements::SliderDirection,
     >,
     pub m_Inverted: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
@@ -265,7 +263,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Slider+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Slider_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

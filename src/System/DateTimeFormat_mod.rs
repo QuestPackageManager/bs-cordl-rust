@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DateTimeFormat {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+DateTimeFormat")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+DateTimeFormat")]
 impl std::ops::Deref for crate::System::DateTimeFormat {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +36,7 @@ impl crate::System::DateTimeFormat {
         format: crate::System::ReadOnlySpan_1<char>,
         dateTime: quest_hook::libil2cpp::ByRefMut<crate::System::DateTime>,
         dtfi: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Globalization::DateTimeFormatInfo,
+            quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,
         >,
         offset: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
     ) -> quest_hook::libil2cpp::Result<
@@ -100,7 +100,7 @@ impl crate::System::DateTimeFormat {
             .invoke("FormatDayOfWeek", (dayOfWeek, repeat, dtfi))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FormatDigits_StringBuilder_i32_i32_0(
+    pub fn FormatDigits_Gc_i32_i32_0(
         outputBuffer: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         value: i32,
         len: i32,
@@ -160,7 +160,7 @@ impl crate::System::DateTimeFormat {
             .invoke("FormatStringBuilder", (dateTime, format, dtfi, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Format_DateTime_Il2CppString_IFormatProvider0(
+    pub fn Format_DateTime_Gc_Gc0(
         dateTime: crate::System::DateTime,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -271,7 +271,7 @@ impl crate::System::DateTimeFormat {
             .invoke("TryFormatR", (dateTime, offset, destination, charsWritten))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryFormat_DateTime_Span_1_ByRefMut_ReadOnlySpan_1_IFormatProvider0(
+    pub fn TryFormat_DateTime_Span_1_ByRefMut_ReadOnlySpan_1_Gc0(
         dateTime: crate::System::DateTime,
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,

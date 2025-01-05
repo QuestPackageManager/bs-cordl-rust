@@ -44,7 +44,7 @@ impl crate::UnityEngine::InputSystem::Utilities::Substring {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -55,7 +55,7 @@ impl crate::UnityEngine::InputSystem::Utilities::Substring {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppString1(
+    pub fn Equals_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -133,7 +133,7 @@ impl crate::UnityEngine::InputSystem::Utilities::Substring {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString0(
+    pub fn _ctor_Gc0(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -261,11 +261,11 @@ impl crate::UnityEngine::InputSystem::Utilities::Substring {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
 impl AsRef<
-    crate::System::IComparable_1<crate::UnityEngine::InputSystem::Utilities::Substring>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::Substring>,
 > for crate::UnityEngine::InputSystem::Utilities::Substring {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::Substring,
     > {
         todo!()
@@ -273,11 +273,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
 impl AsMut<
-    crate::System::IComparable_1<crate::UnityEngine::InputSystem::Utilities::Substring>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::Substring>,
 > for crate::UnityEngine::InputSystem::Utilities::Substring {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::Substring,
     > {
         todo!()
@@ -285,11 +285,11 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::Substring>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::Substring>,
 > for crate::UnityEngine::InputSystem::Utilities::Substring {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::Substring,
     > {
         todo!()
@@ -297,11 +297,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::Substring>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::Substring>,
 > for crate::UnityEngine::InputSystem::Utilities::Substring {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::Substring,
     > {
         todo!()

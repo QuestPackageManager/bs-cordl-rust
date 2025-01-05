@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AxisComposite {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
     pub negative: i32,
     pub positive: i32,
     pub minValue: f32,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Composites::AxisComposite {
-    type Target = crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

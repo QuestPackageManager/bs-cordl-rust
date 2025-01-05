@@ -8,7 +8,7 @@ pub struct MonoMemoryPool_5<
     TParam4: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::MemoryPool_5<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -37,13 +37,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Zenject::MonoMemoryPool_5<TParam1, TParam2, TParam3, TParam4, TValue> {
-    type Target = crate::Zenject::MemoryPool_5<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TValue,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TValue>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -182,7 +176,9 @@ impl<
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

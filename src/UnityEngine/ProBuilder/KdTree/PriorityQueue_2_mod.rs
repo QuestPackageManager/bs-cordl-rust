@@ -5,10 +5,8 @@ pub struct PriorityQueue_2<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub priorityMath: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TPriority>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub priorityMath: quest_hook::libil2cpp::Gc<TPriority>,
     pub queue: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             crate::UnityEngine::ProBuilder::KdTree::ItemPriority_2<TItem, TPriority>,
@@ -31,7 +29,7 @@ impl<
     TPriority: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TPriority> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -126,9 +124,7 @@ impl<
     }
     pub fn New(
         capacity: i32,
-        priorityMath: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TPriority>,
-        >,
+        priorityMath: quest_hook::libil2cpp::Gc<TPriority>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -163,9 +159,7 @@ impl<
     pub fn _ctor(
         &mut self,
         capacity: i32,
-        priorityMath: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TPriority>,
-        >,
+        priorityMath: quest_hook::libil2cpp::Gc<TPriority>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -211,11 +205,9 @@ for crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TPriority> {
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
-> AsRef<crate::UnityEngine::ProBuilder::KdTree::IPriorityQueue_2<TItem, TPriority>>
+> AsRef<quest_hook::libil2cpp::Gc<TItem, TPriority>>
 for crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TPriority> {
-    fn as_ref(
-        &self,
-    ) -> &crate::UnityEngine::ProBuilder::KdTree::IPriorityQueue_2<TItem, TPriority> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TItem, TPriority> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -223,14 +215,9 @@ for crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TPriority> {
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
-> AsMut<crate::UnityEngine::ProBuilder::KdTree::IPriorityQueue_2<TItem, TPriority>>
+> AsMut<quest_hook::libil2cpp::Gc<TItem, TPriority>>
 for crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TPriority> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::ProBuilder::KdTree::IPriorityQueue_2<
-        TItem,
-        TPriority,
-    > {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TItem, TPriority> {
         unsafe { std::mem::transmute(self) }
     }
 }

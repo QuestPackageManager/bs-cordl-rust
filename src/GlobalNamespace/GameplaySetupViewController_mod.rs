@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplaySetupViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _selectionSegmentedControl: quest_hook::libil2cpp::Gc<
         crate::HMUI::TextSegmentedControl,
     >,
@@ -25,8 +25,8 @@ pub struct GameplaySetupViewController {
         crate::GlobalNamespace::PlayerDataModel,
     >,
     pub _panels: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::GameplaySetupViewController_Panel,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplaySetupViewController_Panel,
         >,
     >,
     pub _activePanelIdx: i32,
@@ -44,7 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameplaySetupViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplaySetupViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -283,7 +283,7 @@ for crate::GlobalNamespace::GameplaySetupViewController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplaySetupViewController_Panel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub refreshable: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>,
     pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -296,7 +296,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameplaySetupViewController+Panel")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplaySetupViewController_Panel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

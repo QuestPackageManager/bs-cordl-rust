@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerLobbyPermissionConfigurationNetSerializable {
-    __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PoolableSerializable,
+    >,
     pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _isServerOwner: bool,
     pub _hasRecommendBeatmapsPermission: bool,
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlayerLobbyPermissionConfigurationNetSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
-    type Target = crate::GlobalNamespace::PoolableSerializable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PoolableSerializable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

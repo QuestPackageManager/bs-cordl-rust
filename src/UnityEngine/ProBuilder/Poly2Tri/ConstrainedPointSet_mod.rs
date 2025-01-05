@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConstrainedPointSet {
-    __cordl_parent: crate::UnityEngine::ProBuilder::Poly2Tri::PointSet,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::PointSet,
+    >,
     pub _EdgeIndex_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+ConstrainedPointSet")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
-    type Target = crate::UnityEngine::ProBuilder::Poly2Tri::PointSet;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::PointSet,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,8 +35,8 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
 impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
     pub fn New(
         points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         >,
         index: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -59,8 +63,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
     pub fn _ctor(
         &mut self,
         points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         >,
         index: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

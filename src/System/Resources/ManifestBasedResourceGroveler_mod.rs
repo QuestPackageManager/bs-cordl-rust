@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ManifestBasedResourceGroveler {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _mediator: quest_hook::libil2cpp::Gc<
         crate::System::Resources::ResourceManager_ResourceManagerMediator,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Resources+ManifestBasedResourceGroveler")]
 impl std::ops::Deref for crate::System::Resources::ManifestBasedResourceGroveler {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::System::Resources::ManifestBasedResourceGroveler {
     pub fn GetNeutralResourcesLanguageAttribute(
         assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
         cultureName: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         fallbackLocation: quest_hook::libil2cpp::ByRefMut<i16>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -91,16 +91,20 @@ for crate::System::Resources::ManifestBasedResourceGroveler {
     }
 }
 #[cfg(feature = "System+Resources+ManifestBasedResourceGroveler")]
-impl AsRef<crate::System::Resources::IResourceGroveler>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Resources::IResourceGroveler>>
 for crate::System::Resources::ManifestBasedResourceGroveler {
-    fn as_ref(&self) -> &crate::System::Resources::IResourceGroveler {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Resources::IResourceGroveler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Resources+ManifestBasedResourceGroveler")]
-impl AsMut<crate::System::Resources::IResourceGroveler>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Resources::IResourceGroveler>>
 for crate::System::Resources::ManifestBasedResourceGroveler {
-    fn as_mut(&mut self) -> &mut crate::System::Resources::IResourceGroveler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Resources::IResourceGroveler> {
         unsafe { std::mem::transmute(self) }
     }
 }

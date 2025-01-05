@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleType {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _baseType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _baseSimpleType: quest_hook::libil2cpp::Gc<crate::System::Data::SimpleType>,
     pub _xmlBaseType: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+SimpleType")]
 impl std::ops::Deref for crate::System::Data::SimpleType {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -124,7 +124,7 @@ impl crate::System::Data::SimpleType {
             .invoke("LoadTypeValues", (node))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString0(
+    pub fn New_Gc0(
         baseType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -133,7 +133,7 @@ impl crate::System::Data::SimpleType {
             .invoke_void(".ctor", (baseType))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XmlSchemaSimpleType1(
+    pub fn New_Gc1(
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -188,7 +188,7 @@ impl crate::System::Data::SimpleType {
             .invoke("ToNode", (dc, prefixes, inRemoting))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString0(
+    pub fn _ctor_Gc0(
         &mut self,
         baseType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -199,7 +199,7 @@ impl crate::System::Data::SimpleType {
             .invoke(".ctor", (baseType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XmlSchemaSimpleType1(
+    pub fn _ctor_Gc1(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -323,16 +323,26 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::SimpleType {
     }
 }
 #[cfg(feature = "System+Data+SimpleType")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Data::SimpleType {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Data::SimpleType {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+SimpleType")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Data::SimpleType {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Data::SimpleType {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

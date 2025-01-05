@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DsaDigestSigner {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub dsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa>,
     pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub encoding: quest_hook::libil2cpp::Gc<
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+DsaDigestSigner")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Signers::DsaDigestSigner {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,17 +84,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::DsaDigestSigner {
             .invoke("Init", (forSigning, parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_IDsa0(
-        dsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa>,
-        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dsa, digest))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_IDsaExt_IDsaEncoding1(
+    pub fn New_Gc1(
         dsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsaExt>,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         encoding: quest_hook::libil2cpp::Gc<
@@ -105,6 +95,16 @@ impl crate::Org::BouncyCastle::Crypto::Signers::DsaDigestSigner {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (dsa, digest, encoding))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc0(
+        dsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa>,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dsa, digest))?;
         Ok(__cordl_object.into())
     }
     pub fn Reset(
@@ -138,19 +138,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::DsaDigestSigner {
         let __cordl_ret: bool = __cordl_object.invoke("VerifySignature", (signature))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IDsa0(
-        &mut self,
-        dsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa>,
-        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dsa, digest))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_IDsaExt_IDsaEncoding1(
+    pub fn _ctor_Gc1(
         &mut self,
         dsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsaExt>,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -163,6 +151,18 @@ impl crate::Org::BouncyCastle::Crypto::Signers::DsaDigestSigner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (dsa, digest, encoding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc0(
+        &mut self,
+        dsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa>,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dsa, digest))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_AlgorithmName(
@@ -190,16 +190,20 @@ for crate::Org::BouncyCastle::Crypto::Signers::DsaDigestSigner {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+DsaDigestSigner")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::ISigner>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>>
 for crate::Org::BouncyCastle::Crypto::Signers::DsaDigestSigner {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ISigner {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+DsaDigestSigner")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::ISigner>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>>
 for crate::Org::BouncyCastle::Crypto::Signers::DsaDigestSigner {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ISigner {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProjectContext {
-    __cordl_parent: crate::Zenject::Context,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::Context>,
     pub PreInstall: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub PostInstall: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub PreResolve: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ProjectContext")]
 impl std::ops::Deref for crate::Zenject::ProjectContext {
-    type Target = crate::Zenject::Context;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::Context>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,9 +58,7 @@ impl crate::Zenject::ProjectContext {
     pub fn GetInjectableMonoBehaviours(
         &mut self,
         monoBehaviours: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::MonoBehaviour,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -74,18 +72,14 @@ impl crate::Zenject::ProjectContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::GameObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::GameObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = __cordl_object.invoke("GetRootGameObjects", ())?;
         Ok(__cordl_ret.into())
     }
@@ -102,9 +96,7 @@ impl crate::Zenject::ProjectContext {
     pub fn InstallBindings(
         &mut self,
         injectableMonoBehaviours: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::MonoBehaviour,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

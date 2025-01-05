@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FriendsViewController {
-    __cordl_parent: crate::GlobalNamespace::NetworkPlayersViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPlayersViewController,
+    >,
     pub _enableOpenPartyToggle: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::Toggle,
     >,
@@ -22,7 +24,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FriendsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::FriendsViewController {
-    type Target = crate::GlobalNamespace::NetworkPlayersViewController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPlayersViewController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

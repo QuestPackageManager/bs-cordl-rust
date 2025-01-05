@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelCollectionTableView {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     pub _alphabetScrollbar: quest_hook::libil2cpp::Gc<crate::HMUI::AlphabetScrollbar>,
     pub _levelCellPrefab: quest_hook::libil2cpp::Gc<
@@ -28,19 +28,15 @@ pub struct LevelCollectionTableView {
         crate::GlobalNamespace::BeatmapLevelsPromoModel,
     >,
     pub didSelectLevelEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::GlobalNamespace::LevelCollectionTableView,
-            *mut crate::GlobalNamespace::BeatmapLevel,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     >,
     pub didSelectHeaderEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::LevelCollectionTableView>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
     >,
     pub _isInitialized: bool,
     pub _beatmapLevels: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::BeatmapLevel,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     >,
     pub _selectedRow: i32,
     pub _selectedBeatmapLevel: quest_hook::libil2cpp::Gc<
@@ -50,9 +46,7 @@ pub struct LevelCollectionTableView {
     pub _headerText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _showLevelPackHeader: bool,
     pub _favoriteLevelIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "LevelCollectionTableView")]
@@ -62,7 +56,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelCollectionTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelCollectionTableView {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -148,7 +142,7 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
             .invoke("Init", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Il2CppString_Sprite0(
+    pub fn Init_Gc_Gc0(
         &mut self,
         headerText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         headerSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
@@ -207,9 +201,7 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn RefreshFavorites(
         &mut self,
         favoriteLevelIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -263,14 +255,10 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn SetData(
         &mut self,
         beatmapLevels: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::BeatmapLevel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
         favoriteLevelIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         beatmapLevelsAreSorted: bool,
         sortBeatmapLevels: bool,
@@ -313,9 +301,7 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn add_didSelectHeaderEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::LevelCollectionTableView,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -328,10 +314,8 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn add_didSelectLevelEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::LevelCollectionTableView,
-                *mut crate::GlobalNamespace::BeatmapLevel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -344,9 +328,7 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn remove_didSelectHeaderEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::LevelCollectionTableView,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -359,10 +341,8 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn remove_didSelectLevelEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::LevelCollectionTableView,
-                *mut crate::GlobalNamespace::BeatmapLevel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -384,16 +364,18 @@ for crate::GlobalNamespace::LevelCollectionTableView {
     }
 }
 #[cfg(feature = "LevelCollectionTableView")]
-impl AsRef<crate::HMUI::TableView_IDataSource>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
 for crate::GlobalNamespace::LevelCollectionTableView {
-    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LevelCollectionTableView")]
-impl AsMut<crate::HMUI::TableView_IDataSource>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
 for crate::GlobalNamespace::LevelCollectionTableView {
-    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AmbientTemperatureSensor {
-    __cordl_parent: crate::UnityEngine::InputSystem::Sensor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Sensor>,
     pub _ambientTemperature_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::AxisControl,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+AmbientTemperatureSensor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::AmbientTemperatureSensor {
-    type Target = crate::UnityEngine::InputSystem::Sensor;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Sensor>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

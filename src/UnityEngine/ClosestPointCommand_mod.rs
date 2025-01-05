@@ -81,7 +81,7 @@ impl crate::UnityEngine::ClosestPointCommand {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Collider1(
+    pub fn _ctor_Gc1(
         &mut self,
         point: crate::UnityEngine::Vector3,
         collider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRelationCollection_DataTableRelationCollection {
-    __cordl_parent: crate::System::Data::DataRelationCollection,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRelationCollection,
+    >,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _relations: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _fParentCollection: bool,
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Data+DataRelationCollection+DataTableRelationCollection")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection {
-    type Target = crate::System::Data::DataRelationCollection;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Data::DataRelationCollection>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -134,7 +136,7 @@ impl crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection 
             .invoke("add_RelationPropertyChanged", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_Il2CppString1(
+    pub fn get_Item_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RandomObjectPicker_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _objects: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _lastPickTime: f32,
     pub _minimumPickInterval: f32,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "RandomObjectPicker_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::RandomObjectPicker_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ for crate::GlobalNamespace::RandomObjectPicker_1<T> {
 }
 #[cfg(feature = "RandomObjectPicker_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RandomObjectPicker_1<T> {
-    pub fn New_Il2CppArray1(
+    pub fn New_Gc1(
         objects: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         minimumPickInterval: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -69,7 +69,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RandomObjectPicker_
         let __cordl_ret: T = __cordl_object.invoke("PickRandomObject", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray1(
+    pub fn _ctor_Gc1(
         &mut self,
         objects: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         minimumPickInterval: f32,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPAddress_ReadOnlyIPAddress {
-    __cordl_parent: crate::System::Net::IPAddress,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
 }
 #[cfg(feature = "System+Net+IPAddress+ReadOnlyIPAddress")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+IPAddress+ReadOnlyIPAddress")]
 impl std::ops::Deref for crate::GlobalNamespace::IPAddress_ReadOnlyIPAddress {
-    type Target = crate::System::Net::IPAddress;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Number {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Number")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Number")]
 impl std::ops::Deref for crate::System::Number {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -82,7 +82,7 @@ impl crate::System::Number {
             .invoke("FormatDecimal", (value, format, info))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FormatDouble_ByRefMut_f64_ReadOnlySpan_1_NumberFormatInfo1(
+    pub fn FormatDouble_ByRefMut_f64_ReadOnlySpan_1_Gc1(
         sb: quest_hook::libil2cpp::ByRefMut<crate::System::Text::ValueStringBuilder>,
         value: f64,
         format: crate::System::ReadOnlySpan_1<char>,
@@ -96,7 +96,7 @@ impl crate::System::Number {
             .invoke("FormatDouble", (sb, value, format, info))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FormatDouble_f64_Il2CppString_NumberFormatInfo0(
+    pub fn FormatDouble_f64_Gc_Gc0(
         value: f64,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
@@ -220,7 +220,7 @@ impl crate::System::Number {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn FormatSingle_ByRefMut_f32_ReadOnlySpan_1_NumberFormatInfo1(
+    pub fn FormatSingle_ByRefMut_f32_ReadOnlySpan_1_Gc1(
         sb: quest_hook::libil2cpp::ByRefMut<crate::System::Text::ValueStringBuilder>,
         value: f32,
         format: crate::System::ReadOnlySpan_1<char>,
@@ -234,7 +234,7 @@ impl crate::System::Number {
             .invoke("FormatSingle", (sb, value, format, info))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FormatSingle_f32_Il2CppString_NumberFormatInfo0(
+    pub fn FormatSingle_f32_Gc_Gc0(
         value: f32,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
@@ -534,7 +534,9 @@ impl crate::System::Number {
         Ok(__cordl_ret.into())
     }
     pub fn ParseNumber(
-        str: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
+        str: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
         strEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         styles: crate::System::Globalization::NumberStyles,
         number: quest_hook::libil2cpp::ByRefMut<crate::System::Number_NumberBuffer>,

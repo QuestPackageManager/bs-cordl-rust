@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataCallbackWrapper_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _callback: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapDataCallback_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
+    pub _callback: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "BeatmapDataCallbackWrapper_1")]
@@ -16,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataCallbackWrapper_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::BeatmapDataCallbackWrapper_1<T> {
-    type Target = crate::GlobalNamespace::BeatmapDataCallbackWrapper;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,9 +50,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        callback: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataCallback_1<T>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<T>,
         aheadTime: f32,
         beatmapEventSubtypeIdentifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -71,9 +71,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataCallback_1<T>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<T>,
         aheadTime: f32,
         beatmapEventSubtypeIdentifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,

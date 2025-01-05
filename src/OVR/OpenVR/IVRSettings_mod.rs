@@ -67,7 +67,7 @@ impl crate::OVR::OpenVR::IVRSettings {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRSettings__GetBool {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetBool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -76,7 +76,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetBool")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__GetBool {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -169,7 +169,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__GetB
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRSettings__GetFloat {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetFloat")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -178,7 +178,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetFloat")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__GetFloat {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -271,7 +271,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__GetF
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRSettings__GetInt32 {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetInt32")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -280,7 +280,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetInt32")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__GetInt32 {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -373,7 +373,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__GetI
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRSettings__GetSettingsErrorNameFromEnum {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetSettingsErrorNameFromEnum")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -383,7 +383,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetSettingsErrorNameFromEnum")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__GetSettingsErrorNameFromEnum {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -471,7 +471,7 @@ for crate::OVR::OpenVR::IVRSettings__GetSettingsErrorNameFromEnum {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRSettings__GetString {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetString")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -480,7 +480,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetString")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__GetString {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -589,7 +589,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__GetS
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRSettings__RemoveKeyInSection {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_RemoveKeyInSection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -598,7 +598,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_RemoveKeyInSection")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__RemoveKeyInSection {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -693,7 +693,7 @@ for crate::OVR::OpenVR::IVRSettings__RemoveKeyInSection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRSettings__RemoveSection {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_RemoveSection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -702,7 +702,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_RemoveSection")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__RemoveSection {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -792,7 +792,7 @@ for crate::OVR::OpenVR::IVRSettings__RemoveSection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRSettings__SetBool {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetBool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -801,7 +801,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetBool")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__SetBool {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -897,7 +897,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__SetB
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRSettings__SetFloat {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetFloat")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -906,7 +906,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetFloat")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__SetFloat {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1002,7 +1002,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__SetF
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRSettings__SetInt32 {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetInt32")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1011,7 +1011,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetInt32")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__SetInt32 {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1107,7 +1107,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__SetI
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRSettings__SetString {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetString")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1116,7 +1116,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetString")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__SetString {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1212,7 +1212,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__SetS
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRSettings__Sync {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_Sync")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1221,7 +1221,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_Sync")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__Sync {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

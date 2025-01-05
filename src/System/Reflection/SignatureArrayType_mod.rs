@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignatureArrayType {
-    __cordl_parent: crate::System::Reflection::SignatureHasElementType,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::SignatureHasElementType,
+    >,
     pub _rank: i32,
     pub _isMultiDim: bool,
 }
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+SignatureArrayType")]
 impl std::ops::Deref for crate::System::Reflection::SignatureArrayType {
-    type Target = crate::System::Reflection::SignatureHasElementType;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::SignatureHasElementType,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

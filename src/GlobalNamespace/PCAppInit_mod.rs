@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PCAppInit {
-    __cordl_parent: crate::BeatSaber::Init::BSAppInit,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::BSAppInit>,
     pub _mainSystemInit: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MainSystemInit,
     >,
@@ -13,7 +13,7 @@ pub struct PCAppInit {
         crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
     >,
     pub _playerDataModel: quest_hook::libil2cpp::Gc<
-        crate::Zenject::LazyInject_1<*mut crate::GlobalNamespace::PlayerDataModel>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
     >,
 }
 #[cfg(feature = "PCAppInit")]
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PCAppInit")]
 impl std::ops::Deref for crate::GlobalNamespace::PCAppInit {
-    type Target = crate::BeatSaber::Init::BSAppInit;
+    type Target = quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::BSAppInit>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

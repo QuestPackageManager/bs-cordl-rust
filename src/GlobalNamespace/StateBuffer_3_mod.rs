@@ -6,7 +6,7 @@ pub struct StateBuffer_3<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _currentIndex: i32,
     pub _buffer: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -17,20 +17,8 @@ pub struct StateBuffer_3<
             >,
         >,
     >,
-    pub _interpolator: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
-            TStateTable,
-            TType,
-            TState,
-        >,
-    >,
-    pub _smoother: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
-            TStateTable,
-            TType,
-            TState,
-        >,
-    >,
+    pub _interpolator: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+    pub _smoother: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
     __cordl_phantom_TStateTable: std::marker::PhantomData<TStateTable>,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
@@ -46,7 +34,7 @@ impl<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -193,20 +181,8 @@ impl<
     }
     pub fn New(
         _cordl_size: i32,
-        interpolator: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
-                TStateTable,
-                TType,
-                TState,
-            >,
-        >,
-        smoother: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
-                TStateTable,
-                TType,
-                TState,
-            >,
-        >,
+        interpolator: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+        smoother: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -225,20 +201,8 @@ impl<
     pub fn _ctor(
         &mut self,
         _cordl_size: i32,
-        interpolator: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
-                TStateTable,
-                TType,
-                TState,
-            >,
-        >,
-        smoother: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
-                TStateTable,
-                TType,
-                TState,
-            >,
-        >,
+        interpolator: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+        smoother: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -278,7 +242,7 @@ pub struct StateBuffer_3_InterpolationDelegate<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_TStateTable: std::marker::PhantomData<TStateTable>,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
@@ -300,7 +264,7 @@ for crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
     TType,
     TState,
 > {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -463,7 +427,7 @@ pub struct StateBuffer_3_SmoothingDelegate<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_TStateTable: std::marker::PhantomData<TStateTable>,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
@@ -481,7 +445,7 @@ impl<
     TState: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<TStateTable, TType, TState> {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -769,7 +733,7 @@ impl<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::GlobalNamespace::IEquatableByReference_1<
+    quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
             TStateTable,
             TType,
@@ -784,7 +748,7 @@ for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
 > {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::IEquatableByReference_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
             TStateTable,
             TType,
@@ -800,7 +764,7 @@ impl<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::GlobalNamespace::IEquatableByReference_1<
+    quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
             TStateTable,
             TType,
@@ -815,7 +779,7 @@ for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
 > {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::IEquatableByReference_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
             TStateTable,
             TType,

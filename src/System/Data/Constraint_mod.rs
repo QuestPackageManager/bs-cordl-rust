@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Constraint {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _schemaName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _inCollection: bool,
     pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+Constraint")]
 impl std::ops::Deref for crate::System::Data::Constraint {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,7 +71,7 @@ impl crate::System::Data::Constraint {
             .invoke("CheckConstraint", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckConstraint_DataRow_DataRowAction1(
+    pub fn CheckConstraint_Gc_DataRowAction1(
         &mut self,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         action: crate::System::Data::DataRowAction,
@@ -103,7 +103,7 @@ impl crate::System::Data::Constraint {
             .invoke("CheckStateForProperty", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Clone_DataSet0(
+    pub fn Clone_Gc0(
         &mut self,
         destination: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<

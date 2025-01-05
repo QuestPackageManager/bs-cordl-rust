@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommonObjectSecurity {
-    __cordl_parent: crate::System::Security::AccessControl::ObjectSecurity,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::ObjectSecurity,
+    >,
 }
 #[cfg(feature = "System+Security+AccessControl+CommonObjectSecurity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+AccessControl+CommonObjectSecurity")]
 impl std::ops::Deref for crate::System::Security::AccessControl::CommonObjectSecurity {
-    type Target = crate::System::Security::AccessControl::ObjectSecurity;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::ObjectSecurity,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -69,18 +69,30 @@ impl crate::UnityEngine::InputSystem::LowLevel::TextEvent {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+TextEvent")]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo>
-for crate::UnityEngine::InputSystem::LowLevel::TextEvent {
-    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::TextEvent {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+TextEvent")]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo>
-for crate::UnityEngine::InputSystem::LowLevel::TextEvent {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::TextEvent {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo,
+    > {
         todo!()
     }
 }

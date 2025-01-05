@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRHapticsClip {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _Count_k__BackingField: i32,
     pub _Capacity_k__BackingField: i32,
     pub _Samples_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRHapticsClip")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHapticsClip {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,17 +53,17 @@ impl crate::GlobalNamespace::OVRHapticsClip {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_AudioClip_i32_4(
-        audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-        channel: i32,
+    pub fn New_Gc_Gc3(
+        a: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
+        b: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (audioClip, channel))?;
+            .invoke_void(".ctor", (a, b))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_2(
+    pub fn New_Gc_i32_2(
         samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         samplesCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -73,14 +73,14 @@ impl crate::GlobalNamespace::OVRHapticsClip {
             .invoke_void(".ctor", (samples, samplesCount))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_OVRHapticsClip_OVRHapticsClip3(
-        a: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
-        b: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
+    pub fn New_Gc_i32_4(
+        audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        channel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (a, b))?;
+            .invoke_void(".ctor", (audioClip, channel))?;
         Ok(__cordl_object.into())
     }
     pub fn New_i32_1(
@@ -123,19 +123,19 @@ impl crate::GlobalNamespace::OVRHapticsClip {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AudioClip_i32_4(
+    pub fn _ctor_Gc_Gc3(
         &mut self,
-        audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-        channel: i32,
+        a: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
+        b: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (audioClip, channel))?;
+            .invoke(".ctor", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_2(
+    pub fn _ctor_Gc_i32_2(
         &mut self,
         samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         samplesCount: i32,
@@ -147,16 +147,16 @@ impl crate::GlobalNamespace::OVRHapticsClip {
             .invoke(".ctor", (samples, samplesCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_OVRHapticsClip_OVRHapticsClip3(
+    pub fn _ctor_Gc_i32_4(
         &mut self,
-        a: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
-        b: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
+        audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        channel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (a, b))?;
+            .invoke(".ctor", (audioClip, channel))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_1(

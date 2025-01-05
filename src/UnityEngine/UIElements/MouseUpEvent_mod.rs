@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseUpEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::MouseEventBase_1<
-        *mut crate::UnityEngine::UIElements::MouseUpEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseUpEvent>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+MouseUpEvent")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+MouseUpEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseUpEvent {
-    type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
-        *mut crate::UnityEngine::UIElements::MouseUpEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseUpEvent>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -28,9 +28,9 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseUpEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+MouseUpEvent")]
 impl crate::UnityEngine::UIElements::MouseUpEvent {
-    pub fn GetPooled_PointerCancelEvent2(
+    pub fn GetPooled_Gc0(
         pointerEvent: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::PointerCancelEvent,
+            crate::UnityEngine::UIElements::PointerUpEvent,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseUpEvent>,
@@ -41,7 +41,7 @@ impl crate::UnityEngine::UIElements::MouseUpEvent {
             .invoke("GetPooled", (pointerEvent))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_PointerMoveEvent1(
+    pub fn GetPooled_Gc1(
         pointerEvent: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::PointerMoveEvent,
         >,
@@ -54,9 +54,9 @@ impl crate::UnityEngine::UIElements::MouseUpEvent {
             .invoke("GetPooled", (pointerEvent))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_PointerUpEvent0(
+    pub fn GetPooled_Gc2(
         pointerEvent: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::PointerUpEvent,
+            crate::UnityEngine::UIElements::PointerCancelEvent,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseUpEvent>,

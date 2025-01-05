@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Activator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Activator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Activator")]
 impl std::ops::Deref for crate::System::Activator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl crate::System::Activator {
             .invoke("CreateInstance", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance_Type4(
+    pub fn CreateInstance_Gc4(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -43,12 +43,14 @@ impl crate::System::Activator {
             .invoke("CreateInstance", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance_Type_BindingFlags_Binder_Il2CppArray_CultureInfo0(
+    pub fn CreateInstance_Gc_BindingFlags_Gc_Gc_Gc0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         bindingAttr: crate::System::Reflection::BindingFlags,
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<
@@ -63,16 +65,20 @@ impl crate::System::Activator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance_Type_BindingFlags_Binder_Il2CppArray_CultureInfo_Il2CppArray1(
+    pub fn CreateInstance_Gc_BindingFlags_Gc_Gc_Gc_Gc1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         bindingAttr: crate::System::Reflection::BindingFlags,
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         activationAttributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -86,10 +92,12 @@ impl crate::System::Activator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance_Type_Il2CppArray2(
+    pub fn CreateInstance_Gc_Gc2(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -100,13 +108,17 @@ impl crate::System::Activator {
             .invoke("CreateInstance", (_cordl_type, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance_Type_Il2CppArray_Il2CppArray3(
+    pub fn CreateInstance_Gc_Gc_Gc3(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         activationAttributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -117,7 +129,7 @@ impl crate::System::Activator {
             .invoke("CreateInstance", (_cordl_type, args, activationAttributes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance_Type__cordl_bool5(
+    pub fn CreateInstance_Gc__cordl_bool5(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         nonPublic: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -129,7 +141,7 @@ impl crate::System::Activator {
             .invoke("CreateInstance", (_cordl_type, nonPublic))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance_Type__cordl_bool__cordl_bool6(
+    pub fn CreateInstance_Gc__cordl_bool__cordl_bool6(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         nonPublic: bool,
         wrapExceptions: bool,

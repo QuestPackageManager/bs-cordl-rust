@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XNamespace {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _hashCode: i32,
     pub _names: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Linq::XHashtable_1<*mut crate::System::Xml::Linq::XName>,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
     >,
 }
 #[cfg(feature = "System+Xml+Linq+XNamespace")]
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XNamespace")]
 impl std::ops::Deref for crate::System::Xml::Linq::XNamespace {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,9 @@ impl std::ops::DerefMut for crate::System::Xml::Linq::XNamespace {
 #[cfg(feature = "System+Xml+Linq+XNamespace")]
 impl crate::System::Xml::Linq::XNamespace {
     pub fn EnsureNamespace(
-        refNmsp: quest_hook::libil2cpp::ByRefMut<*mut crate::System::WeakReference>,
+        refNmsp: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+        >,
         namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
@@ -80,7 +82,7 @@ impl crate::System::Xml::Linq::XNamespace {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetName_Il2CppString0(
+    pub fn GetName_Gc0(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -108,7 +110,7 @@ impl crate::System::Xml::Linq::XNamespace {
             .invoke("GetName", (localName, index, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Get_Il2CppString0(
+    pub fn Get_Gc0(
         namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,

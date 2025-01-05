@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusTrackingReference {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >,
     pub _trackingState_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::IntegerControl,
     >,
@@ -24,7 +26,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+Oculus+Input+OculusTrackingReference")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Input::OculusTrackingReference {
-    type Target = crate::UnityEngine::InputSystem::InputDevice;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

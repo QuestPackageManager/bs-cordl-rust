@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Console {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Console")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Console")]
 impl std::ops::Deref for crate::System::Console {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -153,7 +153,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Console {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Console_WindowsConsole {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Console+WindowsConsole")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -162,7 +162,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Console+WindowsConsole")]
 impl std::ops::Deref for crate::System::Console_WindowsConsole {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -218,7 +218,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Console_WindowsConsole
 #[repr(C)]
 #[derive(Debug)]
 pub struct WindowsConsole_Console_WindowsCancelHandler {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "System+Console+WindowsConsole+WindowsCancelHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -228,7 +228,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Console+WindowsConsole+WindowsCancelHandler")]
 impl std::ops::Deref for crate::System::WindowsConsole_Console_WindowsCancelHandler {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

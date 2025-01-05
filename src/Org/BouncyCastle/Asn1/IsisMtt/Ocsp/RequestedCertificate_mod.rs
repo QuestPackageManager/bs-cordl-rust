@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RequestedCertificate {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub cert: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
     >,
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +51,19 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
         > = __cordl_object.invoke("GetCertificateBytes", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInstance_Asn1TaggedObject__cordl_bool1(
+    pub fn GetInstance_Gc0(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance__cordl_bool1(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         isExplicit: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -61,19 +77,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
             .invoke("GetInstance", (obj, isExplicit))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInstance_Il2CppObject0(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn New_Asn1TaggedObject0(
+    pub fn New_Gc0(
         tagged: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
         >,
@@ -84,7 +88,18 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
             .invoke_void(".ctor", (tagged))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_RequestedCertificate_Choice_Il2CppArray2(
+    pub fn New_Gc1(
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (certificate))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_RequestedCertificate_Choice_Gc2(
         _cordl_type: crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice,
         certificateOctets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -94,17 +109,6 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_type, certificateOctets))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_X509CertificateStructure1(
-        certificate: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (certificate))?;
         Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
@@ -120,7 +124,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1TaggedObject0(
+    pub fn _ctor_Gc0(
         &mut self,
         tagged: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
@@ -133,7 +137,20 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
             .invoke(".ctor", (tagged))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_RequestedCertificate_Choice_Il2CppArray2(
+    pub fn _ctor_Gc1(
+        &mut self,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (certificate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_RequestedCertificate_Choice_Gc2(
         &mut self,
         _cordl_type: crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice,
         certificateOctets: quest_hook::libil2cpp::Gc<
@@ -145,19 +162,6 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_type, certificateOctets))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_X509CertificateStructure1(
-        &mut self,
-        certificate: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (certificate))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Type(
@@ -184,16 +188,20 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate")]
-impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
 for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Choice {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate")]
-impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
 for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Choice {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
         unsafe { std::mem::transmute(self) }
     }
 }

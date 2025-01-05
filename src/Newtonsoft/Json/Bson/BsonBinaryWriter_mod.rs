@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BsonBinaryWriter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _writer: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
     pub _largeByteBuffer: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonBinaryWriter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonBinaryWriter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +41,7 @@ impl crate::Newtonsoft::Json::Bson::BsonBinaryWriter {
             .invoke("CalculateSizeWithLength", (stringByteCount, includeSize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CalculateSize_BsonToken1(
+    pub fn CalculateSize_Gc1(
         &mut self,
         t: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
     ) -> quest_hook::libil2cpp::Result<i32> {

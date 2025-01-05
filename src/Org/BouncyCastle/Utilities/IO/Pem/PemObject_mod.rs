@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PemObject {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub headers: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemObject")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,7 +42,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
         > = __cordl_object.invoke("Generate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_IList_Il2CppArray1(
+    pub fn New_Gc1(
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         headers: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -53,7 +53,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
             .invoke_void(".ctor", (_cordl_type, headers, content))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray0(
+    pub fn New_Gc_Gc0(
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -63,7 +63,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
             .invoke_void(".ctor", (_cordl_type, content))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_IList_Il2CppArray1(
+    pub fn _ctor_Gc1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         headers: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -76,7 +76,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
             .invoke(".ctor", (_cordl_type, headers, content))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -138,20 +138,30 @@ for crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemObject")]
-impl AsRef<crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator>
-for crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator,
+    >,
+> for crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
     fn as_ref(
         &self,
-    ) -> &crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemObject")]
-impl AsMut<crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator>
-for crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator,
+    >,
+> for crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

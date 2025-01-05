@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JoinQuickPlayViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _beatmapDifficultyDropdown: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapDifficultyDropdown,
     >,
@@ -12,7 +12,7 @@ pub struct JoinQuickPlayViewController {
     pub _levelSelectionToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _joinButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _cancelJoinButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<bool>,
     pub _multiplayerModeSettings: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerModeSettings,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "JoinQuickPlayViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::JoinQuickPlayViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -119,7 +119,7 @@ impl crate::GlobalNamespace::JoinQuickPlayViewController {
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -143,7 +143,7 @@ impl crate::GlobalNamespace::JoinQuickPlayViewController {
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

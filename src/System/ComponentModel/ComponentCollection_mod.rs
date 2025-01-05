@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ComponentCollection {
-    __cordl_parent: crate::System::Collections::ReadOnlyCollectionBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ReadOnlyCollectionBase,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+ComponentCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+ComponentCollection")]
 impl std::ops::Deref for crate::System::ComponentModel::ComponentCollection {
-    type Target = crate::System::Collections::ReadOnlyCollectionBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ReadOnlyCollectionBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

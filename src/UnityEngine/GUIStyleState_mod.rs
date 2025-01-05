@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUIStyleState {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Ptr: crate::System::IntPtr,
     pub m_SourceStyle: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+GUIStyleState")]
 impl std::ops::Deref for crate::UnityEngine::GUIStyleState {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,7 +68,7 @@ impl crate::UnityEngine::GUIStyleState {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_GUIStyle_IntPtr1(
+    pub fn New_Gc_IntPtr1(
         sourceStyle: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
         source: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -88,7 +88,7 @@ impl crate::UnityEngine::GUIStyleState {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_GUIStyle_IntPtr1(
+    pub fn _ctor_Gc_IntPtr1(
         &mut self,
         sourceStyle: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
         source: crate::System::IntPtr,

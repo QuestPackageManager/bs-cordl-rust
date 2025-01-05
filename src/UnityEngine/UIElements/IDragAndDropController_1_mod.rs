@@ -32,9 +32,7 @@ impl<
 > crate::UnityEngine::UIElements::IDragAndDropController_1<TArgs> {
     pub fn CanStartDrag(
         &mut self,
-        itemIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        itemIds: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TArgs: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -62,11 +60,7 @@ impl<
     }
     pub fn GetSortedSelectedIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>>
     where
         TArgs: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -74,9 +68,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = __cordl_object.invoke("GetSortedSelectedIds", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("GetSortedSelectedIds", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleAutoExpand(
@@ -129,9 +122,7 @@ impl<
     }
     pub fn SetupDragAndDrop(
         &mut self,
-        itemIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        itemIds: quest_hook::libil2cpp::Gc<i32>,
         skipText: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs>
     where

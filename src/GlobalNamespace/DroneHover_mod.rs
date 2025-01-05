@@ -2,16 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DroneHover {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _hoverAreaPerAxis: crate::UnityEngine::Vector3,
     pub _speed: f32,
     pub _compoundSins: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::DroneHover_SineLayer,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DroneHover_SineLayer>,
     >,
     pub _tiltTransforms: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Transform>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     pub _maxTiltAmount: f32,
     pub _tiltSpeed: f32,
@@ -26,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DroneHover")]
 impl std::ops::Deref for crate::GlobalNamespace::DroneHover {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -124,7 +122,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DroneHover {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DroneHover_SineLayer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub multiplier: f32,
     pub offset: f32,
 }
@@ -135,7 +133,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DroneHover+SineLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::DroneHover_SineLayer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

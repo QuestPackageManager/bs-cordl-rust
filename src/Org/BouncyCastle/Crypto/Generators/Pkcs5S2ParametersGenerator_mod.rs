@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs5S2ParametersGenerator {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
+    >,
     pub hMac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Pkcs5S2ParametersGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
-    type Target = crate::Org::BouncyCastle::Crypto::PbeParametersGenerator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,7 +76,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
         > = __cordl_object.invoke("GenerateDerivedMacParameters", (keySize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateDerivedParameters_Il2CppString_i32_1(
+    pub fn GenerateDerivedParameters_Gc_i32_1(
         &mut self,
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keySize: i32,
@@ -87,7 +91,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
         > = __cordl_object.invoke("GenerateDerivedParameters", (algorithm, keySize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateDerivedParameters_Il2CppString_i32_i32_3(
+    pub fn GenerateDerivedParameters_Gc_i32_i32_3(
         &mut self,
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keySize: i32,
@@ -140,7 +144,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IDigest1(
+    pub fn New_Gc1(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -159,7 +163,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IDigest1(
+    pub fn _ctor_Gc1(
         &mut self,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoIO {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+IO+MonoIO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+MonoIO")]
 impl std::ops::Deref for crate::System::IO::MonoIO {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -100,7 +100,7 @@ impl crate::System::IO::MonoIO {
             .invoke("GetCurrentDirectory", (error))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetException_Il2CppString_MonoIOError1(
+    pub fn GetException_Gc_MonoIOError1(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         error: crate::System::IO::MonoIOError,
     ) -> quest_hook::libil2cpp::Result<
@@ -119,6 +119,16 @@ impl crate::System::IO::MonoIO {
             .invoke("GetException", (error))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetFileType_Gc1(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::InteropServices::SafeHandle,
+        >,
+        error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IO::MonoFileType> {
+        let __cordl_ret: crate::System::IO::MonoFileType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFileType", (safeHandle, error))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetFileType_IntPtr0(
         handle: crate::System::IntPtr,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
@@ -127,14 +137,14 @@ impl crate::System::IO::MonoIO {
             .invoke("GetFileType", (handle, error))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetFileType_SafeHandle1(
+    pub fn GetLength_Gc1(
         safeHandle: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::InteropServices::SafeHandle,
         >,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IO::MonoFileType> {
-        let __cordl_ret: crate::System::IO::MonoFileType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFileType", (safeHandle, error))?;
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLength", (safeHandle, error))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetLength_IntPtr0(
@@ -145,17 +155,7 @@ impl crate::System::IO::MonoIO {
             .invoke("GetLength", (handle, error))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetLength_SafeHandle1(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::InteropServices::SafeHandle,
-        >,
-        error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetLength", (safeHandle, error))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Open_Il2CppObject0(
+    pub fn Open_Gc_FileMode_FileAccess_FileShare_FileOptions_ByRefMut0(
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
@@ -167,7 +167,7 @@ impl crate::System::IO::MonoIO {
             .invoke("Open", (filename, mode, access, share, options, error))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Open_Il2CppString1(
+    pub fn Open_Gc_FileMode_FileAccess_FileShare_FileOptions_ByRefMut1(
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
@@ -177,6 +177,19 @@ impl crate::System::IO::MonoIO {
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Open", (filename, mode, access, share, options, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Read_Gc1(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::InteropServices::SafeHandle,
+        >,
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        dest_offset: i32,
+        count: i32,
+        error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Read", (safeHandle, dest, dest_offset, count, error))?;
         Ok(__cordl_ret.into())
     }
     pub fn Read_IntPtr0(
@@ -190,27 +203,26 @@ impl crate::System::IO::MonoIO {
             .invoke("Read", (handle, dest, dest_offset, count, error))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Read_SafeHandle1(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::InteropServices::SafeHandle,
-        >,
-        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        dest_offset: i32,
-        count: i32,
-        error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Read", (safeHandle, dest, dest_offset, count, error))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn RemapPath(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         newPath: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("RemapPath", (path, newPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Seek_Gc1(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::InteropServices::SafeHandle,
+        >,
+        offset: i64,
+        origin: crate::System::IO::SeekOrigin,
+        error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Seek", (safeHandle, offset, origin, error))?;
         Ok(__cordl_ret.into())
     }
     pub fn Seek_IntPtr0(
@@ -223,16 +235,15 @@ impl crate::System::IO::MonoIO {
             .invoke("Seek", (handle, offset, origin, error))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Seek_SafeHandle1(
+    pub fn SetLength_Gc1(
         safeHandle: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::InteropServices::SafeHandle,
         >,
-        offset: i64,
-        origin: crate::System::IO::SeekOrigin,
+        length: i64,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Seek", (safeHandle, offset, origin, error))?;
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetLength", (safeHandle, length, error))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetLength_IntPtr0(
@@ -244,29 +255,7 @@ impl crate::System::IO::MonoIO {
             .invoke("SetLength", (handle, length, error))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetLength_SafeHandle1(
-        safeHandle: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::InteropServices::SafeHandle,
-        >,
-        length: i64,
-        error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetLength", (safeHandle, length, error))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Write_IntPtr_ByRef0(
-        handle: crate::System::IntPtr,
-        src: quest_hook::libil2cpp::ByRef<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
-        src_offset: i32,
-        count: i32,
-        error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Write", (handle, src, src_offset, count, error))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Write_SafeHandle_Il2CppArray1(
+    pub fn Write_Gc_Gc1(
         safeHandle: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::InteropServices::SafeHandle,
         >,
@@ -277,6 +266,19 @@ impl crate::System::IO::MonoIO {
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Write", (safeHandle, src, src_offset, count, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Write_IntPtr_ByRef0(
+        handle: crate::System::IntPtr,
+        src: quest_hook::libil2cpp::ByRef<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        >,
+        src_offset: i32,
+        count: i32,
+        error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Write", (handle, src, src_offset, count, error))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_AltDirectorySeparatorChar() -> quest_hook::libil2cpp::Result<char> {

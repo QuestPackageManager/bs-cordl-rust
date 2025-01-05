@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicOcspRespGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub responseExtensions: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Ocsp+BasicOcspRespGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,21 +31,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerat
 impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
     #[cfg(feature = "Org+BouncyCastle+Ocsp+BasicOcspRespGenerator+ResponseObject")]
     pub type ResponseObject = crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator_ResponseObject;
-    pub fn AddResponse_CertificateID_CertificateStatus0(
-        &mut self,
-        certID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
-        certStatus: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Ocsp::CertificateStatus,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddResponse", (certID, certStatus))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddResponse_DateTime_DateTime_X509Extensions3(
+    pub fn AddResponse_DateTime_DateTime_Gc3(
         &mut self,
         certID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
         certStatus: quest_hook::libil2cpp::Gc<
@@ -67,7 +53,7 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddResponse_DateTime_X509Extensions2(
+    pub fn AddResponse_DateTime_Gc2(
         &mut self,
         certID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
         certStatus: quest_hook::libil2cpp::Gc<
@@ -85,7 +71,7 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
             .invoke("AddResponse", (certID, certStatus, nextUpdate, singleExtensions))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddResponse_X509Extensions1(
+    pub fn AddResponse_Gc1(
         &mut self,
         certID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
         certStatus: quest_hook::libil2cpp::Gc<
@@ -102,6 +88,20 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
             .invoke("AddResponse", (certID, certStatus, singleExtensions))?;
         Ok(__cordl_ret.into())
     }
+    pub fn AddResponse_Gc_Gc0(
+        &mut self,
+        certID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
+        certStatus: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Ocsp::CertificateStatus,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddResponse", (certID, certStatus))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GenerateResponse(
         &mut self,
         signatureCalculator: quest_hook::libil2cpp::Gc<
@@ -109,7 +109,9 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
         >,
         chain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         >,
         producedAt: crate::System::DateTime,
@@ -125,14 +127,16 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
             .invoke("GenerateResponse", (signatureCalculator, chain, producedAt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_ISignatureFactory_Il2CppArray_DateTime2(
+    pub fn Generate_DateTime2(
         &mut self,
         signatureCalculatorFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ISignatureFactory,
         >,
         chain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         >,
         producedAt: crate::System::DateTime,
@@ -148,7 +152,7 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
             .invoke("Generate", (signatureCalculatorFactory, chain, producedAt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Il2CppString_AsymmetricKeyParameter_Il2CppArray_DateTime0(
+    pub fn Generate_Gc_DateTime0(
         &mut self,
         signingAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         privateKey: quest_hook::libil2cpp::Gc<
@@ -156,7 +160,9 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
         >,
         chain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         >,
         thisUpdate: crate::System::DateTime,
@@ -172,7 +178,7 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
             .invoke("Generate", (signingAlgorithm, privateKey, chain, thisUpdate))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Il2CppString_AsymmetricKeyParameter_Il2CppArray_DateTime_SecureRandom1(
+    pub fn Generate_Gc_DateTime_Gc1(
         &mut self,
         signingAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         privateKey: quest_hook::libil2cpp::Gc<
@@ -180,7 +186,9 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
         >,
         chain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         >,
         producedAt: crate::System::DateTime,
@@ -202,7 +210,16 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_AsymmetricKeyParameter1(
+    pub fn New_Gc0(
+        responderID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::RespID>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (responderID))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc1(
         publicKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
@@ -211,15 +228,6 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (publicKey))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_RespID0(
-        responderID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::RespID>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (responderID))?;
         Ok(__cordl_object.into())
     }
     pub fn SetResponseExtensions(
@@ -235,7 +243,18 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
             .invoke("SetResponseExtensions", (responseExtensions))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AsymmetricKeyParameter1(
+    pub fn _ctor_Gc0(
+        &mut self,
+        responderID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::RespID>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (responderID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc1(
         &mut self,
         publicKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -246,17 +265,6 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (publicKey))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_RespID0(
-        &mut self,
-        responderID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::RespID>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (responderID))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_SignatureAlgNames(
@@ -287,7 +295,7 @@ for crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicOcspRespGenerator_ResponseObject {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
     pub certStatus: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Ocsp::CertStatus,
@@ -311,7 +319,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Ocsp+BasicOcspRespGenerator+ResponseObject")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator_ResponseObject {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -325,7 +333,7 @@ for crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator_ResponseObject {
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+BasicOcspRespGenerator+ResponseObject")]
 impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator_ResponseObject {
-    pub fn New_DateTime_DateTime_X509Extensions1(
+    pub fn New_DateTime_DateTime_Gc1(
         certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
         certStatus: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Ocsp::CertificateStatus,
@@ -345,7 +353,7 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator_ResponseObject {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DateTime_X509Extensions0(
+    pub fn New_DateTime_Gc0(
         certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
         certStatus: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Ocsp::CertificateStatus,
@@ -361,7 +369,7 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator_ResponseObject {
             .invoke_void(".ctor", (certId, certStatus, thisUpdate, extensions))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DerGeneralizedTime_DerGeneralizedTime_X509Extensions2(
+    pub fn New_Gc_Gc_Gc2(
         certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
         certStatus: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Ocsp::CertificateStatus,
@@ -398,7 +406,7 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator_ResponseObject {
         > = __cordl_object.invoke("ToResponse", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DateTime_DateTime_X509Extensions1(
+    pub fn _ctor_DateTime_DateTime_Gc1(
         &mut self,
         certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
         certStatus: quest_hook::libil2cpp::Gc<
@@ -417,7 +425,7 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator_ResponseObject {
             .invoke(".ctor", (certId, certStatus, thisUpdate, nextUpdate, extensions))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DateTime_X509Extensions0(
+    pub fn _ctor_DateTime_Gc0(
         &mut self,
         certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
         certStatus: quest_hook::libil2cpp::Gc<
@@ -435,7 +443,7 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator_ResponseObject {
             .invoke(".ctor", (certId, certStatus, thisUpdate, extensions))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerGeneralizedTime_DerGeneralizedTime_X509Extensions2(
+    pub fn _ctor_Gc_Gc_Gc2(
         &mut self,
         certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
         certStatus: quest_hook::libil2cpp::Gc<

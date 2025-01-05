@@ -140,13 +140,13 @@ impl crate::UnityEngine::Animations::AnimationLayerMixerPlayable {
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationLayerMixerPlayable")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Animations::AnimationLayerMixerPlayable,
     >,
 > for crate::UnityEngine::Animations::AnimationLayerMixerPlayable {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Animations::AnimationLayerMixerPlayable,
     > {
         todo!()
@@ -154,29 +154,33 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationLayerMixerPlayable")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Animations::AnimationLayerMixerPlayable,
     >,
 > for crate::UnityEngine::Animations::AnimationLayerMixerPlayable {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Animations::AnimationLayerMixerPlayable,
     > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationLayerMixerPlayable")]
-impl AsRef<crate::UnityEngine::Playables::IPlayable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable>>
 for crate::UnityEngine::Animations::AnimationLayerMixerPlayable {
-    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationLayerMixerPlayable")]
-impl AsMut<crate::UnityEngine::Playables::IPlayable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable>>
 for crate::UnityEngine::Animations::AnimationLayerMixerPlayable {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable> {
         todo!()
     }
 }

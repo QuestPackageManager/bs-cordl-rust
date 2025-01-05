@@ -2,23 +2,21 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyAchievementIdsModelSO {
-    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >,
     pub _achievementsIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
         >,
     >,
     pub _achievementIdToTrophyId: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        i32,
     >,
     pub _trophyIdToAchievementId: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "SonyAchievementIdsModelSO")]
@@ -28,7 +26,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SonyAchievementIdsModelSO")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyAchievementIdsModelSO {
-    type Target = crate::GlobalNamespace::PersistentScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
         &mut self,
         trophyId: i32,
         achievementId: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -113,8 +113,8 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
             >,
         >,
     > {
@@ -122,8 +122,8 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
             >,
         > = __cordl_object.invoke("get_achievementsIds", ())?;
         Ok(__cordl_ret.into())
@@ -143,7 +143,7 @@ for crate::GlobalNamespace::SonyAchievementIdsModelSO {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyAchievementIdsModelSO_AchievementIdData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _trophyId: i32,
     pub _achievement: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
 }
@@ -156,7 +156,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SonyAchievementIdsModelSO+AchievementIdData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

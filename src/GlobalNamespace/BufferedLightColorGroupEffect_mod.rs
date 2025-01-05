@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BufferedLightColorGroupEffect {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MaterialPropertyBlockController,
@@ -15,7 +15,7 @@ pub struct BufferedLightColorGroupEffect {
     >,
     pub _lightColorBeatmapEventCallbackWrappers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
         >,
     >,
     pub _lastIndex: i32,
@@ -36,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BufferedLightColorGroupEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::BufferedLightColorGroupEffect {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -161,7 +161,7 @@ for crate::GlobalNamespace::BufferedLightColorGroupEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BufferedLightColorGroupEffect_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,
     pub materialPropertyBlockController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MaterialPropertyBlockController,
@@ -175,7 +175,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BufferedLightColorGroupEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

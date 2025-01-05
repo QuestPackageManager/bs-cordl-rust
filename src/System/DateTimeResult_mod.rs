@@ -97,7 +97,7 @@ impl crate::System::DateTimeResult {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFailure_Il2CppObject1(
+    pub fn SetFailure_Gc1(
         &mut self,
         failure: crate::System::ParseFailureKind,
         failureMessageID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -112,7 +112,7 @@ impl crate::System::DateTimeResult {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFailure_Il2CppObject_Il2CppString2(
+    pub fn SetFailure_Gc_Gc2(
         &mut self,
         failure: crate::System::ParseFailureKind,
         failureMessageID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -135,7 +135,7 @@ impl crate::System::DateTimeResult {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFailure_ParseFailureKind_Il2CppString0(
+    pub fn SetFailure_ParseFailureKind_Gc0(
         &mut self,
         failure: crate::System::ParseFailureKind,
         failureMessageID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -4,17 +4,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InitalizationObjectsOperation {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        bool,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
     pub m_RtdOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        *mut crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData,
+        >,
     >,
     pub m_Addressables: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AddressableAssets::AddressablesImpl,
     >,
     pub m_DepOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        *mut crate::System::Collections::Generic::IList_1<
+        quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     >,
@@ -32,9 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        bool,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<bool>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +63,9 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjec
     pub fn Init(
         &mut self,
         rtdOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData,
+            >,
         >,
         addressables: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AddressableAssets::AddressablesImpl,
@@ -106,7 +106,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjec
     pub fn _Execute_b__8_0(
         &mut self,
         obj: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,

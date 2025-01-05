@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindingRestrictions_MergedRestriction {
-    __cordl_parent: crate::System::Dynamic::BindingRestrictions,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Dynamic::BindingRestrictions,
+    >,
     pub Left: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
     pub Right: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
 }
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+BindingRestrictions+MergedRestriction")]
 impl std::ops::Deref for crate::GlobalNamespace::BindingRestrictions_MergedRestriction {
-    type Target = crate::System::Dynamic::BindingRestrictions;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

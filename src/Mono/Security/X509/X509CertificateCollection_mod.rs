@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CertificateCollection {
-    __cordl_parent: crate::System::Collections::CollectionBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::CollectionBase,
+    >,
 }
 #[cfg(feature = "Mono+Security+X509+X509CertificateCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+X509+X509CertificateCollection")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509CertificateCollection {
-    type Target = crate::System::Collections::CollectionBase;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Collections::CollectionBase>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -160,16 +162,20 @@ for crate::Mono::Security::X509::X509CertificateCollection {
     }
 }
 #[cfg(feature = "Mono+Security+X509+X509CertificateCollection")]
-impl AsRef<crate::System::Collections::IEnumerable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Mono::Security::X509::X509CertificateCollection {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Security+X509+X509CertificateCollection")]
-impl AsMut<crate::System::Collections::IEnumerable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Mono::Security::X509::X509CertificateCollection {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -179,7 +185,7 @@ for crate::Mono::Security::X509::X509CertificateCollection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CertificateCollection_X509CertificateEnumerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
 }
 #[cfg(
@@ -195,7 +201,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Security::X509::X509CertificateCollection_X509CertificateEnumerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -306,18 +312,22 @@ for crate::Mono::Security::X509::X509CertificateCollection_X509CertificateEnumer
 #[cfg(
     feature = "Mono+Security+X509+X509CertificateCollection+X509CertificateEnumerator"
 )]
-impl AsRef<crate::System::Collections::IEnumerator>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::Mono::Security::X509::X509CertificateCollection_X509CertificateEnumerator {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "Mono+Security+X509+X509CertificateCollection+X509CertificateEnumerator"
 )]
-impl AsMut<crate::System::Collections::IEnumerator>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::Mono::Security::X509::X509CertificateCollection_X509CertificateEnumerator {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }

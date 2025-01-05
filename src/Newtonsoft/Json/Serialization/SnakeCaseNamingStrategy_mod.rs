@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SnakeCaseNamingStrategy {
-    __cordl_parent: crate::Newtonsoft::Json::Serialization::NamingStrategy,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::NamingStrategy,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+SnakeCaseNamingStrategy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Serialization+SnakeCaseNamingStrategy")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::SnakeCaseNamingStrategy {
-    type Target = crate::Newtonsoft::Json::Serialization::NamingStrategy;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::NamingStrategy,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

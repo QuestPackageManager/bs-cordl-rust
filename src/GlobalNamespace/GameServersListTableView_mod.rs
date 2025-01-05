@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServersListTableView {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _tableView: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::TableViewWithDetailCell,
     >,
@@ -14,11 +14,13 @@ pub struct GameServersListTableView {
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub joinButtonPressedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
     >,
     pub _isInitialized: bool,
     pub _gamesList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::INetworkPlayer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+        >,
     >,
     pub _selectedServer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::INetworkPlayer,
@@ -31,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameServersListTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServersListTableView {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -160,9 +162,7 @@ impl crate::GlobalNamespace::GameServersListTableView {
     pub fn SetData(
         &mut self,
         servers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::INetworkPlayer,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
         clearSelection: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -186,7 +186,7 @@ impl crate::GlobalNamespace::GameServersListTableView {
     pub fn add_joinButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -199,7 +199,7 @@ impl crate::GlobalNamespace::GameServersListTableView {
     pub fn remove_joinButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -221,18 +221,30 @@ for crate::GlobalNamespace::GameServersListTableView {
     }
 }
 #[cfg(feature = "GameServersListTableView")]
-impl AsRef<crate::GlobalNamespace::TableViewWithDetailCell_IDataSource>
-for crate::GlobalNamespace::GameServersListTableView {
-    fn as_ref(&self) -> &crate::GlobalNamespace::TableViewWithDetailCell_IDataSource {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TableViewWithDetailCell_IDataSource,
+    >,
+> for crate::GlobalNamespace::GameServersListTableView {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TableViewWithDetailCell_IDataSource,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameServersListTableView")]
-impl AsMut<crate::GlobalNamespace::TableViewWithDetailCell_IDataSource>
-for crate::GlobalNamespace::GameServersListTableView {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TableViewWithDetailCell_IDataSource,
+    >,
+> for crate::GlobalNamespace::GameServersListTableView {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::TableViewWithDetailCell_IDataSource {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TableViewWithDetailCell_IDataSource,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

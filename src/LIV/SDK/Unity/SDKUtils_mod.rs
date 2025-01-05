@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SDKUtils {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "LIV+SDK+Unity+SDKUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LIV+SDK+Unity+SDKUtils")]
 impl std::ops::Deref for crate::LIV::SDK::Unity::SDKUtils {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,9 @@ impl crate::LIV::SDK::Unity::SDKUtils {
     pub fn CleanCameraBehaviours(
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         excludeBehaviours: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -66,7 +68,7 @@ impl crate::LIV::SDK::Unity::SDKUtils {
     }
     pub fn CreateTexture(
         renderTexture: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::RenderTexture,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         >,
         width: i32,
         height: i32,
@@ -90,7 +92,7 @@ impl crate::LIV::SDK::Unity::SDKUtils {
     }
     pub fn DestroyTexture(
         _renderTexture: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::RenderTexture,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -100,12 +102,14 @@ impl crate::LIV::SDK::Unity::SDKUtils {
     pub fn DisableStandardAssets(
         cameraInstance: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         behaviours: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::MonoBehaviour,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                >,
             >,
         >,
         wasBehaviourEnabled: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<bool>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -198,12 +202,14 @@ impl crate::LIV::SDK::Unity::SDKUtils {
     }
     pub fn RestoreStandardAssets(
         behaviours: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::MonoBehaviour,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                >,
             >,
         >,
         wasBehaviourEnabled: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<bool>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

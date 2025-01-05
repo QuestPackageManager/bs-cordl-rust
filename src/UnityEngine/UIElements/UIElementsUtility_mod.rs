@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIElementsUtility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIElementsUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIElementsUtility")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIElementsUtility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,17 +37,6 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             .invoke("BeginContainerGUI", (cache, evt, container))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateEvent_Event0(
-        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventBase,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateEvent", (systemEvent))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn CreateEvent_EventType1(
         systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
         eventType: crate::UnityEngine::EventType,
@@ -58,6 +47,17 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             crate::UnityEngine::UIElements::EventBase,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateEvent", (systemEvent, eventType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateEvent_Gc0(
+        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateEvent", (systemEvent))?;
         Ok(__cordl_ret.into())
     }
     pub fn DoDispatch(
@@ -79,9 +79,7 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
     }
     pub fn GetAllPanels(
         panels: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::Panel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
         >,
         contextType: crate::UnityEngine::UIElements::ContextType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -92,12 +90,12 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
     pub fn GetPanelsIterator() -> quest_hook::libil2cpp::Result<
         crate::System::Collections::Generic::Dictionary_2_Enumerator<
             i32,
-            *mut crate::UnityEngine::UIElements::Panel,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
         >,
     > {
         let __cordl_ret: crate::System::Collections::Generic::Dictionary_2_Enumerator<
             i32,
-            *mut crate::UnityEngine::UIElements::Panel,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetPanelsIterator", ())?;
         Ok(__cordl_ret.into())
@@ -146,7 +144,7 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
     pub fn TryGetPanel(
         instanceID: i32,
         panel: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::Panel,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -248,16 +246,22 @@ for crate::UnityEngine::UIElements::UIElementsUtility {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIElementsUtility")]
-impl AsRef<crate::UnityEngine::UIElements::IUIElementsUtility>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUIElementsUtility>>
 for crate::UnityEngine::UIElements::UIElementsUtility {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IUIElementsUtility {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUIElementsUtility> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIElementsUtility")]
-impl AsMut<crate::UnityEngine::UIElements::IUIElementsUtility>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUIElementsUtility>>
 for crate::UnityEngine::UIElements::UIElementsUtility {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IUIElementsUtility {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IUIElementsUtility,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

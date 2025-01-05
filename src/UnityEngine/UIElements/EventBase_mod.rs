@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBase {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _eventCategory_k__BackingField: crate::UnityEngine::UIElements::EventCategory,
     pub _timestamp_k__BackingField: i64,
     pub _eventId_k__BackingField: u64,
@@ -19,9 +19,7 @@ pub struct EventBase {
         crate::UnityEngine::UIElements::IEventHandler,
     >,
     pub _skipElements_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::IEventHandler,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
     >,
     pub _propagationPhase_k__BackingField: crate::UnityEngine::UIElements::PropagationPhase,
     pub m_CurrentTarget: quest_hook::libil2cpp::Gc<
@@ -37,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+EventBase")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventBase {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,7 +121,7 @@ impl crate::UnityEngine::UIElements::EventBase {
             .invoke("PostDispatch", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn PostDispatch_IPanel1(
+    pub fn PostDispatch_Gc1(
         &mut self,
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -144,7 +142,7 @@ impl crate::UnityEngine::UIElements::EventBase {
             .invoke("PreDispatch", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn PreDispatch_IPanel1(
+    pub fn PreDispatch_Gc1(
         &mut self,
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -451,18 +449,14 @@ impl crate::UnityEngine::UIElements::EventBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::IEventHandler,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::IEventHandler,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
         > = __cordl_object.invoke("get_skipElements", ())?;
         Ok(__cordl_ret.into())
     }
@@ -788,14 +782,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Event
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventBase")]
-impl AsRef<crate::System::IDisposable> for crate::UnityEngine::UIElements::EventBase {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::UnityEngine::UIElements::EventBase {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventBase")]
-impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::EventBase {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::UnityEngine::UIElements::EventBase {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

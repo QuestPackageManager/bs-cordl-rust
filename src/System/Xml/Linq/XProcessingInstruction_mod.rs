@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XProcessingInstruction {
-    __cordl_parent: crate::System::Xml::Linq::XNode,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNode>,
     pub target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XProcessingInstruction")]
 impl std::ops::Deref for crate::System::Xml::Linq::XProcessingInstruction {
-    type Target = crate::System::Xml::Linq::XNode;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNode>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +38,7 @@ impl crate::System::Xml::Linq::XProcessingInstruction {
             .invoke("CloneNode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString_Il2CppString0(
+    pub fn New_Gc0(
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -48,7 +48,7 @@ impl crate::System::Xml::Linq::XProcessingInstruction {
             .invoke_void(".ctor", (target, data))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XProcessingInstruction1(
+    pub fn New_Gc1(
         other: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Linq::XProcessingInstruction,
         >,
@@ -77,7 +77,7 @@ impl crate::System::Xml::Linq::XProcessingInstruction {
             .invoke("WriteTo", (writer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString0(
+    pub fn _ctor_Gc0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -89,7 +89,7 @@ impl crate::System::Xml::Linq::XProcessingInstruction {
             .invoke(".ctor", (target, data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XProcessingInstruction1(
+    pub fn _ctor_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Linq::XProcessingInstruction,

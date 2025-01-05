@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_time {
-    __cordl_parent: crate::System::Xml::Schema::Datatype_dateTimeBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Datatype_dateTimeBase,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_time")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Datatype_time")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_time {
-    type Target = crate::System::Xml::Schema::Datatype_dateTimeBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Datatype_dateTimeBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

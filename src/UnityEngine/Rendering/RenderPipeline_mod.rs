@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RenderPipeline {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _disposed_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderPipeline")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Rendering+RenderPipeline")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::RenderPipeline {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,7 +67,7 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
         cameras: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -110,11 +110,13 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
             .invoke("ProcessRenderRequests", (context, camera, renderRequest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Render_Il2CppArray0(
+    pub fn Render_ScriptableRenderContext_Gc0(
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
         cameras: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -124,11 +126,11 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
             .invoke("Render", (context, cameras))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Render_List_1_1(
+    pub fn Render_ScriptableRenderContext_Gc1(
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
         cameras: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

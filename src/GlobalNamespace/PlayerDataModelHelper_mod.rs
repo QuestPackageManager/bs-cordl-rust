@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerDataModelHelper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "PlayerDataModelHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerDataModelHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerDataModelHelper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,22 +24,20 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerDataModelHelper {
 }
 #[cfg(feature = "PlayerDataModelHelper")]
 impl crate::GlobalNamespace::PlayerDataModelHelper {
-    pub fn ToPlayerAllOverallStatsData_PlayerAllOverallStatsData2(
+    pub fn ToPlayerAllOverallStatsData_Gc0(
         playerAllOverallStatsData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerAllOverallStatsData,
+            crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerAllOverallStatsData>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
+            crate::GlobalNamespace::PlayerAllOverallStatsData,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToPlayerAllOverallStatsData", (playerAllOverallStatsData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToPlayerAllOverallStatsData_PlayerSaveDataV1_0_1_PlayerAllOverallStatsData1(
+    pub fn ToPlayerAllOverallStatsData_Gc1(
         playerAllOverallStatsData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData,
         >,
@@ -52,15 +50,17 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             .invoke("ToPlayerAllOverallStatsData", (playerAllOverallStatsData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToPlayerAllOverallStatsData_PlayerSaveData_PlayerAllOverallStatsData0(
+    pub fn ToPlayerAllOverallStatsData_Gc2(
         playerAllOverallStatsData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
+            crate::GlobalNamespace::PlayerAllOverallStatsData,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerAllOverallStatsData>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerAllOverallStatsData,
+            crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToPlayerAllOverallStatsData", (playerAllOverallStatsData))?;
         Ok(__cordl_ret.into())
@@ -80,9 +80,9 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             .invoke("ToPlayerOverallStatsData", (playerOverallStatsData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToPlayerOverallStats_PlayerSaveDataV1_0_1_PlayerOverallStatsData1(
+    pub fn ToPlayerOverallStats_Gc0(
         playerAllOverallStatsData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData,
+            crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -95,9 +95,9 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             .invoke("ToPlayerOverallStats", (playerAllOverallStatsData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToPlayerOverallStats_PlayerSaveData_PlayerOverallStatsData0(
+    pub fn ToPlayerOverallStats_Gc1(
         playerAllOverallStatsData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+            crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderShaderHelper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "SliderShaderHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderShaderHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderShaderHelper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetInitialProperties_SliderController1(
+    pub fn SetInitialProperties_Gc1(
         materialPropertyBlock: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::MaterialPropertyBlock,
         >,

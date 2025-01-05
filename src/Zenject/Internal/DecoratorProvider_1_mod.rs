@@ -2,23 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DecoratorProvider_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _cachedInstances: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::Zenject::IProvider,
-            *mut crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-    pub _factoryBindIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::System::Guid>,
-    >,
+    pub _factoryBindIds: quest_hook::libil2cpp::Gc<crate::System::Guid>,
     pub _decoratorFactories: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::IFactory_2<TContract, TContract>,
-        >,
+        quest_hook::libil2cpp::Gc<TContract, TContract>,
     >,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
@@ -30,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+Internal+DecoratorProvider_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::Internal::DecoratorProvider_1<TContract> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,9 +79,7 @@ impl<
         provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         buffer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -133,9 +125,7 @@ impl<
         provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         buffer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -178,18 +168,22 @@ for crate::Zenject::Internal::DecoratorProvider_1<TContract> {
 #[cfg(feature = "Zenject+Internal+DecoratorProvider_1")]
 impl<
     TContract: quest_hook::libil2cpp::Type,
-> AsRef<crate::Zenject::Internal::IDecoratorProvider>
+> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::Internal::IDecoratorProvider>>
 for crate::Zenject::Internal::DecoratorProvider_1<TContract> {
-    fn as_ref(&self) -> &crate::Zenject::Internal::IDecoratorProvider {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Zenject::Internal::IDecoratorProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+Internal+DecoratorProvider_1")]
 impl<
     TContract: quest_hook::libil2cpp::Type,
-> AsMut<crate::Zenject::Internal::IDecoratorProvider>
+> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::Internal::IDecoratorProvider>>
 for crate::Zenject::Internal::DecoratorProvider_1<TContract> {
-    fn as_mut(&mut self) -> &mut crate::Zenject::Internal::IDecoratorProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::Internal::IDecoratorProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }

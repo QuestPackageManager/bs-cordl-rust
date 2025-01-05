@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListenerAsyncResult {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub handle: quest_hook::libil2cpp::Gc<crate::System::Threading::ManualResetEvent>,
     pub synch: bool,
     pub completed: bool,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+ListenerAsyncResult")]
 impl std::ops::Deref for crate::System::Net::ListenerAsyncResult {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,7 @@ impl std::ops::DerefMut for crate::System::Net::ListenerAsyncResult {
 }
 #[cfg(feature = "System+Net+ListenerAsyncResult")]
 impl crate::System::Net::ListenerAsyncResult {
-    pub fn Complete_Exception0(
+    pub fn Complete_Gc0(
         &mut self,
         exc: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -46,7 +46,7 @@ impl crate::System::Net::ListenerAsyncResult {
             .invoke("Complete", (exc))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Complete_HttpListenerContext1(
+    pub fn Complete_Gc1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -57,7 +57,7 @@ impl crate::System::Net::ListenerAsyncResult {
             .invoke("Complete", (context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Complete_HttpListenerContext__cordl_bool2(
+    pub fn Complete__cordl_bool2(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerContext>,
         synch: bool,
@@ -162,14 +162,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ListenerAsyncResu
     }
 }
 #[cfg(feature = "System+Net+ListenerAsyncResult")]
-impl AsRef<crate::System::IAsyncResult> for crate::System::Net::ListenerAsyncResult {
-    fn as_ref(&self) -> &crate::System::IAsyncResult {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>>
+for crate::System::Net::ListenerAsyncResult {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+ListenerAsyncResult")]
-impl AsMut<crate::System::IAsyncResult> for crate::System::Net::ListenerAsyncResult {
-    fn as_mut(&mut self) -> &mut crate::System::IAsyncResult {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>>
+for crate::System::Net::ListenerAsyncResult {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> {
         unsafe { std::mem::transmute(self) }
     }
 }

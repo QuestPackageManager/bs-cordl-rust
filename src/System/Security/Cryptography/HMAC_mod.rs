@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HMAC {
-    __cordl_parent: crate::System::Security::Cryptography::KeyedHashAlgorithm,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::KeyedHashAlgorithm,
+    >,
     pub blockSizeValue: i32,
     pub m_hashName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_hash1: quest_hook::libil2cpp::Gc<
@@ -22,7 +24,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+HMAC")]
 impl std::ops::Deref for crate::System::Security::Cryptography::HMAC {
-    type Target = crate::System::Security::Cryptography::KeyedHashAlgorithm;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::KeyedHashAlgorithm,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

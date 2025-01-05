@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextSettings {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub m_Version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_DefaultFontAsset: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TextCore::Text::FontAsset,
@@ -11,9 +11,7 @@ pub struct TextSettings {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_FallbackFontAssets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Text::FontAsset,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
     >,
     pub m_MatchMaterialPreset: bool,
     pub m_MissingCharacterUnicode: i32,
@@ -25,9 +23,7 @@ pub struct TextSettings {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_FallbackSpriteAssets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
     >,
     pub m_MissingSpriteCharacterUnicode: u32,
     pub m_DefaultStyleSheet: quest_hook::libil2cpp::Gc<
@@ -45,15 +41,11 @@ pub struct TextSettings {
     pub m_UseModernHangulLineBreakingRules: bool,
     pub m_DisplayWarnings: bool,
     pub m_FontLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::UnityEngine::TextCore::Text::FontAsset,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
     >,
     pub m_FontReferences: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap,
-        >,
+        crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap,
     >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextSettings")]
@@ -63,7 +55,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+TextSettings")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextSettings {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -228,18 +220,14 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::FontAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::FontAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
         > = __cordl_object.invoke("get_fallbackFontAssets", ())?;
         Ok(__cordl_ret.into())
     }
@@ -247,18 +235,14 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
         > = __cordl_object.invoke("get_fallbackSpriteAssets", ())?;
         Ok(__cordl_ret.into())
     }
@@ -430,9 +414,7 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     pub fn set_fallbackFontAssets(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::FontAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -445,9 +427,7 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     pub fn set_fallbackSpriteAssets(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

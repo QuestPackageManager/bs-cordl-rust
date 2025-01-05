@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkiArchiveControl {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub pkiArchiveOptions: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Crmf::PkiArchiveOptions,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crmf+PkiArchiveControl")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crmf::PkiArchiveControl {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -116,16 +116,20 @@ for crate::Org::BouncyCastle::Crmf::PkiArchiveControl {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PkiArchiveControl")]
-impl AsRef<crate::Org::BouncyCastle::Crmf::IControl>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::IControl>>
 for crate::Org::BouncyCastle::Crmf::PkiArchiveControl {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crmf::IControl {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::IControl> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PkiArchiveControl")]
-impl AsMut<crate::Org::BouncyCastle::Crmf::IControl>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::IControl>>
 for crate::Org::BouncyCastle::Crmf::PkiArchiveControl {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crmf::IControl {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::IControl> {
         unsafe { std::mem::transmute(self) }
     }
 }

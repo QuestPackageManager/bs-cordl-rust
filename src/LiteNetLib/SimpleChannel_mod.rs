@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleChannel {
-    __cordl_parent: crate::LiteNetLib::BaseChannel,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>,
 }
 #[cfg(feature = "LiteNetLib+SimpleChannel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+SimpleChannel")]
 impl std::ops::Deref for crate::LiteNetLib::SimpleChannel {
-    type Target = crate::LiteNetLib::BaseChannel;
+    type Target = quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

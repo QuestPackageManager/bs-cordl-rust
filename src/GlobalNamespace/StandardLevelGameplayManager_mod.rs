@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelGameplayManager {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _gameScenesManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameScenesManager,
     >,
@@ -45,7 +45,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StandardLevelGameplayManager")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelGameplayManager {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,7 +84,7 @@ impl crate::GlobalNamespace::StandardLevelGameplayManager {
     }
     pub fn HandlePauseControllerCanPause(
         &mut self,
-        canPause: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        canPause: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -295,30 +295,38 @@ for crate::GlobalNamespace::StandardLevelGameplayManager {
     }
 }
 #[cfg(feature = "StandardLevelGameplayManager")]
-impl AsRef<crate::GlobalNamespace::ILevelEndActions>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelEndActions>>
 for crate::GlobalNamespace::StandardLevelGameplayManager {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelEndActions {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelEndActions> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "StandardLevelGameplayManager")]
-impl AsMut<crate::GlobalNamespace::ILevelEndActions>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelEndActions>>
 for crate::GlobalNamespace::StandardLevelGameplayManager {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelEndActions {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelEndActions> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "StandardLevelGameplayManager")]
-impl AsRef<crate::GlobalNamespace::ILevelStartController>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelStartController>>
 for crate::GlobalNamespace::StandardLevelGameplayManager {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelStartController {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelStartController> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "StandardLevelGameplayManager")]
-impl AsMut<crate::GlobalNamespace::ILevelStartController>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelStartController>>
 for crate::GlobalNamespace::StandardLevelGameplayManager {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelStartController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelStartController> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -344,7 +352,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelGameplayManager_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub continueGameplayWith0Energy: bool,
 }
 #[cfg(feature = "StandardLevelGameplayManager+InitData")]
@@ -355,7 +363,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StandardLevelGameplayManager+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelGameplayManager_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

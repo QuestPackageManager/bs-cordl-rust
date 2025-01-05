@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OffsetInstruction {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::Instruction,
+    >,
     pub _offset: i32,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+OffsetInstruction")]
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+OffsetInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::OffsetInstruction {
-    type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::Instruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,11 +59,9 @@ impl crate::System::Linq::Expressions::Interpreter::OffsetInstruction {
         &mut self,
         instructionIndex: i32,
         cookie: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        labelIndexer: quest_hook::libil2cpp::Gc<crate::System::Func_2<i32, i32>>,
+        labelIndexer: quest_hook::libil2cpp::Gc<i32, i32>,
         objects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -101,7 +103,9 @@ impl crate::System::Linq::Expressions::Interpreter::OffsetInstruction {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::Instruction,
+                >,
             >,
         >,
     > {
@@ -110,7 +114,9 @@ impl crate::System::Linq::Expressions::Interpreter::OffsetInstruction {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::Instruction,
+                >,
             >,
         > = __cordl_object.invoke("get_Cache", ())?;
         Ok(__cordl_ret.into())

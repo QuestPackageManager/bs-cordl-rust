@@ -2,18 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerScoreItem {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _scoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _nameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _tweeningManager: quest_hook::libil2cpp::Gc<
         crate::Tweening::TimeTweeningManager,
     >,
-    pub _nameColorTween: quest_hook::libil2cpp::Gc<
-        crate::Tweening::Tween_1<crate::UnityEngine::Color>,
-    >,
-    pub _scoreColorTween: quest_hook::libil2cpp::Gc<
-        crate::Tweening::Tween_1<crate::UnityEngine::Color>,
-    >,
+    pub _nameColorTween: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+    pub _scoreColorTween: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
 }
 #[cfg(feature = "MultiplayerScoreItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -22,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerScoreItem")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreItem {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

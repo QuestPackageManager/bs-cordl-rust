@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ToolboxItemAttribute {
-    __cordl_parent: crate::System::Attribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     pub _toolboxItemTypeName: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+ToolboxItemAttribute")]
 impl std::ops::Deref for crate::System::ComponentModel::ToolboxItemAttribute {
-    type Target = crate::System::Attribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +51,7 @@ impl crate::System::ComponentModel::ToolboxItemAttribute {
         let __cordl_ret: bool = __cordl_object.invoke("IsDefaultAttribute", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         toolboxItemTypeName: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         >,
@@ -71,7 +71,7 @@ impl crate::System::ComponentModel::ToolboxItemAttribute {
             .invoke_void(".ctor", (defaultType))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         toolboxItemTypeName: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,

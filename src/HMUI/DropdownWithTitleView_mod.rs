@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DropdownWithTitleView {
-    __cordl_parent: crate::HMUI::SimpleTextDropdown,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
     pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _titleRectTransform: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::RectTransform,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+DropdownWithTitleView")]
 impl std::ops::Deref for crate::HMUI::DropdownWithTitleView {
-    type Target = crate::HMUI::SimpleTextDropdown;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

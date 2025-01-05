@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreditsController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _creditsSceneSetupDataSO: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
     >,
@@ -14,18 +14,20 @@ pub struct CreditsController {
     pub _overflowHeight: f32,
     pub _contentWrapper: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _beforeMusicPacksCredits: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _afterMusicPacksCredits: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
     pub _packDefinitions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::GlobalNamespace::PackDefinitionSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
     >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _didFinish: bool,
@@ -38,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CreditsController")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -144,9 +146,7 @@ impl crate::GlobalNamespace::CreditsController {
     pub fn SpawnAllCredits(
         &mut self,
         musicPackCredits: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::GameObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -159,9 +159,7 @@ impl crate::GlobalNamespace::CreditsController {
     pub fn SpawnCredits(
         &mut self,
         creditsToSpawn: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::GameObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
         initialHeight: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarSystemSelectionFlowCoordinator {
-    __cordl_parent: crate::HMUI::FlowCoordinator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     pub _selectAvatarSystemViewController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SelectAvatarSystemViewController,
     >,
@@ -14,15 +14,15 @@ pub struct AvatarSystemSelectionFlowCoordinator {
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
-            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
         >,
+        crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
     >,
     pub _avatarFlowCoordinators: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
-            *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+        crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
         >,
     >,
     pub _continueButtonVisible: bool,
@@ -35,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
-    type Target = crate::HMUI::FlowCoordinator;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -171,8 +171,8 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     pub fn Initialize(
         &mut self,
         avatarSystemsMetadata: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -256,10 +256,10 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
-                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
             >,
+            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -272,10 +272,10 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
-                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
             >,
+            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

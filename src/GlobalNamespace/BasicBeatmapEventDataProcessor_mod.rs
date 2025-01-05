@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicBeatmapEventDataProcessor {
-    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataProcessor_1<
-        *mut crate::GlobalNamespace::BasicBeatmapEventData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BasicBeatmapEventData>,
     >,
 }
 #[cfg(feature = "BasicBeatmapEventDataProcessor")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BasicBeatmapEventDataProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::BasicBeatmapEventDataProcessor {
-    type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
-        *mut crate::GlobalNamespace::BasicBeatmapEventData,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BasicBeatmapEventData>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -38,9 +38,7 @@ impl crate::GlobalNamespace::BasicBeatmapEventDataProcessor {
     pub fn ProcessBeforeDeleteEventDataInternal(
         &mut self,
         nodeToDelete: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                *mut crate::GlobalNamespace::BeatmapDataItem,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -53,9 +51,7 @@ impl crate::GlobalNamespace::BasicBeatmapEventDataProcessor {
     pub fn ProcessInsertedEventDataInternal(
         &mut self,
         insertedNode: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                *mut crate::GlobalNamespace::BeatmapDataItem,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

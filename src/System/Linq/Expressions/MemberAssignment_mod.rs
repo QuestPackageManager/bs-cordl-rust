@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemberAssignment {
-    __cordl_parent: crate::System::Linq::Expressions::MemberBinding,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::MemberBinding,
+    >,
     pub _expression: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Expression,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+MemberAssignment")]
 impl std::ops::Deref for crate::System::Linq::Expressions::MemberAssignment {
-    type Target = crate::System::Linq::Expressions::MemberBinding;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::MemberBinding,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

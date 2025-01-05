@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LayoutElement {
-    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >,
     pub m_IgnoreLayout: bool,
     pub m_MinWidth: f32,
     pub m_MinHeight: f32,
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+LayoutElement")]
 impl std::ops::Deref for crate::UnityEngine::UI::LayoutElement {
-    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -284,30 +288,38 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::LayoutElement
     }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutElement")]
-impl AsRef<crate::UnityEngine::UI::ILayoutElement>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
 for crate::UnityEngine::UI::LayoutElement {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutElement")]
-impl AsMut<crate::UnityEngine::UI::ILayoutElement>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
 for crate::UnityEngine::UI::LayoutElement {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutElement")]
-impl AsRef<crate::UnityEngine::UI::ILayoutIgnorer>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutIgnorer>>
 for crate::UnityEngine::UI::LayoutElement {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutIgnorer {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutIgnorer> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutElement")]
-impl AsMut<crate::UnityEngine::UI::ILayoutIgnorer>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutIgnorer>>
 for crate::UnityEngine::UI::LayoutElement {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutIgnorer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutIgnorer> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventTrackDefinitionSO {
-    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >,
     pub _dataTransformationType: crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType,
     pub _markerType: crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType,
     pub _visible: bool,
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 impl std::ops::Deref for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
-    type Target = crate::GlobalNamespace::PersistentScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

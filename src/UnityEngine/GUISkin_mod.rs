@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUISkin {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub m_Font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     pub m_box: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
     pub m_button: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
@@ -44,14 +44,14 @@ pub struct GUISkin {
     >,
     pub m_ScrollView: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
     pub m_CustomStyles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUIStyle>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+        >,
     >,
     pub m_Settings: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUISettings>,
     pub m_Styles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::UnityEngine::GUIStyle,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
     >,
 }
 #[cfg(feature = "UnityEngine+GUISkin")]
@@ -60,7 +60,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+GUISkin")]
 impl std::ops::Deref for crate::UnityEngine::GUISkin {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -204,14 +204,18 @@ impl crate::UnityEngine::GUISkin {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUIStyle>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUIStyle>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+            >,
         > = __cordl_object.invoke("get_customStyles", ())?;
         Ok(__cordl_ret.into())
     }
@@ -523,7 +527,9 @@ impl crate::UnityEngine::GUISkin {
     pub fn set_customStyles(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUIStyle>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -789,7 +795,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUISkin {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUISkin_SkinChangedDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "UnityEngine+GUISkin+SkinChangedDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -798,7 +804,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+GUISkin+SkinChangedDelegate")]
 impl std::ops::Deref for crate::UnityEngine::GUISkin_SkinChangedDelegate {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

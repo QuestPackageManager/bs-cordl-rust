@@ -94,7 +94,7 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -497,9 +497,11 @@ impl<
     T6: quest_hook::libil2cpp::Type,
     T7: quest_hook::libil2cpp::Type,
     TRest: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IStructuralComparable>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IStructuralComparable>>
 for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
-    fn as_ref(&self) -> &crate::System::Collections::IStructuralComparable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IStructuralComparable> {
         todo!()
     }
 }
@@ -513,9 +515,13 @@ impl<
     T6: quest_hook::libil2cpp::Type,
     T7: quest_hook::libil2cpp::Type,
     TRest: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IStructuralComparable>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IStructuralComparable>>
 for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IStructuralComparable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IStructuralComparable,
+    > {
         todo!()
     }
 }
@@ -529,9 +535,11 @@ impl<
     T6: quest_hook::libil2cpp::Type,
     T7: quest_hook::libil2cpp::Type,
     TRest: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IStructuralEquatable>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IStructuralEquatable>>
 for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
-    fn as_ref(&self) -> &crate::System::Collections::IStructuralEquatable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IStructuralEquatable> {
         todo!()
     }
 }
@@ -545,9 +553,13 @@ impl<
     T6: quest_hook::libil2cpp::Type,
     T7: quest_hook::libil2cpp::Type,
     TRest: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IStructuralEquatable>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IStructuralEquatable>>
 for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IStructuralEquatable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IStructuralEquatable,
+    > {
         todo!()
     }
 }
@@ -561,9 +573,9 @@ impl<
     T6: quest_hook::libil2cpp::Type,
     T7: quest_hook::libil2cpp::Type,
     TRest: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IComparable>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
-    fn as_ref(&self) -> &crate::System::IComparable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
@@ -577,9 +589,81 @@ impl<
     T6: quest_hook::libil2cpp::Type,
     T7: quest_hook::libil2cpp::Type,
     TRest: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IComparable>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_8")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+    T4: quest_hook::libil2cpp::Type,
+    T5: quest_hook::libil2cpp::Type,
+    T6: quest_hook::libil2cpp::Type,
+    T7: quest_hook::libil2cpp::Type,
+    TRest: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IValueTupleInternal>>
+for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IValueTupleInternal> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_8")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+    T4: quest_hook::libil2cpp::Type,
+    T5: quest_hook::libil2cpp::Type,
+    T6: quest_hook::libil2cpp::Type,
+    T7: quest_hook::libil2cpp::Type,
+    TRest: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IValueTupleInternal>>
+for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::IValueTupleInternal> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_8")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+    T4: quest_hook::libil2cpp::Type,
+    T5: quest_hook::libil2cpp::Type,
+    T6: quest_hook::libil2cpp::Type,
+    T7: quest_hook::libil2cpp::Type,
+    TRest: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Runtime::CompilerServices::ITuple>>
+for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Runtime::CompilerServices::ITuple> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple_8")]
+impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+    T4: quest_hook::libil2cpp::Type,
+    T5: quest_hook::libil2cpp::Type,
+    T6: quest_hook::libil2cpp::Type,
+    T7: quest_hook::libil2cpp::Type,
+    TRest: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Runtime::CompilerServices::ITuple>>
+for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::ITuple,
+    > {
         todo!()
     }
 }
@@ -594,13 +678,13 @@ impl<
     T7: quest_hook::libil2cpp::Type,
     TRest: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest>,
     >,
 > for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest>,
     > {
         todo!()
@@ -617,13 +701,13 @@ impl<
     T7: quest_hook::libil2cpp::Type,
     TRest: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest>,
     >,
 > for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest>,
     > {
         todo!()
@@ -640,13 +724,13 @@ impl<
     T7: quest_hook::libil2cpp::Type,
     TRest: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest>,
     >,
 > for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest>,
     > {
         todo!()
@@ -663,79 +747,15 @@ impl<
     T7: quest_hook::libil2cpp::Type,
     TRest: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest>,
     >,
 > for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest>,
     > {
-        todo!()
-    }
-}
-#[cfg(feature = "System+ValueTuple_8")]
-impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-    T7: quest_hook::libil2cpp::Type,
-    TRest: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IValueTupleInternal>
-for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
-    fn as_ref(&self) -> &crate::System::IValueTupleInternal {
-        todo!()
-    }
-}
-#[cfg(feature = "System+ValueTuple_8")]
-impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-    T7: quest_hook::libil2cpp::Type,
-    TRest: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IValueTupleInternal>
-for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
-    fn as_mut(&mut self) -> &mut crate::System::IValueTupleInternal {
-        todo!()
-    }
-}
-#[cfg(feature = "System+ValueTuple_8")]
-impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-    T7: quest_hook::libil2cpp::Type,
-    TRest: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Runtime::CompilerServices::ITuple>
-for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
-    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::ITuple {
-        todo!()
-    }
-}
-#[cfg(feature = "System+ValueTuple_8")]
-impl<
-    T1: quest_hook::libil2cpp::Type,
-    T2: quest_hook::libil2cpp::Type,
-    T3: quest_hook::libil2cpp::Type,
-    T4: quest_hook::libil2cpp::Type,
-    T5: quest_hook::libil2cpp::Type,
-    T6: quest_hook::libil2cpp::Type,
-    T7: quest_hook::libil2cpp::Type,
-    TRest: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Runtime::CompilerServices::ITuple>
-for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::CompilerServices::ITuple {
         todo!()
     }
 }

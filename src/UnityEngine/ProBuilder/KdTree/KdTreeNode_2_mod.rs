@@ -5,18 +5,12 @@ pub struct KdTreeNode_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Point: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
     pub Value: TValue,
-    pub Duplicates: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<TValue>,
-    >,
-    pub LeftChild: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-    >,
-    pub RightChild: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-    >,
+    pub Duplicates: quest_hook::libil2cpp::Gc<TValue>,
+    pub LeftChild: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub RightChild: quest_hook::libil2cpp::Gc<TKey, TValue>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -31,7 +25,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,7 +75,7 @@ impl<
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_TValue1(
+    pub fn New_Gc_TValue1(
         point: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
         value: TValue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -132,7 +126,7 @@ impl<
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_TValue1(
+    pub fn _ctor_Gc_TValue1(
         &mut self,
         point: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
         value: TValue,
@@ -166,11 +160,7 @@ impl<
     pub fn get_Item(
         &mut self,
         compare: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey, TValue>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -180,17 +170,14 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-        > = __cordl_object.invoke("get_Item", (compare))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = __cordl_object
+            .invoke("get_Item", (compare))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_Item(
         &mut self,
         compare: i32,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-        >,
+        value: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

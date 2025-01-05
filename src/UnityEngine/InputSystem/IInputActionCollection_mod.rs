@@ -92,7 +92,7 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         >,
     > {
@@ -101,7 +101,7 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection {
         );
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         > = __cordl_object.invoke("get_devices", ())?;
         Ok(__cordl_ret.into())
@@ -121,7 +121,7 @@ impl crate::UnityEngine::InputSystem::IInputActionCollection {
         &mut self,
         value: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -144,44 +144,48 @@ for crate::UnityEngine::InputSystem::IInputActionCollection {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+for crate::UnityEngine::InputSystem::IInputActionCollection {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+for crate::UnityEngine::InputSystem::IInputActionCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection")]
 impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::InputSystem::InputAction,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     >,
 > for crate::UnityEngine::InputSystem::IInputActionCollection {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::InputSystem::InputAction,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection")]
 impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::InputSystem::InputAction,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     >,
 > for crate::UnityEngine::InputSystem::IInputActionCollection {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::InputSystem::InputAction,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection")]
-impl AsRef<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::InputSystem::IInputActionCollection {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+IInputActionCollection")]
-impl AsMut<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::InputSystem::IInputActionCollection {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }

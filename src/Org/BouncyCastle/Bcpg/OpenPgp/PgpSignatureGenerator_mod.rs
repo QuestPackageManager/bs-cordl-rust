@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpSignatureGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
     pub hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
     pub privKey: quest_hook::libil2cpp::Gc<
@@ -14,12 +14,12 @@ pub struct PgpSignatureGenerator {
     pub lastb: u8,
     pub unhashed: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::SignatureSubpacket>,
         >,
     >,
     pub hashed: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::SignatureSubpacket>,
         >,
     >,
 }
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSignatureGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +58,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
         > = __cordl_object.invoke("Generate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateCertification_Il2CppString_PgpPublicKey0(
+    pub fn GenerateCertification_Gc0(
         &mut self,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pubKey: quest_hook::libil2cpp::Gc<
@@ -75,8 +75,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
         > = __cordl_object.invoke("GenerateCertification", (id, pubKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateCertification_PgpPublicKey3(
+    pub fn GenerateCertification_Gc1(
         &mut self,
+        userAttributes: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVector,
+        >,
         pubKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
@@ -88,10 +91,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
-        > = __cordl_object.invoke("GenerateCertification", (pubKey))?;
+        > = __cordl_object.invoke("GenerateCertification", (userAttributes, pubKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateCertification_PgpPublicKey_PgpPublicKey2(
+    pub fn GenerateCertification_Gc2(
         &mut self,
         masterKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
@@ -110,11 +113,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
         > = __cordl_object.invoke("GenerateCertification", (masterKey, pubKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateCertification_PgpUserAttributeSubpacketVector_PgpPublicKey1(
+    pub fn GenerateCertification_Gc3(
         &mut self,
-        userAttributes: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVector,
-        >,
         pubKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
@@ -126,7 +126,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
-        > = __cordl_object.invoke("GenerateCertification", (userAttributes, pubKey))?;
+        > = __cordl_object.invoke("GenerateCertification", (pubKey))?;
         Ok(__cordl_ret.into())
     }
     pub fn GenerateOnePassVersion(
@@ -161,7 +161,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
         > = __cordl_object.invoke("GetEncodedPublicKey", (pubKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitSign_SecureRandom1(
+    pub fn InitSign_Gc1(
         &mut self,
         sigType: i32,
         key: quest_hook::libil2cpp::Gc<
@@ -178,7 +178,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
             .invoke("InitSign", (sigType, key, random))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitSign_i32_PgpPrivateKey0(
+    pub fn InitSign_i32_Gc0(
         &mut self,
         sigType: i32,
         key: quest_hook::libil2cpp::Gc<
@@ -253,7 +253,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
             .invoke("UpdateWithPublicKey", (key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Update_Il2CppArray1(
+    pub fn Update_Gc1(
         &mut self,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -264,7 +264,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
             .invoke("Update", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Update_Il2CppArray_i32_i32_2(
+    pub fn Update_Gc_i32_i32_2(
         &mut self,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
@@ -336,7 +336,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
         &mut self,
         packets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         >,
         subpacket: quest_hook::libil2cpp::Gc<
@@ -345,7 +347,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         >,
     > {
@@ -354,7 +358,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         > = __cordl_object.invoke("insertSubpacket", (packets, subpacket))?;
         Ok(__cordl_ret.into())
@@ -363,7 +369,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
         &mut self,
         packets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         >,
         _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,

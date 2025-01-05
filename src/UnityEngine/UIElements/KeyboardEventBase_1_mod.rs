@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyboardEventBase_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
     pub _modifiers_k__BackingField: crate::UnityEngine::EventModifiers,
     pub _character_k__BackingField: char,
     pub _keyCode_k__BackingField: crate::UnityEngine::KeyCode,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+KeyboardEventBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::KeyboardEventBase_1<T> {
-    type Target = crate::UnityEngine::UIElements::EventBase_1<T>;
+    type Target = quest_hook::libil2cpp::Gc<T>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -256,18 +256,22 @@ for crate::UnityEngine::UIElements::KeyboardEventBase_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+KeyboardEventBase_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<crate::UnityEngine::UIElements::IKeyboardEvent>
+> AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IKeyboardEvent>>
 for crate::UnityEngine::UIElements::KeyboardEventBase_1<T> {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IKeyboardEvent {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IKeyboardEvent> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+KeyboardEventBase_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::UnityEngine::UIElements::IKeyboardEvent>
+> AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IKeyboardEvent>>
 for crate::UnityEngine::UIElements::KeyboardEventBase_1<T> {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IKeyboardEvent {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IKeyboardEvent> {
         unsafe { std::mem::transmute(self) }
     }
 }

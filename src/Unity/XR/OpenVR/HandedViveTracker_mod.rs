@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HandedViveTracker {
-    __cordl_parent: crate::Unity::XR::OpenVR::ViveTracker,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Unity::XR::OpenVR::ViveTracker>,
     pub _grip_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::AxisControl,
     >,
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+OpenVR+HandedViveTracker")]
 impl std::ops::Deref for crate::Unity::XR::OpenVR::HandedViveTracker {
-    type Target = crate::Unity::XR::OpenVR::ViveTracker;
+    type Target = quest_hook::libil2cpp::Gc<crate::Unity::XR::OpenVR::ViveTracker>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

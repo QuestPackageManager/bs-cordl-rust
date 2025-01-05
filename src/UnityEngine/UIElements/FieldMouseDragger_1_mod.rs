@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FieldMouseDragger_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseFieldMouseDragger,
-    pub m_DrivenField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IValueField_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseFieldMouseDragger,
     >,
+    pub m_DrivenField: quest_hook::libil2cpp::Gc<T>,
     pub m_DragElement: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -22,7 +22,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+FieldMouseDragger_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::FieldMouseDragger_1<T> {
-    type Target = crate::UnityEngine::UIElements::BaseFieldMouseDragger;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseFieldMouseDragger,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,9 +57,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        drivenField: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::IValueField_1<T>,
-        >,
+        drivenField: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -197,9 +197,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        drivenField: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::IValueField_1<T>,
-        >,
+        drivenField: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

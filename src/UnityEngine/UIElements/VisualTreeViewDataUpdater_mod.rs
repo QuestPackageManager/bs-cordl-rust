@@ -2,16 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualTreeViewDataUpdater {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
+    >,
     pub m_UpdateList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     >,
     pub m_ParentList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     >,
     pub m_Version: u32,
     pub m_LastVersion: u32,
@@ -24,7 +22,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeViewDataUpdater")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualTreeViewDataUpdater {
-    type Target = crate::UnityEngine::UIElements::BaseVisualTreeUpdater;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

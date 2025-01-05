@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PosesRecordingData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub objectIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub keyframes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
         >,
     >,
     pub externalCameraCalibration: quest_hook::libil2cpp::Gc<
@@ -22,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PosesRecordingData")]
 impl std::ops::Deref for crate::GlobalNamespace::PosesRecordingData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,13 +64,15 @@ impl crate::GlobalNamespace::PosesRecordingData {
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (objectId))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_List_1_PosesRecordingData_ExternalCameraCalibration1(
+    pub fn New_Gc1(
         objectIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         keyframes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
             >,
         >,
         externalCameraCalibration: quest_hook::libil2cpp::Gc<
@@ -81,9 +85,11 @@ impl crate::GlobalNamespace::PosesRecordingData {
             .invoke_void(".ctor", (objectIds, keyframes, externalCameraCalibration))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PosesRecordingData_ExternalCameraCalibration0(
+    pub fn New_Gc_Gc0(
         objectIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         externalCameraCalibration: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration,
@@ -105,14 +111,16 @@ impl crate::GlobalNamespace::PosesRecordingData {
         let __cordl_ret: i32 = __cordl_object.invoke("ObjectIndex", (objectId))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_List_1_PosesRecordingData_ExternalCameraCalibration1(
+    pub fn _ctor_Gc1(
         &mut self,
         objectIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         keyframes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
             >,
         >,
         externalCameraCalibration: quest_hook::libil2cpp::Gc<
@@ -126,10 +134,12 @@ impl crate::GlobalNamespace::PosesRecordingData {
             .invoke(".ctor", (objectIds, keyframes, externalCameraCalibration))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_PosesRecordingData_ExternalCameraCalibration0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         objectIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         externalCameraCalibration: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration,
@@ -156,7 +166,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PosesRecordin
 #[repr(C)]
 #[derive(Debug)]
 pub struct PosesRecordingData_ExternalCameraCalibration {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub fieldOfVision: f32,
     pub nearClip: f32,
     pub farClip: f32,
@@ -172,7 +182,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PosesRecordingData+ExternalCameraCalibration")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -186,7 +196,7 @@ for crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration {
 }
 #[cfg(feature = "PosesRecordingData+ExternalCameraCalibration")]
 impl crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration {
-    pub fn New_Camera1(
+    pub fn New_Gc1(
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -211,7 +221,7 @@ impl crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Camera1(
+    pub fn _ctor_Gc1(
         &mut self,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -252,7 +262,7 @@ for crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PosesRecordingData_TransformsKeyframe {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub poses: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Pose>,
     >,
@@ -266,7 +276,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PosesRecordingData+TransformsKeyframe")]
 impl std::ops::Deref for crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

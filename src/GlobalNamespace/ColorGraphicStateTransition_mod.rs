@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorGraphicStateTransition {
-    __cordl_parent: crate::GlobalNamespace::ColorStateTransition_1<
-        *mut crate::UnityEngine::UI::Graphic,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     >,
     pub _colorTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
 }
@@ -14,8 +14,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColorGraphicStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorGraphicStateTransition {
-    type Target = crate::GlobalNamespace::ColorStateTransition_1<
-        *mut crate::UnityEngine::UI::Graphic,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

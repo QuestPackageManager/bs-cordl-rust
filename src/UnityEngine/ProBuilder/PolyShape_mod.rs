@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PolyShape {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub m_Mesh: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ProBuilder::ProBuilderMesh,
     >,
-    pub m_Points: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-    >,
+    pub m_Points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     pub m_Extrude: f32,
     pub m_EditMode: crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode,
     pub m_FlipNormals: bool,
@@ -21,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+PolyShape")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::PolyShape {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,9 +50,7 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
     }
     pub fn SetControlPoints(
         &mut self,
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
-        >,
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -76,20 +72,13 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
     pub fn get_controlPoints(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                crate::UnityEngine::Vector3,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                crate::UnityEngine::Vector3,
-            >,
-        > = __cordl_object.invoke("get_controlPoints", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3> = __cordl_object
+            .invoke("get_controlPoints", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_extrude(&mut self) -> quest_hook::libil2cpp::Result<f32> {

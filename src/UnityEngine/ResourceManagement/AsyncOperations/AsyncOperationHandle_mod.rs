@@ -69,9 +69,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHand
     pub fn GetDependencies(
         &mut self,
         deps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -104,9 +102,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHand
     pub fn InternalGetDownloadStatus(
         &mut self,
         visited: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -180,7 +176,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHand
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "WaitForCompletion", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IAsyncOperation0(
+    pub fn _ctor_Gc0(
         &mut self,
         op: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
@@ -193,7 +189,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHand
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString2(
+    pub fn _ctor_Gc2(
         &mut self,
         op: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
@@ -221,7 +217,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHand
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Il2CppString3(
+    pub fn _ctor_i32_Gc3(
         &mut self,
         op: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
@@ -239,9 +235,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHand
     pub fn add_Completed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -254,9 +248,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHand
     pub fn add_Destroyed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -360,24 +352,18 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHand
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Task", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_Completed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -390,9 +376,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHand
     pub fn remove_Destroyed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -415,16 +399,20 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHand
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle")]
-impl AsRef<crate::System::Collections::IEnumerator>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle")]
-impl AsMut<crate::System::Collections::IEnumerator>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         todo!()
     }
 }

@@ -2,10 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SyncBackgroundCommand {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _taskCompletionSource: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::TaskCompletionSource_1<i32>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _taskCompletionSource: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "SyncBackgroundCommand")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SyncBackgroundCommand")]
 impl std::ops::Deref for crate::GlobalNamespace::SyncBackgroundCommand {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,16 +90,20 @@ for crate::GlobalNamespace::SyncBackgroundCommand {
     }
 }
 #[cfg(feature = "SyncBackgroundCommand")]
-impl AsRef<crate::GlobalNamespace::IBackgroundCommand>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBackgroundCommand>>
 for crate::GlobalNamespace::SyncBackgroundCommand {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IBackgroundCommand {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBackgroundCommand> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "SyncBackgroundCommand")]
-impl AsMut<crate::GlobalNamespace::IBackgroundCommand>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBackgroundCommand>>
 for crate::GlobalNamespace::SyncBackgroundCommand {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBackgroundCommand {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBackgroundCommand> {
         unsafe { std::mem::transmute(self) }
     }
 }

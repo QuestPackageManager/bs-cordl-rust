@@ -117,30 +117,20 @@ impl crate::GlobalNamespace::AuthenticationToken {
     }
 }
 #[cfg(feature = "AuthenticationToken")]
-impl AsRef<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::AuthenticationToken,
-    >,
-> for crate::GlobalNamespace::AuthenticationToken {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AuthenticationToken>>
+for crate::GlobalNamespace::AuthenticationToken {
     fn as_ref(
         &self,
-    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::AuthenticationToken,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AuthenticationToken> {
         todo!()
     }
 }
 #[cfg(feature = "AuthenticationToken")]
-impl AsMut<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::AuthenticationToken,
-    >,
-> for crate::GlobalNamespace::AuthenticationToken {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AuthenticationToken>>
+for crate::GlobalNamespace::AuthenticationToken {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::AuthenticationToken,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AuthenticationToken> {
         todo!()
     }
 }

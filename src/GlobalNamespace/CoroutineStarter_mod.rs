@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CoroutineStarter {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
 }
 #[cfg(feature = "CoroutineStarter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CoroutineStarter")]
 impl std::ops::Deref for crate::GlobalNamespace::CoroutineStarter {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,16 +76,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CoroutineStar
     }
 }
 #[cfg(feature = "CoroutineStarter")]
-impl AsRef<crate::GlobalNamespace::ICoroutineStarter>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICoroutineStarter>>
 for crate::GlobalNamespace::CoroutineStarter {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ICoroutineStarter {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICoroutineStarter> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "CoroutineStarter")]
-impl AsMut<crate::GlobalNamespace::ICoroutineStarter>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICoroutineStarter>>
 for crate::GlobalNamespace::CoroutineStarter {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ICoroutineStarter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICoroutineStarter> {
         unsafe { std::mem::transmute(self) }
     }
 }

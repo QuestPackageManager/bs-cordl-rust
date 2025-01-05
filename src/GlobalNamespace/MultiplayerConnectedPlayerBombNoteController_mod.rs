@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerBombNoteController {
-    __cordl_parent: crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController,
+    >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBombNoteController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerConnectedPlayerBombNoteController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
-    type Target = crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -75,8 +79,10 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerBombNoteController_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
-        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBombNoteController+Pool")]
@@ -88,8 +94,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerConnectedPlayerBombNoteController+Pool")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<
-        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

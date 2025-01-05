@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SslStream {
-    __cordl_parent: crate::System::Net::Security::AuthenticatedStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Security::AuthenticatedStream,
+    >,
     pub provider: quest_hook::libil2cpp::Gc<
         crate::Mono::Net::Security::MobileTlsProvider,
     >,
@@ -27,7 +29,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Security+SslStream")]
 impl std::ops::Deref for crate::System::Net::Security::SslStream {
-    type Target = crate::System::Net::Security::AuthenticatedStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Net::Security::AuthenticatedStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -265,42 +269,7 @@ impl crate::System::Net::Security::SslStream {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetProvider", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_MonoTlsProvider_MonoTlsSettings2(
-        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        leaveInnerStreamOpen: bool,
-        provider: quest_hook::libil2cpp::Gc<
-            crate::Mono::Security::Interface::MonoTlsProvider,
-        >,
-        settings: quest_hook::libil2cpp::Gc<
-            crate::Mono::Security::Interface::MonoTlsSettings,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (innerStream, leaveInnerStreamOpen, provider, settings),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_RemoteCertificateValidationCallback0(
-        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        leaveInnerStreamOpen: bool,
-        userCertificateValidationCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Security::RemoteCertificateValidationCallback,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (innerStream, leaveInnerStreamOpen, userCertificateValidationCallback),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_RemoteCertificateValidationCallback_LocalCertificateSelectionCallback1(
+    pub fn New_Gc1(
         innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leaveInnerStreamOpen: bool,
         userCertificateValidationCallback: quest_hook::libil2cpp::Gc<
@@ -324,6 +293,41 @@ impl crate::System::Net::Security::SslStream {
             )?;
         Ok(__cordl_object.into())
     }
+    pub fn New_Gc2(
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        leaveInnerStreamOpen: bool,
+        provider: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsProvider,
+        >,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (innerStream, leaveInnerStreamOpen, provider, settings),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc__cordl_bool_Gc0(
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        leaveInnerStreamOpen: bool,
+        userCertificateValidationCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (innerStream, leaveInnerStreamOpen, userCertificateValidationCallback),
+            )?;
+        Ok(__cordl_object.into())
+    }
     pub fn Read(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -342,15 +346,11 @@ impl crate::System::Net::Security::SslStream {
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
             .invoke("ReadAsync", (buffer, offset, count, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -433,43 +433,7 @@ impl crate::System::Net::Security::SslStream {
             .invoke("WriteAsync", (buffer, offset, count, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_MonoTlsProvider_MonoTlsSettings2(
-        &mut self,
-        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        leaveInnerStreamOpen: bool,
-        provider: quest_hook::libil2cpp::Gc<
-            crate::Mono::Security::Interface::MonoTlsProvider,
-        >,
-        settings: quest_hook::libil2cpp::Gc<
-            crate::Mono::Security::Interface::MonoTlsSettings,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (innerStream, leaveInnerStreamOpen, provider, settings))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_RemoteCertificateValidationCallback0(
-        &mut self,
-        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        leaveInnerStreamOpen: bool,
-        userCertificateValidationCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Net::Security::RemoteCertificateValidationCallback,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (innerStream, leaveInnerStreamOpen, userCertificateValidationCallback),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_RemoteCertificateValidationCallback_LocalCertificateSelectionCallback1(
+    pub fn _ctor_Gc1(
         &mut self,
         innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leaveInnerStreamOpen: bool,
@@ -492,6 +456,42 @@ impl crate::System::Net::Security::SslStream {
                     userCertificateValidationCallback,
                     userCertificateSelectionCallback,
                 ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc2(
+        &mut self,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        leaveInnerStreamOpen: bool,
+        provider: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsProvider,
+        >,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (innerStream, leaveInnerStreamOpen, provider, settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc__cordl_bool_Gc0(
+        &mut self,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        leaveInnerStreamOpen: bool,
+        userCertificateValidationCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (innerStream, leaveInnerStreamOpen, userCertificateValidationCallback),
             )?;
         Ok(__cordl_ret.into())
     }

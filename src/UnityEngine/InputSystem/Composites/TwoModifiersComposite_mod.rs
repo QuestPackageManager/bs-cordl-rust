@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TwoModifiersComposite {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputBindingComposite,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputBindingComposite,
+    >,
     pub modifier1: i32,
     pub modifier2: i32,
     pub binding: i32,
@@ -20,7 +22,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Composites+TwoModifiersComposite")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Composites::TwoModifiersComposite {
-    type Target = crate::UnityEngine::InputSystem::InputBindingComposite;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputBindingComposite,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

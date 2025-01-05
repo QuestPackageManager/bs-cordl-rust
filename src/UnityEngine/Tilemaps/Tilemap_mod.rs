@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Tilemap {
-    __cordl_parent: crate::UnityEngine::GridLayout,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::GridLayout>,
     pub m_BufferSyncTile: bool,
 }
 #[cfg(feature = "UnityEngine+Tilemaps+Tilemap")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Tilemaps+Tilemap")]
 impl std::ops::Deref for crate::UnityEngine::Tilemaps::Tilemap {
-    type Target = crate::UnityEngine::GridLayout;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::GridLayout>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -115,14 +115,18 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         blockDimensions: crate::UnityEngine::Vector3Int,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = __cordl_object.invoke("GetTileAssetsBlock", (position, blockDimensions))?;
         Ok(__cordl_ret.into())
     }
@@ -132,14 +136,18 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         blockDimensions: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3Int>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = __cordl_object
             .invoke("GetTileAssetsBlock_Injected", (position, blockDimensions))?;
         Ok(__cordl_ret.into())
@@ -150,7 +158,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Tilemaps::TileBase,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::TileBase>,
             >,
         >,
     > {
@@ -159,7 +167,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Tilemaps::TileBase,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::TileBase>,
             >,
         > = __cordl_object.invoke("GetTilesBlock", (bounds))?;
         Ok(__cordl_ret.into())
@@ -175,7 +183,7 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
         &mut self,
         usedTiles: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Tilemaps::TileBase,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::TileBase>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -236,7 +244,9 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
     pub fn Internal_GetUsedTilesNonAlloc(
         &mut self,
         usedTiles: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

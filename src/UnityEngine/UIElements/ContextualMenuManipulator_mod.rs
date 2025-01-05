@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContextualMenuManipulator {
-    __cordl_parent: crate::UnityEngine::UIElements::MouseManipulator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::MouseManipulator,
+    >,
     pub m_MenuBuilder: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
         >,
     >,
 }
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ContextualMenuManipulator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ContextualMenuManipulator {
-    type Target = crate::UnityEngine::UIElements::MouseManipulator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::MouseManipulator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,8 +47,8 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
     }
     pub fn New(
         menuBuilder: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -134,8 +138,8 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
     pub fn _ctor(
         &mut self,
         menuBuilder: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

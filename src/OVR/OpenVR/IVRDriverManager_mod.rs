@@ -41,7 +41,7 @@ impl crate::OVR::OpenVR::IVRDriverManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRDriverManager__GetDriverCount {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -50,7 +50,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -131,7 +131,7 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRDriverManager__GetDriverHandle {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -140,7 +140,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -225,7 +225,7 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRDriverManager__GetDriverName {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -234,7 +234,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRDriverManager__GetDriverName {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

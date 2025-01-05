@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MailAddress {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _displayNameEncoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub _displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Mail+MailAddress")]
 impl std::ops::Deref for crate::System::Net::Mail::MailAddress {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ impl crate::System::Net::Mail::MailAddress {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         address: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -54,18 +54,7 @@ impl crate::System::Net::Mail::MailAddress {
             .invoke_void(".ctor", (address))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Encoding2(
-        address: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        displayNameEncoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (address, displayName, displayNameEncoding))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppString_Il2CppString0(
+    pub fn New_Gc_Gc0(
         displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -74,6 +63,17 @@ impl crate::System::Net::Mail::MailAddress {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (displayName, userName, domain))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc2(
+        address: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        displayNameEncoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (address, displayName, displayNameEncoding))?;
         Ok(__cordl_object.into())
     }
     pub fn ToString(
@@ -89,7 +89,7 @@ impl crate::System::Net::Mail::MailAddress {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         address: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -100,20 +100,7 @@ impl crate::System::Net::Mail::MailAddress {
             .invoke(".ctor", (address))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Encoding2(
-        &mut self,
-        address: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        displayNameEncoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (address, displayName, displayNameEncoding))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString_Il2CppString0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -124,6 +111,19 @@ impl crate::System::Net::Mail::MailAddress {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (displayName, userName, domain))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc2(
+        &mut self,
+        address: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        displayNameEncoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (address, displayName, displayNameEncoding))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Address(

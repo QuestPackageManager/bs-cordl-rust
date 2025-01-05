@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemNetworkCredential {
-    __cordl_parent: crate::System::Net::NetworkCredential,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::NetworkCredential>,
 }
 #[cfg(feature = "System+Net+SystemNetworkCredential")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+SystemNetworkCredential")]
 impl std::ops::Deref for crate::System::Net::SystemNetworkCredential {
-    type Target = crate::System::Net::NetworkCredential;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::NetworkCredential>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,47 +2,38 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SegmentedControl {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _separatorPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub didSelectCellEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<*mut crate::HMUI::SegmentedControl, i32>,
+        quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+        i32,
     >,
     pub didPressNonInteractableCellEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<*mut crate::HMUI::SegmentedControl, i32>,
+        quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+        i32,
     >,
     pub _numberOfCells: i32,
     pub _cells: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::HMUI::SegmentedControlCell,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
     >,
     pub _separators: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub _dataSource: quest_hook::libil2cpp::Gc<
         crate::HMUI::SegmentedControl_IDataSource,
     >,
     pub _selectedCellNumber: i32,
-    pub _callbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::System::Action_1<i32>,
-        >,
-    >,
+    pub _callbacks: quest_hook::libil2cpp::Gc<i32, quest_hook::libil2cpp::Gc<i32>>,
     pub _reusableCellPools: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::UnityEngine::Object,
-            *mut crate::System::Collections::Generic::Queue_1<
-                *mut crate::HMUI::SegmentedControlCell,
-            >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
         >,
     >,
     pub _cellToPrefabMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::HMUI::SegmentedControlCell,
-            *mut crate::UnityEngine::Object,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     >,
 }
 #[cfg(feature = "HMUI+SegmentedControl")]
@@ -52,7 +43,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+SegmentedControl")]
 impl std::ops::Deref for crate::HMUI::SegmentedControl {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -149,7 +140,7 @@ impl crate::HMUI::SegmentedControl {
     pub fn SetCallbackForCell(
         &mut self,
         cellNumber: i32,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        callback: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -171,7 +162,8 @@ impl crate::HMUI::SegmentedControl {
     pub fn add_didPressNonInteractableCellEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut crate::HMUI::SegmentedControl, i32>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -184,7 +176,8 @@ impl crate::HMUI::SegmentedControl {
     pub fn add_didSelectCellEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut crate::HMUI::SegmentedControl, i32>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -198,18 +191,14 @@ impl crate::HMUI::SegmentedControl {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::HMUI::SegmentedControlCell,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::HMUI::SegmentedControlCell,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
         > = __cordl_object.invoke("get_cells", ())?;
         Ok(__cordl_ret.into())
     }
@@ -236,7 +225,8 @@ impl crate::HMUI::SegmentedControl {
     pub fn remove_didPressNonInteractableCellEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut crate::HMUI::SegmentedControl, i32>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -249,7 +239,8 @@ impl crate::HMUI::SegmentedControl {
     pub fn remove_didSelectCellEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut crate::HMUI::SegmentedControl, i32>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

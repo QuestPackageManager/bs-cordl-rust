@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpriteRenderer {
-    __cordl_parent: crate::UnityEngine::Renderer,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     pub m_SpriteChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Events::UnityEvent_1<*mut crate::UnityEngine::SpriteRenderer>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
     >,
 }
 #[cfg(feature = "UnityEngine+SpriteRenderer")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+SpriteRenderer")]
 impl std::ops::Deref for crate::UnityEngine::SpriteRenderer {
-    type Target = crate::UnityEngine::Renderer;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -111,9 +111,7 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn RegisterSpriteChangeCallback(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<
-                *mut crate::UnityEngine::SpriteRenderer,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -126,9 +124,7 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn UnregisterSpriteChangeCallback(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<
-                *mut crate::UnityEngine::SpriteRenderer,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

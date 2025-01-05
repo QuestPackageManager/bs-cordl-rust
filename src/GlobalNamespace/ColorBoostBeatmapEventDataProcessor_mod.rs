@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorBoostBeatmapEventDataProcessor {
-    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataProcessor_1<
-        *mut crate::GlobalNamespace::ColorBoostBeatmapEventData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorBoostBeatmapEventData>,
     >,
 }
 #[cfg(feature = "ColorBoostBeatmapEventDataProcessor")]
@@ -14,8 +14,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColorBoostBeatmapEventDataProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorBoostBeatmapEventDataProcessor {
-    type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
-        *mut crate::GlobalNamespace::ColorBoostBeatmapEventData,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorBoostBeatmapEventData>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

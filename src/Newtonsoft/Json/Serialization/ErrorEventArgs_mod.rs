@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ErrorEventArgs {
-    __cordl_parent: crate::System::EventArgs,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
     pub _CurrentObject_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Serialization+ErrorEventArgs")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::ErrorEventArgs {
-    type Target = crate::System::EventArgs;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::EventArgs>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

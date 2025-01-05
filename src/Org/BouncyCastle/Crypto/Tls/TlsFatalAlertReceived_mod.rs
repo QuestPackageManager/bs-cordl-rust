@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsFatalAlertReceived {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::TlsException,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsException,
+    >,
     pub alertDescription: u8,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsFatalAlertReceived")]
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsFatalAlertReceived")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlertReceived {
-    type Target = crate::Org::BouncyCastle::Crypto::Tls::TlsException;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsException,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

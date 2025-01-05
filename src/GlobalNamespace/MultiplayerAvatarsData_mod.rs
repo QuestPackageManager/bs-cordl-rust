@@ -3,9 +3,7 @@
 #[derive(Debug, Clone, Default)]
 pub struct MultiplayerAvatarsData {
     pub multiplayerAvatarsData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::MultiplayerAvatarData,
-        >,
+        crate::GlobalNamespace::MultiplayerAvatarData,
     >,
     pub supportedAvatarTypeIdHashesBloomFilter: crate::GlobalNamespace::BitMask128,
 }
@@ -48,21 +46,15 @@ impl crate::GlobalNamespace::MultiplayerAvatarsData {
     pub fn DeserializeAvatarsData(
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::MultiplayerAvatarData,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerAvatarData>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::MultiplayerAvatarData,
-            >,
+            crate::GlobalNamespace::MultiplayerAvatarData,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DeserializeAvatarsData", (reader))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -128,9 +120,7 @@ impl crate::GlobalNamespace::MultiplayerAvatarsData {
     pub fn _ctor_BitMask128_1(
         &mut self,
         multiplayerAvatarsData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::MultiplayerAvatarData,
-            >,
+            crate::GlobalNamespace::MultiplayerAvatarData,
         >,
         supportedAvatarTypeIdHashesBloomFilter: crate::GlobalNamespace::BitMask128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -141,16 +131,12 @@ impl crate::GlobalNamespace::MultiplayerAvatarsData {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IEnumerable_1_0(
+    pub fn _ctor_Gc0(
         &mut self,
         multiplayerAvatarsData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::MultiplayerAvatarData,
-            >,
+            crate::GlobalNamespace::MultiplayerAvatarData,
         >,
-        supportedAvatarTypeIdHashes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<u32>,
-        >,
+        supportedAvatarTypeIdHashes: quest_hook::libil2cpp::Gc<u32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -161,50 +147,38 @@ impl crate::GlobalNamespace::MultiplayerAvatarsData {
     }
 }
 #[cfg(feature = "MultiplayerAvatarsData")]
-impl AsRef<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::MultiplayerAvatarsData,
-    >,
-> for crate::GlobalNamespace::MultiplayerAvatarsData {
-    fn as_ref(
-        &self,
-    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::MultiplayerAvatarsData,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "MultiplayerAvatarsData")]
-impl AsMut<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::MultiplayerAvatarsData,
-    >,
-> for crate::GlobalNamespace::MultiplayerAvatarsData {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::MultiplayerAvatarsData,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "MultiplayerAvatarsData")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::MultiplayerAvatarsData>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerAvatarsData>>
 for crate::GlobalNamespace::MultiplayerAvatarsData {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::MultiplayerAvatarsData> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerAvatarsData> {
         todo!()
     }
 }
 #[cfg(feature = "MultiplayerAvatarsData")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::MultiplayerAvatarsData>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerAvatarsData>>
 for crate::GlobalNamespace::MultiplayerAvatarsData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::GlobalNamespace::MultiplayerAvatarsData,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerAvatarsData> {
+        todo!()
+    }
+}
+#[cfg(feature = "MultiplayerAvatarsData")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerAvatarsData>>
+for crate::GlobalNamespace::MultiplayerAvatarsData {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerAvatarsData> {
+        todo!()
+    }
+}
+#[cfg(feature = "MultiplayerAvatarsData")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerAvatarsData>>
+for crate::GlobalNamespace::MultiplayerAvatarsData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerAvatarsData> {
         todo!()
     }
 }

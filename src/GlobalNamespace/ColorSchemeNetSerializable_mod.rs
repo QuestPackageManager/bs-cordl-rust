@@ -77,16 +77,20 @@ impl crate::GlobalNamespace::ColorSchemeNetSerializable {
     }
 }
 #[cfg(feature = "ColorSchemeNetSerializable")]
-impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
 for crate::GlobalNamespace::ColorSchemeNetSerializable {
-    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
         todo!()
     }
 }
 #[cfg(feature = "ColorSchemeNetSerializable")]
-impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
 for crate::GlobalNamespace::ColorSchemeNetSerializable {
-    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
         todo!()
     }
 }

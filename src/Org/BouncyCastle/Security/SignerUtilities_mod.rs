@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignerUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Security+SignerUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Security+SignerUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::SignerUtilities {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::SignerUtilities 
 }
 #[cfg(feature = "Org+BouncyCastle+Security+SignerUtilities")]
 impl crate::Org::BouncyCastle::Security::SignerUtilities {
-    pub fn GetDefaultX509Parameters_DerObjectIdentifier0(
+    pub fn GetDefaultX509Parameters_Gc0(
         id: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -37,7 +37,7 @@ impl crate::Org::BouncyCastle::Security::SignerUtilities {
             .invoke("GetDefaultX509Parameters", (id))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDefaultX509Parameters_Il2CppString1(
+    pub fn GetDefaultX509Parameters_Gc1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
@@ -83,7 +83,7 @@ impl crate::Org::BouncyCastle::Security::SignerUtilities {
             .invoke("GetPssX509Parameters", (digestName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSigner_DerObjectIdentifier0(
+    pub fn GetSigner_Gc0(
         id: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -95,7 +95,7 @@ impl crate::Org::BouncyCastle::Security::SignerUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetSigner", (id))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSigner_Il2CppString1(
+    pub fn GetSigner_Gc1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
@@ -106,7 +106,7 @@ impl crate::Org::BouncyCastle::Security::SignerUtilities {
             .invoke("GetSigner", (algorithm))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitSigner_DerObjectIdentifier0(
+    pub fn InitSigner_Gc__cordl_bool_Gc_Gc0(
         algorithmOid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -126,7 +126,7 @@ impl crate::Org::BouncyCastle::Security::SignerUtilities {
             .invoke("InitSigner", (algorithmOid, forSigning, privateKey, random))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitSigner_Il2CppString1(
+    pub fn InitSigner_Gc__cordl_bool_Gc_Gc1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         forSigning: bool,
         privateKey: quest_hook::libil2cpp::Gc<

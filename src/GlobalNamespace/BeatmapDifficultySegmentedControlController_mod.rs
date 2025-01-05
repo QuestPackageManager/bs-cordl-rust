@@ -2,20 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDifficultySegmentedControlController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _difficultySegmentedControl: quest_hook::libil2cpp::Gc<
         crate::HMUI::TextSegmentedControl,
     >,
     pub didSelectDifficultyEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
-            crate::GlobalNamespace::BeatmapDifficulty,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
         >,
+        crate::GlobalNamespace::BeatmapDifficulty,
     >,
     pub _difficulties: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::BeatmapDifficulty,
-        >,
+        crate::GlobalNamespace::BeatmapDifficulty,
     >,
     pub _selectedDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
 }
@@ -28,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDifficultySegmentedControlController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -98,9 +96,7 @@ impl crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
     pub fn SetData(
         &mut self,
         difficultyBeatmaps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::GlobalNamespace::BeatmapDifficulty,
-            >,
+            crate::GlobalNamespace::BeatmapDifficulty,
         >,
         selectedDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
         allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -128,10 +124,10 @@ impl crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
     pub fn add_didSelectDifficultyEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
-                crate::GlobalNamespace::BeatmapDifficulty,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
             >,
+            crate::GlobalNamespace::BeatmapDifficulty,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -154,10 +150,10 @@ impl crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
     pub fn remove_didSelectDifficultyEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
-                crate::GlobalNamespace::BeatmapDifficulty,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
             >,
+            crate::GlobalNamespace::BeatmapDifficulty,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

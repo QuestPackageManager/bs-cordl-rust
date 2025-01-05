@@ -49,7 +49,7 @@ impl crate::UnityEngine::LowLevel::PlayerLoopSystem {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerLoopSystem_UpdateFunction {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -59,7 +59,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
 impl std::ops::Deref for crate::UnityEngine::LowLevel::PlayerLoopSystem_UpdateFunction {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

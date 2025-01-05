@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaObjectCollection {
-    __cordl_parent: crate::System::Collections::CollectionBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::CollectionBase,
+    >,
     pub parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectCollection")]
@@ -12,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectCollection")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaObjectCollection {
-    type Target = crate::System::Collections::CollectionBase;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Collections::CollectionBase>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +27,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaObjectCollectio
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectCollection")]
 impl crate::System::Xml::Schema::XmlSchemaObjectCollection {
-    pub fn Add_XmlSchemaObject0(
+    pub fn Add_Gc0(
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -35,7 +37,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectCollection {
         let __cordl_ret: i32 = __cordl_object.invoke("Add", (item))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_XmlSchemaObjectCollection1(
+    pub fn Add_Gc1(
         &mut self,
         collToAdd: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaObjectCollection,

@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InlineStyleAccess {
-    __cordl_parent: crate::UnityEngine::UIElements::StyleValueCollection,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleValueCollection,
+    >,
     pub m_ValuesManaged: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StyleValueManaged,
-        >,
+        crate::UnityEngine::UIElements::StyleSheets::StyleValueManaged,
     >,
     pub _ve_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
@@ -34,7 +34,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::InlineStyleAccess {
-    type Target = crate::UnityEngine::UIElements::StyleValueCollection;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleValueCollection,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -993,16 +995,20 @@ for crate::UnityEngine::UIElements::InlineStyleAccess {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess")]
-impl AsRef<crate::UnityEngine::UIElements::IStyle>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IStyle>>
 for crate::UnityEngine::UIElements::InlineStyleAccess {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IStyle {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IStyle> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess")]
-impl AsMut<crate::UnityEngine::UIElements::IStyle>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IStyle>>
 for crate::UnityEngine::UIElements::InlineStyleAccess {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IStyle {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IStyle> {
         unsafe { std::mem::transmute(self) }
     }
 }

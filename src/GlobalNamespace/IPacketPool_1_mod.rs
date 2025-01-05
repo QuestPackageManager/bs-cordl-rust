@@ -70,16 +70,22 @@ for crate::GlobalNamespace::IPacketPool_1<T> {
     }
 }
 #[cfg(feature = "IPacketPool_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::GlobalNamespace::IPacketPool>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool>>
 for crate::GlobalNamespace::IPacketPool_1<T> {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IPacketPool {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IPacketPool_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::IPacketPool>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool>>
 for crate::GlobalNamespace::IPacketPool_1<T> {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPacketPool {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -6,9 +6,13 @@ pub struct UnityEvent_3<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::UnityEngine::Events::UnityEventBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::UnityEventBase,
+    >,
     pub m_InvokeArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     __cordl_phantom_T0: std::marker::PhantomData<T0>,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
@@ -25,7 +29,7 @@ impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::UnityEngine::Events::UnityEvent_3<T0, T1, T2> {
-    type Target = crate::UnityEngine::Events::UnityEventBase;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEventBase>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,9 +52,7 @@ impl<
 > crate::UnityEngine::Events::UnityEvent_3<T0, T1, T2> {
     pub fn AddListener(
         &mut self,
-        call: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_3<T0, T1, T2>,
-        >,
+        call: quest_hook::libil2cpp::Gc<T0, T1, T2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -90,7 +92,7 @@ impl<
         > = __cordl_object.invoke("FindMethod_Impl", (name, targetObjType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDelegate_Il2CppObject_MethodInfo0(
+    pub fn GetDelegate_Gc0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         theFunction: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -113,10 +115,8 @@ impl<
         > = __cordl_object.invoke("GetDelegate", (target, theFunction))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDelegate_UnityAction_3_1(
-        action: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_3<T0, T1, T2>,
-        >,
+    pub fn GetDelegate_Gc1(
+        action: quest_hook::libil2cpp::Gc<T0, T1, T2>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::BaseInvokableCall>,
     >
@@ -172,9 +172,7 @@ impl<
     }
     pub fn RemoveListener(
         &mut self,
-        call: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_3<T0, T1, T2>,
-        >,
+        call: quest_hook::libil2cpp::Gc<T0, T1, T2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSettingsPanelController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _leftHandedToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _reduceDebrisToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _noTextsAndHudsToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
@@ -82,7 +82,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerSettingsPanelController")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSettingsPanelController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -547,16 +547,20 @@ for crate::GlobalNamespace::PlayerSettingsPanelController {
     }
 }
 #[cfg(feature = "PlayerSettingsPanelController")]
-impl AsRef<crate::GlobalNamespace::IRefreshable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>>
 for crate::GlobalNamespace::PlayerSettingsPanelController {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IRefreshable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PlayerSettingsPanelController")]
-impl AsMut<crate::GlobalNamespace::IRefreshable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>>
 for crate::GlobalNamespace::PlayerSettingsPanelController {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRefreshable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable> {
         unsafe { std::mem::transmute(self) }
     }
 }

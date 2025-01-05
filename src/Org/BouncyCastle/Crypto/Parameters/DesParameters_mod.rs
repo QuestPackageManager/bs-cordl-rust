@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DesParameters {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DesParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DesParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::DesParameters {
-    type Target = crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +31,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Parameters::DesPar
 impl crate::Org::BouncyCastle::Crypto::Parameters::DesParameters {
     pub const DesKeyLength: i32 = 8i32;
     pub const N_DES_WEAK_KEYS: i32 = 16i32;
-    pub fn IsWeakKey_Il2CppArray1(
+    pub fn IsWeakKey_Gc1(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -42,7 +46,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DesParameters {
             .invoke("IsWeakKey", (key, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppArray0(
+    pub fn New_Gc0(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -62,14 +66,14 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DesParameters {
             .invoke_void(".ctor", (key, keyOff, keyLen))?;
         Ok(__cordl_object.into())
     }
-    pub fn SetOddParity_Il2CppArray1(
+    pub fn SetOddParity_Gc1(
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SetOddParity", (bytes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetOddParity_Il2CppArray_i32_i32_2(
+    pub fn SetOddParity_Gc_i32_i32_2(
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
         len: i32,
@@ -83,7 +87,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DesParameters {
             .invoke("SetOddParity", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray0(
+    pub fn _ctor_Gc0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

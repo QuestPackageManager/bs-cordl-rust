@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithLaunchUnblockFlowResult {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+        >,
     >,
 }
 #[cfg(feature = "Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
@@ -14,8 +16,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithLaunchUnblockFlowResult {
-    type Target = crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

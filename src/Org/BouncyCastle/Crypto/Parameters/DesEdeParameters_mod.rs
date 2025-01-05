@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DesEdeParameters {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::DesParameters,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DesParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DesEdeParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DesEdeParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::DesEdeParameters {
-    type Target = crate::Org::BouncyCastle::Crypto::Parameters::DesParameters;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DesParameters,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,7 +68,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DesEdeParameters {
             .invoke("IsRealEdeKey", (key, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsWeakKey_Il2CppArray2(
+    pub fn IsWeakKey_Gc2(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -88,7 +92,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DesEdeParameters {
             .invoke("IsWeakKey", (key, offset, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppArray0(
+    pub fn New_Gc0(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -108,7 +112,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DesEdeParameters {
             .invoke_void(".ctor", (key, keyOff, keyLen))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppArray0(
+    pub fn _ctor_Gc0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

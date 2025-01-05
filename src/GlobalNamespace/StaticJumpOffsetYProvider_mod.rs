@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StaticJumpOffsetYProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _initData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StaticJumpOffsetYProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::StaticJumpOffsetYProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,16 +65,20 @@ for crate::GlobalNamespace::StaticJumpOffsetYProvider {
     }
 }
 #[cfg(feature = "StaticJumpOffsetYProvider")]
-impl AsRef<crate::GlobalNamespace::IJumpOffsetYProvider>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IJumpOffsetYProvider>>
 for crate::GlobalNamespace::StaticJumpOffsetYProvider {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IJumpOffsetYProvider {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IJumpOffsetYProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "StaticJumpOffsetYProvider")]
-impl AsMut<crate::GlobalNamespace::IJumpOffsetYProvider>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IJumpOffsetYProvider>>
 for crate::GlobalNamespace::StaticJumpOffsetYProvider {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IJumpOffsetYProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IJumpOffsetYProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -82,7 +86,7 @@ for crate::GlobalNamespace::StaticJumpOffsetYProvider {
 #[repr(C)]
 #[derive(Debug)]
 pub struct StaticJumpOffsetYProvider_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub jumpyYOffset: f32,
 }
 #[cfg(feature = "StaticJumpOffsetYProvider+InitData")]
@@ -93,7 +97,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StaticJumpOffsetYProvider+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

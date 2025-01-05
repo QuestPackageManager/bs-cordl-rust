@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Gamepad {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >,
     pub _buttonWest_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
@@ -57,7 +59,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Gamepad")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Gamepad {
-    type Target = crate::UnityEngine::InputSystem::InputDevice;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -202,11 +206,11 @@ impl crate::UnityEngine::InputSystem::Gamepad {
     }
     pub fn get_all() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::Gamepad,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Gamepad>,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::Gamepad,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Gamepad>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_all", ())?;
         Ok(__cordl_ret.into())
     }
@@ -759,32 +763,46 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Game
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Gamepad")]
-impl AsRef<crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble>
-for crate::UnityEngine::InputSystem::Gamepad {
-    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble>,
+> for crate::UnityEngine::InputSystem::Gamepad {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Gamepad")]
-impl AsMut<crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble>
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble>,
+> for crate::UnityEngine::InputSystem::Gamepad {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Gamepad")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IHaptics>>
+for crate::UnityEngine::InputSystem::Gamepad {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IHaptics> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Gamepad")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IHaptics>>
 for crate::UnityEngine::InputSystem::Gamepad {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Gamepad")]
-impl AsRef<crate::UnityEngine::InputSystem::Haptics::IHaptics>
-for crate::UnityEngine::InputSystem::Gamepad {
-    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::Haptics::IHaptics {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Gamepad")]
-impl AsMut<crate::UnityEngine::InputSystem::Haptics::IHaptics>
-for crate::UnityEngine::InputSystem::Gamepad {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::InputSystem::Haptics::IHaptics {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Haptics::IHaptics,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

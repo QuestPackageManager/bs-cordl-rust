@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiscretionaryAcl {
-    __cordl_parent: crate::System::Security::AccessControl::CommonAcl,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::CommonAcl,
+    >,
 }
 #[cfg(feature = "System+Security+AccessControl+DiscretionaryAcl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+AccessControl+DiscretionaryAcl")]
 impl std::ops::Deref for crate::System::Security::AccessControl::DiscretionaryAcl {
-    type Target = crate::System::Security::AccessControl::CommonAcl;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::CommonAcl,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

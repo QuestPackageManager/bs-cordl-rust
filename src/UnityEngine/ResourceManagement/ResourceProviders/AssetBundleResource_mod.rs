@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetBundleResource {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_AssetBundle: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
     pub m_RequestOperation: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AsyncOperation,
@@ -43,7 +43,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,7 +79,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         &mut self,
         operation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::AsyncOperation>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -121,7 +121,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
             .invoke("CompleteBundleLoad", (bundle))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateWebRequest_IResourceLocation0(
+    pub fn CreateWebRequest_Gc0(
         &mut self,
         loc: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
@@ -137,7 +137,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         > = __cordl_object.invoke("CreateWebRequest", (loc))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateWebRequest_Il2CppString1(
+    pub fn CreateWebRequest_Gc1(
         &mut self,
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -204,7 +204,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
             .invoke("GetDownloadStatus", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetLoadInfo_IResourceLocation_ResourceManager_ByRefMut1(
+    pub fn GetLoadInfo_Gc_Gc_ByRefMut1(
         location: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
@@ -214,7 +214,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         loadType: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType,
         >,
-        path: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        path: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetLoadInfo", (location, resourceManager, loadType, path))?;
@@ -225,7 +227,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         loadType: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType,
         >,
-        path: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        path: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetLoadInfo", (handle, loadType, path))?;
@@ -294,7 +298,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
     pub fn Unload(
         &mut self,
         unloadOp: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::AssetBundleUnloadOperation,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleUnloadOperation>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -392,38 +396,54 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResour
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
-impl AsRef<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
-for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
-    fn as_ref(&self) -> &crate::UnityEngine::ResourceManagement::IUpdateReceiver {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
-impl AsMut<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
-for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::IUpdateReceiver {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
 impl AsRef<
-    crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceManagement::IUpdateReceiver>,
 > for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::IUpdateReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
 impl AsMut<
-    crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceManagement::IUpdateReceiver>,
 > for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::IUpdateReceiver,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource,
+    >,
+> for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource,
+    >,
+> for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,16 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringSwitchInstruction {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::Instruction,
+    >,
     pub _cases: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        i32,
     >,
-    pub _nullCase: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
-    >,
+    pub _nullCase: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+StringSwitchInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -22,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+StringSwitchInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
-    type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::Instruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,14 +38,10 @@ for crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
 impl crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
     pub fn New(
         cases: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i32,
         >,
-        nullCase: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
-        >,
+        nullCase: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -68,14 +64,10 @@ impl crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
     pub fn _ctor(
         &mut self,
         cases: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i32,
         >,
-        nullCase: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
-        >,
+        nullCase: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

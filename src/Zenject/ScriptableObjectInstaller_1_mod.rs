@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScriptableObjectInstaller_1<TDerived: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     __cordl_phantom_TDerived: std::marker::PhantomData<TDerived>,
 }
 #[cfg(feature = "Zenject+ScriptableObjectInstaller_1")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+ScriptableObjectInstaller_1")]
 impl<TDerived: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::ScriptableObjectInstaller_1<TDerived> {
-    type Target = crate::Zenject::ScriptableObjectInstaller;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ for crate::Zenject::ScriptableObjectInstaller_1<TDerived> {
 impl<
     TDerived: quest_hook::libil2cpp::Type,
 > crate::Zenject::ScriptableObjectInstaller_1<TDerived> {
-    pub fn InstallFromResource_DiContainer0(
+    pub fn InstallFromResource_Gc0(
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<TDerived>
     where
@@ -40,7 +40,7 @@ impl<
             .invoke("InstallFromResource", (container))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InstallFromResource_Il2CppString_DiContainer1(
+    pub fn InstallFromResource_Gc1(
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<TDerived>
@@ -65,7 +65,9 @@ impl<
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

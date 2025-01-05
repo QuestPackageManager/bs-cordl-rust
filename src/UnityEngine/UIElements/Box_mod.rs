@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Box {
-    __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Box")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Box")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Box {
-    type Target = crate::UnityEngine::UIElements::VisualElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,8 +61,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Box {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Box_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_1<
-        *mut crate::UnityEngine::UIElements::Box,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Box>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Box+UxmlFactory")]
@@ -68,8 +72,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Box+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Box_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_1<
-        *mut crate::UnityEngine::UIElements::Box,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Box>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

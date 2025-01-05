@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IndexMethodByRefUpdater {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+    >,
     pub _indexer: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     pub _obj: crate::System::Nullable_1<
         crate::System::Linq::Expressions::Interpreter::LocalDefinition,
@@ -22,7 +24,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+IndexMethodByRefUpdater")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::IndexMethodByRefUpdater {
-    type Target = crate::System::Linq::Expressions::Interpreter::ByRefUpdater;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

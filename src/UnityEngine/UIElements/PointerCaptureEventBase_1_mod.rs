@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerCaptureEventBase_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
     pub _relatedTarget_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::IEventHandler,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+PointerCaptureEventBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::PointerCaptureEventBase_1<T> {
-    type Target = crate::UnityEngine::UIElements::EventBase_1<T>;
+    type Target = quest_hook::libil2cpp::Gc<T>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -153,20 +153,32 @@ for crate::UnityEngine::UIElements::PointerCaptureEventBase_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+PointerCaptureEventBase_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<crate::UnityEngine::UIElements::IPointerCaptureEventInternal>
-for crate::UnityEngine::UIElements::PointerCaptureEventBase_1<T> {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IPointerCaptureEventInternal {
+> AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IPointerCaptureEventInternal,
+    >,
+> for crate::UnityEngine::UIElements::PointerCaptureEventBase_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IPointerCaptureEventInternal,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerCaptureEventBase_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::UnityEngine::UIElements::IPointerCaptureEventInternal>
-for crate::UnityEngine::UIElements::PointerCaptureEventBase_1<T> {
+> AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IPointerCaptureEventInternal,
+    >,
+> for crate::UnityEngine::UIElements::PointerCaptureEventBase_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::IPointerCaptureEventInternal {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IPointerCaptureEventInternal,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

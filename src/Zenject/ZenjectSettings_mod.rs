@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _ensureDeterministicDestructionOrderOnApplicationQuit: bool,
     pub _displayWarningWhenResolvingDuringInstall: bool,
     pub _validationRootResolveMethod: crate::Zenject::RootResolveMethods,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ZenjectSettings")]
 impl std::ops::Deref for crate::Zenject::ZenjectSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl crate::Zenject::ZenjectSettings {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ValidationErrorResponses_RootResolveMethods__cordl_bool__cordl_bool_ZenjectSettings_SignalSettings0(
+    pub fn New_ValidationErrorResponses_RootResolveMethods__cordl_bool__cordl_bool_Gc0(
         validationErrorResponse: crate::Zenject::ValidationErrorResponses,
         validationRootResolveMethod: crate::Zenject::RootResolveMethods,
         displayWarningWhenResolvingDuringInstall: bool,
@@ -74,7 +74,7 @@ impl crate::Zenject::ZenjectSettings {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ValidationErrorResponses_RootResolveMethods__cordl_bool__cordl_bool_ZenjectSettings_SignalSettings0(
+    pub fn _ctor_ValidationErrorResponses_RootResolveMethods__cordl_bool__cordl_bool_Gc0(
         &mut self,
         validationErrorResponse: crate::Zenject::ValidationErrorResponses,
         validationRootResolveMethod: crate::Zenject::RootResolveMethods,
@@ -167,7 +167,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenjectSettings {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectSettings_SignalSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _defaultSyncMode: crate::Zenject::SignalDefaultSyncModes,
     pub _missingHandlerDefaultResponse: crate::Zenject::SignalMissingHandlerResponses,
     pub _requireStrictUnsubscribe: bool,
@@ -180,7 +180,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ZenjectSettings+SignalSettings")]
 impl std::ops::Deref for crate::Zenject::ZenjectSettings_SignalSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -222,7 +222,9 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

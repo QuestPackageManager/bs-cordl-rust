@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReaderWriterLock {
-    __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
+    >,
     pub seq_num: i32,
     pub state: i32,
     pub readers: i32,
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+ReaderWriterLock")]
 impl std::ops::Deref for crate::System::Threading::ReaderWriterLock {
-    type Target = crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

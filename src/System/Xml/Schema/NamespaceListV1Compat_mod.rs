@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamespaceListV1Compat {
-    __cordl_parent: crate::System::Xml::Schema::NamespaceList,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::NamespaceList>,
 }
 #[cfg(feature = "System+Xml+Schema+NamespaceListV1Compat")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+NamespaceListV1Compat")]
 impl std::ops::Deref for crate::System::Xml::Schema::NamespaceListV1Compat {
-    type Target = crate::System::Xml::Schema::NamespaceList;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::NamespaceList>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

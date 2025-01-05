@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HWStack {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub stack: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub growthRate: i32,
     pub used: i32,
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+HWStack")]
 impl std::ops::Deref for crate::System::Xml::HWStack {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,9 +56,11 @@ impl crate::System::Xml::HWStack {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppArray_i32_i32_i32_2(
+    pub fn New_Gc_i32_i32_i32_2(
         stack: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         growthRate: i32,
         used: i32,
@@ -126,10 +130,12 @@ impl crate::System::Xml::HWStack {
         > = __cordl_object.invoke("Push", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_i32_i32_2(
+    pub fn _ctor_Gc_i32_i32_i32_2(
         &mut self,
         stack: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         growthRate: i32,
         used: i32,
@@ -209,14 +215,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::HWStack {
     }
 }
 #[cfg(feature = "System+Xml+HWStack")]
-impl AsRef<crate::System::ICloneable> for crate::System::Xml::HWStack {
-    fn as_ref(&self) -> &crate::System::ICloneable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+for crate::System::Xml::HWStack {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+HWStack")]
-impl AsMut<crate::System::ICloneable> for crate::System::Xml::HWStack {
-    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+for crate::System::Xml::HWStack {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }

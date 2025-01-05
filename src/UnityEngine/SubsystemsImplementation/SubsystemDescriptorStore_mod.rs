@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubsystemDescriptorStore {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore")]
 impl std::ops::Deref
 for crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,12 +28,8 @@ for crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
 #[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemDescriptorStore")]
 impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
     pub fn AddDescriptorSubset<TBaseTypeInList, TQueryType>(
-        copyFrom: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TBaseTypeInList>,
-        >,
-        copyTo: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TQueryType>,
-        >,
+        copyFrom: quest_hook::libil2cpp::Gc<TBaseTypeInList>,
+        copyTo: quest_hook::libil2cpp::Gc<TQueryType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TBaseTypeInList: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -53,9 +49,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
         Ok(__cordl_ret.into())
     }
     pub fn GetSubsystemDescriptors<T>(
-        descriptors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        descriptors: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -84,9 +78,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
     }
     pub fn RegisterDescriptor<TDescriptor, TBaseTypeInList>(
         descriptor: TDescriptor,
-        storeInList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TBaseTypeInList>,
-        >,
+        storeInList: quest_hook::libil2cpp::Gc<TBaseTypeInList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TDescriptor: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument

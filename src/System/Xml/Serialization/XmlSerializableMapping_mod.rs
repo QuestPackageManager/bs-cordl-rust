@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializableMapping {
-    __cordl_parent: crate::System::Xml::Serialization::XmlTypeMapping,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapping,
+    >,
     pub _schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     pub _schemaType: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaComplexType,
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlSerializableMapping")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlSerializableMapping {
-    type Target = crate::System::Xml::Serialization::XmlTypeMapping;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapping,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

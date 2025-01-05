@@ -2,13 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QueueSet_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _linkedList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedList_1<T>,
-    >,
-    pub _set: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<T>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _linkedList: quest_hook::libil2cpp::Gc<T>,
+    pub _set: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "QueueSet_1")]
@@ -19,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "QueueSet_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::QueueSet_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

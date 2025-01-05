@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssignBinaryExpression {
-    __cordl_parent: crate::System::Linq::Expressions::BinaryExpression,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::BinaryExpression,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+AssignBinaryExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+AssignBinaryExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::AssignBinaryExpression {
-    type Target = crate::System::Linq::Expressions::BinaryExpression;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::BinaryExpression,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

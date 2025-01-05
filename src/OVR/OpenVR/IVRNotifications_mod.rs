@@ -36,7 +36,7 @@ impl crate::OVR::OpenVR::IVRNotifications {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRNotifications__CreateNotification {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRNotifications+_CreateNotification")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -46,7 +46,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRNotifications+_CreateNotification")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRNotifications__CreateNotification {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -177,7 +177,7 @@ for crate::OVR::OpenVR::IVRNotifications__CreateNotification {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRNotifications__RemoveNotification {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRNotifications+_RemoveNotification")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -187,7 +187,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRNotifications+_RemoveNotification")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRNotifications__RemoveNotification {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

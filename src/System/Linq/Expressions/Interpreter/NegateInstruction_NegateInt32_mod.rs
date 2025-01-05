@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NegateInstruction_NegateInt32 {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::NegateInstruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::NegateInstruction,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt32")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt32")]
 impl std::ops::Deref for crate::GlobalNamespace::NegateInstruction_NegateInt32 {
-    type Target = crate::System::Linq::Expressions::Interpreter::NegateInstruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::NegateInstruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

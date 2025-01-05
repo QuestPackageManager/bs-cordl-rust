@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionUtils {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionUtils")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::ReflectionUtils {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,7 +64,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
             .invoke("GetAssemblyDelimiterIndex", (fullyQualifiedTypeName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Il2CppObject0<T>(
+    pub fn GetAttribute_Gc0<T>(
         attributeProvider: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -89,7 +89,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
             .invoke("GetAttribute", (attributeProvider, inherit))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttributes_Type__cordl_bool1(
+    pub fn GetAttributes_Gc__cordl_bool1(
         attributeProvider: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
@@ -97,11 +97,15 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetAttributes", (attributeProvider, attributeType, inherit))?;
         Ok(__cordl_ret.into())
@@ -137,9 +141,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
     }
     pub fn GetChildPrivateFields(
         initialFields: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::System::Reflection::MemberInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         >,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         bindingAttr: crate::System::Reflection::BindingFlags,
@@ -150,9 +152,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
     }
     pub fn GetChildPrivateProperties(
         initialProperties: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::System::Reflection::PropertyInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
         >,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         bindingAttr: crate::System::Reflection::BindingFlags,
@@ -171,7 +171,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
             .invoke("GetCollectionItemType", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDefaultConstructor_Type0(
+    pub fn GetDefaultConstructor_Gc0(
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
@@ -207,8 +207,12 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
     }
     pub fn GetDictionaryKeyValueTypes(
         dictionaryType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        keyType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
-        valueType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        keyType: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
+        valueType: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetDictionaryKeyValueTypes", (dictionaryType, keyType, valueType))?;
@@ -219,15 +223,11 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Reflection::FieldInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Reflection::FieldInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetFields", (targetType, bindingAttr))?;
         Ok(__cordl_ret.into())
@@ -237,15 +237,11 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Reflection::MemberInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Reflection::MemberInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetFieldsAndProperties", (_cordl_type, bindingAttr))?;
         Ok(__cordl_ret.into())
@@ -307,15 +303,11 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Reflection::PropertyInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Reflection::PropertyInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetProperties", (targetType, bindingAttr))?;
         Ok(__cordl_ret.into())
@@ -346,7 +338,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
     pub fn ImplementsGenericDefinition_ByRefMut1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         genericInterfaceDefinition: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        implementingType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        implementingType: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -355,7 +349,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImplementsGenericDefinition_Type_Type0(
+    pub fn ImplementsGenericDefinition_Gc_Gc0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         genericInterfaceDefinition: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -369,7 +363,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
     pub fn InheritsGenericDefinitionInternal(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         genericClassDefinition: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        implementingType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        implementingType: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -381,7 +377,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
     pub fn InheritsGenericDefinition_ByRefMut1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         genericClassDefinition: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        implementingType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        implementingType: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -390,7 +388,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn InheritsGenericDefinition_Type_Type0(
+    pub fn InheritsGenericDefinition_Gc_Gc0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         genericClassDefinition: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -501,13 +499,13 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SplitFullyQualifiedTypeName", (fullyQualifiedTypeName))?;
         Ok(__cordl_ret.into())

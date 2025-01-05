@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Asn1Dump {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Utilities+Asn1Dump")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Utilities+Asn1Dump")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +36,18 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
             .invoke("AsString", (indent, verbose, obj, buf))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DumpAsString_Asn1Encodable1(
+    pub fn DumpAsString_Gc0(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DumpAsString", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DumpAsString_Gc1(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -47,7 +58,7 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
             .invoke("DumpAsString", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DumpAsString_Asn1Encodable__cordl_bool2(
+    pub fn DumpAsString__cordl_bool2(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
         verbose: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -57,17 +68,6 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DumpAsString", (obj, verbose))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn DumpAsString_Il2CppObject0(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DumpAsString", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

@@ -6,7 +6,7 @@ pub struct MonoPoolableMemoryPool_3<
     TParam2: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::MemoryPool_3<TParam1, TParam2, TValue>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TParam1, TParam2, TValue>,
     pub _originalParent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
@@ -25,7 +25,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Zenject::MonoPoolableMemoryPool_3<TParam1, TParam2, TValue> {
-    type Target = crate::Zenject::MemoryPool_3<TParam1, TParam2, TValue>;
+    type Target = quest_hook::libil2cpp::Gc<TParam1, TParam2, TValue>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -142,7 +142,9 @@ impl<
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

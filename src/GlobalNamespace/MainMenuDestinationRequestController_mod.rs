@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainMenuDestinationRequestController {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _destinationRequestManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IDestinationRequestManager,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MainMenuDestinationRequestController")]
 impl std::ops::Deref for crate::GlobalNamespace::MainMenuDestinationRequestController {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -133,30 +133,32 @@ for crate::GlobalNamespace::MainMenuDestinationRequestController {
     }
 }
 #[cfg(feature = "MainMenuDestinationRequestController")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::MainMenuDestinationRequestController {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MainMenuDestinationRequestController")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::MainMenuDestinationRequestController {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MainMenuDestinationRequestController")]
-impl AsRef<crate::Zenject::IInitializable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
 for crate::GlobalNamespace::MainMenuDestinationRequestController {
-    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MainMenuDestinationRequestController")]
-impl AsMut<crate::Zenject::IInitializable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
 for crate::GlobalNamespace::MainMenuDestinationRequestController {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
         unsafe { std::mem::transmute(self) }
     }
 }

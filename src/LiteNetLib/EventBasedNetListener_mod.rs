@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBasedNetListener {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub PeerConnectedEvent: quest_hook::libil2cpp::Gc<
         crate::LiteNetLib::EventBasedNetListener_OnPeerConnected,
     >,
@@ -35,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+EventBasedNetListener")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -494,30 +494,38 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::EventBasedNetListe
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener")]
-impl AsRef<crate::LiteNetLib::IDeliveryEventListener>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::IDeliveryEventListener>>
 for crate::LiteNetLib::EventBasedNetListener {
-    fn as_ref(&self) -> &crate::LiteNetLib::IDeliveryEventListener {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::IDeliveryEventListener> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener")]
-impl AsMut<crate::LiteNetLib::IDeliveryEventListener>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::IDeliveryEventListener>>
 for crate::LiteNetLib::EventBasedNetListener {
-    fn as_mut(&mut self) -> &mut crate::LiteNetLib::IDeliveryEventListener {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::IDeliveryEventListener> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener")]
-impl AsRef<crate::LiteNetLib::INetEventListener>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::INetEventListener>>
 for crate::LiteNetLib::EventBasedNetListener {
-    fn as_ref(&self) -> &crate::LiteNetLib::INetEventListener {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::INetEventListener> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener")]
-impl AsMut<crate::LiteNetLib::INetEventListener>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::INetEventListener>>
 for crate::LiteNetLib::EventBasedNetListener {
-    fn as_mut(&mut self) -> &mut crate::LiteNetLib::INetEventListener {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::INetEventListener> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -525,7 +533,7 @@ for crate::LiteNetLib::EventBasedNetListener {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBasedNetListener_OnConnectionRequest {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnConnectionRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -535,7 +543,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnConnectionRequest")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -623,7 +631,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBasedNetListener_OnDeliveryEvent {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnDeliveryEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -633,7 +641,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnDeliveryEvent")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -722,7 +730,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBasedNetListener_OnNetworkError {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkError")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -731,7 +739,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkError")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener_OnNetworkError {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -820,7 +828,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnNetworkError {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBasedNetListener_OnNetworkLatencyUpdate {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkLatencyUpdate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -831,7 +839,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkLatencyUpdate")]
 impl std::ops::Deref
 for crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -921,7 +929,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBasedNetListener_OnNetworkReceive {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceive")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -931,7 +939,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceive")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1022,7 +1030,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBasedNetListener_OnNetworkReceiveUnconnected {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceiveUnconnected")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1033,7 +1041,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceiveUnconnected")]
 impl std::ops::Deref
 for crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1128,7 +1136,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBasedNetListener_OnPeerConnected {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerConnected")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1138,7 +1146,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerConnected")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener_OnPeerConnected {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1225,7 +1233,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnPeerConnected {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBasedNetListener_OnPeerDisconnected {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerDisconnected")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1235,7 +1243,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerDisconnected")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

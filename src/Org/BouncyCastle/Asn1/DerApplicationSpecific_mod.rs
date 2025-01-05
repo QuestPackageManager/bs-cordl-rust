@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DerApplicationSpecific {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Object,
+    >,
     pub isConstructed: bool,
     pub tag: i32,
     pub octets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerApplicationSpecific")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Object;
+    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -114,18 +116,7 @@ impl crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
         let __cordl_ret: bool = __cordl_object.invoke("IsConstructed", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New__cordl_bool_i32_Asn1Encodable3(
-        isExplicit: bool,
-        tag: i32,
-        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (isExplicit, tag, obj))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New__cordl_bool_i32_Il2CppArray0(
+    pub fn New__cordl_bool_i32_Gc0(
         isConstructed: bool,
         tag: i32,
         octets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -136,7 +127,28 @@ impl crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
             .invoke_void(".ctor", (isConstructed, tag, octets))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Asn1Encodable2(
+    pub fn New__cordl_bool_i32_Gc3(
+        isExplicit: bool,
+        tag: i32,
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (isExplicit, tag, obj))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_i32_Gc1(
+        tag: i32,
+        octets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (tag, octets))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_i32_Gc2(
         tag: i32,
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -146,7 +158,7 @@ impl crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
             .invoke_void(".ctor", (tag, obj))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Asn1EncodableVector4(
+    pub fn New_i32_Gc4(
         tagNo: i32,
         vec: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
@@ -156,16 +168,6 @@ impl crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (tagNo, vec))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_i32_Il2CppArray1(
-        tag: i32,
-        octets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (tag, octets))?;
         Ok(__cordl_object.into())
     }
     pub fn ReplaceTagNumber(
@@ -183,20 +185,7 @@ impl crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
         > = __cordl_object.invoke("ReplaceTagNumber", (newTag, input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_i32_Asn1Encodable3(
-        &mut self,
-        isExplicit: bool,
-        tag: i32,
-        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (isExplicit, tag, obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor__cordl_bool_i32_Il2CppArray0(
+    pub fn _ctor__cordl_bool_i32_Gc0(
         &mut self,
         isConstructed: bool,
         tag: i32,
@@ -209,7 +198,32 @@ impl crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
             .invoke(".ctor", (isConstructed, tag, octets))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Asn1Encodable2(
+    pub fn _ctor__cordl_bool_i32_Gc3(
+        &mut self,
+        isExplicit: bool,
+        tag: i32,
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (isExplicit, tag, obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_i32_Gc1(
+        &mut self,
+        tag: i32,
+        octets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (tag, octets))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_i32_Gc2(
         &mut self,
         tag: i32,
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
@@ -221,7 +235,7 @@ impl crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
             .invoke(".ctor", (tag, obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Asn1EncodableVector4(
+    pub fn _ctor_i32_Gc4(
         &mut self,
         tagNo: i32,
         vec: quest_hook::libil2cpp::Gc<
@@ -233,18 +247,6 @@ impl crate::Org::BouncyCastle::Asn1::DerApplicationSpecific {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (tagNo, vec))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_i32_Il2CppArray1(
-        &mut self,
-        tag: i32,
-        octets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (tag, octets))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ApplicationTag(&mut self) -> quest_hook::libil2cpp::Result<i32> {

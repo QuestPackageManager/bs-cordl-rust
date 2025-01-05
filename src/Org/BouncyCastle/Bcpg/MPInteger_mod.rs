@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MPInteger {
-    __cordl_parent: crate::Org::BouncyCastle::Bcpg::BcpgObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::BcpgObject,
+    >,
     pub val: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+MPInteger")]
@@ -12,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+MPInteger")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::MPInteger {
-    type Target = crate::Org::BouncyCastle::Bcpg::BcpgObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +27,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::MPInteger {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+MPInteger")]
 impl crate::Org::BouncyCastle::Bcpg::MPInteger {
-    pub fn Encode_BcpgOutputStream0(
+    pub fn Encode_Gc0(
         &mut self,
         bcpgOut: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
@@ -38,7 +40,7 @@ impl crate::Org::BouncyCastle::Bcpg::MPInteger {
             .invoke("Encode", (bcpgOut))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Encode_BigInteger1(
+    pub fn Encode_Gc1(
         bcpgOut: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
         >,
@@ -48,7 +50,7 @@ impl crate::Org::BouncyCastle::Bcpg::MPInteger {
             .invoke("Encode", (bcpgOut, val))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_BcpgInputStream0(
+    pub fn New_Gc0(
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
         >,
@@ -59,7 +61,7 @@ impl crate::Org::BouncyCastle::Bcpg::MPInteger {
             .invoke_void(".ctor", (bcpgIn))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_BigInteger1(
+    pub fn New_Gc1(
         val: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -68,7 +70,7 @@ impl crate::Org::BouncyCastle::Bcpg::MPInteger {
             .invoke_void(".ctor", (val))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_BcpgInputStream0(
+    pub fn _ctor_Gc0(
         &mut self,
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
@@ -81,7 +83,7 @@ impl crate::Org::BouncyCastle::Bcpg::MPInteger {
             .invoke(".ctor", (bcpgIn))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger1(
+    pub fn _ctor_Gc1(
         &mut self,
         val: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

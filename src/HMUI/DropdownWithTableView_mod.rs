@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DropdownWithTableView {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     pub _modalView: quest_hook::libil2cpp::Gc<crate::HMUI::ModalViewBase>,
@@ -10,7 +10,8 @@ pub struct DropdownWithTableView {
     pub _numberOfVisibleCells: i32,
     pub _hideOnSelection: bool,
     pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<*mut crate::HMUI::DropdownWithTableView, i32>,
+        quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>,
+        i32,
     >,
     pub _selectedIndex_k__BackingField: i32,
 }
@@ -21,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+DropdownWithTableView")]
 impl std::ops::Deref for crate::HMUI::DropdownWithTableView {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -194,7 +195,8 @@ impl crate::HMUI::DropdownWithTableView {
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut crate::HMUI::DropdownWithTableView, i32>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -233,7 +235,8 @@ impl crate::HMUI::DropdownWithTableView {
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut crate::HMUI::DropdownWithTableView, i32>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmpCertificate {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub x509v3PKCert: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
     >,
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CmpCertificate")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +44,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_AttributeCertificate0(
+    pub fn New_Gc0(
         x509v2AttrCert: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate,
         >,
@@ -51,7 +55,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate {
             .invoke_void(".ctor", (x509v2AttrCert))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_X509CertificateStructure1(
+    pub fn New_Gc1(
         x509v3PKCert: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
         >,
@@ -75,7 +79,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AttributeCertificate0(
+    pub fn _ctor_Gc0(
         &mut self,
         x509v2AttrCert: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate,
@@ -88,7 +92,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate {
             .invoke(".ctor", (x509v2AttrCert))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_X509CertificateStructure1(
+    pub fn _ctor_Gc1(
         &mut self,
         x509v3PKCert: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
@@ -150,16 +154,20 @@ for crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CmpCertificate")]
-impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
 for crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Choice {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CmpCertificate")]
-impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
 for crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Choice {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
         unsafe { std::mem::transmute(self) }
     }
 }

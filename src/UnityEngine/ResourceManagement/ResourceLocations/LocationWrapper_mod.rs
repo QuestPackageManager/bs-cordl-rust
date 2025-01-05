@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocationWrapper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_InternalLocation: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+LocationWrapper")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,8 +81,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper 
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
     > {
@@ -90,8 +90,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper 
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         > = __cordl_object.invoke("get_Dependencies", ())?;
         Ok(__cordl_ret.into())
@@ -171,20 +171,30 @@ for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+LocationWrapper")]
-impl AsRef<crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation>
-for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    >,
+> for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+LocationWrapper")]
-impl AsMut<crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation>
-for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    >,
+> for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

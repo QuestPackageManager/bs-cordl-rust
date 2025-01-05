@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ByteQueue {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub databuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub skipped: i32,
     pub available: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ByteQueue")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::ByteQueue {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,7 +61,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::ByteQueue {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_i32_2(
+    pub fn New_Gc_i32_i32_2(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
         len: i32,
@@ -113,7 +113,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::ByteQueue {
             .invoke("ReadFrom", (length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveData_Il2CppArray_i32_i32_i32_1(
+    pub fn RemoveData_Gc_i32_i32_i32_1(
         &mut self,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
@@ -173,7 +173,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::ByteQueue {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_i32_2(
+    pub fn _ctor_Gc_i32_i32_2(
         &mut self,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,

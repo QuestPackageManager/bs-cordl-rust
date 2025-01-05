@@ -49,7 +49,7 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ActivateControlScheme_Il2CppString0(
+    pub fn ActivateControlScheme_Gc0(
         &mut self,
         schemeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -120,7 +120,7 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
             .invoke("DisposeAndResetGlobalState", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -196,11 +196,11 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     }
     pub fn GetUnpairedInputDevices_0() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlList_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputControlList_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetUnpairedInputDevices", ())?;
         Ok(__cordl_ret.into())
@@ -208,7 +208,7 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     pub fn GetUnpairedInputDevices_ByRefMut1(
         list: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputControlList_1<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -305,10 +305,10 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
             >,
         >,
         platformAccountName: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         platformAccountId: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -381,7 +381,7 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryFindUserIndex_InputDevice2(
+    pub fn TryFindUserIndex_Gc2(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -470,11 +470,9 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     }
     pub fn add_onChange(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                crate::UnityEngine::InputSystem::Users::InputUser,
-                crate::UnityEngine::InputSystem::Users::InputUserChange,
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-            >,
+            crate::UnityEngine::InputSystem::Users::InputUser,
+            crate::UnityEngine::InputSystem::Users::InputUserChange,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -483,11 +481,9 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     }
     pub fn add_onPrefilterUnpairedDeviceActivity(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                bool,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -496,10 +492,8 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     }
     pub fn add_onUnpairedDeviceUsed(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::UnityEngine::InputSystem::InputControl,
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -585,11 +579,11 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_lostDevices", ())?;
         Ok(__cordl_ret.into())
     }
@@ -597,11 +591,11 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_pairedDevices", ())?;
         Ok(__cordl_ret.into())
     }
@@ -675,11 +669,9 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     }
     pub fn remove_onChange(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                crate::UnityEngine::InputSystem::Users::InputUser,
-                crate::UnityEngine::InputSystem::Users::InputUserChange,
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-            >,
+            crate::UnityEngine::InputSystem::Users::InputUser,
+            crate::UnityEngine::InputSystem::Users::InputUserChange,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -688,11 +680,9 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     }
     pub fn remove_onPrefilterUnpairedDeviceActivity(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                bool,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -701,10 +691,8 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     }
     pub fn remove_onUnpairedDeviceUsed(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::UnityEngine::InputSystem::InputControl,
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -720,24 +708,20 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
-impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Users::InputUser>,
-> for crate::UnityEngine::InputSystem::Users::InputUser {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Users::InputUser>>
+for crate::UnityEngine::InputSystem::Users::InputUser {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::UnityEngine::InputSystem::Users::InputUser,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Users::InputUser> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
-impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Users::InputUser>,
-> for crate::UnityEngine::InputSystem::Users::InputUser {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Users::InputUser>>
+for crate::UnityEngine::InputSystem::Users::InputUser {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Users::InputUser,
     > {
         todo!()
@@ -796,28 +780,28 @@ impl crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccou
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
 impl AsRef<
-    crate::System::Collections::Generic::IComparer_1<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     >,
 > for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IComparer_1<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
 impl AsMut<
-    crate::System::Collections::Generic::IComparer_1<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     >,
 > for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IComparer_1<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     > {
         todo!()
     }
@@ -881,54 +865,48 @@ pub struct InputUser_GlobalState {
     >,
     pub allPairedDevices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     >,
     pub allLostDevices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     >,
     pub ongoingAccountSelections: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection,
     >,
     pub onChange: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Action_3<
+        quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Users::InputUser,
             crate::UnityEngine::InputSystem::Users::InputUserChange,
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     >,
     pub onUnpairedDeviceUsed: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Action_2<
-            *mut crate::UnityEngine::InputSystem::InputControl,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
             crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         >,
     >,
     pub onPreFilterUnpairedDeviceUsed: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Func_3<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
             bool,
         >,
     >,
     pub actionChangeDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            crate::UnityEngine::InputSystem::InputActionChange,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::UnityEngine::InputSystem::InputActionChange,
     >,
     pub onDeviceChangeDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-            crate::UnityEngine::InputSystem::InputDeviceChange,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        crate::UnityEngine::InputSystem::InputDeviceChange,
     >,
     pub onEventDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-        >,
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     >,
     pub onActionChangeHooked: bool,
     pub onDeviceChangeHooked: bool,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntSizedArray {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub objects: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub negObjects: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+IntSizedArray")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::IntSizedArray {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::IntSizedArray {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IntSizedArray1(
+    pub fn New_Gc1(
         sizedArray: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::Formatters::Binary::IntSizedArray,
         >,
@@ -81,7 +81,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::IntSizedArray {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IntSizedArray1(
+    pub fn _ctor_Gc1(
         &mut self,
         sizedArray: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::Formatters::Binary::IntSizedArray,
@@ -125,16 +125,16 @@ for crate::System::Runtime::Serialization::Formatters::Binary::IntSizedArray {
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+IntSizedArray")]
-impl AsRef<crate::System::ICloneable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Runtime::Serialization::Formatters::Binary::IntSizedArray {
-    fn as_ref(&self) -> &crate::System::ICloneable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+IntSizedArray")]
-impl AsMut<crate::System::ICloneable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Runtime::Serialization::Formatters::Binary::IntSizedArray {
-    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StreamContent {
-    __cordl_parent: crate::System::Net::Http::HttpContent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
     pub content: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub bufferSize: i32,
     pub cancellationToken: crate::System::Threading::CancellationToken,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+StreamContent")]
 impl std::ops::Deref for crate::System::Net::Http::StreamContent {
-    type Target = crate::System::Net::Http::HttpContent;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +50,7 @@ impl crate::System::Net::Http::StreamContent {
             .invoke_void(".ctor", (content, cancellationToken))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream0(
+    pub fn New_Gc0(
         content: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -106,7 +106,7 @@ impl crate::System::Net::Http::StreamContent {
             .invoke(".ctor", (content, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream0(
+    pub fn _ctor_Gc0(
         &mut self,
         content: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

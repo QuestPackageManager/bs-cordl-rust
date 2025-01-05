@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReadOnlyDictionaryHelpers {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionaryHelpers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionaryHelpers")]
 impl std::ops::Deref
 for crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,9 +28,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
 #[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionaryHelpers")]
 impl crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
     pub fn CopyToNonGenericICollectionHelper<T>(
-        collection: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<T>,
-        >,
+        collection: quest_hook::libil2cpp::Gc<T>,
         array: quest_hook::libil2cpp::Gc<crate::System::Array>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

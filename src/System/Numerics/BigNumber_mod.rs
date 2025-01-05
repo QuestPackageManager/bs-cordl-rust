@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BigNumber {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Numerics+BigNumber")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Numerics+BigNumber")]
 impl std::ops::Deref for crate::System::Numerics::BigNumber {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +56,7 @@ impl crate::System::Numerics::BigNumber {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn FormatBigInteger_BigInteger_Il2CppString_NumberFormatInfo0(
+    pub fn FormatBigInteger_BigInteger_Gc0(
         value: crate::System::Numerics::BigInteger,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
@@ -69,7 +69,7 @@ impl crate::System::Numerics::BigNumber {
             .invoke("FormatBigInteger", (value, format, info))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FormatBigInteger__cordl_bool_BigInteger_Il2CppString_ReadOnlySpan_1_NumberFormatInfo_Span_1_ByRefMut_ByRefMut1(
+    pub fn FormatBigInteger__cordl_bool_BigInteger_ReadOnlySpan_1_Gc_Span_1_ByRefMut_ByRefMut1(
         targetSpan: bool,
         value: crate::System::Numerics::BigInteger,
         formatString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -119,7 +119,7 @@ impl crate::System::Numerics::BigNumber {
             .invoke("NumberToBigInteger", (number, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ParseBigInteger_Il2CppString0(
+    pub fn ParseBigInteger_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         style: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
@@ -157,7 +157,9 @@ impl crate::System::Numerics::BigNumber {
     }
     pub fn TryValidateParseStyleInteger(
         style: crate::System::Globalization::NumberStyles,
-        e: quest_hook::libil2cpp::ByRefMut<*mut crate::System::ArgumentException>,
+        e: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::ArgumentException>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryValidateParseStyleInteger", (style, e))?;

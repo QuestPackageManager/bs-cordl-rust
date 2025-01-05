@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRMeshJobs {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRMeshJobs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRMeshJobs")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRMeshJobs {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -118,16 +118,20 @@ impl<
     }
 }
 #[cfg(feature = "OVRMeshJobs+NativeArrayHelper_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "OVRMeshJobs+NativeArrayHelper_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
@@ -189,16 +193,18 @@ impl crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
     }
 }
 #[cfg(feature = "OVRMeshJobs+TransformToUnitySpaceJob")]
-impl AsRef<crate::Unity::Jobs::IJobParallelFor>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor>>
 for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
-    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor> {
         todo!()
     }
 }
 #[cfg(feature = "OVRMeshJobs+TransformToUnitySpaceJob")]
-impl AsMut<crate::Unity::Jobs::IJobParallelFor>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor>>
 for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
-    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor> {
         todo!()
     }
 }
@@ -242,16 +248,18 @@ impl crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
     }
 }
 #[cfg(feature = "OVRMeshJobs+TransformTrianglesJob")]
-impl AsRef<crate::Unity::Jobs::IJobParallelFor>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor>>
 for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
-    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor> {
         todo!()
     }
 }
 #[cfg(feature = "OVRMeshJobs+TransformTrianglesJob")]
-impl AsMut<crate::Unity::Jobs::IJobParallelFor>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor>>
 for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
-    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor> {
         todo!()
     }
 }

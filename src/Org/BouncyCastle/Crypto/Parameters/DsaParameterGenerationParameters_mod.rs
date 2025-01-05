@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DsaParameterGenerationParameters {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub l: i32,
     pub n: i32,
     pub certainty: i32,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaParameterGenerationParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::DsaParameterGenerationParameters {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DsaParameterGenerationParamet
             .invoke_void(".ctor", (L, N, certainty, random, usageIndex))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_i32_i32_SecureRandom0(
+    pub fn New_i32_i32_i32_Gc0(
         L: i32,
         N: i32,
         certainty: i32,
@@ -82,7 +82,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DsaParameterGenerationParamet
             .invoke(".ctor", (L, N, certainty, random, usageIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_i32_SecureRandom0(
+    pub fn _ctor_i32_i32_i32_Gc0(
         &mut self,
         L: i32,
         N: i32,

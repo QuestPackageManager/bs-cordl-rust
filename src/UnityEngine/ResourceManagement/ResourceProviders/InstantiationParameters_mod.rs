@@ -50,7 +50,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Transform__cordl_bool0(
+    pub fn _ctor_Gc__cordl_bool0(
         &mut self,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         instantiateInWorldSpace: bool,
@@ -62,7 +62,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Vector3_Quaternion_Transform1(
+    pub fn _ctor_Vector3_Quaternion_Gc1(
         &mut self,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,

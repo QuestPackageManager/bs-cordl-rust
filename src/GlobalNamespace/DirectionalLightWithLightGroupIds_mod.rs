@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DirectionalLightWithLightGroupIds {
-    __cordl_parent: crate::GlobalNamespace::RuntimeLightWithLightGroupIds,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RuntimeLightWithLightGroupIds,
+    >,
     pub _directionalLight: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::DirectionalLight,
     >,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DirectionalLightWithLightGroupIds")]
 impl std::ops::Deref for crate::GlobalNamespace::DirectionalLightWithLightGroupIds {
-    type Target = crate::GlobalNamespace::RuntimeLightWithLightGroupIds;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RuntimeLightWithLightGroupIds,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

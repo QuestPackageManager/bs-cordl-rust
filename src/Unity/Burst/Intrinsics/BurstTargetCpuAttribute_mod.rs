@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstTargetCpuAttribute {
-    __cordl_parent: crate::System::Attribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     pub TargetCpu: crate::Unity::Burst::BurstTargetCpu,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+BurstTargetCpuAttribute")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+BurstTargetCpuAttribute")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::BurstTargetCpuAttribute {
-    type Target = crate::System::Attribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

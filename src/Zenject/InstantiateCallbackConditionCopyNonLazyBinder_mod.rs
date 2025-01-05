@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstantiateCallbackConditionCopyNonLazyBinder {
-    __cordl_parent: crate::Zenject::ConditionCopyNonLazyBinder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Zenject::ConditionCopyNonLazyBinder,
+    >,
 }
 #[cfg(feature = "Zenject+InstantiateCallbackConditionCopyNonLazyBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InstantiateCallbackConditionCopyNonLazyBinder")]
 impl std::ops::Deref for crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder {
-    type Target = crate::Zenject::ConditionCopyNonLazyBinder;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,13 +37,11 @@ impl crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder {
             .invoke_void(".ctor", (bindInfo))?;
         Ok(__cordl_object.into())
     }
-    pub fn OnInstantiated_Action_2_0(
+    pub fn OnInstantiated_Gc0(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::Zenject::InjectContext,
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
@@ -54,10 +54,11 @@ impl crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder {
         > = __cordl_object.invoke("OnInstantiated", (callback))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnInstantiated_Action_2_1<T>(
+    pub fn OnInstantiated_Gc1<T>(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut crate::Zenject::InjectContext, T>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            T,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,

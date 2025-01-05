@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "ModestTree+TypeExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ModestTree+TypeExtensions")]
 impl std::ops::Deref for crate::ModestTree::TypeExtensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,72 +24,56 @@ impl std::ops::DerefMut for crate::ModestTree::TypeExtensions {
 }
 #[cfg(feature = "ModestTree+TypeExtensions")]
 impl crate::ModestTree::TypeExtensions {
-    pub fn AllAttributes_MemberInfo0<T>(
+    pub fn AllAttributes_Gc0<T>(
         provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AllAttributes", (provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AllAttributes_MemberInfo_Il2CppArray1(
+    pub fn AllAttributes_Gc1(
         provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         attributeTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Attribute,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Attribute,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AllAttributes", (provider, attributeTypes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AllAttributes_ParameterInfo2<T>(
+    pub fn AllAttributes_Gc2<T>(
         provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AllAttributes", (provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AllAttributes_ParameterInfo_Il2CppArray3(
+    pub fn AllAttributes_Gc3(
         provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
         attributeTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Attribute,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Attribute,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AllAttributes", (provider, attributeTypes))?;
         Ok(__cordl_ret.into())
@@ -106,13 +90,13 @@ impl crate::ModestTree::TypeExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ConstructorInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ConstructorInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Constructors", (_cordl_type))?;
@@ -129,11 +113,15 @@ impl crate::ModestTree::TypeExtensions {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::FieldInfo>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::FieldInfo>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DeclaredInstanceFields", (_cordl_type))?;
         Ok(__cordl_ret.into())
@@ -143,13 +131,13 @@ impl crate::ModestTree::TypeExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MethodInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MethodInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DeclaredInstanceMethods", (_cordl_type))?;
@@ -160,19 +148,19 @@ impl crate::ModestTree::TypeExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::PropertyInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::PropertyInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DeclaredInstanceProperties", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DerivesFromOrEqual_Type0<T>(
+    pub fn DerivesFromOrEqual_Gc0<T>(
         a: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -183,7 +171,7 @@ impl crate::ModestTree::TypeExtensions {
             .invoke("DerivesFromOrEqual", (a))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DerivesFromOrEqual_Type1(
+    pub fn DerivesFromOrEqual_Gc1(
         a: quest_hook::libil2cpp::Gc<crate::System::Type>,
         b: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -191,7 +179,7 @@ impl crate::ModestTree::TypeExtensions {
             .invoke("DerivesFromOrEqual", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DerivesFrom_Type0<T>(
+    pub fn DerivesFrom_Gc0<T>(
         a: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -202,7 +190,7 @@ impl crate::ModestTree::TypeExtensions {
             .invoke("DerivesFrom", (a))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DerivesFrom_Type1(
+    pub fn DerivesFrom_Gc1(
         a: quest_hook::libil2cpp::Gc<crate::System::Type>,
         b: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -214,11 +202,15 @@ impl crate::ModestTree::TypeExtensions {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GenericArguments", (_cordl_type))?;
         Ok(__cordl_ret.into())
@@ -248,17 +240,27 @@ impl crate::ModestTree::TypeExtensions {
     pub fn GetParentTypes(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetParentTypes", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn HasAttribute_MemberInfo1<T>(
+    pub fn HasAttribute_Gc0(
+        provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        attributeTypes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasAttribute", (provider, attributeTypes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasAttribute_Gc1<T>(
         provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -269,17 +271,19 @@ impl crate::ModestTree::TypeExtensions {
             .invoke("HasAttribute", (provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn HasAttribute_MemberInfo_Il2CppArray0(
-        provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    pub fn HasAttribute_Gc2(
+        provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
         attributeTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("HasAttribute", (provider, attributeTypes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn HasAttribute_ParameterInfo3<T>(
+    pub fn HasAttribute_Gc3<T>(
         provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -288,27 +292,21 @@ impl crate::ModestTree::TypeExtensions {
     {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("HasAttribute", (provider))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn HasAttribute_ParameterInfo_Il2CppArray2(
-        provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
-        attributeTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("HasAttribute", (provider, attributeTypes))?;
         Ok(__cordl_ret.into())
     }
     pub fn Interfaces(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Interfaces", (_cordl_type))?;
         Ok(__cordl_ret.into())

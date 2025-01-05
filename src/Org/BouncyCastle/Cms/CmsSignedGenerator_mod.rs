@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsSignedGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _certs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub _crls: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub _signers: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsSignedGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -145,7 +145,18 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedGenerator {
         > = __cordl_object.invoke("GetGeneratedDigests", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSignerIdentifier_Il2CppArray1(
+    pub fn GetSignerIdentifier_Gc0(
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSignerIdentifier", (cert))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSignerIdentifier_Gc1(
         subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
@@ -158,17 +169,6 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedGenerator {
             .invoke("GetSignerIdentifier", (subjectKeyIdentifier))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSignerIdentifier_X509Certificate0(
-        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSignerIdentifier", (cert))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -176,7 +176,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SecureRandom1(
+    pub fn New_Gc1(
         _cordl_rand: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
@@ -197,7 +197,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedGenerator {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SecureRandom1(
+    pub fn _ctor_Gc1(
         &mut self,
         _cordl_rand: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,

@@ -58,7 +58,7 @@ impl crate::System::TimeSpan {
             .invoke("Compare", (t1, t2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareTo_Il2CppObject0(
+    pub fn CompareTo_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -90,7 +90,7 @@ impl crate::System::TimeSpan {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -178,19 +178,19 @@ impl crate::System::TimeSpan {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_IFormatProvider1(
+    pub fn Parse_Gc0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_Gc1(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
         let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Parse", (input, formatProvider))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Parse_Il2CppString0(
-        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Parse", (s))?;
         Ok(__cordl_ret.into())
     }
     pub fn Subtract(
@@ -223,7 +223,7 @@ impl crate::System::TimeSpan {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString1(
+    pub fn ToString_Gc1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -234,7 +234,7 @@ impl crate::System::TimeSpan {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (format))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider2(
+    pub fn ToString_Gc_Gc2(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -466,66 +466,74 @@ impl crate::System::TimeSpan {
     }
 }
 #[cfg(feature = "System+TimeSpan")]
-impl AsRef<crate::System::IComparable> for crate::System::TimeSpan {
-    fn as_ref(&self) -> &crate::System::IComparable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+TimeSpan")]
-impl AsMut<crate::System::IComparable> for crate::System::TimeSpan {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+TimeSpan")]
-impl AsRef<crate::System::IComparable_1<crate::System::TimeSpan>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::TimeSpan {
-    fn as_ref(&self) -> &crate::System::IComparable_1<crate::System::TimeSpan> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "System+TimeSpan")]
-impl AsMut<crate::System::IComparable_1<crate::System::TimeSpan>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::TimeSpan {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<crate::System::TimeSpan> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "System+TimeSpan")]
-impl AsRef<crate::System::IEquatable_1<crate::System::TimeSpan>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
 for crate::System::TimeSpan {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::TimeSpan> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+TimeSpan")]
-impl AsMut<crate::System::IEquatable_1<crate::System::TimeSpan>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
 for crate::System::TimeSpan {
-    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::TimeSpan> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+TimeSpan")]
-impl AsRef<crate::System::IFormattable> for crate::System::TimeSpan {
-    fn as_ref(&self) -> &crate::System::IFormattable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
+for crate::System::TimeSpan {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+TimeSpan")]
-impl AsMut<crate::System::IFormattable> for crate::System::TimeSpan {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
+for crate::System::TimeSpan {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+TimeSpan")]
-impl AsRef<crate::System::ISpanFormattable> for crate::System::TimeSpan {
-    fn as_ref(&self) -> &crate::System::ISpanFormattable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::TimeSpan>>
+for crate::System::TimeSpan {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::TimeSpan> {
         todo!()
     }
 }
 #[cfg(feature = "System+TimeSpan")]
-impl AsMut<crate::System::ISpanFormattable> for crate::System::TimeSpan {
-    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::TimeSpan>>
+for crate::System::TimeSpan {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::TimeSpan> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeSpan")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::TimeSpan>>
+for crate::System::TimeSpan {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::TimeSpan> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeSpan")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::TimeSpan>>
+for crate::System::TimeSpan {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::TimeSpan> {
         todo!()
     }
 }

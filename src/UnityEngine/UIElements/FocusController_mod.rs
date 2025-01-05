@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FocusController {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _focusRing_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::IFocusRing,
     >,
@@ -10,9 +10,7 @@ pub struct FocusController {
         crate::UnityEngine::UIElements::TextElement,
     >,
     pub m_FocusedElements: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::FocusController_FocusedElement,
-        >,
+        crate::UnityEngine::UIElements::FocusController_FocusedElement,
     >,
     pub m_LastFocusedElement: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Focusable,
@@ -30,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+FocusController")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FocusController {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -141,7 +139,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
         effectiveTarget: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::Focusable,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -310,7 +308,7 @@ impl crate::UnityEngine::UIElements::FocusController {
             .invoke("SwitchFocusOnEvent", (e))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SwitchFocus_FocusChangeDirection__cordl_bool_DispatchMode1(
+    pub fn SwitchFocus_Gc__cordl_bool_DispatchMode1(
         &mut self,
         newFocusedElement: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Focusable,

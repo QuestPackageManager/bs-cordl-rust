@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AesCryptoServiceProvider {
-    __cordl_parent: crate::System::Security::Cryptography::Aes,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::Aes,
+    >,
 }
 #[cfg(feature = "System+Security+Cryptography+AesCryptoServiceProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+AesCryptoServiceProvider")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::AesCryptoServiceProvider {
-    type Target = crate::System::Security::Cryptography::Aes;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Aes>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,7 +44,7 @@ impl crate::System::Security::Cryptography::AesCryptoServiceProvider {
         > = __cordl_object.invoke("CreateDecryptor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateDecryptor_Il2CppArray_Il2CppArray0(
+    pub fn CreateDecryptor_Gc_Gc0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -74,7 +76,7 @@ impl crate::System::Security::Cryptography::AesCryptoServiceProvider {
         > = __cordl_object.invoke("CreateEncryptor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateEncryptor_Il2CppArray_Il2CppArray0(
+    pub fn CreateEncryptor_Gc_Gc0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

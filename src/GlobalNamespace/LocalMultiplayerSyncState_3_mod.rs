@@ -6,15 +6,9 @@ pub struct LocalMultiplayerSyncState_3<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::GlobalNamespace::MultiplayerSyncState_3<
-        TStateTable,
-        TType,
-        TState,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
     pub _player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-    pub _stateBuffer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LocalStateBuffer_3<TStateTable, TType, TState>,
-    >,
+    pub _stateBuffer: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
     __cordl_phantom_TStateTable: std::marker::PhantomData<TStateTable>,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
@@ -32,11 +26,7 @@ impl<
     TState: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::GlobalNamespace::LocalMultiplayerSyncState_3<TStateTable, TType, TState> {
-    type Target = crate::GlobalNamespace::MultiplayerSyncState_3<
-        TStateTable,
-        TType,
-        TState,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TStateTable, TType, TState>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,20 +71,8 @@ impl<
         fullStateUpdateFrequency: i64,
         deltaUpdateFrequency: i64,
         _cordl_size: i32,
-        interpolator: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
-                TStateTable,
-                TType,
-                TState,
-            >,
-        >,
-        smoother: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
-                TStateTable,
-                TType,
-                TState,
-            >,
-        >,
+        interpolator: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+        smoother: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -179,7 +157,7 @@ impl<
     }
     pub fn TryGetSerializedState<T>(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool_1<T>>,
+        pool: quest_hook::libil2cpp::Gc<T>,
         serializable: quest_hook::libil2cpp::ByRefMut<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -201,7 +179,7 @@ impl<
     }
     pub fn TryGetSerializedStateDelta<T>(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool_1<T>>,
+        pool: quest_hook::libil2cpp::Gc<T>,
         serializable: quest_hook::libil2cpp::ByRefMut<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -227,20 +205,8 @@ impl<
         fullStateUpdateFrequency: i64,
         deltaUpdateFrequency: i64,
         _cordl_size: i32,
-        interpolator: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
-                TStateTable,
-                TType,
-                TState,
-            >,
-        >,
-        smoother: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
-                TStateTable,
-                TType,
-                TState,
-            >,
-        >,
+        interpolator: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+        smoother: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -306,9 +272,7 @@ impl<
     pub fn get_stateBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
-        >,
+        quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -321,9 +285,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
-        > = __cordl_object.invoke("get_stateBuffer", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TStateTable, TType, TState> = __cordl_object
+            .invoke("get_stateBuffer", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_Item(

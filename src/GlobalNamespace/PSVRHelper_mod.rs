@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PSVRHelper {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub inputFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub inputFocusWasReleasedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub vrFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -14,9 +14,7 @@ pub struct PSVRHelper {
     >,
     pub controllersDidDisconnectEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _didGetNodeStatesThisFrame: bool,
-    pub _nodeStates: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::XR::XRNodeState>,
-    >,
+    pub _nodeStates: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRNodeState>,
     pub _hasInputFocus: bool,
     pub _hasVrFocus: bool,
     pub _isMounted: bool,
@@ -27,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PSVRHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::PSVRHelper {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -474,16 +472,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PSVRHelper {
     }
 }
 #[cfg(feature = "PSVRHelper")]
-impl AsRef<crate::GlobalNamespace::IVRPlatformHelper>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>>
 for crate::GlobalNamespace::PSVRHelper {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IVRPlatformHelper {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PSVRHelper")]
-impl AsMut<crate::GlobalNamespace::IVRPlatformHelper>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>>
 for crate::GlobalNamespace::PSVRHelper {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRPlatformHelper {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper> {
         unsafe { std::mem::transmute(self) }
     }
 }

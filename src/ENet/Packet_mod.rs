@@ -32,7 +32,7 @@ impl crate::ENet::Packet {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Il2CppArray0(
+    pub fn Create_Gc0(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -43,7 +43,7 @@ impl crate::ENet::Packet {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Il2CppArray_PacketFlags2(
+    pub fn Create_Gc_PacketFlags2(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         flags: crate::ENet::PacketFlags,
@@ -55,7 +55,7 @@ impl crate::ENet::Packet {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Il2CppArray_i32_1(
+    pub fn Create_Gc_i32_1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         length: i32,
@@ -67,7 +67,7 @@ impl crate::ENet::Packet {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Il2CppArray_i32_PacketFlags3(
+    pub fn Create_Gc_i32_PacketFlags3(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         length: i32,
@@ -80,7 +80,7 @@ impl crate::ENet::Packet {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Il2CppArray_i32_i32_PacketFlags5(
+    pub fn Create_Gc_i32_i32_PacketFlags5(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -131,9 +131,9 @@ impl crate::ENet::Packet {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFreeCallback_IntPtr0(
+    pub fn SetFreeCallback_Gc1(
         &mut self,
-        callback: crate::System::IntPtr,
+        callback: quest_hook::libil2cpp::Gc<crate::ENet::PacketFreeCallback>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -142,9 +142,9 @@ impl crate::ENet::Packet {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFreeCallback_PacketFreeCallback1(
+    pub fn SetFreeCallback_IntPtr0(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<crate::ENet::PacketFreeCallback>,
+        callback: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -250,14 +250,16 @@ impl crate::ENet::Packet {
     }
 }
 #[cfg(feature = "ENet+Packet")]
-impl AsRef<crate::System::IDisposable> for crate::ENet::Packet {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::ENet::Packet {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "ENet+Packet")]
-impl AsMut<crate::System::IDisposable> for crate::ENet::Packet {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::ENet::Packet {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }

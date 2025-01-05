@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusInit {
-    __cordl_parent: crate::GlobalNamespace::BasePlatformInit,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BasePlatformInit>,
     pub _playerDataModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerDataModel,
     >,
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusInit")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusInit {
-    type Target = crate::GlobalNamespace::BasePlatformInit;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BasePlatformInit>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,18 +53,14 @@ impl crate::GlobalNamespace::OculusInit {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetAppVersionAsync", ())?;
         Ok(__cordl_ret.into())
     }
@@ -72,18 +68,14 @@ impl crate::GlobalNamespace::OculusInit {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetAppVersionQuestAsync", ())?;
         Ok(__cordl_ret.into())
     }
@@ -98,15 +90,12 @@ impl crate::GlobalNamespace::OculusInit {
     }
     pub fn InitializeInternalAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object.invoke("InitializeInternalAsync", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
+            .invoke("InitializeInternalAsync", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn InitializeOculusAsync(

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AttachToPanelEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::PanelChangedEventBase_1<
-        *mut crate::UnityEngine::UIElements::AttachToPanelEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AttachToPanelEvent>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+AttachToPanelEvent")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+AttachToPanelEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::AttachToPanelEvent {
-    type Target = crate::UnityEngine::UIElements::PanelChangedEventBase_1<
-        *mut crate::UnityEngine::UIElements::AttachToPanelEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AttachToPanelEvent>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

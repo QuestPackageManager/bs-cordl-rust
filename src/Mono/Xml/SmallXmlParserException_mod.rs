@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SmallXmlParserException {
-    __cordl_parent: crate::System::SystemException,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::SystemException>,
     pub line: i32,
     pub column: i32,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Xml+SmallXmlParserException")]
 impl std::ops::Deref for crate::Mono::Xml::SmallXmlParserException {
-    type Target = crate::System::SystemException;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::SystemException>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_MaterialData {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _materialSource: crate::HoudiniEngineUnity::HEU_MaterialData_Source,
     pub _materialKey: i32,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_MaterialData {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -165,28 +165,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Materi
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
     >,
 > for crate::HoudiniEngineUnity::HEU_MaterialData {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
     >,
 > for crate::HoudiniEngineUnity::HEU_MaterialData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
     > {
         unsafe { std::mem::transmute(self) }
     }

@@ -83,16 +83,26 @@ for crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DatagramTransport")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>
-for crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>,
+> for crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DatagramTransport")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>
-for crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>,
+> for crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

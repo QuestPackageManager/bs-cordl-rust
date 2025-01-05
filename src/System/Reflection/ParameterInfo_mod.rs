@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParameterInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub AttrsImpl: crate::System::Reflection::ParameterAttributes,
     pub ClassImpl: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub DefaultValueImpl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+ParameterInfo")]
 impl std::ops::Deref for crate::System::Reflection::ParameterInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,20 +31,24 @@ impl std::ops::DerefMut for crate::System::Reflection::ParameterInfo {
 #[cfg(feature = "System+Reflection+ParameterInfo")]
 impl crate::System::Reflection::ParameterInfo {
     pub const MetadataToken_ParamDef: i32 = 134217728i32;
-    pub fn GetCustomAttributes_Type__cordl_bool1(
+    pub fn GetCustomAttributes_Gc__cordl_bool1(
         &mut self,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("GetCustomAttributes", (attributeType, inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -53,14 +57,18 @@ impl crate::System::Reflection::ParameterInfo {
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("GetCustomAttributes", (inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -218,48 +226,74 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::ParameterI
     }
 }
 #[cfg(feature = "System+Reflection+ParameterInfo")]
-impl AsRef<crate::System::Reflection::ICustomAttributeProvider>
-for crate::System::Reflection::ParameterInfo {
-    fn as_ref(&self) -> &crate::System::Reflection::ICustomAttributeProvider {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Reflection::ICustomAttributeProvider>,
+> for crate::System::Reflection::ParameterInfo {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::ICustomAttributeProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Reflection+ParameterInfo")]
-impl AsMut<crate::System::Reflection::ICustomAttributeProvider>
-for crate::System::Reflection::ParameterInfo {
-    fn as_mut(&mut self) -> &mut crate::System::Reflection::ICustomAttributeProvider {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Reflection+ParameterInfo")]
-impl AsRef<crate::System::Runtime::InteropServices::_ParameterInfo>
-for crate::System::Reflection::ParameterInfo {
-    fn as_ref(&self) -> &crate::System::Runtime::InteropServices::_ParameterInfo {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Reflection+ParameterInfo")]
-impl AsMut<crate::System::Runtime::InteropServices::_ParameterInfo>
-for crate::System::Reflection::ParameterInfo {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Reflection::ICustomAttributeProvider>,
+> for crate::System::Reflection::ParameterInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::InteropServices::_ParameterInfo {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::ICustomAttributeProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Reflection+ParameterInfo")]
-impl AsRef<crate::System::Runtime::Serialization::IObjectReference>
-for crate::System::Reflection::ParameterInfo {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::IObjectReference {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::InteropServices::_ParameterInfo>,
+> for crate::System::Reflection::ParameterInfo {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::InteropServices::_ParameterInfo,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Reflection+ParameterInfo")]
-impl AsMut<crate::System::Runtime::Serialization::IObjectReference>
-for crate::System::Reflection::ParameterInfo {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::InteropServices::_ParameterInfo>,
+> for crate::System::Reflection::ParameterInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Serialization::IObjectReference {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::InteropServices::_ParameterInfo,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Reflection+ParameterInfo")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IObjectReference>,
+> for crate::System::Reflection::ParameterInfo {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IObjectReference,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Reflection+ParameterInfo")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IObjectReference>,
+> for crate::System::Reflection::ParameterInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IObjectReference,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadSafeAttribute {
-    __cordl_parent: crate::UnityEngine::Bindings::NativeMethodAttribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Bindings::NativeMethodAttribute,
+    >,
 }
 #[cfg(feature = "UnityEngine+Bindings+ThreadSafeAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Bindings+ThreadSafeAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::ThreadSafeAttribute {
-    type Target = crate::UnityEngine::Bindings::NativeMethodAttribute;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Bindings::NativeMethodAttribute,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

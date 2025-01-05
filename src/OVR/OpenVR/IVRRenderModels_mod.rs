@@ -120,7 +120,7 @@ impl crate::OVR::OpenVR::IVRRenderModels {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__FreeRenderModel {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeRenderModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -129,7 +129,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeRenderModel")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__FreeRenderModel {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -216,7 +216,7 @@ for crate::OVR::OpenVR::IVRRenderModels__FreeRenderModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__FreeTexture {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeTexture")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -225,7 +225,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeTexture")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__FreeTexture {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -312,7 +312,7 @@ for crate::OVR::OpenVR::IVRRenderModels__FreeTexture {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__FreeTextureD3D11 {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeTextureD3D11")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -321,7 +321,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeTextureD3D11")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__FreeTextureD3D11 {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -408,7 +408,7 @@ for crate::OVR::OpenVR::IVRRenderModels__FreeTextureD3D11 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__GetComponentButtonMask {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentButtonMask")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -418,7 +418,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentButtonMask")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetComponentButtonMask {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -513,7 +513,7 @@ for crate::OVR::OpenVR::IVRRenderModels__GetComponentButtonMask {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__GetComponentCount {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentCount")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -522,7 +522,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentCount")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetComponentCount {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -611,7 +611,7 @@ for crate::OVR::OpenVR::IVRRenderModels__GetComponentCount {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__GetComponentName {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -620,7 +620,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetComponentName {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -734,7 +734,7 @@ for crate::OVR::OpenVR::IVRRenderModels__GetComponentName {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__GetComponentRenderModelName {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentRenderModelName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -745,7 +745,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentRenderModelName")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetComponentRenderModelName {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -864,7 +864,7 @@ for crate::OVR::OpenVR::IVRRenderModels__GetComponentRenderModelName {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__GetComponentState {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentState")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -873,7 +873,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentState")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetComponentState {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1013,7 +1013,7 @@ for crate::OVR::OpenVR::IVRRenderModels__GetComponentState {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__GetComponentStateForDevicePath {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentStateForDevicePath")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1024,7 +1024,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentStateForDevicePath")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetComponentStateForDevicePath {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1158,7 +1158,7 @@ for crate::OVR::OpenVR::IVRRenderModels__GetComponentStateForDevicePath {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__GetRenderModelCount {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelCount")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1168,7 +1168,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelCount")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelCount {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1249,7 +1249,7 @@ for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelCount {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__GetRenderModelErrorNameFromEnum {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelErrorNameFromEnum")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1260,7 +1260,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelErrorNameFromEnum")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelErrorNameFromEnum {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1348,7 +1348,7 @@ for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelErrorNameFromEnum {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__GetRenderModelName {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1357,7 +1357,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelName {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1463,7 +1463,7 @@ for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelName {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__GetRenderModelOriginalPath {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelOriginalPath")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1474,7 +1474,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelOriginalPath")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelOriginalPath {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1589,7 +1589,7 @@ for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelOriginalPath {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__GetRenderModelThumbnailURL {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelThumbnailURL")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1600,7 +1600,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelThumbnailURL")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelThumbnailURL {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1715,7 +1715,7 @@ for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelThumbnailURL {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__LoadIntoTextureD3D11_Async {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadIntoTextureD3D11_Async")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1726,7 +1726,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadIntoTextureD3D11_Async")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__LoadIntoTextureD3D11_Async {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1816,7 +1816,7 @@ for crate::OVR::OpenVR::IVRRenderModels__LoadIntoTextureD3D11_Async {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__LoadRenderModel_Async {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadRenderModel_Async")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1826,7 +1826,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadRenderModel_Async")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__LoadRenderModel_Async {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1923,7 +1923,7 @@ for crate::OVR::OpenVR::IVRRenderModels__LoadRenderModel_Async {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__LoadTextureD3D11_Async {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadTextureD3D11_Async")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1933,7 +1933,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadTextureD3D11_Async")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__LoadTextureD3D11_Async {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2028,7 +2028,7 @@ for crate::OVR::OpenVR::IVRRenderModels__LoadTextureD3D11_Async {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__LoadTexture_Async {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadTexture_Async")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2037,7 +2037,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadTexture_Async")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__LoadTexture_Async {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2127,7 +2127,7 @@ for crate::OVR::OpenVR::IVRRenderModels__LoadTexture_Async {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRRenderModels__RenderModelHasComponent {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_RenderModelHasComponent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2137,7 +2137,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_RenderModelHasComponent")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__RenderModelHasComponent {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathDocumentNavigator {
-    __cordl_parent: crate::System::Xml::XPath::XPathNavigator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XPath::XPathNavigator>,
     pub _pageCurrent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::MS::Internal::Xml::Cache::XPathNode>,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathDocumentNavigator")]
 impl std::ops::Deref for crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
-    type Target = crate::System::Xml::XPath::XPathNavigator;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XPath::XPathNavigator>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -252,16 +252,18 @@ for crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
     }
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathDocumentNavigator")]
-impl AsRef<crate::System::Xml::IXmlLineInfo>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>>
 for crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
-    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathDocumentNavigator")]
-impl AsMut<crate::System::Xml::IXmlLineInfo>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>>
 for crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -5,9 +5,9 @@ pub struct Property_2<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Attributes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::Attribute>,
+        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     >,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -22,7 +22,7 @@ impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Unity::Properties::Property_2<TContainer, TValue> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,9 +61,7 @@ impl<
     pub fn AddAttributes(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Attribute,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -143,9 +141,7 @@ impl<
     pub fn Unity_Properties_Internal_IAttributes_AddAttributes(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Attribute,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -215,9 +211,9 @@ for crate::Unity::Properties::Property_2<TContainer, TValue> {
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Unity::Properties::IProperty>
+> AsRef<quest_hook::libil2cpp::Gc<TContainer>>
 for crate::Unity::Properties::Property_2<TContainer, TValue> {
-    fn as_ref(&self) -> &crate::Unity::Properties::IProperty {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TContainer> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -225,9 +221,9 @@ for crate::Unity::Properties::Property_2<TContainer, TValue> {
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Unity::Properties::IProperty>
+> AsMut<quest_hook::libil2cpp::Gc<TContainer>>
 for crate::Unity::Properties::Property_2<TContainer, TValue> {
-    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IProperty {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TContainer> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -235,9 +231,9 @@ for crate::Unity::Properties::Property_2<TContainer, TValue> {
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Unity::Properties::IProperty_1<TContainer>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IProperty>>
 for crate::Unity::Properties::Property_2<TContainer, TValue> {
-    fn as_ref(&self) -> &crate::Unity::Properties::IProperty_1<TContainer> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Properties::IProperty> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -245,9 +241,11 @@ for crate::Unity::Properties::Property_2<TContainer, TValue> {
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Unity::Properties::IProperty_1<TContainer>>
+> AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IProperty>>
 for crate::Unity::Properties::Property_2<TContainer, TValue> {
-    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IProperty_1<TContainer> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Properties::IProperty> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -255,9 +253,11 @@ for crate::Unity::Properties::Property_2<TContainer, TValue> {
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Unity::Properties::Internal::IAttributes>
+> AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Properties::Internal::IAttributes>>
 for crate::Unity::Properties::Property_2<TContainer, TValue> {
-    fn as_ref(&self) -> &crate::Unity::Properties::Internal::IAttributes {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Unity::Properties::Internal::IAttributes> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -265,9 +265,13 @@ for crate::Unity::Properties::Property_2<TContainer, TValue> {
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Unity::Properties::Internal::IAttributes>
+> AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Properties::Internal::IAttributes>>
 for crate::Unity::Properties::Property_2<TContainer, TValue> {
-    fn as_mut(&mut self) -> &mut crate::Unity::Properties::Internal::IAttributes {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::Internal::IAttributes,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

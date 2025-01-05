@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Tnaf {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+Tnaf")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+Tnaf")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,19 +51,19 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetLucas", (mu, k, doV))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMu_AbstractF2mCurve0(
+    pub fn GetMu_Gc0(
         curve: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve,
         >,
@@ -72,7 +72,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             .invoke("GetMu", (curve))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMu_ECFieldElement1(
+    pub fn GetMu_Gc1(
         curveA: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::ECFieldElement,
         >,
@@ -94,13 +94,17 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetPreComp", (p, a))?;
         Ok(__cordl_ret.into())
@@ -112,38 +116,38 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             .invoke("GetShiftsForCofactor", (h))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSi_AbstractF2mCurve0(
+    pub fn GetSi_Gc0(
         curve: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetSi", (curve))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSi_i32_i32_BigInteger1(
+    pub fn GetSi_i32_i32_Gc1(
         fieldSize: i32,
         curveA: i32,
         cofactor: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetSi", (fieldSize, curveA, cofactor))?;
@@ -211,7 +215,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Norm_SimpleBigDecimal_SimpleBigDecimal1(
+    pub fn Norm_Gc1(
         mu: i8,
         u: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -229,7 +233,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Norm", (mu, u, v))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Norm_ZTauElement0(
+    pub fn Norm_i8_Gc0(
         mu: i8,
         lambda: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement,
@@ -248,7 +252,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         a: i8,
         s: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         mu: i8,
@@ -315,7 +319,9 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         tw: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         alpha: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

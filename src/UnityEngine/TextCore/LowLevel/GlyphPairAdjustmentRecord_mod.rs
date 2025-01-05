@@ -25,6 +25,17 @@ for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
 impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
+    pub fn Equals_Gc0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_GlyphPairAdjustmentRecord1(
         &mut self,
         other: crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
@@ -33,17 +44,6 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Il2CppObject0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -94,13 +94,13 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
     >,
 > for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
     > {
         todo!()
@@ -108,13 +108,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
     >,
 > for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
     > {
         todo!()

@@ -36,7 +36,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Matrix4x
 }
 #[cfg(feature = "UnityEngine+Matrix4x4")]
 impl crate::UnityEngine::Matrix4x4 {
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -302,7 +302,7 @@ impl crate::UnityEngine::Matrix4x4 {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider1(
+    pub fn ToString_Gc_Gc1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -478,30 +478,32 @@ impl crate::UnityEngine::Matrix4x4 {
     }
 }
 #[cfg(feature = "UnityEngine+Matrix4x4")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Matrix4x4>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
 for crate::UnityEngine::Matrix4x4 {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Matrix4x4> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Matrix4x4")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Matrix4x4>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::UnityEngine::Matrix4x4 {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Matrix4x4")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>>
+for crate::UnityEngine::Matrix4x4 {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Matrix4x4")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>>
 for crate::UnityEngine::Matrix4x4 {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Matrix4x4> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Matrix4x4")]
-impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Matrix4x4 {
-    fn as_ref(&self) -> &crate::System::IFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Matrix4x4")]
-impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Matrix4x4 {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4> {
         todo!()
     }
 }

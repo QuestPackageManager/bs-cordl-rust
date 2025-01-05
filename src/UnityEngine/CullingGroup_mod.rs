@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CullingGroup {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Ptr: crate::System::IntPtr,
     pub m_OnStateChanged: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::CullingGroup_StateChanged,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+CullingGroup")]
 impl std::ops::Deref for crate::UnityEngine::CullingGroup {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,7 +53,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::CullingGroup {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CullingGroup_StateChanged {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "UnityEngine+CullingGroup+StateChanged")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -62,7 +62,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+CullingGroup+StateChanged")]
 impl std::ops::Deref for crate::UnityEngine::CullingGroup_StateChanged {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

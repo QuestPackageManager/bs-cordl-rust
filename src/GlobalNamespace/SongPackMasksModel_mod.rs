@@ -2,23 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPackMasksModel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub content: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMasksModelSO>,
     pub allSongPackMask: crate::GlobalNamespace::SongPackMask,
     pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelsModel,
     >,
     pub _songPackSerializedNameToMaskInfoDict: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            crate::GlobalNamespace::SongPackMasksModel_MaskInfo,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::GlobalNamespace::SongPackMasksModel_MaskInfo,
     >,
     pub _songPackMaskToSerializedNameDict: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::GlobalNamespace::SongPackMask,
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        crate::GlobalNamespace::SongPackMask,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "SongPackMasksModel")]
@@ -28,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SongPackMasksModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPackMasksModel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

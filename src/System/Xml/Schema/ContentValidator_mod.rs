@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContentValidator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub contentType: crate::System::Xml::Schema::XmlSchemaContentType,
     pub isOpen: bool,
     pub isEmptiable: bool,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+ContentValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::ContentValidator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::ContentValidator {
 }
 #[cfg(feature = "System+Xml+Schema+ContentValidator")]
 impl crate::System::Xml::Schema::ContentValidator {
-    pub fn AddParticleToExpected_XmlSchemaParticle_XmlSchemaSet_ArrayList0(
+    pub fn AddParticleToExpected_Gc_Gc_Gc0(
         p: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
         schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
         particles: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

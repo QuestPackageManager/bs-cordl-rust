@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RangeHeaderValue {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub ranges: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::System::Net::Http::Headers::RangeItemHeaderValue,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::RangeItemHeaderValue,
         >,
     >,
     pub unit: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+RangeHeaderValue")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::RangeHeaderValue {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl crate::System::Net::Http::Headers::RangeHeaderValue {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_RangeHeaderValue1(
+    pub fn New_Gc1(
         source: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::RangeHeaderValue,
         >,
@@ -94,7 +94,9 @@ impl crate::System::Net::Http::Headers::RangeHeaderValue {
     pub fn TryParse(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parsedValue: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Net::Http::Headers::RangeHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::RangeHeaderValue,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -111,7 +113,7 @@ impl crate::System::Net::Http::Headers::RangeHeaderValue {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_RangeHeaderValue1(
+    pub fn _ctor_Gc1(
         &mut self,
         source: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::RangeHeaderValue,
@@ -128,8 +130,8 @@ impl crate::System::Net::Http::Headers::RangeHeaderValue {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<
-                *mut crate::System::Net::Http::Headers::RangeItemHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::RangeItemHeaderValue,
             >,
         >,
     > {
@@ -137,8 +139,8 @@ impl crate::System::Net::Http::Headers::RangeHeaderValue {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<
-                *mut crate::System::Net::Http::Headers::RangeItemHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::RangeItemHeaderValue,
             >,
         > = __cordl_object.invoke("get_Ranges", ())?;
         Ok(__cordl_ret.into())
@@ -168,16 +170,16 @@ for crate::System::Net::Http::Headers::RangeHeaderValue {
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+RangeHeaderValue")]
-impl AsRef<crate::System::ICloneable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Net::Http::Headers::RangeHeaderValue {
-    fn as_ref(&self) -> &crate::System::ICloneable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+RangeHeaderValue")]
-impl AsMut<crate::System::ICloneable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Net::Http::Headers::RangeHeaderValue {
-    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -5,7 +5,7 @@ pub struct ConditionalWeakTable_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub data: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             crate::System::Runtime::CompilerServices::Ephemeron,
@@ -28,7 +28,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValue> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,12 +101,7 @@ impl<
     pub fn GetValue(
         &mut self,
         key: TKey,
-        createValueCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_CreateValueCallback<
-                TKey,
-                TValue,
-            >,
-        >,
+        createValueCallback: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -199,9 +194,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-            >,
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
         >,
     >
     where
@@ -214,9 +207,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-            >,
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
         > = __cordl_object
             .invoke(
                 "System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator",
@@ -293,13 +284,13 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >,
 > for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValue> {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -310,13 +301,13 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >,
 > for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValue> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -326,9 +317,11 @@ impl<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IEnumerable>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValue> {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -336,9 +329,11 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValu
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IEnumerable>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -351,7 +346,7 @@ pub struct ConditionalWeakTable_2_CreateValueCallback<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -375,7 +370,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_CreateValue
     TKey,
     TValue,
 > {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -478,10 +473,8 @@ pub struct ConditionalWeakTable_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _table: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValue>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _table: quest_hook::libil2cpp::Gc<TKey, TValue>,
     pub _currentIndex: i32,
     pub _current: crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
@@ -503,7 +496,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
     TKey,
     TValue,
 > {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -575,12 +568,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        table: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
-                TKey,
-                TValue,
-            >,
-        >,
+        table: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -629,12 +617,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        table: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
-                TKey,
-                TValue,
-            >,
-        >,
+        table: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -691,7 +674,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::System::Collections::Generic::IEnumerator_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >,
 >
@@ -701,7 +684,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
 > {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -712,7 +695,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::System::Collections::Generic::IEnumerator_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >,
 >
@@ -722,7 +705,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
 > {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -732,12 +715,14 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IEnumerator>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
     TKey,
     TValue,
 > {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -745,12 +730,14 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IEnumerator>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
     TKey,
     TValue,
 > {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -758,12 +745,12 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IDisposable>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
     TKey,
     TValue,
 > {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -771,12 +758,12 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IDisposable>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
     TKey,
     TValue,
 > {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

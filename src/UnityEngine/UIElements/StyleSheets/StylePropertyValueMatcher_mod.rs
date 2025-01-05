@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyValueMatcher {
-    __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher,
+    >,
     pub m_Values: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-        >,
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher")]
@@ -18,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
-    type Target = crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,9 +40,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
         >,
         values: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-            >,
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleSheets::MatchResult,

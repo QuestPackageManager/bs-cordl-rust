@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsTransport {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mRecordLayer: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsTransport")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -114,32 +114,50 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsTransport")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport>
-for crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport>,
+> for crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsTransport")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport>
-for crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport>,
+> for crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsTransport")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>
-for crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>,
+> for crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsTransport")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>
-for crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>,
+> for crate::Org::BouncyCastle::Crypto::Tls::DtlsTransport {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

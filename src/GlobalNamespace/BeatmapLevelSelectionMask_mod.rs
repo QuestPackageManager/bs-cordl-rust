@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::BeatmapLevelSelectionMask {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -107,24 +107,20 @@ impl crate::GlobalNamespace::BeatmapLevelSelectionMask {
     }
 }
 #[cfg(feature = "BeatmapLevelSelectionMask")]
-impl AsRef<
-    crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapLevelSelectionMask>,
-> for crate::GlobalNamespace::BeatmapLevelSelectionMask {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSelectionMask>>
+for crate::GlobalNamespace::BeatmapLevelSelectionMask {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::GlobalNamespace::BeatmapLevelSelectionMask,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSelectionMask> {
         todo!()
     }
 }
 #[cfg(feature = "BeatmapLevelSelectionMask")]
-impl AsMut<
-    crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapLevelSelectionMask>,
-> for crate::GlobalNamespace::BeatmapLevelSelectionMask {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSelectionMask>>
+for crate::GlobalNamespace::BeatmapLevelSelectionMask {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelSelectionMask,
     > {
         todo!()

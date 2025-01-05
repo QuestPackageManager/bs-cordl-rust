@@ -32,7 +32,7 @@ impl crate::UnityEngine::Vector4 {
             .invoke("Dot", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -100,7 +100,7 @@ impl crate::UnityEngine::Vector4 {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString1(
+    pub fn ToString_Gc1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -111,7 +111,7 @@ impl crate::UnityEngine::Vector4 {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (format))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider2(
+    pub fn ToString_Gc_Gc2(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -265,30 +265,30 @@ impl crate::UnityEngine::Vector4 {
     }
 }
 #[cfg(feature = "UnityEngine+Vector4")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Vector4>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
 for crate::UnityEngine::Vector4 {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Vector4> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Vector4")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Vector4>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
 for crate::UnityEngine::Vector4 {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Vector4> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Vector4")]
-impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Vector4 {
-    fn as_ref(&self) -> &crate::System::IFormattable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>>
+for crate::UnityEngine::Vector4 {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Vector4")]
-impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Vector4 {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>>
+for crate::UnityEngine::Vector4 {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4> {
         todo!()
     }
 }

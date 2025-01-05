@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProtectedPkiMessage {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub pkiMessage: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cmp+ProtectedPkiMessage")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,9 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         >,
     > {
@@ -41,12 +43,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         > = __cordl_object.invoke("GetCertificates", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_GeneralPkiMessage0(
+    pub fn New_Gc0(
         pkiMessage: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::GeneralPkiMessage,
         >,
@@ -57,7 +61,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
             .invoke_void(".ctor", (pkiMessage))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PkiMessage1(
+    pub fn New_Gc1(
         pkiMessage: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
         >,
@@ -97,7 +101,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         > = __cordl_object.invoke("ToAsn1Message", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Verify_IVerifierFactory0(
+    pub fn Verify_Gc0(
         &mut self,
         verifierFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IVerifierFactory,
@@ -109,7 +113,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         let __cordl_ret: bool = __cordl_object.invoke("Verify", (verifierFactory))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Verify_PKMacBuilder_Il2CppArray1(
+    pub fn Verify_Gc1(
         &mut self,
         pkMacBuilder: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::PKMacBuilder,
@@ -123,7 +127,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
             .invoke("Verify", (pkMacBuilder, password))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_GeneralPkiMessage0(
+    pub fn _ctor_Gc0(
         &mut self,
         pkiMessage: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::GeneralPkiMessage,
@@ -136,7 +140,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
             .invoke(".ctor", (pkiMessage))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_PkiMessage1(
+    pub fn _ctor_Gc1(
         &mut self,
         pkiMessage: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,

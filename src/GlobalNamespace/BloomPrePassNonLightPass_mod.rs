@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassNonLightPass {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _executionTimeType: crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType,
     pub _registeredExecutionTimeType: crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomPrePassNonLightPass")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassNonLightPass {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -110,30 +110,22 @@ impl crate::GlobalNamespace::BloomPrePassNonLightPass {
     }
     pub fn get_bloomPrePassAfterBlurList() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BloomPrePassNonLightPass,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassNonLightPass>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BloomPrePassNonLightPass,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassNonLightPass>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_bloomPrePassAfterBlurList", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_bloomPrePassBeforeBlurList() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BloomPrePassNonLightPass,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassNonLightPass>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BloomPrePassNonLightPass,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassNonLightPass>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_bloomPrePassBeforeBlurList", ())?;
         Ok(__cordl_ret.into())

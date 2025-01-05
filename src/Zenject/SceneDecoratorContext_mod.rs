@@ -2,26 +2,22 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SceneDecoratorContext {
-    __cordl_parent: crate::Zenject::Context,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::Context>,
     pub _lateInstallers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::Zenject::MonoInstaller>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
     >,
     pub _lateInstallerPrefabs: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::Zenject::MonoInstaller>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
     >,
     pub _lateScriptableObjectInstallers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::ScriptableObjectInstaller,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     >,
     pub _decoratedContractName: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _injectableMonoBehaviours: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::MonoBehaviour,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     >,
 }
 #[cfg(feature = "Zenject+SceneDecoratorContext")]
@@ -31,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SceneDecoratorContext")]
 impl std::ops::Deref for crate::Zenject::SceneDecoratorContext {
-    type Target = crate::Zenject::Context;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::Context>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,9 +43,7 @@ impl crate::Zenject::SceneDecoratorContext {
     pub fn GetInjectableMonoBehaviours(
         &mut self,
         monoBehaviours: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::MonoBehaviour,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -63,18 +57,14 @@ impl crate::Zenject::SceneDecoratorContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::GameObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::GameObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = __cordl_object.invoke("GetRootGameObjects", ())?;
         Ok(__cordl_ret.into())
     }
@@ -172,18 +162,14 @@ impl crate::Zenject::SceneDecoratorContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Zenject::MonoInstaller,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Zenject::MonoInstaller,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         > = __cordl_object.invoke("get_LateInstallerPrefabs", ())?;
         Ok(__cordl_ret.into())
     }
@@ -191,18 +177,14 @@ impl crate::Zenject::SceneDecoratorContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Zenject::MonoInstaller,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Zenject::MonoInstaller,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         > = __cordl_object.invoke("get_LateInstallers", ())?;
         Ok(__cordl_ret.into())
     }
@@ -210,27 +192,21 @@ impl crate::Zenject::SceneDecoratorContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Zenject::ScriptableObjectInstaller,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Zenject::ScriptableObjectInstaller,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
         > = __cordl_object.invoke("get_LateScriptableObjectInstallers", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_LateInstallerPrefabs(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Zenject::MonoInstaller,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -243,9 +219,7 @@ impl crate::Zenject::SceneDecoratorContext {
     pub fn set_LateInstallers(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Zenject::MonoInstaller,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -258,9 +232,7 @@ impl crate::Zenject::SceneDecoratorContext {
     pub fn set_LateScriptableObjectInstallers(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Zenject::ScriptableObjectInstaller,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

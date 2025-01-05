@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpListenerResponse {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub disposed: bool,
     pub content_encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub content_length: i64,
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpListenerResponse")]
 impl std::ops::Deref for crate::System::Net::HttpListenerResponse {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl crate::System::Net::HttpListenerResponse {
             .invoke("Close", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Close_Il2CppArray__cordl_bool2(
+    pub fn Close_Gc__cordl_bool2(
         &mut self,
         responseEntity: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -268,14 +268,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::HttpListenerRespo
     }
 }
 #[cfg(feature = "System+Net+HttpListenerResponse")]
-impl AsRef<crate::System::IDisposable> for crate::System::Net::HttpListenerResponse {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::Net::HttpListenerResponse {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+HttpListenerResponse")]
-impl AsMut<crate::System::IDisposable> for crate::System::Net::HttpListenerResponse {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::Net::HttpListenerResponse {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

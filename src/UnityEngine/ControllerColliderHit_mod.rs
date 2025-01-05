@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ControllerColliderHit {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Controller: quest_hook::libil2cpp::Gc<crate::UnityEngine::CharacterController>,
     pub m_Collider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
     pub m_Point: crate::UnityEngine::Vector3,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ControllerColliderHit")]
 impl std::ops::Deref for crate::UnityEngine::ControllerColliderHit {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

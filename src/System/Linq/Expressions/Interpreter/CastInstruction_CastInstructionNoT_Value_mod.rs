@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CastInstructionNoT_CastInstruction_Value {
-    __cordl_parent: crate::GlobalNamespace::CastInstruction_CastInstructionNoT,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CastInstruction_CastInstructionNoT,
+    >,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {
-    type Target = crate::GlobalNamespace::CastInstruction_CastInstructionNoT;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CastInstruction_CastInstructionNoT,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

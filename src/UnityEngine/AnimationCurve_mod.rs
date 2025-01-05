@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationCurve {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Ptr: crate::System::IntPtr,
 }
 #[cfg(feature = "UnityEngine+AnimationCurve")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AnimationCurve")]
 impl std::ops::Deref for crate::UnityEngine::AnimationCurve {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,17 +48,7 @@ impl crate::UnityEngine::AnimationCurve {
             .invoke("EaseInOut", (timeStart, valueStart, timeEnd, valueEnd))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_AnimationCurve1(
-        &mut self,
-        other: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -66,6 +56,16 @@ impl crate::UnityEngine::AnimationCurve {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (o))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Gc1(
+        &mut self,
+        other: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret.into())
     }
     pub fn Evaluate(&mut self, _cordl_time: f32) -> quest_hook::libil2cpp::Result<f32> {
@@ -137,7 +137,7 @@ impl crate::UnityEngine::AnimationCurve {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray0(
+    pub fn New_Gc0(
         keys: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Keyframe>,
         >,
@@ -158,7 +158,7 @@ impl crate::UnityEngine::AnimationCurve {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray0(
+    pub fn _ctor_Gc0(
         &mut self,
         keys: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Keyframe>,
@@ -189,20 +189,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AnimationCurve {
     }
 }
 #[cfg(feature = "UnityEngine+AnimationCurve")]
-impl AsRef<crate::System::IEquatable_1<*mut crate::UnityEngine::AnimationCurve>>
-for crate::UnityEngine::AnimationCurve {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    >,
+> for crate::UnityEngine::AnimationCurve {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<*mut crate::UnityEngine::AnimationCurve> {
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+AnimationCurve")]
-impl AsMut<crate::System::IEquatable_1<*mut crate::UnityEngine::AnimationCurve>>
-for crate::UnityEngine::AnimationCurve {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    >,
+> for crate::UnityEngine::AnimationCurve {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<*mut crate::UnityEngine::AnimationCurve> {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

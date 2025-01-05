@@ -26,9 +26,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::INetworkPlayerModel {
 impl crate::GlobalNamespace::INetworkPlayerModel {
     pub fn CreatePartyConnection<T>(
         &mut self,
-        config: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<T>,
-        >,
+        config: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -54,7 +52,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     pub fn add_connectedPlayerManagerCreatedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayerModel>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -67,7 +65,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     pub fn add_connectedPlayerManagerDestroyedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayerModel>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -80,7 +78,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     pub fn add_inviteRequestedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -93,7 +91,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     pub fn add_joinRequestedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -106,7 +104,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     pub fn add_partyChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayerModel>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -118,7 +116,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     }
     pub fn add_partySizeChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -192,18 +190,14 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::INetworkPlayer,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::INetworkPlayer,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         > = __cordl_object.invoke("get_otherPlayers", ())?;
         Ok(__cordl_ret.into())
     }
@@ -211,18 +205,14 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::INetworkPlayer,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::INetworkPlayer,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         > = __cordl_object.invoke("get_partyPlayers", ())?;
         Ok(__cordl_ret.into())
     }
@@ -241,7 +231,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     pub fn remove_connectedPlayerManagerCreatedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayerModel>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -254,7 +244,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     pub fn remove_connectedPlayerManagerDestroyedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayerModel>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -267,7 +257,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     pub fn remove_inviteRequestedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -280,7 +270,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     pub fn remove_joinRequestedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -293,7 +283,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     pub fn remove_partyChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayerModel>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -305,7 +295,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     }
     pub fn remove_partySizeChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

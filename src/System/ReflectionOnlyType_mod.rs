@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionOnlyType {
-    __cordl_parent: crate::System::RuntimeType,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
 }
 #[cfg(feature = "System+ReflectionOnlyType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ReflectionOnlyType")]
 impl std::ops::Deref for crate::System::ReflectionOnlyType {
-    type Target = crate::System::RuntimeType;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::RuntimeType>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

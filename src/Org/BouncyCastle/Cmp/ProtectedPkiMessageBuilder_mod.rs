@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProtectedPkiMessageBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub hdrBuilBuilder: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cmp+ProtectedPkiMessageBuilder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,21 +67,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         > = __cordl_object.invoke("AddGeneralInfo", (genInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Build_IMacFactory1(
-        &mut self,
-        factory: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMacFactory>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
-        > = __cordl_object.invoke("Build", (factory))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Build_ISignatureFactory0(
+    pub fn Build_Gc0(
         &mut self,
         signatureFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ISignatureFactory,
@@ -95,6 +81,20 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
         > = __cordl_object.invoke("Build", (signatureFactory))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Build_Gc1(
+        &mut self,
+        factory: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMacFactory>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
+        > = __cordl_object.invoke("Build", (factory))?;
         Ok(__cordl_ret.into())
     }
     pub fn CalculateSignature(
@@ -149,7 +149,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         > = __cordl_object.invoke("FinalizeMessage", (header, protection))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_GeneralName0(
+    pub fn New_Gc0(
         sender: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
         >,
@@ -163,7 +163,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             .invoke_void(".ctor", (sender, recipient))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_GeneralName1(
+    pub fn New_i32_Gc1(
         pvno: i32,
         sender: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -310,7 +310,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
         > = __cordl_object.invoke("SetTransactionId", (tid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_GeneralName0(
+    pub fn _ctor_Gc0(
         &mut self,
         sender: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -326,7 +326,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             .invoke(".ctor", (sender, recipient))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_GeneralName1(
+    pub fn _ctor_i32_Gc1(
         &mut self,
         pvno: i32,
         sender: quest_hook::libil2cpp::Gc<

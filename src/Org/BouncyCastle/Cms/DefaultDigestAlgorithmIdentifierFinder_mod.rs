@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultDigestAlgorithmIdentifierFinder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultDigestAlgorithmIdentifierFinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultDigestAlgorithmIdentifierFinder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::DefaultDigestAlgorithmIdentifierFinder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::Org::BouncyCastle::Cms::DefaultDigestAlgorithmIdentifierFinder {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn find_AlgorithmIdentifier0(
+    pub fn find_Gc0(
         &mut self,
         sigAlgId: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -62,7 +62,7 @@ impl crate::Org::BouncyCastle::Cms::DefaultDigestAlgorithmIdentifierFinder {
         > = __cordl_object.invoke("find", (sigAlgId))?;
         Ok(__cordl_ret.into())
     }
-    pub fn find_Il2CppString1(
+    pub fn find_Gc1(
         &mut self,
         digAlgName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

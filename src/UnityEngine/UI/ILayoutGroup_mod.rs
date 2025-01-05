@@ -40,16 +40,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::ILayoutGroup 
     }
 }
 #[cfg(feature = "UnityEngine+UI+ILayoutGroup")]
-impl AsRef<crate::UnityEngine::UI::ILayoutController>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutController>>
 for crate::UnityEngine::UI::ILayoutGroup {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutController {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutController> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+ILayoutGroup")]
-impl AsMut<crate::UnityEngine::UI::ILayoutController>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutController>>
 for crate::UnityEngine::UI::ILayoutGroup {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutController> {
         unsafe { std::mem::transmute(self) }
     }
 }

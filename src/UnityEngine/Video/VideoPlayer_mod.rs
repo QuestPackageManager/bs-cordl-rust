@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoPlayer {
-    __cordl_parent: crate::UnityEngine::Behaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
     pub prepareCompleted: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Video::VideoPlayer_EventHandler,
     >,
@@ -35,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Video+VideoPlayer")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer {
-    type Target = crate::UnityEngine::Behaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1224,7 +1224,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Video::VideoPlaye
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoPlayer_ErrorEventHandler {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1234,7 +1234,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1296,7 +1296,7 @@ for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoPlayer_EventHandler {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1305,7 +1305,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_EventHandler {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1366,7 +1366,7 @@ for crate::UnityEngine::Video::VideoPlayer_EventHandler {
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoPlayer_FrameReadyEventHandler {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1376,7 +1376,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1439,7 +1439,7 @@ for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoPlayer_TimeEventHandler {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1448,7 +1448,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AdditionalContentModel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub didInvalidateDataEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "AdditionalContentModel")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AdditionalContentModel")]
 impl std::ops::Deref for crate::GlobalNamespace::AdditionalContentModel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,19 +42,13 @@ impl crate::GlobalNamespace::AdditionalContentModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::BeatmapLevelDataVersion,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataVersion>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::BeatmapLevelDataVersion,
-            >,
+            crate::GlobalNamespace::BeatmapLevelDataVersion,
         > = __cordl_object.invoke("GetLevelDataVersionInternalAsync", (levelId, token))?;
         Ok(__cordl_ret.into())
     }
@@ -63,19 +57,13 @@ impl crate::GlobalNamespace::AdditionalContentModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementStatus>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke("GetLevelEntitlementStatusInternalAsync", (levelId, token))?;
         Ok(__cordl_ret.into())
@@ -85,19 +73,13 @@ impl crate::GlobalNamespace::AdditionalContentModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementStatus>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke("GetPackEntitlementStatusInternalAsync", (levelPackId, token))?;
         Ok(__cordl_ret.into())
@@ -107,19 +89,13 @@ impl crate::GlobalNamespace::AdditionalContentModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::BeatmapLevelDataVersion,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataVersion>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::BeatmapLevelDataVersion,
-            >,
+            crate::GlobalNamespace::BeatmapLevelDataVersion,
         > = __cordl_object
             .invoke(
                 "IAdditionalContentEntitlementModel.GetLevelDataVersionAsync",
@@ -132,19 +108,13 @@ impl crate::GlobalNamespace::AdditionalContentModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementStatus>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke(
                 "IAdditionalContentEntitlementModel.GetLevelEntitlementStatusAsync",
@@ -157,19 +127,13 @@ impl crate::GlobalNamespace::AdditionalContentModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementStatus>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke(
                 "IAdditionalContentEntitlementModel.GetPackEntitlementStatusAsync",
@@ -202,19 +166,13 @@ impl crate::GlobalNamespace::AdditionalContentModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IsPackBetterBuyThanLevelResult>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
-            >,
+            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
         > = __cordl_object
             .invoke("IsPackBetterBuyThanLevelAsync", (levelPackId, token))?;
         Ok(__cordl_ret.into())
@@ -242,19 +200,13 @@ impl crate::GlobalNamespace::AdditionalContentModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::OpenProductStoreResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OpenProductStoreResult>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::OpenProductStoreResult,
-            >,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = __cordl_object
             .invoke("OpenLevelPackProductStoreAsync", (levelPackId, token))?;
         Ok(__cordl_ret.into())
@@ -264,19 +216,13 @@ impl crate::GlobalNamespace::AdditionalContentModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::OpenProductStoreResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OpenProductStoreResult>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::OpenProductStoreResult,
-            >,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = __cordl_object.invoke("OpenLevelProductStoreAsync", (levelId, token))?;
         Ok(__cordl_ret.into())
     }
@@ -335,46 +281,60 @@ for crate::GlobalNamespace::AdditionalContentModel {
     }
 }
 #[cfg(feature = "AdditionalContentModel")]
-impl AsRef<crate::GlobalNamespace::IAdditionalContentEntitlementModel>
-for crate::GlobalNamespace::AdditionalContentModel {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IAdditionalContentEntitlementModel {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAdditionalContentEntitlementModel>,
+> for crate::GlobalNamespace::AdditionalContentModel {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentEntitlementModel,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "AdditionalContentModel")]
-impl AsMut<crate::GlobalNamespace::IAdditionalContentEntitlementModel>
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAdditionalContentEntitlementModel>,
+> for crate::GlobalNamespace::AdditionalContentModel {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentEntitlementModel,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "AdditionalContentModel")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAdditionalContentModel>>
+for crate::GlobalNamespace::AdditionalContentModel {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAdditionalContentModel> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "AdditionalContentModel")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAdditionalContentModel>>
 for crate::GlobalNamespace::AdditionalContentModel {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::IAdditionalContentEntitlementModel {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentModel,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "AdditionalContentModel")]
-impl AsRef<crate::GlobalNamespace::IAdditionalContentModel>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::AdditionalContentModel {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IAdditionalContentModel {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "AdditionalContentModel")]
-impl AsMut<crate::GlobalNamespace::IAdditionalContentModel>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::AdditionalContentModel {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAdditionalContentModel {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "AdditionalContentModel")]
-impl AsRef<crate::System::IDisposable>
-for crate::GlobalNamespace::AdditionalContentModel {
-    fn as_ref(&self) -> &crate::System::IDisposable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "AdditionalContentModel")]
-impl AsMut<crate::System::IDisposable>
-for crate::GlobalNamespace::AdditionalContentModel {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

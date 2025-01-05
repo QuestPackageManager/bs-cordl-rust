@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineClip {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Version: i32,
     pub m_Start: f64,
     pub m_ClipIn: f64,
@@ -21,9 +21,7 @@ pub struct TimelineClip {
     pub m_BlendInCurveMode: crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode,
     pub m_BlendOutCurveMode: crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode,
     pub m_ExposedParameterNames: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub m_AnimationCurves: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     pub m_Recordable: bool,
@@ -40,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineClip {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -537,18 +535,14 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("get_exposedParameters", ())?;
         Ok(__cordl_ret.into())
     }
@@ -961,30 +955,40 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Timelin
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
-impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::UnityEngine::Timeline::TimelineClip {
-    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
-impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::UnityEngine::Timeline::TimelineClip {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ISerializationCallbackReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
-impl AsRef<crate::UnityEngine::Timeline::ICurvesOwner>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ICurvesOwner>>
 for crate::UnityEngine::Timeline::TimelineClip {
-    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ICurvesOwner {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ICurvesOwner> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
-impl AsMut<crate::UnityEngine::Timeline::ICurvesOwner>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ICurvesOwner>>
 for crate::UnityEngine::Timeline::TimelineClip {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ICurvesOwner {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ICurvesOwner> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1023,7 +1027,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineClip_TimelineClipUpgrade {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1033,7 +1037,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

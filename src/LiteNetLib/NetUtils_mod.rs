@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetUtils {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "LiteNetLib+NetUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+NetUtils")]
 impl std::ops::Deref for crate::LiteNetLib::NetUtils {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,11 +34,9 @@ impl crate::LiteNetLib::NetUtils {
             .invoke("GetLocalIp", (addrType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetLocalIpList_IList_1_LocalAddrType1(
+    pub fn GetLocalIpList_Gc_LocalAddrType1(
         targetList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         addrType: crate::LiteNetLib::LocalAddrType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -50,15 +48,11 @@ impl crate::LiteNetLib::NetUtils {
         addrType: crate::LiteNetLib::LocalAddrType,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetLocalIpList", (addrType))?;
         Ok(__cordl_ret.into())
@@ -98,7 +92,7 @@ impl crate::LiteNetLib::NetUtils {
             .invoke("ResolveAddress", (hostStr, addressFamily))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ResolveAddress_Il2CppString0(
+    pub fn ResolveAddress_Gc0(
         hostStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
@@ -111,11 +105,15 @@ impl crate::LiteNetLib::NetUtils {
         hostStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ResolveAddresses", (hostStr))?;
         Ok(__cordl_ret.into())

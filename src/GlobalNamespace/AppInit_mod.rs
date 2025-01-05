@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppInit {
-    __cordl_parent: crate::Zenject::MonoInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
     pub _cameraGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _asyncSceneContext: quest_hook::libil2cpp::Gc<
         crate::BGLib::AppFlow::Initialization::AsyncSceneContext,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AppInit")]
 impl std::ops::Deref for crate::GlobalNamespace::AppInit {
-    type Target = crate::Zenject::MonoInstaller;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,9 +69,7 @@ impl crate::GlobalNamespace::AppInit {
     pub fn HandleBeforeDismissingScenes(
         &mut self,
         scenes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

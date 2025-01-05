@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SurrogateHashtable {
-    __cordl_parent: crate::System::Collections::Hashtable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Runtime+Serialization+SurrogateHashtable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Serialization+SurrogateHashtable")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::SurrogateHashtable {
-    type Target = crate::System::Collections::Hashtable;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509AttrCertParser {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub sData: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
     pub sDataObjectCount: i32,
     pub currentStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+X509AttrCertParser")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509AttrCertParser {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +49,7 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ReadAttrCert_Il2CppArray0(
+    pub fn ReadAttrCert_Gc0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -65,7 +65,7 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
         > = __cordl_object.invoke("ReadAttrCert", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadAttrCert_Stream1(
+    pub fn ReadAttrCert_Gc1(
         &mut self,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<
@@ -81,7 +81,7 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
         > = __cordl_object.invoke("ReadAttrCert", (inStream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadAttrCerts_Il2CppArray0(
+    pub fn ReadAttrCerts_Gc0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -95,7 +95,7 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
         > = __cordl_object.invoke("ReadAttrCerts", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadAttrCerts_Stream1(
+    pub fn ReadAttrCerts_Gc1(
         &mut self,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<

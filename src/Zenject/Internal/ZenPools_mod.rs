@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenPools {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Zenject+Internal+ZenPools")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+Internal+ZenPools")]
 impl std::ops::Deref for crate::Zenject::Internal::ZenPools {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,9 +43,7 @@ impl crate::Zenject::Internal::ZenPools {
         Ok(__cordl_ret.into())
     }
     pub fn DespawnDictionary<TKey, TValue>(
-        dictionary: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-        >,
+        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -58,7 +56,7 @@ impl crate::Zenject::Internal::ZenPools {
         Ok(__cordl_ret.into())
     }
     pub fn DespawnHashSet<T>(
-        set: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<T>>,
+        set: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -76,7 +74,7 @@ impl crate::Zenject::Internal::ZenPools {
         Ok(__cordl_ret.into())
     }
     pub fn DespawnList<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        list: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -123,9 +121,7 @@ impl crate::Zenject::Internal::ZenPools {
         Ok(__cordl_ret.into())
     }
     pub fn SpawnDictionary<TKey, TValue>() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-        >,
+        quest_hook::libil2cpp::Gc<TKey, TValue>,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -133,25 +129,32 @@ impl crate::Zenject::Internal::ZenPools {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SpawnDictionary", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn SpawnHashSet<T>() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<T>>,
+        quest_hook::libil2cpp::Gc<T>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("SpawnHashSet", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SpawnHashSet", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SpawnInjectContext_InjectableInfo_InjectContext_Il2CppObject_Type_Il2CppObject1(
+    pub fn SpawnInjectContext_Gc_Gc0(
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SpawnInjectContext", (container, memberType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SpawnInjectContext_Gc_Gc_Gc_Gc1(
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         injectableInfo: quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
         currentContext: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
@@ -177,26 +180,13 @@ impl crate::Zenject::Internal::ZenPools {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SpawnInjectContext_Type0(
-        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-        memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SpawnInjectContext", (container, memberType))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SpawnList<T>() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+    pub fn SpawnList<T>() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("SpawnList", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SpawnList", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn SpawnLookupId(

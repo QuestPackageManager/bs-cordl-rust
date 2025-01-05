@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpriteAtlasManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+U2D+SpriteAtlasManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+U2D+SpriteAtlasManager")]
 impl std::ops::Deref for crate::UnityEngine::U2D::SpriteAtlasManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +47,7 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
     }
     pub fn add_atlasRegistered(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::U2D::SpriteAtlas>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -56,7 +56,7 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
     }
     pub fn remove_atlasRegistered(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::U2D::SpriteAtlas>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

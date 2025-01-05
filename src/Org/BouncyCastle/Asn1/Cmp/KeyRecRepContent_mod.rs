@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyRecRepContent {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub status: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
     >,
@@ -21,7 +23,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+KeyRecRepContent")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +43,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                >,
             >,
         >,
     > {
@@ -48,7 +54,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                >,
             >,
         > = __cordl_object.invoke("GetCACerts", ())?;
         Ok(__cordl_ret.into())
@@ -68,7 +76,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair,
+                >,
             >,
         >,
     > {
@@ -77,7 +87,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair,
+                >,
             >,
         > = __cordl_object.invoke("GetKeyPairHist", ())?;
         Ok(__cordl_ret.into())

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlValidatingReader {
-    __cordl_parent: crate::System::Xml::XmlReader,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     pub _cordl_impl: quest_hook::libil2cpp::Gc<
         crate::System::Xml::XmlValidatingReaderImpl,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlValidatingReader")]
 impl std::ops::Deref for crate::System::Xml::XmlValidatingReader {
-    type Target = crate::System::Xml::XmlReader;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::System::Xml::XmlValidatingReader {
 }
 #[cfg(feature = "System+Xml+XmlValidatingReader")]
 impl crate::System::Xml::XmlValidatingReader {
-    pub fn GetAttribute_Il2CppString0(
+    pub fn GetAttribute_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -41,7 +41,7 @@ impl crate::System::Xml::XmlValidatingReader {
         > = __cordl_object.invoke("GetAttribute", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Il2CppString_Il2CppString1(
+    pub fn GetAttribute_Gc_Gc1(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreModel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "ScoreModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScoreModel")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -106,7 +106,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreModel_MaxScoreCounterElement {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub noteScoreDefinition: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ScoreModel_NoteScoreDefinition,
     >,
@@ -120,7 +120,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -180,28 +180,36 @@ for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
 }
 #[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
 impl AsRef<
-    crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+        >,
     >,
 > for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+        >,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
 impl AsMut<
-    crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+        >,
     >,
 > for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
+        >,
     > {
         unsafe { std::mem::transmute(self) }
     }
@@ -210,7 +218,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreModel_NoteScoreDefinition {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub maxCenterDistanceCutScore: i32,
     pub minBeforeCutScore: i32,
     pub maxBeforeCutScore: i32,
@@ -225,7 +233,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScoreModel+NoteScoreDefinition")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

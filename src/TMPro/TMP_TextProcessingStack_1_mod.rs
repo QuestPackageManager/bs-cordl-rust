@@ -131,7 +131,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetDefault_Il2CppArray_T0(
+    pub fn SetDefault_Gc_T0(
         stack: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::TMPro::TMP_TextProcessingStack_1<T>,
@@ -162,7 +162,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_TextProcessingStack_1<T> 
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray0(
+    pub fn _ctor_Gc0(
         &mut self,
         stack: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

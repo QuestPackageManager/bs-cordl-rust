@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerInputManager {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub m_NotificationBehavior: crate::UnityEngine::InputSystem::PlayerNotifications,
     pub m_MaxPlayerCount: i32,
     pub m_AllowJoining: bool,
@@ -22,21 +22,21 @@ pub struct PlayerInputManager {
     pub m_JoinActionDelegateHooked: bool,
     pub m_UnpairedDeviceUsedDelegateHooked: bool,
     pub m_JoinActionDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-        >,
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
     pub m_UnpairedDeviceUsedDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::UnityEngine::InputSystem::InputControl,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     >,
     pub m_PlayerJoinedCallbacks: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Action_1<*mut crate::UnityEngine::InputSystem::PlayerInput>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
+        >,
     >,
     pub m_PlayerLeftCallbacks: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Action_1<*mut crate::UnityEngine::InputSystem::PlayerInput>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager")]
@@ -46,7 +46,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInputManager {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -139,32 +139,7 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
             .invoke("JoinPlayerFromUI", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn JoinPlayer_Il2CppArray1(
-        &mut self,
-        playerIndex: i32,
-        splitScreenIndex: i32,
-        controlScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        pairWithDevices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::PlayerInput,
-        > = __cordl_object
-            .invoke(
-                "JoinPlayer",
-                (playerIndex, splitScreenIndex, controlScheme, pairWithDevices),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn JoinPlayer_InputDevice0(
+    pub fn JoinPlayer_i32_i32_Gc_Gc0(
         &mut self,
         playerIndex: i32,
         splitScreenIndex: i32,
@@ -184,6 +159,31 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
             .invoke(
                 "JoinPlayer",
                 (playerIndex, splitScreenIndex, controlScheme, pairWithDevice),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn JoinPlayer_i32_i32_Gc_Gc1(
+        &mut self,
+        playerIndex: i32,
+        splitScreenIndex: i32,
+        controlScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        pairWithDevices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::PlayerInput,
+        > = __cordl_object
+            .invoke(
+                "JoinPlayer",
+                (playerIndex, splitScreenIndex, controlScheme, pairWithDevices),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -283,7 +283,7 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
     pub fn add_onPlayerJoined(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::InputSystem::PlayerInput>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -296,7 +296,7 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
     pub fn add_onPlayerLeft(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::InputSystem::PlayerInput>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -374,11 +374,15 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
     }
     pub fn get_messages() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_messages", ())?;
         Ok(__cordl_ret.into())
     }
@@ -463,7 +467,7 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
     pub fn remove_onPlayerJoined(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::InputSystem::PlayerInput>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -476,7 +480,7 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
     pub fn remove_onPlayerLeft(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::InputSystem::PlayerInput>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -565,8 +569,8 @@ for crate::UnityEngine::InputSystem::PlayerInputManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerInputManager_PlayerJoinedEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::InputSystem::PlayerInput,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
@@ -578,8 +582,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::InputSystem::PlayerInput,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -626,8 +630,8 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerInputManager_PlayerLeftEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::InputSystem::PlayerInput,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
@@ -639,8 +643,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::InputSystem::PlayerInput,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GMac {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub cipher: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Modes::GcmBlockCipher,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+GMac")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Macs::GMac {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,7 +72,7 @@ impl crate::Org::BouncyCastle::Crypto::Macs::GMac {
             .invoke("Init", (parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_GcmBlockCipher0(
+    pub fn New_Gc0(
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Modes::GcmBlockCipher,
         >,
@@ -116,7 +116,7 @@ impl crate::Org::BouncyCastle::Crypto::Macs::GMac {
             .invoke("Update", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_GcmBlockCipher0(
+    pub fn _ctor_Gc0(
         &mut self,
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Modes::GcmBlockCipher,
@@ -167,16 +167,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Crypto::Mac
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+GMac")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IMac>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>>
 for crate::Org::BouncyCastle::Crypto::Macs::GMac {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IMac {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+GMac")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IMac>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>>
 for crate::Org::BouncyCastle::Crypto::Macs::GMac {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IMac {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac> {
         unsafe { std::mem::transmute(self) }
     }
 }

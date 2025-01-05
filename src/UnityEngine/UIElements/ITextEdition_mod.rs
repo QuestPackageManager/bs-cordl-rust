@@ -76,13 +76,11 @@ impl crate::UnityEngine::UIElements::ITextEdition {
     }
     pub fn get_AcceptCharacter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<char, bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<char, bool> = __cordl_object
             .invoke("get_AcceptCharacter", ())?;
         Ok(__cordl_ret.into())
     }
@@ -100,13 +98,11 @@ impl crate::UnityEngine::UIElements::ITextEdition {
     }
     pub fn get_UpdateScrollOffset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
             .invoke("get_UpdateScrollOffset", ())?;
         Ok(__cordl_ret.into())
     }
@@ -195,7 +191,7 @@ impl crate::UnityEngine::UIElements::ITextEdition {
     }
     pub fn set_AcceptCharacter(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
+        value: quest_hook::libil2cpp::Gc<char, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -217,7 +213,7 @@ impl crate::UnityEngine::UIElements::ITextEdition {
     }
     pub fn set_UpdateScrollOffset(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

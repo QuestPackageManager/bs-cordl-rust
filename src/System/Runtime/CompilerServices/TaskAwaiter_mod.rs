@@ -119,36 +119,58 @@ impl crate::System::Runtime::CompilerServices::TaskAwaiter {
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+TaskAwaiter")]
-impl AsRef<crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion>
-for crate::System::Runtime::CompilerServices::TaskAwaiter {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion,
+    >,
+> for crate::System::Runtime::CompilerServices::TaskAwaiter {
     fn as_ref(
         &self,
-    ) -> &crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+TaskAwaiter")]
-impl AsMut<crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion>
-for crate::System::Runtime::CompilerServices::TaskAwaiter {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion,
+    >,
+> for crate::System::Runtime::CompilerServices::TaskAwaiter {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+TaskAwaiter")]
-impl AsRef<crate::System::Runtime::CompilerServices::INotifyCompletion>
-for crate::System::Runtime::CompilerServices::TaskAwaiter {
-    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::INotifyCompletion {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::INotifyCompletion,
+    >,
+> for crate::System::Runtime::CompilerServices::TaskAwaiter {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::INotifyCompletion,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+TaskAwaiter")]
-impl AsMut<crate::System::Runtime::CompilerServices::INotifyCompletion>
-for crate::System::Runtime::CompilerServices::TaskAwaiter {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::INotifyCompletion,
+    >,
+> for crate::System::Runtime::CompilerServices::TaskAwaiter {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::CompilerServices::INotifyCompletion {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::INotifyCompletion,
+    > {
         todo!()
     }
 }

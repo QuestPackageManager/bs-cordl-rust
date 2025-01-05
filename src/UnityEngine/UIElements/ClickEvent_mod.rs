@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClickEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::PointerEventBase_1<
-        *mut crate::UnityEngine::UIElements::ClickEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ClickEvent>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ClickEvent")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ClickEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ClickEvent {
-    type Target = crate::UnityEngine::UIElements::PointerEventBase_1<
-        *mut crate::UnityEngine::UIElements::ClickEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ClickEvent>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

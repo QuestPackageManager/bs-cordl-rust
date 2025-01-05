@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DsaSigner {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub kCalculator: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+DsaSigner")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Signers::DsaSigner {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::DsaSigner {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
@@ -63,7 +63,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::DsaSigner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = __cordl_object.invoke("GenerateSignature", (message))?;
         Ok(__cordl_ret.into())
@@ -106,7 +106,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::DsaSigner {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IDsaKCalculator1(
+    pub fn New_Gc1(
         kCalculator: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator,
         >,
@@ -140,7 +140,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::DsaSigner {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IDsaKCalculator1(
+    pub fn _ctor_Gc1(
         &mut self,
         kCalculator: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator,
@@ -191,30 +191,38 @@ for crate::Org::BouncyCastle::Crypto::Signers::DsaSigner {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+DsaSigner")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IDsa>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa>>
 for crate::Org::BouncyCastle::Crypto::Signers::DsaSigner {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDsa {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+DsaSigner")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IDsa>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa>>
 for crate::Org::BouncyCastle::Crypto::Signers::DsaSigner {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDsa {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+DsaSigner")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IDsaExt>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsaExt>>
 for crate::Org::BouncyCastle::Crypto::Signers::DsaSigner {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDsaExt {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsaExt> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+DsaSigner")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IDsaExt>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsaExt>>
 for crate::Org::BouncyCastle::Crypto::Signers::DsaSigner {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDsaExt {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsaExt> {
         unsafe { std::mem::transmute(self) }
     }
 }

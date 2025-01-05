@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParentForeignKeyConstraintEnumerator {
-    __cordl_parent: crate::System::Data::ForeignKeyConstraintEnumerator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Data::ForeignKeyConstraintEnumerator,
+    >,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
 }
 #[cfg(feature = "System+Data+ParentForeignKeyConstraintEnumerator")]
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+ParentForeignKeyConstraintEnumerator")]
 impl std::ops::Deref for crate::System::Data::ParentForeignKeyConstraintEnumerator {
-    type Target = crate::System::Data::ForeignKeyConstraintEnumerator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Data::ForeignKeyConstraintEnumerator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

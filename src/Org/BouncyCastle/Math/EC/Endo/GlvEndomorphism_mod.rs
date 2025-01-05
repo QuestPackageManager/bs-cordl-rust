@@ -31,7 +31,7 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
@@ -40,7 +40,7 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = __cordl_object.invoke("DecomposeScalar", (k))?;
         Ok(__cordl_ret.into())
@@ -62,18 +62,26 @@ for crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvEndomorphism")]
-impl AsRef<crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism>
-for crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism>,
+> for crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvEndomorphism")]
-impl AsMut<crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism>
-for crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism>,
+> for crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixRecord {
-    __cordl_parent: crate::Assets::OVR::Scripts::Record,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Assets::OVR::Scripts::Record>,
     pub fixMethod: quest_hook::libil2cpp::Gc<
         crate::Assets::OVR::Scripts::FixMethodDelegate,
     >,
     pub targetObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     pub buttonNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub editModeRequired: bool,
     pub complete: bool,
@@ -20,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Assets+OVR+Scripts+FixRecord")]
 impl std::ops::Deref for crate::Assets::OVR::Scripts::FixRecord {
-    type Target = crate::Assets::OVR::Scripts::Record;
+    type Target = quest_hook::libil2cpp::Gc<crate::Assets::OVR::Scripts::Record>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +43,9 @@ impl crate::Assets::OVR::Scripts::FixRecord {
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         editRequired: bool,
         buttons: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -62,7 +66,9 @@ impl crate::Assets::OVR::Scripts::FixRecord {
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         editRequired: bool,
         buttons: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

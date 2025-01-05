@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectRegionViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _regionSelectionDropdown: quest_hook::libil2cpp::Gc<
         crate::HMUI::SimpleTextDropdown,
@@ -13,9 +13,7 @@ pub struct SelectRegionViewController {
         >,
     >,
     pub didPressContinueButtonEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::GlobalNamespace::SelectRegionViewController_Region,
-        >,
+        crate::GlobalNamespace::SelectRegionViewController_Region,
     >,
 }
 #[cfg(feature = "SelectRegionViewController")]
@@ -25,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SelectRegionViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectRegionViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -110,9 +108,7 @@ impl crate::GlobalNamespace::SelectRegionViewController {
     pub fn add_didPressContinueButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::GlobalNamespace::SelectRegionViewController_Region,
-            >,
+            crate::GlobalNamespace::SelectRegionViewController_Region,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -125,9 +121,7 @@ impl crate::GlobalNamespace::SelectRegionViewController {
     pub fn remove_didPressContinueButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::GlobalNamespace::SelectRegionViewController_Region,
-            >,
+            crate::GlobalNamespace::SelectRegionViewController_Region,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

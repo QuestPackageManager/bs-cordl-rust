@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignerInformation {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub sid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerID>,
     pub info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::SignerInfo>,
     pub digestAlgorithm: quest_hook::libil2cpp::Gc<
@@ -43,7 +43,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+SignerInformation")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::SignerInformation {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -191,7 +191,18 @@ impl crate::Org::BouncyCastle::Cms::SignerInformation {
         let __cordl_ret: bool = __cordl_object.invoke("IsNull", (o))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_SignerInfo_DerObjectIdentifier_CmsProcessable_IDigestCalculator0(
+    pub fn New_Gc1(
+        baseInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInformation,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (baseInfo))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc_Gc0(
         info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::SignerInfo>,
         contentType: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -207,17 +218,6 @@ impl crate::Org::BouncyCastle::Cms::SignerInformation {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, contentType, content, digestCalculator))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SignerInformation1(
-        baseInfo: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::SignerInformation,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (baseInfo))?;
         Ok(__cordl_object.into())
     }
     pub fn ReplaceUnsignedAttributes(
@@ -267,7 +267,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInformation {
             .invoke("VerifyDigest", (digest, key, signature))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Verify_AsymmetricKeyParameter0(
+    pub fn Verify_Gc0(
         &mut self,
         pubKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -279,7 +279,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInformation {
         let __cordl_ret: bool = __cordl_object.invoke("Verify", (pubKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Verify_X509Certificate1(
+    pub fn Verify_Gc1(
         &mut self,
         cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -289,7 +289,20 @@ impl crate::Org::BouncyCastle::Cms::SignerInformation {
         let __cordl_ret: bool = __cordl_object.invoke("Verify", (cert))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SignerInfo_DerObjectIdentifier_CmsProcessable_IDigestCalculator0(
+    pub fn _ctor_Gc1(
+        &mut self,
+        baseInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInformation,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (baseInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc_Gc0(
         &mut self,
         info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::SignerInfo>,
         contentType: quest_hook::libil2cpp::Gc<
@@ -307,19 +320,6 @@ impl crate::Org::BouncyCastle::Cms::SignerInformation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (info, contentType, content, digestCalculator))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SignerInformation1(
-        &mut self,
-        baseInfo: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::SignerInformation,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (baseInfo))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ContentType(

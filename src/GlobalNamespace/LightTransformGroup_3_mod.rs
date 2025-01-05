@@ -6,18 +6,20 @@ pub struct LightTransformGroup_3<
     TY: quest_hook::libil2cpp::Type,
     TZ: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightGroupSubsystem,
+    >,
     pub _mirrorX: bool,
     pub _mirrorY: bool,
     pub _mirrorZ: bool,
     pub _xTransforms: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Transform>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     pub _yTransforms: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Transform>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     pub _zTransforms: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Transform>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     __cordl_phantom_TX: std::marker::PhantomData<TX>,
     __cordl_phantom_TY: std::marker::PhantomData<TY>,
@@ -34,7 +36,7 @@ impl<
     TY: quest_hook::libil2cpp::Type,
     TZ: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::GlobalNamespace::LightTransformGroup_3<TX, TY, TZ> {
-    type Target = crate::GlobalNamespace::LightGroupSubsystem;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSubsystem>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -150,9 +152,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Transform,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     >
     where
@@ -167,9 +167,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Transform,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         > = __cordl_object.invoke("get_xTransforms", ())?;
         Ok(__cordl_ret.into())
     }
@@ -177,9 +175,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Transform,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     >
     where
@@ -194,9 +190,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Transform,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         > = __cordl_object.invoke("get_yTransforms", ())?;
         Ok(__cordl_ret.into())
     }
@@ -204,9 +198,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Transform,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     >
     where
@@ -221,9 +213,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Transform,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         > = __cordl_object.invoke("get_zTransforms", ())?;
         Ok(__cordl_ret.into())
     }

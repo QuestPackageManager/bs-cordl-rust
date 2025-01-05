@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutCoreEffectsSpawner {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _shockWaveYPos: f32,
     pub _noteCutParticlesEffect: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NoteCutParticlesEffect,
@@ -27,15 +27,11 @@ pub struct NoteCutCoreEffectsSpawner {
         crate::GlobalNamespace::AudioTimeSyncController,
     >,
     pub _sliderInteractionManagers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::SliderInteractionManager,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
     >,
     pub _colorTypeToSliderInteractionManagerDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::GlobalNamespace::ColorType,
-            *mut crate::GlobalNamespace::SliderInteractionManager,
-        >,
+        crate::GlobalNamespace::ColorType,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
     >,
 }
 #[cfg(feature = "NoteCutCoreEffectsSpawner")]
@@ -45,7 +41,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteCutCoreEffectsSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

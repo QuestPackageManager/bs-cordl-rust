@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelNoTransitionInstaller {
-    __cordl_parent: crate::Zenject::NoTransitionInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::NoTransitionInstaller>,
     pub _scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
     >,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StandardLevelNoTransitionInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelNoTransitionInstaller {
-    type Target = crate::Zenject::NoTransitionInstaller;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::NoTransitionInstaller>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

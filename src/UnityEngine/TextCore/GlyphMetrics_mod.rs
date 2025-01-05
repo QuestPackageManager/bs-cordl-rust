@@ -26,6 +26,17 @@ for crate::UnityEngine::TextCore::GlyphMetrics {
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
 impl crate::UnityEngine::TextCore::GlyphMetrics {
+    pub fn Equals_Gc0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_GlyphMetrics1(
         &mut self,
         other: crate::UnityEngine::TextCore::GlyphMetrics,
@@ -34,17 +45,6 @@ impl crate::UnityEngine::TextCore::GlyphMetrics {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Il2CppObject0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -113,20 +113,20 @@ impl crate::UnityEngine::TextCore::GlyphMetrics {
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphMetrics>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphMetrics>>
 for crate::UnityEngine::TextCore::GlyphMetrics {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphMetrics> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphMetrics> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphMetrics>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphMetrics>>
 for crate::UnityEngine::TextCore::GlyphMetrics {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphMetrics> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphMetrics> {
         todo!()
     }
 }

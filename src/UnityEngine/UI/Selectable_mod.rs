@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Selectable {
-    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >,
     pub m_EnableCalled: bool,
     pub m_Navigation: crate::UnityEngine::UI::Navigation,
     pub m_Transition: crate::UnityEngine::UI::Selectable_Transition,
@@ -19,7 +21,7 @@ pub struct Selectable {
     pub _isPointerDown_k__BackingField: bool,
     pub _hasSelection_k__BackingField: bool,
     pub m_CanvasGroupCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::CanvasGroup>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
@@ -29,7 +31,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Selectable")]
 impl std::ops::Deref for crate::UnityEngine::UI::Selectable {
-    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +52,9 @@ impl crate::UnityEngine::UI::Selectable {
     pub type Transition = crate::UnityEngine::UI::Selectable_Transition;
     pub fn AllSelectablesNoAlloc(
         selectables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Selectable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -441,26 +447,26 @@ impl crate::UnityEngine::UI::Selectable {
     }
     pub fn get_allSelectables() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UI::Selectable,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UI::Selectable,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_allSelectables", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_allSelectablesArray() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Selectable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Selectable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_allSelectablesArray", ())?;
         Ok(__cordl_ret.into())
@@ -726,114 +732,180 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Selectable {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsRef<crate::UnityEngine::EventSystems::IDeselectHandler>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler>>
 for crate::UnityEngine::UI::Selectable {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDeselectHandler {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsMut<crate::UnityEngine::EventSystems::IDeselectHandler>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler>>
 for crate::UnityEngine::UI::Selectable {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDeselectHandler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IDeselectHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::UnityEngine::UI::Selectable {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::UnityEngine::UI::Selectable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::UnityEngine::UI::Selectable {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::UnityEngine::UI::Selectable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsRef<crate::UnityEngine::EventSystems::IMoveHandler>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler>>
 for crate::UnityEngine::UI::Selectable {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IMoveHandler {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsMut<crate::UnityEngine::EventSystems::IMoveHandler>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler>>
 for crate::UnityEngine::UI::Selectable {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IMoveHandler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerDownHandler>
-for crate::UnityEngine::UI::Selectable {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerDownHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerDownHandler>,
+> for crate::UnityEngine::UI::Selectable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerDownHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerDownHandler>
-for crate::UnityEngine::UI::Selectable {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerDownHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerDownHandler>,
+> for crate::UnityEngine::UI::Selectable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerDownHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
-for crate::UnityEngine::UI::Selectable {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
+> for crate::UnityEngine::UI::Selectable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerEnterHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
-for crate::UnityEngine::UI::Selectable {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
+> for crate::UnityEngine::UI::Selectable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerEnterHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerExitHandler>
-for crate::UnityEngine::UI::Selectable {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerExitHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
+> for crate::UnityEngine::UI::Selectable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerExitHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerExitHandler>
-for crate::UnityEngine::UI::Selectable {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerExitHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
+> for crate::UnityEngine::UI::Selectable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerExitHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerUpHandler>
-for crate::UnityEngine::UI::Selectable {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerUpHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerUpHandler>,
+> for crate::UnityEngine::UI::Selectable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerUpHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerUpHandler>
-for crate::UnityEngine::UI::Selectable {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerUpHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerUpHandler>,
+> for crate::UnityEngine::UI::Selectable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerUpHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsRef<crate::UnityEngine::EventSystems::ISelectHandler>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler>>
 for crate::UnityEngine::UI::Selectable {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISelectHandler {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
-impl AsMut<crate::UnityEngine::EventSystems::ISelectHandler>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler>>
 for crate::UnityEngine::UI::Selectable {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISelectHandler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::ISelectHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,13 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainSettingsMenuViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub didSelectSettingsSubMenuEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<*mut crate::GlobalNamespace::SettingsSubMenuInfo, i32>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsSubMenuInfo>,
+        i32,
     >,
     pub _settingsSubMenuInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SettingsSubMenuInfo,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsSubMenuInfo>,
         >,
     >,
     pub _settingsMenuSegmentedControl: quest_hook::libil2cpp::Gc<
@@ -26,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MainSettingsMenuViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MainSettingsMenuViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,10 +102,8 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
     pub fn add_didSelectSettingsSubMenuEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::SettingsSubMenuInfo,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsSubMenuInfo>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -137,10 +136,8 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
     pub fn remove_didSelectSettingsSubMenuEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::SettingsSubMenuInfo,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsSubMenuInfo>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

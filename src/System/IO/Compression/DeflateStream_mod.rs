@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeflateStream {
-    __cordl_parent: crate::System::IO::Stream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub base_stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub mode: crate::System::IO::Compression::CompressionMode,
     pub leaveOpen: bool,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+Compression+DeflateStream")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStream {
-    type Target = crate::System::IO::Stream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -428,7 +428,7 @@ for crate::System::IO::Compression::DeflateStream {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeflateStream_ReadMethod {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "System+IO+Compression+DeflateStream+ReadMethod")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -438,7 +438,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+Compression+DeflateStream+ReadMethod")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStream_ReadMethod {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -527,7 +527,7 @@ for crate::System::IO::Compression::DeflateStream_ReadMethod {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeflateStream_WriteMethod {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "System+IO+Compression+DeflateStream+WriteMethod")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -537,7 +537,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+Compression+DeflateStream+WriteMethod")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStream_WriteMethod {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

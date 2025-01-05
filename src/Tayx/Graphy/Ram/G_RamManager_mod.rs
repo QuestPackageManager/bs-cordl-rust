@@ -2,17 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_RamManager {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub m_ramGraphGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_backgroundImages: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::UI::Image>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     >,
     pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
     pub m_ramGraph: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Ram::G_RamGraph>,
     pub m_ramText: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Ram::G_RamText>,
     pub m_rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_childrenGameObjects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub m_previousModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
     pub m_currentModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tayx+Graphy+Ram+G_RamManager")]
 impl std::ops::Deref for crate::Tayx::Graphy::Ram::G_RamManager {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -159,30 +159,36 @@ impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::Ram::G_RamManage
     }
 }
 #[cfg(feature = "Tayx+Graphy+Ram+G_RamManager")]
-impl AsRef<crate::Tayx::Graphy::UI::IModifiableState>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IModifiableState>>
 for crate::Tayx::Graphy::Ram::G_RamManager {
-    fn as_ref(&self) -> &crate::Tayx::Graphy::UI::IModifiableState {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IModifiableState> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Tayx+Graphy+Ram+G_RamManager")]
-impl AsMut<crate::Tayx::Graphy::UI::IModifiableState>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IModifiableState>>
 for crate::Tayx::Graphy::Ram::G_RamManager {
-    fn as_mut(&mut self) -> &mut crate::Tayx::Graphy::UI::IModifiableState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IModifiableState> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Tayx+Graphy+Ram+G_RamManager")]
-impl AsRef<crate::Tayx::Graphy::UI::IMovable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IMovable>>
 for crate::Tayx::Graphy::Ram::G_RamManager {
-    fn as_ref(&self) -> &crate::Tayx::Graphy::UI::IMovable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IMovable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Tayx+Graphy+Ram+G_RamManager")]
-impl AsMut<crate::Tayx::Graphy::UI::IMovable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IMovable>>
 for crate::Tayx::Graphy::Ram::G_RamManager {
-    fn as_mut(&mut self) -> &mut crate::Tayx::Graphy::UI::IMovable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IMovable> {
         unsafe { std::mem::transmute(self) }
     }
 }

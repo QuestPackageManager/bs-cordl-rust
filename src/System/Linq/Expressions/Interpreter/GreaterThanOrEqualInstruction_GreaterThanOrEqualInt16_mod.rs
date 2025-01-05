@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GreaterThanOrEqualInstruction_GreaterThanOrEqualInt16 {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::GreaterThanOrEqualInstruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::GreaterThanOrEqualInstruction,
+    >,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt16"
@@ -20,7 +22,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualInt16 {
-    type Target = crate::System::Linq::Expressions::Interpreter::GreaterThanOrEqualInstruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::GreaterThanOrEqualInstruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,10 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Localization {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub supportedLanguages: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::BGLib::Polyglot::Language>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    pub supportedLanguages: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>,
     pub selectedLanguage: crate::BGLib::Polyglot::Language,
     pub fallbackLanguage: crate::BGLib::Polyglot::Language,
 }
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+Polyglot+Localization")]
 impl std::ops::Deref for crate::BGLib::Polyglot::Localization {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,15 +47,11 @@ impl crate::BGLib::Polyglot::Localization {
     }
     pub fn GetKeys() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetKeys", ())?;
         Ok(__cordl_ret.into())
     }
@@ -164,20 +158,13 @@ impl crate::BGLib::Polyglot::Localization {
     pub fn get_SupportedLanguages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::BGLib::Polyglot::Language,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::BGLib::Polyglot::Language,
-            >,
-        > = __cordl_object.invoke("get_SupportedLanguages", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language> = __cordl_object
+            .invoke("get_SupportedLanguages", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_selectedLanguageIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {

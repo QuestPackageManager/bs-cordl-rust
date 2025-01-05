@@ -2,16 +2,22 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightTilesGrid {
-    __cordl_parent: crate::GlobalNamespace::AbstractPoolContainer,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AbstractPoolContainer,
+    >,
     pub _floorLightTileMemoryPool: quest_hook::libil2cpp::Gc<
         crate::Ice::FloorLightTile_Pool,
     >,
     pub _floorLightTileMemoryPoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<*mut crate::Ice::FloorLightTile>,
+        quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
     >,
     pub _grid: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::Ice::FloorLightTile>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
+                >,
+            >,
         >,
     >,
     pub _tileWidth: f32,
@@ -26,7 +32,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Ice+FloorLightTilesGrid")]
 impl std::ops::Deref for crate::Ice::FloorLightTilesGrid {
-    type Target = crate::GlobalNamespace::AbstractPoolContainer;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AbstractPoolContainer,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

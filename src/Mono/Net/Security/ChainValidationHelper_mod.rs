@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChainValidationHelper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub owner: quest_hook::libil2cpp::Gc<
-        crate::System::WeakReference_1<*mut crate::System::Net::Security::SslStream>,
+        quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
     >,
     pub settings: quest_hook::libil2cpp::Gc<
         crate::Mono::Security::Interface::MonoTlsSettings,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
 impl std::ops::Deref for crate::Mono::Net::Security::ChainValidationHelper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +46,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             crate::Mono::Net::Security::MobileTlsProvider,
         >,
         settings: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Mono::Security::Interface::MonoTlsSettings,
+            quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
         >,
         stream: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MonoTlsStream>,
     ) -> quest_hook::libil2cpp::Result<
@@ -67,7 +67,9 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
         acceptableIssuers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -157,10 +159,14 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
         acceptableIssuers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         clientCertificate: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -209,7 +215,9 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
         chain: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Security::Cryptography::X509Certificates::X509Chain,
+            >,
         >,
         certs: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
@@ -227,7 +235,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             .invoke("ValidateChain", (host, server, leaf, chain, certs, errors))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ValidateChain_X509Chain0(
+    pub fn ValidateChain_Gc0(
         &mut self,
         host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         server: bool,
@@ -297,18 +305,26 @@ for crate::Mono::Net::Security::ChainValidationHelper {
     }
 }
 #[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
-impl AsRef<crate::Mono::Security::Interface::ICertificateValidator>
-for crate::Mono::Net::Security::ChainValidationHelper {
-    fn as_ref(&self) -> &crate::Mono::Security::Interface::ICertificateValidator {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::ICertificateValidator>,
+> for crate::Mono::Net::Security::ChainValidationHelper {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::ICertificateValidator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
-impl AsMut<crate::Mono::Security::Interface::ICertificateValidator>
-for crate::Mono::Net::Security::ChainValidationHelper {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::ICertificateValidator>,
+> for crate::Mono::Net::Security::ChainValidationHelper {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Mono::Security::Interface::ICertificateValidator {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::ICertificateValidator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

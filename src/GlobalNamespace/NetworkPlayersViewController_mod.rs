@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkPlayersViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _networkPlayersTableView: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NetworkPlayersTableView,
     >,
     pub _refreshIsNeeded: bool,
     pub onJoinRequestEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
     >,
     pub onInviteRequestEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
     >,
 }
 #[cfg(feature = "NetworkPlayersViewController")]
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NetworkPlayersViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::NetworkPlayersViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -166,7 +166,7 @@ impl crate::GlobalNamespace::NetworkPlayersViewController {
     pub fn add_onInviteRequestEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -179,7 +179,7 @@ impl crate::GlobalNamespace::NetworkPlayersViewController {
     pub fn add_onJoinRequestEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -231,7 +231,7 @@ impl crate::GlobalNamespace::NetworkPlayersViewController {
     pub fn remove_onInviteRequestEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -244,7 +244,7 @@ impl crate::GlobalNamespace::NetworkPlayersViewController {
     pub fn remove_onJoinRequestEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

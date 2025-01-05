@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusPlatformExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OculusPlatformExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusPlatformExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusPlatformExtensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,24 +24,11 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OculusPlatformExtensions {
 }
 #[cfg(feature = "OculusPlatformExtensions")]
 impl crate::GlobalNamespace::OculusPlatformExtensions {
-    pub fn GetAwaiter_Request1(
-        oculusRequest: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+    pub fn GetAwaiter_Gc0<T>(
+        oculusRequest: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-            *mut crate::Oculus::Platform::Message,
-        >,
-    > {
-        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-            *mut crate::Oculus::Platform::Message,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAwaiter", (oculusRequest))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetAwaiter_Request_1_0<T>(
-        oculusRequest: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request_1<T>>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-            *mut crate::Oculus::Platform::Message_1<T>,
+            quest_hook::libil2cpp::Gc<T>,
         >,
     >
     where
@@ -49,7 +36,20 @@ impl crate::GlobalNamespace::OculusPlatformExtensions {
             + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-            *mut crate::Oculus::Platform::Message_1<T>,
+            quest_hook::libil2cpp::Gc<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAwaiter", (oculusRequest))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAwaiter_Gc1(
+        oculusRequest: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
+        >,
+    > {
+        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetAwaiter", (oculusRequest))?;
         Ok(__cordl_ret.into())

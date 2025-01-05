@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicScenesTransitionSetupDataSO {
-    __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    >,
 }
 #[cfg(feature = "DynamicScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DynamicScenesTransitionSetupDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::DynamicScenesTransitionSetupDataSO {
-    type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,11 +39,13 @@ impl crate::GlobalNamespace::DynamicScenesTransitionSetupDataSO {
     pub fn SetScenes(
         &mut self,
         scenes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::SceneInfo>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
+            >,
         >,
         sceneSetupData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SceneSetupData,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneSetupData>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

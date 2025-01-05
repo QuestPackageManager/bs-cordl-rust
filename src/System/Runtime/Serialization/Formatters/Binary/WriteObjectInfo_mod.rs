@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WriteObjectInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub objectInfoId: i32,
     pub obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -17,7 +17,9 @@ pub struct WriteObjectInfo {
         crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache,
     >,
     pub memberData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub serializationSurrogate: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::ISerializationSurrogate,
@@ -42,7 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+WriteObjectInfo")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -88,16 +90,24 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
     pub fn GetMemberInfo(
         &mut self,
         outMemberNames: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
         outMemberTypes: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                >,
+            >,
         >,
         outMemberData: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -167,7 +177,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             .invoke("InitNoMembers", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitSerialize_Il2CppObject_ObjectWriter_SerializationBinder0(
+    pub fn InitSerialize_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         surrogateSelector: quest_hook::libil2cpp::Gc<
@@ -205,7 +215,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitSerialize_Type_SerializationBinder1(
+    pub fn InitSerialize_Gc_Gc_StreamingContext_Gc_Gc_Gc1(
         &mut self,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         surrogateSelector: quest_hook::libil2cpp::Gc<
@@ -301,7 +311,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             .invoke("PutObjectInfo", (serObjectInfoInit, objectInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Serialize_Il2CppObject_ObjectWriter_SerializationBinder0(
+    pub fn Serialize_Gc0(
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         surrogateSelector: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::ISurrogateSelector,
@@ -341,7 +351,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Serialize_Type_SerializationBinder1(
+    pub fn Serialize_Gc_Gc_StreamingContext_Gc_Gc_Gc1(
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         surrogateSelector: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::ISurrogateSelector,

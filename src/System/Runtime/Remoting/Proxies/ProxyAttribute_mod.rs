@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProxyAttribute {
-    __cordl_parent: crate::System::Attribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Proxies+ProxyAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Proxies+ProxyAttribute")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
-    type Target = crate::System::Attribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -98,18 +98,30 @@ for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Proxies+ProxyAttribute")]
-impl AsRef<crate::System::Runtime::Remoting::Contexts::IContextAttribute>
-for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
-    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Contexts::IContextAttribute {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::IContextAttribute,
+    >,
+> for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::IContextAttribute,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Proxies+ProxyAttribute")]
-impl AsMut<crate::System::Runtime::Remoting::Contexts::IContextAttribute>
-for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::IContextAttribute,
+    >,
+> for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Remoting::Contexts::IContextAttribute {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::IContextAttribute,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

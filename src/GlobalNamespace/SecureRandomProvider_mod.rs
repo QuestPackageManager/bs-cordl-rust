@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecureRandomProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "SecureRandomProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SecureRandomProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::SecureRandomProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,14 +31,14 @@ impl crate::GlobalNamespace::SecureRandomProvider {
             .invoke("GetByte", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBytes_Il2CppArray2(
+    pub fn GetBytes_Gc2(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetBytes", (buffer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBytes_Il2CppArray_i32_i32_1(
+    pub fn GetBytes_Gc_i32_i32_1(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         length: i32,
@@ -71,7 +71,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SecureRandomP
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecureRandomProvider_SecureRandomState {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _random: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::RNGCryptoServiceProvider,
     >,
@@ -91,7 +91,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SecureRandomProvider+SecureRandomState")]
 impl std::ops::Deref for crate::GlobalNamespace::SecureRandomProvider_SecureRandomState {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

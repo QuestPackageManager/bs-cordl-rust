@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsField {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<
-        crate::UnityEngine::Bounds,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Bounds>,
     pub m_CenterField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Vector3Field,
     >,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BoundsField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsField {
-    type Target = crate::UnityEngine::UIElements::BaseField_1<
-        crate::UnityEngine::Bounds,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Bounds>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +41,7 @@ impl crate::UnityEngine::UIElements::BoundsField {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -77,9 +73,7 @@ impl crate::UnityEngine::UIElements::BoundsField {
     }
     pub fn __ctor_b__10_0(
         &mut self,
-        e: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ChangeEvent_1<crate::UnityEngine::Vector3>,
-        >,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,9 +84,7 @@ impl crate::UnityEngine::UIElements::BoundsField {
     }
     pub fn __ctor_b__10_1(
         &mut self,
-        e: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ChangeEvent_1<crate::UnityEngine::Vector3>,
-        >,
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -111,7 +103,7 @@ impl crate::UnityEngine::UIElements::BoundsField {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -136,9 +128,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Bound
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsField_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::BoundsField,
-        *mut crate::UnityEngine::UIElements::BoundsField_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BoundsField>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BoundsField_UxmlTraits>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BoundsField+UxmlFactory")]
@@ -148,9 +140,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BoundsField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsField_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::BoundsField,
-        *mut crate::UnityEngine::UIElements::BoundsField_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BoundsField>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BoundsField_UxmlTraits>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -196,9 +188,7 @@ for crate::UnityEngine::UIElements::BoundsField_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsField_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
-        crate::UnityEngine::Bounds,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Bounds>,
     pub m_CenterXValue: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
@@ -225,9 +215,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BoundsField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsField_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
-        crate::UnityEngine::Bounds,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Bounds>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

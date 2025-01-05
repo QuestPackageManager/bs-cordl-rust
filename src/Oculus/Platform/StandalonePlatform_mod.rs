@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandalonePlatform {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Oculus+Platform+StandalonePlatform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+StandalonePlatform")]
 impl std::ops::Deref for crate::Oculus::Platform::StandalonePlatform {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,8 +32,8 @@ impl crate::Oculus::Platform::StandalonePlatform {
         accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         >,
     > {
@@ -41,8 +41,8 @@ impl crate::Oculus::Platform::StandalonePlatform {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         > = __cordl_object.invoke("AsyncInitialize", (appID, accessToken))?;
         Ok(__cordl_ret.into())
@@ -52,15 +52,13 @@ impl crate::Oculus::Platform::StandalonePlatform {
         appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         initConfigOptions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                crate::Oculus::Platform::InitConfigOptions,
-                bool,
-            >,
+            crate::Oculus::Platform::InitConfigOptions,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         >,
     > {
@@ -68,8 +66,8 @@ impl crate::Oculus::Platform::StandalonePlatform {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         > = __cordl_object
             .invoke(
@@ -82,8 +80,8 @@ impl crate::Oculus::Platform::StandalonePlatform {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         >,
     > {
@@ -91,8 +89,8 @@ impl crate::Oculus::Platform::StandalonePlatform {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         > = __cordl_object.invoke("InitializeInEditor", ())?;
         Ok(__cordl_ret.into())
@@ -128,7 +126,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::StandalonePl
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandalonePlatform_UnityLogDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "Oculus+Platform+StandalonePlatform+UnityLogDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -138,7 +136,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+StandalonePlatform+UnityLogDelegate")]
 impl std::ops::Deref for crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

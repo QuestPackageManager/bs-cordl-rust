@@ -37,7 +37,7 @@ impl crate::GlobalNamespace::IScoreController {
     }
     pub fn add_multiplierDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>,
+        value: quest_hook::libil2cpp::Gc<i32, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::IScoreController {
     }
     pub fn add_scoreDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
+        value: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::IScoreController {
     pub fn add_scoringForNoteFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ScoringElement>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::IScoreController {
     pub fn add_scoringForNoteStartedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ScoringElement>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -131,7 +131,7 @@ impl crate::GlobalNamespace::IScoreController {
     }
     pub fn remove_multiplierDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>,
+        value: quest_hook::libil2cpp::Gc<i32, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -142,7 +142,7 @@ impl crate::GlobalNamespace::IScoreController {
     }
     pub fn remove_scoreDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
+        value: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -154,7 +154,7 @@ impl crate::GlobalNamespace::IScoreController {
     pub fn remove_scoringForNoteFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ScoringElement>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -167,7 +167,7 @@ impl crate::GlobalNamespace::IScoreController {
     pub fn remove_scoringForNoteStartedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ScoringElement>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

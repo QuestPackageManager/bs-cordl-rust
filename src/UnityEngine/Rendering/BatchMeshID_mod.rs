@@ -33,7 +33,7 @@ impl crate::UnityEngine::Rendering::BatchMeshID {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -54,20 +54,20 @@ impl crate::UnityEngine::Rendering::BatchMeshID {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchMeshID")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchMeshID>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BatchMeshID>>
 for crate::UnityEngine::Rendering::BatchMeshID {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchMeshID> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BatchMeshID> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchMeshID")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchMeshID>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BatchMeshID>>
 for crate::UnityEngine::Rendering::BatchMeshID {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchMeshID> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BatchMeshID> {
         todo!()
     }
 }

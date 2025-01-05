@@ -118,11 +118,9 @@ impl crate::TMPro::TMP_MeshInfo {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SortGeometry_IList_1_1(
+    pub fn SortGeometry_Gc1(
         &mut self,
-        sortingOrder: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        sortingOrder: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -154,7 +152,7 @@ impl crate::TMPro::TMP_MeshInfo {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Mesh_i32_0(
+    pub fn _ctor_Gc_i32_0(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         _cordl_size: i32,

@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlAttributeOverridesFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        *mut crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesFactory")]
@@ -15,9 +17,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlAttributeOverridesFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        *mut crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

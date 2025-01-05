@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelSettings {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub themeUss: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ThemeStyleSheet,
     >,
@@ -42,7 +42,8 @@ pub struct PanelSettings {
     >,
     pub _ScreenDPI_k__BackingField: f32,
     pub m_AssignedScreenToPanel: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<crate::UnityEngine::Vector2, crate::UnityEngine::Vector2>,
+        crate::UnityEngine::Vector2,
+        crate::UnityEngine::Vector2,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelSettings")]
@@ -52,7 +53,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+PanelSettings")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PanelSettings {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -206,10 +207,8 @@ impl crate::UnityEngine::UIElements::PanelSettings {
     pub fn SetScreenToPanelSpaceFunction(
         &mut self,
         screentoPanelSpaceFunction: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::UnityEngine::Vector2,
-                crate::UnityEngine::Vector2,
-            >,
+            crate::UnityEngine::Vector2,
+            crate::UnityEngine::Vector2,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -636,7 +635,7 @@ for crate::UnityEngine::UIElements::PanelSettings {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelSettings_RuntimePanelAccess {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Settings: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::PanelSettings,
     >,
@@ -653,7 +652,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

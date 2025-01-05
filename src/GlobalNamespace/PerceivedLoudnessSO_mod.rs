@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerceivedLoudnessSO {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub _perceivedLoudnessPerLevel: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            >,
         >,
     >,
 }
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PerceivedLoudnessSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PerceivedLoudnessSO {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,8 +54,8 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
     pub fn SetLoudnessData(
         &mut self,
         loudnessPairs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -68,9 +70,9 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
             >,
         >,
     > {
@@ -78,9 +80,9 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
             >,
         > = __cordl_object.invoke("ToDictionary", ())?;
         Ok(__cordl_ret.into())
@@ -99,8 +101,8 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
             >,
         >,
     > {
@@ -108,8 +110,8 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
             >,
         > = __cordl_object.invoke("get_perceivedLoudnessPairs", ())?;
         Ok(__cordl_ret.into())
@@ -128,7 +130,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PerceivedLoud
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _perceivedLoudness: f32,
     pub _checkSum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -142,7 +144,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PerceivedLoudnessSO+PerceivedLevelLoudnessPair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

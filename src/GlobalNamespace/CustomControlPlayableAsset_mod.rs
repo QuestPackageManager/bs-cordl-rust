@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomControlPlayableAsset {
-    __cordl_parent: crate::UnityEngine::Timeline::ControlPlayableAsset,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::ControlPlayableAsset,
+    >,
 }
 #[cfg(feature = "CustomControlPlayableAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CustomControlPlayableAsset")]
 impl std::ops::Deref for crate::GlobalNamespace::CustomControlPlayableAsset {
-    type Target = crate::UnityEngine::Timeline::ControlPlayableAsset;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::ControlPlayableAsset,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,16 +67,22 @@ for crate::GlobalNamespace::CustomControlPlayableAsset {
     }
 }
 #[cfg(feature = "CustomControlPlayableAsset")]
-impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
 for crate::GlobalNamespace::CustomControlPlayableAsset {
-    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "CustomControlPlayableAsset")]
-impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
 for crate::GlobalNamespace::CustomControlPlayableAsset {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::ITimelineClipAsset,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

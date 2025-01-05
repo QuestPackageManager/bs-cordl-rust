@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlNodeReader {
-    __cordl_parent: crate::System::Xml::XmlReader,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     pub readerNav: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNodeReaderNavigator>,
     pub nodeType: crate::System::Xml::XmlNodeType,
     pub curDepth: i32,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlNodeReader")]
 impl std::ops::Deref for crate::System::Xml::XmlNodeReader {
-    type Target = crate::System::Xml::XmlReader;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,7 +55,7 @@ impl crate::System::Xml::XmlNodeReader {
             .invoke("FinishReadBinary", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Il2CppString0(
+    pub fn GetAttribute_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -69,7 +69,7 @@ impl crate::System::Xml::XmlNodeReader {
         > = __cordl_object.invoke("GetAttribute", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Il2CppString_Il2CppString1(
+    pub fn GetAttribute_Gc_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -119,7 +119,7 @@ impl crate::System::Xml::XmlNodeReader {
         > = __cordl_object.invoke("LookupNamespace", (prefix))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MoveToAttribute_Il2CppString0(
+    pub fn MoveToAttribute_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -283,20 +283,16 @@ impl crate::System::Xml::XmlNodeReader {
         scope: crate::System::Xml::XmlNamespaceScope,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object
             .invoke("System.Xml.IXmlNamespaceResolver.GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret.into())
@@ -560,16 +556,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNodeReader {
     }
 }
 #[cfg(feature = "System+Xml+XmlNodeReader")]
-impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>>
 for crate::System::Xml::XmlNodeReader {
-    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlNodeReader")]
-impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>>
 for crate::System::Xml::XmlNodeReader {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver> {
         unsafe { std::mem::transmute(self) }
     }
 }

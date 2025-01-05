@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelStatsView {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _highScoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _maxComboText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _maxRankText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelStatsView")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelStatsView {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::LevelStatsView {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ShowStats_ByRefMut_PlayerData0(
+    pub fn ShowStats_ByRefMut_Gc0(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         playerData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::LevelStatsView {
             .invoke("ShowStats", (beatmapKey, playerData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShowStats_PlayerLevelStatsData1(
+    pub fn ShowStats_Gc1(
         &mut self,
         playerLevelStats: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerLevelStatsData,

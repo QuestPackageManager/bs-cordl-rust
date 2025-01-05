@@ -27,19 +27,13 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
     pub fn GetAuthenticationToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::AuthenticationToken,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AuthenticationToken>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::AuthenticationToken,
-            >,
+            crate::GlobalNamespace::AuthenticationToken,
         > = __cordl_object.invoke("GetAuthenticationToken", ())?;
         Ok(__cordl_ret.into())
     }
@@ -111,16 +105,22 @@ for crate::GlobalNamespace::IAuthenticationTokenProvider {
     }
 }
 #[cfg(feature = "IAuthenticationTokenProvider")]
-impl AsRef<crate::BGNet::Core::IPlatformAccessTokenFetcher>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::BGNet::Core::IPlatformAccessTokenFetcher>>
 for crate::GlobalNamespace::IAuthenticationTokenProvider {
-    fn as_ref(&self) -> &crate::BGNet::Core::IPlatformAccessTokenFetcher {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::BGNet::Core::IPlatformAccessTokenFetcher> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IAuthenticationTokenProvider")]
-impl AsMut<crate::BGNet::Core::IPlatformAccessTokenFetcher>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::BGNet::Core::IPlatformAccessTokenFetcher>>
 for crate::GlobalNamespace::IAuthenticationTokenProvider {
-    fn as_mut(&mut self) -> &mut crate::BGNet::Core::IPlatformAccessTokenFetcher {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::BGNet::Core::IPlatformAccessTokenFetcher,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

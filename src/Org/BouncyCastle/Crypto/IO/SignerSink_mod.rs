@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignerSink {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    >,
     pub mSigner: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+SignerSink")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+SignerSink")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::IO::SignerSink {
-    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

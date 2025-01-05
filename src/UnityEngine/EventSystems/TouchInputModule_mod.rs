@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchInputModule {
-    __cordl_parent: crate::UnityEngine::EventSystems::PointerInputModule,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PointerInputModule,
+    >,
     pub m_LastMousePosition: crate::UnityEngine::Vector2,
     pub m_MousePosition: crate::UnityEngine::Vector2,
     pub m_InputPointerEvent: quest_hook::libil2cpp::Gc<
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+TouchInputModule")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::TouchInputModule {
-    type Target = crate::UnityEngine::EventSystems::PointerInputModule;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PointerInputModule,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

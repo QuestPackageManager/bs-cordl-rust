@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509ExtensionCollection {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ExtensionCollection")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ExtensionCollection")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509ExtensionCollection {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -152,30 +152,38 @@ for crate::System::Security::Cryptography::X509Certificates::X509ExtensionCollec
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ExtensionCollection")]
-impl AsRef<crate::System::Collections::ICollection>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::System::Security::Cryptography::X509Certificates::X509ExtensionCollection {
-    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ExtensionCollection")]
-impl AsMut<crate::System::Collections::ICollection>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::System::Security::Cryptography::X509Certificates::X509ExtensionCollection {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ExtensionCollection")]
-impl AsRef<crate::System::Collections::IEnumerable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::Security::Cryptography::X509Certificates::X509ExtensionCollection {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ExtensionCollection")]
-impl AsMut<crate::System::Collections::IEnumerable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::Security::Cryptography::X509Certificates::X509ExtensionCollection {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }

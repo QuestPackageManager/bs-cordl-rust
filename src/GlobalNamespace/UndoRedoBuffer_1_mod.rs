@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UndoRedoBuffer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _data: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _data: quest_hook::libil2cpp::Gc<T>,
     pub _capacity: i32,
     pub _cursor: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UndoRedoBuffer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::UndoRedoBuffer_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

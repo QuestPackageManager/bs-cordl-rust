@@ -5,10 +5,10 @@ pub struct GetterProvider_2<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub _method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TResult>>,
+    pub _method: quest_hook::libil2cpp::Gc<TObj, TResult>,
     pub _matchAll: bool,
     pub _sourceType: crate::Zenject::InjectSources,
     __cordl_phantom_TObj: std::marker::PhantomData<TObj>,
@@ -24,7 +24,7 @@ impl<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::GetterProvider_2<TObj, TResult> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,14 +46,12 @@ impl<
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        injectAction: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
-        injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
         buffer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -110,7 +108,7 @@ impl<
     }
     pub fn New(
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TResult>>,
+        method: quest_hook::libil2cpp::Gc<TObj, TResult>,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         sourceType: crate::Zenject::InjectSources,
         matchAll: bool,
@@ -133,7 +131,7 @@ impl<
     pub fn _ctor(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TResult>>,
+        method: quest_hook::libil2cpp::Gc<TObj, TResult>,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         sourceType: crate::Zenject::InjectSources,
         matchAll: bool,
@@ -197,8 +195,9 @@ impl<
 impl<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
-> AsRef<crate::Zenject::IProvider> for crate::Zenject::GetterProvider_2<TObj, TResult> {
-    fn as_ref(&self) -> &crate::Zenject::IProvider {
+> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>>
+for crate::Zenject::GetterProvider_2<TObj, TResult> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -206,8 +205,9 @@ impl<
 impl<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
-> AsMut<crate::Zenject::IProvider> for crate::Zenject::GetterProvider_2<TObj, TResult> {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IProvider {
+> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>>
+for crate::Zenject::GetterProvider_2<TObj, TResult> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }

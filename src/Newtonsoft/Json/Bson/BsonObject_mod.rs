@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BsonObject {
-    __cordl_parent: crate::Newtonsoft::Json::Bson::BsonToken,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
     pub _children: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Bson::BsonProperty,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonProperty>,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonObject")]
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonObject")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonObject {
-    type Target = crate::Newtonsoft::Json::Bson::BsonToken;
+    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,18 +43,14 @@ impl crate::Newtonsoft::Json::Bson::BsonObject {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                *mut crate::Newtonsoft::Json::Bson::BsonProperty,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonProperty>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                *mut crate::Newtonsoft::Json::Bson::BsonProperty,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonProperty>,
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
@@ -111,44 +105,48 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Bson::BsonOb
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonObject")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+for crate::Newtonsoft::Json::Bson::BsonObject {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonObject")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+for crate::Newtonsoft::Json::Bson::BsonObject {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonObject")]
 impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::Newtonsoft::Json::Bson::BsonProperty,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonProperty>,
     >,
 > for crate::Newtonsoft::Json::Bson::BsonObject {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::Newtonsoft::Json::Bson::BsonProperty,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonProperty>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonObject")]
 impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::Newtonsoft::Json::Bson::BsonProperty,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonProperty>,
     >,
 > for crate::Newtonsoft::Json::Bson::BsonObject {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::Newtonsoft::Json::Bson::BsonProperty,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonProperty>,
     > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonObject")]
-impl AsRef<crate::System::Collections::IEnumerable>
-for crate::Newtonsoft::Json::Bson::BsonObject {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonObject")]
-impl AsMut<crate::System::Collections::IEnumerable>
-for crate::Newtonsoft::Json::Bson::BsonObject {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }

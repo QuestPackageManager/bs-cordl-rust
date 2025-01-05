@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommonAce {
-    __cordl_parent: crate::System::Security::AccessControl::QualifiedAce,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::QualifiedAce,
+    >,
 }
 #[cfg(feature = "System+Security+AccessControl+CommonAce")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+AccessControl+CommonAce")]
 impl std::ops::Deref for crate::System::Security::AccessControl::CommonAce {
-    type Target = crate::System::Security::AccessControl::QualifiedAce;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::QualifiedAce,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +48,7 @@ impl crate::System::Security::AccessControl::CommonAce {
             .invoke("GetBinaryForm", (binaryForm, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_AceFlags_AceQualifier_i32_SecurityIdentifier__cordl_bool_Il2CppArray0(
+    pub fn New_AceFlags_AceQualifier_i32_Gc__cordl_bool_Gc0(
         flags: crate::System::Security::AccessControl::AceFlags,
         qualifier: crate::System::Security::AccessControl::AceQualifier,
         accessMask: i32,
@@ -63,7 +67,7 @@ impl crate::System::Security::AccessControl::CommonAce {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_1(
+    pub fn New_Gc_i32_1(
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -73,7 +77,7 @@ impl crate::System::Security::AccessControl::CommonAce {
             .invoke_void(".ctor", (binaryForm, offset))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_AceFlags_AceQualifier_i32_SecurityIdentifier__cordl_bool_Il2CppArray0(
+    pub fn _ctor_AceFlags_AceQualifier_i32_Gc__cordl_bool_Gc0(
         &mut self,
         flags: crate::System::Security::AccessControl::AceFlags,
         qualifier: crate::System::Security::AccessControl::AceQualifier,
@@ -91,7 +95,7 @@ impl crate::System::Security::AccessControl::CommonAce {
             .invoke(".ctor", (flags, qualifier, accessMask, sid, isCallback, opaque))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_1(
+    pub fn _ctor_Gc_i32_1(
         &mut self,
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssignLocalToClosureInstruction {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AssignLocalToClosureInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AssignLocalToClosureInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::AssignLocalToClosureInstruction {
-    type Target = crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

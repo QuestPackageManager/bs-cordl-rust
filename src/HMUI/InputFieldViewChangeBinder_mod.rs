@@ -2,14 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputFieldViewChangeBinder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _bindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::System::Tuple_2<
-                *mut crate::HMUI::InputFieldView,
-                *mut crate::UnityEngine::Events::UnityAction_1<
-                    *mut crate::HMUI::InputFieldView,
-                >,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
             >,
         >,
     >,
@@ -22,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+InputFieldViewChangeBinder")]
 impl std::ops::Deref for crate::HMUI::InputFieldViewChangeBinder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +37,7 @@ impl crate::HMUI::InputFieldViewChangeBinder {
         &mut self,
         inputField: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
         action: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::HMUI::InputFieldView>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -52,10 +50,10 @@ impl crate::HMUI::InputFieldViewChangeBinder {
     pub fn AddBindings(
         &mut self,
         bindings: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Tuple_2<
-                    *mut crate::HMUI::InputFieldView,
-                    *mut crate::System::Action_1<*mut crate::HMUI::InputFieldView>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
                 >,
             >,
         >,

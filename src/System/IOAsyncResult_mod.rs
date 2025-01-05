@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IOAsyncResult {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub async_callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
     pub async_state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub wait_handle: quest_hook::libil2cpp::Gc<
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IOAsyncResult")]
 impl std::ops::Deref for crate::System::IOAsyncResult {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::System::IOAsyncResult {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_AsyncCallback_Il2CppObject1(
+    pub fn New_Gc_Gc1(
         async_callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         async_state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -80,7 +80,7 @@ impl crate::System::IOAsyncResult {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AsyncCallback_Il2CppObject1(
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         async_callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         async_state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -177,14 +177,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IOAsyncResult {
     }
 }
 #[cfg(feature = "System+IOAsyncResult")]
-impl AsRef<crate::System::IAsyncResult> for crate::System::IOAsyncResult {
-    fn as_ref(&self) -> &crate::System::IAsyncResult {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>>
+for crate::System::IOAsyncResult {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+IOAsyncResult")]
-impl AsMut<crate::System::IAsyncResult> for crate::System::IOAsyncResult {
-    fn as_mut(&mut self) -> &mut crate::System::IAsyncResult {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>>
+for crate::System::IOAsyncResult {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> {
         unsafe { std::mem::transmute(self) }
     }
 }

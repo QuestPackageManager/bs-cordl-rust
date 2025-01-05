@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinHexDecoder {
-    __cordl_parent: crate::System::Xml::IncrementalReadDecoder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IncrementalReadDecoder,
+    >,
     pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub curIndex: i32,
     pub endIndex: i32,
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+BinHexDecoder")]
 impl std::ops::Deref for crate::System::Xml::BinHexDecoder {
-    type Target = crate::System::Xml::IncrementalReadDecoder;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::IncrementalReadDecoder>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,31 +31,7 @@ impl std::ops::DerefMut for crate::System::Xml::BinHexDecoder {
 }
 #[cfg(feature = "System+Xml+BinHexDecoder")]
 impl crate::System::Xml::BinHexDecoder {
-    pub fn Decode_Il2CppArray__cordl_bool1(
-        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        allowOddChars: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Decode", (chars, allowOddChars))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Decode_Il2CppArray_i32_i32_0(
-        &mut self,
-        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        startPos: i32,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Decode", (chars, startPos, len))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Decode_Il2CppObject_Il2CppObject_Il2CppObject_Il2CppObject_ByRefMut_ByRefMut_ByRefMut_ByRefMut2(
+    pub fn Decode_Gc_Gc_Gc_ByRefMut_ByRefMut_ByRefMut_ByRefMut2(
         pChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         pCharsEndPos: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         pBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -77,6 +55,30 @@ impl crate::System::Xml::BinHexDecoder {
                     bytesDecoded,
                 ),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Decode__cordl_bool1(
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        allowOddChars: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Decode", (chars, allowOddChars))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Decode_i32_i32_0(
+        &mut self,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        startPos: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Decode", (chars, startPos, len))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsFull(&mut self) -> quest_hook::libil2cpp::Result<bool> {

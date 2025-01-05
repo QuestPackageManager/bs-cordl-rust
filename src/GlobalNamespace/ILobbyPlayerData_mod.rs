@@ -112,16 +112,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ILobbyPlayerD
     }
 }
 #[cfg(feature = "ILobbyPlayerData")]
-impl AsRef<crate::GlobalNamespace::ILevelGameplaySetupData>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>>
 for crate::GlobalNamespace::ILobbyPlayerData {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelGameplaySetupData {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ILobbyPlayerData")]
-impl AsMut<crate::GlobalNamespace::ILevelGameplaySetupData>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>>
 for crate::GlobalNamespace::ILobbyPlayerData {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelGameplaySetupData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILevelGameplaySetupData,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

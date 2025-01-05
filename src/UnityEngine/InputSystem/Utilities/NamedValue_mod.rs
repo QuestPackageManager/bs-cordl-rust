@@ -62,7 +62,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NamedValue {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -225,11 +225,11 @@ impl crate::UnityEngine::InputSystem::Utilities::NamedValue {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+NamedValue")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::NamedValue>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::NamedValue>,
 > for crate::UnityEngine::InputSystem::Utilities::NamedValue {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::NamedValue,
     > {
         todo!()
@@ -237,11 +237,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+NamedValue")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::NamedValue>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::NamedValue>,
 > for crate::UnityEngine::InputSystem::Utilities::NamedValue {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::NamedValue,
     > {
         todo!()

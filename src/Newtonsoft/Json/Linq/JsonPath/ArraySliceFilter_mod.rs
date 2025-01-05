@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArraySliceFilter {
-    __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+    >,
     pub _Start_k__BackingField: crate::System::Nullable_1<i32>,
     pub _End_k__BackingField: crate::System::Nullable_1<i32>,
     pub _Step_k__BackingField: crate::System::Nullable_1<i32>,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ArraySliceFilter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
-    type Target = crate::Newtonsoft::Json::Linq::JsonPath::PathFilter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,27 +36,21 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         current: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
         settings: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JsonSelectSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         > = __cordl_object.invoke("ExecuteFilter", (root, current, settings))?;
         Ok(__cordl_ret.into())
     }

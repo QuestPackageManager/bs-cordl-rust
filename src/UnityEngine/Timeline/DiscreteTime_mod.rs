@@ -50,7 +50,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -356,14 +356,16 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+DiscreteTime")]
-impl AsRef<crate::System::IComparable> for crate::UnityEngine::Timeline::DiscreteTime {
-    fn as_ref(&self) -> &crate::System::IComparable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::UnityEngine::Timeline::DiscreteTime {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+DiscreteTime")]
-impl AsMut<crate::System::IComparable> for crate::UnityEngine::Timeline::DiscreteTime {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::UnityEngine::Timeline::DiscreteTime {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }

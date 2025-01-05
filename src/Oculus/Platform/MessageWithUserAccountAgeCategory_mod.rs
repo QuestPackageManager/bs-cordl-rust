@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithUserAccountAgeCategory {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::UserAccountAgeCategory,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::UserAccountAgeCategory,
+        >,
     >,
 }
 #[cfg(feature = "Oculus+Platform+MessageWithUserAccountAgeCategory")]
@@ -14,8 +16,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+MessageWithUserAccountAgeCategory")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithUserAccountAgeCategory {
-    type Target = crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::UserAccountAgeCategory,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::UserAccountAgeCategory,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

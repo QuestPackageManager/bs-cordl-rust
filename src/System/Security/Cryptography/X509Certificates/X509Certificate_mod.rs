@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Certificate {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _cordl_impl: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
     >,
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,7 +64,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -74,7 +74,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_X509Certificate1(
+    pub fn Equals_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
@@ -273,7 +273,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray1(
+    pub fn New_Gc1(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -282,7 +282,18 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
             .invoke_void(".ctor", (data))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString3(
+    pub fn New_Gc2(
+        _cordl_impl: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_impl))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc3(
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -291,30 +302,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
             .invoke_void(".ctor", (fileName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString_X509KeyStorageFlags4(
-        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        keyStorageFlags: crate::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (fileName, password, keyStorageFlags))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SerializationInfo_StreamingContext6(
-        info: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Serialization::SerializationInfo,
-        >,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_X509Certificate5(
+    pub fn New_Gc5(
         cert: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
@@ -325,15 +313,27 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
             .invoke_void(".ctor", (cert))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_X509CertificateImpl2(
-        _cordl_impl: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-        >,
+    pub fn New_Gc_Gc_X509KeyStorageFlags4(
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        keyStorageFlags: crate::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_impl))?;
+            .invoke_void(".ctor", (fileName, password, keyStorageFlags))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_StreamingContext6(
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object.into())
     }
     pub fn Reset(
@@ -431,7 +431,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray1(
+    pub fn _ctor_Gc1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -442,7 +442,20 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
             .invoke(".ctor", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString3(
+    pub fn _ctor_Gc2(
+        &mut self,
+        _cordl_impl: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_impl))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc3(
         &mut self,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -453,34 +466,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
             .invoke(".ctor", (fileName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString_X509KeyStorageFlags4(
-        &mut self,
-        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        keyStorageFlags: crate::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (fileName, password, keyStorageFlags))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SerializationInfo_StreamingContext6(
-        &mut self,
-        info: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Serialization::SerializationInfo,
-        >,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (info, context))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_X509Certificate5(
+    pub fn _ctor_Gc5(
         &mut self,
         cert: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
@@ -493,17 +479,31 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
             .invoke(".ctor", (cert))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_X509CertificateImpl2(
+    pub fn _ctor_Gc_Gc_X509KeyStorageFlags4(
         &mut self,
-        _cordl_impl: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-        >,
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        keyStorageFlags: crate::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_impl))?;
+            .invoke(".ctor", (fileName, password, keyStorageFlags))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_StreamingContext6(
+        &mut self,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Impl(
@@ -566,48 +566,68 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate")]
-impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
-for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    >,
+> for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
     fn as_ref(
         &self,
-    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate")]
-impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
-for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    >,
+> for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IDeserializationCallback,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Security::Cryptography::X509Certificates::X509Certificate {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

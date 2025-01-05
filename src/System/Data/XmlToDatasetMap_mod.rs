@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlToDatasetMap {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _tableSchemaMap: quest_hook::libil2cpp::Gc<
         crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+XmlToDatasetMap")]
 impl std::ops::Deref for crate::System::Data::XmlToDatasetMap {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +36,7 @@ impl crate::System::Data::XmlToDatasetMap {
     pub type XmlNodeIdHashtable = crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable;
     #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdentety")]
     pub type XmlNodeIdentety = crate::System::Data::XmlToDatasetMap_XmlNodeIdentety;
-    pub fn AddColumnSchema_DataColumn_XmlNameTable0(
+    pub fn AddColumnSchema_Gc_Gc_Gc0(
         &mut self,
         col: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
@@ -51,7 +51,7 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke("AddColumnSchema", (col, nameTable, columns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddColumnSchema_XmlNameTable_DataColumn1(
+    pub fn AddColumnSchema_Gc_Gc_Gc1(
         &mut self,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         col: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
@@ -66,7 +66,7 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke("AddColumnSchema", (nameTable, col, columns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddTableSchema_DataTable_XmlNameTable0(
+    pub fn AddTableSchema_Gc_Gc0(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
@@ -81,7 +81,7 @@ impl crate::System::Data::XmlToDatasetMap {
         > = __cordl_object.invoke("AddTableSchema", (table, nameTable))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddTableSchema_XmlNameTable_DataTable1(
+    pub fn AddTableSchema_Gc_Gc1(
         &mut self,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -96,7 +96,7 @@ impl crate::System::Data::XmlToDatasetMap {
         > = __cordl_object.invoke("AddTableSchema", (nameTable, table))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BuildIdentityMap_DataSet_XmlNameTable0(
+    pub fn BuildIdentityMap_Gc_Gc0(
         &mut self,
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
@@ -108,19 +108,7 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke("BuildIdentityMap", (dataSet, nameTable))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BuildIdentityMap_DataTable_XmlNameTable2(
-        &mut self,
-        dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-        nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildIdentityMap", (dataTable, nameTable))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn BuildIdentityMap_XmlNameTable_DataSet1(
+    pub fn BuildIdentityMap_Gc_Gc1(
         &mut self,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -132,7 +120,19 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke("BuildIdentityMap", (nameTable, dataSet))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BuildIdentityMap_XmlNameTable_DataTable3(
+    pub fn BuildIdentityMap_Gc_Gc2(
+        &mut self,
+        dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BuildIdentityMap", (dataTable, nameTable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BuildIdentityMap_Gc_Gc3(
         &mut self,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -144,7 +144,7 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke("BuildIdentityMap", (nameTable, dataTable))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetColumnSchema_DataTable_XmlReader__cordl_bool1(
+    pub fn GetColumnSchema_Gc__cordl_bool1(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         dataReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
@@ -161,7 +161,7 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke("GetColumnSchema", (table, dataReader, fIgnoreNamespace))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetColumnSchema_XmlNode__cordl_bool0(
+    pub fn GetColumnSchema__cordl_bool0(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
         fIgnoreNamespace: bool,
@@ -241,7 +241,7 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke("IsMappedColumn", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_DataSet_XmlNameTable0(
+    pub fn New_Gc_Gc0(
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -251,17 +251,7 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke_void(".ctor", (dataSet, nameTable))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DataTable_XmlNameTable2(
-        dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-        nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dataTable, nameTable))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_XmlNameTable_DataSet1(
+    pub fn New_Gc_Gc1(
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -271,7 +261,17 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke_void(".ctor", (nameTable, dataSet))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XmlNameTable_DataTable3(
+    pub fn New_Gc_Gc2(
+        dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dataTable, nameTable))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc3(
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -281,7 +281,7 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke_void(".ctor", (nameTable, dataTable))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_DataSet_XmlNameTable0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
@@ -293,19 +293,7 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke(".ctor", (dataSet, nameTable))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DataTable_XmlNameTable2(
-        &mut self,
-        dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-        nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dataTable, nameTable))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_XmlNameTable_DataSet1(
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -317,7 +305,19 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke(".ctor", (nameTable, dataSet))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XmlNameTable_DataTable3(
+    pub fn _ctor_Gc_Gc2(
+        &mut self,
+        dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dataTable, nameTable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc3(
         &mut self,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -343,7 +343,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XmlToDatasetMap 
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlToDatasetMap_TableSchemaInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub TableSchema: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub ColumnsSchemaMap: quest_hook::libil2cpp::Gc<
         crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable,
@@ -356,7 +356,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+XmlToDatasetMap+TableSchemaInfo")]
 impl std::ops::Deref for crate::System::Data::XmlToDatasetMap_TableSchemaInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -404,7 +404,7 @@ for crate::System::Data::XmlToDatasetMap_TableSchemaInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlToDatasetMap_XmlNodeIdHashtable {
-    __cordl_parent: crate::System::Collections::Hashtable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _id: quest_hook::libil2cpp::Gc<
         crate::System::Data::XmlToDatasetMap_XmlNodeIdentety,
     >,
@@ -416,7 +416,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdHashtable")]
 impl std::ops::Deref for crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
-    type Target = crate::System::Collections::Hashtable;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -449,35 +449,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
             .invoke(".ctor", (capacity))?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_DataTable2(
-        &mut self,
-        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("get_Item", (table))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_Item_Il2CppString3(
-        &mut self,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("get_Item", (name))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_Item_XmlNode0(
+    pub fn get_Item_Gc0(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     ) -> quest_hook::libil2cpp::Result<
@@ -491,7 +463,7 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
         > = __cordl_object.invoke("get_Item", (node))?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_XmlReader1(
+    pub fn get_Item_Gc1(
         &mut self,
         dataReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     ) -> quest_hook::libil2cpp::Result<
@@ -503,6 +475,34 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_Item", (dataReader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Item_Gc2(
+        &mut self,
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_Item", (table))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Item_Gc3(
+        &mut self,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_Item", (name))?;
         Ok(__cordl_ret.into())
     }
 }
@@ -520,7 +520,7 @@ for crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlToDatasetMap_XmlNodeIdentety {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub LocalName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub NamespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -531,7 +531,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdentety")]
 impl std::ops::Deref for crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

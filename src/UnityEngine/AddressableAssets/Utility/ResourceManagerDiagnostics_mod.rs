@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManagerDiagnostics {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_ResourceManager: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceManager,
     >,
     pub m_cachedDiagnosticInfo: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo,
+        i32,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo,
         >,
     >,
 }
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -141,16 +141,16 @@ for crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics {
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

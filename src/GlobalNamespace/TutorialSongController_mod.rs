@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialSongController {
-    __cordl_parent: crate::GlobalNamespace::SongController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongController>,
     pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::AudioTimeSyncController,
     >,
@@ -84,7 +84,9 @@ pub struct TutorialSongController {
     >,
     pub _normalModeTutorialObjectsSpawnData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+            >,
         >,
     >,
 }
@@ -95,7 +97,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TutorialSongController")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialSongController {
-    type Target = crate::GlobalNamespace::SongController;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -200,16 +202,16 @@ impl crate::GlobalNamespace::TutorialSongController {
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::ValueTuple_2<
-            *mut crate::GlobalNamespace::NoteData,
-            *mut crate::GlobalNamespace::SliderData,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::System::ValueTuple_2<
-            *mut crate::GlobalNamespace::NoteData,
-            *mut crate::GlobalNamespace::SliderData,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
         > = __cordl_object
             .invoke(
                 "CreateChainData",
@@ -424,7 +426,7 @@ for crate::GlobalNamespace::TutorialSongController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialSongController_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub songBpm: f32,
     pub beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
 }
@@ -435,7 +437,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TutorialSongController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialSongController_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -485,7 +487,7 @@ for crate::GlobalNamespace::TutorialSongController_InitData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialSongController_SequenceCutInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub anyWasCutTooSoon: bool,
     pub allSaberTypeOK: bool,
     pub allSpeedOK: bool,
@@ -503,7 +505,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TutorialSongController+SequenceCutInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -598,7 +600,9 @@ for crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialSongController_TutorialArcSpawnData {
-    __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    >,
     pub headNote: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData,
     >,
@@ -615,7 +619,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "TutorialSongController+TutorialArcSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialArcSpawnData {
-    type Target = crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -676,7 +682,9 @@ for crate::GlobalNamespace::TutorialSongController_TutorialArcSpawnData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialSongController_TutorialBasicNoteSpawnData {
-    __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData,
+    >,
     pub cutDirection: crate::GlobalNamespace::NoteCutDirection,
     pub colorType: crate::GlobalNamespace::ColorType,
 }
@@ -689,7 +697,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "TutorialSongController+TutorialBasicNoteSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
-    type Target = crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -772,7 +782,9 @@ for crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialSongController_TutorialBombNoteSpawnData {
-    __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData,
+    >,
 }
 #[cfg(feature = "TutorialSongController+TutorialBombNoteSpawnData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -783,7 +795,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "TutorialSongController+TutorialBombNoteSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
-    type Target = crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -846,7 +860,9 @@ for crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialSongController_TutorialChainSpawnData {
-    __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    >,
     pub colorType: crate::GlobalNamespace::ColorType,
     pub headLineLayer: crate::GlobalNamespace::NoteLineLayer,
     pub headCutDirection: crate::GlobalNamespace::NoteCutDirection,
@@ -865,7 +881,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "TutorialSongController+TutorialChainSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData {
-    type Target = crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -975,7 +993,9 @@ for crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialSongController_TutorialJumpingNoteSpawnData {
-    __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    >,
     pub noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
 }
 #[cfg(feature = "TutorialSongController+TutorialJumpingNoteSpawnData")]
@@ -987,7 +1007,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "TutorialSongController+TutorialJumpingNoteSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData {
-    type Target = crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1050,7 +1072,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData 
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialSongController_TutorialObjectSpawnData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
     pub beatOffset: i32,
     pub firstTimeBeatOffset: i32,
@@ -1065,7 +1087,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "TutorialSongController+TutorialObjectSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1120,7 +1142,9 @@ for crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialSongController_TutorialObstacleSpawnData {
-    __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    >,
     pub noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     pub width: i32,
     pub height: i32,
@@ -1134,7 +1158,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "TutorialSongController+TutorialObstacleSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
-    type Target = crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

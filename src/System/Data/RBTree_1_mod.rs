@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RBTree_1<K: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _pageTable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Data::RBTree_1_TreePage<K>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<K>>,
     >,
     pub _pageTableMap: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -28,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Data+RBTree_1")]
 impl<K: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Data::RBTree_1<K> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,9 +64,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
     pub fn AllocPage(
         &mut self,
         _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<K>>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -76,9 +72,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Data::RBTree_1_TreePage<K>,
-        > = __cordl_object.invoke("AllocPage", (_cordl_size))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<K> = __cordl_object
+            .invoke("AllocPage", (_cordl_size))?;
         Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -185,7 +180,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             .invoke("ComputeNodeByIndex", (x_id, index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTo_Array0(
+    pub fn CopyTo_Gc_i32_0(
         &mut self,
         array: quest_hook::libil2cpp::Gc<crate::System::Array>,
         index: i32,
@@ -201,7 +196,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             .invoke("CopyTo", (array, index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTo_Il2CppArray1(
+    pub fn CopyTo_Gc_i32_1(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<K>>,
         index: i32,
@@ -260,7 +255,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
     }
     pub fn FreePage(
         &mut self,
-        page: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
+        page: quest_hook::libil2cpp::Gc<K>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -515,7 +510,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
     }
     pub fn MarkPageFree(
         &mut self,
-        page: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
+        page: quest_hook::libil2cpp::Gc<K>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -530,7 +525,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
     }
     pub fn MarkPageFull(
         &mut self,
-        page: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
+        page: quest_hook::libil2cpp::Gc<K>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -968,16 +963,24 @@ for crate::System::Data::RBTree_1<K> {
     }
 }
 #[cfg(feature = "System+Data+RBTree_1")]
-impl<K: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
+impl<
+    K: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::Data::RBTree_1<K> {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+RBTree_1")]
-impl<K: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
+impl<
+    K: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::Data::RBTree_1<K> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1073,7 +1076,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct RBTree_1_RBTreeEnumerator<K: quest_hook::libil2cpp::Type> {
-    pub _tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
+    pub _tree: quest_hook::libil2cpp::Gc<K>,
     pub _version: i32,
     pub _index: i32,
     pub _mainTreeNodeId: i32,
@@ -1156,9 +1159,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_RBTree_1_0(
+    pub fn _ctor_Gc0(
         &mut self,
-        tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
+        tree: quest_hook::libil2cpp::Gc<K>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1173,7 +1176,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
     }
     pub fn _ctor_i32_1(
         &mut self,
-        tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
+        tree: quest_hook::libil2cpp::Gc<K>,
         position: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1201,48 +1204,56 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
     }
 }
 #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-impl<
-    K: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerator_1<K>>
+impl<K: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<K>>
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<K> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<K> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+impl<K: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<K>>
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<K> {
         todo!()
     }
 }
 #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
 impl<
     K: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerator_1<K>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<K> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         todo!()
     }
 }
 #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-impl<K: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+impl<
+    K: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         todo!()
     }
 }
 #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-impl<K: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+impl<
+    K: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-impl<K: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+impl<
+    K: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
-    fn as_ref(&self) -> &crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-impl<K: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
-for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
@@ -1250,7 +1261,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RBTree_1_TreePage<K: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _slots: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::System::Data::RBTree_1_Node<K>>,
     >,
@@ -1268,7 +1279,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Data+RBTree_1+TreePage")]
 impl<K: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Data::RBTree_1_TreePage<K> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1284,7 +1295,7 @@ for crate::System::Data::RBTree_1_TreePage<K> {
 impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
     pub fn AllocSlot(
         &mut self,
-        tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
+        tree: quest_hook::libil2cpp::Gc<K>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

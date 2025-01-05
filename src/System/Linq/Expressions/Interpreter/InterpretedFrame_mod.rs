@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InterpretedFrame {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Interpreter: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Interpreter::Interpreter,
     >,
@@ -16,11 +16,15 @@ pub struct InterpretedFrame {
     pub _pendingContinuation: i32,
     pub _pendingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Data: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub Closure: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::CompilerServices::IStrongBox,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::CompilerServices::IStrongBox,
+            >,
         >,
     >,
     pub StackIndex: i32,
@@ -35,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrame")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,18 +95,14 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo,
-            >,
+            crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo,
-            >,
+            crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo,
         > = __cordl_object.invoke("GetStackTraceDebugInfo", ())?;
         Ok(__cordl_ret.into())
     }
@@ -145,7 +145,9 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
         >,
         closure: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -212,7 +214,7 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
             .invoke("PushPendingContinuation", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Push_Il2CppObject0(
+    pub fn Push_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -342,7 +344,9 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
         >,
         closure: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

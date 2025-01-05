@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSerializerInternalReader {
-    __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
-    type Target = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +58,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             crate::Newtonsoft::Json::Serialization::JsonProperty,
         >,
         propertyConverter: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Newtonsoft::Json::JsonConverter,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
         >,
         containerContract: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::JsonContainerContract,
@@ -66,10 +70,12 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         useExistingValue: quest_hook::libil2cpp::ByRefMut<bool>,
         currentValue: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         propertyContract: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonContract,
+            >,
         >,
         gottenCurrentValue: quest_hook::libil2cpp::ByRefMut<bool>,
         ignoredValue: quest_hook::libil2cpp::ByRefMut<bool>,
@@ -367,9 +373,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             crate::Newtonsoft::Json::Serialization::JsonProperty,
         >,
         creator: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -835,9 +839,13 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     pub fn ReadMetadataProperties(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
-        objectType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        objectType: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
         contract: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonContract,
+            >,
         >,
         member: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::JsonProperty,
@@ -850,9 +858,11 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         >,
         existingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         newValue: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
-        id: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        id: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -877,9 +887,13 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     pub fn ReadMetadataPropertiesToken(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JTokenReader>,
-        objectType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        objectType: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
         contract: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonContract,
+            >,
         >,
         member: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::JsonProperty,
@@ -892,9 +906,11 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         >,
         existingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         newValue: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
-        id: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        id: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -928,8 +944,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
             >,
         >,
     > {
@@ -937,8 +953,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
             >,
         > = __cordl_object
             .invoke(
@@ -950,9 +966,13 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     pub fn ResolveTypeName(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
-        objectType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        objectType: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
         contract: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonContract,
+            >,
         >,
         member: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::JsonProperty,
@@ -1009,10 +1029,10 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             crate::Newtonsoft::Json::Serialization::JsonProperty,
         >,
         requiredProperties: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-                crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonProperty,
             >,
+            crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1135,7 +1155,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSerializerInternalReader_CreatorPropertyContext {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Property: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Serialization::JsonProperty,
@@ -1163,7 +1183,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

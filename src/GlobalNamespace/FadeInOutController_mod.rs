@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FadeInOutController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _easeValue: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatSO>,
     pub _fadeInCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _fadeOutCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FadeInOutController")]
 impl std::ops::Deref for crate::GlobalNamespace::FadeInOutController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,7 +64,7 @@ impl crate::GlobalNamespace::FadeInOutController {
             .invoke("FadeIn", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn FadeIn_Action2(
+    pub fn FadeIn_Gc2(
         &mut self,
         fadeInCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::FadeInOutController {
             .invoke("FadeIn", (duration))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FadeIn_f32_Action3(
+    pub fn FadeIn_f32_Gc3(
         &mut self,
         duration: f32,
         fadeInFinishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::FadeInOutController {
             .invoke("FadeOut", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn FadeOut_Action2(
+    pub fn FadeOut_Gc2(
         &mut self,
         fadeOutCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -140,7 +140,7 @@ impl crate::GlobalNamespace::FadeInOutController {
             .invoke("FadeOut", (duration))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FadeOut_f32_Action3(
+    pub fn FadeOut_f32_Gc3(
         &mut self,
         duration: f32,
         fadeOutFinishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AlphabetScrollbarInfoBeatmapLevelHelper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
 impl std::ops::Deref
 for crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,27 +33,21 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     pub const kNonAlphabetChar: char = '#';
     pub fn CreateData(
         beatmapLevels: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::BeatmapLevel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
         sortBeatmapLevels: bool,
         sortedBeatmapLevels: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::BeatmapLevel,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::AlphabetScrollInfo_Data,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AlphabetScrollInfo_Data>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::AlphabetScrollInfo_Data,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AlphabetScrollInfo_Data>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "CreateData",

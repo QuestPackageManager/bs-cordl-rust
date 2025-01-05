@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormatProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Globalization+FormatProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+FormatProvider")]
 impl std::ops::Deref for crate::System::Globalization::FormatProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -86,7 +86,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::FormatP
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormatProvider_Number {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Globalization+FormatProvider+Number")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -95,7 +95,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+FormatProvider+Number")]
 impl std::ops::Deref for crate::System::Globalization::FormatProvider_Number {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -241,10 +241,10 @@ impl crate::System::Globalization::FormatProvider_Number {
             .invoke("IsWhite", (ch))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchChars_Il2CppObject1(
+    pub fn MatchChars_Gc_Gc_Gc0(
         p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         pEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
@@ -254,10 +254,10 @@ impl crate::System::Globalization::FormatProvider_Number {
             .invoke("MatchChars", (p, pEnd, str))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchChars_Il2CppString0(
+    pub fn MatchChars_Gc_Gc_Gc1(
         p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         pEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
@@ -305,7 +305,9 @@ impl crate::System::Globalization::FormatProvider_Number {
         Ok(__cordl_ret.into())
     }
     pub fn ParseNumber(
-        str: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
+        str: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
         strEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         options: crate::System::Globalization::NumberStyles,
         number: quest_hook::libil2cpp::ByRefMut<

@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnixNetworkInterface {
-    __cordl_parent: crate::System::Net::NetworkInformation::NetworkInterface,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Net::NetworkInformation::NetworkInterface,
+    >,
     pub ipproperties: quest_hook::libil2cpp::Gc<
         crate::System::Net::NetworkInformation::IPInterfaceProperties,
     >,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub addresses: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::Net::IPAddress>,
+        quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     >,
     pub macAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _cordl_type: crate::System::Net::NetworkInformation::NetworkInterfaceType,
@@ -21,7 +23,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+NetworkInformation+UnixNetworkInterface")]
 impl std::ops::Deref for crate::System::Net::NetworkInformation::UnixNetworkInterface {
-    type Target = crate::System::Net::NetworkInformation::NetworkInterface;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Net::NetworkInformation::NetworkInterface,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -61,30 +61,44 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::IDtdParserAdapter
     }
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
-impl AsRef<crate::System::Xml::IDtdParserAdapter>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>>
 for crate::System::Xml::IDtdParserAdapterV1 {
-    fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapter {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
-impl AsMut<crate::System::Xml::IDtdParserAdapter>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>>
 for crate::System::Xml::IDtdParserAdapterV1 {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
-impl AsRef<crate::System::Xml::IDtdParserAdapterWithValidation>
-for crate::System::Xml::IDtdParserAdapterV1 {
-    fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapterWithValidation {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapterWithValidation>,
+> for crate::System::Xml::IDtdParserAdapterV1 {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IDtdParserAdapterWithValidation,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterV1")]
-impl AsMut<crate::System::Xml::IDtdParserAdapterWithValidation>
-for crate::System::Xml::IDtdParserAdapterV1 {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapterWithValidation {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapterWithValidation>,
+> for crate::System::Xml::IDtdParserAdapterV1 {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IDtdParserAdapterWithValidation,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

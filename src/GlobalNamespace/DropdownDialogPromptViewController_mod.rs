@@ -2,22 +2,27 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DropdownDialogPromptViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _titleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _messageText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _dropdownLabel: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _dropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
     pub _buttons: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel,
+            >,
         >,
     >,
     pub _didFinishAction: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::System::ValueTuple_2<i32, i32>>,
+        crate::System::ValueTuple_2<i32, i32>,
     >,
     pub _dropdownValues: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            crate::System::ValueTuple_2<*mut quest_hook::libil2cpp::Il2CppString, i32>,
+            crate::System::ValueTuple_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                i32,
+            >,
         >,
     >,
 }
@@ -29,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DropdownDialogPromptViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::DropdownDialogPromptViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,16 +85,18 @@ impl crate::GlobalNamespace::DropdownDialogPromptViewController {
         dropdownValues: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::System::ValueTuple_2<
-                    *mut quest_hook::libil2cpp::Il2CppString,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                     i32,
                 >,
             >,
         >,
         didFinishAction: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::System::ValueTuple_2<i32, i32>>,
+            crate::System::ValueTuple_2<i32, i32>,
         >,
         buttonTexts: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -139,9 +146,7 @@ impl crate::GlobalNamespace::DropdownDialogPromptViewController {
     }
     pub fn add__didFinishAction(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::System::ValueTuple_2<i32, i32>>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::System::ValueTuple_2<i32, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -159,9 +164,7 @@ impl crate::GlobalNamespace::DropdownDialogPromptViewController {
     }
     pub fn remove__didFinishAction(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::System::ValueTuple_2<i32, i32>>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::System::ValueTuple_2<i32, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -185,7 +188,7 @@ for crate::GlobalNamespace::DropdownDialogPromptViewController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DropdownDialogPromptViewController_ButtonAndLabel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _component: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _label: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
@@ -198,7 +201,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "DropdownDialogPromptViewController+ButtonAndLabel")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

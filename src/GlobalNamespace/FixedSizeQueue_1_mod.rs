@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixedSizeQueue_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _data: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _data: quest_hook::libil2cpp::Gc<T>,
     pub _queueSize: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "FixedSizeQueue_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::FixedSizeQueue_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,8 +44,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
             .invoke("Add", (item))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_List_1_i32_1(
-        data: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    pub fn New_Gc_i32_1(
+        data: quest_hook::libil2cpp::Gc<T>,
         queueSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -71,9 +71,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
             .invoke_void(".ctor", (queueSize))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_List_1_i32_1(
+    pub fn _ctor_Gc_i32_1(
         &mut self,
-        data: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        data: quest_hook::libil2cpp::Gc<T>,
         queueSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -104,11 +104,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
     }
     pub fn get_data(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -116,9 +112,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        > = __cordl_object.invoke("get_data", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
+            .invoke("get_data", ())?;
         Ok(__cordl_ret.into())
     }
 }

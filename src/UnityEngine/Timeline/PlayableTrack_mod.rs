@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayableTrack {
-    __cordl_parent: crate::UnityEngine::Timeline::TrackAsset,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
 }
 #[cfg(feature = "UnityEngine+Timeline+PlayableTrack")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+PlayableTrack")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::PlayableTrack {
-    type Target = crate::UnityEngine::Timeline::TrackAsset;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

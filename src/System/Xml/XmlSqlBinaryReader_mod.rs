@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSqlBinaryReader {
-    __cordl_parent: crate::System::Xml::XmlReader,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     pub inStrm: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub pos: i32,
@@ -48,10 +48,8 @@ pub struct XmlSqlBinaryReader {
     pub valueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub stringValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub namespaces: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl>,
     >,
     pub prevNameInfo: quest_hook::libil2cpp::Gc<
         crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
@@ -75,7 +73,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader")]
 impl std::ops::Deref for crate::System::Xml::XmlSqlBinaryReader {
-    type Target = crate::System::Xml::XmlReader;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -291,7 +289,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         > = __cordl_object.invoke("GetAttributeText", (i))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Il2CppString1(
+    pub fn GetAttribute_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -305,7 +303,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         > = __cordl_object.invoke("GetAttribute", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Il2CppString_Il2CppString0(
+    pub fn GetAttribute_Gc_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -574,7 +572,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke("ImplReadXmlText", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn LocateAttribute_Il2CppString0(
+    pub fn LocateAttribute_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -585,7 +583,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         let __cordl_ret: i32 = __cordl_object.invoke("LocateAttribute", (name, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LocateAttribute_Il2CppString1(
+    pub fn LocateAttribute_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -609,7 +607,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         > = __cordl_object.invoke("LookupNamespace", (prefix))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MoveToAttribute_Il2CppString0(
+    pub fn MoveToAttribute_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -975,20 +973,16 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         scope: crate::System::Xml::XmlNamespaceScope,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object
             .invoke("System.Xml.IXmlNamespaceResolver.GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret.into())
@@ -1034,7 +1028,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke("ThrowUnexpectedToken", (token))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowXmlException_Il2CppString0(
+    pub fn ThrowXmlException_Gc0(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1047,7 +1041,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
             .invoke("ThrowXmlException", (res))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowXmlException_Il2CppString_Il2CppString1(
+    pub fn ThrowXmlException_Gc_Gc1(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1375,16 +1369,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlSqlBinaryReade
     }
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader")]
-impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>>
 for crate::System::Xml::XmlSqlBinaryReader {
-    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader")]
-impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>>
 for crate::System::Xml::XmlSqlBinaryReader {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1430,10 +1428,10 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
     pub fn GetLocalnameAndNamespaceUri(
         &mut self,
         localname: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         namespaceUri: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1447,10 +1445,10 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
         &mut self,
         hasher: quest_hook::libil2cpp::Gc<crate::System::Xml::SecureStringHasher>,
         localname: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         namespaceUri: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1485,7 +1483,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Set_Il2CppString0(
+    pub fn Set_Gc0(
         &mut self,
         n: crate::System::Xml::XmlSqlBinaryReader_QName,
         v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1567,7 +1565,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSqlBinaryReader_NamespaceDecl {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub scopeLink: quest_hook::libil2cpp::Gc<
@@ -1586,7 +1584,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
 impl std::ops::Deref for crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1655,7 +1653,7 @@ for crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSqlBinaryReader_NestedBinXml {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
     pub docState: i32,
     pub next: quest_hook::libil2cpp::Gc<
@@ -1669,7 +1667,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
 impl std::ops::Deref for crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1893,7 +1891,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug, Clone, Default)]
 pub struct XmlSqlBinaryReader_SymbolTables {
     pub symtable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub symCount: i32,
     pub qnametable: quest_hook::libil2cpp::Gc<

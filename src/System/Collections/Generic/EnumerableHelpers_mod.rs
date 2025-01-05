@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumerableHelpers {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+Generic+EnumerableHelpers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Generic+EnumerableHelpers")]
 impl std::ops::Deref for crate::System::Collections::Generic::EnumerableHelpers {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,9 +25,7 @@ impl std::ops::DerefMut for crate::System::Collections::Generic::EnumerableHelpe
 #[cfg(feature = "System+Collections+Generic+EnumerableHelpers")]
 impl crate::System::Collections::Generic::EnumerableHelpers {
     pub fn ToArray_ByRefMut1<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        source: quest_hook::libil2cpp::Gc<T>,
         length: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -42,10 +40,8 @@ impl crate::System::Collections::Generic::EnumerableHelpers {
             .invoke("ToArray", (source, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToArray_IEnumerable_1_0<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+    pub fn ToArray_Gc0<T>(
+        source: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >

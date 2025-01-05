@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightColorGroupParent {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
 }
 #[cfg(feature = "LightColorGroupParent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightColorGroupParent")]
 impl std::ops::Deref for crate::GlobalNamespace::LightColorGroupParent {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,16 +53,20 @@ for crate::GlobalNamespace::LightColorGroupParent {
     }
 }
 #[cfg(feature = "LightColorGroupParent")]
-impl AsRef<crate::GlobalNamespace::IEditTimeValidated>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEditTimeValidated>>
 for crate::GlobalNamespace::LightColorGroupParent {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IEditTimeValidated {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEditTimeValidated> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LightColorGroupParent")]
-impl AsMut<crate::GlobalNamespace::IEditTimeValidated>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEditTimeValidated>>
 for crate::GlobalNamespace::LightColorGroupParent {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEditTimeValidated {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEditTimeValidated> {
         unsafe { std::mem::transmute(self) }
     }
 }

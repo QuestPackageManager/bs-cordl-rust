@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KawaseBlurRendererSO {
-    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >,
     pub _kawaseBlurShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub _additiveShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub _tintShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -11,15 +13,21 @@ pub struct KawaseBlurRendererSO {
     pub _tintMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _commandBuffersMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _kernels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<i32>>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        >,
     >,
     pub _bloomKernels: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel,
+            >,
         >,
     >,
     pub _blurTextures: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        >,
     >,
 }
 #[cfg(feature = "KawaseBlurRendererSO")]
@@ -29,7 +37,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "KawaseBlurRendererSO")]
 impl std::ops::Deref for crate::GlobalNamespace::KawaseBlurRendererSO {
-    type Target = crate::GlobalNamespace::PersistentScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,22 +105,7 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Blur_KawaseBlurRendererSO_KernelSize_i32_0(
-        &mut self,
-        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-        kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
-        downsample: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = __cordl_object
-            .invoke("Blur", (src, kernelSize, downsample))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Blur_RenderTexture_Il2CppArray_f32_i32_i32_i32_f32_f32__cordl_bool__cordl_bool_KawaseBlurRendererSO_WeightsType2(
+    pub fn Blur_Gc_Gc_f32_i32_i32_i32_f32_f32__cordl_bool__cordl_bool_KawaseBlurRendererSO_WeightsType2(
         &mut self,
         src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -148,7 +143,7 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Blur_RenderTexture_KawaseBlurRendererSO_KernelSize_f32_i32_1(
+    pub fn Blur_Gc_KawaseBlurRendererSO_KernelSize_f32_i32_1(
         &mut self,
         src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -161,6 +156,21 @@ impl crate::GlobalNamespace::KawaseBlurRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Blur", (src, dest, kernelSize, boost, downsample))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Blur_KawaseBlurRendererSO_KernelSize_i32_0(
+        &mut self,
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
+        downsample: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = __cordl_object
+            .invoke("Blur", (src, kernelSize, downsample))?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateBlurCommandBuffer(
@@ -284,7 +294,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::KawaseBlurRen
 #[repr(C)]
 #[derive(Debug)]
 pub struct KawaseBlurRendererSO_BloomKernel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
     pub sharedPartWithNext: i32,
 }
@@ -296,7 +306,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "KawaseBlurRendererSO+BloomKernel")]
 impl std::ops::Deref for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

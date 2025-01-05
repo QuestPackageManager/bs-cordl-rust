@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_integer {
-    __cordl_parent: crate::System::Xml::Schema::Datatype_decimal,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Datatype_decimal,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_integer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Datatype_integer")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_integer {
-    type Target = crate::System::Xml::Schema::Datatype_decimal;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Datatype_decimal,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +41,7 @@ impl crate::System::Xml::Schema::Datatype_integer {
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         nsmgr: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
         typedValue: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,

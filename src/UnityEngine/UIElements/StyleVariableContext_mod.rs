@@ -2,19 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleVariableContext {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_VariableHash: i32,
     pub m_Variables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleVariable,
-        >,
+        crate::UnityEngine::UIElements::StyleVariable,
     >,
-    pub m_SortedHash: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub m_UnsortedHash: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub m_SortedHash: quest_hook::libil2cpp::Gc<i32>,
+    pub m_UnsortedHash: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -23,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableContext")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleVariableContext {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,7 +78,7 @@ impl crate::UnityEngine::UIElements::StyleVariableContext {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_StyleVariableContext1(
+    pub fn New_Gc1(
         other: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleVariableContext,
         >,
@@ -109,7 +103,7 @@ impl crate::UnityEngine::UIElements::StyleVariableContext {
     pub fn _Add_g__ComputeOrderSensitiveHash_7_0(
         index: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -129,7 +123,7 @@ impl crate::UnityEngine::UIElements::StyleVariableContext {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_StyleVariableContext1(
+    pub fn _ctor_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleVariableContext,

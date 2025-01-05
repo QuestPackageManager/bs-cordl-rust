@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _loadingEnvironment: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _multiplayerLevelSceneSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
@@ -48,7 +48,7 @@ pub struct MultiplayerController {
         crate::GlobalNamespace::MultiplayerBadgesProvider,
     >,
     pub stateChangedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::MultiplayerController_State>,
+        crate::GlobalNamespace::MultiplayerController_State,
     >,
     pub _startTime: f32,
     pub _localPlayerSyncStartState: crate::GlobalNamespace::MultiplayerPlayerStartState,
@@ -71,7 +71,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -117,9 +117,9 @@ impl crate::GlobalNamespace::MultiplayerController {
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
         otherPlayerResults: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -158,9 +158,9 @@ impl crate::GlobalNamespace::MultiplayerController {
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
         otherPlayerResults: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -399,7 +399,7 @@ impl crate::GlobalNamespace::MultiplayerController {
     pub fn add_stateChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::MultiplayerController_State>,
+            crate::GlobalNamespace::MultiplayerController_State,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -424,7 +424,7 @@ impl crate::GlobalNamespace::MultiplayerController {
     pub fn remove_stateChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::MultiplayerController_State>,
+            crate::GlobalNamespace::MultiplayerController_State,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

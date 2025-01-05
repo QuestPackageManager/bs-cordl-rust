@@ -2,15 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerIntroAnimationController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _introPlayableDirector: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Playables::PlayableDirector,
     >,
     pub _playerTimelineTrackNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _ringTimelineTrackNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _playerTimelinePropertyNames: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::PropertyName>,
@@ -49,7 +53,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerIntroAnimationController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerIntroAnimationController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,7 +70,9 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         &mut self,
         connectedPlayersCount: i32,
         connectedRings: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
         localRing: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -93,19 +99,14 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
     pub fn CalculatePlayerIndexSequence(
         &mut self,
         allActivePlayer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::IConnectedPlayer,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Queue_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Queue_1<i32>,
-        > = __cordl_object.invoke("CalculatePlayerIndexSequence", (allActivePlayer))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("CalculatePlayerIndexSequence", (allActivePlayer))?;
         Ok(__cordl_ret.into())
     }
     pub fn Completed(

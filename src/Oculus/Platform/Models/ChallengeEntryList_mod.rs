@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChallengeEntryList {
-    __cordl_parent: crate::Oculus::Platform::Models::DeserializableList_1<
-        *mut crate::Oculus::Platform::Models::ChallengeEntry,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntry>,
     >,
     pub TotalCount: u64,
 }
@@ -14,8 +14,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Models+ChallengeEntryList")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::ChallengeEntryList {
-    type Target = crate::Oculus::Platform::Models::DeserializableList_1<
-        *mut crate::Oculus::Platform::Models::ChallengeEntry,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntry>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

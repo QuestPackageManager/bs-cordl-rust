@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Restriction {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub restriction: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
     >,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+Restriction")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Restriction {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +44,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Restriction {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_DirectoryString0(
+    pub fn New_Gc0(
         restriction: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
         >,
@@ -51,7 +55,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Restriction {
             .invoke_void(".ctor", (restriction))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         restriction: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -73,7 +77,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Restriction {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DirectoryString0(
+    pub fn _ctor_Gc0(
         &mut self,
         restriction: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
@@ -86,7 +90,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Restriction {
             .invoke(".ctor", (restriction))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         restriction: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

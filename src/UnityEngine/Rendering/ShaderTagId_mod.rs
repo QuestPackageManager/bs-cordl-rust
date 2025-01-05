@@ -22,7 +22,7 @@ for crate::UnityEngine::Rendering::ShaderTagId {
 }
 #[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
 impl crate::UnityEngine::Rendering::ShaderTagId {
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -84,20 +84,20 @@ impl crate::UnityEngine::Rendering::ShaderTagId {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::ShaderTagId>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ShaderTagId>>
 for crate::UnityEngine::Rendering::ShaderTagId {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::ShaderTagId> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ShaderTagId> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::ShaderTagId>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ShaderTagId>>
 for crate::UnityEngine::Rendering::ShaderTagId {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Rendering::ShaderTagId> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ShaderTagId> {
         todo!()
     }
 }

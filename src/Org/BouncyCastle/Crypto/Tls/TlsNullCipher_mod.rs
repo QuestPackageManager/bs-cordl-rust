@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsNullCipher {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub context: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNullCipher")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsNullCipher {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -82,7 +82,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsNullCipher {
             .invoke("GetPlaintextLimit", (ciphertextLimit))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_IDigest_IDigest1(
+    pub fn New_Gc0(
+        context: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (context))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc1(
         context: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
         >,
@@ -99,18 +110,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsNullCipher {
             .invoke_void(".ctor", (context, clientWriteDigest, serverWriteDigest))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_TlsContext0(
+    pub fn _ctor_Gc0(
+        &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (context))?;
-        Ok(__cordl_object.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (context))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IDigest_IDigest1(
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
@@ -129,19 +142,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsNullCipher {
             .invoke(".ctor", (context, clientWriteDigest, serverWriteDigest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_TlsContext0(
-        &mut self,
-        context: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (context))?;
-        Ok(__cordl_ret.into())
-    }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNullCipher")]
 impl quest_hook::libil2cpp::ObjectType
@@ -154,16 +154,22 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsNullCipher {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNullCipher")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsCipher>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCipher>>
 for crate::Org::BouncyCastle::Crypto::Tls::TlsNullCipher {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCipher> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNullCipher")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsCipher>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCipher>>
 for crate::Org::BouncyCastle::Crypto::Tls::TlsNullCipher {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCipher,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextGeneratorUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGeneratorUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGeneratorUtilities")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +50,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             .invoke("ConvertToFloat", (chars, startIndex, length, lastIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertToFloat_Il2CppArray_i32_i32_0(
+    pub fn ConvertToFloat_Gc_i32_i32_0(
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         startIndex: i32,
         length: i32,
@@ -114,14 +114,14 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         startIndex: i32,
         length: i32,
         parameters: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetAttributeParameters", (chars, startIndex, length, parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMarkupTagHashCode_Il2CppArray1(
+    pub fn GetMarkupTagHashCode_Gc1(
         styleDefinition: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u32>,
         >,
@@ -155,7 +155,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
     }
     pub fn GetStyleHashCode_ByRefMut_i32_ByRefMut0(
         text: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         >,
         index: i32,
         closeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -175,7 +175,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             .invoke("GetStyleHashCode", (text, index, closeIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUTF16_Il2CppArray0(
+    pub fn GetUTF16_Gc0(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -191,7 +191,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             .invoke("GetUTF16", (text, i))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUTF32_Il2CppArray0(
+    pub fn GetUTF32_Gc0(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -207,7 +207,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             .invoke("GetUTF32", (text, i))?;
         Ok(__cordl_ret.into())
     }
-    pub fn HexCharsToColor_Il2CppArray_i32_0(
+    pub fn HexCharsToColor_Gc_i32_0(
         hexChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         tagCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
@@ -231,19 +231,25 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
     }
     pub fn InsertClosingStyleTag(
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingElement,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStackDepth: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStacks: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+                >,
             >,
         >,
         generationSettings: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -262,19 +268,25 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
     pub fn InsertClosingTextStyle(
         style: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingElement,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStackDepth: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStacks: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+                >,
             >,
         >,
         generationSettings: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -294,19 +306,25 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
     pub fn InsertOpeningStyleTag(
         style: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingElement,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStackDepth: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStacks: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+                >,
             >,
         >,
         generationSettings: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -326,19 +344,25 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
     pub fn InsertOpeningTextStyle(
         style: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingElement,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStackDepth: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStacks: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+                >,
             >,
         >,
         generationSettings: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -357,8 +381,10 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
     }
     pub fn InsertTextStyleInTextProcessingArray(
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingElement,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -367,12 +393,16 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         >,
         textStyleStackDepth: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStacks: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+                >,
             >,
         >,
         generationSettings: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -462,19 +492,25 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
     }
     pub fn ReplaceClosingStyleTag(
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingElement,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStackDepth: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStacks: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+                >,
             >,
         >,
         generationSettings: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -497,19 +533,25 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         srcIndex: i32,
         srcOffset: quest_hook::libil2cpp::ByRefMut<i32>,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingElement,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStackDepth: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStacks: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+                >,
             >,
         >,
         generationSettings: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -530,24 +572,30 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
     }
     pub fn ReplaceOpeningStyleTag_ByRefMut_i32_ByRefMut_ByRefMut_ByRefMut_ByRefMut_ByRefMut_ByRefMut1(
         sourceText: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         >,
         srcIndex: i32,
         srcOffset: quest_hook::libil2cpp::ByRefMut<i32>,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingElement,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStackDepth: quest_hook::libil2cpp::ByRefMut<i32>,
         textStyleStacks: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+                >,
             >,
         >,
         generationSettings: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -568,7 +616,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
     }
     pub fn ResizeInternalArray_ByRefMut0<T>(
         array: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<T>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -581,7 +629,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
     }
     pub fn ResizeInternalArray_i32_1<T>(
         array: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<T>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

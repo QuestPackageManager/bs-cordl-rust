@@ -24,7 +24,7 @@ for crate::GlobalNamespace::OVRLocatable {
 impl crate::GlobalNamespace::OVRLocatable {
     #[cfg(feature = "OVRLocatable+TrackingSpacePose")]
     pub type TrackingSpacePose = crate::GlobalNamespace::OVRLocatable_TrackingSpacePose;
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -200,44 +200,38 @@ impl crate::GlobalNamespace::OVRLocatable {
     }
 }
 #[cfg(feature = "OVRLocatable")]
-impl AsRef<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRLocatable>,
-> for crate::GlobalNamespace::OVRLocatable {
-    fn as_ref(
-        &self,
-    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRLocatable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRLocatable")]
-impl AsMut<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRLocatable>,
-> for crate::GlobalNamespace::OVRLocatable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRLocatable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRLocatable")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRLocatable>>
 for crate::GlobalNamespace::OVRLocatable {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRLocatable> {
         todo!()
     }
 }
 #[cfg(feature = "OVRLocatable")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRLocatable>>
 for crate::GlobalNamespace::OVRLocatable {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRLocatable> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRLocatable")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRLocatable>>
+for crate::GlobalNamespace::OVRLocatable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRLocatable> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRLocatable")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRLocatable>>
+for crate::GlobalNamespace::OVRLocatable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRLocatable> {
         todo!()
     }
 }

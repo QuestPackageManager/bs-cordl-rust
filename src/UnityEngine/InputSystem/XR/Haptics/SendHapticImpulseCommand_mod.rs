@@ -56,20 +56,30 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+SendHapticImpulseCommand")]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
-for crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    >,
+> for crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+SendHapticImpulseCommand")]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
-for crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    >,
+> for crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    > {
         todo!()
     }
 }

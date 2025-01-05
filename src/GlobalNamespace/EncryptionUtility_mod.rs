@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncryptionUtility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "EncryptionUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EncryptionUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::EncryptionUtility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,14 +69,14 @@ impl crate::GlobalNamespace::EncryptionUtility {
         isClient: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -156,7 +156,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EncryptionUti
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncryptionUtility_EncryptionState {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _isValid: bool,
     pub _lastSentSequenceNum: i32,
     pub _hasReceivedSequenceNum: bool,
@@ -171,14 +171,10 @@ pub struct EncryptionUtility_EncryptionState {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
     pub _sendMacQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Concurrent::ConcurrentQueue_1<
-            *mut crate::Org::BouncyCastle::Crypto::Macs::HMac,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Macs::HMac>,
     >,
     pub _receiveMacQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Concurrent::ConcurrentQueue_1<
-            *mut crate::Org::BouncyCastle::Crypto::Macs::HMac,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Macs::HMac>,
     >,
 }
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
@@ -189,7 +185,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
 impl std::ops::Deref for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -384,32 +380,40 @@ for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
     }
 }
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
-impl AsRef<crate::GlobalNamespace::EncryptionUtility_IEncryptionState>
-for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
-    fn as_ref(&self) -> &crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EncryptionUtility_IEncryptionState>,
+> for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
-impl AsMut<crate::GlobalNamespace::EncryptionUtility_IEncryptionState>
-for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EncryptionUtility_IEncryptionState>,
+> for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -491,16 +495,16 @@ for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
     }
 }
 #[cfg(feature = "EncryptionUtility+IEncryptionState")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EncryptionUtility+IEncryptionState")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebProxy {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _UseRegistry: bool,
     pub _BypassOnLocal: bool,
     pub m_EnableAutoproxy: bool,
@@ -11,7 +11,7 @@ pub struct WebProxy {
     pub _Credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
     pub _RegExBypassList: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Text::RegularExpressions::Regex,
+            quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
         >,
     >,
     pub _ProxyHostAddresses: quest_hook::libil2cpp::Gc<
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+WebProxy")]
 impl std::ops::Deref for crate::System::Net::WebProxy {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,9 +42,7 @@ impl std::ops::DerefMut for crate::System::Net::WebProxy {
 impl crate::System::Net::WebProxy {
     pub fn AreAllBypassed(
         proxies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         checkFirstOnly: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -87,7 +85,9 @@ impl crate::System::Net::WebProxy {
     pub fn GetProxyAuto(
         &mut self,
         destination: quest_hook::libil2cpp::Gc<crate::System::Uri>,
-        proxyUri: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Uri>,
+        proxyUri: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -165,7 +165,7 @@ impl crate::System::Net::WebProxy {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext2(
+    pub fn New_Gc_StreamingContext2(
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -177,11 +177,13 @@ impl crate::System::Net::WebProxy {
             .invoke_void(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Uri__cordl_bool_Il2CppArray_ICredentials1(
+    pub fn New_Gc__cordl_bool_Gc_Gc1(
         Address: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         BypassOnLocal: bool,
         BypassList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         Credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -255,7 +257,7 @@ impl crate::System::Net::WebProxy {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext2(
+    pub fn _ctor_Gc_StreamingContext2(
         &mut self,
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -269,12 +271,14 @@ impl crate::System::Net::WebProxy {
             .invoke(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Uri__cordl_bool_Il2CppArray_ICredentials1(
+    pub fn _ctor_Gc__cordl_bool_Gc_Gc1(
         &mut self,
         Address: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         BypassOnLocal: bool,
         BypassList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         Credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -350,28 +354,42 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebProxy {
     }
 }
 #[cfg(feature = "System+Net+WebProxy")]
-impl AsRef<crate::System::Net::IWebProxy> for crate::System::Net::WebProxy {
-    fn as_ref(&self) -> &crate::System::Net::IWebProxy {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+WebProxy")]
-impl AsMut<crate::System::Net::IWebProxy> for crate::System::Net::WebProxy {
-    fn as_mut(&mut self) -> &mut crate::System::Net::IWebProxy {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+WebProxy")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>>
 for crate::System::Net::WebProxy {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+WebProxy")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>>
 for crate::System::Net::WebProxy {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+WebProxy")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Net::WebProxy {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+WebProxy")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Net::WebProxy {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

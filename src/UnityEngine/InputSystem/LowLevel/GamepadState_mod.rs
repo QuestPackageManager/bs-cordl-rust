@@ -76,18 +76,30 @@ impl crate::UnityEngine::InputSystem::LowLevel::GamepadState {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+GamepadState")]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
-for crate::UnityEngine::InputSystem::LowLevel::GamepadState {
-    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::GamepadState {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+GamepadState")]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
-for crate::UnityEngine::InputSystem::LowLevel::GamepadState {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::GamepadState {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo,
+    > {
         todo!()
     }
 }

@@ -45,7 +45,7 @@ impl crate::UnityEngine::UIElements::EventDispatcherGate {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -77,26 +77,26 @@ impl crate::UnityEngine::UIElements::EventDispatcherGate {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::EventDispatcherGate {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::EventDispatcherGate {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::UIElements::EventDispatcherGate>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventDispatcherGate>,
 > for crate::UnityEngine::UIElements::EventDispatcherGate {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::EventDispatcherGate,
     > {
         todo!()
@@ -104,11 +104,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::UIElements::EventDispatcherGate>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventDispatcherGate>,
 > for crate::UnityEngine::UIElements::EventDispatcherGate {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::EventDispatcherGate,
     > {
         todo!()

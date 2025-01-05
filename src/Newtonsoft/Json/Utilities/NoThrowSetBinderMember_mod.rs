@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoThrowSetBinderMember {
-    __cordl_parent: crate::System::Dynamic::SetMemberBinder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Dynamic::SetMemberBinder>,
     pub _innerBinder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::SetMemberBinder>,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
-    type Target = crate::System::Dynamic::SetMemberBinder;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Dynamic::SetMemberBinder>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

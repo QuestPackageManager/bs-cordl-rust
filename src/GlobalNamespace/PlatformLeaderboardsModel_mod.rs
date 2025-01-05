@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformLeaderboardsModel {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiersModelSO,
     >,
@@ -32,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlatformLeaderboardsModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformLeaderboardsModel {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,7 +101,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel {
             .invoke("GetScoresAroundPlayer", (beatmapKey, count, completionHandler))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetScores_BeatmapKey_PlatformLeaderboardsModel_ScoresScope_PlatformLeaderboardsModel_GetScoresCompletionHandler0(
+    pub fn GetScores_BeatmapKey_PlatformLeaderboardsModel_ScoresScope_Gc0(
         &mut self,
         beatmapKey: crate::GlobalNamespace::BeatmapKey,
         count: i32,
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetScores_ByRefMut_PlatformLeaderboardsModel_GetScoresCompletionHandler1(
+    pub fn GetScores_ByRefMut_Gc1(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         count: i32,
@@ -204,7 +204,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel {
             .invoke("OnDestroy", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn UploadScore_ByRefMut_i32_i32_i32__cordl_bool_i32_i32_i32_i32_f32_GameplayModifiers1(
+    pub fn UploadScore_ByRefMut_i32_i32_i32__cordl_bool_i32_i32_i32_i32_f32_Gc1(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         multipliedScore: i32,
@@ -242,7 +242,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn UploadScore_LeaderboardScoreUploader_ScoreData_PlatformLeaderboardsModel_UploadScoreCompletionHandler0(
+    pub fn UploadScore_Gc_Gc0(
         &mut self,
         scoreData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
@@ -328,7 +328,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformLeaderboardsModel_GetScoresCompletionHandler {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -339,7 +339,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -358,7 +358,9 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandle
         result: crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult,
         scores: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+                >,
             >,
         >,
         referencePlayerScoreIndex: i32,
@@ -393,7 +395,9 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandle
         result: crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult,
         scores: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+                >,
             >,
         >,
         referencePlayerScoreIndex: i32,
@@ -457,7 +461,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformLeaderboardsModel_LeaderboardScore {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub score: i32,
     pub rank: i32,
     pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -472,7 +476,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -537,28 +541,36 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
 }
 #[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
 impl AsRef<
-    crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+        >,
     >,
 > for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+        >,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
 impl AsMut<
-    crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+        >,
     >,
 > for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
-        *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+        >,
     > {
         unsafe { std::mem::transmute(self) }
     }
@@ -596,7 +608,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformLeaderboardsModel_UploadScoreCompletionHandler {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -607,7 +619,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

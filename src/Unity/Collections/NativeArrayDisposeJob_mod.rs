@@ -41,16 +41,16 @@ impl crate::Unity::Collections::NativeArrayDisposeJob {
     }
 }
 #[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
-impl AsRef<crate::Unity::Jobs::IJob>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
 for crate::Unity::Collections::NativeArrayDisposeJob {
-    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
-impl AsMut<crate::Unity::Jobs::IJob>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
 for crate::Unity::Collections::NativeArrayDisposeJob {
-    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }

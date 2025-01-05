@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstFireEffect {
-    __cordl_parent: crate::GlobalNamespace::FireEffect,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireEffect>,
     pub _fadeOutDuration: f32,
     pub _flipbookFadeOutCurve: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AnimationCurve,
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BurstFireEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::BurstFireEffect {
-    type Target = crate::GlobalNamespace::FireEffect;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireEffect>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

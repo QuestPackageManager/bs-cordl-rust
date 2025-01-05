@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HorizontalOrVerticalLayoutGroup {
-    __cordl_parent: crate::UnityEngine::UI::LayoutGroup,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::LayoutGroup>,
     pub m_Spacing: f32,
     pub m_ChildForceExpandWidth: bool,
     pub m_ChildForceExpandHeight: bool,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+HorizontalOrVerticalLayoutGroup")]
 impl std::ops::Deref for crate::UnityEngine::UI::HorizontalOrVerticalLayoutGroup {
-    type Target = crate::UnityEngine::UI::LayoutGroup;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::LayoutGroup>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

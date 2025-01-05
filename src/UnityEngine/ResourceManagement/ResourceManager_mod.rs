@@ -2,100 +2,94 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub postProfilerEvents: bool,
     pub _InternalIdTransformFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-            *mut quest_hook::libil2cpp::Il2CppString,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _WebRequestOverride_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::UnityEngine::Networking::UnityWebRequest>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     >,
     pub CallbackHooksEnabled: bool,
     pub m_ResourceProviders: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ListWithEvents_1<
-            *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
         >,
     >,
     pub m_allocator: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy,
     >,
     pub m_UpdateReceivers: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ListWithEvents_1<
-            *mut crate::UnityEngine::ResourceManagement::IUpdateReceiver,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::IUpdateReceiver,
         >,
     >,
     pub m_UpdateReceiversToRemove: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::ResourceManagement::IUpdateReceiver,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::IUpdateReceiver,
         >,
     >,
     pub m_UpdatingReceivers: bool,
     pub m_InsideUpdateMethod: bool,
     pub m_providerMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
+        i32,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
         >,
     >,
     pub m_AssetOperationCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-            *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
         >,
     >,
     pub m_TrackedInstanceOperations: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            *mut crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation,
         >,
     >,
-    pub m_UpdateCallbacks: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::DelegateList_1<f32>,
-    >,
+    pub m_UpdateCallbacks: quest_hook::libil2cpp::Gc<f32>,
     pub m_DeferredCompleteCallbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
         >,
     >,
     pub m_AssetBundleProviders: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
         >,
     >,
     pub m_InsideExecuteDeferredCallbacksMethod: bool,
     pub m_DeferredCallbacksToRegister: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest,
-        >,
+        crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest,
     >,
     pub m_obsoleteDiagnosticsHandler: quest_hook::libil2cpp::Gc<
-        crate::System::Action_4<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
-            i32,
-            *mut quest_hook::libil2cpp::Il2CppObject,
-        >,
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
+        i32,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub m_diagnosticsHandler: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext,
-        >,
+        crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext,
     >,
     pub m_ReleaseOpNonCached: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
         >,
     >,
     pub m_ReleaseOpCached: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
         >,
     >,
     pub m_ReleaseInstanceOp: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
         >,
     >,
     pub _CertificateHandlerInstance_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -103,10 +97,8 @@ pub struct ResourceManager {
     >,
     pub m_RegisteredForCallbacks: bool,
     pub m_ProviderOperationTypeCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Type,
-            *mut crate::System::Type,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
     >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
@@ -116,7 +108,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
 impl std::ops::Deref for crate::UnityEngine::ResourceManagement::ResourceManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -217,8 +209,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     pub fn CalculateLocationsHash(
         &mut self,
         locations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -288,11 +280,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         &mut self,
         dependentOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                    TObject,
-                >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                TObject,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -318,13 +308,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             TObjectDependency,
         >,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                    TObjectDependency,
-                >,
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                    TObject,
-                >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                TObjectDependency,
+            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                TObject,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -355,13 +343,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             TObjectDependency,
         >,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                    TObjectDependency,
-                >,
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                    TObject,
-                >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                TObjectDependency,
+            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                TObject,
             >,
         >,
         releaseDependenciesOnFailure: bool,
@@ -392,11 +378,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         &mut self,
         dependentOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                    TObject,
-                >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                TObject,
             >,
         >,
         releaseDependenciesOnFailure: bool,
@@ -494,14 +478,12 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     pub fn CreateGenericGroupOperation(
         &mut self,
         operations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
         releasedCachedOpOnComplete: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,
@@ -510,7 +492,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         > = __cordl_object
@@ -520,16 +502,16 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateGroupOperation_IList_1_0<T>(
+    pub fn CreateGroupOperation_Gc0<T>(
         &mut self,
         locations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,
@@ -542,7 +524,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         > = __cordl_object.invoke("CreateGroupOperation", (locations))?;
@@ -551,14 +533,14 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     pub fn CreateGroupOperation__cordl_bool1<T>(
         &mut self,
         locations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
         allowFailedDependencies: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,
@@ -571,7 +553,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         > = __cordl_object
@@ -586,8 +568,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
         >,
         onDestroyAction: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -782,14 +764,14 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         instantiateParameters: crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = __cordl_object
             .invoke("ProvideInstance", (provider, location, instantiateParameters))?;
         Ok(__cordl_ret.into())
@@ -797,21 +779,19 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     pub fn ProvideResourceGroupCached(
         &mut self,
         locations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
         groupHash: i32,
         desiredType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
         releaseDependenciesOnFailure: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,
@@ -820,7 +800,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         > = __cordl_object
@@ -836,7 +816,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProvideResource_IResourceLocation1<TObject>(
+    pub fn ProvideResource_Gc1<TObject>(
         &mut self,
         location: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
@@ -858,7 +838,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         > = __cordl_object.invoke("ProvideResource", (location))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProvideResource_Type__cordl_bool0(
+    pub fn ProvideResource_Gc__cordl_bool0(
         &mut self,
         location: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
@@ -878,17 +858,17 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProvideResources_Action_1_0<TObject>(
+    pub fn ProvideResources_Gc0<TObject>(
         &mut self,
         locations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TObject>>,
+        callback: quest_hook::libil2cpp::Gc<TObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<TObject>,
+            quest_hook::libil2cpp::Gc<TObject>,
         >,
     >
     where
@@ -899,22 +879,22 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<TObject>,
+            quest_hook::libil2cpp::Gc<TObject>,
         > = __cordl_object.invoke("ProvideResources", (locations, callback))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProvideResources__cordl_bool_Action_1_1<TObject>(
+    pub fn ProvideResources__cordl_bool_Gc1<TObject>(
         &mut self,
         locations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
         releaseDependenciesOnFailure: bool,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TObject>>,
+        callback: quest_hook::libil2cpp::Gc<TObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<TObject>,
+            quest_hook::libil2cpp::Gc<TObject>,
         >,
     >
     where
@@ -925,7 +905,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::IList_1<TObject>,
+            quest_hook::libil2cpp::Gc<TObject>,
         > = __cordl_object
             .invoke(
                 "ProvideResources",
@@ -989,12 +969,13 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterDiagnosticCallback_Action_1_1(
+    pub fn RegisterDiagnosticCallback_Gc0(
         &mut self,
         func: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1004,15 +985,10 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             .invoke("RegisterDiagnosticCallback", (func))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterDiagnosticCallback_Action_4_0(
+    pub fn RegisterDiagnosticCallback_Gc1(
         &mut self,
         func: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
-                i32,
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1104,13 +1080,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             .invoke("RemoveUpdateReciever", (receiver))?;
         Ok(__cordl_ret.into())
     }
-    pub fn StartOperation_AsyncOperationBase_1_0<TObject>(
+    pub fn StartOperation_Gc_AsyncOperationHandle0<TObject>(
         &mut self,
-        operation: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-                TObject,
-            >,
-        >,
+        operation: quest_hook::libil2cpp::Gc<TObject>,
         dependency: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -1129,7 +1101,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         > = __cordl_object.invoke("StartOperation", (operation, dependency))?;
         Ok(__cordl_ret.into())
     }
-    pub fn StartOperation_IAsyncOperation1(
+    pub fn StartOperation_Gc_AsyncOperationHandle1(
         &mut self,
         operation: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
@@ -1164,9 +1136,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     pub fn UnregisterDiagnosticCallback(
         &mut self,
         func: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext,
-            >,
+            crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1243,17 +1213,13 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     }
     pub fn get_ExceptionHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                *mut crate::System::Exception,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            quest_hook::libil2cpp::Gc<crate::System::Exception>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                *mut crate::System::Exception,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            quest_hook::libil2cpp::Gc<crate::System::Exception>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_ExceptionHandler", ())?;
         Ok(__cordl_ret.into())
@@ -1269,20 +1235,20 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("get_InternalIdTransformFunc", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1297,8 +1263,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
             >,
         >,
     > {
@@ -1306,8 +1272,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
             >,
         > = __cordl_object.invoke("get_ResourceProviders", ())?;
         Ok(__cordl_ret.into())
@@ -1316,14 +1282,14 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Networking::UnityWebRequest>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Networking::UnityWebRequest>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
         > = __cordl_object.invoke("get_WebRequestOverride", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1355,10 +1321,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     }
     pub fn set_ExceptionHandler(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                *mut crate::System::Exception,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            quest_hook::libil2cpp::Gc<crate::System::Exception>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1368,10 +1332,10 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     pub fn set_InternalIdTransformFunc(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1384,7 +1348,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     pub fn set_WebRequestOverride(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Networking::UnityWebRequest>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1406,16 +1370,16 @@ for crate::UnityEngine::ResourceManagement::ResourceManager {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::ResourceManagement::ResourceManager {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::ResourceManagement::ResourceManager {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1423,9 +1387,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager_CompletedOperation_1<TObject: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        TObject,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TObject>,
     pub m_Success: bool,
     pub m_Exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     pub m_ReleaseDependenciesOnFailure: bool,
@@ -1443,9 +1405,7 @@ impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
     TObject,
 > {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        TObject,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1477,25 +1437,7 @@ impl<
             .invoke("Execute", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Exception1(
-        &mut self,
-        result: TObject,
-        success: bool,
-        exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
-        releaseDependenciesOnFailure: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (result, success, exception, releaseDependenciesOnFailure))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Init_Il2CppString0(
+    pub fn Init_TObject__cordl_bool_Gc__cordl_bool0(
         &mut self,
         result: TObject,
         success: bool,
@@ -1511,6 +1453,24 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (result, success, errorMsg, releaseDependenciesOnFailure))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Init_TObject__cordl_bool_Gc__cordl_bool1(
+        &mut self,
+        result: TObject,
+        success: bool,
+        exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        releaseDependenciesOnFailure: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (result, success, exception, releaseDependenciesOnFailure))?;
         Ok(__cordl_ret.into())
     }
     pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -1751,11 +1711,11 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager_InstanceOperation {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        *mut crate::UnityEngine::GameObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub m_dependency: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        *mut crate::UnityEngine::GameObject,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub m_instantiationParams: crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters,
     pub m_instanceProvider: quest_hook::libil2cpp::Gc<
@@ -1773,8 +1733,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        *mut crate::UnityEngine::GameObject,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -1812,9 +1772,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     pub fn GetDependencies(
         &mut self,
         deps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1827,9 +1785,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     pub fn GetDownloadStatus(
         &mut self,
         visited: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -1851,7 +1807,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
         >,
         instantiationParams: crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters,
         dependency: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

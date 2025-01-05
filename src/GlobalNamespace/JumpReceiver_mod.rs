@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JumpReceiver {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _jumpToDestinationValid_k__BackingField: bool,
 }
 #[cfg(feature = "JumpReceiver")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "JumpReceiver")]
 impl std::ops::Deref for crate::GlobalNamespace::JumpReceiver {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -86,16 +86,26 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::JumpReceiver 
     }
 }
 #[cfg(feature = "JumpReceiver")]
-impl AsRef<crate::UnityEngine::Playables::INotificationReceiver>
-for crate::GlobalNamespace::JumpReceiver {
-    fn as_ref(&self) -> &crate::UnityEngine::Playables::INotificationReceiver {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotificationReceiver>,
+> for crate::GlobalNamespace::JumpReceiver {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::INotificationReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "JumpReceiver")]
-impl AsMut<crate::UnityEngine::Playables::INotificationReceiver>
-for crate::GlobalNamespace::JumpReceiver {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::INotificationReceiver {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotificationReceiver>,
+> for crate::GlobalNamespace::JumpReceiver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::INotificationReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

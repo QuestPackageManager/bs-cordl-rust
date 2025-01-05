@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Utility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Utility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -371,7 +371,7 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
         Ok(__cordl_ret.into())
     }
     pub fn add_GraphicsResourcesRecreate(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("add_GraphicsResourcesRecreate", (value))?;
@@ -379,7 +379,7 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
     }
     pub fn add_RegisterIntermediateRenderers(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -387,7 +387,7 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
         Ok(__cordl_ret.into())
     }
     pub fn add_RenderNodeExecute(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<crate::System::IntPtr>>,
+        value: quest_hook::libil2cpp::Gc<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("add_RenderNodeExecute", (value))?;
@@ -408,7 +408,7 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
         Ok(__cordl_ret.into())
     }
     pub fn remove_GraphicsResourcesRecreate(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("remove_GraphicsResourcesRecreate", (value))?;
@@ -416,7 +416,7 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
     }
     pub fn remove_RegisterIntermediateRenderers(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -424,7 +424,7 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
         Ok(__cordl_ret.into())
     }
     pub fn remove_RenderNodeExecute(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<crate::System::IntPtr>>,
+        value: quest_hook::libil2cpp::Gc<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("remove_RenderNodeExecute", (value))?;
@@ -458,7 +458,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct Utility_GPUBuffer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub buffer: crate::System::IntPtr,
     pub elemCount: i32,
     pub elemStride: i32,
@@ -473,7 +473,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -589,16 +589,20 @@ for crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T> {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -62,7 +62,7 @@ impl crate::UnityEngine::PhysicsScene {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn BoxCast_Il2CppArray3(
+    pub fn BoxCast_Gc3(
         &mut self,
         center: crate::UnityEngine::Vector3,
         halfExtents: crate::UnityEngine::Vector3,
@@ -78,7 +78,7 @@ impl crate::UnityEngine::PhysicsScene {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn BoxCast_Il2CppArray_Quaternion_f32_i32_QueryTriggerInteraction2(
+    pub fn BoxCast_Gc_Quaternion_f32_i32_QueryTriggerInteraction2(
         &mut self,
         center: crate::UnityEngine::Vector3,
         halfExtents: crate::UnityEngine::Vector3,
@@ -134,7 +134,7 @@ impl crate::UnityEngine::PhysicsScene {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CapsuleCast_Il2CppArray1(
+    pub fn CapsuleCast_Gc1(
         &mut self,
         point1: crate::UnityEngine::Vector3,
         point2: crate::UnityEngine::Vector3,
@@ -163,7 +163,7 @@ impl crate::UnityEngine::PhysicsScene {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -616,7 +616,9 @@ impl crate::UnityEngine::PhysicsScene {
         center: crate::UnityEngine::Vector3,
         halfExtents: crate::UnityEngine::Vector3,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         orientation: crate::UnityEngine::Quaternion,
         mask: i32,
@@ -642,7 +644,9 @@ impl crate::UnityEngine::PhysicsScene {
         center: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         halfExtents: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         orientation: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
         mask: i32,
@@ -668,7 +672,9 @@ impl crate::UnityEngine::PhysicsScene {
         center: crate::UnityEngine::Vector3,
         halfExtents: crate::UnityEngine::Vector3,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         orientation: crate::UnityEngine::Quaternion,
         layerMask: i32,
@@ -688,12 +694,14 @@ impl crate::UnityEngine::PhysicsScene {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn OverlapBox_Vector3_Vector3_Il2CppArray1(
+    pub fn OverlapBox_Vector3_Vector3_Gc1(
         &mut self,
         center: crate::UnityEngine::Vector3,
         halfExtents: crate::UnityEngine::Vector3,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -709,7 +717,9 @@ impl crate::UnityEngine::PhysicsScene {
         point1: crate::UnityEngine::Vector3,
         radius: f32,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
@@ -727,7 +737,9 @@ impl crate::UnityEngine::PhysicsScene {
         point1: crate::UnityEngine::Vector3,
         radius: f32,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
@@ -753,7 +765,9 @@ impl crate::UnityEngine::PhysicsScene {
         point1: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         radius: f32,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
@@ -778,7 +792,9 @@ impl crate::UnityEngine::PhysicsScene {
         position: crate::UnityEngine::Vector3,
         radius: f32,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
@@ -795,7 +811,9 @@ impl crate::UnityEngine::PhysicsScene {
         position: crate::UnityEngine::Vector3,
         radius: f32,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
@@ -819,7 +837,9 @@ impl crate::UnityEngine::PhysicsScene {
         position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         radius: f32,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
@@ -1018,7 +1038,7 @@ impl crate::UnityEngine::PhysicsScene {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Raycast_Il2CppArray_f32_i32_QueryTriggerInteraction2(
+    pub fn Raycast_Gc_f32_i32_QueryTriggerInteraction2(
         &mut self,
         origin: crate::UnityEngine::Vector3,
         direction: crate::UnityEngine::Vector3,
@@ -1104,7 +1124,7 @@ impl crate::UnityEngine::PhysicsScene {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SphereCast_Il2CppArray1(
+    pub fn SphereCast_Gc1(
         &mut self,
         origin: crate::UnityEngine::Vector3,
         radius: f32,
@@ -1159,18 +1179,18 @@ impl crate::UnityEngine::PhysicsScene {
     }
 }
 #[cfg(feature = "UnityEngine+PhysicsScene")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicsScene>>
 for crate::UnityEngine::PhysicsScene {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicsScene> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+PhysicsScene")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicsScene>>
 for crate::UnityEngine::PhysicsScene {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicsScene> {
         todo!()
     }
 }

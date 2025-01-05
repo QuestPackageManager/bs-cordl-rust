@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RenderTextureFromPostEffect {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _targetTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "RenderTextureFromPostEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::RenderTextureFromPostEffect {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

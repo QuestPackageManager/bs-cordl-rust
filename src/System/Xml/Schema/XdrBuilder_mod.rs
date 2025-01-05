@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XdrBuilder {
-    __cordl_parent: crate::System::Xml::Schema::SchemaBuilder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaBuilder>,
     pub _SchemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
     pub _TargetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
@@ -54,7 +54,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XdrBuilder")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder {
-    type Target = crate::System::Xml::Schema::SchemaBuilder;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaBuilder>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -379,7 +379,9 @@ impl crate::System::Xml::Schema::XdrBuilder {
     pub fn ProcessMarkup(
         &mut self,
         markup: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlNode>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -409,7 +411,7 @@ impl crate::System::Xml::Schema::XdrBuilder {
             .invoke("PushGroupInfo", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_Il2CppString1(
+    pub fn SendValidationEvent_Gc1(
         &mut self,
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -420,22 +422,7 @@ impl crate::System::Xml::Schema::XdrBuilder {
             .invoke("SendValidationEvent", (code))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_Il2CppString_Il2CppArray_XmlSeverityType0(
-        &mut self,
-        code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-        severity: crate::System::Xml::Schema::XmlSeverityType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendValidationEvent", (code, args, severity))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SendValidationEvent_Il2CppString_Il2CppString2(
+    pub fn SendValidationEvent_Gc2(
         &mut self,
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -447,7 +434,24 @@ impl crate::System::Xml::Schema::XdrBuilder {
             .invoke("SendValidationEvent", (code, msg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_XmlSchemaException_XmlSeverityType3(
+    pub fn SendValidationEvent_Gc_XmlSeverityType0(
+        &mut self,
+        code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+        severity: crate::System::Xml::Schema::XmlSeverityType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendValidationEvent", (code, args, severity))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendValidationEvent_XmlSeverityType3(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
         severity: crate::System::Xml::Schema::XmlSeverityType,
@@ -932,7 +936,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XdrBuilde
 #[repr(C)]
 #[derive(Debug)]
 pub struct XdrBuilder_AttributeContent {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _AttDef: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
     pub _Name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub _Prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -953,7 +957,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+AttributeContent")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_AttributeContent {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -998,7 +1002,7 @@ for crate::System::Xml::Schema::XdrBuilder_AttributeContent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XdrBuilder_DeclBaseInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _Name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub _Prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _TypeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -1023,7 +1027,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+DeclBaseInfo")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1078,7 +1082,7 @@ for crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XdrBuilder_ElementContent {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _ElementDecl: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::SchemaElementDecl,
     >,
@@ -1103,7 +1107,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+ElementContent")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_ElementContent {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1148,7 +1152,7 @@ for crate::System::Xml::Schema::XdrBuilder_ElementContent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XdrBuilder_GroupContent {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _MinVal: u32,
     pub _MaxVal: u32,
     pub _HasMaxAttr: bool,
@@ -1162,7 +1166,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+GroupContent")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_GroupContent {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1175,7 +1179,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_GroupContent 
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+GroupContent")]
 impl crate::System::Xml::Schema::XdrBuilder_GroupContent {
-    pub fn Copy_XdrBuilder_GroupContent0(
+    pub fn Copy_Gc0(
         from: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XdrBuilder_GroupContent,
         >,
@@ -1187,7 +1191,7 @@ impl crate::System::Xml::Schema::XdrBuilder_GroupContent {
             .invoke("Copy", (from, to))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy_XdrBuilder_GroupContent1(
+    pub fn Copy_Gc1(
         other: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XdrBuilder_GroupContent,
         >,
@@ -1231,7 +1235,7 @@ for crate::System::Xml::Schema::XdrBuilder_GroupContent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XdrBuilder_XdrAttributeEntry {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _Attribute: crate::System::Xml::Schema::SchemaNames_Token,
     pub _SchemaFlags: i32,
     pub _Datatype: quest_hook::libil2cpp::Gc<
@@ -1249,7 +1253,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrAttributeEntry")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1262,7 +1266,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_XdrAttributeE
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrAttributeEntry")]
 impl crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry {
-    pub fn New_XdrBuilder_XdrBuildFunction0(
+    pub fn New_Gc0(
         a: crate::System::Xml::Schema::SchemaNames_Token,
         ttype: crate::System::Xml::XmlTokenizedType,
         build: quest_hook::libil2cpp::Gc<
@@ -1275,7 +1279,7 @@ impl crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry {
             .invoke_void(".ctor", (a, ttype, build))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_XdrBuilder_XdrBuildFunction1(
+    pub fn New_i32_Gc1(
         a: crate::System::Xml::Schema::SchemaNames_Token,
         ttype: crate::System::Xml::XmlTokenizedType,
         schemaFlags: i32,
@@ -1289,7 +1293,7 @@ impl crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry {
             .invoke_void(".ctor", (a, ttype, schemaFlags, build))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_XdrBuilder_XdrBuildFunction0(
+    pub fn _ctor_Gc0(
         &mut self,
         a: crate::System::Xml::Schema::SchemaNames_Token,
         ttype: crate::System::Xml::XmlTokenizedType,
@@ -1304,7 +1308,7 @@ impl crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry {
             .invoke(".ctor", (a, ttype, build))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_XdrBuilder_XdrBuildFunction1(
+    pub fn _ctor_i32_Gc1(
         &mut self,
         a: crate::System::Xml::Schema::SchemaNames_Token,
         ttype: crate::System::Xml::XmlTokenizedType,
@@ -1335,7 +1339,7 @@ for crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XdrBuilder_XdrBeginChildFunction {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBeginChildFunction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1345,7 +1349,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBeginChildFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1407,7 +1411,7 @@ for crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XdrBuilder_XdrBuildFunction {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBuildFunction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1416,7 +1420,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBuildFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1479,7 +1483,7 @@ for crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XdrBuilder_XdrEndChildFunction {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEndChildFunction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1489,7 +1493,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEndChildFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1550,12 +1554,14 @@ for crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XdrBuilder_XdrEntry {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _Name: crate::System::Xml::Schema::SchemaNames_Token,
     pub _NextStates: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _Attributes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry,
+            >,
         >,
     >,
     pub _InitFunc: quest_hook::libil2cpp::Gc<
@@ -1576,7 +1582,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEntry")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_XdrEntry {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1594,7 +1600,9 @@ impl crate::System::Xml::Schema::XdrBuilder_XdrEntry {
         states: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         attributes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry,
+                >,
             >,
         >,
         init: quest_hook::libil2cpp::Gc<
@@ -1620,7 +1628,9 @@ impl crate::System::Xml::Schema::XdrBuilder_XdrEntry {
         states: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         attributes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry,
+                >,
             >,
         >,
         init: quest_hook::libil2cpp::Gc<
@@ -1656,7 +1666,7 @@ for crate::System::Xml::Schema::XdrBuilder_XdrEntry {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XdrBuilder_XdrInitFunction {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrInitFunction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1665,7 +1675,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrInitFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_XdrInitFunction {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

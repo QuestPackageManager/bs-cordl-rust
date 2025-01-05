@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTlsStream {
-    __cordl_parent: crate::Mono::Net::Security::MobileAuthenticatedStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileAuthenticatedStream,
+    >,
 }
 #[cfg(feature = "Mono+Unity+UnityTlsStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTlsStream")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTlsStream {
-    type Target = crate::Mono::Net::Security::MobileAuthenticatedStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileAuthenticatedStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MarshalByValueComponent {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _site: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ISite>,
     pub _events: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::EventHandlerList,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
 impl std::ops::Deref for crate::System::ComponentModel::MarshalByValueComponent {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -128,44 +128,50 @@ for crate::System::ComponentModel::MarshalByValueComponent {
     }
 }
 #[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
-impl AsRef<crate::System::ComponentModel::IComponent>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>>
 for crate::System::ComponentModel::MarshalByValueComponent {
-    fn as_ref(&self) -> &crate::System::ComponentModel::IComponent {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
-impl AsMut<crate::System::ComponentModel::IComponent>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>>
 for crate::System::ComponentModel::MarshalByValueComponent {
-    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::IComponent {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::ComponentModel::MarshalByValueComponent {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::ComponentModel::MarshalByValueComponent {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
-impl AsRef<crate::System::IServiceProvider>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IServiceProvider>>
 for crate::System::ComponentModel::MarshalByValueComponent {
-    fn as_ref(&self) -> &crate::System::IServiceProvider {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IServiceProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
-impl AsMut<crate::System::IServiceProvider>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IServiceProvider>>
 for crate::System::ComponentModel::MarshalByValueComponent {
-    fn as_mut(&mut self) -> &mut crate::System::IServiceProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::IServiceProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Arch {
-    __cordl_parent: crate::UnityEngine::ProBuilder::Shapes::Shape,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Shapes::Shape,
+    >,
     pub m_Thickness: f32,
     pub m_NumberOfSides: i32,
     pub m_ArchDegrees: f32,
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Shapes+Arch")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Shapes::Arch {
-    type Target = crate::UnityEngine::ProBuilder::Shapes::Shape;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Shapes::Shape,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

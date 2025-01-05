@@ -5,14 +5,10 @@ pub struct DictionaryWrapper_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _dictionary: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
-    pub _genericDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IDictionary_2<TKey, TValue>,
-    >,
-    pub _readOnlyDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue>,
-    >,
+    pub _genericDictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub _readOnlyDictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -29,7 +25,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -165,9 +161,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-            >,
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
         >,
     >
     where
@@ -180,13 +174,11 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-            >,
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_IDictionary0(
+    pub fn New_Gc0(
         dictionary: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -201,10 +193,8 @@ impl<
             .invoke_void(".ctor", (dictionary))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IDictionary_2_1(
-        dictionary: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<TKey, TValue>,
-        >,
+    pub fn New_Gc1(
+        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -218,10 +208,8 @@ impl<
             .invoke_void(".ctor", (dictionary))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IReadOnlyDictionary_2_2(
-        dictionary: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue>,
-        >,
+    pub fn New_Gc2(
+        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -235,7 +223,7 @@ impl<
             .invoke_void(".ctor", (dictionary))?;
         Ok(__cordl_object.into())
     }
-    pub fn Remove_Il2CppObject2(
+    pub fn Remove_Gc2(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -516,7 +504,7 @@ impl<
         let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (key, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IDictionary0(
+    pub fn _ctor_Gc0(
         &mut self,
         dictionary: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -533,11 +521,9 @@ impl<
             .invoke(".ctor", (dictionary))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IDictionary_2_1(
+    pub fn _ctor_Gc1(
         &mut self,
-        dictionary: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<TKey, TValue>,
-        >,
+        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -552,11 +538,9 @@ impl<
             .invoke(".ctor", (dictionary))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IReadOnlyDictionary_2_2(
+    pub fn _ctor_Gc2(
         &mut self,
-        dictionary: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue>,
-        >,
+        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -586,11 +570,7 @@ impl<
     }
     pub fn get_GenericDictionary(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<TKey, TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey, TValue>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -600,9 +580,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<TKey, TValue>,
-        > = __cordl_object.invoke("get_GenericDictionary", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = __cordl_object
+            .invoke("get_GenericDictionary", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -633,11 +612,7 @@ impl<
     }
     pub fn get_Keys(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<TKey>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -647,9 +622,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<TKey>,
-        > = __cordl_object.invoke("get_Keys", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey> = __cordl_object
+            .invoke("get_Keys", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_UnderlyingDictionary(
@@ -673,11 +647,7 @@ impl<
     }
     pub fn get_Values(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -687,9 +657,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<TValue>,
-        > = __cordl_object.invoke("get_Values", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = __cordl_object
+            .invoke("get_Values", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_Item(
@@ -728,9 +697,9 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Newtonsoft::Json::Utilities::IWrappedDictionary>
+> AsRef<quest_hook::libil2cpp::Gc<TKey, TValue>>
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
-    fn as_ref(&self) -> &crate::Newtonsoft::Json::Utilities::IWrappedDictionary {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TKey, TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -738,9 +707,9 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Newtonsoft::Json::Utilities::IWrappedDictionary>
+> AsMut<quest_hook::libil2cpp::Gc<TKey, TValue>>
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::Utilities::IWrappedDictionary {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TKey, TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -749,13 +718,43 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::System::Collections::Generic::ICollection_1<
+    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::IWrappedDictionary>,
+> for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::IWrappedDictionary,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::IWrappedDictionary>,
+> for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::IWrappedDictionary,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >,
 > for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::ICollection_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -766,13 +765,13 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::System::Collections::Generic::ICollection_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >,
 > for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -782,38 +781,14 @@ impl<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IDictionary_2<TKey, TValue>>
-for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IDictionary_2<TKey, TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IDictionary_2<TKey, TValue>>
-for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IDictionary_2<TKey, TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >,
 > for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -824,13 +799,13 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >,
 > for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -840,9 +815,11 @@ impl<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::ICollection>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
-    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -850,9 +827,11 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::ICollection>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -860,9 +839,11 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IDictionary>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>>
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
-    fn as_ref(&self) -> &crate::System::Collections::IDictionary {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -870,9 +851,11 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IDictionary>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>>
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionary {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -880,9 +863,11 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IEnumerable>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -890,9 +875,11 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IEnumerable>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -906,11 +893,9 @@ pub struct DictionaryWrapper_2_DictionaryEnumerator_2<
     TEnumeratorValue: quest_hook::libil2cpp::Type,
 > {
     pub _e: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerator_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                TEnumeratorKey,
-                TEnumeratorValue,
-            >,
+        crate::System::Collections::Generic::KeyValuePair_2<
+            TEnumeratorKey,
+            TEnumeratorValue,
         >,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
@@ -998,11 +983,9 @@ impl<
     pub fn _ctor(
         &mut self,
         e: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    TEnumeratorKey,
-                    TEnumeratorValue,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                TEnumeratorKey,
+                TEnumeratorValue,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -1110,14 +1093,16 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
     TEnumeratorKey: quest_hook::libil2cpp::Type,
     TEnumeratorValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IDictionaryEnumerator>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator_2<
     TKey,
     TValue,
     TEnumeratorKey,
     TEnumeratorValue,
 > {
-    fn as_ref(&self) -> &crate::System::Collections::IDictionaryEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator> {
         todo!()
     }
 }
@@ -1127,14 +1112,18 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
     TEnumeratorKey: quest_hook::libil2cpp::Type,
     TEnumeratorValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IDictionaryEnumerator>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator_2<
     TKey,
     TValue,
     TEnumeratorKey,
     TEnumeratorValue,
 > {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionaryEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionaryEnumerator,
+    > {
         todo!()
     }
 }
@@ -1144,14 +1133,16 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
     TEnumeratorKey: quest_hook::libil2cpp::Type,
     TEnumeratorValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IEnumerator>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator_2<
     TKey,
     TValue,
     TEnumeratorKey,
     TEnumeratorValue,
 > {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         todo!()
     }
 }
@@ -1161,14 +1152,16 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
     TEnumeratorKey: quest_hook::libil2cpp::Type,
     TEnumeratorValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IEnumerator>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator_2<
     TKey,
     TValue,
     TEnumeratorKey,
     TEnumeratorValue,
 > {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         todo!()
     }
 }

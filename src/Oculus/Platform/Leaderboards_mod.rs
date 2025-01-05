@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Leaderboards {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Oculus+Platform+Leaderboards")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Leaderboards")]
 impl std::ops::Deref for crate::Oculus::Platform::Leaderboards {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,15 +28,11 @@ impl crate::Oculus::Platform::Leaderboards {
         leaderboardName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardList>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardList>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Get", (leaderboardName))?;
         Ok(__cordl_ret.into())
@@ -48,14 +44,14 @@ impl crate::Oculus::Platform::Leaderboards {
         startAt: crate::Oculus::Platform::LeaderboardStartAt,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetEntries", (leaderboardName, limit, filter, startAt))?;
@@ -67,14 +63,14 @@ impl crate::Oculus::Platform::Leaderboards {
         afterRank: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetEntriesAfterRank", (leaderboardName, limit, afterRank))?;
@@ -87,14 +83,14 @@ impl crate::Oculus::Platform::Leaderboards {
         userIDs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetEntriesByIds", (leaderboardName, limit, startAt, userIDs))?;
@@ -106,14 +102,14 @@ impl crate::Oculus::Platform::Leaderboards {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNextEntries", (list))?;
@@ -123,15 +119,11 @@ impl crate::Oculus::Platform::Leaderboards {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardList>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardList>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNextLeaderboardListPage", (list))?;
         Ok(__cordl_ret.into())
@@ -142,14 +134,14 @@ impl crate::Oculus::Platform::Leaderboards {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LeaderboardEntryList,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetPreviousEntries", (list))?;
@@ -160,12 +152,8 @@ impl crate::Oculus::Platform::Leaderboards {
         score: i64,
         extraData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         forceUpdate: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request_1<bool>>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<bool>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("WriteEntry", (leaderboardName, score, extraData, forceUpdate))?;
         Ok(__cordl_ret.into())
     }
@@ -175,12 +163,8 @@ impl crate::Oculus::Platform::Leaderboards {
         supplementaryMetric: i64,
         extraData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         forceUpdate: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request_1<bool>>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<bool>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "WriteEntryWithSupplementaryMetric",
                 (leaderboardName, score, supplementaryMetric, extraData, forceUpdate),

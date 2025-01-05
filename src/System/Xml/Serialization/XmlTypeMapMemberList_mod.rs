@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTypeMapMemberList {
-    __cordl_parent: crate::System::Xml::Serialization::XmlTypeMapMemberElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapMemberElement,
+    >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberList")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlTypeMapMemberList {
-    type Target = crate::System::Xml::Serialization::XmlTypeMapMemberElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapMemberElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

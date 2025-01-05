@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JSONString {
-    __cordl_parent: crate::OVRSimpleJSON::JSONNode,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     pub m_Data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "OVRSimpleJSON+JSONString")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSimpleJSON+JSONString")]
 impl std::ops::Deref for crate::OVRSimpleJSON::JSONString {
-    type Target = crate::OVRSimpleJSON::JSONNode;
+    type Target = quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

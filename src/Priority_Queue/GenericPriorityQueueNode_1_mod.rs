@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericPriorityQueueNode_1<TPriority: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _Priority_k__BackingField: TPriority,
     pub _QueueIndex_k__BackingField: i32,
     pub _InsertionIndex_k__BackingField: i64,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Priority_Queue+GenericPriorityQueueNode_1")]
 impl<TPriority: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Priority_Queue::GenericPriorityQueueNode_1<TPriority> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -29,18 +29,14 @@ impl crate::GlobalNamespace::IQuickPlaySetupModel {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::QuickPlaySetupData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::QuickPlaySetupData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
         > = __cordl_object.invoke("GetQuickPlaySetupAsync", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }

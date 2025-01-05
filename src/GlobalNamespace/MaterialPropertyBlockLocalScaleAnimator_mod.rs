@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockLocalScaleAnimator {
-    __cordl_parent: crate::GlobalNamespace::MaterialPropertyBlockAnimator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockAnimator,
+    >,
     pub _targetTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "MaterialPropertyBlockLocalScaleAnimator")]
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MaterialPropertyBlockLocalScaleAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyBlockLocalScaleAnimator {
-    type Target = crate::GlobalNamespace::MaterialPropertyBlockAnimator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockAnimator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

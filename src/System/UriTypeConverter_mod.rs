@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UriTypeConverter {
-    __cordl_parent: crate::System::ComponentModel::TypeConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter,
+    >,
 }
 #[cfg(feature = "System+UriTypeConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+UriTypeConverter")]
 impl std::ops::Deref for crate::System::UriTypeConverter {
-    type Target = crate::System::ComponentModel::TypeConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

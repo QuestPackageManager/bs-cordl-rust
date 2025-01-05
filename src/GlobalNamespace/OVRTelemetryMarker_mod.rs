@@ -94,7 +94,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_OVRTelemetry_TelemetryClient_i32_i64_1(
+    pub fn _ctor_Gc_i32_i64_1(
         &mut self,
         client: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OVRTelemetry_TelemetryClient,
@@ -184,14 +184,16 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
     }
 }
 #[cfg(feature = "OVRTelemetryMarker")]
-impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::OVRTelemetryMarker {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::GlobalNamespace::OVRTelemetryMarker {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "OVRTelemetryMarker")]
-impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRTelemetryMarker {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::GlobalNamespace::OVRTelemetryMarker {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }

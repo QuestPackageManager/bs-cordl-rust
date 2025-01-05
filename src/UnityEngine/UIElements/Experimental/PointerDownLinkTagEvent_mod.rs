@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerDownLinkTagEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::PointerEventBase_1<
-        *mut crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent,
+        >,
     >,
     pub _linkID_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -21,8 +23,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent {
-    type Target = crate::UnityEngine::UIElements::PointerEventBase_1<
-        *mut crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

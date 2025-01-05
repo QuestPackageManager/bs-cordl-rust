@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BlocksBlade {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _elementMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _numberOfElements: i32,
@@ -15,9 +15,7 @@ pub struct BlocksBlade {
     pub _maxElementLength: f32,
     pub _color_k__BackingField: crate::UnityEngine::Color,
     pub _elements: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::BlocksBlade_Element,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BlocksBlade_Element>,
     >,
     pub _positions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
@@ -42,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BlocksBlade")]
 impl std::ops::Deref for crate::GlobalNamespace::BlocksBlade {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -153,7 +151,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BlocksBlade {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BlocksBlade_Element {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub idx: i32,
     pub velocity: f32,
 }
@@ -164,7 +162,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BlocksBlade+Element")]
 impl std::ops::Deref for crate::GlobalNamespace::BlocksBlade_Element {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

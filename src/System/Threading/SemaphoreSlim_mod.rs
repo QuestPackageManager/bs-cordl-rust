@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SemaphoreSlim {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_currentCount: i32,
     pub m_maxCount: i32,
     pub m_waitCount: i32,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+SemaphoreSlim")]
 impl std::ops::Deref for crate::System::Threading::SemaphoreSlim {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -188,15 +188,11 @@ impl crate::System::Threading::SemaphoreSlim {
         &mut self,
         millisecondsTimeout: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
             .invoke("WaitAsync", (millisecondsTimeout, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -223,15 +219,11 @@ impl crate::System::Threading::SemaphoreSlim {
         >,
         millisecondsTimeout: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
             .invoke(
                 "WaitUntilCountOrTimeoutAsync",
                 (asyncWaiter, millisecondsTimeout, cancellationToken),
@@ -311,14 +303,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::SemaphoreSl
     }
 }
 #[cfg(feature = "System+Threading+SemaphoreSlim")]
-impl AsRef<crate::System::IDisposable> for crate::System::Threading::SemaphoreSlim {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::Threading::SemaphoreSlim {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+SemaphoreSlim")]
-impl AsMut<crate::System::IDisposable> for crate::System::Threading::SemaphoreSlim {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::Threading::SemaphoreSlim {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -326,7 +320,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::Threading::SemaphoreSl
 #[repr(C)]
 #[derive(Debug)]
 pub struct SemaphoreSlim_TaskNode {
-    __cordl_parent: crate::System::Threading::Tasks::Task_1<bool>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
     pub Prev: quest_hook::libil2cpp::Gc<
         crate::System::Threading::SemaphoreSlim_TaskNode,
     >,
@@ -341,7 +335,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
 impl std::ops::Deref for crate::System::Threading::SemaphoreSlim_TaskNode {
-    type Target = crate::System::Threading::Tasks::Task_1<bool>;
+    type Target = quest_hook::libil2cpp::Gc<bool>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -404,16 +398,20 @@ for crate::System::Threading::SemaphoreSlim_TaskNode {
     }
 }
 #[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
-impl AsRef<crate::System::Threading::IThreadPoolWorkItem>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>>
 for crate::System::Threading::SemaphoreSlim_TaskNode {
-    fn as_ref(&self) -> &crate::System::Threading::IThreadPoolWorkItem {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
-impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>>
 for crate::System::Threading::SemaphoreSlim_TaskNode {
-    fn as_mut(&mut self) -> &mut crate::System::Threading::IThreadPoolWorkItem {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentSceneSetupData {
-    __cordl_parent: crate::GlobalNamespace::SceneSetupData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneSetupData>,
     pub hideBranding: bool,
     pub environmentInfo: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::EnvironmentInfoSO,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnvironmentSceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentSceneSetupData {
-    type Target = crate::GlobalNamespace::SceneSetupData;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneSetupData>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

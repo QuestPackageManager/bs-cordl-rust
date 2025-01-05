@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsAuthenticatedDataGenerator {
-    __cordl_parent: crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataGenerator {
-    type Target = crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +30,7 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataGenerator")]
 impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataGenerator {
-    pub fn Generate_CipherKeyGenerator0(
+    pub fn Generate_Gc0(
         &mut self,
         content: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsProcessable,
@@ -46,7 +50,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataGenerator {
         > = __cordl_object.invoke("Generate", (content, macOid, keyGen))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_CmsProcessable_Il2CppString1(
+    pub fn Generate_Gc_Gc1(
         &mut self,
         content: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsProcessable,
@@ -70,7 +74,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SecureRandom1(
+    pub fn New_Gc1(
         _cordl_rand: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
@@ -91,7 +95,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataGenerator {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SecureRandom1(
+    pub fn _ctor_Gc1(
         &mut self,
         _cordl_rand: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,

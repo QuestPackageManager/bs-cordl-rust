@@ -2,20 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerResultsData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _gameId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _localPlayerResultData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerPlayerResultsData,
     >,
     pub _otherPlayersData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerPlayerResultsData>,
     >,
     pub _allPlayersSortedData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerPlayerResultsData>,
     >,
 }
 #[cfg(feature = "MultiplayerResultsData")]
@@ -25,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerResultsData")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerResultsData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,9 +40,9 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
         otherPlayersResultData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
         badgesProvider: quest_hook::libil2cpp::Gc<
@@ -78,9 +74,9 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
         otherPlayersResultData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
         badgesProvider: quest_hook::libil2cpp::Gc<
@@ -110,8 +106,8 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         >,
     > {
@@ -119,8 +115,8 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         > = __cordl_object.invoke("get_allPlayersSortedData", ())?;
         Ok(__cordl_ret.into())
@@ -155,8 +151,8 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         >,
     > {
@@ -164,8 +160,8 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         > = __cordl_object.invoke("get_otherPlayersData", ())?;
         Ok(__cordl_ret.into())

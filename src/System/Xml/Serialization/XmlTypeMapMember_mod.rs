@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTypeMapMember {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _index: i32,
     pub _globalIndex: i32,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlTypeMapMember")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlTypeMapMember {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,7 +61,19 @@ impl crate::System::Xml::Serialization::XmlTypeMapMember {
         let __cordl_ret: bool = __cordl_object.invoke("GetValueSpecified", (ob))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetValue_Il2CppObject1(
+    pub fn GetValue_Gc0(
+        ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetValue", (ob, name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetValue_Gc1(
         &mut self,
         ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -73,18 +85,6 @@ impl crate::System::Xml::Serialization::XmlTypeMapMember {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetValue", (ob))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetValue_Il2CppString0(
-        ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetValue", (ob, name))?;
         Ok(__cordl_ret.into())
     }
     pub fn InitMember(
@@ -127,7 +127,16 @@ impl crate::System::Xml::Serialization::XmlTypeMapMember {
             .invoke("SetValueSpecified", (ob, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetValue_Il2CppObject0(
+    pub fn SetValue_Gc1(
+        ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetValue", (ob, name, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetValue_Gc_Gc0(
         &mut self,
         ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -137,15 +146,6 @@ impl crate::System::Xml::Serialization::XmlTypeMapMember {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetValue", (ob, value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetValue_Il2CppString_Il2CppObject1(
-        ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetValue", (ob, name, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

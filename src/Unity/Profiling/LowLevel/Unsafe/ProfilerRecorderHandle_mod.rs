@@ -25,9 +25,7 @@ for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
 impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
     pub fn GetAvailable(
         outRecorderHandleList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
-            >,
+            crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeactivateMenuControllersOnFocusCaptureOrTrackingLost {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _vrControllers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::VRController>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+        >,
     >,
     pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IVRPlatformHelper,
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "DeactivateMenuControllersOnFocusCaptureOrTrackingLost")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLost {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -130,16 +132,20 @@ for crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLos
     }
 }
 #[cfg(feature = "DeactivateMenuControllersOnFocusCaptureOrTrackingLost")]
-impl AsRef<crate::GlobalNamespace::IVerboseLogger>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>>
 for crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLost {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IVerboseLogger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DeactivateMenuControllersOnFocusCaptureOrTrackingLost")]
-impl AsMut<crate::GlobalNamespace::IVerboseLogger>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>>
 for crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLost {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVerboseLogger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger> {
         unsafe { std::mem::transmute(self) }
     }
 }

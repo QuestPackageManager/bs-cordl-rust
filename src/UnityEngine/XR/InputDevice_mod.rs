@@ -22,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::XR::Inpu
 }
 #[cfg(feature = "UnityEngine+XR+InputDevice")]
 impl crate::UnityEngine::XR::InputDevice {
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -122,20 +122,18 @@ impl crate::UnityEngine::XR::InputDevice {
     }
 }
 #[cfg(feature = "UnityEngine+XR+InputDevice")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::InputDevice>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::InputDevice>>
 for crate::UnityEngine::XR::InputDevice {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::InputDevice> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::InputDevice> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+XR+InputDevice")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::InputDevice>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::InputDevice>>
 for crate::UnityEngine::XR::InputDevice {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::InputDevice> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::InputDevice> {
         todo!()
     }
 }

@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CancellationTokenSource_Linked2CancellationTokenSource {
-    __cordl_parent: crate::System::Threading::CancellationTokenSource,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
     pub _reg1: crate::System::Threading::CancellationTokenRegistration,
     pub _reg2: crate::System::Threading::CancellationTokenRegistration,
 }
@@ -21,7 +23,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::CancellationTokenSource_Linked2CancellationTokenSource {
-    type Target = crate::System::Threading::CancellationTokenSource;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

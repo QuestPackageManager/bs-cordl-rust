@@ -4,25 +4,23 @@
 pub struct OVRGLTFScene {
     pub root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub nodes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub animationNodes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::GlobalNamespace::OVRGLTFInputNode,
-            *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
-        >,
+        crate::GlobalNamespace::OVRGLTFInputNode,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAnimatinonNode>,
     >,
     pub animationNodeLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
+        i32,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAnimatinonNode>,
             >,
         >,
     >,
     pub morphTargetHandlers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
         >,
     >,
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamedPermissionSet {
-    __cordl_parent: crate::System::Security::PermissionSet,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Security::PermissionSet>,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+NamedPermissionSet")]
 impl std::ops::Deref for crate::System::Security::NamedPermissionSet {
-    type Target = crate::System::Security::PermissionSet;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Security::PermissionSet>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +50,7 @@ impl crate::System::Security::NamedPermissionSet {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString2(
+    pub fn New_Gc2(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -59,7 +59,7 @@ impl crate::System::Security::NamedPermissionSet {
             .invoke_void(".ctor", (name))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_PermissionState1(
+    pub fn New_Gc_PermissionState1(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         state: crate::System::Security::Permissions::PermissionState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -92,7 +92,7 @@ impl crate::System::Security::NamedPermissionSet {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString2(
+    pub fn _ctor_Gc2(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -103,7 +103,7 @@ impl crate::System::Security::NamedPermissionSet {
             .invoke(".ctor", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_PermissionState1(
+    pub fn _ctor_Gc_PermissionState1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         state: crate::System::Security::Permissions::PermissionState,

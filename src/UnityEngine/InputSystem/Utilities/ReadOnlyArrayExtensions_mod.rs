@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReadOnlyArrayExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArrayExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArrayExtensions")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,9 +53,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
     }
     pub fn HaveEqualReferences<TValue>(
         array1: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>,
-        array2: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<TValue>,
-        >,
+        array2: quest_hook::libil2cpp::Gc<TValue>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<bool>
     where

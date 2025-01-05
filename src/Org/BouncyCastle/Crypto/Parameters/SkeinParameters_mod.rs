@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinParameters {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub parameters: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -122,7 +122,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IDictionary1(
+    pub fn New_Gc1(
         parameters: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -141,7 +141,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IDictionary1(
+    pub fn _ctor_Gc1(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -164,16 +164,26 @@ for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::ICipherParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ICipherParameters {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::ICipherParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ICipherParameters {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -181,7 +191,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinParameters_Builder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub parameters: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
@@ -193,7 +203,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -229,7 +239,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IDictionary1(
+    pub fn New_Gc1(
         paramsMap: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -238,7 +248,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
             .invoke_void(".ctor", (paramsMap))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SkeinParameters2(
+    pub fn New_Gc2(
         parameters: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters,
         >,
@@ -314,7 +324,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
         > = __cordl_object.invoke("SetNonce", (nonce))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPersonalisation_DateTime_Il2CppString_Il2CppString1(
+    pub fn SetPersonalisation_DateTime_Gc_Gc1(
         &mut self,
         date: crate::System::DateTime,
         emailAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -333,7 +343,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
             .invoke("SetPersonalisation", (date, emailAddress, distinguisher))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPersonalisation_Il2CppArray0(
+    pub fn SetPersonalisation_Gc0(
         &mut self,
         personalisation: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -377,7 +387,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IDictionary1(
+    pub fn _ctor_Gc1(
         &mut self,
         paramsMap: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -388,7 +398,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
             .invoke(".ctor", (paramsMap))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SkeinParameters2(
+    pub fn _ctor_Gc2(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters,

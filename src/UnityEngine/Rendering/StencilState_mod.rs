@@ -33,7 +33,7 @@ for crate::UnityEngine::Rendering::StencilState {
 }
 #[cfg(feature = "UnityEngine+Rendering+StencilState")]
 impl crate::UnityEngine::Rendering::StencilState {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -186,20 +186,20 @@ impl crate::UnityEngine::Rendering::StencilState {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+StencilState")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::StencilState>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::StencilState>>
 for crate::UnityEngine::Rendering::StencilState {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::StencilState> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::StencilState> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+StencilState")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::StencilState>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::StencilState>>
 for crate::UnityEngine::Rendering::StencilState {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Rendering::StencilState> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::StencilState> {
         todo!()
     }
 }

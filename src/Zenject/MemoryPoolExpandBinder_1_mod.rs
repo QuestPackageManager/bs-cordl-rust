@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoryPoolExpandBinder_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TContract>,
     pub _MemoryPoolBindInfo_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::Zenject::MemoryPoolBindInfo,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+MemoryPoolExpandBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::MemoryPoolExpandBinder_1<TContract> {
-    type Target = crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>;
+    type Target = quest_hook::libil2cpp::Gc<TContract>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,11 +35,7 @@ impl<
     pub fn ExpandByDoubling(
         &mut self,
         showExpandWarning: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -47,19 +43,14 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
-        > = __cordl_object.invoke("ExpandByDoubling", (showExpandWarning))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = __cordl_object
+            .invoke("ExpandByDoubling", (showExpandWarning))?;
         Ok(__cordl_ret.into())
     }
     pub fn ExpandByOneAtATime(
         &mut self,
         showExpandWarning: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -67,9 +58,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
-        > = __cordl_object.invoke("ExpandByOneAtATime", (showExpandWarning))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = __cordl_object
+            .invoke("ExpandByOneAtATime", (showExpandWarning))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GF2Polynomial {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub exponents: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Field+GF2Polynomial")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+Field+GF2Polynomial")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::Field::GF2Polynomial {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -94,16 +94,22 @@ for crate::Org::BouncyCastle::Math::Field::GF2Polynomial {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Field+GF2Polynomial")]
-impl AsRef<crate::Org::BouncyCastle::Math::Field::IPolynomial>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::Field::IPolynomial>>
 for crate::Org::BouncyCastle::Math::Field::GF2Polynomial {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::Field::IPolynomial {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::Field::IPolynomial> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Field+GF2Polynomial")]
-impl AsMut<crate::Org::BouncyCastle::Math::Field::IPolynomial>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::Field::IPolynomial>>
 for crate::Org::BouncyCastle::Math::Field::GF2Polynomial {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Math::Field::IPolynomial {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::Field::IPolynomial,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

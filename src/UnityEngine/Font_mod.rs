@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Font {
-    __cordl_parent: crate::UnityEngine::Object,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     pub m_FontTextureRebuildCallback: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Font_FontTextureRebuildCallback,
     >,
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Font")]
 impl std::ops::Deref for crate::UnityEngine::Font {
-    type Target = crate::UnityEngine::Object;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,19 +28,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Font {
 impl crate::UnityEngine::Font {
     #[cfg(feature = "UnityEngine+Font+FontTextureRebuildCallback")]
     pub type FontTextureRebuildCallback = crate::UnityEngine::Font_FontTextureRebuildCallback;
-    pub fn CreateDynamicFontFromOSFont_Il2CppArray1(
-        fontnames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateDynamicFontFromOSFont", (fontnames, _cordl_size))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreateDynamicFontFromOSFont_Il2CppString0(
+    pub fn CreateDynamicFontFromOSFont_Gc_i32_0(
         fontname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -48,6 +36,20 @@ impl crate::UnityEngine::Font {
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateDynamicFontFromOSFont", (fontname, _cordl_size))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDynamicFontFromOSFont_Gc_i32_1(
+        fontnames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDynamicFontFromOSFont", (fontnames, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetCharacterInfo__cordl_char_ByRefMut2(
@@ -104,22 +106,30 @@ impl crate::UnityEngine::Font {
     }
     pub fn GetOSInstalledFontNames() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetOSInstalledFontNames", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetPathsToOSFonts() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetPathsToOSFonts", ())?;
         Ok(__cordl_ret.into())
@@ -144,7 +154,9 @@ impl crate::UnityEngine::Font {
     pub fn Internal_CreateDynamicFont(
         _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
         _names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -182,9 +194,20 @@ impl crate::UnityEngine::Font {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_2(
+    pub fn New_Gc1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_i32_2(
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -194,16 +217,7 @@ impl crate::UnityEngine::Font {
             .invoke_void(".ctor", (names, _cordl_size))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn RequestCharactersInTexture_Il2CppString2(
+    pub fn RequestCharactersInTexture_Gc2(
         &mut self,
         characters: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -249,21 +263,7 @@ impl crate::UnityEngine::Font {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_2(
-        &mut self,
-        names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (names, _cordl_size))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -272,6 +272,22 @@ impl crate::UnityEngine::Font {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_i32_2(
+        &mut self,
+        names: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (names, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
     pub fn add_m_FontTextureRebuildCallback(
@@ -289,7 +305,7 @@ impl crate::UnityEngine::Font {
     }
     pub fn add_textureRebuilt(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Font>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -329,14 +345,18 @@ impl crate::UnityEngine::Font {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("get_fontNames", ())?;
         Ok(__cordl_ret.into())
     }
@@ -394,7 +414,7 @@ impl crate::UnityEngine::Font {
     }
     pub fn remove_textureRebuilt(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::Font>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -417,7 +437,9 @@ impl crate::UnityEngine::Font {
     pub fn set_fontNames(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -465,7 +487,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Font {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Font_FontTextureRebuildCallback {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "UnityEngine+Font+FontTextureRebuildCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -474,7 +496,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Font+FontTextureRebuildCallback")]
 impl std::ops::Deref for crate::UnityEngine::Font_FontTextureRebuildCallback {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

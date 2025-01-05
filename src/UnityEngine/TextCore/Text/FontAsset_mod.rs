@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FontAsset {
-    __cordl_parent: crate::UnityEngine::TextCore::Text::TextAsset,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextAsset,
+    >,
     pub m_SourceFontFileGUID: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -17,30 +19,24 @@ pub struct FontAsset {
     pub m_FamilyNameHashCode: i32,
     pub m_StyleNameHashCode: i32,
     pub m_GlyphTable: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Glyph,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
     >,
     pub m_GlyphLookupDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            u32,
-            *mut crate::UnityEngine::TextCore::Glyph,
-        >,
+        u32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
     >,
     pub m_CharacterTable: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Text::Character,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
     >,
     pub m_CharacterLookupDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            u32,
-            *mut crate::UnityEngine::TextCore::Text::Character,
-        >,
+        u32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
     >,
     pub m_AtlasTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub m_AtlasTextures: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture2D>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        >,
     >,
     pub m_AtlasTextureIndex: i32,
     pub m_IsMultiAtlasTexturesEnabled: bool,
@@ -50,22 +46,16 @@ pub struct FontAsset {
     pub m_AtlasPadding: i32,
     pub m_AtlasRenderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
     pub m_UsedGlyphRects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::TextCore::GlyphRect,
-        >,
+        crate::UnityEngine::TextCore::GlyphRect,
     >,
     pub m_FreeGlyphRects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::TextCore::GlyphRect,
-        >,
+        crate::UnityEngine::TextCore::GlyphRect,
     >,
     pub m_FontFeatureTable: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TextCore::Text::FontFeatureTable,
     >,
     pub m_FallbackFontAssetTable: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Text::FontAsset,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
     >,
     pub m_FontWeightTable: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -80,41 +70,21 @@ pub struct FontAsset {
     pub m_TabMultiple: u8,
     pub IsFontAssetLookupTablesDirty: bool,
     pub m_GlyphsToRender: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Glyph,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
     >,
     pub m_GlyphsRendered: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Glyph,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
     >,
-    pub m_GlyphIndexList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<u32>,
-    >,
-    pub m_GlyphIndexListNewlyAdded: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<u32>,
-    >,
-    pub m_GlyphsToAdd: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<u32>,
-    >,
-    pub m_GlyphsToAddLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<u32>,
-    >,
+    pub m_GlyphIndexList: quest_hook::libil2cpp::Gc<u32>,
+    pub m_GlyphIndexListNewlyAdded: quest_hook::libil2cpp::Gc<u32>,
+    pub m_GlyphsToAdd: quest_hook::libil2cpp::Gc<u32>,
+    pub m_GlyphsToAddLookup: quest_hook::libil2cpp::Gc<u32>,
     pub m_CharactersToAdd: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Text::Character,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
     >,
-    pub m_CharactersToAddLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<u32>,
-    >,
-    pub s_MissingCharacterList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<u32>,
-    >,
-    pub m_MissingUnicodesFromFontFile: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<u32>,
-    >,
+    pub m_CharactersToAddLookup: quest_hook::libil2cpp::Gc<u32>,
+    pub s_MissingCharacterList: quest_hook::libil2cpp::Gc<u32>,
+    pub m_MissingUnicodesFromFontFile: quest_hook::libil2cpp::Gc<u32>,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+FontAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -123,7 +93,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+FontAsset")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::FontAsset {
-    type Target = crate::UnityEngine::TextCore::Text::TextAsset;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextAsset,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -232,11 +204,9 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
     }
     pub fn CopyListDataToArray<T>(
         &mut self,
-        srcList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        srcList: quest_hook::libil2cpp::Gc<T>,
         dstArray: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<T>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -278,7 +248,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateFontAsset_Font3(
+    pub fn CreateFontAsset_Gc3(
         font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
@@ -289,69 +259,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             .invoke("CreateFontAsset", (font))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateFontAsset_Font_i32_i32_GlyphRenderMode_i32_i32_AtlasPopulationMode__cordl_bool4(
-        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
-        samplingPointSize: i32,
-        atlasPadding: i32,
-        renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
-        atlasWidth: i32,
-        atlasHeight: i32,
-        atlasPopulationMode: crate::UnityEngine::TextCore::Text::AtlasPopulationMode,
-        enableMultiAtlasSupport: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::TextCore::Text::FontAsset,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CreateFontAsset",
-                (
-                    font,
-                    samplingPointSize,
-                    atlasPadding,
-                    renderMode,
-                    atlasWidth,
-                    atlasHeight,
-                    atlasPopulationMode,
-                    enableMultiAtlasSupport,
-                ),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreateFontAsset_Font_i32_i32_i32_GlyphRenderMode_i32_i32_AtlasPopulationMode__cordl_bool5(
-        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
-        faceIndex: i32,
-        samplingPointSize: i32,
-        atlasPadding: i32,
-        renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
-        atlasWidth: i32,
-        atlasHeight: i32,
-        atlasPopulationMode: crate::UnityEngine::TextCore::Text::AtlasPopulationMode,
-        enableMultiAtlasSupport: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::TextCore::Text::FontAsset,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CreateFontAsset",
-                (
-                    font,
-                    faceIndex,
-                    samplingPointSize,
-                    atlasPadding,
-                    renderMode,
-                    atlasWidth,
-                    atlasHeight,
-                    atlasPopulationMode,
-                    enableMultiAtlasSupport,
-                ),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreateFontAsset_Il2CppString_Il2CppString_i32_0(
+    pub fn CreateFontAsset_Gc_i32_0(
         familyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         styleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pointSize: i32,
@@ -364,7 +272,37 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             .invoke("CreateFontAsset", (familyName, styleName, pointSize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateFontAsset_Il2CppString_i32_i32_i32_GlyphRenderMode_i32_i32_1(
+    pub fn CreateFontAsset_i32_i32_GlyphRenderMode_i32_i32_AtlasPopulationMode__cordl_bool4(
+        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+        samplingPointSize: i32,
+        atlasPadding: i32,
+        renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
+        atlasWidth: i32,
+        atlasHeight: i32,
+        atlasPopulationMode: crate::UnityEngine::TextCore::Text::AtlasPopulationMode,
+        enableMultiAtlasSupport: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateFontAsset",
+                (
+                    font,
+                    samplingPointSize,
+                    atlasPadding,
+                    renderMode,
+                    atlasWidth,
+                    atlasHeight,
+                    atlasPopulationMode,
+                    enableMultiAtlasSupport,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFontAsset_i32_i32_i32_GlyphRenderMode_i32_i32_1(
         fontFilePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         faceIndex: i32,
         samplingPointSize: i32,
@@ -392,7 +330,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateFontAsset_Il2CppString_i32_i32_i32_GlyphRenderMode_i32_i32_AtlasPopulationMode__cordl_bool2(
+    pub fn CreateFontAsset_i32_i32_i32_GlyphRenderMode_i32_i32_AtlasPopulationMode__cordl_bool2(
         fontFilePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         faceIndex: i32,
         samplingPointSize: i32,
@@ -412,6 +350,38 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
                 "CreateFontAsset",
                 (
                     fontFilePath,
+                    faceIndex,
+                    samplingPointSize,
+                    atlasPadding,
+                    renderMode,
+                    atlasWidth,
+                    atlasHeight,
+                    atlasPopulationMode,
+                    enableMultiAtlasSupport,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFontAsset_i32_i32_i32_GlyphRenderMode_i32_i32_AtlasPopulationMode__cordl_bool5(
+        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+        faceIndex: i32,
+        samplingPointSize: i32,
+        atlasPadding: i32,
+        renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
+        atlasWidth: i32,
+        atlasHeight: i32,
+        atlasPopulationMode: crate::UnityEngine::TextCore::Text::AtlasPopulationMode,
+        enableMultiAtlasSupport: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateFontAsset",
+                (
+                    font,
                     faceIndex,
                     samplingPointSize,
                     atlasPadding,
@@ -523,7 +493,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         missingCharacters: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::Generic::List_1<char>,
+            quest_hook::libil2cpp::Gc<char>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -537,7 +507,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         missingCharacters: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         >,
         searchFallbacks: bool,
         tryAddCharacter: bool,
@@ -552,7 +522,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn HasCharacters_Il2CppString2(
+    pub fn HasCharacters_Gc2(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -741,7 +711,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         &mut self,
         unicode: u32,
         character: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::Character,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
         >,
         shouldGetFontFeatures: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -755,11 +725,11 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryAddCharacters_Il2CppArray_ByRefMut__cordl_bool1(
+    pub fn TryAddCharacters_ByRefMut__cordl_bool1(
         &mut self,
         unicodes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         missingUnicodes: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         >,
         includeFontFeatures: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -773,23 +743,11 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryAddCharacters_Il2CppArray__cordl_bool0(
-        &mut self,
-        unicodes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
-        includeFontFeatures: bool,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryAddCharacters", (unicodes, includeFontFeatures))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn TryAddCharacters_Il2CppString_ByRefMut__cordl_bool3(
+    pub fn TryAddCharacters_ByRefMut__cordl_bool3(
         &mut self,
         characters: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         missingCharacters: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         includeFontFeatures: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -803,7 +761,19 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryAddCharacters_Il2CppString__cordl_bool2(
+    pub fn TryAddCharacters__cordl_bool0(
+        &mut self,
+        unicodes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        includeFontFeatures: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryAddCharacters", (unicodes, includeFontFeatures))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryAddCharacters__cordl_bool2(
         &mut self,
         characters: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         includeFontFeatures: bool,
@@ -818,7 +788,9 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
     pub fn TryAddGlyphInternal(
         &mut self,
         glyphIndex: u32,
-        glyph: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::TextCore::Glyph>,
+        glyph: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -851,7 +823,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         &mut self,
         unicode: u32,
         character: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::Character,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
         >,
         shouldGetFontFeatures: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -916,7 +888,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             .invoke("UpdateGlyphAdjustmentRecords", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateGlyphAdjustmentRecords_Il2CppArray1(
+    pub fn UpdateGlyphAdjustmentRecords_Gc1(
         &mut self,
         glyphIndexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -927,11 +899,9 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             .invoke("UpdateGlyphAdjustmentRecords", (glyphIndexes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateGlyphAdjustmentRecords_List_1_2(
+    pub fn UpdateGlyphAdjustmentRecords_Gc2(
         &mut self,
-        glyphIndexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<u32>,
-        >,
+        glyphIndexes: quest_hook::libil2cpp::Gc<u32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -940,14 +910,10 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             .invoke("UpdateGlyphAdjustmentRecords", (glyphIndexes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateGlyphAdjustmentRecords_List_1_List_1_3(
+    pub fn UpdateGlyphAdjustmentRecords_Gc_Gc3(
         &mut self,
-        newGlyphIndexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<u32>,
-        >,
-        allGlyphIndexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<u32>,
-        >,
+        newGlyphIndexes: quest_hook::libil2cpp::Gc<u32>,
+        allGlyphIndexes: quest_hook::libil2cpp::Gc<u32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1027,14 +993,18 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture2D>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture2D>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            >,
         > = __cordl_object.invoke("get_atlasTextures", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1063,20 +1033,16 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                u32,
-                *mut crate::UnityEngine::TextCore::Text::Character,
-            >,
+            u32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                u32,
-                *mut crate::UnityEngine::TextCore::Text::Character,
-            >,
+            u32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
         > = __cordl_object.invoke("get_characterLookupTable", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1084,18 +1050,14 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::Character,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::Character,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
         > = __cordl_object.invoke("get_characterTable", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1123,18 +1085,14 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::FontAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::FontAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
         > = __cordl_object.invoke("get_fallbackFontAssetTable", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1192,19 +1150,13 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
     pub fn get_freeGlyphRects(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::TextCore::GlyphRect,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphRect>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::TextCore::GlyphRect,
-            >,
+            crate::UnityEngine::TextCore::GlyphRect,
         > = __cordl_object.invoke("get_freeGlyphRects", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1212,20 +1164,16 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                u32,
-                *mut crate::UnityEngine::TextCore::Glyph,
-            >,
+            u32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                u32,
-                *mut crate::UnityEngine::TextCore::Glyph,
-            >,
+            u32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
         > = __cordl_object.invoke("get_glyphLookupTable", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1233,18 +1181,14 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Glyph,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Glyph,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
         > = __cordl_object.invoke("get_glyphTable", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1308,19 +1252,13 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
     pub fn get_usedGlyphRects(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::TextCore::GlyphRect,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphRect>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::TextCore::GlyphRect,
-            >,
+            crate::UnityEngine::TextCore::GlyphRect,
         > = __cordl_object.invoke("get_usedGlyphRects", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1371,7 +1309,9 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
     pub fn set_atlasTextures(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture2D>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1417,9 +1357,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
     pub fn set_characterTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::Character,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1454,9 +1392,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
     pub fn set_fallbackFontAssetTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::FontAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1518,11 +1454,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
     }
     pub fn set_freeGlyphRects(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::TextCore::GlyphRect,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphRect>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1534,9 +1466,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
     pub fn set_glyphTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Glyph,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1625,11 +1555,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
     }
     pub fn set_usedGlyphRects(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::TextCore::GlyphRect,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphRect>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

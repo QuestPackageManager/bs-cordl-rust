@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Marshal {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Runtime+InteropServices+Marshal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+InteropServices+Marshal")]
 impl std::ops::Deref for crate::System::Runtime::InteropServices::Marshal {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,7 +80,7 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("ClearUnicode", (ptr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy_Il2CppArray_i32_IntPtr0(
+    pub fn Copy_Gc_i32_IntPtr0(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
         destination: crate::System::IntPtr,
@@ -90,7 +90,7 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("Copy", (source, startIndex, destination, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy_IntPtr_Il2CppArray_i32_1(
+    pub fn Copy_IntPtr_Gc_i32_1(
         source: crate::System::IntPtr,
         destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
@@ -100,7 +100,7 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("Copy", (source, destination, startIndex, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy_IntPtr_Il2CppArray_i32_2(
+    pub fn Copy_IntPtr_Gc_i32_2(
         source: crate::System::IntPtr,
         destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         startIndex: i32,
@@ -110,7 +110,7 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("Copy", (source, destination, startIndex, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy_IntPtr_Il2CppArray_i32_3(
+    pub fn Copy_IntPtr_Gc_i32_3(
         source: crate::System::IntPtr,
         destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         startIndex: i32,
@@ -165,6 +165,16 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("GetDelegateForFunctionPointerInternal", (ptr, t))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDelegateForFunctionPointer_Gc0(
+        ptr: crate::System::IntPtr,
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDelegateForFunctionPointer", (ptr, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDelegateForFunctionPointer_IntPtr1<TDelegate>(
         ptr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<TDelegate>
@@ -176,16 +186,6 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("GetDelegateForFunctionPointer", (ptr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDelegateForFunctionPointer_Type0(
-        ptr: crate::System::IntPtr,
-        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDelegateForFunctionPointer", (ptr, t))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn GetFunctionPointerForDelegateInternal(
         d: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -193,7 +193,7 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("GetFunctionPointerForDelegateInternal", (d))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetFunctionPointerForDelegate_Delegate0(
+    pub fn GetFunctionPointerForDelegate_Gc0(
         d: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
@@ -284,12 +284,24 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("PtrToStringUni", (ptr, len))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PtrToStructure_Il2CppObject0(
+    pub fn PtrToStructure_Gc0(
         ptr: crate::System::IntPtr,
         structure: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PtrToStructure", (ptr, structure))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PtrToStructure_Gc1(
+        ptr: crate::System::IntPtr,
+        structureType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PtrToStructure", (ptr, structureType))?;
         Ok(__cordl_ret.into())
     }
     pub fn PtrToStructure_IntPtr3<T>(
@@ -313,18 +325,6 @@ impl crate::System::Runtime::InteropServices::Marshal {
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PtrToStructure", (ptr, structure))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn PtrToStructure_Type1(
-        ptr: crate::System::IntPtr,
-        structureType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PtrToStructure", (ptr, structureType))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReadByte(
@@ -389,11 +389,18 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("SecureStringToUnicode", (s, allocator))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SizeOf_Il2CppObject0(
+    pub fn SizeOf_Gc0(
         structure: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SizeOf", (structure))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SizeOf_Gc1(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SizeOf", (t))?;
         Ok(__cordl_ret.into())
     }
     pub fn SizeOf_T2<T>(structure: T) -> quest_hook::libil2cpp::Result<i32>
@@ -405,14 +412,14 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("SizeOf", (structure))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SizeOf_Type1(
-        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SizeOf", (t))?;
+    pub fn StringToHGlobalAnsi_Gc1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToHGlobalAnsi", (s))?;
         Ok(__cordl_ret.into())
     }
-    pub fn StringToHGlobalAnsi_Il2CppObject_i32_0(
+    pub fn StringToHGlobalAnsi_i32_0(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -420,14 +427,7 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("StringToHGlobalAnsi", (s, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn StringToHGlobalAnsi_Il2CppString1(
-        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("StringToHGlobalAnsi", (s))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn StructureToPtr_Il2CppObject0(
+    pub fn StructureToPtr_Gc0(
         structure: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         ptr: crate::System::IntPtr,
         fDeleteOld: bool,
@@ -449,7 +449,7 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("StructureToPtr", (structure, ptr, fDeleteOld))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UnsafeAddrOfPinnedArrayElement_Array0(
+    pub fn UnsafeAddrOfPinnedArrayElement_Gc_i32_0(
         arr: quest_hook::libil2cpp::Gc<crate::System::Array>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -457,7 +457,7 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .invoke("UnsafeAddrOfPinnedArrayElement", (arr, index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UnsafeAddrOfPinnedArrayElement_Il2CppArray1<T>(
+    pub fn UnsafeAddrOfPinnedArrayElement_Gc_i32_1<T>(
         arr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr>
@@ -583,7 +583,7 @@ for crate::System::Runtime::InteropServices::Marshal {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Marshal_MarshalerInstanceKeyComparer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -594,7 +594,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -611,12 +611,12 @@ impl crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyCompar
     pub fn Equals(
         &mut self,
         lhs: crate::System::ValueTuple_2<
-            *mut crate::System::Type,
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         rhs: crate::System::ValueTuple_2<
-            *mut crate::System::Type,
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -628,8 +628,8 @@ impl crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyCompar
     pub fn GetHashCode(
         &mut self,
         key: crate::System::ValueTuple_2<
-            *mut crate::System::Type,
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -668,19 +668,19 @@ for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyCompare
 }
 #[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
 impl AsRef<
-    crate::System::Collections::Generic::IEqualityComparer_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_2<
-            *mut crate::System::Type,
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     >,
 > for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_2<
-            *mut crate::System::Type,
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         unsafe { std::mem::transmute(self) }
@@ -688,19 +688,19 @@ impl AsRef<
 }
 #[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
 impl AsMut<
-    crate::System::Collections::Generic::IEqualityComparer_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_2<
-            *mut crate::System::Type,
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     >,
 > for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_2<
-            *mut crate::System::Type,
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         unsafe { std::mem::transmute(self) }
@@ -710,7 +710,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct Marshal_SecureStringAllocator {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -721,7 +721,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

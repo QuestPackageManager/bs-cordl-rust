@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUIScrollGroup {
-    __cordl_parent: crate::UnityEngine::GUILayoutGroup,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutGroup>,
     pub calcMinWidth: f32,
     pub calcMaxWidth: f32,
     pub calcMinHeight: f32,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+GUIScrollGroup")]
 impl std::ops::Deref for crate::UnityEngine::GUIScrollGroup {
-    type Target = crate::UnityEngine::GUILayoutGroup;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutGroup>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

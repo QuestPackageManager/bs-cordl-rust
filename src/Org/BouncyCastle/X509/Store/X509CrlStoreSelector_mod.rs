@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CrlStoreSelector {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub certificateChecking: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::X509::X509Certificate,
     >,
@@ -37,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,7 +80,7 @@ impl crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_X509CrlStoreSelector1(
+    pub fn New_Gc1(
         o: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector,
         >,
@@ -101,7 +101,7 @@ impl crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_X509CrlStoreSelector1(
+    pub fn _ctor_Gc1(
         &mut self,
         o: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector,
@@ -386,30 +386,40 @@ for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
-impl AsRef<crate::Org::BouncyCastle::X509::Store::IX509Selector>
-for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::X509::Store::IX509Selector {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::Store::IX509Selector>,
+> for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Selector,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
-impl AsMut<crate::Org::BouncyCastle::X509::Store::IX509Selector>
-for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::X509::Store::IX509Selector {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::Store::IX509Selector>,
+> for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Selector,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
-impl AsRef<crate::System::ICloneable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
-    fn as_ref(&self) -> &crate::System::ICloneable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
-impl AsMut<crate::System::ICloneable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
-    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MgfParameters {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+MgfParameters")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+MgfParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::MgfParameters {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +39,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::MgfParameters {
         > = __cordl_object.invoke("GetSeed", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppArray0(
+    pub fn New_Gc0(
         seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -59,7 +59,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::MgfParameters {
             .invoke_void(".ctor", (seed, off, len))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppArray0(
+    pub fn _ctor_Gc0(
         &mut self,
         seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -95,18 +95,26 @@ for crate::Org::BouncyCastle::Crypto::Parameters::MgfParameters {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+MgfParameters")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IDerivationParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::MgfParameters {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDerivationParameters {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::MgfParameters {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+MgfParameters")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IDerivationParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::MgfParameters {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::MgfParameters {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crypto::IDerivationParameters {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

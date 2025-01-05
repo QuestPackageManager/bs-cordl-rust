@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSensitivityDropdown {
-    __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerSensitivityFlag,
     >,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerSensitivityDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSensitivityDropdown {
-    type Target = crate::GlobalNamespace::ValueDropdownController_1<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerSensitivityFlag,
     >;
     fn deref(&self) -> &Self::Target {
@@ -32,11 +32,9 @@ impl crate::GlobalNamespace::PlayerSensitivityDropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Tuple_2<
-                    crate::GlobalNamespace::PlayerSensitivityFlag,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSensitivityFlag,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -44,11 +42,9 @@ impl crate::GlobalNamespace::PlayerSensitivityDropdown {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Tuple_2<
-                    crate::GlobalNamespace::PlayerSensitivityFlag,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSensitivityFlag,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = __cordl_object.invoke("GetNamedValues", ())?;
         Ok(__cordl_ret.into())

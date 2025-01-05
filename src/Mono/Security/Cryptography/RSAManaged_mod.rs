@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RSAManaged {
-    __cordl_parent: crate::System::Security::Cryptography::RSA,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::RSA,
+    >,
     pub isCRTpossible: bool,
     pub keyBlinding: bool,
     pub keypairGenerated: bool,
@@ -26,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+Cryptography+RSAManaged")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::RSAManaged {
-    type Target = crate::System::Security::Cryptography::RSA;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -214,7 +216,7 @@ for crate::Mono::Security::Cryptography::RSAManaged {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RSAManaged_KeyGeneratedEventHandler {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "Mono+Security+Cryptography+RSAManaged+KeyGeneratedEventHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -225,7 +227,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Mono+Security+Cryptography+RSAManaged+KeyGeneratedEventHandler")]
 impl std::ops::Deref
 for crate::Mono::Security::Cryptography::RSAManaged_KeyGeneratedEventHandler {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

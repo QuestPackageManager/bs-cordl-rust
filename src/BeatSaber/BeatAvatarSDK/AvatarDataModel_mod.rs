@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarDataModel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub didChangeAvatarDataEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::BeatSaber::BeatAvatarSDK::AvatarData>,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     >,
     pub _avatarPartsModel: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
@@ -13,9 +13,7 @@ pub struct AvatarDataModel {
     pub _avatarData: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::BeatAvatarSDK::AvatarData,
     >,
-    pub _avatarCreatedTask: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<bool>,
-    >,
+    pub _avatarCreatedTask: quest_hook::libil2cpp::Gc<bool>,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarDataModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -24,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarDataModel")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,15 +77,12 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     }
     pub fn DeleteAsyncInternal(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object.invoke("DeleteAsyncInternal", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
+            .invoke("DeleteAsyncInternal", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -142,30 +137,23 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarSaveData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarSaveData>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::BeatSaber::BeatAvatarSDK::AvatarSaveData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarSaveData>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LoadFromSaveDataAsync", (fileStorage))?;
         Ok(__cordl_ret.into())
     }
     pub fn LoadInternalAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object.invoke("LoadInternalAsync", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
+            .invoke("LoadInternalAsync", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -187,15 +175,12 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     }
     pub fn RequestIsAvatarCreatedAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object.invoke("RequestIsAvatarCreatedAsync", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
+            .invoke("RequestIsAvatarCreatedAsync", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn SaveAsync(
@@ -213,15 +198,12 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     }
     pub fn SaveInternalAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object.invoke("SaveInternalAsync", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
+            .invoke("SaveInternalAsync", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -237,7 +219,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     pub fn add_didChangeAvatarDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::BeatSaber::BeatAvatarSDK::AvatarData>,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -263,7 +245,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     pub fn remove_didChangeAvatarDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::BeatSaber::BeatAvatarSDK::AvatarData>,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

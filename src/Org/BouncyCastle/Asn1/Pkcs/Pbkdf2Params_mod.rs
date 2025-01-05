@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pbkdf2Params {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub octStr: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Asn1OctetString,
     >,
@@ -21,7 +23,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+Pbkdf2Params")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,7 +61,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
         > = __cordl_object.invoke("GetSalt", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1Sequence0(
+    pub fn New_Gc0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -66,7 +70,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_1(
+    pub fn New_i32_1(
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iterationCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -76,7 +80,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
             .invoke_void(".ctor", (salt, iterationCount))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_AlgorithmIdentifier4(
+    pub fn New_i32_Gc4(
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iterationCount: i32,
         prf: quest_hook::libil2cpp::Gc<
@@ -89,7 +93,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
             .invoke_void(".ctor", (salt, iterationCount, prf))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_i32_2(
+    pub fn New_i32_i32_2(
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iterationCount: i32,
         keyLength: i32,
@@ -100,7 +104,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
             .invoke_void(".ctor", (salt, iterationCount, keyLength))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_i32_AlgorithmIdentifier3(
+    pub fn New_i32_i32_Gc3(
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iterationCount: i32,
         keyLength: i32,
@@ -127,7 +131,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Sequence0(
+    pub fn _ctor_Gc0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -138,7 +142,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_1(
+    pub fn _ctor_i32_1(
         &mut self,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iterationCount: i32,
@@ -150,7 +154,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
             .invoke(".ctor", (salt, iterationCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_AlgorithmIdentifier4(
+    pub fn _ctor_i32_Gc4(
         &mut self,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iterationCount: i32,
@@ -165,7 +169,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
             .invoke(".ctor", (salt, iterationCount, prf))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_i32_2(
+    pub fn _ctor_i32_i32_2(
         &mut self,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iterationCount: i32,
@@ -178,7 +182,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
             .invoke(".ctor", (salt, iterationCount, keyLength))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_i32_AlgorithmIdentifier3(
+    pub fn _ctor_i32_i32_Gc3(
         &mut self,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iterationCount: i32,

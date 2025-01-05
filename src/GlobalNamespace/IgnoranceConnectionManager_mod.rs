@@ -2,30 +2,26 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IgnoranceConnectionManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub onInitializedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub onConnectedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub onDisconnectedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
+        crate::GlobalNamespace::DisconnectedReason,
     >,
     pub onConnectionFailedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
+        crate::GlobalNamespace::ConnectionFailedReason,
     >,
     pub onConnectionConnectedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::IConnection>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
     >,
     pub onConnectionDisconnectedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::GlobalNamespace::IConnection,
-            crate::GlobalNamespace::DisconnectedReason,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+        crate::GlobalNamespace::DisconnectedReason,
     >,
     pub onReceivedDataEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_3<
-            *mut crate::GlobalNamespace::IConnection,
-            *mut crate::LiteNetLib::Utils::NetDataReader,
-            crate::BGNet::Core::DeliveryMethod,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+        crate::BGNet::Core::DeliveryMethod,
     >,
     pub _userId_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -42,12 +38,10 @@ pub struct IgnoranceConnectionManager {
     pub _connectionRequestHandler: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IConnectionRequestHandler,
     >,
-    pub _pendingConnections: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<u32>,
-    >,
+    pub _pendingConnections: quest_hook::libil2cpp::Gc<u32>,
     pub _connections: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection,
         >,
     >,
     pub _incomingDataWriter: quest_hook::libil2cpp::Gc<
@@ -80,7 +74,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "IgnoranceConnectionManager")]
 impl std::ops::Deref for crate::GlobalNamespace::IgnoranceConnectionManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -235,9 +229,7 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     }
     pub fn Init<T>(
         &mut self,
-        initParams: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<T>,
-        >,
+        initParams: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -270,7 +262,7 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ITimeProvider_ITaskUtility1(
+    pub fn New_Gc_Gc1(
         timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -303,7 +295,7 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
             .invoke("Send", (peerId, writer, deliveryMethod))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendToAll_IConnection1(
+    pub fn SendToAll_Gc1(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         deliveryMethod: crate::BGNet::Core::DeliveryMethod,
@@ -318,7 +310,7 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
             .invoke("SendToAll", (writer, deliveryMethod, excludingConnection))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendToAll_NetDataWriter_DeliveryMethod0(
+    pub fn SendToAll_Gc_DeliveryMethod0(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         deliveryMethod: crate::BGNet::Core::DeliveryMethod,
@@ -358,7 +350,9 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
         &mut self,
         peerId: u32,
         connection: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -372,10 +366,10 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         userId: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         userName: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         isConnectionOwner: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -413,7 +407,7 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ITimeProvider_ITaskUtility1(
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
@@ -439,7 +433,7 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     pub fn add_onConnectionConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::IConnection>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -452,10 +446,8 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     pub fn add_onConnectionDisconnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::IConnection,
-                crate::GlobalNamespace::DisconnectedReason,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+            crate::GlobalNamespace::DisconnectedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -467,9 +459,7 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     }
     pub fn add_onConnectionFailedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConnectionFailedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -480,9 +470,7 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     }
     pub fn add_onDisconnectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -505,11 +493,9 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     pub fn add_onReceivedDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                *mut crate::GlobalNamespace::IConnection,
-                *mut crate::LiteNetLib::Utils::NetDataReader,
-                crate::BGNet::Core::DeliveryMethod,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+            crate::BGNet::Core::DeliveryMethod,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -627,7 +613,7 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     pub fn remove_onConnectionConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::IConnection>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -640,10 +626,8 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     pub fn remove_onConnectionDisconnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::IConnection,
-                crate::GlobalNamespace::DisconnectedReason,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+            crate::GlobalNamespace::DisconnectedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -655,9 +639,7 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     }
     pub fn remove_onConnectionFailedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConnectionFailedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -668,9 +650,7 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     }
     pub fn remove_onDisconnectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -693,11 +673,9 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     pub fn remove_onReceivedDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                *mut crate::GlobalNamespace::IConnection,
-                *mut crate::LiteNetLib::Utils::NetDataReader,
-                crate::BGNet::Core::DeliveryMethod,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+            crate::BGNet::Core::DeliveryMethod,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -763,44 +741,50 @@ for crate::GlobalNamespace::IgnoranceConnectionManager {
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager")]
-impl AsRef<crate::GlobalNamespace::IConnectionManager>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionManager>>
 for crate::GlobalNamespace::IgnoranceConnectionManager {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IConnectionManager {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionManager> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager")]
-impl AsMut<crate::GlobalNamespace::IConnectionManager>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionManager>>
 for crate::GlobalNamespace::IgnoranceConnectionManager {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectionManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionManager> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager")]
-impl AsRef<crate::GlobalNamespace::IPollable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
 for crate::GlobalNamespace::IgnoranceConnectionManager {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager")]
-impl AsMut<crate::GlobalNamespace::IPollable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
 for crate::GlobalNamespace::IgnoranceConnectionManager {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::IgnoranceConnectionManager {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::IgnoranceConnectionManager {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -808,7 +792,9 @@ for crate::GlobalNamespace::IgnoranceConnectionManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IgnoranceConnectionManager_ConnectToServerParams {
-    __cordl_parent: crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase,
+    >,
     pub hostName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub port: i32,
     pub serverUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -828,7 +814,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "IgnoranceConnectionManager+ConnectToServerParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectToServerParams {
-    type Target = crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -891,7 +879,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct IgnoranceConnectionManager_IgnoranceConnection {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _connectionManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IgnoranceConnectionManager,
     >,
@@ -913,7 +901,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnection")]
 impl std::ops::Deref
 for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1065,16 +1053,18 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnection")]
-impl AsRef<crate::GlobalNamespace::IConnection>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>>
 for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IConnection {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnection")]
-impl AsMut<crate::GlobalNamespace::IConnection>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>>
 for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1082,7 +1072,7 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IgnoranceConnectionManager_IgnoranceConnectionParamsBase {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub connectionRequestHandler: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IConnectionRequestHandler,
     >,
@@ -1100,7 +1090,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
 impl std::ops::Deref
 for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1144,28 +1134,28 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParams
 }
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
 impl AsRef<
-    crate::GlobalNamespace::IConnectionInitParams_1<
-        *mut crate::GlobalNamespace::IgnoranceConnectionManager,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IgnoranceConnectionManager>,
     >,
 > for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::IConnectionInitParams_1<
-        *mut crate::GlobalNamespace::IgnoranceConnectionManager,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IgnoranceConnectionManager>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
 impl AsMut<
-    crate::GlobalNamespace::IConnectionInitParams_1<
-        *mut crate::GlobalNamespace::IgnoranceConnectionManager,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IgnoranceConnectionManager>,
     >,
 > for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::IConnectionInitParams_1<
-        *mut crate::GlobalNamespace::IgnoranceConnectionManager,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IgnoranceConnectionManager>,
     > {
         unsafe { std::mem::transmute(self) }
     }
@@ -1174,7 +1164,9 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct IgnoranceConnectionManager_StartServerParams {
-    __cordl_parent: crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase,
+    >,
     pub port: i32,
     pub certificatePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub certificate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1190,7 +1182,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "IgnoranceConnectionManager+StartServerParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::IgnoranceConnectionManager_StartServerParams {
-    type Target = crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

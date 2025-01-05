@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialLightWithIds {
-    __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RuntimeLightWithIds,
+    >,
     pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
     pub _setAlphaOnly: bool,
     pub _alphaIntoColor: bool,
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MaterialLightWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialLightWithIds {
-    type Target = crate::GlobalNamespace::RuntimeLightWithIds;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RuntimeLightWithIds>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

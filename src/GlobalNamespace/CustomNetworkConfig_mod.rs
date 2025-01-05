@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNetworkConfig {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _maxPartySize_k__BackingField: i32,
     pub _discoveryPort_k__BackingField: i32,
     pub _partyPort_k__BackingField: i32,
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CustomNetworkConfig")]
 impl std::ops::Deref for crate::GlobalNamespace::CustomNetworkConfig {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -216,16 +216,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CustomNetwork
     }
 }
 #[cfg(feature = "CustomNetworkConfig")]
-impl AsRef<crate::GlobalNamespace::INetworkConfig>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>>
 for crate::GlobalNamespace::CustomNetworkConfig {
-    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkConfig {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "CustomNetworkConfig")]
-impl AsMut<crate::GlobalNamespace::INetworkConfig>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>>
 for crate::GlobalNamespace::CustomNetworkConfig {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkConfig {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig> {
         unsafe { std::mem::transmute(self) }
     }
 }

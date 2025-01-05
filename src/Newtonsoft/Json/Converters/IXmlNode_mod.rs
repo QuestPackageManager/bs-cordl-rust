@@ -49,18 +49,14 @@ impl crate::Newtonsoft::Json::Converters::IXmlNode {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
         > = __cordl_object.invoke("get_Attributes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -68,18 +64,14 @@ impl crate::Newtonsoft::Json::Converters::IXmlNode {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
         > = __cordl_object.invoke("get_ChildNodes", ())?;
         Ok(__cordl_ret.into())
     }

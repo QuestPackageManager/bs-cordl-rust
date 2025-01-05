@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ViewControllerTransitionHelpers {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "HMUI+ViewControllerTransitionHelpers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ViewControllerTransitionHelpers")]
 impl std::ops::Deref for crate::HMUI::ViewControllerTransitionHelpers {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
     pub const kTransitionDuration: f32 = 0.4f32;
     pub const kVerticalTransitionMoveOffset: f32 = 0.5f32;
     pub fn AnimationCoroutine(
-        transitionAnimation: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        transitionAnimation: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {

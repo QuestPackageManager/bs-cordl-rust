@@ -22,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::XR::Mesh
 }
 #[cfg(feature = "UnityEngine+XR+MeshId")]
 impl crate::UnityEngine::XR::MeshId {
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -64,18 +64,18 @@ impl crate::UnityEngine::XR::MeshId {
     }
 }
 #[cfg(feature = "UnityEngine+XR+MeshId")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::MeshId>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::MeshId>>
 for crate::UnityEngine::XR::MeshId {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::MeshId> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::MeshId> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+XR+MeshId")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::MeshId>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::MeshId>>
 for crate::UnityEngine::XR::MeshId {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::MeshId> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::MeshId> {
         todo!()
     }
 }

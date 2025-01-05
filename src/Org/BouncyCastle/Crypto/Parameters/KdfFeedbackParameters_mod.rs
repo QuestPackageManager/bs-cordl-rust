@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KdfFeedbackParameters {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub useCounter: bool,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfFeedbackParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::KdfFeedbackParameters {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -164,18 +164,26 @@ for crate::Org::BouncyCastle::Crypto::Parameters::KdfFeedbackParameters {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfFeedbackParameters")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IDerivationParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::KdfFeedbackParameters {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDerivationParameters {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::KdfFeedbackParameters {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfFeedbackParameters")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IDerivationParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::KdfFeedbackParameters {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::KdfFeedbackParameters {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crypto::IDerivationParameters {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

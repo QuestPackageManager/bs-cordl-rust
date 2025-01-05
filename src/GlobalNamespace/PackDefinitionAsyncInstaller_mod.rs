@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionAsyncInstaller {
-    __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
-        *mut crate::GlobalNamespace::PackDefinitionSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
     >,
     pub _packDefinitions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::PackDefinitionSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
     >,
 }
 #[cfg(feature = "PackDefinitionAsyncInstaller")]
@@ -18,8 +16,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PackDefinitionAsyncInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionAsyncInstaller {
-    type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
-        *mut crate::GlobalNamespace::PackDefinitionSO,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -46,16 +44,16 @@ impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
     pub fn LoadPackDefinitionListAsync() -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                *mut crate::System::Collections::Generic::IList_1<
-                    *mut crate::GlobalNamespace::PackDefinitionSO,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
                 >,
             >,
         >,
     > {
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                *mut crate::System::Collections::Generic::IList_1<
-                    *mut crate::GlobalNamespace::PackDefinitionSO,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
                 >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
@@ -65,9 +63,7 @@ impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         assets: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::GlobalNamespace::PackDefinitionSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
         >,
         registry: quest_hook::libil2cpp::Gc<
             crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,

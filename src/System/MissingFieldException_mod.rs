@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissingFieldException {
-    __cordl_parent: crate::System::MissingMemberException,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MissingMemberException>,
 }
 #[cfg(feature = "System+MissingFieldException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+MissingFieldException")]
 impl std::ops::Deref for crate::System::MissingFieldException {
-    type Target = crate::System::MissingMemberException;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MissingMemberException>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ impl crate::System::MissingFieldException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -40,7 +40,7 @@ impl crate::System::MissingFieldException {
             .invoke_void(".ctor", (message))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString2(
+    pub fn New_Gc_Gc2(
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -50,7 +50,7 @@ impl crate::System::MissingFieldException {
             .invoke_void(".ctor", (className, fieldName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext3(
+    pub fn New_Gc_StreamingContext3(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -72,7 +72,7 @@ impl crate::System::MissingFieldException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -83,7 +83,7 @@ impl crate::System::MissingFieldException {
             .invoke(".ctor", (message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString2(
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -95,7 +95,7 @@ impl crate::System::MissingFieldException {
             .invoke(".ctor", (className, fieldName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext3(
+    pub fn _ctor_Gc_StreamingContext3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -133,16 +133,26 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::MissingFieldException 
     }
 }
 #[cfg(feature = "System+MissingFieldException")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::MissingFieldException {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::MissingFieldException {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+MissingFieldException")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::MissingFieldException {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::MissingFieldException {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

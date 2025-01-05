@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IMGUIContainer {
-    __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_OnGUIHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_ObjectGUIState: quest_hook::libil2cpp::Gc<crate::UnityEngine::ObjectGUIState>,
     pub useOwnerObjectGUIState: bool,
@@ -33,7 +35,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IMGUIContainer {
-    type Target = crate::UnityEngine::UIElements::VisualElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -161,7 +165,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn HandleIMGUIEvent_Action__cordl_bool1(
+    pub fn HandleIMGUIEvent_Gc__cordl_bool1(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
         onGUIHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -174,7 +178,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
             .invoke("HandleIMGUIEvent", (e, onGUIHandler, canAffectFocus))?;
         Ok(__cordl_ret.into())
     }
-    pub fn HandleIMGUIEvent_Matrix4x4_Rect_Action__cordl_bool2(
+    pub fn HandleIMGUIEvent_Matrix4x4_Rect_Gc__cordl_bool2(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
         worldTransform: crate::UnityEngine::Matrix4x4,
@@ -259,7 +263,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Action1(
+    pub fn New_Gc1(
         onGUIHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -378,7 +382,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Action1(
+    pub fn _ctor_Gc1(
         &mut self,
         onGUIHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -529,16 +533,16 @@ for crate::UnityEngine::UIElements::IMGUIContainer {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::IMGUIContainer {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::IMGUIContainer {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -577,9 +581,11 @@ impl crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct IMGUIContainer_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::IMGUIContainer,
-        *mut crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMGUIContainer>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
@@ -590,9 +596,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::IMGUIContainer,
-        *mut crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMGUIContainer>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -638,7 +646,9 @@ for crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IMGUIContainer_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -648,7 +658,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

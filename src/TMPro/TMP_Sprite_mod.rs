@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Sprite {
-    __cordl_parent: crate::TMPro::TMP_TextElement_Legacy,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextElement_Legacy>,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub hashCode: i32,
     pub unicode: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_Sprite")]
 impl std::ops::Deref for crate::TMPro::TMP_Sprite {
-    type Target = crate::TMPro::TMP_TextElement_Legacy;
+    type Target = quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextElement_Legacy>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

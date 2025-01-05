@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WeakReference_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub handle: crate::System::Runtime::InteropServices::GCHandle,
     pub trackResurrection: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+WeakReference_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::WeakReference_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,7 +61,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::WeakReference_1<T> {
             .invoke("GetObjectData", (info, context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_SerializationInfo_StreamingContext2(
+    pub fn New_Gc_StreamingContext2(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -133,7 +133,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::WeakReference_1<T> {
         let __cordl_ret: bool = __cordl_object.invoke("TryGetTarget", (target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext2(
+    pub fn _ctor_Gc_StreamingContext2(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -196,18 +196,26 @@ for crate::System::WeakReference_1<T> {
 #[cfg(feature = "System+WeakReference_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Runtime::Serialization::ISerializable>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>>
 for crate::System::WeakReference_1<T> {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+WeakReference_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Runtime::Serialization::ISerializable>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>>
 for crate::System::WeakReference_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

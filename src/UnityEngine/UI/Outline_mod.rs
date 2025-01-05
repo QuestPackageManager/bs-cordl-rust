@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Outline {
-    __cordl_parent: crate::UnityEngine::UI::Shadow,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Shadow>,
 }
 #[cfg(feature = "UnityEngine+UI+Outline")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Outline")]
 impl std::ops::Deref for crate::UnityEngine::UI::Outline {
-    type Target = crate::UnityEngine::UI::Shadow;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Shadow>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

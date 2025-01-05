@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChainOperationTypelessDepedency_1<TObject: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        TObject,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TObject>,
     pub m_DepOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     pub m_WrappedOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         TObject,
@@ -12,18 +10,14 @@ pub struct ChainOperationTypelessDepedency_1<TObject: quest_hook::libil2cpp::Typ
     pub m_depStatus: crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
     pub m_wrapStatus: crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
     pub m_Callback: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                TObject,
-            >,
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            TObject,
         >,
     >,
     pub m_CachedOnWrappedCompleted: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                TObject,
-            >,
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            TObject,
         >,
     >,
     pub m_ReleaseDependenciesOnFailure: bool,
@@ -38,9 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1")]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ChainOperationTypelessDepedency_1<TObject> {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        TObject,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,9 +79,7 @@ impl<
     pub fn GetDependencies(
         &mut self,
         deps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -106,9 +96,7 @@ impl<
     pub fn GetDownloadStatus(
         &mut self,
         visited: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -128,11 +116,9 @@ impl<
         &mut self,
         dependentOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                    TObject,
-                >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                TObject,
             >,
         >,
         releaseDependenciesOnFailure: bool,
@@ -190,9 +176,7 @@ impl<
     pub fn RefreshDownloadStatus(
         &mut self,
         visited: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

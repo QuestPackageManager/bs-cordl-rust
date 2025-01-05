@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Tuple {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Tuple")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Tuple")]
 impl std::ops::Deref for crate::System::Tuple {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,16 +53,14 @@ impl crate::System::Tuple {
     pub fn Create_T1_T2_0<T1, T2>(
         item1: T1,
         item2: T2,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Tuple_2<T1, T2>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T1, T2>>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
         T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Tuple_2<T1, T2>> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T1, T2> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Create", (item1, item2))?;
         Ok(__cordl_ret.into())
     }
@@ -70,9 +68,7 @@ impl crate::System::Tuple {
         item1: T1,
         item2: T2,
         item3: T3,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Tuple_3<T1, T2, T3>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T1, T2, T3>>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -81,7 +77,7 @@ impl crate::System::Tuple {
         T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Tuple_3<T1, T2, T3>> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T1, T2, T3> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Create", (item1, item2, item3))?;
         Ok(__cordl_ret.into())
     }
@@ -90,9 +86,7 @@ impl crate::System::Tuple {
         item2: T2,
         item3: T3,
         item4: T4,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Tuple_4<T1, T2, T3, T4>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T1, T2, T3, T4>>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -103,9 +97,7 @@ impl crate::System::Tuple {
         T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Tuple_4<T1, T2, T3, T4>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T1, T2, T3, T4> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Create", (item1, item2, item3, item4))?;
         Ok(__cordl_ret.into())
     }

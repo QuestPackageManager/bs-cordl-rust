@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_NodeSync {
-    __cordl_parent: crate::HoudiniEngineUnity::HEU_BaseSync,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_BaseSync>,
     pub _nodeSaveFilePath: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_NodeSync")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_NodeSync {
-    type Target = crate::HoudiniEngineUnity::HEU_BaseSync;
+    type Target = quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_BaseSync>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

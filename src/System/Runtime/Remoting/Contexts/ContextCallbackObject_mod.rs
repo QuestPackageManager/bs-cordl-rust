@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContextCallbackObject {
-    __cordl_parent: crate::System::ContextBoundObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::ContextBoundObject>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Contexts+ContextCallbackObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Remoting+Contexts+ContextCallbackObject")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Contexts::ContextCallbackObject {
-    type Target = crate::System::ContextBoundObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::ContextBoundObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

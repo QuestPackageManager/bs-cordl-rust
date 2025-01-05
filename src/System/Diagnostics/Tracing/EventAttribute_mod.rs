@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventAttribute {
-    __cordl_parent: crate::System::Attribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     pub _EventId_k__BackingField: i32,
     pub _Level_k__BackingField: crate::System::Diagnostics::Tracing::EventLevel,
     pub _Keywords_k__BackingField: crate::System::Diagnostics::Tracing::EventKeywords,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+Tracing+EventAttribute")]
 impl std::ops::Deref for crate::System::Diagnostics::Tracing::EventAttribute {
-    type Target = crate::System::Attribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

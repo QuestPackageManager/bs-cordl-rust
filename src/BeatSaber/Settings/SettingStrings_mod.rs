@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SettingStrings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "BeatSaber+Settings+SettingStrings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+Settings+SettingStrings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::SettingStrings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,9 @@ impl crate::BeatSaber::Settings::SettingStrings {
     pub fn Decode(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        log: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        log: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Decode", (settings, text, log))?;
@@ -65,7 +67,9 @@ impl crate::BeatSaber::Settings::SettingStrings {
         name: crate::System::ReadOnlySpan_1<char>,
         text: crate::System::ReadOnlySpan_1<char>,
         value: quest_hook::libil2cpp::ByRefMut<bool>,
-        err: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        err: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReadBool", (name, text, value, err))?;
@@ -75,7 +79,9 @@ impl crate::BeatSaber::Settings::SettingStrings {
         name: crate::System::ReadOnlySpan_1<char>,
         text: crate::System::ReadOnlySpan_1<char>,
         value: quest_hook::libil2cpp::ByRefMut<T>,
-        err: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        err: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -89,7 +95,9 @@ impl crate::BeatSaber::Settings::SettingStrings {
         name: crate::System::ReadOnlySpan_1<char>,
         text: crate::System::ReadOnlySpan_1<char>,
         value: quest_hook::libil2cpp::ByRefMut<f32>,
-        err: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        err: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReadFloat", (name, text, value, err))?;
@@ -99,7 +107,9 @@ impl crate::BeatSaber::Settings::SettingStrings {
         name: crate::System::ReadOnlySpan_1<char>,
         text: crate::System::ReadOnlySpan_1<char>,
         value: quest_hook::libil2cpp::ByRefMut<i32>,
-        err: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        err: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReadInt", (name, text, value, err))?;
@@ -108,7 +118,9 @@ impl crate::BeatSaber::Settings::SettingStrings {
     pub fn ReadProperties(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        log: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        log: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReadProperties", (settings, text, log))?;
@@ -118,7 +130,9 @@ impl crate::BeatSaber::Settings::SettingStrings {
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         name: crate::System::ReadOnlySpan_1<char>,
         value: crate::System::ReadOnlySpan_1<char>,
-        log: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        log: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReadProperty", (settings, name, value, log))?;
@@ -127,7 +141,9 @@ impl crate::BeatSaber::Settings::SettingStrings {
     pub fn ReadPropertyLine(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         property: crate::System::ReadOnlySpan_1<char>,
-        log: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        log: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReadPropertyLine", (settings, property, log))?;
@@ -136,8 +152,12 @@ impl crate::BeatSaber::Settings::SettingStrings {
     pub fn ReadString(
         _cordl__: crate::System::ReadOnlySpan_1<char>,
         text: crate::System::ReadOnlySpan_1<char>,
-        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
-        err: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
+        err: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReadString", (_cordl__, text, value, err))?;

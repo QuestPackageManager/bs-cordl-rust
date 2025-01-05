@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicBeatmapEventData {
-    __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
     pub _sameTypeIndex_k__BackingField: i32,
     pub basicBeatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub value: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BasicBeatmapEventData")]
 impl std::ops::Deref for crate::GlobalNamespace::BasicBeatmapEventData {
-    type Target = crate::GlobalNamespace::BeatmapEventData;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioTimeSyncController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _audioSyncLerpSpeed: f32,
     pub _forcedSyncDeltaTime: f32,
     pub _startSyncDeltaTime: f32,
@@ -45,7 +45,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AudioTimeSyncController")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioTimeSyncController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -355,16 +355,20 @@ for crate::GlobalNamespace::AudioTimeSyncController {
     }
 }
 #[cfg(feature = "AudioTimeSyncController")]
-impl AsRef<crate::GlobalNamespace::IAudioTimeSource>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource>>
 for crate::GlobalNamespace::AudioTimeSyncController {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IAudioTimeSource {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "AudioTimeSyncController")]
-impl AsMut<crate::GlobalNamespace::IAudioTimeSource>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource>>
 for crate::GlobalNamespace::AudioTimeSyncController {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAudioTimeSource {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -372,7 +376,7 @@ for crate::GlobalNamespace::AudioTimeSyncController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioTimeSyncController_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub startSongTime: f32,
     pub songTimeOffset: f32,
@@ -386,7 +390,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AudioTimeSyncController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioTimeSyncController_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

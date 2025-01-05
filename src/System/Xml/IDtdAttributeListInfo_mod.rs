@@ -43,18 +43,14 @@ impl crate::System::Xml::IDtdAttributeListInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Xml::IDtdDefaultAttributeInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdDefaultAttributeInfo>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Xml::IDtdDefaultAttributeInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdDefaultAttributeInfo>,
         > = __cordl_object.invoke("LookupDefaultAttributes", ())?;
         Ok(__cordl_ret.into())
     }

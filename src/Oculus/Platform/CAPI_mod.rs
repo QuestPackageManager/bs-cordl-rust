@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CAPI {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Oculus+Platform+CAPI")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+CAPI")]
 impl std::ops::Deref for crate::Oculus::Platform::CAPI {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,17 +57,13 @@ impl crate::Oculus::Platform::CAPI {
         pointer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DataStoreFromNative", (pointer))?;
         Ok(__cordl_ret.into())
@@ -86,13 +82,8 @@ impl crate::Oculus::Platform::CAPI {
             .invoke("DateTimeToNative", (dt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DictionaryToOVRKeyValuePairs_Dictionary_2_0(
-        dict: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                crate::Oculus::Platform::InitConfigOptions,
-                bool,
-            >,
-        >,
+    pub fn DictionaryToOVRKeyValuePairs_Gc0(
+        dict: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::InitConfigOptions, bool>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -108,12 +99,10 @@ impl crate::Oculus::Platform::CAPI {
             .invoke("DictionaryToOVRKeyValuePairs", (dict))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DictionaryToOVRKeyValuePairs_Dictionary_2_1(
+    pub fn DictionaryToOVRKeyValuePairs_Gc1(
         dict: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -164,10 +153,8 @@ impl crate::Oculus::Platform::CAPI {
     pub fn LogNewEvent(
         eventName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         values: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -177,10 +164,8 @@ impl crate::Oculus::Platform::CAPI {
     pub fn LogNewUnifiedEvent(
         eventName: crate::Oculus::Platform::LogEventName,
         values: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -540,7 +525,9 @@ impl crate::Oculus::Platform::CAPI {
     }
     pub fn ovr_Achievements_GetDefinitionsByName(
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -550,7 +537,9 @@ impl crate::Oculus::Platform::CAPI {
     }
     pub fn ovr_Achievements_GetProgressByName(
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -3059,7 +3048,9 @@ impl crate::Oculus::Platform::CAPI {
     }
     pub fn ovr_IAP_GetProductsBySKU(
         skus: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -5201,7 +5192,9 @@ impl crate::Oculus::Platform::CAPI {
     pub fn ovr_NetSync_SetVoipListentoChannels(
         connection_id: i64,
         listento_channels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         count: crate::System::UIntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -5235,7 +5228,9 @@ impl crate::Oculus::Platform::CAPI {
     pub fn ovr_NetSync_SetVoipSpeaktoChannels(
         connection_id: i64,
         speakto_channels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         count: crate::System::UIntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -7365,7 +7360,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::CAPI {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CAPI_FilterCallback {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "Oculus+Platform+CAPI+FilterCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7374,7 +7369,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+CAPI+FilterCallback")]
 impl std::ops::Deref for crate::Oculus::Platform::CAPI_FilterCallback {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7390,7 +7385,7 @@ impl crate::Oculus::Platform::CAPI_FilterCallback {
     pub fn BeginInvoke(
         &mut self,
         pcmData: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i16>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
         >,
         pcmDataLength: crate::System::UIntPtr,
         frequency: i32,
@@ -7424,7 +7419,7 @@ impl crate::Oculus::Platform::CAPI_FilterCallback {
     pub fn Invoke(
         &mut self,
         pcmData: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i16>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
         >,
         pcmDataLength: crate::System::UIntPtr,
         frequency: i32,
@@ -7527,7 +7522,7 @@ for crate::Oculus::Platform::CAPI_ovrKeyValuePair {
 }
 #[cfg(feature = "Oculus+Platform+CAPI+ovrKeyValuePair")]
 impl crate::Oculus::Platform::CAPI_ovrKeyValuePair {
-    pub fn _ctor_Il2CppString0(
+    pub fn _ctor_Gc0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -2,18 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TriangulationContext {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _DebugContext_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
     >,
     pub Triangles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
         >,
     >,
     pub Points: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     >,
     pub _TriangulationMode_k__BackingField: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode,
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationContext")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

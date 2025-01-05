@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputControlExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputControlExtensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,10 +38,8 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
         feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
     )]
     pub type InputEventControlEnumerator = crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator;
-    pub fn AccumulateValueInEvent_InputControl_1_Il2CppObject_InputEventPtr0(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl_1<f32>,
-        >,
+    pub fn AccumulateValueInEvent_Gc_Gc_InputEventPtr0(
+        control: quest_hook::libil2cpp::Gc<f32>,
         currentStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         newState: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -49,10 +47,8 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("AccumulateValueInEvent", (control, currentStatePtr, newState))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AccumulateValueInEvent_InputControl_1_Il2CppObject_InputEventPtr1(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl_1<crate::UnityEngine::Vector2>,
-        >,
+    pub fn AccumulateValueInEvent_Gc_Gc_InputEventPtr1(
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
         currentStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         newState: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -75,7 +71,14 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("BuildPath", (control, deviceLayout, builder))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckStateIsAtDefaultIgnoringNoise_Il2CppObject1(
+    pub fn CheckStateIsAtDefaultIgnoringNoise_Gc0(
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckStateIsAtDefaultIgnoringNoise", (control))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckStateIsAtDefaultIgnoringNoise_Gc1(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
@@ -85,14 +88,14 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("CheckStateIsAtDefaultIgnoringNoise", (control, statePtr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckStateIsAtDefaultIgnoringNoise_InputControl0(
+    pub fn CheckStateIsAtDefault_Gc0(
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CheckStateIsAtDefaultIgnoringNoise", (control))?;
+            .invoke("CheckStateIsAtDefault", (control))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckStateIsAtDefault_Il2CppObject_Il2CppObject1(
+    pub fn CheckStateIsAtDefault_Gc_Gc1(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
@@ -101,13 +104,6 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CheckStateIsAtDefault", (control, statePtr, maskPtr))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CheckStateIsAtDefault_InputControl0(
-        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CheckStateIsAtDefault", (control))?;
         Ok(__cordl_ret.into())
     }
     pub fn CompareStateIgnoringNoise(
@@ -120,7 +116,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("CompareStateIgnoringNoise", (control, statePtr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareState_Il2CppObject0(
+    pub fn CompareState_Gc0(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
@@ -132,7 +128,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("CompareState", (control, firstStatePtr, secondStatePtr, maskPtr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareState_InputControl_Il2CppObject_Il2CppObject1(
+    pub fn CompareState_Gc_Gc_Gc1(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
@@ -155,7 +151,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("CopyState", (device, state))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyState_Il2CppObject_i32_0(
+    pub fn CopyState_Gc_i32_0(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferSizeInBytes: i32,
@@ -189,10 +185,8 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
     }
     pub fn FindControlsRecursive<TControl>(
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-        controls: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<TControl>,
-        >,
-        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TControl, bool>>,
+        controls: quest_hook::libil2cpp::Gc<TControl>,
+        predicate: quest_hook::libil2cpp::Gc<TControl, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -219,15 +213,11 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
         buttonControlsOnly: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::InputSystem::InputControl,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::InputSystem::InputControl,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetAllButtonPresses", (eventPtr, magnitude, buttonControlsOnly))?;
         Ok(__cordl_ret.into())
@@ -330,9 +320,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn QueueValueChange<TValue>(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
-        >,
+        control: quest_hook::libil2cpp::Gc<TValue>,
         value: TValue,
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -356,9 +344,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn ReadUnprocessedValueFromEvent_ByRefMut1<TValue>(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
-        >,
+        control: quest_hook::libil2cpp::Gc<TValue>,
         inputEvent: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         value: quest_hook::libil2cpp::ByRefMut<TValue>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -370,10 +356,8 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("ReadUnprocessedValueFromEvent", (control, inputEvent, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadUnprocessedValueFromEvent_InputControl_1_InputEventPtr0<TValue>(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
-        >,
+    pub fn ReadUnprocessedValueFromEvent_Gc_InputEventPtr0<TValue>(
+        control: quest_hook::libil2cpp::Gc<TValue>,
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -410,9 +394,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn ReadValueFromEvent_ByRefMut1<TValue>(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
-        >,
+        control: quest_hook::libil2cpp::Gc<TValue>,
         inputEvent: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         value: quest_hook::libil2cpp::ByRefMut<TValue>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -424,10 +406,8 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("ReadValueFromEvent", (control, inputEvent, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadValueFromEvent_InputControl_1_InputEventPtr0<TValue>(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
-        >,
+    pub fn ReadValueFromEvent_Gc_InputEventPtr0<TValue>(
+        control: quest_hook::libil2cpp::Gc<TValue>,
         inputEvent: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -459,7 +439,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("ResetToDefaultStateInEvent", (control, eventPtr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Setup_InputControl0(
+    pub fn Setup_Gc0(
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
@@ -468,7 +448,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("Setup", (control))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Setup_InputDevice_i32_i32_i32_1(
+    pub fn Setup_i32_i32_i32_1(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         controlCount: i32,
         usageCount: i32,
@@ -491,7 +471,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("WriteValueFromObjectIntoEvent", (control, eventPtr, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteValueIntoEvent_InputControl0<TValue>(
+    pub fn WriteValueIntoEvent_Gc_TValue_InputEventPtr0<TValue>(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
@@ -506,10 +486,8 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("WriteValueIntoEvent", (control, value, eventPtr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteValueIntoEvent_InputControl_1_1<TValue>(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
-        >,
+    pub fn WriteValueIntoEvent_Gc_TValue_InputEventPtr1<TValue>(
+        control: quest_hook::libil2cpp::Gc<TValue>,
         value: TValue,
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -521,10 +499,18 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("WriteValueIntoEvent", (control, value, eventPtr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteValueIntoState_InputControl_1_Il2CppObject3<TValue>(
+    pub fn WriteValueIntoState_Gc0(
         control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+            crate::UnityEngine::InputSystem::InputControl,
         >,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteValueIntoState", (control, statePtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteValueIntoState_Gc3<TValue>(
+        control: quest_hook::libil2cpp::Gc<TValue>,
         statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -535,10 +521,8 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("WriteValueIntoState", (control, statePtr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteValueIntoState_InputControl_1_TValue_ByRefMut4<TValue, TState>(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
-        >,
+    pub fn WriteValueIntoState_TValue_ByRefMut4<TValue, TState>(
+        control: quest_hook::libil2cpp::Gc<TValue>,
         value: TValue,
         state: quest_hook::libil2cpp::ByRefMut<TState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -552,9 +536,9 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("WriteValueIntoState", (control, value, state))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteValueIntoState_InputControl_1_TValue_Il2CppObject2<TValue>(
+    pub fn WriteValueIntoState_TValue_Gc1<TValue>(
         control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+            crate::UnityEngine::InputSystem::InputControl,
         >,
         value: TValue,
         statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -567,20 +551,8 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
             .invoke("WriteValueIntoState", (control, value, statePtr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteValueIntoState_InputControl_Il2CppObject0(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl,
-        >,
-        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteValueIntoState", (control, statePtr))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteValueIntoState_InputControl_TValue_Il2CppObject1<TValue>(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControl,
-        >,
+    pub fn WriteValueIntoState_TValue_Gc2<TValue>(
+        control: quest_hook::libil2cpp::Gc<TValue>,
         value: TValue,
         statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -1176,15 +1148,11 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCo
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                *mut crate::UnityEngine::InputSystem::InputControl,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                *mut crate::UnityEngine::InputSystem::InputControl,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.Generic.IEnumerable<UnityEngine.InputSystem.InputControl>.GetEnumerator",
@@ -1222,16 +1190,38 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCo
 #[cfg(
     feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+)]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+)]
 impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     >,
 >
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
         todo!()
     }
@@ -1240,34 +1230,16 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCol
     feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]
 impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     >,
 >
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
-        todo!()
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
-)]
-impl AsRef<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
-        todo!()
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
-)]
-impl AsMut<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         todo!()
     }
 }
@@ -1287,7 +1259,7 @@ pub struct InputControlExtensions_InputEventControlEnumerator {
     pub m_StateOffsetToControlIndexLength: i32,
     pub m_AllControls: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputControl,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         >,
     >,
     pub m_DefaultState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1415,16 +1387,56 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEn
 #[cfg(
     feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+)]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+)]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+)]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+)]
 impl AsRef<
-    crate::System::Collections::Generic::IEnumerator_1<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     >,
 >
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEnumerator_1<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
         todo!()
     }
@@ -1433,52 +1445,16 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnu
     feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
 impl AsMut<
-    crate::System::Collections::Generic::IEnumerator_1<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     >,
 >
 for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
-        todo!()
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
-)]
-impl AsRef<crate::System::Collections::IEnumerator>
-for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
-        todo!()
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
-)]
-impl AsMut<crate::System::Collections::IEnumerator>
-for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
-        todo!()
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
-)]
-impl AsRef<crate::System::IDisposable>
-for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
-    fn as_ref(&self) -> &crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
-)]
-impl AsMut<crate::System::IDisposable>
-for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }

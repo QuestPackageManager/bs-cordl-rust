@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationPlayableAsset {
-    __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableAsset,
+    >,
     pub m_Clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     pub m_Position: crate::UnityEngine::Vector3,
     pub m_EulerAngles: crate::UnityEngine::Vector3,
@@ -22,7 +24,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AnimationPlayableAsset {
-    type Target = crate::UnityEngine::Playables::PlayableAsset;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableAsset,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +47,19 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
     pub type LoopMode = crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode;
     #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
     pub type Versions = crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions;
-    pub fn CreatePlayable_AnimationClip_Vector3_Vector3__cordl_bool_AppliedOffsetMode__cordl_bool_AnimationPlayableAsset_LoopMode1(
+    pub fn CreatePlayable_PlayableGraph_Gc0(
+        &mut self,
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = __cordl_object
+            .invoke("CreatePlayable", (graph, go))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreatePlayable_Vector3_Vector3__cordl_bool_AppliedOffsetMode__cordl_bool_AnimationPlayableAsset_LoopMode1(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
         positionOffset: crate::UnityEngine::Vector3,
@@ -67,18 +83,6 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
                     _cordl_loop,
                 ),
             )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreatePlayable_GameObject0(
-        &mut self,
-        graph: crate::UnityEngine::Playables::PlayableGraph,
-        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Playables::Playable = __cordl_object
-            .invoke("CreatePlayable", (graph, go))?;
         Ok(__cordl_ret.into())
     }
     pub fn GatherProperties(
@@ -268,19 +272,13 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
     pub fn get_outputs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::Playables::PlayableBinding,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableBinding>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::Playables::PlayableBinding,
-            >,
+            crate::UnityEngine::Playables::PlayableBinding,
         > = __cordl_object.invoke("get_outputs", ())?;
         Ok(__cordl_ret.into())
     }
@@ -440,44 +438,60 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset {
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
-impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::UnityEngine::Timeline::AnimationPlayableAsset {
-    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
-impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::UnityEngine::Timeline::AnimationPlayableAsset {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ISerializationCallbackReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
-impl AsRef<crate::UnityEngine::Timeline::IPropertyPreview>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IPropertyPreview>>
 for crate::UnityEngine::Timeline::AnimationPlayableAsset {
-    fn as_ref(&self) -> &crate::UnityEngine::Timeline::IPropertyPreview {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IPropertyPreview> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
-impl AsMut<crate::UnityEngine::Timeline::IPropertyPreview>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IPropertyPreview>>
 for crate::UnityEngine::Timeline::AnimationPlayableAsset {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::IPropertyPreview {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IPropertyPreview> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
-impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
 for crate::UnityEngine::Timeline::AnimationPlayableAsset {
-    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
-impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
 for crate::UnityEngine::Timeline::AnimationPlayableAsset {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::ITimelineClipAsset,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -487,7 +501,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset {
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationPlayableAsset_AnimationPlayableAssetUpgrade {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
     feature = "UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
@@ -502,7 +516,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetUpgrade {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialInstaller {
-    __cordl_parent: crate::Zenject::MonoInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
     pub _audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub _songBPM: f32,
     pub _playerHeightDetectorPrefab: quest_hook::libil2cpp::Gc<
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TutorialInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialInstaller {
-    type Target = crate::Zenject::MonoInstaller;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

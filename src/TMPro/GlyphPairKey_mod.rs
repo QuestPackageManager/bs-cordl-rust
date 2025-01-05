@@ -22,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::GlyphPairKey {
 }
 #[cfg(feature = "TMPro+GlyphPairKey")]
 impl crate::TMPro::GlyphPairKey {
-    pub fn _ctor_TMP_GlyphPairAdjustmentRecord1(
+    pub fn _ctor_Gc1(
         &mut self,
         record: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

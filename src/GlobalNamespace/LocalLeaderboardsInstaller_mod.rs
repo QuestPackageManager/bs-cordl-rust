@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalLeaderboardsInstaller {
-    __cordl_parent: crate::Zenject::MonoInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
     pub _localLeaderboardsSettings: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LocalLeaderboardsSettingsSO,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LocalLeaderboardsInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardsInstaller {
-    type Target = crate::Zenject::MonoInstaller;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSyncVoipAttenuationValueList {
-    __cordl_parent: crate::Oculus::Platform::Models::DeserializableList_1<
-        *mut crate::Oculus::Platform::Models::NetSyncVoipAttenuationValue,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncVoipAttenuationValue,
+        >,
     >,
 }
 #[cfg(feature = "Oculus+Platform+Models+NetSyncVoipAttenuationValueList")]
@@ -15,8 +17,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Oculus+Platform+Models+NetSyncVoipAttenuationValueList")]
 impl std::ops::Deref
 for crate::Oculus::Platform::Models::NetSyncVoipAttenuationValueList {
-    type Target = crate::Oculus::Platform::Models::DeserializableList_1<
-        *mut crate::Oculus::Platform::Models::NetSyncVoipAttenuationValue,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncVoipAttenuationValue,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListSettingsController {
-    __cordl_parent: crate::GlobalNamespace::IncDecSettingsController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IncDecSettingsController,
+    >,
     pub _idx: i32,
     pub _numberOfElements: i32,
 }
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ListSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::ListSettingsController {
-    type Target = crate::GlobalNamespace::IncDecSettingsController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IncDecSettingsController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

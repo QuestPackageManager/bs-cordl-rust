@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Name {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub converter: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter,
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509Name")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::X509Name {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,7 +66,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
         > = __cordl_object.invoke("DecodeOid", (name, lookUp))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equivalent_X509Name1(
+    pub fn Equivalent_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -83,7 +87,17 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
         let __cordl_ret: bool = __cordl_object.invoke("Equivalent", (other, inOrder))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
+    pub fn GetInstance_Gc1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance__cordl_bool0(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         explicitly: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -93,16 +107,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             crate::Org::BouncyCastle::Asn1::X509::X509Name,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetInstance", (obj, explicitly))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetInstance_Il2CppObject1(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509Name,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetOidList(
@@ -129,7 +133,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke("GetValueList", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetValueList_DerObjectIdentifier1(
+    pub fn GetValueList_Gc1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -151,7 +155,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Asn1Sequence1(
+    pub fn New_Gc1(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -160,7 +164,16 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IList_IDictionary2(
+    pub fn New_Gc6(
+        dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dirName))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc2(
         ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -170,7 +183,29 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke_void(".ctor", (ordering, attributes))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IList_IDictionary_X509NameEntryConverter3(
+    pub fn New_Gc_Gc4(
+        oids: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        values: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (oids, values))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc7(
+        dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        converter: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dirName, converter))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc_Gc3(
         ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         converter: quest_hook::libil2cpp::Gc<
@@ -183,17 +218,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke_void(".ctor", (ordering, attributes, converter))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IList_IList4(
-        oids: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-        values: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (oids, values))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_IList_IList_X509NameEntryConverter5(
+    pub fn New_Gc_Gc_Gc5(
         oids: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         values: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         converter: quest_hook::libil2cpp::Gc<
@@ -206,28 +231,17 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke_void(".ctor", (oids, values, converter))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString6(
+    pub fn New__cordl_bool_Gc8(
+        reverse: bool,
         dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dirName))?;
+            .invoke_void(".ctor", (reverse, dirName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_X509NameEntryConverter7(
-        dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        converter: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dirName, converter))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New__cordl_bool_IDictionary_Il2CppString10(
+    pub fn New__cordl_bool_Gc_Gc10(
         reverse: bool,
         lookUp: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -238,7 +252,20 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke_void(".ctor", (reverse, lookUp, dirName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool_IDictionary_Il2CppString_X509NameEntryConverter11(
+    pub fn New__cordl_bool_Gc_Gc9(
+        reverse: bool,
+        dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        converter: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (reverse, dirName, converter))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New__cordl_bool_Gc_Gc_Gc11(
         reverse: bool,
         lookUp: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -250,29 +277,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (reverse, lookUp, dirName, converter))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New__cordl_bool_Il2CppString8(
-        reverse: bool,
-        dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (reverse, dirName))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New__cordl_bool_Il2CppString_X509NameEntryConverter9(
-        reverse: bool,
-        dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        converter: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (reverse, dirName, converter))?;
         Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
@@ -301,7 +305,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString__cordl_bool_IDictionary0(
+    pub fn ToString__cordl_bool_Gc0(
         &mut self,
         reverse: bool,
         oidSymbols: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -326,7 +330,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Sequence1(
+    pub fn _ctor_Gc1(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -337,7 +341,18 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IList_IDictionary2(
+    pub fn _ctor_Gc6(
+        &mut self,
+        dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dirName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -349,7 +364,33 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke(".ctor", (ordering, attributes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IList_IDictionary_X509NameEntryConverter3(
+    pub fn _ctor_Gc_Gc4(
+        &mut self,
+        oids: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        values: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (oids, values))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc7(
+        &mut self,
+        dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        converter: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dirName, converter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc_Gc3(
         &mut self,
         ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -364,19 +405,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke(".ctor", (ordering, attributes, converter))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IList_IList4(
-        &mut self,
-        oids: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-        values: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (oids, values))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_IList_IList_X509NameEntryConverter5(
+    pub fn _ctor_Gc_Gc_Gc5(
         &mut self,
         oids: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         values: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -391,32 +420,19 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke(".ctor", (oids, values, converter))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString6(
+    pub fn _ctor__cordl_bool_Gc8(
         &mut self,
+        reverse: bool,
         dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dirName))?;
+            .invoke(".ctor", (reverse, dirName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_X509NameEntryConverter7(
-        &mut self,
-        dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        converter: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dirName, converter))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor__cordl_bool_IDictionary_Il2CppString10(
+    pub fn _ctor__cordl_bool_Gc_Gc10(
         &mut self,
         reverse: bool,
         lookUp: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -429,7 +445,22 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
             .invoke(".ctor", (reverse, lookUp, dirName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_IDictionary_Il2CppString_X509NameEntryConverter11(
+    pub fn _ctor__cordl_bool_Gc_Gc9(
+        &mut self,
+        reverse: bool,
+        dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        converter: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (reverse, dirName, converter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor__cordl_bool_Gc_Gc_Gc11(
         &mut self,
         reverse: bool,
         lookUp: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -443,33 +474,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (reverse, lookUp, dirName, converter))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor__cordl_bool_Il2CppString8(
-        &mut self,
-        reverse: bool,
-        dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (reverse, dirName))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor__cordl_bool_Il2CppString_X509NameEntryConverter9(
-        &mut self,
-        reverse: bool,
-        dirName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        converter: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (reverse, dirName, converter))?;
         Ok(__cordl_ret.into())
     }
     pub fn canonicalize(

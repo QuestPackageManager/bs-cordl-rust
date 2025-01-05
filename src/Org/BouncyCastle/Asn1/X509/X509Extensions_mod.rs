@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Extensions {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     pub ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509Extensions")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +47,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
     > {
@@ -52,7 +58,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         > = __cordl_object.invoke("GetCriticalExtensionOids", ())?;
         Ok(__cordl_ret.into())
@@ -62,7 +70,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
     > {
@@ -71,7 +81,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         > = __cordl_object.invoke("GetExtensionOids", ())?;
         Ok(__cordl_ret.into())
@@ -82,7 +94,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
     > {
@@ -91,28 +105,14 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         > = __cordl_object.invoke("GetExtensionOids", (isCritical))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetExtensionParsedValue_DerObjectIdentifier1(
-        &mut self,
-        oid: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-        > = __cordl_object.invoke("GetExtensionParsedValue", (oid))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetExtensionParsedValue_X509Extensions_DerObjectIdentifier0(
+    pub fn GetExtensionParsedValue_Gc0(
         extensions: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
         >,
@@ -128,23 +128,23 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             .invoke("GetExtensionParsedValue", (extensions, oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetExtension_DerObjectIdentifier1(
+    pub fn GetExtensionParsedValue_Gc1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Extension>,
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509Extension,
-        > = __cordl_object.invoke("GetExtension", (oid))?;
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        > = __cordl_object.invoke("GetExtensionParsedValue", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetExtension_X509Extensions_DerObjectIdentifier0(
+    pub fn GetExtension_Gc0(
         extensions: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
         >,
@@ -160,7 +160,33 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             .invoke("GetExtension", (extensions, oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
+    pub fn GetExtension_Gc1(
+        &mut self,
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Extension>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Extension,
+        > = __cordl_object.invoke("GetExtension", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Gc1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Extensions>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance__cordl_bool0(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         explicitly: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -172,22 +198,14 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             .invoke("GetInstance", (obj, explicitly))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInstance_Il2CppObject1(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Extensions>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn GetNonCriticalExtensionOids(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
     > {
@@ -196,32 +214,14 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         > = __cordl_object.invoke("GetNonCriticalExtensionOids", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_ArrayList_ArrayList6(
-        oids: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
-        values: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (oids, values))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_ArrayList_Hashtable5(
-        ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
-        extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ordering, extensions))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Asn1Sequence0(
+    pub fn New_Gc0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -230,16 +230,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Hashtable4(
-        extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (extensions))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_IDictionary1(
+    pub fn New_Gc1(
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -248,7 +239,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             .invoke_void(".ctor", (extensions))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IList_IDictionary2(
+    pub fn New_Gc2(
         ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -258,9 +249,38 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             .invoke_void(".ctor", (ordering, extensions))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IList_IList3(
+    pub fn New_Gc3(
         oids: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         values: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (oids, values))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc4(
+        extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (extensions))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc5(
+        ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+        extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ordering, extensions))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc6(
+        oids: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+        values: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -299,42 +319,22 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToOidArray", (oids))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ArrayList_ArrayList6(
-        &mut self,
-        oids: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
-        values: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (oids, values))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_ArrayList_Hashtable5(
-        &mut self,
-        ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
-        extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (ordering, extensions))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Asn1Sequence0(
+    pub fn _ctor_Gc0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -345,18 +345,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Hashtable4(
-        &mut self,
-        extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (extensions))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_IDictionary1(
+    pub fn _ctor_Gc1(
         &mut self,
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -367,7 +356,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             .invoke(".ctor", (extensions))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IList_IDictionary2(
+    pub fn _ctor_Gc2(
         &mut self,
         ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -379,10 +368,45 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             .invoke(".ctor", (ordering, extensions))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IList_IList3(
+    pub fn _ctor_Gc3(
         &mut self,
         oids: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         values: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (oids, values))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc4(
+        &mut self,
+        extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (extensions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc5(
+        &mut self,
+        ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+        extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (ordering, extensions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc6(
+        &mut self,
+        oids: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+        values: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

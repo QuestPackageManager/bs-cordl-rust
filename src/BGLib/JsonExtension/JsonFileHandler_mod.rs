@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonFileHandler {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "BGLib+JsonExtension+JsonFileHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+JsonExtension+JsonFileHandler")]
 impl std::ops::Deref for crate::BGLib::JsonExtension::JsonFileHandler {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::BGLib::JsonExtension::JsonFileHandler {
 }
 #[cfg(feature = "BGLib+JsonExtension+JsonFileHandler")]
 impl crate::BGLib::JsonExtension::JsonFileHandler {
-    pub fn ReadFromFile_Il2CppString0<T>(
+    pub fn ReadFromFile_Gc0<T>(
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -35,7 +35,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             .invoke("ReadFromFile", (filePath))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadFromFile_JsonSerializerSettings1<T>(
+    pub fn ReadFromFile_Gc1<T>(
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         settings: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::JsonSerializerSettings,
@@ -95,7 +95,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             crate::Newtonsoft::Json::JsonSerializerSettings,
         >,
         beforeSerialize: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::Newtonsoft::Json::JsonTextWriter>,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonTextWriter>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -113,7 +113,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             crate::Newtonsoft::Json::JsonSerializerSettings,
         >,
         beforeSerialize: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::Newtonsoft::Json::JsonTextWriter>,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonTextWriter>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

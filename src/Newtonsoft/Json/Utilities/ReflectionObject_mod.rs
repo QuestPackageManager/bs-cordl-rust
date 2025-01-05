@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionObject {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _Creator_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _Members_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IDictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::Newtonsoft::Json::Utilities::ReflectionMember,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::ReflectionMember>,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject")]
@@ -22,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::ReflectionObject {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,25 +31,13 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::ReflectionObject
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject")]
 impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
-    pub fn Create_Il2CppArray0(
-        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        memberNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::ReflectionObject>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::ReflectionObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (t, memberNames))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Create_MethodBase_Il2CppArray1(
+    pub fn Create_Gc1(
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
         creator: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
         memberNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::ReflectionObject>,
@@ -62,6 +46,22 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
             crate::Newtonsoft::Json::Utilities::ReflectionObject,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Create", (t, creator, memberNames))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Gc_Gc0(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        memberNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::ReflectionObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::ReflectionObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (t, memberNames))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetType(
@@ -92,9 +92,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
     }
     pub fn New(
         creator: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -119,9 +117,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
     pub fn _ctor(
         &mut self,
         creator: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -135,18 +131,14 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("get_Creator", ())?;
         Ok(__cordl_ret.into())
     }
@@ -154,9 +146,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::Newtonsoft::Json::Utilities::ReflectionMember,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Utilities::ReflectionMember,
             >,
         >,
     > {
@@ -164,9 +156,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::Newtonsoft::Json::Utilities::ReflectionMember,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Utilities::ReflectionMember,
             >,
         > = __cordl_object.invoke("get_Members", ())?;
         Ok(__cordl_ret.into())

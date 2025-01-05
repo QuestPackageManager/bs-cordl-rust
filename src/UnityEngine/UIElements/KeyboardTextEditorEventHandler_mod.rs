@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyboardTextEditorEventHandler {
-    __cordl_parent: crate::UnityEngine::UIElements::TextEditorEventHandler,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextEditorEventHandler,
+    >,
     pub m_ImguiEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
     pub m_Changed: bool,
 }
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+KeyboardTextEditorEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
-    type Target = crate::UnityEngine::UIElements::TextEditorEventHandler;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextEditorEventHandler,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,9 +105,7 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
     }
     pub fn OnNavigationEvent<TEvent>(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::NavigationEventBase_1<TEvent>,
-        >,
+        evt: quest_hook::libil2cpp::Gc<TEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TEvent: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument

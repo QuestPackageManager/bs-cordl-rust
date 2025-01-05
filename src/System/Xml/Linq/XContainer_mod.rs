@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XContainer {
-    __cordl_parent: crate::System::Xml::Linq::XNode,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNode>,
     pub content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+Linq+XContainer")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XContainer")]
 impl std::ops::Deref for crate::System::Xml::Linq::XContainer {
-    type Target = crate::System::Xml::Linq::XNode;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNode>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -176,7 +176,7 @@ impl crate::System::Xml::Linq::XContainer {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XContainer1(
+    pub fn New_Gc1(
         other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -189,19 +189,26 @@ impl crate::System::Xml::Linq::XContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Xml::Linq::XNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNode>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Xml::Linq::XNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNode>,
         > = __cordl_object.invoke("Nodes", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadContentFrom_Gc0(
+        &mut self,
+        r: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReadContentFrom", (r))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReadContentFrom_LoadOptions1(
@@ -214,17 +221,6 @@ impl crate::System::Xml::Linq::XContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadContentFrom", (r, o))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ReadContentFrom_XmlReader0(
-        &mut self,
-        r: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadContentFrom", (r))?;
         Ok(__cordl_ret.into())
     }
     pub fn RemoveNode(
@@ -302,7 +298,7 @@ impl crate::System::Xml::Linq::XContainer {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XContainer1(
+    pub fn _ctor_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -339,7 +335,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Linq::XContainer 
 #[repr(C)]
 #[derive(Debug)]
 pub struct XContainer_ContentReader {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _eCache: crate::System::Xml::Linq::NamespaceCache,
     pub _aCache: crate::System::Xml::Linq::NamespaceCache,
     pub _lineInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,
@@ -355,7 +351,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XContainer+ContentReader")]
 impl std::ops::Deref for crate::System::Xml::Linq::XContainer_ContentReader {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -368,7 +364,7 @@ impl std::ops::DerefMut for crate::System::Xml::Linq::XContainer_ContentReader {
 }
 #[cfg(feature = "System+Xml+Linq+XContainer+ContentReader")]
 impl crate::System::Xml::Linq::XContainer_ContentReader {
-    pub fn New_XContainer0(
+    pub fn New_Gc0(
         rootContainer: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -377,7 +373,7 @@ impl crate::System::Xml::Linq::XContainer_ContentReader {
             .invoke_void(".ctor", (rootContainer))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XmlReader_LoadOptions1(
+    pub fn New_Gc_LoadOptions1(
         rootContainer: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,
         r: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
         o: crate::System::Xml::Linq::LoadOptions,
@@ -387,6 +383,18 @@ impl crate::System::Xml::Linq::XContainer_ContentReader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (rootContainer, r, o))?;
         Ok(__cordl_object.into())
+    }
+    pub fn ReadContentFrom_Gc_Gc0(
+        &mut self,
+        rootContainer: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,
+        r: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("ReadContentFrom", (rootContainer, r))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadContentFrom_LoadOptions1(
         &mut self,
@@ -401,19 +409,7 @@ impl crate::System::Xml::Linq::XContainer_ContentReader {
             .invoke("ReadContentFrom", (rootContainer, r, o))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadContentFrom_XContainer_XmlReader0(
-        &mut self,
-        rootContainer: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,
-        r: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("ReadContentFrom", (rootContainer, r))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_XContainer0(
+    pub fn _ctor_Gc0(
         &mut self,
         rootContainer: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -424,7 +420,7 @@ impl crate::System::Xml::Linq::XContainer_ContentReader {
             .invoke(".ctor", (rootContainer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XmlReader_LoadOptions1(
+    pub fn _ctor_Gc_LoadOptions1(
         &mut self,
         rootContainer: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,
         r: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,

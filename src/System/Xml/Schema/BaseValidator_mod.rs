@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseValidator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub schemaCollection: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaCollection,
     >,
@@ -30,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+BaseValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::BaseValidator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,7 +95,7 @@ impl crate::System::Xml::Schema::BaseValidator {
         > = __cordl_object.invoke("FindId", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_BaseValidator0(
+    pub fn New_Gc0(
         other: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseValidator>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -104,7 +104,7 @@ impl crate::System::Xml::Schema::BaseValidator {
             .invoke_void(".ctor", (other))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XmlValidatingReaderImpl_XmlSchemaCollection_IValidationEventHandling1(
+    pub fn New_Gc_Gc1(
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlValidatingReaderImpl>,
         schemaCollection: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaCollection,
@@ -119,24 +119,7 @@ impl crate::System::Xml::Schema::BaseValidator {
             .invoke_void(".ctor", (reader, schemaCollection, eventHandling))?;
         Ok(__cordl_object.into())
     }
-    pub fn ProcessEntity_IValidationEventHandling_Il2CppString_i32_1(
-        sinfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        eventHandling: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::IValidationEventHandling,
-        >,
-        baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        lineNumber: i32,
-        linePosition: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ProcessEntity",
-                (sinfo, name, eventHandling, baseUriStr, lineNumber, linePosition),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ProcessEntity_Il2CppObject_ValidationEventHandler_Il2CppString_i32_0(
+    pub fn ProcessEntity_Gc_i32_0(
         sinfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -154,6 +137,23 @@ impl crate::System::Xml::Schema::BaseValidator {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ProcessEntity_i32_1(
+        sinfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        eventHandling: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::IValidationEventHandling,
+        >,
+        baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lineNumber: i32,
+        linePosition: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ProcessEntity",
+                (sinfo, name, eventHandling, baseUriStr, lineNumber, linePosition),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SaveTextValue(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -165,7 +165,7 @@ impl crate::System::Xml::Schema::BaseValidator {
             .invoke("SaveTextValue", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_Il2CppString0(
+    pub fn SendValidationEvent_Gc0(
         &mut self,
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -176,11 +176,13 @@ impl crate::System::Xml::Schema::BaseValidator {
             .invoke("SendValidationEvent", (code))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_Il2CppString_Il2CppArray1(
+    pub fn SendValidationEvent_Gc1(
         &mut self,
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -190,22 +192,7 @@ impl crate::System::Xml::Schema::BaseValidator {
             .invoke("SendValidationEvent", (code, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_Il2CppString_Il2CppArray_XmlSeverityType5(
-        &mut self,
-        code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-        severity: crate::System::Xml::Schema::XmlSeverityType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendValidationEvent", (code, args, severity))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SendValidationEvent_Il2CppString_Il2CppString2(
+    pub fn SendValidationEvent_Gc2(
         &mut self,
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -217,7 +204,18 @@ impl crate::System::Xml::Schema::BaseValidator {
             .invoke("SendValidationEvent", (code, arg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_Il2CppString_Il2CppString_XmlSeverityType4(
+    pub fn SendValidationEvent_Gc3(
+        &mut self,
+        e: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendValidationEvent", (e))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendValidationEvent_Gc_XmlSeverityType4(
         &mut self,
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -230,18 +228,24 @@ impl crate::System::Xml::Schema::BaseValidator {
             .invoke("SendValidationEvent", (code, msg, severity))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_XmlSchemaException3(
+    pub fn SendValidationEvent_Gc_XmlSeverityType5(
         &mut self,
-        e: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
+        code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+        severity: crate::System::Xml::Schema::XmlSeverityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendValidationEvent", (e))?;
+            .invoke("SendValidationEvent", (code, args, severity))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_XmlSchemaException_XmlSeverityType6(
+    pub fn SendValidationEvent_XmlSeverityType6(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
         severity: crate::System::Xml::Schema::XmlSeverityType,
@@ -283,7 +287,7 @@ impl crate::System::Xml::Schema::BaseValidator {
             .invoke("ValidateWhitespace", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BaseValidator0(
+    pub fn _ctor_Gc0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseValidator>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -294,7 +298,7 @@ impl crate::System::Xml::Schema::BaseValidator {
             .invoke(".ctor", (other))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XmlValidatingReaderImpl_XmlSchemaCollection_IValidationEventHandling1(
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlValidatingReaderImpl>,
         schemaCollection: quest_hook::libil2cpp::Gc<

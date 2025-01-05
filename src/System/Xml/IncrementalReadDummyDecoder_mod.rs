@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IncrementalReadDummyDecoder {
-    __cordl_parent: crate::System::Xml::IncrementalReadDecoder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IncrementalReadDecoder,
+    >,
 }
 #[cfg(feature = "System+Xml+IncrementalReadDummyDecoder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+IncrementalReadDummyDecoder")]
 impl std::ops::Deref for crate::System::Xml::IncrementalReadDummyDecoder {
-    type Target = crate::System::Xml::IncrementalReadDecoder;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::IncrementalReadDecoder>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

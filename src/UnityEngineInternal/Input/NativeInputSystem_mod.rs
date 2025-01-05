@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeInputSystem {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngineInternal+Input+NativeInputSystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngineInternal+Input+NativeInputSystem")]
 impl std::ops::Deref for crate::UnityEngineInternal::Input::NativeInputSystem {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -105,11 +105,13 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
     }
     pub fn get_onDeviceDiscovered() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<i32, *mut quest_hook::libil2cpp::Il2CppString>,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<i32, *mut quest_hook::libil2cpp::Il2CppString>,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_onDeviceDiscovered", ())?;
         Ok(__cordl_ret.into())
@@ -123,7 +125,8 @@ impl crate::UnityEngineInternal::Input::NativeInputSystem {
     }
     pub fn set_onDeviceDiscovered(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<i32, *mut quest_hook::libil2cpp::Il2CppString>,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

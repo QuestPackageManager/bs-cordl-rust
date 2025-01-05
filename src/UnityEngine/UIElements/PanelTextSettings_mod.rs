@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelTextSettings {
-    __cordl_parent: crate::UnityEngine::TextCore::Text::TextSettings,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextSettings,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelTextSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+PanelTextSettings")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PanelTextSettings {
-    type Target = crate::UnityEngine::TextCore::Text::TextSettings;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextSettings,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

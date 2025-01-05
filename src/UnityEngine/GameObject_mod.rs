@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameObject {
-    __cordl_parent: crate::UnityEngine::Object,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
 }
 #[cfg(feature = "UnityEngine+GameObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+GameObject")]
 impl std::ops::Deref for crate::UnityEngine::GameObject {
-    type Target = crate::UnityEngine::Object;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,7 @@ impl crate::UnityEngine::GameObject {
         let __cordl_ret: T = __cordl_object.invoke("AddComponent", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddComponent_Type0(
+    pub fn AddComponent_Gc0(
         &mut self,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -61,7 +61,7 @@ impl crate::UnityEngine::GameObject {
             .invoke("AddComponent", (componentType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BroadcastMessage_Il2CppObject2(
+    pub fn BroadcastMessage_Gc2(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parameter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -73,7 +73,18 @@ impl crate::UnityEngine::GameObject {
             .invoke("BroadcastMessage", (methodName, parameter))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BroadcastMessage_Il2CppObject_SendMessageOptions1(
+    pub fn BroadcastMessage_Gc3(
+        &mut self,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BroadcastMessage", (methodName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BroadcastMessage_Gc_SendMessageOptions1(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parameter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -84,17 +95,6 @@ impl crate::UnityEngine::GameObject {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BroadcastMessage", (methodName, parameter, options))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn BroadcastMessage_Il2CppString3(
-        &mut self,
-        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BroadcastMessage", (methodName))?;
         Ok(__cordl_ret.into())
     }
     pub fn BroadcastMessage_SendMessageOptions0(
@@ -150,11 +150,15 @@ impl crate::UnityEngine::GameObject {
         tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindGameObjectsWithTag", (tag))?;
         Ok(__cordl_ret.into())
@@ -252,7 +256,7 @@ impl crate::UnityEngine::GameObject {
         let __cordl_ret: T = __cordl_object.invoke("GetComponentInChildren", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentInChildren_Type1(
+    pub fn GetComponentInChildren_Gc1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -265,7 +269,7 @@ impl crate::UnityEngine::GameObject {
             .invoke("GetComponentInChildren", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentInChildren_Type__cordl_bool0(
+    pub fn GetComponentInChildren_Gc__cordl_bool0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         includeInactive: bool,
@@ -305,7 +309,7 @@ impl crate::UnityEngine::GameObject {
         let __cordl_ret: T = __cordl_object.invoke("GetComponentInParent", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentInParent_Type1(
+    pub fn GetComponentInParent_Gc1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -318,7 +322,7 @@ impl crate::UnityEngine::GameObject {
             .invoke("GetComponentInParent", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentInParent_Type__cordl_bool0(
+    pub fn GetComponentInParent_Gc__cordl_bool0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         includeInactive: bool,
@@ -368,9 +372,9 @@ impl crate::UnityEngine::GameObject {
         let __cordl_ret: T = __cordl_object.invoke("GetComponent", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponent_Il2CppString2(
+    pub fn GetComponent_Gc1(
         &mut self,
-        _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
     > {
@@ -381,9 +385,9 @@ impl crate::UnityEngine::GameObject {
             .invoke("GetComponent", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponent_Type1(
+    pub fn GetComponent_Gc2(
         &mut self,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
     > {
@@ -411,11 +415,29 @@ impl crate::UnityEngine::GameObject {
         > = __cordl_object.invoke("GetComponentsInChildren", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentsInChildren_List_1_5<T>(
+    pub fn GetComponentsInChildren_Gc0(
         &mut self,
-        results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
+        > = __cordl_object.invoke("GetComponentsInChildren", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetComponentsInChildren_Gc5<T>(
+        &mut self,
+        results: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -428,36 +450,24 @@ impl crate::UnityEngine::GameObject {
             .invoke("GetComponentsInChildren", (results))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentsInChildren_Type0(
-        &mut self,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
-        > = __cordl_object.invoke("GetComponentsInChildren", (_cordl_type))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetComponentsInChildren_Type__cordl_bool1(
+    pub fn GetComponentsInChildren_Gc__cordl_bool1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         > = __cordl_object
             .invoke("GetComponentsInChildren", (_cordl_type, includeInactive))?;
         Ok(__cordl_ret.into())
@@ -480,12 +490,10 @@ impl crate::UnityEngine::GameObject {
         > = __cordl_object.invoke("GetComponentsInChildren", (includeInactive))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentsInChildren__cordl_bool_List_1_3<T>(
+    pub fn GetComponentsInChildren__cordl_bool_Gc3<T>(
         &mut self,
         includeInactive: bool,
-        results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        results: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -515,36 +523,44 @@ impl crate::UnityEngine::GameObject {
         > = __cordl_object.invoke("GetComponentsInParent", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentsInParent_Type0(
+    pub fn GetComponentsInParent_Gc0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         > = __cordl_object.invoke("GetComponentsInParent", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentsInParent_Type__cordl_bool1(
+    pub fn GetComponentsInParent_Gc__cordl_bool1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         > = __cordl_object
             .invoke("GetComponentsInParent", (_cordl_type, includeInactive))?;
         Ok(__cordl_ret.into())
@@ -567,12 +583,10 @@ impl crate::UnityEngine::GameObject {
         > = __cordl_object.invoke("GetComponentsInParent", (includeInactive))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentsInParent__cordl_bool_List_1_2<T>(
+    pub fn GetComponentsInParent__cordl_bool_Gc2<T>(
         &mut self,
         includeInactive: bool,
-        results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        results: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -628,11 +642,29 @@ impl crate::UnityEngine::GameObject {
         > = __cordl_object.invoke("GetComponents", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponents_List_1_3<T>(
+    pub fn GetComponents_Gc0(
         &mut self,
-        results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
+        > = __cordl_object.invoke("GetComponents", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetComponents_Gc3<T>(
+        &mut self,
+        results: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -645,29 +677,11 @@ impl crate::UnityEngine::GameObject {
             .invoke("GetComponents", (results))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponents_Type0(
-        &mut self,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
-        > = __cordl_object.invoke("GetComponents", (_cordl_type))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetComponents_Type_List_1_2(
+    pub fn GetComponents_Gc_Gc2(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Component,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -782,7 +796,7 @@ impl crate::UnityEngine::GameObject {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString0(
+    pub fn New_Gc0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -791,10 +805,12 @@ impl crate::UnityEngine::GameObject {
             .invoke_void(".ctor", (name))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppArray2(
+    pub fn New_Gc_Gc2(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         components: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -816,7 +832,7 @@ impl crate::UnityEngine::GameObject {
             .invoke("QueryComponentAtIndex", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendMessageUpwards_Il2CppObject2(
+    pub fn SendMessageUpwards_Gc2(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -828,7 +844,18 @@ impl crate::UnityEngine::GameObject {
             .invoke("SendMessageUpwards", (methodName, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendMessageUpwards_Il2CppObject_SendMessageOptions1(
+    pub fn SendMessageUpwards_Gc3(
+        &mut self,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendMessageUpwards", (methodName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendMessageUpwards_Gc_SendMessageOptions1(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -839,17 +866,6 @@ impl crate::UnityEngine::GameObject {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendMessageUpwards", (methodName, value, options))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SendMessageUpwards_Il2CppString3(
-        &mut self,
-        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendMessageUpwards", (methodName))?;
         Ok(__cordl_ret.into())
     }
     pub fn SendMessageUpwards_SendMessageOptions0(
@@ -864,7 +880,7 @@ impl crate::UnityEngine::GameObject {
             .invoke("SendMessageUpwards", (methodName, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendMessage_Il2CppObject2(
+    pub fn SendMessage_Gc2(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -876,7 +892,18 @@ impl crate::UnityEngine::GameObject {
             .invoke("SendMessage", (methodName, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendMessage_Il2CppObject_SendMessageOptions1(
+    pub fn SendMessage_Gc3(
+        &mut self,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendMessage", (methodName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendMessage_Gc_SendMessageOptions1(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -887,17 +914,6 @@ impl crate::UnityEngine::GameObject {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendMessage", (methodName, value, options))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SendMessage_Il2CppString3(
-        &mut self,
-        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendMessage", (methodName))?;
         Ok(__cordl_ret.into())
     }
     pub fn SendMessage_SendMessageOptions0(
@@ -1001,10 +1017,12 @@ impl crate::UnityEngine::GameObject {
         let __cordl_ret: bool = __cordl_object.invoke("TryGetComponent", (component))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryGetComponent_Type_ByRefMut1(
+    pub fn TryGetComponent_Gc_ByRefMut1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        component: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Component>,
+        component: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1023,7 +1041,7 @@ impl crate::UnityEngine::GameObject {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString0(
+    pub fn _ctor_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1034,11 +1052,13 @@ impl crate::UnityEngine::GameObject {
             .invoke(".ctor", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppArray2(
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         components: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -60,7 +60,9 @@ impl crate::System::TypedReference {
     pub fn MakeTypedReference(
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         flds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::FieldInfo>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::TypedReference> {
         let __cordl_ret: crate::System::TypedReference = <Self as quest_hook::libil2cpp::Type>::class()

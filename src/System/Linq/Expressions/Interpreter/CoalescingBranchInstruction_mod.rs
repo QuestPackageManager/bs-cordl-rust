@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CoalescingBranchInstruction {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::OffsetInstruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::OffsetInstruction,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+CoalescingBranchInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+CoalescingBranchInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::CoalescingBranchInstruction {
-    type Target = crate::System::Linq::Expressions::Interpreter::OffsetInstruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::OffsetInstruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,7 +65,9 @@ impl crate::System::Linq::Expressions::Interpreter::CoalescingBranchInstruction 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::Instruction,
+                >,
             >,
         >,
     > {
@@ -70,7 +76,9 @@ impl crate::System::Linq::Expressions::Interpreter::CoalescingBranchInstruction 
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::Instruction,
+                >,
             >,
         > = __cordl_object.invoke("get_Cache", ())?;
         Ok(__cordl_ret.into())

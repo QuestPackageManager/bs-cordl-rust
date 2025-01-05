@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsAuthenticatedGenerator {
-    __cordl_parent: crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator {
-    type Target = crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +36,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SecureRandom1(
+    pub fn New_Gc1(
         _cordl_rand: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
@@ -53,7 +57,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SecureRandom1(
+    pub fn _ctor_Gc1(
         &mut self,
         _cordl_rand: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,

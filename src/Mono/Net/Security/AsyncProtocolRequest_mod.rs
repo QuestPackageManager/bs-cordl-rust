@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncProtocolRequest {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _Parent_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::Mono::Net::Security::MobileAuthenticatedStream,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest")]
 impl std::ops::Deref for crate::Mono::Net::Security::AsyncProtocolRequest {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,16 +37,13 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<i32>>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Nullable_1<i32>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<i32>>,
-        > = __cordl_object.invoke("InnerRead", (cancellationToken))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Nullable_1<i32>> = __cordl_object
+            .invoke("InnerRead", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -114,18 +111,14 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::Mono::Net::Security::AsyncProtocolResult,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::AsyncProtocolResult>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::Mono::Net::Security::AsyncProtocolResult,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::AsyncProtocolResult>,
         > = __cordl_object.invoke("StartOperation", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }

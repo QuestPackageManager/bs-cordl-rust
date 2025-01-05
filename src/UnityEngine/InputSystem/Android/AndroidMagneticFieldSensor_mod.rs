@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidMagneticFieldSensor {
-    __cordl_parent: crate::UnityEngine::InputSystem::MagneticFieldSensor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::MagneticFieldSensor,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidMagneticFieldSensor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidMagneticFieldSensor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidMagneticFieldSensor {
-    type Target = crate::UnityEngine::InputSystem::MagneticFieldSensor;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::MagneticFieldSensor,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

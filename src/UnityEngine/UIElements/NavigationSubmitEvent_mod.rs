@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NavigationSubmitEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::NavigationEventBase_1<
-        *mut crate::UnityEngine::UIElements::NavigationSubmitEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationSubmitEvent>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigationSubmitEvent")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+NavigationSubmitEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::NavigationSubmitEvent {
-    type Target = crate::UnityEngine::UIElements::NavigationEventBase_1<
-        *mut crate::UnityEngine::UIElements::NavigationSubmitEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationSubmitEvent>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

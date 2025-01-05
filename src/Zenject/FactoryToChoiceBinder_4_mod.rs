@@ -7,12 +7,7 @@ pub struct FactoryToChoiceBinder_4<
     TParam3: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::FactoryFromBinder_4<
-        TParam1,
-        TParam2,
-        TParam3,
-        TContract,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TContract>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
     __cordl_phantom_TParam3: std::marker::PhantomData<TParam3>,
@@ -32,12 +27,7 @@ impl<
     TContract: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Zenject::FactoryToChoiceBinder_4<TParam1, TParam2, TParam3, TContract> {
-    type Target = crate::Zenject::FactoryFromBinder_4<
-        TParam1,
-        TParam2,
-        TParam3,
-        TContract,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TContract>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,9 +75,7 @@ impl<
     pub fn To<TConcrete>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_4<TParam1, TParam2, TParam3, TConcrete>,
-        >,
+        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TConcrete>,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -105,16 +93,17 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_4<TParam1, TParam2, TParam3, TConcrete>,
+            TParam1,
+            TParam2,
+            TParam3,
+            TConcrete,
         > = __cordl_object.invoke("To", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn ToSelf(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_4<TParam1, TParam2, TParam3, TContract>,
-        >,
+        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TContract>,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -130,7 +119,10 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_4<TParam1, TParam2, TParam3, TContract>,
+            TParam1,
+            TParam2,
+            TParam3,
+            TContract,
         > = __cordl_object.invoke("ToSelf", ())?;
         Ok(__cordl_ret.into())
     }

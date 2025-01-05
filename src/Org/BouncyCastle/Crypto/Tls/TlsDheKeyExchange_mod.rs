@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsDheKeyExchange {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::TlsDHKeyExchange,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsDHKeyExchange,
+    >,
     pub mServerCredentials: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials,
     >,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDheKeyExchange")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsDheKeyExchange {
-    type Target = crate::Org::BouncyCastle::Crypto::Tls::TlsDHKeyExchange;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsDHKeyExchange,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,25 +68,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDheKeyExchange {
             .invoke("InitVerifyer", (tlsSigner, algorithm, securityParameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_DHParameters0(
-        keyExchange: i32,
-        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IList,
-        >,
-        dhParameters: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (keyExchange, supportedSignatureAlgorithms, dhParameters),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_TlsDHVerifier_DHParameters1(
+    pub fn New_Gc1(
         keyExchange: i32,
         supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IList,
@@ -100,6 +86,24 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDheKeyExchange {
             .invoke_void(
                 ".ctor",
                 (keyExchange, supportedSignatureAlgorithms, dhVerifier, dhParameters),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_i32_Gc_Gc0(
+        keyExchange: i32,
+        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IList,
+        >,
+        dhParameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (keyExchange, supportedSignatureAlgorithms, dhParameters),
             )?;
         Ok(__cordl_object.into())
     }
@@ -127,24 +131,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDheKeyExchange {
             .invoke("ProcessServerKeyExchange", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DHParameters0(
-        &mut self,
-        keyExchange: i32,
-        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IList,
-        >,
-        dhParameters: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (keyExchange, supportedSignatureAlgorithms, dhParameters))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_TlsDHVerifier_DHParameters1(
+    pub fn _ctor_Gc1(
         &mut self,
         keyExchange: i32,
         supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
@@ -165,6 +152,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDheKeyExchange {
                 ".ctor",
                 (keyExchange, supportedSignatureAlgorithms, dhVerifier, dhParameters),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_i32_Gc_Gc0(
+        &mut self,
+        keyExchange: i32,
+        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IList,
+        >,
+        dhParameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (keyExchange, supportedSignatureAlgorithms, dhParameters))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Touchscreen {
-    __cordl_parent: crate::UnityEngine::InputSystem::Pointer,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pointer>,
     pub _primaryTouch_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::TouchControl,
     >,
     pub _touches_k__BackingField: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-        *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::TouchControl,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Touchscreen {
-    type Target = crate::UnityEngine::InputSystem::Pointer;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pointer>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -217,7 +219,9 @@ impl crate::UnityEngine::InputSystem::Touchscreen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::TouchControl,
+                >,
             >,
         >,
     > {
@@ -226,7 +230,9 @@ impl crate::UnityEngine::InputSystem::Touchscreen {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::TouchControl,
+                >,
             >,
         > = __cordl_object.invoke("get_touchControlArray", ())?;
         Ok(__cordl_ret.into())
@@ -235,14 +241,18 @@ impl crate::UnityEngine::InputSystem::Touchscreen {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::Controls::TouchControl,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::Controls::TouchControl,
+            >,
         > = __cordl_object.invoke("get_touches", ())?;
         Ok(__cordl_ret.into())
     }
@@ -270,7 +280,9 @@ impl crate::UnityEngine::InputSystem::Touchscreen {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::TouchControl,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -284,7 +296,9 @@ impl crate::UnityEngine::InputSystem::Touchscreen {
     pub fn set_touches(
         &mut self,
         value: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::Controls::TouchControl,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -305,52 +319,82 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Touc
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::ICustomDeviceReset>
-for crate::UnityEngine::InputSystem::Touchscreen {
-    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::ICustomDeviceReset {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::ICustomDeviceReset>
-for crate::UnityEngine::InputSystem::Touchscreen {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::ICustomDeviceReset {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IEventMerger>
-for crate::UnityEngine::InputSystem::Touchscreen {
-    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IEventMerger>
-for crate::UnityEngine::InputSystem::Touchscreen {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver>
-for crate::UnityEngine::InputSystem::Touchscreen {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::ICustomDeviceReset,
+    >,
+> for crate::UnityEngine::InputSystem::Touchscreen {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::ICustomDeviceReset,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver>
-for crate::UnityEngine::InputSystem::Touchscreen {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::ICustomDeviceReset,
+    >,
+> for crate::UnityEngine::InputSystem::Touchscreen {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::ICustomDeviceReset,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::IEventMerger>,
+> for crate::UnityEngine::InputSystem::Touchscreen {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IEventMerger,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::IEventMerger>,
+> for crate::UnityEngine::InputSystem::Touchscreen {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IEventMerger,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver,
+    >,
+> for crate::UnityEngine::InputSystem::Touchscreen {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver,
+    >,
+> for crate::UnityEngine::InputSystem::Touchscreen {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

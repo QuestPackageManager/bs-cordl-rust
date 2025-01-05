@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AesWrapEngine {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::Rfc3394WrapEngine,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Engines::Rfc3394WrapEngine,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+AesWrapEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+AesWrapEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::AesWrapEngine {
-    type Target = crate::Org::BouncyCastle::Crypto::Engines::Rfc3394WrapEngine;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Engines::Rfc3394WrapEngine,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

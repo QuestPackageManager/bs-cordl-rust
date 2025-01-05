@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Extensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "AddressablesInternalBridge+Runtime+Extensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AddressablesInternalBridge+Runtime+Extensions")]
 impl std::ops::Deref for crate::AddressablesInternalBridge::Runtime::Extensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,14 +39,14 @@ impl crate::AddressablesInternalBridge::Runtime::Extensions {
     }
     pub fn GetUpdateableCatalogLocationDatas() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+            quest_hook::libil2cpp::Gc<
+                crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+            quest_hook::libil2cpp::Gc<
+                crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetUpdateableCatalogLocationDatas", ())?;

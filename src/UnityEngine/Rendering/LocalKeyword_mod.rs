@@ -24,7 +24,7 @@ for crate::UnityEngine::Rendering::LocalKeyword {
 }
 #[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
 impl crate::UnityEngine::Rendering::LocalKeyword {
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -66,20 +66,20 @@ impl crate::UnityEngine::Rendering::LocalKeyword {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::LocalKeyword>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::LocalKeyword>>
 for crate::UnityEngine::Rendering::LocalKeyword {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::LocalKeyword> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::LocalKeyword> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::LocalKeyword>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::LocalKeyword>>
 for crate::UnityEngine::Rendering::LocalKeyword {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Rendering::LocalKeyword> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::LocalKeyword> {
         todo!()
     }
 }

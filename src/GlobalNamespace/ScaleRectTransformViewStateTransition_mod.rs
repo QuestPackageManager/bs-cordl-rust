@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScaleRectTransformViewStateTransition {
-    __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
-        *mut crate::UnityEngine::RectTransform,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     >,
     pub _transition: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::Vector3TransitionSO,
@@ -18,8 +18,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScaleRectTransformViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::ScaleRectTransformViewStateTransition {
-    type Target = crate::GlobalNamespace::BaseStateTransition_1<
-        *mut crate::UnityEngine::RectTransform,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

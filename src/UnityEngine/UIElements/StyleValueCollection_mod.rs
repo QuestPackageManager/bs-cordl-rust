@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleValueCollection {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Values: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StyleValue,
-        >,
+        crate::UnityEngine::UIElements::StyleSheets::StyleValue,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleValueCollection")]
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+StyleValueCollection")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleValueCollection {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

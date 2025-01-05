@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionParser {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _escape: char,
     pub _decimalSeparator: char,
     pub _listSeparator: char,
@@ -14,13 +14,17 @@ pub struct ExpressionParser {
     pub _token: crate::System::Data::Tokens,
     pub _op: i32,
     pub _ops: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::OperatorInfo>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::OperatorInfo>,
+        >,
     >,
     pub _topOperator: i32,
     pub _topNode: i32,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _nodeStack: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::ExpressionNode>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+        >,
     >,
     pub _prevOperand: i32,
     pub _expression: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
@@ -32,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+ExpressionParser")]
 impl std::ops::Deref for crate::System::Data::ExpressionParser {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -221,7 +225,7 @@ impl crate::System::Data::ExpressionParser {
             .invoke("ScanName", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ScanName__cordl_char__cordl_char_Il2CppString1(
+    pub fn ScanName__cordl_char__cordl_char_Gc1(
         &mut self,
         chEnd: char,
         esc: char,

@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputControl_1<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputControl,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputControl,
+    >,
     pub m_ProcessorStack: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-        *mut crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+        quest_hook::libil2cpp::Gc<TValue>,
     >,
     pub m_CachedValue: TValue,
     pub m_UnprocessedCachedValue: TValue,
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+InputControl_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::InputControl_1<TValue> {
-    type Target = crate::UnityEngine::InputSystem::InputControl;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputControl,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,7 +66,7 @@ impl<
             .invoke("CompareValue", (firstValue, secondValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareValue_Il2CppObject_Il2CppObject1(
+    pub fn CompareValue_Gc_Gc1(
         &mut self,
         firstStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         secondStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -371,9 +375,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TValue>>,
         >,
     >
     where
@@ -384,9 +386,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TValue>>,
         > = __cordl_object.invoke("get_processors", ())?;
         Ok(__cordl_ret.into())
     }

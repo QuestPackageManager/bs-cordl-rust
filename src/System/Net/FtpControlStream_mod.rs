@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FtpControlStream {
-    __cordl_parent: crate::System::Net::CommandStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::CommandStream>,
     pub _dataSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub _passiveEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     pub _tlsStream: quest_hook::libil2cpp::Gc<crate::System::Net::TlsStream>,
@@ -35,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+FtpControlStream")]
 impl std::ops::Deref for crate::System::Net::FtpControlStream {
-    type Target = crate::System::Net::CommandStream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::CommandStream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +73,9 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::CommandStream_PipelineEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::CommandStream_PipelineEntry,
+                >,
             >,
         >,
     > {
@@ -82,7 +84,9 @@ impl crate::System::Net::FtpControlStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::CommandStream_PipelineEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::CommandStream_PipelineEntry,
+                >,
             >,
         > = __cordl_object.invoke("BuildCommandsList", (req))?;
         Ok(__cordl_ret.into())
@@ -227,12 +231,14 @@ impl crate::System::Net::FtpControlStream {
     pub fn GetPathInfo(
         pathOption: crate::System::Net::FtpControlStream_GetPathOption,
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
-        path: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        path: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
         directory: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         filename: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -299,7 +305,9 @@ impl crate::System::Net::FtpControlStream {
         >,
         response: quest_hook::libil2cpp::Gc<crate::System::Net::ResponseDescription>,
         timeout: bool,
-        stream: quest_hook::libil2cpp::ByRefMut<*mut crate::System::IO::Stream>,
+        stream: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Net::CommandStream_PipelineInstruction,
     > {
@@ -317,7 +325,9 @@ impl crate::System::Net::FtpControlStream {
         >,
         response: quest_hook::libil2cpp::Gc<crate::System::Net::ResponseDescription>,
         timeout: bool,
-        stream: quest_hook::libil2cpp::ByRefMut<*mut crate::System::IO::Stream>,
+        stream: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        >,
         isSocketReady: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Net::CommandStream_PipelineInstruction,
@@ -334,7 +344,9 @@ impl crate::System::Net::FtpControlStream {
     }
     pub fn QueueOrCreateFtpDataStream(
         &mut self,
-        stream: quest_hook::libil2cpp::ByRefMut<*mut crate::System::IO::Stream>,
+        stream: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Net::CommandStream_PipelineInstruction,
     > {

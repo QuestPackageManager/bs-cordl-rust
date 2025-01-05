@@ -2,18 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_GeoGroup {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _subMeshesMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::HoudiniEngineUnity::HEU_MeshData,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MeshData>,
     >,
     pub _sharedNormalIndices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_VertexEntry,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VertexEntry>,
             >,
         >,
     >,
@@ -25,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeoGroup")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GeoGroup {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,21 +85,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_GeoGro
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeoGroup")]
-impl AsRef<crate::System::IComparable_1<*mut crate::HoudiniEngineUnity::HEU_GeoGroup>>
-for crate::HoudiniEngineUnity::HEU_GeoGroup {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
+    >,
+> for crate::HoudiniEngineUnity::HEU_GeoGroup {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<*mut crate::HoudiniEngineUnity::HEU_GeoGroup> {
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeoGroup")]
-impl AsMut<crate::System::IComparable_1<*mut crate::HoudiniEngineUnity::HEU_GeoGroup>>
-for crate::HoudiniEngineUnity::HEU_GeoGroup {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
+    >,
+> for crate::HoudiniEngineUnity::HEU_GeoGroup {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
-        *mut crate::HoudiniEngineUnity::HEU_GeoGroup,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
     > {
         unsafe { std::mem::transmute(self) }
     }

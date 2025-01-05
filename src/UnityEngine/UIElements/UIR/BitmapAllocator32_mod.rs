@@ -4,13 +4,9 @@
 pub struct BitmapAllocator32 {
     pub m_PageHeight: i32,
     pub m_Pages: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page,
-        >,
+        crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page,
     >,
-    pub m_AllocMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<u32>,
-    >,
+    pub m_AllocMap: quest_hook::libil2cpp::Gc<u32>,
     pub m_EntryWidth: i32,
     pub m_EntryHeight: i32,
 }

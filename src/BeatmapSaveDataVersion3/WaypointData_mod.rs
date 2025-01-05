@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaypointData {
-    __cordl_parent: crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem,
+    >,
     pub x: i32,
     pub y: i32,
     pub d: crate::BeatmapSaveDataCommon::OffsetDirection,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion3+WaypointData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::WaypointData {
-    type Target = crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

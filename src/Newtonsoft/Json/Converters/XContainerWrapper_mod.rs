@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XContainerWrapper {
-    __cordl_parent: crate::Newtonsoft::Json::Converters::XObjectWrapper,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Converters::XObjectWrapper,
+    >,
     pub _childNodes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XContainerWrapper")]
@@ -16,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Converters+XContainerWrapper")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::XContainerWrapper {
-    type Target = crate::Newtonsoft::Json::Converters::XObjectWrapper;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Converters::XObjectWrapper,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,18 +81,14 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
         > = __cordl_object.invoke("get_ChildNodes", ())?;
         Ok(__cordl_ret.into())
     }

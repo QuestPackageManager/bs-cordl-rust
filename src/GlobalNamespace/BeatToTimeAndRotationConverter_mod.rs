@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatToTimeAndRotationConverter {
-    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatToTimeConverter,
+    >,
     pub _rotationTimeProcessor: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::RotationTimeProcessor,
     >,
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatToTimeAndRotationConverter")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatToTimeAndRotationConverter {
-    type Target = crate::GlobalNamespace::BeatToTimeConverter;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatToTimeConverter>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

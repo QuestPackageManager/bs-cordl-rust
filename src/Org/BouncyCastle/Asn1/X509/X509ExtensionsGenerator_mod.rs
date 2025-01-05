@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509ExtensionsGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     pub extOrdering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509ExtensionsGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::X509ExtensionsGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ for crate::Org::BouncyCastle::Asn1::X509::X509ExtensionsGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509ExtensionsGenerator")]
 impl crate::Org::BouncyCastle::Asn1::X509::X509ExtensionsGenerator {
-    pub fn AddExtension_Asn1Encodable0(
+    pub fn AddExtension_Gc__cordl_bool_Gc0(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509ExtensionsGenerator {
             .invoke("AddExtension", (oid, critical, extValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddExtension_Il2CppArray1(
+    pub fn AddExtension_Gc__cordl_bool_Gc1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,

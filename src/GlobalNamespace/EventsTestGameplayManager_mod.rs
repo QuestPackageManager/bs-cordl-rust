@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventsTestGameplayManager {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _moveTime: bool,
     pub _spawnTestBox: bool,
     pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
@@ -16,33 +16,24 @@ pub struct EventsTestGameplayManager {
     pub _floatValue: f32,
     pub _beatmapEventDataBoxGroupLists: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroupList,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapEventDataBoxGroupList,
+            >,
         >,
     >,
     pub groupState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
     pub _beatmapEventTypeBindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::KeyCode,
-            crate::GlobalNamespace::BasicBeatmapEventType,
-        >,
+        crate::UnityEngine::KeyCode,
+        crate::GlobalNamespace::BasicBeatmapEventType,
     >,
-    pub _intBindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::KeyCode,
-            i32,
-        >,
-    >,
+    pub _intBindings: quest_hook::libil2cpp::Gc<crate::UnityEngine::KeyCode, i32>,
     pub _beatmapValuesBindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::KeyCode,
-            i32,
-        >,
+        crate::UnityEngine::KeyCode,
+        i32,
     >,
     pub _floatValuesBindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::KeyCode,
-            f32,
-        >,
+        crate::UnityEngine::KeyCode,
+        f32,
     >,
     pub _rotatingLasers: bool,
 }
@@ -53,7 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EventsTestGameplayManager")]
 impl std::ops::Deref for crate::GlobalNamespace::EventsTestGameplayManager {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -165,7 +156,7 @@ for crate::GlobalNamespace::EventsTestGameplayManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventsTestGameplayManager_MockBeatToTimeConverter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _bpm: f32,
 }
 #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
@@ -177,7 +168,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -233,16 +224,20 @@ for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
     }
 }
 #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
-impl AsRef<crate::GlobalNamespace::IBeatToTimeConverter>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatToTimeConverter>>
 for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatToTimeConverter {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatToTimeConverter> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
-impl AsMut<crate::GlobalNamespace::IBeatToTimeConverter>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatToTimeConverter>>
 for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatToTimeConverter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatToTimeConverter> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Prng::IRandomGener
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+IRandomGenerator")]
 impl crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator {
-    pub fn AddSeedMaterial_Il2CppArray0(
+    pub fn AddSeedMaterial_Gc0(
         &mut self,
         seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -47,7 +47,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator {
             .invoke("AddSeedMaterial", (seed))?;
         Ok(__cordl_ret.into())
     }
-    pub fn NextBytes_Il2CppArray0(
+    pub fn NextBytes_Gc0(
         &mut self,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

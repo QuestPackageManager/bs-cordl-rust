@@ -54,16 +54,18 @@ impl crate::LufsMetering::CalculateRmsJob {
     }
 }
 #[cfg(feature = "LufsMetering+CalculateRmsJob")]
-impl AsRef<crate::Unity::Jobs::IJobParallelFor>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor>>
 for crate::LufsMetering::CalculateRmsJob {
-    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor> {
         todo!()
     }
 }
 #[cfg(feature = "LufsMetering+CalculateRmsJob")]
-impl AsMut<crate::Unity::Jobs::IJobParallelFor>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor>>
 for crate::LufsMetering::CalculateRmsJob {
-    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor> {
         todo!()
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CPUMonitor {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _utilization: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RollingAverage>,
     pub _currentProcess: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Process>,
     pub _processorCount: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CPUMonitor")]
 impl std::ops::Deref for crate::GlobalNamespace::CPUMonitor {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,26 +73,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CPUMonitor {
     }
 }
 #[cfg(feature = "CPUMonitor")]
-impl AsRef<crate::GlobalNamespace::ICPUMonitor> for crate::GlobalNamespace::CPUMonitor {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ICPUMonitor {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICPUMonitor>>
+for crate::GlobalNamespace::CPUMonitor {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICPUMonitor> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "CPUMonitor")]
-impl AsMut<crate::GlobalNamespace::ICPUMonitor> for crate::GlobalNamespace::CPUMonitor {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ICPUMonitor {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICPUMonitor>>
+for crate::GlobalNamespace::CPUMonitor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICPUMonitor> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "CPUMonitor")]
-impl AsRef<crate::GlobalNamespace::IPollable> for crate::GlobalNamespace::CPUMonitor {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
+for crate::GlobalNamespace::CPUMonitor {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "CPUMonitor")]
-impl AsMut<crate::GlobalNamespace::IPollable> for crate::GlobalNamespace::CPUMonitor {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
+for crate::GlobalNamespace::CPUMonitor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
         unsafe { std::mem::transmute(self) }
     }
 }

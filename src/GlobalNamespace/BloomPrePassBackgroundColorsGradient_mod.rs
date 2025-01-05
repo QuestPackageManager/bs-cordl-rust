@@ -2,10 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradient {
-    __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
+    >,
     pub _elements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+            >,
         >,
     >,
 }
@@ -17,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomPrePassBackgroundColorsGradient")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient {
-    type Target = crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,7 +84,9 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+                >,
             >,
         >,
     > {
@@ -87,7 +95,9 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+                >,
             >,
         > = __cordl_object.invoke("get_elements", ())?;
         Ok(__cordl_ret.into())
@@ -107,7 +117,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradient_Element {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub color: crate::UnityEngine::Color,
     pub startT: f32,
     pub exp: f32,
@@ -121,7 +131,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BloomPrePassBackgroundColorsGradient+Element")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

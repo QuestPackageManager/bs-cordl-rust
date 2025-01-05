@@ -29,7 +29,7 @@ for crate::System::IObservable_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::System::IObservable_1<T> {
     pub fn Subscribe(
         &mut self,
-        observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<T>>,
+        observer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     >

@@ -40,7 +40,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
     pub fn ParseMultiple_ByRefMut1(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         list: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
             >,
         >,
@@ -49,19 +49,15 @@ impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
             .invoke("ParseMultiple", (text, list))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ParseMultiple_Il2CppString0(
+    pub fn ParseMultiple_Gc0(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
-            >,
+            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
-            >,
+            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ParseMultiple", (text))?;
         Ok(__cordl_ret.into())

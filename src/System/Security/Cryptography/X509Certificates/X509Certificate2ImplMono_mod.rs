@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Certificate2ImplMono {
-    __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplUnix,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplUnix,
+    >,
     pub intermediateCerts: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection,
     >,
@@ -23,7 +25,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplMono {
-    type Target = crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplUnix;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplUnix,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,7 +99,24 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
         > = __cordl_object.invoke("GetRawCertData", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImportPkcs12_Il2CppString1(
+    pub fn ImportPkcs12_Gc_Gc0(
+        &mut self,
+        rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        password: quest_hook::libil2cpp::Gc<
+            crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::X509::X509Certificate,
+        > = __cordl_object.invoke("ImportPkcs12", (rawData, password))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ImportPkcs12_Gc_Gc1(
         &mut self,
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -110,24 +131,27 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
         > = __cordl_object.invoke("ImportPkcs12", (rawData, password))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImportPkcs12_SafePasswordHandle0(
-        &mut self,
-        rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        password: quest_hook::libil2cpp::Gc<
-            crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Mono::Security::X509::X509Certificate,
-        > = __cordl_object.invoke("ImportPkcs12", (rawData, password))?;
-        Ok(__cordl_ret.into())
+    pub fn New_Gc0(
+        cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (cert))?;
+        Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_SafePasswordHandle_X509KeyStorageFlags2(
+    pub fn New_Gc1(
+        other: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplMono,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (other))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_X509KeyStorageFlags2(
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         password: quest_hook::libil2cpp::Gc<
             crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
@@ -138,26 +162,6 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (rawData, password, keyStorageFlags))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_X509Certificate0(
-        cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (cert))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_X509Certificate2ImplMono1(
-        other: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplMono,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (other))?;
         Ok(__cordl_object.into())
     }
     pub fn Verify(
@@ -172,7 +176,31 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
         let __cordl_ret: bool = __cordl_object.invoke("Verify", (thisCertificate))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_SafePasswordHandle_X509KeyStorageFlags2(
+    pub fn _ctor_Gc0(
+        &mut self,
+        cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (cert))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc1(
+        &mut self,
+        other: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplMono,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (other))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_X509KeyStorageFlags2(
         &mut self,
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         password: quest_hook::libil2cpp::Gc<
@@ -185,30 +213,6 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (rawData, password, keyStorageFlags))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_X509Certificate0(
-        &mut self,
-        cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (cert))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_X509Certificate2ImplMono1(
-        &mut self,
-        other: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplMono,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (other))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Cert(

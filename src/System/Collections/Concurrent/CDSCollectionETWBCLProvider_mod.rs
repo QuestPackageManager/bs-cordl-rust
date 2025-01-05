@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CDSCollectionETWBCLProvider {
-    __cordl_parent: crate::System::Diagnostics::Tracing::EventSource,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Diagnostics::Tracing::EventSource,
+    >,
 }
 #[cfg(feature = "System+Collections+Concurrent+CDSCollectionETWBCLProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Collections+Concurrent+CDSCollectionETWBCLProvider")]
 impl std::ops::Deref
 for crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
-    type Target = crate::System::Diagnostics::Tracing::EventSource;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Diagnostics::Tracing::EventSource,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

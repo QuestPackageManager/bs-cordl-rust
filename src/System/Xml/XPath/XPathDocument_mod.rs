@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathDocument {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub pageXmlNmsp: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::MS::Internal::Xml::Cache::XPathNode>,
     >,
@@ -10,10 +10,8 @@ pub struct XPathDocument {
     pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     pub hasLineInfo: bool,
     pub mapNmsp: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::MS::Internal::Xml::Cache::XPathNodeRef,
-            crate::MS::Internal::Xml::Cache::XPathNodeRef,
-        >,
+        crate::MS::Internal::Xml::Cache::XPathNodeRef,
+        crate::MS::Internal::Xml::Cache::XPathNodeRef,
     >,
 }
 #[cfg(feature = "System+Xml+XPath+XPathDocument")]
@@ -23,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XPath+XPathDocument")]
 impl std::ops::Deref for crate::System::Xml::XPath::XPathDocument {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,8 +37,10 @@ impl crate::System::Xml::XPath::XPathDocument {
     pub fn GetXmlNamespaceNode(
         &mut self,
         pageXmlNmsp: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::MS::Internal::Xml::Cache::XPathNode,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::MS::Internal::Xml::Cache::XPathNode,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -60,8 +60,10 @@ impl crate::System::Xml::XPath::XPathDocument {
         >,
         idxElem: i32,
         pageNmsp: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::MS::Internal::Xml::Cache::XPathNode,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::MS::Internal::Xml::Cache::XPathNode,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {

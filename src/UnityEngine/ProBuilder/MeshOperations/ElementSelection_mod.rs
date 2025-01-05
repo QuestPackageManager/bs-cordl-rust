@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ElementSelection {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ElementSelection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ElementSelection")]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,56 +39,38 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             .invoke("EdgeRingNext", (edge))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindHoles_List_1_HashSet_1_1(
-        wings: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::WingedEdge,
-            >,
-        >,
-        common: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<i32>,
-        >,
+    pub fn FindHoles_Gc_Gc0(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Collections::Generic::List_1<
-                    *mut crate::UnityEngine::ProBuilder::WingedEdge,
-                >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindHoles", (mesh, indexes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindHoles_Gc_Gc1(
+        wings: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+        >,
+        common: quest_hook::libil2cpp::Gc<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Collections::Generic::List_1<
-                    *mut crate::UnityEngine::ProBuilder::WingedEdge,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindHoles", (wings, common))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn FindHoles_ProBuilderMesh_IEnumerable_1_0(
-        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Collections::Generic::List_1<
-                    crate::UnityEngine::ProBuilder::Edge,
-                >,
-            >,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Collections::Generic::List_1<
-                    crate::UnityEngine::ProBuilder::Edge,
-                >,
-            >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindHoles", (mesh, indexes))?;
         Ok(__cordl_ret.into())
     }
     pub fn FindNextEdgeInHole(
@@ -106,51 +88,41 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     pub fn FloodSelection(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
         maxAngleDiff: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FloodSelection", (mesh, faces, maxAngleDiff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Flood_ProBuilderMesh_WingedEdge_Vector3_f32_HashSet_1_1(
+    pub fn Flood_Gc_Gc0(
+        wing: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+        selection: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Flood", (wing, selection))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Flood_Vector3_f32_Gc1(
         pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         wing: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         wingNrm: crate::UnityEngine::Vector3,
         maxAngle: f32,
         selection: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Flood", (pb, wing, wingNrm, maxAngle, selection))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Flood_WingedEdge_HashSet_1_0(
-        wing: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
-        selection: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Flood", (wing, selection))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetConnectedEdges(
@@ -169,13 +141,11 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     }
     pub fn GetEdgeLoop(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
         _cordl_loop: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -185,11 +155,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     pub fn GetEdgeLoopInternal(
         start: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         startIndex: i32,
-        used: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                crate::UnityEngine::ProBuilder::EdgeLookup,
-            >,
-        >,
+        used: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::EdgeLookup>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetEdgeLoopInternal", (start, startIndex, used))?;
@@ -198,11 +164,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     pub fn GetEdgeLoopInternalIterative(
         start: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         edge: crate::UnityEngine::ProBuilder::Edge,
-        used: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                crate::UnityEngine::ProBuilder::EdgeLookup,
-            >,
-        >,
+        used: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::EdgeLookup>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetEdgeLoopInternalIterative", (start, edge, used))?;
@@ -210,13 +172,11 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     }
     pub fn GetEdgeLoopIterative(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
         _cordl_loop: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -225,108 +185,78 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     }
     pub fn GetEdgeRing(
         pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
+            crate::UnityEngine::ProBuilder::Edge,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetEdgeRing", (pb, edges))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEdgeRingIterative(
         pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
+            crate::UnityEngine::ProBuilder::Edge,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetEdgeRingIterative", (pb, edges))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetFaceLoop_List_1_Face1(
-        wings: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    pub fn GetFaceLoop_Gc_Gc__cordl_bool0(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        faces: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
+        >,
+        ring: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFaceLoop", (mesh, faces, ring))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFaceLoop_Gc_Gc__cordl_bool1(
+        wings: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         >,
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         ring: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetFaceLoop", (wings, face, ring))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetFaceLoop_ProBuilderMesh_Il2CppArray0(
-        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
-        >,
-        ring: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFaceLoop", (mesh, faces, ring))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetFaceRingAndLoop(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetFaceRingAndLoop", (mesh, faces))?;
         Ok(__cordl_ret.into())
@@ -336,85 +266,63 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
         edge: crate::UnityEngine::ProBuilder::Edge,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ProBuilder::SimpleTuple_2<
-                    *mut crate::UnityEngine::ProBuilder::Face,
-                    crate::UnityEngine::ProBuilder::Edge,
-                >,
+            crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                crate::UnityEngine::ProBuilder::Edge,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ProBuilder::SimpleTuple_2<
-                    *mut crate::UnityEngine::ProBuilder::Face,
-                    crate::UnityEngine::ProBuilder::Edge,
-                >,
+            crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                crate::UnityEngine::ProBuilder::Edge,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNeighborFaces", (mesh, edge))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetNeighborFaces_Edge_List_1_0(
+    pub fn GetNeighborFaces_Edge_Gc0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         edge: crate::UnityEngine::ProBuilder::Edge,
         neighborFaces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNeighborFaces", (mesh, edge, neighborFaces))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetNeighborFaces_Il2CppArray2(
+    pub fn GetNeighborFaces_Gc2(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNeighborFaces", (mesh, indexes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPerimeterEdges_IEnumerable_1_0(
+    pub fn GetPerimeterEdges_Gc_Gc0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
+            crate::UnityEngine::ProBuilder::Edge,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetPerimeterEdges", (mesh, faces))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPerimeterEdges_IList_1_1(
+    pub fn GetPerimeterEdges_Gc_Gc1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
@@ -427,21 +335,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     pub fn GetPerimeterFaces(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetPerimeterFaces", (mesh, faces))?;
         Ok(__cordl_ret.into())
@@ -467,15 +369,11 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
         allowHoles: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::WingedEdge,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::WingedEdge,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetSpokes", (wing, sharedIndex, allowHoles))?;
         Ok(__cordl_ret.into())
@@ -483,22 +381,16 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     pub fn GrowSelection(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
         maxAngleDiff: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GrowSelection", (mesh, faces, maxAngleDiff))?;
         Ok(__cordl_ret.into())

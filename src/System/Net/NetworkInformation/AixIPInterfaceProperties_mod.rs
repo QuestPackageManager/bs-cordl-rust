@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AixIPInterfaceProperties {
-    __cordl_parent: crate::System::Net::NetworkInformation::UnixIPInterfaceProperties,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Net::NetworkInformation::UnixIPInterfaceProperties,
+    >,
     pub _mtu: i32,
 }
 #[cfg(feature = "System+Net+NetworkInformation+AixIPInterfaceProperties")]
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+NetworkInformation+AixIPInterfaceProperties")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::AixIPInterfaceProperties {
-    type Target = crate::System::Net::NetworkInformation::UnixIPInterfaceProperties;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Net::NetworkInformation::UnixIPInterfaceProperties,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,9 +37,7 @@ impl crate::System::Net::NetworkInformation::AixIPInterfaceProperties {
             crate::System::Net::NetworkInformation::AixNetworkInterface,
         >,
         addresses: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Net::IPAddress,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
         >,
         mtu: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -48,8 +50,10 @@ impl crate::System::Net::NetworkInformation::AixIPInterfaceProperties {
     pub fn ParseRouteInfo_icall(
         iface: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         gw_addr_list: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -63,9 +67,7 @@ impl crate::System::Net::NetworkInformation::AixIPInterfaceProperties {
             crate::System::Net::NetworkInformation::AixNetworkInterface,
         >,
         addresses: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Net::IPAddress,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
         >,
         mtu: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

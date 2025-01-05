@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsDeflateCompression {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub zIn: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -115,16 +115,26 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsCompression>
-for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsCompression {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCompression>,
+> for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCompression,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsCompression>
-for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsCompression {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCompression>,
+> for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCompression,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -132,7 +142,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsDeflateCompression_DeflateOutputStream {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression+DeflateOutputStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -143,7 +155,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression+DeflateOutputStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression_DeflateOutputStream {
-    type Target = crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

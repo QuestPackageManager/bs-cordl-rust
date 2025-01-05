@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UrlBase64 {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+UrlBase64")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+UrlBase64")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Encoders::UrlBase64 {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Utilities::Encoders::UrlBa
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+UrlBase64")]
 impl crate::Org::BouncyCastle::Utilities::Encoders::UrlBase64 {
-    pub fn Decode_Il2CppArray0(
+    pub fn Decode_Gc0(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -35,7 +35,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::UrlBase64 {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Decode", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Decode_Il2CppArray_Stream1(
+    pub fn Decode_Gc1(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -43,7 +43,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::UrlBase64 {
             .invoke("Decode", (data, outStr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Decode_Il2CppString2(
+    pub fn Decode_Gc2(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -53,7 +53,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::UrlBase64 {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Decode", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Decode_Il2CppString_Stream3(
+    pub fn Decode_Gc3(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -61,7 +61,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::UrlBase64 {
             .invoke("Decode", (data, outStr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Encode_Il2CppArray0(
+    pub fn Encode_Gc0(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -71,7 +71,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::UrlBase64 {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Encode", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Encode_Stream1(
+    pub fn Encode_Gc1(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i32> {

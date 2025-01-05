@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MediaTypeHeaderValue {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub parameters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::NameValueHeaderValue,
         >,
     >,
     pub media_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+MediaTypeHeaderValue")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::MediaTypeHeaderValue {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl crate::System::Net::Http::Headers::MediaTypeHeaderValue {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString0(
+    pub fn New_Gc0(
         mediaType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -63,7 +63,7 @@ impl crate::System::Net::Http::Headers::MediaTypeHeaderValue {
             .invoke_void(".ctor", (mediaType))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_MediaTypeHeaderValue1(
+    pub fn New_Gc1(
         source: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::MediaTypeHeaderValue,
         >,
@@ -103,7 +103,9 @@ impl crate::System::Net::Http::Headers::MediaTypeHeaderValue {
     pub fn TryParse(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parsedValue: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -112,7 +114,9 @@ impl crate::System::Net::Http::Headers::MediaTypeHeaderValue {
     }
     pub fn TryParseMediaType(
         lexer: quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::Lexer>,
-        media: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        media: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::System::Net::Http::Headers::Token>,
     > {
@@ -132,7 +136,7 @@ impl crate::System::Net::Http::Headers::MediaTypeHeaderValue {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString0(
+    pub fn _ctor_Gc0(
         &mut self,
         mediaType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -143,7 +147,7 @@ impl crate::System::Net::Http::Headers::MediaTypeHeaderValue {
             .invoke(".ctor", (mediaType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_MediaTypeHeaderValue1(
+    pub fn _ctor_Gc1(
         &mut self,
         source: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::MediaTypeHeaderValue,
@@ -173,8 +177,8 @@ impl crate::System::Net::Http::Headers::MediaTypeHeaderValue {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<
-                *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::NameValueHeaderValue,
             >,
         >,
     > {
@@ -182,8 +186,8 @@ impl crate::System::Net::Http::Headers::MediaTypeHeaderValue {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<
-                *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::NameValueHeaderValue,
             >,
         > = __cordl_object.invoke("get_Parameters", ())?;
         Ok(__cordl_ret.into())
@@ -222,16 +226,16 @@ for crate::System::Net::Http::Headers::MediaTypeHeaderValue {
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+MediaTypeHeaderValue")]
-impl AsRef<crate::System::ICloneable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Net::Http::Headers::MediaTypeHeaderValue {
-    fn as_ref(&self) -> &crate::System::ICloneable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+MediaTypeHeaderValue")]
-impl AsMut<crate::System::ICloneable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Net::Http::Headers::MediaTypeHeaderValue {
-    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }

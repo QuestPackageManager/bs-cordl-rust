@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Extensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+Extensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Linq+Extensions")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::Extensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,14 +25,10 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::Extensions {
 #[cfg(feature = "Newtonsoft+Json+Linq+Extensions")]
 impl crate::Newtonsoft::Json::Linq::Extensions {
     pub fn Ancestors<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        source: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
     >
     where
@@ -40,22 +36,16 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
             + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Ancestors", (source))?;
         Ok(__cordl_ret.into())
     }
     pub fn AncestorsAndSelf<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        source: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
     >
     where
@@ -63,60 +53,42 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
             + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AncestorsAndSelf", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsJEnumerable_IEnumerable_1_0(
+    pub fn AsJEnumerable_Gc0(
         source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AsJEnumerable", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsJEnumerable_IEnumerable_1_1<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::IJEnumerable_1<T>>,
-    >
+    pub fn AsJEnumerable_Gc1<T>(
+        source: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AsJEnumerable", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Children_IEnumerable_1_0<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+    pub fn Children_Gc0<T>(
+        source: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
     >
     where
@@ -124,46 +96,34 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
             + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Children", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Children_IEnumerable_1_1<T, U>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<U>>,
-    >
+    pub fn Children_Gc1<T, U>(
+        source: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<U>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<U>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Children", (source))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<U> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Children", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Convert_IEnumerable_1_0<T, U>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<U>>,
-    >
+    pub fn Convert_Gc0<T, U>(
+        source: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<U>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<U>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Convert", (source))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<U> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (source))?;
         Ok(__cordl_ret.into())
     }
     pub fn Convert_T1<T, U>(token: T) -> quest_hook::libil2cpp::Result<U>
@@ -178,14 +138,10 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         Ok(__cordl_ret.into())
     }
     pub fn Descendants<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        source: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
     >
     where
@@ -193,22 +149,16 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
             + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Descendants", (source))?;
         Ok(__cordl_ret.into())
     }
     pub fn DescendantsAndSelf<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        source: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
     >
     where
@@ -216,39 +166,29 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
             + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DescendantsAndSelf", (source))?;
         Ok(__cordl_ret.into())
     }
     pub fn Properties(
         source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JProperty,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JProperty>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JProperty,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JProperty>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Properties", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Value_IEnumerable_1_0<U>(
+    pub fn Value_Gc0<U>(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
     ) -> quest_hook::libil2cpp::Result<U>
     where
@@ -259,10 +199,8 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
             .invoke("Value", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Value_IEnumerable_1_1<T, U>(
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+    pub fn Value_Gc1<T, U>(
+        value: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<U>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -274,103 +212,74 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
             .invoke("Value", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Values_IEnumerable_1_1(
+    pub fn Values_Gc0(
         source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Values", (source))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Values_IEnumerable_1_3<U>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<U>>,
-    >
-    where
-        U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<U>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Values", (source))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Values_Il2CppObject0(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Values", (source, key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Values_Il2CppObject2<U>(
+    pub fn Values_Gc1(
         source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Values", (source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Values_Gc2<U>(
+        source: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<U>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<U>>
     where
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<U>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<U> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Values", (source, key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Values_Il2CppObject4<T, U>(
+    pub fn Values_Gc3<U>(
         source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<U>>
+    where
+        U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<U> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Values", (source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Values_Gc4<T, U>(
+        source: quest_hook::libil2cpp::Gc<T>,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<U>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<U>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<U>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<U> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Values", (source, key))?;
         Ok(__cordl_ret.into())
     }

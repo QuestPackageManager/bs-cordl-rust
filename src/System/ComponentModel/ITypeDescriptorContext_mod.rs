@@ -54,16 +54,18 @@ for crate::System::ComponentModel::ITypeDescriptorContext {
     }
 }
 #[cfg(feature = "System+ComponentModel+ITypeDescriptorContext")]
-impl AsRef<crate::System::IServiceProvider>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IServiceProvider>>
 for crate::System::ComponentModel::ITypeDescriptorContext {
-    fn as_ref(&self) -> &crate::System::IServiceProvider {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IServiceProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+ITypeDescriptorContext")]
-impl AsMut<crate::System::IServiceProvider>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IServiceProvider>>
 for crate::System::ComponentModel::ITypeDescriptorContext {
-    fn as_mut(&mut self) -> &mut crate::System::IServiceProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::IServiceProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }

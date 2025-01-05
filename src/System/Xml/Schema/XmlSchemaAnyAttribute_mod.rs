@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaAnyAttribute {
-    __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnnotated,
+    >,
     pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub processContents: crate::System::Xml::Schema::XmlSchemaContentProcessing,
     pub namespaceList: quest_hook::libil2cpp::Gc<
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAnyAttribute")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaAnyAttribute {
-    type Target = crate::System::Xml::Schema::XmlSchemaAnnotated;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnnotated,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaObjectTable {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub table: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Xml::XmlQualifiedName,
-            *mut crate::System::Xml::Schema::XmlSchemaObject,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     >,
     pub entries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-        >,
+        crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable")]
@@ -22,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaObjectTable {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -216,11 +212,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaObjectTable_ValuesCollection {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub entries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-        >,
+        crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
     >,
     pub _cordl_size: i32,
 }
@@ -233,7 +227,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
 impl std::ops::Deref
 for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -274,9 +268,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
     }
     pub fn New(
         entries: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-            >,
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
         >,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -289,9 +281,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
     pub fn _ctor(
         &mut self,
         entries: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-            >,
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
         >,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -341,30 +331,38 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
-impl AsRef<crate::System::Collections::ICollection>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
-    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
-impl AsMut<crate::System::Collections::ICollection>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
-impl AsRef<crate::System::Collections::IEnumerable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
-impl AsMut<crate::System::Collections::IEnumerable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -372,7 +370,9 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaObjectTable_XSODictionaryEnumerator {
-    __cordl_parent: crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -383,7 +383,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
 impl std::ops::Deref
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
-    type Target = crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -399,9 +401,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
 impl crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
     pub fn New(
         entries: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-            >,
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
         >,
         _cordl_size: i32,
         enumType: crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,
@@ -415,9 +415,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
     pub fn _ctor(
         &mut self,
         entries: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-            >,
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
         >,
         _cordl_size: i32,
         enumType: crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,
@@ -477,30 +475,40 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
-impl AsRef<crate::System::Collections::IDictionaryEnumerator>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
-    fn as_ref(&self) -> &crate::System::Collections::IDictionaryEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
-impl AsMut<crate::System::Collections::IDictionaryEnumerator>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionaryEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionaryEnumerator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
-impl AsRef<crate::System::Collections::IEnumerator>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
-impl AsMut<crate::System::Collections::IEnumerator>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -508,11 +516,9 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaObjectTable_XSOEnumerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub entries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-        >,
+        crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
     >,
     pub enumType: crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,
     pub currentIndex: i32,
@@ -530,7 +536,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -553,9 +559,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
     }
     pub fn New(
         entries: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-            >,
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
         >,
         _cordl_size: i32,
         enumType: crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,
@@ -579,9 +583,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
     pub fn _ctor(
         &mut self,
         entries: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-            >,
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
         >,
         _cordl_size: i32,
         enumType: crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,
@@ -618,16 +620,20 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
-impl AsRef<crate::System::Collections::IEnumerator>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
-impl AsMut<crate::System::Collections::IEnumerator>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }

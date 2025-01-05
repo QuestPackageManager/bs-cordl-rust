@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TakeNObservable_1<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_Source: quest_hook::libil2cpp::Gc<TValue>,
     pub m_Count: i32,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl<
         TValue,
     >;
     pub fn New(
-        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+        source: quest_hook::libil2cpp::Gc<TValue>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -52,7 +52,7 @@ impl<
     }
     pub fn Subscribe(
         &mut self,
-        observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>,
+        observer: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     >
@@ -69,7 +69,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+        source: quest_hook::libil2cpp::Gc<TValue>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -95,16 +95,16 @@ for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1")]
-impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::IObservable_1<TValue>>
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TValue>>
 for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
-    fn as_ref(&self) -> &crate::System::IObservable_1<TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1")]
-impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::IObservable_1<TValue>>
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TValue>>
 for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
-    fn as_mut(&mut self) -> &mut crate::System::IObservable_1<TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -112,8 +112,8 @@ for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TakeNObservable_1_Take<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_Observer: quest_hook::libil2cpp::Gc<TValue>,
     pub m_Remaining: i32,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -126,7 +126,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1+Take")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -143,10 +143,8 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
     pub fn New(
-        observable: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue>,
-        >,
-        observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>,
+        observable: quest_hook::libil2cpp::Gc<TValue>,
+        observer: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -204,10 +202,8 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        observable: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue>,
-        >,
-        observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>,
+        observable: quest_hook::libil2cpp::Gc<TValue>,
+        observer: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -232,16 +228,16 @@ for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1+Take")]
-impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::IObserver_1<TValue>>
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TValue>>
 for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
-    fn as_ref(&self) -> &crate::System::IObserver_1<TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1+Take")]
-impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::IObserver_1<TValue>>
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TValue>>
 for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
-    fn as_mut(&mut self) -> &mut crate::System::IObserver_1<TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }

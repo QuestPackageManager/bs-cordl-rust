@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerObservable {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IConnectedPlayer,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerConnectedPlayerObservable")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,16 +79,20 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObservable")]
-impl AsRef<crate::GlobalNamespace::IMultiplayerObservable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerObservable>>
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerObservable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerObservable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObservable")]
-impl AsMut<crate::GlobalNamespace::IMultiplayerObservable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerObservable>>
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMultiplayerObservable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerObservable> {
         unsafe { std::mem::transmute(self) }
     }
 }

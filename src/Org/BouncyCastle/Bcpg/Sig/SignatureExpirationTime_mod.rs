@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignatureExpirationTime {
-    __cordl_parent: crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+SignatureExpirationTime")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+SignatureExpirationTime")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
-    type Target = crate::Org::BouncyCastle::Bcpg::SignatureSubpacket;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +30,7 @@ for crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+SignatureExpirationTime")]
 impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
-    pub fn New__cordl_bool_Il2CppArray0(
+    pub fn New__cordl_bool_Gc0(
         critical: bool,
         isLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -57,7 +61,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureExpirationTime {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("TimeToBytes", (t))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_Il2CppArray0(
+    pub fn _ctor__cordl_bool_Gc0(
         &mut self,
         critical: bool,
         isLongLength: bool,

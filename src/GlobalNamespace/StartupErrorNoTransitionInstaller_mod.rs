@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StartupErrorNoTransitionInstaller {
-    __cordl_parent: crate::Zenject::NoTransitionInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::NoTransitionInstaller>,
     pub _startupErrorSceneSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StartupErrorSceneSetupData,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StartupErrorNoTransitionInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::StartupErrorNoTransitionInstaller {
-    type Target = crate::Zenject::NoTransitionInstaller;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::NoTransitionInstaller>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

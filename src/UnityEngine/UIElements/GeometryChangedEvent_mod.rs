@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GeometryChangedEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<
-        *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GeometryChangedEvent>,
     >,
     pub _oldRect_k__BackingField: crate::UnityEngine::Rect,
     pub _newRect_k__BackingField: crate::UnityEngine::Rect,
@@ -16,8 +16,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+GeometryChangedEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::GeometryChangedEvent {
-    type Target = crate::UnityEngine::UIElements::EventBase_1<
-        *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GeometryChangedEvent>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

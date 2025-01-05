@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTypeSerializationSource {
-    __cordl_parent: crate::System::Xml::Serialization::SerializationSource,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::SerializationSource,
+    >,
     pub attributeOverridesHash: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlTypeSerializationSource")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlTypeSerializationSource {
-    type Target = crate::System::Xml::Serialization::SerializationSource;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::SerializationSource,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +62,9 @@ impl crate::System::Xml::Serialization::XmlTypeSerializationSource {
         >,
         namspace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         includedTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -81,7 +87,9 @@ impl crate::System::Xml::Serialization::XmlTypeSerializationSource {
         >,
         namspace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         includedTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

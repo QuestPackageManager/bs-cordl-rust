@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncryptedValueBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub wrapper: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::IKeyWrapper,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crmf+EncryptedValueBuilder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +33,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crmf::EncryptedValueBuilde
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+EncryptedValueBuilder")]
 impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
-    pub fn Build_Il2CppArray0(
+    pub fn Build_Gc0(
         &mut self,
         revocationPassphrase: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
@@ -49,23 +49,7 @@ impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
         > = __cordl_object.invoke("Build", (revocationPassphrase))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Build_PrivateKeyInfo2(
-        &mut self,
-        privateKeyInfo: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
-        > = __cordl_object.invoke("Build", (privateKeyInfo))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Build_X509Certificate1(
+    pub fn Build_Gc1(
         &mut self,
         holder: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::X509Certificate,
@@ -79,6 +63,22 @@ impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
         > = __cordl_object.invoke("Build", (holder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Build_Gc2(
+        &mut self,
+        privateKeyInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
+        > = __cordl_object.invoke("Build", (privateKeyInfo))?;
         Ok(__cordl_ret.into())
     }
     pub fn EncryptData(
@@ -95,7 +95,7 @@ impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
         > = __cordl_object.invoke("EncryptData", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_IEncryptedValuePadder1(
+    pub fn New_Gc1(
         wrapper: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IKeyWrapper,
         >,
@@ -112,7 +112,7 @@ impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
             .invoke_void(".ctor", (wrapper, encryptor, padder))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IKeyWrapper_ICipherBuilderWithKey0(
+    pub fn New_Gc_Gc0(
         wrapper: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IKeyWrapper,
         >,
@@ -140,7 +140,7 @@ impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
         > = __cordl_object.invoke("PadData", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IEncryptedValuePadder1(
+    pub fn _ctor_Gc1(
         &mut self,
         wrapper: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IKeyWrapper,
@@ -159,7 +159,7 @@ impl crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
             .invoke(".ctor", (wrapper, encryptor, padder))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IKeyWrapper_ICipherBuilderWithKey0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         wrapper: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IKeyWrapper,

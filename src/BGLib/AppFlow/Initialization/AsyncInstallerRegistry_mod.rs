@@ -2,14 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncInstallerRegistry {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub monoInstallers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::Zenject::MonoInstaller>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
     >,
     pub scriptableObjectInstallers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::ScriptableObjectInstaller,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     >,
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
@@ -20,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
 impl std::ops::Deref for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,20 +85,30 @@ for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
     }
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
-impl AsRef<crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry>
-for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
+    >,
+> for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
     fn as_ref(
         &self,
-    ) -> &crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
-impl AsMut<crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry>
-for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
+    >,
+> for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

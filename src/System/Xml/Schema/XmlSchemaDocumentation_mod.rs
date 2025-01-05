@@ -2,11 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaDocumentation {
-    __cordl_parent: crate::System::Xml::Schema::XmlSchemaObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObject,
+    >,
     pub source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub language: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub markup: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlNode>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaDocumentation")]
@@ -16,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaDocumentation")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaDocumentation {
-    type Target = crate::System::Xml::Schema::XmlSchemaObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +64,9 @@ impl crate::System::Xml::Schema::XmlSchemaDocumentation {
     pub fn set_Markup(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlNode>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

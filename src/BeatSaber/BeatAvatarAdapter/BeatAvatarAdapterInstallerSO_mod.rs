@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatAvatarAdapterInstallerSO {
-    __cordl_parent: crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO,
+    >,
     pub _avatarPartsModel: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO,
     >,
@@ -28,7 +30,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
-    type Target = crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,7 +56,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
             .invoke("InstallBindings", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn InstallBindings_DiContainer1(
+    pub fn InstallBindings_Gc1(
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

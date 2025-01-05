@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NavigateFocusRing {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     pub m_Ring: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElementFocusRing,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::NavigateFocusRing {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -148,16 +148,20 @@ for crate::UnityEngine::UIElements::NavigateFocusRing {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
-impl AsRef<crate::UnityEngine::UIElements::IFocusRing>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IFocusRing>>
 for crate::UnityEngine::UIElements::NavigateFocusRing {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IFocusRing {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IFocusRing> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
-impl AsMut<crate::UnityEngine::UIElements::IFocusRing>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IFocusRing>>
 for crate::UnityEngine::UIElements::NavigateFocusRing {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IFocusRing {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IFocusRing> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -165,7 +169,9 @@ for crate::UnityEngine::UIElements::NavigateFocusRing {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NavigateFocusRing_ChangeDirection {
-    __cordl_parent: crate::UnityEngine::UIElements::FocusChangeDirection,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::FocusChangeDirection,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -176,7 +182,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
-    type Target = crate::UnityEngine::UIElements::FocusChangeDirection;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::FocusChangeDirection,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -285,6 +293,18 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn StrictOrder_Gc_Gc0(
+        &mut self,
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "StrictOrder",
+            (a, b),
+        )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn StrictOrder_Rect_Rect1(
         &mut self,
         ra: crate::UnityEngine::Rect,
@@ -294,18 +314,6 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
             self,
             "StrictOrder",
             (ra, rb),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn StrictOrder_VisualElement_VisualElement0(
-        &mut self,
-        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "StrictOrder",
-            (a, b),
         )?;
         Ok(__cordl_ret.into())
     }

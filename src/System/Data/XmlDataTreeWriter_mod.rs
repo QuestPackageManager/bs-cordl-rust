@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlDataTreeWriter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _xmlw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     pub _ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     pub _dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _dTables: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _topLevelTables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        >,
     >,
     pub _fFromTable: bool,
     pub _isDiffgram: bool,
@@ -22,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+XmlDataTreeWriter")]
 impl std::ops::Deref for crate::System::Data::XmlDataTreeWriter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,14 +52,18 @@ impl crate::System::Data::XmlDataTreeWriter {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         > = __cordl_object.invoke("CreateToplevelTables", ())?;
         Ok(__cordl_ret.into())
     }
@@ -75,7 +81,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         > = __cordl_object.invoke("GetNestedChildRelations", (row))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_DataSet0(
+    pub fn New_Gc0(
         ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -84,7 +90,7 @@ impl crate::System::Data::XmlDataTreeWriter {
             .invoke_void(".ctor", (ds))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DataTable__cordl_bool1(
+    pub fn New__cordl_bool1(
         dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         writeHierarchy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -144,7 +150,7 @@ impl crate::System::Data::XmlDataTreeWriter {
             .invoke("XmlDataRowWriter", (row, encodedTableName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DataSet0(
+    pub fn _ctor_Gc0(
         &mut self,
         ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -155,7 +161,7 @@ impl crate::System::Data::XmlDataTreeWriter {
             .invoke(".ctor", (ds))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DataTable__cordl_bool1(
+    pub fn _ctor__cordl_bool1(
         &mut self,
         dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         writeHierarchy: bool,

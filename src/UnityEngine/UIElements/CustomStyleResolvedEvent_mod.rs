@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomStyleResolvedEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<
-        *mut crate::UnityEngine::UIElements::CustomStyleResolvedEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::CustomStyleResolvedEvent,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+CustomStyleResolvedEvent")]
@@ -14,8 +16,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+CustomStyleResolvedEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::CustomStyleResolvedEvent {
-    type Target = crate::UnityEngine::UIElements::EventBase_1<
-        *mut crate::UnityEngine::UIElements::CustomStyleResolvedEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::CustomStyleResolvedEvent,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

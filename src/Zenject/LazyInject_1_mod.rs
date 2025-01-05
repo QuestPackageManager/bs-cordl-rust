@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LazyInject_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     pub _hasValue: bool,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+LazyInject_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::LazyInject_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -98,16 +98,22 @@ for crate::Zenject::LazyInject_1<T> {
     }
 }
 #[cfg(feature = "Zenject+LazyInject_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IValidatable>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable>>
 for crate::Zenject::LazyInject_1<T> {
-    fn as_ref(&self) -> &crate::Zenject::IValidatable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+LazyInject_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IValidatable>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable>>
 for crate::Zenject::LazyInject_1<T> {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IValidatable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayConverter {
-    __cordl_parent: crate::System::ComponentModel::CollectionConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::CollectionConverter,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+ArrayConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+ArrayConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::ArrayConverter {
-    type Target = crate::System::ComponentModel::CollectionConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::CollectionConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,7 +57,9 @@ impl crate::System::ComponentModel::ArrayConverter {
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -113,7 +119,9 @@ for crate::System::ComponentModel::ArrayConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayConverter_ArrayPropertyDescriptor {
-    __cordl_parent: crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor,
+    >,
     pub _index: i32,
 }
 #[cfg(feature = "System+ComponentModel+ArrayConverter+ArrayPropertyDescriptor")]
@@ -125,7 +133,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+ComponentModel+ArrayConverter+ArrayPropertyDescriptor")]
 impl std::ops::Deref
 for crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {
-    type Target = crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

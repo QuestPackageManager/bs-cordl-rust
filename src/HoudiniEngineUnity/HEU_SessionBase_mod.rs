@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_SessionBase {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _sessionData: quest_hook::libil2cpp::Gc<
         crate::HoudiniEngineUnity::HEU_SessionData,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_SessionBase")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_SessionBase {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -478,7 +478,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             quest_hook::libil2cpp::Il2CppString,
         >,
         destinationFilePath: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -503,7 +503,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         fileFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         imagePlanes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         buffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -527,7 +527,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
     pub fn GetActiveCacheNames(
         &mut self,
         cacheNamesArray: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         activeCacheCount: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -561,7 +561,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<f64>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f64>>,
         >,
         start: i32,
         length: i32,
@@ -585,7 +585,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
         start: i32,
         length: i32,
@@ -626,7 +626,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i16>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
         >,
         start: i32,
         length: i32,
@@ -650,7 +650,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
         >,
         start: i32,
         length: i32,
@@ -674,7 +674,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i8>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
         >,
         start: i32,
         length: i32,
@@ -698,7 +698,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -719,8 +719,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         partID: i32,
         owner: crate::HoudiniEngineUnity::HAPI_AttributeOwner,
         attributeNames: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
         count: i32,
@@ -744,7 +746,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         dataArray: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -768,7 +770,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
         start: i32,
         length: i32,
@@ -799,7 +801,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         libraryID: i32,
         assetNames: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         assetCount: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -863,8 +865,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         objectInfos: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::HoudiniEngineUnity::HAPI_ObjectInfo,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::HoudiniEngineUnity::HAPI_ObjectInfo,
+                >,
             >,
         >,
         start: i32,
@@ -882,8 +886,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         rstOrder: crate::HoudiniEngineUnity::HAPI_RSTOrder,
         transforms: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::HoudiniEngineUnity::HAPI_Transform,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::HoudiniEngineUnity::HAPI_Transform,
+                >,
             >,
         >,
         start: i32,
@@ -924,7 +930,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         partID: i32,
         counts: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -956,7 +962,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         partID: i32,
         knots: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
         start: i32,
         length: i32,
@@ -973,7 +979,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         partID: i32,
         orders: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -1015,7 +1021,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         partID: i32,
         faceCounts: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -1036,7 +1042,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         partID: i32,
         faceCounts: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -1101,7 +1107,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         membershipArrayAllEqual: quest_hook::libil2cpp::ByRefMut<bool>,
         membershipArray: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -1133,7 +1139,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         membershipArrayAllEqual: quest_hook::libil2cpp::ByRefMut<bool>,
         membershipArray: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -1162,7 +1168,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         groupType: crate::HoudiniEngineUnity::HAPI_GroupType,
         names: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1179,7 +1185,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         partID: i32,
         groupType: crate::HoudiniEngineUnity::HAPI_GroupType,
         groupNamesArray: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         groupCount: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1198,8 +1204,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         handleIndex: i32,
         handleBindingInfos: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::HoudiniEngineUnity::HAPI_HandleBindingInfo,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::HoudiniEngineUnity::HAPI_HandleBindingInfo,
+                >,
             >,
         >,
         start: i32,
@@ -1219,8 +1227,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         handleInfos: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::HoudiniEngineUnity::HAPI_HandleInfo,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::HoudiniEngineUnity::HAPI_HandleInfo,
+                >,
             >,
         >,
         start: i32,
@@ -1266,7 +1276,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         imagePlanes: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         numImagePlanes: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1283,8 +1293,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         partID: i32,
         rstOrder: crate::HoudiniEngineUnity::HAPI_RSTOrder,
         transformsArray: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::HoudiniEngineUnity::HAPI_Transform,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::HoudiniEngineUnity::HAPI_Transform,
+                >,
             >,
         >,
         start: i32,
@@ -1304,7 +1316,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         instanced_node_id_array: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -1324,7 +1336,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         partID: i32,
         instancedPartsArray: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -1345,8 +1357,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         partID: i32,
         rstOrder: crate::HoudiniEngineUnity::HAPI_RSTOrder,
         transformsArray: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::HoudiniEngineUnity::HAPI_Transform,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::HoudiniEngineUnity::HAPI_Transform,
+                >,
             >,
         >,
         start: i32,
@@ -1396,7 +1410,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         partID: i32,
         bSingleFaceMaterial: quest_hook::libil2cpp::ByRefMut<bool>,
         materialNodeIDs: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         faceCount: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1457,7 +1471,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         relativeNodeID: i32,
-        path: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        path: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1503,8 +1519,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         values: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::HoudiniEngineUnity::HAPI_ParmChoiceInfo,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::HoudiniEngineUnity::HAPI_ParmChoiceInfo,
+                >,
             >,
         >,
         start: i32,
@@ -1535,7 +1553,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         values: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
         start: i32,
         length: i32,
@@ -1565,7 +1583,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         values: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -1608,7 +1626,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         values: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -1624,8 +1642,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         parmInfos: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::HoudiniEngineUnity::HAPI_ParmInfo,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::HoudiniEngineUnity::HAPI_ParmInfo,
+                >,
             >,
         >,
         start: i32,
@@ -1726,7 +1746,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         presetData: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1753,7 +1773,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
     pub fn GetServerEnvString(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1870,7 +1892,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         stringHandle: i32,
         resultString: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         bufferLength: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1929,7 +1951,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         partID: i32,
         vertexList: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -2449,7 +2471,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         data: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         start: i32,
         length: i32,
@@ -2559,7 +2583,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         groupType: crate::HoudiniEngineUnity::HAPI_GroupType,
         groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         membershipArray: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -2662,7 +2686,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         values: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
         start: i32,
         length: i32,
@@ -2692,7 +2716,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
         values: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         start: i32,
         length: i32,
@@ -2717,7 +2741,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             .invoke("SetParamNodeValue", (nodeID, paramName, nodeValueID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetParamStringValue_Il2CppString1(
+    pub fn SetParamStringValue_Gc1(
         &mut self,
         nodeID: i32,
         parmName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

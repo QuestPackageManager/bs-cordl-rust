@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParseRecord {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub PRparseTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalParseTypeE,
     pub PRobjectTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE,
     pub PRarrayTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE,
@@ -48,14 +48,18 @@ pub struct ParseRecord {
     pub PRisValueTypeFixup: bool,
     pub PRnewObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub PRobjectA: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub PRprimitiveArray: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::Formatters::Binary::PrimitiveArray,
     >,
     pub PRisRegistered: bool,
     pub PRmemberData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub PRsi: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::SerializationInfo,
@@ -71,7 +75,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

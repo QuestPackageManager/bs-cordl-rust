@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DirectorControlPlayable {
-    __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableBehaviour,
+    >,
     pub director: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Playables::PlayableDirector,
     >,
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+DirectorControlPlayable")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::DirectorControlPlayable {
-    type Target = crate::UnityEngine::Playables::PlayableBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,11 +40,15 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Playables::ScriptPlayable_1<
-            *mut crate::UnityEngine::Timeline::DirectorControlPlayable,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Timeline::DirectorControlPlayable,
+            >,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
-            *mut crate::UnityEngine::Timeline::DirectorControlPlayable,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Timeline::DirectorControlPlayable,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Create", (graph, director))?;
         Ok(__cordl_ret.into())

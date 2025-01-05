@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteControllerBase {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
 }
 #[cfg(feature = "NoteControllerBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteControllerBase")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteControllerBase {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,8 +45,8 @@ impl crate::GlobalNamespace::NoteControllerBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                *mut crate::GlobalNamespace::INoteControllerDidInitEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerDidInitEvent,
             >,
         >,
     > {
@@ -54,8 +54,8 @@ impl crate::GlobalNamespace::NoteControllerBase {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                *mut crate::GlobalNamespace::INoteControllerDidInitEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerDidInitEvent,
             >,
         > = __cordl_object.invoke("get_didInitEvent", ())?;
         Ok(__cordl_ret.into())
@@ -76,8 +76,8 @@ impl crate::GlobalNamespace::NoteControllerBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                *mut crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
             >,
         >,
     > {
@@ -85,8 +85,8 @@ impl crate::GlobalNamespace::NoteControllerBase {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                *mut crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
             >,
         > = __cordl_object.invoke("get_noteDidPassJumpThreeQuartersEvent", ())?;
         Ok(__cordl_ret.into())
@@ -95,8 +95,8 @@ impl crate::GlobalNamespace::NoteControllerBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                *mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
             >,
         >,
     > {
@@ -104,8 +104,8 @@ impl crate::GlobalNamespace::NoteControllerBase {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                *mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
             >,
         > = __cordl_object.invoke("get_noteDidStartDissolvingEvent", ())?;
         Ok(__cordl_ret.into())

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalEmitter {
-    __cordl_parent: crate::UnityEngine::Timeline::Marker,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::Marker>,
     pub m_Retroactive: bool,
     pub m_EmitOnce: bool,
     pub m_Asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::SignalEmitter {
-    type Target = crate::UnityEngine::Timeline::Marker;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::Marker>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -135,32 +135,44 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::SignalE
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
-impl AsRef<crate::UnityEngine::Playables::INotification>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification>>
 for crate::UnityEngine::Timeline::SignalEmitter {
-    fn as_ref(&self) -> &crate::UnityEngine::Playables::INotification {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
-impl AsMut<crate::UnityEngine::Playables::INotification>
-for crate::UnityEngine::Timeline::SignalEmitter {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::INotification {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
-impl AsRef<crate::UnityEngine::Timeline::INotificationOptionProvider>
-for crate::UnityEngine::Timeline::SignalEmitter {
-    fn as_ref(&self) -> &crate::UnityEngine::Timeline::INotificationOptionProvider {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
-impl AsMut<crate::UnityEngine::Timeline::INotificationOptionProvider>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification>>
 for crate::UnityEngine::Timeline::SignalEmitter {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::Timeline::INotificationOptionProvider {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::INotificationOptionProvider>,
+> for crate::UnityEngine::Timeline::SignalEmitter {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::INotificationOptionProvider,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::INotificationOptionProvider>,
+> for crate::UnityEngine::Timeline::SignalEmitter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::INotificationOptionProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

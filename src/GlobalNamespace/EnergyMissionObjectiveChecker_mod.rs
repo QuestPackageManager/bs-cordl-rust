@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnergyMissionObjectiveChecker {
-    __cordl_parent: crate::GlobalNamespace::MissionObjectiveChecker,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjectiveChecker,
+    >,
     pub _energyCounter: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameEnergyCounter,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnergyMissionObjectiveChecker")]
 impl std::ops::Deref for crate::GlobalNamespace::EnergyMissionObjectiveChecker {
-    type Target = crate::GlobalNamespace::MissionObjectiveChecker;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjectiveChecker,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

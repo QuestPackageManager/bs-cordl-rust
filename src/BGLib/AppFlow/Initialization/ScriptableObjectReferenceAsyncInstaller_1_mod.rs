@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScriptableObjectReferenceAsyncInstaller_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::BGLib::AppFlow::Initialization::AsyncInstaller,
+    >,
     pub _operationHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         T,
     >,
@@ -23,7 +25,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<T> {
-    type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::BGLib::AppFlow::Initialization::AsyncInstaller,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

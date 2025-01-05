@@ -2,14 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ButtonSpriteSwap {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _normalStateSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _highlightStateSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _pressedStateSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _disabledStateSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _button: quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsButton>,
     pub _images: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Image>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+        >,
     >,
     pub _didStart: bool,
 }
@@ -20,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ButtonSpriteSwap")]
 impl std::ops::Deref for crate::HMUI::ButtonSpriteSwap {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

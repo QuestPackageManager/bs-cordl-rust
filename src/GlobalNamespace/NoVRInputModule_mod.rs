@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoVRInputModule {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub onProcessMousePressEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub pointerDidClickEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::UnityEngine::EventSystems::PointerEventData>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     >,
 }
 #[cfg(feature = "NoVRInputModule")]
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoVRInputModule")]
 impl std::ops::Deref for crate::GlobalNamespace::NoVRInputModule {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::NoVRInputModule {
     pub fn add_onProcessMousePressEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -63,9 +63,7 @@ impl crate::GlobalNamespace::NoVRInputModule {
     pub fn add_pointerDidClickEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::EventSystems::PointerEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -78,7 +76,7 @@ impl crate::GlobalNamespace::NoVRInputModule {
     pub fn remove_onProcessMousePressEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -91,9 +89,7 @@ impl crate::GlobalNamespace::NoVRInputModule {
     pub fn remove_pointerDidClickEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::EventSystems::PointerEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -114,16 +110,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoVRInputModu
     }
 }
 #[cfg(feature = "NoVRInputModule")]
-impl AsRef<crate::GlobalNamespace::IVRInputModule>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRInputModule>>
 for crate::GlobalNamespace::NoVRInputModule {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IVRInputModule {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRInputModule> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NoVRInputModule")]
-impl AsMut<crate::GlobalNamespace::IVRInputModule>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRInputModule>>
 for crate::GlobalNamespace::NoVRInputModule {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRInputModule {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRInputModule> {
         unsafe { std::mem::transmute(self) }
     }
 }

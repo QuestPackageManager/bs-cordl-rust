@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderMovement {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IAudioTimeSource,
     >,
@@ -10,7 +10,7 @@ pub struct SliderMovement {
         crate::GlobalNamespace::IVariableMovementDataProvider,
     >,
     pub movementDidFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub movementDidMoveEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+    pub movementDidMoveEvent: quest_hook::libil2cpp::Gc<f32>,
     pub headDidMovePastCutMarkEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub tailDidMovePastCutMarkEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _localPosition: crate::UnityEngine::Vector3,
@@ -30,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderMovement")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderMovement {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::SliderMovement {
     }
     pub fn add_movementDidMoveEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -169,7 +169,7 @@ impl crate::GlobalNamespace::SliderMovement {
     }
     pub fn remove_movementDidMoveEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

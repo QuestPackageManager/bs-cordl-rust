@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnterFinallyInstruction {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFinallyInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFinallyInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::EnterFinallyInstruction {
-    type Target = crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

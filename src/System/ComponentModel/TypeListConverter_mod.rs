@@ -2,9 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeListConverter {
-    __cordl_parent: crate::System::ComponentModel::TypeConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter,
+    >,
     pub _types: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
     pub _values: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
@@ -17,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+TypeListConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeListConverter {
-    type Target = crate::System::ComponentModel::TypeConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -142,7 +148,9 @@ impl crate::System::ComponentModel::TypeListConverter {
     }
     pub fn New(
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -154,7 +162,9 @@ impl crate::System::ComponentModel::TypeListConverter {
     pub fn _ctor(
         &mut self,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

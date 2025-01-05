@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimatorOverrideController {
-    __cordl_parent: crate::UnityEngine::RuntimeAnimatorController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RuntimeAnimatorController,
+    >,
     pub OnOverrideControllerDirty: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCallback,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AnimatorOverrideController")]
 impl std::ops::Deref for crate::UnityEngine::AnimatorOverrideController {
-    type Target = crate::UnityEngine::RuntimeAnimatorController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RuntimeAnimatorController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,11 +38,9 @@ impl crate::UnityEngine::AnimatorOverrideController {
     pub fn ApplyOverrides(
         &mut self,
         overrides: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    *mut crate::UnityEngine::AnimationClip,
-                    *mut crate::UnityEngine::AnimationClip,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -134,7 +136,7 @@ for crate::UnityEngine::AnimatorOverrideController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimatorOverrideController_OnOverrideControllerDirtyCallback {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(
     feature = "UnityEngine+AnimatorOverrideController+OnOverrideControllerDirtyCallback"
@@ -149,7 +151,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCallback {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

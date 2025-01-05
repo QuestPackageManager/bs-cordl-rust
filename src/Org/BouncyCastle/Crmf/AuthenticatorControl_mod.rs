@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthenticatorControl {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub token: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerUtf8String>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+AuthenticatorControl")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crmf+AuthenticatorControl")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crmf::AuthenticatorControl {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crmf::AuthenticatorControl
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+AuthenticatorControl")]
 impl crate::Org::BouncyCastle::Crmf::AuthenticatorControl {
-    pub fn New_DerUtf8String0(
+    pub fn New_Gc0(
         token: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerUtf8String>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -34,7 +34,7 @@ impl crate::Org::BouncyCastle::Crmf::AuthenticatorControl {
             .invoke_void(".ctor", (token))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -43,7 +43,7 @@ impl crate::Org::BouncyCastle::Crmf::AuthenticatorControl {
             .invoke_void(".ctor", (token))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_DerUtf8String0(
+    pub fn _ctor_Gc0(
         &mut self,
         token: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerUtf8String>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Crmf::AuthenticatorControl {
             .invoke(".ctor", (token))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -103,16 +103,20 @@ for crate::Org::BouncyCastle::Crmf::AuthenticatorControl {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+AuthenticatorControl")]
-impl AsRef<crate::Org::BouncyCastle::Crmf::IControl>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::IControl>>
 for crate::Org::BouncyCastle::Crmf::AuthenticatorControl {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crmf::IControl {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::IControl> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+AuthenticatorControl")]
-impl AsMut<crate::Org::BouncyCastle::Crmf::IControl>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::IControl>>
 for crate::Org::BouncyCastle::Crmf::AuthenticatorControl {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crmf::IControl {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::IControl> {
         unsafe { std::mem::transmute(self) }
     }
 }

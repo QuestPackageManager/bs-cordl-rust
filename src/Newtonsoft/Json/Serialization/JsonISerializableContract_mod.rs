@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonISerializableContract {
-    __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+    >,
     pub _ISerializableCreator_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonISerializableContract")]
@@ -18,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonISerializableContract")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonISerializableContract {
-    type Target = crate::Newtonsoft::Json::Serialization::JsonContainerContract;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,27 +58,21 @@ impl crate::Newtonsoft::Json::Serialization::JsonISerializableContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("get_ISerializableCreator", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_ISerializableCreator(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

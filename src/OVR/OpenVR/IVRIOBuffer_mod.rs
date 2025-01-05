@@ -42,7 +42,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRIOBuffer__Close {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Close")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -51,7 +51,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Close")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRIOBuffer__Close {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -137,7 +137,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Clos
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRIOBuffer__Open {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Open")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -146,7 +146,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Open")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRIOBuffer__Open {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -244,7 +244,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Open
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRIOBuffer__PropertyContainer {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -253,7 +253,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -335,7 +335,7 @@ for crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRIOBuffer__Read {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Read")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -344,7 +344,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Read")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRIOBuffer__Read {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -440,7 +440,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Read
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRIOBuffer__Write {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Write")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -449,7 +449,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Write")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRIOBuffer__Write {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

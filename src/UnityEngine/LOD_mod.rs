@@ -5,7 +5,9 @@ pub struct LOD {
     pub screenRelativeTransitionHeight: f32,
     pub fadeTransitionWidth: f32,
     pub renderers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Renderer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+LOD")]
@@ -28,7 +30,9 @@ impl crate::UnityEngine::LOD {
         &mut self,
         screenRelativeTransitionHeight: f32,
         renderers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Renderer>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

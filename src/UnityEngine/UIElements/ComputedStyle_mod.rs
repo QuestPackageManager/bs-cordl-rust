@@ -22,10 +22,8 @@ pub struct ComputedStyle {
     >,
     pub yogaNode: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
     pub customProperties: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     >,
     pub matchingRulesHash: i64,
     pub dpiScaling: f32,
@@ -100,22 +98,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ApplyGlobalKeyword_StylePropertyId_StyleKeyword_ByRefMut1(
-        &mut self,
-        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-        keyword: crate::UnityEngine::UIElements::StyleKeyword,
-        parentStyle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::ComputedStyle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ApplyGlobalKeyword",
-            (id, keyword, parentStyle),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ApplyGlobalKeyword_StylePropertyReader_ByRefMut0(
+    pub fn ApplyGlobalKeyword_Gc_ByRefMut0(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
@@ -131,18 +114,22 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ApplyInitialValue_StylePropertyId1(
+    pub fn ApplyGlobalKeyword_StylePropertyId_StyleKeyword_ByRefMut1(
         &mut self,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+        parentStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "ApplyInitialValue",
-            (id),
+            "ApplyGlobalKeyword",
+            (id, keyword, parentStyle),
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ApplyInitialValue_StylePropertyReader0(
+    pub fn ApplyInitialValue_Gc0(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
@@ -152,6 +139,17 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             self,
             "ApplyInitialValue",
             (reader),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ApplyInitialValue_StylePropertyId1(
+        &mut self,
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ApplyInitialValue",
+            (id),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -236,11 +234,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ApplyPropertyAnimation_Font8(
+    pub fn ApplyPropertyAnimation_FontDefinition9(
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-        newValue: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+        newValue: crate::UnityEngine::UIElements::FontDefinition,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -249,11 +247,11 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ApplyPropertyAnimation_FontDefinition9(
+    pub fn ApplyPropertyAnimation_Gc8(
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-        newValue: crate::UnityEngine::UIElements::FontDefinition,
+        newValue: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -471,21 +469,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ApplyUnsetValue_StylePropertyId1(
-        &mut self,
-        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-        parentStyle: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::ComputedStyle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ApplyUnsetValue",
-            (id, parentStyle),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ApplyUnsetValue_StylePropertyReader0(
+    pub fn ApplyUnsetValue_Gc0(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
@@ -498,6 +482,20 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             self,
             "ApplyUnsetValue",
             (reader, parentStyle),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ApplyUnsetValue_StylePropertyId1(
+        &mut self,
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        parentStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ApplyUnsetValue",
+            (id, parentStyle),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -601,7 +599,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
         >,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -622,7 +620,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
         >,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -642,7 +640,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
         sv: crate::UnityEngine::UIElements::StyleSheets::StyleValue,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -661,7 +659,7 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
         translate: crate::UnityEngine::UIElements::StyleTranslate,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -1264,16 +1262,10 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
     pub fn get_transitionDelay(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::TimeValue,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::TimeValue,
-            >,
+            crate::UnityEngine::UIElements::TimeValue,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_transitionDelay",
@@ -1284,16 +1276,10 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
     pub fn get_transitionDuration(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::TimeValue,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::TimeValue,
-            >,
+            crate::UnityEngine::UIElements::TimeValue,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_transitionDuration",
@@ -1304,16 +1290,10 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
     pub fn get_transitionProperty(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StylePropertyName,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StylePropertyName,
-            >,
+            crate::UnityEngine::UIElements::StylePropertyName,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_transitionProperty",
@@ -1324,16 +1304,10 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
     pub fn get_transitionTimingFunction(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::EasingFunction,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::EasingFunction,
-            >,
+            crate::UnityEngine::UIElements::EasingFunction,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_transitionTimingFunction",

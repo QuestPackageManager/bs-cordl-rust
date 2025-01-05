@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509EnhancedKeyUsageExtension {
-    __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509Extension,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Extension,
+    >,
     pub _enhKeyUsage: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::OidCollection,
     >,
@@ -23,7 +25,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsageExtension {
-    type Target = crate::System::Security::Cryptography::X509Certificates::X509Extension;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Extension,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,7 +91,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsa
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_AsnEncodedData__cordl_bool1(
+    pub fn New_Gc__cordl_bool1(
         encodedEnhancedKeyUsages: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::AsnEncodedData,
         >,
@@ -99,7 +103,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsa
             .invoke_void(".ctor", (encodedEnhancedKeyUsages, critical))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_OidCollection__cordl_bool2(
+    pub fn New_Gc__cordl_bool2(
         enhancedKeyUsages: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::OidCollection,
         >,
@@ -135,7 +139,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsa
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AsnEncodedData__cordl_bool1(
+    pub fn _ctor_Gc__cordl_bool1(
         &mut self,
         encodedEnhancedKeyUsages: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::AsnEncodedData,
@@ -149,7 +153,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsa
             .invoke(".ctor", (encodedEnhancedKeyUsages, critical))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_OidCollection__cordl_bool2(
+    pub fn _ctor_Gc__cordl_bool2(
         &mut self,
         enhancedKeyUsages: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::OidCollection,

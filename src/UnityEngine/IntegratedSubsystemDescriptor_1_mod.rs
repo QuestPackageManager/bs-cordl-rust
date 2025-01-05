@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntegratedSubsystemDescriptor_1<TSubsystem: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::IntegratedSubsystemDescriptor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::IntegratedSubsystemDescriptor,
+    >,
     __cordl_phantom_TSubsystem: std::marker::PhantomData<TSubsystem>,
 }
 #[cfg(feature = "UnityEngine+IntegratedSubsystemDescriptor_1")]
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+IntegratedSubsystemDescriptor_1")]
 impl<TSubsystem: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::IntegratedSubsystemDescriptor_1<TSubsystem> {
-    type Target = crate::UnityEngine::IntegratedSubsystemDescriptor;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::IntegratedSubsystemDescriptor,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

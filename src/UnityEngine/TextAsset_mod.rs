@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextAsset {
-    __cordl_parent: crate::UnityEngine::Object,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
 }
 #[cfg(feature = "UnityEngine+TextAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextAsset")]
 impl std::ops::Deref for crate::UnityEngine::TextAsset {
-    type Target = crate::UnityEngine::Object;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -113,7 +113,7 @@ impl crate::UnityEngine::TextAsset {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -122,7 +122,7 @@ impl crate::UnityEngine::TextAsset {
             .invoke_void(".ctor", (text))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_TextAsset_CreateOptions_Il2CppString2(
+    pub fn New_TextAsset_CreateOptions_Gc2(
         options: crate::UnityEngine::TextAsset_CreateOptions,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -155,7 +155,7 @@ impl crate::UnityEngine::TextAsset {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -166,7 +166,7 @@ impl crate::UnityEngine::TextAsset {
             .invoke(".ctor", (text))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_TextAsset_CreateOptions_Il2CppString2(
+    pub fn _ctor_TextAsset_CreateOptions_Gc2(
         &mut self,
         options: crate::UnityEngine::TextAsset_CreateOptions,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -238,7 +238,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextAsset_EncodingUtility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+TextAsset+EncodingUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -247,7 +247,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextAsset+EncodingUtility")]
 impl std::ops::Deref for crate::UnityEngine::TextAsset_EncodingUtility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

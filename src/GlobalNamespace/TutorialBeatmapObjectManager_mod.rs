@@ -2,21 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialBeatmapObjectManager {
-    __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
     pub _tutorialNotePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            *mut crate::GlobalNamespace::TutorialNoteController,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TutorialNoteController>,
     >,
     pub _bombNotePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            *mut crate::GlobalNamespace::BombNoteController,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombNoteController>,
     >,
     pub _obstaclePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            *mut crate::GlobalNamespace::ObstacleController,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
     >,
     pub _initData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData,
@@ -33,7 +29,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TutorialBeatmapObjectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialBeatmapObjectManager {
-    type Target = crate::GlobalNamespace::BeatmapObjectManager;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +46,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TutorialBeatmapObjectManager
 impl crate::GlobalNamespace::TutorialBeatmapObjectManager {
     #[cfg(feature = "TutorialBeatmapObjectManager+InitData")]
     pub type InitData = crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData;
-    pub fn DespawnInternal_NoteController0(
+    pub fn DespawnInternal_Gc0(
         &mut self,
         noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,7 +57,7 @@ impl crate::GlobalNamespace::TutorialBeatmapObjectManager {
             .invoke("DespawnInternal", (noteController))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DespawnInternal_ObstacleController1(
+    pub fn DespawnInternal_Gc1(
         &mut self,
         obstacleController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ObstacleController,
@@ -72,7 +70,7 @@ impl crate::GlobalNamespace::TutorialBeatmapObjectManager {
             .invoke("DespawnInternal", (obstacleController))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DespawnInternal_SliderController2(
+    pub fn DespawnInternal_Gc2(
         &mut self,
         sliderNoteController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SliderController,
@@ -186,18 +184,14 @@ impl crate::GlobalNamespace::TutorialBeatmapObjectManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ObstacleController,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ObstacleController,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         > = __cordl_object.invoke("get_activeObstacleControllers", ())?;
         Ok(__cordl_ret.into())
     }
@@ -216,7 +210,7 @@ for crate::GlobalNamespace::TutorialBeatmapObjectManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialBeatmapObjectManager_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub cutAngleTolerance: f32,
 }
 #[cfg(feature = "TutorialBeatmapObjectManager+InitData")]
@@ -227,7 +221,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TutorialBeatmapObjectManager+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

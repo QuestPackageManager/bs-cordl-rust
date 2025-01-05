@@ -2,30 +2,22 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_UpdateManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_LayoutQueueLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<i32>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_LayoutQueueLookup: quest_hook::libil2cpp::Gc<i32>,
     pub m_LayoutRebuildQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Text>,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     >,
-    pub m_GraphicQueueLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<i32>,
-    >,
+    pub m_GraphicQueueLookup: quest_hook::libil2cpp::Gc<i32>,
     pub m_GraphicRebuildQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Text>,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     >,
-    pub m_InternalUpdateLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<i32>,
-    >,
+    pub m_InternalUpdateLookup: quest_hook::libil2cpp::Gc<i32>,
     pub m_InternalUpdateQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Text>,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     >,
-    pub m_CullingUpdateLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<i32>,
-    >,
+    pub m_CullingUpdateLookup: quest_hook::libil2cpp::Gc<i32>,
     pub m_CullingUpdateQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Text>,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     >,
 }
 #[cfg(feature = "TMPro+TMP_UpdateManager")]
@@ -35,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_UpdateManager")]
 impl std::ops::Deref for crate::TMPro::TMP_UpdateManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

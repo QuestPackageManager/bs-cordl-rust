@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorPalette {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub _current_k__BackingField: crate::UnityEngine::Color,
-    pub m_Colors: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
-    >,
+    pub m_Colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ColorPalette")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+ColorPalette")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::ColorPalette {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,9 +35,7 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
     }
     pub fn SetColors(
         &mut self,
-        colors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<crate::UnityEngine::Color>,
-        >,
+        colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,20 +85,13 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
     pub fn get_colors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                crate::UnityEngine::Color,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                crate::UnityEngine::Color,
-            >,
-        > = __cordl_object.invoke("get_colors", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color> = __cordl_object
+            .invoke("get_colors", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_current(
@@ -149,16 +138,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Color
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ColorPalette")]
-impl AsRef<crate::UnityEngine::ProBuilder::IHasDefault>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::IHasDefault>>
 for crate::UnityEngine::ProBuilder::ColorPalette {
-    fn as_ref(&self) -> &crate::UnityEngine::ProBuilder::IHasDefault {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::IHasDefault> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ColorPalette")]
-impl AsMut<crate::UnityEngine::ProBuilder::IHasDefault>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::IHasDefault>>
 for crate::UnityEngine::ProBuilder::ColorPalette {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::ProBuilder::IHasDefault {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::IHasDefault> {
         unsafe { std::mem::transmute(self) }
     }
 }

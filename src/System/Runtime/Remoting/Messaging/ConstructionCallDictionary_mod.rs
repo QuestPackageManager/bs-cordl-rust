@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConstructionCallDictionary {
-    __cordl_parent: crate::System::Runtime::Remoting::Messaging::MessageDictionary,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::MessageDictionary,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
-    type Target = crate::System::Runtime::Remoting::Messaging::MessageDictionary;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::MessageDictionary,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

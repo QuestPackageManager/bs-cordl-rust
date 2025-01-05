@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PaddedBufferedBlockCipher {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::BufferedBlockCipher,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::BufferedBlockCipher,
+    >,
     pub padding: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding,
     >,
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
-    type Target = crate::Org::BouncyCastle::Crypto::BufferedBlockCipher;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::BufferedBlockCipher,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,16 +76,7 @@ impl crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
             .invoke("Init", (forEncryption, parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_IBlockCipher1(
-        cipher: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (cipher))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_IBlockCipherPadding0(
+    pub fn New_Gc0(
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBlockCipher,
         >,
@@ -93,6 +88,15 @@ impl crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (cipher, padding))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc1(
+        cipher: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (cipher))?;
         Ok(__cordl_object.into())
     }
     pub fn ProcessByte(
@@ -123,18 +127,7 @@ impl crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
             .invoke("ProcessBytes", (input, inOff, length, output, outOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IBlockCipher1(
-        &mut self,
-        cipher: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (cipher))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_IBlockCipherPadding0(
+    pub fn _ctor_Gc0(
         &mut self,
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBlockCipher,
@@ -148,6 +141,17 @@ impl crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (cipher, padding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc1(
+        &mut self,
+        cipher: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (cipher))?;
         Ok(__cordl_ret.into())
     }
 }

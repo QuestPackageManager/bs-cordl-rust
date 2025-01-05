@@ -2,17 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WNafPreCompInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_promotionCountdown: i32,
     pub m_confWidth: i32,
     pub m_preComp: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
         >,
     >,
     pub m_preCompNeg: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
         >,
     >,
     pub m_twice: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafPreCompInfo")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,7 +84,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
     > {
@@ -93,7 +93,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         > = __cordl_object.invoke("get_PreComp", ())?;
         Ok(__cordl_ret.into())
@@ -103,7 +103,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
     > {
@@ -112,7 +112,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         > = __cordl_object.invoke("get_PreCompNeg", ())?;
         Ok(__cordl_ret.into())
@@ -159,7 +159,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -174,7 +174,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -230,18 +230,30 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafPreCompInfo")]
-impl AsRef<crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo>
-for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+    >,
+> for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafPreCompInfo")]
-impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo>
-for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+    >,
+> for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

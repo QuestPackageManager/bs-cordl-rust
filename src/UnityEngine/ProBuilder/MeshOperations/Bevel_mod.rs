@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Bevel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Bevel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Bevel")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,57 +26,43 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MeshOperations::Beve
 impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
     pub fn BevelEdges(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
         amount: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("BevelEdges", (mesh, edges, amount))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetBridgeFaces(
         vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
         >,
         left: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         right: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         holes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                i32,
-                *mut crate::System::Collections::Generic::List_1<
-                    crate::UnityEngine::ProBuilder::SimpleTuple_2<
-                        *mut crate::UnityEngine::ProBuilder::FaceRebuildData,
-                        *mut crate::System::Collections::Generic::List_1<i32>,
+            i32,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::FaceRebuildData,
                     >,
+                    quest_hook::libil2cpp::Gc<i32>,
                 >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::FaceRebuildData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::FaceRebuildData>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::FaceRebuildData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::FaceRebuildData>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetBridgeFaces", (vertices, left, right, holes))?;
         Ok(__cordl_ret.into())
@@ -91,9 +77,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
     }
     pub fn SlideEdge(
         vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
         >,
         we: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         amount: f32,

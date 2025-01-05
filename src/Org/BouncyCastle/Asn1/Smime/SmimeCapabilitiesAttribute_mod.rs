@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SmimeCapabilitiesAttribute {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::X509::AttributeX509,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AttributeX509,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Smime+SmimeCapabilitiesAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+Smime+SmimeCapabilitiesAttribute")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::Smime::SmimeCapabilitiesAttribute {
-    type Target = crate::Org::BouncyCastle::Asn1::X509::AttributeX509;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AttributeX509,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,15 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorHueSlider {
-    __cordl_parent: crate::HMUI::CircleSlider,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::CircleSlider>,
     pub _darkColor: crate::UnityEngine::Color,
     pub _lightColor: crate::UnityEngine::Color,
     pub colorHueDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_3<
-            *mut crate::GlobalNamespace::ColorHueSlider,
-            f32,
-            crate::GlobalNamespace::ColorChangeUIEventType,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorHueSlider>,
+        f32,
+        crate::GlobalNamespace::ColorChangeUIEventType,
     >,
 }
 #[cfg(feature = "ColorHueSlider")]
@@ -20,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColorHueSlider")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorHueSlider {
-    type Target = crate::HMUI::CircleSlider;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::CircleSlider>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -108,11 +106,9 @@ impl crate::GlobalNamespace::ColorHueSlider {
     pub fn add_colorHueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                *mut crate::GlobalNamespace::ColorHueSlider,
-                f32,
-                crate::GlobalNamespace::ColorChangeUIEventType,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorHueSlider>,
+            f32,
+            crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -125,11 +121,9 @@ impl crate::GlobalNamespace::ColorHueSlider {
     pub fn remove_colorHueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                *mut crate::GlobalNamespace::ColorHueSlider,
-                f32,
-                crate::GlobalNamespace::ColorChangeUIEventType,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorHueSlider>,
+            f32,
+            crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -150,30 +144,50 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorHueSlide
     }
 }
 #[cfg(feature = "ColorHueSlider")]
-impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::GlobalNamespace::ColorHueSlider {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::GlobalNamespace::ColorHueSlider {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ColorHueSlider")]
-impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::GlobalNamespace::ColorHueSlider {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::GlobalNamespace::ColorHueSlider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ColorHueSlider")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerUpHandler>
-for crate::GlobalNamespace::ColorHueSlider {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerUpHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerUpHandler>,
+> for crate::GlobalNamespace::ColorHueSlider {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerUpHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ColorHueSlider")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerUpHandler>
-for crate::GlobalNamespace::ColorHueSlider {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerUpHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerUpHandler>,
+> for crate::GlobalNamespace::ColorHueSlider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerUpHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseViewControllersInstaller {
-    __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     pub _simpleDialogPromptViewControllerPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SimpleDialogPromptViewController,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BaseViewControllersInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::BaseViewControllersInstaller {
-    type Target = crate::Zenject::ScriptableObjectInstaller;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

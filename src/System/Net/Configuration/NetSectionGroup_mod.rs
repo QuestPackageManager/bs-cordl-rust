@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSectionGroup {
-    __cordl_parent: crate::System::Configuration::ConfigurationSectionGroup,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Configuration::ConfigurationSectionGroup,
+    >,
 }
 #[cfg(feature = "System+Net+Configuration+NetSectionGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Configuration+NetSectionGroup")]
 impl std::ops::Deref for crate::System::Net::Configuration::NetSectionGroup {
-    type Target = crate::System::Configuration::ConfigurationSectionGroup;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Configuration::ConfigurationSectionGroup,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

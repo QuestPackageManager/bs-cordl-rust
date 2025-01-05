@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2 {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mainSettings: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::Settings::LegacySettingsV2_MainSettings,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2 {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -104,7 +104,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Settings::LegacySet
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_AudioSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub volume: f32,
     pub ambientVolumeScale: f32,
     pub overrideAudioLatency: bool,
@@ -118,7 +118,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -177,7 +177,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_ControllerSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub positionOffset: crate::Unity::Mathematics::float3,
     pub rotationOffset: crate::Unity::Mathematics::float3,
 }
@@ -190,7 +190,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
 impl std::ops::Deref
 for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -236,7 +236,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_CustomServerSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub useCustomServerEnvironment: bool,
     pub forceGameLiftServerEnvironment: bool,
     pub customServerHostName: quest_hook::libil2cpp::Gc<
@@ -252,7 +252,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
 impl std::ops::Deref
 for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -298,7 +298,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_DebugSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub enableFpsCounter: bool,
     pub enableFpsRecorder: bool,
     pub enableMemoryTracker: bool,
@@ -311,7 +311,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -373,7 +373,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_GraphicSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub performancePresetKey: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -391,7 +391,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -452,7 +452,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_MainSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub audioSettings: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings,
     >,
@@ -483,7 +483,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -560,7 +560,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_PerformancePreset {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub presetNameLocalizationTag: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -590,7 +590,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -653,7 +653,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsV2_SmoothCameraSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub enabled: bool,
     pub fov: f32,
     pub rotationSmooth: f32,
@@ -671,7 +671,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
 impl std::ops::Deref
 for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

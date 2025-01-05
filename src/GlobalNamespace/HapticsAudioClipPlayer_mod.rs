@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HapticsAudioClipPlayer {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _baseVolume: f32,
     pub _triggeredThisFrame: bool,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HapticsAudioClipPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::HapticsAudioClipPlayer {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
     pub fn HandleContinuousAudioCoroutine(
         &mut self,
         onComplete: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::HapticsAudioClipPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
     pub fn HandleOneShotPlayEndCoroutine(
         &mut self,
         onComplete: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::HapticsAudioClipPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
@@ -107,7 +107,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
             crate::Libraries::HM::HMLib::VR::HapticPresetSO,
         >,
         onComplete: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::HapticsAudioClipPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -193,8 +193,8 @@ for crate::GlobalNamespace::HapticsAudioClipPlayer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HapticsAudioClipPlayer_Pool {
-    __cordl_parent: crate::Zenject::MemoryPool_1<
-        *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
     >,
 }
 #[cfg(feature = "HapticsAudioClipPlayer+Pool")]
@@ -204,8 +204,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HapticsAudioClipPlayer+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
-    type Target = crate::Zenject::MemoryPool_1<
-        *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

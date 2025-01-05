@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PoolableSerializable {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _referenceCount: i32,
 }
 #[cfg(feature = "PoolableSerializable")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PoolableSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::PoolableSerializable {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,15 +41,11 @@ impl crate::GlobalNamespace::PoolableSerializable {
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Concurrent::ConcurrentBag_1<
-                *mut crate::GlobalNamespace::IPoolableSerializable,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolableSerializable>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Concurrent::ConcurrentBag_1<
-                *mut crate::GlobalNamespace::IPoolableSerializable,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolableSerializable>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetPool", (t))?;
         Ok(__cordl_ret.into())
     }
@@ -86,7 +82,7 @@ impl crate::GlobalNamespace::PoolableSerializable {
             .invoke("Release", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Release_IPoolableSerializable1(
+    pub fn Release_Gc1(
         t: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolableSerializable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -135,30 +131,38 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PoolableSeria
     }
 }
 #[cfg(feature = "PoolableSerializable")]
-impl AsRef<crate::GlobalNamespace::IPoolableSerializable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolableSerializable>>
 for crate::GlobalNamespace::PoolableSerializable {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolableSerializable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolableSerializable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PoolableSerializable")]
-impl AsMut<crate::GlobalNamespace::IPoolableSerializable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolableSerializable>>
 for crate::GlobalNamespace::PoolableSerializable {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolableSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolableSerializable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PoolableSerializable")]
-impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
 for crate::GlobalNamespace::PoolableSerializable {
-    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PoolableSerializable")]
-impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
 for crate::GlobalNamespace::PoolableSerializable {
-    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
         unsafe { std::mem::transmute(self) }
     }
 }

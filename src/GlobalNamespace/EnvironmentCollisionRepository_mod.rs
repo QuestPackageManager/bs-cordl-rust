@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentCollisionRepository {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _colliders: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::UnityEngine::Collider,
-            *mut crate::GlobalNamespace::ColliderEventEffect,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColliderEventEffect>,
     >,
 }
 #[cfg(feature = "EnvironmentCollisionRepository")]
@@ -17,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnvironmentCollisionRepository")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentCollisionRepository {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +52,7 @@ impl crate::GlobalNamespace::EnvironmentCollisionRepository {
         &mut self,
         collider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
         colliderEventEffect: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::GlobalNamespace::ColliderEventEffect,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColliderEventEffect>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SaberManager {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _leftSaber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
     pub _rightSaber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
     pub _initData: quest_hook::libil2cpp::Gc<
@@ -10,10 +10,8 @@ pub struct SaberManager {
     >,
     pub _started: bool,
     pub didUpdateSaberPositionsEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::GlobalNamespace::Saber,
-            *mut crate::GlobalNamespace::Saber,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
     >,
 }
 #[cfg(feature = "SaberManager")]
@@ -23,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SaberManager")]
 impl std::ops::Deref for crate::GlobalNamespace::SaberManager {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -121,10 +119,8 @@ impl crate::GlobalNamespace::SaberManager {
     pub fn add_didUpdateSaberPositionsEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::Saber,
-                *mut crate::GlobalNamespace::Saber,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -161,10 +157,8 @@ impl crate::GlobalNamespace::SaberManager {
     pub fn remove_didUpdateSaberPositionsEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::Saber,
-                *mut crate::GlobalNamespace::Saber,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -199,7 +193,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberManager 
 #[repr(C)]
 #[derive(Debug)]
 pub struct SaberManager_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub oneSaberMode: bool,
     pub oneSaberType: crate::GlobalNamespace::SaberType,
 }
@@ -210,7 +204,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SaberManager+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::SaberManager_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackedPoseDriver {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub m_TrackingType: crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType,
     pub m_UpdateType: crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType,
     pub m_IgnoreTrackingState: bool,
@@ -30,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,7 +101,9 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
     }
     pub fn HasStereoCamera(
         &mut self,
-        cameraComponent: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Camera>,
+        cameraComponent: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -551,16 +553,22 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]
-impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
-    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]
-impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ISerializationCallbackReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

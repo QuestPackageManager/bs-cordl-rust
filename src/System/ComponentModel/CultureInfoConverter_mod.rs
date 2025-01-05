@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CultureInfoConverter {
-    __cordl_parent: crate::System::ComponentModel::TypeConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter,
+    >,
     pub _values: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::CultureInfoConverter {
-    type Target = crate::System::ComponentModel::TypeConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -201,7 +205,7 @@ for crate::System::ComponentModel::CultureInfoConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CultureInfoConverter_CultureComparer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _converter: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::CultureInfoConverter,
     >,
@@ -215,7 +219,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
 impl std::ops::Deref
 for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -276,16 +280,20 @@ for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
     }
 }
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
-impl AsRef<crate::System::Collections::IComparer>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
 for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
-    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
-impl AsMut<crate::System::Collections::IComparer>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
 for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -293,7 +301,7 @@ for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CultureInfoConverter_CultureInfoMapper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -304,7 +312,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
 impl std::ops::Deref
 for crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -320,17 +328,13 @@ for crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
 impl crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
     pub fn CreateMap() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateMap", ())?;
         Ok(__cordl_ret.into())
     }

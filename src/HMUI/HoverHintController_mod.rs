@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HoverHintController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _hoverHintPanelPrefab: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHintPanel>,
     pub _isHiding: bool,
     pub _hoverHintPanel: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHintPanel>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+HoverHintController")]
 impl std::ops::Deref for crate::HMUI::HoverHintController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

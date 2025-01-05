@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Camera {
-    __cordl_parent: crate::UnityEngine::Behaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
 }
 #[cfg(feature = "UnityEngine+Camera")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Camera")]
 impl std::ops::Deref for crate::UnityEngine::Camera {
-    type Target = crate::UnityEngine::Behaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -119,7 +119,9 @@ impl crate::UnityEngine::Camera {
         z: f32,
         eye: crate::UnityEngine::Camera_MonoOrStereoscopicEye,
         outCorners: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -135,7 +137,9 @@ impl crate::UnityEngine::Camera {
         z: f32,
         eye: crate::UnityEngine::Camera_MonoOrStereoscopicEye,
         outCorners: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -308,7 +312,9 @@ impl crate::UnityEngine::Camera {
     }
     pub fn GetAllCameras(
         cameras: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -322,7 +328,11 @@ impl crate::UnityEngine::Camera {
     }
     pub fn GetAllCamerasImpl(
         cam: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -333,14 +343,18 @@ impl crate::UnityEngine::Camera {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("GetCameraBufferWarnings", ())?;
         Ok(__cordl_ret.into())
     }
@@ -350,7 +364,7 @@ impl crate::UnityEngine::Camera {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Rendering::CommandBuffer,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
             >,
         >,
     > {
@@ -359,7 +373,7 @@ impl crate::UnityEngine::Camera {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Rendering::CommandBuffer,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
             >,
         > = __cordl_object.invoke("GetCommandBuffers", (evt))?;
         Ok(__cordl_ret.into())
@@ -668,7 +682,7 @@ impl crate::UnityEngine::Camera {
             .invoke("RenderToCubemapImpl", (tex, faceMask))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RenderToCubemap_Cubemap1(
+    pub fn RenderToCubemap_Gc1(
         &mut self,
         cubemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -678,7 +692,17 @@ impl crate::UnityEngine::Camera {
         let __cordl_ret: bool = __cordl_object.invoke("RenderToCubemap", (cubemap))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RenderToCubemap_Cubemap_i32_0(
+    pub fn RenderToCubemap_Gc3(
+        &mut self,
+        cubemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("RenderToCubemap", (cubemap))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RenderToCubemap_i32_0(
         &mut self,
         cubemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
         faceMask: i32,
@@ -690,17 +714,7 @@ impl crate::UnityEngine::Camera {
             .invoke("RenderToCubemap", (cubemap, faceMask))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RenderToCubemap_RenderTexture3(
-        &mut self,
-        cubemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("RenderToCubemap", (cubemap))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn RenderToCubemap_RenderTexture_i32_2(
+    pub fn RenderToCubemap_i32_2(
         &mut self,
         cubemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         faceMask: i32,
@@ -712,7 +726,7 @@ impl crate::UnityEngine::Camera {
             .invoke("RenderToCubemap", (cubemap, faceMask))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RenderToCubemap_RenderTexture_i32_Camera_MonoOrStereoscopicEye4(
+    pub fn RenderToCubemap_i32_Camera_MonoOrStereoscopicEye4(
         &mut self,
         cubemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         faceMask: i32,
@@ -1057,7 +1071,7 @@ impl crate::UnityEngine::Camera {
             .invoke("SetTargetBuffersMRTImpl_Injected", (color, depth))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetTargetBuffers_Il2CppArray1(
+    pub fn SetTargetBuffers_Gc1(
         &mut self,
         colorBuffer: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RenderBuffer>,
@@ -1098,14 +1112,18 @@ impl crate::UnityEngine::Camera {
         depthSlice: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = __cordl_object
             .invoke(
                 "SubmitBuiltInObjectIDRenderRequest",
@@ -1131,9 +1149,7 @@ impl crate::UnityEngine::Camera {
     pub fn SubmitRenderRequests(
         &mut self,
         renderRequests: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::Camera_RenderRequest,
-            >,
+            crate::UnityEngine::Camera_RenderRequest,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1410,11 +1426,15 @@ impl crate::UnityEngine::Camera {
     }
     pub fn get_allCameras() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_allCameras", ())?;
         Ok(__cordl_ret.into())
     }
@@ -2899,7 +2919,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Camera {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Camera_CameraCallback {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "UnityEngine+Camera+CameraCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2908,7 +2928,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Camera+CameraCallback")]
 impl std::ops::Deref for crate::UnityEngine::Camera_CameraCallback {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SaberActivityCounter {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _averageWindowDuration: f32,
     pub _valuesPerSecond: f32,
     pub _increaseSpeed: f32,
@@ -10,9 +10,7 @@ pub struct SaberActivityCounter {
     pub _movementSensitivityThreshold: f32,
     pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
     pub _gamePause: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
-    pub totalDistanceDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<f32>,
-    >,
+    pub totalDistanceDidChangeEvent: quest_hook::libil2cpp::Gc<f32>,
     pub _prevLeftSaberTipPos: crate::UnityEngine::Vector3,
     pub _prevRightSaberTipPos: crate::UnityEngine::Vector3,
     pub _prevLeftHandPos: crate::UnityEngine::Vector3,
@@ -36,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SaberActivityCounter")]
 impl std::ops::Deref for crate::GlobalNamespace::SaberActivityCounter {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -120,7 +118,7 @@ impl crate::GlobalNamespace::SaberActivityCounter {
     }
     pub fn add_totalDistanceDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -197,7 +195,7 @@ impl crate::GlobalNamespace::SaberActivityCounter {
     }
     pub fn remove_totalDistanceDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

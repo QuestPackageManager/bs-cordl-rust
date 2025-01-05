@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CurveNodeData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub position: crate::UnityEngine::Vector3,
     pub rotation: crate::UnityEngine::Vector3,
     pub scale: crate::UnityEngine::Vector3,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+CurveNodeData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::CurveNodeData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl crate::HoudiniEngineUnity::CurveNodeData {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_CurveNodeData4(
+    pub fn New_Gc4(
         other: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -103,7 +103,7 @@ impl crate::HoudiniEngineUnity::CurveNodeData {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_CurveNodeData4(
+    pub fn _ctor_Gc4(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -162,28 +162,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::CurveNodeD
 }
 #[cfg(feature = "HoudiniEngineUnity+CurveNodeData")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::CurveNodeData,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
     >,
 > for crate::HoudiniEngineUnity::CurveNodeData {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::CurveNodeData,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+CurveNodeData")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::CurveNodeData,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
     >,
 > for crate::HoudiniEngineUnity::CurveNodeData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::CurveNodeData,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
     > {
         unsafe { std::mem::transmute(self) }
     }

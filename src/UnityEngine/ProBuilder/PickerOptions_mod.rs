@@ -23,7 +23,7 @@ for crate::UnityEngine::ProBuilder::PickerOptions {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
 impl crate::UnityEngine::ProBuilder::PickerOptions {
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GregorianCalendar {
-    __cordl_parent: crate::System::Globalization::Calendar,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
     pub m_type: crate::System::Globalization::GregorianCalendarTypes,
 }
 #[cfg(feature = "System+Globalization+GregorianCalendar")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+GregorianCalendar")]
 impl std::ops::Deref for crate::System::Globalization::GregorianCalendar {
-    type Target = crate::System::Globalization::Calendar;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

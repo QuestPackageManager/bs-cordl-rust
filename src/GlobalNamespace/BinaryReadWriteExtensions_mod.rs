@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryReadWriteExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "BinaryReadWriteExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BinaryReadWriteExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::BinaryReadWriteExtensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,18 +34,15 @@ impl crate::GlobalNamespace::BinaryReadWriteExtensions {
     pub fn ReadListOf<T>(
         binaryReader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
         elementReader: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<*mut crate::System::IO::BinaryReader, T>,
+            quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
+            T,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReadListOf", (binaryReader, elementReader))?;
         Ok(__cordl_ret.into())
     }
@@ -72,9 +69,10 @@ impl crate::GlobalNamespace::BinaryReadWriteExtensions {
     }
     pub fn WriteListOf<T>(
         binaryWriter: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
+        list: quest_hook::libil2cpp::Gc<T>,
         elementWriter: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut crate::System::IO::BinaryWriter, T>,
+            quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
+            T,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

@@ -2,21 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCharacteristicSegmentedControlController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _segmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::IconSegmentedControl>,
     pub didSelectBeatmapCharacteristicEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
-            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
         >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
     >,
     pub _selectedBeatmapCharacteristic: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
     pub _currentlyAvailableBeatmapCharacteristics: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
     >,
 }
 #[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
@@ -28,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,17 +85,13 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     pub fn SetData(
         &mut self,
         beatmapCharacteristics: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
         >,
         selectedBeatmapCharacteristic: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
         notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -127,10 +121,10 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     pub fn add_didSelectBeatmapCharacteristicEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
-                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -156,10 +150,10 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     pub fn remove_didSelectBeatmapCharacteristicEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
-                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

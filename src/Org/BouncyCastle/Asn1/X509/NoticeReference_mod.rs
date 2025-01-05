@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoticeReference {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub organization: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::DisplayText,
     >,
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+NoticeReference")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +60,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
             >,
         >,
     > {
@@ -65,21 +69,34 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
             >,
         > = __cordl_object.invoke("GetNoticeNumbers", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1Sequence3(
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    pub fn New_Gc0(
+        organization: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        numbers: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
+            .invoke_void(".ctor", (organization, numbers))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DisplayText_Asn1EncodableVector2(
+    pub fn New_Gc1(
+        organization: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        noticeNumbers: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (organization, noticeNumbers))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc2(
         organization: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::DisplayText,
         >,
@@ -93,26 +110,13 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
             .invoke_void(".ctor", (organization, noticeNumbers))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Asn1EncodableVector1(
-        organization: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        noticeNumbers: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
-        >,
+    pub fn New_Gc3(
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (organization, noticeNumbers))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppString_IList0(
-        organization: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        numbers: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (organization, numbers))?;
+            .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
@@ -128,18 +132,33 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Sequence3(
+    pub fn _ctor_Gc0(
         &mut self,
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+        organization: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        numbers: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
+            .invoke(".ctor", (organization, numbers))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DisplayText_Asn1EncodableVector2(
+    pub fn _ctor_Gc1(
+        &mut self,
+        organization: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        noticeNumbers: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (organization, noticeNumbers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc2(
         &mut self,
         organization: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::DisplayText,
@@ -155,30 +174,15 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
             .invoke(".ctor", (organization, noticeNumbers))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Asn1EncodableVector1(
+    pub fn _ctor_Gc3(
         &mut self,
-        organization: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        noticeNumbers: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
-        >,
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (organization, noticeNumbers))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString_IList0(
-        &mut self,
-        organization: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        numbers: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (organization, numbers))?;
+            .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Organization(

@@ -2,11 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelPacksPriceModel {
-    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >,
     pub _pricePerLevel: f32,
     pub _pricePairBundlePairs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+            >,
         >,
     >,
 }
@@ -17,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SonyLevelPacksPriceModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLevelPacksPriceModel {
-    type Target = crate::GlobalNamespace::PersistentScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,7 +76,9 @@ impl crate::GlobalNamespace::SonyLevelPacksPriceModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+                >,
             >,
         >,
     > {
@@ -79,7 +87,9 @@ impl crate::GlobalNamespace::SonyLevelPacksPriceModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+                >,
             >,
         > = __cordl_object.invoke("get_pricePairBundlePairs", ())?;
         Ok(__cordl_ret.into())
@@ -106,7 +116,7 @@ for crate::GlobalNamespace::SonyLevelPacksPriceModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelPacksPriceModel_PricePerBundlePair {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _pricePerBundle: f32,
     pub _levelsCount: i32,
 }
@@ -119,7 +129,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SonyLevelPacksPriceModel+PricePerBundlePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

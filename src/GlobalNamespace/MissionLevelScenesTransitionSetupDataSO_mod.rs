@@ -2,16 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionLevelScenesTransitionSetupDataSO {
-    __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
+    >,
     pub _missionGameplaySceneInfo: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SceneInfo,
     >,
     pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-            *mut crate::GlobalNamespace::MissionCompletionResults,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
         >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
     >,
     pub _missionId_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -26,7 +28,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MissionLevelScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
-    type Target = crate::GlobalNamespace::LevelScenesTransitionSetupDataSO;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,14 +57,14 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
             .invoke("Finish", (levelCompletionResults))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_ByRefMut_BeatmapLevel_Il2CppArray_ColorScheme_GameplayModifiers_PlayerSpecificSettings_EnvironmentsListModel_BeatmapLevelsModel1(
+    pub fn Init_ByRefMut_Gc1(
         &mut self,
         missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         missionObjectives: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjective,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
             >,
         >,
         overrideColorScheme: quest_hook::libil2cpp::Gc<
@@ -113,7 +117,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_IBeatmapLevelData_ByRefMut_BeatmapLevel_Il2CppArray_ColorScheme_GameplayModifiers_PlayerSpecificSettings_EnvironmentsListModel0(
+    pub fn Init_Gc_ByRefMut0(
         &mut self,
         missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapLevelData: quest_hook::libil2cpp::Gc<
@@ -123,7 +127,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         missionObjectives: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjective,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
             >,
         >,
         overrideColorScheme: quest_hook::libil2cpp::Gc<
@@ -193,10 +197,10 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-                *mut crate::GlobalNamespace::MissionCompletionResults,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -222,10 +226,10 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-                *mut crate::GlobalNamespace::MissionCompletionResults,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PreferredAlgorithms {
-    __cordl_parent: crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+PreferredAlgorithms")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+PreferredAlgorithms")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::Sig::PreferredAlgorithms {
-    type Target = crate::Org::BouncyCastle::Bcpg::SignatureSubpacket;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +53,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::PreferredAlgorithms {
             .invoke("IntToByteArray", (v))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppArray1(
+    pub fn New_Gc1(
         _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
         critical: bool,
         preferences: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -60,7 +64,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::PreferredAlgorithms {
             .invoke_void(".ctor", (_cordl_type, critical, preferences))?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool_Il2CppArray0(
+    pub fn New__cordl_bool_Gc0(
         _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
         critical: bool,
         isLongLength: bool,
@@ -72,7 +76,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::PreferredAlgorithms {
             .invoke_void(".ctor", (_cordl_type, critical, isLongLength, data))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppArray1(
+    pub fn _ctor_Gc1(
         &mut self,
         _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
         critical: bool,
@@ -85,7 +89,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::PreferredAlgorithms {
             .invoke(".ctor", (_cordl_type, critical, preferences))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_Il2CppArray0(
+    pub fn _ctor__cordl_bool_Gc0(
         &mut self,
         _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
         critical: bool,

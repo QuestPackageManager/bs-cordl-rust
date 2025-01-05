@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Slider {
-    __cordl_parent: crate::UnityEngine::UI::Selectable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
     pub m_FillRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_HandleRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_Direction: crate::UnityEngine::UI::Slider_Direction,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Slider")]
 impl std::ops::Deref for crate::UnityEngine::UI::Slider {
-    type Target = crate::UnityEngine::UI::Selectable;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -566,60 +566,90 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Slider {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Slider")]
-impl AsRef<crate::UnityEngine::EventSystems::IDragHandler>
-for crate::UnityEngine::UI::Slider {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDragHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Slider")]
-impl AsMut<crate::UnityEngine::EventSystems::IDragHandler>
-for crate::UnityEngine::UI::Slider {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDragHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Slider")]
-impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::UnityEngine::UI::Slider {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Slider")]
-impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::UnityEngine::UI::Slider {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Slider")]
-impl AsRef<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
 for crate::UnityEngine::UI::Slider {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Slider")]
-impl AsMut<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
 for crate::UnityEngine::UI::Slider {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Slider")]
-impl AsRef<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::Slider {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::UnityEngine::UI::Slider {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Slider")]
-impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::Slider {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::UnityEngine::UI::Slider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Slider")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+    >,
+> for crate::UnityEngine::UI::Slider {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Slider")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+    >,
+> for crate::UnityEngine::UI::Slider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Slider")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
+for crate::UnityEngine::UI::Slider {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Slider")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
+for crate::UnityEngine::UI::Slider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -655,7 +685,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct Slider_SliderEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
 }
 #[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -664,7 +694,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Slider_SliderEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlStringConverter {
-    __cordl_parent: crate::System::Xml::Schema::XmlBaseConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlBaseConverter,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlStringConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlStringConverter")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlStringConverter {
-    type Target = crate::System::Xml::Schema::XmlBaseConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlBaseConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,9 +28,9 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlStringConverter {
 }
 #[cfg(feature = "System+Xml+Schema+XmlStringConverter")]
 impl crate::System::Xml::Schema::XmlStringConverter {
-    pub fn ChangeType_Il2CppObject1(
+    pub fn ChangeType_Gc_Gc_Gc0(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         destinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
     ) -> quest_hook::libil2cpp::Result<
@@ -40,9 +44,9 @@ impl crate::System::Xml::Schema::XmlStringConverter {
         > = __cordl_object.invoke("ChangeType", (value, destinationType, nsResolver))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ChangeType_Il2CppString0(
+    pub fn ChangeType_Gc_Gc_Gc1(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         destinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
     ) -> quest_hook::libil2cpp::Result<

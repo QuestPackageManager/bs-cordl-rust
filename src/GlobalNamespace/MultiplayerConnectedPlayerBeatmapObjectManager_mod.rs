@@ -2,33 +2,35 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerBeatmapObjectManager {
-    __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
     pub _firstBasicNoteTime: crate::System::Nullable_1<f32>,
     pub _gameNotePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
         >,
     >,
     pub _burstSliderHeadGameNotePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
         >,
     >,
     pub _burstSliderGameNotePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
         >,
     >,
     pub _bombNotePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
         >,
     >,
     pub _obstaclePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_2<
-            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController,
-            *mut crate::GlobalNamespace::ObstacleController,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController,
         >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
     >,
     pub _beatmapObjectEventManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
@@ -49,7 +51,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectManager")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
-    type Target = crate::GlobalNamespace::BeatmapObjectManager;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,7 +81,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             .invoke("AreNotesSame", (noteController, noteCutInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DespawnInternal_NoteController0(
+    pub fn DespawnInternal_Gc0(
         &mut self,
         noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -88,7 +92,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             .invoke("DespawnInternal", (noteController))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DespawnInternal_ObstacleController1(
+    pub fn DespawnInternal_Gc1(
         &mut self,
         obstacleController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ObstacleController,
@@ -101,7 +105,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             .invoke("DespawnInternal", (obstacleController))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DespawnInternal_SliderController2(
+    pub fn DespawnInternal_Gc2(
         &mut self,
         sliderNoteController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SliderController,
@@ -328,18 +332,14 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ObstacleController,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ObstacleController,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         > = __cordl_object.invoke("get_activeObstacleControllers", ())?;
         Ok(__cordl_ret.into())
     }
@@ -355,16 +355,16 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectManager")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectManager")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -372,7 +372,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerBeatmapObjectManager_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub disappearingArrows: bool,
     pub ghostNotes: bool,
     pub notesUniformScale: f32,
@@ -388,7 +388,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectManager+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

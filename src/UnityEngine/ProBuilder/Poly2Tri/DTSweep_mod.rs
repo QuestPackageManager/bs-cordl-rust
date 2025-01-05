@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DTSweep {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweep")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweep")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,22 +35,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             .invoke("BasinAngle", (node))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EdgeEvent_DTSweepConstraint_AdvancingFrontNode0(
-        tcx: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext,
-        >,
-        edge: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
-        >,
-        node: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EdgeEvent", (tcx, edge, node))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn EdgeEvent_TriangulationPoint_TriangulationPoint_DelaunayTriangle_TriangulationPoint1(
+    pub fn EdgeEvent_Gc_Gc1(
         tcx: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext,
         >,
@@ -69,6 +54,21 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("EdgeEvent", (tcx, ep, eq, triangle, point))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EdgeEvent_Gc_Gc_Gc0(
+        tcx: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext,
+        >,
+        edge: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+        >,
+        node: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EdgeEvent", (tcx, edge, node))?;
         Ok(__cordl_ret.into())
     }
     pub fn Fill(

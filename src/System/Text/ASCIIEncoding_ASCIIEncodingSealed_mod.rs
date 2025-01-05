@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ASCIIEncoding_ASCIIEncodingSealed {
-    __cordl_parent: crate::System::Text::ASCIIEncoding,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Text::ASCIIEncoding>,
 }
 #[cfg(feature = "System+Text+ASCIIEncoding+ASCIIEncodingSealed")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+ASCIIEncoding+ASCIIEncodingSealed")]
 impl std::ops::Deref for crate::GlobalNamespace::ASCIIEncoding_ASCIIEncodingSealed {
-    type Target = crate::System::Text::ASCIIEncoding;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Text::ASCIIEncoding>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

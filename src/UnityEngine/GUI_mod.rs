@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUI {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+GUI")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+GUI")]
 impl std::ops::Deref for crate::UnityEngine::GUI {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::UnityEngine::GUI {
 impl crate::UnityEngine::GUI {
     #[cfg(feature = "UnityEngine+GUI+WindowFunction")]
     pub type WindowFunction = crate::UnityEngine::GUI_WindowFunction;
-    pub fn BeginGroup_Rect_GUIContent_GUIStyle0(
+    pub fn BeginGroup_Rect_Gc_Gc0(
         position: crate::UnityEngine::Rect,
         content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
         style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
@@ -44,7 +44,7 @@ impl crate::UnityEngine::GUI {
             .invoke("BeginGroup", (position, content, style, scrollOffset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Box_GUIContent_GUIStyle1(
+    pub fn Box_Gc1(
         position: crate::UnityEngine::Rect,
         content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
         style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
@@ -53,7 +53,7 @@ impl crate::UnityEngine::GUI {
             .invoke("Box", (position, content, style))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Box_Il2CppString0(
+    pub fn Box_Rect_Gc0(
         position: crate::UnityEngine::Rect,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -99,7 +99,7 @@ impl crate::UnityEngine::GUI {
             .invoke("EndGroup", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Label_GUIContent_GUIStyle1(
+    pub fn Label_Gc1(
         position: crate::UnityEngine::Rect,
         content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
         style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
@@ -108,7 +108,7 @@ impl crate::UnityEngine::GUI {
             .invoke("Label", (position, content, style))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Label_Il2CppString0(
+    pub fn Label_Rect_Gc0(
         position: crate::UnityEngine::Rect,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -278,7 +278,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUI {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUI_WindowFunction {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "UnityEngine+GUI+WindowFunction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -287,7 +287,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+GUI+WindowFunction")]
 impl std::ops::Deref for crate::UnityEngine::GUI_WindowFunction {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

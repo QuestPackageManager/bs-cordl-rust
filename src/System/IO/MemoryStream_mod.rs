@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoryStream {
-    __cordl_parent: crate::System::IO::Stream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _origin: i32,
     pub _position: i32,
@@ -12,9 +12,7 @@ pub struct MemoryStream {
     pub _writable: bool,
     pub _exposable: bool,
     pub _isOpen: bool,
-    pub _lastReadTask: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<i32>,
-    >,
+    pub _lastReadTask: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "System+IO+MemoryStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -23,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+MemoryStream")]
 impl std::ops::Deref for crate::System::IO::MemoryStream {
-    type Target = crate::System::IO::Stream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -184,7 +182,7 @@ impl crate::System::IO::MemoryStream {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray2(
+    pub fn New_Gc2(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -193,7 +191,7 @@ impl crate::System::IO::MemoryStream {
             .invoke_void(".ctor", (buffer))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray__cordl_bool3(
+    pub fn New_Gc__cordl_bool3(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         writable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -203,7 +201,7 @@ impl crate::System::IO::MemoryStream {
             .invoke_void(".ctor", (buffer, writable))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_i32_4(
+    pub fn New_Gc_i32_i32_4(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
         count: i32,
@@ -214,7 +212,7 @@ impl crate::System::IO::MemoryStream {
             .invoke_void(".ctor", (buffer, index, count))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_i32__cordl_bool5(
+    pub fn New_Gc_i32_i32__cordl_bool5(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
         count: i32,
@@ -226,7 +224,7 @@ impl crate::System::IO::MemoryStream {
             .invoke_void(".ctor", (buffer, index, count, writable))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_i32__cordl_bool__cordl_bool6(
+    pub fn New_Gc_i32_i32__cordl_bool__cordl_bool6(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
         count: i32,
@@ -248,21 +246,17 @@ impl crate::System::IO::MemoryStream {
             .invoke_void(".ctor", (capacity))?;
         Ok(__cordl_object.into())
     }
-    pub fn ReadAsync_Il2CppArray_i32_i32_CancellationToken0(
+    pub fn ReadAsync_Gc_i32_i32_CancellationToken0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
             .invoke("ReadAsync", (buffer, offset, count, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -287,7 +281,7 @@ impl crate::System::IO::MemoryStream {
         let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Read_Il2CppArray_i32_i32_0(
+    pub fn Read_Gc_i32_i32_0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -344,7 +338,7 @@ impl crate::System::IO::MemoryStream {
         > = __cordl_object.invoke("ToArray", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAsync_Il2CppArray_i32_i32_CancellationToken0(
+    pub fn WriteAsync_Gc_i32_i32_CancellationToken0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -396,7 +390,7 @@ impl crate::System::IO::MemoryStream {
             .invoke("WriteTo", (stream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Il2CppArray_i32_i32_0(
+    pub fn Write_Gc_i32_i32_0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -430,7 +424,7 @@ impl crate::System::IO::MemoryStream {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray2(
+    pub fn _ctor_Gc2(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -441,7 +435,7 @@ impl crate::System::IO::MemoryStream {
             .invoke(".ctor", (buffer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray__cordl_bool3(
+    pub fn _ctor_Gc__cordl_bool3(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         writable: bool,
@@ -453,7 +447,7 @@ impl crate::System::IO::MemoryStream {
             .invoke(".ctor", (buffer, writable))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_i32_4(
+    pub fn _ctor_Gc_i32_i32_4(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
@@ -466,7 +460,7 @@ impl crate::System::IO::MemoryStream {
             .invoke(".ctor", (buffer, index, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_i32__cordl_bool5(
+    pub fn _ctor_Gc_i32_i32__cordl_bool5(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
@@ -480,7 +474,7 @@ impl crate::System::IO::MemoryStream {
             .invoke(".ctor", (buffer, index, count, writable))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_i32__cordl_bool__cordl_bool6(
+    pub fn _ctor_Gc_i32_i32__cordl_bool__cordl_bool6(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,

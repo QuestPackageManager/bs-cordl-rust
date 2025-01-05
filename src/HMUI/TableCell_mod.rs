@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TableCell {
-    __cordl_parent: crate::HMUI::SelectableCell,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
     pub _idx_k__BackingField: i32,
     pub _reuseIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _tableCellOwner: quest_hook::libil2cpp::Gc<crate::HMUI::ITableCellOwner>,
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+TableCell")]
 impl std::ops::Deref for crate::HMUI::TableCell {
-    type Target = crate::HMUI::SelectableCell;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

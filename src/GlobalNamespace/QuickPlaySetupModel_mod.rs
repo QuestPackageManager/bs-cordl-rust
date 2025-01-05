@@ -2,15 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySetupModel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _networkConfig: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::INetworkConfig,
     >,
     pub _client: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpClient>,
     pub _request: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<
-            *mut crate::GlobalNamespace::QuickPlaySetupData,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
     >,
     pub _lastRequestTime: crate::System::DateTime,
 }
@@ -21,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "QuickPlaySetupModel")]
 impl std::ops::Deref for crate::GlobalNamespace::QuickPlaySetupModel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,18 +41,14 @@ impl crate::GlobalNamespace::QuickPlaySetupModel {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::QuickPlaySetupData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::QuickPlaySetupData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
         > = __cordl_object.invoke("GetQuickPlaySetupAsync", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -62,18 +56,14 @@ impl crate::GlobalNamespace::QuickPlaySetupModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::QuickPlaySetupData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::QuickPlaySetupData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
         > = __cordl_object.invoke("GetQuickPlaySetupInternal", ())?;
         Ok(__cordl_ret.into())
     }
@@ -142,16 +132,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuickPlaySetu
     }
 }
 #[cfg(feature = "QuickPlaySetupModel")]
-impl AsRef<crate::GlobalNamespace::IQuickPlaySetupModel>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IQuickPlaySetupModel>>
 for crate::GlobalNamespace::QuickPlaySetupModel {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IQuickPlaySetupModel {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IQuickPlaySetupModel> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "QuickPlaySetupModel")]
-impl AsMut<crate::GlobalNamespace::IQuickPlaySetupModel>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IQuickPlaySetupModel>>
 for crate::GlobalNamespace::QuickPlaySetupModel {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IQuickPlaySetupModel {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IQuickPlaySetupModel> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -159,10 +153,10 @@ for crate::GlobalNamespace::QuickPlaySetupModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySetupModel_QuickPlaySetupDataFB {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub data: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::QuickPlaySetupData,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
         >,
     >,
 }
@@ -175,7 +169,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
 impl std::ops::Deref
 for crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

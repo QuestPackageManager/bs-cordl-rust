@@ -2,21 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusMRCManager {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
     pub _instantiateMixedRealityBackgroundCameraGameObject: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            *mut crate::UnityEngine::GameObject,
-            *mut crate::UnityEngine::GameObject,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub _instantiateMixedRealityForegroundCameraGameObject: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            *mut crate::UnityEngine::GameObject,
-            *mut crate::UnityEngine::GameObject,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub _enableMixedReality_k__BackingField: bool,
     pub _extraHiddenLayers_k__BackingField: crate::UnityEngine::LayerMask,
@@ -56,7 +52,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusMRCManager")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusMRCManager {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,16 +68,12 @@ impl crate::GlobalNamespace::OculusMRCManager {
     pub fn Init(
         &mut self,
         instantiateMixedRealityBackgroundCameraGameObject: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::UnityEngine::GameObject,
-                *mut crate::UnityEngine::GameObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
         instantiateMixedRealityForegroundCameraGameObject: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::UnityEngine::GameObject,
-                *mut crate::UnityEngine::GameObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -739,18 +731,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusMRCMana
     }
 }
 #[cfg(feature = "OculusMRCManager")]
-impl AsRef<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
-for crate::GlobalNamespace::OculusMRCManager {
-    fn as_ref(&self) -> &crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+    >,
+> for crate::GlobalNamespace::OculusMRCManager {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusMRCManager")]
-impl AsMut<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
-for crate::GlobalNamespace::OculusMRCManager {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+    >,
+> for crate::GlobalNamespace::OculusMRCManager {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -54,16 +54,22 @@ for crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
-impl AsRef<crate::UnityEngine::InputSystem::Haptics::IHaptics>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IHaptics>>
 for crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
-    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::Haptics::IHaptics {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IHaptics> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Haptics+IDualMotorRumble")]
-impl AsMut<crate::UnityEngine::InputSystem::Haptics::IHaptics>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IHaptics>>
 for crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::InputSystem::Haptics::IHaptics {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Haptics::IHaptics,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

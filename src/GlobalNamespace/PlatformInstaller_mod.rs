@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformInstaller {
-    __cordl_parent: crate::Zenject::Installer_3<
-        *mut crate::GlobalNamespace::AppInitSetupData,
-        *mut crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
-        *mut crate::GlobalNamespace::PlatformInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
+        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformInstaller>,
     >,
     pub _isTest: bool,
     pub _mockPlatformAdditionalContentModelInitialData: quest_hook::libil2cpp::Gc<
@@ -19,10 +21,12 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlatformInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformInstaller {
-    type Target = crate::Zenject::Installer_3<
-        *mut crate::GlobalNamespace::AppInitSetupData,
-        *mut crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
-        *mut crate::GlobalNamespace::PlatformInstaller,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
+        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformInstaller>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

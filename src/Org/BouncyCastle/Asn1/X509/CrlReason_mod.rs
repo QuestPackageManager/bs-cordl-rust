@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CrlReason {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::DerEnumerated,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerEnumerated,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+CrlReason")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+CrlReason")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::CrlReason {
-    type Target = crate::Org::BouncyCastle::Asn1::DerEnumerated;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerEnumerated,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +38,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlReason {
     pub const RemoveFromCrl: i32 = 8i32;
     pub const Superseded: i32 = 4i32;
     pub const Unspecified: i32 = 0i32;
-    pub fn New_DerEnumerated1(
+    pub fn New_Gc1(
         reason: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerEnumerated>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -65,7 +69,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlReason {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerEnumerated1(
+    pub fn _ctor_Gc1(
         &mut self,
         reason: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerEnumerated>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

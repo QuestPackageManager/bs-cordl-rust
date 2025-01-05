@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlickeringNeonSign {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _flickeringSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
     pub _light: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
     pub _particleSystems: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ParticleSystem>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+        >,
     >,
     pub _minOnDelay: f32,
     pub _maxOnDelay: f32,
@@ -17,10 +19,12 @@ pub struct FlickeringNeonSign {
     pub _onMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _offMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _sparksAudioClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
     pub _sparksAudioClipPicker: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::RandomObjectPicker_1<*mut crate::UnityEngine::AudioClip>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     >,
 }
 #[cfg(feature = "FlickeringNeonSign")]
@@ -30,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FlickeringNeonSign")]
 impl std::ops::Deref for crate::GlobalNamespace::FlickeringNeonSign {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

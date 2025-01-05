@@ -62,9 +62,11 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut3(
         &mut self,
         property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
-            *mut crate::UnityEngine::Texture2D,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Texture2D>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -75,9 +77,11 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut4(
         &mut self,
         property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
-            *mut crate::UnityEngine::Sprite,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         >,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Sprite>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -88,10 +92,10 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut5(
         &mut self,
         property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
-            *mut crate::UnityEngine::UIElements::VectorImage,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VectorImage>,
         >,
         value: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::VectorImage,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VectorImage>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -103,9 +107,11 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut6(
         &mut self,
         property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
-        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

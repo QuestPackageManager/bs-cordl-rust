@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelLoader {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub levelDownloadingUpdateEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
-        >,
+        crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
     >,
     pub _loadedBeatmapLevelDataCache: quest_hook::libil2cpp::Gc<
-        crate::BGLib::DotnetExtension::Collections::LRUCache_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::GlobalNamespace::IBeatmapLevelData,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
     >,
     pub _beatmapLevelDataLoader: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelDataLoader,
@@ -31,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevelLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelLoader {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,15 +49,11 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
             .invoke(
                 "CheckBeatmapLevelDataExistsAsync",
                 (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
@@ -73,15 +65,11 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         token: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
             .invoke(
                 "CheckBeatmapLevelDataFromAssetBundleExistsAsync",
                 (beatmapLevel, beatmapLevelDataVersion, token),
@@ -125,19 +113,13 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::GetAssetBundleFileResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GetAssetBundleFileResult>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::GetAssetBundleFileResult,
-            >,
+            crate::GlobalNamespace::GetAssetBundleFileResult,
         > = __cordl_object
             .invoke(
                 "DownloadAssetBundleAndGetPath",
@@ -176,19 +158,13 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::LoadBeatmapLevelDataResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LoadBeatmapLevelDataResult>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::LoadBeatmapLevelDataResult,
-            >,
+            crate::GlobalNamespace::LoadBeatmapLevelDataResult,
         > = __cordl_object
             .invoke(
                 "LoadBeatmapLevelDataAsync",
@@ -203,18 +179,14 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::IBeatmapLevelData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::IBeatmapLevelData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
         > = __cordl_object
             .invoke(
                 "LoadBeatmapLevelDataFromAssetBundle",
@@ -298,9 +270,7 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
     pub fn add_levelDownloadingUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
-            >,
+            crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -320,9 +290,7 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
     pub fn remove_levelDownloadingUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
-            >,
+            crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -343,28 +311,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelL
     }
 }
 #[cfg(feature = "BeatmapLevelLoader")]
-impl AsRef<crate::GlobalNamespace::IBeatmapLevelLoader>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelLoader>>
 for crate::GlobalNamespace::BeatmapLevelLoader {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapLevelLoader {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelLoader> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapLevelLoader")]
-impl AsMut<crate::GlobalNamespace::IBeatmapLevelLoader>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelLoader>>
 for crate::GlobalNamespace::BeatmapLevelLoader {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapLevelLoader {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelLoader> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapLevelLoader")]
-impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::BeatmapLevelLoader {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::GlobalNamespace::BeatmapLevelLoader {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapLevelLoader")]
-impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::BeatmapLevelLoader {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::GlobalNamespace::BeatmapLevelLoader {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -372,7 +346,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::BeatmapLevelL
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelLoader_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub maxCachedBeatmapLevels: i32,
 }
 #[cfg(feature = "BeatmapLevelLoader+InitData")]
@@ -382,7 +356,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevelLoader+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

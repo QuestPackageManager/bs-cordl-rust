@@ -30,19 +30,13 @@ impl crate::GlobalNamespace::IAdditionalContentEntitlementModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::BeatmapLevelDataVersion,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataVersion>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::BeatmapLevelDataVersion,
-            >,
+            crate::GlobalNamespace::BeatmapLevelDataVersion,
         > = __cordl_object.invoke("GetLevelDataVersionAsync", (levelId, token))?;
         Ok(__cordl_ret.into())
     }
@@ -51,19 +45,13 @@ impl crate::GlobalNamespace::IAdditionalContentEntitlementModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementStatus>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object.invoke("GetLevelEntitlementStatusAsync", (levelId, token))?;
         Ok(__cordl_ret.into())
     }
@@ -72,19 +60,13 @@ impl crate::GlobalNamespace::IAdditionalContentEntitlementModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementStatus>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke("GetPackEntitlementStatusAsync", (levelPackId, token))?;
         Ok(__cordl_ret.into())
@@ -106,16 +88,22 @@ for crate::GlobalNamespace::IAdditionalContentEntitlementModel {
     }
 }
 #[cfg(feature = "IAdditionalContentEntitlementModel")]
-impl AsRef<crate::GlobalNamespace::IAdditionalContentModel>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAdditionalContentModel>>
 for crate::GlobalNamespace::IAdditionalContentEntitlementModel {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IAdditionalContentModel {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAdditionalContentModel> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IAdditionalContentEntitlementModel")]
-impl AsMut<crate::GlobalNamespace::IAdditionalContentModel>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAdditionalContentModel>>
 for crate::GlobalNamespace::IAdditionalContentEntitlementModel {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAdditionalContentModel {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentModel,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

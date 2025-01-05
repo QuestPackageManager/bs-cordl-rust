@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IVerifier {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IVerifier")]
 impl crate::Org::BouncyCastle::Crypto::IVerifier {
-    pub fn IsVerified_Il2CppArray0(
+    pub fn IsVerified_Gc0(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {

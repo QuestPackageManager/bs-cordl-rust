@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CanvasScaler {
-    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >,
     pub m_UiScaleMode: crate::UnityEngine::UI::CanvasScaler_ScaleMode,
     pub m_ReferencePixelsPerUnit: f32,
     pub m_ScaleFactor: f32,
@@ -25,7 +27,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+CanvasScaler")]
 impl std::ops::Deref for crate::UnityEngine::UI::CanvasScaler {
-    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

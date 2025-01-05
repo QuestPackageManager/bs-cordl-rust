@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorSignal {
-    __cordl_parent: crate::GlobalNamespace::GenericSignal_1<crate::UnityEngine::Color>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
 }
 #[cfg(feature = "ColorSignal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColorSignal")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorSignal {
-    type Target = crate::GlobalNamespace::GenericSignal_1<crate::UnityEngine::Color>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

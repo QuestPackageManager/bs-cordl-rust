@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Comparer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+Comparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Comparer")]
 impl std::ops::Deref for crate::System::Net::Comparer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,14 +63,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Comparer {
     }
 }
 #[cfg(feature = "System+Net+Comparer")]
-impl AsRef<crate::System::Collections::IComparer> for crate::System::Net::Comparer {
-    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
+for crate::System::Net::Comparer {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Comparer")]
-impl AsMut<crate::System::Collections::IComparer> for crate::System::Net::Comparer {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
+for crate::System::Net::Comparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
         unsafe { std::mem::transmute(self) }
     }
 }

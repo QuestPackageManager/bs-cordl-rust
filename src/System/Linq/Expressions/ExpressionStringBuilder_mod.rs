@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionStringBuilder {
-    __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::ExpressionVisitor,
+    >,
     pub _out: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _ids: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        i32,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+ExpressionStringBuilder")]
@@ -19,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+ExpressionStringBuilder")]
 impl std::ops::Deref for crate::System::Linq::Expressions::ExpressionStringBuilder {
-    type Target = crate::System::Linq::Expressions::ExpressionVisitor;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::ExpressionVisitor,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -125,7 +127,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
             .invoke("OutMember", (instance, member))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Out_Il2CppString0(
+    pub fn Out_Gc0(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -254,12 +256,10 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         > = __cordl_object.invoke("VisitDefault", (node))?;
         Ok(__cordl_ret.into())
     }
-    pub fn VisitExpressions_Il2CppString1<T>(
+    pub fn VisitExpressions_Gc1<T>(
         &mut self,
         open: char,
-        expressions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        >,
+        expressions: quest_hook::libil2cpp::Gc<T>,
         close: char,
         seperator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -274,12 +274,10 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
             .invoke("VisitExpressions", (open, expressions, close, seperator))?;
         Ok(__cordl_ret.into())
     }
-    pub fn VisitExpressions__cordl_char_ReadOnlyCollection_1__cordl_char0<T>(
+    pub fn VisitExpressions__cordl_char_Gc__cordl_char0<T>(
         &mut self,
         open: char,
-        expressions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        >,
+        expressions: quest_hook::libil2cpp::Gc<T>,
         close: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -371,9 +369,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
     }
     pub fn VisitLambda<T>(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression_1<T>,
-        >,
+        node: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     >

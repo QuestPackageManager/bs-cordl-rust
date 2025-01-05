@@ -2,17 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormattedIntListSettingsController {
-    __cordl_parent: crate::GlobalNamespace::ListSettingsController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ListSettingsController,
+    >,
     pub _minValue: i32,
     pub _maxValue: i32,
     pub _formattingString: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::GlobalNamespace::FormattedIntListSettingsController,
-            i32,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FormattedIntListSettingsController,
         >,
+        i32,
     >,
     pub _value: i32,
 }
@@ -24,7 +26,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FormattedIntListSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::FormattedIntListSettingsController {
-    type Target = crate::GlobalNamespace::ListSettingsController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ListSettingsController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -106,10 +110,10 @@ impl crate::GlobalNamespace::FormattedIntListSettingsController {
     pub fn add_valueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::FormattedIntListSettingsController,
-                i32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::FormattedIntListSettingsController,
             >,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -122,10 +126,10 @@ impl crate::GlobalNamespace::FormattedIntListSettingsController {
     pub fn remove_valueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::FormattedIntListSettingsController,
-                i32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::FormattedIntListSettingsController,
             >,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -60,7 +60,7 @@ impl crate::UnityEngine::UIElements::VisualData {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -100,48 +100,38 @@ impl crate::UnityEngine::UIElements::VisualData {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualData")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::VisualData>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualData>>
 for crate::UnityEngine::UIElements::VisualData {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::VisualData> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualData")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::VisualData>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualData>>
 for crate::UnityEngine::UIElements::VisualData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::VisualData> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualData")]
-impl AsRef<
-    crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::VisualData,
-    >,
-> for crate::UnityEngine::UIElements::VisualData {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualData>>
+for crate::UnityEngine::UIElements::VisualData {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::VisualData,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualData")]
-impl AsMut<
-    crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::VisualData,
-    >,
-> for crate::UnityEngine::UIElements::VisualData {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualData>>
+for crate::UnityEngine::UIElements::VisualData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::VisualData,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualData> {
         todo!()
     }
 }

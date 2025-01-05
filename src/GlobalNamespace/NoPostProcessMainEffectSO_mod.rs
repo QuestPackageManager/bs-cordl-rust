@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoPostProcessMainEffectSO {
-    __cordl_parent: crate::GlobalNamespace::MainEffectSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainEffectSO>,
     pub _fadeShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub _baseColorBoost: f32,
     pub _baseColorBoostThreshold: f32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoPostProcessMainEffectSO")]
 impl std::ops::Deref for crate::GlobalNamespace::NoPostProcessMainEffectSO {
-    type Target = crate::GlobalNamespace::MainEffectSO;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainEffectSO>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Extension {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub extnOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub extnCritical: bool,
     pub extnValue: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+X509+X509Extension")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509Extension {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,7 +64,7 @@ impl crate::Mono::Security::X509::X509Extension {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_ASN1_0(
+    pub fn New_Gc0(
         asn1: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -73,7 +73,7 @@ impl crate::Mono::Security::X509::X509Extension {
             .invoke_void(".ctor", (asn1))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_X509Extension1(
+    pub fn New_Gc1(
         extension: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Extension>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -108,7 +108,7 @@ impl crate::Mono::Security::X509::X509Extension {
             .invoke("WriteLine", (sb, n, pos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ASN1_0(
+    pub fn _ctor_Gc0(
         &mut self,
         asn1: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -119,7 +119,7 @@ impl crate::Mono::Security::X509::X509Extension {
             .invoke(".ctor", (asn1))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_X509Extension1(
+    pub fn _ctor_Gc1(
         &mut self,
         extension: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Extension>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

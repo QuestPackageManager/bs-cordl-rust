@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathNodeHelper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeHelper")]
 impl std::ops::Deref for crate::MS::Internal::Xml::Cache::XPathNodeHelper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,8 +32,10 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         >,
         idxElem: i32,
         pageNmsp: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::MS::Internal::Xml::Cache::XPathNode,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::MS::Internal::Xml::Cache::XPathNode,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -49,8 +51,10 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         >,
         idxElem: i32,
         pageNmsp: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::MS::Internal::Xml::Cache::XPathNode,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::MS::Internal::Xml::Cache::XPathNode,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -72,8 +76,10 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
     }
     pub fn GetNonDescendant(
         pageNode: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::MS::Internal::Xml::Cache::XPathNode,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::MS::Internal::Xml::Cache::XPathNode,
+                >,
             >,
         >,
         idxNode: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -84,8 +90,10 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
     }
     pub fn GetParent(
         pageNode: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::MS::Internal::Xml::Cache::XPathNode,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::MS::Internal::Xml::Cache::XPathNode,
+                >,
             >,
         >,
         idxNode: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -96,8 +104,10 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
     }
     pub fn GetTextFollowing(
         pageCurrent: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::MS::Internal::Xml::Cache::XPathNode,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::MS::Internal::Xml::Cache::XPathNode,
+                >,
             >,
         >,
         idxCurrent: quest_hook::libil2cpp::ByRefMut<i32>,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ed25519 {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +76,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("CheckPointVar", (p))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckPoint_Il2CppArray1(
+    pub fn CheckPoint_Gc1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -85,7 +85,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("CheckPoint", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckPoint_Il2CppArray_Il2CppArray0(
+    pub fn CheckPoint_Gc_Gc0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -124,7 +124,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("Decode24", (bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Decode32_Il2CppArray_i32_0(
+    pub fn Decode32_Gc_i32_0(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -132,7 +132,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("Decode32", (bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Decode32_Il2CppArray_i32_i32_1(
+    pub fn Decode32_Gc_i32_i32_1(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         bsOff: i32,
         n: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -243,7 +243,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("GetWnafVar", (n, width))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImplSign_IDigest_Il2CppArray_Il2CppArray_i32_Il2CppArray_u8_Il2CppArray_i32_Il2CppArray_i32_0(
+    pub fn ImplSign_Gc_Gc_i32_Gc_u8_Gc_i32_Gc_i32_0(
         d: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         h: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -264,7 +264,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImplSign_Il2CppArray_i32_i32_Il2CppArray_u8_Il2CppArray_i32_Il2CppArray_i32_2(
+    pub fn ImplSign_i32_i32_Gc_u8_Gc_i32_Gc_i32_2(
         sk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         skOff: i32,
         pk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -284,7 +284,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImplSign_Il2CppArray_i32_u8_Il2CppArray_i32_i32_Il2CppArray1(
+    pub fn ImplSign_i32_u8_Gc_i32_i32_Gc1(
         sk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         skOff: i32,
         ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -333,20 +333,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("PointAddPrecomp", (p, r))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PointAddVar_Ed25519_PointAccum0(
-        negate: bool,
-        p: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt,
-        >,
-        r: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointAccum,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PointAddVar", (negate, p, r))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn PointAddVar_Ed25519_PointExt_Ed25519_PointExt1(
+    pub fn PointAddVar_Gc1(
         negate: bool,
         p: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt,
@@ -362,7 +349,20 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("PointAddVar", (negate, p, q, r))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PointCopy_Ed25519_PointAccum0(
+    pub fn PointAddVar__cordl_bool_Gc_Gc0(
+        negate: bool,
+        p: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt,
+        >,
+        r: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointAccum,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PointAddVar", (negate, p, r))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PointCopy_Gc0(
         p: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointAccum,
         >,
@@ -376,7 +376,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("PointCopy", (p))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PointCopy_Ed25519_PointExt1(
+    pub fn PointCopy_Gc1(
         p: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt,
         >,
@@ -399,7 +399,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("PointDouble", (r))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PointExtendXY_Ed25519_PointAccum0(
+    pub fn PointExtendXY_Gc0(
         p: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointAccum,
         >,
@@ -408,7 +408,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("PointExtendXY", (p))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PointExtendXY_Ed25519_PointExt1(
+    pub fn PointExtendXY_Gc1(
         p: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt,
         >,
@@ -436,19 +436,23 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PointPrecompVar", (p, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PointSetNeutral_Ed25519_PointAccum0(
+    pub fn PointSetNeutral_Gc0(
         p: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointAccum,
         >,
@@ -457,7 +461,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("PointSetNeutral", (p))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PointSetNeutral_Ed25519_PointExt1(
+    pub fn PointSetNeutral_Gc1(
         p: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt,
         >,
@@ -533,7 +537,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("ScalarMultStrausVar", (nb, np, p, r))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SignPrehash_IDigest_Il2CppArray_i32_2(
+    pub fn SignPrehash_Gc_Gc_i32_2(
         sk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         skOff: i32,
         ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -545,7 +549,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("SignPrehash", (sk, skOff, ctx, ph, sig, sigOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SignPrehash_Il2CppArray_i32_Il2CppArray_i32_0(
+    pub fn SignPrehash_Gc_i32_Gc_i32_0(
         sk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         skOff: i32,
         ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -558,7 +562,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("SignPrehash", (sk, skOff, ctx, ph, phOff, sig, sigOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SignPrehash_i32_Il2CppArray_IDigest_Il2CppArray_i32_3(
+    pub fn SignPrehash_i32_Gc_Gc_Gc_i32_3(
         sk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         skOff: i32,
         pk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -572,7 +576,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("SignPrehash", (sk, skOff, pk, pkOff, ctx, ph, sig, sigOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SignPrehash_i32_Il2CppArray_Il2CppArray_i32_Il2CppArray_i32_1(
+    pub fn SignPrehash_i32_Gc_Gc_i32_Gc_i32_1(
         sk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         skOff: i32,
         pk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -587,7 +591,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("SignPrehash", (sk, skOff, pk, pkOff, ctx, ph, phOff, sig, sigOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Sign_Il2CppArray_i32_i32_Il2CppArray_i32_2(
+    pub fn Sign_Gc_i32_i32_Gc_i32_2(
         sk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         skOff: i32,
         ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -601,7 +605,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("Sign", (sk, skOff, ctx, m, mOff, mLen, sig, sigOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Sign_i32_Il2CppArray_Il2CppArray_i32_i32_Il2CppArray_i32_3(
+    pub fn Sign_i32_Gc_Gc_i32_i32_Gc_i32_3(
         sk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         skOff: i32,
         pk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -617,7 +621,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("Sign", (sk, skOff, pk, pkOff, ctx, m, mOff, mLen, sig, sigOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Sign_i32_Il2CppArray_i32_i32_Il2CppArray_i32_1(
+    pub fn Sign_i32_Gc_i32_i32_Gc_i32_1(
         sk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         skOff: i32,
         pk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -632,7 +636,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("Sign", (sk, skOff, pk, pkOff, m, mOff, mLen, sig, sigOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Sign_i32_i32_Il2CppArray_i32_0(
+    pub fn Sign_i32_i32_Gc_i32_0(
         sk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         skOff: i32,
         m: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -645,7 +649,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("Sign", (sk, skOff, m, mOff, mLen, sig, sigOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn VerifyPrehash_IDigest1(
+    pub fn VerifyPrehash_Gc_i32_Gc_i32_Gc_Gc1(
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
         pk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -657,7 +661,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("VerifyPrehash", (sig, sigOff, pk, pkOff, ctx, ph))?;
         Ok(__cordl_ret.into())
     }
-    pub fn VerifyPrehash_Il2CppArray_i32_0(
+    pub fn VerifyPrehash_i32_0(
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
         pk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -670,7 +674,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
             .invoke("VerifyPrehash", (sig, sigOff, pk, pkOff, ctx, ph, phOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Verify_Il2CppArray_i32_1(
+    pub fn Verify_Gc_i32_1(
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
         pk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -737,7 +741,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ed25519_PointAccum {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -753,7 +757,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519+PointAccum")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointAccum {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -799,7 +803,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointAccum {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ed25519_PointExt {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -813,7 +817,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519+PointExt")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -859,7 +863,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ed25519_PointPrecomp {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub ypx_h: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub ymx_h: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub xyd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -873,7 +877,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519+PointPrecomp")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointPrecomp {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

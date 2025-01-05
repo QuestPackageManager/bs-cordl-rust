@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IesWithCipherParameters {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::IesParameters,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::IesParameters,
+    >,
     pub cipherKeySize: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+IesWithCipherParameters")]
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+IesWithCipherParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::IesWithCipherParameters {
-    type Target = crate::Org::BouncyCastle::Crypto::Parameters::IesParameters;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::IesParameters,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -42,7 +42,7 @@ impl crate::UnityEngine::Ray2D {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider1(
+    pub fn ToString_Gc_Gc1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -92,14 +92,16 @@ impl crate::UnityEngine::Ray2D {
     }
 }
 #[cfg(feature = "UnityEngine+Ray2D")]
-impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Ray2D {
-    fn as_ref(&self) -> &crate::System::IFormattable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::UnityEngine::Ray2D {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Ray2D")]
-impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Ray2D {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::UnityEngine::Ray2D {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }

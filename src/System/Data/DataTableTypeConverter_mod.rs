@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataTableTypeConverter {
-    __cordl_parent: crate::System::ComponentModel::ReferenceConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ReferenceConverter,
+    >,
 }
 #[cfg(feature = "System+Data+DataTableTypeConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataTableTypeConverter")]
 impl std::ops::Deref for crate::System::Data::DataTableTypeConverter {
-    type Target = crate::System::ComponentModel::ReferenceConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ReferenceConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

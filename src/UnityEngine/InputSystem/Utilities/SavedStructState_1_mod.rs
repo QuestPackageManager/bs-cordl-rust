@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SavedStructState_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_State: T,
-    pub m_RestoreAction: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<T>,
-    >,
+    pub m_RestoreAction: quest_hook::libil2cpp::Gc<T>,
     pub m_StaticDisposeCurrentState: quest_hook::libil2cpp::Gc<crate::System::Action>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -19,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SavedStructState_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::SavedStructState_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,11 +39,7 @@ impl<
     >;
     pub fn New(
         state: quest_hook::libil2cpp::ByRefMut<T>,
-        restoreAction: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<
-                T,
-            >,
-        >,
+        restoreAction: quest_hook::libil2cpp::Gc<T>,
         staticDisposeCurrentState: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -89,11 +83,7 @@ impl<
     pub fn _ctor(
         &mut self,
         state: quest_hook::libil2cpp::ByRefMut<T>,
-        restoreAction: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<
-                T,
-            >,
-        >,
+        restoreAction: quest_hook::libil2cpp::Gc<T>,
         staticDisposeCurrentState: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -121,20 +111,28 @@ for crate::UnityEngine::InputSystem::Utilities::SavedStructState_1<T> {
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SavedStructState_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<crate::UnityEngine::InputSystem::Utilities::ISavedState>
-for crate::UnityEngine::InputSystem::Utilities::SavedStructState_1<T> {
-    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::Utilities::ISavedState {
+> AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::ISavedState>,
+> for crate::UnityEngine::InputSystem::Utilities::SavedStructState_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Utilities::ISavedState,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SavedStructState_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::UnityEngine::InputSystem::Utilities::ISavedState>
-for crate::UnityEngine::InputSystem::Utilities::SavedStructState_1<T> {
+> AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::ISavedState>,
+> for crate::UnityEngine::InputSystem::Utilities::SavedStructState_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::Utilities::ISavedState {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Utilities::ISavedState,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -142,7 +140,7 @@ for crate::UnityEngine::InputSystem::Utilities::SavedStructState_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SavedStructState_1_TypedRestore<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SavedStructState_1+TypedRestore")]
@@ -154,7 +152,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SavedStructState_1+TypedRestore")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<T> {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

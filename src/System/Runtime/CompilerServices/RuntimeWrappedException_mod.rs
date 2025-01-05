@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeWrappedException {
-    __cordl_parent: crate::System::Exception,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     pub _wrappedException: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+CompilerServices+RuntimeWrappedException")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::RuntimeWrappedException {
-    type Target = crate::System::Exception;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Exception>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +51,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeWrappedException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppObject0(
+    pub fn New_Gc0(
         thrownObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -60,7 +60,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeWrappedException {
             .invoke_void(".ctor", (thrownObject))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext1(
+    pub fn New_Gc_StreamingContext1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -82,7 +82,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeWrappedException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject0(
+    pub fn _ctor_Gc0(
         &mut self,
         thrownObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -93,7 +93,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeWrappedException {
             .invoke(".ctor", (thrownObject))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext1(
+    pub fn _ctor_Gc_StreamingContext1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

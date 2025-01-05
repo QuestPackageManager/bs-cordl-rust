@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AwaitTaskContinuation {
-    __cordl_parent: crate::System::Threading::Tasks::TaskContinuation,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskContinuation,
+    >,
     pub m_capturedContext: quest_hook::libil2cpp::Gc<
         crate::System::Threading::ExecutionContext,
     >,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Tasks+AwaitTaskContinuation")]
 impl std::ops::Deref for crate::System::Threading::Tasks::AwaitTaskContinuation {
-    type Target = crate::System::Threading::Tasks::TaskContinuation;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskContinuation,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +35,7 @@ impl crate::System::Threading::Tasks::AwaitTaskContinuation {
     pub fn CreateTask(
         &mut self,
         action: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         scheduler: quest_hook::libil2cpp::Gc<
@@ -102,7 +106,7 @@ impl crate::System::Threading::Tasks::AwaitTaskContinuation {
         callback: quest_hook::libil2cpp::Gc<crate::System::Threading::ContextCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         currentTask: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Threading::Tasks::Task,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -116,7 +120,7 @@ impl crate::System::Threading::Tasks::AwaitTaskContinuation {
         action: quest_hook::libil2cpp::Gc<crate::System::Action>,
         allowInlining: bool,
         currentTask: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Threading::Tasks::Task,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -176,16 +180,20 @@ for crate::System::Threading::Tasks::AwaitTaskContinuation {
     }
 }
 #[cfg(feature = "System+Threading+Tasks+AwaitTaskContinuation")]
-impl AsRef<crate::System::Threading::IThreadPoolWorkItem>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>>
 for crate::System::Threading::Tasks::AwaitTaskContinuation {
-    fn as_ref(&self) -> &crate::System::Threading::IThreadPoolWorkItem {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+Tasks+AwaitTaskContinuation")]
-impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>>
 for crate::System::Threading::Tasks::AwaitTaskContinuation {
-    fn as_mut(&mut self) -> &mut crate::System::Threading::IThreadPoolWorkItem {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem> {
         unsafe { std::mem::transmute(self) }
     }
 }

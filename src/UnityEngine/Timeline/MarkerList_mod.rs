@@ -3,14 +3,10 @@
 #[derive(Debug, Clone, Default)]
 pub struct MarkerList {
     pub m_Objects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::ScriptableObject,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     >,
     pub m_Cache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Timeline::IMarker,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
     >,
     pub m_CacheDirty: bool,
     pub m_HasNotifications: bool,
@@ -96,15 +92,11 @@ impl crate::UnityEngine::Timeline::MarkerList {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::Timeline::IMarker,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::Timeline::IMarker,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetMarkers", ())?;
         Ok(__cordl_ret.into())
     }
@@ -112,15 +104,11 @@ impl crate::UnityEngine::Timeline::MarkerList {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ScriptableObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ScriptableObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetRawMarkerList", ())?;
         Ok(__cordl_ret.into())
     }
@@ -132,7 +120,7 @@ impl crate::UnityEngine::Timeline::MarkerList {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Remove_IMarker0(
+    pub fn Remove_Gc0(
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -143,7 +131,7 @@ impl crate::UnityEngine::Timeline::MarkerList {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Remove_ScriptableObject_TimelineAsset_PlayableAsset1(
+    pub fn Remove_Gc_Gc1(
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
         timelineAsset: quest_hook::libil2cpp::Gc<
@@ -214,30 +202,32 @@ impl crate::UnityEngine::Timeline::MarkerList {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Timeline::IMarker,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::Timeline::IMarker,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_markers", ())?;
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+MarkerList")]
-impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::UnityEngine::Timeline::MarkerList {
-    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+MarkerList")]
-impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
 for crate::UnityEngine::Timeline::MarkerList {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ISerializationCallbackReceiver,
+    > {
         todo!()
     }
 }

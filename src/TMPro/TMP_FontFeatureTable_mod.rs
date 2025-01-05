@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_FontFeatureTable {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_GlyphPairAdjustmentRecords: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::TMPro::TMP_GlyphPairAdjustmentRecord,
-        >,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
     >,
     pub m_GlyphPairAdjustmentRecordLookupDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            u32,
-            *mut crate::TMPro::TMP_GlyphPairAdjustmentRecord,
-        >,
+        u32,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
     >,
 }
 #[cfg(feature = "TMPro+TMP_FontFeatureTable")]
@@ -22,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_FontFeatureTable")]
 impl std::ops::Deref for crate::TMPro::TMP_FontFeatureTable {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,27 +62,21 @@ impl crate::TMPro::TMP_FontFeatureTable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::TMPro::TMP_GlyphPairAdjustmentRecord,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::TMPro::TMP_GlyphPairAdjustmentRecord,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
         > = __cordl_object.invoke("get_glyphPairAdjustmentRecords", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_glyphPairAdjustmentRecords(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::TMPro::TMP_GlyphPairAdjustmentRecord,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

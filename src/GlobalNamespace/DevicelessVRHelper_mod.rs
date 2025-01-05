@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DevicelessVRHelper {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub inputFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub inputFocusWasReleasedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub vrFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DevicelessVRHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::DevicelessVRHelper {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -436,30 +436,38 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DevicelessVRH
     }
 }
 #[cfg(feature = "DevicelessVRHelper")]
-impl AsRef<crate::GlobalNamespace::IVRPlatformHelper>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>>
 for crate::GlobalNamespace::DevicelessVRHelper {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IVRPlatformHelper {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DevicelessVRHelper")]
-impl AsMut<crate::GlobalNamespace::IVRPlatformHelper>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>>
 for crate::GlobalNamespace::DevicelessVRHelper {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRPlatformHelper {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DevicelessVRHelper")]
-impl AsRef<crate::GlobalNamespace::IVerboseLogger>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>>
 for crate::GlobalNamespace::DevicelessVRHelper {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IVerboseLogger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DevicelessVRHelper")]
-impl AsMut<crate::GlobalNamespace::IVerboseLogger>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>>
 for crate::GlobalNamespace::DevicelessVRHelper {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVerboseLogger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger> {
         unsafe { std::mem::transmute(self) }
     }
 }

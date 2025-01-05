@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AssetSync {
-    __cordl_parent: crate::HoudiniEngineUnity::HEU_BaseSync,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_BaseSync>,
     pub _onAssetLoaded: quest_hook::libil2cpp::Gc<
         crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AssetSync {
-    type Target = crate::HoudiniEngineUnity::HEU_BaseSync;
+    type Target = quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_BaseSync>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -159,7 +159,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_AssetS
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AssetSync_AssetSyncCallback {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -169,7 +169,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

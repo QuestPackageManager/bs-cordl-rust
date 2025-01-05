@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SymmetricTransform {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub algo: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::SymmetricAlgorithm,
     >,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::SymmetricTransform {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -340,32 +340,40 @@ for crate::Mono::Security::Cryptography::SymmetricTransform {
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::Mono::Security::Cryptography::SymmetricTransform {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::Mono::Security::Cryptography::SymmetricTransform {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]
-impl AsRef<crate::System::Security::Cryptography::ICryptoTransform>
-for crate::Mono::Security::Cryptography::SymmetricTransform {
-    fn as_ref(&self) -> &crate::System::Security::Cryptography::ICryptoTransform {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::ICryptoTransform>,
+> for crate::Mono::Security::Cryptography::SymmetricTransform {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::ICryptoTransform,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]
-impl AsMut<crate::System::Security::Cryptography::ICryptoTransform>
-for crate::Mono::Security::Cryptography::SymmetricTransform {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::ICryptoTransform>,
+> for crate::Mono::Security::Cryptography::SymmetricTransform {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Security::Cryptography::ICryptoTransform {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::ICryptoTransform,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

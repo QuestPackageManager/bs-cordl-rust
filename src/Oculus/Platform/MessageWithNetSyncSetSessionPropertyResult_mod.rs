@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithNetSyncSetSessionPropertyResult {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult,
+        >,
     >,
 }
 #[cfg(feature = "Oculus+Platform+MessageWithNetSyncSetSessionPropertyResult")]
@@ -15,8 +17,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Oculus+Platform+MessageWithNetSyncSetSessionPropertyResult")]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithNetSyncSetSessionPropertyResult {
-    type Target = crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

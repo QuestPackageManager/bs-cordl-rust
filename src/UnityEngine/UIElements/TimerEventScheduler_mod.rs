@@ -2,22 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerEventScheduler {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_ScheduledItems: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::ScheduledItem,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScheduledItem>,
     >,
     pub m_TransactionMode: bool,
     pub m_ScheduleTransactions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::ScheduledItem,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScheduledItem>,
     >,
     pub m_UnscheduleTransactions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            *mut crate::UnityEngine::UIElements::ScheduledItem,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScheduledItem>,
     >,
     pub disableThrottling: bool,
     pub m_LastUpdatedIndex: i32,
@@ -29,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TimerEventScheduler")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TimerEventScheduler {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -124,16 +118,20 @@ for crate::UnityEngine::UIElements::TimerEventScheduler {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TimerEventScheduler")]
-impl AsRef<crate::UnityEngine::UIElements::IScheduler>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IScheduler>>
 for crate::UnityEngine::UIElements::TimerEventScheduler {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IScheduler {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IScheduler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TimerEventScheduler")]
-impl AsMut<crate::UnityEngine::UIElements::IScheduler>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IScheduler>>
 for crate::UnityEngine::UIElements::TimerEventScheduler {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IScheduler {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IScheduler> {
         unsafe { std::mem::transmute(self) }
     }
 }

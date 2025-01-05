@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BerOctetString {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::DerOctetString,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerOctetString,
+    >,
     pub chunkSize: i32,
     pub octs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
         >,
     >,
 }
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::BerOctetString {
-    type Target = crate::Org::BouncyCastle::Asn1::DerOctetString;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerOctetString,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -82,7 +86,7 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
         > = __cordl_object.invoke("GetObjects", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_IEnumerable0(
+    pub fn New_Gc0(
         e: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -91,7 +95,7 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke_void(".ctor", (e))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray1(
+    pub fn New_Gc1(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -100,10 +104,12 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke_void(".ctor", (str))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray2(
+    pub fn New_Gc2(
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -113,11 +119,13 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke_void(".ctor", (octs))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_Il2CppArray_i32_5(
+    pub fn New_Gc_i32_5(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
         chunkSize: i32,
@@ -128,7 +136,7 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke_void(".ctor", (str, octs, chunkSize))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_3(
+    pub fn New_i32_3(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         chunkSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -138,10 +146,12 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke_void(".ctor", (str, chunkSize))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_4(
+    pub fn New_i32_4(
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
         chunkSize: i32,
@@ -155,7 +165,9 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
     pub fn ToBytes(
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -171,19 +183,23 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToOctetStringArray", (e))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IEnumerable0(
+    pub fn _ctor_Gc0(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -194,7 +210,7 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke(".ctor", (e))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray1(
+    pub fn _ctor_Gc1(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -205,11 +221,13 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke(".ctor", (str))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray2(
+    pub fn _ctor_Gc2(
         &mut self,
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -220,12 +238,14 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke(".ctor", (octs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_Il2CppArray_i32_5(
+    pub fn _ctor_Gc_i32_5(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
         chunkSize: i32,
@@ -237,7 +257,7 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke(".ctor", (str, octs, chunkSize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_3(
+    pub fn _ctor_i32_3(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         chunkSize: i32,
@@ -249,11 +269,13 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke(".ctor", (str, chunkSize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_4(
+    pub fn _ctor_i32_4(
         &mut self,
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
         chunkSize: i32,
@@ -277,16 +299,20 @@ for crate::Org::BouncyCastle::Asn1::BerOctetString {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
-impl AsRef<crate::System::Collections::IEnumerable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Org::BouncyCastle::Asn1::BerOctetString {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
-impl AsMut<crate::System::Collections::IEnumerable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Org::BouncyCastle::Asn1::BerOctetString {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -294,7 +320,7 @@ for crate::Org::BouncyCastle::Asn1::BerOctetString {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BerOctetString_ChunkEnumerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub octets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub chunkSize: i32,
     pub currentChunk: quest_hook::libil2cpp::Gc<
@@ -310,7 +336,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -388,16 +414,20 @@ for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
-impl AsRef<crate::System::Collections::IEnumerator>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
-impl AsMut<crate::System::Collections::IEnumerator>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }

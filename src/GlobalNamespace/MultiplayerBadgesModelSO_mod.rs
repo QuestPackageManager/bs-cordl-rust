@@ -2,16 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerBadgesModelSO {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub _positiveBadges: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
     >,
     pub _negativeBadges: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
     >,
 }
 #[cfg(feature = "MultiplayerBadgesModelSO")]
@@ -21,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerBadgesModelSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgesModelSO {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,18 +51,14 @@ impl crate::GlobalNamespace::MultiplayerBadgesModelSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
         > = __cordl_object.invoke("get_negativeBadges", ())?;
         Ok(__cordl_ret.into())
     }
@@ -74,18 +66,14 @@ impl crate::GlobalNamespace::MultiplayerBadgesModelSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
         > = __cordl_object.invoke("get_positiveBadges", ())?;
         Ok(__cordl_ret.into())
     }

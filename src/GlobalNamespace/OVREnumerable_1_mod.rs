@@ -19,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct OVREnumerable_1<T: quest_hook::libil2cpp::Type> {
-    pub _enumerable: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerable_1<T>,
-    >,
+    pub _enumerable: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "OVREnumerable_1")]
@@ -62,16 +60,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVREnumerable_1<T> 
     }
     pub fn System_Collections_Generic_IEnumerable_T__GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<T>,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.Generic.IEnumerable<T>.GetEnumerator",
             (),
@@ -98,9 +92,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVREnumerable_1<T> 
     }
     pub fn _ctor(
         &mut self,
-        enumerable: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        enumerable: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -115,34 +107,38 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVREnumerable_1<T> 
     }
 }
 #[cfg(feature = "OVREnumerable_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
 for crate::GlobalNamespace::OVREnumerable_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVREnumerable_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::GlobalNamespace::OVREnumerable_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         todo!()
     }
 }
 #[cfg(feature = "OVREnumerable_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::GlobalNamespace::OVREnumerable_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         todo!()
     }
 }
 #[cfg(feature = "OVREnumerable_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::GlobalNamespace::OVREnumerable_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
-        todo!()
-    }
-}
-#[cfg(feature = "OVREnumerable_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
-for crate::GlobalNamespace::OVREnumerable_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         todo!()
     }
 }
@@ -153,12 +149,8 @@ pub struct OVREnumerable_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _listIndex: i32,
     pub _type: crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType<T>,
     pub _listCount: i32,
-    pub _enumerator: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerator_1<T>,
-    >,
-    pub _list: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<T>,
-    >,
+    pub _enumerator: quest_hook::libil2cpp::Gc<T>,
+    pub _list: quest_hook::libil2cpp::Gc<T>,
     pub _setEnumerator: crate::System::Collections::Generic::HashSet_1_Enumerator<T>,
     pub _queueEnumerator: crate::System::Collections::Generic::Queue_1_Enumerator<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -269,9 +261,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        enumerable: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        enumerable: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -298,48 +288,56 @@ impl<
     }
 }
 #[cfg(feature = "OVREnumerable_1+Enumerator")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
 for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVREnumerable_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         todo!()
     }
 }
 #[cfg(feature = "OVREnumerable_1+Enumerator")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         todo!()
     }
 }
 #[cfg(feature = "OVREnumerable_1+Enumerator")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         todo!()
     }
 }
 #[cfg(feature = "OVREnumerable_1+Enumerator")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "OVREnumerable_1+Enumerator")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
-    fn as_ref(&self) -> &crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "OVREnumerable_1+Enumerator")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
-for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }

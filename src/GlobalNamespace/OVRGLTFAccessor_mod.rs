@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRGLTFAccessor {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub byteOffset: i32,
     pub byteLength: i32,
     pub byteStride: i32,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRGLTFAccessor")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRGLTFAccessor {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +76,9 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         &mut self,
         chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+            >,
         >,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -91,7 +93,9 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         &mut self,
         chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+            >,
         >,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -106,7 +110,7 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         &mut self,
         chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -121,7 +125,7 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         &mut self,
         chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -136,7 +140,9 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         &mut self,
         chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+            >,
         >,
         offset: i32,
         conversionScale: crate::UnityEngine::Vector3,
@@ -166,7 +172,9 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         &mut self,
         chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+            >,
         >,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -181,7 +189,9 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         &mut self,
         chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+            >,
         >,
         offset: i32,
         conversionScale: crate::UnityEngine::Vector3,
@@ -197,7 +207,9 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
         &mut self,
         chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+            >,
         >,
         offset: i32,
         conversionScale: crate::UnityEngine::Vector4,

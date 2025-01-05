@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryWriter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub OutStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+BinaryWriter")]
 impl std::ops::Deref for crate::System::IO::BinaryWriter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,7 +91,7 @@ impl crate::System::IO::BinaryWriter {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream1(
+    pub fn New_Gc1(
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -100,7 +100,7 @@ impl crate::System::IO::BinaryWriter {
             .invoke_void(".ctor", (output))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream_Encoding2(
+    pub fn New_Gc_Gc2(
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -110,7 +110,7 @@ impl crate::System::IO::BinaryWriter {
             .invoke_void(".ctor", (output, encoding))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream_Encoding__cordl_bool3(
+    pub fn New_Gc_Gc__cordl_bool3(
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
         leaveOpen: bool,
@@ -132,7 +132,18 @@ impl crate::System::IO::BinaryWriter {
             .invoke("Write7BitEncodedInt", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Il2CppArray3(
+    pub fn Write_Gc15(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Write_Gc3(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -143,7 +154,7 @@ impl crate::System::IO::BinaryWriter {
             .invoke("Write", (buffer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Il2CppArray6(
+    pub fn Write_Gc6(
         &mut self,
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -154,7 +165,7 @@ impl crate::System::IO::BinaryWriter {
             .invoke("Write", (chars))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Il2CppArray_i32_i32_4(
+    pub fn Write_Gc_i32_i32_4(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
@@ -165,17 +176,6 @@ impl crate::System::IO::BinaryWriter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (buffer, index, count))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Write_Il2CppString15(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn Write__cordl_bool0(
@@ -320,7 +320,7 @@ impl crate::System::IO::BinaryWriter {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream1(
+    pub fn _ctor_Gc1(
         &mut self,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -331,7 +331,7 @@ impl crate::System::IO::BinaryWriter {
             .invoke(".ctor", (output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream_Encoding2(
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -343,7 +343,7 @@ impl crate::System::IO::BinaryWriter {
             .invoke(".ctor", (output, encoding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream_Encoding__cordl_bool3(
+    pub fn _ctor_Gc_Gc__cordl_bool3(
         &mut self,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -367,26 +367,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::BinaryWriter {
     }
 }
 #[cfg(feature = "System+IO+BinaryWriter")]
-impl AsRef<crate::System::IAsyncDisposable> for crate::System::IO::BinaryWriter {
-    fn as_ref(&self) -> &crate::System::IAsyncDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IAsyncDisposable>>
+for crate::System::IO::BinaryWriter {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IAsyncDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+IO+BinaryWriter")]
-impl AsMut<crate::System::IAsyncDisposable> for crate::System::IO::BinaryWriter {
-    fn as_mut(&mut self) -> &mut crate::System::IAsyncDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IAsyncDisposable>>
+for crate::System::IO::BinaryWriter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::IAsyncDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+IO+BinaryWriter")]
-impl AsRef<crate::System::IDisposable> for crate::System::IO::BinaryWriter {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::IO::BinaryWriter {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+IO+BinaryWriter")]
-impl AsMut<crate::System::IDisposable> for crate::System::IO::BinaryWriter {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::IO::BinaryWriter {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArcAndObstacleHapticEffectManager {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _hapticPreset: quest_hook::libil2cpp::Gc<
         crate::Libraries::HM::HMLib::VR::HapticPresetSO,
     >,
@@ -10,9 +10,7 @@ pub struct ArcAndObstacleHapticEffectManager {
         crate::GlobalNamespace::ObstacleSaberSparkleEffectManager,
     >,
     pub _sliderInteractionManagers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::SliderInteractionManager,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
     >,
     pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
     pub _hapticFeedbackManager: quest_hook::libil2cpp::Gc<
@@ -33,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ArcAndObstacleHapticEffectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -221,7 +219,7 @@ for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArcAndObstacleHapticEffectManager_EffectState {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub colorType: crate::GlobalNamespace::ColorType,
     pub sliderInteractionManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SliderInteractionManager,
@@ -238,7 +236,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ArcAndObstacleHapticEffectManager+EffectState")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

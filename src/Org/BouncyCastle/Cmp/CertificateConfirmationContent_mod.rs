@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertificateConfirmationContent {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub digestAlgFinder: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Cms::DefaultDigestAlgorithmIdentifierFinder,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,9 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Cmp::CertificateStatus,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Cmp::CertificateStatus,
+                >,
             >,
         >,
     > {
@@ -46,12 +48,14 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Cmp::CertificateStatus,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Cmp::CertificateStatus,
+                >,
             >,
         > = __cordl_object.invoke("GetStatusMessages", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_CertConfirmContent0(
+    pub fn New_Gc0(
         content: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent,
         >,
@@ -62,7 +66,7 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
             .invoke_void(".ctor", (content))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DefaultDigestAlgorithmIdentifierFinder1(
+    pub fn New_Gc1(
         content: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent,
         >,
@@ -91,7 +95,7 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
         > = __cordl_object.invoke("ToAsn1Structure", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_CertConfirmContent0(
+    pub fn _ctor_Gc0(
         &mut self,
         content: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent,
@@ -104,7 +108,7 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
             .invoke(".ctor", (content))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DefaultDigestAlgorithmIdentifierFinder1(
+    pub fn _ctor_Gc1(
         &mut self,
         content: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent,

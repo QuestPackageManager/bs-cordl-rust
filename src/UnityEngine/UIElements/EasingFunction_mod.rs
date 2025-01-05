@@ -33,7 +33,7 @@ impl crate::UnityEngine::UIElements::EasingFunction {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -100,22 +100,20 @@ impl crate::UnityEngine::UIElements::EasingFunction {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::EasingFunction>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction>>
 for crate::UnityEngine::UIElements::EasingFunction {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::EasingFunction> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::EasingFunction>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction>>
 for crate::UnityEngine::UIElements::EasingFunction {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::UnityEngine::UIElements::EasingFunction,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction> {
         todo!()
     }
 }

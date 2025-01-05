@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerStatisticsViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _statsScopeSegmentedControl: quest_hook::libil2cpp::Gc<
         crate::HMUI::TextSegmentedControl,
     >,
@@ -36,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerStatisticsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerStatisticsViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -218,8 +218,8 @@ pub struct PlayerStatisticsViewController_StatsScopeData {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _playerOverallStatsDataFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_1<
-            *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
         >,
     >,
 }
@@ -246,8 +246,8 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         playerOverallStatsDataFunc: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -262,14 +262,14 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
             >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -291,8 +291,8 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     pub fn set_playerOverallStatsDataFunc(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

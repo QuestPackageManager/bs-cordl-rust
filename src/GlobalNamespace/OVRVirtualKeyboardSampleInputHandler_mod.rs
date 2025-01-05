@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRVirtualKeyboardSampleInputHandler {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub OVRVirtualKeyboard: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OVRVirtualKeyboard,
     >,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRVirtualKeyboardSampleInputHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRVirtualKeyboardSampleInputHandler {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

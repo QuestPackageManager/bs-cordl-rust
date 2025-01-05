@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightCompiler {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _instructions: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Interpreter::InstructionList,
     >,
@@ -10,23 +10,21 @@ pub struct LightCompiler {
         crate::System::Linq::Expressions::Interpreter::LocalVariables,
     >,
     pub _debugInfos: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::DebugInfo,
         >,
     >,
     pub _treeLabels: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
-            *mut crate::System::Linq::Expressions::LabelTarget,
-            *mut crate::System::Linq::Expressions::Interpreter::LabelInfo,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LabelInfo,
         >,
     >,
     pub _labelBlock: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
     >,
     pub _exceptionForRethrowStack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<
-            *mut crate::System::Linq::Expressions::ParameterExpression,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
     >,
     pub _parent: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Interpreter::LightCompiler,
@@ -41,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::LightCompiler {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -296,7 +294,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
             .invoke("CompileDebugInfoExpression", (expr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompileDefaultExpression_Expression0(
+    pub fn CompileDefaultExpression_Gc0(
         &mut self,
         expr: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -307,7 +305,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
             .invoke("CompileDefaultExpression", (expr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompileDefaultExpression_Type1(
+    pub fn CompileDefaultExpression_Gc1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -460,9 +458,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
     pub fn CompileListInit(
         &mut self,
         initializers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                *mut crate::System::Linq::Expressions::ElementInit,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ElementInit>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -519,7 +515,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
             .invoke("CompileMember", (from, member, forBinding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompileMemberAssignment_BinaryExpression__cordl_bool0(
+    pub fn CompileMemberAssignment_Gc__cordl_bool0(
         &mut self,
         node: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::BinaryExpression,
@@ -533,7 +529,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
             .invoke("CompileMemberAssignment", (node, asVoid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompileMemberAssignment__cordl_bool_MemberInfo_Expression__cordl_bool1(
+    pub fn CompileMemberAssignment__cordl_bool_Gc_Gc__cordl_bool1(
         &mut self,
         asVoid: bool,
         refMember: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
@@ -561,9 +557,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
     pub fn CompileMemberInit(
         &mut self,
         bindings: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                *mut crate::System::Linq::Expressions::MemberBinding,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberBinding>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -584,7 +578,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
             .invoke("CompileMemberInitExpression", (expr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompileMethodCallExpression_Expression0(
+    pub fn CompileMethodCallExpression_Gc0(
         &mut self,
         expr: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -595,7 +589,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
             .invoke("CompileMethodCallExpression", (expr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompileMethodCallExpression_MethodInfo_IArgumentProvider1(
+    pub fn CompileMethodCallExpression_Gc_Gc1(
         &mut self,
         object: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -923,7 +917,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
             .invoke("CompileVariableAssignment", (node, asVoid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Compile_Expression1(
+    pub fn Compile_Gc1(
         &mut self,
         expr: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1122,7 +1116,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_LightCompiler1(
+    pub fn New_Gc1(
         parent: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::LightCompiler,
         >,
@@ -1216,7 +1210,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_LightCompiler1(
+    pub fn _ctor_Gc1(
         &mut self,
         parent: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::LightCompiler,
@@ -1259,17 +1253,15 @@ for crate::System::Linq::Expressions::Interpreter::LightCompiler {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightCompiler_QuoteVisitor {
-    __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::ExpressionVisitor,
+    >,
     pub _definedParameters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Linq::Expressions::ParameterExpression,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
+        i32,
     >,
     pub _hoistedParameters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            *mut crate::System::Linq::Expressions::ParameterExpression,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
@@ -1281,7 +1273,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
-    type Target = crate::System::Linq::Expressions::ExpressionVisitor;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::ExpressionVisitor,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1305,8 +1299,8 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
     pub fn PopParameters(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1320,8 +1314,8 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
     pub fn PushParameters(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1364,9 +1358,7 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
     }
     pub fn VisitLambda<T>(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression_1<T>,
-        >,
+        node: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     >

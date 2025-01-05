@@ -21,6 +21,17 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::XR::Hand
 }
 #[cfg(feature = "UnityEngine+XR+Hand")]
 impl crate::UnityEngine::XR::Hand {
+    pub fn Equals_Gc0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Hand1(
         &mut self,
         other: crate::UnityEngine::XR::Hand,
@@ -29,17 +40,6 @@ impl crate::UnityEngine::XR::Hand {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Il2CppObject0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -69,18 +69,18 @@ impl crate::UnityEngine::XR::Hand {
     }
 }
 #[cfg(feature = "UnityEngine+XR+Hand")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::Hand>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Hand>>
 for crate::UnityEngine::XR::Hand {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::Hand> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Hand> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+XR+Hand")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::Hand>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Hand>>
 for crate::UnityEngine::XR::Hand {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::Hand> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Hand> {
         todo!()
     }
 }

@@ -5,10 +5,10 @@ pub struct EventCallbackFunctor_2<
     TEventType: quest_hook::libil2cpp::Type,
     TCallbackArgs: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::UnityEngine::UIElements::EventCallbackFunctorBase,
-    pub m_Callback: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallbackFunctorBase,
     >,
+    pub m_Callback: quest_hook::libil2cpp::Gc<TEventType, TCallbackArgs>,
     pub m_EventTypeId: i64,
     pub _userArgs_k__BackingField: TCallbackArgs,
     __cordl_phantom_TEventType: std::marker::PhantomData<TEventType>,
@@ -26,7 +26,9 @@ impl<
     TCallbackArgs: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::UnityEngine::UIElements::EventCallbackFunctor_2<TEventType, TCallbackArgs> {
-    type Target = crate::UnityEngine::UIElements::EventCallbackFunctorBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,9 +86,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<TEventType, TCallbackArgs>,
         userArgs: TCallbackArgs,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
         invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
@@ -105,9 +105,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<TEventType, TCallbackArgs>,
         userArgs: TCallbackArgs,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
         invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,

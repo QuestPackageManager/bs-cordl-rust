@@ -2,22 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyReader {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Values: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-        >,
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     >,
-    pub m_ValueCount: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub m_ValueCount: quest_hook::libil2cpp::Gc<i32>,
     pub m_Resolver: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::StyleVariableResolver,
     >,
     pub m_Sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
     pub m_Properties: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleProperty,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleProperty>,
         >,
     >,
     pub m_PropertyIds: quest_hook::libil2cpp::Gc<
@@ -43,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -357,11 +353,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     }
     pub fn ReadListEasingFunction(
         &mut self,
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::EasingFunction,
-            >,
-        >,
+        list: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -374,9 +366,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     pub fn ReadListStylePropertyName(
         &mut self,
         list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StylePropertyName,
-            >,
+            crate::UnityEngine::UIElements::StylePropertyName,
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -389,11 +379,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     }
     pub fn ReadListTimeValue(
         &mut self,
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::TimeValue,
-            >,
-        >,
+        list: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -552,7 +538,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleProperty,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleProperty>,
             >,
         >,
         propertyIds: quest_hook::libil2cpp::Gc<
@@ -699,7 +685,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyReader_GetCursorIdFunction {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(
     feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
@@ -714,7 +700,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorIdFunction {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

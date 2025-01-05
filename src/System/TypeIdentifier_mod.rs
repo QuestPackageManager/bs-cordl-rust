@@ -53,30 +53,36 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeIdentifier {
     }
 }
 #[cfg(feature = "System+TypeIdentifier")]
-impl AsRef<crate::System::IEquatable_1<*mut crate::System::TypeName>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::TypeName>>
 for crate::System::TypeIdentifier {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<*mut crate::System::TypeName> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::TypeName> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+TypeIdentifier")]
-impl AsMut<crate::System::IEquatable_1<*mut crate::System::TypeName>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::TypeName>>
+for crate::System::TypeIdentifier {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::TypeName> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeIdentifier")]
+impl AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TypeName>>>
+for crate::System::TypeIdentifier {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TypeName>> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeIdentifier")]
+impl AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TypeName>>>
 for crate::System::TypeIdentifier {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<*mut crate::System::TypeName> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TypeIdentifier")]
-impl AsRef<crate::System::TypeName> for crate::System::TypeIdentifier {
-    fn as_ref(&self) -> &crate::System::TypeName {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TypeIdentifier")]
-impl AsMut<crate::System::TypeName> for crate::System::TypeIdentifier {
-    fn as_mut(&mut self) -> &mut crate::System::TypeName {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::TypeName>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

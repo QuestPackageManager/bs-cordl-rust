@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JumpDestinationMarker {
-    __cordl_parent: crate::UnityEngine::Timeline::Marker,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::Marker>,
 }
 #[cfg(feature = "JumpDestinationMarker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "JumpDestinationMarker")]
 impl std::ops::Deref for crate::GlobalNamespace::JumpDestinationMarker {
-    type Target = crate::UnityEngine::Timeline::Marker;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::Marker>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

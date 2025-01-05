@@ -2,14 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventDescriptorCollection {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _events: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::ComponentModel::EventDescriptor,
+            quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
         >,
     >,
     pub _namedSort: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     pub _eventsOwned: bool,
@@ -25,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
 impl std::ops::Deref for crate::System::ComponentModel::EventDescriptorCollection {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -143,7 +145,22 @@ impl crate::System::ComponentModel::EventDescriptorCollection {
             .invoke("Insert", (index, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InternalSort_IComparer1(
+    pub fn InternalSort_Gc0(
+        &mut self,
+        names: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalSort", (names))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalSort_Gc1(
         &mut self,
         sorter: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -154,23 +171,10 @@ impl crate::System::ComponentModel::EventDescriptorCollection {
             .invoke("InternalSort", (sorter))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InternalSort_Il2CppArray0(
-        &mut self,
-        names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalSort", (names))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn New_Il2CppArray0(
+    pub fn New_Gc0(
         events: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::EventDescriptor,
+                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -183,7 +187,7 @@ impl crate::System::ComponentModel::EventDescriptorCollection {
     pub fn New__cordl_bool1(
         events: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::EventDescriptor,
+                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
             >,
         >,
         readOnly: bool,
@@ -397,11 +401,11 @@ impl crate::System::ComponentModel::EventDescriptorCollection {
             .invoke("System.Collections.IList.set_Item", (index, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray0(
+    pub fn _ctor_Gc0(
         &mut self,
         events: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::EventDescriptor,
+                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -416,7 +420,7 @@ impl crate::System::ComponentModel::EventDescriptorCollection {
         &mut self,
         events: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::EventDescriptor,
+                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
             >,
         >,
         readOnly: bool,
@@ -435,7 +439,7 @@ impl crate::System::ComponentModel::EventDescriptorCollection {
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_Il2CppString1(
+    pub fn get_Item_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -486,44 +490,54 @@ for crate::System::ComponentModel::EventDescriptorCollection {
     }
 }
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
-impl AsRef<crate::System::Collections::ICollection>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::System::ComponentModel::EventDescriptorCollection {
-    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
-impl AsMut<crate::System::Collections::ICollection>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::System::ComponentModel::EventDescriptorCollection {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
-impl AsRef<crate::System::Collections::IEnumerable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::ComponentModel::EventDescriptorCollection {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
-impl AsMut<crate::System::Collections::IEnumerable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::ComponentModel::EventDescriptorCollection {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
-impl AsRef<crate::System::Collections::IList>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IList>>
 for crate::System::ComponentModel::EventDescriptorCollection {
-    fn as_ref(&self) -> &crate::System::Collections::IList {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IList> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
-impl AsMut<crate::System::Collections::IList>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IList>>
 for crate::System::ComponentModel::EventDescriptorCollection {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IList> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -531,7 +545,7 @@ for crate::System::ComponentModel::EventDescriptorCollection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventDescriptorCollection_ArraySubsetEnumerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _array: quest_hook::libil2cpp::Gc<crate::System::Array>,
     pub _total: i32,
     pub _current: i32,
@@ -545,7 +559,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator")]
 impl std::ops::Deref
 for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -623,16 +637,20 @@ for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerat
     }
 }
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator")]
-impl AsRef<crate::System::Collections::IEnumerator>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerator {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator")]
-impl AsMut<crate::System::Collections::IEnumerator>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
 for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerator {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
         unsafe { std::mem::transmute(self) }
     }
 }

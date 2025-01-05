@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextSegmentedControl {
-    __cordl_parent: crate::HMUI::SegmentedControl,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
     pub _fontSize: f32,
     pub _overrideCellSize: bool,
     pub _fixedCellSize: bool,
@@ -22,13 +22,9 @@ pub struct TextSegmentedControl {
         crate::HMUI::TextSegmentedControlCell,
     >,
     pub _texts: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _disabledIndexes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<i32>,
-    >,
+    pub _disabledIndexes: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "HMUI+TextSegmentedControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -37,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+TextSegmentedControl")]
 impl std::ops::Deref for crate::HMUI::TextSegmentedControl {
-    type Target = crate::HMUI::SegmentedControl;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,13 +76,9 @@ impl crate::HMUI::TextSegmentedControl {
     pub fn SetTexts(
         &mut self,
         texts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
-        disabledIndexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<i32>,
-        >,
+        disabledIndexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -116,16 +108,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TextSegmentedControl {
     }
 }
 #[cfg(feature = "HMUI+TextSegmentedControl")]
-impl AsRef<crate::HMUI::SegmentedControl_IDataSource>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl_IDataSource>>
 for crate::HMUI::TextSegmentedControl {
-    fn as_ref(&self) -> &crate::HMUI::SegmentedControl_IDataSource {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+TextSegmentedControl")]
-impl AsMut<crate::HMUI::SegmentedControl_IDataSource>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl_IDataSource>>
 for crate::HMUI::TextSegmentedControl {
-    fn as_mut(&mut self) -> &mut crate::HMUI::SegmentedControl_IDataSource {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }

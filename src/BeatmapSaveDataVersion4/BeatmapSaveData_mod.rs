@@ -2,31 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapSaveData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub colorNotes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatmapBeatIndex>,
         >,
     >,
     pub bombNotes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatmapBeatIndex>,
         >,
     >,
     pub obstacles: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatmapBeatIndex>,
         >,
     >,
     pub chains: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapSaveDataVersion4::ChainBeatIndex,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::ChainBeatIndex>,
         >,
     >,
     pub arcs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapSaveDataVersion4::ArcBeatIndex,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::ArcBeatIndex>,
         >,
     >,
     pub colorNotesData: quest_hook::libil2cpp::Gc<
@@ -46,7 +46,7 @@ pub struct BeatmapSaveData {
     >,
     pub njsEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapSaveDataVersion4::BeatIndex,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatIndex>,
         >,
     >,
     pub njsEventData: quest_hook::libil2cpp::Gc<
@@ -62,7 +62,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion4+BeatmapSaveData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion4::BeatmapSaveData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

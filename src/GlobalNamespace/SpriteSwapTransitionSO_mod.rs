@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpriteSwapTransitionSO {
-    __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BaseTransitionSO>,
     pub _normalSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _highlightedSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _pressedSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SpriteSwapTransitionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::SpriteSwapTransitionSO {
-    type Target = crate::GlobalNamespace::BaseTransitionSO;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BaseTransitionSO>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

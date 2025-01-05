@@ -433,34 +433,38 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioClipPlayable")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Audio::AudioClipPlayable>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Audio::AudioClipPlayable>>
 for crate::UnityEngine::Audio::AudioClipPlayable {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Audio::AudioClipPlayable> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Audio::AudioClipPlayable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioClipPlayable")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Audio::AudioClipPlayable>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Audio::AudioClipPlayable>>
 for crate::UnityEngine::Audio::AudioClipPlayable {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Audio::AudioClipPlayable> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Audio::AudioClipPlayable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioClipPlayable")]
-impl AsRef<crate::UnityEngine::Playables::IPlayable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable>>
 for crate::UnityEngine::Audio::AudioClipPlayable {
-    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioClipPlayable")]
-impl AsMut<crate::UnityEngine::Playables::IPlayable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable>>
 for crate::UnityEngine::Audio::AudioClipPlayable {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable> {
         todo!()
     }
 }

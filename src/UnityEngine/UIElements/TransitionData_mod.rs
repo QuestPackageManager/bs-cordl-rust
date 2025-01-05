@@ -3,24 +3,16 @@
 #[derive(Debug, Clone, Default)]
 pub struct TransitionData {
     pub transitionDelay: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TimeValue,
-        >,
+        crate::UnityEngine::UIElements::TimeValue,
     >,
     pub transitionDuration: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TimeValue,
-        >,
+        crate::UnityEngine::UIElements::TimeValue,
     >,
     pub transitionProperty: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StylePropertyName,
-        >,
+        crate::UnityEngine::UIElements::StylePropertyName,
     >,
     pub transitionTimingFunction: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::EasingFunction,
-        >,
+        crate::UnityEngine::UIElements::EasingFunction,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionData")]
@@ -64,7 +56,7 @@ impl crate::UnityEngine::UIElements::TransitionData {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -104,50 +96,38 @@ impl crate::UnityEngine::UIElements::TransitionData {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionData")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransitionData>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionData>>
 for crate::UnityEngine::UIElements::TransitionData {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransitionData> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionData")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransitionData>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionData>>
 for crate::UnityEngine::UIElements::TransitionData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::UnityEngine::UIElements::TransitionData,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionData")]
-impl AsRef<
-    crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::TransitionData,
-    >,
-> for crate::UnityEngine::UIElements::TransitionData {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionData>>
+for crate::UnityEngine::UIElements::TransitionData {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::TransitionData,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionData")]
-impl AsMut<
-    crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::TransitionData,
-    >,
-> for crate::UnityEngine::UIElements::TransitionData {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionData>>
+for crate::UnityEngine::UIElements::TransitionData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::TransitionData,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionData> {
         todo!()
     }
 }

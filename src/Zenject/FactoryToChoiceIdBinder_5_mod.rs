@@ -8,7 +8,7 @@ pub struct FactoryToChoiceIdBinder_5<
     TParam4: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::FactoryArgumentsToChoiceBinder_5<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -42,7 +42,7 @@ for crate::Zenject::FactoryToChoiceIdBinder_5<
     TParam4,
     TContract,
 > {
-    type Target = crate::Zenject::FactoryArgumentsToChoiceBinder_5<
+    type Target = quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -113,15 +113,7 @@ impl<
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryArgumentsToChoiceBinder_5<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TContract,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TContract>,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -139,13 +131,11 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryArgumentsToChoiceBinder_5<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TContract,
         > = __cordl_object.invoke("WithId", (identifier))?;
         Ok(__cordl_ret.into())
     }

@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvokableCall_1<T1: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::Events::BaseInvokableCall,
-    pub Delegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Events::UnityAction_1<T1>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::BaseInvokableCall,
     >,
+    pub Delegate: quest_hook::libil2cpp::Gc<T1>,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
 }
 #[cfg(feature = "UnityEngine+Events+InvokableCall_1")]
@@ -16,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+Events+InvokableCall_1")]
 impl<T1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::Events::InvokableCall_1<T1> {
-    type Target = crate::UnityEngine::Events::BaseInvokableCall;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::BaseInvokableCall,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,10 +47,12 @@ impl<T1: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::InvokableCall_
         let __cordl_ret: bool = __cordl_object.invoke("Find", (targetObj, method))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Invoke_Il2CppArray0(
+    pub fn Invoke_Gc0(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -77,7 +81,7 @@ impl<T1: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::InvokableCall_
             .invoke("Invoke", (args0))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppObject_MethodInfo0(
+    pub fn New_Gc0(
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         theFunction: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -91,8 +95,8 @@ impl<T1: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::InvokableCall_
             .invoke_void(".ctor", (target, theFunction))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_UnityAction_1_1(
-        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<T1>>,
+    pub fn New_Gc1(
+        action: quest_hook::libil2cpp::Gc<T1>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -104,7 +108,7 @@ impl<T1: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::InvokableCall_
             .invoke_void(".ctor", (action))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppObject_MethodInfo0(
+    pub fn _ctor_Gc0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         theFunction: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -120,9 +124,9 @@ impl<T1: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::InvokableCall_
             .invoke(".ctor", (target, theFunction))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_UnityAction_1_1(
+    pub fn _ctor_Gc1(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<T1>>,
+        action: quest_hook::libil2cpp::Gc<T1>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -137,7 +141,7 @@ impl<T1: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::InvokableCall_
     }
     pub fn add_Delegate(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<T1>>,
+        value: quest_hook::libil2cpp::Gc<T1>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -152,7 +156,7 @@ impl<T1: quest_hook::libil2cpp::Type> crate::UnityEngine::Events::InvokableCall_
     }
     pub fn remove_Delegate(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<T1>>,
+        value: quest_hook::libil2cpp::Gc<T1>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

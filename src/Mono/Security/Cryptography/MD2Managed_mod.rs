@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MD2Managed {
-    __cordl_parent: crate::Mono::Security::Cryptography::MD2,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Mono::Security::Cryptography::MD2>,
     pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub checksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+Cryptography+MD2Managed")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::MD2Managed {
-    type Target = crate::Mono::Security::Cryptography::MD2;
+    type Target = quest_hook::libil2cpp::Gc<crate::Mono::Security::Cryptography::MD2>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

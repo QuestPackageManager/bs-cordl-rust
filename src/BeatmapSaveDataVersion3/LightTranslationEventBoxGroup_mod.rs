@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationEventBoxGroup {
-    __cordl_parent: crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
-        *mut crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
@@ -14,8 +16,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
-    type Target = crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
-        *mut crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -51,8 +55,8 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
         beat: f32,
         groupId: i32,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -67,8 +71,8 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
         beat: f32,
         groupId: i32,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

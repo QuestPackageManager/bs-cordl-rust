@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TripleDESTransform {
-    __cordl_parent: crate::Mono::Security::Cryptography::SymmetricTransform,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Cryptography::SymmetricTransform,
+    >,
     pub E1: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::DESTransform,
     >,
@@ -30,7 +32,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+TripleDESTransform")]
 impl std::ops::Deref for crate::System::Security::Cryptography::TripleDESTransform {
-    type Target = crate::Mono::Security::Cryptography::SymmetricTransform;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Cryptography::SymmetricTransform,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

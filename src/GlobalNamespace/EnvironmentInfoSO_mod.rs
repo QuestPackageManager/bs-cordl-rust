@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentInfoSO {
-    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >,
     pub _environmentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
     pub _sceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
@@ -16,9 +18,7 @@ pub struct EnvironmentInfoSO {
         crate::GlobalNamespace::EnvironmentIntensityReductionOptions,
     >,
     pub _environmentKeywords: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _lightGroups: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::EnvironmentLightGroups,
@@ -33,7 +33,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnvironmentInfoSO")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentInfoSO {
-    type Target = crate::GlobalNamespace::PersistentScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -110,18 +112,14 @@ impl crate::GlobalNamespace::EnvironmentInfoSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("get_environmentKeywords", ())?;
         Ok(__cordl_ret.into())
     }
@@ -231,16 +229,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnvironmentIn
     }
 }
 #[cfg(feature = "EnvironmentInfoSO")]
-impl AsRef<crate::GlobalNamespace::IEnvironmentInfo>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>>
 for crate::GlobalNamespace::EnvironmentInfoSO {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IEnvironmentInfo {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EnvironmentInfoSO")]
-impl AsMut<crate::GlobalNamespace::IEnvironmentInfo>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>>
 for crate::GlobalNamespace::EnvironmentInfoSO {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEnvironmentInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }

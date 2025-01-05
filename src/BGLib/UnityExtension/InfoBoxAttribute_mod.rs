@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InfoBoxAttribute {
-    __cordl_parent: crate::UnityEngine::PropertyAttribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>,
     pub info: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub messageType: crate::BGLib::UnityExtension::InfoBoxAttribute_Type,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::InfoBoxAttribute {
-    type Target = crate::UnityEngine::PropertyAttribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

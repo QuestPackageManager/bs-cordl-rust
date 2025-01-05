@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSceneVolumeMeshFilter {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _IsCompleted_k__BackingField: bool,
     pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSceneVolumeMeshFilter")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneVolumeMeshFilter {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -149,16 +149,16 @@ impl crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+BakeMeshJob")]
-impl AsRef<crate::Unity::Jobs::IJob>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
-    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+BakeMeshJob")]
-impl AsMut<crate::Unity::Jobs::IJob>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
-    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }
@@ -200,16 +200,16 @@ impl crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
-impl AsRef<crate::Unity::Jobs::IJob>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
-    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
-impl AsMut<crate::Unity::Jobs::IJob>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
-    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }
@@ -252,16 +252,16 @@ impl crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
-impl AsRef<crate::Unity::Jobs::IJob>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
-    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
-impl AsMut<crate::Unity::Jobs::IJob>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
-    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }
@@ -304,16 +304,16 @@ impl crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
-impl AsRef<crate::Unity::Jobs::IJob>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
-    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
-impl AsMut<crate::Unity::Jobs::IJob>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
-    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }

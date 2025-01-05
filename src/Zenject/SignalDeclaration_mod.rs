@@ -2,16 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalDeclaration {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _subscriptions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::SignalSubscription,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription>,
     >,
     pub _asyncQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _bindingId: crate::Zenject::BindingId,
     pub _missingHandlerResponses: crate::Zenject::SignalMissingHandlerResponses,
@@ -28,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SignalDeclaration")]
 impl std::ops::Deref for crate::Zenject::SignalDeclaration {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,9 +74,7 @@ impl crate::Zenject::SignalDeclaration {
     pub fn FireInternal(
         &mut self,
         subscriptions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Zenject::SignalSubscription,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription>,
         >,
         signal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -124,7 +118,9 @@ impl crate::Zenject::SignalDeclaration {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -199,26 +195,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SignalDeclaration {
     }
 }
 #[cfg(feature = "Zenject+SignalDeclaration")]
-impl AsRef<crate::System::IDisposable> for crate::Zenject::SignalDeclaration {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::Zenject::SignalDeclaration {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+SignalDeclaration")]
-impl AsMut<crate::System::IDisposable> for crate::Zenject::SignalDeclaration {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::Zenject::SignalDeclaration {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+SignalDeclaration")]
-impl AsRef<crate::Zenject::ITickable> for crate::Zenject::SignalDeclaration {
-    fn as_ref(&self) -> &crate::Zenject::ITickable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
+for crate::Zenject::SignalDeclaration {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+SignalDeclaration")]
-impl AsMut<crate::Zenject::ITickable> for crate::Zenject::SignalDeclaration {
-    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
+for crate::Zenject::SignalDeclaration {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -226,9 +226,9 @@ impl AsMut<crate::Zenject::ITickable> for crate::Zenject::SignalDeclaration {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalDeclaration_Factory {
-    __cordl_parent: crate::Zenject::PlaceholderFactory_2<
-        *mut crate::Zenject::SignalDeclarationBindInfo,
-        *mut crate::Zenject::SignalDeclaration,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     >,
 }
 #[cfg(feature = "Zenject+SignalDeclaration+Factory")]
@@ -238,9 +238,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SignalDeclaration+Factory")]
 impl std::ops::Deref for crate::Zenject::SignalDeclaration_Factory {
-    type Target = crate::Zenject::PlaceholderFactory_2<
-        *mut crate::Zenject::SignalDeclarationBindInfo,
-        *mut crate::Zenject::SignalDeclaration,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -263,7 +263,9 @@ impl crate::Zenject::SignalDeclaration_Factory {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

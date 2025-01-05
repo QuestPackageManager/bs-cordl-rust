@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputNodeUICache {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _inputObjectCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache,
+        quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache,
         >,
     >,
     pub _inputAssetCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache,
+        quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache,
         >,
     >,
 }
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputNodeUICache {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,7 +70,7 @@ for crate::HoudiniEngineUnity::HEU_InputNodeUICache {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputNodeUICache_HEU_InputAssetUICache {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -81,7 +81,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -127,7 +127,7 @@ for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputNodeUICache_HEU_InputObjectUICache {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -138,7 +138,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

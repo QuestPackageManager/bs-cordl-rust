@@ -2,34 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VertexHelper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Positions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-    >,
-    pub m_Colors: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
-    >,
-    pub m_Uv0S: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-    >,
-    pub m_Uv1S: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-    >,
-    pub m_Uv2S: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-    >,
-    pub m_Uv3S: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-    >,
-    pub m_Normals: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-    >,
-    pub m_Tangents: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-    >,
-    pub m_Indices: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_Positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    pub m_Colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+    pub m_Uv0S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+    pub m_Uv1S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+    pub m_Uv2S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+    pub m_Uv3S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+    pub m_Normals: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    pub m_Tangents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+    pub m_Indices: quest_hook::libil2cpp::Gc<i32>,
     pub m_ListsInitalized: bool,
 }
 #[cfg(feature = "UnityEngine+UI+VertexHelper")]
@@ -39,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+VertexHelper")]
 impl std::ops::Deref for crate::UnityEngine::UI::VertexHelper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,12 +62,8 @@ impl crate::UnityEngine::UI::VertexHelper {
     }
     pub fn AddUIVertexStream(
         &mut self,
-        verts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -96,9 +74,7 @@ impl crate::UnityEngine::UI::VertexHelper {
     }
     pub fn AddUIVertexTriangleStream(
         &mut self,
-        verts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
+        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -198,9 +174,7 @@ impl crate::UnityEngine::UI::VertexHelper {
     }
     pub fn GetUIVertexStream(
         &mut self,
-        stream: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
+        stream: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -226,7 +200,7 @@ impl crate::UnityEngine::UI::VertexHelper {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Mesh1(
+    pub fn New_Gc1(
         m: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -269,7 +243,7 @@ impl crate::UnityEngine::UI::VertexHelper {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Mesh1(
+    pub fn _ctor_Gc1(
         &mut self,
         m: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -305,14 +279,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::VertexHelper 
     }
 }
 #[cfg(feature = "UnityEngine+UI+VertexHelper")]
-impl AsRef<crate::System::IDisposable> for crate::UnityEngine::UI::VertexHelper {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::UnityEngine::UI::VertexHelper {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+VertexHelper")]
-impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UI::VertexHelper {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::UnityEngine::UI::VertexHelper {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

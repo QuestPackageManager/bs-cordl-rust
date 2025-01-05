@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CallSiteBinder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Cache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Type,
-            *mut quest_hook::libil2cpp::Il2CppObject,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder")]
@@ -18,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::CallSiteBinder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,11 +36,13 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     pub fn Bind(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         parameters: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
         returnLabel: quest_hook::libil2cpp::Gc<
@@ -61,11 +61,11 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     }
     pub fn BindCore<T>(
         &mut self,
-        site: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        >,
+        site: quest_hook::libil2cpp::Gc<T>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -80,11 +80,11 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     }
     pub fn BindDelegate<T>(
         &mut self,
-        site: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        >,
+        site: quest_hook::libil2cpp::Gc<T>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -114,11 +114,7 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     }
     pub fn GetRuleCache<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -126,9 +122,8 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
-        > = __cordl_object.invoke("GetRuleCache", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
+            .invoke("GetRuleCache", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -140,19 +135,13 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     }
     pub fn Stitch<T>(
         binding: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-        signature: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression_1<T>>,
-    >
+        signature: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Stitch", (binding, signature))?;
         Ok(__cordl_ret.into())
     }
@@ -190,11 +179,9 @@ for crate::System::Runtime::CompilerServices::CallSiteBinder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CallSiteBinder_LambdaSignature_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Parameters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            *mut crate::System::Linq::Expressions::ParameterExpression,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
     >,
     pub ReturnLabel: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::LabelTarget,
@@ -210,7 +197,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -249,18 +236,13 @@ impl<
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T>,
-        >,
-    >
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

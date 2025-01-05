@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamespaceListNode {
-    __cordl_parent: crate::System::Xml::Schema::SyntaxTreeNode,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SyntaxTreeNode,
+    >,
     pub namespaceList: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::NamespaceList,
     >,
@@ -15,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+NamespaceListNode")]
 impl std::ops::Deref for crate::System::Xml::Schema::NamespaceListNode {
-    type Target = crate::System::Xml::Schema::SyntaxTreeNode;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SyntaxTreeNode>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +35,9 @@ impl crate::System::Xml::Schema::NamespaceListNode {
         firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         lastpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         followpos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

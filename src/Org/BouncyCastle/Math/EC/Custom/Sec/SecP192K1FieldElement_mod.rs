@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecP192K1FieldElement {
-    __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement,
+    >,
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecP192K1FieldElement")]
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecP192K1FieldElement")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192K1FieldElement {
-    type Target = crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,7 +73,17 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192K1FieldElement {
         > = __cordl_object.invoke("Divide", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_ECFieldElement1(
+    pub fn Equals_Gc0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::ECFieldElement,
@@ -81,17 +95,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192K1FieldElement {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_SecP192K1FieldElement2(
+    pub fn Equals_Gc2(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192K1FieldElement,
@@ -157,7 +161,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192K1FieldElement {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_BigInteger0(
+    pub fn New_Gc0(
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -166,7 +170,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192K1FieldElement {
             .invoke_void(".ctor", (x))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray2(
+    pub fn New_Gc2(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -245,7 +249,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192K1FieldElement {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger0(
+    pub fn _ctor_Gc0(
         &mut self,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -256,7 +260,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192K1FieldElement {
             .invoke(".ctor", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray2(
+    pub fn _ctor_Gc2(
         &mut self,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewPrefabMethod {
-    __cordl_parent: crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext,
+    >,
     pub _installerMethod: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     >,
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod")]
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorByNewPrefabMethod {
-    type Target = crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,9 +33,7 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByNewPrefabMethod
 impl crate::Zenject::SubContainerCreatorByNewPrefabMethod {
     pub fn AddInstallers(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -48,7 +50,7 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabMethod {
             crate::Zenject::GameObjectCreationParameters,
         >,
         installerMethod: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -68,7 +70,7 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabMethod {
             crate::Zenject::GameObjectCreationParameters,
         >,
         installerMethod: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

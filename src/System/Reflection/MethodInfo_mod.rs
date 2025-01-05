@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodInfo {
-    __cordl_parent: crate::System::Reflection::MethodBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
 }
 #[cfg(feature = "System+Reflection+MethodInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+MethodInfo")]
 impl std::ops::Deref for crate::System::Reflection::MethodInfo {
-    type Target = crate::System::Reflection::MethodBase;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,20 @@ impl std::ops::DerefMut for crate::System::Reflection::MethodInfo {
 }
 #[cfg(feature = "System+Reflection+MethodInfo")]
 impl crate::System::Reflection::MethodInfo {
-    pub fn CreateDelegate_Il2CppObject1(
+    pub fn CreateDelegate_Gc0(
+        &mut self,
+        delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = __cordl_object
+            .invoke("CreateDelegate", (delegateType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDelegate_Gc1(
         &mut self,
         delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -36,19 +49,6 @@ impl crate::System::Reflection::MethodInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = __cordl_object
             .invoke("CreateDelegate", (delegateType, target))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreateDelegate_Type0(
-        &mut self,
-        delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = __cordl_object
-            .invoke("CreateDelegate", (delegateType))?;
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
@@ -78,14 +78,18 @@ impl crate::System::Reflection::MethodInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = __cordl_object.invoke("GetGenericArguments", ())?;
         Ok(__cordl_ret.into())
     }
@@ -112,7 +116,9 @@ impl crate::System::Reflection::MethodInfo {
     pub fn MakeGenericMethod(
         &mut self,
         typeArguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,

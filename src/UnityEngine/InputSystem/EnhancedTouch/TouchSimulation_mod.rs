@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchSimulation {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _simulatedTouchscreen_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Touchscreen,
     >,
     pub m_NumPointers: i32,
     pub m_Pointers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::InputSystem::Pointer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pointer>,
+        >,
     >,
     pub m_CurrentPositions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
@@ -18,22 +20,20 @@ pub struct TouchSimulation {
     >,
     pub m_Touches: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::Controls::ButtonControl,
+            >,
         >,
     >,
     pub m_LastTouchId: i32,
     pub m_PrimaryTouchIndex: i32,
     pub m_OnDeviceChange: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-            crate::UnityEngine::InputSystem::InputDeviceChange,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        crate::UnityEngine::InputSystem::InputDeviceChange,
     >,
     pub m_OnEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-        >,
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
@@ -45,7 +45,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -296,20 +296,30 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+    >,
+> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+    >,
+> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

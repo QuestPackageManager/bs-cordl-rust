@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlReaderSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub useAsync: bool,
     pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     pub xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlReaderSettings")]
 impl std::ops::Deref for crate::System::Xml::XmlReaderSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -104,7 +104,7 @@ impl crate::System::Xml::XmlReaderSettings {
         > = __cordl_object.invoke("CreateDtdValidatingReader", (baseReader))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateReader_Stream_Uri_Il2CppString_XmlParserContext0(
+    pub fn CreateReader_Gc0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -120,7 +120,7 @@ impl crate::System::Xml::XmlReaderSettings {
             .invoke("CreateReader", (input, baseUri, baseUriString, inputContext))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateReader_TextReader_Il2CppString_XmlParserContext1(
+    pub fn CreateReader_Gc_Gc_Gc1(
         &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
         baseUriString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -187,7 +187,7 @@ impl crate::System::Xml::XmlReaderSettings {
             .invoke("Initialize", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Initialize_XmlResolver1(
+    pub fn Initialize_Gc1(
         &mut self,
         resolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

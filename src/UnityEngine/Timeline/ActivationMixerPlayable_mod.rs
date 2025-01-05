@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActivationMixerPlayable {
-    __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableBehaviour,
+    >,
     pub m_PostPlaybackState: crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState,
     pub m_BoundGameObjectInitialStateIsActive: bool,
     pub m_BoundGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+ActivationMixerPlayable")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ActivationMixerPlayable {
-    type Target = crate::UnityEngine::Playables::PlayableBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,11 +36,15 @@ impl crate::UnityEngine::Timeline::ActivationMixerPlayable {
         inputCount: i32,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Playables::ScriptPlayable_1<
-            *mut crate::UnityEngine::Timeline::ActivationMixerPlayable,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Timeline::ActivationMixerPlayable,
+            >,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
-            *mut crate::UnityEngine::Timeline::ActivationMixerPlayable,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Timeline::ActivationMixerPlayable,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Create", (graph, inputCount))?;
         Ok(__cordl_ret.into())

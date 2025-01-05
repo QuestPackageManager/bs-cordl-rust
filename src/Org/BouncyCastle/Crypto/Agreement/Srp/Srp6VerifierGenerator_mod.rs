@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Srp6VerifierGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub N: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Srp+Srp6VerifierGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6VerifierGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6VerifierGenerator {
         > = __cordl_object.invoke("GenerateVerifier", (salt, identity, password))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_BigInteger_BigInteger_IDigest0(
+    pub fn Init_Gc0(
         &mut self,
         N: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -59,7 +59,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6VerifierGenerator {
             .invoke("Init", (N, g, digest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Srp6GroupParameters_IDigest1(
+    pub fn Init_Gc_Gc1(
         &mut self,
         group: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,

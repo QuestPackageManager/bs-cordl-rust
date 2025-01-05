@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PemReader {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::Pem::PemReader,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::Pem::PemReader,
+    >,
     pub pFinder: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::OpenSsl::IPasswordFinder,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+PemReader")]
 impl std::ops::Deref for crate::Org::BouncyCastle::OpenSsl::PemReader {
-    type Target = crate::Org::BouncyCastle::Utilities::IO::Pem::PemReader;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::Pem::PemReader,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +42,16 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             .invoke("GetCurveParameters", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_IPasswordFinder1(
+    pub fn New_Gc0(
+        reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (reader))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc1(
         reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
         pFinder: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::OpenSsl::IPasswordFinder,
@@ -48,15 +61,6 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (reader, pFinder))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_TextReader0(
-        reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (reader))?;
         Ok(__cordl_object.into())
     }
     pub fn ReadAttributeCertificate(
@@ -208,7 +212,18 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         > = __cordl_object.invoke("ReadRsaPublicKey", (pemObject))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IPasswordFinder1(
+    pub fn _ctor_Gc0(
+        &mut self,
+        reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (reader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc1(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
         pFinder: quest_hook::libil2cpp::Gc<
@@ -220,17 +235,6 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (reader, pFinder))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_TextReader0(
-        &mut self,
-        reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (reader))?;
         Ok(__cordl_ret.into())
     }
 }

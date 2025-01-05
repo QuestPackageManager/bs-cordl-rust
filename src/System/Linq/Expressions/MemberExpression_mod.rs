@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemberExpression {
-    __cordl_parent: crate::System::Linq::Expressions::Expression,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
     pub _Expression_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Expression,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+MemberExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::MemberExpression {
-    type Target = crate::System::Linq::Expressions::Expression;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,21 +60,7 @@ impl crate::System::Linq::Expressions::MemberExpression {
         > = __cordl_object.invoke("GetMember", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Make_FieldInfo1(
-        expression: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression,
-        >,
-        field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::FieldExpression>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::FieldExpression,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Make", (expression, field))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Make_PropertyInfo0(
+    pub fn Make_Gc_Gc0(
         expression: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Expression,
         >,
@@ -82,6 +72,20 @@ impl crate::System::Linq::Expressions::MemberExpression {
             crate::System::Linq::Expressions::PropertyExpression,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Make", (expression, property))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Make_Gc_Gc1(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::FieldExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::FieldExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Make", (expression, field))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

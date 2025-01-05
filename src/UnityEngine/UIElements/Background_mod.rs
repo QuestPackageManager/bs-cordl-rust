@@ -38,7 +38,7 @@ impl crate::UnityEngine::UIElements::Background {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -210,20 +210,20 @@ impl crate::UnityEngine::UIElements::Background {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Background")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Background>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Background>>
 for crate::UnityEngine::UIElements::Background {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Background> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Background> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Background")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Background>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Background>>
 for crate::UnityEngine::UIElements::Background {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Background> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Background> {
         todo!()
     }
 }

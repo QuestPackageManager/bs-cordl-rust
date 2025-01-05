@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoTransitionsToggle {
-    __cordl_parent: crate::UnityEngine::UI::Toggle,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub selectionStateDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::HMUI::UISelectionState>,
+        crate::HMUI::UISelectionState,
     >,
     pub _selectionState: crate::HMUI::UISelectionState,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+NoTransitionsToggle")]
 impl std::ops::Deref for crate::HMUI::NoTransitionsToggle {
-    type Target = crate::UnityEngine::UI::Toggle;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,9 +91,7 @@ impl crate::HMUI::NoTransitionsToggle {
     }
     pub fn add_selectionStateDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::HMUI::UISelectionState>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::HMUI::UISelectionState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,9 +112,7 @@ impl crate::HMUI::NoTransitionsToggle {
     }
     pub fn remove_selectionStateDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::HMUI::UISelectionState>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::HMUI::UISelectionState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

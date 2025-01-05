@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RsaBlindingParameters {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub publicKey: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RsaBlindingParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::RsaBlindingParameters {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -103,16 +103,26 @@ for crate::Org::BouncyCastle::Crypto::Parameters::RsaBlindingParameters {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RsaBlindingParameters")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::ICipherParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::RsaBlindingParameters {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ICipherParameters {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::RsaBlindingParameters {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RsaBlindingParameters")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::ICipherParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::RsaBlindingParameters {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ICipherParameters {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::RsaBlindingParameters {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

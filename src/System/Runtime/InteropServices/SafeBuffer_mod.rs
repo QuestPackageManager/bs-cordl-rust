@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeBuffer {
-    __cordl_parent: crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid,
+    >,
     pub _numBytes: crate::System::UIntPtr,
 }
 #[cfg(feature = "System+Runtime+InteropServices+SafeBuffer")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+InteropServices+SafeBuffer")]
 impl std::ops::Deref for crate::System::Runtime::InteropServices::SafeBuffer {
-    type Target = crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +32,7 @@ impl crate::System::Runtime::InteropServices::SafeBuffer {
     pub fn AcquirePointer(
         &mut self,
         pointer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

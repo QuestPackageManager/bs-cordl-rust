@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DecrementInstruction_DecrementUInt16 {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::DecrementInstruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::DecrementInstruction,
+    >,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt16"
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
     feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt16"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::DecrementInstruction_DecrementUInt16 {
-    type Target = crate::System::Linq::Expressions::Interpreter::DecrementInstruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::DecrementInstruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

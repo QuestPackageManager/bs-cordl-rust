@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPAddress {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _addressOrScopeId: u32,
     pub _numbers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
     pub _toString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+IPAddress")]
 impl std::ops::Deref for crate::System::Net::IPAddress {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl crate::System::Net::IPAddress {
     pub const NumberOfLabels: i32 = 8i32;
     #[cfg(feature = "System+Net+IPAddress+ReadOnlyIPAddress")]
     pub type ReadOnlyIPAddress = crate::GlobalNamespace::IPAddress_ReadOnlyIPAddress;
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         comparand: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -93,7 +93,7 @@ impl crate::System::Net::IPAddress {
             .invoke("MapToIPv6", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppArray5(
+    pub fn New_Gc5(
         address: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -102,7 +102,18 @@ impl crate::System::Net::IPAddress {
             .invoke_void(".ctor", (address))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i64_1(
+    pub fn New_Gc_i32_u32_3(
+        numbers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        numbersLength: i32,
+        scopeid: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (numbers, numbersLength, scopeid))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_i64_1(
         address: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         scopeid: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -112,7 +123,7 @@ impl crate::System::Net::IPAddress {
             .invoke_void(".ctor", (address, scopeid))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_u32_4(
+    pub fn New_Gc_u32_4(
         numbers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
         scopeid: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -120,17 +131,6 @@ impl crate::System::Net::IPAddress {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (numbers, scopeid))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppObject_i32_u32_3(
-        numbers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        numbersLength: i32,
-        scopeid: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (numbers, numbersLength, scopeid))?;
         Ok(__cordl_object.into())
     }
     pub fn New_ReadOnlySpan_1_6(
@@ -194,7 +194,9 @@ impl crate::System::Net::IPAddress {
     }
     pub fn TryParse(
         ipString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        address: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Net::IPAddress>,
+        address: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryParse", (ipString, address))?;
@@ -234,7 +236,7 @@ impl crate::System::Net::IPAddress {
             .invoke("WriteIPv6Bytes", (destination))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray5(
+    pub fn _ctor_Gc5(
         &mut self,
         address: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -245,7 +247,20 @@ impl crate::System::Net::IPAddress {
             .invoke(".ctor", (address))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i64_1(
+    pub fn _ctor_Gc_i32_u32_3(
+        &mut self,
+        numbers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        numbersLength: i32,
+        scopeid: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (numbers, numbersLength, scopeid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_i64_1(
         &mut self,
         address: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         scopeid: i64,
@@ -257,7 +272,7 @@ impl crate::System::Net::IPAddress {
             .invoke(".ctor", (address, scopeid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_u32_4(
+    pub fn _ctor_Gc_u32_4(
         &mut self,
         numbers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
         scopeid: u32,
@@ -267,19 +282,6 @@ impl crate::System::Net::IPAddress {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (numbers, scopeid))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppObject_i32_u32_3(
-        &mut self,
-        numbers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        numbersLength: i32,
-        scopeid: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (numbers, numbersLength, scopeid))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_ReadOnlySpan_1_6(

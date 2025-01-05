@@ -21,7 +21,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Pose {
 }
 #[cfg(feature = "UnityEngine+Pose")]
 impl crate::UnityEngine::Pose {
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -101,16 +101,16 @@ impl crate::UnityEngine::Pose {
     }
 }
 #[cfg(feature = "UnityEngine+Pose")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Pose>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Pose>>
 for crate::UnityEngine::Pose {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Pose> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Pose> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Pose")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Pose>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Pose>>
 for crate::UnityEngine::Pose {
-    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Pose> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Pose> {
         todo!()
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AttributeTable {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+AttributeTable")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+AttributeTable")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::AttributeTable {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,25 +41,16 @@ impl crate::Org::BouncyCastle::Asn1::X509::AttributeTable {
         > = __cordl_object.invoke("Get", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1EncodableVector2(
-        v: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1EncodableVector>,
+    pub fn New_Gc0(
+        attrs: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (v))?;
+            .invoke_void(".ctor", (attrs))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Asn1Set3(
-        s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (s))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Hashtable1(
+    pub fn New_Gc1(
         attrs: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -68,13 +59,22 @@ impl crate::Org::BouncyCastle::Asn1::X509::AttributeTable {
             .invoke_void(".ctor", (attrs))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IDictionary0(
-        attrs: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub fn New_Gc2(
+        v: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1EncodableVector>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (attrs))?;
+            .invoke_void(".ctor", (v))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc3(
+        s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (s))?;
         Ok(__cordl_object.into())
     }
     pub fn ToDictionary(
@@ -103,29 +103,18 @@ impl crate::Org::BouncyCastle::Asn1::X509::AttributeTable {
         > = __cordl_object.invoke("ToHashtable", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1EncodableVector2(
+    pub fn _ctor_Gc0(
         &mut self,
-        v: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1EncodableVector>,
+        attrs: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (v))?;
+            .invoke(".ctor", (attrs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Set3(
-        &mut self,
-        s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (s))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Hashtable1(
+    pub fn _ctor_Gc1(
         &mut self,
         attrs: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -136,15 +125,26 @@ impl crate::Org::BouncyCastle::Asn1::X509::AttributeTable {
             .invoke(".ctor", (attrs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IDictionary0(
+    pub fn _ctor_Gc2(
         &mut self,
-        attrs: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+        v: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1EncodableVector>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (attrs))?;
+            .invoke(".ctor", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc3(
+        &mut self,
+        s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (s))?;
         Ok(__cordl_ret.into())
     }
 }

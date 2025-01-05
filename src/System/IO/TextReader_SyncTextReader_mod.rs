@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextReader_SyncTextReader {
-    __cordl_parent: crate::System::IO::TextReader,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
     pub _in: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
 }
 #[cfg(feature = "System+IO+TextReader+SyncTextReader")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+TextReader+SyncTextReader")]
 impl std::ops::Deref for crate::GlobalNamespace::TextReader_SyncTextReader {
-    type Target = crate::System::IO::TextReader;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,15 +67,12 @@ impl crate::GlobalNamespace::TextReader_SyncTextReader {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object.invoke("ReadAsync", (buffer, index, count))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("ReadAsync", (buffer, index, count))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReadLine(
@@ -111,7 +108,7 @@ impl crate::GlobalNamespace::TextReader_SyncTextReader {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Read_Il2CppArray_i32_i32_1(
+    pub fn Read_Gc_i32_i32_1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,

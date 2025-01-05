@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ButtonAttribute {
-    __cordl_parent: crate::UnityEngine::PropertyAttribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>,
     pub title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BGLib+UnityExtension+ButtonAttribute")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+UnityExtension+ButtonAttribute")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::ButtonAttribute {
-    type Target = crate::UnityEngine::PropertyAttribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

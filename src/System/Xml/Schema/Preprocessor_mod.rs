@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Preprocessor {
-    __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseProcessor>,
     pub Xmlns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub NsXsi: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -39,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Preprocessor")]
 impl std::ops::Deref for crate::System::Xml::Schema::Preprocessor {
-    type Target = crate::System::Xml::Schema::BaseProcessor;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseProcessor>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -305,20 +305,7 @@ impl crate::System::Xml::Schema::Preprocessor {
             .invoke("Preprocess", (schema, targetNamespace, imports))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PreprocessAnnotation_XmlSchemaAnnotation1(
-        &mut self,
-        annotation: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaAnnotation,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessAnnotation", (annotation))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn PreprocessAnnotation_XmlSchemaObject0(
+    pub fn PreprocessAnnotation_Gc0(
         &mut self,
         schemaObject: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaObject,
@@ -329,6 +316,19 @@ impl crate::System::Xml::Schema::Preprocessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PreprocessAnnotation", (schemaObject))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PreprocessAnnotation_Gc1(
+        &mut self,
+        annotation: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaAnnotation,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PreprocessAnnotation", (annotation))?;
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessAttribute(

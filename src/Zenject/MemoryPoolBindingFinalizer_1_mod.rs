@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoryPoolBindingFinalizer_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::ProviderBindingFinalizer>,
     pub _poolBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::MemoryPoolBindInfo>,
     pub _factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+MemoryPoolBindingFinalizer_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::MemoryPoolBindingFinalizer_1<TContract> {
-    type Target = crate::Zenject::ProviderBindingFinalizer;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::ProviderBindingFinalizer>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

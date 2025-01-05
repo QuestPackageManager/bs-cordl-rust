@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoTlsStream {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub provider: quest_hook::libil2cpp::Gc<
         crate::Mono::Net::Security::MobileTlsProvider,
     >,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+MonoTlsStream")]
 impl std::ops::Deref for crate::Mono::Net::Security::MonoTlsStream {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,15 +53,13 @@ impl crate::Mono::Net::Security::MonoTlsStream {
         tunnel: quest_hook::libil2cpp::Gc<crate::System::Net::WebConnectionTunnel>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::IO::Stream>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<*mut crate::System::IO::Stream>,
+            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         > = __cordl_object.invoke("CreateStream", (tunnel, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -155,14 +153,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Net::Security::MonoTlsSt
     }
 }
 #[cfg(feature = "Mono+Net+Security+MonoTlsStream")]
-impl AsRef<crate::System::IDisposable> for crate::Mono::Net::Security::MonoTlsStream {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::Mono::Net::Security::MonoTlsStream {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Net+Security+MonoTlsStream")]
-impl AsMut<crate::System::IDisposable> for crate::Mono::Net::Security::MonoTlsStream {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::Mono::Net::Security::MonoTlsStream {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

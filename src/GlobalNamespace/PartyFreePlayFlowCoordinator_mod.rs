@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PartyFreePlayFlowCoordinator {
-    __cordl_parent: crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+    >,
     pub _defaultLightsPreset: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MenuLightsPresetSO,
     >,
@@ -33,7 +35,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PartyFreePlayFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
-    type Target = crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

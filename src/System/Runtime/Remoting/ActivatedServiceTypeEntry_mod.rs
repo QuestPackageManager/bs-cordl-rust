@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActivatedServiceTypeEntry {
-    __cordl_parent: crate::System::Runtime::Remoting::TypeEntry,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::TypeEntry,
+    >,
     pub obj_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Runtime+Remoting+ActivatedServiceTypeEntry")]
@@ -13,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+ActivatedServiceTypeEntry")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::ActivatedServiceTypeEntry {
-    type Target = crate::System::Runtime::Remoting::TypeEntry;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::TypeEntry>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

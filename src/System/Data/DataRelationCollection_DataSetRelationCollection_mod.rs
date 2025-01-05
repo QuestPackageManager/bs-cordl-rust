@@ -2,11 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRelationCollection_DataSetRelationCollection {
-    __cordl_parent: crate::System::Data::DataRelationCollection,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRelationCollection,
+    >,
     pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     pub _relations: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _delayLoadingRelations: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRelation>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+        >,
     >,
 }
 #[cfg(feature = "System+Data+DataRelationCollection+DataSetRelationCollection")]
@@ -18,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Data+DataRelationCollection+DataSetRelationCollection")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
-    type Target = crate::System::Data::DataRelationCollection;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Data::DataRelationCollection>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -96,7 +100,7 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
             .invoke(".ctor", (dataSet))?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_Il2CppString1(
+    pub fn get_Item_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

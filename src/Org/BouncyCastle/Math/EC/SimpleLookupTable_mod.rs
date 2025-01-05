@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleLookupTable {
-    __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
+    >,
     pub points: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
         >,
     >,
 }
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+SimpleLookupTable")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
-    type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +36,7 @@ impl crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
     pub fn Copy(
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         off: i32,
@@ -40,13 +44,13 @@ impl crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Copy", (points, off, len))?;
@@ -83,7 +87,7 @@ impl crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
     pub fn New(
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         off: i32,
@@ -99,7 +103,7 @@ impl crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         off: i32,

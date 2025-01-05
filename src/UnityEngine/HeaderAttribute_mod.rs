@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HeaderAttribute {
-    __cordl_parent: crate::UnityEngine::PropertyAttribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>,
     pub header: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+HeaderAttribute")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+HeaderAttribute")]
 impl std::ops::Deref for crate::UnityEngine::HeaderAttribute {
-    type Target = crate::UnityEngine::PropertyAttribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

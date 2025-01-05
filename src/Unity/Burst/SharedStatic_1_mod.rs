@@ -79,7 +79,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
             .invoke("GetOrCreateUnsafe", (alignment, hashCode, subHashCode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetOrCreate_Type_Type_u32_3(
+    pub fn GetOrCreate_Gc_Gc_u32_3(
         contextType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         subContextType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         alignment: u32,
@@ -92,7 +92,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
             .invoke("GetOrCreate", (contextType, subContextType, alignment))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetOrCreate_Type_u32_2(
+    pub fn GetOrCreate_Gc_u32_2(
         contextType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         alignment: u32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::SharedStatic_1<T>>

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsCompressedDataStreamGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _bufferSize: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Open_Il2CppString1(
+    pub fn Open_Gc1(
         &mut self,
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         contentOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -55,7 +55,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
             .invoke("Open", (outStream, contentOID, compressionOID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Open_Stream_Il2CppString0(
+    pub fn Open_Gc_Gc0(
         &mut self,
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         compressionOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -107,7 +107,9 @@ for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsCompressedDataStreamGenerator_CmsCompressedOutputStream {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    >,
     pub _out: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
     >,
@@ -135,7 +137,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompressedOutputStream {
-    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

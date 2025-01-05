@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatAvatarVisualController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _headTopMeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub _glassesMeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub _facialHairMeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
@@ -40,9 +40,9 @@ pub struct BeatAvatarVisualController {
         crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
     >,
     pub _avatarPartHighlightSetters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-            *mut crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate,
+        crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate,
         >,
     >,
     pub _lightColor: crate::UnityEngine::Color,
@@ -61,7 +61,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -190,7 +190,7 @@ for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatAvatarVisualController_HighlighterDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(
     feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
@@ -205,7 +205,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

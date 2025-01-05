@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HandleProcessCorruptedStateExceptionsAttribute {
-    __cordl_parent: crate::System::Attribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
 }
 #[cfg(
     feature = "System+Runtime+ExceptionServices+HandleProcessCorruptedStateExceptionsAttribute"
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Runtime::ExceptionServices::HandleProcessCorruptedStateExceptionsAttribute {
-    type Target = crate::System::Attribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

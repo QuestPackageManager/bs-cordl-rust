@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftNetworkPlayerModel {
-    __cordl_parent: crate::GlobalNamespace::NetworkPlayerModel_1<
-        *mut crate::GlobalNamespace::GameLiftConnectionManager,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
     >,
     pub _gameLiftPlayerSessionProvider: quest_hook::libil2cpp::Gc<
         crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
@@ -22,8 +22,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameLiftNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::GameLiftNetworkPlayerModel {
-    type Target = crate::GlobalNamespace::NetworkPlayerModel_1<
-        *mut crate::GlobalNamespace::GameLiftConnectionManager,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -45,18 +45,14 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<
-                *mut crate::GlobalNamespace::GameLiftConnectionManager,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<
-                *mut crate::GlobalNamespace::GameLiftConnectionManager,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
         > = __cordl_object
             .invoke(
                 "GetConnectToServerParams",
@@ -70,18 +66,14 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         configuration: crate::GlobalNamespace::GameplayServerConfiguration,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<
-                *mut crate::GlobalNamespace::GameLiftConnectionManager,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<
-                *mut crate::GlobalNamespace::GameLiftConnectionManager,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
         > = __cordl_object
             .invoke("GetStartClientParams", (selectionMask, configuration))?;
         Ok(__cordl_ret.into())
@@ -98,14 +90,10 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         localSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         localConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
         onSuccess: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                    crate::GlobalNamespace::PublicServerInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PublicServerInfo>,
         >,
         onFailure: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
+            crate::GlobalNamespace::ConnectionFailedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

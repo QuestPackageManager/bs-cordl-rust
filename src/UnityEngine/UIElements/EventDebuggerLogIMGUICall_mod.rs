@@ -44,16 +44,16 @@ impl crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogIMGUICall")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::EventDebuggerLogIMGUICall {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }

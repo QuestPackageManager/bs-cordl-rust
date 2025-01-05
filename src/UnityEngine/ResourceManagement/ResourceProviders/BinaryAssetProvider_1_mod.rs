@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryAssetProvider_1<TAdapter: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider,
+    >,
     __cordl_phantom_TAdapter: std::marker::PhantomData<TAdapter>,
 }
 #[cfg(
@@ -23,7 +25,9 @@ impl<TAdapter: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryAssetProvider_1<
     TAdapter,
 > {
-    type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

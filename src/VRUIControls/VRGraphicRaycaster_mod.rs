@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRGraphicRaycaster {
-    __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseRaycaster,
+    >,
     pub _blockingMask: crate::UnityEngine::LayerMask,
     pub _physicsRaycaster: quest_hook::libil2cpp::Gc<
         crate::VRUIControls::PhysicsRaycasterWithCache,
     >,
     pub _canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     pub _raycastResults: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
-        >,
+        crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
     >,
     pub _curvedCanvasSettingsHelper: quest_hook::libil2cpp::Gc<
         crate::HMUI::CurvedCanvasSettingsHelper,
@@ -24,7 +24,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRUIControls+VRGraphicRaycaster")]
 impl std::ops::Deref for crate::VRUIControls::VRGraphicRaycaster {
-    type Target = crate::UnityEngine::EventSystems::BaseRaycaster;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseRaycaster,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,9 +65,7 @@ impl crate::VRUIControls::VRGraphicRaycaster {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::EventSystems::RaycastResult,
-            >,
+            crate::UnityEngine::EventSystems::RaycastResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -81,9 +81,7 @@ impl crate::VRUIControls::VRGraphicRaycaster {
         hitDistance: f32,
         curvedUIRadius: f32,
         results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
-            >,
+            crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

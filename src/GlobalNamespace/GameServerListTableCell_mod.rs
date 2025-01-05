@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerListTableCell {
-    __cordl_parent: crate::HMUI::TableCell,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
     pub _serverName: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
     pub _difficultiesText: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
     pub _musicPackText: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameServerListTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerListTableCell {
-    type Target = crate::HMUI::TableCell;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

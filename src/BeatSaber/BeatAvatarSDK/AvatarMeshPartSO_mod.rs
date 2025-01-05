@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarMeshPartSO {
-    __cordl_parent: crate::BeatSaber::BeatAvatarSDK::AvatarPartSO_1<
-        *mut crate::UnityEngine::Mesh,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarMeshPartSO")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarMeshPartSO")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO {
-    type Target = crate::BeatSaber::BeatAvatarSDK::AvatarPartSO_1<
-        *mut crate::UnityEngine::Mesh,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

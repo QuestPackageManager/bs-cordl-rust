@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Joystick {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >,
     pub _trigger_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
@@ -23,7 +25,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Joystick")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Joystick {
-    type Target = crate::UnityEngine::InputSystem::InputDevice;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,11 +99,11 @@ impl crate::UnityEngine::InputSystem::Joystick {
     }
     pub fn get_all() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::Joystick,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Joystick>,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::UnityEngine::InputSystem::Joystick,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Joystick>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_all", ())?;
         Ok(__cordl_ret.into())
     }

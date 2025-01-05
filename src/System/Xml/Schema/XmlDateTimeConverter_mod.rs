@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlDateTimeConverter {
-    __cordl_parent: crate::System::Xml::Schema::XmlBaseConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlBaseConverter,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlDateTimeConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlDateTimeConverter")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlDateTimeConverter {
-    type Target = crate::System::Xml::Schema::XmlBaseConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlBaseConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,9 +43,9 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         > = __cordl_object.invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ChangeType_Il2CppObject_IXmlNamespaceResolver2(
+    pub fn ChangeType_Gc_Gc1(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         destinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
     ) -> quest_hook::libil2cpp::Result<
@@ -55,9 +59,9 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         > = __cordl_object.invoke("ChangeType", (value, destinationType, nsResolver))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ChangeType_Il2CppString_IXmlNamespaceResolver1(
+    pub fn ChangeType_Gc_Gc2(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         destinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
     ) -> quest_hook::libil2cpp::Result<
@@ -102,9 +106,9 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
             .invoke("ToDateTimeOffset", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDateTimeOffset_Il2CppObject2(
+    pub fn ToDateTimeOffset_Gc1(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -113,9 +117,9 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
             .invoke("ToDateTimeOffset", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDateTimeOffset_Il2CppString1(
+    pub fn ToDateTimeOffset_Gc2(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -135,9 +139,9 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
             .invoke("ToDateTime", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDateTime_Il2CppObject2(
+    pub fn ToDateTime_Gc1(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -146,9 +150,9 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
             .invoke("ToDateTime", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDateTime_Il2CppString1(
+    pub fn ToDateTime_Gc2(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -185,7 +189,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         > = __cordl_object.invoke("ToString", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppObject_IXmlNamespaceResolver2(
+    pub fn ToString_Gc_Gc2(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,

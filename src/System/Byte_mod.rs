@@ -22,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Byte {
 impl crate::System::Byte {
     pub const MaxValue: u8 = 255u8;
     pub const MinValue: u8 = 0u8;
-    pub fn CompareTo_Il2CppObject0(
+    pub fn CompareTo_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -41,7 +41,7 @@ impl crate::System::Byte {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -78,7 +78,7 @@ impl crate::System::Byte {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_Il2CppString_IFormatProvider0(
+    pub fn Parse_Gc_Gc0(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u8> {
@@ -86,7 +86,7 @@ impl crate::System::Byte {
             .invoke("Parse", (s, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_Il2CppString_NumberStyles_IFormatProvider1(
+    pub fn Parse_Gc_NumberStyles_Gc1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         style: crate::System::Globalization::NumberStyles,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -95,7 +95,7 @@ impl crate::System::Byte {
             .invoke("Parse", (s, style, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_ReadOnlySpan_1_NumberStyles_NumberFormatInfo2(
+    pub fn Parse_ReadOnlySpan_1_NumberStyles_Gc2(
         s: crate::System::ReadOnlySpan_1<char>,
         style: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
@@ -284,18 +284,7 @@ impl crate::System::Byte {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_IFormatProvider2(
-        &mut self,
-        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (provider))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToString_Il2CppString1(
+    pub fn ToString_Gc1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -306,7 +295,18 @@ impl crate::System::Byte {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (format))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider3(
+    pub fn ToString_Gc2(
+        &mut self,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToString_Gc_Gc3(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -336,7 +336,7 @@ impl crate::System::Byte {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParse_Il2CppString_IFormatProvider0(
+    pub fn TryParse_Gc0(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         style: crate::System::Globalization::NumberStyles,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -346,7 +346,7 @@ impl crate::System::Byte {
             .invoke("TryParse", (s, style, provider, result))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParse_ReadOnlySpan_1_NumberFormatInfo1(
+    pub fn TryParse_ReadOnlySpan_1_1(
         s: crate::System::ReadOnlySpan_1<char>,
         style: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
@@ -358,74 +358,84 @@ impl crate::System::Byte {
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsRef<crate::System::IComparable> for crate::System::Byte {
-    fn as_ref(&self) -> &crate::System::IComparable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::System::Byte {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsMut<crate::System::IComparable> for crate::System::Byte {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::System::Byte {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsRef<crate::System::IComparable_1<u8>> for crate::System::Byte {
-    fn as_ref(&self) -> &crate::System::IComparable_1<u8> {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
+for crate::System::Byte {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
         todo!()
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsMut<crate::System::IComparable_1<u8>> for crate::System::Byte {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<u8> {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
+for crate::System::Byte {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
         todo!()
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsRef<crate::System::IConvertible> for crate::System::Byte {
-    fn as_ref(&self) -> &crate::System::IConvertible {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::System::Byte {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsMut<crate::System::IConvertible> for crate::System::Byte {
-    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::System::Byte {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsRef<crate::System::IEquatable_1<u8>> for crate::System::Byte {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<u8> {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
+for crate::System::Byte {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsMut<crate::System::IEquatable_1<u8>> for crate::System::Byte {
-    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<u8> {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
+for crate::System::Byte {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsRef<crate::System::IFormattable> for crate::System::Byte {
-    fn as_ref(&self) -> &crate::System::IFormattable {
+impl AsRef<quest_hook::libil2cpp::Gc<u8>> for crate::System::Byte {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<u8> {
         todo!()
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsMut<crate::System::IFormattable> for crate::System::Byte {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+impl AsMut<quest_hook::libil2cpp::Gc<u8>> for crate::System::Byte {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<u8> {
         todo!()
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsRef<crate::System::ISpanFormattable> for crate::System::Byte {
-    fn as_ref(&self) -> &crate::System::ISpanFormattable {
+impl AsRef<quest_hook::libil2cpp::Gc<u8>> for crate::System::Byte {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<u8> {
         todo!()
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsMut<crate::System::ISpanFormattable> for crate::System::Byte {
-    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
+impl AsMut<quest_hook::libil2cpp::Gc<u8>> for crate::System::Byte {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<u8> {
         todo!()
     }
 }

@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WindowResolutionSettingsController {
-    __cordl_parent: crate::GlobalNamespace::ListSettingsController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ListSettingsController,
+    >,
     pub _settingsManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SettingsManager,
     >,
-    pub _windowResolutions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::Unity::Mathematics::int2>,
-    >,
+    pub _windowResolutions: quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::int2>,
 }
 #[cfg(feature = "WindowResolutionSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -18,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "WindowResolutionSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::WindowResolutionSettingsController {
-    type Target = crate::GlobalNamespace::ListSettingsController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ListSettingsController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

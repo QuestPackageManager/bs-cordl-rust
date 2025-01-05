@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HMacSP800Drbg {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mK: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mEntropySource: quest_hook::libil2cpp::Gc<
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+HMacSP800Drbg")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Prng::Drbg::HMacSP800Drbg {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -158,18 +158,26 @@ for crate::Org::BouncyCastle::Crypto::Prng::Drbg::HMacSP800Drbg {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+HMacSP800Drbg")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg>
-for crate::Org::BouncyCastle::Crypto::Prng::Drbg::HMacSP800Drbg {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg>,
+> for crate::Org::BouncyCastle::Crypto::Prng::Drbg::HMacSP800Drbg {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+HMacSP800Drbg")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg>
-for crate::Org::BouncyCastle::Crypto::Prng::Drbg::HMacSP800Drbg {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg>,
+> for crate::Org::BouncyCastle::Crypto::Prng::Drbg::HMacSP800Drbg {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

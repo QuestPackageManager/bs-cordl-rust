@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Extension {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub critical: bool,
     pub value: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Asn1OctetString,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509Extension")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::X509Extension {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,7 +71,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extension {
         > = __cordl_object.invoke("GetParsedValue", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_DerBoolean0(
+    pub fn New_Gc0(
         critical: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBoolean>,
         value: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -91,7 +91,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extension {
             .invoke_void(".ctor", (critical, value))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_DerBoolean0(
+    pub fn _ctor_Gc0(
         &mut self,
         critical: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBoolean>,
         value: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,

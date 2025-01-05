@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KnownAce {
-    __cordl_parent: crate::System::Security::AccessControl::GenericAce,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::GenericAce,
+    >,
     pub access_mask: i32,
     pub identifier: quest_hook::libil2cpp::Gc<
         crate::System::Security::Principal::SecurityIdentifier,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+AccessControl+KnownAce")]
 impl std::ops::Deref for crate::System::Security::AccessControl::KnownAce {
-    type Target = crate::System::Security::AccessControl::GenericAce;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::GenericAce,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +42,7 @@ impl crate::System::Security::AccessControl::KnownAce {
             .invoke_void(".ctor", (_cordl_type, flags))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_1(
+    pub fn New_Gc_i32_1(
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -60,7 +64,7 @@ impl crate::System::Security::AccessControl::KnownAce {
             .invoke(".ctor", (_cordl_type, flags))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_1(
+    pub fn _ctor_Gc_i32_1(
         &mut self,
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,

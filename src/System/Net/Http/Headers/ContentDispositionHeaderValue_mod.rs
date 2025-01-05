@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContentDispositionHeaderValue {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub dispositionType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub parameters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::NameValueHeaderValue,
         >,
     >,
 }
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+Http+Headers+ContentDispositionHeaderValue")]
 impl std::ops::Deref
 for crate::System::Net::Http::Headers::ContentDispositionHeaderValue {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,7 +57,7 @@ impl crate::System::Net::Http::Headers::ContentDispositionHeaderValue {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ContentDispositionHeaderValue1(
+    pub fn New_Gc1(
         source: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::ContentDispositionHeaderValue,
         >,
@@ -97,7 +97,9 @@ impl crate::System::Net::Http::Headers::ContentDispositionHeaderValue {
     pub fn TryParse(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parsedValue: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Net::Http::Headers::ContentDispositionHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::ContentDispositionHeaderValue,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -114,7 +116,7 @@ impl crate::System::Net::Http::Headers::ContentDispositionHeaderValue {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ContentDispositionHeaderValue1(
+    pub fn _ctor_Gc1(
         &mut self,
         source: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::ContentDispositionHeaderValue,
@@ -131,8 +133,8 @@ impl crate::System::Net::Http::Headers::ContentDispositionHeaderValue {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<
-                *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::NameValueHeaderValue,
             >,
         >,
     > {
@@ -140,8 +142,8 @@ impl crate::System::Net::Http::Headers::ContentDispositionHeaderValue {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<
-                *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::NameValueHeaderValue,
             >,
         > = __cordl_object.invoke("get_Parameters", ())?;
         Ok(__cordl_ret.into())
@@ -158,16 +160,16 @@ for crate::System::Net::Http::Headers::ContentDispositionHeaderValue {
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+ContentDispositionHeaderValue")]
-impl AsRef<crate::System::ICloneable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Net::Http::Headers::ContentDispositionHeaderValue {
-    fn as_ref(&self) -> &crate::System::ICloneable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+ContentDispositionHeaderValue")]
-impl AsMut<crate::System::ICloneable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Net::Http::Headers::ContentDispositionHeaderValue {
-    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }

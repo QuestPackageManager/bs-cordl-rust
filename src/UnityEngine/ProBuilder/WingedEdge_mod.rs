@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WingedEdge {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _edge_k__BackingField: crate::UnityEngine::ProBuilder::EdgeLookup,
     pub _face_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ProBuilder::Face,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::WingedEdge {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,17 +44,7 @@ impl crate::UnityEngine::ProBuilder::WingedEdge {
         let __cordl_ret: i32 = __cordl_object.invoke("Count", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_WingedEdge0(
+    pub fn Equals_Gc0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -62,6 +52,16 @@ impl crate::UnityEngine::ProBuilder::WingedEdge {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Gc1(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetAdjacentEdgeWithCommonIndex(
@@ -87,49 +87,37 @@ impl crate::UnityEngine::ProBuilder::WingedEdge {
     }
     pub fn GetSpokes(
         wings: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::WingedEdge,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                i32,
-                *mut crate::System::Collections::Generic::List_1<
-                    *mut crate::UnityEngine::ProBuilder::WingedEdge,
-                >,
+            i32,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                i32,
-                *mut crate::System::Collections::Generic::List_1<
-                    *mut crate::UnityEngine::ProBuilder::WingedEdge,
-                >,
+            i32,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetSpokes", (wings))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetWingedEdges_IEnumerable_1__cordl_bool1(
+    pub fn GetWingedEdges_Gc__cordl_bool1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::ProBuilder::Face,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
         oneWingPerFace: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::WingedEdge,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::WingedEdge,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetWingedEdges", (mesh, faces, oneWingPerFace))?;
         Ok(__cordl_ret.into())
@@ -139,15 +127,11 @@ impl crate::UnityEngine::ProBuilder::WingedEdge {
         oneWingPerFace: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::WingedEdge,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::WingedEdge,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetWingedEdges", (mesh, oneWingPerFace))?;
         Ok(__cordl_ret.into())
@@ -173,45 +157,27 @@ impl crate::UnityEngine::ProBuilder::WingedEdge {
     }
     pub fn SortCommonIndexesByAdjacency(
         wings: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::WingedEdge,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         >,
-        common: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
+        common: quest_hook::libil2cpp::Gc<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SortCommonIndexesByAdjacency", (wings, common))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SortEdgesByAdjacency_Face0(
+    pub fn SortEdgesByAdjacency_Gc0(
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
+            crate::UnityEngine::ProBuilder::Edge,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SortEdgesByAdjacency", (face))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SortEdgesByAdjacency_List_1_1(
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+    pub fn SortEdgesByAdjacency_Gc1(
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SortEdgesByAdjacency", (edges))?;
@@ -368,21 +334,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Winge
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]
-impl AsRef<crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::WingedEdge>>
-for crate::UnityEngine::ProBuilder::WingedEdge {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+    >,
+> for crate::UnityEngine::ProBuilder::WingedEdge {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::WingedEdge> {
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]
-impl AsMut<crate::System::IEquatable_1<*mut crate::UnityEngine::ProBuilder::WingedEdge>>
-for crate::UnityEngine::ProBuilder::WingedEdge {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+    >,
+> for crate::UnityEngine::ProBuilder::WingedEdge {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
     > {
         unsafe { std::mem::transmute(self) }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     pub level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -22,7 +22,9 @@ pub struct RecordingSettings {
     pub framerate: i32,
     pub playbackScreenshots: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+            >,
         >,
     >,
     pub practice: bool,
@@ -44,7 +46,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "RecordingSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,7 +79,9 @@ impl crate::GlobalNamespace::RecordingSettings {
         framerate: i32,
         playbackScreenshots: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                >,
             >,
         >,
         practice: bool,
@@ -159,7 +163,9 @@ impl crate::GlobalNamespace::RecordingSettings {
         framerate: i32,
         playbackScreenshots: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                >,
             >,
         >,
         practice: bool,

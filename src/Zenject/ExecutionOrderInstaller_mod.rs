@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExecutionOrderInstaller {
-    __cordl_parent: crate::Zenject::Installer_2<
-        *mut crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
-        *mut crate::Zenject::ExecutionOrderInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ExecutionOrderInstaller>,
     >,
     pub _typeOrder: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
     >,
 }
 #[cfg(feature = "Zenject+ExecutionOrderInstaller")]
@@ -17,9 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ExecutionOrderInstaller")]
 impl std::ops::Deref for crate::Zenject::ExecutionOrderInstaller {
-    type Target = crate::Zenject::Installer_2<
-        *mut crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
-        *mut crate::Zenject::ExecutionOrderInstaller,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ExecutionOrderInstaller>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -45,7 +45,7 @@ impl crate::Zenject::ExecutionOrderInstaller {
     }
     pub fn New(
         typeOrder: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -56,7 +56,9 @@ impl crate::Zenject::ExecutionOrderInstaller {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -76,7 +78,7 @@ impl crate::Zenject::ExecutionOrderInstaller {
     pub fn _ctor(
         &mut self,
         typeOrder: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

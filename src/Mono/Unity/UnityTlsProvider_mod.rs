@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTlsProvider {
-    __cordl_parent: crate::Mono::Net::Security::MobileTlsProvider,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileTlsProvider,
+    >,
 }
 #[cfg(feature = "Mono+Unity+UnityTlsProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTlsProvider")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTlsProvider {
-    type Target = crate::Mono::Net::Security::MobileTlsProvider;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileTlsProvider,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,7 +70,9 @@ impl crate::Mono::Unity::UnityTlsProvider {
         >,
         wantsChain: bool,
         chain: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Security::Cryptography::X509Certificates::X509Chain,
+            >,
         >,
         errors: quest_hook::libil2cpp::ByRefMut<
             crate::System::Net::Security::SslPolicyErrors,

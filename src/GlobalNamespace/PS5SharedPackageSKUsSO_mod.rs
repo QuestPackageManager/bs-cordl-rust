@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS5SharedPackageSKUsSO {
-    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >,
     pub _availableSKUs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PS5PublisherSKUSettingsSO>,
         >,
     >,
     pub _conceptId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -24,7 +26,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PS5SharedPackageSKUsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PS5SharedPackageSKUsSO {
-    type Target = crate::GlobalNamespace::PersistentScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +80,9 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+                >,
             >,
         >,
     > {
@@ -85,7 +91,9 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+                >,
             >,
         > = __cordl_object.invoke("get_availableSKUs", ())?;
         Ok(__cordl_ret.into())
@@ -174,7 +182,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS5SharedPackageSKUsSO_PS5BuildVersion {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _masterVersion: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyVersion>,
     pub _contentVersion: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SonyContentVersion,
@@ -188,7 +196,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
 impl std::ops::Deref for crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

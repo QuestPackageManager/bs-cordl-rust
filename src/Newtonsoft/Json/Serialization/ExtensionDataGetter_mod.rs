@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExtensionDataGetter {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ExtensionDataGetter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Serialization+ExtensionDataGetter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::ExtensionDataGetter {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,11 +45,9 @@ impl crate::Newtonsoft::Json::Serialization::ExtensionDataGetter {
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    *mut quest_hook::libil2cpp::Il2CppObject,
-                    *mut quest_hook::libil2cpp::Il2CppObject,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
     > {
@@ -57,11 +55,9 @@ impl crate::Newtonsoft::Json::Serialization::ExtensionDataGetter {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    *mut quest_hook::libil2cpp::Il2CppObject,
-                    *mut quest_hook::libil2cpp::Il2CppObject,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         > = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret.into())
@@ -71,11 +67,9 @@ impl crate::Newtonsoft::Json::Serialization::ExtensionDataGetter {
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    *mut quest_hook::libil2cpp::Il2CppObject,
-                    *mut quest_hook::libil2cpp::Il2CppObject,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
     > {
@@ -83,11 +77,9 @@ impl crate::Newtonsoft::Json::Serialization::ExtensionDataGetter {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    *mut quest_hook::libil2cpp::Il2CppObject,
-                    *mut quest_hook::libil2cpp::Il2CppObject,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         > = __cordl_object.invoke("Invoke", (o))?;
         Ok(__cordl_ret.into())

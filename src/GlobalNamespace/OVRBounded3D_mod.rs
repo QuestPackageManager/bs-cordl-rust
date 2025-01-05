@@ -33,7 +33,7 @@ impl crate::GlobalNamespace::OVRBounded3D {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -193,44 +193,38 @@ impl crate::GlobalNamespace::OVRBounded3D {
     }
 }
 #[cfg(feature = "OVRBounded3D")]
-impl AsRef<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRBounded3D>,
-> for crate::GlobalNamespace::OVRBounded3D {
-    fn as_ref(
-        &self,
-    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRBounded3D,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRBounded3D")]
-impl AsMut<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRBounded3D>,
-> for crate::GlobalNamespace::OVRBounded3D {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRBounded3D,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRBounded3D")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRBounded3D>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded3D>>
 for crate::GlobalNamespace::OVRBounded3D {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRBounded3D> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded3D> {
         todo!()
     }
 }
 #[cfg(feature = "OVRBounded3D")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRBounded3D>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded3D>>
 for crate::GlobalNamespace::OVRBounded3D {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRBounded3D> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded3D> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRBounded3D")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded3D>>
+for crate::GlobalNamespace::OVRBounded3D {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded3D> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRBounded3D")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded3D>>
+for crate::GlobalNamespace::OVRBounded3D {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded3D> {
         todo!()
     }
 }

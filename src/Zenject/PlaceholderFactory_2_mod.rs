@@ -5,7 +5,7 @@ pub struct PlaceholderFactory_2<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::PlaceholderFactoryBase_1<TValue>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TValue>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -19,7 +19,7 @@ impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::PlaceholderFactory_2<TParam1, TValue> {
-    type Target = crate::Zenject::PlaceholderFactoryBase_1<TValue>;
+    type Target = quest_hook::libil2cpp::Gc<TValue>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,7 +66,9 @@ impl<
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -112,9 +114,7 @@ impl<
     pub fn get_ParamTypes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -126,7 +126,7 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         > = __cordl_object.invoke("get_ParamTypes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -148,9 +148,9 @@ for crate::Zenject::PlaceholderFactory_2<TParam1, TValue> {
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Zenject::IFactory>
+> AsRef<quest_hook::libil2cpp::Gc<TParam1, TValue>>
 for crate::Zenject::PlaceholderFactory_2<TParam1, TValue> {
-    fn as_ref(&self) -> &crate::Zenject::IFactory {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TParam1, TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -158,9 +158,9 @@ for crate::Zenject::PlaceholderFactory_2<TParam1, TValue> {
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Zenject::IFactory>
+> AsMut<quest_hook::libil2cpp::Gc<TParam1, TValue>>
 for crate::Zenject::PlaceholderFactory_2<TParam1, TValue> {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TParam1, TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -168,9 +168,9 @@ for crate::Zenject::PlaceholderFactory_2<TParam1, TValue> {
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Zenject::IFactory_2<TParam1, TValue>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IFactory>>
 for crate::Zenject::PlaceholderFactory_2<TParam1, TValue> {
-    fn as_ref(&self) -> &crate::Zenject::IFactory_2<TParam1, TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IFactory> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -178,9 +178,9 @@ for crate::Zenject::PlaceholderFactory_2<TParam1, TValue> {
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Zenject::IFactory_2<TParam1, TValue>>
+> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IFactory>>
 for crate::Zenject::PlaceholderFactory_2<TParam1, TValue> {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory_2<TParam1, TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IFactory> {
         unsafe { std::mem::transmute(self) }
     }
 }

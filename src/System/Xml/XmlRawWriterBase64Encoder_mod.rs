@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlRawWriterBase64Encoder {
-    __cordl_parent: crate::System::Xml::Base64Encoder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Base64Encoder>,
     pub rawWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>,
 }
 #[cfg(feature = "System+Xml+XmlRawWriterBase64Encoder")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlRawWriterBase64Encoder")]
 impl std::ops::Deref for crate::System::Xml::XmlRawWriterBase64Encoder {
-    type Target = crate::System::Xml::Base64Encoder;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Base64Encoder>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

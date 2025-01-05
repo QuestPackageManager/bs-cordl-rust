@@ -47,11 +47,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         Ok(__cordl_ret.into())
     }
     pub fn GetLookDirection(
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::UnityEngine::ProBuilder::BezierPoint,
-            >,
-        >,
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::BezierPoint>,
         index: i32,
         previous: i32,
         next: i32,

@@ -219,7 +219,7 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_getGameplaySceneReadyEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -232,7 +232,7 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_getGameplaySongReadyEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -245,9 +245,9 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_levelFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -261,12 +261,10 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_noteWasCutEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i64,
-                f32,
-                *mut crate::GlobalNamespace::NoteCutInfoNetSerializable,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
+            f32,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutInfoNetSerializable>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -279,11 +277,11 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_noteWasMissedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i64,
-                f32,
-                *mut crate::GlobalNamespace::NoteMissInfoNetSerializable,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
+            f32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NoteMissInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -297,11 +295,11 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_noteWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i64,
-                f32,
-                *mut crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
+            f32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -315,11 +313,11 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_obstacleWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i64,
-                f32,
-                *mut crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
+            f32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -333,7 +331,7 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_requestReturnToMenuEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -346,7 +344,7 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_returnToMenuEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -359,9 +357,9 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_setGameplaySceneReadyEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -375,11 +373,11 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_setGameplaySceneSyncFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
             >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -392,7 +390,7 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_setGameplaySongReadyEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -405,12 +403,12 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_setPlayerDidConnectLateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
             >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -423,7 +421,8 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_setSongStartTimeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut quest_hook::libil2cpp::Il2CppString, i64>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -436,11 +435,11 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn add_sliderWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i64,
-                f32,
-                *mut crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
+            f32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -466,7 +465,7 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_getGameplaySceneReadyEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -479,7 +478,7 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_getGameplaySongReadyEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -492,9 +491,9 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_levelFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -508,12 +507,10 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_noteWasCutEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i64,
-                f32,
-                *mut crate::GlobalNamespace::NoteCutInfoNetSerializable,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
+            f32,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutInfoNetSerializable>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -526,11 +523,11 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_noteWasMissedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i64,
-                f32,
-                *mut crate::GlobalNamespace::NoteMissInfoNetSerializable,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
+            f32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NoteMissInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -544,11 +541,11 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_noteWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i64,
-                f32,
-                *mut crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
+            f32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -562,11 +559,11 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_obstacleWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i64,
-                f32,
-                *mut crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
+            f32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -580,7 +577,7 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_requestReturnToMenuEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -593,7 +590,7 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_returnToMenuEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -606,9 +603,9 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_setGameplaySceneReadyEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -622,11 +619,11 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_setGameplaySceneSyncFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
             >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -639,7 +636,7 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_setGameplaySongReadyEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -652,12 +649,12 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_setPlayerDidConnectLateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
             >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -670,7 +667,8 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_setSongStartTimeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<*mut quest_hook::libil2cpp::Il2CppString, i64>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -683,11 +681,11 @@ impl crate::GlobalNamespace::IGameplayRpcManager {
     pub fn remove_sliderWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                i64,
-                f32,
-                *mut crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i64,
+            f32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -720,14 +718,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IGameplayRpcM
     }
 }
 #[cfg(feature = "IGameplayRpcManager")]
-impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::IGameplayRpcManager {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::GlobalNamespace::IGameplayRpcManager {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IGameplayRpcManager")]
-impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::IGameplayRpcManager {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::GlobalNamespace::IGameplayRpcManager {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

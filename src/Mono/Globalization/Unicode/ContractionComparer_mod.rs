@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContractionComparer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+Globalization+Unicode+ContractionComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Globalization+Unicode+ContractionComparer")]
 impl std::ops::Deref for crate::Mono::Globalization::Unicode::ContractionComparer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,28 +66,28 @@ for crate::Mono::Globalization::Unicode::ContractionComparer {
 }
 #[cfg(feature = "Mono+Globalization+Unicode+ContractionComparer")]
 impl AsRef<
-    crate::System::Collections::Generic::IComparer_1<
-        *mut crate::Mono::Globalization::Unicode::Contraction,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::Contraction>,
     >,
 > for crate::Mono::Globalization::Unicode::ContractionComparer {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IComparer_1<
-        *mut crate::Mono::Globalization::Unicode::Contraction,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::Contraction>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Globalization+Unicode+ContractionComparer")]
 impl AsMut<
-    crate::System::Collections::Generic::IComparer_1<
-        *mut crate::Mono::Globalization::Unicode::Contraction,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::Contraction>,
     >,
 > for crate::Mono::Globalization::Unicode::ContractionComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IComparer_1<
-        *mut crate::Mono::Globalization::Unicode::Contraction,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::Contraction>,
     > {
         unsafe { std::mem::transmute(self) }
     }

@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithNetSyncSessionsChangedNotification {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
+        >,
     >,
 }
 #[cfg(feature = "Oculus+Platform+MessageWithNetSyncSessionsChangedNotification")]
@@ -15,8 +17,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Oculus+Platform+MessageWithNetSyncSessionsChangedNotification")]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithNetSyncSessionsChangedNotification {
-    type Target = crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

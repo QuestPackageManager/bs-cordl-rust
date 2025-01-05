@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsStream {
-    __cordl_parent: crate::System::Net::Sockets::NetworkStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::NetworkStream,
+    >,
     pub _sslStream: quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
     pub _host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _clientCertificates: quest_hook::libil2cpp::Gc<
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+TlsStream")]
 impl std::ops::Deref for crate::System::Net::TlsStream {
-    type Target = crate::System::Net::Sockets::NetworkStream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::NetworkStream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectionRequest {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _listener: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
     pub _used: i32,
     pub Data: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+ConnectionRequest")]
 impl std::ops::Deref for crate::LiteNetLib::ConnectionRequest {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,7 +84,7 @@ impl crate::LiteNetLib::ConnectionRequest {
             .invoke("RejectForce", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn RejectForce_Il2CppArray2(
+    pub fn RejectForce_Gc2(
         &mut self,
         rejectData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -95,7 +95,18 @@ impl crate::LiteNetLib::ConnectionRequest {
             .invoke("RejectForce", (rejectData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RejectForce_Il2CppArray_i32_i32_0(
+    pub fn RejectForce_Gc3(
+        &mut self,
+        rejectData: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RejectForce", (rejectData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RejectForce_Gc_i32_i32_0(
         &mut self,
         rejectData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         start: i32,
@@ -108,17 +119,6 @@ impl crate::LiteNetLib::ConnectionRequest {
             .invoke("RejectForce", (rejectData, start, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RejectForce_NetDataWriter3(
-        &mut self,
-        rejectData: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RejectForce", (rejectData))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn Reject_2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -129,7 +129,7 @@ impl crate::LiteNetLib::ConnectionRequest {
             .invoke("Reject", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Reject_Il2CppArray3(
+    pub fn Reject_Gc3(
         &mut self,
         rejectData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -140,7 +140,18 @@ impl crate::LiteNetLib::ConnectionRequest {
             .invoke("Reject", (rejectData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Reject_Il2CppArray_i32_i32_1(
+    pub fn Reject_Gc4(
+        &mut self,
+        rejectData: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reject", (rejectData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Reject_Gc_i32_i32_1(
         &mut self,
         rejectData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         start: i32,
@@ -153,7 +164,7 @@ impl crate::LiteNetLib::ConnectionRequest {
             .invoke("Reject", (rejectData, start, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Reject_Il2CppArray_i32_i32__cordl_bool0(
+    pub fn Reject_Gc_i32_i32__cordl_bool0(
         &mut self,
         rejectData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         start: i32,
@@ -165,17 +176,6 @@ impl crate::LiteNetLib::ConnectionRequest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reject", (rejectData, start, length, force))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Reject_NetDataWriter4(
-        &mut self,
-        rejectData: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reject", (rejectData))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryActivate(&mut self) -> quest_hook::libil2cpp::Result<bool> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CollectionUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+CollectionUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+CollectionUtilities")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::Collections::CollectionUtilities {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +50,7 @@ impl crate::Org::BouncyCastle::Utilities::Collections::CollectionUtilities {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ReadOnly_IDictionary0(
+    pub fn ReadOnly_Gc0(
         d: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -60,7 +60,7 @@ impl crate::Org::BouncyCastle::Utilities::Collections::CollectionUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ReadOnly", (d))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadOnly_IList1(
+    pub fn ReadOnly_Gc1(
         l: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -69,7 +69,7 @@ impl crate::Org::BouncyCastle::Utilities::Collections::CollectionUtilities {
             .invoke("ReadOnly", (l))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadOnly_ISet2(
+    pub fn ReadOnly_Gc2(
         s: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         >,

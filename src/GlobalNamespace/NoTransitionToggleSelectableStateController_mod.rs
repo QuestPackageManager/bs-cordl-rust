@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoTransitionToggleSelectableStateController {
-    __cordl_parent: crate::GlobalNamespace::SelectableStateController_1<
-        *mut crate::HMUI::NoTransitionsToggle,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsToggle>,
     >,
 }
 #[cfg(feature = "NoTransitionToggleSelectableStateController")]
@@ -15,8 +15,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "NoTransitionToggleSelectableStateController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NoTransitionToggleSelectableStateController {
-    type Target = crate::GlobalNamespace::SelectableStateController_1<
-        *mut crate::HMUI::NoTransitionsToggle,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsToggle>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

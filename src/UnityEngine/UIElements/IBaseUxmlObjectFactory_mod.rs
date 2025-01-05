@@ -41,16 +41,22 @@ for crate::UnityEngine::UIElements::IBaseUxmlObjectFactory {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IBaseUxmlObjectFactory")]
-impl AsRef<crate::UnityEngine::UIElements::IBaseUxmlFactory>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlFactory>>
 for crate::UnityEngine::UIElements::IBaseUxmlObjectFactory {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IBaseUxmlFactory {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlFactory> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IBaseUxmlObjectFactory")]
-impl AsMut<crate::UnityEngine::UIElements::IBaseUxmlFactory>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlFactory>>
 for crate::UnityEngine::UIElements::IBaseUxmlObjectFactory {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IBaseUxmlFactory {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IBaseUxmlFactory,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

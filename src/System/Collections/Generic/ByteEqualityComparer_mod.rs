@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ByteEqualityComparer {
-    __cordl_parent: crate::System::Collections::Generic::EqualityComparer_1<u8>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<u8>,
 }
 #[cfg(feature = "System+Collections+Generic+ByteEqualityComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Generic+ByteEqualityComparer")]
 impl std::ops::Deref for crate::System::Collections::Generic::ByteEqualityComparer {
-    type Target = crate::System::Collections::Generic::EqualityComparer_1<u8>;
+    type Target = quest_hook::libil2cpp::Gc<u8>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::System::Collections::Generic::ByteEqualityCom
 }
 #[cfg(feature = "System+Collections+Generic+ByteEqualityComparer")]
 impl crate::System::Collections::Generic::ByteEqualityComparer {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {

@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightLambda {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _closure: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::CompilerServices::IStrongBox,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::CompilerServices::IStrongBox,
+            >,
         >,
     >,
     pub _interpreter: quest_hook::libil2cpp::Gc<
@@ -23,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::LightLambda {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,17 +57,17 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::System::Linq::Expressions::Interpreter::LightLambda,
-                *mut crate::System::Delegate,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::LightLambda,
             >,
+            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::System::Linq::Expressions::Interpreter::LightLambda,
-                *mut crate::System::Delegate,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::LightLambda,
             >,
+            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetRunDelegateCtor", (delegateType))?;
         Ok(__cordl_ret.into())
@@ -599,17 +601,17 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::System::Linq::Expressions::Interpreter::LightLambda,
-                *mut crate::System::Delegate,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::LightLambda,
             >,
+            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::System::Linq::Expressions::Interpreter::LightLambda,
-                *mut crate::System::Delegate,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::LightLambda,
             >,
+            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("MakeRunDelegateCtor", (delegateType))?;
         Ok(__cordl_ret.into())
@@ -1082,7 +1084,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         >,
         closure: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1095,7 +1099,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
     pub fn Run(
         &mut self,
         arguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1761,7 +1767,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
     pub fn RunVoid(
         &mut self,
         arguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -2425,7 +2433,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         >,
         closure: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2464,22 +2474,16 @@ for crate::System::Linq::Expressions::Interpreter::LightLambda {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightLambda_DebugViewPrinter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _interpreter: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Interpreter::Interpreter,
     >,
-    pub _tryStart: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    >,
+    pub _tryStart: quest_hook::libil2cpp::Gc<i32, i32>,
     pub _handlerEnter: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _handlerExit: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    >,
+    pub _handlerExit: quest_hook::libil2cpp::Gc<i32, i32>,
     pub _indent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
@@ -2491,7 +2495,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

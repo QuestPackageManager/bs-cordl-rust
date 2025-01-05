@@ -30,18 +30,14 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::System::Net::Http::HttpResponseMessage,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::System::Net::Http::HttpResponseMessage,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
         > = __cordl_object.invoke("SendAsync", (request, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -101,16 +97,16 @@ for crate::System::Net::Http::IMonoHttpClientHandler {
     }
 }
 #[cfg(feature = "System+Net+Http+IMonoHttpClientHandler")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Net::Http::IMonoHttpClientHandler {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Http+IMonoHttpClientHandler")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Net::Http::IMonoHttpClientHandler {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

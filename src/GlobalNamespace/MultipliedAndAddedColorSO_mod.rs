@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultipliedAndAddedColorSO {
-    __cordl_parent: crate::GlobalNamespace::ColorSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
     pub _baseColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SimpleColorSO>,
     pub _multiplierColor: crate::UnityEngine::Color,
     pub _addColor: crate::UnityEngine::Color,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultipliedAndAddedColorSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MultipliedAndAddedColorSO {
-    type Target = crate::GlobalNamespace::ColorSO;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Gost3411_2012Digest {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub IV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub N: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub Sigma: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Gost3411_2012Digest")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -127,7 +127,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest {
             .invoke("Reset", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Reset_IMemoable1(
+    pub fn Reset_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::IMemoable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -160,7 +160,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest {
             .invoke(".ctor", (IV))?;
         Ok(__cordl_ret.into())
     }
-    pub fn addMod512_Il2CppArray1(
+    pub fn addMod512_Gc1(
         &mut self,
         A: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         B: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -246,30 +246,38 @@ for crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Gost3411_2012Digest")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IDigest>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>>
 for crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDigest {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Gost3411_2012Digest")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IDigest>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>>
 for crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDigest {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Gost3411_2012Digest")]
-impl AsRef<crate::Org::BouncyCastle::Utilities::IMemoable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::IMemoable>>
 for crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Utilities::IMemoable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::IMemoable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Gost3411_2012Digest")]
-impl AsMut<crate::Org::BouncyCastle::Utilities::IMemoable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::IMemoable>>
 for crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Utilities::IMemoable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::IMemoable> {
         unsafe { std::mem::transmute(self) }
     }
 }

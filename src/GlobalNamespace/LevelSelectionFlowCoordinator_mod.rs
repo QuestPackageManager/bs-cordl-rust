@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelSelectionFlowCoordinator {
-    __cordl_parent: crate::HMUI::FlowCoordinator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     pub playerDataModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerDataModel,
     >,
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelSelectionFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
-    type Target = crate::HMUI::FlowCoordinator;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -447,7 +447,9 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
             >,
         >,
     > {
@@ -456,7 +458,9 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
             >,
         > = __cordl_object.invoke("get_notAllowedCharacteristics", ())?;
         Ok(__cordl_ret.into())
@@ -544,7 +548,7 @@ for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelSelectionFlowCoordinator_State {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub levelCategory: crate::System::Nullable_1<
         crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     >,
@@ -562,7 +566,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelSelectionFlowCoordinator+State")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -575,7 +579,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelSelectionFlowCoordinato
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator+State")]
 impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
-    pub fn New_BeatmapLevelPack1(
+    pub fn New_Gc1(
         beatmapLevelPack: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelPack,
         >,
@@ -586,7 +590,7 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
             .invoke_void(".ctor", (beatmapLevelPack))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_BeatmapLevelPack_BeatmapLevel2(
+    pub fn New_Gc_Gc2(
         beatmapLevelPack: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelPack,
         >,
@@ -598,7 +602,7 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
             .invoke_void(".ctor", (beatmapLevelPack, beatmapLevel))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Nullable_1_BeatmapLevelPack_ByRefMut_BeatmapLevel0(
+    pub fn New_Nullable_1_Gc_ByRefMut_Gc0(
         levelCategory: crate::System::Nullable_1<
             crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
         >,
@@ -617,7 +621,7 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_BeatmapLevelPack1(
+    pub fn _ctor_Gc1(
         &mut self,
         beatmapLevelPack: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelPack,
@@ -630,7 +634,7 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
             .invoke(".ctor", (beatmapLevelPack))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BeatmapLevelPack_BeatmapLevel2(
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         beatmapLevelPack: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelPack,
@@ -644,7 +648,7 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
             .invoke(".ctor", (beatmapLevelPack, beatmapLevel))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Nullable_1_BeatmapLevelPack_ByRefMut_BeatmapLevel0(
+    pub fn _ctor_Nullable_1_Gc_ByRefMut_Gc0(
         &mut self,
         levelCategory: crate::System::Nullable_1<
             crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,

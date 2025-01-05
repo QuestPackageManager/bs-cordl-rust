@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTrackedKeyboardSampleControls {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub trackedKeyboard: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OVRTrackedKeyboard,
     >,
@@ -20,7 +20,9 @@ pub struct OVRTrackedKeyboardSampleControls {
     pub ConnectionToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub RemoteKeyboardToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub ShaderButtons: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Button>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+        >,
     >,
 }
 #[cfg(feature = "OVRTrackedKeyboardSampleControls")]
@@ -31,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRTrackedKeyboardSampleControls")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SocketException {
-    __cordl_parent: crate::System::ComponentModel::Win32Exception,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::Win32Exception,
+    >,
     pub m_EndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
 }
 #[cfg(feature = "System+Net+Sockets+SocketException")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Sockets+SocketException")]
 impl std::ops::Deref for crate::System::Net::Sockets::SocketException {
-    type Target = crate::System::ComponentModel::Win32Exception;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::Win32Exception,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +36,7 @@ impl crate::System::Net::Sockets::SocketException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext4(
+    pub fn New_Gc_StreamingContext4(
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -62,7 +66,7 @@ impl crate::System::Net::Sockets::SocketException {
             .invoke_void(".ctor", (errorCode))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Il2CppString1(
+    pub fn New_i32_Gc1(
         error: i32,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -87,7 +91,7 @@ impl crate::System::Net::Sockets::SocketException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext4(
+    pub fn _ctor_Gc_StreamingContext4(
         &mut self,
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -123,7 +127,7 @@ impl crate::System::Net::Sockets::SocketException {
             .invoke(".ctor", (errorCode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Il2CppString1(
+    pub fn _ctor_i32_Gc1(
         &mut self,
         error: i32,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

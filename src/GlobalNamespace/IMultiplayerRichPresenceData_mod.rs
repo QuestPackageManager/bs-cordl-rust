@@ -108,16 +108,20 @@ for crate::GlobalNamespace::IMultiplayerRichPresenceData {
     }
 }
 #[cfg(feature = "IMultiplayerRichPresenceData")]
-impl AsRef<crate::GlobalNamespace::IRichPresenceData>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRichPresenceData>>
 for crate::GlobalNamespace::IMultiplayerRichPresenceData {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IRichPresenceData {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRichPresenceData> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IMultiplayerRichPresenceData")]
-impl AsMut<crate::GlobalNamespace::IRichPresenceData>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRichPresenceData>>
 for crate::GlobalNamespace::IMultiplayerRichPresenceData {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRichPresenceData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRichPresenceData> {
         unsafe { std::mem::transmute(self) }
     }
 }

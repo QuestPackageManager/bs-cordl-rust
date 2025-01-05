@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthorityKeyIdentifier {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub keyidentifier: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Asn1OctetString,
     >,
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+AuthorityKeyIdentifier")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +52,19 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
             .invoke("FromExtensions", (extensions))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
+    pub fn GetInstance_Gc1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance__cordl_bool0(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         explicitly: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -60,18 +76,6 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
             crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetInstance", (obj, explicitly))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetInstance_Il2CppObject1(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetKeyIdentifier(
@@ -87,7 +91,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
         > = __cordl_object.invoke("GetKeyIdentifier", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1Sequence0(
+    pub fn New_Gc0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -96,7 +100,18 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_GeneralNames_BigInteger3(
+    pub fn New_Gc1(
+        spki: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (spki))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc3(
         name: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
         >,
@@ -110,7 +125,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
             .invoke_void(".ctor", (name, serialNumber))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray4(
+    pub fn New_Gc4(
         keyIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -119,33 +134,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
             .invoke_void(".ctor", (keyIdentifier))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_GeneralNames_BigInteger5(
-        keyIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        name: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
-        >,
-        serialNumber: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (keyIdentifier, name, serialNumber))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SubjectPublicKeyInfo1(
-        spki: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (spki))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SubjectPublicKeyInfo_GeneralNames_BigInteger2(
+    pub fn New_Gc_Gc2(
         spki: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
         >,
@@ -160,6 +149,21 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (spki, name, serialNumber))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc5(
+        keyIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        name: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+        >,
+        serialNumber: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (keyIdentifier, name, serialNumber))?;
         Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
@@ -188,7 +192,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Sequence0(
+    pub fn _ctor_Gc0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -199,7 +203,20 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_GeneralNames_BigInteger3(
+    pub fn _ctor_Gc1(
+        &mut self,
+        spki: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (spki))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc3(
         &mut self,
         name: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
@@ -215,7 +232,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
             .invoke(".ctor", (name, serialNumber))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray4(
+    pub fn _ctor_Gc4(
         &mut self,
         keyIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -226,37 +243,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
             .invoke(".ctor", (keyIdentifier))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_GeneralNames_BigInteger5(
-        &mut self,
-        keyIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        name: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
-        >,
-        serialNumber: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Math::BigInteger,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (keyIdentifier, name, serialNumber))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SubjectPublicKeyInfo1(
-        &mut self,
-        spki: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (spki))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SubjectPublicKeyInfo_GeneralNames_BigInteger2(
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         spki: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
@@ -273,6 +260,23 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (spki, name, serialNumber))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc5(
+        &mut self,
+        keyIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        name: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+        >,
+        serialNumber: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (keyIdentifier, name, serialNumber))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_AuthorityCertIssuer(

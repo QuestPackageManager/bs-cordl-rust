@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightTile {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _colorSetter: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
     >,
@@ -13,7 +13,7 @@ pub struct FloorLightTile {
         crate::Tweening::SongTimeTweeningManager,
     >,
     pub didFinish: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::Ice::FloorLightTile>,
+        quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
     >,
     pub _fadeInTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
     pub _fadeOutTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Ice+FloorLightTile")]
 impl std::ops::Deref for crate::Ice::FloorLightTile {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -134,7 +134,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightTile {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightTile_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut crate::Ice::FloorLightTile>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
+    >,
 }
 #[cfg(feature = "Ice+FloorLightTile+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -143,7 +145,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Ice+FloorLightTile+Pool")]
 impl std::ops::Deref for crate::Ice::FloorLightTile_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut crate::Ice::FloorLightTile>;
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

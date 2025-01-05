@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationReaderInterpreter {
-    __cordl_parent: crate::System::Xml::Serialization::XmlSerializationReader,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializationReader,
+    >,
     pub _typeMap: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Serialization::XmlMapping,
     >,
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
-    type Target = crate::System::Xml::Serialization::XmlSerializationReader;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializationReader,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,7 +46,9 @@ impl crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
     pub fn AddListValue(
         &mut self,
         listType: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
-        list: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
+        list: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
         index: i32,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         canCreateInstance: bool,
@@ -66,7 +72,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
             .invoke("CopyEnumerableList", (source, dest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance_Type1(
+    pub fn CreateInstance_Gc1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -491,7 +497,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
         > = __cordl_object.invoke("ReadRoot", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadRoot_XmlTypeMapping1(
+    pub fn ReadRoot_Gc1(
         &mut self,
         rootMap: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Serialization::XmlTypeMapping,
@@ -631,7 +637,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationReaderInterpreter_FixupCallbackInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _sri: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Serialization::XmlSerializationReaderInterpreter,
     >,
@@ -651,7 +657,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCallbackInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -727,7 +733,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCa
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationReaderInterpreter_ReaderCallbackInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _sri: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Serialization::XmlSerializationReaderInterpreter,
     >,
@@ -748,7 +754,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderCallbackInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

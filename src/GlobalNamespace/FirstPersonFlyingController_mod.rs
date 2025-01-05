@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FirstPersonFlyingController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _moveSensitivity: f32,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -11,7 +11,9 @@ pub struct FirstPersonFlyingController {
     pub _controller0: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
     pub _controller1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
     pub _controllerModels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _mouseLook: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MouseLook>,
     pub _trackedPoseDriver: quest_hook::libil2cpp::Gc<
@@ -29,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FirstPersonFlyingController")]
 impl std::ops::Deref for crate::GlobalNamespace::FirstPersonFlyingController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

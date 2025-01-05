@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VertexDisplacementFloatFxGroupEffectTarget {
-    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    >,
     pub _displacementRanges: crate::UnityEngine::Vector3,
     pub _xAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _yAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
@@ -24,7 +26,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "VertexDisplacementFloatFxGroupEffectTarget")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
-    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConvertUtils {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::ConvertUtils {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,22 +54,18 @@ impl crate::Newtonsoft::Json::Utilities::ConvertUtils {
     }
     pub fn CreateCastConverter(
         t: crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
-            *mut crate::System::Type,
-            *mut crate::System::Type,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateCastConverter", (t))?;
         Ok(__cordl_ret.into())
@@ -119,7 +115,7 @@ impl crate::Newtonsoft::Json::Utilities::ConvertUtils {
             .invoke("GetTypeCode", (t, isEnum))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetTypeCode_Type0(
+    pub fn GetTypeCode_Gc0(
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         crate::Newtonsoft::Json::Utilities::PrimitiveTypeCode,
@@ -191,7 +187,9 @@ impl crate::Newtonsoft::Json::Utilities::ConvertUtils {
         initialValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         targetType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryConvert", (initialValue, culture, targetType, value))?;
@@ -209,7 +207,9 @@ impl crate::Newtonsoft::Json::Utilities::ConvertUtils {
         initialValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         targetType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult,
     > {
@@ -229,7 +229,9 @@ impl crate::Newtonsoft::Json::Utilities::ConvertUtils {
     }
     pub fn VersionTryParse(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Version>,
+        result: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Version>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("VersionTryParse", (input, result))?;

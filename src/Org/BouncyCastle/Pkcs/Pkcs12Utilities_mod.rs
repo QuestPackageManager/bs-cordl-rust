@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs12Utilities {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Utilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Utilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs12Utilities {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::Pkcs12Utilities {
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Utilities")]
 impl crate::Org::BouncyCastle::Pkcs::Pkcs12Utilities {
-    pub fn ConvertToDefiniteLength_Il2CppArray0(
+    pub fn ConvertToDefiniteLength_Gc0(
         berPkcs12File: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -35,7 +35,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Utilities {
             .invoke("ConvertToDefiniteLength", (berPkcs12File))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertToDefiniteLength_Il2CppArray1(
+    pub fn ConvertToDefiniteLength_Gc1(
         berPkcs12File: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         passwd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPEndPoint {
-    __cordl_parent: crate::System::Net::EndPoint,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
     pub _address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     pub _port: i32,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+IPEndPoint")]
 impl std::ops::Deref for crate::System::Net::IPEndPoint {
-    type Target = crate::System::Net::EndPoint;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

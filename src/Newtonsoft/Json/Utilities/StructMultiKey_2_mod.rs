@@ -34,7 +34,7 @@ impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
 > crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2> {
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -106,13 +106,13 @@ impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2>,
     >,
 > for crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2> {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2>,
     > {
         todo!()
@@ -123,13 +123,13 @@ impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2>,
     >,
 > for crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2>,
     > {
         todo!()

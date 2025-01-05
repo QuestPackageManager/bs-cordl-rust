@@ -2,28 +2,24 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventDispatcher {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_ClickDetector: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ClickDetector,
     >,
     pub m_DispatchingStrategies: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IEventDispatchingStrategy,
         >,
     >,
     pub m_Queue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<
-            crate::UnityEngine::UIElements::EventDispatcher_EventRecord,
-        >,
+        crate::UnityEngine::UIElements::EventDispatcher_EventRecord,
     >,
     pub _pointerState_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::PointerDispatchState,
     >,
     pub m_GateCount: u32,
     pub m_DispatchContexts: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<
-            crate::UnityEngine::UIElements::EventDispatcher_DispatchContext,
-        >,
+        crate::UnityEngine::UIElements::EventDispatcher_DispatchContext,
     >,
     pub m_Immediate: bool,
     pub _processingEvents_k__BackingField: bool,
@@ -35,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventDispatcher {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,8 +76,8 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
     }
     pub fn CreateForRuntime(
         strategies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::IEventDispatchingStrategy,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -108,8 +104,8 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
     }
     pub fn New(
         strategies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::IEventDispatchingStrategy,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -154,8 +150,8 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
     pub fn _ctor(
         &mut self,
         strategies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::IEventDispatchingStrategy,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -214,9 +210,7 @@ for crate::UnityEngine::UIElements::EventDispatcher {
 pub struct EventDispatcher_DispatchContext {
     pub m_GateCount: u32,
     pub m_Queue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<
-            crate::UnityEngine::UIElements::EventDispatcher_EventRecord,
-        >,
+        crate::UnityEngine::UIElements::EventDispatcher_EventRecord,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]

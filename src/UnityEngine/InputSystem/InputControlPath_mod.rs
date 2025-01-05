@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputControlPath {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputControlPath {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +73,7 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
             .invoke("ControlLayoutMatchesPathComponent", (controlItem, parser))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindControlLayoutRecursive_Il2CppString0(
+    pub fn FindControlLayoutRecursive_ByRefMut_Gc0(
         parser: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputControlPath_PathParser,
         >,
@@ -87,7 +87,7 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
             .invoke("FindControlLayoutRecursive", (parser, layoutName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindControlLayoutRecursive_InputControlLayout1(
+    pub fn FindControlLayoutRecursive_ByRefMut_Gc1(
         parser: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputControlPath_PathParser,
         >,
@@ -230,15 +230,11 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
-            >,
+            crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
-            >,
+            crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (path))?;
         Ok(__cordl_ret.into())
     }
@@ -258,13 +254,13 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
             .invoke("StringMatches", (str, matchTo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToHumanReadableString_ByRefMut_ByRefMut_InputControlPath_HumanReadableStringOptions_InputControl1(
+    pub fn ToHumanReadableString_ByRefMut_ByRefMut_InputControlPath_HumanReadableStringOptions_Gc1(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         deviceLayoutName: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         controlPath: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         options: crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
@@ -280,7 +276,7 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToHumanReadableString_InputControlPath_HumanReadableStringOptions_InputControl0(
+    pub fn ToHumanReadableString_InputControlPath_HumanReadableStringOptions_Gc0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
@@ -293,7 +289,7 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
             .invoke("ToHumanReadableString", (path, options, control))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryFindChild_InputControl_Il2CppString_i32_0(
+    pub fn TryFindChild_Gc_Gc_i32_0(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
@@ -308,7 +304,7 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
             .invoke("TryFindChild", (control, path, indexInPath))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryFindChild_InputControl_Il2CppString_i32_1<TControl>(
+    pub fn TryFindChild_Gc_Gc_i32_1<TControl>(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
@@ -323,7 +319,7 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
             .invoke("TryFindChild", (control, path, indexInPath))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryFindControl_InputControl_Il2CppString_i32_0(
+    pub fn TryFindControl_Gc_Gc_i32_0(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
@@ -338,7 +334,7 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
             .invoke("TryFindControl", (control, path, indexInPath))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryFindControl_InputControl_Il2CppString_i32_1<TControl>(
+    pub fn TryFindControl_Gc_Gc_i32_1<TControl>(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
@@ -360,7 +356,7 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         matches: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputControlList_1<
-                *mut crate::UnityEngine::InputSystem::InputControl,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
             >,
         >,
         indexInPath: i32,
@@ -378,13 +374,13 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputControl,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputControl,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryFindControls", (control, path, indexInPath))?;
@@ -434,11 +430,15 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryGetDeviceUsages", (path))?;
         Ok(__cordl_ret.into())
@@ -518,17 +518,17 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToHumanReadableString_Il2CppString_Il2CppString_ByRefMut_ByRefMut_InputControlPath_HumanReadableStringOptions0(
+    pub fn ToHumanReadableString_Gc_Gc_ByRefMut_ByRefMut_InputControlPath_HumanReadableStringOptions0(
         &mut self,
         parentLayoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentControlPath: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         >,
         referencedLayoutName: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         controlPath: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         options: crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions,
     ) -> quest_hook::libil2cpp::Result<
@@ -610,15 +610,11 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_usages", ())?;
         Ok(__cordl_ret.into())
     }

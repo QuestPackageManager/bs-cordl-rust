@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DetailPrototype {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Prototype: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_PrototypeTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub m_HealthyColor: crate::UnityEngine::Color,
@@ -30,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+DetailPrototype")]
 impl std::ops::Deref for crate::UnityEngine::DetailPrototype {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,17 +43,7 @@ impl std::ops::DerefMut for crate::UnityEngine::DetailPrototype {
 }
 #[cfg(feature = "UnityEngine+DetailPrototype")]
 impl crate::UnityEngine::DetailPrototype {
-    pub fn Equals_DetailPrototype1(
-        &mut self,
-        other: quest_hook::libil2cpp::Gc<crate::UnityEngine::DetailPrototype>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -61,6 +51,16 @@ impl crate::UnityEngine::DetailPrototype {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Gc1(
+        &mut self,
+        other: quest_hook::libil2cpp::Gc<crate::UnityEngine::DetailPrototype>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {

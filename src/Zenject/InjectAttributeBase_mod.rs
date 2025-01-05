@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InjectAttributeBase {
-    __cordl_parent: crate::Zenject::Internal::PreserveAttribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Zenject::Internal::PreserveAttribute,
+    >,
     pub _Optional_k__BackingField: bool,
     pub _Id_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InjectAttributeBase")]
 impl std::ops::Deref for crate::Zenject::InjectAttributeBase {
-    type Target = crate::Zenject::Internal::PreserveAttribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::Internal::PreserveAttribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

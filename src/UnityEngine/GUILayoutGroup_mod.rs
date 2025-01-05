@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUILayoutGroup {
-    __cordl_parent: crate::UnityEngine::GUILayoutEntry,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutEntry>,
     pub entries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::GUILayoutEntry,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutEntry>,
     >,
     pub isVertical: bool,
     pub resetCoords: bool,
@@ -35,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+GUILayoutGroup")]
 impl std::ops::Deref for crate::UnityEngine::GUILayoutGroup {
-    type Target = crate::UnityEngine::GUILayoutEntry;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutEntry>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,7 +60,9 @@ impl crate::UnityEngine::GUILayoutGroup {
     pub fn ApplyOptions(
         &mut self,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -37,7 +37,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
         &mut self,
         devices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         >,
         deviceCount: i32,
@@ -52,7 +52,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
     pub fn ComputeSizeOfSingleStateBuffer(
         devices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         >,
         deviceCount: i32,
@@ -110,7 +110,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
         &mut self,
         devices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         >,
         deviceCount: i32,
@@ -127,7 +127,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
         newBuffer: crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers,
         devices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         >,
         deviceCount: i32,
@@ -144,7 +144,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
         newBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         devices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         >,
         deviceCount: i32,
@@ -168,7 +168,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
     pub fn SetUpDeviceToBufferMappings(
         deviceCount: i32,
         bufferPtr: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         sizePerBuffer: u32,
         mappingTableSizePerBuffer: u32,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _UndefinedSchemaIdHandling_k__BackingField: crate::Newtonsoft::Json::Schema::UndefinedSchemaIdHandling,
     pub _contractResolver: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Serialization::IContractResolver,
@@ -11,8 +11,8 @@ pub struct JsonSchemaGenerator {
         crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
     >,
     pub _stack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
         >,
     >,
     pub _currentSchema: quest_hook::libil2cpp::Gc<
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -98,7 +98,21 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             .invoke("GenerateObjectSchema", (_cordl_type, contract))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_JsonSchemaResolver1(
+    pub fn Generate_Gc0(
+        &mut self,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchema,
+        > = __cordl_object.invoke("Generate", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Generate_Gc1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         resolver: quest_hook::libil2cpp::Gc<
@@ -115,7 +129,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         > = __cordl_object.invoke("Generate", (_cordl_type, resolver))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_JsonSchemaResolver__cordl_bool3(
+    pub fn Generate_Gc__cordl_bool3(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         resolver: quest_hook::libil2cpp::Gc<
@@ -132,20 +146,6 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             crate::Newtonsoft::Json::Schema::JsonSchema,
         > = __cordl_object
             .invoke("Generate", (_cordl_type, resolver, rootSchemaNullable))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Generate_Type0(
-        &mut self,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Schema::JsonSchema,
-        > = __cordl_object.invoke("Generate", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
     pub fn Generate__cordl_bool2(
@@ -363,7 +363,7 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaGenerator_TypeSchema {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _Schema_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Schema::JsonSchema,
@@ -378,7 +378,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UserDataStore {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Oculus+Platform+UserDataStore")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+UserDataStore")]
 impl std::ops::Deref for crate::Oculus::Platform::UserDataStore {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,14 +29,14 @@ impl crate::Oculus::Platform::UserDataStore {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PrivateDeleteEntryByKey", (userID, key))?;
@@ -46,20 +46,16 @@ impl crate::Oculus::Platform::UserDataStore {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::System::Collections::Generic::Dictionary_2<
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::System::Collections::Generic::Dictionary_2<
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PrivateGetEntries", (userID))?;
@@ -70,20 +66,16 @@ impl crate::Oculus::Platform::UserDataStore {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::System::Collections::Generic::Dictionary_2<
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::System::Collections::Generic::Dictionary_2<
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PrivateGetEntryByKey", (userID, key))?;
@@ -95,14 +87,14 @@ impl crate::Oculus::Platform::UserDataStore {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PrivateWriteEntry", (userID, key, value))?;
@@ -113,14 +105,14 @@ impl crate::Oculus::Platform::UserDataStore {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PublicDeleteEntryByKey", (userID, key))?;
@@ -130,20 +122,16 @@ impl crate::Oculus::Platform::UserDataStore {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::System::Collections::Generic::Dictionary_2<
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::System::Collections::Generic::Dictionary_2<
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PublicGetEntries", (userID))?;
@@ -154,20 +142,16 @@ impl crate::Oculus::Platform::UserDataStore {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::System::Collections::Generic::Dictionary_2<
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::System::Collections::Generic::Dictionary_2<
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PublicGetEntryByKey", (userID, key))?;
@@ -179,14 +163,14 @@ impl crate::Oculus::Platform::UserDataStore {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PublicWriteEntry", (userID, key, value))?;

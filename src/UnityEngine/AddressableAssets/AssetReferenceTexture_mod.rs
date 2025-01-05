@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetReferenceTexture {
-    __cordl_parent: crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut crate::UnityEngine::Texture,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     >,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceTexture")]
@@ -14,8 +14,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceTexture")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AssetReferenceTexture {
-    type Target = crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut crate::UnityEngine::Texture,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

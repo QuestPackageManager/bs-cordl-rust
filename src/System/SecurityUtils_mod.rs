@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecurityUtils {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+SecurityUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+SecurityUtils")]
 impl std::ops::Deref for crate::System::SecurityUtils {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +56,9 @@ impl crate::System::SecurityUtils {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -70,10 +72,14 @@ impl crate::System::SecurityUtils {
     pub fn SecureConstructorInvoke_BindingFlags1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         argTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         allowNonPublic: bool,
         extraFlags: crate::System::Reflection::BindingFlags,
@@ -89,13 +95,17 @@ impl crate::System::SecurityUtils {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SecureConstructorInvoke_Type_Il2CppArray_Il2CppArray__cordl_bool0(
+    pub fn SecureConstructorInvoke_Gc_Gc_Gc__cordl_bool0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         argTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         allowNonPublic: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -110,10 +120,23 @@ impl crate::System::SecurityUtils {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SecureCreateInstance_Il2CppArray2(
+    pub fn SecureCreateInstance_Gc0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SecureCreateInstance", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SecureCreateInstance_Gc2(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -124,10 +147,12 @@ impl crate::System::SecurityUtils {
             .invoke("SecureCreateInstance", (_cordl_type, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SecureCreateInstance_Il2CppArray__cordl_bool1(
+    pub fn SecureCreateInstance_Gc__cordl_bool1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         allowNonPublic: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -137,17 +162,6 @@ impl crate::System::SecurityUtils {
             quest_hook::libil2cpp::Il2CppObject,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SecureCreateInstance", (_cordl_type, args, allowNonPublic))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SecureCreateInstance_Type0(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SecureCreateInstance", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
 }

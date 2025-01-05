@@ -48,14 +48,16 @@ impl crate::LufsMetering::FilteringJob {
     }
 }
 #[cfg(feature = "LufsMetering+FilteringJob")]
-impl AsRef<crate::Unity::Jobs::IJob> for crate::LufsMetering::FilteringJob {
-    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
+for crate::LufsMetering::FilteringJob {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }
 #[cfg(feature = "LufsMetering+FilteringJob")]
-impl AsMut<crate::Unity::Jobs::IJob> for crate::LufsMetering::FilteringJob {
-    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
+for crate::LufsMetering::FilteringJob {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }

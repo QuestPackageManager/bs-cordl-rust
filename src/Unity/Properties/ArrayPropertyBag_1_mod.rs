@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayPropertyBag_1<TElement: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Unity::Properties::IndexedCollectionPropertyBag_2<
-        *mut quest_hook::libil2cpp::Il2CppArray<TElement>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TElement>>,
         TElement,
     >,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
@@ -16,8 +16,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Unity+Properties+ArrayPropertyBag_1")]
 impl<TElement: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Properties::ArrayPropertyBag_1<TElement> {
-    type Target = crate::Unity::Properties::IndexedCollectionPropertyBag_2<
-        *mut quest_hook::libil2cpp::Il2CppArray<TElement>,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TElement>>,
         TElement,
     >;
     fn deref(&self) -> &Self::Target {

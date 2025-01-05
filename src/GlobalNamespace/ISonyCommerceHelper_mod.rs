@@ -38,18 +38,14 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
-            >,
+            crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
-            >,
+            crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
         > = __cordl_object
             .invoke("DisplayCategoryBrowseDialogAsync", (categoryLabel, token))?;
         Ok(__cordl_ret.into())
@@ -60,18 +56,14 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
-            >,
+            crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
-            >,
+            crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
         > = __cordl_object
             .invoke("DisplayProductBrowseDialogAsync", (productLabel, token))?;
         Ok(__cordl_ret.into())
@@ -81,18 +73,14 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
-            >,
+            crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
-            >,
+            crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
         > = __cordl_object
             .invoke("GetAdditionalContentEntitlementsAsync", (cancellationToken))?;
         Ok(__cordl_ret.into())
@@ -118,7 +106,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ISonyCommerce
 pub struct ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     pub result: crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult,
     pub entitlementsLabels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]

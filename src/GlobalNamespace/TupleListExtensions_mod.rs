@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TupleListExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "TupleListExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TupleListExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::TupleListExtensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,12 +24,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TupleListExtensions {
 }
 #[cfg(feature = "TupleListExtensions")]
 impl crate::GlobalNamespace::TupleListExtensions {
-    pub fn Add_IList_1_T1_T2_0<T1, T2>(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::System::Tuple_2<T1, T2>,
-            >,
-        >,
+    pub fn Add_Gc_T1_T2_0<T1, T2>(
+        list: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T1, T2>>,
         item1: T1,
         item2: T2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -44,11 +40,7 @@ impl crate::GlobalNamespace::TupleListExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn Add_T3_1<T1, T2, T3>(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::System::Tuple_3<T1, T2, T3>,
-            >,
-        >,
+        list: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T1, T2, T3>>,
         item1: T1,
         item2: T2,
         item3: T3,
@@ -66,11 +58,7 @@ impl crate::GlobalNamespace::TupleListExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn Add_T3_T4_2<T1, T2, T3, T4>(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::System::Tuple_4<T1, T2, T3, T4>,
-            >,
-        >,
+        list: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T1, T2, T3, T4>>,
         item1: T1,
         item2: T2,
         item3: T3,

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnTreeViewController {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseTreeViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseTreeViewController,
+    >,
     pub m_ColumnController: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::MultiColumnController,
     >,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeViewController")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MultiColumnTreeViewController {
-    type Target = crate::UnityEngine::UIElements::BaseTreeViewController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseTreeViewController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -96,8 +100,8 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
             crate::UnityEngine::UIElements::SortColumnDescriptions,
         >,
         sortedColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::SortColumnDescription,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -138,8 +142,8 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
             crate::UnityEngine::UIElements::SortColumnDescriptions,
         >,
         sortedColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::SortColumnDescription,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

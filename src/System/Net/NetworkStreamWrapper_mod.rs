@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkStreamWrapper {
-    __cordl_parent: crate::System::IO::Stream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _client: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,
     pub _networkStream: quest_hook::libil2cpp::Gc<
         crate::System::Net::Sockets::NetworkStream,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+NetworkStreamWrapper")]
 impl std::ops::Deref for crate::System::Net::NetworkStreamWrapper {
-    type Target = crate::System::IO::Stream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -167,15 +167,11 @@ impl crate::System::Net::NetworkStreamWrapper {
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
             .invoke("ReadAsync", (buffer, offset, count, cancellationToken))?;
         Ok(__cordl_ret.into())
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiscriminatedUnionConverter {
-    __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
-    type Target = crate::Newtonsoft::Json::JsonConverter;
+    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -125,13 +125,13 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiscriminatedUnionConverter_Union {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub TagReader: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Utilities::FSharpFunction,
     >,
     pub Cases: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
         >,
     >,
 }
@@ -144,7 +144,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -163,8 +163,8 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
             crate::Newtonsoft::Json::Utilities::FSharpFunction,
         >,
         cases: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -180,8 +180,8 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
             crate::Newtonsoft::Json::Utilities::FSharpFunction,
         >,
         cases: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -207,11 +207,13 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiscriminatedUnionConverter_UnionCase {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Tag: i32,
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Fields: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::PropertyInfo>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        >,
     >,
     pub FieldReader: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Utilities::FSharpFunction,
@@ -229,7 +231,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -248,7 +250,7 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase 
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fields: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::PropertyInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
             >,
         >,
         fieldReader: quest_hook::libil2cpp::Gc<
@@ -270,7 +272,7 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase 
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fields: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::PropertyInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
             >,
         >,
         fieldReader: quest_hook::libil2cpp::Gc<

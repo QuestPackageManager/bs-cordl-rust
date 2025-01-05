@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CoreGameHUDController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _songProgressPanelGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _relativeScoreGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _immediateRankGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CoreGameHUDController")]
 impl std::ops::Deref for crate::GlobalNamespace::CoreGameHUDController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -135,7 +135,7 @@ for crate::GlobalNamespace::CoreGameHUDController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CoreGameHUDController_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub hide: bool,
     pub showEnergyPanel: bool,
     pub advancedHUD: bool,
@@ -147,7 +147,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CoreGameHUDController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::CoreGameHUDController_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -68,9 +68,9 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ContinueWith_Action_1_0(
+    pub fn ContinueWith_Gc0(
         &mut self,
-        onCompleted: quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>,
+        onCompleted: quest_hook::libil2cpp::Gc<TResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -83,9 +83,9 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ContinueWith_Action_2_T1<T>(
+    pub fn ContinueWith_T1<T>(
         &mut self,
-        onCompleted: quest_hook::libil2cpp::Gc<crate::System::Action_2<TResult, T>>,
+        onCompleted: quest_hook::libil2cpp::Gc<TResult, T>,
         state: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -115,7 +115,7 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -204,9 +204,7 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
     }
     pub fn SetIncrementalResultCallback<TIncrementalResult>(
         &mut self,
-        onIncrementalResultAvailable: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<TIncrementalResult>,
-        >,
+        onIncrementalResultAvailable: quest_hook::libil2cpp::Gc<TIncrementalResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -380,38 +378,42 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
     }
 }
 #[cfg(feature = "OVRTask_1")]
-impl<TResult: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
-for crate::GlobalNamespace::OVRTask_1<TResult> {
-    fn as_ref(&self) -> &crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRTask_1")]
-impl<TResult: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
-for crate::GlobalNamespace::OVRTask_1<TResult> {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRTask_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTask_1<TResult>>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTask_1<TResult>>>
 for crate::GlobalNamespace::OVRTask_1<TResult> {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRTask_1<TResult>> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTask_1<TResult>> {
         todo!()
     }
 }
 #[cfg(feature = "OVRTask_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTask_1<TResult>>>
+> AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTask_1<TResult>>>
 for crate::GlobalNamespace::OVRTask_1<TResult> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRTask_1<TResult>> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTask_1<TResult>> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTask_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::GlobalNamespace::OVRTask_1<TResult> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTask_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::GlobalNamespace::OVRTask_1<TResult> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
@@ -500,20 +502,32 @@ impl<
 #[cfg(feature = "OVRTask_1+Awaiter")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Runtime::CompilerServices::INotifyCompletion>
-for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
-    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::INotifyCompletion {
+> AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::INotifyCompletion,
+    >,
+> for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::INotifyCompletion,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "OVRTask_1+Awaiter")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Runtime::CompilerServices::INotifyCompletion>
-for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
+> AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::INotifyCompletion,
+    >,
+> for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::CompilerServices::INotifyCompletion {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::INotifyCompletion,
+    > {
         todo!()
     }
 }
@@ -521,7 +535,7 @@ for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct OVRTask_1_Callback<TResult: quest_hook::libil2cpp::Type> {
-    pub _delegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>,
+    pub _delegate: quest_hook::libil2cpp::Gc<TResult>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "OVRTask_1+Callback")]
@@ -546,7 +560,7 @@ impl<
 > crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
     pub fn Add(
         taskId: crate::System::Guid,
-        delegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>,
+        delegate: quest_hook::libil2cpp::Gc<TResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -603,7 +617,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        delegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>,
+        delegate: quest_hook::libil2cpp::Gc<TResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -621,7 +635,7 @@ impl<
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTask_1_CallbackInvoker<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "OVRTask_1+CallbackInvoker")]
@@ -632,7 +646,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRTask_1+CallbackInvoker")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::OVRTask_1_CallbackInvoker<TResult> {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -744,7 +758,7 @@ for crate::GlobalNamespace::OVRTask_1_CallbackInvoker<TResult> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTask_1_CallbackRemover<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "OVRTask_1+CallbackRemover")]
@@ -755,7 +769,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRTask_1+CallbackRemover")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::OVRTask_1_CallbackRemover<TResult> {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -867,7 +881,7 @@ pub struct OVRTask_1_CallbackWithState_1<
     T: quest_hook::libil2cpp::Type,
 > {
     pub _data: T,
-    pub _delegate: quest_hook::libil2cpp::Gc<crate::System::Action_2<TResult, T>>,
+    pub _delegate: quest_hook::libil2cpp::Gc<TResult, T>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -898,7 +912,7 @@ impl<
     pub fn Add(
         taskId: crate::System::Guid,
         data: T,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_2<TResult, T>>,
+        callback: quest_hook::libil2cpp::Gc<TResult, T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -966,7 +980,7 @@ impl<
     pub fn _ctor(
         &mut self,
         data: T,
-        delegate: quest_hook::libil2cpp::Gc<crate::System::Action_2<TResult, T>>,
+        delegate: quest_hook::libil2cpp::Gc<TResult, T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -989,7 +1003,7 @@ pub struct OVRTask_1_IncrementalResultSubscriber_1<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -1005,7 +1019,7 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<TResult, T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1065,7 +1079,7 @@ impl<
     }
     pub fn Set(
         taskId: crate::System::Guid,
-        subscriber: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        subscriber: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1095,7 +1109,7 @@ for crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<TResult, T> 
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTask_1_InternalDataRemover<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "OVRTask_1+InternalDataRemover")]
@@ -1106,7 +1120,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRTask_1+InternalDataRemover")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::OVRTask_1_InternalDataRemover<TResult> {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1217,7 +1231,7 @@ pub struct OVRTask_1_InternalData_1<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -1231,7 +1245,7 @@ impl<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::GlobalNamespace::OVRTask_1_InternalData_1<TResult, T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

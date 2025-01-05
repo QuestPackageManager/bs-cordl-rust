@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RSACryptoServiceProvider {
-    __cordl_parent: crate::System::Security::Cryptography::RSA,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::RSA,
+    >,
     pub store: quest_hook::libil2cpp::Gc<
         crate::Mono::Security::Cryptography::KeyPairPersistence,
     >,
@@ -21,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+RSACryptoServiceProvider")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RSACryptoServiceProvider {
-    type Target = crate::System::Security::Cryptography::RSA;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +37,7 @@ for crate::System::Security::Cryptography::RSACryptoServiceProvider {
 }
 #[cfg(feature = "System+Security+Cryptography+RSACryptoServiceProvider")]
 impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
-    pub fn Common_CspParameters1(
+    pub fn Common_Gc1(
         &mut self,
         p: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::CspParameters,
@@ -140,7 +142,7 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_CspParameters1(
+    pub fn New_Gc1(
         parameters: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::CspParameters,
         >,
@@ -160,7 +162,7 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
             .invoke_void(".ctor", (dwKeySize))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_CspParameters3(
+    pub fn New_i32_Gc3(
         dwKeySize: i32,
         parameters: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::CspParameters,
@@ -207,7 +209,7 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_CspParameters1(
+    pub fn _ctor_Gc1(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::CspParameters,
@@ -231,7 +233,7 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
             .invoke(".ctor", (dwKeySize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_CspParameters3(
+    pub fn _ctor_i32_Gc3(
         &mut self,
         dwKeySize: i32,
         parameters: quest_hook::libil2cpp::Gc<

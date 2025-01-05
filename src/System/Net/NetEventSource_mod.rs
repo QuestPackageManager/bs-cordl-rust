@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetEventSource {
-    __cordl_parent: crate::System::Diagnostics::Tracing::EventSource,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Diagnostics::Tracing::EventSource,
+    >,
 }
 #[cfg(feature = "System+Net+NetEventSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+NetEventSource")]
 impl std::ops::Deref for crate::System::Net::NetEventSource {
-    type Target = crate::System::Diagnostics::Tracing::EventSource;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Diagnostics::Tracing::EventSource,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,16 +30,7 @@ impl std::ops::DerefMut for crate::System::Net::NetEventSource {
 impl crate::System::Net::NetEventSource {
     #[cfg(feature = "System+Net+NetEventSource+Keywords")]
     pub type Keywords = crate::System::Net::NetEventSource_Keywords;
-    pub fn Associate_Il2CppObject_Il2CppObject0(
-        first: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        second: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Associate", (first, second, memberName))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Associate_Il2CppString_Il2CppString_Il2CppString1(
+    pub fn Associate_Gc1(
         &mut self,
         thisOrContextObject: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -49,6 +44,15 @@ impl crate::System::Net::NetEventSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Associate", (thisOrContextObject, memberName, first, second))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Associate_Gc_Gc_Gc0(
+        first: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        second: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Associate", (first, second, memberName))?;
         Ok(__cordl_ret.into())
     }
     pub fn CriticalFailure(
@@ -66,18 +70,7 @@ impl crate::System::Net::NetEventSource {
             .invoke("CriticalFailure", (thisOrContextObject, memberName, message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Enter_Il2CppObject_FormattableString_Il2CppString0(
-        thisOrContextObject: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        >,
-        formattableString: quest_hook::libil2cpp::Gc<crate::System::FormattableString>,
-        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Enter", (thisOrContextObject, formattableString, memberName))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Enter_Il2CppObject_Il2CppObject_Il2CppObject_Il2CppObject_Il2CppString2(
+    pub fn Enter_Gc_Gc2(
         thisOrContextObject: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
@@ -90,7 +83,18 @@ impl crate::System::Net::NetEventSource {
             .invoke("Enter", (thisOrContextObject, arg0, arg1, arg2, memberName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Enter_Il2CppObject_Il2CppObject_Il2CppString1(
+    pub fn Enter_Gc_Gc_Gc0(
+        thisOrContextObject: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        formattableString: quest_hook::libil2cpp::Gc<crate::System::FormattableString>,
+        memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Enter", (thisOrContextObject, formattableString, memberName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Enter_Gc_Gc_Gc1(
         thisOrContextObject: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
@@ -101,7 +105,7 @@ impl crate::System::Net::NetEventSource {
             .invoke("Enter", (thisOrContextObject, arg0, memberName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Enter_Il2CppString_Il2CppString_Il2CppString3(
+    pub fn Enter_Gc_Gc_Gc3(
         &mut self,
         thisOrContextObject: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -142,7 +146,7 @@ impl crate::System::Net::NetEventSource {
             .invoke("ErrorMessage", (thisOrContextObject, memberName, message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Exit_Il2CppObject_FormattableString0(
+    pub fn Exit_Gc_Gc_Gc0(
         thisOrContextObject: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
@@ -153,7 +157,7 @@ impl crate::System::Net::NetEventSource {
             .invoke("Exit", (thisOrContextObject, formattableString, memberName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Exit_Il2CppObject_Il2CppObject1(
+    pub fn Exit_Gc_Gc_Gc1(
         thisOrContextObject: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
@@ -164,7 +168,7 @@ impl crate::System::Net::NetEventSource {
             .invoke("Exit", (thisOrContextObject, arg0, memberName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Exit_Il2CppString_Il2CppString2(
+    pub fn Exit_Gc_Gc_Gc2(
         &mut self,
         thisOrContextObject: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -190,17 +194,7 @@ impl crate::System::Net::NetEventSource {
             .invoke("Fail", (thisOrContextObject, message, memberName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Format_FormattableString1(
-        s: quest_hook::libil2cpp::Gc<crate::System::FormattableString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Format", (s))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Format_Il2CppObject0(
+    pub fn Format_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -208,6 +202,16 @@ impl crate::System::Net::NetEventSource {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Format", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_Gc1(
+        s: quest_hook::libil2cpp::Gc<crate::System::FormattableString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Format", (s))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(
@@ -227,7 +231,7 @@ impl crate::System::Net::NetEventSource {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("IdOf", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Info_Il2CppObject_FormattableString0(
+    pub fn Info_Gc_Gc_Gc0(
         thisOrContextObject: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
@@ -238,7 +242,7 @@ impl crate::System::Net::NetEventSource {
             .invoke("Info", (thisOrContextObject, formattableString, memberName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Info_Il2CppObject_Il2CppObject1(
+    pub fn Info_Gc_Gc_Gc1(
         thisOrContextObject: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
@@ -249,7 +253,7 @@ impl crate::System::Net::NetEventSource {
             .invoke("Info", (thisOrContextObject, message, memberName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Info_Il2CppString_Il2CppString2(
+    pub fn Info_Gc_Gc_Gc2(
         &mut self,
         thisOrContextObject: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -315,7 +319,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::NetEventSource {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetEventSource_Keywords {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+NetEventSource+Keywords")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -324,7 +328,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+NetEventSource+Keywords")]
 impl std::ops::Deref for crate::System::Net::NetEventSource_Keywords {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

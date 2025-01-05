@@ -31,18 +31,7 @@ impl crate::System::Runtime::InteropServices::OSPlatform {
             .invoke("Create", (osPlatform))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject2(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Il2CppString1(
+    pub fn Equals_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -50,6 +39,17 @@ impl crate::System::Runtime::InteropServices::OSPlatform {
             self,
             "Equals",
             (other),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Gc2(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -125,11 +125,11 @@ impl crate::System::Runtime::InteropServices::OSPlatform {
 }
 #[cfg(feature = "System+Runtime+InteropServices+OSPlatform")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::System::Runtime::InteropServices::OSPlatform>,
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::InteropServices::OSPlatform>,
 > for crate::System::Runtime::InteropServices::OSPlatform {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::System::Runtime::InteropServices::OSPlatform,
     > {
         todo!()
@@ -137,11 +137,11 @@ impl AsRef<
 }
 #[cfg(feature = "System+Runtime+InteropServices+OSPlatform")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::System::Runtime::InteropServices::OSPlatform>,
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::InteropServices::OSPlatform>,
 > for crate::System::Runtime::InteropServices::OSPlatform {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::System::Runtime::InteropServices::OSPlatform,
     > {
         todo!()

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalLeaderboardsAsyncLoader {
-    __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::BGLib::AppFlow::Initialization::AsyncInstaller,
+    >,
 }
 #[cfg(feature = "LocalLeaderboardsAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LocalLeaderboardsAsyncLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
-    type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::BGLib::AppFlow::Initialization::AsyncInstaller,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

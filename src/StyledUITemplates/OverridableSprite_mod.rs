@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OverridableSprite {
-    __cordl_parent: crate::StyledUITemplates::OverridableData_1<
-        *mut crate::UnityEngine::Sprite,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     >,
 }
 #[cfg(feature = "StyledUITemplates+OverridableSprite")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StyledUITemplates+OverridableSprite")]
 impl std::ops::Deref for crate::StyledUITemplates::OverridableSprite {
-    type Target = crate::StyledUITemplates::OverridableData_1<
-        *mut crate::UnityEngine::Sprite,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

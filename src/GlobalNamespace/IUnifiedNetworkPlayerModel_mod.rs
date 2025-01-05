@@ -90,18 +90,14 @@ impl crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::INetworkPlayer,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::INetworkPlayer,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
         > = __cordl_object.invoke("get_publicServers", ())?;
         Ok(__cordl_ret.into())
     }
@@ -141,16 +137,20 @@ for crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
     }
 }
 #[cfg(feature = "IUnifiedNetworkPlayerModel")]
-impl AsRef<crate::GlobalNamespace::INetworkPlayerModel>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel>>
 for crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
-    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPlayerModel {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "IUnifiedNetworkPlayerModel")]
-impl AsMut<crate::GlobalNamespace::INetworkPlayerModel>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel>>
 for crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkPlayerModel {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel> {
         unsafe { std::mem::transmute(self) }
     }
 }

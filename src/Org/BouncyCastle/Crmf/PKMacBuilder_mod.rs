@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKMacBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub owf: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
     >,
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crmf+PKMacBuilder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crmf::PKMacBuilder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,7 +91,50 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_AlgorithmIdentifier_i32_AlgorithmIdentifier_IPKMacPrimitivesProvider4(
+    pub fn New_Gc1(
+        provider: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (provider))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc_Gc2(
+        provider: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+        >,
+        digestAlgorithmIdentifier: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+        macAlgorithmIdentifier: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (provider, digestAlgorithmIdentifier, macAlgorithmIdentifier),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_i32_3(
+        provider: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+        >,
+        maxIterations: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (provider, maxIterations))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_i32_Gc_Gc4(
         digestAlgorithmIdentifier: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
@@ -115,49 +158,6 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
                     provider,
                 ),
             )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_IPKMacPrimitivesProvider1(
-        provider: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (provider))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_IPKMacPrimitivesProvider_AlgorithmIdentifier_AlgorithmIdentifier2(
-        provider: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
-        >,
-        digestAlgorithmIdentifier: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        >,
-        macAlgorithmIdentifier: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (provider, digestAlgorithmIdentifier, macAlgorithmIdentifier),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_IPKMacPrimitivesProvider_i32_3(
-        provider: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
-        >,
-        maxIterations: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (provider, maxIterations))?;
         Ok(__cordl_object.into())
     }
     pub fn SetIterationCount(
@@ -230,7 +230,56 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AlgorithmIdentifier_i32_AlgorithmIdentifier_IPKMacPrimitivesProvider4(
+    pub fn _ctor_Gc1(
+        &mut self,
+        provider: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc_Gc2(
+        &mut self,
+        provider: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+        >,
+        digestAlgorithmIdentifier: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+        macAlgorithmIdentifier: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (provider, digestAlgorithmIdentifier, macAlgorithmIdentifier),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_i32_3(
+        &mut self,
+        provider: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+        >,
+        maxIterations: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (provider, maxIterations))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_i32_Gc_Gc4(
         &mut self,
         digestAlgorithmIdentifier: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -256,55 +305,6 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
                     provider,
                 ),
             )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_IPKMacPrimitivesProvider1(
-        &mut self,
-        provider: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (provider))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_IPKMacPrimitivesProvider_AlgorithmIdentifier_AlgorithmIdentifier2(
-        &mut self,
-        provider: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
-        >,
-        digestAlgorithmIdentifier: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        >,
-        macAlgorithmIdentifier: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (provider, digestAlgorithmIdentifier, macAlgorithmIdentifier),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_IPKMacPrimitivesProvider_i32_3(
-        &mut self,
-        provider: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
-        >,
-        maxIterations: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (provider, maxIterations))?;
         Ok(__cordl_ret.into())
     }
 }

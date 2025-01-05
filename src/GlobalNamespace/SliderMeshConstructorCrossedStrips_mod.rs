@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderMeshConstructorCrossedStrips {
-    __cordl_parent: crate::GlobalNamespace::SliderMeshConstructor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderMeshConstructor,
+    >,
     pub _triangleMap: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "SliderMeshConstructorCrossedStrips")]
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderMeshConstructorCrossedStrips")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
-    type Target = crate::GlobalNamespace::SliderMeshConstructor;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderMeshConstructor,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

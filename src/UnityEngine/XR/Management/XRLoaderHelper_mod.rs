@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRLoaderHelper {
-    __cordl_parent: crate::UnityEngine::XR::Management::XRLoader,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::XR::Management::XRLoader,
+    >,
     pub m_SubsystemInstanceMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Type,
-            *mut crate::UnityEngine::ISubsystem,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ISubsystem>,
     >,
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRLoaderHelper")]
@@ -17,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+XR+Management+XRLoaderHelper")]
 impl std::ops::Deref for crate::UnityEngine::XR::Management::XRLoaderHelper {
-    type Target = crate::UnityEngine::XR::Management::XRLoader;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::XR::Management::XRLoader,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,9 +34,7 @@ impl std::ops::DerefMut for crate::UnityEngine::XR::Management::XRLoaderHelper {
 impl crate::UnityEngine::XR::Management::XRLoaderHelper {
     pub fn CreateIntegratedSubsystem<TDescriptor, TSubsystem>(
         &mut self,
-        descriptors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TDescriptor>,
-        >,
+        descriptors: quest_hook::libil2cpp::Gc<TDescriptor>,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -52,9 +52,7 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
     }
     pub fn CreateStandaloneSubsystem<TDescriptor, TSubsystem>(
         &mut self,
-        descriptors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TDescriptor>,
-        >,
+        descriptors: quest_hook::libil2cpp::Gc<TDescriptor>,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -72,9 +70,7 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
     }
     pub fn CreateSubsystem<TDescriptor, TSubsystem>(
         &mut self,
-        descriptors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TDescriptor>,
-        >,
+        descriptors: quest_hook::libil2cpp::Gc<TDescriptor>,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

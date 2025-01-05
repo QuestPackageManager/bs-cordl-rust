@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SetIndexBinder {
-    __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Dynamic::DynamicMetaObjectBinder,
+    >,
 }
 #[cfg(feature = "System+Dynamic+SetIndexBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+SetIndexBinder")]
 impl std::ops::Deref for crate::System::Dynamic::SetIndexBinder {
-    type Target = crate::System::Dynamic::DynamicMetaObjectBinder;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Dynamic::DynamicMetaObjectBinder,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +33,7 @@ impl crate::System::Dynamic::SetIndexBinder {
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -43,12 +47,12 @@ impl crate::System::Dynamic::SetIndexBinder {
         > = __cordl_object.invoke("Bind", (target, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackSetIndex_DynamicMetaObject1(
+    pub fn FallbackSetIndex_Gc1(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         indexes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
         value: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
@@ -67,12 +71,12 @@ impl crate::System::Dynamic::SetIndexBinder {
             .invoke("FallbackSetIndex", (target, indexes, value, errorSuggestion))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackSetIndex_DynamicMetaObject_Il2CppArray_DynamicMetaObject0(
+    pub fn FallbackSetIndex_Gc_Gc_Gc0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         indexes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
         value: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,

@@ -2,23 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemEnumerable_1<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _enumerator: quest_hook::libil2cpp::Gc<
-        crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<
-            TResult,
-        >,
-    >,
-    pub _transform: quest_hook::libil2cpp::Gc<
-        crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _enumerator: quest_hook::libil2cpp::Gc<TResult>,
+    pub _transform: quest_hook::libil2cpp::Gc<TResult>,
     pub _options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     pub _directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub _ShouldIncludePredicate_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
-    >,
-    pub _ShouldRecursePredicate_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
-    >,
+    pub _ShouldIncludePredicate_k__BackingField: quest_hook::libil2cpp::Gc<TResult>,
+    pub _ShouldRecursePredicate_k__BackingField: quest_hook::libil2cpp::Gc<TResult>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
@@ -29,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -59,11 +49,7 @@ impl<
     >;
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TResult>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -71,16 +57,13 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TResult>,
-        > = __cordl_object.invoke("GetEnumerator", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = __cordl_object
+            .invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
         directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        transform: quest_hook::libil2cpp::Gc<
-            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult>,
-        >,
+        transform: quest_hook::libil2cpp::Gc<TResult>,
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -113,9 +96,7 @@ impl<
     pub fn _ctor(
         &mut self,
         directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        transform: quest_hook::libil2cpp::Gc<
-            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult>,
-        >,
+        transform: quest_hook::libil2cpp::Gc<TResult>,
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -131,11 +112,7 @@ impl<
     }
     pub fn get_ShouldIncludePredicate(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -143,18 +120,13 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
-        > = __cordl_object.invoke("get_ShouldIncludePredicate", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = __cordl_object
+            .invoke("get_ShouldIncludePredicate", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ShouldRecursePredicate(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -162,16 +134,13 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
-        > = __cordl_object.invoke("get_ShouldRecursePredicate", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = __cordl_object
+            .invoke("get_ShouldRecursePredicate", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_ShouldIncludePredicate(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
-        >,
+        value: quest_hook::libil2cpp::Gc<TResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -196,36 +165,38 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
-impl<
-    TResult: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<TResult>>
+impl<TResult: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TResult>>
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TResult> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TResult> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
+impl<TResult: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TResult>>
+for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TResult> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<TResult>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TResult> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
-impl<TResult: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
-for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
-impl<TResult: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
-for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -235,10 +206,8 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
 pub struct FileSystemEnumerable_1_DelegateEnumerator<
     TResult: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult>,
-    pub _enumerable: quest_hook::libil2cpp::Gc<
-        crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TResult>,
+    pub _enumerable: quest_hook::libil2cpp::Gc<TResult>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
@@ -250,7 +219,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
-    type Target = crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult>;
+    type Target = quest_hook::libil2cpp::Gc<TResult>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -267,9 +236,7 @@ impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
     pub fn New(
-        enumerable: quest_hook::libil2cpp::Gc<
-            crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult>,
-        >,
+        enumerable: quest_hook::libil2cpp::Gc<TResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -332,9 +299,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        enumerable: quest_hook::libil2cpp::Gc<
-            crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult>,
-        >,
+        enumerable: quest_hook::libil2cpp::Gc<TResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -362,7 +327,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TR
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemEnumerable_1_FindPredicate<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
@@ -374,7 +339,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult> {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -451,7 +416,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemEnumerable_1_FindTransform<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
@@ -463,7 +428,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult> {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

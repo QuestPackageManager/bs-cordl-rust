@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FunctionNode {
-    __cordl_parent: crate::System::Data::ExpressionNode,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _info: i32,
     pub _argumentCount: i32,
     pub _arguments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::ExpressionNode>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+        >,
     >,
     pub _capturedLimiter: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter>,
 }
@@ -18,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+FunctionNode")]
 impl std::ops::Deref for crate::System::Data::FunctionNode {
-    type Target = crate::System::Data::ExpressionNode;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,9 +48,7 @@ impl crate::System::Data::FunctionNode {
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataColumn,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -82,7 +82,9 @@ impl crate::System::Data::FunctionNode {
         &mut self,
         id: crate::System::Data::FunctionId,
         argumentValues: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
@@ -110,7 +112,21 @@ impl crate::System::Data::FunctionNode {
         > = __cordl_object.invoke("Eval", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Eval_DataRow_DataRowVersion1(
+    pub fn Eval_Gc2(
+        &mut self,
+        recordNos: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Eval", (recordNos))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Eval_Gc_DataRowVersion1(
         &mut self,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
@@ -123,20 +139,6 @@ impl crate::System::Data::FunctionNode {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("Eval", (row, version))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Eval_Il2CppArray2(
-        &mut self,
-        recordNos: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("Eval", (recordNos))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetDataType(

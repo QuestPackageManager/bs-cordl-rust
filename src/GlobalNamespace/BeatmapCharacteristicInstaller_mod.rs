@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCharacteristicInstaller {
-    __cordl_parent: crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicCollectionSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicCollectionSO,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapCharacteristicInstaller")]
@@ -13,8 +15,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapCharacteristicInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCharacteristicInstaller {
-    type Target = crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicCollectionSO,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicCollectionSO,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -40,11 +44,15 @@ impl crate::GlobalNamespace::BeatmapCharacteristicInstaller {
     }
     pub fn LoadCharacteristicCollectionAsync() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::GlobalNamespace::BeatmapCharacteristicCollectionSO,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapCharacteristicCollectionSO,
+            >,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::GlobalNamespace::BeatmapCharacteristicCollectionSO,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapCharacteristicCollectionSO,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LoadCharacteristicCollectionAsync", ())?;
         Ok(__cordl_ret.into())

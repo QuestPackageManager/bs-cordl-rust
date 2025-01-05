@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVROverlay {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub FnTable: crate::OVR::OpenVR::IVROverlay,
 }
 #[cfg(feature = "OVR+OpenVR+CVROverlay")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+CVROverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVROverlay {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1272,7 +1272,7 @@ impl crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVROverlay__PollNextOverlayEventPacked {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1282,7 +1282,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVROverlay__PollNextOverlayEventPacked {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceRequest {
-    __cordl_parent: crate::UnityEngine::AsyncOperation,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     pub m_Path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ResourceRequest")]
 impl std::ops::Deref for crate::UnityEngine::ResourceRequest {
-    type Target = crate::UnityEngine::AsyncOperation;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

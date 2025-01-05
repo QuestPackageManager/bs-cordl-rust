@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoAlphaColorSO {
-    __cordl_parent: crate::GlobalNamespace::ColorSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
     pub _color: crate::UnityEngine::Color,
 }
 #[cfg(feature = "NoAlphaColorSO")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoAlphaColorSO")]
 impl std::ops::Deref for crate::GlobalNamespace::NoAlphaColorSO {
-    type Target = crate::GlobalNamespace::ColorSO;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

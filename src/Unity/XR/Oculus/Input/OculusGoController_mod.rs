@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusGoController {
-    __cordl_parent: crate::Unity::XR::Oculus::Input::GearVRTrackedController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Unity::XR::Oculus::Input::GearVRTrackedController,
+    >,
 }
 #[cfg(feature = "Unity+XR+Oculus+Input+OculusGoController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+Oculus+Input+OculusGoController")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Input::OculusGoController {
-    type Target = crate::Unity::XR::Oculus::Input::GearVRTrackedController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Unity::XR::Oculus::Input::GearVRTrackedController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

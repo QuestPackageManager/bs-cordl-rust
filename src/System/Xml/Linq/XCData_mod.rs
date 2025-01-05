@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XCData {
-    __cordl_parent: crate::System::Xml::Linq::XText,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XText>,
 }
 #[cfg(feature = "System+Xml+Linq+XCData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XCData")]
 impl std::ops::Deref for crate::System::Xml::Linq::XCData {
-    type Target = crate::System::Xml::Linq::XText;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XText>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +36,7 @@ impl crate::System::Xml::Linq::XCData {
             .invoke("CloneNode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString0(
+    pub fn New_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -45,7 +45,7 @@ impl crate::System::Xml::Linq::XCData {
             .invoke_void(".ctor", (value))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XCData1(
+    pub fn New_Gc1(
         other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XCData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -65,7 +65,7 @@ impl crate::System::Xml::Linq::XCData {
             .invoke("WriteTo", (writer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString0(
+    pub fn _ctor_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -76,7 +76,7 @@ impl crate::System::Xml::Linq::XCData {
             .invoke(".ctor", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XCData1(
+    pub fn _ctor_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XCData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

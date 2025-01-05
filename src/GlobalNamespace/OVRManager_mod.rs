@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRManager {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub disabledCameras: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::Camera,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     >,
     pub prevTimeScale: f32,
     pub useRecommendedMSAALevel: bool,
@@ -71,9 +69,7 @@ pub struct OVRManager {
     pub controllerDrivenHandPosesType: crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType,
     pub _isSupportedPlatform_k__BackingField: bool,
     pub eventListeners: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            *mut crate::GlobalNamespace::OVRManager_EventListener,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRManager_EventListener>,
     >,
 }
 #[cfg(feature = "OVRManager")]
@@ -82,7 +78,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRManager")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRManager {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1303,7 +1299,7 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn add_DisplayRefreshRateChanged(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<f32, f32>>,
+        value: quest_hook::libil2cpp::Gc<f32, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("add_DisplayRefreshRateChanged", (value))?;
@@ -1359,7 +1355,7 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn add_SceneCaptureComplete(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>,
+        value: quest_hook::libil2cpp::Gc<u64, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("add_SceneCaptureComplete", (value))?;
@@ -1367,10 +1363,8 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn add_ShareSpacesComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                u64,
-                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-            >,
+            u64,
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1379,12 +1373,10 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn add_SpaceEraseComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                u64,
-                bool,
-                crate::System::Guid,
-                crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
-            >,
+            u64,
+            bool,
+            crate::System::Guid,
+            crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1393,10 +1385,8 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn add_SpaceListSaveComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                u64,
-                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-            >,
+            u64,
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1404,14 +1394,14 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn add_SpaceQueryComplete(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>,
+        value: quest_hook::libil2cpp::Gc<u64, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("add_SpaceQueryComplete", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn add_SpaceQueryResults(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<u64>>,
+        value: quest_hook::libil2cpp::Gc<u64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("add_SpaceQueryResults", (value))?;
@@ -1419,12 +1409,10 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn add_SpaceSaveComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                u64,
-                crate::GlobalNamespace::OVRSpace,
-                bool,
-                crate::System::Guid,
-            >,
+            u64,
+            crate::GlobalNamespace::OVRSpace,
+            bool,
+            crate::System::Guid,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1433,14 +1421,12 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn add_SpaceSetComponentStatusComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_6<
-                u64,
-                bool,
-                crate::GlobalNamespace::OVRSpace,
-                crate::System::Guid,
-                crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-                bool,
-            >,
+            u64,
+            bool,
+            crate::GlobalNamespace::OVRSpace,
+            crate::System::Guid,
+            crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1449,12 +1435,10 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn add_SpatialAnchorCreateComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                u64,
-                bool,
-                crate::GlobalNamespace::OVRSpace,
-                crate::System::Guid,
-            >,
+            u64,
+            bool,
+            crate::GlobalNamespace::OVRSpace,
+            crate::System::Guid,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1871,7 +1855,7 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn remove_DisplayRefreshRateChanged(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<f32, f32>>,
+        value: quest_hook::libil2cpp::Gc<f32, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("remove_DisplayRefreshRateChanged", (value))?;
@@ -1927,7 +1911,7 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn remove_SceneCaptureComplete(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>,
+        value: quest_hook::libil2cpp::Gc<u64, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("remove_SceneCaptureComplete", (value))?;
@@ -1935,10 +1919,8 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn remove_ShareSpacesComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                u64,
-                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-            >,
+            u64,
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1947,12 +1929,10 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn remove_SpaceEraseComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                u64,
-                bool,
-                crate::System::Guid,
-                crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
-            >,
+            u64,
+            bool,
+            crate::System::Guid,
+            crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1961,10 +1941,8 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn remove_SpaceListSaveComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                u64,
-                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-            >,
+            u64,
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1972,14 +1950,14 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn remove_SpaceQueryComplete(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>,
+        value: quest_hook::libil2cpp::Gc<u64, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("remove_SpaceQueryComplete", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_SpaceQueryResults(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<u64>>,
+        value: quest_hook::libil2cpp::Gc<u64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("remove_SpaceQueryResults", (value))?;
@@ -1987,12 +1965,10 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn remove_SpaceSaveComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                u64,
-                crate::GlobalNamespace::OVRSpace,
-                bool,
-                crate::System::Guid,
-            >,
+            u64,
+            crate::GlobalNamespace::OVRSpace,
+            bool,
+            crate::System::Guid,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -2001,14 +1977,12 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn remove_SpaceSetComponentStatusComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_6<
-                u64,
-                bool,
-                crate::GlobalNamespace::OVRSpace,
-                crate::System::Guid,
-                crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-                bool,
-            >,
+            u64,
+            bool,
+            crate::GlobalNamespace::OVRSpace,
+            crate::System::Guid,
+            crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -2017,12 +1991,10 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn remove_SpatialAnchorCreateComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                u64,
-                bool,
-                crate::GlobalNamespace::OVRSpace,
-                crate::System::Guid,
-            >,
+            u64,
+            bool,
+            crate::GlobalNamespace::OVRSpace,
+            crate::System::Guid,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -2311,18 +2283,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRManager {
     }
 }
 #[cfg(feature = "OVRManager")]
-impl AsRef<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
-for crate::GlobalNamespace::OVRManager {
-    fn as_ref(&self) -> &crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+    >,
+> for crate::GlobalNamespace::OVRManager {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRManager")]
-impl AsMut<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
-for crate::GlobalNamespace::OVRManager {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+    >,
+> for crate::GlobalNamespace::OVRManager {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -2507,7 +2491,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRManager_InstantiateMrcCameraDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2518,7 +2502,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2642,7 +2626,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRManager_PassthroughCapabilities {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _SupportsPassthrough_k__BackingField: bool,
     pub _SupportsColorPassthrough_k__BackingField: bool,
     pub _MaxColorLutResolution_k__BackingField: u32,
@@ -2655,7 +2639,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRManager+PassthroughCapabilities")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRManager_PassthroughCapabilities {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

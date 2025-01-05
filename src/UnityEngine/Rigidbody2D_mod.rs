@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Rigidbody2D {
-    __cordl_parent: crate::UnityEngine::Component,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
 }
 #[cfg(feature = "UnityEngine+Rigidbody2D")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Rigidbody2D")]
 impl std::ops::Deref for crate::UnityEngine::Rigidbody2D {
-    type Target = crate::UnityEngine::Component;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

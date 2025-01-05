@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Axis {
-    __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     pub _axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
     pub _input: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     pub _prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+XPath+Axis")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::Axis {
-    type Target = crate::MS::Internal::Xml::XPath::AstNode;
+    type Target = quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +33,7 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::Axis {
 impl crate::MS::Internal::Xml::XPath::Axis {
     #[cfg(feature = "MS+Internal+Xml+XPath+Axis+AxisType")]
     pub type AxisType = crate::MS::Internal::Xml::XPath::Axis_AxisType;
-    pub fn New_Axis_AxisType_AstNode1(
+    pub fn New_Axis_AxisType_Gc1(
         axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
         input: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -43,7 +43,7 @@ impl crate::MS::Internal::Xml::XPath::Axis {
             .invoke_void(".ctor", (axisType, input))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString_XPathNodeType0(
+    pub fn New_Gc_Gc_XPathNodeType0(
         axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
         input: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -56,7 +56,7 @@ impl crate::MS::Internal::Xml::XPath::Axis {
             .invoke_void(".ctor", (axisType, input, prefix, name, nodetype))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Axis_AxisType_AstNode1(
+    pub fn _ctor_Axis_AxisType_Gc1(
         &mut self,
         axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
         input: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
@@ -68,7 +68,7 @@ impl crate::MS::Internal::Xml::XPath::Axis {
             .invoke(".ctor", (axisType, input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString_XPathNodeType0(
+    pub fn _ctor_Gc_Gc_XPathNodeType0(
         &mut self,
         axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
         input: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,

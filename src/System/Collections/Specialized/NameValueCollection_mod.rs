@@ -2,12 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NameValueCollection {
-    __cordl_parent: crate::System::Collections::Specialized::NameObjectCollectionBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::NameObjectCollectionBase,
+    >,
     pub _all: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _allKeys: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "System+Collections+Specialized+NameValueCollection")]
@@ -18,7 +24,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Specialized+NameValueCollection")]
 impl std::ops::Deref for crate::System::Collections::Specialized::NameValueCollection {
-    type Target = crate::System::Collections::Specialized::NameObjectCollectionBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::NameObjectCollectionBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -59,11 +67,15 @@ impl crate::System::Collections::Specialized::NameValueCollection {
         list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetAsStringArray", (list))?;
         Ok(__cordl_ret.into())
@@ -82,19 +94,23 @@ impl crate::System::Collections::Specialized::NameValueCollection {
         > = __cordl_object.invoke("GetKey", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetValues_Il2CppString0(
+    pub fn GetValues_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("GetValues", (name))?;
         Ok(__cordl_ret.into())
     }
@@ -103,18 +119,22 @@ impl crate::System::Collections::Specialized::NameValueCollection {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("GetValues", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Get_Il2CppString0(
+    pub fn Get_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -159,7 +179,7 @@ impl crate::System::Collections::Specialized::NameValueCollection {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DBNull4(
+    pub fn New_Gc4(
         dummy: quest_hook::libil2cpp::Gc<crate::System::DBNull>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -168,7 +188,7 @@ impl crate::System::Collections::Specialized::NameValueCollection {
             .invoke_void(".ctor", (dummy))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext3(
+    pub fn New_Gc_StreamingContext3(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -189,7 +209,7 @@ impl crate::System::Collections::Specialized::NameValueCollection {
             .invoke_void(".ctor", (capacity))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_IEqualityComparer2(
+    pub fn New_i32_Gc2(
         capacity: i32,
         equalityComparer: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEqualityComparer,
@@ -234,7 +254,7 @@ impl crate::System::Collections::Specialized::NameValueCollection {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DBNull4(
+    pub fn _ctor_Gc4(
         &mut self,
         dummy: quest_hook::libil2cpp::Gc<crate::System::DBNull>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -245,7 +265,7 @@ impl crate::System::Collections::Specialized::NameValueCollection {
             .invoke(".ctor", (dummy))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext3(
+    pub fn _ctor_Gc_StreamingContext3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -270,7 +290,7 @@ impl crate::System::Collections::Specialized::NameValueCollection {
             .invoke(".ctor", (capacity))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_IEqualityComparer2(
+    pub fn _ctor_i32_Gc2(
         &mut self,
         capacity: i32,
         equalityComparer: quest_hook::libil2cpp::Gc<

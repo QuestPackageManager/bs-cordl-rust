@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Comparer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _compareInfo: quest_hook::libil2cpp::Gc<
         crate::System::Globalization::CompareInfo,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Comparer")]
 impl std::ops::Deref for crate::System::Collections::Comparer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,7 +52,7 @@ impl crate::System::Collections::Comparer {
             .invoke("GetObjectData", (info, context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_CultureInfo0(
+    pub fn New_Gc0(
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -61,7 +61,7 @@ impl crate::System::Collections::Comparer {
             .invoke_void(".ctor", (culture))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext1(
+    pub fn New_StreamingContext1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -73,7 +73,7 @@ impl crate::System::Collections::Comparer {
             .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_CultureInfo0(
+    pub fn _ctor_Gc0(
         &mut self,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -84,7 +84,7 @@ impl crate::System::Collections::Comparer {
             .invoke(".ctor", (culture))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext1(
+    pub fn _ctor_StreamingContext1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -109,30 +109,44 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::Comparer 
     }
 }
 #[cfg(feature = "System+Collections+Comparer")]
-impl AsRef<crate::System::Collections::IComparer>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
 for crate::System::Collections::Comparer {
-    fn as_ref(&self) -> &crate::System::Collections::IComparer {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Comparer")]
-impl AsMut<crate::System::Collections::IComparer>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
 for crate::System::Collections::Comparer {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Comparer")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Collections::Comparer {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Collections::Comparer {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Comparer")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Collections::Comparer {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Collections::Comparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertificationRequest {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub reqInfo: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequestInfo,
     >,
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+CertificationRequest")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequest {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,7 +83,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequest {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Asn1Sequence2(
+    pub fn New_Gc2(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -88,7 +92,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequest {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_CertificationRequestInfo_AlgorithmIdentifier_DerBitString1(
+    pub fn New_Gc_Gc_Gc1(
         requestInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequestInfo,
         >,
@@ -128,7 +132,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequest {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Sequence2(
+    pub fn _ctor_Gc2(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -139,7 +143,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequest {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_CertificationRequestInfo_AlgorithmIdentifier_DerBitString1(
+    pub fn _ctor_Gc_Gc_Gc1(
         &mut self,
         requestInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequestInfo,

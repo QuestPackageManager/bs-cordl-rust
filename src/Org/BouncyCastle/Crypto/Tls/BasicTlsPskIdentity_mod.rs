@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicTlsPskIdentity {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mIdentity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mPsk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+BasicTlsPskIdentity")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,7 +53,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
         > = __cordl_object.invoke("GetPskIdentity", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppArray0(
+    pub fn New_Gc_Gc0(
         identity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         psk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -63,7 +63,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
             .invoke_void(".ctor", (identity, psk))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc_Gc1(
         identity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         psk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -96,7 +96,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
             .invoke("SkipIdentityHint", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         identity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         psk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -108,7 +108,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
             .invoke(".ctor", (identity, psk))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         identity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         psk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -132,16 +132,26 @@ for crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+BasicTlsPskIdentity")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity>
-for crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity>,
+> for crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+BasicTlsPskIdentity")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity>
-for crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity>,
+> for crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

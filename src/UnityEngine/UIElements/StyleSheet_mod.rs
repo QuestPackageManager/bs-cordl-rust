@@ -2,17 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleSheet {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub m_ImportedWithErrors: bool,
     pub m_ImportedWithWarnings: bool,
     pub m_Rules: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleRule,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
         >,
     >,
     pub m_ComplexSelectors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StyleComplexSelector,
+            >,
         >,
     >,
     pub floats: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -25,10 +27,14 @@ pub struct StyleSheet {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
     >,
     pub strings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub assets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        >,
     >,
     pub imports: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -36,9 +42,7 @@ pub struct StyleSheet {
         >,
     >,
     pub m_FlattenedImportedStyleSheets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::StyleSheet,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
     >,
     pub m_ContentHash: i32,
     pub scalableImages: quest_hook::libil2cpp::Gc<
@@ -47,22 +51,16 @@ pub struct StyleSheet {
         >,
     >,
     pub orderedNameSelectors: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::UnityEngine::UIElements::StyleComplexSelector,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleComplexSelector>,
     >,
     pub orderedTypeSelectors: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::UnityEngine::UIElements::StyleComplexSelector,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleComplexSelector>,
     >,
     pub orderedClassSelectors: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::UnityEngine::UIElements::StyleComplexSelector,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleComplexSelector>,
     >,
     pub m_IsDefaultStyleSheet: bool,
 }
@@ -73,7 +71,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+StyleSheet")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleSheet {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,7 +121,7 @@ impl crate::UnityEngine::UIElements::StyleSheet {
             .invoke("FlattenImportedStyleSheetsRecursive", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn FlattenImportedStyleSheetsRecursive_StyleSheet1(
+    pub fn FlattenImportedStyleSheetsRecursive_Gc1(
         &mut self,
         sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -352,7 +350,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn TryReadAssetReference(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Object>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -389,7 +389,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn TryReadEnum(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -411,7 +413,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn TryReadResourcePath(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -423,7 +427,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn TryReadString(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -434,7 +440,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn TryReadVariable(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -458,7 +466,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleComplexSelector,
+                >,
             >,
         >,
     > {
@@ -467,7 +477,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleComplexSelector,
+                >,
             >,
         > = __cordl_object.invoke("get_complexSelectors", ())?;
         Ok(__cordl_ret.into())
@@ -483,18 +495,14 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::StyleSheet,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::StyleSheet,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
         > = __cordl_object.invoke("get_flattenedRecursiveImports", ())?;
         Ok(__cordl_ret.into())
     }
@@ -524,7 +532,7 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleRule,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
             >,
         >,
     > {
@@ -533,7 +541,7 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleRule,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
             >,
         > = __cordl_object.invoke("get_rules", ())?;
         Ok(__cordl_ret.into())
@@ -542,7 +550,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleComplexSelector,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -601,7 +611,7 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleRule,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -630,7 +640,9 @@ pub struct StyleSheet_ImportStruct {
         crate::UnityEngine::UIElements::StyleSheet,
     >,
     pub mediaQueries: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]

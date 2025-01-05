@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeVariables {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _boxes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::CompilerServices::IStrongBox,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::CompilerServices::IStrongBox,
+            >,
         >,
     >,
 }
@@ -18,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +37,9 @@ impl crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
     pub fn Create(
         boxes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -51,7 +55,9 @@ impl crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
     pub fn New(
         boxes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -65,7 +71,9 @@ impl crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
         &mut self,
         boxes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -88,18 +96,30 @@ for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
-impl AsRef<crate::System::Runtime::CompilerServices::IRuntimeVariables>
-for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
-    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IRuntimeVariables {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::IRuntimeVariables,
+    >,
+> for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::IRuntimeVariables,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
-impl AsMut<crate::System::Runtime::CompilerServices::IRuntimeVariables>
-for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::IRuntimeVariables,
+    >,
+> for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::CompilerServices::IRuntimeVariables {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::IRuntimeVariables,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parser {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+Parser")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +56,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::Pa
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parser_DateTime {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -65,7 +65,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_DateTime {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,7 +101,7 @@ for crate::System::Net::Http::Headers::Parser_DateTime {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parser_EmailAddress {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+EmailAddress")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -110,7 +110,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+Parser+EmailAddress")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_EmailAddress {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -125,7 +125,9 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_EmailAddre
 impl crate::System::Net::Http::Headers::Parser_EmailAddress {
     pub fn TryParse(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryParse", (input, result))?;
@@ -146,7 +148,7 @@ for crate::System::Net::Http::Headers::Parser_EmailAddress {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parser_Host {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Host")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -155,7 +157,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+Parser+Host")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_Host {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -170,7 +172,9 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_Host {
 impl crate::System::Net::Http::Headers::Parser_Host {
     pub fn TryParse(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryParse", (input, result))?;
@@ -191,7 +195,7 @@ for crate::System::Net::Http::Headers::Parser_Host {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parser_Int {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Int")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -200,7 +204,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+Parser+Int")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_Int {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -236,7 +240,7 @@ for crate::System::Net::Http::Headers::Parser_Int {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parser_Long {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Long")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -245,7 +249,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+Parser+Long")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_Long {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -281,7 +285,7 @@ for crate::System::Net::Http::Headers::Parser_Long {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parser_MD5 {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+MD5")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -290,7 +294,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+Parser+MD5")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_MD5 {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -306,7 +310,7 @@ impl crate::System::Net::Http::Headers::Parser_MD5 {
     pub fn TryParse(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         result: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -328,7 +332,7 @@ for crate::System::Net::Http::Headers::Parser_MD5 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parser_TimeSpanSeconds {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+TimeSpanSeconds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -338,7 +342,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+Parser+TimeSpanSeconds")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_TimeSpanSeconds {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -374,7 +378,7 @@ for crate::System::Net::Http::Headers::Parser_TimeSpanSeconds {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parser_Token {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Token")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -383,7 +387,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+Parser+Token")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_Token {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -425,7 +429,7 @@ for crate::System::Net::Http::Headers::Parser_Token {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parser_Uri {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Uri")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -434,7 +438,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+Parser+Uri")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_Uri {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -449,7 +453,9 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_Uri {
 impl crate::System::Net::Http::Headers::Parser_Uri {
     pub fn TryParse(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Uri>,
+        result: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryParse", (input, result))?;

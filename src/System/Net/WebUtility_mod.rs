@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebUtility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+WebUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+WebUtility")]
 impl std::ops::Deref for crate::System::Net::WebUtility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +27,9 @@ impl crate::System::Net::WebUtility {
     #[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
     pub type UrlDecoder = crate::System::Net::WebUtility_UrlDecoder;
     pub fn GetNextUnicodeScalarValueFromUtf16Surrogate(
-        pch: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
+        pch: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
         charsRemaining: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -42,7 +44,7 @@ impl crate::System::Net::WebUtility {
             .invoke("HexToInt", (h))?;
         Ok(__cordl_ret.into())
     }
-    pub fn HtmlEncode_Il2CppString0(
+    pub fn HtmlEncode_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -53,7 +55,7 @@ impl crate::System::Net::WebUtility {
             .invoke("HtmlEncode", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn HtmlEncode_TextWriter1(
+    pub fn HtmlEncode_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -113,7 +115,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebUtility {
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebUtility_UrlDecoder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _bufferSize: i32,
     pub _numChars: i32,
     pub _charBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -128,7 +130,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
 impl std::ops::Deref for crate::System::Net::WebUtility_UrlDecoder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

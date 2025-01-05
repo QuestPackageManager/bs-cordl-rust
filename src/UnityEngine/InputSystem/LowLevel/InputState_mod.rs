@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputState {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputState")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputState")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::LowLevel::InputState {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,26 +46,22 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddChangeMonitor_Action_4_i32_Action_4_1(
+    pub fn AddChangeMonitor_i32_Gc1(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
         valueChangeCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut crate::UnityEngine::InputSystem::InputControl,
-                f64,
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                i64,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            f64,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            i64,
         >,
         monitorIndex: i32,
         timerExpiredCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                *mut crate::UnityEngine::InputSystem::InputControl,
-                f64,
-                i64,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            f64,
+            i64,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -81,7 +77,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddChangeMonitor_IInputStateChangeMonitor_i64_u32_0(
+    pub fn AddChangeMonitor_i64_u32_0(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
@@ -95,7 +91,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             .invoke("AddChangeMonitor", (control, monitor, monitorIndex, groupIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Change_InputControl_ByRefMut_InputEventPtr2<TState>(
+    pub fn Change_ByRefMut_InputEventPtr2<TState>(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
@@ -111,7 +107,16 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             .invoke("Change", (control, state, updateType, eventPtr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Change_InputControl_TState_InputEventPtr1<TState>(
+    pub fn Change_InputEventPtr0(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        updateType: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Change", (device, eventPtr, updateType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Change_TState_InputEventPtr1<TState>(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
@@ -125,15 +130,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
     {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Change", (control, state, updateType, eventPtr))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Change_InputDevice_InputEventPtr0(
-        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        updateType: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Change", (device, eventPtr, updateType))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsIntegerFormat(
@@ -169,10 +165,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
     }
     pub fn add_onChange(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -198,10 +192,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
     }
     pub fn remove_onChange(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -225,22 +217,18 @@ for crate::UnityEngine::InputSystem::LowLevel::InputState {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputState_StateChangeMonitorDelegate {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub valueChangeCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_4<
-            *mut crate::UnityEngine::InputSystem::InputControl,
-            f64,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            i64,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+        f64,
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        i64,
     >,
     pub timerExpiredCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_4<
-            *mut crate::UnityEngine::InputSystem::InputControl,
-            f64,
-            i64,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+        f64,
+        i64,
+        i32,
     >,
 }
 #[cfg(
@@ -256,7 +244,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -345,22 +333,32 @@ for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDele
 #[cfg(
     feature = "UnityEngine+InputSystem+LowLevel+InputState+StateChangeMonitorDelegate"
 )]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
-for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "UnityEngine+InputSystem+LowLevel+InputState+StateChangeMonitorDelegate"
 )]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
-for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

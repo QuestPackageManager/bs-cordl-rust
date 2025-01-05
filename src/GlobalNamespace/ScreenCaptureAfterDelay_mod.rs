@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScreenCaptureAfterDelay {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _mainEffectController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MainEffectController,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScreenCaptureAfterDelay")]
 impl std::ops::Deref for crate::GlobalNamespace::ScreenCaptureAfterDelay {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -105,7 +105,7 @@ for crate::GlobalNamespace::ScreenCaptureAfterDelay {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScreenCaptureAfterDelay_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub screenshotType: crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType,
     pub screenCaptureTime: f32,
     pub pixelsWidth: i32,
@@ -119,7 +119,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScreenCaptureAfterDelay+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

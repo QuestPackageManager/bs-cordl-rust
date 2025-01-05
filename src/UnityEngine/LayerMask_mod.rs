@@ -23,7 +23,9 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::LayerMas
 impl crate::UnityEngine::LayerMask {
     pub fn GetMask(
         layerNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()

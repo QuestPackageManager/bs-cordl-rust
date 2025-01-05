@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpStreamAsyncResult {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub locker: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub handle: quest_hook::libil2cpp::Gc<crate::System::Threading::ManualResetEvent>,
     pub completed: bool,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpStreamAsyncResult")]
 impl std::ops::Deref for crate::System::Net::HttpStreamAsyncResult {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::System::Net::HttpStreamAsyncResult {
             .invoke("Complete", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Complete_Exception0(
+    pub fn Complete_Gc0(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -123,14 +123,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::HttpStreamAsyncRe
     }
 }
 #[cfg(feature = "System+Net+HttpStreamAsyncResult")]
-impl AsRef<crate::System::IAsyncResult> for crate::System::Net::HttpStreamAsyncResult {
-    fn as_ref(&self) -> &crate::System::IAsyncResult {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>>
+for crate::System::Net::HttpStreamAsyncResult {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+HttpStreamAsyncResult")]
-impl AsMut<crate::System::IAsyncResult> for crate::System::Net::HttpStreamAsyncResult {
-    fn as_mut(&mut self) -> &mut crate::System::IAsyncResult {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>>
+for crate::System::Net::HttpStreamAsyncResult {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> {
         unsafe { std::mem::transmute(self) }
     }
 }

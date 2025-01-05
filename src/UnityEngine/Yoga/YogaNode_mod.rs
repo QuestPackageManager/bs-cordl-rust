@@ -2,14 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct YogaNode {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _ygNode: crate::System::IntPtr,
     pub _config: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaConfig>,
     pub _parent: quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
     pub _children: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Yoga::YogaNode,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
     >,
     pub _measureFunction: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Yoga::MeasureFunction,
@@ -26,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Yoga+YogaNode")]
 impl std::ops::Deref for crate::UnityEngine::Yoga::YogaNode {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,18 +93,14 @@ impl crate::UnityEngine::Yoga::YogaNode {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                *mut crate::UnityEngine::Yoga::YogaNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                *mut crate::UnityEngine::Yoga::YogaNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
@@ -814,44 +808,48 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Yoga::YogaNode {
     }
 }
 #[cfg(feature = "UnityEngine+Yoga+YogaNode")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+for crate::UnityEngine::Yoga::YogaNode {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+for crate::UnityEngine::Yoga::YogaNode {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
 impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::Yoga::YogaNode,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
     >,
 > for crate::UnityEngine::Yoga::YogaNode {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::Yoga::YogaNode,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Yoga+YogaNode")]
 impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::Yoga::YogaNode,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
     >,
 > for crate::UnityEngine::Yoga::YogaNode {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::Yoga::YogaNode,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
     > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
-impl AsRef<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::Yoga::YogaNode {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
-impl AsMut<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::Yoga::YogaNode {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }

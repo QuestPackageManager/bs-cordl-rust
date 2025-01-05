@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortKey {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub options: crate::System::Globalization::CompareOptions,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+SortKey")]
 impl std::ops::Deref for crate::System::Globalization::SortKey {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::System::Globalization::SortKey {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString_CompareOptions_Il2CppArray2(
+    pub fn New_Gc_Gc_CompareOptions_Gc2(
         localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
@@ -72,7 +72,7 @@ impl crate::System::Globalization::SortKey {
             .invoke_void(".ctor", (localeName, str, options, keyData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Il2CppString_CompareOptions0(
+    pub fn New_i32_Gc_CompareOptions0(
         lcid: i32,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         opt: crate::System::Globalization::CompareOptions,
@@ -83,7 +83,7 @@ impl crate::System::Globalization::SortKey {
             .invoke_void(".ctor", (lcid, source, opt))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Il2CppString_Il2CppArray_CompareOptions_i32_i32_i32_i32_i32_i32_i32_i32_1(
+    pub fn New_i32_Gc_Gc_CompareOptions_i32_i32_i32_i32_i32_i32_i32_i32_1(
         lcid: i32,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -142,7 +142,7 @@ impl crate::System::Globalization::SortKey {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString_CompareOptions_Il2CppArray2(
+    pub fn _ctor_Gc_Gc_CompareOptions_Gc2(
         &mut self,
         localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -156,7 +156,7 @@ impl crate::System::Globalization::SortKey {
             .invoke(".ctor", (localeName, str, options, keyData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Il2CppString_CompareOptions0(
+    pub fn _ctor_i32_Gc_CompareOptions0(
         &mut self,
         lcid: i32,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -169,7 +169,7 @@ impl crate::System::Globalization::SortKey {
             .invoke(".ctor", (lcid, source, opt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Il2CppString_Il2CppArray_CompareOptions_i32_i32_i32_i32_i32_i32_i32_i32_1(
+    pub fn _ctor_i32_Gc_Gc_CompareOptions_i32_i32_i32_i32_i32_i32_i32_i32_1(
         &mut self,
         lcid: i32,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

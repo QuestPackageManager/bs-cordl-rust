@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DrbgUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+DrbgUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+DrbgUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,14 +25,14 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUt
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+DrbgUtilities")]
 impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
-    pub fn GetMaxSecurityStrength_IDigest0(
+    pub fn GetMaxSecurityStrength_Gc0(
         d: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetMaxSecurityStrength", (d))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMaxSecurityStrength_IMac1(
+    pub fn GetMaxSecurityStrength_Gc1(
         m: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()

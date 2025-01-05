@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkinnedMeshRenderer {
-    __cordl_parent: crate::UnityEngine::Renderer,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
 }
 #[cfg(feature = "UnityEngine+SkinnedMeshRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+SkinnedMeshRenderer")]
 impl std::ops::Deref for crate::UnityEngine::SkinnedMeshRenderer {
-    type Target = crate::UnityEngine::Renderer;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::UnityEngine::SkinnedMeshRenderer {
 }
 #[cfg(feature = "UnityEngine+SkinnedMeshRenderer")]
 impl crate::UnityEngine::SkinnedMeshRenderer {
-    pub fn BakeMesh_Mesh0(
+    pub fn BakeMesh_Gc0(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -138,14 +138,18 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         > = __cordl_object.invoke("get_bones", ())?;
         Ok(__cordl_ret.into())
     }
@@ -220,7 +224,9 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
     pub fn set_bones(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

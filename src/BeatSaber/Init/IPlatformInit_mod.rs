@@ -28,32 +28,25 @@ impl crate::BeatSaber::Init::IPlatformInit {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetAppVersionAsync", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn InitializeAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object.invoke("InitializeAsync", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
+            .invoke("InitializeAsync", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
@@ -79,14 +72,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Init::IPlatformInit
     }
 }
 #[cfg(feature = "BeatSaber+Init+IPlatformInit")]
-impl AsRef<crate::Zenject::IInitializable> for crate::BeatSaber::Init::IPlatformInit {
-    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+for crate::BeatSaber::Init::IPlatformInit {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatSaber+Init+IPlatformInit")]
-impl AsMut<crate::Zenject::IInitializable> for crate::BeatSaber::Init::IPlatformInit {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+for crate::BeatSaber::Init::IPlatformInit {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
         unsafe { std::mem::transmute(self) }
     }
 }

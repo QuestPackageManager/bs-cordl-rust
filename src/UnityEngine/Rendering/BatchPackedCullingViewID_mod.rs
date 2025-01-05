@@ -33,7 +33,7 @@ impl crate::UnityEngine::Rendering::BatchPackedCullingViewID {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -55,11 +55,11 @@ impl crate::UnityEngine::Rendering::BatchPackedCullingViewID {
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchPackedCullingViewID")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchPackedCullingViewID>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BatchPackedCullingViewID>,
 > for crate::UnityEngine::Rendering::BatchPackedCullingViewID {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::BatchPackedCullingViewID,
     > {
         todo!()
@@ -67,11 +67,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchPackedCullingViewID")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchPackedCullingViewID>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BatchPackedCullingViewID>,
 > for crate::UnityEngine::Rendering::BatchPackedCullingViewID {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::BatchPackedCullingViewID,
     > {
         todo!()

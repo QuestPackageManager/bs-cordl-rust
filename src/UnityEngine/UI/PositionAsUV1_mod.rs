@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PositionAsUV1 {
-    __cordl_parent: crate::UnityEngine::UI::BaseMeshEffect,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::BaseMeshEffect>,
 }
 #[cfg(feature = "UnityEngine+UI+PositionAsUV1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+PositionAsUV1")]
 impl std::ops::Deref for crate::UnityEngine::UI::PositionAsUV1 {
-    type Target = crate::UnityEngine::UI::BaseMeshEffect;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::BaseMeshEffect>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnHeaderColumnIcon {
-    __cordl_parent: crate::UnityEngine::UIElements::Image,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Image>,
     pub _isImageInline_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnIcon")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnIcon")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnIcon {
-    type Target = crate::UnityEngine::UIElements::Image;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Image>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

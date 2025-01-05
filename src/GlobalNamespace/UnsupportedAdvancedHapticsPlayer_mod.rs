@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnsupportedAdvancedHapticsPlayer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -82,16 +82,20 @@ for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
     }
 }
 #[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
-impl AsRef<crate::GlobalNamespace::IHapticFeedbackPlayer>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHapticFeedbackPlayer>>
 for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IHapticFeedbackPlayer {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHapticFeedbackPlayer> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
-impl AsMut<crate::GlobalNamespace::IHapticFeedbackPlayer>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHapticFeedbackPlayer>>
 for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IHapticFeedbackPlayer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHapticFeedbackPlayer> {
         unsafe { std::mem::transmute(self) }
     }
 }

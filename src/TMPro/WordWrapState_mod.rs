@@ -59,7 +59,7 @@ pub struct WordWrapState {
         crate::TMPro::HighlightState,
     >,
     pub colorGradientStack: crate::TMPro::TMP_TextProcessingStack_1<
-        *mut crate::TMPro::TMP_ColorGradient,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_ColorGradient>,
     >,
     pub sizeStack: crate::TMPro::TMP_TextProcessingStack_1<f32>,
     pub indentStack: crate::TMPro::TMP_TextProcessingStack_1<f32>,

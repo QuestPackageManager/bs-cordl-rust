@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectionFailedException {
-    __cordl_parent: crate::System::Exception,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     pub reason: crate::GlobalNamespace::ConnectionFailedReason,
 }
 #[cfg(feature = "ConnectionFailedException")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ConnectionFailedException")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectionFailedException {
-    type Target = crate::System::Exception;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Exception>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::ConnectionFailedException {
             .invoke_void(".ctor", (reason))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         reason: crate::GlobalNamespace::ConnectionFailedReason,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::ConnectionFailedException {
             .invoke(".ctor", (reason))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         reason: crate::GlobalNamespace::ConnectionFailedReason,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NullableEqualityComparer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Collections::Generic::EqualityComparer_1<
-        crate::System::Nullable_1<T>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Nullable_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Collections+Generic+NullableEqualityComparer_1")]
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Collections+Generic+NullableEqualityComparer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Collections::Generic::NullableEqualityComparer_1<T> {
-    type Target = crate::System::Collections::Generic::EqualityComparer_1<
-        crate::System::Nullable_1<T>,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Nullable_1<T>>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +30,7 @@ for crate::System::Collections::Generic::NullableEqualityComparer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Generic::NullableEqualityComparer_1<T> {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>

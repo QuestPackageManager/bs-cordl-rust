@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RightShiftInstruction_RightShiftInt32 {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::RightShiftInstruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::RightShiftInstruction,
+    >,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftInt32"
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
     feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftInt32"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::RightShiftInstruction_RightShiftInt32 {
-    type Target = crate::System::Linq::Expressions::Interpreter::RightShiftInstruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::RightShiftInstruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

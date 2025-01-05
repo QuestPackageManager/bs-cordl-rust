@@ -5,7 +5,7 @@ pub struct LargeArrayBuilder_1<T: quest_hook::libil2cpp::Type> {
     pub _maxCapacity: i32,
     pub _first: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _buffers: crate::System::Collections::Generic::ArrayBuilder_1<
-        *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >,
     pub _current: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _index: i32,
@@ -35,9 +35,7 @@ impl<
 > crate::System::Collections::Generic::LargeArrayBuilder_1<T> {
     pub fn AddRange(
         &mut self,
-        items: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        items: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -54,7 +52,7 @@ impl<
         &mut self,
         item: T,
         destination: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<T>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
         index: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -132,7 +130,7 @@ impl<
     pub fn TryMove(
         &mut self,
         array: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<T>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where

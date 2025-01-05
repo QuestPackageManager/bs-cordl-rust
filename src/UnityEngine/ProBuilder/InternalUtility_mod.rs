@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalUtility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+InternalUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+InternalUtility")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::InternalUtility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,7 @@ impl crate::UnityEngine::ProBuilder::InternalUtility {
             .invoke("ControlKeyString", (character))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DemandComponent_Component0<T>(
+    pub fn DemandComponent_Gc0<T>(
         component: quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -46,7 +46,7 @@ impl crate::UnityEngine::ProBuilder::InternalUtility {
             .invoke("DemandComponent", (component))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DemandComponent_GameObject1<T>(
+    pub fn DemandComponent_Gc1<T>(
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -66,7 +66,7 @@ impl crate::UnityEngine::ProBuilder::InternalUtility {
             .invoke("EmptyGameObjectWithTransform", (t))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponents_GameObject0<T>(
+    pub fn GetComponents_Gc0<T>(
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -81,11 +81,9 @@ impl crate::UnityEngine::ProBuilder::InternalUtility {
             .invoke("GetComponents", (go))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponents_IEnumerable_1_1<T>(
+    pub fn GetComponents_Gc1<T>(
         transforms: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::Transform,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,

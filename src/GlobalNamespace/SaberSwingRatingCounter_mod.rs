@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SaberSwingRatingCounter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _saberMovementData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ISaberMovementData,
     >,
@@ -16,13 +16,13 @@ pub struct SaberSwingRatingCounter {
     pub _rateBeforeCut: bool,
     pub _rateAfterCut: bool,
     pub _didChangeReceivers: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LazyCopyHashSet_1<
-            *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
         >,
     >,
     pub _didFinishReceivers: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LazyCopyHashSet_1<
-            *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
         >,
     >,
     pub _notePlaneCenter: crate::UnityEngine::Vector3,
@@ -42,7 +42,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SaberSwingRatingCounter")]
 impl std::ops::Deref for crate::GlobalNamespace::SaberSwingRatingCounter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -209,30 +209,46 @@ for crate::GlobalNamespace::SaberSwingRatingCounter {
     }
 }
 #[cfg(feature = "SaberSwingRatingCounter")]
-impl AsRef<crate::GlobalNamespace::ISaberMovementDataProcessor>
-for crate::GlobalNamespace::SaberSwingRatingCounter {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ISaberMovementDataProcessor {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISaberMovementDataProcessor>,
+> for crate::GlobalNamespace::SaberSwingRatingCounter {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberMovementDataProcessor,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "SaberSwingRatingCounter")]
-impl AsMut<crate::GlobalNamespace::ISaberMovementDataProcessor>
-for crate::GlobalNamespace::SaberSwingRatingCounter {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ISaberMovementDataProcessor {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISaberMovementDataProcessor>,
+> for crate::GlobalNamespace::SaberSwingRatingCounter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberMovementDataProcessor,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "SaberSwingRatingCounter")]
-impl AsRef<crate::GlobalNamespace::ISaberSwingRatingCounter>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISaberSwingRatingCounter>>
 for crate::GlobalNamespace::SaberSwingRatingCounter {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ISaberSwingRatingCounter {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISaberSwingRatingCounter> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "SaberSwingRatingCounter")]
-impl AsMut<crate::GlobalNamespace::ISaberSwingRatingCounter>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISaberSwingRatingCounter>>
 for crate::GlobalNamespace::SaberSwingRatingCounter {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ISaberSwingRatingCounter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberSwingRatingCounter,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

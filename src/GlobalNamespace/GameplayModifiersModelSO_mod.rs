@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifiersModelSO {
-    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >,
     pub _batteryEnergy: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifierParamsSO,
     >,
@@ -52,9 +54,9 @@ pub struct GameplayModifiersModelSO {
         crate::GlobalNamespace::GameplayModifierParamsSO,
     >,
     pub _gameplayModifierGetters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-            *mut crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
         >,
     >,
 }
@@ -65,7 +67,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameplayModifiersModelSO")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersModelSO {
-    type Target = crate::GlobalNamespace::PersistentScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PersistentScriptableObject,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,10 +88,8 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
     pub fn CreateGameplayModifiers(
         &mut self,
         valueGetter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-                bool,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
@@ -107,18 +109,14 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
         > = __cordl_object.invoke("CreateModifierParamsList", (gameplayModifiers))?;
         Ok(__cordl_ret.into())
     }
@@ -140,9 +138,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         &mut self,
         multipliedScore: i32,
         modifierParams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -178,10 +174,8 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
     pub fn GetSongSpeedFromValueGetter(
         &mut self,
         valueGetter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-                bool,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::GameplayModifiers_SongSpeed,
@@ -196,9 +190,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
     pub fn GetTotalMultiplier(
         &mut self,
         modifierParams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -209,13 +201,11 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             .invoke("GetTotalMultiplier", (modifierParams, energy))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MaxModifiedScoreForMaxMultipliedScore_GameplayModifiersModelSO_f32_1(
+    pub fn MaxModifiedScoreForMaxMultipliedScore_Gc_f32_1(
         &mut self,
         maxMultipliedScore: i32,
         modifierParams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
         >,
         gameplayModifiersModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiersModelSO,
@@ -236,9 +226,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         &mut self,
         maxMultipliedScore: i32,
         modifierParams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -283,9 +271,9 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-                *mut crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
             >,
         >,
     > {
@@ -293,9 +281,9 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-                *mut crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
             >,
         > = __cordl_object.invoke("get_gameplayModifierGetters", ())?;
         Ok(__cordl_ret.into())
@@ -315,7 +303,7 @@ for crate::GlobalNamespace::GameplayModifiersModelSO {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifiersModelSO_GameplayModifierBoolGetter {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "GameplayModifiersModelSO+GameplayModifierBoolGetter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -326,7 +314,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "GameplayModifiersModelSO+GameplayModifierBoolGetter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

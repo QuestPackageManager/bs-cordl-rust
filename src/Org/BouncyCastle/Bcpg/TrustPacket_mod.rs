@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrustPacket {
-    __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::ContainedPacket,
+    >,
     pub levelAndTrustAmount: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+TrustPacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::TrustPacket {
-    type Target = crate::Org::BouncyCastle::Bcpg::ContainedPacket;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::ContainedPacket,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,7 +57,7 @@ impl crate::Org::BouncyCastle::Bcpg::TrustPacket {
         > = __cordl_object.invoke("GetLevelAndTrustAmount", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_BcpgInputStream0(
+    pub fn New_Gc0(
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
         >,
@@ -73,7 +77,7 @@ impl crate::Org::BouncyCastle::Bcpg::TrustPacket {
             .invoke_void(".ctor", (trustCode))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_BcpgInputStream0(
+    pub fn _ctor_Gc0(
         &mut self,
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,

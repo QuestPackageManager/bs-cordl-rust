@@ -61,16 +61,20 @@ for crate::System::Xml::IDtdParserAdapterWithValidation {
     }
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterWithValidation")]
-impl AsRef<crate::System::Xml::IDtdParserAdapter>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>>
 for crate::System::Xml::IDtdParserAdapterWithValidation {
-    fn as_ref(&self) -> &crate::System::Xml::IDtdParserAdapter {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+IDtdParserAdapterWithValidation")]
-impl AsMut<crate::System::Xml::IDtdParserAdapter>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>>
 for crate::System::Xml::IDtdParserAdapterWithValidation {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParserAdapter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter> {
         unsafe { std::mem::transmute(self) }
     }
 }

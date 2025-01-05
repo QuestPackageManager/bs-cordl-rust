@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeNotificationBehaviour {
-    __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableBehaviour,
+    >,
     pub m_Notifications: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
-        >,
+        crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
     >,
     pub m_PreviousTime: f64,
     pub m_NeedSortNotifications: bool,
@@ -19,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
-    type Target = crate::UnityEngine::Playables::PlayableBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,11 +65,15 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         loopMode: crate::UnityEngine::Playables::DirectorWrapMode,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Playables::ScriptPlayable_1<
-            *mut crate::UnityEngine::Timeline::TimeNotificationBehaviour,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Timeline::TimeNotificationBehaviour,
+            >,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
-            *mut crate::UnityEngine::Timeline::TimeNotificationBehaviour,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Timeline::TimeNotificationBehaviour,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Create", (graph, duration, loopMode))?;
         Ok(__cordl_ret.into())

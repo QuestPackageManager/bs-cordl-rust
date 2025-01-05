@@ -37,7 +37,7 @@ impl crate::UnityEngine::UIElements::Cursor {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -139,20 +139,20 @@ impl crate::UnityEngine::UIElements::Cursor {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Cursor")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Cursor>>
 for crate::UnityEngine::UIElements::Cursor {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Cursor> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Cursor")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Cursor>>
 for crate::UnityEngine::UIElements::Cursor {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Cursor> {
         todo!()
     }
 }

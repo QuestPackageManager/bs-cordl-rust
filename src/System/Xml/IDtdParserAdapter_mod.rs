@@ -113,7 +113,7 @@ impl crate::System::Xml::IDtdParserAdapter {
     pub fn PopEntity(
         &mut self,
         oldEntity: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Xml::IDtdEntityInfo,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdEntityInfo>,
         >,
         newEntityId: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {

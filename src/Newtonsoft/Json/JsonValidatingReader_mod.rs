@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonValidatingReader {
-    __cordl_parent: crate::Newtonsoft::Json::JsonReader,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
     pub _reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
     pub _stack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<
-            *mut crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope,
         >,
     >,
     pub _schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonValidatingReader {
-    type Target = crate::Newtonsoft::Json::JsonReader;
+    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -463,9 +463,7 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
     pub fn WriteToken(
         &mut self,
         schemas: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -503,18 +501,14 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
         > = __cordl_object.invoke("get_CurrentMemberSchemas", ())?;
         Ok(__cordl_ret.into())
     }
@@ -522,18 +516,14 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
         > = __cordl_object.invoke("get_CurrentSchemas", ())?;
         Ok(__cordl_ret.into())
     }
@@ -670,16 +660,20 @@ for crate::Newtonsoft::Json::JsonValidatingReader {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
-impl AsRef<crate::Newtonsoft::Json::IJsonLineInfo>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo>>
 for crate::Newtonsoft::Json::JsonValidatingReader {
-    fn as_ref(&self) -> &crate::Newtonsoft::Json::IJsonLineInfo {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
-impl AsMut<crate::Newtonsoft::Json::IJsonLineInfo>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo>>
 for crate::Newtonsoft::Json::JsonValidatingReader {
-    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::IJsonLineInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -687,18 +681,14 @@ for crate::Newtonsoft::Json::JsonValidatingReader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonValidatingReader_SchemaScope {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _tokenType: crate::Newtonsoft::Json::Linq::JTokenType,
     pub _schemas: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
     >,
     pub _requiredProperties: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            bool,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        bool,
     >,
     pub _CurrentPropertyName_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -706,9 +696,7 @@ pub struct JsonValidatingReader_SchemaScope {
     pub _ArrayItemCount_k__BackingField: i32,
     pub _IsUniqueArray_k__BackingField: bool,
     pub _UniqueArrayItems_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Linq::JToken,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     >,
     pub _CurrentItemWriter_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Linq::JTokenWriter,
@@ -722,7 +710,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -742,27 +730,21 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetRequiredProperties", (schema))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
         tokenType: crate::Newtonsoft::Json::Linq::JTokenType,
         schemas: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -775,9 +757,7 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         &mut self,
         tokenType: crate::Newtonsoft::Json::Linq::JTokenType,
         schemas: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -831,20 +811,16 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                bool,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            bool,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                bool,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            bool,
         > = __cordl_object.invoke("get_RequiredProperties", ())?;
         Ok(__cordl_ret.into())
     }
@@ -852,18 +828,14 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
         > = __cordl_object.invoke("get_Schemas", ())?;
         Ok(__cordl_ret.into())
     }
@@ -881,18 +853,14 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         > = __cordl_object.invoke("get_UniqueArrayItems", ())?;
         Ok(__cordl_ret.into())
     }

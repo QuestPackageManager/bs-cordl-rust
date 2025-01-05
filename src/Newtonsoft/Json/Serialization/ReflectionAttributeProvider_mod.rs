@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionAttributeProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _attributeProvider: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,20 +30,18 @@ for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
 impl crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
-    pub fn GetAttributes_Type__cordl_bool1(
+    pub fn GetAttributes_Gc__cordl_bool1(
         &mut self,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<*mut crate::System::Attribute>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         > = __cordl_object.invoke("GetAttributes", (attributeType, inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -51,15 +49,13 @@ impl crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
         &mut self,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<*mut crate::System::Attribute>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         > = __cordl_object.invoke("GetAttributes", (inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -95,18 +91,26 @@ for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
-impl AsRef<crate::Newtonsoft::Json::Serialization::IAttributeProvider>
-for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
-    fn as_ref(&self) -> &crate::Newtonsoft::Json::Serialization::IAttributeProvider {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::IAttributeProvider>,
+> for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::IAttributeProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
-impl AsMut<crate::Newtonsoft::Json::Serialization::IAttributeProvider>
-for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::IAttributeProvider>,
+> for crate::Newtonsoft::Json::Serialization::ReflectionAttributeProvider {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Newtonsoft::Json::Serialization::IAttributeProvider {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::IAttributeProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

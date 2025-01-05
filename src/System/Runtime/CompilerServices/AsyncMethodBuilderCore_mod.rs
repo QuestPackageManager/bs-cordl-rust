@@ -52,7 +52,9 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
         &mut self,
         taskForTracing: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         runnerToInitialize: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -136,7 +138,7 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncMethodBuilderCore_ContinuationWrapper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_invokeAction: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_innerTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -154,7 +156,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_ContinuationWrapper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -223,7 +225,7 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_Continuatio
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncMethodBuilderCore_MoveNextRunner {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
     pub m_stateMachine: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::CompilerServices::IAsyncStateMachine,
@@ -238,7 +240,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

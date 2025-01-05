@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Group {
-    __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     pub _groupNode: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Group")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+XPath+Group")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::Group {
-    type Target = crate::MS::Internal::Xml::XPath::AstNode;
+    type Target = quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EndPointListener {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     pub endpoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     pub sock: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
@@ -14,10 +14,8 @@ pub struct EndPointListener {
     >,
     pub secure: bool,
     pub unregistered: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Net::HttpConnection,
-            *mut crate::System::Net::HttpConnection,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Net::HttpConnection>,
+        quest_hook::libil2cpp::Gc<crate::System::Net::HttpConnection>,
     >,
 }
 #[cfg(feature = "System+Net+EndPointListener")]
@@ -27,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+EndPointListener")]
 impl std::ops::Deref for crate::System::Net::EndPointListener {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +42,7 @@ impl crate::System::Net::EndPointListener {
         socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
         e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
         accepted: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Net::Sockets::Socket,
+            quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -110,7 +108,9 @@ impl crate::System::Net::EndPointListener {
         host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
-        prefix: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Net::ListenerPrefix>,
+        prefix: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Net::ListenerPrefix>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     > {
@@ -187,7 +187,9 @@ impl crate::System::Net::EndPointListener {
     pub fn SearchListener(
         &mut self,
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
-        prefix: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Net::ListenerPrefix>,
+        prefix: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Net::ListenerPrefix>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     > {

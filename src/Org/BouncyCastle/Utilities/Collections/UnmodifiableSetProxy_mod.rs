@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnmodifiableSetProxy {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet,
+    >,
     pub s: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Utilities::Collections::ISet,
     >,
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableSetProxy")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSetProxy {
-    type Target = crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

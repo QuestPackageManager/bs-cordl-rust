@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LobbyGameStateController {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _lobbyPlayersDataModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ILobbyPlayersDataModel,
     >,
@@ -34,10 +34,10 @@ pub struct LobbyGameStateController {
         crate::GlobalNamespace::BeatmapLevelsModel,
     >,
     pub selectedLevelGameplaySetupDataChangedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::ILevelGameplaySetupData>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
     >,
     pub gameStartedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::ILevelGameplaySetupData>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
     >,
     pub gameStartCancelledEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub countdownStartedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -45,25 +45,25 @@ pub struct LobbyGameStateController {
     pub songStillDownloadingEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub startTimeChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub levelFinishedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-            *mut crate::GlobalNamespace::MultiplayerResultsData,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
         >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
     >,
     pub levelDidGetDisconnectedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
+        crate::GlobalNamespace::DisconnectedReason,
     >,
     pub lobbyDisconnectedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub beforeSceneSwitchCallbackEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub lobbyStateChangedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::MultiplayerLobbyState>,
+        crate::GlobalNamespace::MultiplayerLobbyState,
     >,
     pub startButtonEnabledEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::CannotStartGameReason>,
+        crate::GlobalNamespace::CannotStartGameReason,
     >,
     pub playerMissingEntitlementsChangedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
         >,
     >,
     pub _levelStartInitiated_k__BackingField: bool,
@@ -87,7 +87,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LobbyGameStateController")]
 impl std::ops::Deref for crate::GlobalNamespace::LobbyGameStateController {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -547,7 +547,7 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn add_gameStartedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ILevelGameplaySetupData>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -559,9 +559,7 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     }
     pub fn add_levelDidGetDisconnectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -573,10 +571,10 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn add_levelFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                *mut crate::GlobalNamespace::MultiplayerResultsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -599,9 +597,7 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     }
     pub fn add_lobbyStateChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::MultiplayerLobbyState>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLobbyState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -613,8 +609,8 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn add_playerMissingEntitlementsChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -628,7 +624,7 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn add_selectedLevelGameplaySetupDataChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ILevelGameplaySetupData>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -651,9 +647,7 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     }
     pub fn add_startButtonEnabledEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::CannotStartGameReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CannotStartGameReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -808,7 +802,7 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn remove_gameStartedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ILevelGameplaySetupData>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -820,9 +814,7 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     }
     pub fn remove_levelDidGetDisconnectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -834,10 +826,10 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn remove_levelFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                *mut crate::GlobalNamespace::MultiplayerResultsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -860,9 +852,7 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     }
     pub fn remove_lobbyStateChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::MultiplayerLobbyState>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLobbyState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -874,8 +864,8 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn remove_playerMissingEntitlementsChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -889,7 +879,7 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn remove_selectedLevelGameplaySetupDataChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ILevelGameplaySetupData>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -912,9 +902,7 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     }
     pub fn remove_startButtonEnabledEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::CannotStartGameReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CannotStartGameReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1023,44 +1011,60 @@ for crate::GlobalNamespace::LobbyGameStateController {
     }
 }
 #[cfg(feature = "LobbyGameStateController")]
-impl AsRef<crate::GlobalNamespace::ILobbyGameStateController>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyGameStateController>>
 for crate::GlobalNamespace::LobbyGameStateController {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ILobbyGameStateController {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyGameStateController> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LobbyGameStateController")]
-impl AsMut<crate::GlobalNamespace::ILobbyGameStateController>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyGameStateController>>
 for crate::GlobalNamespace::LobbyGameStateController {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILobbyGameStateController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyGameStateController,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LobbyGameStateController")]
-impl AsRef<crate::GlobalNamespace::ILobbyGameStateControllerBase>
-for crate::GlobalNamespace::LobbyGameStateController {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ILobbyGameStateControllerBase {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyGameStateControllerBase>,
+> for crate::GlobalNamespace::LobbyGameStateController {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyGameStateControllerBase,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LobbyGameStateController")]
-impl AsMut<crate::GlobalNamespace::ILobbyGameStateControllerBase>
-for crate::GlobalNamespace::LobbyGameStateController {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILobbyGameStateControllerBase {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyGameStateControllerBase>,
+> for crate::GlobalNamespace::LobbyGameStateController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyGameStateControllerBase,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LobbyGameStateController")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::LobbyGameStateController {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LobbyGameStateController")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::LobbyGameStateController {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeflateStreamNative {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub feeder: quest_hook::libil2cpp::Gc<
         crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite,
     >,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStreamNative {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -120,7 +120,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
             .invoke("Flush", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Flush_DeflateStreamNative_SafeDeflateStreamHandle1(
+    pub fn Flush_Gc1(
         stream: quest_hook::libil2cpp::Gc<
             crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle,
         >,
@@ -136,7 +136,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ReadZStream_DeflateStreamNative_SafeDeflateStreamHandle_IntPtr_i32_1(
+    pub fn ReadZStream_Gc_IntPtr_i32_1(
         stream: quest_hook::libil2cpp::Gc<
             crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle,
         >,
@@ -199,7 +199,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
             .invoke("UnmanagedWrite", (buffer, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteZStream_DeflateStreamNative_SafeDeflateStreamHandle_IntPtr_i32_1(
+    pub fn WriteZStream_Gc_IntPtr_i32_1(
         stream: quest_hook::libil2cpp::Gc<
             crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle,
         >,
@@ -247,7 +247,9 @@ for crate::System::IO::Compression::DeflateStreamNative {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeflateStreamNative_SafeDeflateStreamHandle {
-    __cordl_parent: crate::System::Runtime::InteropServices::SafeHandle,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::InteropServices::SafeHandle,
+    >,
 }
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative+SafeDeflateStreamHandle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -258,7 +260,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative+SafeDeflateStreamHandle")]
 impl std::ops::Deref
 for crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle {
-    type Target = crate::System::Runtime::InteropServices::SafeHandle;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::InteropServices::SafeHandle,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -318,7 +322,7 @@ for crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle 
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeflateStreamNative_UnmanagedReadOrWrite {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative+UnmanagedReadOrWrite")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -329,7 +333,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative+UnmanagedReadOrWrite")]
 impl std::ops::Deref
 for crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

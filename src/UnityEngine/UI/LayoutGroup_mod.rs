@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LayoutGroup {
-    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >,
     pub m_Padding: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectOffset>,
     pub m_ChildAlignment: crate::UnityEngine::TextAnchor,
     pub m_Rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -11,9 +13,7 @@ pub struct LayoutGroup {
     pub m_TotalPreferredSize: crate::UnityEngine::Vector2,
     pub m_TotalFlexibleSize: crate::UnityEngine::Vector2,
     pub m_RectChildren: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::RectTransform,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+LayoutGroup")]
@@ -23,7 +23,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+LayoutGroup")]
 impl std::ops::Deref for crate::UnityEngine::UI::LayoutGroup {
-    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -176,7 +178,7 @@ impl crate::UnityEngine::UI::LayoutGroup {
             .invoke("OnTransformChildrenChanged", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetChildAlongAxisWithScale_RectTransform_i32_f32_f32_0(
+    pub fn SetChildAlongAxisWithScale_Gc_i32_f32_f32_0(
         &mut self,
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         axis: i32,
@@ -208,7 +210,7 @@ impl crate::UnityEngine::UI::LayoutGroup {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetChildAlongAxis_RectTransform_i32_f32_0(
+    pub fn SetChildAlongAxis_Gc_i32_f32_0(
         &mut self,
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         axis: i32,
@@ -390,18 +392,14 @@ impl crate::UnityEngine::UI::LayoutGroup {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::RectTransform,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::RectTransform,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         > = __cordl_object.invoke("get_rectChildren", ())?;
         Ok(__cordl_ret.into())
     }
@@ -450,44 +448,56 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::LayoutGroup {
     }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutGroup")]
-impl AsRef<crate::UnityEngine::UI::ILayoutController>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutController>>
 for crate::UnityEngine::UI::LayoutGroup {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutController {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutController> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutGroup")]
-impl AsMut<crate::UnityEngine::UI::ILayoutController>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutController>>
 for crate::UnityEngine::UI::LayoutGroup {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutController> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutGroup")]
-impl AsRef<crate::UnityEngine::UI::ILayoutElement>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
 for crate::UnityEngine::UI::LayoutGroup {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutGroup")]
-impl AsMut<crate::UnityEngine::UI::ILayoutElement>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
 for crate::UnityEngine::UI::LayoutGroup {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutGroup")]
-impl AsRef<crate::UnityEngine::UI::ILayoutGroup>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutGroup>>
 for crate::UnityEngine::UI::LayoutGroup {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutGroup {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutGroup> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutGroup")]
-impl AsMut<crate::UnityEngine::UI::ILayoutGroup>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutGroup>>
 for crate::UnityEngine::UI::LayoutGroup {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutGroup {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutGroup> {
         unsafe { std::mem::transmute(self) }
     }
 }

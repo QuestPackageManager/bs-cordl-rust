@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtdValidator {
-    __cordl_parent: crate::System::Xml::Schema::BaseValidator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseValidator>,
     pub validationStack: quest_hook::libil2cpp::Gc<crate::System::Xml::HWStack>,
     pub attPresence: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+DtdValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::DtdValidator {
-    type Target = crate::System::Xml::Schema::BaseValidator;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseValidator>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -311,7 +311,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::DtdValida
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtdValidator_NamespaceManager {
-    __cordl_parent: crate::System::Xml::XmlNamespaceManager,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
 }
 #[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -321,7 +321,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]
 impl std::ops::Deref for crate::System::Xml::Schema::DtdValidator_NamespaceManager {
-    type Target = crate::System::Xml::XmlNamespaceManager;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

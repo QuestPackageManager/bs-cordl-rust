@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OrInstruction_OrInt32 {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::OrInstruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::OrInstruction,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrInt32")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrInt32")]
 impl std::ops::Deref for crate::GlobalNamespace::OrInstruction_OrInt32 {
-    type Target = crate::System::Linq::Expressions::Interpreter::OrInstruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::OrInstruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

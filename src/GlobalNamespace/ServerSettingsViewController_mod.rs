@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServerSettingsViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _enabled: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _hostName: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
     pub _forceGameLift: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ServerSettingsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::ServerSettingsViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

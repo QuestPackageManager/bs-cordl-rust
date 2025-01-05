@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderMeshController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _numberOfFixedVertexPathSegments: i32,
     pub _controlPointDistancePerSqrtNotesDistance: f32,
     pub _middleAnchorPointOffsetAmount: f32,
@@ -13,9 +13,7 @@ pub struct SliderMeshController {
         crate::GlobalNamespace::SliderMeshConstructor,
     >,
     pub _pathsHolder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PathsHolder>,
-    pub _reusableAnchorsList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-    >,
+    pub _reusableAnchorsList: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     pub _reusableControlPointsArray4: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
@@ -30,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderMeshController")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderMeshController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

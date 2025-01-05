@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputFieldSelectableStateController {
-    __cordl_parent: crate::GlobalNamespace::SelectableStateController_1<
-        *mut crate::HMUI::InputFieldView,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
     >,
 }
 #[cfg(feature = "InputFieldSelectableStateController")]
@@ -14,8 +14,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "InputFieldSelectableStateController")]
 impl std::ops::Deref for crate::GlobalNamespace::InputFieldSelectableStateController {
-    type Target = crate::GlobalNamespace::SelectableStateController_1<
-        *mut crate::HMUI::InputFieldView,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IndexFilter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub f: crate::BeatmapSaveDataCommon::IndexFilterType,
     pub p: i32,
     pub t: i32,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion3+IndexFilter")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::IndexFilter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,7 +71,7 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
             .invoke("CreateStepFilter", (offset, step, reversed))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_IndexFilter1(
+    pub fn New_Gc1(
         other: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -110,7 +110,7 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_IndexFilter1(
+    pub fn _ctor_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct File {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+IO+File")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+File")]
 impl std::ops::Deref for crate::System::IO::File {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +41,7 @@ impl crate::System::IO::File {
             .invoke("CreateText", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Il2CppString0(
+    pub fn Create_Gc0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IO::FileStream>,
@@ -86,7 +86,7 @@ impl crate::System::IO::File {
             .invoke("GetAccessControl", (path, includeSections))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAccessControl_Il2CppString0(
+    pub fn GetAccessControl_Gc0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::FileSecurity>,
@@ -109,11 +109,15 @@ impl crate::System::IO::File {
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InternalReadAllLines", (path, encoding))?;
         Ok(__cordl_ret.into())
@@ -141,9 +145,7 @@ impl crate::System::IO::File {
     pub fn InternalWriteAllLines(
         writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
         contents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -197,7 +199,7 @@ impl crate::System::IO::File {
             .invoke("Open", (path, mode, access, share))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Open_Il2CppString_FileMode0(
+    pub fn Open_Gc_FileMode0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
     ) -> quest_hook::libil2cpp::Result<
@@ -233,11 +235,15 @@ impl crate::System::IO::File {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReadAllLines", (path))?;
         Ok(__cordl_ret.into())
@@ -253,7 +259,7 @@ impl crate::System::IO::File {
             .invoke("ReadAllText", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Replace_Il2CppString_Il2CppString_Il2CppString0(
+    pub fn Replace_Gc_Gc_Gc0(
         sourceFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         destinationFileName: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -299,11 +305,11 @@ impl crate::System::IO::File {
             .invoke("WriteAllBytes", (path, bytes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAllLines_IEnumerable_1_1(
+    pub fn WriteAllLines_Gc_Gc0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         contents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -311,17 +317,17 @@ impl crate::System::IO::File {
             .invoke("WriteAllLines", (path, contents))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAllLines_Il2CppArray0(
+    pub fn WriteAllLines_Gc_Gc1(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         contents: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("WriteAllLines", (path, contents))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAllText_Encoding1(
+    pub fn WriteAllText_Gc1(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         contents: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -330,7 +336,7 @@ impl crate::System::IO::File {
             .invoke("WriteAllText", (path, contents, encoding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAllText_Il2CppString_Il2CppString0(
+    pub fn WriteAllText_Gc_Gc0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         contents: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

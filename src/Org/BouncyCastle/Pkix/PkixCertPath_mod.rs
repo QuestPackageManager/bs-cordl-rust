@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkixCertPath {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub certificates: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPath")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPath")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkix::PkixCertPath {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
         > = __cordl_object.invoke("GetEncoded", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetEncoded_Il2CppString1(
+    pub fn GetEncoded_Gc1(
         &mut self,
         encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -69,7 +69,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_ICollection0(
+    pub fn New_Gc0(
         certificates: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -78,7 +78,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
             .invoke_void(".ctor", (certificates))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream1(
+    pub fn New_Gc1(
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -87,7 +87,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
             .invoke_void(".ctor", (inStream))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream_Il2CppString2(
+    pub fn New_Gc2(
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -134,7 +134,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
         > = __cordl_object.invoke("ToDerEncoded", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ICollection0(
+    pub fn _ctor_Gc0(
         &mut self,
         certificates: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -145,7 +145,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
             .invoke(".ctor", (certificates))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream1(
+    pub fn _ctor_Gc1(
         &mut self,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -156,7 +156,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
             .invoke(".ctor", (inStream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream_Il2CppString2(
+    pub fn _ctor_Gc2(
         &mut self,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

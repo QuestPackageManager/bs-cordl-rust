@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerManipulator {
-    __cordl_parent: crate::UnityEngine::UIElements::MouseManipulator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::MouseManipulator,
+    >,
     pub m_CurrentPointerId: i32,
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerManipulator")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+PointerManipulator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerManipulator {
-    type Target = crate::UnityEngine::UIElements::MouseManipulator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::MouseManipulator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

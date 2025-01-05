@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecipientInfo {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+RecipientInfo")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+RecipientInfo")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,38 +53,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo {
         > = __cordl_object.invoke("GetKekInfo", (o))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1Object5(
-        info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_KekRecipientInfo2(
-        info: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_KeyAgreeRecipientInfo1(
-        info: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_KeyTransRecipientInfo0(
+    pub fn New_Gc0(
         info: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::KeyTransRecipientInfo,
         >,
@@ -91,7 +64,40 @@ impl crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo {
             .invoke_void(".ctor", (info))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_OtherRecipientInfo4(
+    pub fn New_Gc1(
+        info: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc2(
+        info: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc3(
+        info: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::PasswordRecipientInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc4(
         info: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::OtherRecipientInfo,
         >,
@@ -102,10 +108,8 @@ impl crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo {
             .invoke_void(".ctor", (info))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PasswordRecipientInfo3(
-        info: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::PasswordRecipientInfo,
-        >,
+    pub fn New_Gc5(
+        info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -126,44 +130,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Object5(
-        &mut self,
-        info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (info))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_KekRecipientInfo2(
-        &mut self,
-        info: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (info))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_KeyAgreeRecipientInfo1(
-        &mut self,
-        info: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (info))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_KeyTransRecipientInfo0(
+    pub fn _ctor_Gc0(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::KeyTransRecipientInfo,
@@ -176,7 +143,46 @@ impl crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo {
             .invoke(".ctor", (info))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_OtherRecipientInfo4(
+    pub fn _ctor_Gc1(
+        &mut self,
+        info: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (info))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc2(
+        &mut self,
+        info: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (info))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc3(
+        &mut self,
+        info: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::PasswordRecipientInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (info))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc4(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::OtherRecipientInfo,
@@ -189,11 +195,9 @@ impl crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo {
             .invoke(".ctor", (info))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_PasswordRecipientInfo3(
+    pub fn _ctor_Gc5(
         &mut self,
-        info: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::PasswordRecipientInfo,
-        >,
+        info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -247,16 +251,20 @@ for crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+RecipientInfo")]
-impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
 for crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Choice {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+RecipientInfo")]
-impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
 for crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Choice {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
         unsafe { std::mem::transmute(self) }
     }
 }

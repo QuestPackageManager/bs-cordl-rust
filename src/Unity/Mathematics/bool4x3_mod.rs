@@ -23,7 +23,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::b
 }
 #[cfg(feature = "Unity+Mathematics+bool4x3")]
 impl crate::Unity::Mathematics::bool4x3 {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -256,20 +256,18 @@ impl crate::Unity::Mathematics::bool4x3 {
     }
 }
 #[cfg(feature = "Unity+Mathematics+bool4x3")]
-impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::bool4x3>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::bool4x3>>
 for crate::Unity::Mathematics::bool4x3 {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::Unity::Mathematics::bool4x3> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::bool4x3> {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Mathematics+bool4x3")]
-impl AsMut<crate::System::IEquatable_1<crate::Unity::Mathematics::bool4x3>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::bool4x3>>
 for crate::Unity::Mathematics::bool4x3 {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::Unity::Mathematics::bool4x3> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::bool4x3> {
         todo!()
     }
 }

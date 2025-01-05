@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkiStatusInfo {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub status: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
     pub statusString: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PkiStatusInfo")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +35,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PkiStatusInfo")]
 impl crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo {
-    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
+    pub fn GetInstance_Gc1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance__cordl_bool0(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         isExplicit: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -43,17 +57,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo {
             .invoke("GetInstance", (obj, isExplicit))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInstance_Il2CppObject1(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn New_Asn1Sequence0(
+    pub fn New_Gc0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -71,7 +75,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo {
             .invoke_void(".ctor", (status))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_PkiFreeText2(
+    pub fn New_i32_Gc2(
         status: i32,
         statusString: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
@@ -83,7 +87,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo {
             .invoke_void(".ctor", (status, statusString))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_PkiFreeText_PkiFailureInfo3(
+    pub fn New_i32_Gc_Gc3(
         status: i32,
         statusString: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
@@ -111,7 +115,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Sequence0(
+    pub fn _ctor_Gc0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -133,7 +137,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo {
             .invoke(".ctor", (status))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_PkiFreeText2(
+    pub fn _ctor_i32_Gc2(
         &mut self,
         status: i32,
         statusString: quest_hook::libil2cpp::Gc<
@@ -147,7 +151,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo {
             .invoke(".ctor", (status, statusString))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_PkiFreeText_PkiFailureInfo3(
+    pub fn _ctor_i32_Gc_Gc3(
         &mut self,
         status: i32,
         statusString: quest_hook::libil2cpp::Gc<

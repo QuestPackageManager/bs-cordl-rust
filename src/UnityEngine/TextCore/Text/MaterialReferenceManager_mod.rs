@@ -2,30 +2,22 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialReferenceManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_FontMaterialReferenceLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::UnityEngine::Material,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     >,
     pub m_FontAssetReferenceLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::UnityEngine::TextCore::Text::FontAsset,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
     >,
     pub m_SpriteAssetReferenceLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
     >,
     pub m_ColorGradientReferenceLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::UnityEngine::TextCore::Text::TextColorGradient,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextColorGradient>,
     >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+MaterialReferenceManager")]
@@ -36,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+MaterialReferenceManager")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -150,7 +142,9 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
     pub fn TryGetColorGradientPreset(
         hashCode: i32,
         gradientPreset: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::TextColorGradient,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::TextColorGradient,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -161,7 +155,9 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         &mut self,
         hashCode: i32,
         gradientPreset: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::TextColorGradient,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::TextColorGradient,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -174,7 +170,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
     pub fn TryGetFontAsset(
         hashCode: i32,
         fontAsset: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::FontAsset,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -185,7 +181,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         &mut self,
         hashCode: i32,
         fontAsset: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::FontAsset,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -197,7 +193,9 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
     }
     pub fn TryGetMaterial(
         hashCode: i32,
-        material: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Material>,
+        material: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryGetMaterial", (hashCode, material))?;
@@ -206,7 +204,9 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
     pub fn TryGetMaterialInternal(
         &mut self,
         hashCode: i32,
-        material: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Material>,
+        material: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -218,7 +218,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
     pub fn TryGetSpriteAsset(
         hashCode: i32,
         spriteAsset: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -229,7 +229,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         &mut self,
         hashCode: i32,
         spriteAsset: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

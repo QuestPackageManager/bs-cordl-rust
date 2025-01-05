@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectSpawnCenter {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _distances: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter_PlayerCountToDistance,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapObjectSpawnCenter_PlayerCountToDistance,
+            >,
         >,
     >,
     pub _defaultDistnace: f32,
-    pub spawnCenterDistanceWasFoundEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<f32>,
-    >,
+    pub spawnCenterDistanceWasFoundEvent: quest_hook::libil2cpp::Gc<f32>,
     pub _spawnCenterDistanceWasFound: bool,
     pub _spawnCenterDistance: f32,
 }
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapObjectSpawnCenter")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectSpawnCenter {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,7 +78,7 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnCenter {
     }
     pub fn add_spawnCenterDistanceWasFoundEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnCenter {
     }
     pub fn remove_spawnCenterDistanceWasFoundEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -130,7 +130,7 @@ for crate::GlobalNamespace::BeatmapObjectSpawnCenter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectSpawnCenter_PlayerCountToDistance {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _playerCount: i32,
     pub _distance: f32,
 }
@@ -143,7 +143,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapObjectSpawnCenter+PlayerCountToDistance")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapObjectSpawnCenter_PlayerCountToDistance {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

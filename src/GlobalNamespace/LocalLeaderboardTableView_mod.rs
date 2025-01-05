@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalLeaderboardTableView {
-    __cordl_parent: crate::GlobalNamespace::LeaderboardTableView,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardTableView,
+    >,
 }
 #[cfg(feature = "LocalLeaderboardTableView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LocalLeaderboardTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardTableView {
-    type Target = crate::GlobalNamespace::LeaderboardTableView;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardTableView,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,8 +38,8 @@ impl crate::GlobalNamespace::LocalLeaderboardTableView {
     pub fn SetScores(
         &mut self,
         scores: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
             >,
         >,
         specialScorePos: i32,

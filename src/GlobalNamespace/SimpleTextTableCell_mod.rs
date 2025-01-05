@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleTextTableCell {
-    __cordl_parent: crate::HMUI::TableCell,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "SimpleTextTableCell")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SimpleTextTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::SimpleTextTableCell {
-    type Target = crate::HMUI::TableCell;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

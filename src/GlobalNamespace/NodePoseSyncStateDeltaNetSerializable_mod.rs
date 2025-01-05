@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NodePoseSyncStateDeltaNetSerializable {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _delta: crate::GlobalNamespace::NodePoseSyncState,
     pub _baseId_k__BackingField: crate::GlobalNamespace::SyncStateId,
     pub _timeOffsetMs_k__BackingField: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -100,14 +100,14 @@ impl crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
     }
     pub fn get_pool() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IPacketPool_1<
-                *mut crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IPacketPool_1<
-                *mut crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
         Ok(__cordl_ret.into())
@@ -164,58 +164,56 @@ for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
     }
 }
 #[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
-impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket>>
 for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
-impl AsMut<crate::GlobalNamespace::IPoolablePacket>
-for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
-impl AsRef<
-    crate::GlobalNamespace::ISyncStateDeltaSerializable_1<
-        crate::GlobalNamespace::NodePoseSyncState,
-    >,
-> for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::ISyncStateDeltaSerializable_1<
-        crate::GlobalNamespace::NodePoseSyncState,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
-impl AsMut<
-    crate::GlobalNamespace::ISyncStateDeltaSerializable_1<
-        crate::GlobalNamespace::NodePoseSyncState,
-    >,
-> for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket>>
+for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::ISyncStateDeltaSerializable_1<
-        crate::GlobalNamespace::NodePoseSyncState,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
-impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NodePoseSyncState>>
 for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
-    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NodePoseSyncState> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
-impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NodePoseSyncState>>
 for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
-    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NodePoseSyncState> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
+for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
+for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
         unsafe { std::mem::transmute(self) }
     }
 }

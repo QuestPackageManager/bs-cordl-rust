@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClassMap {
-    __cordl_parent: crate::System::Xml::Serialization::ObjectMap,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::ObjectMap,
+    >,
     pub _elements: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _elementMembers: quest_hook::libil2cpp::Gc<
         crate::System::Collections::ArrayList,
@@ -12,7 +14,9 @@ pub struct ClassMap {
     >,
     pub _attributeMembersArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Serialization::XmlTypeMapMemberAttribute,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Xml::Serialization::XmlTypeMapMemberAttribute,
+            >,
         >,
     >,
     pub _flatLists: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -47,7 +51,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+ClassMap")]
 impl std::ops::Deref for crate::System::Xml::Serialization::ClassMap {
-    type Target = crate::System::Xml::Serialization::ObjectMap;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::ObjectMap,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -106,7 +112,7 @@ impl crate::System::Xml::Serialization::ClassMap {
         > = __cordl_object.invoke("GetAttribute", (name, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetElement_Il2CppString_Il2CppString1(
+    pub fn GetElement_Gc_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InspectorOrderAttribute {
-    __cordl_parent: crate::UnityEngine::PropertyAttribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>,
     pub _m_inspectorSort_k__BackingField: crate::UnityEngine::InspectorSort,
     pub _m_sortDirection_k__BackingField: crate::UnityEngine::InspectorSortDirection,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InspectorOrderAttribute")]
 impl std::ops::Deref for crate::UnityEngine::InspectorOrderAttribute {
-    type Target = crate::UnityEngine::PropertyAttribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

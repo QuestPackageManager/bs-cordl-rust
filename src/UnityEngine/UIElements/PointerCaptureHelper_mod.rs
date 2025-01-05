@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerCaptureHelper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerCaptureHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+PointerCaptureHelper")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerCaptureHelper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,7 +91,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
             .invoke("ProcessPointerCapture", (panel, pointerId))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReleasePointer_IEventHandler0(
+    pub fn ReleasePointer_Gc_i32_0(
         handler: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IEventHandler,
         >,
@@ -101,7 +101,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
             .invoke("ReleasePointer", (handler, pointerId))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReleasePointer_IPanel1(
+    pub fn ReleasePointer_Gc_i32_1(
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JoiningLobbyViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _cancelJoiningButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _loadingControl: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LoadingControl,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "JoiningLobbyViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::JoiningLobbyViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Caching {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+Caching")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Caching")]
 impl std::ops::Deref for crate::UnityEngine::Caching {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -23,7 +23,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Caching {
 }
 #[cfg(feature = "UnityEngine+Caching")]
 impl crate::UnityEngine::Caching {
-    pub fn AddCache_Il2CppString0(
+    pub fn AddCache_Gc0(
         cachePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Cache> {
         let __cordl_ret: crate::UnityEngine::Cache = <Self as quest_hook::libil2cpp::Type>::class()
@@ -129,7 +129,7 @@ impl crate::UnityEngine::Caching {
             .invoke("IsVersionCached", (cachedBundle))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsVersionCached_Il2CppString_Il2CppString_Hash128_1(
+    pub fn IsVersionCached_Gc_Gc_Hash128_1(
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         assetBundleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         hash: crate::UnityEngine::Hash128,

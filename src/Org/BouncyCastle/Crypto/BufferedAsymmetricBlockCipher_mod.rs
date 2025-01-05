@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BufferedAsymmetricBlockCipher {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::BufferedCipherBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::BufferedCipherBase,
+    >,
     pub cipher: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
     >,
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+BufferedAsymmetricBlockCipher")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::BufferedAsymmetricBlockCipher {
-    type Target = crate::Org::BouncyCastle::Crypto::BufferedCipherBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::BufferedCipherBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +49,7 @@ impl crate::Org::BouncyCastle::Crypto::BufferedAsymmetricBlockCipher {
         > = __cordl_object.invoke("DoFinal", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Il2CppArray_i32_i32_1(
+    pub fn DoFinal_Gc_i32_i32_1(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inOff: i32,

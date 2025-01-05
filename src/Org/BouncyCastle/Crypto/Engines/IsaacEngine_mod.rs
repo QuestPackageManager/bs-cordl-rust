@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IsaacEngine {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub engineState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub results: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub a: u32,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+IsaacEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::IsaacEngine {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -153,16 +153,22 @@ for crate::Org::BouncyCastle::Crypto::Engines::IsaacEngine {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+IsaacEngine")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IStreamCipher>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCipher>>
 for crate::Org::BouncyCastle::Crypto::Engines::IsaacEngine {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IStreamCipher {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCipher> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+IsaacEngine")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IStreamCipher>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCipher>>
 for crate::Org::BouncyCastle::Crypto::Engines::IsaacEngine {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IStreamCipher {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IStreamCipher,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlUnionConverter {
-    __cordl_parent: crate::System::Xml::Schema::XmlBaseConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlBaseConverter,
+    >,
     pub converters: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::XmlValueConverter,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlValueConverter>,
         >,
     >,
     pub hasAtomicMember: bool,
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlUnionConverter")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlUnionConverter {
-    type Target = crate::System::Xml::Schema::XmlBaseConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlBaseConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

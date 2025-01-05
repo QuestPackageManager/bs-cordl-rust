@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CcmParameters {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+CcmParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+CcmParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::CcmParameters {
-    type Target = crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

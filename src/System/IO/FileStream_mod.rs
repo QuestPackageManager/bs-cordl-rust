@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileStream {
-    __cordl_parent: crate::System::IO::Stream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub safeHandle: quest_hook::libil2cpp::Gc<
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+FileStream")]
 impl std::ops::Deref for crate::System::IO::FileStream {
-    type Target = crate::System::IO::Stream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -175,7 +175,7 @@ impl crate::System::IO::FileStream {
             .invoke("FlushBufferIfDirty", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSecureFileName_Il2CppString0(
+    pub fn GetSecureFileName_Gc0(
         &mut self,
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -237,7 +237,33 @@ impl crate::System::IO::FileStream {
             .invoke("InitBuffer", (_cordl_size, isZeroSize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString_FileMode_FileAccess2(
+    pub fn New_Gc_FileAccess7(
+        handle: quest_hook::libil2cpp::Gc<
+            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+        >,
+        access: crate::System::IO::FileAccess,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handle, access))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_FileAccess_i32__cordl_bool8(
+        handle: quest_hook::libil2cpp::Gc<
+            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+        >,
+        access: crate::System::IO::FileAccess,
+        bufferSize: i32,
+        isAsync: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handle, access, bufferSize, isAsync))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_FileMode_FileAccess2(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
@@ -248,7 +274,7 @@ impl crate::System::IO::FileStream {
             .invoke_void(".ctor", (path, mode, access))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_FileMode_FileAccess_FileShare3(
+    pub fn New_Gc_FileMode_FileAccess_FileShare3(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
@@ -260,7 +286,7 @@ impl crate::System::IO::FileStream {
             .invoke_void(".ctor", (path, mode, access, share))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_FileMode_FileAccess_FileShare_i32_4(
+    pub fn New_Gc_FileMode_FileAccess_FileShare_i32_4(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
@@ -273,7 +299,7 @@ impl crate::System::IO::FileStream {
             .invoke_void(".ctor", (path, mode, access, share, bufferSize))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_FileMode_FileAccess_FileShare_i32_FileOptions6(
+    pub fn New_Gc_FileMode_FileAccess_FileShare_i32_FileOptions6(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
@@ -287,7 +313,7 @@ impl crate::System::IO::FileStream {
             .invoke_void(".ctor", (path, mode, access, share, bufferSize, options))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool5(
+    pub fn New_Gc_FileMode_FileAccess_FileShare_i32__cordl_bool5(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
@@ -301,7 +327,7 @@ impl crate::System::IO::FileStream {
             .invoke_void(".ctor", (path, mode, access, share, bufferSize, useAsync))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool_FileOptions10(
+    pub fn New_Gc_FileMode_FileAccess_FileShare_i32__cordl_bool_FileOptions10(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
@@ -319,7 +345,7 @@ impl crate::System::IO::FileStream {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool__cordl_bool9(
+    pub fn New_Gc_FileMode_FileAccess_FileShare_i32__cordl_bool__cordl_bool9(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
@@ -366,36 +392,10 @@ impl crate::System::IO::FileStream {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SafeFileHandle_FileAccess7(
-        handle: quest_hook::libil2cpp::Gc<
-            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        >,
-        access: crate::System::IO::FileAccess,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handle, access))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SafeFileHandle_FileAccess_i32__cordl_bool8(
-        handle: quest_hook::libil2cpp::Gc<
-            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        >,
-        access: crate::System::IO::FileAccess,
-        bufferSize: i32,
-        isAsync: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handle, access, bufferSize, isAsync))?;
-        Ok(__cordl_object.into())
-    }
     pub fn Read(
         &mut self,
         array: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
         offset: i32,
         count: i32,
@@ -412,15 +412,11 @@ impl crate::System::IO::FileStream {
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
             .invoke("ReadAsync", (buffer, offset, count, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -573,7 +569,37 @@ impl crate::System::IO::FileStream {
             .invoke("WriteSegment", (src, src_offset, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_FileMode_FileAccess2(
+    pub fn _ctor_Gc_FileAccess7(
+        &mut self,
+        handle: quest_hook::libil2cpp::Gc<
+            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+        >,
+        access: crate::System::IO::FileAccess,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (handle, access))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_FileAccess_i32__cordl_bool8(
+        &mut self,
+        handle: quest_hook::libil2cpp::Gc<
+            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+        >,
+        access: crate::System::IO::FileAccess,
+        bufferSize: i32,
+        isAsync: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (handle, access, bufferSize, isAsync))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_FileMode_FileAccess2(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
@@ -586,7 +612,7 @@ impl crate::System::IO::FileStream {
             .invoke(".ctor", (path, mode, access))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_FileMode_FileAccess_FileShare3(
+    pub fn _ctor_Gc_FileMode_FileAccess_FileShare3(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
@@ -600,7 +626,7 @@ impl crate::System::IO::FileStream {
             .invoke(".ctor", (path, mode, access, share))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_FileMode_FileAccess_FileShare_i32_4(
+    pub fn _ctor_Gc_FileMode_FileAccess_FileShare_i32_4(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
@@ -615,7 +641,7 @@ impl crate::System::IO::FileStream {
             .invoke(".ctor", (path, mode, access, share, bufferSize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_FileMode_FileAccess_FileShare_i32_FileOptions6(
+    pub fn _ctor_Gc_FileMode_FileAccess_FileShare_i32_FileOptions6(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
@@ -631,7 +657,7 @@ impl crate::System::IO::FileStream {
             .invoke(".ctor", (path, mode, access, share, bufferSize, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool5(
+    pub fn _ctor_Gc_FileMode_FileAccess_FileShare_i32__cordl_bool5(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
@@ -647,7 +673,7 @@ impl crate::System::IO::FileStream {
             .invoke(".ctor", (path, mode, access, share, bufferSize, useAsync))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool_FileOptions10(
+    pub fn _ctor_Gc_FileMode_FileAccess_FileShare_i32__cordl_bool_FileOptions10(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
@@ -667,7 +693,7 @@ impl crate::System::IO::FileStream {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool__cordl_bool9(
+    pub fn _ctor_Gc_FileMode_FileAccess_FileShare_i32__cordl_bool__cordl_bool9(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
@@ -718,36 +744,6 @@ impl crate::System::IO::FileStream {
                 ".ctor",
                 (handle, access, ownsHandle, bufferSize, isAsync, isConsoleWrapper),
             )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SafeFileHandle_FileAccess7(
-        &mut self,
-        handle: quest_hook::libil2cpp::Gc<
-            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        >,
-        access: crate::System::IO::FileAccess,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (handle, access))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SafeFileHandle_FileAccess_i32__cordl_bool8(
-        &mut self,
-        handle: quest_hook::libil2cpp::Gc<
-            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        >,
-        access: crate::System::IO::FileAccess,
-        bufferSize: i32,
-        isAsync: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (handle, access, bufferSize, isAsync))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -836,7 +832,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::FileStream {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileStream_ReadDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "System+IO+FileStream+ReadDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -845,7 +841,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+FileStream+ReadDelegate")]
 impl std::ops::Deref for crate::System::IO::FileStream_ReadDelegate {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -933,7 +929,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::FileStream_ReadDel
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileStream_WriteDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "System+IO+FileStream+WriteDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -942,7 +938,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+FileStream+WriteDelegate")]
 impl std::ops::Deref for crate::System::IO::FileStream_WriteDelegate {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

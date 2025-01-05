@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StaticPreviewMediaData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _coverSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _previewAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StaticPreviewMediaData")]
 impl std::ops::Deref for crate::GlobalNamespace::StaticPreviewMediaData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,15 +29,13 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
     pub fn GetCoverSpriteAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         > = __cordl_object.invoke("GetCoverSpriteAsync", ())?;
         Ok(__cordl_ret.into())
     }
@@ -45,14 +43,14 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         > = __cordl_object.invoke("GetPreviewAudioClip", ())?;
         Ok(__cordl_ret.into())
     }
@@ -110,16 +108,20 @@ for crate::GlobalNamespace::StaticPreviewMediaData {
     }
 }
 #[cfg(feature = "StaticPreviewMediaData")]
-impl AsRef<crate::GlobalNamespace::IPreviewMediaData>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPreviewMediaData>>
 for crate::GlobalNamespace::StaticPreviewMediaData {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IPreviewMediaData {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPreviewMediaData> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "StaticPreviewMediaData")]
-impl AsMut<crate::GlobalNamespace::IPreviewMediaData>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPreviewMediaData>>
 for crate::GlobalNamespace::StaticPreviewMediaData {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPreviewMediaData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPreviewMediaData> {
         unsafe { std::mem::transmute(self) }
     }
 }

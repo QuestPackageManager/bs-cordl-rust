@@ -55,20 +55,30 @@ impl crate::UnityEngine::InputSystem::LowLevel::DualMotorRumbleCommand {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+DualMotorRumbleCommand")]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
-for crate::UnityEngine::InputSystem::LowLevel::DualMotorRumbleCommand {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::DualMotorRumbleCommand {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+DualMotorRumbleCommand")]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
-for crate::UnityEngine::InputSystem::LowLevel::DualMotorRumbleCommand {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::DualMotorRumbleCommand {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    > {
         todo!()
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Deflate {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub strm: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
     >,
@@ -75,7 +75,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Deflate")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -301,7 +301,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn deflateInit_ZStream_i32_1(
+    pub fn deflateInit_Gc_i32_1(
         &mut self,
         strm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
@@ -466,7 +466,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
             .invoke("putShortMSB", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn put_byte_Il2CppArray_i32_i32_0(
+    pub fn put_byte_Gc_i32_i32_0(
         &mut self,
         p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         start: i32,
@@ -607,7 +607,7 @@ for crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Deflate_Config {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub good_length: i32,
     pub max_lazy: i32,
     pub nice_length: i32,
@@ -622,7 +622,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Deflate+Config")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Zlib::Deflate_Config {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

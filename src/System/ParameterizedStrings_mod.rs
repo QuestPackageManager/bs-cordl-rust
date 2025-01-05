@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParameterizedStrings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+ParameterizedStrings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ParameterizedStrings")]
 impl std::ops::Deref for crate::System::ParameterizedStrings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,13 +66,17 @@ impl crate::System::ParameterizedStrings {
             crate::System::ParameterizedStrings_LowLevelStack,
         >,
         dynamicVars: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::System::ParameterizedStrings_FormatParam,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::System::ParameterizedStrings_FormatParam,
+                >,
             >,
         >,
         staticVars: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::System::ParameterizedStrings_FormatParam,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::System::ParameterizedStrings_FormatParam,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -102,13 +106,17 @@ impl crate::System::ParameterizedStrings {
     pub fn GetDynamicOrStaticVariables(
         c: char,
         dynamicVars: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::System::ParameterizedStrings_FormatParam,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::System::ParameterizedStrings_FormatParam,
+                >,
             >,
         >,
         staticVars: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                crate::System::ParameterizedStrings_FormatParam,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::System::ParameterizedStrings_FormatParam,
+                >,
             >,
         >,
         index: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -140,7 +148,7 @@ impl crate::System::ParameterizedStrings {
             .invoke("StringFromAsciiBytes", (buffer, offset, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn snprintf_Il2CppString0(
+    pub fn snprintf_Gc0(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_size: crate::System::IntPtr,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -195,7 +203,7 @@ for crate::System::ParameterizedStrings_FormatParam {
 }
 #[cfg(feature = "System+ParameterizedStrings+FormatParam")]
 impl crate::System::ParameterizedStrings_FormatParam {
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         intValue: i32,
         stringValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -258,7 +266,7 @@ impl crate::System::ParameterizedStrings_FormatParam {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParameterizedStrings_LowLevelStack {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _arr: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             crate::System::ParameterizedStrings_FormatParam,
@@ -273,7 +281,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ParameterizedStrings+LowLevelStack")]
 impl std::ops::Deref for crate::System::ParameterizedStrings_LowLevelStack {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

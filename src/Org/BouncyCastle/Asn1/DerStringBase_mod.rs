@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DerStringBase {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Object,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerStringBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerStringBase")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::DerStringBase {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Object;
+    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -86,16 +88,20 @@ for crate::Org::BouncyCastle::Asn1::DerStringBase {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerStringBase")]
-impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1String>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1String>>
 for crate::Org::BouncyCastle::Asn1::DerStringBase {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1String {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1String> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerStringBase")]
-impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1String>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1String>>
 for crate::Org::BouncyCastle::Asn1::DerStringBase {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1String {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1String> {
         unsafe { std::mem::transmute(self) }
     }
 }

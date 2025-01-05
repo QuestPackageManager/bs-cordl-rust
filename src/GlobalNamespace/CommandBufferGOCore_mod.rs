@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandBufferGOCore {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _cameras: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::UnityEngine::Camera,
-            *mut crate::GlobalNamespace::CommandBufferOwners,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferOwners>,
     >,
     pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
 }
@@ -18,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CommandBufferGOCore")]
 impl std::ops::Deref for crate::GlobalNamespace::CommandBufferGOCore {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,20 +33,16 @@ impl crate::GlobalNamespace::CommandBufferGOCore {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut crate::UnityEngine::Camera,
-                *mut crate::GlobalNamespace::CommandBufferOwners,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferOwners>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut crate::UnityEngine::Camera,
-                *mut crate::GlobalNamespace::CommandBufferOwners,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferOwners>,
         > = __cordl_object.invoke("CamerasDict", ())?;
         Ok(__cordl_ret.into())
     }

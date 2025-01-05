@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnaryOperationBinder {
-    __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Dynamic::DynamicMetaObjectBinder,
+    >,
 }
 #[cfg(feature = "System+Dynamic+UnaryOperationBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+UnaryOperationBinder")]
 impl std::ops::Deref for crate::System::Dynamic::UnaryOperationBinder {
-    type Target = crate::System::Dynamic::DynamicMetaObjectBinder;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Dynamic::DynamicMetaObjectBinder,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +33,7 @@ impl crate::System::Dynamic::UnaryOperationBinder {
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -43,7 +47,7 @@ impl crate::System::Dynamic::UnaryOperationBinder {
         > = __cordl_object.invoke("Bind", (target, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackUnaryOperation_DynamicMetaObject0(
+    pub fn FallbackUnaryOperation_Gc0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -57,7 +61,7 @@ impl crate::System::Dynamic::UnaryOperationBinder {
         > = __cordl_object.invoke("FallbackUnaryOperation", (target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackUnaryOperation_DynamicMetaObject1(
+    pub fn FallbackUnaryOperation_Gc1(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         errorSuggestion: quest_hook::libil2cpp::Gc<

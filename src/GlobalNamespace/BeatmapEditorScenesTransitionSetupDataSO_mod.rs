@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEditorScenesTransitionSetupDataSO {
-    __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
+    >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
         >,
     >,
     pub _goStraightToEditor_k__BackingField: bool,
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapEditorScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
-    type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -74,8 +78,8 @@ impl crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,8 +100,8 @@ impl crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScheduleRuntimeClip {
-    __cordl_parent: crate::UnityEngine::Timeline::RuntimeClipBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::RuntimeClipBase,
+    >,
     pub m_Clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
     pub m_Playable: crate::UnityEngine::Playables::Playable,
     pub m_ParentMixer: crate::UnityEngine::Playables::Playable,
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+ScheduleRuntimeClip")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ScheduleRuntimeClip {
-    type Target = crate::UnityEngine::Timeline::RuntimeClipBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::RuntimeClipBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

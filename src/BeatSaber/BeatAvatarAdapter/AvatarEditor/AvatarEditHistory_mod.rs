@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarEditHistory {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub disableNextSnapshotOverride: bool,
     pub _snapShots: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot,
-        >,
+        crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot,
     >,
     pub _currentDataId: i32,
 }
@@ -20,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarEditHistory")]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

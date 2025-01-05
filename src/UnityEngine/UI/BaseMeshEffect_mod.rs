@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseMeshEffect {
-    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >,
     pub m_Graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
 }
 #[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
 impl std::ops::Deref for crate::UnityEngine::UI::BaseMeshEffect {
-    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +29,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::BaseMeshEffect {
 }
 #[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
 impl crate::UnityEngine::UI::BaseMeshEffect {
-    pub fn ModifyMesh_Mesh0(
+    pub fn ModifyMesh_Gc0(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -36,7 +40,7 @@ impl crate::UnityEngine::UI::BaseMeshEffect {
             .invoke("ModifyMesh", (mesh))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ModifyMesh_VertexHelper1(
+    pub fn ModifyMesh_Gc1(
         &mut self,
         vh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -117,16 +121,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::BaseMeshEffec
     }
 }
 #[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
-impl AsRef<crate::UnityEngine::UI::IMeshModifier>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMeshModifier>>
 for crate::UnityEngine::UI::BaseMeshEffect {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::IMeshModifier {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMeshModifier> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
-impl AsMut<crate::UnityEngine::UI::IMeshModifier>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMeshModifier>>
 for crate::UnityEngine::UI::BaseMeshEffect {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::IMeshModifier {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMeshModifier> {
         unsafe { std::mem::transmute(self) }
     }
 }

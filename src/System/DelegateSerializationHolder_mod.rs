@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DelegateSerializationHolder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _delegate: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
 }
 #[cfg(feature = "System+DelegateSerializationHolder")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+DelegateSerializationHolder")]
 impl std::ops::Deref for crate::System::DelegateSerializationHolder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -103,32 +103,50 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DelegateSerializationH
     }
 }
 #[cfg(feature = "System+DelegateSerializationHolder")]
-impl AsRef<crate::System::Runtime::Serialization::IObjectReference>
-for crate::System::DelegateSerializationHolder {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::IObjectReference {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IObjectReference>,
+> for crate::System::DelegateSerializationHolder {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IObjectReference,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+DelegateSerializationHolder")]
-impl AsMut<crate::System::Runtime::Serialization::IObjectReference>
-for crate::System::DelegateSerializationHolder {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IObjectReference>,
+> for crate::System::DelegateSerializationHolder {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Serialization::IObjectReference {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IObjectReference,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+DelegateSerializationHolder")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::DelegateSerializationHolder {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::DelegateSerializationHolder {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+DelegateSerializationHolder")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::DelegateSerializationHolder {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::DelegateSerializationHolder {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -136,7 +154,7 @@ for crate::System::DelegateSerializationHolder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DelegateSerializationHolder_DelegateEntry {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub assembly: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -157,7 +175,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+DelegateSerializationHolder+DelegateEntry")]
 impl std::ops::Deref for crate::System::DelegateSerializationHolder_DelegateEntry {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

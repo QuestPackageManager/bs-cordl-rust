@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertificateRequestMessageBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _certReqId: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Math::BigInteger,
     >,
@@ -43,7 +43,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crmf+CertificateRequestMessageBuilder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +73,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
         > = __cordl_object.invoke("AddControl", (control))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddExtension_Asn1Encodable0(
+    pub fn AddExtension_Gc__cordl_bool_Gc0(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -93,7 +93,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
         > = __cordl_object.invoke("AddExtension", (oid, critical, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddExtension_Il2CppArray1(
+    pub fn AddExtension_Gc__cordl_bool_Gc1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -156,11 +156,9 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
         > = __cordl_object.invoke("SetAuthInfoPKMAC", (pkmacFactory, password))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetAuthInfoSender_GeneralName1(
+    pub fn SetAuthInfoSender_Gc0(
         &mut self,
-        sender: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-        >,
+        sender: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
@@ -174,9 +172,11 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
         > = __cordl_object.invoke("SetAuthInfoSender", (sender))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetAuthInfoSender_X509Name0(
+    pub fn SetAuthInfoSender_Gc1(
         &mut self,
-        sender: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
+        sender: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
@@ -258,7 +258,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             .invoke("SetProofOfPossessionSignKeySigner", (popoSignatureFactory))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetProofOfPossessionSubsequentMessage_SubsequentMessage0(
+    pub fn SetProofOfPossessionSubsequentMessage_Gc0(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::SubsequentMessage,
@@ -276,7 +276,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
         > = __cordl_object.invoke("SetProofOfPossessionSubsequentMessage", (msg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetProofOfPossessionSubsequentMessage_i32_SubsequentMessage1(
+    pub fn SetProofOfPossessionSubsequentMessage_i32_Gc1(
         &mut self,
         _cordl_type: i32,
         msg: quest_hook::libil2cpp::Gc<

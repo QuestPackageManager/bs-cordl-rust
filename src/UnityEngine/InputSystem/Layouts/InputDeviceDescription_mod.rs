@@ -45,7 +45,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -278,13 +278,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
     >,
 > for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
     > {
         todo!()
@@ -292,13 +292,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
     >,
 > for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
     > {
         todo!()

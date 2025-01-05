@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClientActivatedIdentity {
-    __cordl_parent: crate::System::Runtime::Remoting::ServerIdentity,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::ServerIdentity,
+    >,
     pub _targetThis: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
 }
 #[cfg(feature = "System+Runtime+Remoting+ClientActivatedIdentity")]
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+ClientActivatedIdentity")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::ClientActivatedIdentity {
-    type Target = crate::System::Runtime::Remoting::ServerIdentity;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::ServerIdentity,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

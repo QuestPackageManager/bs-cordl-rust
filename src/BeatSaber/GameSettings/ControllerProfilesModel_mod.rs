@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ControllerProfilesModel {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _fileModel: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::GameSettings::ControllerProfileFileModel,
     >,
@@ -14,9 +14,7 @@ pub struct ControllerProfilesModel {
     >,
     pub _selectedProfileIndex_k__BackingField: i32,
     pub _profiles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::BeatSaber::GameSettings::ControllerProfile,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
     >,
 }
 #[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel")]
@@ -26,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel")]
 impl std::ops::Deref for crate::BeatSaber::GameSettings::ControllerProfilesModel {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,18 +44,14 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::BeatSaber::GameSettings::ControllerProfile,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::BeatSaber::GameSettings::ControllerProfile,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
         > = __cordl_object.invoke("GetBuiltInProfiles", ())?;
         Ok(__cordl_ret.into())
     }
@@ -65,8 +59,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::BeatSaber::GameSettings::ControllerProfileSaveData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllerProfileSaveData,
             >,
         >,
     > {
@@ -74,8 +68,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::BeatSaber::GameSettings::ControllerProfileSaveData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllerProfileSaveData,
             >,
         > = __cordl_object.invoke("GetControllerProfilesSaveData", ())?;
         Ok(__cordl_ret.into())
@@ -207,18 +201,14 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::BeatSaber::GameSettings::ControllerProfile,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::BeatSaber::GameSettings::ControllerProfile,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
         > = __cordl_object.invoke("get_profiles", ())?;
         Ok(__cordl_ret.into())
     }
@@ -265,16 +255,18 @@ for crate::BeatSaber::GameSettings::ControllerProfilesModel {
     }
 }
 #[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel")]
-impl AsRef<crate::Zenject::IInitializable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
 for crate::BeatSaber::GameSettings::ControllerProfilesModel {
-    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel")]
-impl AsMut<crate::Zenject::IInitializable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
 for crate::BeatSaber::GameSettings::ControllerProfilesModel {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
         unsafe { std::mem::transmute(self) }
     }
 }

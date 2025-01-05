@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentTracksDefinitionsAsyncInstaller {
-    __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
-        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+        >,
     >,
     pub _environmentTracksDefinitions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
         >,
     >,
 }
@@ -20,8 +22,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller")]
 impl std::ops::Deref
 for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller {
-    type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
-        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -49,8 +53,8 @@ impl crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstalle
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         tracksDefinitions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
             >,
         >,
         registry: quest_hook::libil2cpp::Gc<

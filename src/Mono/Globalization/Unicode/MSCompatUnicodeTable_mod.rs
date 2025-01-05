@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MSCompatUnicodeTable {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+Globalization+Unicode+MSCompatUnicodeTable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Globalization+Unicode+MSCompatUnicodeTable")]
 impl std::ops::Deref for crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,13 +29,21 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         t: quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::TailoringInfo>,
         contractions: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Mono::Globalization::Unicode::Contraction,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Globalization::Unicode::Contraction,
+                    >,
+                >,
             >,
         >,
         diacriticals: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Mono::Globalization::Unicode::Level2Map,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Globalization::Unicode::Level2Map,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -51,19 +59,23 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
     pub fn FillCJK(
         culture: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cjkIndexer: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Mono::Globalization::Unicode::CodePointIndexer,
+            quest_hook::libil2cpp::Gc<
+                crate::Mono::Globalization::Unicode::CodePointIndexer,
+            >,
         >,
         catTable: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         lv1Table: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         lv2Indexer: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Mono::Globalization::Unicode::CodePointIndexer,
+            quest_hook::libil2cpp::Gc<
+                crate::Mono::Globalization::Unicode::CodePointIndexer,
+            >,
         >,
         lv2Table: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -76,19 +88,23 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
     pub fn FillCJKCore(
         culture: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cjkIndexer: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Mono::Globalization::Unicode::CodePointIndexer,
+            quest_hook::libil2cpp::Gc<
+                crate::Mono::Globalization::Unicode::CodePointIndexer,
+            >,
         >,
         catTable: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         lv1Table: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         cjkLv2Indexer: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Mono::Globalization::Unicode::CodePointIndexer,
+            quest_hook::libil2cpp::Gc<
+                crate::Mono::Globalization::Unicode::CodePointIndexer,
+            >,
         >,
         lv2Table: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -164,19 +180,23 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
     pub fn SetCJKReferences(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cjkIndexer: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Mono::Globalization::Unicode::CodePointIndexer,
+            quest_hook::libil2cpp::Gc<
+                crate::Mono::Globalization::Unicode::CodePointIndexer,
+            >,
         >,
         catTable: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         lv1Table: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         lv2Indexer: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Mono::Globalization::Unicode::CodePointIndexer,
+            quest_hook::libil2cpp::Gc<
+                crate::Mono::Globalization::Unicode::CodePointIndexer,
+            >,
         >,
         lv2Table: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

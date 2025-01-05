@@ -5,24 +5,18 @@ pub struct ExpiringDictionary_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
     pub _expirationLengthMs: i64,
     pub _expirationQueue: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OrderedSet_1<
-            *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        >,
+        quest_hook::libil2cpp::Gc<TKey, TValue>,
     >,
     pub _entryLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            TKey,
-            *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        >,
+        TKey,
+        quest_hook::libil2cpp::Gc<TKey, TValue>,
     >,
     pub _reusableEntries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        >,
+        quest_hook::libil2cpp::Gc<TKey, TValue>,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -37,7 +31,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,12 +71,8 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn CompareEntries(
-        a: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        >,
-        b: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        >,
+        a: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        b: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -125,11 +115,7 @@ impl<
     }
     pub fn Enumerate(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -139,9 +125,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-        > = __cordl_object.invoke("Enumerate", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = __cordl_object
+            .invoke("Enumerate", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn Get(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<TValue>
@@ -161,11 +146,7 @@ impl<
         &mut self,
         key: TKey,
         value: TValue,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey, TValue>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -175,9 +156,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        > = __cordl_object.invoke("GetEntry", (key, value))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = __cordl_object
+            .invoke("GetEntry", (key, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -214,9 +194,7 @@ impl<
     }
     pub fn ReleaseEntry(
         &mut self,
-        entry: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        >,
+        entry: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -297,11 +275,7 @@ impl<
     }
     pub fn System_Collections_Generic_IEnumerable_TValue__GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -311,9 +285,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = __cordl_object
             .invoke("System.Collections.Generic.IEnumerable<TValue>.GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
@@ -451,9 +423,9 @@ for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<TValue>>
+> AsRef<quest_hook::libil2cpp::Gc<TValue>>
 for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -461,11 +433,33 @@ for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<TValue>>
+> AsMut<quest_hook::libil2cpp::Gc<TValue>>
+for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ExpiringDictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ExpiringDictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TValue> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -473,9 +467,9 @@ for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IEnumerable>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -483,29 +477,9 @@ for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IEnumerable>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "ExpiringDictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IDisposable>
-for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
-    fn as_ref(&self) -> &crate::System::IDisposable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "ExpiringDictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IDisposable>
-for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -516,7 +490,7 @@ pub struct ExpiringDictionary_2_Entry<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub key: TKey,
     pub value: TValue,
     pub expireTime: i64,
@@ -533,7 +507,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -614,9 +588,9 @@ for crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IDisposable>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue> {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -624,9 +598,9 @@ for crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IDisposable>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

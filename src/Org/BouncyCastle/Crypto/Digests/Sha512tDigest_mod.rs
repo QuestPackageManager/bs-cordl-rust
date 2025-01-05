@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Sha512tDigest {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Digests::LongDigest,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Digests::LongDigest,
+    >,
     pub digestLength: i32,
     pub H1t: u64,
     pub H2t: u64,
@@ -21,7 +23,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Sha512tDigest")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::Sha512tDigest {
-    type Target = crate::Org::BouncyCastle::Crypto::Digests::LongDigest;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Digests::LongDigest,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,7 +70,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Sha512tDigest {
         let __cordl_ret: i32 = __cordl_object.invoke("GetDigestSize", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Sha512tDigest1(
+    pub fn New_Gc1(
         t: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Digests::Sha512tDigest,
         >,
@@ -96,7 +100,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Sha512tDigest {
             .invoke("Reset", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Reset_IMemoable1(
+    pub fn Reset_Gc1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::IMemoable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -127,7 +131,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Sha512tDigest {
             .invoke("UInt64_To_BE", (n, bs, off, max))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Sha512tDigest1(
+    pub fn _ctor_Gc1(
         &mut self,
         t: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Digests::Sha512tDigest,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HashHelpers {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+HashHelpers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+HashHelpers")]
 impl std::ops::Deref for crate::System::Collections::HashHelpers {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,16 +41,16 @@ impl crate::System::Collections::HashHelpers {
     }
     pub fn get_SerializationInfoTable() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-                *mut crate::System::Runtime::Serialization::SerializationInfo,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::Serialization::SerializationInfo,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-                *mut crate::System::Runtime::Serialization::SerializationInfo,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::Serialization::SerializationInfo,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_SerializationInfoTable", ())?;

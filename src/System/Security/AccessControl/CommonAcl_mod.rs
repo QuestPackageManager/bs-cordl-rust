@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommonAcl {
-    __cordl_parent: crate::System::Security::AccessControl::GenericAcl,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::GenericAcl,
+    >,
     pub is_aefa: bool,
     pub is_canonical: bool,
     pub is_container: bool,
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+AccessControl+CommonAcl")]
 impl std::ops::Deref for crate::System::Security::AccessControl::CommonAcl {
-    type Target = crate::System::Security::AccessControl::GenericAcl;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::GenericAcl,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,7 +71,7 @@ impl crate::System::Security::AccessControl::CommonAcl {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddAce_AceQualifier_SecurityIdentifier_i32_InheritanceFlags_PropagationFlags_AuditFlags0(
+    pub fn AddAce_AceQualifier_Gc_i32_InheritanceFlags_PropagationFlags_AuditFlags0(
         &mut self,
         aceQualifier: crate::System::Security::AccessControl::AceQualifier,
         sid: quest_hook::libil2cpp::Gc<
@@ -95,7 +99,7 @@ impl crate::System::Security::AccessControl::CommonAcl {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddAce_QualifiedAce1(
+    pub fn AddAce_Gc1(
         &mut self,
         newAce: quest_hook::libil2cpp::Gc<
             crate::System::Security::AccessControl::QualifiedAce,
@@ -288,9 +292,7 @@ impl crate::System::Security::AccessControl::CommonAcl {
     }
     pub fn RemoveAces<T>(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::System::Security::AccessControl::CommonAcl_RemoveAcesCallback_1<T>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -429,7 +431,7 @@ for crate::System::Security::AccessControl::CommonAcl {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommonAcl_RemoveAcesCallback_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1")]
@@ -441,7 +443,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Security::AccessControl::CommonAcl_RemoveAcesCallback_1<T> {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

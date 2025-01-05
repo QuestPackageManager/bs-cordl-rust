@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BerTaggedObject {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::DerTaggedObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerTaggedObject,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerTaggedObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerTaggedObject")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::BerTaggedObject {
-    type Target = crate::Org::BouncyCastle::Asn1::DerTaggedObject;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerTaggedObject,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +41,7 @@ impl crate::Org::BouncyCastle::Asn1::BerTaggedObject {
             .invoke("Encode", (derOut))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New__cordl_bool_i32_Asn1Encodable1(
+    pub fn New__cordl_bool_i32_Gc1(
         explicitly: bool,
         tagNo: i32,
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
@@ -57,7 +61,7 @@ impl crate::Org::BouncyCastle::Asn1::BerTaggedObject {
             .invoke_void(".ctor", (tagNo))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Asn1Encodable0(
+    pub fn New_i32_Gc0(
         tagNo: i32,
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -67,7 +71,7 @@ impl crate::Org::BouncyCastle::Asn1::BerTaggedObject {
             .invoke_void(".ctor", (tagNo, obj))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor__cordl_bool_i32_Asn1Encodable1(
+    pub fn _ctor__cordl_bool_i32_Gc1(
         &mut self,
         explicitly: bool,
         tagNo: i32,
@@ -91,7 +95,7 @@ impl crate::Org::BouncyCastle::Asn1::BerTaggedObject {
             .invoke(".ctor", (tagNo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Asn1Encodable0(
+    pub fn _ctor_i32_Gc0(
         &mut self,
         tagNo: i32,
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,

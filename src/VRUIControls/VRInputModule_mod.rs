@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRInputModule {
-    __cordl_parent: crate::UnityEngine::EventSystems::BaseInputModule,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseInputModule,
+    >,
     pub _vrPointer: quest_hook::libil2cpp::Gc<crate::VRUIControls::VRPointer>,
     pub _rumblePreset: quest_hook::libil2cpp::Gc<
         crate::Libraries::HM::HMLib::VR::HapticPresetSO,
@@ -12,19 +14,17 @@ pub struct VRInputModule {
     >,
     pub _useMouseForPressInput_k__BackingField: bool,
     pub onProcessMousePressEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub pointerDidClickEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::UnityEngine::EventSystems::PointerEventData>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     >,
     pub _pointerData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::UnityEngine::EventSystems::PointerEventData,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     >,
     pub _componentList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Component>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
     >,
     pub _mouseState: quest_hook::libil2cpp::Gc<crate::VRUIControls::MouseState>,
 }
@@ -35,7 +35,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRUIControls+VRInputModule")]
 impl std::ops::Deref for crate::VRUIControls::VRInputModule {
-    type Target = crate::UnityEngine::EventSystems::BaseInputModule;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseInputModule,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -105,7 +107,7 @@ impl crate::VRUIControls::VRInputModule {
         &mut self,
         id: i32,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::EventSystems::PointerEventData,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
         create: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -266,7 +268,7 @@ impl crate::VRUIControls::VRInputModule {
     pub fn add_onProcessMousePressEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -279,9 +281,7 @@ impl crate::VRUIControls::VRInputModule {
     pub fn add_pointerDidClickEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::EventSystems::PointerEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -313,7 +313,7 @@ impl crate::VRUIControls::VRInputModule {
     pub fn remove_onProcessMousePressEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -326,9 +326,7 @@ impl crate::VRUIControls::VRInputModule {
     pub fn remove_pointerDidClickEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::UnityEngine::EventSystems::PointerEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -360,16 +358,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::VRInputModule {
     }
 }
 #[cfg(feature = "VRUIControls+VRInputModule")]
-impl AsRef<crate::GlobalNamespace::IVRInputModule>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRInputModule>>
 for crate::VRUIControls::VRInputModule {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IVRInputModule {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRInputModule> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "VRUIControls+VRInputModule")]
-impl AsMut<crate::GlobalNamespace::IVRInputModule>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRInputModule>>
 for crate::VRUIControls::VRInputModule {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRInputModule {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRInputModule> {
         unsafe { std::mem::transmute(self) }
     }
 }

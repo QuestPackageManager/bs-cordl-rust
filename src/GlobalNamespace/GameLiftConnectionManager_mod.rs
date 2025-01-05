@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftConnectionManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
     pub _taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     pub _connectionManager: quest_hook::libil2cpp::Gc<
@@ -20,9 +20,7 @@ pub struct GameLiftConnectionManager {
         crate::System::Threading::CancellationTokenSource,
     >,
     pub _authenticationTokenProviderTask: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<
-            *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAuthenticationTokenProvider>,
     >,
     pub _gameLiftPlayerSessionProvider: quest_hook::libil2cpp::Gc<
         crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
@@ -33,26 +31,22 @@ pub struct GameLiftConnectionManager {
     pub onInitializedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub onConnectedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub onDisconnectedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
+        crate::GlobalNamespace::DisconnectedReason,
     >,
     pub onConnectionFailedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
+        crate::GlobalNamespace::ConnectionFailedReason,
     >,
     pub onConnectionConnectedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::IConnection>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
     >,
     pub onConnectionDisconnectedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::GlobalNamespace::IConnection,
-            crate::GlobalNamespace::DisconnectedReason,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+        crate::GlobalNamespace::DisconnectedReason,
     >,
     pub onReceivedDataEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_3<
-            *mut crate::GlobalNamespace::IConnection,
-            *mut crate::LiteNetLib::Utils::NetDataReader,
-            crate::BGNet::Core::DeliveryMethod,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+        crate::BGNet::Core::DeliveryMethod,
     >,
 }
 #[cfg(feature = "GameLiftConnectionManager")]
@@ -62,7 +56,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameLiftConnectionManager")]
 impl std::ops::Deref for crate::GlobalNamespace::GameLiftConnectionManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -170,14 +164,10 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     pub fn GetPublicServers(
         &mut self,
         onSuccess: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                    crate::GlobalNamespace::PublicServerInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PublicServerInfo>,
         >,
         onFailure: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
+            crate::GlobalNamespace::ConnectionFailedReason,
         >,
         selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         configuration: crate::GlobalNamespace::GameplayServerConfiguration,
@@ -283,9 +273,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     }
     pub fn Init<T>(
         &mut self,
-        initParams: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<T>,
-        >,
+        initParams: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -304,7 +292,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ITimeProvider_ITaskUtility_IConnectionManager_ICertificateValidator1(
+    pub fn New_Gc_Gc_Gc_Gc1(
         timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
         connectionManager: quest_hook::libil2cpp::Gc<
@@ -333,7 +321,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
             .invoke("PollUpdate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendToAll_IConnection1(
+    pub fn SendToAll_Gc1(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         deliveryMethod: crate::BGNet::Core::DeliveryMethod,
@@ -348,7 +336,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
             .invoke("SendToAll", (writer, deliveryMethod, excludingConnection))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendToAll_NetDataWriter_DeliveryMethod0(
+    pub fn SendToAll_Gc_DeliveryMethod0(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         deliveryMethod: crate::BGNet::Core::DeliveryMethod,
@@ -370,7 +358,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ITimeProvider_ITaskUtility_IConnectionManager_ICertificateValidator1(
+    pub fn _ctor_Gc_Gc_Gc_Gc1(
         &mut self,
         timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
@@ -405,7 +393,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     pub fn add_onConnectionConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::IConnection>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -418,10 +406,8 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     pub fn add_onConnectionDisconnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::IConnection,
-                crate::GlobalNamespace::DisconnectedReason,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+            crate::GlobalNamespace::DisconnectedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -433,9 +419,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     }
     pub fn add_onConnectionFailedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConnectionFailedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -446,9 +430,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     }
     pub fn add_onDisconnectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -471,11 +453,9 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     pub fn add_onReceivedDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                *mut crate::GlobalNamespace::IConnection,
-                *mut crate::LiteNetLib::Utils::NetDataReader,
-                crate::BGNet::Core::DeliveryMethod,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+            crate::BGNet::Core::DeliveryMethod,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -630,7 +610,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     pub fn remove_onConnectionConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::IConnection>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -643,10 +623,8 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     pub fn remove_onConnectionDisconnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::IConnection,
-                crate::GlobalNamespace::DisconnectedReason,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+            crate::GlobalNamespace::DisconnectedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -658,9 +636,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     }
     pub fn remove_onConnectionFailedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConnectionFailedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -671,9 +647,7 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     }
     pub fn remove_onDisconnectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -696,11 +670,9 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     pub fn remove_onReceivedDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                *mut crate::GlobalNamespace::IConnection,
-                *mut crate::LiteNetLib::Utils::NetDataReader,
-                crate::BGNet::Core::DeliveryMethod,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+            crate::BGNet::Core::DeliveryMethod,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -722,44 +694,50 @@ for crate::GlobalNamespace::GameLiftConnectionManager {
     }
 }
 #[cfg(feature = "GameLiftConnectionManager")]
-impl AsRef<crate::GlobalNamespace::IConnectionManager>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionManager>>
 for crate::GlobalNamespace::GameLiftConnectionManager {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IConnectionManager {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionManager> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameLiftConnectionManager")]
-impl AsMut<crate::GlobalNamespace::IConnectionManager>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionManager>>
 for crate::GlobalNamespace::GameLiftConnectionManager {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectionManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionManager> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameLiftConnectionManager")]
-impl AsRef<crate::GlobalNamespace::IPollable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
 for crate::GlobalNamespace::GameLiftConnectionManager {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameLiftConnectionManager")]
-impl AsMut<crate::GlobalNamespace::IPollable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
 for crate::GlobalNamespace::GameLiftConnectionManager {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameLiftConnectionManager")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::GameLiftConnectionManager {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameLiftConnectionManager")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::GameLiftConnectionManager {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -767,7 +745,9 @@ for crate::GlobalNamespace::GameLiftConnectionManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftConnectionManager_ConnectToServerParams {
-    __cordl_parent: crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase,
+    >,
     pub secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -780,7 +760,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
-    type Target = crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -842,11 +824,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub authenticationTokenProviderTask: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<
-            *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAuthenticationTokenProvider>,
     >,
     pub gameLiftPlayerSessionProvider: quest_hook::libil2cpp::Gc<
         crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
@@ -863,7 +843,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "GameLiftConnectionManager+GameLiftConnectionManagerParamsBase")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -907,30 +887,30 @@ for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerP
 }
 #[cfg(feature = "GameLiftConnectionManager+GameLiftConnectionManagerParamsBase")]
 impl AsRef<
-    crate::GlobalNamespace::IConnectionInitParams_1<
-        *mut crate::GlobalNamespace::GameLiftConnectionManager,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
     >,
 >
 for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::IConnectionInitParams_1<
-        *mut crate::GlobalNamespace::GameLiftConnectionManager,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameLiftConnectionManager+GameLiftConnectionManagerParamsBase")]
 impl AsMut<
-    crate::GlobalNamespace::IConnectionInitParams_1<
-        *mut crate::GlobalNamespace::GameLiftConnectionManager,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
     >,
 >
 for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::IConnectionInitParams_1<
-        *mut crate::GlobalNamespace::GameLiftConnectionManager,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
     > {
         unsafe { std::mem::transmute(self) }
     }
@@ -939,7 +919,9 @@ for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerP
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftConnectionManager_StartClientParams {
-    __cordl_parent: crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase,
+    >,
 }
 #[cfg(feature = "GameLiftConnectionManager+StartClientParams")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -950,7 +932,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "GameLiftConnectionManager+StartClientParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams {
-    type Target = crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

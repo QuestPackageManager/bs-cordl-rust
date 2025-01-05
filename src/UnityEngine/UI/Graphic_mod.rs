@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Graphic {
-    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >,
     pub m_Material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_Color: crate::UnityEngine::Color,
     pub m_SkipLayoutUpdate: bool,
@@ -29,9 +31,7 @@ pub struct Graphic {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
     >,
     pub m_ColorTweenRunner: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UI::CoroutineTween::TweenRunner_1<
-            crate::UnityEngine::UI::CoroutineTween::ColorTween,
-        >,
+        crate::UnityEngine::UI::CoroutineTween::ColorTween,
     >,
     pub _useLegacyMeshGeneration_k__BackingField: bool,
 }
@@ -42,7 +42,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Graphic")]
 impl std::ops::Deref for crate::UnityEngine::UI::Graphic {
-    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -249,9 +251,7 @@ impl crate::UnityEngine::UI::Graphic {
     }
     pub fn OnFillVBO(
         &mut self,
-        vbo: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
+        vbo: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -260,7 +260,7 @@ impl crate::UnityEngine::UI::Graphic {
             .invoke("OnFillVBO", (vbo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnPopulateMesh_Mesh0(
+    pub fn OnPopulateMesh_Gc0(
         &mut self,
         m: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -271,7 +271,7 @@ impl crate::UnityEngine::UI::Graphic {
             .invoke("OnPopulateMesh", (m))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnPopulateMesh_VertexHelper1(
+    pub fn OnPopulateMesh_Gc1(
         &mut self,
         vh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -711,14 +711,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Graphic {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Graphic")]
-impl AsRef<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::Graphic {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
+for crate::UnityEngine::UI::Graphic {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Graphic")]
-impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::Graphic {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
+for crate::UnityEngine::UI::Graphic {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
         unsafe { std::mem::transmute(self) }
     }
 }

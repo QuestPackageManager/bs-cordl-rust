@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaitForSeconds {
-    __cordl_parent: crate::UnityEngine::YieldInstruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::YieldInstruction>,
     pub m_Seconds: f32,
 }
 #[cfg(feature = "UnityEngine+WaitForSeconds")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+WaitForSeconds")]
 impl std::ops::Deref for crate::UnityEngine::WaitForSeconds {
-    type Target = crate::UnityEngine::YieldInstruction;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::YieldInstruction>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

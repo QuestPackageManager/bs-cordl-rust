@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChunkedInputStream {
-    __cordl_parent: crate::System::Net::RequestStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::RequestStream>,
     pub disposed: bool,
     pub decoder: quest_hook::libil2cpp::Gc<crate::System::Net::MonoChunkParser>,
     pub context: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerContext>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+ChunkedInputStream")]
 impl std::ops::Deref for crate::System::Net::ChunkedInputStream {
-    type Target = crate::System::Net::RequestStream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::RequestStream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -94,7 +94,7 @@ impl crate::System::Net::ChunkedInputStream {
     pub fn Read(
         &mut self,
         buffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
         offset: i32,
         count: i32,
@@ -134,7 +134,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ChunkedInputStrea
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChunkedInputStream_ReadBufferState {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub Offset: i32,
     pub Count: i32,
@@ -148,7 +148,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+ChunkedInputStream+ReadBufferState")]
 impl std::ops::Deref for crate::System::Net::ChunkedInputStream_ReadBufferState {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

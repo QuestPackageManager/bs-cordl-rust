@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerPlayerTableCell {
-    __cordl_parent: crate::GlobalNamespace::TableCellWithSeparator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TableCellWithSeparator,
+    >,
     pub _playerNameText: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
     pub _localPlayerBackgroundImage: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::Image,
@@ -37,9 +39,9 @@ pub struct GameServerPlayerTableCell {
     pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelsModel,
     >,
-    pub kickPlayerEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
-    pub useBeatmapEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
-    pub useModifiersEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub kickPlayerEvent: quest_hook::libil2cpp::Gc<i32>,
+    pub useBeatmapEvent: quest_hook::libil2cpp::Gc<i32>,
+    pub useModifiersEvent: quest_hook::libil2cpp::Gc<i32>,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _getLevelEntitlementCancellationTokenSource: quest_hook::libil2cpp::Gc<
         crate::System::Threading::CancellationTokenSource,
@@ -52,7 +54,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameServerPlayerTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerPlayerTableCell {
-    type Target = crate::GlobalNamespace::TableCellWithSeparator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TableCellWithSeparator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -115,9 +119,7 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     pub fn SetBeatmapUseButtonEnabledAsync(
         &mut self,
         getLevelEntitlementTask: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::GlobalNamespace::EntitlementStatus,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -136,9 +138,7 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
         hasKickPermissions: bool,
         allowSelection: bool,
         getLevelEntitlementTask: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::GlobalNamespace::EntitlementStatus,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -169,7 +169,7 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     }
     pub fn add_kickPlayerEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -180,7 +180,7 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     }
     pub fn add_useBeatmapEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -191,7 +191,7 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     }
     pub fn add_useModifiersEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -202,7 +202,7 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     }
     pub fn remove_kickPlayerEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -213,7 +213,7 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     }
     pub fn remove_useBeatmapEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -224,7 +224,7 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     }
     pub fn remove_useModifiersEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

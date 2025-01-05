@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScopeExpression {
-    __cordl_parent: crate::System::Linq::Expressions::BlockExpression,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::BlockExpression,
+    >,
     pub _variables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Linq::Expressions::ParameterExpression,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+ScopeExpression")]
@@ -16,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+ScopeExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::ScopeExpression {
-    type Target = crate::System::Linq::Expressions::BlockExpression;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::BlockExpression,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,8 +35,8 @@ impl crate::System::Linq::Expressions::ScopeExpression {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
     > {
@@ -42,16 +44,16 @@ impl crate::System::Linq::Expressions::ScopeExpression {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         > = __cordl_object.invoke("GetOrMakeVariables", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
         variables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -64,14 +66,14 @@ impl crate::System::Linq::Expressions::ScopeExpression {
     pub fn ReuseOrValidateVariables(
         &mut self,
         variables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
     > {
@@ -79,8 +81,8 @@ impl crate::System::Linq::Expressions::ScopeExpression {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         > = __cordl_object.invoke("ReuseOrValidateVariables", (variables))?;
         Ok(__cordl_ret.into())
@@ -88,8 +90,8 @@ impl crate::System::Linq::Expressions::ScopeExpression {
     pub fn _ctor(
         &mut self,
         variables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -104,8 +106,8 @@ impl crate::System::Linq::Expressions::ScopeExpression {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
     > {
@@ -113,8 +115,8 @@ impl crate::System::Linq::Expressions::ScopeExpression {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         > = __cordl_object.invoke("get_VariablesList", ())?;
         Ok(__cordl_ret.into())

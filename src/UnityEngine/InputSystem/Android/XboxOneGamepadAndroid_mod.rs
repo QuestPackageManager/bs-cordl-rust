@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XboxOneGamepadAndroid {
-    __cordl_parent: crate::UnityEngine::InputSystem::XInput::XInputController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::XInput::XInputController,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+XboxOneGamepadAndroid")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Android+XboxOneGamepadAndroid")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::XboxOneGamepadAndroid {
-    type Target = crate::UnityEngine::InputSystem::XInput::XInputController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::XInput::XInputController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

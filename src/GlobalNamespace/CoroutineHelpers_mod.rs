@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CoroutineHelpers {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "CoroutineHelpers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CoroutineHelpers")]
 impl std::ops::Deref for crate::GlobalNamespace::CoroutineHelpers {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +51,9 @@ impl crate::GlobalNamespace::CoroutineHelpers {
         coroutineStarter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ICoroutineStarter,
         >,
-        handle: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Coroutine>,
+        handle: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
+        >,
         routine: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -62,7 +64,9 @@ impl crate::GlobalNamespace::CoroutineHelpers {
         coroutineStarter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ICoroutineStarter,
         >,
-        handle: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Coroutine>,
+        handle: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("StopSingleCoroutine", (coroutineStarter, handle))?;

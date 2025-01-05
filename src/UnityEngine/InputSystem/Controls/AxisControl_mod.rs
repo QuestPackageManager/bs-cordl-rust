@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AxisControl {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
     pub clamp: crate::UnityEngine::InputSystem::Controls::AxisControl_Clamp,
     pub clampMin: f32,
     pub clampMax: f32,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::AxisControl {
-    type Target = crate::UnityEngine::InputSystem::InputControl_1<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,7 +61,7 @@ impl crate::UnityEngine::InputSystem::Controls::AxisControl {
             .invoke("CompareValue", (firstStatePtr, secondStatePtr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateMagnitude_Il2CppObject0(
+    pub fn EvaluateMagnitude_Gc0(
         &mut self,
         statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f32> {

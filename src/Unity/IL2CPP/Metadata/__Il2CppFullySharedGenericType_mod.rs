@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct __Il2CppFullySharedGenericType {
-    __cordl_parent: crate::System::ValueType,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::ValueType>,
 }
 #[cfg(feature = "Unity+IL2CPP+Metadata+__Il2CppFullySharedGenericType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+IL2CPP+Metadata+__Il2CppFullySharedGenericType")]
 impl std::ops::Deref for crate::Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType {
-    type Target = crate::System::ValueType;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::ValueType>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

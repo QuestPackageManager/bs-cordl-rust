@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NewExpression {
-    __cordl_parent: crate::System::Linq::Expressions::Expression,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
     pub _arguments: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Linq::Expressions::Expression,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     >,
     pub _Constructor_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Reflection::ConstructorInfo,
@@ -19,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+NewExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::NewExpression {
-    type Target = crate::System::Linq::Expressions::Expression;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumTableViewDataSource_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _cellPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::TextOnlyTableCell,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "EnumTableViewDataSource_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::EnumTableViewDataSource_1<T> {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -166,16 +166,22 @@ for crate::GlobalNamespace::EnumTableViewDataSource_1<T> {
     }
 }
 #[cfg(feature = "EnumTableViewDataSource_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::HMUI::TableView_IDataSource>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
 for crate::GlobalNamespace::EnumTableViewDataSource_1<T> {
-    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EnumTableViewDataSource_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::HMUI::TableView_IDataSource>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
 for crate::GlobalNamespace::EnumTableViewDataSource_1<T> {
-    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }

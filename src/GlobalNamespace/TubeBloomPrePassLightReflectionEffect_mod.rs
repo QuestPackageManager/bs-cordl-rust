@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TubeBloomPrePassLightReflectionEffect {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _mainTubeBloomPrePassLight: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint,
     >,
     pub _tubeBloomPrePassLightBounces: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint,
+            >,
         >,
     >,
     pub _environmentLayerMask: crate::UnityEngine::LayerMask,
@@ -25,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TubeBloomPrePassLightReflectionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -127,7 +129,7 @@ for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub light: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
     pub showHitPoint: bool,
     pub hitPointGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -153,7 +155,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RtFieldInfo {
-    __cordl_parent: crate::System::Reflection::FieldInfo,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
 }
 #[cfg(feature = "System+Reflection+RtFieldInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+RtFieldInfo")]
 impl std::ops::Deref for crate::System::Reflection::RtFieldInfo {
-    type Target = crate::System::Reflection::FieldInfo;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

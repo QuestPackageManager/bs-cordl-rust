@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockBeatmapObjectManager {
-    __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
 }
 #[cfg(feature = "MockBeatmapObjectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockBeatmapObjectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MockBeatmapObjectManager {
-    type Target = crate::GlobalNamespace::BeatmapObjectManager;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +28,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MockBeatmapObjectManager {
 }
 #[cfg(feature = "MockBeatmapObjectManager")]
 impl crate::GlobalNamespace::MockBeatmapObjectManager {
-    pub fn DespawnInternal_NoteController0(
+    pub fn DespawnInternal_Gc0(
         &mut self,
         noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -35,7 +39,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
             .invoke("DespawnInternal", (noteController))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DespawnInternal_ObstacleController1(
+    pub fn DespawnInternal_Gc1(
         &mut self,
         obstacleController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ObstacleController,
@@ -48,7 +52,7 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
             .invoke("DespawnInternal", (obstacleController))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DespawnInternal_SliderController2(
+    pub fn DespawnInternal_Gc2(
         &mut self,
         sliderNoteController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SliderController,
@@ -128,18 +132,14 @@ impl crate::GlobalNamespace::MockBeatmapObjectManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ObstacleController,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ObstacleController,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         > = __cordl_object.invoke("get_activeObstacleControllers", ())?;
         Ok(__cordl_ret.into())
     }

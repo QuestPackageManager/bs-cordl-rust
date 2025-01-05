@@ -2,12 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkPlayerOptionsTableCell {
-    __cordl_parent: crate::HMUI::TableCell,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
     pub _buttons: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Button>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+        >,
     >,
     pub _buttonTexts: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshProUGUI>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+        >,
     >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
@@ -19,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NetworkPlayerOptionsTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::NetworkPlayerOptionsTableCell {
-    type Target = crate::HMUI::TableCell;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

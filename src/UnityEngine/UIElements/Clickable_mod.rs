@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Clickable {
-    __cordl_parent: crate::UnityEngine::UIElements::PointerManipulator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::PointerManipulator,
+    >,
     pub clickedWithEventInfo: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::UnityEngine::UIElements::EventBase>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     >,
     pub clicked: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_Delay: i64,
@@ -24,7 +26,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Clickable")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Clickable {
-    type Target = crate::UnityEngine::UIElements::PointerManipulator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::PointerManipulator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,18 +74,9 @@ impl crate::UnityEngine::UIElements::Clickable {
         let __cordl_ret: bool = __cordl_object.invoke("IsRepeatable", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Action2(
-        handler: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handler))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Action_1_1(
+    pub fn New_Gc1(
         handler: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::UIElements::EventBase>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -90,7 +85,16 @@ impl crate::UnityEngine::UIElements::Clickable {
             .invoke_void(".ctor", (handler))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Action_i64_i64_0(
+    pub fn New_Gc2(
+        handler: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handler))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_i64_i64_0(
         handler: quest_hook::libil2cpp::Gc<crate::System::Action>,
         delay: i64,
         interval: i64,
@@ -309,7 +313,20 @@ impl crate::UnityEngine::UIElements::Clickable {
             .invoke("<SimulateSingleClick>b__43_0", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Action2(
+    pub fn _ctor_Gc1(
+        &mut self,
+        handler: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (handler))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc2(
         &mut self,
         handler: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -320,20 +337,7 @@ impl crate::UnityEngine::UIElements::Clickable {
             .invoke(".ctor", (handler))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Action_1_1(
-        &mut self,
-        handler: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::UIElements::EventBase>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (handler))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Action_i64_i64_0(
+    pub fn _ctor_i64_i64_0(
         &mut self,
         handler: quest_hook::libil2cpp::Gc<crate::System::Action>,
         delay: i64,
@@ -360,7 +364,7 @@ impl crate::UnityEngine::UIElements::Clickable {
     pub fn add_clickedWithEventInfo(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::UIElements::EventBase>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -418,7 +422,7 @@ impl crate::UnityEngine::UIElements::Clickable {
     pub fn remove_clickedWithEventInfo(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::UIElements::EventBase>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

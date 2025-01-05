@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContextualMenuPopulateEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::MouseEventBase_1<
-        *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        >,
     >,
     pub _menu_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::DropdownMenu,
@@ -23,8 +25,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ContextualMenuPopulateEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
-    type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
-        *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

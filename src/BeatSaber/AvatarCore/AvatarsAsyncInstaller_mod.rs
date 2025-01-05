@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarsAsyncInstaller {
-    __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
-        *mut crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO,
+        >,
     >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarsAsyncInstaller")]
@@ -13,8 +15,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarsAsyncInstaller")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::AvatarsAsyncInstaller {
-    type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
-        *mut crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -41,8 +45,8 @@ impl crate::BeatSaber::AvatarCore::AvatarsAsyncInstaller {
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         adaptersInstallers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO,
             >,
         >,
         registry: quest_hook::libil2cpp::Gc<

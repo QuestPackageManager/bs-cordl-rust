@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlReflectionImporter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub initialDefaultNamespace: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlReflectionImporter")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlReflectionImporter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -112,8 +112,8 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Xml::Serialization::XmlReflectionMember,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Xml::Serialization::XmlReflectionMember,
             >,
         >,
     > {
@@ -121,8 +121,8 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Xml::Serialization::XmlReflectionMember,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Xml::Serialization::XmlReflectionMember,
             >,
         > = __cordl_object.invoke("GetReflectionMembers", (_cordl_type))?;
         Ok(__cordl_ret.into())
@@ -170,7 +170,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
             .invoke("ImportAnyElementInfo", (defaultNamespace, rmember, member, atts))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImportClassMapping_Type0(
+    pub fn ImportClassMapping_Gc_Gc_Gc__cordl_bool0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         root: quest_hook::libil2cpp::Gc<
@@ -193,7 +193,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImportClassMapping_TypeData1(
+    pub fn ImportClassMapping_Gc_Gc_Gc__cordl_bool1(
         &mut self,
         typeData: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
         root: quest_hook::libil2cpp::Gc<
@@ -274,7 +274,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
             .invoke("ImportIncludedTypes", (_cordl_type, defaultNamespace))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImportListMapping_Type0(
+    pub fn ImportListMapping_Gc_Gc_Gc_Gc_i32_0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         root: quest_hook::libil2cpp::Gc<
@@ -300,7 +300,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImportListMapping_TypeData1(
+    pub fn ImportListMapping_Gc_Gc_Gc_Gc_i32_1(
         &mut self,
         typeData: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
         root: quest_hook::libil2cpp::Gc<
@@ -369,7 +369,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImportTypeMapping_Type0(
+    pub fn ImportTypeMapping_Gc0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -383,26 +383,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         > = __cordl_object.invoke("ImportTypeMapping", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImportTypeMapping_TypeData_XmlRootAttribute_Il2CppString3(
-        &mut self,
-        typeData: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
-        root: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Serialization::XmlRootAttribute,
-        >,
-        defaultNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlTypeMapping>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Serialization::XmlTypeMapping,
-        > = __cordl_object
-            .invoke("ImportTypeMapping", (typeData, root, defaultNamespace))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ImportTypeMapping_Type_Il2CppString1(
+    pub fn ImportTypeMapping_Gc1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         defaultNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -417,7 +398,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         > = __cordl_object.invoke("ImportTypeMapping", (_cordl_type, defaultNamespace))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ImportTypeMapping_Type_XmlRootAttribute_Il2CppString2(
+    pub fn ImportTypeMapping_Gc_Gc2(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         root: quest_hook::libil2cpp::Gc<
@@ -434,6 +415,25 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
             crate::System::Xml::Serialization::XmlTypeMapping,
         > = __cordl_object
             .invoke("ImportTypeMapping", (_cordl_type, root, defaultNamespace))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ImportTypeMapping_Gc_Gc3(
+        &mut self,
+        typeData: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
+        root: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlRootAttribute,
+        >,
+        defaultNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlTypeMapping>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlTypeMapping,
+        > = __cordl_object
+            .invoke("ImportTypeMapping", (typeData, root, defaultNamespace))?;
         Ok(__cordl_ret.into())
     }
     pub fn ImportXmlNodeMapping(

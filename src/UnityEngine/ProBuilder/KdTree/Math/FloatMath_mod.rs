@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatMath {
-    __cordl_parent: crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+FloatMath")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+FloatMath")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::KdTree::Math::FloatMath {
-    type Target = crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

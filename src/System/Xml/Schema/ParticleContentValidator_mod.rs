@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleContentValidator {
-    __cordl_parent: crate::System::Xml::Schema::ContentValidator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ContentValidator,
+    >,
     pub symbols: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::SymbolsDictionary,
     >,
@@ -22,7 +24,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+ParticleContentValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::ParticleContentValidator {
-    type Target = crate::System::Xml::Schema::ContentValidator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ContentValidator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -138,13 +142,15 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         &mut self,
         firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         followpos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
         endMarkerPos: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
             >,
         >,
     > {
@@ -153,7 +159,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
             >,
         > = __cordl_object
             .invoke("BuildTransitionTable", (firstpos, followpos, endMarkerPos))?;
@@ -163,21 +169,27 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         &mut self,
         firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         followpos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
         posWithRangeTerminals: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Xml::Schema::BitSet,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         > = __cordl_object
             .invoke(
                 "CalculateTotalFollowposForRangeNodes",
@@ -196,7 +208,23 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             .invoke("CheckCMUPAWithLeafRangeNodes", (curpos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckUniqueParticleAttribution_BitSet1(
+    pub fn CheckUniqueParticleAttribution_Gc0(
+        &mut self,
+        firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+        followpos: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CheckUniqueParticleAttribution", (firstpos, followpos))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckUniqueParticleAttribution_Gc1(
         &mut self,
         curpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -205,20 +233,6 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckUniqueParticleAttribution", (curpos))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CheckUniqueParticleAttribution_Il2CppArray0(
-        &mut self,
-        firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
-        followpos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckUniqueParticleAttribution", (firstpos, followpos))?;
         Ok(__cordl_ret.into())
     }
     pub fn CloseGroup(
@@ -283,7 +297,9 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             crate::System::Xml::Schema::BitSet,
         >,
         minmaxFollowPos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,

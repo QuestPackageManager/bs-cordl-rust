@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509ExtensionBase {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509ExtensionBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+X509ExtensionBase")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509ExtensionBase {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,11 +51,9 @@ impl crate::Org::BouncyCastle::X509::X509ExtensionBase {
         > = __cordl_object.invoke("GetExtensionOids", (critical))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetExtensionValue_DerObjectIdentifier1(
+    pub fn GetExtensionValue_Gc0(
         &mut self,
-        oid: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
     > {
@@ -67,9 +65,11 @@ impl crate::Org::BouncyCastle::X509::X509ExtensionBase {
         > = __cordl_object.invoke("GetExtensionValue", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetExtensionValue_Il2CppString0(
+    pub fn GetExtensionValue_Gc1(
         &mut self,
-        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
     > {
@@ -136,16 +136,20 @@ for crate::Org::BouncyCastle::X509::X509ExtensionBase {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509ExtensionBase")]
-impl AsRef<crate::Org::BouncyCastle::X509::IX509Extension>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::IX509Extension>>
 for crate::Org::BouncyCastle::X509::X509ExtensionBase {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::X509::IX509Extension {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::IX509Extension> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509ExtensionBase")]
-impl AsMut<crate::Org::BouncyCastle::X509::IX509Extension>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::IX509Extension>>
 for crate::Org::BouncyCastle::X509::X509ExtensionBase {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::X509::IX509Extension {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::IX509Extension> {
         unsafe { std::mem::transmute(self) }
     }
 }

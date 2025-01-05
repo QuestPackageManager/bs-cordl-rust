@@ -23,7 +23,7 @@ for crate::UnityEngine::UIElements::StyleFont {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFont")]
 impl crate::UnityEngine::UIElements::StyleFont {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -63,7 +63,7 @@ impl crate::UnityEngine::UIElements::StyleFont {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Font0(
+    pub fn _ctor_Gc0(
         &mut self,
         v: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -125,39 +125,43 @@ impl crate::UnityEngine::UIElements::StyleFont {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFont")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFont>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleFont>>
 for crate::UnityEngine::UIElements::StyleFont {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFont> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleFont> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFont")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFont>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleFont>>
 for crate::UnityEngine::UIElements::StyleFont {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFont> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleFont> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFont")]
-impl AsRef<crate::UnityEngine::UIElements::IStyleValue_1<*mut crate::UnityEngine::Font>>
-for crate::UnityEngine::UIElements::StyleFont {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>>,
+> for crate::UnityEngine::UIElements::StyleFont {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<*mut crate::UnityEngine::Font> {
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFont")]
-impl AsMut<crate::UnityEngine::UIElements::IStyleValue_1<*mut crate::UnityEngine::Font>>
-for crate::UnityEngine::UIElements::StyleFont {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>>,
+> for crate::UnityEngine::UIElements::StyleFont {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
-        *mut crate::UnityEngine::Font,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     > {
         todo!()
     }

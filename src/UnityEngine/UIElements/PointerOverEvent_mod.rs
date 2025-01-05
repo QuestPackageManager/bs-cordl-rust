@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerOverEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::PointerEventBase_1<
-        *mut crate::UnityEngine::UIElements::PointerOverEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerOverEvent>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerOverEvent")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+PointerOverEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerOverEvent {
-    type Target = crate::UnityEngine::UIElements::PointerEventBase_1<
-        *mut crate::UnityEngine::UIElements::PointerOverEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerOverEvent>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

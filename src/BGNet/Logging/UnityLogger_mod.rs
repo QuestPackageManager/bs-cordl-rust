@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityLogger {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "BGNet+Logging+UnityLogger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGNet+Logging+UnityLogger")]
 impl std::ops::Deref for crate::BGNet::Logging::UnityLogger {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -97,14 +97,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::UnityLogger {
     }
 }
 #[cfg(feature = "BGNet+Logging+UnityLogger")]
-impl AsRef<crate::BGNet::Logging::Debug_ILogger> for crate::BGNet::Logging::UnityLogger {
-    fn as_ref(&self) -> &crate::BGNet::Logging::Debug_ILogger {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_ILogger>>
+for crate::BGNet::Logging::UnityLogger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_ILogger> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGNet+Logging+UnityLogger")]
-impl AsMut<crate::BGNet::Logging::Debug_ILogger> for crate::BGNet::Logging::UnityLogger {
-    fn as_mut(&mut self) -> &mut crate::BGNet::Logging::Debug_ILogger {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_ILogger>>
+for crate::BGNet::Logging::UnityLogger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_ILogger> {
         unsafe { std::mem::transmute(self) }
     }
 }

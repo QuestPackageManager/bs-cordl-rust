@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonLoadSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _commentHandling: crate::Newtonsoft::Json::Linq::CommentHandling,
     pub _lineInfoHandling: crate::Newtonsoft::Json::Linq::LineInfoHandling,
     pub _duplicatePropertyNameHandling: crate::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonLoadSettings")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonLoadSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

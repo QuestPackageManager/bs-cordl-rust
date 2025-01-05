@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SocketAsyncResult {
-    __cordl_parent: crate::System::IOAsyncResult,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IOAsyncResult>,
     pub socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub operation: crate::System::Net::Sockets::SocketOperation,
     pub DelayedException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -13,12 +13,12 @@ pub struct SocketAsyncResult {
     pub SockFlags: crate::System::Net::Sockets::SocketFlags,
     pub AcceptSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub Addresses: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+        >,
     >,
     pub Port: i32,
-    pub Buffers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<crate::System::ArraySegment_1<u8>>,
-    >,
+    pub Buffers: quest_hook::libil2cpp::Gc<crate::System::ArraySegment_1<u8>>,
     pub ReuseSocket: bool,
     pub CurrentAddress: i32,
     pub AcceptedSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Sockets+SocketAsyncResult")]
 impl std::ops::Deref for crate::System::Net::Sockets::SocketAsyncResult {
-    type Target = crate::System::IOAsyncResult;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IOAsyncResult>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +76,7 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
             .invoke("Complete", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Complete_Exception4(
+    pub fn Complete_Gc4(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -87,7 +87,18 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
             .invoke("Complete", (e))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Complete_Exception__cordl_bool3(
+    pub fn Complete_Gc5(
+        &mut self,
+        s: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Complete", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Complete_Gc__cordl_bool3(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         synch: bool,
@@ -99,18 +110,7 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
             .invoke("Complete", (e, synch))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Complete_Socket5(
-        &mut self,
-        s: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Complete", (s))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Complete_Socket_i32_6(
+    pub fn Complete_Gc_i32_6(
         &mut self,
         s: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
         total: i32,
@@ -165,7 +165,7 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Socket_AsyncCallback_Il2CppObject_SocketOperation1(
+    pub fn New_Gc_Gc_Gc_SocketOperation1(
         socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -187,7 +187,7 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Socket_AsyncCallback_Il2CppObject_SocketOperation1(
+    pub fn _ctor_Gc_Gc_Gc_SocketOperation1(
         &mut self,
         socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,

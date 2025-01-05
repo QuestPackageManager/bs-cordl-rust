@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventData {
-    __cordl_parent: crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem,
+    >,
     pub _time: f32,
     pub _type: crate::BeatmapSaveDataCommon::BeatmapEventType,
     pub _value: i32,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+EventData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
-    type Target = crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

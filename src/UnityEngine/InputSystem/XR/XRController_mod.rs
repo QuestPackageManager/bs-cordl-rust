@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRController {
-    __cordl_parent: crate::UnityEngine::InputSystem::TrackedDevice,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::TrackedDevice,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRController")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::XRController {
-    type Target = crate::UnityEngine::InputSystem::TrackedDevice;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::TrackedDevice,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

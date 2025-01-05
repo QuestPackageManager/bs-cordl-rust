@@ -2,22 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentLightGroups {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _lightGroupSOList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::LightGroupSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     >,
     pub _lightGroupSODict: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::GlobalNamespace::LightGroupSO,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     >,
     pub _lightGroupSOListForLightGroupDataDict: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::LightGroupSO,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     >,
 }
 #[cfg(feature = "EnvironmentLightGroups")]
@@ -27,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnvironmentLightGroups")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentLightGroups {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,9 +50,7 @@ impl crate::GlobalNamespace::EnvironmentLightGroups {
     }
     pub fn New(
         lightGroups: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::LightGroupSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -80,9 +72,7 @@ impl crate::GlobalNamespace::EnvironmentLightGroups {
     pub fn _ctor(
         &mut self,
         lightGroups: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::LightGroupSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -96,18 +86,14 @@ impl crate::GlobalNamespace::EnvironmentLightGroups {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::LightGroupSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::LightGroupSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
         > = __cordl_object.invoke("get_lightGroupSOList", ())?;
         Ok(__cordl_ret.into())
     }
@@ -115,18 +101,14 @@ impl crate::GlobalNamespace::EnvironmentLightGroups {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::ILightGroup,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightGroup>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::GlobalNamespace::ILightGroup,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightGroup>,
         > = __cordl_object.invoke("get_lightGroups", ())?;
         Ok(__cordl_ret.into())
     }
@@ -142,16 +124,22 @@ for crate::GlobalNamespace::EnvironmentLightGroups {
     }
 }
 #[cfg(feature = "EnvironmentLightGroups")]
-impl AsRef<crate::GlobalNamespace::IEnvironmentLightGroups>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentLightGroups>>
 for crate::GlobalNamespace::EnvironmentLightGroups {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IEnvironmentLightGroups {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentLightGroups> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EnvironmentLightGroups")]
-impl AsMut<crate::GlobalNamespace::IEnvironmentLightGroups>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentLightGroups>>
 for crate::GlobalNamespace::EnvironmentLightGroups {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEnvironmentLightGroups {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IEnvironmentLightGroups,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

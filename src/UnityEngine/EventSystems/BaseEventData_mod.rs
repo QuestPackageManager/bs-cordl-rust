@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseEventData {
-    __cordl_parent: crate::UnityEngine::EventSystems::AbstractEventData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::AbstractEventData,
+    >,
     pub m_EventSystem: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::EventSystem,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+BaseEventData")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::BaseEventData {
-    type Target = crate::UnityEngine::EventSystems::AbstractEventData;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::AbstractEventData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

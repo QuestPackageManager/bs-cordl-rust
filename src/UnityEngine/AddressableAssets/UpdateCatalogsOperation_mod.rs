@@ -2,21 +2,23 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UpdateCatalogsOperation {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         >,
     >,
     pub m_Addressables: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AddressableAssets::AddressablesImpl,
     >,
     pub m_LocatorInfos: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocatorInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocatorInfo,
         >,
     >,
     pub m_DepOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        *mut crate::System::Collections::Generic::IList_1<
+        quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     >,
@@ -33,9 +35,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AddressableAssets+UpdateCatalogsOperation")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         >,
     >;
     fn deref(&self) -> &Self::Target {
@@ -74,9 +78,7 @@ impl crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
     pub fn GetDependencies(
         &mut self,
         dependencies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -110,8 +112,8 @@ impl crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
             bool,
         >,
         catalogs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -125,15 +127,15 @@ impl crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
     pub fn Start(
         &mut self,
         catalogIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         autoCleanBundleCache: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+                >,
             >,
         >,
     > {
@@ -141,8 +143,10 @@ impl crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+                >,
             >,
         > = __cordl_object.invoke("Start", (catalogIds, autoCleanBundleCache))?;
         Ok(__cordl_ret.into())

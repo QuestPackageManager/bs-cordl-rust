@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FastMouse {
-    __cordl_parent: crate::UnityEngine::InputSystem::Mouse,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Mouse>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+FastMouse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+FastMouse")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::FastMouse {
-    type Target = crate::UnityEngine::InputSystem::Mouse;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Mouse>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -620,36 +620,54 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Fast
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+FastMouse")]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IEventMerger>
-for crate::UnityEngine::InputSystem::FastMouse {
-    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+FastMouse")]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IEventMerger>
-for crate::UnityEngine::InputSystem::FastMouse {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+FastMouse")]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver>
-for crate::UnityEngine::InputSystem::FastMouse {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::IEventMerger>,
+> for crate::UnityEngine::InputSystem::FastMouse {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IEventMerger,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+FastMouse")]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver>
-for crate::UnityEngine::InputSystem::FastMouse {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::IEventMerger>,
+> for crate::UnityEngine::InputSystem::FastMouse {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IEventMerger,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+FastMouse")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver,
+    >,
+> for crate::UnityEngine::InputSystem::FastMouse {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+FastMouse")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver,
+    >,
+> for crate::UnityEngine::InputSystem::FastMouse {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

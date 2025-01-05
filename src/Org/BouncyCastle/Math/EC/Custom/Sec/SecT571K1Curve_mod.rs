@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecT571K1Curve {
-    __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve,
+    >,
     pub m_infinity: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Point,
     >,
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Curve")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve {
-    type Target = crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,7 +57,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve {
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         off: i32,
@@ -84,13 +88,15 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve {
         > = __cordl_object.invoke("CreateDefaultMultiplier", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateRawPoint_Il2CppArray__cordl_bool1(
+    pub fn CreateRawPoint_Gc__cordl_bool1(
         &mut self,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         zs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                >,
             >,
         >,
         withCompression: bool,
@@ -242,7 +248,9 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecT571K1Curve_SecT571K1LookupTable {
-    __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
+    >,
     pub m_outer: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve,
     >,
@@ -262,7 +270,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Curve_SecT571K1LookupTable {
-    type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

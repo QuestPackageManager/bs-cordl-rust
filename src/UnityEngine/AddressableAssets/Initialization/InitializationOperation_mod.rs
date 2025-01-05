@@ -2,14 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InitializationOperation {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        >,
     >,
     pub m_rtdOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        *mut crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData,
+        >,
     >,
     pub m_loadCatalogOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        >,
     >,
     pub m_ProviderSuffix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Addressables: quest_hook::libil2cpp::Gc<
@@ -31,8 +37,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -57,11 +65,15 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
         providerSuffix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "CreateInitializationOperation",
@@ -89,8 +101,8 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
     pub fn LoadContentCatalogInternal(
         &mut self,
         catalogs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
         index: i32,
@@ -102,14 +114,18 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         > = __cordl_object
             .invoke(
                 "LoadContentCatalogInternal",
@@ -117,7 +133,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadContentCatalog_AddressablesImpl_IResourceLocation_Il2CppString_IResourceLocation0(
+    pub fn LoadContentCatalog_Gc0(
         addressables: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AddressableAssets::AddressablesImpl,
         >,
@@ -130,11 +146,15 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "LoadContentCatalog",
@@ -142,7 +162,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadContentCatalog_IResourceLocation_Il2CppString_IResourceLocation1(
+    pub fn LoadContentCatalog_Gc_Gc_Gc1(
         &mut self,
         loc: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
@@ -153,14 +173,18 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         > = __cordl_object
             .invoke("LoadContentCatalog", (loc, providerSuffix, remoteHashLocation))?;
         Ok(__cordl_ret.into())
@@ -168,11 +192,13 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
     pub fn LoadOpComplete(
         &mut self,
         op: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         >,
         catalogs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
         locMap: quest_hook::libil2cpp::Gc<
@@ -220,7 +246,9 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
             crate::UnityEngine::AddressableAssets::AddressablesImpl,
         >,
         op: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+            >,
         >,
         providerSuffix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         remoteHashLocation: quest_hook::libil2cpp::Gc<
@@ -228,11 +256,15 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         >,
     > {
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "OnCatalogDataLoaded",

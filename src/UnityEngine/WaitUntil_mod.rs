@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaitUntil {
-    __cordl_parent: crate::UnityEngine::CustomYieldInstruction,
-    pub m_Predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::CustomYieldInstruction,
+    >,
+    pub m_Predicate: quest_hook::libil2cpp::Gc<bool>,
 }
 #[cfg(feature = "UnityEngine+WaitUntil")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+WaitUntil")]
 impl std::ops::Deref for crate::UnityEngine::WaitUntil {
-    type Target = crate::UnityEngine::CustomYieldInstruction;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::CustomYieldInstruction>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +28,7 @@ impl std::ops::DerefMut for crate::UnityEngine::WaitUntil {
 #[cfg(feature = "UnityEngine+WaitUntil")]
 impl crate::UnityEngine::WaitUntil {
     pub fn New(
-        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+        predicate: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +38,7 @@ impl crate::UnityEngine::WaitUntil {
     }
     pub fn _ctor(
         &mut self,
-        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+        predicate: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

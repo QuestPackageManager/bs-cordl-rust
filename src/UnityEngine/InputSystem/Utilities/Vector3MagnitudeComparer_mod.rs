@@ -35,22 +35,16 @@ impl crate::UnityEngine::InputSystem::Utilities::Vector3MagnitudeComparer {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Vector3MagnitudeComparer")]
-impl AsRef<crate::System::Collections::Generic::IComparer_1<crate::UnityEngine::Vector3>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>>
 for crate::UnityEngine::InputSystem::Utilities::Vector3MagnitudeComparer {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IComparer_1<crate::UnityEngine::Vector3> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Vector3MagnitudeComparer")]
-impl AsMut<crate::System::Collections::Generic::IComparer_1<crate::UnityEngine::Vector3>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>>
 for crate::UnityEngine::InputSystem::Utilities::Vector3MagnitudeComparer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IComparer_1<
-        crate::UnityEngine::Vector3,
-    > {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3> {
         todo!()
     }
 }

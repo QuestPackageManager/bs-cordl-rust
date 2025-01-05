@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DurationFacetsChecker {
-    __cordl_parent: crate::System::Xml::Schema::FacetsChecker,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>,
 }
 #[cfg(feature = "System+Xml+Schema+DurationFacetsChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+DurationFacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::DurationFacetsChecker {
-    type Target = crate::System::Xml::Schema::FacetsChecker;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::DurationFacetsChecker {
 }
 #[cfg(feature = "System+Xml+Schema+DurationFacetsChecker")]
 impl crate::System::Xml::Schema::DurationFacetsChecker {
-    pub fn CheckValueFacets_Il2CppObject0(
+    pub fn CheckValueFacets_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         datatype: quest_hook::libil2cpp::Gc<
@@ -56,7 +56,7 @@ impl crate::System::Xml::Schema::DurationFacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchEnumeration_Il2CppObject_XmlSchemaDatatype0(
+    pub fn MatchEnumeration_Gc_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         enumeration: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

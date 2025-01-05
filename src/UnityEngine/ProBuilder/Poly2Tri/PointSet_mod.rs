@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointSet {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _Points_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     >,
     pub _Triangles_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
         >,
     >,
 }
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointSet")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,8 +50,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     pub fn AddTriangles(
         &mut self,
         list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -74,8 +74,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     }
     pub fn New(
         points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -101,8 +101,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     pub fn _ctor(
         &mut self,
         points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -117,8 +117,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         >,
     > {
@@ -126,8 +126,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         > = __cordl_object.invoke("get_Points", ())?;
         Ok(__cordl_ret.into())
@@ -136,8 +136,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
             >,
         >,
     > {
@@ -145,8 +145,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
             >,
         > = __cordl_object.invoke("get_Triangles", ())?;
         Ok(__cordl_ret.into())
@@ -166,8 +166,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     pub fn set_Points(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -181,8 +181,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     pub fn set_Triangles(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -205,18 +205,26 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointSet")]
-impl AsRef<crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable>
-for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
-    fn as_ref(&self) -> &crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable>,
+> for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointSet")]
-impl AsMut<crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable>
-for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable>,
+> for crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

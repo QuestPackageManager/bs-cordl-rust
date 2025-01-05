@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CurvedTextMeshPro {
-    __cordl_parent: crate::TMPro::TextMeshProUGUI,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _useScriptableObjectColors: bool,
     pub _colorSo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
     pub _curvedMeshInfos: quest_hook::libil2cpp::Gc<
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+CurvedTextMeshPro")]
 impl std::ops::Deref for crate::HMUI::CurvedTextMeshPro {
-    type Target = crate::TMPro::TextMeshProUGUI;
+    type Target = quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -183,16 +183,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::CurvedTextMeshPro {
     }
 }
 #[cfg(feature = "HMUI+CurvedTextMeshPro")]
-impl AsRef<crate::GlobalNamespace::IComponentRefresher>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IComponentRefresher>>
 for crate::HMUI::CurvedTextMeshPro {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IComponentRefresher {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IComponentRefresher> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+CurvedTextMeshPro")]
-impl AsMut<crate::GlobalNamespace::IComponentRefresher>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IComponentRefresher>>
 for crate::HMUI::CurvedTextMeshPro {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IComponentRefresher {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IComponentRefresher> {
         unsafe { std::mem::transmute(self) }
     }
 }

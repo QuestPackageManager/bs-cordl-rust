@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataColumnPropertyDescriptor {
-    __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyDescriptor,
+    >,
     pub _Column_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Data::DataColumn,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataColumnPropertyDescriptor")]
 impl std::ops::Deref for crate::System::Data::DataColumnPropertyDescriptor {
-    type Target = crate::System::ComponentModel::PropertyDescriptor;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyDescriptor,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

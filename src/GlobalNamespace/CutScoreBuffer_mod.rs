@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CutScoreBuffer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _saberSwingRatingCounter: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SaberSwingRatingCounter,
     >,
@@ -16,13 +16,13 @@ pub struct CutScoreBuffer {
     pub _initialized: bool,
     pub _isFinished: bool,
     pub _didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LazyCopyHashSet_1<
-            *mut crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
         >,
     >,
     pub _didChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LazyCopyHashSet_1<
-            *mut crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
         >,
     >,
 }
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CutScoreBuffer")]
 impl std::ops::Deref for crate::GlobalNamespace::CutScoreBuffer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -262,52 +262,78 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CutScoreBuffe
     }
 }
 #[cfg(feature = "CutScoreBuffer")]
-impl AsRef<crate::GlobalNamespace::IReadonlyCutScoreBuffer>
-for crate::GlobalNamespace::CutScoreBuffer {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IReadonlyCutScoreBuffer {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "CutScoreBuffer")]
-impl AsMut<crate::GlobalNamespace::IReadonlyCutScoreBuffer>
-for crate::GlobalNamespace::CutScoreBuffer {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IReadonlyCutScoreBuffer {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "CutScoreBuffer")]
-impl AsRef<crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyCutScoreBuffer>>
 for crate::GlobalNamespace::CutScoreBuffer {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyCutScoreBuffer> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "CutScoreBuffer")]
-impl AsMut<crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyCutScoreBuffer>>
 for crate::GlobalNamespace::CutScoreBuffer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReadonlyCutScoreBuffer,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "CutScoreBuffer")]
-impl AsRef<crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver>
-for crate::GlobalNamespace::CutScoreBuffer {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+    >,
+> for crate::GlobalNamespace::CutScoreBuffer {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "CutScoreBuffer")]
-impl AsMut<crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver>
-for crate::GlobalNamespace::CutScoreBuffer {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+    >,
+> for crate::GlobalNamespace::CutScoreBuffer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CutScoreBuffer")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+    >,
+> for crate::GlobalNamespace::CutScoreBuffer {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "CutScoreBuffer")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+    >,
+> for crate::GlobalNamespace::CutScoreBuffer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

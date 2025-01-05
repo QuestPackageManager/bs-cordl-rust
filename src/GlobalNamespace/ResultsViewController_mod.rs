@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResultsViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _restartButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _clearedPanel: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -27,10 +27,10 @@ pub struct ResultsViewController {
         crate::GlobalNamespace::MenuDestination,
     >,
     pub continueButtonPressedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::ResultsViewController>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
     >,
     pub restartButtonPressedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::ResultsViewController>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
     >,
     pub _levelCompletionResults: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LevelCompletionResults,
@@ -53,7 +53,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ResultsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::ResultsViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -201,7 +201,7 @@ impl crate::GlobalNamespace::ResultsViewController {
     pub fn add_continueButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ResultsViewController>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -214,7 +214,7 @@ impl crate::GlobalNamespace::ResultsViewController {
     pub fn add_restartButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ResultsViewController>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -234,7 +234,7 @@ impl crate::GlobalNamespace::ResultsViewController {
     pub fn remove_continueButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ResultsViewController>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -247,7 +247,7 @@ impl crate::GlobalNamespace::ResultsViewController {
     pub fn remove_restartButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::ResultsViewController>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

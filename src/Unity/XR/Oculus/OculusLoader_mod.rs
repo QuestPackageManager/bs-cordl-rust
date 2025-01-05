@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusLoader {
-    __cordl_parent: crate::UnityEngine::XR::Management::XRLoaderHelper,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::XR::Management::XRLoaderHelper,
+    >,
 }
 #[cfg(feature = "Unity+XR+Oculus+OculusLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+Oculus+OculusLoader")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::OculusLoader {
-    type Target = crate::UnityEngine::XR::Management::XRLoaderHelper;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::XR::Management::XRLoaderHelper,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

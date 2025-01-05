@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasePlatformInit {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _IsInitialized_k__BackingField: bool,
-    pub _initializationTask: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<bool>,
-    >,
+    pub _initializationTask: quest_hook::libil2cpp::Gc<bool>,
 }
 #[cfg(feature = "BasePlatformInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BasePlatformInit")]
 impl std::ops::Deref for crate::GlobalNamespace::BasePlatformInit {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,18 +30,14 @@ impl crate::GlobalNamespace::BasePlatformInit {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetAppVersionAsync", ())?;
         Ok(__cordl_ret.into())
     }
@@ -59,28 +53,22 @@ impl crate::GlobalNamespace::BasePlatformInit {
     }
     pub fn InitializeAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object.invoke("InitializeAsync", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
+            .invoke("InitializeAsync", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn InitializeInternalAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object.invoke("InitializeInternalAsync", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
+            .invoke("InitializeInternalAsync", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -129,28 +117,36 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BasePlatformI
     }
 }
 #[cfg(feature = "BasePlatformInit")]
-impl AsRef<crate::BeatSaber::Init::IPlatformInit>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>>
 for crate::GlobalNamespace::BasePlatformInit {
-    fn as_ref(&self) -> &crate::BeatSaber::Init::IPlatformInit {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BasePlatformInit")]
-impl AsMut<crate::BeatSaber::Init::IPlatformInit>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>>
 for crate::GlobalNamespace::BasePlatformInit {
-    fn as_mut(&mut self) -> &mut crate::BeatSaber::Init::IPlatformInit {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BasePlatformInit")]
-impl AsRef<crate::Zenject::IInitializable> for crate::GlobalNamespace::BasePlatformInit {
-    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+for crate::GlobalNamespace::BasePlatformInit {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BasePlatformInit")]
-impl AsMut<crate::Zenject::IInitializable> for crate::GlobalNamespace::BasePlatformInit {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+for crate::GlobalNamespace::BasePlatformInit {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
         unsafe { std::mem::transmute(self) }
     }
 }

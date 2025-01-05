@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlStringAttributeDescription {
-    __cordl_parent: crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlStringAttributeDescription")]
@@ -14,8 +14,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UxmlStringAttributeDescription")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlStringAttributeDescription {
-    type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -56,7 +56,9 @@ impl crate::UnityEngine::UIElements::UxmlStringAttributeDescription {
         &mut self,
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
-        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

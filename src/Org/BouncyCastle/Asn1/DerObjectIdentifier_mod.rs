@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DerObjectIdentifier {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Object,
+    >,
     pub identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
@@ -13,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerObjectIdentifier")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Object;
+    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -106,7 +108,17 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
         > = __cordl_object.invoke("GetBody", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInstance_Asn1TaggedObject__cordl_bool1(
+    pub fn GetInstance_Gc0(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance__cordl_bool1(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         explicitly: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -116,16 +128,6 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetInstance", (obj, explicitly))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetInstance_Il2CppObject0(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsValidBranchID(
@@ -154,7 +156,16 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
             .invoke("MakeOidStringFromBytes", (bytes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_DerObjectIdentifier_Il2CppString1(
+    pub fn New_Gc0(
+        identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (identifier))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc1(
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -166,22 +177,13 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
             .invoke_void(".ctor", (oid, branchID))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray2(
+    pub fn New_Gc2(
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bytes))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppString0(
-        identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (identifier))?;
         Ok(__cordl_object.into())
     }
     pub fn On(
@@ -209,7 +211,7 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteField_BigInteger1(
+    pub fn WriteField_Gc1(
         &mut self,
         outputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         fieldValue: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -233,7 +235,18 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
             .invoke("WriteField", (outputStream, fieldValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerObjectIdentifier_Il2CppString1(
+    pub fn _ctor_Gc0(
+        &mut self,
+        identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (identifier))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -247,7 +260,7 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
             .invoke(".ctor", (oid, branchID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray2(
+    pub fn _ctor_Gc2(
         &mut self,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -256,17 +269,6 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bytes))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString0(
-        &mut self,
-        identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (identifier))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Id(

@@ -55,16 +55,24 @@ for crate::Unity::Properties::IConstructor_1<T> {
     }
 }
 #[cfg(feature = "Unity+Properties+IConstructor_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::Unity::Properties::IConstructor>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IConstructor>>
 for crate::Unity::Properties::IConstructor_1<T> {
-    fn as_ref(&self) -> &crate::Unity::Properties::IConstructor {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Unity::Properties::IConstructor> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Unity+Properties+IConstructor_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::Unity::Properties::IConstructor>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IConstructor>>
 for crate::Unity::Properties::IConstructor_1<T> {
-    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IConstructor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Properties::IConstructor> {
         unsafe { std::mem::transmute(self) }
     }
 }

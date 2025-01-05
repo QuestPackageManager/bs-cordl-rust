@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExceptionBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Data+ExceptionBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+ExceptionBuilder")]
 impl std::ops::Deref for crate::System::Data::ExceptionBuilder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -261,7 +261,7 @@ impl crate::System::Data::ExceptionBuilder {
             .invoke("CannotChangeCaseLocale", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CannotChangeCaseLocale_Exception1(
+    pub fn CannotChangeCaseLocale_Gc1(
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -478,7 +478,7 @@ impl crate::System::Data::ExceptionBuilder {
             .invoke("ColumnNotInTheTable", (column, table))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ColumnOutOfRange_Il2CppString1(
+    pub fn ColumnOutOfRange_Gc1(
         column: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -558,27 +558,31 @@ impl crate::System::Data::ExceptionBuilder {
             .invoke("ConstraintRemoveFailed", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConstraintViolation_Il2CppArray_Il2CppArray1(
-        columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
-        >,
-        values: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConstraintViolation", (columns, values))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ConstraintViolation_Il2CppString0(
+    pub fn ConstraintViolation_Gc0(
         constraint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ConstraintViolation", (constraint))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConstraintViolation_Gc1(
+        columns: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            >,
+        >,
+        values: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConstraintViolation", (columns, values))?;
         Ok(__cordl_ret.into())
     }
     pub fn ConvertFailed(
@@ -867,7 +871,9 @@ impl crate::System::Data::ExceptionBuilder {
     pub fn ForeignKeyViolation(
         constraint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keys: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -1173,7 +1179,9 @@ impl crate::System::Data::ExceptionBuilder {
     }
     pub fn KeysToString(
         keys: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1238,7 +1246,7 @@ impl crate::System::Data::ExceptionBuilder {
             .invoke("MismatchKeyLength", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn MissingAttribute_Il2CppString0(
+    pub fn MissingAttribute_Gc0(
         attribute: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -1247,7 +1255,7 @@ impl crate::System::Data::ExceptionBuilder {
             .invoke("MissingAttribute", (attribute))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MissingAttribute_Il2CppString1(
+    pub fn MissingAttribute_Gc1(
         element: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         attribute: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1751,7 +1759,16 @@ impl crate::System::Data::ExceptionBuilder {
             .invoke("SetDataSetNameToEmpty", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFailed_Il2CppObject_DataColumn_Type_Exception0(
+    pub fn SetFailed_Gc1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetFailed", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetFailed_Gc_Gc_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1761,15 +1778,6 @@ impl crate::System::Data::ExceptionBuilder {
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SetFailed", (value, column, _cordl_type, innerException))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetFailed_Il2CppString1(
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetFailed", (name))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetIListObject() -> quest_hook::libil2cpp::Result<
@@ -1991,10 +1999,14 @@ impl crate::System::Data::ExceptionBuilder {
     }
     pub fn UniqueConstraintViolationText(
         columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            >,
         >,
         values: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2032,7 +2044,16 @@ impl crate::System::Data::ExceptionBuilder {
             .invoke("_ArgumentOutOfRange", (paramName, msg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Argument_Exception1(
+    pub fn _Argument_Gc0(
+        error: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("_Argument", (error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _Argument_Gc1(
         error: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<
@@ -2040,15 +2061,6 @@ impl crate::System::Data::ExceptionBuilder {
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("_Argument", (error, innerException))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _Argument_Il2CppString0(
-        error: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("_Argument", (error))?;
         Ok(__cordl_ret.into())
     }
     pub fn _Constraint(
@@ -2114,7 +2126,7 @@ impl crate::System::Data::ExceptionBuilder {
             .invoke("_InvalidConstraint", (error))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _InvalidEnumArgumentException_Il2CppString0(
+    pub fn _InvalidEnumArgumentException_Gc0(
         error: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,

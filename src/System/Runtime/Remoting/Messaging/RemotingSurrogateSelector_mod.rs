@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemotingSurrogateSelector {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _next: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::ISurrogateSelector,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Remoting+Messaging+RemotingSurrogateSelector")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::RemotingSurrogateSelector {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,9 @@ impl crate::System::Runtime::Remoting::Messaging::RemotingSurrogateSelector {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         context: crate::System::Runtime::Serialization::StreamingContext,
         ssout: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Runtime::Serialization::ISurrogateSelector,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::Serialization::ISurrogateSelector,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -79,18 +81,26 @@ for crate::System::Runtime::Remoting::Messaging::RemotingSurrogateSelector {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+RemotingSurrogateSelector")]
-impl AsRef<crate::System::Runtime::Serialization::ISurrogateSelector>
-for crate::System::Runtime::Remoting::Messaging::RemotingSurrogateSelector {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISurrogateSelector {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISurrogateSelector>,
+> for crate::System::Runtime::Remoting::Messaging::RemotingSurrogateSelector {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISurrogateSelector,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+RemotingSurrogateSelector")]
-impl AsMut<crate::System::Runtime::Serialization::ISurrogateSelector>
-for crate::System::Runtime::Remoting::Messaging::RemotingSurrogateSelector {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISurrogateSelector>,
+> for crate::System::Runtime::Remoting::Messaging::RemotingSurrogateSelector {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Serialization::ISurrogateSelector {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISurrogateSelector,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

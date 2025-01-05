@@ -55,16 +55,20 @@ for crate::Zenject::IFactory_1<TValue> {
     }
 }
 #[cfg(feature = "Zenject+IFactory_1")]
-impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IFactory>
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IFactory>>
 for crate::Zenject::IFactory_1<TValue> {
-    fn as_ref(&self) -> &crate::Zenject::IFactory {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IFactory> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+IFactory_1")]
-impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IFactory>
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IFactory>>
 for crate::Zenject::IFactory_1<TValue> {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IFactory> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HIDParser {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::HID::HIDParser {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
     pub type HIDItemTypeAndTag = crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
     pub type HIDReportData = crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData;
-    pub fn ParseReportDescriptor_Il2CppArray_ByRefMut0(
+    pub fn ParseReportDescriptor_ByRefMut0(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         deviceDescriptor: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
@@ -42,7 +42,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
             .invoke("ParseReportDescriptor", (buffer, deviceDescriptor))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ParseReportDescriptor_Il2CppObject_i32_ByRefMut1(
+    pub fn ParseReportDescriptor_i32_ByRefMut1(
         bufferPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferLength: i32,
         deviceDescriptor: quest_hook::libil2cpp::ByRefMut<
@@ -156,9 +156,7 @@ pub struct HIDParser_HIDItemStateLocal {
     pub stringIndex: crate::System::Nullable_1<i32>,
     pub stringMinimum: crate::System::Nullable_1<i32>,
     pub stringMaximum: crate::System::Nullable_1<i32>,
-    pub usageList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub usageList: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -278,9 +276,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
         reportId: crate::System::Nullable_1<i32>,
         reportType: crate::UnityEngine::InputSystem::HID::HID_HIDReportType,
         reports: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData,
-            >,
+            crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()

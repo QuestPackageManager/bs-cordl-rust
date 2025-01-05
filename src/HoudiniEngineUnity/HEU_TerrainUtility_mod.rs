@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_TerrainUtility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_TerrainUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_TerrainUtility")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_TerrainUtility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,14 +31,10 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             quest_hook::libil2cpp::Il2CppObject,
         >,
         heightFields: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
         strengths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
-        alphaMapIndices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        alphaMapIndices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
@@ -65,14 +61,10 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             crate::HoudiniEngineUnity::HEU_DetailProperties,
         >,
         heuDetailPrototypes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_DetailPrototype,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailPrototype>,
         >,
         convertedDetailMaps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -103,9 +95,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         heightMapWidth: i32,
         heightMapHeight: i32,
         heightFields: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -144,12 +134,14 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         partID: i32,
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         terrainData: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::TerrainData,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
         >,
         volumePositionOffset: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Vector3,
         >,
-        terrain: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Terrain>,
+        terrain: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+        >,
         bakedMaterialPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -227,7 +219,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         geoID: i32,
         partID: i32,
         heightValues: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
         minHeight: quest_hook::libil2cpp::ByRefMut<f32>,
         maxHeight: quest_hook::libil2cpp::ByRefMut<f32>,
@@ -299,7 +291,9 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
     pub fn GetTerrainLayerIndex(
         layer: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
         terrainLayers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::TerrainLayer>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -309,7 +303,9 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
     pub fn GetTerrainLayerIndexByName(
         layerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         terrainLayers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::TerrainLayer>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -322,15 +318,11 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         partID: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_TreePrototypeInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TreePrototypeInfo>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_TreePrototypeInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TreePrototypeInfo>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetTreePrototypeInfosFromPart", (session, geoID, partID))?;
         Ok(__cordl_ret.into())
@@ -368,7 +360,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         geoID: i32,
         partID: i32,
         detailProperties: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::HoudiniEngineUnity::HEU_DetailProperties,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailProperties>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -383,7 +375,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         geoID: i32,
         partID: i32,
         detailPrototype: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::HoudiniEngineUnity::HEU_DetailPrototype,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailPrototype>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -399,7 +391,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         partID: i32,
         pointCount: i32,
         scatterTrees: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeScatterTrees>,
         >,
         throwWarningIfNoTileAttribute: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

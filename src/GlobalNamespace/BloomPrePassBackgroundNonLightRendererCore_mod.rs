@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundNonLightRendererCore {
-    __cordl_parent: crate::GlobalNamespace::BloomPrePassNonLightPass,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassNonLightPass,
+    >,
     pub _keepDefaultRendering: bool,
     pub _useCustomMaterial: bool,
     pub _customMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -23,7 +25,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BloomPrePassBackgroundNonLightRendererCore")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore {
-    type Target = crate::GlobalNamespace::BloomPrePassNonLightPass;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassNonLightPass,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

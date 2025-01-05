@@ -2,10 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AllElementsContentValidator {
-    __cordl_parent: crate::System::Xml::Schema::ContentValidator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ContentValidator,
+    >,
     pub elements: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub particles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub isRequired: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     pub countRequired: i32,
@@ -17,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+AllElementsContentValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::AllElementsContentValidator {
-    type Target = crate::System::Xml::Schema::ContentValidator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ContentValidator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

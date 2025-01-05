@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSkeleton {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _skeletonType: crate::GlobalNamespace::OVRSkeleton_SkeletonType,
     pub _dataProvider: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider,
@@ -15,15 +15,13 @@ pub struct OVRSkeleton {
     pub _bindPosesGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _capsulesGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _bones: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::GlobalNamespace::OVRBone>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
     >,
     pub _bindPoses: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::GlobalNamespace::OVRBone>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
     >,
     pub _capsules: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::OVRBoneCapsule,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
     >,
     pub _skeleton: crate::GlobalNamespace::OVRPlugin_Skeleton2,
     pub wristFixupRotation: crate::UnityEngine::Quaternion,
@@ -31,19 +29,13 @@ pub struct OVRSkeleton {
     pub _IsDataValid_k__BackingField: bool,
     pub _IsDataHighConfidence_k__BackingField: bool,
     pub _Bones_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            *mut crate::GlobalNamespace::OVRBone,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
     >,
     pub _BindPoses_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            *mut crate::GlobalNamespace::OVRBone,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
     >,
     pub _Capsules_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            *mut crate::GlobalNamespace::OVRBoneCapsule,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
     >,
     pub _SkeletonChangedCount_k__BackingField: i32,
 }
@@ -53,7 +45,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSkeleton")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSkeleton {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -323,18 +315,14 @@ impl crate::GlobalNamespace::OVRSkeleton {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::GlobalNamespace::OVRBone,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::GlobalNamespace::OVRBone,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
         > = __cordl_object.invoke("get_BindPoses", ())?;
         Ok(__cordl_ret.into())
     }
@@ -342,18 +330,14 @@ impl crate::GlobalNamespace::OVRSkeleton {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::GlobalNamespace::OVRBone,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::GlobalNamespace::OVRBone,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
         > = __cordl_object.invoke("get_Bones", ())?;
         Ok(__cordl_ret.into())
     }
@@ -361,18 +345,14 @@ impl crate::GlobalNamespace::OVRSkeleton {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::GlobalNamespace::OVRBoneCapsule,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::GlobalNamespace::OVRBoneCapsule,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
         > = __cordl_object.invoke("get_Capsules", ())?;
         Ok(__cordl_ret.into())
     }
@@ -407,9 +387,7 @@ impl crate::GlobalNamespace::OVRSkeleton {
     pub fn set_BindPoses(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::GlobalNamespace::OVRBone,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -422,9 +400,7 @@ impl crate::GlobalNamespace::OVRSkeleton {
     pub fn set_Bones(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::GlobalNamespace::OVRBone,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -437,9 +413,7 @@ impl crate::GlobalNamespace::OVRSkeleton {
     pub fn set_Capsules(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::GlobalNamespace::OVRBoneCapsule,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

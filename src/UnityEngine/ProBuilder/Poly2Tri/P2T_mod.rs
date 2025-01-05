@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct P2T {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+P2T")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+P2T")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::P2T {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,30 +37,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::P2T {
             .invoke("CreateContext", (algorithm))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Triangulate_ConstrainedPointSet2(
-        cps: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Triangulate", (cps))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Triangulate_PointSet3(
-        ps: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::PointSet>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Triangulate", (ps))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Triangulate_Polygon1(
-        p: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::Polygon>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Triangulate", (p))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Triangulate_PolygonSet0(
+    pub fn Triangulate_Gc0(
         ps: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::PolygonSet,
         >,
@@ -69,7 +46,39 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::P2T {
             .invoke("Triangulate", (ps))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Triangulate_TriangulationAlgorithm_Triangulatable4(
+    pub fn Triangulate_Gc1(
+        p: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::Polygon>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Triangulate", (p))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Triangulate_Gc2(
+        cps: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Triangulate", (cps))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Triangulate_Gc3(
+        ps: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::PointSet>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Triangulate", (ps))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Triangulate_Gc5(
+        tcx: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Triangulate", (tcx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Triangulate_TriangulationAlgorithm_Gc4(
         algorithm: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm,
         t: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
@@ -77,15 +86,6 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::P2T {
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Triangulate", (algorithm, t))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Triangulate_TriangulationContext5(
-        tcx: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Triangulate", (tcx))?;
         Ok(__cordl_ret.into())
     }
     pub fn Warmup() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

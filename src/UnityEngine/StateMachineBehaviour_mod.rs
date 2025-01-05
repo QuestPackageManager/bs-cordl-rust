@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StateMachineBehaviour {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
 }
 #[cfg(feature = "UnityEngine+StateMachineBehaviour")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+StateMachineBehaviour")]
 impl std::ops::Deref for crate::UnityEngine::StateMachineBehaviour {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             .invoke("OnStateEnter", (animator, stateInfo, layerIndex, controller))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnStateEnter_Animator_AnimatorStateInfo_i32_0(
+    pub fn OnStateEnter_Gc_AnimatorStateInfo_i32_0(
         &mut self,
         animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
         stateInfo: crate::UnityEngine::AnimatorStateInfo,
@@ -72,7 +72,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             .invoke("OnStateExit", (animator, stateInfo, layerIndex, controller))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnStateExit_Animator_AnimatorStateInfo_i32_0(
+    pub fn OnStateExit_Gc_AnimatorStateInfo_i32_0(
         &mut self,
         animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
         stateInfo: crate::UnityEngine::AnimatorStateInfo,
@@ -99,7 +99,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             .invoke("OnStateIK", (animator, stateInfo, layerIndex, controller))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnStateIK_Animator_AnimatorStateInfo_i32_0(
+    pub fn OnStateIK_Gc_AnimatorStateInfo_i32_0(
         &mut self,
         animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
         stateInfo: crate::UnityEngine::AnimatorStateInfo,
@@ -128,7 +128,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnStateMachineEnter_Animator_i32_0(
+    pub fn OnStateMachineEnter_Gc_i32_0(
         &mut self,
         animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
         stateMachinePathHash: i32,
@@ -153,7 +153,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             .invoke("OnStateMachineExit", (animator, stateMachinePathHash, controller))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnStateMachineExit_Animator_i32_0(
+    pub fn OnStateMachineExit_Gc_i32_0(
         &mut self,
         animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
         stateMachinePathHash: i32,
@@ -179,7 +179,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             .invoke("OnStateMove", (animator, stateInfo, layerIndex, controller))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnStateMove_Animator_AnimatorStateInfo_i32_0(
+    pub fn OnStateMove_Gc_AnimatorStateInfo_i32_0(
         &mut self,
         animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
         stateInfo: crate::UnityEngine::AnimatorStateInfo,
@@ -206,7 +206,7 @@ impl crate::UnityEngine::StateMachineBehaviour {
             .invoke("OnStateUpdate", (animator, stateInfo, layerIndex, controller))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnStateUpdate_Animator_AnimatorStateInfo_i32_0(
+    pub fn OnStateUpdate_Gc_AnimatorStateInfo_i32_0(
         &mut self,
         animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
         stateInfo: crate::UnityEngine::AnimatorStateInfo,

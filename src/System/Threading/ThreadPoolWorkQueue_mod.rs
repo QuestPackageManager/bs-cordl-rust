@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub queueHead: quest_hook::libil2cpp::Gc<
         crate::System::Threading::ThreadPoolWorkQueue_QueueSegment,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue")]
 impl std::ops::Deref for crate::System::Threading::ThreadPoolWorkQueue {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
             crate::System::Threading::ThreadPoolWorkQueueThreadLocals,
         >,
         callback: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Threading::IThreadPoolWorkItem,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
         >,
         missedSteal: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -154,10 +154,10 @@ for crate::System::Threading::ThreadPoolWorkQueue {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue_QueueSegment {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub nodes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Threading::IThreadPoolWorkItem,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
         >,
     >,
     pub indexes: i32,
@@ -173,7 +173,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+QueueSegment")]
 impl std::ops::Deref for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -232,7 +232,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
     pub fn TryDequeue(
         &mut self,
         node: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Threading::IThreadPoolWorkItem,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -276,7 +276,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue_SparseArray_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -289,7 +289,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -391,10 +391,10 @@ for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue_WorkStealingQueue {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_array: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Threading::IThreadPoolWorkItem,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
         >,
     >,
     pub m_mask: i32,
@@ -411,7 +411,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
 impl std::ops::Deref
 for crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -438,7 +438,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
     pub fn LocalPop(
         &mut self,
         obj: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Threading::IThreadPoolWorkItem,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -468,7 +468,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
     pub fn TrySteal_ByRefMut_ByRefMut0(
         &mut self,
         obj: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Threading::IThreadPoolWorkItem,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
         >,
         missedSteal: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -481,7 +481,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
     pub fn TrySteal_i32_1(
         &mut self,
         obj: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Threading::IThreadPoolWorkItem,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
         >,
         missedSteal: quest_hook::libil2cpp::ByRefMut<bool>,
         millisecondsTimeout: i32,

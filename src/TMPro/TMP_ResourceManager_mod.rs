@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_ResourceManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "TMPro+TMP_ResourceManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_ResourceManager")]
 impl std::ops::Deref for crate::TMPro::TMP_ResourceManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,9 @@ impl crate::TMPro::TMP_ResourceManager {
     }
     pub fn TryGetFontAsset(
         hashcode: i32,
-        fontAsset: quest_hook::libil2cpp::ByRefMut<*mut crate::TMPro::TMP_FontAsset>,
+        fontAsset: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryGetFontAsset", (hashcode, fontAsset))?;

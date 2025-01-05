@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntroTutorialController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _redRing: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IntroTutorialRing>,
     pub _blueRing: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IntroTutorialRing>,
     pub _redRingWrapper: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "IntroTutorialController")]
 impl std::ops::Deref for crate::GlobalNamespace::IntroTutorialController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

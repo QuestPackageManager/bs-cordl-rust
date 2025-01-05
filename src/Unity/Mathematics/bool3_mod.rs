@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::b
 impl crate::Unity::Mathematics::bool3 {
     #[cfg(feature = "Unity+Mathematics+bool3+DebuggerProxy")]
     pub type DebuggerProxy = crate::Unity::Mathematics::bool3_DebuggerProxy;
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1582,18 +1582,18 @@ impl crate::Unity::Mathematics::bool3 {
     }
 }
 #[cfg(feature = "Unity+Mathematics+bool3")]
-impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::bool3>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::bool3>>
 for crate::Unity::Mathematics::bool3 {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::Unity::Mathematics::bool3> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::bool3> {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Mathematics+bool3")]
-impl AsMut<crate::System::IEquatable_1<crate::Unity::Mathematics::bool3>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::bool3>>
 for crate::Unity::Mathematics::bool3 {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::Unity::Mathematics::bool3> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::bool3> {
         todo!()
     }
 }
@@ -1601,7 +1601,7 @@ for crate::Unity::Mathematics::bool3 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct bool3_DebuggerProxy {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub x: bool,
     pub y: bool,
     pub z: bool,
@@ -1613,7 +1613,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Mathematics+bool3+DebuggerProxy")]
 impl std::ops::Deref for crate::Unity::Mathematics::bool3_DebuggerProxy {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

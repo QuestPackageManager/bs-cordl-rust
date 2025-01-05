@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProcessPort {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _processName_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ProcessPort")]
 impl std::ops::Deref for crate::GlobalNamespace::ProcessPort {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,15 +37,11 @@ impl crate::GlobalNamespace::ProcessPort {
         targetPort: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ProcessPort,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProcessPort>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::ProcessPort,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProcessPort>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetProcessesByPort", (targetPort))?;
         Ok(__cordl_ret.into())

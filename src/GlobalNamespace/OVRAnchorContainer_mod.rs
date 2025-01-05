@@ -22,7 +22,7 @@ for crate::GlobalNamespace::OVRAnchorContainer {
 }
 #[cfg(feature = "OVRAnchorContainer")]
 impl crate::GlobalNamespace::OVRAnchorContainer {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -46,11 +46,7 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
     }
     pub fn FetchChildrenAsync(
         &mut self,
-        anchors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::OVRAnchor,
-            >,
-        >,
+        anchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -199,48 +195,38 @@ impl crate::GlobalNamespace::OVRAnchorContainer {
     }
 }
 #[cfg(feature = "OVRAnchorContainer")]
-impl AsRef<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRAnchorContainer,
-    >,
-> for crate::GlobalNamespace::OVRAnchorContainer {
-    fn as_ref(
-        &self,
-    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRAnchorContainer,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRAnchorContainer")]
-impl AsMut<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRAnchorContainer,
-    >,
-> for crate::GlobalNamespace::OVRAnchorContainer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRAnchorContainer,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRAnchorContainer")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchorContainer>>
 for crate::GlobalNamespace::OVRAnchorContainer {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchorContainer> {
         todo!()
     }
 }
 #[cfg(feature = "OVRAnchorContainer")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchorContainer>>
 for crate::GlobalNamespace::OVRAnchorContainer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchorContainer> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchorContainer> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRAnchorContainer")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchorContainer>>
+for crate::GlobalNamespace::OVRAnchorContainer {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchorContainer> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRAnchorContainer")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchorContainer>>
+for crate::GlobalNamespace::OVRAnchorContainer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchorContainer> {
         todo!()
     }
 }

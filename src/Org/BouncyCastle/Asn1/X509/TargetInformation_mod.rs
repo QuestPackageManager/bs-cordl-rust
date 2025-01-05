@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TargetInformation {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub targets: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+TargetInformation")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+TargetInformation")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,7 +46,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::Targets,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Targets>,
             >,
         >,
     > {
@@ -51,12 +55,12 @@ impl crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::Targets,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Targets>,
             >,
         > = __cordl_object.invoke("GetTargetsObjects", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1Sequence0(
+    pub fn New_Gc0(
         targets: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -65,12 +69,8 @@ impl crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
             .invoke_void(".ctor", (targets))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray2(
-        targets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::Target,
-            >,
-        >,
+    pub fn New_Gc1(
+        targets: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Targets>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -78,8 +78,12 @@ impl crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
             .invoke_void(".ctor", (targets))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Targets1(
-        targets: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Targets>,
+    pub fn New_Gc2(
+        targets: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Target>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -100,7 +104,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Sequence0(
+    pub fn _ctor_Gc0(
         &mut self,
         targets: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -111,13 +115,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
             .invoke(".ctor", (targets))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray2(
+    pub fn _ctor_Gc1(
         &mut self,
-        targets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::Target,
-            >,
-        >,
+        targets: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Targets>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -126,9 +126,13 @@ impl crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
             .invoke(".ctor", (targets))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Targets1(
+    pub fn _ctor_Gc2(
         &mut self,
-        targets: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Targets>,
+        targets: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Target>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Touchable {
-    __cordl_parent: crate::UnityEngine::UI::Graphic,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     pub _skew: f32,
 }
 #[cfg(feature = "HMUI+Touchable")]
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+Touchable")]
 impl std::ops::Deref for crate::HMUI::Touchable {
-    type Target = crate::UnityEngine::UI::Graphic;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

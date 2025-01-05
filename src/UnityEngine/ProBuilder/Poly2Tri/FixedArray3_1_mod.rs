@@ -70,30 +70,30 @@ impl<
     }
     pub fn Enumerate(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "Enumerate", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Enumerate",
+            (),
+        )?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<T>,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetEnumerator", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetEnumerator",
+            (),
+        )?;
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf(&mut self, value: T) -> quest_hook::libil2cpp::Result<i32>
@@ -156,34 +156,38 @@ impl<
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedArray3_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
 for crate::UnityEngine::ProBuilder::Poly2Tri::FixedArray3_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedArray3_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::UnityEngine::ProBuilder::Poly2Tri::FixedArray3_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedArray3_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::UnityEngine::ProBuilder::Poly2Tri::FixedArray3_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedArray3_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::UnityEngine::ProBuilder::Poly2Tri::FixedArray3_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedArray3_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
-for crate::UnityEngine::ProBuilder::Poly2Tri::FixedArray3_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         todo!()
     }
 }

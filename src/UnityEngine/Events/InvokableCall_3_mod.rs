@@ -6,10 +6,10 @@ pub struct InvokableCall_3<
     T2: quest_hook::libil2cpp::Type,
     T3: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::UnityEngine::Events::BaseInvokableCall,
-    pub Delegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Events::UnityAction_3<T1, T2, T3>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::BaseInvokableCall,
     >,
+    pub Delegate: quest_hook::libil2cpp::Gc<T1, T2, T3>,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
     __cordl_phantom_T2: std::marker::PhantomData<T2>,
     __cordl_phantom_T3: std::marker::PhantomData<T3>,
@@ -25,7 +25,9 @@ impl<
     T2: quest_hook::libil2cpp::Type,
     T3: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::UnityEngine::Events::InvokableCall_3<T1, T2, T3> {
-    type Target = crate::UnityEngine::Events::BaseInvokableCall;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::BaseInvokableCall,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,10 +67,12 @@ impl<
         let __cordl_ret: bool = __cordl_object.invoke("Find", (targetObj, method))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Invoke_Il2CppArray0(
+    pub fn Invoke_Gc0(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -107,7 +111,7 @@ impl<
             .invoke("Invoke", (args0, args1, args2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppObject_MethodInfo0(
+    pub fn New_Gc0(
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         theFunction: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -125,10 +129,8 @@ impl<
             .invoke_void(".ctor", (target, theFunction))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_UnityAction_3_1(
-        action: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_3<T1, T2, T3>,
-        >,
+    pub fn New_Gc1(
+        action: quest_hook::libil2cpp::Gc<T1, T2, T3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -144,7 +146,7 @@ impl<
             .invoke_void(".ctor", (action))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppObject_MethodInfo0(
+    pub fn _ctor_Gc0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         theFunction: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -164,11 +166,9 @@ impl<
             .invoke(".ctor", (target, theFunction))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_UnityAction_3_1(
+    pub fn _ctor_Gc1(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_3<T1, T2, T3>,
-        >,
+        action: quest_hook::libil2cpp::Gc<T1, T2, T3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -187,9 +187,7 @@ impl<
     }
     pub fn add_Delegate(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_3<T1, T2, T3>,
-        >,
+        value: quest_hook::libil2cpp::Gc<T1, T2, T3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -208,9 +206,7 @@ impl<
     }
     pub fn remove_Delegate(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_3<T1, T2, T3>,
-        >,
+        value: quest_hook::libil2cpp::Gc<T1, T2, T3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

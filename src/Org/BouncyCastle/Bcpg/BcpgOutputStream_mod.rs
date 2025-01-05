@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BcpgOutputStream {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    >,
     pub outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub partialBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub partialBufferLength: i32,
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgOutputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
-    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,6 +64,15 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
             .invoke("Flush", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn New_Gc0(
+        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outStr))?;
+        Ok(__cordl_object.into())
+    }
     pub fn New_PacketTag1(
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         tag: crate::Org::BouncyCastle::Bcpg::PacketTag,
@@ -70,7 +83,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
             .invoke_void(".ctor", (outStr, tag))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PacketTag_Il2CppArray4(
+    pub fn New_PacketTag_Gc4(
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         tag: crate::Org::BouncyCastle::Bcpg::PacketTag,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -102,15 +115,6 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (outStr, tag, length, oldFormat))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Stream0(
-        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outStr))?;
         Ok(__cordl_object.into())
     }
     pub fn PartialFlush(
@@ -220,7 +224,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         &mut self,
         v: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::BcpgObject,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -231,7 +235,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
             .invoke("WriteObjects", (v))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WritePacket_ContainedPacket0(
+    pub fn WritePacket_Gc0(
         &mut self,
         p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::ContainedPacket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -242,7 +246,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
             .invoke("WritePacket", (p))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WritePacket_PacketTag_Il2CppArray__cordl_bool1(
+    pub fn WritePacket_PacketTag_Gc__cordl_bool1(
         &mut self,
         tag: crate::Org::BouncyCastle::Bcpg::PacketTag,
         body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -255,7 +259,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
             .invoke("WritePacket", (tag, body, oldFormat))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WritePartial_Il2CppArray_i32_i32_1(
+    pub fn WritePartial_Gc_i32_i32_1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
@@ -290,6 +294,17 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
             .invoke("WriteShort", (n))?;
         Ok(__cordl_ret.into())
     }
+    pub fn _ctor_Gc0(
+        &mut self,
+        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (outStr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_PacketTag1(
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -302,7 +317,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
             .invoke(".ctor", (outStr, tag))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_PacketTag_Il2CppArray4(
+    pub fn _ctor_PacketTag_Gc4(
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         tag: crate::Org::BouncyCastle::Bcpg::PacketTag,
@@ -340,17 +355,6 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (outStr, tag, length, oldFormat))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Stream0(
-        &mut self,
-        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (outStr))?;
         Ok(__cordl_ret.into())
     }
 }

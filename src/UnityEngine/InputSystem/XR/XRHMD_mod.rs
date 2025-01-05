@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRHMD {
-    __cordl_parent: crate::UnityEngine::InputSystem::TrackedDevice,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::TrackedDevice,
+    >,
     pub _leftEyePosition_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::Vector3Control,
     >,
@@ -29,7 +31,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRHMD")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::XRHMD {
-    type Target = crate::UnityEngine::InputSystem::TrackedDevice;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::TrackedDevice,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

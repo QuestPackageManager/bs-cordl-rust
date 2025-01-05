@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DllImportAttribute {
-    __cordl_parent: crate::System::Attribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     pub _val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub EntryPoint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub CharSet: crate::System::Runtime::InteropServices::CharSet,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+InteropServices+DllImportAttribute")]
 impl std::ops::Deref for crate::System::Runtime::InteropServices::DllImportAttribute {
-    type Target = crate::System::Attribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +50,7 @@ impl crate::System::Runtime::InteropServices::DllImportAttribute {
             .invoke("IsDefined", (method))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         dllName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -59,7 +59,7 @@ impl crate::System::Runtime::InteropServices::DllImportAttribute {
             .invoke_void(".ctor", (dllName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_CharSet__cordl_bool__cordl_bool__cordl_bool_CallingConvention__cordl_bool__cordl_bool0(
+    pub fn New_Gc_CharSet__cordl_bool__cordl_bool__cordl_bool_CallingConvention__cordl_bool__cordl_bool0(
         dllName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         entryPoint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         charSet: crate::System::Runtime::InteropServices::CharSet,
@@ -89,7 +89,7 @@ impl crate::System::Runtime::InteropServices::DllImportAttribute {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         dllName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -100,7 +100,7 @@ impl crate::System::Runtime::InteropServices::DllImportAttribute {
             .invoke(".ctor", (dllName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_CharSet__cordl_bool__cordl_bool__cordl_bool_CallingConvention__cordl_bool__cordl_bool0(
+    pub fn _ctor_Gc_CharSet__cordl_bool__cordl_bool__cordl_bool_CallingConvention__cordl_bool__cordl_bool0(
         &mut self,
         dllName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         entryPoint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -36,7 +36,7 @@ impl crate::UnityEngine::UIElements::FontDefinition {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -134,22 +134,20 @@ impl crate::UnityEngine::UIElements::FontDefinition {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+FontDefinition")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::FontDefinition>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FontDefinition>>
 for crate::UnityEngine::UIElements::FontDefinition {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::FontDefinition> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FontDefinition> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+FontDefinition")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::FontDefinition>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FontDefinition>>
 for crate::UnityEngine::UIElements::FontDefinition {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::UnityEngine::UIElements::FontDefinition,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FontDefinition> {
         todo!()
     }
 }

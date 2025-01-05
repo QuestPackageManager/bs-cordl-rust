@@ -6,9 +6,7 @@ pub struct CanStartDragArgs {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub id: i32,
-    pub selectedIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerable_1<i32>,
-    >,
+    pub selectedIds: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "UnityEngine+UIElements+CanStartDragArgs")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -34,9 +32,7 @@ impl crate::UnityEngine::UIElements::CanStartDragArgs {
             crate::UnityEngine::UIElements::VisualElement,
         >,
         id: i32,
-        selectedIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        selectedIds: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

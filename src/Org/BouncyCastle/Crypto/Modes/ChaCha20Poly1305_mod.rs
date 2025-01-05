@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChaCha20Poly1305 {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mChacha20: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Engines::ChaCha7539Engine,
     >,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -173,7 +173,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IMac1(
+    pub fn New_Gc1(
         poly1305: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -292,7 +292,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IMac1(
+    pub fn _ctor_Gc1(
         &mut self,
         poly1305: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -328,16 +328,26 @@ for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>
-for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>,
+> for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>
-for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>,
+> for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

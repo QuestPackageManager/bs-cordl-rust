@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScaleAnimator {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _displayedScale: f32,
     pub _targetTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _tweeningManager: quest_hook::libil2cpp::Gc<
         crate::Tweening::TimeTweeningManager,
     >,
-    pub _scaleUpTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
-    pub _scaleDownTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _scaleUpTween: quest_hook::libil2cpp::Gc<f32>,
+    pub _scaleDownTween: quest_hook::libil2cpp::Gc<f32>,
     pub _initialized: bool,
 }
 #[cfg(feature = "ScaleAnimator")]
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScaleAnimator")]
 impl std::ops::Deref for crate::GlobalNamespace::ScaleAnimator {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

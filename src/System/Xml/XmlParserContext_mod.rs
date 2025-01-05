@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlParserContext {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     pub _nsMgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
     pub _docTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlParserContext")]
 impl std::ops::Deref for crate::System::Xml::XmlParserContext {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl std::ops::DerefMut for crate::System::Xml::XmlParserContext {
 }
 #[cfg(feature = "System+Xml+XmlParserContext")]
 impl crate::System::Xml::XmlParserContext {
-    pub fn New_Il2CppString_Il2CppString_Il2CppString_Il2CppString_Il2CppString_XmlSpace1(
+    pub fn New_Gc_Gc_Gc_Gc_Gc_XmlSpace1(
         nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         nsMgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
         docTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -64,7 +64,7 @@ impl crate::System::Xml::XmlParserContext {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString_Il2CppString_Il2CppString_Il2CppString_XmlSpace_Encoding2(
+    pub fn New_Gc_Gc_Gc_Gc_Gc_XmlSpace_Gc2(
         nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         nsMgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
         docTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -108,7 +108,7 @@ impl crate::System::Xml::XmlParserContext {
             .invoke_void(".ctor", (nt, nsMgr, xmlLang, xmlSpace))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_Il2CppString_Il2CppString_XmlSpace1(
+    pub fn _ctor_Gc_Gc_Gc_Gc_Gc_XmlSpace1(
         &mut self,
         nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         nsMgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
@@ -140,7 +140,7 @@ impl crate::System::Xml::XmlParserContext {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_Il2CppString_Il2CppString_XmlSpace_Encoding2(
+    pub fn _ctor_Gc_Gc_Gc_Gc_Gc_XmlSpace_Gc2(
         &mut self,
         nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         nsMgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,

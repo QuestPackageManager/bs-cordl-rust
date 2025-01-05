@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataTable {
-    __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::MarshalByValueComponent,
+    >,
     pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     pub _defaultView: quest_hook::libil2cpp::Gc<crate::System::Data::DataView>,
     pub _nextRowID: i64,
@@ -24,10 +26,10 @@ pub struct DataTable {
     >,
     pub _recordManager: quest_hook::libil2cpp::Gc<crate::System::Data::RecordManager>,
     pub _indexes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::Data::Index>,
+        quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
     >,
     pub _shadowIndexes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::Data::Index>,
+        quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
     >,
     pub _shadowCount: i32,
     pub _extendedProperties: quest_hook::libil2cpp::Gc<
@@ -64,7 +66,9 @@ pub struct DataTable {
         quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
     >,
     pub _delayedSetPrimaryKey: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        >,
     >,
     pub _loadIndex: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
     pub _loadIndexwithOriginalAdded: quest_hook::libil2cpp::Gc<
@@ -83,16 +87,20 @@ pub struct DataTable {
     pub _fInLoadDiffgram: bool,
     pub _isTypedDataTable: u8,
     pub _emptyDataRowArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRow>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+        >,
     >,
     pub _propertyDescriptorCollectionCache: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::PropertyDescriptorCollection,
     >,
     pub _nestedParentRelations: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRelation>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+        >,
     >,
     pub _dependentColumns: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::Data::DataColumn>,
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     >,
     pub _mergingData: bool,
     pub _onRowChangedDelegate: quest_hook::libil2cpp::Gc<
@@ -127,12 +135,10 @@ pub struct DataTable {
     >,
     pub _rowBuilder: quest_hook::libil2cpp::Gc<crate::System::Data::DataRowBuilder>,
     pub _delayedViews: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::Data::DataView>,
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataView>,
     >,
     pub _dataViewListeners: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::System::Data::DataViewListener,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
     >,
     pub _rowDiffId: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _indexesLock: quest_hook::libil2cpp::Gc<
@@ -149,7 +155,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataTable")]
 impl std::ops::Deref for crate::System::Data::DataTable {
-    type Target = crate::System::ComponentModel::MarshalByValueComponent;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::MarshalByValueComponent,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -263,9 +271,7 @@ impl crate::System::Data::DataTable {
     pub fn CheckForClosureOnExpressionTables(
         &mut self,
         tableList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataTable,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -387,7 +393,7 @@ impl crate::System::Data::DataTable {
             .invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Clone_DataSet1(
+    pub fn Clone_Gc1(
         &mut self,
         cloneDS: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<
@@ -411,7 +417,7 @@ impl crate::System::Data::DataTable {
             .invoke("CommitRow", (row))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_CompareInfo1(
+    pub fn Compare_Gc1(
         &mut self,
         s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         s2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -423,7 +429,7 @@ impl crate::System::Data::DataTable {
         let __cordl_ret: i32 = __cordl_object.invoke("Compare", (s1, s2, comparer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_Il2CppString_Il2CppString0(
+    pub fn Compare_Gc_Gc0(
         &mut self,
         s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         s2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -486,14 +492,10 @@ impl crate::System::Data::DataTable {
     pub fn CreateRelationList(
         &mut self,
         tableList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataTable,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         >,
         relationList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataRelation,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -507,9 +509,7 @@ impl crate::System::Data::DataTable {
         &mut self,
         currentTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         tableList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataTable,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -633,7 +633,7 @@ impl crate::System::Data::DataTable {
             .invoke("EnableConstraints", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateDependentExpressions_DataColumn0(
+    pub fn EvaluateDependentExpressions_Gc0(
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -644,19 +644,15 @@ impl crate::System::Data::DataTable {
             .invoke("EvaluateDependentExpressions", (column))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateDependentExpressions_List_1_DataRow_DataRowVersion_List_1_1(
+    pub fn EvaluateDependentExpressions_Gc_DataRowVersion_Gc1(
         &mut self,
         columns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataColumn,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         >,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
         cachedRows: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataRow,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -679,7 +675,7 @@ impl crate::System::Data::DataTable {
             .invoke("EvaluateExpressions", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateExpressions_DataColumn2(
+    pub fn EvaluateExpressions_Gc2(
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -690,14 +686,12 @@ impl crate::System::Data::DataTable {
             .invoke("EvaluateExpressions", (column))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateExpressions_DataRow_DataRowAction_List_1_1(
+    pub fn EvaluateExpressions_Gc_DataRowAction_Gc1(
         &mut self,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         action: crate::System::Data::DataRowAction,
         cachedRows: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataRow,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -711,7 +705,9 @@ impl crate::System::Data::DataTable {
         &mut self,
         ndx: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
         key: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -742,14 +738,18 @@ impl crate::System::Data::DataTable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRelation>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRelation>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+            >,
         > = __cordl_object.invoke("FindNestedParentRelations", ())?;
         Ok(__cordl_ret.into())
     }
@@ -791,7 +791,22 @@ impl crate::System::Data::DataTable {
             .invoke("GetDataTableSchema", (schemaSet))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetIndex_Il2CppArray1(
+    pub fn GetIndex_Gc_DataViewRowState_Gc0(
+        &mut self,
+        sort: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        recordStates: crate::System::Data::DataViewRowState,
+        rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::Index> = __cordl_object
+            .invoke("GetIndex", (sort, recordStates, rowFilter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetIndex_Gc_DataViewRowState_Gc1(
         &mut self,
         indexDesc: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
@@ -808,27 +823,10 @@ impl crate::System::Data::DataTable {
             .invoke("GetIndex", (indexDesc, recordStates, rowFilter))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetIndex_Il2CppString0(
-        &mut self,
-        sort: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        recordStates: crate::System::Data::DataViewRowState,
-        rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::Index> = __cordl_object
-            .invoke("GetIndex", (sort, recordStates, rowFilter))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn GetInheritedNamespace(
         &mut self,
         visitedTables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataTable,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -845,18 +843,14 @@ impl crate::System::Data::DataTable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataViewListener,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataViewListener,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
         > = __cordl_object.invoke("GetListeners", ())?;
         Ok(__cordl_ret.into())
     }
@@ -877,7 +871,9 @@ impl crate::System::Data::DataTable {
     pub fn GetPropertyDescriptorCollection(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -1061,7 +1057,7 @@ impl crate::System::Data::DataTable {
             .invoke("MergeRow", (row, targetRow, preserveChanges, idxSearch))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Merge_DataTable0(
+    pub fn Merge_Gc0(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1130,14 +1126,18 @@ impl crate::System::Data::DataTable {
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRow>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRow>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            >,
         > = __cordl_object.invoke("NewRowArray", (_cordl_size))?;
         Ok(__cordl_ret.into())
     }
@@ -1216,7 +1216,7 @@ impl crate::System::Data::DataTable {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         tableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1225,7 +1225,7 @@ impl crate::System::Data::DataTable {
             .invoke_void(".ctor", (tableName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext2(
+    pub fn New_Gc_StreamingContext2(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -1294,7 +1294,7 @@ impl crate::System::Data::DataTable {
             .invoke("OnRemoveColumnInternal", (column))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnRowChanged_DataRowChangeEventArgs1(
+    pub fn OnRowChanged_Gc1(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Data::DataRowChangeEventArgs>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1305,7 +1305,7 @@ impl crate::System::Data::DataTable {
             .invoke("OnRowChanged", (e))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnRowChanged_DataRow_DataRowAction0(
+    pub fn OnRowChanged_Gc_DataRowAction0(
         &mut self,
         args: quest_hook::libil2cpp::Gc<crate::System::Data::DataRowChangeEventArgs>,
         eRow: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -1321,7 +1321,7 @@ impl crate::System::Data::DataTable {
         > = __cordl_object.invoke("OnRowChanged", (args, eRow, eAction))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnRowChanging_DataRowChangeEventArgs1(
+    pub fn OnRowChanging_Gc1(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Data::DataRowChangeEventArgs>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1332,7 +1332,7 @@ impl crate::System::Data::DataTable {
             .invoke("OnRowChanging", (e))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnRowChanging_DataRow_DataRowAction0(
+    pub fn OnRowChanging_Gc_DataRowAction0(
         &mut self,
         args: quest_hook::libil2cpp::Gc<crate::System::Data::DataRowChangeEventArgs>,
         eRow: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -1446,7 +1446,7 @@ impl crate::System::Data::DataTable {
         > = __cordl_object.invoke("RaiseRowChanged", (args, eRow, eAction))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RaiseRowChanging_DataRowChangeEventArgs_DataRow_DataRowAction0(
+    pub fn RaiseRowChanging_Gc_Gc_DataRowAction0(
         &mut self,
         args: quest_hook::libil2cpp::Gc<crate::System::Data::DataRowChangeEventArgs>,
         eRow: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -1560,7 +1560,7 @@ impl crate::System::Data::DataTable {
             .invoke("ReadXmlSerializable", (reader))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RecordChanged_Il2CppArray_Il2CppArray1(
+    pub fn RecordChanged_Gc_Gc1(
         &mut self,
         oldIndex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         newIndex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -1845,7 +1845,9 @@ impl crate::System::Data::DataTable {
         &mut self,
         key: crate::System::Data::DataKey,
         keyValues: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         record: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1918,7 +1920,9 @@ impl crate::System::Data::DataTable {
         suppressEnsurePropertyChanged: bool,
         position: i32,
         fireEvent: bool,
-        deferredException: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Exception>,
+        deferredException: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2117,7 +2121,7 @@ impl crate::System::Data::DataTable {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         tableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2128,7 +2132,7 @@ impl crate::System::Data::DataTable {
             .invoke(".ctor", (tableName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext2(
+    pub fn _ctor_Gc_StreamingContext2(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -2298,15 +2302,13 @@ impl crate::System::Data::DataTable {
     pub fn get_LiveIndexes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::System::Data::Index>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Data::Index>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::System::Data::Index>,
+            quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
         > = __cordl_object.invoke("get_LiveIndexes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -2381,14 +2383,18 @@ impl crate::System::Data::DataTable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRelation>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRelation>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+            >,
         > = __cordl_object.invoke("get_NestedParentRelations", ())?;
         Ok(__cordl_ret.into())
     }
@@ -2436,14 +2442,18 @@ impl crate::System::Data::DataTable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            >,
         > = __cordl_object.invoke("get_PrimaryKey", ())?;
         Ok(__cordl_ret.into())
     }
@@ -2688,7 +2698,9 @@ impl crate::System::Data::DataTable {
     pub fn set_PrimaryKey(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2775,30 +2787,50 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataTable {
     }
 }
 #[cfg(feature = "System+Data+DataTable")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Data::DataTable {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Data::DataTable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+DataTable")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Data::DataTable {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Data::DataTable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+DataTable")]
-impl AsRef<crate::System::Xml::Serialization::IXmlSerializable>
-for crate::System::Data::DataTable {
-    fn as_ref(&self) -> &crate::System::Xml::Serialization::IXmlSerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::IXmlSerializable>,
+> for crate::System::Data::DataTable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::IXmlSerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+DataTable")]
-impl AsMut<crate::System::Xml::Serialization::IXmlSerializable>
-for crate::System::Data::DataTable {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::Serialization::IXmlSerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::IXmlSerializable>,
+> for crate::System::Data::DataTable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::IXmlSerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_FpsGraph {
-    __cordl_parent: crate::Tayx::Graphy::Graph::G_Graph,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Graph::G_Graph>,
     pub m_imageGraph: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub ShaderFull: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub ShaderLight: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tayx+Graphy+Fps+G_FpsGraph")]
 impl std::ops::Deref for crate::Tayx::Graphy::Fps::G_FpsGraph {
-    type Target = crate::Tayx::Graphy::Graph::G_Graph;
+    type Target = quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Graph::G_Graph>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

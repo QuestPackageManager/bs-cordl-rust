@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub isDefault: bool,
     pub isNil: bool,
     pub schemaElement: quest_hook::libil2cpp::Gc<
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaInfo")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -288,16 +288,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XmlSchema
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaInfo")]
-impl AsRef<crate::System::Xml::Schema::IXmlSchemaInfo>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo>>
 for crate::System::Xml::Schema::XmlSchemaInfo {
-    fn as_ref(&self) -> &crate::System::Xml::Schema::IXmlSchemaInfo {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaInfo")]
-impl AsMut<crate::System::Xml::Schema::IXmlSchemaInfo>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo>>
 for crate::System::Xml::Schema::XmlSchemaInfo {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::Schema::IXmlSchemaInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteDebrisSimplePhysics {
-    __cordl_parent: crate::GlobalNamespace::NoteDebrisPhysics,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebrisPhysics>,
     pub _currentLinearVelocity: crate::UnityEngine::Vector3,
     pub _currentAngularVelocityDegrees: crate::UnityEngine::Vector3,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteDebrisSimplePhysics")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteDebrisSimplePhysics {
-    type Target = crate::GlobalNamespace::NoteDebrisPhysics;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebrisPhysics>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

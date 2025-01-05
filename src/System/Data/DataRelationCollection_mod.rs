@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRelationCollection {
-    __cordl_parent: crate::System::Data::InternalDataCollectionBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Data::InternalDataCollectionBase,
+    >,
     pub _inTransition: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
     pub _defaultNameIndex: i32,
     pub _onCollectionChangedDelegate: quest_hook::libil2cpp::Gc<
@@ -20,7 +22,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataRelationCollection")]
 impl std::ops::Deref for crate::System::Data::DataRelationCollection {
-    type Target = crate::System::Data::InternalDataCollectionBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Data::InternalDataCollectionBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -239,7 +243,7 @@ impl crate::System::Data::DataRelationCollection {
             .invoke("add_CollectionChanged", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_Il2CppString1(
+    pub fn get_Item_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

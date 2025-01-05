@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextReader {
-    __cordl_parent: crate::System::MarshalByRefObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
 }
 #[cfg(feature = "System+IO+TextReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+TextReader")]
 impl std::ops::Deref for crate::System::IO::TextReader {
-    type Target = crate::System::MarshalByRefObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,15 +78,12 @@ impl crate::System::IO::TextReader {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object.invoke("ReadAsync", (buffer, index, count))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("ReadAsync", (buffer, index, count))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsyncInternal(
@@ -136,7 +133,7 @@ impl crate::System::IO::TextReader {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Read_Il2CppArray_i32_i32_1(
+    pub fn Read_Gc_i32_i32_1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
@@ -188,14 +185,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::TextReader {
     }
 }
 #[cfg(feature = "System+IO+TextReader")]
-impl AsRef<crate::System::IDisposable> for crate::System::IO::TextReader {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::IO::TextReader {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+IO+TextReader")]
-impl AsMut<crate::System::IDisposable> for crate::System::IO::TextReader {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::IO::TextReader {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

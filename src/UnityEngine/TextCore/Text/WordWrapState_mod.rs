@@ -59,7 +59,7 @@ pub struct WordWrapState {
         crate::UnityEngine::TextCore::Text::HighlightState,
     >,
     pub colorGradientStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<
-        *mut crate::UnityEngine::TextCore::Text::TextColorGradient,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextColorGradient>,
     >,
     pub sizeStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<f32>,
     pub indentStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<f32>,

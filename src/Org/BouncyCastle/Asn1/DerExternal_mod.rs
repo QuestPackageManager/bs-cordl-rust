@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DerExternal {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Object,
+    >,
     pub directReference: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     >,
@@ -24,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerExternal")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::DerExternal {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Object;
+    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,7 +83,7 @@ impl crate::Org::BouncyCastle::Asn1::DerExternal {
             .invoke("GetObjFromVector", (v, index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1EncodableVector0(
+    pub fn New_Gc0(
         vector: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
         >,
@@ -92,7 +94,7 @@ impl crate::Org::BouncyCastle::Asn1::DerExternal {
             .invoke_void(".ctor", (vector))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DerObjectIdentifier_DerInteger_Asn1Object_DerTaggedObject1(
+    pub fn New_Gc_Gc_Gc1(
         directReference: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -115,7 +117,7 @@ impl crate::Org::BouncyCastle::Asn1::DerExternal {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DerObjectIdentifier_DerInteger_Asn1Object_i32_Asn1Object2(
+    pub fn New_Gc_Gc_i32_Gc2(
         directReference: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -153,7 +155,7 @@ impl crate::Org::BouncyCastle::Asn1::DerExternal {
             .invoke("WriteEncodable", (ms, e))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1EncodableVector0(
+    pub fn _ctor_Gc0(
         &mut self,
         vector: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
@@ -166,7 +168,7 @@ impl crate::Org::BouncyCastle::Asn1::DerExternal {
             .invoke(".ctor", (vector))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerObjectIdentifier_DerInteger_Asn1Object_DerTaggedObject1(
+    pub fn _ctor_Gc_Gc_Gc1(
         &mut self,
         directReference: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -191,7 +193,7 @@ impl crate::Org::BouncyCastle::Asn1::DerExternal {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerObjectIdentifier_DerInteger_Asn1Object_i32_Asn1Object2(
+    pub fn _ctor_Gc_Gc_i32_Gc2(
         &mut self,
         directReference: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,

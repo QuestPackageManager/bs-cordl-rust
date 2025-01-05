@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ModalView {
-    __cordl_parent: crate::HMUI::ModalViewBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ModalViewBase>,
     pub _presentPanelAnimations: quest_hook::libil2cpp::Gc<
         crate::HMUI::PanelAnimationSO,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ModalView")]
 impl std::ops::Deref for crate::HMUI::ModalView {
-    type Target = crate::HMUI::ModalViewBase;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ModalViewBase>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,9 +51,11 @@ impl crate::HMUI::ModalView {
     }
     pub fn GetModalRootTransform(
         transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        canvas: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Canvas>,
+        canvas: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+        >,
         viewController: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::HMUI::ViewControllerBase,
+            quest_hook::libil2cpp::Gc<crate::HMUI::ViewControllerBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerEditorConnectionEvents {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub messageTypeSubscribers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers,
         >,
     >,
     pub connectionEvent: quest_hook::libil2cpp::Gc<
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,8 +55,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         messageId: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityEvent_1<
-                *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
             >,
         >,
     > {
@@ -64,8 +64,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityEvent_1<
-                *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
             >,
         > = __cordl_object.invoke("AddAndCreate", (messageId))?;
         Ok(__cordl_ret.into())
@@ -94,8 +94,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         &mut self,
         messageId: crate::System::Guid,
         callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<
-                *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -133,7 +133,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerEditorConnectionEvents_ConnectionChangeEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(
     feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
@@ -149,7 +149,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<i32>;
+    type Target = quest_hook::libil2cpp::Gc<i32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -203,8 +203,10 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerEditorConnectionEvents_MessageEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        >,
     >,
 }
 #[cfg(
@@ -221,8 +223,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -277,7 +281,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerEditorConnectionEvents_MessageTypeSubscribers {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_messageTypeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub subscriberCount: i32,
     pub messageCallback: quest_hook::libil2cpp::Gc<
@@ -298,7 +302,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

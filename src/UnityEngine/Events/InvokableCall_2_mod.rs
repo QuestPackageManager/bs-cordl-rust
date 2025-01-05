@@ -5,10 +5,10 @@ pub struct InvokableCall_2<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::UnityEngine::Events::BaseInvokableCall,
-    pub Delegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Events::UnityAction_2<T1, T2>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::BaseInvokableCall,
     >,
+    pub Delegate: quest_hook::libil2cpp::Gc<T1, T2>,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
     __cordl_phantom_T2: std::marker::PhantomData<T2>,
 }
@@ -20,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+Events+InvokableCall_2")]
 impl<T1: quest_hook::libil2cpp::Type, T2: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::Events::InvokableCall_2<T1, T2> {
-    type Target = crate::UnityEngine::Events::BaseInvokableCall;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::BaseInvokableCall,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,7 +59,9 @@ impl<
     pub fn Invoke(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

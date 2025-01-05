@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GridLayoutGroup {
-    __cordl_parent: crate::UnityEngine::UI::LayoutGroup,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::LayoutGroup>,
     pub m_StartCorner: crate::UnityEngine::UI::GridLayoutGroup_Corner,
     pub m_StartAxis: crate::UnityEngine::UI::GridLayoutGroup_Axis,
     pub m_CellSize: crate::UnityEngine::Vector2,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+GridLayoutGroup")]
 impl std::ops::Deref for crate::UnityEngine::UI::GridLayoutGroup {
-    type Target = crate::UnityEngine::UI::LayoutGroup;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::LayoutGroup>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

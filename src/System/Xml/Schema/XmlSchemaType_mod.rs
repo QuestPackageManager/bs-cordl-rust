@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaType {
-    __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnnotated,
+    >,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_final: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub derivedBy: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
@@ -27,7 +29,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaType")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaType {
-    type Target = crate::System::Xml::Schema::XmlSchemaAnnotated;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnnotated,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +55,7 @@ impl crate::System::Xml::Schema::XmlSchemaType {
             .invoke("GetBuiltInComplexType", (qualifiedName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBuiltInSimpleType_XmlQualifiedName0(
+    pub fn GetBuiltInSimpleType_Gc0(
         qualifiedName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,

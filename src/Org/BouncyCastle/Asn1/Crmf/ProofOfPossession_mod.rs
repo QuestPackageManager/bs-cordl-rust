@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProofOfPossession {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub tagNo: i32,
     pub obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
 }
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+ProofOfPossession")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +53,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Asn1TaggedObject0(
+    pub fn New_Gc0(
         tagged: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
         >,
@@ -60,7 +64,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
             .invoke_void(".ctor", (tagged))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PopoSigningKey2(
+    pub fn New_Gc2(
         Poposk: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKey,
         >,
@@ -71,7 +75,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
             .invoke_void(".ctor", (Poposk))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_PopoPrivKey3(
+    pub fn New_i32_Gc3(
         _cordl_type: i32,
         privkey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::PopoPrivKey,
@@ -106,7 +110,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1TaggedObject0(
+    pub fn _ctor_Gc0(
         &mut self,
         tagged: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
@@ -119,7 +123,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
             .invoke(".ctor", (tagged))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_PopoSigningKey2(
+    pub fn _ctor_Gc2(
         &mut self,
         Poposk: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKey,
@@ -132,7 +136,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
             .invoke(".ctor", (Poposk))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_PopoPrivKey3(
+    pub fn _ctor_i32_Gc3(
         &mut self,
         _cordl_type: i32,
         privkey: quest_hook::libil2cpp::Gc<
@@ -178,16 +182,20 @@ for crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+ProofOfPossession")]
-impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
 for crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Choice {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+ProofOfPossession")]
-impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
 for crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Choice {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
         unsafe { std::mem::transmute(self) }
     }
 }

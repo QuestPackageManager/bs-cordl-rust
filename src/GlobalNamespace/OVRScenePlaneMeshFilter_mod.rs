@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRScenePlaneMeshFilter {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub _jobHandle: crate::System::Nullable_1<crate::Unity::Jobs::JobHandle>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRScenePlaneMeshFilter")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -168,16 +168,16 @@ impl crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     }
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
-impl AsRef<crate::Unity::Jobs::IJob>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
-    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
-impl AsMut<crate::Unity::Jobs::IJob>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
-    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
         todo!()
     }
 }
@@ -277,16 +277,16 @@ impl crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NLis
     }
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }

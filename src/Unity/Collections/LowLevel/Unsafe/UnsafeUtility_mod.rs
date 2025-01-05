@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnsafeUtility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
 impl std::ops::Deref for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -193,7 +193,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             .invoke("IsBlittable", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsBlittable_Type1(
+    pub fn IsBlittable_Gc1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()

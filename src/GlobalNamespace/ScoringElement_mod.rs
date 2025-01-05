@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoringElement {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _noteData_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NoteData,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScoringElement")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoringElement {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -223,20 +223,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoringElemen
     }
 }
 #[cfg(feature = "ScoringElement")]
-impl AsRef<crate::System::IComparable_1<*mut crate::GlobalNamespace::ScoringElement>>
-for crate::GlobalNamespace::ScoringElement {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+    >,
+> for crate::GlobalNamespace::ScoringElement {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<*mut crate::GlobalNamespace::ScoringElement> {
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ScoringElement")]
-impl AsMut<crate::System::IComparable_1<*mut crate::GlobalNamespace::ScoringElement>>
-for crate::GlobalNamespace::ScoringElement {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+    >,
+> for crate::GlobalNamespace::ScoringElement {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<*mut crate::GlobalNamespace::ScoringElement> {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -244,7 +254,7 @@ for crate::GlobalNamespace::ScoringElement {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoringElement_Pool_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Zenject::MemoryPool_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "ScoringElement+Pool_1")]
@@ -255,7 +265,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ScoringElement+Pool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
-    type Target = crate::Zenject::MemoryPool_1<T>;
+    type Target = quest_hook::libil2cpp::Gc<T>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

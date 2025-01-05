@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NumberFormatInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub numberGroupSizes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
@@ -46,7 +46,9 @@ pub struct NumberFormatInfo {
     pub percentSymbol: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub perMilleSymbol: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub nativeDigits: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub m_dataItem: i32,
     pub numberDecimalDigits: i32,
@@ -71,7 +73,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+NumberFormatInfo")]
 impl std::ops::Deref for crate::System::Globalization::NumberFormatInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -129,7 +131,7 @@ impl crate::System::Globalization::NumberFormatInfo {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_CultureData1(
+    pub fn New_Gc1(
         cultureData: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -223,7 +225,7 @@ impl crate::System::Globalization::NumberFormatInfo {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_CultureData1(
+    pub fn _ctor_Gc1(
         &mut self,
         cultureData: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -570,30 +572,32 @@ for crate::System::Globalization::NumberFormatInfo {
     }
 }
 #[cfg(feature = "System+Globalization+NumberFormatInfo")]
-impl AsRef<crate::System::ICloneable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Globalization::NumberFormatInfo {
-    fn as_ref(&self) -> &crate::System::ICloneable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Globalization+NumberFormatInfo")]
-impl AsMut<crate::System::ICloneable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Globalization::NumberFormatInfo {
-    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Globalization+NumberFormatInfo")]
-impl AsRef<crate::System::IFormatProvider>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>>
 for crate::System::Globalization::NumberFormatInfo {
-    fn as_ref(&self) -> &crate::System::IFormatProvider {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormatProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Globalization+NumberFormatInfo")]
-impl AsMut<crate::System::IFormatProvider>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>>
 for crate::System::Globalization::NumberFormatInfo {
-    fn as_mut(&mut self) -> &mut crate::System::IFormatProvider {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormatProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRowView {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _dataView: quest_hook::libil2cpp::Gc<crate::System::Data::DataView>,
     pub _row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     pub _delayBeginEdit: bool,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataRowView")]
 impl std::ops::Deref for crate::System::Data::DataRowView {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl std::ops::DerefMut for crate::System::Data::DataRowView {
 }
 #[cfg(feature = "System+Data+DataRowView")]
 impl crate::System::Data::DataRowView {
-    pub fn CreateChildView_DataRelation1(
+    pub fn CreateChildView_Gc1(
         &mut self,
         relation: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
     ) -> quest_hook::libil2cpp::Result<
@@ -266,10 +266,12 @@ impl crate::System::Data::DataRowView {
             .invoke("System.ComponentModel.ICustomTypeDescriptor.GetEvents", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn System_ComponentModel_ICustomTypeDescriptor_GetEvents_Il2CppArray1(
+    pub fn System_ComponentModel_ICustomTypeDescriptor_GetEvents_Gc1(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -304,10 +306,12 @@ impl crate::System::Data::DataRowView {
             .invoke("System.ComponentModel.ICustomTypeDescriptor.GetProperties", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn System_ComponentModel_ICustomTypeDescriptor_GetProperties_Il2CppArray1(
+    pub fn System_ComponentModel_ICustomTypeDescriptor_GetProperties_Gc1(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -408,30 +412,50 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataRowView {
     }
 }
 #[cfg(feature = "System+Data+DataRowView")]
-impl AsRef<crate::System::ComponentModel::ICustomTypeDescriptor>
-for crate::System::Data::DataRowView {
-    fn as_ref(&self) -> &crate::System::ComponentModel::ICustomTypeDescriptor {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ICustomTypeDescriptor>,
+> for crate::System::Data::DataRowView {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ICustomTypeDescriptor,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+DataRowView")]
-impl AsMut<crate::System::ComponentModel::ICustomTypeDescriptor>
-for crate::System::Data::DataRowView {
-    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::ICustomTypeDescriptor {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ICustomTypeDescriptor>,
+> for crate::System::Data::DataRowView {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ICustomTypeDescriptor,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+DataRowView")]
-impl AsRef<crate::System::ComponentModel::INotifyPropertyChanged>
-for crate::System::Data::DataRowView {
-    fn as_ref(&self) -> &crate::System::ComponentModel::INotifyPropertyChanged {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::ComponentModel::INotifyPropertyChanged>,
+> for crate::System::Data::DataRowView {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::INotifyPropertyChanged,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+DataRowView")]
-impl AsMut<crate::System::ComponentModel::INotifyPropertyChanged>
-for crate::System::Data::DataRowView {
-    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::INotifyPropertyChanged {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::ComponentModel::INotifyPropertyChanged>,
+> for crate::System::Data::DataRowView {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::INotifyPropertyChanged,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

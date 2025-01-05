@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OriginatorInfoGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub origCerts: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub origCrls: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+OriginatorInfoGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::OriginatorInfoGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +39,18 @@ impl crate::Org::BouncyCastle::Cms::OriginatorInfoGenerator {
         > = __cordl_object.invoke("Generate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_IX509Store1(
+    pub fn New_Gc0(
+        origCert: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (origCert))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc1(
         origCerts: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::Store::IX509Store,
         >,
@@ -50,7 +61,7 @@ impl crate::Org::BouncyCastle::Cms::OriginatorInfoGenerator {
             .invoke_void(".ctor", (origCerts))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IX509Store_IX509Store2(
+    pub fn New_Gc2(
         origCerts: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::Store::IX509Store,
         >,
@@ -64,18 +75,20 @@ impl crate::Org::BouncyCastle::Cms::OriginatorInfoGenerator {
             .invoke_void(".ctor", (origCerts, origCrls))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_X509Certificate0(
+    pub fn _ctor_Gc0(
+        &mut self,
         origCert: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::X509Certificate,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (origCert))?;
-        Ok(__cordl_object.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (origCert))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IX509Store1(
+    pub fn _ctor_Gc1(
         &mut self,
         origCerts: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::Store::IX509Store,
@@ -88,7 +101,7 @@ impl crate::Org::BouncyCastle::Cms::OriginatorInfoGenerator {
             .invoke(".ctor", (origCerts))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IX509Store_IX509Store2(
+    pub fn _ctor_Gc2(
         &mut self,
         origCerts: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::Store::IX509Store,
@@ -102,19 +115,6 @@ impl crate::Org::BouncyCastle::Cms::OriginatorInfoGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (origCerts, origCrls))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_X509Certificate0(
-        &mut self,
-        origCert: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::X509::X509Certificate,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (origCert))?;
         Ok(__cordl_ret.into())
     }
 }

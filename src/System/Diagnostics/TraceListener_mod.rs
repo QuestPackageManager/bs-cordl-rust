@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TraceListener {
-    __cordl_parent: crate::System::MarshalByRefObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
     pub indentLevel: i32,
     pub indentSize: i32,
     pub traceOptions: crate::System::Diagnostics::TraceOptions,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+TraceListener")]
 impl std::ops::Deref for crate::System::Diagnostics::TraceListener {
-    type Target = crate::System::MarshalByRefObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -247,14 +247,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Diagnostics::TraceList
     }
 }
 #[cfg(feature = "System+Diagnostics+TraceListener")]
-impl AsRef<crate::System::IDisposable> for crate::System::Diagnostics::TraceListener {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::Diagnostics::TraceListener {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Diagnostics+TraceListener")]
-impl AsMut<crate::System::IDisposable> for crate::System::Diagnostics::TraceListener {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::Diagnostics::TraceListener {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

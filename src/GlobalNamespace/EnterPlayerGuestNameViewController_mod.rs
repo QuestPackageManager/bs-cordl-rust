@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnterPlayerGuestNameViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _playerNameWasEnteredSignal: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StringSignal,
     >,
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnterPlayerGuestNameViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -126,7 +126,7 @@ for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnterPlayerGuestNameViewController_FinishDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -137,7 +137,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

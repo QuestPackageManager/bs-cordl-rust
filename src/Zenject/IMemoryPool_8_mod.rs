@@ -177,7 +177,7 @@ impl<
     TParam6: quest_hook::libil2cpp::Type,
     TParam7: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Zenject::IDespawnableMemoryPool_1<TValue>>
+> AsRef<quest_hook::libil2cpp::Gc<TValue>>
 for crate::Zenject::IMemoryPool_8<
     TParam1,
     TParam2,
@@ -188,7 +188,7 @@ for crate::Zenject::IMemoryPool_8<
     TParam7,
     TValue,
 > {
-    fn as_ref(&self) -> &crate::Zenject::IDespawnableMemoryPool_1<TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -202,7 +202,7 @@ impl<
     TParam6: quest_hook::libil2cpp::Type,
     TParam7: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Zenject::IDespawnableMemoryPool_1<TValue>>
+> AsMut<quest_hook::libil2cpp::Gc<TValue>>
 for crate::Zenject::IMemoryPool_8<
     TParam1,
     TParam2,
@@ -213,7 +213,7 @@ for crate::Zenject::IMemoryPool_8<
     TParam7,
     TValue,
 > {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IDespawnableMemoryPool_1<TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -227,7 +227,7 @@ impl<
     TParam6: quest_hook::libil2cpp::Type,
     TParam7: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Zenject::IMemoryPool>
+> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>>
 for crate::Zenject::IMemoryPool_8<
     TParam1,
     TParam2,
@@ -238,7 +238,7 @@ for crate::Zenject::IMemoryPool_8<
     TParam7,
     TValue,
 > {
-    fn as_ref(&self) -> &crate::Zenject::IMemoryPool {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -252,7 +252,7 @@ impl<
     TParam6: quest_hook::libil2cpp::Type,
     TParam7: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Zenject::IMemoryPool>
+> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>>
 for crate::Zenject::IMemoryPool_8<
     TParam1,
     TParam2,
@@ -263,7 +263,7 @@ for crate::Zenject::IMemoryPool_8<
     TParam7,
     TValue,
 > {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IMemoryPool {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIDocument {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub m_UIDocumentCreationIndex: i32,
     pub m_PanelSettings: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::PanelSettings,
@@ -17,9 +17,7 @@ pub struct UIDocument {
         crate::UnityEngine::UIElements::UIDocumentList,
     >,
     pub m_ChildrenContentCopy: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::UIDocument,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIDocument>,
     >,
     pub sourceAsset: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualTreeAsset,
@@ -37,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIDocument")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIDocument {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

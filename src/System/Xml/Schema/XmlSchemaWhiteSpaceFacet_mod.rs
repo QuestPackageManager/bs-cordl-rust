@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaWhiteSpaceFacet {
-    __cordl_parent: crate::System::Xml::Schema::XmlSchemaFacet,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaFacet,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaWhiteSpaceFacet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaWhiteSpaceFacet")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaWhiteSpaceFacet {
-    type Target = crate::System::Xml::Schema::XmlSchemaFacet;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaFacet>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

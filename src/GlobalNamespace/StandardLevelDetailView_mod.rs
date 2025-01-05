@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelDetailView {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _actionButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _actionButtonText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _practiceButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
@@ -52,10 +52,10 @@ pub struct StandardLevelDetailView {
         crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
     >,
     pub didChangeDifficultyBeatmapEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::StandardLevelDetailView>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardLevelDetailView>,
     >,
     pub didFavoriteToggleChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::UnityEngine::UI::Toggle>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     >,
     pub _beatmapKey_k__BackingField: crate::GlobalNamespace::BeatmapKey,
     pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -76,7 +76,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StandardLevelDetailView")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelDetailView {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -302,14 +302,12 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
             .invoke("SetContent", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetContent_BeatmapLevel_BeatmapDifficultyMask_HashSet_1_BeatmapDifficulty_BeatmapCharacteristicSO_PlayerData0(
+    pub fn SetContent_Gc_BeatmapDifficultyMask_Gc_BeatmapDifficulty_Gc_Gc0(
         &mut self,
         level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
         notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
         >,
         defaultDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
         defaultBeatmapCharacteristic: quest_hook::libil2cpp::Gc<
@@ -405,7 +403,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
     pub fn add_didChangeDifficultyBeatmapEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::StandardLevelDetailView>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardLevelDetailView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -418,7 +416,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
     pub fn add_didFavoriteToggleChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::UI::Toggle>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -465,7 +463,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
     pub fn remove_didChangeDifficultyBeatmapEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::StandardLevelDetailView>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardLevelDetailView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -478,7 +476,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
     pub fn remove_didFavoriteToggleChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::UnityEngine::UI::Toggle>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

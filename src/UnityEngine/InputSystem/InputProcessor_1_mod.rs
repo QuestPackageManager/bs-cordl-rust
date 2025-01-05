@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputProcessor_1<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputProcessor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputProcessor,
+    >,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputProcessor_1")]
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+InputProcessor_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::InputProcessor_1<TValue> {
-    type Target = crate::UnityEngine::InputSystem::InputProcessor;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputProcessor,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -59,7 +63,7 @@ impl<
         > = __cordl_object.invoke("ProcessAsObject", (value, control))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Process_Il2CppObject_i32_InputControl1(
+    pub fn Process_Gc_i32_Gc1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferSize: i32,
@@ -76,7 +80,7 @@ impl<
             .invoke("Process", (buffer, bufferSize, control))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Process_TValue_InputControl0(
+    pub fn Process_TValue_Gc0(
         &mut self,
         value: TValue,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,

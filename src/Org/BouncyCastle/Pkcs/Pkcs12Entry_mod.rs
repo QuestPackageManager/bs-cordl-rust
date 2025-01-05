@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs12Entry {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Entry")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Entry")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +38,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         > = __cordl_object.invoke("GetBagAttributeKeys", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBagAttribute_DerObjectIdentifier0(
+    pub fn GetBagAttribute_Gc0(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         > = __cordl_object.invoke("GetBagAttribute", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBagAttribute_Il2CppString1(
+    pub fn GetBagAttribute_Gc1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -101,7 +101,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         > = __cordl_object.invoke("get_BagAttributeKeys", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_DerObjectIdentifier0(
+    pub fn get_Item_Gc0(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -117,7 +117,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
         > = __cordl_object.invoke("get_Item", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_Il2CppString1(
+    pub fn get_Item_Gc1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

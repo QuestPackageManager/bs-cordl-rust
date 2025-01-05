@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HandsMovementMissionObjectiveChecker {
-    __cordl_parent: crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
+    >,
     pub _saberActivityCounter: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SaberActivityCounter,
     >,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HandsMovementMissionObjectiveChecker")]
 impl std::ops::Deref for crate::GlobalNamespace::HandsMovementMissionObjectiveChecker {
-    type Target = crate::GlobalNamespace::SimpleValueMissionObjectiveChecker;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

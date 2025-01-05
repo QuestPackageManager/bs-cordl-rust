@@ -23,7 +23,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventPtr")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -242,7 +242,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
             .invoke("op_Equality", (left, right))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Il2CppObject0(
+    pub fn op_Implicit_Gc0(
         eventPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
@@ -328,11 +328,11 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventPtr")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
 > for crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     > {
         todo!()
@@ -340,11 +340,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventPtr")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
 > for crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     > {
         todo!()

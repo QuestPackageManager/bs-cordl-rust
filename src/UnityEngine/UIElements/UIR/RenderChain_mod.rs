@@ -2,25 +2,21 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RenderChain {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_FirstCommand: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::RenderChainCommand,
     >,
     pub m_DirtyTracker: crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking,
     pub m_CommandPool: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::LinkedPool_1<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
         >,
     >,
     pub m_TexturePool: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::BasicNodePool_1<
-            crate::UnityEngine::UIElements::UIR::TextureEntry,
-        >,
+        crate::UnityEngine::UIElements::UIR::TextureEntry,
     >,
     pub m_RenderNodesData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData,
-        >,
+        crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData,
     >,
     pub m_DefaultShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub m_DefaultWorldSpaceShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -53,13 +49,9 @@ pub struct RenderChain {
         crate::UnityEngine::UIElements::UIR::VectorImageManager,
     >,
     pub _vertsPool_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::TempAllocator_1<
-            crate::UnityEngine::UIElements::Vertex,
-        >,
+        crate::UnityEngine::UIElements::Vertex,
     >,
-    pub _indicesPool_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
-    >,
+    pub _indicesPool_k__BackingField: quest_hook::libil2cpp::Gc<u16>,
     pub _jobManager_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::JobManager,
     >,
@@ -77,7 +69,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::RenderChain {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -560,17 +552,12 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
     }
     pub fn get_indicesPool(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<u16>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
-        > = __cordl_object.invoke("get_indicesPool", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<u16> = __cordl_object
+            .invoke("get_indicesPool", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_jobManager(
@@ -647,19 +634,13 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
     pub fn get_vertsPool(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::TempAllocator_1<
-                crate::UnityEngine::UIElements::Vertex,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vertex>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::TempAllocator_1<
-                crate::UnityEngine::UIElements::Vertex,
-            >,
+            crate::UnityEngine::UIElements::Vertex,
         > = __cordl_object.invoke("get_vertsPool", ())?;
         Ok(__cordl_ret.into())
     }
@@ -744,9 +725,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
     }
     pub fn set_indicesPool(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
-        >,
+        value: quest_hook::libil2cpp::Gc<u16>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -820,11 +799,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
     }
     pub fn set_vertsPool(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::TempAllocator_1<
-                crate::UnityEngine::UIElements::Vertex,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vertex>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -845,16 +820,16 @@ for crate::UnityEngine::UIElements::UIR::RenderChain {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::UIR::RenderChain {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::UIR::RenderChain {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -863,14 +838,10 @@ for crate::UnityEngine::UIElements::UIR::RenderChain {
 #[derive(Debug, Clone, Default)]
 pub struct RenderChain_DepthOrderedDirtyTracking {
     pub heads: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     >,
     pub tails: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     >,
     pub minDepths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub maxDepths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

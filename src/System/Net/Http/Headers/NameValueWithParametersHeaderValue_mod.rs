@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NameValueWithParametersHeaderValue {
-    __cordl_parent: crate::System::Net::Http::Headers::NameValueHeaderValue,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::NameValueHeaderValue,
+    >,
     pub parameters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::NameValueHeaderValue,
         >,
     >,
 }
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+Http+Headers+NameValueWithParametersHeaderValue")]
 impl std::ops::Deref
 for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
-    type Target = crate::System::Net::Http::Headers::NameValueHeaderValue;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::NameValueHeaderValue,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +60,7 @@ impl crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_NameValueWithParametersHeaderValue0(
+    pub fn New_Gc0(
         source: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue,
         >,
@@ -97,8 +101,10 @@ impl crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         minimalCount: i32,
         result: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::Generic::List_1<
-                *mut crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -109,7 +115,9 @@ impl crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
     pub fn TryParseElement(
         lexer: quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::Lexer>,
         parsedValue: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue,
+            >,
         >,
         t: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Http::Headers::Token>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -127,7 +135,7 @@ impl crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_NameValueWithParametersHeaderValue0(
+    pub fn _ctor_Gc0(
         &mut self,
         source: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue,
@@ -144,8 +152,8 @@ impl crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<
-                *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::NameValueHeaderValue,
             >,
         >,
     > {
@@ -153,8 +161,8 @@ impl crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<
-                *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::NameValueHeaderValue,
             >,
         > = __cordl_object.invoke("get_Parameters", ())?;
         Ok(__cordl_ret.into())
@@ -171,16 +179,16 @@ for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+NameValueWithParametersHeaderValue")]
-impl AsRef<crate::System::ICloneable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
-    fn as_ref(&self) -> &crate::System::ICloneable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+NameValueWithParametersHeaderValue")]
-impl AsMut<crate::System::ICloneable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
-    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }

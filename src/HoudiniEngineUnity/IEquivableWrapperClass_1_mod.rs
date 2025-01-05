@@ -57,16 +57,16 @@ for crate::HoudiniEngineUnity::IEquivableWrapperClass_1<T> {
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+IEquivableWrapperClass_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::HoudiniEngineUnity::IEquivable_1<T>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
 for crate::HoudiniEngineUnity::IEquivableWrapperClass_1<T> {
-    fn as_ref(&self) -> &crate::HoudiniEngineUnity::IEquivable_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+IEquivableWrapperClass_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::HoudiniEngineUnity::IEquivable_1<T>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
 for crate::HoudiniEngineUnity::IEquivableWrapperClass_1<T> {
-    fn as_mut(&mut self) -> &mut crate::HoudiniEngineUnity::IEquivable_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }

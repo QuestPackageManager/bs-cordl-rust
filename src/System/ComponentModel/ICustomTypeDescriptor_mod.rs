@@ -131,10 +131,12 @@ impl crate::System::ComponentModel::ICustomTypeDescriptor {
         > = __cordl_object.invoke("GetEvents", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetEvents_Il2CppArray1(
+    pub fn GetEvents_Gc1(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -164,10 +166,12 @@ impl crate::System::ComponentModel::ICustomTypeDescriptor {
         > = __cordl_object.invoke("GetProperties", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetProperties_Il2CppArray1(
+    pub fn GetProperties_Gc1(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<

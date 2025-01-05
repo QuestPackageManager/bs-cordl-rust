@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnexceptionalStreamReader {
-    __cordl_parent: crate::System::IO::StreamReader,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::StreamReader>,
 }
 #[cfg(feature = "System+IO+UnexceptionalStreamReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+UnexceptionalStreamReader")]
 impl std::ops::Deref for crate::System::IO::UnexceptionalStreamReader {
-    type Target = crate::System::IO::StreamReader;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::StreamReader>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,7 +84,7 @@ impl crate::System::IO::UnexceptionalStreamReader {
     pub fn Read_ByRefMut_i32_i32_1(
         &mut self,
         dest_buffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<char>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         >,
         index: i32,
         count: i32,

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Certificate2 {
-    __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    >,
     pub lazyRawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub lazySignatureAlgorithm: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::Oid,
@@ -33,7 +35,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate2")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2 {
-    type Target = crate::System::Security::Cryptography::X509Certificates::X509Certificate;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,7 +95,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2 {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray1(
+    pub fn New_Gc1(
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -100,28 +104,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2 {
             .invoke_void(".ctor", (rawData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString3(
-        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (fileName))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SerializationInfo_StreamingContext5(
-        info: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Serialization::SerializationInfo,
-        >,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_X509Certificate2Impl2(
+    pub fn New_Gc2(
         _cordl_impl: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
         >,
@@ -132,7 +115,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2 {
             .invoke_void(".ctor", (_cordl_impl))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_X509Certificate4(
+    pub fn New_Gc3(
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (fileName))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc4(
         certificate: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
@@ -141,6 +133,18 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2 {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (certificate))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_StreamingContext5(
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object.into())
     }
     pub fn Reset(
@@ -197,7 +201,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2 {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray1(
+    pub fn _ctor_Gc1(
         &mut self,
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -208,32 +212,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2 {
             .invoke(".ctor", (rawData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString3(
-        &mut self,
-        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (fileName))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SerializationInfo_StreamingContext5(
-        &mut self,
-        info: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Serialization::SerializationInfo,
-        >,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (info, context))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_X509Certificate2Impl2(
+    pub fn _ctor_Gc2(
         &mut self,
         _cordl_impl: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
@@ -246,7 +225,18 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2 {
             .invoke(".ctor", (_cordl_impl))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_X509Certificate4(
+    pub fn _ctor_Gc3(
+        &mut self,
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (fileName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc4(
         &mut self,
         certificate: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
@@ -257,6 +247,20 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2 {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (certificate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_StreamingContext5(
+        &mut self,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Extensions(

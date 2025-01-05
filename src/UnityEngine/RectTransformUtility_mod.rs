@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectTransformUtility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+RectTransformUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+RectTransformUtility")]
 impl std::ops::Deref for crate::UnityEngine::RectTransformUtility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -109,7 +109,7 @@ impl crate::UnityEngine::RectTransformUtility {
             .invoke("PointInRectangle_Injected", (screenPoint, rect, cam, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RectangleContainsScreenPoint_RectTransform_Vector2_Camera0(
+    pub fn RectangleContainsScreenPoint_Gc_Vector2_Gc0(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         screenPoint: crate::UnityEngine::Vector2,
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,

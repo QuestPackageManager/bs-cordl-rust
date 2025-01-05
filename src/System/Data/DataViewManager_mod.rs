@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataViewManager {
-    __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::MarshalByValueComponent,
+    >,
     pub _dataViewSettingsCollection: quest_hook::libil2cpp::Gc<
         crate::System::Data::DataViewSettingCollection,
     >,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataViewManager")]
 impl std::ops::Deref for crate::System::Data::DataViewManager {
-    type Target = crate::System::ComponentModel::MarshalByValueComponent;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::MarshalByValueComponent,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

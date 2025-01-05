@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubsequentMessage {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::DerInteger,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+SubsequentMessage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+SubsequentMessage")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Crmf::SubsequentMessage {
-    type Target = crate::Org::BouncyCastle::Asn1::DerInteger;
+    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

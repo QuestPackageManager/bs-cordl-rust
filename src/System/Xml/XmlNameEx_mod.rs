@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlNameEx {
-    __cordl_parent: crate::System::Xml::XmlName,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
     pub flags: u8,
     pub memberType: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaSimpleType,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlNameEx")]
 impl std::ops::Deref for crate::System::Xml::XmlNameEx {
-    type Target = crate::System::Xml::XmlName;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

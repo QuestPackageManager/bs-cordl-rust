@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField {
-    __cordl_parent: crate::UnityEngine::UI::Selectable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
     pub m_SoftKeyboard: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TouchScreenKeyboard,
     >,
@@ -138,7 +138,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_InputField")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField {
-    type Target = crate::UnityEngine::UI::Selectable;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -223,7 +223,7 @@ impl crate::TMPro::TMP_InputField {
             .invoke("AdjustTextPositionRelativeToViewport", (relativePosition))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Append_Il2CppString0(
+    pub fn Append_Gc0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2537,140 +2537,212 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField {
     }
 }
 #[cfg(feature = "TMPro+TMP_InputField")]
-impl AsRef<crate::UnityEngine::EventSystems::IBeginDragHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IBeginDragHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IBeginDragHandler>,
+> for crate::TMPro::TMP_InputField {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IBeginDragHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_InputField")]
-impl AsMut<crate::UnityEngine::EventSystems::IBeginDragHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IBeginDragHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IBeginDragHandler>,
+> for crate::TMPro::TMP_InputField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IBeginDragHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_InputField")]
-impl AsRef<crate::UnityEngine::EventSystems::IDragHandler>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
 for crate::TMPro::TMP_InputField {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDragHandler {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_InputField")]
-impl AsMut<crate::UnityEngine::EventSystems::IDragHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDragHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "TMPro+TMP_InputField")]
-impl AsRef<crate::UnityEngine::EventSystems::IEndDragHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEndDragHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "TMPro+TMP_InputField")]
-impl AsMut<crate::UnityEngine::EventSystems::IEndDragHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEndDragHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "TMPro+TMP_InputField")]
-impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "TMPro+TMP_InputField")]
-impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "TMPro+TMP_InputField")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "TMPro+TMP_InputField")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "TMPro+TMP_InputField")]
-impl AsRef<crate::UnityEngine::EventSystems::IScrollHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IScrollHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "TMPro+TMP_InputField")]
-impl AsMut<crate::UnityEngine::EventSystems::IScrollHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IScrollHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "TMPro+TMP_InputField")]
-impl AsRef<crate::UnityEngine::EventSystems::ISubmitHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISubmitHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "TMPro+TMP_InputField")]
-impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISubmitHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "TMPro+TMP_InputField")]
-impl AsRef<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>
-for crate::TMPro::TMP_InputField {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "TMPro+TMP_InputField")]
-impl AsMut<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
 for crate::TMPro::TMP_InputField {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_InputField")]
-impl AsRef<crate::UnityEngine::UI::ICanvasElement> for crate::TMPro::TMP_InputField {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEndDragHandler>>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEndDragHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_InputField")]
-impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::TMPro::TMP_InputField {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEndDragHandler>>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEndDragHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_InputField")]
-impl AsRef<crate::UnityEngine::UI::ILayoutElement> for crate::TMPro::TMP_InputField {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::TMPro::TMP_InputField {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TMP_InputField")]
-impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::TMPro::TMP_InputField {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::TMPro::TMP_InputField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
+> for crate::TMPro::TMP_InputField {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerClickHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
+> for crate::TMPro::TMP_InputField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerClickHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IScrollHandler>>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IScrollHandler> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IScrollHandler>>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IScrollHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::ISubmitHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>,
+> for crate::TMPro::TMP_InputField {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>,
+> for crate::TMPro::TMP_InputField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -2760,8 +2832,8 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_OnChangeEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "TMPro+TMP_InputField+OnChangeEvent")]
@@ -2771,8 +2843,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_InputField+OnChangeEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_OnChangeEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -2817,7 +2889,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_OnChange
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_OnValidateInput {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "TMPro+TMP_InputField+OnValidateInput")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2826,7 +2898,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_InputField+OnValidateInput")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_OnValidateInput {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2915,8 +2987,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_OnValida
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_SelectionEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "TMPro+TMP_InputField+SelectionEvent")]
@@ -2926,8 +2998,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_InputField+SelectionEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_SelectionEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -2972,8 +3044,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_Selectio
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_SubmitEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "TMPro+TMP_InputField+SubmitEvent")]
@@ -2983,8 +3055,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_InputField+SubmitEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_SubmitEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -3029,8 +3101,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_SubmitEv
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_TextSelectionEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_3<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         i32,
         i32,
     >,
@@ -3042,8 +3114,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_InputField+TextSelectionEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_TextSelectionEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_3<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         i32,
         i32,
     >;
@@ -3091,7 +3163,7 @@ for crate::TMPro::TMP_InputField_TextSelectionEvent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_TouchScreenKeyboardEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TouchScreenKeyboard_Status,
     >,
 }
@@ -3102,7 +3174,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TouchScreenKeyboard_Status,
     >;
     fn deref(&self) -> &Self::Target {

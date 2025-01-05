@@ -23,7 +23,7 @@ for crate::System::Data::SqlTypes::SqlByte {
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlByte")]
 impl crate::System::Data::SqlTypes::SqlByte {
-    pub fn CompareTo_Il2CppObject0(
+    pub fn CompareTo_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -267,42 +267,58 @@ impl crate::System::Data::SqlTypes::SqlByte {
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlByte")]
-impl AsRef<crate::System::Data::SqlTypes::INullable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::INullable>>
 for crate::System::Data::SqlTypes::SqlByte {
-    fn as_ref(&self) -> &crate::System::Data::SqlTypes::INullable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::INullable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlByte")]
-impl AsMut<crate::System::Data::SqlTypes::INullable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::INullable>>
 for crate::System::Data::SqlTypes::SqlByte {
-    fn as_mut(&mut self) -> &mut crate::System::Data::SqlTypes::INullable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::INullable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlByte")]
-impl AsRef<crate::System::IComparable> for crate::System::Data::SqlTypes::SqlByte {
-    fn as_ref(&self) -> &crate::System::IComparable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Data+SqlTypes+SqlByte")]
-impl AsMut<crate::System::IComparable> for crate::System::Data::SqlTypes::SqlByte {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Data+SqlTypes+SqlByte")]
-impl AsRef<crate::System::Xml::Serialization::IXmlSerializable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::Data::SqlTypes::SqlByte {
-    fn as_ref(&self) -> &crate::System::Xml::Serialization::IXmlSerializable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlByte")]
-impl AsMut<crate::System::Xml::Serialization::IXmlSerializable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
 for crate::System::Data::SqlTypes::SqlByte {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::Serialization::IXmlSerializable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlByte")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::IXmlSerializable>,
+> for crate::System::Data::SqlTypes::SqlByte {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::IXmlSerializable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlByte")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::IXmlSerializable>,
+> for crate::System::Data::SqlTypes::SqlByte {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::IXmlSerializable,
+    > {
         todo!()
     }
 }

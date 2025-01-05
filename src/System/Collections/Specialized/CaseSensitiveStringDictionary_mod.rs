@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CaseSensitiveStringDictionary {
-    __cordl_parent: crate::System::Collections::Specialized::StringDictionary,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::StringDictionary,
+    >,
 }
 #[cfg(feature = "System+Collections+Specialized+CaseSensitiveStringDictionary")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Collections+Specialized+CaseSensitiveStringDictionary")]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::CaseSensitiveStringDictionary {
-    type Target = crate::System::Collections::Specialized::StringDictionary;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::StringDictionary,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

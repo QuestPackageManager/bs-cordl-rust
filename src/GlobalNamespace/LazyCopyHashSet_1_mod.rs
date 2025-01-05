@@ -2,13 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LazyCopyHashSet_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _itemsCopy: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<T>,
-    >,
-    pub _items: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<T>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _itemsCopy: quest_hook::libil2cpp::Gc<T>,
+    pub _items: quest_hook::libil2cpp::Gc<T>,
     pub _dirty: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -20,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LazyCopyHashSet_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::LazyCopyHashSet_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -131,9 +127,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::LazyCopyHashSet_1<T
     }
     pub fn get_items(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -141,9 +135,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::LazyCopyHashSet_1<T
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = __cordl_object.invoke("get_items", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
+            .invoke("get_items", ())?;
         Ok(__cordl_ret.into())
     }
 }
@@ -158,16 +151,16 @@ for crate::GlobalNamespace::LazyCopyHashSet_1<T> {
     }
 }
 #[cfg(feature = "LazyCopyHashSet_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::GlobalNamespace::ILazyCopyHashSet_1<T>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
 for crate::GlobalNamespace::LazyCopyHashSet_1<T> {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ILazyCopyHashSet_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LazyCopyHashSet_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::ILazyCopyHashSet_1<T>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
 for crate::GlobalNamespace::LazyCopyHashSet_1<T> {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILazyCopyHashSet_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }

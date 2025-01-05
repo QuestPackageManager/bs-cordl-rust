@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeLoadException {
-    __cordl_parent: crate::System::SystemException,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::SystemException>,
     pub ClassName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub AssemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub MessageArg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+TypeLoadException")]
 impl std::ops::Deref for crate::System::TypeLoadException {
-    type Target = crate::System::SystemException;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::SystemException>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +49,7 @@ impl crate::System::TypeLoadException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -58,7 +58,7 @@ impl crate::System::TypeLoadException {
             .invoke_void(".ctor", (message))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString2(
+    pub fn New_Gc_Gc2(
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -68,7 +68,7 @@ impl crate::System::TypeLoadException {
             .invoke_void(".ctor", (className, assemblyName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString_Il2CppString_i32_3(
+    pub fn New_Gc_Gc_Gc_i32_3(
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         messageArg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -80,7 +80,7 @@ impl crate::System::TypeLoadException {
             .invoke_void(".ctor", (className, assemblyName, messageArg, resourceId))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext4(
+    pub fn New_Gc_StreamingContext4(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -112,7 +112,7 @@ impl crate::System::TypeLoadException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -123,7 +123,7 @@ impl crate::System::TypeLoadException {
             .invoke(".ctor", (message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString2(
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -135,7 +135,7 @@ impl crate::System::TypeLoadException {
             .invoke(".ctor", (className, assemblyName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_i32_3(
+    pub fn _ctor_Gc_Gc_Gc_i32_3(
         &mut self,
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -149,7 +149,7 @@ impl crate::System::TypeLoadException {
             .invoke(".ctor", (className, assemblyName, messageArg, resourceId))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext4(
+    pub fn _ctor_Gc_StreamingContext4(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -187,16 +187,26 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeLoadException {
     }
 }
 #[cfg(feature = "System+TypeLoadException")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::TypeLoadException {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::TypeLoadException {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+TypeLoadException")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::TypeLoadException {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::TypeLoadException {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

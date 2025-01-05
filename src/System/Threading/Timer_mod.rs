@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Timer {
-    __cordl_parent: crate::System::MarshalByRefObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
     pub callback: quest_hook::libil2cpp::Gc<crate::System::Threading::TimerCallback>,
     pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub due_time_ms: i64,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Timer")]
 impl std::ops::Deref for crate::System::Threading::Timer {
-    type Target = crate::System::MarshalByRefObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -192,26 +192,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Timer {
     }
 }
 #[cfg(feature = "System+Threading+Timer")]
-impl AsRef<crate::System::IAsyncDisposable> for crate::System::Threading::Timer {
-    fn as_ref(&self) -> &crate::System::IAsyncDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IAsyncDisposable>>
+for crate::System::Threading::Timer {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IAsyncDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+Timer")]
-impl AsMut<crate::System::IAsyncDisposable> for crate::System::Threading::Timer {
-    fn as_mut(&mut self) -> &mut crate::System::IAsyncDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IAsyncDisposable>>
+for crate::System::Threading::Timer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::IAsyncDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+Timer")]
-impl AsRef<crate::System::IDisposable> for crate::System::Threading::Timer {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::Threading::Timer {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+Timer")]
-impl AsMut<crate::System::IDisposable> for crate::System::Threading::Timer {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::Threading::Timer {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -219,10 +225,10 @@ impl AsMut<crate::System::IDisposable> for crate::System::Threading::Timer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Timer_Scheduler {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub needReSort: bool,
     pub list: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::Threading::Timer>,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Timer>,
     >,
     pub current_next_run: i64,
     pub changed: quest_hook::libil2cpp::Gc<crate::System::Threading::ManualResetEvent>,
@@ -234,7 +240,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Timer+Scheduler")]
 impl std::ops::Deref for crate::System::Threading::Timer_Scheduler {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -430,44 +436,44 @@ impl crate::System::Threading::Timer_TimerComparer {
     }
 }
 #[cfg(feature = "System+Threading+Timer+TimerComparer")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
+for crate::System::Threading::Timer_TimerComparer {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+Timer+TimerComparer")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
+for crate::System::Threading::Timer_TimerComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Threading+Timer+TimerComparer")]
 impl AsRef<
-    crate::System::Collections::Generic::IComparer_1<
-        *mut crate::System::Threading::Timer,
-    >,
+    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Threading::Timer>>,
 > for crate::System::Threading::Timer_TimerComparer {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IComparer_1<
-        *mut crate::System::Threading::Timer,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Timer>,
     > {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+Timer+TimerComparer")]
 impl AsMut<
-    crate::System::Collections::Generic::IComparer_1<
-        *mut crate::System::Threading::Timer,
-    >,
+    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Threading::Timer>>,
 > for crate::System::Threading::Timer_TimerComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IComparer_1<
-        *mut crate::System::Threading::Timer,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Timer>,
     > {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Threading+Timer+TimerComparer")]
-impl AsRef<crate::System::Collections::IComparer>
-for crate::System::Threading::Timer_TimerComparer {
-    fn as_ref(&self) -> &crate::System::Collections::IComparer {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Threading+Timer+TimerComparer")]
-impl AsMut<crate::System::Collections::IComparer>
-for crate::System::Threading::Timer_TimerComparer {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
         todo!()
     }
 }

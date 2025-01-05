@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TableViewWithVariableSizedCells {
-    __cordl_parent: crate::HMUI::TableView,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     pub _totalHeight: f32,
     pub _cachedCellSizes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+TableViewWithVariableSizedCells")]
 impl std::ops::Deref for crate::HMUI::TableViewWithVariableSizedCells {
-    type Target = crate::HMUI::TableView;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::TableView>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

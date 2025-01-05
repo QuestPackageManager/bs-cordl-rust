@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeLimiter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_instanceScope: quest_hook::libil2cpp::Gc<
         crate::System::Data::TypeLimiter_Scope,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+TypeLimiter")]
 impl std::ops::Deref for crate::System::Data::TypeLimiter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::System::Data::TypeLimiter {
             .invoke("EnsureTypeIsAllowed", (_cordl_type, capturedLimiter))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EnterRestrictedScope_DataSet0(
+    pub fn EnterRestrictedScope_Gc0(
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
@@ -53,7 +53,7 @@ impl crate::System::Data::TypeLimiter {
             .invoke("EnterRestrictedScope", (dataSet))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EnterRestrictedScope_DataTable1(
+    pub fn EnterRestrictedScope_Gc1(
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
@@ -62,30 +62,26 @@ impl crate::System::Data::TypeLimiter {
             .invoke("EnterRestrictedScope", (dataTable))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPreviouslyDeclaredDataTypes_DataSet1(
-        dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPreviouslyDeclaredDataTypes", (dataSet))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetPreviouslyDeclaredDataTypes_DataTable0(
+    pub fn GetPreviouslyDeclaredDataTypes_Gc0(
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetPreviouslyDeclaredDataTypes", (dataTable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPreviouslyDeclaredDataTypes_Gc1(
+        dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPreviouslyDeclaredDataTypes", (dataSet))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -127,9 +123,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::TypeLimiter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeLimiter_Scope {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_allowedTypes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<*mut crate::System::Type>,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
     >,
     pub m_previousScope: quest_hook::libil2cpp::Gc<
         crate::System::Data::TypeLimiter_Scope,
@@ -142,7 +138,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+TypeLimiter+Scope")]
 impl std::ops::Deref for crate::System::Data::TypeLimiter_Scope {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -185,7 +181,7 @@ impl crate::System::Data::TypeLimiter_Scope {
     pub fn New(
         previousScope: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter_Scope>,
         allowedTypes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -198,7 +194,7 @@ impl crate::System::Data::TypeLimiter_Scope {
         &mut self,
         previousScope: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter_Scope>,
         allowedTypes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -219,14 +215,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::TypeLimiter_Scop
     }
 }
 #[cfg(feature = "System+Data+TypeLimiter+Scope")]
-impl AsRef<crate::System::IDisposable> for crate::System::Data::TypeLimiter_Scope {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::Data::TypeLimiter_Scope {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+TypeLimiter+Scope")]
-impl AsMut<crate::System::IDisposable> for crate::System::Data::TypeLimiter_Scope {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::System::Data::TypeLimiter_Scope {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

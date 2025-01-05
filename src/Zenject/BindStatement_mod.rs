@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindStatement {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _disposables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::IDisposable>,
+        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     >,
     pub _bindingFinalizer: quest_hook::libil2cpp::Gc<crate::Zenject::IBindingFinalizer>,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+BindStatement")]
 impl std::ops::Deref for crate::Zenject::BindStatement {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -148,14 +148,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::BindStatement {
     }
 }
 #[cfg(feature = "Zenject+BindStatement")]
-impl AsRef<crate::System::IDisposable> for crate::Zenject::BindStatement {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::Zenject::BindStatement {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+BindStatement")]
-impl AsMut<crate::System::IDisposable> for crate::Zenject::BindStatement {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::Zenject::BindStatement {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

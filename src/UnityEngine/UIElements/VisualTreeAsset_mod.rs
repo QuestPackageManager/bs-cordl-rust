@@ -2,44 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualTreeAsset {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub m_ImportedWithErrors: bool,
     pub m_ImportedWithWarnings: bool,
     pub m_Usings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
-        >,
+        crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
     >,
     pub inlineSheet: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::StyleSheet,
     >,
     pub m_VisualElementAssets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::VisualElementAsset,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementAsset>,
     >,
     pub m_TemplateAssets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::TemplateAsset,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateAsset>,
     >,
     pub m_UxmlObjectEntries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
-        >,
+        crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
     >,
-    pub m_UxmlObjectIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub m_UxmlObjectIds: quest_hook::libil2cpp::Gc<i32>,
     pub m_AssetEntries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry,
-        >,
+        crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry,
     >,
     pub m_Slots: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
-        >,
+        crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
     >,
     pub m_ContentContainerId: i32,
     pub m_ContentHash: i32,
@@ -51,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualTreeAsset {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -114,10 +100,10 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             crate::UnityEngine::UIElements::VisualElementAsset,
         >,
         idToChildren: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                i32,
-                *mut crate::System::Collections::Generic::List_1<
-                    *mut crate::UnityEngine::UIElements::VisualElementAsset,
+            i32,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElementAsset,
                 >,
             >,
         >,
@@ -147,7 +133,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         > = __cordl_object.invoke("CloneTree", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CloneTree_Il2CppString1(
+    pub fn CloneTree_Gc1(
         &mut self,
         bindingPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -161,7 +147,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         > = __cordl_object.invoke("CloneTree", (bindingPath))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CloneTree_VisualElement2(
+    pub fn CloneTree_Gc2(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -172,7 +158,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             .invoke("CloneTree", (target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CloneTree_VisualElement_ByRefMut_ByRefMut3(
+    pub fn CloneTree_Gc_ByRefMut_ByRefMut3(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         firstElementIndex: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -185,19 +171,15 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             .invoke("CloneTree", (target, firstElementIndex, elementAddedCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CloneTree_VisualElement_Dictionary_2_List_1_4(
+    pub fn CloneTree_Gc_Gc_Gc4(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         slotInsertionPoints: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::UnityEngine::UIElements::VisualElement,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
         attributeOverrides: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
-            >,
+            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -285,9 +267,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             crate::UnityEngine::UIElements::IUxmlAttributes,
         >,
         cc: crate::UnityEngine::UIElements::CreationContext,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -295,9 +275,8 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = __cordl_object.invoke("GetUxmlObjects", (asset, cc))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
+            .invoke("GetUxmlObjects", (asset, cc))?;
         Ok(__cordl_ret.into())
     }
     pub fn Instantiate_0(
@@ -313,7 +292,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         > = __cordl_object.invoke("Instantiate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Il2CppString1(
+    pub fn Instantiate_Gc1(
         &mut self,
         bindingPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -378,7 +357,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         &mut self,
         insertionPointId: i32,
         slotName: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -390,7 +369,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     }
     pub fn _Create_g__CreateError_65_0(
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -446,18 +425,14 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
-            >,
+            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
-            >,
+            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
         > = __cordl_object.invoke("get_slots", ())?;
         Ok(__cordl_ret.into())
     }
@@ -465,18 +440,14 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::UIElements::StyleSheet,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::UIElements::StyleSheet,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
         > = __cordl_object.invoke("get_stylesheets", ())?;
         Ok(__cordl_ret.into())
     }
@@ -484,18 +455,14 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::TemplateAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateAsset>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::TemplateAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateAsset>,
         > = __cordl_object.invoke("get_templateAssets", ())?;
         Ok(__cordl_ret.into())
     }
@@ -503,18 +470,14 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::UIElements::VisualTreeAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualTreeAsset>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::UIElements::VisualTreeAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualTreeAsset>,
         > = __cordl_object.invoke("get_templateDependencies", ())?;
         Ok(__cordl_ret.into())
     }
@@ -522,50 +485,39 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
-            >,
+            crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
-            >,
+            crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
         > = __cordl_object.invoke("get_uxmlObjectEntries", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_uxmlObjectIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        > = __cordl_object.invoke("get_uxmlObjectIds", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("get_uxmlObjectIds", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_visualElementAssets(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::VisualElementAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementAsset>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::VisualElementAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementAsset>,
         > = __cordl_object.invoke("get_visualElementAssets", ())?;
         Ok(__cordl_ret.into())
     }
@@ -616,9 +568,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     pub fn set_slots(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
-            >,
+            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -631,9 +581,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     pub fn set_templateAssets(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::TemplateAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -646,9 +594,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     pub fn set_visualElementAssets(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::VisualElementAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -819,7 +765,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualTreeAsset_UsingEntryComparer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -830,7 +776,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -885,13 +831,11 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 impl AsRef<
-    crate::System::Collections::Generic::IComparer_1<
-        crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
-    >,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry>,
 > for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IComparer_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
     > {
         unsafe { std::mem::transmute(self) }
@@ -899,13 +843,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 impl AsMut<
-    crate::System::Collections::Generic::IComparer_1<
-        crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
-    >,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry>,
 > for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
     > {
         unsafe { std::mem::transmute(self) }
@@ -917,9 +859,7 @@ impl AsMut<
 pub struct VisualTreeAsset_UxmlObjectEntry {
     pub parentId: i32,
     pub uxmlObjectAssets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::UxmlObjectAsset,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlObjectAsset>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
@@ -945,9 +885,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
         &mut self,
         parentId: i32,
         uxmlObjectAssets: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::UxmlObjectAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlObjectAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

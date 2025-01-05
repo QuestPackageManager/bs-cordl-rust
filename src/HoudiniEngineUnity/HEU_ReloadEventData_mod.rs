@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ReloadEventData {
-    __cordl_parent: crate::HoudiniEngineUnity::HEU_AssetEventData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_AssetEventData,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ReloadEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_ReloadEventData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_ReloadEventData {
-    type Target = crate::HoudiniEngineUnity::HEU_AssetEventData;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_AssetEventData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,9 +32,7 @@ impl crate::HoudiniEngineUnity::HEU_ReloadEventData {
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         successful: bool,
         outputObjects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::GameObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -44,9 +46,7 @@ impl crate::HoudiniEngineUnity::HEU_ReloadEventData {
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         successful: bool,
         outputObjects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::GameObject,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

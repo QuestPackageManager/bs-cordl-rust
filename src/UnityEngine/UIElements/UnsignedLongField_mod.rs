@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnsignedLongField {
-    __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<u64>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<u64>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UnsignedLongField {
-    type Target = crate::UnityEngine::UIElements::TextValueField_1<u64>;
+    type Target = quest_hook::libil2cpp::Gc<u64>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_i32_1(
+    pub fn New_Gc_i32_1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -104,7 +104,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_i32_1(
+    pub fn _ctor_Gc_i32_1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
@@ -146,7 +146,7 @@ for crate::UnityEngine::UIElements::UnsignedLongField {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnsignedLongField_UnsignedLongInput {
-    __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<u64>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<u64>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UnsignedLongInput")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -157,7 +157,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UnsignedLongInput")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
-    type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<u64>;
+    type Target = quest_hook::libil2cpp::Gc<u64>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -278,9 +278,11 @@ for crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnsignedLongField_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::UnsignedLongField,
-        *mut crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UnsignedLongField>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlFactory")]
@@ -291,9 +293,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UnsignedLongField_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::UnsignedLongField,
-        *mut crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UnsignedLongField>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -340,9 +344,11 @@ for crate::UnityEngine::UIElements::UnsignedLongField_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnsignedLongField_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::TextValueFieldTraits_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         u64,
-        *mut crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlTraits")]
@@ -353,9 +359,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::TextValueFieldTraits_2<
+    type Target = quest_hook::libil2cpp::Gc<
         u64,
-        *mut crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

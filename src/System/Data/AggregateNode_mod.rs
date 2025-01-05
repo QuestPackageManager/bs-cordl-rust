@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AggregateNode {
-    __cordl_parent: crate::System::Data::ExpressionNode,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
     pub _type: crate::System::Data::AggregateType,
     pub _aggregate: crate::System::Data::Aggregate,
     pub _local: bool,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+AggregateNode")]
 impl std::ops::Deref for crate::System::Data::AggregateNode {
-    type Target = crate::System::Data::ExpressionNode;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,25 +32,11 @@ impl std::ops::DerefMut for crate::System::Data::AggregateNode {
 }
 #[cfg(feature = "System+Data+AggregateNode")]
 impl crate::System::Data::AggregateNode {
-    pub fn Bind_DataRelation1(
-        relation: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataColumn,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Bind", (relation, list))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Bind_DataTable0(
+    pub fn Bind_Gc_Gc0(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::System::Data::DataColumn,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -58,6 +44,16 @@ impl crate::System::Data::AggregateNode {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Bind", (table, list))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Bind_Gc_Gc1(
+        relation: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+        list: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Bind", (relation, list))?;
         Ok(__cordl_ret.into())
     }
     pub fn DependsOn(
@@ -83,7 +79,21 @@ impl crate::System::Data::AggregateNode {
         > = __cordl_object.invoke("Eval", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Eval_DataRow_DataRowVersion1(
+    pub fn Eval_Gc2(
+        &mut self,
+        records: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Eval", (records))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Eval_Gc_DataRowVersion1(
         &mut self,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
@@ -96,20 +106,6 @@ impl crate::System::Data::AggregateNode {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("Eval", (row, version))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Eval_Il2CppArray2(
-        &mut self,
-        records: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("Eval", (records))?;
         Ok(__cordl_ret.into())
     }
     pub fn HasLocalAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -140,7 +136,7 @@ impl crate::System::Data::AggregateNode {
         let __cordl_ret: bool = __cordl_object.invoke("IsTableConstant", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_DataTable_FunctionId_Il2CppString0(
+    pub fn New_Gc_FunctionId_Gc0(
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         aggregateType: crate::System::Data::FunctionId,
         columnName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -151,7 +147,7 @@ impl crate::System::Data::AggregateNode {
             .invoke_void(".ctor", (table, aggregateType, columnName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool_Il2CppString1(
+    pub fn New__cordl_bool_Gc1(
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         aggregateType: crate::System::Data::FunctionId,
         columnName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -180,7 +176,7 @@ impl crate::System::Data::AggregateNode {
         > = __cordl_object.invoke("Optimize", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DataTable_FunctionId_Il2CppString0(
+    pub fn _ctor_Gc_FunctionId_Gc0(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         aggregateType: crate::System::Data::FunctionId,
@@ -193,7 +189,7 @@ impl crate::System::Data::AggregateNode {
             .invoke(".ctor", (table, aggregateType, columnName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_Il2CppString1(
+    pub fn _ctor__cordl_bool_Gc1(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         aggregateType: crate::System::Data::FunctionId,

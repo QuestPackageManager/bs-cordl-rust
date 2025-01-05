@@ -2,15 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _persistentDataPath: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _commandQueueMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Concurrent::ConcurrentDictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::GlobalNamespace::BackgroundCommandQueue,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BackgroundCommandQueue>,
     >,
 }
 #[cfg(feature = "FileSystemFileStorage")]
@@ -20,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FileSystemFileStorage")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,15 +58,12 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         &mut self,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         storageLocation: crate::GlobalNamespace::StoragePreference,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object.invoke("FileExistsAsync", (fileName, storageLocation))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
+            .invoke("FileExistsAsync", (fileName, storageLocation))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetBackupFilePath(
@@ -128,18 +123,14 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         storageLocation: crate::GlobalNamespace::StoragePreference,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("LoadFileAsync", (fileName, storageLocation))?;
         Ok(__cordl_ret.into())
     }
@@ -188,16 +179,20 @@ for crate::GlobalNamespace::FileSystemFileStorage {
     }
 }
 #[cfg(feature = "FileSystemFileStorage")]
-impl AsRef<crate::GlobalNamespace::IFileStorage>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>>
 for crate::GlobalNamespace::FileSystemFileStorage {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IFileStorage {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "FileSystemFileStorage")]
-impl AsMut<crate::GlobalNamespace::IFileStorage>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>>
 for crate::GlobalNamespace::FileSystemFileStorage {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IFileStorage {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -205,7 +200,9 @@ for crate::GlobalNamespace::FileSystemFileStorage {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage_DeleteFileCommand {
-    __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SyncBackgroundCommand,
+    >,
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
@@ -217,7 +214,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
-    type Target = crate::GlobalNamespace::SyncBackgroundCommand;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SyncBackgroundCommand,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -276,7 +275,7 @@ for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage_FileExistsCommand {
-    __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand_1<bool>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
@@ -288,7 +287,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
-    type Target = crate::GlobalNamespace::SyncBackgroundCommand_1<bool>;
+    type Target = quest_hook::libil2cpp::Gc<bool>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -344,8 +343,8 @@ for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage_LoadFileCommand {
-    __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -357,8 +356,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
-    type Target = crate::GlobalNamespace::SyncBackgroundCommand_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -421,7 +420,9 @@ for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage_SaveFileCommand {
-    __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SyncBackgroundCommand,
+    >,
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -433,7 +434,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
-    type Target = crate::GlobalNamespace::SyncBackgroundCommand;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SyncBackgroundCommand,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

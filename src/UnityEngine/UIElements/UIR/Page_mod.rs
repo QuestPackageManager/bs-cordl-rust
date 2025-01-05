@@ -2,16 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Page {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _disposed_k__BackingField: bool,
-    pub vertices: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::Page_DataSet_1<
-            crate::UnityEngine::UIElements::Vertex,
-        >,
-    >,
-    pub indices: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::Page_DataSet_1<u16>,
-    >,
+    pub vertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vertex>,
+    pub indices: quest_hook::libil2cpp::Gc<u16>,
     pub next: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
     pub framesEmpty: i32,
 }
@@ -22,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+Page")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Page {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -128,14 +122,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Page")]
-impl AsRef<crate::System::IDisposable> for crate::UnityEngine::UIElements::UIR::Page {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::UnityEngine::UIElements::UIR::Page {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Page")]
-impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::UIR::Page {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::UnityEngine::UIElements::UIR::Page {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -143,11 +139,9 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::UIR::
 #[repr(C)]
 #[derive(Debug)]
 pub struct Page_DataSet_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _disposed_k__BackingField: bool,
-    pub gpuData: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T>,
-    >,
+    pub gpuData: quest_hook::libil2cpp::Gc<T>,
     pub cpuData: crate::Unity::Collections::NativeArray_1<T>,
     pub updateRanges: crate::Unity::Collections::NativeArray_1<
         crate::UnityEngine::UIElements::UIR::GfxUpdateBufferRange,
@@ -172,7 +166,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+UIR+Page+DataSet_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::Page_DataSet_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -392,16 +386,20 @@ for crate::UnityEngine::UIElements::UIR::Page_DataSet_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Page+DataSet_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::UIR::Page_DataSet_1<T> {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Page+DataSet_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::UnityEngine::UIElements::UIR::Page_DataSet_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

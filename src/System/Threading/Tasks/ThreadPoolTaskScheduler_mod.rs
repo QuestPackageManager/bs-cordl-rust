@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolTaskScheduler {
-    __cordl_parent: crate::System::Threading::Tasks::TaskScheduler,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskScheduler,
+    >,
 }
 #[cfg(feature = "System+Threading+Tasks+ThreadPoolTaskScheduler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Tasks+ThreadPoolTaskScheduler")]
 impl std::ops::Deref for crate::System::Threading::Tasks::ThreadPoolTaskScheduler {
-    type Target = crate::System::Threading::Tasks::TaskScheduler;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskScheduler,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -36,7 +36,7 @@ impl crate::UnityEngine::UIElements::Angle {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -129,20 +129,20 @@ impl crate::UnityEngine::UIElements::Angle {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Angle")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Angle>>
 for crate::UnityEngine::UIElements::Angle {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Angle> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Angle")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Angle>>
 for crate::UnityEngine::UIElements::Angle {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Angle> {
         todo!()
     }
 }

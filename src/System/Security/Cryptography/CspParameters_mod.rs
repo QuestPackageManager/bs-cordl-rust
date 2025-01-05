@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CspParameters {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub ProviderType: i32,
     pub ProviderName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub KeyContainerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+CspParameters")]
 impl std::ops::Deref for crate::System::Security::Cryptography::CspParameters {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ impl crate::System::Security::Cryptography::CspParameters {
             .invoke_void(".ctor", (dwTypeIn))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Il2CppString_Il2CppString2(
+    pub fn New_i32_Gc_Gc2(
         dwTypeIn: i32,
         strProviderNameIn: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -60,7 +60,7 @@ impl crate::System::Security::Cryptography::CspParameters {
             .invoke_void(".ctor", (dwTypeIn, strProviderNameIn, strContainerNameIn))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Il2CppString_Il2CppString_CspProviderFlags3(
+    pub fn New_i32_Gc_Gc_CspProviderFlags3(
         providerType: i32,
         providerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keyContainerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -96,7 +96,7 @@ impl crate::System::Security::Cryptography::CspParameters {
             .invoke(".ctor", (dwTypeIn))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Il2CppString_Il2CppString2(
+    pub fn _ctor_i32_Gc_Gc2(
         &mut self,
         dwTypeIn: i32,
         strProviderNameIn: quest_hook::libil2cpp::Gc<
@@ -113,7 +113,7 @@ impl crate::System::Security::Cryptography::CspParameters {
             .invoke(".ctor", (dwTypeIn, strProviderNameIn, strContainerNameIn))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Il2CppString_Il2CppString_CspProviderFlags3(
+    pub fn _ctor_i32_Gc_Gc_CspProviderFlags3(
         &mut self,
         providerType: i32,
         providerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

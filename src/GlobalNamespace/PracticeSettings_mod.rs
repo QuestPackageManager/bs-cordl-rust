@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PracticeSettings {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _startSongTime: f32,
     pub _songSpeedMul: f32,
     pub _startInAdvanceAndClearNotes: bool,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PracticeSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::PracticeSettings {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,7 @@ impl crate::GlobalNamespace::PracticeSettings {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PracticeSettings1(
+    pub fn New_Gc1(
         practiceSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PracticeSettings,
         >,
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::PracticeSettings {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_PracticeSettings1(
+    pub fn _ctor_Gc1(
         &mut self,
         practiceSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PracticeSettings,

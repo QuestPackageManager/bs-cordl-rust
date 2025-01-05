@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeySizes {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_minSize: i32,
     pub m_maxSize: i32,
     pub m_skipSize: i32,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+KeySizes")]
 impl std::ops::Deref for crate::System::Security::Cryptography::KeySizes {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,9 @@ impl crate::System::Security::Cryptography::KeySizes {
     pub fn IsLegalKeySize(
         legalKeys: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Security::Cryptography::KeySizes,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::KeySizes,
+                >,
             >,
         >,
         _cordl_size: i32,

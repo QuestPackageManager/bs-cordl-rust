@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericIdentity {
-    __cordl_parent: crate::System::Security::Claims::ClaimsIdentity,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Claims::ClaimsIdentity,
+    >,
     pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Principal+GenericIdentity")]
 impl std::ops::Deref for crate::System::Security::Principal::GenericIdentity {
-    type Target = crate::System::Security::Claims::ClaimsIdentity;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Claims::ClaimsIdentity,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +60,7 @@ impl crate::System::Security::Principal::GenericIdentity {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_GenericIdentity2(
+    pub fn New_Gc2(
         identity: quest_hook::libil2cpp::Gc<
             crate::System::Security::Principal::GenericIdentity,
         >,
@@ -67,7 +71,7 @@ impl crate::System::Security::Principal::GenericIdentity {
             .invoke_void(".ctor", (identity))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString0(
+    pub fn New_Gc_Gc0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -87,7 +91,7 @@ impl crate::System::Security::Principal::GenericIdentity {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_GenericIdentity2(
+    pub fn _ctor_Gc2(
         &mut self,
         identity: quest_hook::libil2cpp::Gc<
             crate::System::Security::Principal::GenericIdentity,
@@ -100,7 +104,7 @@ impl crate::System::Security::Principal::GenericIdentity {
             .invoke(".ctor", (identity))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -129,18 +133,14 @@ impl crate::System::Security::Principal::GenericIdentity {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Security::Claims::Claim,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Security::Claims::Claim,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         > = __cordl_object.invoke("get_Claims", ())?;
         Ok(__cordl_ret.into())
     }

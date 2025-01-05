@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamespaceList {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _cordl_type: crate::System::Xml::Schema::NamespaceList_ListType,
     pub set: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+NamespaceList")]
 impl std::ops::Deref for crate::System::Xml::Schema::NamespaceList {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::NamespaceList {
 impl crate::System::Xml::Schema::NamespaceList {
     #[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
     pub type ListType = crate::System::Xml::Schema::NamespaceList_ListType;
-    pub fn Allows_Il2CppString0(
+    pub fn Allows_Gc0(
         &mut self,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -39,7 +39,7 @@ impl crate::System::Xml::Schema::NamespaceList {
         let __cordl_ret: bool = __cordl_object.invoke("Allows", (ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Allows_XmlQualifiedName1(
+    pub fn Allows_Gc1(
         &mut self,
         qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -106,7 +106,7 @@ impl crate::System::Xml::Schema::NamespaceList {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString1(
+    pub fn New_Gc_Gc1(
         namespaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -163,7 +163,7 @@ impl crate::System::Xml::Schema::NamespaceList {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString1(
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         namespaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

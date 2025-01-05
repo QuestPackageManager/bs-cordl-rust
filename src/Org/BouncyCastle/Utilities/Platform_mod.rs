@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Platform {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Platform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+Platform")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Platform {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ impl crate::Org::BouncyCastle::Utilities::Platform {
             .invoke("CreateArrayList", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateArrayList_ICollection2(
+    pub fn CreateArrayList_Gc2(
         collection: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -40,7 +40,7 @@ impl crate::Org::BouncyCastle::Utilities::Platform {
             .invoke("CreateArrayList", (collection))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateArrayList_IEnumerable3(
+    pub fn CreateArrayList_Gc3(
         collection: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -67,7 +67,7 @@ impl crate::Org::BouncyCastle::Utilities::Platform {
             .invoke("CreateHashtable", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateHashtable_IDictionary2(
+    pub fn CreateHashtable_Gc2(
         dictionary: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -98,14 +98,14 @@ impl crate::Org::BouncyCastle::Utilities::Platform {
             .invoke("CreateNotImplementedException", (message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose_Stream0(
+    pub fn Dispose_Gc0(
         s: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Dispose", (s))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Dispose_TextWriter1(
+    pub fn Dispose_Gc1(
         t: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorPropertyBag {
-    __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
-        crate::UnityEngine::Color,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag {
-    type Target = crate::Unity::Properties::ContainerPropertyBag_1<
-        crate::UnityEngine::Color,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,7 +64,7 @@ for crate::Unity::Properties::Internal::ColorPropertyBag {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorPropertyBag_AProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, f32>,
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+AProperty")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -78,7 +74,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+AProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag_AProperty {
-    type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -137,7 +133,7 @@ for crate::Unity::Properties::Internal::ColorPropertyBag_AProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorPropertyBag_BProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, f32>,
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+BProperty")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -147,7 +143,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+BProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag_BProperty {
-    type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -206,7 +202,7 @@ for crate::Unity::Properties::Internal::ColorPropertyBag_BProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorPropertyBag_GProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, f32>,
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+GProperty")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -216,7 +212,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+GProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag_GProperty {
-    type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -275,7 +271,7 @@ for crate::Unity::Properties::Internal::ColorPropertyBag_GProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorPropertyBag_RProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, f32>,
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+RProperty")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -285,7 +281,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+RProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag_RProperty {
-    type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

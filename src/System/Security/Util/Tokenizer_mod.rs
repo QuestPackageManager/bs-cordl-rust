@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Tokenizer {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub LineNo: i32,
     pub _inProcessingTag: i32,
     pub _inBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -19,10 +19,14 @@ pub struct Tokenizer {
         crate::System::Security::Util::Tokenizer_StringMaker,
     >,
     pub _searchStrings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _replaceStrings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _inNestedIndex: i32,
     pub _inNestedSize: i32,
@@ -35,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Util+Tokenizer")]
 impl std::ops::Deref for crate::System::Security::Util::Tokenizer {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -198,7 +202,7 @@ for crate::System::Security::Util::Tokenizer_ITokenReader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Tokenizer_StreamTokenReader {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _in: quest_hook::libil2cpp::Gc<crate::System::IO::StreamReader>,
     pub _numCharRead: i32,
 }
@@ -210,7 +214,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Util+Tokenizer+StreamTokenReader")]
 impl std::ops::Deref for crate::System::Security::Util::Tokenizer_StreamTokenReader {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -269,16 +273,26 @@ for crate::System::Security::Util::Tokenizer_StreamTokenReader {
     }
 }
 #[cfg(feature = "System+Security+Util+Tokenizer+StreamTokenReader")]
-impl AsRef<crate::System::Security::Util::Tokenizer_ITokenReader>
-for crate::System::Security::Util::Tokenizer_StreamTokenReader {
-    fn as_ref(&self) -> &crate::System::Security::Util::Tokenizer_ITokenReader {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Security::Util::Tokenizer_ITokenReader>,
+> for crate::System::Security::Util::Tokenizer_StreamTokenReader {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Security::Util::Tokenizer_ITokenReader,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Util+Tokenizer+StreamTokenReader")]
-impl AsMut<crate::System::Security::Util::Tokenizer_ITokenReader>
-for crate::System::Security::Util::Tokenizer_StreamTokenReader {
-    fn as_mut(&mut self) -> &mut crate::System::Security::Util::Tokenizer_ITokenReader {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Security::Util::Tokenizer_ITokenReader>,
+> for crate::System::Security::Util::Tokenizer_StreamTokenReader {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Security::Util::Tokenizer_ITokenReader,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -286,9 +300,11 @@ for crate::System::Security::Util::Tokenizer_StreamTokenReader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Tokenizer_StringMaker {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub aStrings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub cStringsMax: u32,
     pub cStringsUsed: u32,
@@ -303,7 +319,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Util+Tokenizer+StringMaker")]
 impl std::ops::Deref for crate::System::Security::Util::Tokenizer_StringMaker {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

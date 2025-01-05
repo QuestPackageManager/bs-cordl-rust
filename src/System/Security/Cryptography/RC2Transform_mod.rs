@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RC2Transform {
-    __cordl_parent: crate::Mono::Security::Cryptography::SymmetricTransform,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Cryptography::SymmetricTransform,
+    >,
     pub R0: u16,
     pub R1: u16,
     pub R2: u16,
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+RC2Transform")]
 impl std::ops::Deref for crate::System::Security::Cryptography::RC2Transform {
-    type Target = crate::Mono::Security::Cryptography::SymmetricTransform;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Cryptography::SymmetricTransform,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

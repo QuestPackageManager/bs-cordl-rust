@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexConverter {
-    __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+RegexConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Converters+RegexConverter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::RegexConverter {
-    type Target = crate::Newtonsoft::Json::JsonConverter;
+    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,7 +123,7 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
             .invoke("WriteBson", (writer, regex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteJson_Il2CppObject0(
+    pub fn WriteJson_Gc_Gc_Gc0(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -136,7 +136,7 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
             .invoke("WriteJson", (writer, value, serializer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteJson_Regex1(
+    pub fn WriteJson_Gc_Gc_Gc1(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         regex: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,

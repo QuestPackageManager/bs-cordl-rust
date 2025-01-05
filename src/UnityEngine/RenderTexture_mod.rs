@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RenderTexture {
-    __cordl_parent: crate::UnityEngine::Texture,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
 }
 #[cfg(feature = "UnityEngine+RenderTexture")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+RenderTexture")]
 impl std::ops::Deref for crate::UnityEngine::RenderTexture {
-    type Target = crate::UnityEngine::Texture;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -446,7 +446,7 @@ impl crate::UnityEngine::RenderTexture {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_RenderTexture2(
+    pub fn New_Gc2(
         textureToCopy: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -676,7 +676,7 @@ impl crate::UnityEngine::RenderTexture {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_RenderTexture2(
+    pub fn _ctor_Gc2(
         &mut self,
         textureToCopy: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

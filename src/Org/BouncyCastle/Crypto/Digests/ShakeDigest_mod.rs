@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShakeDigest {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Digests::KeccakDigest,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Digests::KeccakDigest,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+ShakeDigest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+ShakeDigest")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
-    type Target = crate::Org::BouncyCastle::Crypto::Digests::KeccakDigest;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Digests::KeccakDigest,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,7 +46,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
         > = __cordl_object.invoke("Copy", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Il2CppArray_i32_0(
+    pub fn DoFinal_Gc_i32_0(
         &mut self,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outOff: i32,
@@ -115,7 +119,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ShakeDigest2(
+    pub fn New_Gc2(
         source: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest,
         >,
@@ -145,7 +149,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ShakeDigest2(
+    pub fn _ctor_Gc2(
         &mut self,
         source: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest,
@@ -194,30 +198,38 @@ for crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+ShakeDigest")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IDigest>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>>
 for crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDigest {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+ShakeDigest")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IDigest>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>>
 for crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDigest {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+ShakeDigest")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IXof>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IXof>>
 for crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IXof {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IXof> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+ShakeDigest")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IXof>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IXof>>
 for crate::Org::BouncyCastle::Crypto::Digests::ShakeDigest {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IXof {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IXof> {
         unsafe { std::mem::transmute(self) }
     }
 }

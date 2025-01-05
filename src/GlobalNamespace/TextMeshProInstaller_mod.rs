@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextMeshProInstaller {
-    __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
-        *mut crate::TMPro::TMP_FontAsset,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     >,
     pub _fontAssets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_FontAsset>,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     >,
 }
 #[cfg(feature = "TextMeshProInstaller")]
@@ -16,8 +16,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TextMeshProInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::TextMeshProInstaller {
-    type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
-        *mut crate::TMPro::TMP_FontAsset,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -44,9 +44,7 @@ impl crate::GlobalNamespace::TextMeshProInstaller {
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         fontAssets: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                *mut crate::TMPro::TMP_FontAsset,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         >,
         registry: quest_hook::libil2cpp::Gc<
             crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,

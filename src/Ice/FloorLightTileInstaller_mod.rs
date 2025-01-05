@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightTileInstaller {
-    __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     pub _floorLightTilePrefab: quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
 }
 #[cfg(feature = "Ice+FloorLightTileInstaller")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Ice+FloorLightTileInstaller")]
 impl std::ops::Deref for crate::Ice::FloorLightTileInstaller {
-    type Target = crate::Zenject::ScriptableObjectInstaller;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

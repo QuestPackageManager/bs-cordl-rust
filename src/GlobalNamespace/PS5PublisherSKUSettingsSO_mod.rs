@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS5PublisherSKUSettingsSO {
-    __cordl_parent: crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
+    >,
 }
 #[cfg(feature = "PS5PublisherSKUSettingsSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PS5PublisherSKUSettingsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PS5PublisherSKUSettingsSO {
-    type Target = crate::GlobalNamespace::SonyPublisherSKUSettingsSO;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

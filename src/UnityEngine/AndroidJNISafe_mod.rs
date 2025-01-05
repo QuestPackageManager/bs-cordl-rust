@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidJNISafe {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+AndroidJNISafe")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AndroidJNISafe")]
 impl std::ops::Deref for crate::UnityEngine::AndroidJNISafe {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,7 +78,7 @@ impl crate::UnityEngine::AndroidJNISafe {
             .invoke("CallLongMethod", (obj, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallObjectMethod_Il2CppArray0(
+    pub fn CallObjectMethod_Gc0(
         obj: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -170,7 +170,7 @@ impl crate::UnityEngine::AndroidJNISafe {
             .invoke("CallStaticLongMethod", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticObjectMethod_Il2CppArray0(
+    pub fn CallStaticObjectMethod_Gc0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -208,7 +208,7 @@ impl crate::UnityEngine::AndroidJNISafe {
             .invoke("CallStaticShortMethod", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticStringMethod_Il2CppArray0(
+    pub fn CallStaticStringMethod_Gc0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -236,7 +236,7 @@ impl crate::UnityEngine::AndroidJNISafe {
             .invoke("CallStaticStringMethod", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticVoidMethod_Il2CppArray0(
+    pub fn CallStaticVoidMethod_Gc0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<

@@ -2,19 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleCollator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub textInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::TextInfo>,
     pub cjkIndexer: quest_hook::libil2cpp::Gc<
         crate::Mono::Globalization::Unicode::CodePointIndexer,
     >,
     pub contractions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Mono::Globalization::Unicode::Contraction,
+            quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::Contraction>,
         >,
     >,
     pub level2Maps: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Mono::Globalization::Unicode::Level2Map,
+            quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::Level2Map>,
         >,
     >,
     pub unsafeFlags: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -34,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
 impl std::ops::Deref for crate::Mono::Globalization::Unicode::SimpleCollator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -193,14 +193,16 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         let __cordl_ret: i32 = __cordl_object.invoke("FilterOptions", (i, opt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetContraction_Il2CppArray1(
+    pub fn GetContraction_Gc1(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: i32,
         end: i32,
         clist: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Mono::Globalization::Unicode::Contraction,
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Globalization::Unicode::Contraction,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -214,7 +216,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         > = __cordl_object.invoke("GetContraction", (s, start, end, clist))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetContraction_Il2CppString_i32_i32_0(
+    pub fn GetContraction_Gc_i32_i32_0(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: i32,
@@ -286,7 +288,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         > = __cordl_object.invoke("GetSortKey", (s, start, length, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSortKey_i32_i32_SortKeyBuffer_CompareOptions2(
+    pub fn GetSortKey_i32_i32_Gc_CompareOptions2(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: i32,
@@ -303,14 +305,16 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
             .invoke("GetSortKey", (s, start, end, buf, opt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetTailContraction_Il2CppArray1(
+    pub fn GetTailContraction_Gc1(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: i32,
         end: i32,
         clist: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Mono::Globalization::Unicode::Contraction,
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Globalization::Unicode::Contraction,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -324,7 +328,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         > = __cordl_object.invoke("GetTailContraction", (s, start, end, clist))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetTailContraction_Il2CppString_i32_i32_0(
+    pub fn GetTailContraction_Gc_i32_i32_0(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: i32,
@@ -340,7 +344,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         > = __cordl_object.invoke("GetTailContraction", (s, start, end))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOfOrdinal_Il2CppString0(
+    pub fn IndexOfOrdinal_Gc0(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -406,7 +410,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
             .invoke("IndexOf", (s, target, start, length, opt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_Il2CppObject_ByRefMut1(
+    pub fn IndexOf_Gc_ByRefMut1(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -571,7 +575,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
             .invoke("LastIndexOf", (s, target, start, length, opt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LastIndexOf_Il2CppObject_ByRefMut1(
+    pub fn LastIndexOf_Gc_ByRefMut1(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -641,7 +645,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         noLv4: bool,
         ext: crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType,
         ct: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Mono::Globalization::Unicode::Contraction,
+            quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::Contraction>,
         >,
         ctx: quest_hook::libil2cpp::ByRefMut<
             crate::Mono::Globalization::Unicode::SimpleCollator_Context,
@@ -686,7 +690,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         noLv4: bool,
         ext: crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType,
         ct: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Mono::Globalization::Unicode::Contraction,
+            quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::Contraction>,
         >,
         ctx: quest_hook::libil2cpp::ByRefMut<
             crate::Mono::Globalization::Unicode::SimpleCollator_Context,
@@ -747,19 +751,23 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         &mut self,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         cjkIndexer: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Mono::Globalization::Unicode::CodePointIndexer,
+            quest_hook::libil2cpp::Gc<
+                crate::Mono::Globalization::Unicode::CodePointIndexer,
+            >,
         >,
         catTable: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         lv1Table: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         lv2Indexer: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Mono::Globalization::Unicode::CodePointIndexer,
+            quest_hook::libil2cpp::Gc<
+                crate::Mono::Globalization::Unicode::CodePointIndexer,
+            >,
         >,
         lv2Table: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -823,16 +831,20 @@ for crate::Mono::Globalization::Unicode::SimpleCollator {
     }
 }
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
-impl AsRef<crate::System::Globalization::ISimpleCollator>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Globalization::ISimpleCollator>>
 for crate::Mono::Globalization::Unicode::SimpleCollator {
-    fn as_ref(&self) -> &crate::System::Globalization::ISimpleCollator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Globalization::ISimpleCollator> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
-impl AsMut<crate::System::Globalization::ISimpleCollator>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Globalization::ISimpleCollator>>
 for crate::Mono::Globalization::Unicode::SimpleCollator {
-    fn as_mut(&mut self) -> &mut crate::System::Globalization::ISimpleCollator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Globalization::ISimpleCollator> {
         unsafe { std::mem::transmute(self) }
     }
 }

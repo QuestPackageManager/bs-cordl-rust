@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextElement {
-    __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement,
+    >,
     pub _uitkTextHandle_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UITKTextHandle,
     >,
@@ -26,10 +28,11 @@ pub struct TextElement {
     pub m_MaxLength: i32,
     pub _UnityEngine_UIElements_ITextEdition_isDelayed_k__BackingField: bool,
     pub _UnityEngine_UIElements_ITextEdition_AcceptCharacter_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<char, bool>,
+        char,
+        bool,
     >,
     pub _UnityEngine_UIElements_ITextEdition_UpdateScrollOffset_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<bool>,
+        bool,
     >,
     pub _UnityEngine_UIElements_ITextEdition_UpdateValueFromText_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Action,
@@ -64,7 +67,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TextElement")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextElement {
-    type Target = crate::UnityEngine::UIElements::BindableElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -407,13 +412,11 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn UnityEngine_UIElements_ITextEdition_get_AcceptCharacter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<char, bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<char, bool> = __cordl_object
             .invoke("UnityEngine.UIElements.ITextEdition.get_AcceptCharacter", ())?;
         Ok(__cordl_ret.into())
     }
@@ -434,13 +437,11 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn UnityEngine_UIElements_ITextEdition_get_UpdateScrollOffset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
             .invoke("UnityEngine.UIElements.ITextEdition.get_UpdateScrollOffset", ())?;
         Ok(__cordl_ret.into())
     }
@@ -550,7 +551,7 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn UnityEngine_UIElements_ITextEdition_set_AcceptCharacter(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
+        value: quest_hook::libil2cpp::Gc<char, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -575,7 +576,7 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn UnityEngine_UIElements_ITextEdition_set_UpdateScrollOffset(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1215,72 +1216,90 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TextE
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextElement")]
-impl AsRef<crate::UnityEngine::UIElements::IExperimentalFeatures>
-for crate::UnityEngine::UIElements::TextElement {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IExperimentalFeatures {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+TextElement")]
-impl AsMut<crate::UnityEngine::UIElements::IExperimentalFeatures>
-for crate::UnityEngine::UIElements::TextElement {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IExperimentalFeatures {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+TextElement")]
 impl AsRef<
-    crate::UnityEngine::UIElements::INotifyValueChanged_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
-    >,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IExperimentalFeatures>,
 > for crate::UnityEngine::UIElements::TextElement {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::UIElements::INotifyValueChanged_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IExperimentalFeatures,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextElement")]
 impl AsMut<
-    crate::UnityEngine::UIElements::INotifyValueChanged_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
-    >,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IExperimentalFeatures>,
 > for crate::UnityEngine::UIElements::TextElement {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::INotifyValueChanged_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IExperimentalFeatures,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextElement")]
-impl AsRef<crate::UnityEngine::UIElements::ITextEdition>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ITextEdition>>
 for crate::UnityEngine::UIElements::TextElement {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::ITextEdition {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ITextEdition> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextElement")]
-impl AsMut<crate::UnityEngine::UIElements::ITextEdition>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ITextEdition>>
 for crate::UnityEngine::UIElements::TextElement {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::ITextEdition {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ITextEdition> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextElement")]
-impl AsRef<crate::UnityEngine::UIElements::ITextSelection>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ITextSelection>>
 for crate::UnityEngine::UIElements::TextElement {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::ITextSelection {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ITextSelection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextElement")]
-impl AsMut<crate::UnityEngine::UIElements::ITextSelection>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ITextSelection>>
 for crate::UnityEngine::UIElements::TextElement {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::ITextSelection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ITextSelection> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::UnityEngine::UIElements::TextElement {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TextElement")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::UnityEngine::UIElements::TextElement {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1288,9 +1307,9 @@ for crate::UnityEngine::UIElements::TextElement {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextElement_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::TextElement,
-        *mut crate::UnityEngine::UIElements::TextElement_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement_UxmlTraits>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlFactory")]
@@ -1300,9 +1319,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextElement_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::TextElement,
-        *mut crate::UnityEngine::UIElements::TextElement_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement_UxmlTraits>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -1348,7 +1367,9 @@ for crate::UnityEngine::UIElements::TextElement_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextElement_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    >,
     pub m_Text: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
@@ -1369,7 +1390,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextElement_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

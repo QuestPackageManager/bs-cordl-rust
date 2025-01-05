@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CurvedCanvasSettings {
-    __cordl_parent: crate::UnityEngine::UI::Graphic,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     pub _radius: f32,
     pub _useFlatInEditMode: bool,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+CurvedCanvasSettings")]
 impl std::ops::Deref for crate::HMUI::CurvedCanvasSettings {
-    type Target = crate::UnityEngine::UI::Graphic;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

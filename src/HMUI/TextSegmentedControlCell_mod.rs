@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextSegmentedControlCell {
-    __cordl_parent: crate::HMUI::SegmentedControlCell,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _backgroundGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+TextSegmentedControlCell")]
 impl std::ops::Deref for crate::HMUI::TextSegmentedControlCell {
-    type Target = crate::HMUI::SegmentedControlCell;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

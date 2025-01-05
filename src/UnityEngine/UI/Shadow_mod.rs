@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Shadow {
-    __cordl_parent: crate::UnityEngine::UI::BaseMeshEffect,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::BaseMeshEffect>,
     pub m_EffectColor: crate::UnityEngine::Color,
     pub m_EffectDistance: crate::UnityEngine::Vector2,
     pub m_UseGraphicAlpha: bool,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Shadow")]
 impl std::ops::Deref for crate::UnityEngine::UI::Shadow {
-    type Target = crate::UnityEngine::UI::BaseMeshEffect;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::BaseMeshEffect>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,9 +30,7 @@ impl crate::UnityEngine::UI::Shadow {
     pub const kMaxEffectDistance: f32 = 600f32;
     pub fn ApplyShadow(
         &mut self,
-        verts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
+        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
         color: crate::UnityEngine::Color32,
         start: i32,
         end: i32,
@@ -48,9 +46,7 @@ impl crate::UnityEngine::UI::Shadow {
     }
     pub fn ApplyShadowZeroAlloc(
         &mut self,
-        verts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
+        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
         color: crate::UnityEngine::Color32,
         start: i32,
         end: i32,

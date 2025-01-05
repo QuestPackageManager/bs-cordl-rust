@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSync {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Oculus+Platform+NetSync")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+NetSync")]
 impl std::ops::Deref for crate::Oculus::Platform::NetSync {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,9 +26,7 @@ impl std::ops::DerefMut for crate::Oculus::Platform::NetSync {
 impl crate::Oculus::Platform::NetSync {
     pub fn SetConnectionStatusChangedNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1_Callback<
-                *mut crate::Oculus::Platform::Models::NetSyncConnection,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::NetSyncConnection>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -37,8 +35,8 @@ impl crate::Oculus::Platform::NetSync {
     }
     pub fn SetSessionsChangedNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1_Callback<
-                *mut crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

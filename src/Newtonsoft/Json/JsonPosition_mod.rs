@@ -26,11 +26,7 @@ for crate::Newtonsoft::Json::JsonPosition {
 #[cfg(feature = "Newtonsoft+Json+JsonPosition")]
 impl crate::Newtonsoft::Json::JsonPosition {
     pub fn BuildPath(
-        positions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::Newtonsoft::Json::JsonPosition,
-            >,
-        >,
+        positions: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonPosition>,
         currentPosition: crate::System::Nullable_1<crate::Newtonsoft::Json::JsonPosition>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -72,9 +68,11 @@ impl crate::Newtonsoft::Json::JsonPosition {
     pub fn WriteTo(
         &mut self,
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-        writer: quest_hook::libil2cpp::ByRefMut<*mut crate::System::IO::StringWriter>,
+        writer: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::IO::StringWriter>,
+        >,
         buffer: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<char>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

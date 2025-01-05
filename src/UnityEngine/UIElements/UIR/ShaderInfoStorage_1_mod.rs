@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderInfoStorage_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
+    >,
     pub m_InitialSize: i32,
     pub m_MaxSize: i32,
     pub m_Format: crate::UnityEngine::TextureFormat,
-    pub m_Convert: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<crate::UnityEngine::Color, T>,
-    >,
+    pub m_Convert: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, T>,
     pub m_Allocator: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIRAtlasAllocator,
     >,
@@ -25,7 +25,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorage_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::ShaderInfoStorage_1<T> {
-    type Target = crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -105,9 +107,7 @@ impl<
     }
     pub fn New(
         format: crate::UnityEngine::TextureFormat,
-        convert: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<crate::UnityEngine::Color, T>,
-        >,
+        convert: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, T>,
         initialSize: i32,
         maxSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -155,9 +155,7 @@ impl<
     pub fn _ctor(
         &mut self,
         format: crate::UnityEngine::TextureFormat,
-        convert: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<crate::UnityEngine::Color, T>,
-        >,
+        convert: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, T>,
         initialSize: i32,
         maxSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

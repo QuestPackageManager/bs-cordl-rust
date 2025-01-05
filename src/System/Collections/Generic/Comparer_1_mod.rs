@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Comparer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Collections+Generic+Comparer_1")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Collections+Generic+Comparer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Collections::Generic::Comparer_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,15 +39,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Compar
         Ok(__cordl_ret.into())
     }
     pub fn CreateComparer() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Comparer_1<T>>,
+        quest_hook::libil2cpp::Gc<T>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Comparer_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateComparer", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateComparer", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -89,16 +88,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Compar
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Default() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Comparer_1<T>>,
-    >
+    pub fn get_Default() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Comparer_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Default", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Default", ())?;
         Ok(__cordl_ret.into())
     }
 }
@@ -113,34 +109,38 @@ for crate::System::Collections::Generic::Comparer_1<T> {
     }
 }
 #[cfg(feature = "System+Collections+Generic+Comparer_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IComparer_1<T>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
 for crate::System::Collections::Generic::Comparer_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IComparer_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Comparer_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::Comparer_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Generic+Comparer_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IComparer_1<T>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
 for crate::System::Collections::Generic::Comparer_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IComparer_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Generic+Comparer_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IComparer>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
 for crate::System::Collections::Generic::Comparer_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::IComparer {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Comparer_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IComparer>
-for crate::System::Collections::Generic::Comparer_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_FloatString {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Tayx+Graphy+Utils+NumString+G_FloatString")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tayx+Graphy+Utils+NumString+G_FloatString")]
 impl std::ops::Deref for crate::Tayx::Graphy::Utils::NumString::G_FloatString {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +58,7 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
             .invoke("ToInt", (f))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToStringNonAlloc_Il2CppString1(
+    pub fn ToStringNonAlloc_Gc1(
         value: f32,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

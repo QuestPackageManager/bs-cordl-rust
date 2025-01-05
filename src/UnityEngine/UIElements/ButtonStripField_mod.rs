@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ButtonStripField {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<i32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
     pub m_Buttons: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::Button,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Button>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ButtonStripField")]
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ButtonStripField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ButtonStripField {
-    type Target = crate::UnityEngine::UIElements::BaseField_1<i32>;
+    type Target = quest_hook::libil2cpp::Gc<i32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -86,9 +84,11 @@ for crate::UnityEngine::UIElements::ButtonStripField {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ButtonStripField_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::ButtonStripField,
-        *mut crate::UnityEngine::UIElements::ButtonStripField_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ButtonStripField>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ButtonStripField_UxmlTraits,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ButtonStripField+UxmlFactory")]
@@ -99,9 +99,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ButtonStripField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ButtonStripField_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::ButtonStripField,
-        *mut crate::UnityEngine::UIElements::ButtonStripField_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ButtonStripField>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ButtonStripField_UxmlTraits,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -148,7 +150,7 @@ for crate::UnityEngine::UIElements::ButtonStripField_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ButtonStripField_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<i32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "UnityEngine+UIElements+ButtonStripField+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -158,7 +160,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ButtonStripField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ButtonStripField_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<i32>;
+    type Target = quest_hook::libil2cpp::Gc<i32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

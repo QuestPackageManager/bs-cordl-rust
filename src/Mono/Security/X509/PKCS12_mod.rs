@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS12 {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _keyBags: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _secretBags: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+X509+PKCS12")]
 impl std::ops::Deref for crate::Mono::Security::X509::PKCS12 {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,18 @@ impl std::ops::DerefMut for crate::Mono::Security::X509::PKCS12 {
 impl crate::Mono::Security::X509::PKCS12 {
     #[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
     pub type DeriveBytes = crate::Mono::Security::X509::PKCS12_DeriveBytes;
-    pub fn AddCertificate_IDictionary1(
+    pub fn AddCertificate_Gc0(
+        &mut self,
+        cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddCertificate", (cert))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddCertificate_Gc1(
         &mut self,
         cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -50,17 +61,6 @@ impl crate::Mono::Security::X509::PKCS12 {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddCertificate", (cert, attributes))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddCertificate_X509Certificate0(
-        &mut self,
-        cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddCertificate", (cert))?;
         Ok(__cordl_ret.into())
     }
     pub fn AddPrivateKey(
@@ -125,7 +125,21 @@ impl crate::Mono::Security::X509::PKCS12 {
             .invoke("Decode", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Decrypt_Il2CppString_Il2CppArray_i32_Il2CppArray0(
+    pub fn Decrypt_Gc1(
+        &mut self,
+        ed: quest_hook::libil2cpp::Gc<crate::Mono::Security::PKCS7_EncryptedData>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("Decrypt", (ed))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Decrypt_Gc_i32_Gc0(
         &mut self,
         algorithmOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -141,20 +155,6 @@ impl crate::Mono::Security::X509::PKCS12 {
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = __cordl_object
             .invoke("Decrypt", (algorithmOid, salt, iterationCount, encryptedData))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Decrypt_PKCS7_EncryptedData1(
-        &mut self,
-        ed: quest_hook::libil2cpp::Gc<crate::Mono::Security::PKCS7_EncryptedData>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = __cordl_object.invoke("Decrypt", (ed))?;
         Ok(__cordl_ret.into())
     }
     pub fn Encrypt(
@@ -269,7 +269,7 @@ impl crate::Mono::Security::X509::PKCS12 {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray1(
+    pub fn New_Gc1(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -278,7 +278,7 @@ impl crate::Mono::Security::X509::PKCS12 {
             .invoke_void(".ctor", (data))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_Il2CppString2(
+    pub fn New_Gc_Gc2(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -299,7 +299,18 @@ impl crate::Mono::Security::X509::PKCS12 {
             .invoke("ReadSafeBag", (safeBag))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveCertificate_IDictionary1(
+    pub fn RemoveCertificate_Gc0(
+        &mut self,
+        cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveCertificate", (cert))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveCertificate_Gc1(
         &mut self,
         cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
         attrs: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -309,17 +320,6 @@ impl crate::Mono::Security::X509::PKCS12 {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveCertificate", (cert, attrs))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn RemoveCertificate_X509Certificate0(
-        &mut self,
-        cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveCertificate", (cert))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
@@ -332,7 +332,7 @@ impl crate::Mono::Security::X509::PKCS12 {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray1(
+    pub fn _ctor_Gc1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -343,7 +343,7 @@ impl crate::Mono::Security::X509::PKCS12 {
             .invoke(".ctor", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_Il2CppString2(
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -441,14 +441,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::X509::PKCS12 {
     }
 }
 #[cfg(feature = "Mono+Security+X509+PKCS12")]
-impl AsRef<crate::System::ICloneable> for crate::Mono::Security::X509::PKCS12 {
-    fn as_ref(&self) -> &crate::System::ICloneable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+for crate::Mono::Security::X509::PKCS12 {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Security+X509+PKCS12")]
-impl AsMut<crate::System::ICloneable> for crate::Mono::Security::X509::PKCS12 {
-    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+for crate::Mono::Security::X509::PKCS12 {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -456,7 +458,7 @@ impl AsMut<crate::System::ICloneable> for crate::Mono::Security::X509::PKCS12 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS12_DeriveBytes {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _hashName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _iterations: i32,
     pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -469,7 +471,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
 impl std::ops::Deref for crate::Mono::Security::X509::PKCS12_DeriveBytes {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

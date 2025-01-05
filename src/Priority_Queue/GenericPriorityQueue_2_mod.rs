@@ -5,11 +5,11 @@ pub struct GenericPriorityQueue_2<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _numNodes: i32,
     pub _nodes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TItem>>,
     pub _numNodesEverEnqueued: i64,
-    pub _comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<TPriority>>,
+    pub _comparer: quest_hook::libil2cpp::Gc<TPriority>,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
     __cordl_phantom_TPriority: std::marker::PhantomData<TPriority>,
 }
@@ -23,7 +23,7 @@ impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -137,11 +137,7 @@ impl<
     }
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TItem>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TItem>>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -151,9 +147,8 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TItem>,
-        > = __cordl_object.invoke("GetEnumerator", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TItem> = __cordl_object
+            .invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn HasHigherPriority(
@@ -187,9 +182,9 @@ impl<
         let __cordl_ret: bool = __cordl_object.invoke("IsValidQueue", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Comparison_1_2(
+    pub fn New_Gc1(
         maxNodes: i32,
-        comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<TPriority>>,
+        comparer: quest_hook::libil2cpp::Gc<TPriority>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -203,11 +198,9 @@ impl<
             .invoke_void(".ctor", (maxNodes, comparer))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IComparer_1_1(
+    pub fn New_Gc2(
         maxNodes: i32,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<TPriority>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<TPriority>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -341,10 +334,10 @@ impl<
             .invoke("UpdatePriority", (node, priority))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Comparison_1_2(
+    pub fn _ctor_Gc1(
         &mut self,
         maxNodes: i32,
-        comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<TPriority>>,
+        comparer: quest_hook::libil2cpp::Gc<TPriority>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -359,12 +352,10 @@ impl<
             .invoke(".ctor", (maxNodes, comparer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IComparer_1_1(
+    pub fn _ctor_Gc2(
         &mut self,
         maxNodes: i32,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<TPriority>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<TPriority>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -453,11 +444,71 @@ for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
-> AsRef<crate::Priority_Queue::IFixedSizePriorityQueue_2<TItem, TPriority>>
+> AsRef<quest_hook::libil2cpp::Gc<TItem, TPriority>>
+for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TItem, TPriority> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+GenericPriorityQueue_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<TItem, TPriority>>
+for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TItem, TPriority> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+GenericPriorityQueue_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<TItem, TPriority>>
+for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TItem, TPriority> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+GenericPriorityQueue_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<TItem, TPriority>>
+for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TItem, TPriority> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+GenericPriorityQueue_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<TItem>>
+for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TItem> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+GenericPriorityQueue_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<TItem>>
+for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TItem> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+GenericPriorityQueue_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
     fn as_ref(
         &self,
-    ) -> &crate::Priority_Queue::IFixedSizePriorityQueue_2<TItem, TPriority> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -465,75 +516,11 @@ for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
-> AsMut<crate::Priority_Queue::IFixedSizePriorityQueue_2<TItem, TPriority>>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Priority_Queue::IFixedSizePriorityQueue_2<TItem, TPriority> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Priority_Queue+GenericPriorityQueue_2")]
-impl<
-    TItem: quest_hook::libil2cpp::Type,
-    TPriority: quest_hook::libil2cpp::Type,
-> AsRef<crate::Priority_Queue::IPriorityQueue_2<TItem, TPriority>>
-for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
-    fn as_ref(&self) -> &crate::Priority_Queue::IPriorityQueue_2<TItem, TPriority> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Priority_Queue+GenericPriorityQueue_2")]
-impl<
-    TItem: quest_hook::libil2cpp::Type,
-    TPriority: quest_hook::libil2cpp::Type,
-> AsMut<crate::Priority_Queue::IPriorityQueue_2<TItem, TPriority>>
-for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::Priority_Queue::IPriorityQueue_2<TItem, TPriority> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Priority_Queue+GenericPriorityQueue_2")]
-impl<
-    TItem: quest_hook::libil2cpp::Type,
-    TPriority: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<TItem>>
-for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TItem> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Priority_Queue+GenericPriorityQueue_2")]
-impl<
-    TItem: quest_hook::libil2cpp::Type,
-    TPriority: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<TItem>>
-for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TItem> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Priority_Queue+GenericPriorityQueue_2")]
-impl<
-    TItem: quest_hook::libil2cpp::Type,
-    TPriority: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::IEnumerable>
-for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Priority_Queue+GenericPriorityQueue_2")]
-impl<
-    TItem: quest_hook::libil2cpp::Type,
-    TPriority: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::IEnumerable>
-for crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }

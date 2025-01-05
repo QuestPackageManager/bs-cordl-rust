@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlUrlResolver {
-    __cordl_parent: crate::System::Xml::XmlResolver,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
     pub _credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
     pub _proxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
     pub _cachePolicy: quest_hook::libil2cpp::Gc<
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlUrlResolver")]
 impl std::ops::Deref for crate::System::Xml::XmlUrlResolver {
-    type Target = crate::System::Xml::XmlResolver;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,18 +52,14 @@ impl crate::System::Xml::XmlUrlResolver {
         ofObjectToReturn: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object
             .invoke("GetEntityAsync", (absoluteUri, role, ofObjectToReturn))?;
         Ok(__cordl_ret.into())

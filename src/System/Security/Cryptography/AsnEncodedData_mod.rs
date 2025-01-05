@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsnEncodedData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
     pub _raw: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+AsnEncodedData")]
 impl std::ops::Deref for crate::System::Security::Cryptography::AsnEncodedData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -130,7 +130,7 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_AsnEncodedData3(
+    pub fn New_Gc3(
         asnEncodedData: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::AsnEncodedData,
         >,
@@ -141,7 +141,7 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
             .invoke_void(".ctor", (asnEncodedData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppArray1(
+    pub fn New_Gc_Gc1(
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -151,7 +151,7 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
             .invoke_void(".ctor", (oid, rawData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Oid_Il2CppArray2(
+    pub fn New_Gc_Gc2(
         oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -213,7 +213,7 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AsnEncodedData3(
+    pub fn _ctor_Gc3(
         &mut self,
         asnEncodedData: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::AsnEncodedData,
@@ -226,7 +226,7 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
             .invoke(".ctor", (asnEncodedData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppArray1(
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -238,7 +238,7 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
             .invoke(".ctor", (oid, rawData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Oid_Il2CppArray2(
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

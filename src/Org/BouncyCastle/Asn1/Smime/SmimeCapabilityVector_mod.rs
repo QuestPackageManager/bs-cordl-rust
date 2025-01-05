@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SmimeCapabilityVector {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub capabilities: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Smime+SmimeCapabilityVector")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Smime::SmimeCapabilityVector {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,20 @@ for crate::Org::BouncyCastle::Asn1::Smime::SmimeCapabilityVector {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Smime+SmimeCapabilityVector")]
 impl crate::Org::BouncyCastle::Asn1::Smime::SmimeCapabilityVector {
-    pub fn AddCapability_Asn1Encodable2(
+    pub fn AddCapability_Gc0(
+        &mut self,
+        capability: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddCapability", (capability))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddCapability_Gc2(
         &mut self,
         capability: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -43,19 +56,6 @@ impl crate::Org::BouncyCastle::Asn1::Smime::SmimeCapabilityVector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddCapability", (capability, parameters))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddCapability_DerObjectIdentifier0(
-        &mut self,
-        capability: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddCapability", (capability))?;
         Ok(__cordl_ret.into())
     }
     pub fn AddCapability_i32_1(

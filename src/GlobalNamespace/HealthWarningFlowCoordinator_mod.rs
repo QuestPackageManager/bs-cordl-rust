@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HealthWarningFlowCoordinator {
-    __cordl_parent: crate::HMUI::FlowCoordinator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     pub _appInitScenesTransitionSetupDataContainer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO,
     >,
@@ -48,10 +48,8 @@ pub struct HealthWarningFlowCoordinator {
     >,
     pub _platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
     pub _viewControllerTitles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::HMUI::ViewController,
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _selectedRegion: crate::GlobalNamespace::SelectRegionViewController_Region,
     pub _openedWithLanguage: crate::BGLib::Polyglot::Language,
@@ -63,7 +61,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HealthWarningFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::HealthWarningFlowCoordinator {
-    type Target = crate::HMUI::FlowCoordinator;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -327,7 +325,7 @@ for crate::GlobalNamespace::HealthWarningFlowCoordinator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HealthWarningFlowCoordinator_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub nextScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     >,
@@ -340,7 +338,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

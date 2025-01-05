@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomFilterUtil {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "BloomFilterUtil")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomFilterUtil")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomFilterUtil {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -83,11 +83,22 @@ impl crate::GlobalNamespace::BloomFilterUtil {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToBloomFilter_IEnumerable_1_1<T>(
+    pub fn ToBloomFilter_Gc_i32_i32_0<T>(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hashCount: i32,
+        hashBits: i32,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToBloomFilter", (value, hashCount, hashBits))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToBloomFilter_Gc_i32_i32_1<T>(
         strings: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         hashCount: i32,
         hashBits: i32,
@@ -100,10 +111,8 @@ impl crate::GlobalNamespace::BloomFilterUtil {
             .invoke("ToBloomFilter", (strings, hashCount, hashBits))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToBloomFilter_IEnumerable_1_2<T>(
-        hashes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<u32>,
-        >,
+    pub fn ToBloomFilter_Gc_i32_i32_2<T>(
+        hashes: quest_hook::libil2cpp::Gc<u32>,
         hashCount: i32,
         hashBits: i32,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -113,19 +122,6 @@ impl crate::GlobalNamespace::BloomFilterUtil {
     {
         let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToBloomFilter", (hashes, hashCount, hashBits))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToBloomFilter_Il2CppString0<T>(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        hashCount: i32,
-        hashBits: i32,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToBloomFilter", (value, hashCount, hashBits))?;
         Ok(__cordl_ret.into())
     }
 }

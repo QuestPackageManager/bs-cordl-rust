@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongTimeTweeningManager {
-    __cordl_parent: crate::Tweening::TweeningManager,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Tweening::TweeningManager>,
     pub _audioTimeSource: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IAudioTimeSource,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tweening+SongTimeTweeningManager")]
 impl std::ops::Deref for crate::Tweening::SongTimeTweeningManager {
-    type Target = crate::Tweening::TweeningManager;
+    type Target = quest_hook::libil2cpp::Gc<crate::Tweening::TweeningManager>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

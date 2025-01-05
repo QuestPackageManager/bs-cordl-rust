@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509ChainImplUnityTls {
-    __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
+    >,
     pub elements: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
     >,
@@ -11,9 +13,7 @@ pub struct X509ChainImplUnityTls {
         crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
     >,
     pub chainStatusList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
-        >,
+        crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
     >,
     pub reverseOrder: bool,
 }
@@ -24,7 +24,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Unity+X509ChainImplUnityTls")]
 impl std::ops::Deref for crate::Mono::Unity::X509ChainImplUnityTls {
-    type Target = crate::System::Security::Cryptography::X509Certificates::X509ChainImpl;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

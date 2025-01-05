@@ -2,14 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerBindingFinalizer {
-    __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::ProviderBindingFinalizer>,
     pub _subIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _resolveAll: bool,
     pub _creatorFactory: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            *mut crate::Zenject::DiContainer,
-            *mut crate::Zenject::ISubContainerCreator,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,
     >,
 }
 #[cfg(feature = "Zenject+SubContainerBindingFinalizer")]
@@ -19,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SubContainerBindingFinalizer")]
 impl std::ops::Deref for crate::Zenject::SubContainerBindingFinalizer {
-    type Target = crate::Zenject::ProviderBindingFinalizer;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::ProviderBindingFinalizer>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +34,7 @@ impl crate::Zenject::SubContainerBindingFinalizer {
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         concreteTypes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -62,10 +60,8 @@ impl crate::Zenject::SubContainerBindingFinalizer {
         subIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         resolveAll: bool,
         creatorFactory: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::Zenject::DiContainer,
-                *mut crate::Zenject::ISubContainerCreator,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -94,10 +90,8 @@ impl crate::Zenject::SubContainerBindingFinalizer {
         subIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         resolveAll: bool,
         creatorFactory: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::Zenject::DiContainer,
-                *mut crate::Zenject::ISubContainerCreator,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

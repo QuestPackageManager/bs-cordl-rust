@@ -37,7 +37,7 @@ impl crate::Org::BouncyCastle::Crypto::IBlockResult {
         > = __cordl_object.invoke("Collect", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Collect_Il2CppArray_i32_1(
+    pub fn Collect_Gc_i32_1(
         &mut self,
         destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,

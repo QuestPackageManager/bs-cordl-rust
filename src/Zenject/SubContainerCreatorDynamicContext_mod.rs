@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorDynamicContext {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
 #[cfg(feature = "Zenject+SubContainerCreatorDynamicContext")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SubContainerCreatorDynamicContext")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorDynamicContext {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,9 +27,7 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorDynamicContext {
 impl crate::Zenject::SubContainerCreatorDynamicContext {
     pub fn AddInstallers(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -54,9 +52,7 @@ impl crate::Zenject::SubContainerCreatorDynamicContext {
     }
     pub fn CreateSubContainer(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
         parentContext: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -112,16 +108,20 @@ for crate::Zenject::SubContainerCreatorDynamicContext {
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorDynamicContext")]
-impl AsRef<crate::Zenject::ISubContainerCreator>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>>
 for crate::Zenject::SubContainerCreatorDynamicContext {
-    fn as_ref(&self) -> &crate::Zenject::ISubContainerCreator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorDynamicContext")]
-impl AsMut<crate::Zenject::ISubContainerCreator>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>>
 for crate::Zenject::SubContainerCreatorDynamicContext {
-    fn as_mut(&mut self) -> &mut crate::Zenject::ISubContainerCreator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator> {
         unsafe { std::mem::transmute(self) }
     }
 }

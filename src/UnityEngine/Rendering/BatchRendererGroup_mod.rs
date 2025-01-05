@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BatchRendererGroup {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_GroupHandle: crate::System::IntPtr,
     pub m_PerformCulling: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::BatchRendererGroup {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,7 +64,7 @@ for crate::UnityEngine::Rendering::BatchRendererGroup {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BatchRendererGroup_OnPerformCulling {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -75,7 +75,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
 impl std::ops::Deref
 for crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

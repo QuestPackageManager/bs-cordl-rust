@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ComponentConverter {
-    __cordl_parent: crate::System::ComponentModel::ReferenceConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ReferenceConverter,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+ComponentConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+ComponentConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::ComponentConverter {
-    type Target = crate::System::ComponentModel::ReferenceConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ReferenceConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +35,9 @@ impl crate::System::ComponentModel::ComponentConverter {
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<

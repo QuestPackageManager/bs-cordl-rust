@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAtomicValue {
-    __cordl_parent: crate::System::Xml::XPath::XPathItem,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XPath::XPathItem>,
     pub xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
     pub objVal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub clrType: crate::System::TypeCode,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlAtomicValue {
-    type Target = crate::System::Xml::XPath::XPathItem;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XPath::XPathItem>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -59,7 +59,17 @@ impl crate::System::Xml::Schema::XmlAtomicValue {
             .invoke_void(".ctor", (xmlType, value))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppObject7(
+    pub fn New_Gc5(
+        xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (xmlType, value))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc7(
         xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -69,9 +79,9 @@ impl crate::System::Xml::Schema::XmlAtomicValue {
             .invoke_void(".ctor", (xmlType, value))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppObject_IXmlNamespaceResolver8(
+    pub fn New_Gc_Gc6(
         xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -80,19 +90,9 @@ impl crate::System::Xml::Schema::XmlAtomicValue {
             .invoke_void(".ctor", (xmlType, value, nsResolver))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString5(
+    pub fn New_Gc_Gc8(
         xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (xmlType, value))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppString_IXmlNamespaceResolver6(
-        xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -194,7 +194,19 @@ impl crate::System::Xml::Schema::XmlAtomicValue {
             .invoke(".ctor", (xmlType, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject7(
+    pub fn _ctor_Gc5(
+        &mut self,
+        xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (xmlType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc7(
         &mut self,
         xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -206,10 +218,10 @@ impl crate::System::Xml::Schema::XmlAtomicValue {
             .invoke(".ctor", (xmlType, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject_IXmlNamespaceResolver8(
+    pub fn _ctor_Gc_Gc6(
         &mut self,
         xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -219,22 +231,10 @@ impl crate::System::Xml::Schema::XmlAtomicValue {
             .invoke(".ctor", (xmlType, value, nsResolver))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString5(
+    pub fn _ctor_Gc_Gc8(
         &mut self,
         xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (xmlType, value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString_IXmlNamespaceResolver6(
-        &mut self,
-        xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -390,14 +390,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XmlAtomic
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
-impl AsRef<crate::System::ICloneable> for crate::System::Xml::Schema::XmlAtomicValue {
-    fn as_ref(&self) -> &crate::System::ICloneable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+for crate::System::Xml::Schema::XmlAtomicValue {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
-impl AsMut<crate::System::ICloneable> for crate::System::Xml::Schema::XmlAtomicValue {
-    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+for crate::System::Xml::Schema::XmlAtomicValue {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -405,7 +407,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Xml::Schema::XmlAtomicV
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAtomicValue_NamespacePrefixForQName {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -418,7 +420,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
 impl std::ops::Deref
 for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -437,20 +439,16 @@ impl crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
         scope: crate::System::Xml::XmlNamespaceScope,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret.into())
     }
@@ -516,16 +514,20 @@ for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
-impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>>
 for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
-    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
-impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>>
 for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
-    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver> {
         unsafe { std::mem::transmute(self) }
     }
 }

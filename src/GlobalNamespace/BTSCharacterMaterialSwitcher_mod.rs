@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BTSCharacterMaterialSwitcher {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _rendererMaterialsPairs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs,
+            >,
         >,
     >,
 }
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BTSCharacterMaterialSwitcher")]
 impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +78,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BTSCharacterMaterialSwitcher_MaterialPairs {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub materialIndex: i32,
     pub defaultMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub alternativeMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -90,7 +92,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -136,11 +138,11 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     pub _materialPairs: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
         >,
     >,
 }
@@ -153,7 +155,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -191,8 +193,8 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
             >,
         >,
     > {
@@ -200,8 +202,8 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
             >,
         > = __cordl_object.invoke("get_materialPairs", ())?;
         Ok(__cordl_ret.into())

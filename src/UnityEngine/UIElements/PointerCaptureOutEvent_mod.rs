@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerCaptureOutEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::PointerCaptureEventBase_1<
-        *mut crate::UnityEngine::UIElements::PointerCaptureOutEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerCaptureOutEvent>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerCaptureOutEvent")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+PointerCaptureOutEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerCaptureOutEvent {
-    type Target = crate::UnityEngine::UIElements::PointerCaptureEventBase_1<
-        *mut crate::UnityEngine::UIElements::PointerCaptureOutEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerCaptureOutEvent>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

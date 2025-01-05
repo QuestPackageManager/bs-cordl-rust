@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectOffset {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Ptr: crate::System::IntPtr,
     pub m_SourceStyle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+RectOffset")]
 impl std::ops::Deref for crate::UnityEngine::RectOffset {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +65,7 @@ impl crate::UnityEngine::RectOffset {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppObject_IntPtr1(
+    pub fn New_Gc_IntPtr1(
         sourceStyle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         source: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -100,7 +100,7 @@ impl crate::UnityEngine::RectOffset {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider1(
+    pub fn ToString_Gc_Gc1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -125,7 +125,7 @@ impl crate::UnityEngine::RectOffset {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject_IntPtr1(
+    pub fn _ctor_Gc_IntPtr1(
         &mut self,
         sourceStyle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         source: crate::System::IntPtr,
@@ -248,14 +248,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::RectOffset {
     }
 }
 #[cfg(feature = "UnityEngine+RectOffset")]
-impl AsRef<crate::System::IFormattable> for crate::UnityEngine::RectOffset {
-    fn as_ref(&self) -> &crate::System::IFormattable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::UnityEngine::RectOffset {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+RectOffset")]
-impl AsMut<crate::System::IFormattable> for crate::UnityEngine::RectOffset {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::UnityEngine::RectOffset {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         unsafe { std::mem::transmute(self) }
     }
 }

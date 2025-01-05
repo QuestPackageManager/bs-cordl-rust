@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialSwapGraphicViewStateTransition {
-    __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
-        *mut crate::UnityEngine::UI::Graphic,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     >,
     pub _transition: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MaterialSwapTransitionSO,
@@ -17,8 +17,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MaterialSwapGraphicViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialSwapGraphicViewStateTransition {
-    type Target = crate::GlobalNamespace::BaseStateTransition_1<
-        *mut crate::UnityEngine::UI::Graphic,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

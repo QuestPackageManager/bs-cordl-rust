@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectBasedBezierCurve {
-    __cordl_parent: crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurve_1<
-        *mut crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurveData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurveData,
+        >,
     >,
 }
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
@@ -15,8 +17,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
 impl std::ops::Deref
 for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
-    type Target = crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurve_1<
-        *mut crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurveData,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurveData,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

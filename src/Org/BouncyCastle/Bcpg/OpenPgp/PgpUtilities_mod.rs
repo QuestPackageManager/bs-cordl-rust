@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUtilities {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,13 +60,13 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DsaSigToMpi", (encoding))?;
@@ -264,19 +264,19 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("RsaSigToMpi", (encoding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteFileToLiteralData_Il2CppArray1(
+    pub fn WriteFileToLiteralData_Gc1(
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         fileType: char,
         file: quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>,
@@ -286,7 +286,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUtilities {
             .invoke("WriteFileToLiteralData", (output, fileType, file, buffer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteFileToLiteralData_Stream__cordl_char_FileInfo0(
+    pub fn WriteFileToLiteralData_Gc__cordl_char_Gc0(
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         fileType: char,
         file: quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>,

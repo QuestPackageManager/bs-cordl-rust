@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerBrowserViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _filterServersButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _filterText: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameServersFilterText,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameServerBrowserViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerBrowserViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

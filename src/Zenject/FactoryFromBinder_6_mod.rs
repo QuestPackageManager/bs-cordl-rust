@@ -9,7 +9,7 @@ pub struct FactoryFromBinder_6<
     TParam5: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::FactoryFromBinderBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryFromBinderBase>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
     __cordl_phantom_TParam3: std::marker::PhantomData<TParam3>,
@@ -40,7 +40,7 @@ for crate::Zenject::FactoryFromBinder_6<
     TParam5,
     TContract,
 > {
-    type Target = crate::Zenject::FactoryFromBinderBase;
+    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::FactoryFromBinderBase>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -114,15 +114,13 @@ impl<
     pub fn FromMethod(
         &mut self,
         method: quest_hook::libil2cpp::Gc<
-            crate::System::Func_7<
-                *mut crate::Zenject::DiContainer,
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TContract,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TContract,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
@@ -152,16 +150,7 @@ impl<
     pub fn FromSubContainerResolve_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactorySubContainerBinder_6<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TContract,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TParam5, TContract>,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -181,31 +170,20 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactorySubContainerBinder_6<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TContract,
         > = __cordl_object.invoke("FromSubContainerResolve", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromSubContainerResolve_Il2CppObject1(
+    pub fn FromSubContainerResolve_Gc1(
         &mut self,
         subIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactorySubContainerBinder_6<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TContract,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TParam5, TContract>,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -225,14 +203,12 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactorySubContainerBinder_6<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TContract,
         > = __cordl_object.invoke("FromSubContainerResolve", (subIdentifier))?;
         Ok(__cordl_ret.into())
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Asn1SignatureFactory {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub algID: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
     >,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1SignatureFactory")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,19 +50,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
         > = __cordl_object.invoke("CreateCalculator", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString_AsymmetricKeyParameter0(
-        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        privateKey: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, privateKey))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SecureRandom1(
+    pub fn New_Gc1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -77,21 +65,19 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
             .invoke_void(".ctor", (algorithm, privateKey, random))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppString_AsymmetricKeyParameter0(
-        &mut self,
+    pub fn New_Gc_Gc0(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (algorithm, privateKey))?;
-        Ok(__cordl_ret.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, privateKey))?;
+        Ok(__cordl_object.into())
     }
-    pub fn _ctor_SecureRandom1(
+    pub fn _ctor_Gc1(
         &mut self,
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         privateKey: quest_hook::libil2cpp::Gc<
@@ -106,6 +92,20 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (algorithm, privateKey, random))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc0(
+        &mut self,
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        privateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (algorithm, privateKey))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_AlgorithmDetails(
@@ -142,16 +142,26 @@ for crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1SignatureFactory")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::ISignatureFactory>
-for crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ISignatureFactory {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISignatureFactory>,
+> for crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1SignatureFactory")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::ISignatureFactory>
-for crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ISignatureFactory {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISignatureFactory>,
+> for crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

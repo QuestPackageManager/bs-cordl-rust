@@ -47,7 +47,9 @@ impl crate::Mono::SafeStringMarshal {
         Ok(__cordl_ret.into())
     }
     pub fn StringToUtf8_icall(
-        str: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        str: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("StringToUtf8_icall", (str))?;
@@ -74,14 +76,16 @@ impl crate::Mono::SafeStringMarshal {
     }
 }
 #[cfg(feature = "Mono+SafeStringMarshal")]
-impl AsRef<crate::System::IDisposable> for crate::Mono::SafeStringMarshal {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::Mono::SafeStringMarshal {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }
 #[cfg(feature = "Mono+SafeStringMarshal")]
-impl AsMut<crate::System::IDisposable> for crate::Mono::SafeStringMarshal {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::Mono::SafeStringMarshal {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         todo!()
     }
 }

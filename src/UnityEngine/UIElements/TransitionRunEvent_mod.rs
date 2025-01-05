@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TransitionRunEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::TransitionEventBase_1<
-        *mut crate::UnityEngine::UIElements::TransitionRunEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionRunEvent>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionRunEvent")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TransitionRunEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TransitionRunEvent {
-    type Target = crate::UnityEngine::UIElements::TransitionEventBase_1<
-        *mut crate::UnityEngine::UIElements::TransitionRunEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionRunEvent>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECDHPublicBcpgKey {
-    __cordl_parent: crate::Org::BouncyCastle::Bcpg::ECPublicBcpgKey,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::ECPublicBcpgKey,
+    >,
     pub reserved: u8,
     pub hashFunctionId: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
     pub symAlgorithmId: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+ECDHPublicBcpgKey")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::ECDHPublicBcpgKey {
-    type Target = crate::Org::BouncyCastle::Bcpg::ECPublicBcpgKey;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::ECPublicBcpgKey,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +44,7 @@ impl crate::Org::BouncyCastle::Bcpg::ECDHPublicBcpgKey {
             .invoke("Encode", (bcpgOut))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_BcpgInputStream0(
+    pub fn New_Gc0(
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
         >,
@@ -51,7 +55,7 @@ impl crate::Org::BouncyCastle::Bcpg::ECDHPublicBcpgKey {
             .invoke_void(".ctor", (bcpgIn))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DerObjectIdentifier_ECPoint_HashAlgorithmTag_SymmetricKeyAlgorithmTag1(
+    pub fn New_Gc_HashAlgorithmTag_SymmetricKeyAlgorithmTag1(
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -85,7 +89,7 @@ impl crate::Org::BouncyCastle::Bcpg::ECDHPublicBcpgKey {
             .invoke("VerifySymmetricKeyAlgorithm", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BcpgInputStream0(
+    pub fn _ctor_Gc0(
         &mut self,
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
@@ -98,7 +102,7 @@ impl crate::Org::BouncyCastle::Bcpg::ECDHPublicBcpgKey {
             .invoke(".ctor", (bcpgIn))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerObjectIdentifier_ECPoint_HashAlgorithmTag_SymmetricKeyAlgorithmTag1(
+    pub fn _ctor_Gc_HashAlgorithmTag_SymmetricKeyAlgorithmTag1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,

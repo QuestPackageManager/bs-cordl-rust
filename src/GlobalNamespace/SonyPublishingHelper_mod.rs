@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyPublishingHelper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "SonyPublishingHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SonyPublishingHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyPublishingHelper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,19 +56,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetContentId_Il2CppString_Il2CppString1(
-        serviceId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        productLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetContentId", (serviceId, productLabel))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetContentId_SonyPublisherSKUSettingsSO0(
+    pub fn GetContentId_Gc0(
         sonyPublisherSKUSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
         >,
@@ -79,6 +67,18 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetContentId", (sonyPublisherSKUSettings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetContentId_Gc1(
+        serviceId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        productLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetContentId", (serviceId, productLabel))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetNpTitleId(

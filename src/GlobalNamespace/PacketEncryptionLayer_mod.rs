@@ -2,21 +2,23 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PacketEncryptionLayer {
-    __cordl_parent: crate::LiteNetLib::Layers::PacketLayerBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::Layers::PacketLayerBase,
+    >,
     pub statistics: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics,
     >,
     pub _taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     pub _encryptionStates: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ExpiringDictionary_2<
-            *mut crate::System::Net::IPEndPoint,
-            *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
         >,
     >,
     pub _pendingEncryptionStates: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ExpiringDictionary_2<
-            *mut crate::System::Net::IPAddress,
-            *mut crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList,
+        quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList,
         >,
     >,
     pub _unencryptedTrafficFilter: quest_hook::libil2cpp::Gc<
@@ -32,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PacketEncryptionLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::PacketEncryptionLayer {
-    type Target = crate::LiteNetLib::Layers::PacketLayerBase;
+    type Target = quest_hook::libil2cpp::Gc<crate::LiteNetLib::Layers::PacketLayerBase>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,8 +92,8 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         isClient: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
             >,
         >,
     > {
@@ -99,8 +101,8 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
             >,
         > = __cordl_object
             .invoke(
@@ -177,7 +179,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         &mut self,
         remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         length: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -193,7 +195,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         &mut self,
         remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         length: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -213,7 +215,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         &mut self,
         remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         length: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -229,7 +231,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         &mut self,
         remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         length: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -300,7 +302,9 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         &mut self,
         endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         state: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -314,7 +318,9 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         &mut self,
         endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         state: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -328,8 +334,12 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         &mut self,
         endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         encryptionStates: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -409,7 +419,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PacketEncryptionLayer_EncryptionStatistics {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _packetsReceivedPlaintext: i64,
     pub _packetsReceivedEncrypted: i64,
     pub _packetsReceivedRejected: i64,
@@ -428,7 +438,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -624,11 +634,11 @@ for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PacketEncryptionLayer_PendingEncryptionStateList {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _pendingStatesByPort: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+        i32,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
         >,
     >,
 }
@@ -641,7 +651,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -685,7 +695,9 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                >,
             >,
         >,
     > {
@@ -694,7 +706,9 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                >,
             >,
         > = __cordl_object.invoke("GetSortedEncryptionStates", (port))?;
         Ok(__cordl_ret.into())
@@ -706,7 +720,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Remove_EncryptionUtility_IEncryptionState1(
+    pub fn Remove_Gc1(
         &mut self,
         port: i32,
         encryptionState: quest_hook::libil2cpp::Gc<
@@ -731,7 +745,9 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
         &mut self,
         port: i32,
         encryptionState: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -770,16 +786,16 @@ for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
     }
 }
 #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

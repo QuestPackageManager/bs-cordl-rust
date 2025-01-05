@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ControllerProfilesSaveData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub version: i32,
     pub profiles: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatSaber::GameSettings::ControllerProfileSaveData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllerProfileSaveData,
+            >,
         >,
     >,
 }
@@ -18,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesSaveData")]
 impl std::ops::Deref for crate::BeatSaber::GameSettings::ControllerProfilesSaveData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,8 +35,8 @@ impl std::ops::DerefMut for crate::BeatSaber::GameSettings::ControllerProfilesSa
 impl crate::BeatSaber::GameSettings::ControllerProfilesSaveData {
     pub fn New(
         profiles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::BeatSaber::GameSettings::ControllerProfileSaveData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllerProfileSaveData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -47,8 +49,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesSaveData {
     pub fn _ctor(
         &mut self,
         profiles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::BeatSaber::GameSettings::ControllerProfileSaveData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllerProfileSaveData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

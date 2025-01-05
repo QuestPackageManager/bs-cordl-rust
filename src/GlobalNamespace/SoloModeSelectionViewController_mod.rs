@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SoloModeSelectionViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _freePlayModeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _oneSaberModeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _noArrowsModeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _dismissButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            *mut crate::GlobalNamespace::SoloModeSelectionViewController,
-            crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SoloModeSelectionViewController,
         >,
+        crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
     >,
 }
 #[cfg(feature = "SoloModeSelectionViewController")]
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SoloModeSelectionViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SoloModeSelectionViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,10 +123,10 @@ impl crate::GlobalNamespace::SoloModeSelectionViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::SoloModeSelectionViewController,
-                crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SoloModeSelectionViewController,
             >,
+            crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -139,10 +139,10 @@ impl crate::GlobalNamespace::SoloModeSelectionViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::GlobalNamespace::SoloModeSelectionViewController,
-                crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SoloModeSelectionViewController,
             >,
+            crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

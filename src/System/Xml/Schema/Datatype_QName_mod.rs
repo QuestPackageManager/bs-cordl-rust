@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_QName {
-    __cordl_parent: crate::System::Xml::Schema::Datatype_anySimpleType,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Datatype_anySimpleType,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_QName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Datatype_QName")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_QName {
-    type Target = crate::System::Xml::Schema::Datatype_anySimpleType;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Datatype_anySimpleType,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +55,7 @@ impl crate::System::Xml::Schema::Datatype_QName {
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         nsmgr: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
         typedValue: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatAvatarPoseController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _headTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _leftHandTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _rightHandTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+BeatAvatarPoseController")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::BeatAvatarPoseController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_untypedAtomicType {
-    __cordl_parent: crate::System::Xml::Schema::Datatype_anyAtomicType,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Datatype_anyAtomicType,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_untypedAtomicType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Datatype_untypedAtomicType")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_untypedAtomicType {
-    type Target = crate::System::Xml::Schema::Datatype_anyAtomicType;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Datatype_anyAtomicType,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

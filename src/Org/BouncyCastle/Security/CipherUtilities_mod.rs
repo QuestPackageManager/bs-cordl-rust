@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CipherUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::CipherUtilities {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
             .invoke("GetAlgorithmName", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCipher_DerObjectIdentifier0(
+    pub fn GetCipher_Gc0(
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -66,7 +66,7 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetCipher", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCipher_Il2CppString1(
+    pub fn GetCipher_Gc1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBufferedCipher>,

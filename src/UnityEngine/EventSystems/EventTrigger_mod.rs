@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventTrigger {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub m_Delegates: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::EventTrigger_Entry>,
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::EventTrigger {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -289,8 +287,8 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::EventTrigger_Entry,
             >,
         >,
     > {
@@ -298,8 +296,8 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::EventTrigger_Entry,
             >,
         > = __cordl_object.invoke("get_delegates", ())?;
         Ok(__cordl_ret.into())
@@ -308,8 +306,8 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::EventTrigger_Entry,
             >,
         >,
     > {
@@ -317,8 +315,8 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::EventTrigger_Entry,
             >,
         > = __cordl_object.invoke("get_triggers", ())?;
         Ok(__cordl_ret.into())
@@ -326,8 +324,8 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
     pub fn set_delegates(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::EventTrigger_Entry,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -341,8 +339,8 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
     pub fn set_triggers(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::EventTrigger_Entry,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -365,260 +363,396 @@ for crate::UnityEngine::EventSystems::EventTrigger {
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IBeginDragHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IBeginDragHandler {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IBeginDragHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IBeginDragHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IBeginDragHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IBeginDragHandler {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IBeginDragHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IBeginDragHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::ICancelHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ICancelHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::ICancelHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ICancelHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IDeselectHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDeselectHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IDeselectHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDeselectHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IDragHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDragHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IDragHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDragHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IDropHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDropHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IDropHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDropHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IEndDragHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEndDragHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IEndDragHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEndDragHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler>>
 for crate::UnityEngine::EventSystems::EventTrigger {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler>>
 for crate::UnityEngine::EventSystems::EventTrigger {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::ICancelHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IMoveHandler>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler>>
 for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IMoveHandler {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IMoveHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IMoveHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerDownHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerDownHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerDownHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerDownHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerExitHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerExitHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerExitHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerExitHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IPointerUpHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerUpHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IPointerUpHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerUpHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IScrollHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IScrollHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IScrollHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IScrollHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::ISelectHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISelectHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::ISelectHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISelectHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::ISubmitHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISubmitHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISubmitHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsRef<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>
-for crate::UnityEngine::EventSystems::EventTrigger {
-    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-impl AsMut<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler>>
 for crate::UnityEngine::EventSystems::EventTrigger {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IDeselectHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDropHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDropHandler> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDropHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDropHandler> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEndDragHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEndDragHandler> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEndDragHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEndDragHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IEventSystemHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+    >,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+    >,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerClickHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerClickHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerDownHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerDownHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerDownHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerDownHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerEnterHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerEnterHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerExitHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerExitHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerUpHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerUpHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerUpHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IPointerUpHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IScrollHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IScrollHandler> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IScrollHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IScrollHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::ISelectHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::ISubmitHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>,
+> for crate::UnityEngine::EventSystems::EventTrigger {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -626,7 +760,7 @@ for crate::UnityEngine::EventSystems::EventTrigger {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventTrigger_Entry {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub eventID: crate::UnityEngine::EventSystems::EventTriggerType,
     pub callback: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent,
@@ -639,7 +773,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+Entry")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::EventTrigger_Entry {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -684,8 +818,8 @@ for crate::UnityEngine::EventSystems::EventTrigger_Entry {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventTrigger_TriggerEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::EventSystems::BaseEventData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseEventData>,
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+TriggerEvent")]
@@ -696,8 +830,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+TriggerEvent")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::EventSystems::BaseEventData,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseEventData>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ViewController {
-    __cordl_parent: crate::HMUI::ViewControllerBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewControllerBase>,
     pub _buttonBinder_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::HMUI::ButtonBinder,
     >,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ViewController")]
 impl std::ops::Deref for crate::HMUI::ViewController {
-    type Target = crate::HMUI::ViewControllerBase;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewControllerBase>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

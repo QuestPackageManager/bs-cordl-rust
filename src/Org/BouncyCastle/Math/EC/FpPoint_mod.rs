@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FpPoint {
-    __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractFpPoint,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractFpPoint,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+FpPoint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+FpPoint")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::FpPoint {
-    type Target = crate::Org::BouncyCastle::Math::EC::AbstractFpPoint;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractFpPoint,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -158,7 +162,7 @@ impl crate::Org::BouncyCastle::Math::EC::FpPoint {
         > = __cordl_object.invoke("Negate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_ECCurve_ECFieldElement_ECFieldElement0(
+    pub fn New_Gc_Gc_Gc0(
         curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
@@ -169,13 +173,15 @@ impl crate::Org::BouncyCastle::Math::EC::FpPoint {
             .invoke_void(".ctor", (curve, x, y))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray__cordl_bool2(
+    pub fn New_Gc__cordl_bool2(
         curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         zs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                >,
             >,
         >,
         withCompression: bool,
@@ -294,7 +300,7 @@ impl crate::Org::BouncyCastle::Math::EC::FpPoint {
         > = __cordl_object.invoke("Two", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ECCurve_ECFieldElement_ECFieldElement0(
+    pub fn _ctor_Gc_Gc_Gc0(
         &mut self,
         curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
@@ -307,14 +313,16 @@ impl crate::Org::BouncyCastle::Math::EC::FpPoint {
             .invoke(".ctor", (curve, x, y))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray__cordl_bool2(
+    pub fn _ctor_Gc__cordl_bool2(
         &mut self,
         curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         zs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                >,
             >,
         >,
         withCompression: bool,

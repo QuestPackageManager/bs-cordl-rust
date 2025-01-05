@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MoveInDirectionEffect {
-    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    >,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _moveOrigin: crate::UnityEngine::Vector3,
     pub _moveScale: f32,
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MoveInDirectionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::MoveInDirectionEffect {
-    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

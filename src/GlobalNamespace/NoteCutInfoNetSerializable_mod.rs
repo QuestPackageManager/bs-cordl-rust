@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutInfoNetSerializable {
-    __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PoolableSerializable,
+    >,
     pub saberSpeed: f32,
     pub cutWasOk: bool,
     pub saberDir: crate::GlobalNamespace::Vector3Serializable,
@@ -26,7 +28,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteCutInfoNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutInfoNetSerializable {
-    type Target = crate::GlobalNamespace::PoolableSerializable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PoolableSerializable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +54,7 @@ impl crate::GlobalNamespace::NoteCutInfoNetSerializable {
             .invoke("Deserialize", (reader))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_ByRefMut_NoteData_Quaternion_Vector3_0(
+    pub fn Init_ByRefMut_Gc_Quaternion_Vector3_0(
         &mut self,
         noteCutInfo: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::NoteCutInfo,

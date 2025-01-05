@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActivationPlayableAsset {
-    __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableAsset,
+    >,
 }
 #[cfg(feature = "UnityEngine+Timeline+ActivationPlayableAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+ActivationPlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ActivationPlayableAsset {
-    type Target = crate::UnityEngine::Playables::PlayableAsset;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableAsset,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -75,16 +79,22 @@ for crate::UnityEngine::Timeline::ActivationPlayableAsset {
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+ActivationPlayableAsset")]
-impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
 for crate::UnityEngine::Timeline::ActivationPlayableAsset {
-    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+ActivationPlayableAsset")]
-impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
 for crate::UnityEngine::Timeline::ActivationPlayableAsset {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::ITimelineClipAsset,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

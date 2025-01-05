@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorTMPTextStateTransition {
-    __cordl_parent: crate::GlobalNamespace::ColorStateTransition_1<
-        *mut crate::TMPro::TMP_Text,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     >,
     pub _colorTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
 }
@@ -14,8 +14,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColorTMPTextStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorTMPTextStateTransition {
-    type Target = crate::GlobalNamespace::ColorStateTransition_1<
-        *mut crate::TMPro::TMP_Text,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

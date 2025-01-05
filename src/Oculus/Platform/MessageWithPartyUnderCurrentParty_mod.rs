@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithPartyUnderCurrentParty {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::Party,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Party>,
     >,
 }
 #[cfg(feature = "Oculus+Platform+MessageWithPartyUnderCurrentParty")]
@@ -14,8 +14,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+MessageWithPartyUnderCurrentParty")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithPartyUnderCurrentParty {
-    type Target = crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::Party,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Party>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

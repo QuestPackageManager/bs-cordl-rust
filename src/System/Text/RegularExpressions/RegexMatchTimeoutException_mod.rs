@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexMatchTimeoutException {
-    __cordl_parent: crate::System::TimeoutException,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::TimeoutException>,
     pub _Input_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Text+RegularExpressions+RegexMatchTimeoutException")]
 impl std::ops::Deref
 for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
-    type Target = crate::System::TimeoutException;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::TimeoutException>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +41,7 @@ impl crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString_TimeSpan0(
+    pub fn New_Gc_Gc_TimeSpan0(
         regexInput: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         regexPattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         matchTimeout: crate::System::TimeSpan,
@@ -52,7 +52,7 @@ impl crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
             .invoke_void(".ctor", (regexInput, regexPattern, matchTimeout))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext2(
+    pub fn New_Gc_StreamingContext2(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -91,7 +91,7 @@ impl crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString_TimeSpan0(
+    pub fn _ctor_Gc_Gc_TimeSpan0(
         &mut self,
         regexInput: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         regexPattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -104,7 +104,7 @@ impl crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
             .invoke(".ctor", (regexInput, regexPattern, matchTimeout))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext2(
+    pub fn _ctor_Gc_StreamingContext2(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -166,16 +166,26 @@ for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexMatchTimeoutException")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexMatchTimeoutException")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

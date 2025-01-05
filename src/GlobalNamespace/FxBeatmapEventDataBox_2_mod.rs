@@ -5,11 +5,11 @@ pub struct FxBeatmapEventDataBox_2<
     TIn: quest_hook::libil2cpp::Type,
     TOut: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
-    pub _beatStep: f32,
-    pub _fxBaseDataList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapEventDataBox,
     >,
+    pub _beatStep: f32,
+    pub _fxBaseDataList: quest_hook::libil2cpp::Gc<TIn>,
     __cordl_phantom_TIn: std::marker::PhantomData<TIn>,
     __cordl_phantom_TOut: std::marker::PhantomData<TOut>,
 }
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "FxBeatmapEventDataBox_2")]
 impl<TIn: quest_hook::libil2cpp::Type, TOut: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::FxBeatmapEventDataBox_2<TIn, TOut> {
-    type Target = crate::GlobalNamespace::BeatmapEventDataBox;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBox>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,9 +72,7 @@ impl<
         eventDistributionParam: f32,
         eventDistributionShouldAffectFirstBaseEvent: bool,
         eventDistributionEaseType: crate::GlobalNamespace::EaseType,
-        fxBaseDataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
-        >,
+        fxBaseDataList: quest_hook::libil2cpp::Gc<TIn>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TIn: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -115,9 +113,7 @@ impl<
             crate::GlobalNamespace::IBeatmapLightEventConverter,
         >,
         output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::BeatmapEventData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -155,9 +151,7 @@ impl<
         eventDistributionParam: f32,
         eventDistributionShouldAffectFirstBaseEvent: bool,
         eventDistributionEaseType: crate::GlobalNamespace::EaseType,
-        fxBaseDataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
-        >,
+        fxBaseDataList: quest_hook::libil2cpp::Gc<TIn>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TIn: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

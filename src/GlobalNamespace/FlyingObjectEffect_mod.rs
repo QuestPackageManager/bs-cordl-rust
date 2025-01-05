@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingObjectEffect {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _moveAnimationCurve: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AnimationCurve,
     >,
@@ -20,8 +20,8 @@ pub struct FlyingObjectEffect {
     pub _duration: f32,
     pub _shake: bool,
     pub _didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LazyCopyHashSet_1<
-            *mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
         >,
     >,
 }
@@ -32,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FlyingObjectEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingObjectEffect {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,8 +101,8 @@ impl crate::GlobalNamespace::FlyingObjectEffect {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                *mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
             >,
         >,
     > {
@@ -110,8 +110,8 @@ impl crate::GlobalNamespace::FlyingObjectEffect {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                *mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
             >,
         > = __cordl_object.invoke("get_didFinishEvent", ())?;
         Ok(__cordl_ret.into())

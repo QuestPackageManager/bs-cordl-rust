@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextStyleSheet {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub m_StyleList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::TextCore::Text::TextStyle,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
     >,
     pub m_StyleLookupDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            *mut crate::UnityEngine::TextCore::Text::TextStyle,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
     >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextStyleSheet")]
@@ -22,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+TextStyleSheet")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextStyleSheet {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +31,7 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextStyleSheet {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextStyleSheet")]
 impl crate::UnityEngine::TextCore::Text::TextStyleSheet {
-    pub fn GetStyle_Il2CppString1(
+    pub fn GetStyle_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -114,18 +110,14 @@ impl crate::UnityEngine::TextCore::Text::TextStyleSheet {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::TextStyle,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::TextCore::Text::TextStyle,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
         > = __cordl_object.invoke("get_styles", ())?;
         Ok(__cordl_ret.into())
     }

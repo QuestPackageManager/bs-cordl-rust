@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Mirror {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _mirrorRenderer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MirrorRendererSO,
     >,
@@ -10,9 +10,7 @@ pub struct Mirror {
     pub _mirrorMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _noMirrorMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _isEnabled_k__BackingField: bool,
-    pub mirrorDidChangeEnabledStateEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<bool>,
-    >,
+    pub mirrorDidChangeEnabledStateEvent: quest_hook::libil2cpp::Gc<bool>,
 }
 #[cfg(feature = "Mirror")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -20,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mirror")]
 impl std::ops::Deref for crate::GlobalNamespace::Mirror {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -83,7 +81,7 @@ impl crate::GlobalNamespace::Mirror {
     }
     pub fn add_mirrorDidChangeEnabledStateEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -125,7 +123,7 @@ impl crate::GlobalNamespace::Mirror {
     }
     pub fn remove_mirrorDidChangeEnabledStateEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

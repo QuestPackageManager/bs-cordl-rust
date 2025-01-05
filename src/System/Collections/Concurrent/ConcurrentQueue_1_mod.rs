@@ -2,16 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConcurrentQueue_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _crossSegmentLock: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
     >,
-    pub _tail: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
-    >,
-    pub _head: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
-    >,
+    pub _tail: quest_hook::libil2cpp::Gc<T>,
+    pub _head: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
@@ -23,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,17 +87,11 @@ impl<
     }
     pub fn Enumerate(
         &mut self,
-        head: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
-        >,
+        head: quest_hook::libil2cpp::Gc<T>,
         headHead: i32,
-        tail: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
-        >,
+        tail: quest_hook::libil2cpp::Gc<T>,
         tailTail: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -109,19 +99,14 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<T>,
-        > = __cordl_object.invoke("Enumerate", (head, headHead, tail, tailTail))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
+            .invoke("Enumerate", (head, headHead, tail, tailTail))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCount_ConcurrentQueue_1_Segment_i32_1(
-        head: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
-        >,
+    pub fn GetCount_Gc_i32_1(
+        head: quest_hook::libil2cpp::Gc<T>,
         headHead: i32,
-        tail: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
-        >,
+        tail: quest_hook::libil2cpp::Gc<T>,
         tailTail: i32,
     ) -> quest_hook::libil2cpp::Result<i64>
     where
@@ -133,9 +118,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn GetCount_i32_0(
-        s: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
-        >,
+        s: quest_hook::libil2cpp::Gc<T>,
         head: i32,
         tail: i32,
     ) -> quest_hook::libil2cpp::Result<i32>
@@ -149,9 +132,7 @@ impl<
     }
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -159,16 +140,13 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<T>,
-        > = __cordl_object.invoke("GetEnumerator", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
+            .invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetItemWhenAvailable(
         &mut self,
-        segment: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
-        >,
+        segment: quest_hook::libil2cpp::Gc<T>,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -195,13 +173,9 @@ impl<
     }
     pub fn SnapForObservation(
         &mut self,
-        head: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
-        >,
+        head: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
         headHead: quest_hook::libil2cpp::ByRefMut<i32>,
-        tail: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
-        >,
+        tail: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
         tailTail: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -395,90 +369,88 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
     }
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Concurrent::IProducerConsumerCollection_1<T>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Concurrent::IProducerConsumerCollection_1<T> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Concurrent::IProducerConsumerCollection_1<T>>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
 for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Concurrent::IProducerConsumerCollection_1<T> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
-for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<T>>
-for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<T>>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
 for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::ICollection>
-for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::ICollection {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::ICollection>
-for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
-for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
-for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -486,7 +458,7 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConcurrentQueue_1_Segment<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _slots: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             crate::System::Collections::Concurrent::Segment_ConcurrentQueue_1_Slot<T>,
@@ -496,9 +468,7 @@ pub struct ConcurrentQueue_1_Segment<T: quest_hook::libil2cpp::Type> {
     pub _headAndTail: crate::System::Collections::Concurrent::PaddedHeadAndTail,
     pub _preservedForObservation: bool,
     pub _frozenForEnqueues: bool,
-    pub _nextSegment: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
-    >,
+    pub _nextSegment: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+Segment")]
@@ -510,7 +480,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+Segment")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

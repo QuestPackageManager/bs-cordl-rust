@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskSchedulerAwaitTaskContinuation {
-    __cordl_parent: crate::System::Threading::Tasks::AwaitTaskContinuation,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::AwaitTaskContinuation,
+    >,
     pub m_scheduler: quest_hook::libil2cpp::Gc<
         crate::System::Threading::Tasks::TaskScheduler,
     >,
@@ -16,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
 impl std::ops::Deref
 for crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
-    type Target = crate::System::Threading::Tasks::AwaitTaskContinuation;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::AwaitTaskContinuation,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -6,7 +6,9 @@ pub struct ParamsArray {
     pub _arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _args: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
 }
 #[cfg(feature = "System+ParamsArray")]
@@ -36,20 +38,7 @@ impl crate::System::ParamsArray {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetAtSlow", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray3(
-        &mut self,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (args),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppObject0(
+    pub fn _ctor_Gc0(
         &mut self,
         arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -60,7 +49,7 @@ impl crate::System::ParamsArray {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject_Il2CppObject1(
+    pub fn _ctor_Gc1(
         &mut self,
         arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -72,7 +61,22 @@ impl crate::System::ParamsArray {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject_Il2CppObject_Il2CppObject2(
+    pub fn _ctor_Gc3(
+        &mut self,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (args),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

@@ -2,25 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VerticalVirtualizationController_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::CollectionVirtualizationController,
-    pub m_Pool: quest_hook::libil2cpp::Gc<crate::UnityEngine::Pool::ObjectPool_1<T>>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::CollectionVirtualizationController,
+    >,
+    pub m_Pool: quest_hook::libil2cpp::Gc<T>,
     pub m_CollectionView: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::BaseVerticalCollectionView,
     >,
-    pub m_ActiveItems: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<T>,
-    >,
+    pub m_ActiveItems: quest_hook::libil2cpp::Gc<T>,
     pub m_DraggedItem: T,
     pub m_LastFocusedElementIndex: i32,
-    pub m_LastFocusedElementTreeChildIndexes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub m_VisibleItemPredicateDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<T, bool>,
-    >,
-    pub m_ScrollInsertionList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<T>,
-    >,
+    pub m_LastFocusedElementTreeChildIndexes: quest_hook::libil2cpp::Gc<i32>,
+    pub m_VisibleItemPredicateDelegate: quest_hook::libil2cpp::Gc<T, bool>,
+    pub m_ScrollInsertionList: quest_hook::libil2cpp::Gc<T>,
     pub m_EmptyRows: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -35,7 +29,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+VerticalVirtualizationController_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::VerticalVirtualizationController_1<T> {
-    type Target = crate::UnityEngine::UIElements::CollectionVirtualizationController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::CollectionVirtualizationController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -286,8 +282,8 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ReusableCollectionItem,
             >,
         >,
     >
@@ -299,8 +295,8 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ReusableCollectionItem,
             >,
         > = __cordl_object.invoke("get_activeItems", ())?;
         Ok(__cordl_ret.into())

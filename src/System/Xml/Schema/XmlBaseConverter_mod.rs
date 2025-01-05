@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlBaseConverter {
-    __cordl_parent: crate::System::Xml::Schema::XmlValueConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlValueConverter,
+    >,
     pub schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
     pub typeCode: crate::System::Xml::Schema::XmlTypeCode,
     pub clrTypeDefault: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlBaseConverter")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlBaseConverter {
-    type Target = crate::System::Xml::Schema::XmlValueConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlValueConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -96,7 +100,7 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         > = __cordl_object.invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ChangeType_Il2CppObject7(
+    pub fn ChangeType_Gc7(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         destinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -111,7 +115,7 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         > = __cordl_object.invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ChangeType_Il2CppString_IXmlNamespaceResolver6(
+    pub fn ChangeType_Gc_Gc6(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         destinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -443,7 +447,16 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke("IsDerivedFrom", (derivedType, baseType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_XmlBaseConverter2(
+    pub fn New_Gc0(
+        schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (schemaType))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc2(
         converterAtomic: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlBaseConverter,
         >,
@@ -454,7 +467,7 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke_void(".ctor", (converterAtomic))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XmlBaseConverter_Type3(
+    pub fn New_Gc_Gc3(
         converterAtomic: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlBaseConverter,
         >,
@@ -466,15 +479,6 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke_void(".ctor", (converterAtomic, clrTypeDefault))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XmlSchemaType0(
-        schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (schemaType))?;
-        Ok(__cordl_object.into())
-    }
     pub fn New_XmlTypeCode1(
         typeCode: crate::System::Xml::Schema::XmlTypeCode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -484,7 +488,18 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke_void(".ctor", (typeCode))?;
         Ok(__cordl_object.into())
     }
-    pub fn QNameToString_IXmlNamespaceResolver1(
+    pub fn QNameToString_Gc0(
+        name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QNameToString", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn QNameToString_Gc1(
         qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
         nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
     ) -> quest_hook::libil2cpp::Result<
@@ -494,17 +509,6 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("QNameToString", (qname, nsResolver))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn QNameToString_XmlQualifiedName0(
-        name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("QNameToString", (name))?;
         Ok(__cordl_ret.into())
     }
     pub fn StringToBase64Binary(
@@ -706,9 +710,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         let __cordl_ret: bool = __cordl_object.invoke("ToBoolean", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToBoolean_Il2CppObject5(
+    pub fn ToBoolean_Gc4(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -716,9 +720,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         let __cordl_ret: bool = __cordl_object.invoke("ToBoolean", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToBoolean_Il2CppString4(
+    pub fn ToBoolean_Gc5(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -767,9 +771,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke("ToDateTimeOffset", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDateTimeOffset_Il2CppObject2(
+    pub fn ToDateTimeOffset_Gc1(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -778,9 +782,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke("ToDateTimeOffset", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDateTimeOffset_Il2CppString1(
+    pub fn ToDateTimeOffset_Gc2(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -800,9 +804,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke("ToDateTime", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDateTime_Il2CppObject6(
+    pub fn ToDateTime_Gc5(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -811,9 +815,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke("ToDateTime", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDateTime_Il2CppString5(
+    pub fn ToDateTime_Gc6(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -866,9 +870,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke("ToDateTime", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDecimal_Il2CppObject1(
+    pub fn ToDecimal_Gc0(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -877,9 +881,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke("ToDecimal", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDecimal_Il2CppString0(
+    pub fn ToDecimal_Gc1(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -898,9 +902,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         let __cordl_ret: f64 = __cordl_object.invoke("ToDouble", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDouble_Il2CppObject5(
+    pub fn ToDouble_Gc4(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -908,9 +912,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         let __cordl_ret: f64 = __cordl_object.invoke("ToDouble", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDouble_Il2CppString4(
+    pub fn ToDouble_Gc5(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -952,9 +956,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         let __cordl_ret: i32 = __cordl_object.invoke("ToInt32", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt32_Il2CppObject5(
+    pub fn ToInt32_Gc4(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -962,9 +966,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         let __cordl_ret: i32 = __cordl_object.invoke("ToInt32", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt32_Il2CppString4(
+    pub fn ToInt32_Gc5(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1006,9 +1010,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         let __cordl_ret: i64 = __cordl_object.invoke("ToInt64", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt64_Il2CppObject5(
+    pub fn ToInt64_Gc4(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1016,9 +1020,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         let __cordl_ret: i64 = __cordl_object.invoke("ToInt64", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt64_Il2CppString4(
+    pub fn ToInt64_Gc5(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1050,9 +1054,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         let __cordl_ret: i64 = __cordl_object.invoke("ToInt64", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToSingle_Il2CppObject2(
+    pub fn ToSingle_Gc1(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1060,9 +1064,9 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         let __cordl_ret: f32 = __cordl_object.invoke("ToSingle", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToSingle_Il2CppString1(
+    pub fn ToSingle_Gc2(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1119,7 +1123,7 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         > = __cordl_object.invoke("ToString", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppObject9(
+    pub fn ToString_Gc9(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1133,7 +1137,7 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         > = __cordl_object.invoke("ToString", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppObject_IXmlNamespaceResolver8(
+    pub fn ToString_Gc_Gc8(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
@@ -1243,7 +1247,18 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke("YearMonthDurationToString", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XmlBaseConverter2(
+    pub fn _ctor_Gc0(
+        &mut self,
+        schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (schemaType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc2(
         &mut self,
         converterAtomic: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlBaseConverter,
@@ -1256,7 +1271,7 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke(".ctor", (converterAtomic))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XmlBaseConverter_Type3(
+    pub fn _ctor_Gc_Gc3(
         &mut self,
         converterAtomic: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlBaseConverter,
@@ -1268,17 +1283,6 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (converterAtomic, clrTypeDefault))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_XmlSchemaType0(
-        &mut self,
-        schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (schemaType))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_XmlTypeCode1(

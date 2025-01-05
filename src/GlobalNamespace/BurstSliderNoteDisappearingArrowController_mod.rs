@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstSliderNoteDisappearingArrowController {
-    __cordl_parent: crate::GlobalNamespace::DisappearingArrowControllerBase_1<
-        *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
     >,
     pub _burstSliderNoteController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BurstSliderGameNoteController,
@@ -18,8 +18,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
-    type Target = crate::GlobalNamespace::DisappearingArrowControllerBase_1<
-        *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

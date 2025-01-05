@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stats {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Unity+XR+Oculus+Stats")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+Oculus+Stats")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Stats {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,7 +79,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::Stats {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stats_AdaptivePerformance {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Unity+XR+Oculus+Stats+AdaptivePerformance")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -88,7 +88,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+Oculus+Stats+AdaptivePerformance")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -166,7 +166,7 @@ for crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stats_AppMetrics {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Unity+XR+Oculus+Stats+AppMetrics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -175,7 +175,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+Oculus+Stats+AppMetrics")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Stats_AppMetrics {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -244,7 +244,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::Stats_AppMe
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stats_PerfMetrics {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Unity+XR+Oculus+Stats+PerfMetrics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -253,7 +253,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+Oculus+Stats+PerfMetrics")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Stats_PerfMetrics {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

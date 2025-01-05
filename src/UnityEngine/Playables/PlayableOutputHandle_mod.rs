@@ -56,7 +56,7 @@ impl crate::UnityEngine::Playables::PlayableOutputHandle {
             .invoke("CompareVersion", (lhs, rhs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -313,11 +313,11 @@ impl crate::UnityEngine::Playables::PlayableOutputHandle {
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableOutputHandle")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::Playables::PlayableOutputHandle>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableOutputHandle>,
 > for crate::UnityEngine::Playables::PlayableOutputHandle {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Playables::PlayableOutputHandle,
     > {
         todo!()
@@ -325,11 +325,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableOutputHandle")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::Playables::PlayableOutputHandle>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableOutputHandle>,
 > for crate::UnityEngine::Playables::PlayableOutputHandle {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Playables::PlayableOutputHandle,
     > {
         todo!()

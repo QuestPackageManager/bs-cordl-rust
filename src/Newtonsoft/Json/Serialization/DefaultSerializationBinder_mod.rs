@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultSerializationBinder {
-    __cordl_parent: crate::System::Runtime::Serialization::SerializationBinder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationBinder,
+    >,
     pub _typeCache: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
-            crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
-            *mut crate::System::Type,
+        crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultSerializationBinder")]
@@ -22,7 +22,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultSerializationBinder")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
-    type Target = crate::System::Runtime::Serialization::SerializationBinder;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationBinder,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,10 +42,10 @@ impl crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
         &mut self,
         serializedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         assemblyName: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         typeName: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -80,8 +82,8 @@ impl crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
     pub fn GetTypeByName(
         &mut self,
         typeNameKey: crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -94,8 +96,8 @@ impl crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
     pub fn GetTypeFromTypeNameKey(
         &mut self,
         typeNameKey: crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -134,18 +136,30 @@ for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultSerializationBinder")]
-impl AsRef<crate::Newtonsoft::Json::Serialization::ISerializationBinder>
-for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
-    fn as_ref(&self) -> &crate::Newtonsoft::Json::Serialization::ISerializationBinder {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ISerializationBinder,
+    >,
+> for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ISerializationBinder,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultSerializationBinder")]
-impl AsMut<crate::Newtonsoft::Json::Serialization::ISerializationBinder>
-for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ISerializationBinder,
+    >,
+> for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Newtonsoft::Json::Serialization::ISerializationBinder {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ISerializationBinder,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

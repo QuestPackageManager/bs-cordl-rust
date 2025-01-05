@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusDeeplinkManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub didReceiveDeeplinkEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::Deeplink>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
     >,
     pub _currentDeeplink: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
     pub _oculusPlatformWasInitialized: bool,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusDeeplinkManager")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusDeeplinkManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,8 +77,8 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
     pub fn SetJoinIntentReceivedNotificationCallback(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                *mut crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
     pub fn add_didReceiveDeeplinkEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::Deeplink>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -143,7 +143,7 @@ impl crate::GlobalNamespace::OculusDeeplinkManager {
     pub fn remove_didReceiveDeeplinkEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::Deeplink>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -165,16 +165,20 @@ for crate::GlobalNamespace::OculusDeeplinkManager {
     }
 }
 #[cfg(feature = "OculusDeeplinkManager")]
-impl AsRef<crate::GlobalNamespace::IDeeplinkManager>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDeeplinkManager>>
 for crate::GlobalNamespace::OculusDeeplinkManager {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IDeeplinkManager {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDeeplinkManager> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusDeeplinkManager")]
-impl AsMut<crate::GlobalNamespace::IDeeplinkManager>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDeeplinkManager>>
 for crate::GlobalNamespace::OculusDeeplinkManager {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IDeeplinkManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDeeplinkManager> {
         unsafe { std::mem::transmute(self) }
     }
 }

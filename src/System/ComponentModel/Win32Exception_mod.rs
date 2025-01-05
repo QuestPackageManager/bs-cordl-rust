@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Win32Exception {
-    __cordl_parent: crate::System::Runtime::InteropServices::ExternalException,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::InteropServices::ExternalException,
+    >,
     pub nativeErrorCode: i32,
 }
 #[cfg(feature = "System+ComponentModel+Win32Exception")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+Win32Exception")]
 impl std::ops::Deref for crate::System::ComponentModel::Win32Exception {
-    type Target = crate::System::Runtime::InteropServices::ExternalException;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::InteropServices::ExternalException,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,7 +61,7 @@ impl crate::System::ComponentModel::Win32Exception {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext3(
+    pub fn New_Gc_StreamingContext3(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -78,7 +82,7 @@ impl crate::System::ComponentModel::Win32Exception {
             .invoke_void(".ctor", (error))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Il2CppString2(
+    pub fn New_i32_Gc2(
         error: i32,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -98,7 +102,7 @@ impl crate::System::ComponentModel::Win32Exception {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext3(
+    pub fn _ctor_Gc_StreamingContext3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -123,7 +127,7 @@ impl crate::System::ComponentModel::Win32Exception {
             .invoke(".ctor", (error))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Il2CppString2(
+    pub fn _ctor_i32_Gc2(
         &mut self,
         error: i32,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -154,16 +158,26 @@ for crate::System::ComponentModel::Win32Exception {
     }
 }
 #[cfg(feature = "System+ComponentModel+Win32Exception")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::ComponentModel::Win32Exception {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::ComponentModel::Win32Exception {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+Win32Exception")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::ComponentModel::Win32Exception {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::ComponentModel::Win32Exception {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

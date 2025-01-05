@@ -5,7 +5,7 @@ pub struct EventCallback_2<
     TEventType: quest_hook::libil2cpp::Type,
     TCallbackArgs: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
     __cordl_phantom_TEventType: std::marker::PhantomData<TEventType>,
     __cordl_phantom_TCallbackArgs: std::marker::PhantomData<TCallbackArgs>,
 }
@@ -21,7 +21,7 @@ impl<
     TCallbackArgs: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs> {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

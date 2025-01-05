@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIKeyboard {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _startsUpperCase: bool,
     pub okButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub keyWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
+    pub keyWasPressedEvent: quest_hook::libil2cpp::Gc<char>,
     pub deleteButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _shouldCapitalize: bool,
     pub _letterBtnTexts: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TextMeshProUGUI>,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     >,
 }
 #[cfg(feature = "HMUI+UIKeyboard")]
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+UIKeyboard")]
 impl std::ops::Deref for crate::HMUI::UIKeyboard {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -156,7 +156,7 @@ impl crate::HMUI::UIKeyboard {
     }
     pub fn add_keyWasPressedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
+        value: quest_hook::libil2cpp::Gc<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -189,7 +189,7 @@ impl crate::HMUI::UIKeyboard {
     }
     pub fn remove_keyWasPressedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
+        value: quest_hook::libil2cpp::Gc<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthorityKeyIdentifierExtension {
-    __cordl_parent: crate::Mono::Security::X509::X509Extension,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509Extension,
+    >,
     pub aki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension")]
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension")]
 impl std::ops::Deref
 for crate::Mono::Security::X509::Extensions::AuthorityKeyIdentifierExtension {
-    type Target = crate::Mono::Security::X509::X509Extension;
+    type Target = quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Extension>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

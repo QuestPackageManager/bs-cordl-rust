@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioListener {
-    __cordl_parent: crate::UnityEngine::AudioBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioBehaviour>,
 }
 #[cfg(feature = "UnityEngine+AudioListener")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AudioListener")]
 impl std::ops::Deref for crate::UnityEngine::AudioListener {
-    type Target = crate::UnityEngine::AudioBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::AudioListener {
 impl crate::UnityEngine::AudioListener {
     pub fn GetOutputDataHelper(
         samples: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -34,7 +34,7 @@ impl crate::UnityEngine::AudioListener {
             .invoke("GetOutputDataHelper", (samples, channel))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetOutputData_Il2CppArray1(
+    pub fn GetOutputData_Gc1(
         samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -56,7 +56,7 @@ impl crate::UnityEngine::AudioListener {
     }
     pub fn GetSpectrumDataHelper(
         samples: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
         channel: i32,
         window: crate::UnityEngine::FFTWindow,
@@ -65,7 +65,7 @@ impl crate::UnityEngine::AudioListener {
             .invoke("GetSpectrumDataHelper", (samples, channel, window))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSpectrumData_Il2CppArray1(
+    pub fn GetSpectrumData_Gc1(
         samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         channel: i32,
         window: crate::UnityEngine::FFTWindow,

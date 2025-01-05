@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatAvatarEditorFlowCoordinator {
-    __cordl_parent: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+    >,
     pub _avatarTweenController: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController,
     >,
@@ -22,10 +24,8 @@ pub struct BeatAvatarEditorFlowCoordinator {
         crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
     >,
     pub _parameterChangedAnimationCallbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-            *mut crate::System::Action,
-        >,
+        crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
     >,
     pub _coloredAvatarPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
     pub _originalColorOfColoredPart: crate::UnityEngine::Color,
@@ -37,7 +37,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatAvatarEditorFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
-    type Target = crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -111,9 +113,7 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
     }
     pub fn HandleBeatAvatarViewControllerDidRequestColorChange(
         &mut self,
-        colorCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::Color>,
-        >,
+        colorCallback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
         currentColor: crate::UnityEngine::Color,
         editPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
         uvSegment: i32,

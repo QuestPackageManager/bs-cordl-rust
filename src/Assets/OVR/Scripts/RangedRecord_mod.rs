@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RangedRecord {
-    __cordl_parent: crate::Assets::OVR::Scripts::Record,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Assets::OVR::Scripts::Record>,
     pub value: f32,
     pub min: f32,
     pub max: f32,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Assets+OVR+Scripts+RangedRecord")]
 impl std::ops::Deref for crate::Assets::OVR::Scripts::RangedRecord {
-    type Target = crate::Assets::OVR::Scripts::Record;
+    type Target = quest_hook::libil2cpp::Gc<crate::Assets::OVR::Scripts::Record>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleSelectorHelper {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSelectorHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSelectorHelper")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,15 +29,13 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
 impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
     pub fn FastLookup(
         table: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StyleComplexSelector,
             >,
         >,
         matchedSelectors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
-            >,
+            crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
         >,
         context: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleMatchingContext,
@@ -56,9 +54,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
             crate::UnityEngine::UIElements::StyleMatchingContext,
         >,
         matchedSelectors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
-            >,
+            crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
         >,
         parentSheetIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -74,10 +70,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
             crate::UnityEngine::UIElements::StyleComplexSelector,
         >,
         processResult: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                *mut crate::UnityEngine::UIElements::VisualElement,
-                crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()

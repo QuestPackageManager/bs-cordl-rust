@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stairs {
-    __cordl_parent: crate::UnityEngine::ProBuilder::Shapes::Shape,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Shapes::Shape,
+    >,
     pub m_StepGenerationType: crate::UnityEngine::ProBuilder::Shapes::StepGenerationType,
     pub m_StepsHeight: f32,
     pub m_StepsCount: i32,
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Shapes+Stairs")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Shapes::Stairs {
-    type Target = crate::UnityEngine::ProBuilder::Shapes::Shape;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Shapes::Shape,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

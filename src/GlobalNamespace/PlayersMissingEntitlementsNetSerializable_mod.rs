@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayersMissingEntitlementsNetSerializable {
-    __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PoolableSerializable,
+    >,
     pub _playersWithoutEntitlements: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
@@ -18,7 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
-    type Target = crate::GlobalNamespace::PoolableSerializable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PoolableSerializable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,9 +48,7 @@ impl crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
     pub fn Init(
         &mut self,
         playersWithoutEntitlements: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -105,18 +105,14 @@ impl crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("get_playersWithoutEntitlements", ())?;
         Ok(__cordl_ret.into())
     }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Extension {
-    __cordl_parent: crate::System::Security::Cryptography::AsnEncodedData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::AsnEncodedData,
+    >,
     pub _critical: bool,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Extension")]
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Extension")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Extension {
-    type Target = crate::System::Security::Cryptography::AsnEncodedData;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::AsnEncodedData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,7 +66,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppArray__cordl_bool1(
+    pub fn New_Gc_Gc__cordl_bool1(
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         critical: bool,
@@ -83,7 +87,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppArray__cordl_bool1(
+    pub fn _ctor_Gc_Gc__cordl_bool1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

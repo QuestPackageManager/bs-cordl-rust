@@ -52,16 +52,20 @@ for crate::System::ComponentModel::IRevertibleChangeTracking {
     }
 }
 #[cfg(feature = "System+ComponentModel+IRevertibleChangeTracking")]
-impl AsRef<crate::System::ComponentModel::IChangeTracking>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IChangeTracking>>
 for crate::System::ComponentModel::IRevertibleChangeTracking {
-    fn as_ref(&self) -> &crate::System::ComponentModel::IChangeTracking {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IChangeTracking> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+IRevertibleChangeTracking")]
-impl AsMut<crate::System::ComponentModel::IChangeTracking>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IChangeTracking>>
 for crate::System::ComponentModel::IRevertibleChangeTracking {
-    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::IChangeTracking {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IChangeTracking> {
         unsafe { std::mem::transmute(self) }
     }
 }

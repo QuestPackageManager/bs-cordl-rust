@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Sprite {
-    __cordl_parent: crate::UnityEngine::ProBuilder::Shapes::Shape,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Shapes::Shape,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Shapes+Sprite")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Shapes+Sprite")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Shapes::Sprite {
-    type Target = crate::UnityEngine::ProBuilder::Shapes::Shape;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Shapes::Shape,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

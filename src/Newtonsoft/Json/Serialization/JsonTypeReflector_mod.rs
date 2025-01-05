@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonTypeReflector {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonTypeReflector")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonTypeReflector")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +36,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
     pub fn CanTypeDescriptorConvertString(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         typeConverter: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::ComponentModel::TypeConverter,
+            quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeConverter>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -46,7 +46,9 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
     pub fn CreateJsonConverterInstance(
         converterType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
@@ -60,7 +62,9 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
     pub fn CreateNamingStrategyInstance(
         namingStrategyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::NamingStrategy>,
@@ -85,18 +89,18 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             .invoke("GetAssociatedMetadataType", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Il2CppObject2<T>(
-        provider: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub fn GetAttribute_Gc0<T>(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAttribute", (provider))?;
+            .invoke("GetAttribute", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_MemberInfo1<T>(
+    pub fn GetAttribute_Gc1<T>(
         memberInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -107,15 +111,15 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             .invoke("GetAttribute", (memberInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Type0<T>(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub fn GetAttribute_Gc2<T>(
+        provider: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAttribute", (_cordl_type))?;
+            .invoke("GetAttribute", (provider))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetCachedAttribute<T>(
@@ -146,21 +150,21 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut quest_hook::libil2cpp::Il2CppArray<
-                    *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 >,
-                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut quest_hook::libil2cpp::Il2CppArray<
-                    *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 >,
-                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetCreator", (_cordl_type))?;
         Ok(__cordl_ret.into())

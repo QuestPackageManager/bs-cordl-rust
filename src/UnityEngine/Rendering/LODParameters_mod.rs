@@ -26,7 +26,7 @@ for crate::UnityEngine::Rendering::LODParameters {
 }
 #[cfg(feature = "UnityEngine+Rendering+LODParameters")]
 impl crate::UnityEngine::Rendering::LODParameters {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -58,20 +58,20 @@ impl crate::UnityEngine::Rendering::LODParameters {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+LODParameters")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::LODParameters>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::LODParameters>>
 for crate::UnityEngine::Rendering::LODParameters {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::LODParameters> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::LODParameters> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+LODParameters")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::LODParameters>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::LODParameters>>
 for crate::UnityEngine::Rendering::LODParameters {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Rendering::LODParameters> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::LODParameters> {
         todo!()
     }
 }

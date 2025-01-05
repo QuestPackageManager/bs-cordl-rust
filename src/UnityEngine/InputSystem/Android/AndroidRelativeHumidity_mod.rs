@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidRelativeHumidity {
-    __cordl_parent: crate::UnityEngine::InputSystem::HumiditySensor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::HumiditySensor,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidRelativeHumidity {
-    type Target = crate::UnityEngine::InputSystem::HumiditySensor;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::HumiditySensor,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

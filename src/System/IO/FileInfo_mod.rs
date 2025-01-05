@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileInfo {
-    __cordl_parent: crate::System::IO::FileSystemInfo,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
 }
 #[cfg(feature = "System+IO+FileInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+FileInfo")]
 impl std::ops::Deref for crate::System::IO::FileInfo {
-    type Target = crate::System::IO::FileSystemInfo;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,7 +64,7 @@ impl crate::System::IO::FileInfo {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -73,7 +73,7 @@ impl crate::System::IO::FileInfo {
             .invoke_void(".ctor", (fileName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString_Il2CppString__cordl_bool2(
+    pub fn New_Gc_Gc_Gc__cordl_bool2(
         originalPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fullPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -85,7 +85,7 @@ impl crate::System::IO::FileInfo {
             .invoke_void(".ctor", (originalPath, fullPath, fileName, isNormalized))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext3(
+    pub fn New_Gc_StreamingContext3(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -119,7 +119,7 @@ impl crate::System::IO::FileInfo {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -130,7 +130,7 @@ impl crate::System::IO::FileInfo {
             .invoke(".ctor", (fileName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString__cordl_bool2(
+    pub fn _ctor_Gc_Gc_Gc__cordl_bool2(
         &mut self,
         originalPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fullPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -144,7 +144,7 @@ impl crate::System::IO::FileInfo {
             .invoke(".ctor", (originalPath, fullPath, fileName, isNormalized))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext3(
+    pub fn _ctor_Gc_StreamingContext3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

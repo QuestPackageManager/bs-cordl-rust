@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XsdValidator {
-    __cordl_parent: crate::System::Xml::Schema::BaseValidator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseValidator>,
     pub startIDConstraint: i32,
     pub validationStack: quest_hook::libil2cpp::Gc<crate::System::Xml::HWStack>,
     pub attPresence: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
@@ -34,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XsdValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdValidator {
-    type Target = crate::System::Xml::Schema::BaseValidator;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseValidator>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -209,7 +209,7 @@ impl crate::System::Xml::Schema::XsdValidator {
             .invoke("LoadSchemaFromLocation", (uri, url))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_BaseValidator0(
+    pub fn New_Gc0(
         validator: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseValidator>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -218,7 +218,7 @@ impl crate::System::Xml::Schema::XsdValidator {
             .invoke_void(".ctor", (validator))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_XmlValidatingReaderImpl_XmlSchemaCollection_IValidationEventHandling1(
+    pub fn New_Gc_Gc1(
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlValidatingReaderImpl>,
         schemaCollection: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaCollection,
@@ -276,9 +276,11 @@ impl crate::System::Xml::Schema::XsdValidator {
     pub fn ProcessXsiAttributes(
         &mut self,
         xsiType: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Xml::XmlQualifiedName,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
         >,
-        xsiNil: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        xsiNil: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -404,7 +406,7 @@ impl crate::System::Xml::Schema::XsdValidator {
             .invoke("ValidateStartElementIdentityConstraints", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BaseValidator0(
+    pub fn _ctor_Gc0(
         &mut self,
         validator: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseValidator>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -415,7 +417,7 @@ impl crate::System::Xml::Schema::XsdValidator {
             .invoke(".ctor", (validator))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_XmlValidatingReaderImpl_XmlSchemaCollection_IValidationEventHandling1(
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlValidatingReaderImpl>,
         schemaCollection: quest_hook::libil2cpp::Gc<

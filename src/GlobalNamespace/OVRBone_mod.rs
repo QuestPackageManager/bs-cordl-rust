@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRBone {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _Id_k__BackingField: crate::GlobalNamespace::OVRSkeleton_BoneId,
     pub _ParentBoneIndex_k__BackingField: i16,
     pub _Transform_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRBone")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRBone {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,7 @@ impl crate::GlobalNamespace::OVRBone {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_OVRSkeleton_BoneId_i16_Transform1(
+    pub fn New_OVRSkeleton_BoneId_i16_Gc1(
         id: crate::GlobalNamespace::OVRSkeleton_BoneId,
         parentBoneIndex: i16,
         trans: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::OVRBone {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_OVRSkeleton_BoneId_i16_Transform1(
+    pub fn _ctor_OVRSkeleton_BoneId_i16_Gc1(
         &mut self,
         id: crate::GlobalNamespace::OVRSkeleton_BoneId,
         parentBoneIndex: i16,

@@ -45,7 +45,7 @@ impl crate::UnityEngine::Rect {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -125,7 +125,7 @@ impl crate::UnityEngine::Rect {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider1(
+    pub fn ToString_Gc_Gc1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -447,28 +447,30 @@ impl crate::UnityEngine::Rect {
     }
 }
 #[cfg(feature = "UnityEngine+Rect")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rect>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
 for crate::UnityEngine::Rect {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Rect> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rect")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rect>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
 for crate::UnityEngine::Rect {
-    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Rect> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rect")]
-impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Rect {
-    fn as_ref(&self) -> &crate::System::IFormattable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rect>>
+for crate::UnityEngine::Rect {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Rect> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rect")]
-impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Rect {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rect>>
+for crate::UnityEngine::Rect {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Rect> {
         todo!()
     }
 }

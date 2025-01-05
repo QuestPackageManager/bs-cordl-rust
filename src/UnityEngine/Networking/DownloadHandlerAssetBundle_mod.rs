@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DownloadHandlerAssetBundle {
-    __cordl_parent: crate::UnityEngine::Networking::DownloadHandler,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::DownloadHandler,
+    >,
 }
 #[cfg(feature = "UnityEngine+Networking+DownloadHandlerAssetBundle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Networking+DownloadHandlerAssetBundle")]
 impl std::ops::Deref for crate::UnityEngine::Networking::DownloadHandlerAssetBundle {
-    type Target = crate::UnityEngine::Networking::DownloadHandler;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::DownloadHandler,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

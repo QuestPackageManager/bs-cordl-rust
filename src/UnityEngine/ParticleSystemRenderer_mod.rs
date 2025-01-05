@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleSystemRenderer {
-    __cordl_parent: crate::UnityEngine::Renderer,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
 }
 #[cfg(feature = "UnityEngine+ParticleSystemRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ParticleSystemRenderer")]
 impl std::ops::Deref for crate::UnityEngine::ParticleSystemRenderer {
-    type Target = crate::UnityEngine::Renderer;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
             .invoke("AreVertexStreamsEnabled", (streams))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BakeMesh_Camera_ParticleSystemBakeMeshOptions3(
+    pub fn BakeMesh_Gc_ParticleSystemBakeMeshOptions3(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -50,7 +50,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
             .invoke("BakeMesh", (mesh, camera, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BakeMesh_Camera__cordl_bool1(
+    pub fn BakeMesh_Gc__cordl_bool1(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -147,13 +147,13 @@ impl crate::UnityEngine::ParticleSystemRenderer {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn BakeTexture_ByRefMut_Camera_ParticleSystemBakeTextureOptions3(
+    pub fn BakeTexture_ByRefMut_Gc_ParticleSystemBakeTextureOptions3(
         &mut self,
         verticesTexture: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::Texture2D,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
         indicesTexture: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::Texture2D,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         options: crate::UnityEngine::ParticleSystemBakeTextureOptions,
@@ -168,10 +168,10 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn BakeTexture_ByRefMut_ParticleSystemBakeTextureOptions2(
         &mut self,
         verticesTexture: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::Texture2D,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
         indicesTexture: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::Texture2D,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
         options: crate::UnityEngine::ParticleSystemBakeTextureOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -182,10 +182,10 @@ impl crate::UnityEngine::ParticleSystemRenderer {
             .invoke("BakeTexture", (verticesTexture, indicesTexture, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BakeTexture_Camera_ParticleSystemBakeTextureOptions1(
+    pub fn BakeTexture_Gc_ParticleSystemBakeTextureOptions1(
         &mut self,
         verticesTexture: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::Texture2D,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         options: crate::UnityEngine::ParticleSystemBakeTextureOptions,
@@ -200,7 +200,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn BakeTexture_ParticleSystemBakeTextureOptions0(
         &mut self,
         verticesTexture: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::Texture2D,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
         options: crate::UnityEngine::ParticleSystemBakeTextureOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -211,7 +211,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
             .invoke("BakeTexture", (verticesTexture, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BakeTrailsMesh_Camera_ParticleSystemBakeMeshOptions3(
+    pub fn BakeTrailsMesh_Gc_ParticleSystemBakeMeshOptions3(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -224,7 +224,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
             .invoke("BakeTrailsMesh", (mesh, camera, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BakeTrailsMesh_Camera__cordl_bool1(
+    pub fn BakeTrailsMesh_Gc__cordl_bool1(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -302,13 +302,13 @@ impl crate::UnityEngine::ParticleSystemRenderer {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn BakeTrailsTexture_Camera_ParticleSystemBakeTextureOptions1(
+    pub fn BakeTrailsTexture_Gc_ParticleSystemBakeTextureOptions1(
         &mut self,
         verticesTexture: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::Texture2D,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
         indicesTexture: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::Texture2D,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         options: crate::UnityEngine::ParticleSystemBakeTextureOptions,
@@ -326,10 +326,10 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn BakeTrailsTexture_ParticleSystemBakeTextureOptions0(
         &mut self,
         verticesTexture: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::Texture2D,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
         indicesTexture: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::Texture2D,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
         options: crate::UnityEngine::ParticleSystemBakeTextureOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -365,9 +365,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn GetActiveTrailVertexStreams(
         &mut self,
         streams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ParticleSystemVertexStream,
-            >,
+            crate::UnityEngine::ParticleSystemVertexStream,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -380,9 +378,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn GetActiveVertexStreams(
         &mut self,
         streams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ParticleSystemVertexStream,
-            >,
+            crate::UnityEngine::ParticleSystemVertexStream,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -406,7 +402,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn GetMeshWeightings(
         &mut self,
         weightings: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -418,7 +414,11 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn GetMeshes(
         &mut self,
         meshes: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -460,9 +460,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn SetActiveTrailVertexStreams(
         &mut self,
         streams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ParticleSystemVertexStream,
-            >,
+            crate::UnityEngine::ParticleSystemVertexStream,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -475,9 +473,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn SetActiveVertexStreams(
         &mut self,
         streams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ParticleSystemVertexStream,
-            >,
+            crate::UnityEngine::ParticleSystemVertexStream,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -487,7 +483,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
             .invoke("SetActiveVertexStreams", (streams))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetMeshWeightings_Il2CppArray1(
+    pub fn SetMeshWeightings_Gc1(
         &mut self,
         weightings: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -510,10 +506,12 @@ impl crate::UnityEngine::ParticleSystemRenderer {
             .invoke("SetMeshWeightings", (weightings, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetMeshes_Il2CppArray1(
+    pub fn SetMeshes_Gc1(
         &mut self,
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -526,7 +524,9 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn SetMeshes_i32_0(
         &mut self,
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+            >,
         >,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

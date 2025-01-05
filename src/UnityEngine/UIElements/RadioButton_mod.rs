@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RadioButton {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseBoolField,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseBoolField,
+    >,
     pub m_CheckmarkBackground: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+RadioButton")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButton {
-    type Target = crate::UnityEngine::UIElements::BaseBoolField;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseBoolField,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +52,7 @@ impl crate::UnityEngine::UIElements::RadioButton {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -145,7 +149,7 @@ impl crate::UnityEngine::UIElements::RadioButton {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -185,16 +189,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Radio
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButton")]
-impl AsRef<crate::UnityEngine::UIElements::IGroupBoxOption>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBoxOption>>
 for crate::UnityEngine::UIElements::RadioButton {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IGroupBoxOption {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBoxOption> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButton")]
-impl AsMut<crate::UnityEngine::UIElements::IGroupBoxOption>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBoxOption>>
 for crate::UnityEngine::UIElements::RadioButton {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IGroupBoxOption {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IGroupBoxOption,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -202,9 +212,9 @@ for crate::UnityEngine::UIElements::RadioButton {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RadioButton_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::RadioButton,
-        *mut crate::UnityEngine::UIElements::RadioButton_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton_UxmlTraits>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlFactory")]
@@ -214,9 +224,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButton_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::RadioButton,
-        *mut crate::UnityEngine::UIElements::RadioButton_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton_UxmlTraits>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -262,9 +272,11 @@ for crate::UnityEngine::UIElements::RadioButton_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RadioButton_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseFieldTraits_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         bool,
-        *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+        >,
     >,
     pub m_Text: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
@@ -277,9 +289,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButton_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseFieldTraits_2<
+    type Target = quest_hook::libil2cpp::Gc<
         bool,
-        *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelinePauseReceiver {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub timelinePauseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "TimelinePauseReceiver")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TimelinePauseReceiver")]
 impl std::ops::Deref for crate::GlobalNamespace::TimelinePauseReceiver {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,16 +91,26 @@ for crate::GlobalNamespace::TimelinePauseReceiver {
     }
 }
 #[cfg(feature = "TimelinePauseReceiver")]
-impl AsRef<crate::UnityEngine::Playables::INotificationReceiver>
-for crate::GlobalNamespace::TimelinePauseReceiver {
-    fn as_ref(&self) -> &crate::UnityEngine::Playables::INotificationReceiver {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotificationReceiver>,
+> for crate::GlobalNamespace::TimelinePauseReceiver {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::INotificationReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TimelinePauseReceiver")]
-impl AsMut<crate::UnityEngine::Playables::INotificationReceiver>
-for crate::GlobalNamespace::TimelinePauseReceiver {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::INotificationReceiver {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotificationReceiver>,
+> for crate::GlobalNamespace::TimelinePauseReceiver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::INotificationReceiver,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

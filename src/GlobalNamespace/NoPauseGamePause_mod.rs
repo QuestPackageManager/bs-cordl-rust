@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoPauseGamePause {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub didPauseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub willResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub didResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoPauseGamePause")]
 impl std::ops::Deref for crate::GlobalNamespace::NoPauseGamePause {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -159,16 +159,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoPauseGamePa
     }
 }
 #[cfg(feature = "NoPauseGamePause")]
-impl AsRef<crate::GlobalNamespace::IGamePause>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>>
 for crate::GlobalNamespace::NoPauseGamePause {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IGamePause {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NoPauseGamePause")]
-impl AsMut<crate::GlobalNamespace::IGamePause>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>>
 for crate::GlobalNamespace::NoPauseGamePause {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IGamePause {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause> {
         unsafe { std::mem::transmute(self) }
     }
 }

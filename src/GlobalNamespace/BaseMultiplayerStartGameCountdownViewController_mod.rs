@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseMultiplayerStartGameCountdownViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _beatmapSelectionView: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapSelectionView,
     >,
@@ -10,9 +10,7 @@ pub struct BaseMultiplayerStartGameCountdownViewController {
         crate::GlobalNamespace::ModifiersSelectionView,
     >,
     pub _spectateToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-    pub playerActiveStateChangedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<bool>,
-    >,
+    pub playerActiveStateChangedEvent: quest_hook::libil2cpp::Gc<bool>,
     pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
 }
 #[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
@@ -24,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -132,7 +130,7 @@ impl crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
     }
     pub fn add_playerActiveStateChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -143,7 +141,7 @@ impl crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
     }
     pub fn remove_playerActiveStateChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

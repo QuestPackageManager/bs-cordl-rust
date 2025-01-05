@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OcbBlockCipher {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub hashCipher: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::IBlockCipher,
     >,
@@ -39,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+OcbBlockCipher")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -364,32 +364,50 @@ for crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+OcbBlockCipher")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher>
-for crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher>,
+> for crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+OcbBlockCipher")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher>
-for crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher>,
+> for crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+OcbBlockCipher")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>
-for crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>,
+> for crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+OcbBlockCipher")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>
-for crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>,
+> for crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

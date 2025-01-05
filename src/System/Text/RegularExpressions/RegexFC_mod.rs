@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexFC {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _cc: quest_hook::libil2cpp::Gc<
         crate::System::Text::RegularExpressions::RegexCharClass,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexFC")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexFC {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl crate::System::Text::RegularExpressions::RegexFC {
         > = __cordl_object.invoke("GetFirstChars", (culture))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString__cordl_bool__cordl_bool2(
+    pub fn New_Gc__cordl_bool__cordl_bool2(
         charClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nullable: bool,
         caseInsensitive: bool,
@@ -86,7 +86,7 @@ impl crate::System::Text::RegularExpressions::RegexFC {
             .invoke_void(".ctor", (ch, _cordl_not, nullable, caseInsensitive))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppString__cordl_bool__cordl_bool2(
+    pub fn _ctor_Gc__cordl_bool__cordl_bool2(
         &mut self,
         charClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nullable: bool,

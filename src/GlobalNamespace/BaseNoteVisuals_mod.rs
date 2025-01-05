@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseNoteVisuals {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _cutoutAnimateEffect: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::CutoutAnimateEffect,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BaseNoteVisuals")]
 impl std::ops::Deref for crate::GlobalNamespace::BaseNoteVisuals {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -121,34 +121,54 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BaseNoteVisua
     }
 }
 #[cfg(feature = "BaseNoteVisuals")]
-impl AsRef<crate::GlobalNamespace::INoteControllerDidInitEvent>
-for crate::GlobalNamespace::BaseNoteVisuals {
-    fn as_ref(&self) -> &crate::GlobalNamespace::INoteControllerDidInitEvent {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "BaseNoteVisuals")]
-impl AsMut<crate::GlobalNamespace::INoteControllerDidInitEvent>
-for crate::GlobalNamespace::BaseNoteVisuals {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteControllerDidInitEvent {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "BaseNoteVisuals")]
-impl AsRef<crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent>
-for crate::GlobalNamespace::BaseNoteVisuals {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteControllerDidInitEvent>,
+> for crate::GlobalNamespace::BaseNoteVisuals {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INoteControllerDidInitEvent,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BaseNoteVisuals")]
-impl AsMut<crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent>
-for crate::GlobalNamespace::BaseNoteVisuals {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteControllerDidInitEvent>,
+> for crate::GlobalNamespace::BaseNoteVisuals {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INoteControllerDidInitEvent,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BaseNoteVisuals")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+    >,
+> for crate::GlobalNamespace::BaseNoteVisuals {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BaseNoteVisuals")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+    >,
+> for crate::GlobalNamespace::BaseNoteVisuals {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

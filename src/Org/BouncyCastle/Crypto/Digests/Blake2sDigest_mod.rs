@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Blake2sDigest {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub digestLength: i32,
     pub keyLength: i32,
     pub salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Blake2sDigest")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::Blake2sDigest {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -156,7 +156,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Blake2sDigest {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Blake2sDigest1(
+    pub fn New_Gc1(
         digest: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Digests::Blake2sDigest,
         >,
@@ -167,7 +167,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Blake2sDigest {
             .invoke_void(".ctor", (digest))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray3(
+    pub fn New_Gc3(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -176,7 +176,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Blake2sDigest {
             .invoke_void(".ctor", (key))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_Il2CppArray_Il2CppArray4(
+    pub fn New_Gc_i32_Gc_Gc4(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         digestBytes: i32,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -230,7 +230,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Blake2sDigest {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Blake2sDigest1(
+    pub fn _ctor_Gc1(
         &mut self,
         digest: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Digests::Blake2sDigest,
@@ -243,7 +243,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Blake2sDigest {
             .invoke(".ctor", (digest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray3(
+    pub fn _ctor_Gc3(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -254,7 +254,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Blake2sDigest {
             .invoke(".ctor", (key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_Il2CppArray_Il2CppArray4(
+    pub fn _ctor_Gc_i32_Gc_Gc4(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         digestBytes: i32,
@@ -313,16 +313,20 @@ for crate::Org::BouncyCastle::Crypto::Digests::Blake2sDigest {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Blake2sDigest")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IDigest>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>>
 for crate::Org::BouncyCastle::Crypto::Digests::Blake2sDigest {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDigest {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Blake2sDigest")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IDigest>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>>
 for crate::Org::BouncyCastle::Crypto::Digests::Blake2sDigest {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDigest {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest> {
         unsafe { std::mem::transmute(self) }
     }
 }

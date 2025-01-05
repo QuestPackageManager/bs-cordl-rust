@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataExpression {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _originalExpression: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -13,7 +13,9 @@ pub struct DataExpression {
     pub _storageType: crate::System::Data::Common::StorageType,
     pub _dataType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _dependency: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        >,
     >,
 }
 #[cfg(feature = "System+Data+DataExpression")]
@@ -23,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataExpression")]
 impl std::ops::Deref for crate::System::Data::DataExpression {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,7 +72,7 @@ impl crate::System::Data::DataExpression {
         > = __cordl_object.invoke("Evaluate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Evaluate_DataRow_DataRowVersion1(
+    pub fn Evaluate_Gc_DataRowVersion1(
         &mut self,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
@@ -89,14 +91,18 @@ impl crate::System::Data::DataExpression {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            >,
         > = __cordl_object.invoke("GetDependency", ())?;
         Ok(__cordl_ret.into())
     }
@@ -139,17 +145,7 @@ impl crate::System::Data::DataExpression {
             .invoke("IsUnknown", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_DataTable_Il2CppString0(
-        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-        expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (table, expression))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Type1(
+    pub fn New_Gc1(
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -160,6 +156,16 @@ impl crate::System::Data::DataExpression {
             .invoke_void(".ctor", (table, expression, _cordl_type))?;
         Ok(__cordl_object.into())
     }
+    pub fn New_Gc_Gc0(
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (table, expression))?;
+        Ok(__cordl_object.into())
+    }
     pub fn ToBoolean(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -167,19 +173,7 @@ impl crate::System::Data::DataExpression {
             .invoke("ToBoolean", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DataTable_Il2CppString0(
-        &mut self,
-        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-        expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (table, expression))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Type1(
+    pub fn _ctor_Gc1(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -190,6 +184,18 @@ impl crate::System::Data::DataExpression {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (table, expression, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc0(
+        &mut self,
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (table, expression))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Expression(
@@ -223,14 +229,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataExpression {
     }
 }
 #[cfg(feature = "System+Data+DataExpression")]
-impl AsRef<crate::System::Data::IFilter> for crate::System::Data::DataExpression {
-    fn as_ref(&self) -> &crate::System::Data::IFilter {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>>
+for crate::System::Data::DataExpression {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Data::IFilter> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+DataExpression")]
-impl AsMut<crate::System::Data::IFilter> for crate::System::Data::DataExpression {
-    fn as_mut(&mut self) -> &mut crate::System::Data::IFilter {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>>
+for crate::System::Data::DataExpression {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Data::IFilter> {
         unsafe { std::mem::transmute(self) }
     }
 }

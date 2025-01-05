@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProfilerMetrics {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _metrics: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric,
@@ -11,9 +11,7 @@ pub struct ProfilerMetrics {
     pub _profilerRecorders: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::Unity::Profiling::ProfilerRecorder>,
     >,
-    pub _samples: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i64>,
-    >,
+    pub _samples: quest_hook::libil2cpp::Gc<i64>,
 }
 #[cfg(feature = "ProfilerMetrics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -22,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ProfilerMetrics")]
 impl std::ops::Deref for crate::GlobalNamespace::ProfilerMetrics {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,9 +38,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
     pub type ProfilerMetric = crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric;
     pub fn AddExposedMetrics(
         list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric,
-            >,
+            crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -216,14 +212,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ProfilerMetri
     }
 }
 #[cfg(feature = "ProfilerMetrics")]
-impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::ProfilerMetrics {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::GlobalNamespace::ProfilerMetrics {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ProfilerMetrics")]
-impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::ProfilerMetrics {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+for crate::GlobalNamespace::ProfilerMetrics {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

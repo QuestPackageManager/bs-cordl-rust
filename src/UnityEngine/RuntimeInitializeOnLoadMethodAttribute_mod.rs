@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeInitializeOnLoadMethodAttribute {
-    __cordl_parent: crate::UnityEngine::Scripting::PreserveAttribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Scripting::PreserveAttribute,
+    >,
     pub m_LoadType: crate::UnityEngine::RuntimeInitializeLoadType,
 }
 #[cfg(feature = "UnityEngine+RuntimeInitializeOnLoadMethodAttribute")]
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+RuntimeInitializeOnLoadMethodAttribute")]
 impl std::ops::Deref for crate::UnityEngine::RuntimeInitializeOnLoadMethodAttribute {
-    type Target = crate::UnityEngine::Scripting::PreserveAttribute;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Scripting::PreserveAttribute,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

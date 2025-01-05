@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaComplexContent {
-    __cordl_parent: crate::System::Xml::Schema::XmlSchemaContentModel,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaContentModel,
+    >,
     pub content: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaContent>,
     pub isMixed: bool,
     pub hasMixedAttribute: bool,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaComplexContent")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaComplexContent {
-    type Target = crate::System::Xml::Schema::XmlSchemaContentModel;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaContentModel,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

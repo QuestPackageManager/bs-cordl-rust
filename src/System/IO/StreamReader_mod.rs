@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StreamReader {
-    __cordl_parent: crate::System::IO::TextReader,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
     pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub _decoder: quest_hook::libil2cpp::Gc<crate::System::Text::Decoder>,
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+StreamReader")]
 impl std::ops::Deref for crate::System::IO::StreamReader {
-    type Target = crate::System::IO::TextReader;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -100,7 +100,18 @@ impl crate::System::IO::StreamReader {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Encoding__cordl_bool_i32__cordl_bool0(
+    pub fn Init_Gc1(
+        &mut self,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (stream))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Init_Gc__cordl_bool_i32__cordl_bool0(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -124,17 +135,6 @@ impl crate::System::IO::StreamReader {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Stream1(
-        &mut self,
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (stream))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn IsPreamble(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -149,7 +149,16 @@ impl crate::System::IO::StreamReader {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString6(
+    pub fn New_Gc1(
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc6(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -158,7 +167,17 @@ impl crate::System::IO::StreamReader {
             .invoke_void(".ctor", (path))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Encoding8(
+    pub fn New_Gc_Gc3(
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, encoding))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc8(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -168,7 +187,18 @@ impl crate::System::IO::StreamReader {
             .invoke_void(".ctor", (path, encoding))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Encoding__cordl_bool9(
+    pub fn New_Gc_Gc__cordl_bool4(
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+        detectEncodingFromByteOrderMarks: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, encoding, detectEncodingFromByteOrderMarks))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc__cordl_bool9(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
         detectEncodingFromByteOrderMarks: bool,
@@ -179,7 +209,7 @@ impl crate::System::IO::StreamReader {
             .invoke_void(".ctor", (path, encoding, detectEncodingFromByteOrderMarks))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Encoding__cordl_bool_i32_10(
+    pub fn New_Gc_Gc__cordl_bool_i32_10(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
         detectEncodingFromByteOrderMarks: bool,
@@ -194,47 +224,7 @@ impl crate::System::IO::StreamReader {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString__cordl_bool7(
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        detectEncodingFromByteOrderMarks: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (path, detectEncodingFromByteOrderMarks))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Stream1(
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Stream_Encoding3(
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, encoding))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Stream_Encoding__cordl_bool4(
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-        detectEncodingFromByteOrderMarks: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, encoding, detectEncodingFromByteOrderMarks))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Stream_Encoding__cordl_bool_i32__cordl_bool5(
+    pub fn New_Gc_Gc__cordl_bool_i32__cordl_bool5(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
         detectEncodingFromByteOrderMarks: bool,
@@ -256,7 +246,7 @@ impl crate::System::IO::StreamReader {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Stream__cordl_bool2(
+    pub fn New_Gc__cordl_bool2(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         detectEncodingFromByteOrderMarks: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -264,6 +254,16 @@ impl crate::System::IO::StreamReader {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (stream, detectEncodingFromByteOrderMarks))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc__cordl_bool7(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        detectEncodingFromByteOrderMarks: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (path, detectEncodingFromByteOrderMarks))?;
         Ok(__cordl_object.into())
     }
     pub fn Peek(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -278,15 +278,12 @@ impl crate::System::IO::StreamReader {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object.invoke("ReadAsync", (buffer, index, count))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("ReadAsync", (buffer, index, count))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsyncInternal(
@@ -305,15 +302,12 @@ impl crate::System::IO::StreamReader {
     }
     pub fn ReadBufferAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object.invoke("ReadBufferAsync", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("ReadBufferAsync", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn ReadBuffer_0(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -378,7 +372,7 @@ impl crate::System::IO::StreamReader {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Read_Il2CppArray_i32_i32_1(
+    pub fn Read_Gc_i32_i32_1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
@@ -417,7 +411,18 @@ impl crate::System::IO::StreamReader {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString6(
+    pub fn _ctor_Gc1(
+        &mut self,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc6(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -428,7 +433,19 @@ impl crate::System::IO::StreamReader {
             .invoke(".ctor", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Encoding8(
+    pub fn _ctor_Gc_Gc3(
+        &mut self,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream, encoding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc8(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -440,7 +457,20 @@ impl crate::System::IO::StreamReader {
             .invoke(".ctor", (path, encoding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Encoding__cordl_bool9(
+    pub fn _ctor_Gc_Gc__cordl_bool4(
+        &mut self,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+        detectEncodingFromByteOrderMarks: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream, encoding, detectEncodingFromByteOrderMarks))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc__cordl_bool9(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -453,7 +483,7 @@ impl crate::System::IO::StreamReader {
             .invoke(".ctor", (path, encoding, detectEncodingFromByteOrderMarks))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Encoding__cordl_bool_i32_10(
+    pub fn _ctor_Gc_Gc__cordl_bool_i32_10(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -470,55 +500,7 @@ impl crate::System::IO::StreamReader {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString__cordl_bool7(
-        &mut self,
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        detectEncodingFromByteOrderMarks: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (path, detectEncodingFromByteOrderMarks))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Stream1(
-        &mut self,
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Stream_Encoding3(
-        &mut self,
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream, encoding))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Stream_Encoding__cordl_bool4(
-        &mut self,
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-        detectEncodingFromByteOrderMarks: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream, encoding, detectEncodingFromByteOrderMarks))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Stream_Encoding__cordl_bool_i32__cordl_bool5(
+    pub fn _ctor_Gc_Gc__cordl_bool_i32__cordl_bool5(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -542,7 +524,7 @@ impl crate::System::IO::StreamReader {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream__cordl_bool2(
+    pub fn _ctor_Gc__cordl_bool2(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         detectEncodingFromByteOrderMarks: bool,
@@ -552,6 +534,18 @@ impl crate::System::IO::StreamReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (stream, detectEncodingFromByteOrderMarks))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc__cordl_bool7(
+        &mut self,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        detectEncodingFromByteOrderMarks: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (path, detectEncodingFromByteOrderMarks))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_BaseStream(

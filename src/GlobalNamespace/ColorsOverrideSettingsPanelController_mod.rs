@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorsOverrideSettingsPanelController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _overrideColorsToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _detailsPanelGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _colorSchemeDropDown: quest_hook::libil2cpp::Gc<
@@ -38,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColorsOverrideSettingsPanelController")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -241,16 +241,20 @@ for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
     }
 }
 #[cfg(feature = "ColorsOverrideSettingsPanelController")]
-impl AsRef<crate::GlobalNamespace::IRefreshable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>>
 for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IRefreshable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ColorsOverrideSettingsPanelController")]
-impl AsMut<crate::GlobalNamespace::IRefreshable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>>
 for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRefreshable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable> {
         unsafe { std::mem::transmute(self) }
     }
 }

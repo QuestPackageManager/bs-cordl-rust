@@ -2,57 +2,39 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FontFeatureTable {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_MultipleSubstitutionRecords: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord,
-        >,
+        crate::UnityEngine::TextCore::LowLevel::MultipleSubstitutionRecord,
     >,
     pub m_LigatureSubstitutionRecords: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
+        crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord,
+    >,
+    pub m_GlyphPairAdjustmentRecords: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
+    >,
+    pub m_MarkToBaseAdjustmentRecords: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord,
+    >,
+    pub m_MarkToMarkAdjustmentRecords: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord,
+    >,
+    pub m_LigatureSubstitutionRecordLookup: quest_hook::libil2cpp::Gc<
+        u32,
+        quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord,
         >,
     >,
-    pub m_GlyphPairAdjustmentRecords: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
-        >,
-    >,
-    pub m_MarkToBaseAdjustmentRecords: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord,
-        >,
-    >,
-    pub m_MarkToMarkAdjustmentRecords: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord,
-        >,
-    >,
-    pub m_LigatureSubstitutionRecordLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            u32,
-            *mut crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord,
-            >,
-        >,
-    >,
     pub m_GlyphPairAdjustmentRecordLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            u32,
-            crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
-        >,
+        u32,
+        crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
     >,
     pub m_MarkToBaseAdjustmentRecordLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            u32,
-            crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord,
-        >,
+        u32,
+        crate::UnityEngine::TextCore::LowLevel::MarkToBaseAdjustmentRecord,
     >,
     pub m_MarkToMarkAdjustmentRecordLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            u32,
-            crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord,
-        >,
+        u32,
+        crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord,
     >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+FontFeatureTable")]
@@ -62,7 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+FontFeatureTable")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::FontFeatureTable {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct __BinaryWriter {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub sout: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub formatterTypeStyle: crate::System::Runtime::Serialization::Formatters::FormatterTypeStyle,
     pub objectMapTable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
@@ -60,7 +60,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryWriter")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -155,7 +155,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter {
             .invoke("WriteByte", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteBytes_Il2CppArray0(
+    pub fn WriteBytes_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -485,14 +485,20 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter {
         >,
         numMembers: i32,
         memberNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         memberTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         memberObjectInfos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

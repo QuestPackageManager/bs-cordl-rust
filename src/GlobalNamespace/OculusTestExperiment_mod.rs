@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusTestExperiment {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _experimentModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IExperimentModel,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusTestExperiment")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusTestExperiment {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,7 +71,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusTestExp
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusTestExperiment_ExperimentData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _experimentPlatformKey: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -84,7 +84,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusTestExperiment+ExperimentData")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -146,16 +146,20 @@ for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
     }
 }
 #[cfg(feature = "OculusTestExperiment+ExperimentData")]
-impl AsRef<crate::GlobalNamespace::IExperimentData>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IExperimentData>>
 for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IExperimentData {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IExperimentData> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusTestExperiment+ExperimentData")]
-impl AsMut<crate::GlobalNamespace::IExperimentData>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IExperimentData>>
 for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IExperimentData {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IExperimentData> {
         unsafe { std::mem::transmute(self) }
     }
 }

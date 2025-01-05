@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodResponse {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -10,16 +10,22 @@ pub struct MethodResponse {
     pub _returnValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     pub _methodSignature: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
     pub _inArgInfo: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Remoting::Messaging::ArgInfo,
     >,
     pub _args: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _outArgs: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _callMsg: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Remoting::Messaging::IMethodCallMessage,
@@ -45,7 +51,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::MethodResponse {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -98,7 +104,7 @@ impl crate::System::Runtime::Remoting::Messaging::MethodResponse {
             .invoke("InitMethodProperty", (key, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Exception_IMethodCallMessage0(
+    pub fn New_Gc0(
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         msg: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMethodCallMessage,
@@ -110,7 +116,7 @@ impl crate::System::Runtime::Remoting::Messaging::MethodResponse {
             .invoke_void(".ctor", (e, msg))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IMethodCallMessage_CADMethodReturnMessage2(
+    pub fn New_Gc2(
         msg: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMethodCallMessage,
         >,
@@ -124,10 +130,12 @@ impl crate::System::Runtime::Remoting::Messaging::MethodResponse {
             .invoke_void(".ctor", (msg, retmsg))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppObject_Il2CppArray_LogicalCallContext_IMethodCallMessage1(
+    pub fn New_Gc_Gc_Gc1(
         returnValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         outArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         callCtx: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
@@ -142,7 +150,7 @@ impl crate::System::Runtime::Remoting::Messaging::MethodResponse {
             .invoke_void(".ctor", (returnValue, outArgs, callCtx, msg))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SerializationInfo_StreamingContext3(
+    pub fn New_StreamingContext3(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -213,7 +221,7 @@ impl crate::System::Runtime::Remoting::Messaging::MethodResponse {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Exception_IMethodCallMessage0(
+    pub fn _ctor_Gc0(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         msg: quest_hook::libil2cpp::Gc<
@@ -227,7 +235,7 @@ impl crate::System::Runtime::Remoting::Messaging::MethodResponse {
             .invoke(".ctor", (e, msg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IMethodCallMessage_CADMethodReturnMessage2(
+    pub fn _ctor_Gc2(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMethodCallMessage,
@@ -243,11 +251,13 @@ impl crate::System::Runtime::Remoting::Messaging::MethodResponse {
             .invoke(".ctor", (msg, retmsg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject_Il2CppArray_LogicalCallContext_IMethodCallMessage1(
+    pub fn _ctor_Gc_Gc_Gc1(
         &mut self,
         returnValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         outArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         callCtx: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
@@ -263,7 +273,7 @@ impl crate::System::Runtime::Remoting::Messaging::MethodResponse {
             .invoke(".ctor", (returnValue, outArgs, callCtx, msg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SerializationInfo_StreamingContext3(
+    pub fn _ctor_StreamingContext3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -288,14 +298,18 @@ impl crate::System::Runtime::Remoting::Messaging::MethodResponse {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("get_Args", ())?;
         Ok(__cordl_ret.into())
     }
@@ -369,14 +383,18 @@ impl crate::System::Runtime::Remoting::Messaging::MethodResponse {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("get_OutArgs", ())?;
         Ok(__cordl_ret.into())
     }
@@ -455,80 +473,134 @@ for crate::System::Runtime::Remoting::Messaging::MethodResponse {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
-impl AsRef<crate::System::Runtime::Remoting::Messaging::IInternalMessage>
-for crate::System::Runtime::Remoting::Messaging::MethodResponse {
-    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IInternalMessage {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
-impl AsMut<crate::System::Runtime::Remoting::Messaging::IInternalMessage>
-for crate::System::Runtime::Remoting::Messaging::MethodResponse {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Runtime::Remoting::Messaging::IInternalMessage {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
-impl AsRef<crate::System::Runtime::Remoting::Messaging::IMessage>
-for crate::System::Runtime::Remoting::Messaging::MethodResponse {
-    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMessage {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
-impl AsMut<crate::System::Runtime::Remoting::Messaging::IMessage>
-for crate::System::Runtime::Remoting::Messaging::MethodResponse {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Messaging::IMessage {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
-impl AsRef<crate::System::Runtime::Remoting::Messaging::IMethodMessage>
-for crate::System::Runtime::Remoting::Messaging::MethodResponse {
-    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMethodMessage {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
-impl AsMut<crate::System::Runtime::Remoting::Messaging::IMethodMessage>
-for crate::System::Runtime::Remoting::Messaging::MethodResponse {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMethodMessage {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
-impl AsRef<crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage>
-for crate::System::Runtime::Remoting::Messaging::MethodResponse {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IInternalMessage,
+    >,
+> for crate::System::Runtime::Remoting::Messaging::MethodResponse {
     fn as_ref(
         &self,
-    ) -> &crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IInternalMessage,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
-impl AsMut<crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage>
-for crate::System::Runtime::Remoting::Messaging::MethodResponse {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IInternalMessage,
+    >,
+> for crate::System::Runtime::Remoting::Messaging::MethodResponse {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IInternalMessage,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
-impl AsRef<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Runtime::Remoting::Messaging::MethodResponse {
-    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
+> for crate::System::Runtime::Remoting::Messaging::MethodResponse {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessage,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
-impl AsMut<crate::System::Runtime::Serialization::ISerializable>
-for crate::System::Runtime::Remoting::Messaging::MethodResponse {
-    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
+> for crate::System::Runtime::Remoting::Messaging::MethodResponse {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessage,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+    >,
+> for crate::System::Runtime::Remoting::Messaging::MethodResponse {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+    >,
+> for crate::System::Runtime::Remoting::Messaging::MethodResponse {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage,
+    >,
+> for crate::System::Runtime::Remoting::Messaging::MethodResponse {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage,
+    >,
+> for crate::System::Runtime::Remoting::Messaging::MethodResponse {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Runtime::Remoting::Messaging::MethodResponse {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+MethodResponse")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+> for crate::System::Runtime::Remoting::Messaging::MethodResponse {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializable,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

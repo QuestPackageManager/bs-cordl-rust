@@ -39,7 +39,7 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
     pub fn add_dataDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>,
+            crate::BeatSaber::AvatarCore::OptionalAvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -57,21 +57,14 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
     pub fn get_currentData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                u32,
-                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<u32, crate::BeatSaber::AvatarCore::OptionalAvatarData>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                u32,
-                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-            >,
+            u32,
+            crate::BeatSaber::AvatarCore::OptionalAvatarData,
         > = __cordl_object.invoke("get_currentData", ())?;
         Ok(__cordl_ret.into())
     }
@@ -85,7 +78,7 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
     pub fn remove_dataDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>,
+            crate::BeatSaber::AvatarCore::OptionalAvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

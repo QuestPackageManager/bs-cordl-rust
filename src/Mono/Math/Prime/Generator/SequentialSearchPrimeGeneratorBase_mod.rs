@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SequentialSearchPrimeGeneratorBase {
-    __cordl_parent: crate::Mono::Math::Prime::Generator::PrimeGeneratorBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Mono::Math::Prime::Generator::PrimeGeneratorBase,
+    >,
 }
 #[cfg(feature = "Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase")]
 impl std::ops::Deref
 for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
-    type Target = crate::Mono::Math::Prime::Generator::PrimeGeneratorBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Mono::Math::Prime::Generator::PrimeGeneratorBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +31,7 @@ for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
 }
 #[cfg(feature = "Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase")]
 impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
-    pub fn GenerateNewPrime_Il2CppObject1(
+    pub fn GenerateNewPrime_Gc1(
         &mut self,
         bits: i32,
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

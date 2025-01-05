@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AdaptiveSfxVolume {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
     pub _initData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::AdaptiveSfxVolume_InitData,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AdaptiveSfxVolume")]
 impl std::ops::Deref for crate::GlobalNamespace::AdaptiveSfxVolume {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -124,7 +124,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AdaptiveSfxVo
 #[repr(C)]
 #[derive(Debug)]
 pub struct AdaptiveSfxVolume_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub userSettingsVolumeOffset: f32,
     pub adaptiveSfx: bool,
     pub frequency: i32,
@@ -136,7 +136,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AdaptiveSfxVolume+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::AdaptiveSfxVolume_InitData {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

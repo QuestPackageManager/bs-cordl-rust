@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsServerProtocol {
-    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::DtlsProtocol,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsProtocol,
+    >,
     pub mVerifyRequests: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
-    type Target = crate::Org::BouncyCastle::Crypto::Tls::DtlsProtocol;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsProtocol,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -333,7 +337,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsServerProtocol_ServerHandshakeState {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub server: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsServer,
     >,
@@ -388,7 +392,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol_ServerHandshakeState {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

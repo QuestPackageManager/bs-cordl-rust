@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Foldout {
-    __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement,
+    >,
     pub m_Toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle>,
     pub m_Container: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
@@ -19,7 +21,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Foldout")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Foldout {
-    type Target = crate::UnityEngine::UIElements::BindableElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +40,7 @@ impl crate::UnityEngine::UIElements::Foldout {
     pub type UxmlFactory = crate::UnityEngine::UIElements::Foldout_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::Foldout_UxmlTraits;
-    pub fn Apply_EventBase0(
+    pub fn Apply_Gc0(
         &mut self,
         op: crate::UnityEngine::UIElements::KeyboardNavigationOperation,
         sourceEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
@@ -101,9 +105,7 @@ impl crate::UnityEngine::UIElements::Foldout {
     }
     pub fn __ctor_b__29_0(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-        >,
+        evt: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -175,18 +177,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Foldo
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Foldout")]
-impl AsRef<crate::UnityEngine::UIElements::INotifyValueChanged_1<bool>>
-for crate::UnityEngine::UIElements::Foldout {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::INotifyValueChanged_1<bool> {
+impl AsRef<quest_hook::libil2cpp::Gc<bool>> for crate::UnityEngine::UIElements::Foldout {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<bool> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Foldout")]
-impl AsMut<crate::UnityEngine::UIElements::INotifyValueChanged_1<bool>>
-for crate::UnityEngine::UIElements::Foldout {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::INotifyValueChanged_1<bool> {
+impl AsMut<quest_hook::libil2cpp::Gc<bool>> for crate::UnityEngine::UIElements::Foldout {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<bool> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -194,9 +192,9 @@ for crate::UnityEngine::UIElements::Foldout {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Foldout_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::Foldout,
-        *mut crate::UnityEngine::UIElements::Foldout_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout_UxmlTraits>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlFactory")]
@@ -206,9 +204,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::Foldout,
-        *mut crate::UnityEngine::UIElements::Foldout_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout_UxmlTraits>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -254,7 +252,9 @@ for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Foldout_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    >,
     pub m_Text: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
@@ -269,7 +269,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Foldout_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

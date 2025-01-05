@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BerTaggedObjectParser {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _constructed: bool,
     pub _tagNumber: i32,
     pub _parser: quest_hook::libil2cpp::Gc<
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerTaggedObjectParser")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::BerTaggedObjectParser {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::Org::BouncyCastle::Asn1::BerTaggedObjectParser {
         > = __cordl_object.invoke("GetObjectParser", (tag, isExplicit))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New__cordl_bool_Asn1StreamParser1(
+    pub fn New__cordl_bool1(
         constructed: bool,
         tagNumber: i32,
         parser: quest_hook::libil2cpp::Gc<
@@ -57,7 +57,7 @@ impl crate::Org::BouncyCastle::Asn1::BerTaggedObjectParser {
             .invoke_void(".ctor", (constructed, tagNumber, parser))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Stream0(
+    pub fn New_i32_0(
         baseTag: i32,
         tagNumber: i32,
         contentStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -81,7 +81,7 @@ impl crate::Org::BouncyCastle::Asn1::BerTaggedObjectParser {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_Asn1StreamParser1(
+    pub fn _ctor__cordl_bool1(
         &mut self,
         constructed: bool,
         tagNumber: i32,
@@ -96,7 +96,7 @@ impl crate::Org::BouncyCastle::Asn1::BerTaggedObjectParser {
             .invoke(".ctor", (constructed, tagNumber, parser))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Stream0(
+    pub fn _ctor_i32_0(
         &mut self,
         baseTag: i32,
         tagNumber: i32,
@@ -135,30 +135,46 @@ for crate::Org::BouncyCastle::Asn1::BerTaggedObjectParser {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerTaggedObjectParser")]
-impl AsRef<crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser>
-for crate::Org::BouncyCastle::Asn1::BerTaggedObjectParser {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser>,
+> for crate::Org::BouncyCastle::Asn1::BerTaggedObjectParser {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerTaggedObjectParser")]
-impl AsMut<crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser>
-for crate::Org::BouncyCastle::Asn1::BerTaggedObjectParser {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser>,
+> for crate::Org::BouncyCastle::Asn1::BerTaggedObjectParser {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerTaggedObjectParser")]
-impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>>
 for crate::Org::BouncyCastle::Asn1::BerTaggedObjectParser {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Convertible {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerTaggedObjectParser")]
-impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>>
 for crate::Org::BouncyCastle::Asn1::BerTaggedObjectParser {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

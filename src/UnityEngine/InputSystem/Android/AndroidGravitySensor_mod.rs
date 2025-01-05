@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidGravitySensor {
-    __cordl_parent: crate::UnityEngine::InputSystem::GravitySensor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::GravitySensor,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGravitySensor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGravitySensor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Android::AndroidGravitySensor {
-    type Target = crate::UnityEngine::InputSystem::GravitySensor;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::GravitySensor,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

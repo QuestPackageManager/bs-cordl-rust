@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRManager_OVRTelemetryConstants_AnnotationTypes {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRTelemetryConstants+OVRManager+AnnotationTypes")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRTelemetryConstants+OVRManager+AnnotationTypes")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +58,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRManager_OVRTelemetryConstants_MarkerId {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRTelemetryConstants+OVRManager+MarkerId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -69,7 +69,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRTelemetryConstants+OVRManager+MarkerId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -100,7 +100,7 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTelemetryConstants {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRTelemetryConstants")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -109,7 +109,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRTelemetryConstants")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRTelemetryConstants {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -145,7 +145,7 @@ for crate::GlobalNamespace::OVRTelemetryConstants {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTelemetryConstants_Editor {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRTelemetryConstants+Editor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -154,7 +154,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRTelemetryConstants+Editor")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRTelemetryConstants_Editor {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -183,7 +183,7 @@ for crate::GlobalNamespace::OVRTelemetryConstants_Editor {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTelemetryConstants_OVRManager {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRTelemetryConstants+OVRManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -193,7 +193,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRTelemetryConstants+OVRManager")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRTelemetryConstants_OVRManager {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -227,7 +227,7 @@ for crate::GlobalNamespace::OVRTelemetryConstants_OVRManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTelemetryConstants_SBB {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRTelemetryConstants+SBB")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -236,7 +236,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRTelemetryConstants+SBB")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRTelemetryConstants_SBB {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -268,7 +268,7 @@ for crate::GlobalNamespace::OVRTelemetryConstants_SBB {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTelemetryConstants_Scene {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRTelemetryConstants+Scene")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -277,7 +277,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRTelemetryConstants+Scene")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRTelemetryConstants_Scene {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -307,7 +307,7 @@ for crate::GlobalNamespace::OVRTelemetryConstants_Scene {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SBB_OVRTelemetryConstants_AnnotationType {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRTelemetryConstants+SBB+AnnotationType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -318,7 +318,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRTelemetryConstants+SBB+AnnotationType")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SBB_OVRTelemetryConstants_AnnotationType {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -348,7 +348,7 @@ for crate::GlobalNamespace::SBB_OVRTelemetryConstants_AnnotationType {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SBB_OVRTelemetryConstants_MarkerId {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRTelemetryConstants+SBB+MarkerId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -358,7 +358,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRTelemetryConstants+SBB+MarkerId")]
 impl std::ops::Deref for crate::GlobalNamespace::SBB_OVRTelemetryConstants_MarkerId {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -391,7 +391,7 @@ for crate::GlobalNamespace::SBB_OVRTelemetryConstants_MarkerId {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Scene_OVRTelemetryConstants_MarkerId {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -401,7 +401,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
 impl std::ops::Deref for crate::GlobalNamespace::Scene_OVRTelemetryConstants_MarkerId {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

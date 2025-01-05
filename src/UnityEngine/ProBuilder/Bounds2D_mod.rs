@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Bounds2D {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub center: crate::UnityEngine::Vector2,
     pub m_Size: crate::UnityEngine::Vector2,
     pub m_Extents: crate::UnityEngine::Vector2,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Bounds2D")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Bounds2D {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,34 +27,24 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Bounds2D {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Bounds2D")]
 impl crate::UnityEngine::ProBuilder::Bounds2D {
-    pub fn Center_IEnumerable_1_2(
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector4>,
-        >,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Center", (points, indexes))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Center_IList_1_0(
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        >,
+    pub fn Center_Gc0(
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Center", (points))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Center_IList_1_1(
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        >,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+    pub fn Center_Gc1(
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Center", (points, indexes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Center_Gc2(
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Center", (points, indexes))?;
@@ -82,7 +72,7 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
             .invoke("IntersectsLineSegment", (lineStart, lineEnd))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Intersects_Bounds2D0(
+    pub fn Intersects_Gc0(
         &mut self,
         bounds: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Bounds2D>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -109,10 +99,8 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IList_1_2(
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        >,
+    pub fn New_Gc2(
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -120,13 +108,9 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
             .invoke_void(".ctor", (points))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IList_1_IList_1_3(
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        >,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+    pub fn New_Gc_Gc3(
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -134,7 +118,7 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
             .invoke_void(".ctor", (points, indexes))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_Il2CppArray4(
+    pub fn New_Gc_Gc4(
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
@@ -148,7 +132,7 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
             .invoke_void(".ctor", (points, edges))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray_i32_5(
+    pub fn New_Gc_i32_5(
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
@@ -170,11 +154,9 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
             .invoke_void(".ctor", (center, _cordl_size))?;
         Ok(__cordl_object.into())
     }
-    pub fn SetWithPoints_IList_1_0(
+    pub fn SetWithPoints_Gc0(
         &mut self,
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        >,
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -183,14 +165,10 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
             .invoke("SetWithPoints", (points))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetWithPoints_IList_1_1(
+    pub fn SetWithPoints_Gc1(
         &mut self,
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        >,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -200,12 +178,8 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
         Ok(__cordl_ret.into())
     }
     pub fn Size(
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        >,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Size", (points, indexes))?;
@@ -234,11 +208,9 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IList_1_2(
+    pub fn _ctor_Gc2(
         &mut self,
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        >,
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -247,14 +219,10 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
             .invoke(".ctor", (points))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IList_1_IList_1_3(
+    pub fn _ctor_Gc_Gc3(
         &mut self,
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        >,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -263,7 +231,7 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
             .invoke(".ctor", (points, indexes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_Il2CppArray4(
+    pub fn _ctor_Gc_Gc4(
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
@@ -279,7 +247,7 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
             .invoke(".ctor", (points, edges))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray_i32_5(
+    pub fn _ctor_Gc_i32_5(
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,

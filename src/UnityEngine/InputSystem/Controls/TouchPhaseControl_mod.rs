@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchPhaseControl {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::TouchPhase,
     >,
 }
@@ -14,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Controls+TouchPhaseControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::TouchPhaseControl {
-    type Target = crate::UnityEngine::InputSystem::InputControl_1<
-        crate::UnityEngine::InputSystem::TouchPhase,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::TouchPhase>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

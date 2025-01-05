@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIRLayoutUpdater {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
+    >,
     pub changeEventsList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                crate::UnityEngine::Rect,
-                *mut crate::UnityEngine::UIElements::VisualElement,
-            >,
+        crate::System::Collections::Generic::KeyValuePair_2<
+            crate::UnityEngine::Rect,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     >,
 }
@@ -19,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIRLayoutUpdater")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRLayoutUpdater {
-    type Target = crate::UnityEngine::UIElements::BaseVisualTreeUpdater;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,11 +37,9 @@ impl crate::UnityEngine::UIElements::UIRLayoutUpdater {
     pub fn DispatchChangeEvents(
         &mut self,
         changeEvents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    crate::UnityEngine::Rect,
-                    *mut crate::UnityEngine::UIElements::VisualElement,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                crate::UnityEngine::Rect,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
             >,
         >,
         currentLayoutPass: i32,
@@ -85,11 +85,9 @@ impl crate::UnityEngine::UIElements::UIRLayoutUpdater {
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         isDisplayed: bool,
         changeEvents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    crate::UnityEngine::Rect,
-                    *mut crate::UnityEngine::UIElements::VisualElement,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                crate::UnityEngine::Rect,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

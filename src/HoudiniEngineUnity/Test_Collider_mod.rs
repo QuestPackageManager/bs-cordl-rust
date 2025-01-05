@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Test_Collider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Collider")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+Test_Collider")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::Test_Collider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -74,56 +74,56 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::Test_Colli
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Collider")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
-        *mut crate::HoudiniEngineUnity::Test_Collider,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Collider>,
     >,
 > for crate::HoudiniEngineUnity::Test_Collider {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
-        *mut crate::HoudiniEngineUnity::Test_Collider,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Collider>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Collider")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
-        *mut crate::HoudiniEngineUnity::Test_Collider,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Collider>,
     >,
 > for crate::HoudiniEngineUnity::Test_Collider {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
-        *mut crate::HoudiniEngineUnity::Test_Collider,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Collider>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Collider")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::Test_Collider,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Collider>,
     >,
 > for crate::HoudiniEngineUnity::Test_Collider {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::Test_Collider,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Collider>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Collider")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::Test_Collider,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Collider>,
     >,
 > for crate::HoudiniEngineUnity::Test_Collider {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::Test_Collider,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Collider>,
     > {
         unsafe { std::mem::transmute(self) }
     }

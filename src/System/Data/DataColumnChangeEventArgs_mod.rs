@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataColumnChangeEventArgs {
-    __cordl_parent: crate::System::EventArgs,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
     pub _column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     pub _Row_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     pub _ProposedValue_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataColumnChangeEventArgs")]
 impl std::ops::Deref for crate::System::Data::DataColumnChangeEventArgs {
-    type Target = crate::System::EventArgs;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::EventArgs>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +41,16 @@ impl crate::System::Data::DataColumnChangeEventArgs {
             .invoke("InitializeColumnChangeEvent", (column, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_DataColumn_Il2CppObject1(
+    pub fn New_Gc0(
+        row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (row))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc1(
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -52,16 +61,18 @@ impl crate::System::Data::DataColumnChangeEventArgs {
             .invoke_void(".ctor", (row, column, value))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DataRow0(
+    pub fn _ctor_Gc0(
+        &mut self,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (row))?;
-        Ok(__cordl_object.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (row))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DataColumn_Il2CppObject1(
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
@@ -72,17 +83,6 @@ impl crate::System::Data::DataColumnChangeEventArgs {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (row, column, value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_DataRow0(
-        &mut self,
-        row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (row))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ProposedValue(

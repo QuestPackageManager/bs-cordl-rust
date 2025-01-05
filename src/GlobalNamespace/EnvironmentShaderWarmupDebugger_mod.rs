@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentShaderWarmupDebugger {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _renderersThatWereNotRendered: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Renderer>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     >,
     pub _materialsThatWereNotRendered: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<*mut crate::UnityEngine::Material>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     >,
     pub _reusableStringBuilder: quest_hook::libil2cpp::Gc<
         crate::System::Text::StringBuilder,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnvironmentShaderWarmupDebugger")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -96,30 +96,34 @@ for crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
     }
 }
 #[cfg(feature = "EnvironmentShaderWarmupDebugger")]
-impl AsRef<crate::Zenject::IInitializable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
 for crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
-    fn as_ref(&self) -> &crate::Zenject::IInitializable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EnvironmentShaderWarmupDebugger")]
-impl AsMut<crate::Zenject::IInitializable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
 for crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EnvironmentShaderWarmupDebugger")]
-impl AsRef<crate::Zenject::ILateTickable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>>
 for crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
-    fn as_ref(&self) -> &crate::Zenject::ILateTickable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EnvironmentShaderWarmupDebugger")]
-impl AsMut<crate::Zenject::ILateTickable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>>
 for crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
-    fn as_mut(&mut self) -> &mut crate::Zenject::ILateTickable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DIContainerSignal {
-    __cordl_parent: crate::GlobalNamespace::GenericSignal_1<
-        *mut crate::Zenject::DiContainer,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     >,
 }
 #[cfg(feature = "DIContainerSignal")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DIContainerSignal")]
 impl std::ops::Deref for crate::GlobalNamespace::DIContainerSignal {
-    type Target = crate::GlobalNamespace::GenericSignal_1<
-        *mut crate::Zenject::DiContainer,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

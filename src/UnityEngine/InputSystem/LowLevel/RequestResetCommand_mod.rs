@@ -52,20 +52,30 @@ impl crate::UnityEngine::InputSystem::LowLevel::RequestResetCommand {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+RequestResetCommand")]
-impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
-for crate::UnityEngine::InputSystem::LowLevel::RequestResetCommand {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::RequestResetCommand {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+RequestResetCommand")]
-impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
-for crate::UnityEngine::InputSystem::LowLevel::RequestResetCommand {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::RequestResetCommand {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
+    > {
         todo!()
     }
 }

@@ -38,20 +38,20 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarData {
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarData")]
-impl AsRef<crate::System::IEquatable_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::OptionalAvatarData>>
 for crate::BeatSaber::AvatarCore::OptionalAvatarData {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::BeatSaber::AvatarCore::OptionalAvatarData> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::OptionalAvatarData> {
         todo!()
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarData")]
-impl AsMut<crate::System::IEquatable_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::OptionalAvatarData>>
 for crate::BeatSaber::AvatarCore::OptionalAvatarData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::BeatSaber::AvatarCore::OptionalAvatarData,
     > {
         todo!()

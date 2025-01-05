@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DigestRandomGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub stateCounter: i64,
     pub seedCounter: i64,
     pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+DigestRandomGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Prng::DigestRandomGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::DigestRandomGenerator {
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+DigestRandomGenerator")]
 impl crate::Org::BouncyCastle::Crypto::Prng::DigestRandomGenerator {
     pub const CYCLE_COUNT: i64 = 10i64;
-    pub fn AddSeedMaterial_Il2CppArray0(
+    pub fn AddSeedMaterial_Gc0(
         &mut self,
         inSeed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -116,7 +116,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::DigestRandomGenerator {
             .invoke_void(".ctor", (digest))?;
         Ok(__cordl_object.into())
     }
-    pub fn NextBytes_Il2CppArray0(
+    pub fn NextBytes_Gc0(
         &mut self,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -163,18 +163,26 @@ for crate::Org::BouncyCastle::Crypto::Prng::DigestRandomGenerator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+DigestRandomGenerator")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator>
-for crate::Org::BouncyCastle::Crypto::Prng::DigestRandomGenerator {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator>,
+> for crate::Org::BouncyCastle::Crypto::Prng::DigestRandomGenerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+DigestRandomGenerator")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator>
-for crate::Org::BouncyCastle::Crypto::Prng::DigestRandomGenerator {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator>,
+> for crate::Org::BouncyCastle::Crypto::Prng::DigestRandomGenerator {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

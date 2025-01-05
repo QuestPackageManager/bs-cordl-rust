@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerBadgeDataMinMaxFloatSO {
-    __cordl_parent: crate::GlobalNamespace::MultiplayerBadgeDataSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerBadgeDataSO,
+    >,
     pub _minMax: crate::GlobalNamespace::MultiplayerBadgeMinMax,
     pub _weightMultiplier: f32,
 }
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerBadgeDataMinMaxFloatSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
-    type Target = crate::GlobalNamespace::MultiplayerBadgeDataSO;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerBadgeDataSO,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,8 +34,8 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
     pub fn CalculateBadgeData(
         &mut self,
         resultsData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         >,
         playerDataModel: quest_hook::libil2cpp::Gc<
@@ -57,8 +61,8 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
     pub fn CalculateMax(
         &mut self,
         resultsData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         >,
         randomMultiplier: f32,
@@ -76,8 +80,8 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
     pub fn CalculateMin(
         &mut self,
         resultsData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         >,
         randomMultiplier: f32,

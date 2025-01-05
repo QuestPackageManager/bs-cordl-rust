@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvalidKeyException {
-    __cordl_parent: crate::System::Exception,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     pub _Key_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
     >,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AddressableAssets+InvalidKeyException")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::InvalidKeyException {
-    type Target = crate::System::Exception;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Exception>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,9 +39,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
     pub fn GetCSVString(
         &mut self,
         enumerator: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         prefixSingle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         prefixPlural: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -74,9 +72,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
     pub fn GetMessageforMergeKeys(
         &mut self,
         keys: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -93,7 +89,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         &mut self,
         keyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         typesAvailableForKey: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -128,7 +124,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         &mut self,
         keyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         typesAvailableForKey: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -146,11 +142,9 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         typeToKeys: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut crate::System::Type,
-                *mut crate::System::Collections::Generic::List_1<
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -165,15 +159,13 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         &mut self,
         keyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<*mut crate::System::Type>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         > = __cordl_object.invoke("GetTypesForKey", (keyString))?;
         Ok(__cordl_ret.into())
     }
@@ -184,7 +176,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppObject0(
+    pub fn New_Gc0(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -193,7 +185,16 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
             .invoke_void(".ctor", (key))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppObject_Type1(
+    pub fn New_Gc6(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (message))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Gc1(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -203,20 +204,17 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
             .invoke_void(".ctor", (key, _cordl_type))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppObject_Type_AddressablesImpl2(
-        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        addr: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::AddressablesImpl,
-        >,
+    pub fn New_Gc_Gc7(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (key, _cordl_type, addr))?;
+            .invoke_void(".ctor", (message, innerException))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppObject_Type_Addressables_MergeMode3(
+    pub fn New_Gc_Gc_Addressables_MergeMode3(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         mergeMode: crate::UnityEngine::AddressableAssets::Addressables_MergeMode,
@@ -227,7 +225,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
             .invoke_void(".ctor", (key, _cordl_type, mergeMode))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppObject_Type_Addressables_MergeMode_AddressablesImpl4(
+    pub fn New_Gc_Gc_Addressables_MergeMode_Gc4(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         mergeMode: crate::UnityEngine::AddressableAssets::Addressables_MergeMode,
@@ -241,26 +239,20 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
             .invoke_void(".ctor", (key, _cordl_type, mergeMode, addr))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString6(
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fn New_Gc_Gc_Gc2(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        addr: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::AddressablesImpl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (message))?;
+            .invoke_void(".ctor", (key, _cordl_type, addr))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Exception7(
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (message, innerException))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SerializationInfo_StreamingContext8(
+    pub fn New_Gc_StreamingContext8(
         message: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -282,7 +274,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject0(
+    pub fn _ctor_Gc0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -293,7 +285,18 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
             .invoke(".ctor", (key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject_Type1(
+    pub fn _ctor_Gc6(
+        &mut self,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -305,22 +308,19 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
             .invoke(".ctor", (key, _cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject_Type_AddressablesImpl2(
+    pub fn _ctor_Gc_Gc7(
         &mut self,
-        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        addr: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::AddressablesImpl,
-        >,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (key, _cordl_type, addr))?;
+            .invoke(".ctor", (message, innerException))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject_Type_Addressables_MergeMode3(
+    pub fn _ctor_Gc_Gc_Addressables_MergeMode3(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -333,7 +333,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
             .invoke(".ctor", (key, _cordl_type, mergeMode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject_Type_Addressables_MergeMode_AddressablesImpl4(
+    pub fn _ctor_Gc_Gc_Addressables_MergeMode_Gc4(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -349,30 +349,22 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
             .invoke(".ctor", (key, _cordl_type, mergeMode, addr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString6(
+    pub fn _ctor_Gc_Gc_Gc2(
         &mut self,
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        addr: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::AddressablesImpl,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (message))?;
+            .invoke(".ctor", (key, _cordl_type, addr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Exception7(
-        &mut self,
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (message, innerException))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SerializationInfo_StreamingContext8(
+    pub fn _ctor_Gc_StreamingContext8(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

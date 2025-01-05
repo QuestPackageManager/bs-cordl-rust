@@ -24,7 +24,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::i
 impl crate::Unity::Mathematics::int2 {
     #[cfg(feature = "Unity+Mathematics+int2+DebuggerProxy")]
     pub type DebuggerProxy = crate::Unity::Mathematics::int2_DebuggerProxy;
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -64,7 +64,7 @@ impl crate::Unity::Mathematics::int2 {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider1(
+    pub fn ToString_Gc_Gc1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -976,30 +976,32 @@ impl crate::Unity::Mathematics::int2 {
     }
 }
 #[cfg(feature = "Unity+Mathematics+int2")]
-impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::int2>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
 for crate::Unity::Mathematics::int2 {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::Unity::Mathematics::int2> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Mathematics+int2")]
-impl AsMut<crate::System::IEquatable_1<crate::Unity::Mathematics::int2>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::Unity::Mathematics::int2 {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+int2")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::int2>>
+for crate::Unity::Mathematics::int2 {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::int2> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+int2")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::int2>>
 for crate::Unity::Mathematics::int2 {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::Unity::Mathematics::int2> {
-        todo!()
-    }
-}
-#[cfg(feature = "Unity+Mathematics+int2")]
-impl AsRef<crate::System::IFormattable> for crate::Unity::Mathematics::int2 {
-    fn as_ref(&self) -> &crate::System::IFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "Unity+Mathematics+int2")]
-impl AsMut<crate::System::IFormattable> for crate::Unity::Mathematics::int2 {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::int2> {
         todo!()
     }
 }
@@ -1007,7 +1009,7 @@ impl AsMut<crate::System::IFormattable> for crate::Unity::Mathematics::int2 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct int2_DebuggerProxy {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub x: i32,
     pub y: i32,
 }
@@ -1018,7 +1020,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Mathematics+int2+DebuggerProxy")]
 impl std::ops::Deref for crate::Unity::Mathematics::int2_DebuggerProxy {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

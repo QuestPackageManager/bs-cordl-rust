@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NotationData {
-    __cordl_parent: crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+NotationData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+NotationData")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::Sig::NotationData {
-    type Target = crate::Org::BouncyCastle::Bcpg::SignatureSubpacket;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,18 +83,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::NotationData {
         > = __cordl_object.invoke("GetNotationValueBytes", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppArray0(
-        critical: bool,
-        isLongLength: bool,
-        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (critical, isLongLength, data))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppString_Il2CppString1(
+    pub fn New_Gc1(
         critical: bool,
         humanReadable: bool,
         notationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -105,20 +98,18 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::NotationData {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppArray0(
-        &mut self,
+    pub fn New__cordl_bool__cordl_bool_Gc0(
         critical: bool,
         isLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (critical, isLongLength, data))?;
-        Ok(__cordl_ret.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (critical, isLongLength, data))?;
+        Ok(__cordl_object.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         critical: bool,
         humanReadable: bool,
@@ -130,6 +121,19 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::NotationData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (critical, humanReadable, notationName, notationValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor__cordl_bool__cordl_bool_Gc0(
+        &mut self,
+        critical: bool,
+        isLongLength: bool,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (critical, isLongLength, data))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsHumanReadable(&mut self) -> quest_hook::libil2cpp::Result<bool> {

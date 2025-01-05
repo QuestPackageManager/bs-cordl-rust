@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECPrivateKeyStructure {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+ECPrivateKeyStructure")]
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Sec+ECPrivateKeyStructure")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,7 +95,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
         > = __cordl_object.invoke("GetPublicKey", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Asn1Sequence0(
+    pub fn New_Gc0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -100,7 +104,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_BigInteger1(
+    pub fn New_Gc1(
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -109,7 +113,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke_void(".ctor", (key))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_BigInteger_Asn1Encodable3(
+    pub fn New_Gc_Gc3(
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         parameters: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Encodable,
@@ -121,7 +125,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke_void(".ctor", (key, parameters))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_BigInteger_DerBitString_Asn1Encodable4(
+    pub fn New_Gc_Gc_Gc4(
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         publicKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerBitString,
@@ -136,7 +140,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke_void(".ctor", (key, publicKey, parameters))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_BigInteger2(
+    pub fn New_i32_Gc2(
         orderBitLength: i32,
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -146,7 +150,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke_void(".ctor", (orderBitLength, key))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_BigInteger_Asn1Encodable5(
+    pub fn New_i32_Gc_Gc5(
         orderBitLength: i32,
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         parameters: quest_hook::libil2cpp::Gc<
@@ -159,7 +163,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke_void(".ctor", (orderBitLength, key, parameters))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_BigInteger_DerBitString_Asn1Encodable6(
+    pub fn New_i32_Gc_Gc_Gc6(
         orderBitLength: i32,
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         publicKey: quest_hook::libil2cpp::Gc<
@@ -188,7 +192,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Asn1Sequence0(
+    pub fn _ctor_Gc0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -199,7 +203,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger1(
+    pub fn _ctor_Gc1(
         &mut self,
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -210,7 +214,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke(".ctor", (key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger_Asn1Encodable3(
+    pub fn _ctor_Gc_Gc3(
         &mut self,
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         parameters: quest_hook::libil2cpp::Gc<
@@ -224,7 +228,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke(".ctor", (key, parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BigInteger_DerBitString_Asn1Encodable4(
+    pub fn _ctor_Gc_Gc_Gc4(
         &mut self,
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         publicKey: quest_hook::libil2cpp::Gc<
@@ -241,7 +245,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke(".ctor", (key, publicKey, parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_BigInteger2(
+    pub fn _ctor_i32_Gc2(
         &mut self,
         orderBitLength: i32,
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -253,7 +257,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke(".ctor", (orderBitLength, key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_BigInteger_Asn1Encodable5(
+    pub fn _ctor_i32_Gc_Gc5(
         &mut self,
         orderBitLength: i32,
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -268,7 +272,7 @@ impl crate::Org::BouncyCastle::Asn1::Sec::ECPrivateKeyStructure {
             .invoke(".ctor", (orderBitLength, key, parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_BigInteger_DerBitString_Asn1Encodable6(
+    pub fn _ctor_i32_Gc_Gc_Gc6(
         &mut self,
         orderBitLength: i32,
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,

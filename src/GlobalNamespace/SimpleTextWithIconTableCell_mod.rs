@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleTextWithIconTableCell {
-    __cordl_parent: crate::HMUI::TableCell,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SimpleTextWithIconTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::SimpleTextWithIconTableCell {
-    type Target = crate::HMUI::TableCell;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

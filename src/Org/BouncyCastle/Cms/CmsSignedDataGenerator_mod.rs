@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsSignedDataGenerator {
-    __cordl_parent: crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
+    >,
     pub signerInfs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataGenerator")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
-    type Target = crate::Org::BouncyCastle::Cms::CmsSignedGenerator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,46 +44,39 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
             .invoke("AddSignerInfoGenerator", (signerInfoGenerator))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddSigner_Il2CppArray2(
+    pub fn AddSigner_Gc1(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
-        subjectKeyID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+        encryptionOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddSigner", (privateKey, subjectKeyID, digestOID))?;
+            .invoke("AddSigner", (privateKey, cert, encryptionOID, digestOID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddSigner_Il2CppArray_AttributeTable_AttributeTable6(
+    pub fn AddSigner_Gc3(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
         subjectKeyID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        encryptionOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        signedAttr: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-        >,
-        unsignedAttr: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "AddSigner",
-                (privateKey, subjectKeyID, digestOID, signedAttr, unsignedAttr),
-            )?;
+            .invoke("AddSigner", (privateKey, subjectKeyID, encryptionOID, digestOID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddSigner_Il2CppArray_CmsAttributeTableGenerator_CmsAttributeTableGenerator10(
+    pub fn AddSigner_Gc_Gc10(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -103,29 +100,12 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddSigner_Il2CppArray_Il2CppString3(
+    pub fn AddSigner_Gc_Gc4(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
-        subjectKeyID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        encryptionOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddSigner", (privateKey, subjectKeyID, encryptionOID, digestOID))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddSigner_Il2CppArray_Il2CppString_AttributeTable_AttributeTable7(
-        &mut self,
-        privateKey: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        >,
-        subjectKeyID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        encryptionOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
         digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         signedAttr: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
@@ -140,18 +120,74 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "AddSigner",
-                (
-                    privateKey,
-                    subjectKeyID,
-                    encryptionOID,
-                    digestOID,
-                    signedAttr,
-                    unsignedAttr,
-                ),
+                (privateKey, cert, digestOID, signedAttr, unsignedAttr),
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddSigner_Il2CppArray_Il2CppString_CmsAttributeTableGenerator_CmsAttributeTableGenerator11(
+    pub fn AddSigner_Gc_Gc6(
+        &mut self,
+        privateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        subjectKeyID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        signedAttr: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+        >,
+        unsignedAttr: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "AddSigner",
+                (privateKey, subjectKeyID, digestOID, signedAttr, unsignedAttr),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddSigner_Gc_Gc8(
+        &mut self,
+        privateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+        digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        signedAttrGen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+        >,
+        unsignedAttrGen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "AddSigner",
+                (privateKey, cert, digestOID, signedAttrGen, unsignedAttrGen),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddSigner_Gc_Gc_Gc0(
+        &mut self,
+        privateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+        digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddSigner", (privateKey, cert, digestOID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddSigner_Gc_Gc_Gc11(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -183,86 +219,22 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddSigner_X509Certificate0(
+    pub fn AddSigner_Gc_Gc_Gc2(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
-        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+        subjectKeyID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddSigner", (privateKey, cert, digestOID))?;
+            .invoke("AddSigner", (privateKey, subjectKeyID, digestOID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddSigner_X509Certificate_AttributeTable_AttributeTable4(
-        &mut self,
-        privateKey: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        >,
-        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
-        digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        signedAttr: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-        >,
-        unsignedAttr: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "AddSigner",
-                (privateKey, cert, digestOID, signedAttr, unsignedAttr),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddSigner_X509Certificate_CmsAttributeTableGenerator_CmsAttributeTableGenerator8(
-        &mut self,
-        privateKey: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        >,
-        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
-        digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        signedAttrGen: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-        >,
-        unsignedAttrGen: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "AddSigner",
-                (privateKey, cert, digestOID, signedAttrGen, unsignedAttrGen),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddSigner_X509Certificate_Il2CppString1(
-        &mut self,
-        privateKey: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        >,
-        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
-        encryptionOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddSigner", (privateKey, cert, encryptionOID, digestOID))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddSigner_X509Certificate_Il2CppString_AttributeTable_AttributeTable5(
+    pub fn AddSigner_Gc_Gc_Gc5(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -287,7 +259,39 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddSigner_X509Certificate_Il2CppString_CmsAttributeTableGenerator_CmsAttributeTableGenerator9(
+    pub fn AddSigner_Gc_Gc_Gc7(
+        &mut self,
+        privateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        subjectKeyID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        encryptionOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        signedAttr: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+        >,
+        unsignedAttr: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "AddSigner",
+                (
+                    privateKey,
+                    subjectKeyID,
+                    encryptionOID,
+                    digestOID,
+                    signedAttr,
+                    unsignedAttr,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddSigner_Gc_Gc_Gc9(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -335,7 +339,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
         > = __cordl_object.invoke("GenerateCounterSigners", (signer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_CmsProcessable0(
+    pub fn Generate_Gc0(
         &mut self,
         content: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsProcessable>,
     ) -> quest_hook::libil2cpp::Result<
@@ -349,24 +353,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
         > = __cordl_object.invoke("Generate", (content))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_CmsProcessable__cordl_bool2(
-        &mut self,
-        content: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::CmsProcessable,
-        >,
-        encapsulate: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSignedData>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::CmsSignedData,
-        > = __cordl_object.invoke("Generate", (content, encapsulate))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Generate_Il2CppString_CmsProcessable__cordl_bool1(
+    pub fn Generate_Gc__cordl_bool1(
         &mut self,
         signedContentType: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -387,6 +374,23 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
             .invoke("Generate", (signedContentType, content, encapsulate))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Generate__cordl_bool2(
+        &mut self,
+        content: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsProcessable,
+        >,
+        encapsulate: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSignedData>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsSignedData,
+        > = __cordl_object.invoke("Generate", (content, encapsulate))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -394,7 +398,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SecureRandom1(
+    pub fn New_Gc1(
         _cordl_rand: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
@@ -415,7 +419,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SecureRandom1(
+    pub fn _ctor_Gc1(
         &mut self,
         _cordl_rand: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
@@ -481,7 +485,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsSignedDataGenerator_SignerInf {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub outer: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
     >,
@@ -512,7 +516,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataGenerator+SignerInf")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator_SignerInf {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -526,7 +530,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator_SignerInf {
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataGenerator+SignerInf")]
 impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator_SignerInf {
-    pub fn New_AsymmetricKeyParameter_Il2CppString_Il2CppString_CmsAttributeTableGenerator_CmsAttributeTableGenerator_AttributeTable0(
+    pub fn New_Gc_Gc0(
         outer: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
         >,
@@ -566,7 +570,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator_SignerInf {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ISignatureFactory_CmsAttributeTableGenerator_CmsAttributeTableGenerator_AttributeTable1(
+    pub fn New_Gc_Gc_Gc_Gc_Gc_Gc1(
         outer: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
         >,
@@ -617,7 +621,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator_SignerInf {
         > = __cordl_object.invoke("ToSignerInfo", (contentType, content, random))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AsymmetricKeyParameter_Il2CppString_Il2CppString_CmsAttributeTableGenerator_CmsAttributeTableGenerator_AttributeTable0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         outer: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
@@ -659,7 +663,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator_SignerInf {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ISignatureFactory_CmsAttributeTableGenerator_CmsAttributeTableGenerator_AttributeTable1(
+    pub fn _ctor_Gc_Gc_Gc_Gc_Gc_Gc1(
         &mut self,
         outer: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsSignedGenerator,

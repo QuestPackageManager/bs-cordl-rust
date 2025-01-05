@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XNode {
-    __cordl_parent: crate::System::Xml::Linq::XObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObject>,
     pub next: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNode>,
 }
 #[cfg(feature = "System+Xml+Linq+XNode")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XNode")]
 impl std::ops::Deref for crate::System::Xml::Linq::XNode {
-    type Target = crate::System::Xml::Linq::XObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

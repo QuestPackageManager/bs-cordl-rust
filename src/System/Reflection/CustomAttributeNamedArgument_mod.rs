@@ -59,7 +59,7 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_MemberInfo_CustomAttributeTypedArgument2(
+    pub fn _ctor_CustomAttributeTypedArgument2(
         &mut self,
         memberInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         typedArgument: crate::System::Reflection::CustomAttributeTypedArgument,
@@ -71,7 +71,7 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_MemberInfo_Il2CppObject1(
+    pub fn _ctor_Gc1(
         &mut self,
         memberInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -83,7 +83,7 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Type_Il2CppString__cordl_bool_CustomAttributeTypedArgument0(
+    pub fn _ctor_Gc__cordl_bool_CustomAttributeTypedArgument0(
         &mut self,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

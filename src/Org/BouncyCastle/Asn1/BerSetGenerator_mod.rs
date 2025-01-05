@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BerSetGenerator {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::BerGenerator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerGenerator,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerSetGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerSetGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::BerSetGenerator {
-    type Target = crate::Org::BouncyCastle::Asn1::BerGenerator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerGenerator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +28,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::BerSetGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerSetGenerator")]
 impl crate::Org::BouncyCastle::Asn1::BerSetGenerator {
-    pub fn New_Stream0(
+    pub fn New_Gc0(
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -44,7 +48,7 @@ impl crate::Org::BouncyCastle::Asn1::BerSetGenerator {
             .invoke_void(".ctor", (outStream, tagNo, isExplicit))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Stream0(
+    pub fn _ctor_Gc0(
         &mut self,
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

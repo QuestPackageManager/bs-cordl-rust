@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityWebRequestAsyncOperation {
-    __cordl_parent: crate::UnityEngine::AsyncOperation,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     pub _webRequest_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Networking::UnityWebRequest,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Networking+UnityWebRequestAsyncOperation")]
 impl std::ops::Deref for crate::UnityEngine::Networking::UnityWebRequestAsyncOperation {
-    type Target = crate::UnityEngine::AsyncOperation;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

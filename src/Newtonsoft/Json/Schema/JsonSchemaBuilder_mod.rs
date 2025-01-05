@@ -2,20 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _stack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            *mut crate::Newtonsoft::Json::Schema::JsonSchema,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     >,
     pub _resolver: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
     >,
     pub _documentSchemas: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IDictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut crate::Newtonsoft::Json::Schema::JsonSchema,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     >,
     pub _currentSchema: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Schema::JsonSchema,
@@ -29,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaBuilder")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +52,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         > = __cordl_object.invoke("BuildSchema", (token))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MapType_Il2CppString0(
+    pub fn MapType_Gc0(
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Schema::JsonSchemaType> {
         let __cordl_ret: crate::Newtonsoft::Json::Schema::JsonSchemaType = <Self as quest_hook::libil2cpp::Type>::class()
@@ -158,20 +154,16 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         token: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::Newtonsoft::Json::Schema::JsonSchema,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut crate::Newtonsoft::Json::Schema::JsonSchema,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
         > = __cordl_object.invoke("ProcessProperties", (token))?;
         Ok(__cordl_ret.into())
     }

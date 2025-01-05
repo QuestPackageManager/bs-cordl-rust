@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetPacketReader {
-    __cordl_parent: crate::LiteNetLib::Utils::NetDataReader,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     pub _packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     pub _manager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
     pub _evt: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetEvent>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+NetPacketReader")]
 impl std::ops::Deref for crate::LiteNetLib::NetPacketReader {
-    type Target = crate::LiteNetLib::Utils::NetDataReader;
+    type Target = quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

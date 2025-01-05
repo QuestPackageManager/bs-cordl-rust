@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConventionFilterTypesBinder {
-    __cordl_parent: crate::Zenject::ConventionAssemblySelectionBinder,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Zenject::ConventionAssemblySelectionBinder,
+    >,
 }
 #[cfg(feature = "Zenject+ConventionFilterTypesBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ConventionFilterTypesBinder")]
 impl std::ops::Deref for crate::Zenject::ConventionFilterTypesBinder {
-    type Target = crate::Zenject::ConventionAssemblySelectionBinder;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Zenject::ConventionAssemblySelectionBinder,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +45,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         > = __cordl_object.invoke("DerivingFromOrEqual", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn DerivingFromOrEqual_Type1(
+    pub fn DerivingFromOrEqual_Gc1(
         &mut self,
         parentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -72,7 +76,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         > = __cordl_object.invoke("DerivingFrom", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn DerivingFrom_Type1(
+    pub fn DerivingFrom_Gc1(
         &mut self,
         parentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -100,11 +104,11 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         > = __cordl_object.invoke("InNamespace", (ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InNamespaces_IEnumerable_1_1(
+    pub fn InNamespaces_Gc0(
         &mut self,
         namespaces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -118,10 +122,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         > = __cordl_object.invoke("InNamespaces", (namespaces))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InNamespaces_Il2CppArray0(
+    pub fn InNamespaces_Gc1(
         &mut self,
         namespaces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
@@ -142,7 +146,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
             .invoke("IsInNamespace", (_cordl_type, requiredNs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchingRegex_Il2CppString0(
+    pub fn MatchingRegex_Gc0(
         &mut self,
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -156,7 +160,21 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         > = __cordl_object.invoke("MatchingRegex", (pattern))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchingRegex_Il2CppString_RegexOptions1(
+    pub fn MatchingRegex_Gc2(
+        &mut self,
+        regex: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ConventionFilterTypesBinder,
+        > = __cordl_object.invoke("MatchingRegex", (regex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MatchingRegex_RegexOptions1(
         &mut self,
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Text::RegularExpressions::RegexOptions,
@@ -171,20 +189,6 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         > = __cordl_object.invoke("MatchingRegex", (pattern, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchingRegex_Regex2(
-        &mut self,
-        regex: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConventionFilterTypesBinder,
-        > = __cordl_object.invoke("MatchingRegex", (regex))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn New(
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -197,7 +201,8 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     pub fn Where(
         &mut self,
         predicate: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<*mut crate::System::Type, bool>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
@@ -212,7 +217,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     }
     pub fn WithAttributeWhere<T>(
         &mut self,
-        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, bool>>,
+        predicate: quest_hook::libil2cpp::Gc<T, bool>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     >
@@ -245,7 +250,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         > = __cordl_object.invoke("WithAttribute", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn WithAttribute_Type1(
+    pub fn WithAttribute_Gc1(
         &mut self,
         attribute: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -304,7 +309,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         > = __cordl_object.invoke("WithoutAttribute", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn WithoutAttribute_Type1(
+    pub fn WithoutAttribute_Gc1(
         &mut self,
         attribute: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<

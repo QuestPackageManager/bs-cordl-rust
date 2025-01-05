@@ -2,19 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FastAction_2<A: quest_hook::libil2cpp::Type, B: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub delegates: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedList_1<
-            *mut crate::System::Action_2<A, B>,
-        >,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub delegates: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<A, B>>,
     pub lookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Action_2<A, B>,
-            *mut crate::System::Collections::Generic::LinkedListNode_1<
-                *mut crate::System::Action_2<A, B>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<A, B>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<A, B>>,
     >,
     __cordl_phantom_A: std::marker::PhantomData<A>,
     __cordl_phantom_B: std::marker::PhantomData<B>,
@@ -27,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "TMPro+FastAction_2")]
 impl<A: quest_hook::libil2cpp::Type, B: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::TMPro::FastAction_2<A, B> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +38,7 @@ impl<
 > crate::TMPro::FastAction_2<A, B> {
     pub fn Add(
         &mut self,
-        rhs: quest_hook::libil2cpp::Gc<crate::System::Action_2<A, B>>,
+        rhs: quest_hook::libil2cpp::Gc<A, B>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -94,7 +86,7 @@ impl<
     }
     pub fn Remove(
         &mut self,
-        rhs: quest_hook::libil2cpp::Gc<crate::System::Action_2<A, B>>,
+        rhs: quest_hook::libil2cpp::Gc<A, B>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

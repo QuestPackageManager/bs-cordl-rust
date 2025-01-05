@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RevocationKey {
-    __cordl_parent: crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationKey")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::RevocationKey {
-    type Target = crate::Org::BouncyCastle::Bcpg::SignatureSubpacket;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +54,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
         > = __cordl_object.invoke("GetFingerprint", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_RevocationKeyTag_PublicKeyAlgorithmTag_Il2CppArray1(
+    pub fn New_RevocationKeyTag_PublicKeyAlgorithmTag_Gc1(
         isCritical: bool,
         signatureClass: crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
         keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
@@ -65,7 +69,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool_Il2CppArray0(
+    pub fn New__cordl_bool_Gc0(
         isCritical: bool,
         isLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -76,7 +80,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
             .invoke_void(".ctor", (isCritical, isLongLength, data))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_RevocationKeyTag_PublicKeyAlgorithmTag_Il2CppArray1(
+    pub fn _ctor_RevocationKeyTag_PublicKeyAlgorithmTag_Gc1(
         &mut self,
         isCritical: bool,
         signatureClass: crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
@@ -90,7 +94,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
             .invoke(".ctor", (isCritical, signatureClass, keyAlgorithm, fingerprint))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_Il2CppArray0(
+    pub fn _ctor__cordl_bool_Gc0(
         &mut self,
         isCritical: bool,
         isLongLength: bool,

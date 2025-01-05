@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskExceptionHolder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     pub m_faultExceptions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LowLevelListWithIList_1<
-            *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
         >,
     >,
     pub m_cancellationException: quest_hook::libil2cpp::Gc<
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Tasks+TaskExceptionHolder")]
 impl std::ops::Deref for crate::System::Threading::Tasks::TaskExceptionHolder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -103,8 +103,8 @@ impl crate::System::Threading::Tasks::TaskExceptionHolder {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
             >,
         >,
     > {
@@ -112,8 +112,8 @@ impl crate::System::Threading::Tasks::TaskExceptionHolder {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
             >,
         > = __cordl_object.invoke("GetExceptionDispatchInfos", ())?;
         Ok(__cordl_ret.into())

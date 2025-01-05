@@ -30,16 +30,10 @@ impl crate::Unity::Properties::PropertyMember {
     pub fn GetCustomAttributes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Attribute,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Attribute,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetCustomAttributes",
@@ -88,16 +82,20 @@ impl crate::Unity::Properties::PropertyMember {
     }
 }
 #[cfg(feature = "Unity+Properties+PropertyMember")]
-impl AsRef<crate::Unity::Properties::IMemberInfo>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IMemberInfo>>
 for crate::Unity::Properties::PropertyMember {
-    fn as_ref(&self) -> &crate::Unity::Properties::IMemberInfo {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Unity::Properties::IMemberInfo> {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Properties+PropertyMember")]
-impl AsMut<crate::Unity::Properties::IMemberInfo>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IMemberInfo>>
 for crate::Unity::Properties::PropertyMember {
-    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IMemberInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Properties::IMemberInfo> {
         todo!()
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpSignature {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub sigPck: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Bcpg::SignaturePacket,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSignature")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -198,7 +198,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
             .invoke("IsCertification", (signatureType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_BcpgInputStream0(
+    pub fn New_Gc0(
         bcpgInput: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
         >,
@@ -209,7 +209,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
             .invoke_void(".ctor", (bcpgInput))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SignaturePacket1(
+    pub fn New_Gc1(
         sigPacket: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::SignaturePacket,
         >,
@@ -220,7 +220,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
             .invoke_void(".ctor", (sigPacket))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SignaturePacket_TrustPacket2(
+    pub fn New_Gc2(
         sigPacket: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::SignaturePacket,
         >,
@@ -259,7 +259,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
             .invoke("UpdateWithPublicKey", (key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Update_Il2CppArray1(
+    pub fn Update_Gc1(
         &mut self,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -270,7 +270,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
             .invoke("Update", (bytes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Update_Il2CppArray_i32_i32_2(
+    pub fn Update_Gc_i32_i32_2(
         &mut self,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
@@ -301,48 +301,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
         let __cordl_ret: bool = __cordl_object.invoke("Verify", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn VerifyCertification_Il2CppString_PgpPublicKey1(
-        &mut self,
-        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        key: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("VerifyCertification", (id, key))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn VerifyCertification_PgpPublicKey3(
-        &mut self,
-        pubKey: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("VerifyCertification", (pubKey))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn VerifyCertification_PgpPublicKey_PgpPublicKey2(
-        &mut self,
-        masterKey: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        >,
-        pubKey: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("VerifyCertification", (masterKey, pubKey))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn VerifyCertification_PgpUserAttributeSubpacketVector_PgpPublicKey0(
+    pub fn VerifyCertification_Gc0(
         &mut self,
         userAttributes: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVector,
@@ -358,7 +317,48 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
             .invoke("VerifyCertification", (userAttributes, key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_BcpgInputStream0(
+    pub fn VerifyCertification_Gc1(
+        &mut self,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("VerifyCertification", (id, key))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerifyCertification_Gc2(
+        &mut self,
+        masterKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("VerifyCertification", (masterKey, pubKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerifyCertification_Gc3(
+        &mut self,
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("VerifyCertification", (pubKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc0(
         &mut self,
         bcpgInput: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
@@ -371,7 +371,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
             .invoke(".ctor", (bcpgInput))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SignaturePacket1(
+    pub fn _ctor_Gc1(
         &mut self,
         sigPacket: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::SignaturePacket,
@@ -384,7 +384,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
             .invoke(".ctor", (sigPacket))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SignaturePacket_TrustPacket2(
+    pub fn _ctor_Gc2(
         &mut self,
         sigPacket: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::SignaturePacket,
@@ -404,7 +404,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
         &mut self,
         pcks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

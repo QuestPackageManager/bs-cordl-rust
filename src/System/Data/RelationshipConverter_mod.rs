@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RelationshipConverter {
-    __cordl_parent: crate::System::ComponentModel::ExpandableObjectConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ExpandableObjectConverter,
+    >,
 }
 #[cfg(feature = "System+Data+RelationshipConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+RelationshipConverter")]
 impl std::ops::Deref for crate::System::Data::RelationshipConverter {
-    type Target = crate::System::ComponentModel::ExpandableObjectConverter;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ExpandableObjectConverter,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstRuntime {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Unity+Burst+BurstRuntime")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+BurstRuntime")]
 impl std::ops::Deref for crate::Unity::Burst::BurstRuntime {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +43,7 @@ impl crate::Unity::Burst::BurstRuntime {
             .invoke("GetHashCode32", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetHashCode32_Type1(
+    pub fn GetHashCode32_Gc1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -59,7 +59,7 @@ impl crate::Unity::Burst::BurstRuntime {
             .invoke("GetHashCode64", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetHashCode64_Type1(
+    pub fn GetHashCode64_Gc1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -204,7 +204,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::BurstRuntime_HashCode6
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstRuntime_PreserveAttribute {
-    __cordl_parent: crate::System::Attribute,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
 }
 #[cfg(feature = "Unity+Burst+BurstRuntime+PreserveAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -213,7 +213,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+BurstRuntime+PreserveAttribute")]
 impl std::ops::Deref for crate::Unity::Burst::BurstRuntime_PreserveAttribute {
-    type Target = crate::System::Attribute;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

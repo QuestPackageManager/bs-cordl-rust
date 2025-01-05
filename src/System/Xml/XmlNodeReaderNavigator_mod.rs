@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlNodeReaderNavigator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub curNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     pub elemNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     pub logNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
@@ -36,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlNodeReaderNavigator")]
 impl std::ops::Deref for crate::System::Xml::XmlNodeReaderNavigator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +76,7 @@ impl crate::System::Xml::XmlNodeReaderNavigator {
         > = __cordl_object.invoke("DefaultLookupNamespace", (prefix))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttributeFromElement_Il2CppString1(
+    pub fn GetAttributeFromElement_Gc1(
         &mut self,
         elem: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -92,7 +92,7 @@ impl crate::System::Xml::XmlNodeReaderNavigator {
         > = __cordl_object.invoke("GetAttributeFromElement", (elem, name, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttributeFromElement_XmlElement_Il2CppString0(
+    pub fn GetAttributeFromElement_Gc_Gc0(
         &mut self,
         elem: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -107,7 +107,7 @@ impl crate::System::Xml::XmlNodeReaderNavigator {
         > = __cordl_object.invoke("GetAttributeFromElement", (elem, name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Il2CppString0(
+    pub fn GetAttribute_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -121,7 +121,7 @@ impl crate::System::Xml::XmlNodeReaderNavigator {
         > = __cordl_object.invoke("GetAttribute", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Il2CppString_Il2CppString1(
+    pub fn GetAttribute_Gc_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -160,7 +160,7 @@ impl crate::System::Xml::XmlNodeReaderNavigator {
         let __cordl_ret: i32 = __cordl_object.invoke("GetDecAttrInd", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDeclarationAttr_XmlDeclaration_Il2CppString0(
+    pub fn GetDeclarationAttr_Gc_Gc0(
         &mut self,
         decl: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDeclaration>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -199,7 +199,7 @@ impl crate::System::Xml::XmlNodeReaderNavigator {
         let __cordl_ret: i32 = __cordl_object.invoke("GetDocTypeAttrInd", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDocumentTypeAttr_XmlDocumentType_Il2CppString0(
+    pub fn GetDocumentTypeAttr_Gc_Gc0(
         &mut self,
         docType: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocumentType>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -233,20 +233,16 @@ impl crate::System::Xml::XmlNodeReaderNavigator {
         scope: crate::System::Xml::XmlNamespaceScope,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret.into())
     }
@@ -332,7 +328,7 @@ impl crate::System::Xml::XmlNodeReaderNavigator {
             .invoke("MoveToAttributeFromElement", (elem, name, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MoveToAttribute_Il2CppString0(
+    pub fn MoveToAttribute_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -342,7 +338,7 @@ impl crate::System::Xml::XmlNodeReaderNavigator {
         let __cordl_ret: bool = __cordl_object.invoke("MoveToAttribute", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MoveToAttribute_Il2CppString_Il2CppString1(
+    pub fn MoveToAttribute_Gc_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

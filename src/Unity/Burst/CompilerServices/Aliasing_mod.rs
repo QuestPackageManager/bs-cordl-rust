@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Aliasing {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Unity+Burst+CompilerServices+Aliasing")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+CompilerServices+Aliasing")]
 impl std::ops::Deref for crate::Unity::Burst::CompilerServices::Aliasing {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +38,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
             .invoke("ExpectAliased", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExpectAliased_ByRefMut_Il2CppObject3<A>(
+    pub fn ExpectAliased_ByRefMut_Gc3<A>(
         a: quest_hook::libil2cpp::ByRefMut<A>,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -50,7 +50,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
             .invoke("ExpectAliased", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExpectAliased_Il2CppObject_ByRefMut2<B>(
+    pub fn ExpectAliased_Gc_ByRefMut2<B>(
         a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         b: quest_hook::libil2cpp::ByRefMut<B>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -62,7 +62,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
             .invoke("ExpectAliased", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExpectAliased_Il2CppObject_Il2CppObject0(
+    pub fn ExpectAliased_Gc_Gc0(
         a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -84,7 +84,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
             .invoke("ExpectNotAliased", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExpectNotAliased_ByRefMut_Il2CppObject3<A>(
+    pub fn ExpectNotAliased_ByRefMut_Gc3<A>(
         a: quest_hook::libil2cpp::ByRefMut<A>,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -96,7 +96,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
             .invoke("ExpectNotAliased", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExpectNotAliased_Il2CppObject_ByRefMut2<B>(
+    pub fn ExpectNotAliased_Gc_ByRefMut2<B>(
         a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         b: quest_hook::libil2cpp::ByRefMut<B>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -108,7 +108,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
             .invoke("ExpectNotAliased", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExpectNotAliased_Il2CppObject_Il2CppObject0(
+    pub fn ExpectNotAliased_Gc_Gc0(
         a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

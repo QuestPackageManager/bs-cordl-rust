@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IconAndTextSegmentedControl {
-    __cordl_parent: crate::HMUI::SegmentedControl,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
     pub _firstCellPrefab: quest_hook::libil2cpp::Gc<
         crate::HMUI::IconAndTextSegmentedControlCell,
     >,
@@ -17,7 +17,7 @@ pub struct IconAndTextSegmentedControl {
     >,
     pub _dataItems: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::HMUI::IconAndTextSegmentedControl_DataItem,
+            quest_hook::libil2cpp::Gc<crate::HMUI::IconAndTextSegmentedControl_DataItem>,
         >,
     >,
     pub _isInitialized: bool,
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+IconAndTextSegmentedControl")]
 impl std::ops::Deref for crate::HMUI::IconAndTextSegmentedControl {
-    type Target = crate::HMUI::SegmentedControl;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,7 +85,9 @@ impl crate::HMUI::IconAndTextSegmentedControl {
         &mut self,
         dataItems: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HMUI::IconAndTextSegmentedControl_DataItem,
+                quest_hook::libil2cpp::Gc<
+                    crate::HMUI::IconAndTextSegmentedControl_DataItem,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -128,16 +130,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::IconAndTextSegmentedCont
     }
 }
 #[cfg(feature = "HMUI+IconAndTextSegmentedControl")]
-impl AsRef<crate::HMUI::SegmentedControl_IDataSource>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl_IDataSource>>
 for crate::HMUI::IconAndTextSegmentedControl {
-    fn as_ref(&self) -> &crate::HMUI::SegmentedControl_IDataSource {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+IconAndTextSegmentedControl")]
-impl AsMut<crate::HMUI::SegmentedControl_IDataSource>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl_IDataSource>>
 for crate::HMUI::IconAndTextSegmentedControl {
-    fn as_mut(&mut self) -> &mut crate::HMUI::SegmentedControl_IDataSource {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl_IDataSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -145,7 +151,7 @@ for crate::HMUI::IconAndTextSegmentedControl {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IconAndTextSegmentedControl_DataItem {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _icon_k__BackingField: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _text_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -159,7 +165,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+IconAndTextSegmentedControl+DataItem")]
 impl std::ops::Deref for crate::HMUI::IconAndTextSegmentedControl_DataItem {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

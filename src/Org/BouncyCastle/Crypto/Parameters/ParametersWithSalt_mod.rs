@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParametersWithSalt {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub parameters: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::ICipherParameters,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ParametersWithSalt")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithSalt {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithSalt {
         > = __cordl_object.invoke("GetSalt", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_ICipherParameters_Il2CppArray0(
+    pub fn New_Gc_Gc0(
         parameters: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
         >,
@@ -70,7 +70,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithSalt {
             .invoke_void(".ctor", (parameters, salt, saltOff, saltLen))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_ICipherParameters_Il2CppArray0(
+    pub fn _ctor_Gc_Gc0(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
@@ -125,16 +125,26 @@ for crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithSalt {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ParametersWithSalt")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::ICipherParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithSalt {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ICipherParameters {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithSalt {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ParametersWithSalt")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::ICipherParameters>
-for crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithSalt {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ICipherParameters {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+> for crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithSalt {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

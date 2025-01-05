@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpListenerBasicIdentity {
-    __cordl_parent: crate::System::Security::Principal::GenericIdentity,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Principal::GenericIdentity,
+    >,
     pub password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+HttpListenerBasicIdentity")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpListenerBasicIdentity")]
 impl std::ops::Deref for crate::System::Net::HttpListenerBasicIdentity {
-    type Target = crate::System::Security::Principal::GenericIdentity;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Principal::GenericIdentity,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

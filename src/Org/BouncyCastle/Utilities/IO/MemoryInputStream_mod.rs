@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoryInputStream {
-    __cordl_parent: crate::System::IO::MemoryStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+MemoryInputStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+MemoryInputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::IO::MemoryInputStream {
-    type Target = crate::System::IO::MemoryStream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

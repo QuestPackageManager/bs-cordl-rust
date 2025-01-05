@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MibIPGlobalProperties {
-    __cordl_parent: crate::System::Net::NetworkInformation::UnixIPGlobalProperties,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Net::NetworkInformation::UnixIPGlobalProperties,
+    >,
     pub StatisticsFile: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub StatisticsFileIPv6: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -20,7 +22,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+NetworkInformation+MibIPGlobalProperties")]
 impl std::ops::Deref for crate::System::Net::NetworkInformation::MibIPGlobalProperties {
-    type Target = crate::System::Net::NetworkInformation::UnixIPGlobalProperties;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Net::NetworkInformation::UnixIPGlobalProperties,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

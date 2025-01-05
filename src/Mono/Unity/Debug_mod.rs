@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Debug {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+Unity+Debug")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Unity+Debug")]
 impl std::ops::Deref for crate::Mono::Unity::Debug {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -23,7 +23,7 @@ impl std::ops::DerefMut for crate::Mono::Unity::Debug {
 }
 #[cfg(feature = "Mono+Unity+Debug")]
 impl crate::Mono::Unity::Debug {
-    pub fn CheckAndThrow_Il2CppString_AlertDescription0(
+    pub fn CheckAndThrow_Gc_AlertDescription0(
         errorState: crate::Mono::Unity::UnityTls_unitytls_errorstate,
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultAlert: crate::Mono::Security::Interface::AlertDescription,
@@ -32,7 +32,7 @@ impl crate::Mono::Unity::Debug {
             .invoke("CheckAndThrow", (errorState, context, defaultAlert))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckAndThrow_UnityTls_unitytls_x509verify_result_Il2CppString_AlertDescription1(
+    pub fn CheckAndThrow_UnityTls_unitytls_x509verify_result_Gc_AlertDescription1(
         errorState: crate::Mono::Unity::UnityTls_unitytls_errorstate,
         verifyResult: crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -5,10 +5,8 @@ pub struct SetPropertyBagBase_2<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Unity::Properties::PropertyBag_1<TSet>,
-    pub m_Property: quest_hook::libil2cpp::Gc<
-        crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TElement>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TSet>,
+    pub m_Property: quest_hook::libil2cpp::Gc<TSet, TElement>,
     __cordl_phantom_TSet: std::marker::PhantomData<TSet>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
@@ -22,7 +20,7 @@ impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
-    type Target = crate::Unity::Properties::PropertyBag_1<TSet>;
+    type Target = quest_hook::libil2cpp::Gc<TSet>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,9 +89,9 @@ for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsRef<crate::Unity::Properties::IPropertyBag>
+> AsRef<quest_hook::libil2cpp::Gc<TSet>>
 for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
-    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TSet> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -101,9 +99,9 @@ for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsMut<crate::Unity::Properties::IPropertyBag>
+> AsMut<quest_hook::libil2cpp::Gc<TSet>>
 for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
-    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TSet> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -111,9 +109,11 @@ for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsRef<crate::Unity::Properties::IPropertyBag_1<TSet>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag>>
 for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
-    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag_1<TSet> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -121,9 +121,11 @@ for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsMut<crate::Unity::Properties::IPropertyBag_1<TSet>>
+> AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag>>
 for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
-    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag_1<TSet> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -134,7 +136,7 @@ pub struct SetPropertyBagBase_2_SetElementProperty<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Unity::Properties::Property_2<TSet, TElement>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TSet, TElement>,
     pub m_Value: TElement,
     __cordl_phantom_TSet: std::marker::PhantomData<TSet>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
@@ -151,7 +153,7 @@ impl<
     TElement: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TElement> {
-    type Target = crate::Unity::Properties::Property_2<TSet, TElement>;
+    type Target = quest_hook::libil2cpp::Gc<TSet, TElement>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

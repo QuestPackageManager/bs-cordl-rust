@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AddressablesRuntimeProperties {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
     feature = "UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeProperties {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,7 +55,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeP
             .invoke("EvaluateProperty", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateString_Il2CppString0(
+    pub fn EvaluateString_Gc0(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -66,15 +66,13 @@ impl crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeP
             .invoke("EvaluateString", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateString__cordl_char__cordl_char_Func_2_1(
+    pub fn EvaluateString__cordl_char__cordl_char_Gc1(
         inputString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         startDelimiter: char,
         endDelimiter: char,
         varFunc: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -90,11 +88,15 @@ impl crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeP
     }
     pub fn GetAssemblies() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetAssemblies", ())?;
         Ok(__cordl_ret.into())
     }

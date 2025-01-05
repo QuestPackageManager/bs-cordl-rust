@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RepeatButton {
-    __cordl_parent: crate::UnityEngine::UIElements::TextElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextElement,
+    >,
     pub m_Clickable: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Clickable,
     >,
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+RepeatButton")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RepeatButton {
-    type Target = crate::UnityEngine::UIElements::TextElement;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +51,7 @@ impl crate::UnityEngine::UIElements::RepeatButton {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Action_i64_i64_1(
+    pub fn New_Gc_i64_i64_1(
         clickEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
         delay: i64,
         interval: i64,
@@ -83,7 +85,7 @@ impl crate::UnityEngine::UIElements::RepeatButton {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Action_i64_i64_1(
+    pub fn _ctor_Gc_i64_i64_1(
         &mut self,
         clickEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
         delay: i64,
@@ -110,9 +112,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Repea
 #[repr(C)]
 #[derive(Debug)]
 pub struct RepeatButton_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::RepeatButton,
-        *mut crate::UnityEngine::UIElements::RepeatButton_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RepeatButton>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::RepeatButton_UxmlTraits,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RepeatButton+UxmlFactory")]
@@ -123,9 +127,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+RepeatButton+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RepeatButton_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::RepeatButton,
-        *mut crate::UnityEngine::UIElements::RepeatButton_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RepeatButton>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::RepeatButton_UxmlTraits,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -171,7 +177,9 @@ for crate::UnityEngine::UIElements::RepeatButton_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RepeatButton_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::TextElement_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextElement_UxmlTraits,
+    >,
     pub m_Delay: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlLongAttributeDescription,
     >,
@@ -186,7 +194,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+RepeatButton+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RepeatButton_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::TextElement_UxmlTraits;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextElement_UxmlTraits,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

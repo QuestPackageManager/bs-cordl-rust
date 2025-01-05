@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlRawWriter {
-    __cordl_parent: crate::System::Xml::XmlWriter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     pub base64Encoder: quest_hook::libil2cpp::Gc<
         crate::System::Xml::XmlRawWriterBase64Encoder,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlRawWriter")]
 impl std::ops::Deref for crate::System::Xml::XmlRawWriter {
-    type Target = crate::System::Xml::XmlWriter;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -185,7 +185,7 @@ impl crate::System::Xml::XmlRawWriter {
             .invoke("WriteEndElement", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteEndElement_Il2CppString_Il2CppString_Il2CppString1(
+    pub fn WriteEndElement_Gc_Gc_Gc1(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -218,7 +218,7 @@ impl crate::System::Xml::XmlRawWriter {
             .invoke("WriteFullEndElement", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteFullEndElement_Il2CppString_Il2CppString_Il2CppString1(
+    pub fn WriteFullEndElement_Gc_Gc_Gc1(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -255,7 +255,18 @@ impl crate::System::Xml::XmlRawWriter {
             .invoke("WriteNode", (reader, defattr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteRaw_Il2CppArray_i32_i32_0(
+    pub fn WriteRaw_Gc1(
+        &mut self,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteRaw", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteRaw_i32_i32_0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
@@ -266,17 +277,6 @@ impl crate::System::Xml::XmlRawWriter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteRaw", (buffer, index, count))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteRaw_Il2CppString1(
-        &mut self,
-        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteRaw", (data))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteStartDocument_0(
@@ -345,7 +345,7 @@ impl crate::System::Xml::XmlRawWriter {
             .invoke("WriteWhitespace", (ws))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteXmlDeclaration_Il2CppString1(
+    pub fn WriteXmlDeclaration_Gc1(
         &mut self,
         xmldecl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

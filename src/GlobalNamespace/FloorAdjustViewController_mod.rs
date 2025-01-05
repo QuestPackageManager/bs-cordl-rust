@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorAdjustViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _yIncButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _yDecButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _playerHeightText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FloorAdjustViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::FloorAdjustViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

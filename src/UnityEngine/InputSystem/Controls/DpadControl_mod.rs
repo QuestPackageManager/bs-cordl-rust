@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DpadControl {
-    __cordl_parent: crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
     pub _up_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
@@ -23,7 +25,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::DpadControl {
-    type Target = crate::UnityEngine::InputSystem::Controls::Vector2Control;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -254,7 +258,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct DpadControl_DpadAxisControl {
-    __cordl_parent: crate::UnityEngine::InputSystem::Controls::AxisControl,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
     pub _component_k__BackingField: i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl")]
@@ -266,7 +272,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
-    type Target = crate::UnityEngine::InputSystem::Controls::AxisControl;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

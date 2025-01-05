@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatField {
-    __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
 }
 #[cfg(feature = "UnityEngine+UIElements+FloatField")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+FloatField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField {
-    type Target = crate::UnityEngine::UIElements::TextValueField_1<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::UnityEngine::UIElements::FloatField {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_i32_1(
+    pub fn New_Gc_i32_1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -104,7 +104,7 @@ impl crate::UnityEngine::UIElements::FloatField {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_i32_1(
+    pub fn _ctor_Gc_i32_1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
@@ -143,7 +143,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Float
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatField_FloatInput {
-    __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
 }
 #[cfg(feature = "UnityEngine+UIElements+FloatField+FloatInput")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -152,7 +152,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+FloatField+FloatInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField_FloatInput {
-    type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -260,9 +260,9 @@ for crate::UnityEngine::UIElements::FloatField_FloatInput {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatField_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::FloatField,
-        *mut crate::UnityEngine::UIElements::FloatField_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FloatField>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FloatField_UxmlTraits>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlFactory")]
@@ -272,9 +272,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::FloatField,
-        *mut crate::UnityEngine::UIElements::FloatField_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FloatField>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FloatField_UxmlTraits>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -320,9 +320,11 @@ for crate::UnityEngine::UIElements::FloatField_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatField_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::TextValueFieldTraits_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         f32,
-        *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlTraits")]
@@ -332,9 +334,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::TextValueFieldTraits_2<
+    type Target = quest_hook::libil2cpp::Gc<
         f32,
-        *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

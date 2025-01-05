@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListFacetsChecker {
-    __cordl_parent: crate::System::Xml::Schema::FacetsChecker,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>,
 }
 #[cfg(feature = "System+Xml+Schema+ListFacetsChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+ListFacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::ListFacetsChecker {
-    type Target = crate::System::Xml::Schema::FacetsChecker;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

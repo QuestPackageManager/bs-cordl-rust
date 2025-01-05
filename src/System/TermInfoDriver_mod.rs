@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TermInfoDriver {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub reader: quest_hook::libil2cpp::Gc<crate::System::TermInfoReader>,
     pub cursorLeft: i32,
     pub cursorTop: i32,
@@ -53,7 +53,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+TermInfoDriver")]
 impl std::ops::Deref for crate::System::TermInfoDriver {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -255,7 +255,7 @@ impl crate::System::TermInfoDriver {
     pub fn Read(
         &mut self,
         dest: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<char>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         >,
         index: i32,
         count: i32,
@@ -439,14 +439,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TermInfoDriver {
     }
 }
 #[cfg(feature = "System+TermInfoDriver")]
-impl AsRef<crate::System::IConsoleDriver> for crate::System::TermInfoDriver {
-    fn as_ref(&self) -> &crate::System::IConsoleDriver {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IConsoleDriver>>
+for crate::System::TermInfoDriver {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IConsoleDriver> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+TermInfoDriver")]
-impl AsMut<crate::System::IConsoleDriver> for crate::System::TermInfoDriver {
-    fn as_mut(&mut self) -> &mut crate::System::IConsoleDriver {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IConsoleDriver>>
+for crate::System::TermInfoDriver {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::IConsoleDriver> {
         unsafe { std::mem::transmute(self) }
     }
 }

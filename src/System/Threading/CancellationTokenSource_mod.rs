@@ -2,14 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CancellationTokenSource {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _kernelEvent: quest_hook::libil2cpp::Gc<
         crate::System::Threading::ManualResetEvent,
     >,
     pub _registeredCallbacksLists: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Threading::SparselyPopulatedArray_1<
-                *mut crate::System::Threading::CancellationCallbackInfo,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::CancellationCallbackInfo,
+                >,
             >,
         >,
     >,
@@ -28,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+CancellationTokenSource")]
 impl std::ops::Deref for crate::System::Threading::CancellationTokenSource {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -191,7 +193,7 @@ impl crate::System::Threading::CancellationTokenSource {
     pub fn InternalRegister(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         targetSyncContext: quest_hook::libil2cpp::Gc<
@@ -381,16 +383,16 @@ for crate::System::Threading::CancellationTokenSource {
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenSource")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Threading::CancellationTokenSource {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenSource")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::System::Threading::CancellationTokenSource {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

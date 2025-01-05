@@ -41,16 +41,20 @@ for crate::UnityEngine::UI::ILayoutSelfController {
     }
 }
 #[cfg(feature = "UnityEngine+UI+ILayoutSelfController")]
-impl AsRef<crate::UnityEngine::UI::ILayoutController>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutController>>
 for crate::UnityEngine::UI::ILayoutSelfController {
-    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutController {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutController> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+ILayoutSelfController")]
-impl AsMut<crate::UnityEngine::UI::ILayoutController>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutController>>
 for crate::UnityEngine::UI::ILayoutSelfController {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutController> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -44,7 +44,7 @@ impl crate::System::Runtime::Serialization::StreamingContext {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppObject1(
+    pub fn _ctor_Gc1(
         &mut self,
         state: crate::System::Runtime::Serialization::StreamingContextStates,
         additional: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

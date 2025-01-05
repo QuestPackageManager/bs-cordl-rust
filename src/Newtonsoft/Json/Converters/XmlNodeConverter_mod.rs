@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlNodeConverter {
-    __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
     pub _DeserializeRootElementName_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Converters+XmlNodeConverter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::XmlNodeConverter {
-    type Target = crate::Newtonsoft::Json::JsonConverter;
+    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -126,27 +126,7 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
             .invoke("CreateDocumentType", (reader, document, currentNode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateElement_Il2CppString_Il2CppString_XmlNamespaceManager1(
-        &mut self,
-        elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        document: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Converters::IXmlDocument,
-        >,
-        elementPrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        manager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlElement>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Converters::IXmlElement,
-        > = __cordl_object
-            .invoke("CreateElement", (elementName, document, elementPrefix, manager))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreateElement_JsonReader_IXmlNode_Il2CppString_XmlNamespaceManager_Il2CppString_Dictionary_2_0(
+    pub fn CreateElement_Gc_Gc_Gc0(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
         document: quest_hook::libil2cpp::Gc<
@@ -159,10 +139,8 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
         manager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
         elementPrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         attributeNameValues: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -181,6 +159,26 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
                     attributeNameValues,
                 ),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateElement_Gc_Gc_Gc_Gc1(
+        &mut self,
+        elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        document: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Converters::IXmlDocument,
+        >,
+        elementPrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        manager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlElement>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Converters::IXmlElement,
+        > = __cordl_object
+            .invoke("CreateElement", (elementName, document, elementPrefix, manager))?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateInstruction(
@@ -269,7 +267,9 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
     pub fn IsNamespaceAttribute(
         &mut self,
         attributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        prefix: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        prefix: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -345,20 +345,16 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
         manager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                *mut quest_hook::libil2cpp::Il2CppString,
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("ReadAttributeElements", (reader, manager))?;
         Ok(__cordl_ret.into())
     }
@@ -461,9 +457,7 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
     pub fn ValueAttributes(
         &mut self,
         c: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -486,7 +480,27 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
         > = __cordl_object.invoke("WrapXml", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteGroupedNodes_IXmlNode1(
+    pub fn WriteGroupedNodes_Gc_Gc__cordl_bool_Gc_Gc0(
+        &mut self,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        manager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
+        writePropertyName: bool,
+        groupedNodes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
+        >,
+        elementNames: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "WriteGroupedNodes",
+                (writer, manager, writePropertyName, groupedNodes, elementNames),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteGroupedNodes_Gc_Gc__cordl_bool_Gc_Gc1(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         manager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
@@ -501,28 +515,6 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
             .invoke(
                 "WriteGroupedNodes",
                 (writer, manager, writePropertyName, node, elementNames),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteGroupedNodes_List_1_0(
-        &mut self,
-        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
-        manager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
-        writePropertyName: bool,
-        groupedNodes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::Newtonsoft::Json::Converters::IXmlNode,
-            >,
-        >,
-        elementNames: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "WriteGroupedNodes",
-                (writer, manager, writePropertyName, groupedNodes, elementNames),
             )?;
         Ok(__cordl_ret.into())
     }

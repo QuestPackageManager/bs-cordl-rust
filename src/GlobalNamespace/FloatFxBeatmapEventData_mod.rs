@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxBeatmapEventData {
-    __cordl_parent: crate::GlobalNamespace::FxBeatmapEventData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FxBeatmapEventData,
+    >,
     pub _value_k__BackingField: f32,
     pub _easeType_k__BackingField: crate::GlobalNamespace::EaseType,
 }
@@ -13,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FloatFxBeatmapEventData")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatFxBeatmapEventData {
-    type Target = crate::GlobalNamespace::FxBeatmapEventData;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FxBeatmapEventData>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

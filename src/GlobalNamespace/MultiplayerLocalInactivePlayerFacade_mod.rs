@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerFacade {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _inactivePlayerSongSyncController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController,
     >,
@@ -16,13 +16,13 @@ pub struct MultiplayerLocalInactivePlayerFacade {
         crate::GlobalNamespace::MultiplayerLocalInactivePlayerOutroAnimator,
     >,
     pub playerDidFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     >,
     pub playerNetworkDidFailedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     >,
 }
@@ -34,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -96,8 +96,8 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     pub fn add_playerDidFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -111,8 +111,8 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     pub fn add_playerNetworkDidFailedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -192,8 +192,8 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     pub fn remove_playerDidFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -207,8 +207,8 @@ impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     pub fn remove_playerNetworkDidFailedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -231,50 +231,82 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
-impl AsRef<crate::GlobalNamespace::IMultiplayerLevelEndActionsListener>
-for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsListener,
+    >,
+> for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsListener,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
-impl AsMut<crate::GlobalNamespace::IMultiplayerLevelEndActionsListener>
-for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsListener,
+    >,
+> for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsListener,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
-impl AsRef<crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher>
-for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
+    >,
+> for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
-impl AsMut<crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher>
-for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
+    >,
+> for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
-impl AsRef<crate::GlobalNamespace::IStartSeekSongControllerProvider>
-for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IStartSeekSongControllerProvider {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStartSeekSongControllerProvider>,
+> for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IStartSeekSongControllerProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]
-impl AsMut<crate::GlobalNamespace::IStartSeekSongControllerProvider>
-for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStartSeekSongControllerProvider>,
+> for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::IStartSeekSongControllerProvider {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IStartSeekSongControllerProvider,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -282,9 +314,11 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerFacade_Factory {
-    __cordl_parent: crate::Zenject::PlaceholderFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerPlayerStartState,
-        *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
@@ -296,9 +330,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade+Factory")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory {
-    type Target = crate::Zenject::PlaceholderFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerPlayerStartState,
-        *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

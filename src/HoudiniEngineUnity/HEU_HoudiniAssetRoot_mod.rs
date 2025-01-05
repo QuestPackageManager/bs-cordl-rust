@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_HoudiniAssetRoot {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _houdiniAsset: quest_hook::libil2cpp::Gc<
         crate::HoudiniEngineUnity::HEU_HoudiniAsset,
     >,
     pub _bakeTargets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAssetRoot")]
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAssetRoot")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

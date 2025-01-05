@@ -8,10 +8,8 @@ pub struct IgnoranceServerStats {
     pub PacketsSent: u64,
     pub PeersCount: u64,
     pub PeerStats: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            crate::IgnoranceCore::IgnoranceClientStats,
-        >,
+        i32,
+        crate::IgnoranceCore::IgnoranceClientStats,
     >,
 }
 #[cfg(feature = "IgnoranceCore+IgnoranceServerStats")]

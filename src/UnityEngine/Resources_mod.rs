@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Resources {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+Resources")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Resources")]
 impl std::ops::Deref for crate::UnityEngine::Resources {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,9 @@ impl std::ops::DerefMut for crate::UnityEngine::Resources {
 impl crate::UnityEngine::Resources {
     pub fn ConvertObjects<T>(
         rawObjects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -54,20 +56,34 @@ impl crate::UnityEngine::Resources {
             .invoke("FindObjectsOfTypeAll", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindObjectsOfTypeAll_Type0(
+    pub fn FindObjectsOfTypeAll_Gc0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsOfTypeAll", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBuiltinResource_Il2CppString1<T>(
+    pub fn GetBuiltinResource_Gc0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBuiltinResource", (_cordl_type, path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBuiltinResource_Gc1<T>(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -78,40 +94,38 @@ impl crate::UnityEngine::Resources {
             .invoke("GetBuiltinResource", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBuiltinResource_Type_Il2CppString0(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBuiltinResource", (_cordl_type, path))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn LoadAll_Il2CppString1(
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("LoadAll", (path))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn LoadAll_Type0(
+    pub fn LoadAll_Gc0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         systemTypeInstance: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LoadAll", (path, systemTypeInstance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadAll_Gc1(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("LoadAll", (path))?;
         Ok(__cordl_ret.into())
     }
     pub fn LoadAsync(
@@ -126,7 +140,7 @@ impl crate::UnityEngine::Resources {
             .invoke("LoadAsync", (path, _cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Load_Il2CppString0(
+    pub fn Load_Gc0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -135,7 +149,7 @@ impl crate::UnityEngine::Resources {
             .invoke("Load", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Load_Il2CppString1<T>(
+    pub fn Load_Gc1<T>(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -146,7 +160,7 @@ impl crate::UnityEngine::Resources {
             .invoke("Load", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Load_Type2(
+    pub fn Load_Gc2(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         systemTypeInstance: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<

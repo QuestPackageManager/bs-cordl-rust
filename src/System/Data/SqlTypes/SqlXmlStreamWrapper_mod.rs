@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SqlXmlStreamWrapper {
-    __cordl_parent: crate::System::IO::Stream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _lPosition: i64,
     pub _isClosed: bool,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+SqlTypes+SqlXmlStreamWrapper")]
 impl std::ops::Deref for crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
-    type Target = crate::System::IO::Stream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

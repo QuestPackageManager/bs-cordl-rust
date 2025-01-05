@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JobsUtility {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 impl std::ops::Deref for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,31 +28,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
     pub type JobScheduleParameters = crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters;
     #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
     pub type PanicFunction_ = crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_;
-    pub fn CreateJobReflectionData_Il2CppObject1(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        managedJobFunction0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        >,
-        managedJobFunction1: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        >,
-        managedJobFunction2: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CreateJobReflectionData",
-                (
-                    _cordl_type,
-                    managedJobFunction0,
-                    managedJobFunction1,
-                    managedJobFunction2,
-                ),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreateJobReflectionData_Type_Il2CppObject0(
+    pub fn CreateJobReflectionData_Gc0(
         wrapperJobType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         userJobType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         managedJobFunction0: quest_hook::libil2cpp::Gc<
@@ -71,6 +47,30 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
                 (
                     wrapperJobType,
                     userJobType,
+                    managedJobFunction0,
+                    managedJobFunction1,
+                    managedJobFunction2,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateJobReflectionData_Gc_Gc_Gc_Gc1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        managedJobFunction0: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        managedJobFunction1: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        managedJobFunction2: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateJobReflectionData",
+                (
+                    _cordl_type,
                     managedJobFunction0,
                     managedJobFunction1,
                     managedJobFunction2,
@@ -210,7 +210,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
 #[repr(C)]
 #[derive(Debug)]
 pub struct JobsUtility_PanicFunction_ {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -221,7 +221,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
 impl std::ops::Deref
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

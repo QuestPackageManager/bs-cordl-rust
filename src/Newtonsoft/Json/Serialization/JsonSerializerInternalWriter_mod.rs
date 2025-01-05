@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSerializerInternalWriter {
-    __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase,
+    >,
     pub _rootType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _rootLevel: i32,
     pub _serializeStack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalWriter")]
@@ -20,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalWriter")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
-    type Target = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,10 +50,12 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
             crate::Newtonsoft::Json::Serialization::JsonProperty,
         >,
         memberContract: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonContract,
+            >,
         >,
         memberValue: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -465,7 +469,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SerializeMultidimensionalArray_JsonContainerContract_JsonProperty0(
+    pub fn SerializeMultidimensionalArray_Gc0(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         values: quest_hook::libil2cpp::Gc<crate::System::Array>,
@@ -492,7 +496,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SerializeMultidimensionalArray_i32_Il2CppArray1(
+    pub fn SerializeMultidimensionalArray_i32_1(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         values: quest_hook::libil2cpp::Gc<crate::System::Array>,
@@ -722,7 +726,9 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn TryConvertToString(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        s: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        s: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryConvertToString", (value, _cordl_type, s))?;

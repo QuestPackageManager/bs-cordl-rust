@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongTimeFixedUpdateController {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _audioTimeSource: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IAudioTimeSource,
     >,
-    pub songControllerFixedTimeDidUpdateEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<f32>,
-    >,
+    pub songControllerFixedTimeDidUpdateEvent: quest_hook::libil2cpp::Gc<f32>,
     pub songControllerTimeDidUpdateEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action,
     >,
@@ -22,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SongTimeFixedUpdateController")]
 impl std::ops::Deref for crate::GlobalNamespace::SongTimeFixedUpdateController {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +63,7 @@ impl crate::GlobalNamespace::SongTimeFixedUpdateController {
     }
     pub fn add_songControllerFixedTimeDidUpdateEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,7 +99,7 @@ impl crate::GlobalNamespace::SongTimeFixedUpdateController {
     }
     pub fn remove_songControllerFixedTimeDidUpdateEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

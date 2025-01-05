@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs8EncryptedPrivateKeyInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub encryptedPrivateKeyInfo: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfo")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,7 +71,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfo {
         > = __cordl_object.invoke("GetEncryptedData", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_EncryptedPrivateKeyInfo0(
+    pub fn New_Gc0(
         encryptedPrivateKeyInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
         >,
@@ -82,7 +82,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfo {
             .invoke_void(".ctor", (encryptedPrivateKeyInfo))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppArray1(
+    pub fn New_Gc1(
         encryptedPrivateKeyInfo: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
@@ -108,7 +108,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfo {
         > = __cordl_object.invoke("ToAsn1Structure", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_EncryptedPrivateKeyInfo0(
+    pub fn _ctor_Gc0(
         &mut self,
         encryptedPrivateKeyInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
@@ -121,7 +121,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfo {
             .invoke(".ctor", (encryptedPrivateKeyInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray1(
+    pub fn _ctor_Gc1(
         &mut self,
         encryptedPrivateKeyInfo: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+CommandGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+CommandGenerator")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -75,10 +75,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
     pub fn FindClosingCommandInsertionPoint(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prev: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
         next: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -88,10 +92,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
     pub fn FindCommandInsertionPoint(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prev: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
         next: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -123,10 +131,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
         >,
         prev: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
         next: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -139,10 +151,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         cmdPrev: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
         cmdNext: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
         indexCount: i32,
@@ -183,10 +199,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
         >,
         prev: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
         next: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -199,10 +219,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         cmdPrev: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
         cmdNext: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
         indexCount: i32,
@@ -317,7 +341,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
     }
     pub fn UpdateOrAllocate(
         data: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
         >,
         vertexCount: i32,
         indexCount: i32,

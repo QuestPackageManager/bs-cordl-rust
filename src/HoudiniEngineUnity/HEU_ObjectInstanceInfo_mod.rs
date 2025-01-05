@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ObjectInstanceInfo {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub _instancedInputs: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::HEU_InstancedInput,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InstancedInput>,
     >,
     pub _partTarget: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
     pub _instancedObjectNodeID: i32,
@@ -14,7 +12,7 @@ pub struct HEU_ObjectInstanceInfo {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _instances: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ObjectInstanceInfo")]
@@ -24,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_ObjectInstanceInfo")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,28 +77,28 @@ for crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ObjectInstanceInfo")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo>,
     >,
 > for crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ObjectInstanceInfo")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo>,
     >,
 > for crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo>,
     > {
         unsafe { std::mem::transmute(self) }
     }

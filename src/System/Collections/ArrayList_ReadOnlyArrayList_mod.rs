@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayList_ReadOnlyArrayList {
-    __cordl_parent: crate::System::Collections::ArrayList,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "System+Collections+ArrayList+ReadOnlyArrayList")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+ArrayList+ReadOnlyArrayList")]
 impl std::ops::Deref for crate::GlobalNamespace::ArrayList_ReadOnlyArrayList {
-    type Target = crate::System::Collections::ArrayList;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::ArrayList_ReadOnlyArrayList {
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTo_Array_i32_0(
+    pub fn CopyTo_Gc_i32_0(
         &mut self,
         array: quest_hook::libil2cpp::Gc<crate::System::Array>,
         index: i32,
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::ArrayList_ReadOnlyArrayList {
             .invoke("CopyTo", (array, index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTo_i32_Array_i32_i32_1(
+    pub fn CopyTo_i32_Gc_i32_i32_1(
         &mut self,
         index: i32,
         array: quest_hook::libil2cpp::Gc<crate::System::Array>,
@@ -224,18 +224,22 @@ impl crate::GlobalNamespace::ArrayList_ReadOnlyArrayList {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("ToArray", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToArray_Type1(
+    pub fn ToArray_Gc1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {

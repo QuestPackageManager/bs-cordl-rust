@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CBZip2OutputStream {
-    __cordl_parent: crate::System::IO::Stream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub finished: bool,
     pub last: i32,
     pub origPtr: i32,
@@ -47,7 +47,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
-    type Target = crate::System::IO::Stream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -310,7 +310,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
             .invoke("MoveToFrontCodeAndSend", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Stream0(
+    pub fn New_Gc0(
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -461,7 +461,7 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
             .invoke("WriteRun", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream0(
+    pub fn _ctor_Gc0(
         &mut self,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -545,7 +545,7 @@ for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CBZip2OutputStream_StackElem {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub ll: i32,
     pub hh: i32,
     pub dd: i32,
@@ -559,7 +559,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

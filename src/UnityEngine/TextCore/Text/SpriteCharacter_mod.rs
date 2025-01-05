@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpriteCharacter {
-    __cordl_parent: crate::UnityEngine::TextCore::Text::TextElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextElement,
+    >,
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+SpriteCharacter")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+SpriteCharacter")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::SpriteCharacter {
-    type Target = crate::UnityEngine::TextCore::Text::TextElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

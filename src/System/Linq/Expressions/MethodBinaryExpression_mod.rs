@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodBinaryExpression {
-    __cordl_parent: crate::System::Linq::Expressions::SimpleBinaryExpression,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::SimpleBinaryExpression,
+    >,
     pub _method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
 }
 #[cfg(feature = "System+Linq+Expressions+MethodBinaryExpression")]
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+MethodBinaryExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::MethodBinaryExpression {
-    type Target = crate::System::Linq::Expressions::SimpleBinaryExpression;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::SimpleBinaryExpression,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

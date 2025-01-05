@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeUIElementsBridge {
-    __cordl_parent: crate::UnityEngine::UIElements::UIElementsBridge,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIElementsBridge,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RuntimeUIElementsBridge")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+RuntimeUIElementsBridge")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RuntimeUIElementsBridge {
-    type Target = crate::UnityEngine::UIElements::UIElementsBridge;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIElementsBridge,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct INotifyValueChangedExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+INotifyValueChangedExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+INotifyValueChangedExtensions")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,14 +27,8 @@ for crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
 #[cfg(feature = "UnityEngine+UIElements+INotifyValueChangedExtensions")]
 impl crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
     pub fn RegisterValueChangedCallback<T>(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::INotifyValueChanged_1<T>,
-        >,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_1<
-                *mut crate::UnityEngine::UIElements::ChangeEvent_1<T>,
-            >,
-        >,
+        control: quest_hook::libil2cpp::Gc<T>,
+        callback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -45,14 +39,8 @@ impl crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterValueChangedCallback<T>(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::INotifyValueChanged_1<T>,
-        >,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_1<
-                *mut crate::UnityEngine::UIElements::ChangeEvent_1<T>,
-            >,
-        >,
+        control: quest_hook::libil2cpp::Gc<T>,
+        callback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument

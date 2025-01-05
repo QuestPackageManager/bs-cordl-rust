@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemoteProcedureCall {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _syncTime_k__BackingField: i64,
 }
 #[cfg(feature = "RemoteProcedureCall")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "RemoteProcedureCall")]
 impl std::ops::Deref for crate::GlobalNamespace::RemoteProcedureCall {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -145,44 +145,56 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RemoteProcedu
     }
 }
 #[cfg(feature = "RemoteProcedureCall")]
-impl AsRef<crate::GlobalNamespace::IPoolablePacket>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket>>
 for crate::GlobalNamespace::RemoteProcedureCall {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "RemoteProcedureCall")]
-impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket>>
 for crate::GlobalNamespace::RemoteProcedureCall {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "RemoteProcedureCall")]
-impl AsRef<crate::GlobalNamespace::IRemoteProcedureCall>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRemoteProcedureCall>>
 for crate::GlobalNamespace::RemoteProcedureCall {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IRemoteProcedureCall {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRemoteProcedureCall> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "RemoteProcedureCall")]
-impl AsMut<crate::GlobalNamespace::IRemoteProcedureCall>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRemoteProcedureCall>>
 for crate::GlobalNamespace::RemoteProcedureCall {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRemoteProcedureCall {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRemoteProcedureCall> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "RemoteProcedureCall")]
-impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
 for crate::GlobalNamespace::RemoteProcedureCall {
-    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "RemoteProcedureCall")]
-impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
 for crate::GlobalNamespace::RemoteProcedureCall {
-    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -190,7 +202,7 @@ for crate::GlobalNamespace::RemoteProcedureCall {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemoteProcedureCall_TypeWrapper_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _v: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -203,7 +215,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "RemoteProcedureCall+TypeWrapper_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::RemoteProcedureCall_TypeWrapper_1<T> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PreAssetEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::HoudiniEngineUnity::HEU_PreAssetEventData,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PreAssetEventData>,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PreAssetEvent")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_PreAssetEvent")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PreAssetEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::HoudiniEngineUnity::HEU_PreAssetEventData,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PreAssetEventData>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

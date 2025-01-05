@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlIntAttributeDescription {
-    __cordl_parent: crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<i32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlIntAttributeDescription")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UxmlIntAttributeDescription")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlIntAttributeDescription {
-    type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<i32>;
+    type Target = quest_hook::libil2cpp::Gc<i32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

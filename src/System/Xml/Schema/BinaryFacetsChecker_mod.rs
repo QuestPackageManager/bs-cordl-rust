@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryFacetsChecker {
-    __cordl_parent: crate::System::Xml::Schema::FacetsChecker,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>,
 }
 #[cfg(feature = "System+Xml+Schema+BinaryFacetsChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+BinaryFacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::BinaryFacetsChecker {
-    type Target = crate::System::Xml::Schema::FacetsChecker;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,23 +24,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::BinaryFacetsChecker {
 }
 #[cfg(feature = "System+Xml+Schema+BinaryFacetsChecker")]
 impl crate::System::Xml::Schema::BinaryFacetsChecker {
-    pub fn CheckValueFacets_Il2CppArray1(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        datatype: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaDatatype,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
-            .invoke("CheckValueFacets", (value, datatype))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CheckValueFacets_Il2CppObject0(
+    pub fn CheckValueFacets_Gc_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         datatype: quest_hook::libil2cpp::Gc<
@@ -56,9 +40,25 @@ impl crate::System::Xml::Schema::BinaryFacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchEnumeration_Il2CppArray1(
+    pub fn CheckValueFacets_Gc_Gc1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        datatype: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
+            .invoke("CheckValueFacets", (value, datatype))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MatchEnumeration_Gc_Gc_Gc0(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         enumeration: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
         datatype: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaDatatype,
@@ -71,9 +71,9 @@ impl crate::System::Xml::Schema::BinaryFacetsChecker {
             .invoke("MatchEnumeration", (value, enumeration, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchEnumeration_Il2CppObject0(
+    pub fn MatchEnumeration_Gc_Gc_Gc1(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         enumeration: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
         datatype: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaDatatype,

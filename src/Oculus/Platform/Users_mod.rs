@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Users {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Oculus+Platform+Users")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Users")]
 impl std::ops::Deref for crate::Oculus::Platform::Users {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,69 +28,53 @@ impl crate::Oculus::Platform::Users {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::User,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::User,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Get", (userID))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetAccessToken() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetAccessToken", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetBlockedUsers() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::BlockedUserList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUserList>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::BlockedUserList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUserList>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetBlockedUsers", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetLoggedInUser() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::User,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::User,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetLoggedInUser", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetLoggedInUserFriends() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetLoggedInUserFriends", ())?;
         Ok(__cordl_ret.into())
@@ -108,15 +92,11 @@ impl crate::Oculus::Platform::Users {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUserList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::BlockedUserList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUserList>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::BlockedUserList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUserList>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNextBlockedUserListPage", (list))?;
         Ok(__cordl_ret.into())
@@ -127,14 +107,14 @@ impl crate::Oculus::Platform::Users {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserCapabilityList,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserCapabilityList,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserCapabilityList,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserCapabilityList,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNextUserCapabilityListPage", (list))?;
@@ -144,15 +124,11 @@ impl crate::Oculus::Platform::Users {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNextUserListPage", (list))?;
         Ok(__cordl_ret.into())
@@ -161,44 +137,32 @@ impl crate::Oculus::Platform::Users {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::OrgScopedID,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::OrgScopedID>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::OrgScopedID,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::OrgScopedID>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetOrgScopedID", (userID))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetSdkAccounts() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::SdkAccountList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SdkAccountList>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::SdkAccountList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SdkAccountList>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetSdkAccounts", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetUserProof() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserProof,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserProof>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::UserProof,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserProof>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetUserProof", ())?;
         Ok(__cordl_ret.into())
     }
@@ -206,14 +170,14 @@ impl crate::Oculus::Platform::Users {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LaunchBlockFlowResult,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LaunchBlockFlowResult,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LaunchBlockFlowResult,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LaunchBlockFlowResult,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LaunchBlockFlow", (userID))?;
@@ -223,14 +187,14 @@ impl crate::Oculus::Platform::Users {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LaunchFriendRequestFlow", (userID))?;
@@ -240,14 +204,14 @@ impl crate::Oculus::Platform::Users {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LaunchUnblockFlow", (userID))?;

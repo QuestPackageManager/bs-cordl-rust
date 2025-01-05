@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DSA {
-    __cordl_parent: crate::System::Security::Cryptography::AsymmetricAlgorithm,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::AsymmetricAlgorithm,
+    >,
 }
 #[cfg(feature = "System+Security+Cryptography+DSA")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+DSA")]
 impl std::ops::Deref for crate::System::Security::Cryptography::DSA {
-    type Target = crate::System::Security::Cryptography::AsymmetricAlgorithm;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::AsymmetricAlgorithm,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

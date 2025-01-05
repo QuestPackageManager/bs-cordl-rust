@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PoolCleanupChecker {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _poolFactories: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::Zenject::IMemoryPool>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
     >,
     pub _ignoredPools: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
     >,
 }
 #[cfg(feature = "Zenject+PoolCleanupChecker")]
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+PoolCleanupChecker")]
 impl std::ops::Deref for crate::Zenject::PoolCleanupChecker {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,10 +42,10 @@ impl crate::Zenject::PoolCleanupChecker {
     }
     pub fn New(
         poolFactories: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::Zenject::IMemoryPool>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
         >,
         ignoredPools: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -56,7 +56,9 @@ impl crate::Zenject::PoolCleanupChecker {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -76,10 +78,10 @@ impl crate::Zenject::PoolCleanupChecker {
     pub fn _ctor(
         &mut self,
         poolFactories: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::Zenject::IMemoryPool>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
         >,
         ignoredPools: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -100,14 +102,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PoolCleanupChecker {
     }
 }
 #[cfg(feature = "Zenject+PoolCleanupChecker")]
-impl AsRef<crate::Zenject::ILateDisposable> for crate::Zenject::PoolCleanupChecker {
-    fn as_ref(&self) -> &crate::Zenject::ILateDisposable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>>
+for crate::Zenject::PoolCleanupChecker {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+PoolCleanupChecker")]
-impl AsMut<crate::Zenject::ILateDisposable> for crate::Zenject::PoolCleanupChecker {
-    fn as_mut(&mut self) -> &mut crate::Zenject::ILateDisposable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>>
+for crate::Zenject::PoolCleanupChecker {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }

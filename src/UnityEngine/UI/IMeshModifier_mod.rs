@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::IMeshModifier {
 }
 #[cfg(feature = "UnityEngine+UI+IMeshModifier")]
 impl crate::UnityEngine::UI::IMeshModifier {
-    pub fn ModifyMesh_Mesh0(
+    pub fn ModifyMesh_Gc0(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -35,7 +35,7 @@ impl crate::UnityEngine::UI::IMeshModifier {
             .invoke("ModifyMesh", (mesh))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ModifyMesh_VertexHelper1(
+    pub fn ModifyMesh_Gc1(
         &mut self,
         verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

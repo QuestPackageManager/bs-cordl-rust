@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DirectionalLight {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub color: crate::UnityEngine::Color,
     pub intensity: f32,
     pub radius: f32,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DirectionalLight")]
 impl std::ops::Deref for crate::GlobalNamespace::DirectionalLight {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,15 +67,11 @@ impl crate::GlobalNamespace::DirectionalLight {
     }
     pub fn get_lights() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::DirectionalLight,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLight>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::GlobalNamespace::DirectionalLight,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLight>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_lights", ())?;
         Ok(__cordl_ret.into())
     }

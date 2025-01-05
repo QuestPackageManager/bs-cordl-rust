@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingTextSpawner {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub _duration: f32,
     pub _xSpread: f32,
     pub _targetYPos: f32,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FlyingTextSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingTextSpawner {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -89,18 +89,26 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingTextSpa
     }
 }
 #[cfg(feature = "FlyingTextSpawner")]
-impl AsRef<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>
-for crate::GlobalNamespace::FlyingTextSpawner {
-    fn as_ref(&self) -> &crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>,
+> for crate::GlobalNamespace::FlyingTextSpawner {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "FlyingTextSpawner")]
-impl AsMut<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>
-for crate::GlobalNamespace::FlyingTextSpawner {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>,
+> for crate::GlobalNamespace::FlyingTextSpawner {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

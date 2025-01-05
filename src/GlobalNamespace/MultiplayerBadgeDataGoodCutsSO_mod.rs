@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerBadgeDataGoodCutsSO {
-    __cordl_parent: crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO,
+    >,
 }
 #[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
-    type Target = crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

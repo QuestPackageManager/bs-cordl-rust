@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseInputModule {
-    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >,
     pub m_RaycastResultCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::EventSystems::RaycastResult,
-        >,
+        crate::UnityEngine::EventSystems::RaycastResult,
     >,
     pub m_SendPointerHoverToParent: bool,
     pub m_AxisEventData: quest_hook::libil2cpp::Gc<
@@ -32,7 +32,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+BaseInputModule")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::BaseInputModule {
-    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::UIBehaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -107,9 +109,7 @@ impl crate::UnityEngine::EventSystems::BaseInputModule {
     }
     pub fn FindFirstRaycast(
         candidates: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::EventSystems::RaycastResult,
-            >,
+            crate::UnityEngine::EventSystems::RaycastResult,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventSystems::RaycastResult> {
         let __cordl_ret: crate::UnityEngine::EventSystems::RaycastResult = <Self as quest_hook::libil2cpp::Type>::class()

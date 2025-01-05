@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SchemaCollectionCompiler {
-    __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseProcessor>,
     pub compileContentModel: bool,
     pub examplars: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaObjectTable,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+SchemaCollectionCompiler")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaCollectionCompiler {
-    type Target = crate::System::Xml::Schema::BaseProcessor;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseProcessor>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -303,7 +303,7 @@ impl crate::System::Xml::Schema::SchemaCollectionCompiler {
             .invoke("Cleanup", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Cleanup_XmlSchema1(
+    pub fn Cleanup_Gc1(
         schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -382,7 +382,9 @@ impl crate::System::Xml::Schema::SchemaCollectionCompiler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         >,
     > {
@@ -391,7 +393,9 @@ impl crate::System::Xml::Schema::SchemaCollectionCompiler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         > = __cordl_object.invoke("CompileBaseMemberTypes", (simpleType))?;
         Ok(__cordl_ret.into())
@@ -886,7 +890,7 @@ impl crate::System::Xml::Schema::SchemaCollectionCompiler {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsValidOccurrenceRangeRestriction_XmlSchemaParticle_XmlSchemaParticle0(
+    pub fn IsValidOccurrenceRangeRestriction_Gc_Gc0(
         &mut self,
         derivedParticle: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaParticle,

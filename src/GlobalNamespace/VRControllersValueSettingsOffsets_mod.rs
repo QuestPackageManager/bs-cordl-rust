@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRControllersValueSettingsOffsets {
-    __cordl_parent: crate::GlobalNamespace::VRControllerTransformOffset,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VRControllerTransformOffset,
+    >,
     pub _settingsManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SettingsManager,
     >,
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRControllersValueSettingsOffsets")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersValueSettingsOffsets {
-    type Target = crate::GlobalNamespace::VRControllerTransformOffset;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VRControllerTransformOffset,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

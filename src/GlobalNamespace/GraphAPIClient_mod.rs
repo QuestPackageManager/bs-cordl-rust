@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphAPIClient {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _networkConfig: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::INetworkConfig,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GraphAPIClient")]
 impl std::ops::Deref for crate::GlobalNamespace::GraphAPIClient {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,9 +53,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         request: TRequest,
         postOptions: crate::GlobalNamespace::GraphAPIClient_PostOptions,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResponse>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResponse>>
     where
         TRequest: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -65,13 +63,29 @@ impl crate::GlobalNamespace::GraphAPIClient {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TResponse>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResponse> = __cordl_object
             .invoke("PostLoggedOut", (path, request, postOptions, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Post_Il2CppString_TRequest_GraphAPIClient_PostOptions_CancellationToken0<
+    pub fn Post_Gc_CancellationToken1<TResponse>(
+        &mut self,
+        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        httpContent: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResponse>>
+    where
+        TResponse: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResponse> = __cordl_object
+            .invoke("Post", (uri, accessToken, httpContent, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Post_TRequest_GraphAPIClient_PostOptions_CancellationToken0<
         TRequest,
         TResponse,
     >(
@@ -81,9 +95,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         request: TRequest,
         postOptions: crate::GlobalNamespace::GraphAPIClient_PostOptions,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResponse>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResponse>>
     where
         TRequest: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -93,35 +105,11 @@ impl crate::GlobalNamespace::GraphAPIClient {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TResponse>,
-        > = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResponse> = __cordl_object
             .invoke(
                 "Post",
                 (path, accessToken, request, postOptions, cancellationToken),
             )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Post_Uri_HttpContent_CancellationToken1<TResponse>(
-        &mut self,
-        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
-        accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        httpContent: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResponse>>,
-    >
-    where
-        TResponse: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TResponse>,
-        > = __cordl_object
-            .invoke("Post", (uri, accessToken, httpContent, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

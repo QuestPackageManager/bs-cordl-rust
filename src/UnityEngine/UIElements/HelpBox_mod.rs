@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HelpBox {
-    __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_HelpBoxMessageType: crate::UnityEngine::UIElements::HelpBoxMessageType,
     pub m_Icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     pub m_IconClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+HelpBox")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::HelpBox {
-    type Target = crate::UnityEngine::UIElements::VisualElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,7 +57,7 @@ impl crate::UnityEngine::UIElements::HelpBox {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_HelpBoxMessageType1(
+    pub fn New_Gc_HelpBoxMessageType1(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         messageType: crate::UnityEngine::UIElements::HelpBoxMessageType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -84,7 +88,7 @@ impl crate::UnityEngine::UIElements::HelpBox {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_HelpBoxMessageType1(
+    pub fn _ctor_Gc_HelpBoxMessageType1(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         messageType: crate::UnityEngine::UIElements::HelpBoxMessageType,
@@ -132,9 +136,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::HelpB
 #[repr(C)]
 #[derive(Debug)]
 pub struct HelpBox_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::HelpBox,
-        *mut crate::UnityEngine::UIElements::HelpBox_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::HelpBox>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::HelpBox_UxmlTraits>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlFactory")]
@@ -144,9 +148,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::HelpBox,
-        *mut crate::UnityEngine::UIElements::HelpBox_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::HelpBox>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::HelpBox_UxmlTraits>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -192,14 +196,14 @@ for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HelpBox_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+    >,
     pub m_Text: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
     pub m_MessageType: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::HelpBoxMessageType,
-        >,
+        crate::UnityEngine::UIElements::HelpBoxMessageType,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]
@@ -209,7 +213,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::HelpBox_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

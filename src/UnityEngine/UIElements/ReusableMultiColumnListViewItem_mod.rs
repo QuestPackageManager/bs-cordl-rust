@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReusableMultiColumnListViewItem {
-    __cordl_parent: crate::UnityEngine::UIElements::ReusableListViewItem,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ReusableListViewItem,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ReusableMultiColumnListViewItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+ReusableMultiColumnListViewItem")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::ReusableMultiColumnListViewItem {
-    type Target = crate::UnityEngine::UIElements::ReusableListViewItem;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ReusableListViewItem,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +31,18 @@ for crate::UnityEngine::UIElements::ReusableMultiColumnListViewItem {
 }
 #[cfg(feature = "UnityEngine+UIElements+ReusableMultiColumnListViewItem")]
 impl crate::UnityEngine::UIElements::ReusableMultiColumnListViewItem {
-    pub fn Init_Columns__cordl_bool1(
+    pub fn Init_Gc0(
+        &mut self,
+        item: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (item))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Init_Gc__cordl_bool1(
         &mut self,
         container: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
@@ -40,17 +55,6 @@ impl crate::UnityEngine::UIElements::ReusableMultiColumnListViewItem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (container, columns, usesAnimatedDrag))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Init_VisualElement0(
-        &mut self,
-        item: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (item))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Task_WhenAllPromise_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Threading::Tasks::Task_1<
-        *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >,
     pub m_tasks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Threading::Tasks::Task_1<T>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<T>>,
     >,
     pub m_count: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -21,8 +19,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
-    type Target = crate::System::Threading::Tasks::Task_1<
-        *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -54,9 +52,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
     }
     pub fn New(
         tasks: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task_1<T>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<T>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -72,9 +68,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
     pub fn _ctor(
         &mut self,
         tasks: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task_1<T>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<T>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -130,18 +124,28 @@ for crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
 #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Threading::Tasks::ITaskCompletionAction>
-for crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
-    fn as_ref(&self) -> &crate::System::Threading::Tasks::ITaskCompletionAction {
+> AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ITaskCompletionAction>,
+> for crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::ITaskCompletionAction,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Threading::Tasks::ITaskCompletionAction>
-for crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Threading::Tasks::ITaskCompletionAction {
+> AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ITaskCompletionAction>,
+> for crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::ITaskCompletionAction,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Convert {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Convert")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Convert")]
 impl std::ops::Deref for crate::System::Convert {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -23,7 +23,7 @@ impl std::ops::DerefMut for crate::System::Convert {
 }
 #[cfg(feature = "System+Convert")]
 impl crate::System::Convert {
-    pub fn ChangeType_Type1(
+    pub fn ChangeType_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         conversionType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -35,20 +35,7 @@ impl crate::System::Convert {
             .invoke("ChangeType", (value, conversionType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ChangeType_TypeCode_IFormatProvider0(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        typeCode: crate::System::TypeCode,
-        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ChangeType", (value, typeCode, provider))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ChangeType_Type_IFormatProvider2(
+    pub fn ChangeType_Gc_Gc2(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         conversionType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -59,6 +46,19 @@ impl crate::System::Convert {
             quest_hook::libil2cpp::Il2CppObject,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ChangeType", (value, conversionType, provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ChangeType_TypeCode_Gc0(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        typeCode: crate::System::TypeCode,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChangeType", (value, typeCode, provider))?;
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToBase64Array(
@@ -243,7 +243,7 @@ impl crate::System::Convert {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToBase64CharArray_Il2CppArray_i32_i32_Il2CppArray_i32_0(
+    pub fn ToBase64CharArray_Gc_i32_i32_Gc_i32_0(
         inArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offsetIn: i32,
         length: i32,
@@ -257,7 +257,7 @@ impl crate::System::Convert {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToBase64String_Il2CppArray0(
+    pub fn ToBase64String_Gc0(
         inArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -268,7 +268,7 @@ impl crate::System::Convert {
             .invoke("ToBase64String", (inArray))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToBase64String_Il2CppArray_i32_i32_1(
+    pub fn ToBase64String_Gc_i32_i32_1(
         inArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         length: i32,
@@ -281,7 +281,7 @@ impl crate::System::Convert {
             .invoke("ToBase64String", (inArray, offset, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToBase64String_Il2CppArray_i32_i32_Base64FormattingOptions2(
+    pub fn ToBase64String_Gc_i32_i32_Base64FormattingOptions2(
         inArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         length: i32,
@@ -325,14 +325,21 @@ impl crate::System::Convert {
             .invoke("ToBoolean", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToBoolean_Il2CppObject0(
+    pub fn ToBoolean_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToBoolean", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToBoolean_Il2CppObject_IFormatProvider1(
+    pub fn ToBoolean_Gc10(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToBoolean", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToBoolean_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -340,14 +347,7 @@ impl crate::System::Convert {
             .invoke("ToBoolean", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToBoolean_Il2CppString10(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToBoolean", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToBoolean_Il2CppString_IFormatProvider11(
+    pub fn ToBoolean_Gc_Gc11(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -412,14 +412,21 @@ impl crate::System::Convert {
             .invoke("ToByte", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToByte_Il2CppObject0(
+    pub fn ToByte_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToByte", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToByte_Il2CppObject_IFormatProvider1(
+    pub fn ToByte_Gc14(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToByte", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToByte_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u8> {
@@ -427,14 +434,7 @@ impl crate::System::Convert {
             .invoke("ToByte", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToByte_Il2CppString14(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToByte", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToByte_Il2CppString_IFormatProvider15(
+    pub fn ToByte_Gc_Gc15(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u8> {
@@ -442,7 +442,7 @@ impl crate::System::Convert {
             .invoke("ToByte", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToByte_Il2CppString_i32_16(
+    pub fn ToByte_Gc_i32_16(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fromBase: i32,
     ) -> quest_hook::libil2cpp::Result<u8> {
@@ -505,14 +505,21 @@ impl crate::System::Convert {
             .invoke("ToByte", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToChar_Il2CppObject0(
+    pub fn ToChar_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<char> {
         let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToChar", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToChar_Il2CppObject_IFormatProvider1(
+    pub fn ToChar_Gc10(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToChar", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToChar_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<char> {
@@ -520,14 +527,7 @@ impl crate::System::Convert {
             .invoke("ToChar", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToChar_Il2CppString10(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToChar", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToChar_Il2CppString_IFormatProvider11(
+    pub fn ToChar_Gc_Gc11(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<char> {
@@ -575,7 +575,7 @@ impl crate::System::Convert {
             .invoke("ToChar", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDateTime_Il2CppObject0(
+    pub fn ToDateTime_Gc_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
@@ -583,7 +583,7 @@ impl crate::System::Convert {
             .invoke("ToDateTime", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDateTime_Il2CppString1(
+    pub fn ToDateTime_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
@@ -591,7 +591,7 @@ impl crate::System::Convert {
             .invoke("ToDateTime", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDecimal_Il2CppObject_IFormatProvider0(
+    pub fn ToDecimal_Gc_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
@@ -599,7 +599,7 @@ impl crate::System::Convert {
             .invoke("ToDecimal", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDecimal_Il2CppString_IFormatProvider11(
+    pub fn ToDecimal_Gc_Gc11(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
@@ -691,14 +691,14 @@ impl crate::System::Convert {
             .invoke("ToDouble", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDouble_Il2CppObject0(
+    pub fn ToDouble_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToDouble", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDouble_Il2CppObject_IFormatProvider1(
+    pub fn ToDouble_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<f64> {
@@ -706,7 +706,7 @@ impl crate::System::Convert {
             .invoke("ToDouble", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDouble_Il2CppString_IFormatProvider12(
+    pub fn ToDouble_Gc_Gc12(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<f64> {
@@ -771,14 +771,14 @@ impl crate::System::Convert {
             .invoke("ToInt16", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt16_Il2CppObject0(
+    pub fn ToInt16_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i16> {
         let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToInt16", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt16_Il2CppObject_IFormatProvider1(
+    pub fn ToInt16_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<i16> {
@@ -786,7 +786,7 @@ impl crate::System::Convert {
             .invoke("ToInt16", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt16_Il2CppString_IFormatProvider14(
+    pub fn ToInt16_Gc_Gc14(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<i16> {
@@ -794,7 +794,7 @@ impl crate::System::Convert {
             .invoke("ToInt16", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt16_Il2CppString_i32_15(
+    pub fn ToInt16_Gc_i32_15(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fromBase: i32,
     ) -> quest_hook::libil2cpp::Result<i16> {
@@ -864,14 +864,21 @@ impl crate::System::Convert {
             .invoke("ToInt32", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt32_Il2CppObject0(
+    pub fn ToInt32_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToInt32", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt32_Il2CppObject_IFormatProvider1(
+    pub fn ToInt32_Gc13(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToInt32", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToInt32_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -879,14 +886,7 @@ impl crate::System::Convert {
             .invoke("ToInt32", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt32_Il2CppString13(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToInt32", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToInt32_Il2CppString_IFormatProvider14(
+    pub fn ToInt32_Gc_Gc14(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -894,7 +894,7 @@ impl crate::System::Convert {
             .invoke("ToInt32", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt32_Il2CppString_i32_15(
+    pub fn ToInt32_Gc_i32_15(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fromBase: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -959,14 +959,21 @@ impl crate::System::Convert {
             .invoke("ToInt64", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt64_Il2CppObject0(
+    pub fn ToInt64_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToInt64", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt64_Il2CppObject_IFormatProvider1(
+    pub fn ToInt64_Gc14(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToInt64", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToInt64_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<i64> {
@@ -974,14 +981,7 @@ impl crate::System::Convert {
             .invoke("ToInt64", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt64_Il2CppString14(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToInt64", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToInt64_Il2CppString_IFormatProvider15(
+    pub fn ToInt64_Gc_Gc15(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<i64> {
@@ -989,7 +989,7 @@ impl crate::System::Convert {
             .invoke("ToInt64", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToInt64_Il2CppString_i32_16(
+    pub fn ToInt64_Gc_i32_16(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fromBase: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
@@ -1059,14 +1059,14 @@ impl crate::System::Convert {
             .invoke("ToSByte", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToSByte_Il2CppObject0(
+    pub fn ToSByte_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i8> {
         let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToSByte", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToSByte_Il2CppObject_IFormatProvider1(
+    pub fn ToSByte_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<i8> {
@@ -1074,7 +1074,7 @@ impl crate::System::Convert {
             .invoke("ToSByte", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToSByte_Il2CppString_IFormatProvider14(
+    pub fn ToSByte_Gc_Gc14(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<i8> {
@@ -1082,7 +1082,7 @@ impl crate::System::Convert {
             .invoke("ToSByte", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToSByte_Il2CppString_i32_15(
+    pub fn ToSByte_Gc_i32_15(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fromBase: i32,
     ) -> quest_hook::libil2cpp::Result<i8> {
@@ -1152,14 +1152,21 @@ impl crate::System::Convert {
             .invoke("ToSingle", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToSingle_Il2CppObject0(
+    pub fn ToSingle_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToSingle", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToSingle_Il2CppObject_IFormatProvider1(
+    pub fn ToSingle_Gc12(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToSingle", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToSingle_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -1167,14 +1174,7 @@ impl crate::System::Convert {
             .invoke("ToSingle", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToSingle_Il2CppString12(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToSingle", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToSingle_Il2CppString_IFormatProvider13(
+    pub fn ToSingle_Gc_Gc13(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -1232,7 +1232,7 @@ impl crate::System::Convert {
             .invoke("ToSingle", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppObject_IFormatProvider0(
+    pub fn ToString_Gc_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1254,7 +1254,7 @@ impl crate::System::Convert {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToString", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString__cordl_char_IFormatProvider2(
+    pub fn ToString__cordl_char_Gc2(
         value: char,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1286,7 +1286,7 @@ impl crate::System::Convert {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToString", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_i32_IFormatProvider4(
+    pub fn ToString_i32_Gc4(
         value: i32,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1339,14 +1339,14 @@ impl crate::System::Convert {
             .invoke("ToUInt16", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUInt16_Il2CppObject0(
+    pub fn ToUInt16_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<u16> {
         let __cordl_ret: u16 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToUInt16", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUInt16_Il2CppObject_IFormatProvider1(
+    pub fn ToUInt16_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u16> {
@@ -1354,7 +1354,7 @@ impl crate::System::Convert {
             .invoke("ToUInt16", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUInt16_Il2CppString_IFormatProvider14(
+    pub fn ToUInt16_Gc_Gc14(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u16> {
@@ -1362,7 +1362,7 @@ impl crate::System::Convert {
             .invoke("ToUInt16", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUInt16_Il2CppString_i32_15(
+    pub fn ToUInt16_Gc_i32_15(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fromBase: i32,
     ) -> quest_hook::libil2cpp::Result<u16> {
@@ -1432,14 +1432,14 @@ impl crate::System::Convert {
             .invoke("ToUInt32", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUInt32_Il2CppObject0(
+    pub fn ToUInt32_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToUInt32", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUInt32_Il2CppObject_IFormatProvider1(
+    pub fn ToUInt32_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -1447,7 +1447,7 @@ impl crate::System::Convert {
             .invoke("ToUInt32", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUInt32_Il2CppString_IFormatProvider14(
+    pub fn ToUInt32_Gc_Gc14(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -1455,7 +1455,7 @@ impl crate::System::Convert {
             .invoke("ToUInt32", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUInt32_Il2CppString_i32_15(
+    pub fn ToUInt32_Gc_i32_15(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fromBase: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -1525,14 +1525,21 @@ impl crate::System::Convert {
             .invoke("ToUInt64", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUInt64_Il2CppObject0(
+    pub fn ToUInt64_Gc0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToUInt64", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUInt64_Il2CppObject_IFormatProvider1(
+    pub fn ToUInt64_Gc14(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUInt64", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUInt64_Gc_Gc1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -1540,14 +1547,7 @@ impl crate::System::Convert {
             .invoke("ToUInt64", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUInt64_Il2CppString14(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToUInt64", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToUInt64_Il2CppString_IFormatProvider15(
+    pub fn ToUInt64_Gc_Gc15(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -1555,7 +1555,7 @@ impl crate::System::Convert {
             .invoke("ToUInt64", (value, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUInt64_Il2CppString_i32_16(
+    pub fn ToUInt64_Gc_i32_16(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fromBase: i32,
     ) -> quest_hook::libil2cpp::Result<u64> {

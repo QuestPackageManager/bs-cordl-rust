@@ -62,7 +62,7 @@ impl crate::System::Char {
             .invoke("CheckSeparator", (uc))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareTo_Il2CppObject0(
+    pub fn CompareTo_Gc0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -103,7 +103,7 @@ impl crate::System::Char {
             .invoke("ConvertToUtf32", (highSurrogate, lowSurrogate))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Il2CppObject0(
+    pub fn Equals_Gc0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -155,7 +155,7 @@ impl crate::System::Char {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUnicodeCategory_Il2CppString_i32_1(
+    pub fn GetUnicodeCategory_Gc_i32_1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::UnicodeCategory> {
@@ -185,7 +185,7 @@ impl crate::System::Char {
             .invoke("IsDigit", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsHighSurrogate_Il2CppString_i32_1(
+    pub fn IsHighSurrogate_Gc_i32_1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -223,7 +223,7 @@ impl crate::System::Char {
             .invoke("IsLower", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsNumber_Il2CppString_i32_1(
+    pub fn IsNumber_Gc_i32_1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -259,7 +259,7 @@ impl crate::System::Char {
             .invoke("IsSurrogatePair", (highSurrogate, lowSurrogate))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsSurrogate_Il2CppString_i32_1(
+    pub fn IsSurrogate_Gc_i32_1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -282,7 +282,7 @@ impl crate::System::Char {
             .invoke("IsWhiteSpaceLatin1", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsWhiteSpace_Il2CppString_i32_1(
+    pub fn IsWhiteSpace_Gc_i32_1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -477,7 +477,7 @@ impl crate::System::Char {
             .invoke("ToLowerInvariant", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToLower_CultureInfo0(
+    pub fn ToLower_Gc0(
         c: char,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<char> {
@@ -500,7 +500,7 @@ impl crate::System::Char {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_IFormatProvider1(
+    pub fn ToString_Gc1(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<
@@ -526,7 +526,7 @@ impl crate::System::Char {
             .invoke("ToUpperInvariant", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUpper_CultureInfo0(
+    pub fn ToUpper_Gc0(
         c: char,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<char> {
@@ -549,50 +549,54 @@ impl crate::System::Char {
     }
 }
 #[cfg(feature = "System+Char")]
-impl AsRef<crate::System::IComparable> for crate::System::Char {
-    fn as_ref(&self) -> &crate::System::IComparable {
+impl AsRef<quest_hook::libil2cpp::Gc<char>> for crate::System::Char {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<char> {
         todo!()
     }
 }
 #[cfg(feature = "System+Char")]
-impl AsMut<crate::System::IComparable> for crate::System::Char {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+impl AsMut<quest_hook::libil2cpp::Gc<char>> for crate::System::Char {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<char> {
         todo!()
     }
 }
 #[cfg(feature = "System+Char")]
-impl AsRef<crate::System::IComparable_1<char>> for crate::System::Char {
-    fn as_ref(&self) -> &crate::System::IComparable_1<char> {
+impl AsRef<quest_hook::libil2cpp::Gc<char>> for crate::System::Char {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<char> {
         todo!()
     }
 }
 #[cfg(feature = "System+Char")]
-impl AsMut<crate::System::IComparable_1<char>> for crate::System::Char {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<char> {
+impl AsMut<quest_hook::libil2cpp::Gc<char>> for crate::System::Char {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<char> {
         todo!()
     }
 }
 #[cfg(feature = "System+Char")]
-impl AsRef<crate::System::IConvertible> for crate::System::Char {
-    fn as_ref(&self) -> &crate::System::IConvertible {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::System::Char {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Char")]
-impl AsMut<crate::System::IConvertible> for crate::System::Char {
-    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::System::Char {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Char")]
-impl AsRef<crate::System::IEquatable_1<char>> for crate::System::Char {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<char> {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
+for crate::System::Char {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
         todo!()
     }
 }
 #[cfg(feature = "System+Char")]
-impl AsMut<crate::System::IEquatable_1<char>> for crate::System::Char {
-    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<char> {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
+for crate::System::Char {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
         todo!()
     }
 }

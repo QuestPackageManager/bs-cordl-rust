@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GroupPresenceSample {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     pub IsJoinable: bool,
     pub LobbySessionID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub MatchSessionID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -10,9 +10,7 @@ pub struct GroupPresenceSample {
     pub InVRConsole: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub DestinationsConsole: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub DestinationAPINames: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppString,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub LoggedInUserID: u64,
     pub DestinationIndex: i32,
@@ -25,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GroupPresenceSample")]
 impl std::ops::Deref for crate::GlobalNamespace::GroupPresenceSample {
-    type Target = crate::UnityEngine::MonoBehaviour;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,9 +76,7 @@ impl crate::GlobalNamespace::GroupPresenceSample {
     pub fn OnGetDestinations(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                *mut crate::Oculus::Platform::Models::DestinationList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::DestinationList>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -93,8 +89,8 @@ impl crate::GlobalNamespace::GroupPresenceSample {
     pub fn OnInviteSentNotif(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                *mut crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -108,8 +104,8 @@ impl crate::GlobalNamespace::GroupPresenceSample {
     pub fn OnJoinIntentChangeNotif(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                *mut crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -123,8 +119,8 @@ impl crate::GlobalNamespace::GroupPresenceSample {
     pub fn OnLeaveIntentChangeNotif(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                *mut crate::Oculus::Platform::Models::GroupPresenceLeaveIntent,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::GroupPresenceLeaveIntent,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -138,9 +134,7 @@ impl crate::GlobalNamespace::GroupPresenceSample {
     pub fn OnLoggedInUser(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                *mut crate::Oculus::Platform::Models::User,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -267,9 +261,7 @@ impl crate::GlobalNamespace::GroupPresenceSample {
     pub fn _ClearPresence_b__10_1(
         &mut self,
         message2: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                *mut crate::Oculus::Platform::Models::User,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -282,8 +274,8 @@ impl crate::GlobalNamespace::GroupPresenceSample {
     pub fn _LaunchInvitePanel_b__11_0(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                *mut crate::Oculus::Platform::Models::InvitePanelResultInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::InvitePanelResultInfo,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -319,9 +311,7 @@ impl crate::GlobalNamespace::GroupPresenceSample {
     pub fn _SetPresence_b__9_1(
         &mut self,
         message2: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                *mut crate::Oculus::Platform::Models::User,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -334,8 +324,8 @@ impl crate::GlobalNamespace::GroupPresenceSample {
     pub fn _Start_b__8_0(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

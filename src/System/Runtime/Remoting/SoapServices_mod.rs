@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SoapServices {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Runtime+Remoting+SoapServices")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+SoapServices")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::SoapServices {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,10 +77,10 @@ impl crate::System::Runtime::Remoting::SoapServices {
     pub fn GetXmlElementForInteropType(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         xmlElement: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         xmlNamespace: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -115,10 +115,10 @@ impl crate::System::Runtime::Remoting::SoapServices {
     pub fn GetXmlTypeForInteropType(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         xmlType: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         xmlTypeNamespace: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppString,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -128,14 +128,14 @@ impl crate::System::Runtime::Remoting::SoapServices {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn PreLoad_Assembly0(
+    pub fn PreLoad_Gc0(
         assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PreLoad", (assembly))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PreLoad_Type1(
+    pub fn PreLoad_Gc1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -205,7 +205,7 @@ for crate::System::Runtime::Remoting::SoapServices {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SoapServices_TypeInfo {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub Elements: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
@@ -216,7 +216,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+SoapServices+TypeInfo")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::SoapServices_TypeInfo {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

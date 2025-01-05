@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArcVisibilityTypeSettingsDropdown {
-    __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<
-        crate::GlobalNamespace::ArcVisibilityType,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArcVisibilityType>,
 }
 #[cfg(feature = "ArcVisibilityTypeSettingsDropdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ArcVisibilityTypeSettingsDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
-    type Target = crate::GlobalNamespace::ValueDropdownController_1<
-        crate::GlobalNamespace::ArcVisibilityType,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArcVisibilityType>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,11 +29,9 @@ impl crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Tuple_2<
-                    crate::GlobalNamespace::ArcVisibilityType,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ArcVisibilityType,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -45,11 +39,9 @@ impl crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::Tuple_2<
-                    crate::GlobalNamespace::ArcVisibilityType,
-                    *mut quest_hook::libil2cpp::Il2CppString,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ArcVisibilityType,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = __cordl_object.invoke("GetNamedValues", ())?;
         Ok(__cordl_ret.into())

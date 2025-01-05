@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OSSpecificSynchronizationContext {
-    __cordl_parent: crate::System::Threading::SynchronizationContext,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SynchronizationContext,
+    >,
     pub m_OSSynchronizationContext: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
     >,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext")]
 impl std::ops::Deref for crate::System::Threading::OSSpecificSynchronizationContext {
-    type Target = crate::System::Threading::SynchronizationContext;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SynchronizationContext,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -144,7 +148,7 @@ for crate::System::Threading::OSSpecificSynchronizationContext {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OSSpecificSynchronizationContext_InvocationContext {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Delegate: quest_hook::libil2cpp::Gc<
         crate::System::Threading::SendOrPostCallback,
     >,
@@ -159,7 +163,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext+InvocationContext")]
 impl std::ops::Deref
 for crate::System::Threading::OSSpecificSynchronizationContext_InvocationContext {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -222,7 +226,7 @@ for crate::System::Threading::OSSpecificSynchronizationContext_InvocationContext
 #[repr(C)]
 #[derive(Debug)]
 pub struct OSSpecificSynchronizationContext_InvocationEntryDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(
     feature = "System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
@@ -237,7 +241,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Threading::OSSpecificSynchronizationContext_InvocationEntryDelegate {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

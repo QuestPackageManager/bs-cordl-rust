@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TemplateContainer {
-    __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement,
+    >,
     pub _templateId_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -20,7 +22,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TemplateContainer")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TemplateContainer {
-    type Target = crate::UnityEngine::UIElements::BindableElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +48,7 @@ impl crate::UnityEngine::UIElements::TemplateContainer {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         templateId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -74,7 +78,7 @@ impl crate::UnityEngine::UIElements::TemplateContainer {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         templateId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -148,9 +152,11 @@ for crate::UnityEngine::UIElements::TemplateContainer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TemplateContainer_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::TemplateContainer,
-        *mut crate::UnityEngine::UIElements::TemplateContainer_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateContainer>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TemplateContainer_UxmlTraits,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TemplateContainer+UxmlFactory")]
@@ -161,9 +167,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TemplateContainer+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TemplateContainer_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::TemplateContainer,
-        *mut crate::UnityEngine::UIElements::TemplateContainer_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateContainer>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TemplateContainer_UxmlTraits,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -236,7 +244,9 @@ for crate::UnityEngine::UIElements::TemplateContainer_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TemplateContainer_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    >,
     pub m_Template: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
@@ -249,7 +259,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TemplateContainer+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TemplateContainer_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

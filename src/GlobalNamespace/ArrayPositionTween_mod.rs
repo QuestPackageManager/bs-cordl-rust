@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayPositionTween {
-    __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableAsset,
+    >,
     pub arrayReference: crate::UnityEngine::ExposedReference_1<
-        *mut crate::GlobalNamespace::TimelineArrayReference,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimelineArrayReference>,
     >,
     pub elementDelay: f32,
     pub _cordl_template: quest_hook::libil2cpp::Gc<
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ArrayPositionTween")]
 impl std::ops::Deref for crate::GlobalNamespace::ArrayPositionTween {
-    type Target = crate::UnityEngine::Playables::PlayableAsset;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableAsset,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,16 +85,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ArrayPosition
     }
 }
 #[cfg(feature = "ArrayPositionTween")]
-impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
 for crate::GlobalNamespace::ArrayPositionTween {
-    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ArrayPositionTween")]
-impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
 for crate::GlobalNamespace::ArrayPositionTween {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::ITimelineClipAsset,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithAssetFileDownloadCancelResult {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+        >,
     >,
 }
 #[cfg(feature = "Oculus+Platform+MessageWithAssetFileDownloadCancelResult")]
@@ -15,8 +17,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Oculus+Platform+MessageWithAssetFileDownloadCancelResult")]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithAssetFileDownloadCancelResult {
-    type Target = crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

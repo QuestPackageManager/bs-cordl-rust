@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputSystemUIInputModule {
-    __cordl_parent: crate::UnityEngine::EventSystems::BaseInputModule,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseInputModule,
+    >,
     pub m_MoveRepeatDelay: f32,
     pub m_MoveRepeatRate: f32,
     pub m_TrackedDeviceDragThresholdMultiplier: f32,
@@ -46,54 +48,38 @@ pub struct InputSystemUIInputModule {
     pub m_ActionsHooked: bool,
     pub m_NeedToPurgeStalePointers: bool,
     pub m_OnPointDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-        >,
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
     pub m_OnMoveDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-        >,
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
     pub m_OnLeftClickDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-        >,
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
     pub m_OnRightClickDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-        >,
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
     pub m_OnMiddleClickDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-        >,
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
     pub m_OnScrollWheelDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-        >,
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
     pub m_OnTrackedDevicePositionDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-        >,
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
     pub m_OnTrackedDeviceOrientationDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-        >,
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
     pub m_OnControlsChangedDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub m_CurrentPointerId: i32,
     pub m_CurrentPointerIndex: i32,
     pub m_CurrentPointerType: crate::UnityEngine::InputSystem::UI::UIPointerType,
     pub m_PointerIds: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<i32>,
     pub m_PointerTouchControls: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     >,
     pub m_PointerStates: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         crate::UnityEngine::InputSystem::UI::PointerModel,
@@ -111,7 +97,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
-    type Target = crate::UnityEngine::EventSystems::BaseInputModule;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseInputModule,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -316,7 +304,7 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
             .invoke("GetPointerStateIndexFor", (context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPointerStateIndexFor_InputControl__cordl_bool2(
+    pub fn GetPointerStateIndexFor_Gc__cordl_bool2(
         &mut self,
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
@@ -633,7 +621,7 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
             .invoke("ProcessPointerButtonDrag", (button, eventData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProcessPointerMovement_ByRefMut_ExtendedPointerEventData0(
+    pub fn ProcessPointerMovement_ByRefMut0(
         &mut self,
         pointer: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::UI::PointerModel,
@@ -649,7 +637,7 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
             .invoke("ProcessPointerMovement", (pointer, eventData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProcessPointerMovement_ExtendedPointerEventData_GameObject1(
+    pub fn ProcessPointerMovement_Gc1(
         &mut self,
         eventData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData,
@@ -722,9 +710,7 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
             crate::UnityEngine::InputSystem::InputActionReference,
         >,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-            >,
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
         >,
         install: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -746,16 +732,16 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     pub fn SwapAction(
         &mut self,
         property: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::InputSystem::InputActionReference,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::InputActionReference,
+            >,
         >,
         newValue: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionReference,
         >,
         actionsHooked: bool,
         actionCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-            >,
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

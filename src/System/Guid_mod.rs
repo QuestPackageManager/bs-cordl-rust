@@ -38,9 +38,9 @@ impl crate::System::Guid {
     pub type GuidStyles = crate::System::Guid_GuidStyles;
     #[cfg(feature = "System+Guid+ParseFailureKind")]
     pub type ParseFailureKind = crate::System::Guid_ParseFailureKind;
-    pub fn CompareTo_Guid1(
+    pub fn CompareTo_Gc0(
         &mut self,
-        value: crate::System::Guid,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -49,9 +49,9 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareTo_Il2CppObject0(
+    pub fn CompareTo_Guid1(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -67,6 +67,17 @@ impl crate::System::Guid {
             .invoke("EatAllWhitespace", (str))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Equals_Gc0(
+        &mut self,
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (o),
+        )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Guid1(
         &mut self,
         g: crate::System::Guid,
@@ -75,17 +86,6 @@ impl crate::System::Guid {
             self,
             "Equals",
             (g),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Il2CppObject0(
-        &mut self,
-        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (o),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -145,7 +145,7 @@ impl crate::System::Guid {
             .invoke("NewGuid", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_Il2CppString0(
+    pub fn Parse_Gc0(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
         let __cordl_ret: crate::System::Guid = <Self as quest_hook::libil2cpp::Type>::class()
@@ -256,7 +256,7 @@ impl crate::System::Guid {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString1(
+    pub fn ToString_Gc1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -267,7 +267,7 @@ impl crate::System::Guid {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (format))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider2(
+    pub fn ToString_Gc_Gc2(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -296,7 +296,7 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParseExact_Il2CppString_Il2CppString0(
+    pub fn TryParseExact_Gc_Gc0(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         result: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
@@ -347,7 +347,7 @@ impl crate::System::Guid {
             .invoke("TryParseGuidWithNoStyle", (guidString, result))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParse_Il2CppString0(
+    pub fn TryParse_Gc0(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         result: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -374,7 +374,7 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppArray0(
+    pub fn _ctor_Gc0(
         &mut self,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -385,7 +385,7 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString4(
+    pub fn _ctor_Gc4(
         &mut self,
         g: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -407,7 +407,7 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i16_i16_Il2CppArray2(
+    pub fn _ctor_i32_i16_i16_Gc2(
         &mut self,
         a: i32,
         b: i16,
@@ -460,62 +460,70 @@ impl crate::System::Guid {
     }
 }
 #[cfg(feature = "System+Guid")]
-impl AsRef<crate::System::IComparable> for crate::System::Guid {
-    fn as_ref(&self) -> &crate::System::IComparable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Guid>> for crate::System::Guid {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Guid> {
         todo!()
     }
 }
 #[cfg(feature = "System+Guid")]
-impl AsMut<crate::System::IComparable> for crate::System::Guid {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Guid>> for crate::System::Guid {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::Guid> {
         todo!()
     }
 }
 #[cfg(feature = "System+Guid")]
-impl AsRef<crate::System::IComparable_1<crate::System::Guid>> for crate::System::Guid {
-    fn as_ref(&self) -> &crate::System::IComparable_1<crate::System::Guid> {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Guid>> for crate::System::Guid {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Guid> {
         todo!()
     }
 }
 #[cfg(feature = "System+Guid")]
-impl AsMut<crate::System::IComparable_1<crate::System::Guid>> for crate::System::Guid {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<crate::System::Guid> {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Guid>> for crate::System::Guid {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::Guid> {
         todo!()
     }
 }
 #[cfg(feature = "System+Guid")]
-impl AsRef<crate::System::IEquatable_1<crate::System::Guid>> for crate::System::Guid {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Guid> {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::System::Guid {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Guid")]
-impl AsMut<crate::System::IEquatable_1<crate::System::Guid>> for crate::System::Guid {
-    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::Guid> {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+for crate::System::Guid {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Guid")]
-impl AsRef<crate::System::IFormattable> for crate::System::Guid {
-    fn as_ref(&self) -> &crate::System::IFormattable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::System::Guid {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Guid")]
-impl AsMut<crate::System::IFormattable> for crate::System::Guid {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::System::Guid {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Guid")]
-impl AsRef<crate::System::ISpanFormattable> for crate::System::Guid {
-    fn as_ref(&self) -> &crate::System::ISpanFormattable {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
+for crate::System::Guid {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "System+Guid")]
-impl AsMut<crate::System::ISpanFormattable> for crate::System::Guid {
-    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
+for crate::System::Guid {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
         todo!()
     }
 }
@@ -591,7 +599,7 @@ impl crate::System::Guid_GuidResult {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFailure_Exception0(
+    pub fn SetFailure_Gc0(
         &mut self,
         nativeException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -602,7 +610,7 @@ impl crate::System::Guid_GuidResult {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFailure_Guid_ParseFailureKind_Il2CppString1(
+    pub fn SetFailure_Guid_ParseFailureKind_Gc1(
         &mut self,
         failure: crate::System::Guid_ParseFailureKind,
         failureMessageID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -614,7 +622,7 @@ impl crate::System::Guid_GuidResult {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFailure_Guid_ParseFailureKind_Il2CppString_Il2CppObject2(
+    pub fn SetFailure_Guid_ParseFailureKind_Gc_Gc2(
         &mut self,
         failure: crate::System::Guid_ParseFailureKind,
         failureMessageID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -629,7 +637,7 @@ impl crate::System::Guid_GuidResult {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFailure_Guid_ParseFailureKind_Il2CppString_Il2CppObject_Il2CppString_Exception3(
+    pub fn SetFailure_Guid_ParseFailureKind_Gc_Gc_Gc_Gc3(
         &mut self,
         failure: crate::System::Guid_ParseFailureKind,
         failureMessageID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

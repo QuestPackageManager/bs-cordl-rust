@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignerInputBuffer {
-    __cordl_parent: crate::System::IO::MemoryStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer {
-    type Target = crate::System::IO::MemoryStream;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,7 +70,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignerInputBuffer_SigStream {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    >,
     pub s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
@@ -82,7 +84,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer_SigStream {
-    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

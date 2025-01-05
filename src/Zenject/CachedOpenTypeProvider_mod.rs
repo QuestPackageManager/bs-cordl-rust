@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CachedOpenTypeProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _creator: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     pub _providerMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Type,
-            *mut crate::Zenject::CachedProvider,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::CachedProvider>,
     >,
 }
 #[cfg(feature = "Zenject+CachedOpenTypeProvider")]
@@ -18,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+CachedOpenTypeProvider")]
 impl std::ops::Deref for crate::Zenject::CachedOpenTypeProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,14 +42,12 @@ impl crate::Zenject::CachedOpenTypeProvider {
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        injectAction: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
-        injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
         buffer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppObject,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -130,14 +126,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::CachedOpenTypeProvide
     }
 }
 #[cfg(feature = "Zenject+CachedOpenTypeProvider")]
-impl AsRef<crate::Zenject::IProvider> for crate::Zenject::CachedOpenTypeProvider {
-    fn as_ref(&self) -> &crate::Zenject::IProvider {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>>
+for crate::Zenject::CachedOpenTypeProvider {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+CachedOpenTypeProvider")]
-impl AsMut<crate::Zenject::IProvider> for crate::Zenject::CachedOpenTypeProvider {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IProvider {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>>
+for crate::Zenject::CachedOpenTypeProvider {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IProvider> {
         unsafe { std::mem::transmute(self) }
     }
 }

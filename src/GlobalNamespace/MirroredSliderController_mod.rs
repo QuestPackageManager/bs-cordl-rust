@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredSliderController {
-    __cordl_parent: crate::GlobalNamespace::SliderControllerBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderControllerBase,
+    >,
     pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub _jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IJumpOffsetYProvider,
@@ -23,7 +25,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MirroredSliderController")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredSliderController {
-    type Target = crate::GlobalNamespace::SliderControllerBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderControllerBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -167,16 +171,26 @@ for crate::GlobalNamespace::MirroredSliderController {
     }
 }
 #[cfg(feature = "MirroredSliderController")]
-impl AsRef<crate::GlobalNamespace::ISliderDidStartDissolvingEvent>
-for crate::GlobalNamespace::MirroredSliderController {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ISliderDidStartDissolvingEvent {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISliderDidStartDissolvingEvent>,
+> for crate::GlobalNamespace::MirroredSliderController {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISliderDidStartDissolvingEvent,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MirroredSliderController")]
-impl AsMut<crate::GlobalNamespace::ISliderDidStartDissolvingEvent>
-for crate::GlobalNamespace::MirroredSliderController {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ISliderDidStartDissolvingEvent {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISliderDidStartDissolvingEvent>,
+> for crate::GlobalNamespace::MirroredSliderController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISliderDidStartDissolvingEvent,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -184,8 +198,8 @@ for crate::GlobalNamespace::MirroredSliderController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredSliderController_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
-        *mut crate::GlobalNamespace::MirroredSliderController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredSliderController>,
     >,
 }
 #[cfg(feature = "MirroredSliderController+Pool")]
@@ -195,8 +209,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MirroredSliderController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredSliderController_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<
-        *mut crate::GlobalNamespace::MirroredSliderController,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredSliderController>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

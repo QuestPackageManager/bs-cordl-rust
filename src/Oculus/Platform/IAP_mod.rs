@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IAP {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Oculus+Platform+IAP")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+IAP")]
 impl std::ops::Deref for crate::Oculus::Platform::IAP {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,15 +36,11 @@ impl crate::Oculus::Platform::IAP {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::ProductList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::ProductList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNextProductListPage", (list))?;
         Ok(__cordl_ret.into())
@@ -53,64 +49,50 @@ impl crate::Oculus::Platform::IAP {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::PurchaseList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::PurchaseList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNextPurchaseListPage", (list))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetProductsBySKU(
         skus: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::ProductList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::ProductList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetProductsBySKU", (skus))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetViewerPurchases() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::PurchaseList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::PurchaseList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetViewerPurchases", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetViewerPurchasesDurableCache() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::PurchaseList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::PurchaseList,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetViewerPurchasesDurableCache", ())?;
         Ok(__cordl_ret.into())
@@ -119,15 +101,11 @@ impl crate::Oculus::Platform::IAP {
         sku: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::Purchase,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Purchase>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::Purchase,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Purchase>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LaunchCheckoutFlow", (sku))?;
         Ok(__cordl_ret.into())

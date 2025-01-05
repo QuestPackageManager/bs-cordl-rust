@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ucs4Encoding2143 {
-    __cordl_parent: crate::System::Xml::Ucs4Encoding,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Ucs4Encoding>,
 }
 #[cfg(feature = "System+Xml+Ucs4Encoding2143")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Ucs4Encoding2143")]
 impl std::ops::Deref for crate::System::Xml::Ucs4Encoding2143 {
-    type Target = crate::System::Xml::Ucs4Encoding;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Ucs4Encoding>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

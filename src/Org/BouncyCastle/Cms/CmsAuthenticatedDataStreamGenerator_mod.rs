@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsAuthenticatedDataStreamGenerator {
-    __cordl_parent: crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator,
+    >,
     pub _bufferSize: i32,
     pub _berEncodeRecipientSet: bool,
 }
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
-    type Target = crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +44,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SecureRandom1(
+    pub fn New_Gc1(
         _cordl_rand: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
@@ -51,7 +55,24 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
             .invoke_void(".ctor", (_cordl_rand))?;
         Ok(__cordl_object.into())
     }
-    pub fn Open_AlgorithmIdentifier_ICipherParameters_Asn1EncodableVector1(
+    pub fn Open_Gc0(
+        &mut self,
+        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        macOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        keyGen: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::CipherKeyGenerator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
+            .invoke("Open", (outStr, macOid, keyGen))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Open_Gc_Gc1(
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         macAlgId: quest_hook::libil2cpp::Gc<
@@ -73,7 +94,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
             .invoke("Open", (outStr, macAlgId, cipherParameters, recipientInfos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Open_Il2CppString2(
+    pub fn Open_Gc_Gc2(
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encryptionOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -87,24 +108,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
             .invoke("Open", (outStr, encryptionOid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Open_Il2CppString_CipherKeyGenerator0(
-        &mut self,
-        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        macOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        keyGen: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::CipherKeyGenerator,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
-            .invoke("Open", (outStr, macOid, keyGen))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Open_Il2CppString_i32_3(
+    pub fn Open_i32_3(
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encryptionOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -151,7 +155,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SecureRandom1(
+    pub fn _ctor_Gc1(
         &mut self,
         _cordl_rand: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
@@ -181,7 +185,9 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsAuthenticatedDataStreamGenerator_CmsAuthenticatedDataOutputStream {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    >,
     pub macStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     pub cGen: quest_hook::libil2cpp::Gc<
@@ -208,7 +214,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator_CmsAuthenticatedDataOutputStream {
-    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

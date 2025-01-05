@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactorySubContainerBinderBase_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _BindContainer_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::Zenject::DiContainer,
     >,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+FactorySubContainerBinderBase_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::FactorySubContainerBinderBase_1<TContract> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl<
         > = __cordl_object.invoke("ByInstaller", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ByInstaller_Type1(
+    pub fn ByInstaller_Gc1(
         &mut self,
         installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -101,7 +101,7 @@ impl<
         > = __cordl_object.invoke("ByNewGameObjectInstaller", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ByNewGameObjectInstaller_Type1(
+    pub fn ByNewGameObjectInstaller_Gc1(
         &mut self,
         installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -121,7 +121,7 @@ impl<
         > = __cordl_object.invoke("ByNewGameObjectInstaller", (installerType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ByNewPrefabInstaller_Object0<TInstaller>(
+    pub fn ByNewPrefabInstaller_Gc0<TInstaller>(
         &mut self,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<
@@ -143,7 +143,7 @@ impl<
         > = __cordl_object.invoke("ByNewPrefabInstaller", (prefab))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ByNewPrefabInstaller_Type1(
+    pub fn ByNewPrefabInstaller_Gc1(
         &mut self,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -164,7 +164,7 @@ impl<
         > = __cordl_object.invoke("ByNewPrefabInstaller", (prefab, installerType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ByNewPrefabResourceInstaller_Il2CppString0<TInstaller>(
+    pub fn ByNewPrefabResourceInstaller_Gc0<TInstaller>(
         &mut self,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -186,7 +186,7 @@ impl<
         > = __cordl_object.invoke("ByNewPrefabResourceInstaller", (resourcePath))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ByNewPrefabResourceInstaller_Type1(
+    pub fn ByNewPrefabResourceInstaller_Gc1(
         &mut self,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -311,10 +311,8 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::Zenject::DiContainer,
-                *mut crate::Zenject::IProvider,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         >,
     >
     where
@@ -325,10 +323,8 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::Zenject::DiContainer,
-                *mut crate::Zenject::IProvider,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         > = __cordl_object.invoke("get_ProviderFunc", ())?;
         Ok(__cordl_ret.into())
     }
@@ -397,10 +393,8 @@ impl<
     pub fn set_ProviderFunc(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                *mut crate::Zenject::DiContainer,
-                *mut crate::Zenject::IProvider,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

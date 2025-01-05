@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoxCollider {
-    __cordl_parent: crate::UnityEngine::Collider,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
 }
 #[cfg(feature = "UnityEngine+BoxCollider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+BoxCollider")]
 impl std::ops::Deref for crate::UnityEngine::BoxCollider {
-    type Target = crate::UnityEngine::Collider;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

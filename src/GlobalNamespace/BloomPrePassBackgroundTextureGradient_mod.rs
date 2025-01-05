@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundTextureGradient {
-    __cordl_parent: crate::GlobalNamespace::BloomPrePassNonLightPass,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassNonLightPass,
+    >,
     pub _tintColor: crate::UnityEngine::Color,
     pub _texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomPrePassBackgroundTextureGradient")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
-    type Target = crate::GlobalNamespace::BloomPrePassNonLightPass;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassNonLightPass,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseBoolField,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseBoolField,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Toggle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Toggle")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Toggle {
-    type Target = crate::UnityEngine::UIElements::BaseBoolField;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseBoolField,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +49,7 @@ impl crate::UnityEngine::UIElements::Toggle {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString1(
+    pub fn New_Gc1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -74,7 +78,7 @@ impl crate::UnityEngine::UIElements::Toggle {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString1(
+    pub fn _ctor_Gc1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -99,9 +103,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Toggl
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::Toggle,
-        *mut crate::UnityEngine::UIElements::Toggle_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle_UxmlTraits>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlFactory")]
@@ -111,9 +115,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Toggle_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::Toggle,
-        *mut crate::UnityEngine::UIElements::Toggle_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle_UxmlTraits>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -159,9 +163,11 @@ for crate::UnityEngine::UIElements::Toggle_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseFieldTraits_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         bool,
-        *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+        >,
     >,
     pub m_Text: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
@@ -174,9 +180,11 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Toggle_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseFieldTraits_2<
+    type Target = quest_hook::libil2cpp::Gc<
         bool,
-        *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

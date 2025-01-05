@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerLeaveEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::PointerEventBase_1<
-        *mut crate::UnityEngine::UIElements::PointerLeaveEvent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerLeaveEvent>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerLeaveEvent")]
@@ -13,8 +13,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+PointerLeaveEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerLeaveEvent {
-    type Target = crate::UnityEngine::UIElements::PointerEventBase_1<
-        *mut crate::UnityEngine::UIElements::PointerLeaveEvent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerLeaveEvent>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

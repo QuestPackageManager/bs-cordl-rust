@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindSignalToBinder_1<TSignal: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _bindStatement: quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
     pub _signalBindInfo: quest_hook::libil2cpp::Gc<
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+BindSignalToBinder_1")]
 impl<TSignal: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::BindSignalToBinder_1<TSignal> {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,24 @@ impl<
             .invoke_void(".ctor", (container, signalBindInfo))?;
         Ok(__cordl_object.into())
     }
-    pub fn ToMethod_Action1(
+    pub fn ToMethod_Gc0(
+        &mut self,
+        callback: quest_hook::libil2cpp::Gc<TSignal>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder>,
+    >
+    where
+        TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder> = __cordl_object
+            .invoke("ToMethod", (callback))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToMethod_Gc1(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<
@@ -65,31 +82,10 @@ impl<
             .invoke("ToMethod", (callback))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToMethod_Action_1_0(
+    pub fn ToMethod_Gc2<TObject>(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder>,
-    >
-    where
-        TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder> = __cordl_object
-            .invoke("ToMethod", (callback))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToMethod_Action_2_2<TObject>(
-        &mut self,
-        handler: quest_hook::libil2cpp::Gc<crate::System::Action_2<TObject, TSignal>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
-        >,
-    >
+        handler: quest_hook::libil2cpp::Gc<TObject, TSignal>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TObject, TSignal>>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -99,21 +95,17 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
-        > = __cordl_object.invoke("ToMethod", (handler))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TObject, TSignal> = __cordl_object
+            .invoke("ToMethod", (handler))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToMethod_Func_2_3<TObject>(
+    pub fn ToMethod_Gc3<TObject>(
         &mut self,
         handlerGetter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<TObject, *mut crate::System::Action>,
+            TObject,
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TObject, TSignal>>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -123,21 +115,17 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
-        > = __cordl_object.invoke("ToMethod", (handlerGetter))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TObject, TSignal> = __cordl_object
+            .invoke("ToMethod", (handlerGetter))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToMethod_Func_2_4<TObject>(
+    pub fn ToMethod_Gc4<TObject>(
         &mut self,
         handlerGetter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<TObject, *mut crate::System::Action_1<TSignal>>,
+            TObject,
+            quest_hook::libil2cpp::Gc<TSignal>,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TObject, TSignal>>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -147,14 +135,15 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
-        > = __cordl_object.invoke("ToMethod", (handlerGetter))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TObject, TSignal> = __cordl_object
+            .invoke("ToMethod", (handlerGetter))?;
         Ok(__cordl_ret.into())
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ARC4Managed {
-    __cordl_parent: crate::Mono::Security::Cryptography::RC4,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Mono::Security::Cryptography::RC4>,
     pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub x: u8,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+Cryptography+ARC4Managed")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::ARC4Managed {
-    type Target = crate::Mono::Security::Cryptography::RC4;
+    type Target = quest_hook::libil2cpp::Gc<crate::Mono::Security::Cryptography::RC4>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -258,32 +258,40 @@ for crate::Mono::Security::Cryptography::ARC4Managed {
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+ARC4Managed")]
-impl AsRef<crate::System::IDisposable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::Mono::Security::Cryptography::ARC4Managed {
-    fn as_ref(&self) -> &crate::System::IDisposable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+ARC4Managed")]
-impl AsMut<crate::System::IDisposable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
 for crate::Mono::Security::Cryptography::ARC4Managed {
-    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+ARC4Managed")]
-impl AsRef<crate::System::Security::Cryptography::ICryptoTransform>
-for crate::Mono::Security::Cryptography::ARC4Managed {
-    fn as_ref(&self) -> &crate::System::Security::Cryptography::ICryptoTransform {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::ICryptoTransform>,
+> for crate::Mono::Security::Cryptography::ARC4Managed {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::ICryptoTransform,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+ARC4Managed")]
-impl AsMut<crate::System::Security::Cryptography::ICryptoTransform>
-for crate::Mono::Security::Cryptography::ARC4Managed {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::ICryptoTransform>,
+> for crate::Mono::Security::Cryptography::ARC4Managed {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Security::Cryptography::ICryptoTransform {
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::ICryptoTransform,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

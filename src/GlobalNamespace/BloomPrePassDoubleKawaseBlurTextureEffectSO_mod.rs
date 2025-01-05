@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassDoubleKawaseBlurTextureEffectSO {
-    __cordl_parent: crate::GlobalNamespace::BloomPrePassEffectSO,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassEffectSO,
+    >,
     pub _bloom1KernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
     pub _bloom1Boost: f32,
     pub _bloom2KernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
@@ -23,7 +25,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BloomPrePassDoubleKawaseBlurTextureEffectSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassDoubleKawaseBlurTextureEffectSO {
-    type Target = crate::GlobalNamespace::BloomPrePassEffectSO;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassEffectSO,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

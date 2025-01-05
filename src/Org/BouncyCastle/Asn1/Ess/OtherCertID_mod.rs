@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OtherCertID {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
     pub otherCertHash: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     >,
@@ -17,7 +19,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ess+OtherCertID")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Ess::OtherCertID {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,7 +57,16 @@ impl crate::Org::BouncyCastle::Asn1::Ess::OtherCertID {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (o))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_AlgorithmIdentifier_Il2CppArray1(
+    pub fn New_Gc0(
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc1(
         algId: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
@@ -65,7 +78,7 @@ impl crate::Org::BouncyCastle::Asn1::Ess::OtherCertID {
             .invoke_void(".ctor", (algId, digest))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_AlgorithmIdentifier_Il2CppArray_IssuerSerial2(
+    pub fn New_Gc_Gc2(
         algId: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
@@ -78,15 +91,6 @@ impl crate::Org::BouncyCastle::Asn1::Ess::OtherCertID {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (algId, digest, issuerSerial))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Asn1Sequence0(
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
@@ -102,7 +106,18 @@ impl crate::Org::BouncyCastle::Asn1::Ess::OtherCertID {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AlgorithmIdentifier_Il2CppArray1(
+    pub fn _ctor_Gc0(
+        &mut self,
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seq))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc1(
         &mut self,
         algId: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -116,7 +131,7 @@ impl crate::Org::BouncyCastle::Asn1::Ess::OtherCertID {
             .invoke(".ctor", (algId, digest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AlgorithmIdentifier_Il2CppArray_IssuerSerial2(
+    pub fn _ctor_Gc_Gc2(
         &mut self,
         algId: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -131,17 +146,6 @@ impl crate::Org::BouncyCastle::Asn1::Ess::OtherCertID {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (algId, digest, issuerSerial))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Asn1Sequence0(
-        &mut self,
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_AlgorithmHash(

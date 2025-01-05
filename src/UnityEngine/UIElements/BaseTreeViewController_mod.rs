@@ -2,28 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseTreeViewController {
-    __cordl_parent: crate::UnityEngine::UIElements::CollectionViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::CollectionViewController,
+    >,
     pub m_TreeItems: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            crate::UnityEngine::UIElements::TreeItem,
-        >,
+        i32,
+        crate::UnityEngine::UIElements::TreeItem,
     >,
-    pub m_RootIndices: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub m_RootIndices: quest_hook::libil2cpp::Gc<i32>,
     pub m_ItemWrappers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TreeViewItemWrapper,
-        >,
+        crate::UnityEngine::UIElements::TreeViewItemWrapper,
     >,
-    pub m_TreeItemIdsWithItemWrappers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<i32>,
-    >,
+    pub m_TreeItemIdsWithItemWrappers: quest_hook::libil2cpp::Gc<i32>,
     pub m_WrapperInsertionList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TreeViewItemWrapper,
-        >,
+        crate::UnityEngine::UIElements::TreeViewItemWrapper,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseTreeViewController")]
@@ -33,7 +25,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BaseTreeViewController")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseTreeViewController {
-    type Target = crate::UnityEngine::UIElements::CollectionViewController;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::CollectionViewController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -82,12 +76,10 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
     }
     pub fn CreateWrappers(
         &mut self,
-        treeViewItemIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        treeViewItemIds: quest_hook::libil2cpp::Gc<i32>,
         depth: i32,
         wrappers: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::UIElements::TreeViewItemWrapper,
             >,
         >,
@@ -134,20 +126,13 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
     }
     pub fn GetAllItemIds(
         &mut self,
-        rootIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    > {
+        rootIds: quest_hook::libil2cpp::Gc<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = __cordl_object.invoke("GetAllItemIds", (rootIds))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("GetAllItemIds", (rootIds))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetChildIndexForId(&mut self, id: i32) -> quest_hook::libil2cpp::Result<i32> {
@@ -160,33 +145,23 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
     pub fn GetChildrenIds(
         &mut self,
         id: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = __cordl_object.invoke("GetChildrenIds", (id))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("GetChildrenIds", (id))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetChildrenIdsByIndex(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = __cordl_object.invoke("GetChildrenIdsByIndex", (index))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("GetChildrenIdsByIndex", (index))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetIdForIndex(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
@@ -233,17 +208,12 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
     }
     pub fn GetRootItemIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = __cordl_object.invoke("GetRootItemIds", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+            .invoke("GetRootItemIds", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn HasChildren(&mut self, id: i32) -> quest_hook::libil2cpp::Result<bool> {
@@ -361,9 +331,7 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
     }
     pub fn OnToggleValueChanged(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-        >,
+        evt: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

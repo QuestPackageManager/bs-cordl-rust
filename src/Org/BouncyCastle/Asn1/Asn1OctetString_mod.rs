@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Asn1OctetString {
-    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Object,
+    >,
     pub str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1OctetString")]
@@ -12,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1OctetString")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Asn1OctetString {
-    type Target = crate::Org::BouncyCastle::Asn1::Asn1Object;
+    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,7 +44,17 @@ impl crate::Org::BouncyCastle::Asn1::Asn1OctetString {
         let __cordl_ret: i32 = __cordl_object.invoke("Asn1GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
+    pub fn GetInstance_Gc1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance__cordl_bool0(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         isExplicit: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -52,16 +64,6 @@ impl crate::Org::BouncyCastle::Asn1::Asn1OctetString {
             crate::Org::BouncyCastle::Asn1::Asn1OctetString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetInstance", (obj, isExplicit))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetInstance_Il2CppObject1(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetOctetStream(
@@ -147,30 +149,46 @@ for crate::Org::BouncyCastle::Asn1::Asn1OctetString {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1OctetString")]
-impl AsRef<crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser>
-for crate::Org::BouncyCastle::Asn1::Asn1OctetString {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser>,
+> for crate::Org::BouncyCastle::Asn1::Asn1OctetString {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1OctetString")]
-impl AsMut<crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser>
-for crate::Org::BouncyCastle::Asn1::Asn1OctetString {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser>,
+> for crate::Org::BouncyCastle::Asn1::Asn1OctetString {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1OctetString")]
-impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>>
 for crate::Org::BouncyCastle::Asn1::Asn1OctetString {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Convertible {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1OctetString")]
-impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>>
 for crate::Org::BouncyCastle::Asn1::Asn1OctetString {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

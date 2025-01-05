@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HID {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >,
     pub m_HaveParsedHIDDescriptor: bool,
     pub m_HIDDescriptor: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
 }
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::HID::HID {
-    type Target = crate::UnityEngine::InputSystem::InputDevice;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -390,14 +394,10 @@ pub struct HID_HIDDeviceDescriptorBuilder {
     pub m_CurrentReportType: crate::UnityEngine::InputSystem::HID::HID_HIDReportType,
     pub m_CurrentReportOffsetInBits: i32,
     pub m_Elements: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor,
-        >,
+        crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor,
     >,
     pub m_Collections: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor,
-        >,
+        crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor,
     >,
     pub m_InputReportSize: i32,
     pub m_OutputReportSize: i32,
@@ -576,7 +576,9 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         >,
         controlName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         builder: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -828,7 +830,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct HID_HIDLayoutBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub hidDescriptor: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
     pub parentLayout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -842,7 +844,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

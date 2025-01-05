@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithGroupPresenceJoinIntent {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+        >,
     >,
 }
 #[cfg(feature = "Oculus+Platform+MessageWithGroupPresenceJoinIntent")]
@@ -14,8 +16,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+MessageWithGroupPresenceJoinIntent")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithGroupPresenceJoinIntent {
-    type Target = crate::Oculus::Platform::Message_1<
-        *mut crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

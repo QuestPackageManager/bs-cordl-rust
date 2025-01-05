@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Avatar {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Oculus+Platform+Avatar")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Avatar")]
 impl std::ops::Deref for crate::Oculus::Platform::Avatar {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,14 +28,14 @@ impl crate::Oculus::Platform::Avatar {
         options: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::AvatarEditorOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::AvatarEditorResult,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AvatarEditorResult,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                *mut crate::Oculus::Platform::Models::AvatarEditorResult,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AvatarEditorResult,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LaunchAvatarEditor", (options))?;

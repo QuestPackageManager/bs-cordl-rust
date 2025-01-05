@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidJavaRunnableProxy {
-    __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaProxy>,
     pub mRunnable: quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaRunnable>,
 }
 #[cfg(feature = "UnityEngine+AndroidJavaRunnableProxy")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AndroidJavaRunnableProxy")]
 impl std::ops::Deref for crate::UnityEngine::AndroidJavaRunnableProxy {
-    type Target = crate::UnityEngine::AndroidJavaProxy;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaProxy>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

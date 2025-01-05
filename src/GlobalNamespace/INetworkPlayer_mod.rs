@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::INetworkPlayer {
             .invoke("Join", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Join_Il2CppString1(
+    pub fn Join_Gc1(
         &mut self,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

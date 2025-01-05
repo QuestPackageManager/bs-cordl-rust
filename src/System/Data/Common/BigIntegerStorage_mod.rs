@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BigIntegerStorage {
-    __cordl_parent: crate::System::Data::Common::DataStorage,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Data::Common::DataStorage>,
     pub _values: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::System::Numerics::BigInteger>,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+Common+BigIntegerStorage")]
 impl std::ops::Deref for crate::System::Data::Common::BigIntegerStorage {
-    type Target = crate::System::Data::Common::DataStorage;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::Data::Common::DataStorage>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

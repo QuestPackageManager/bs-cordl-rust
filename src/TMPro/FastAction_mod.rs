@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FastAction {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub delegates: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedList_1<*mut crate::System::Action>,
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
     >,
     pub lookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Action,
-            *mut crate::System::Collections::Generic::LinkedListNode_1<
-                *mut crate::System::Action,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Action>>,
     >,
 }
 #[cfg(feature = "TMPro+FastAction")]
@@ -21,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+FastAction")]
 impl std::ops::Deref for crate::TMPro::FastAction {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncComputeOperation_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::GlobalNamespace::AsyncComputeOperation,
-    pub _tcs: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::TaskCompletionSource_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AsyncComputeOperation,
     >,
+    pub _tcs: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "AsyncComputeOperation_1")]
@@ -16,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "AsyncComputeOperation_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::AsyncComputeOperation_1<T> {
-    type Target = crate::GlobalNamespace::AsyncComputeOperation;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AsyncComputeOperation,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -155,9 +157,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperati
     }
     pub fn get_task(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -165,9 +165,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperati
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<T>,
-        > = __cordl_object.invoke("get_task", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
+            .invoke("get_task", ())?;
         Ok(__cordl_ret.into())
     }
 }

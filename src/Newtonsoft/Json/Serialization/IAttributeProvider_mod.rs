@@ -25,20 +25,18 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::IAttributePr
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+IAttributeProvider")]
 impl crate::Newtonsoft::Json::Serialization::IAttributeProvider {
-    pub fn GetAttributes_Type__cordl_bool1(
+    pub fn GetAttributes_Gc__cordl_bool1(
         &mut self,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<*mut crate::System::Attribute>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         > = __cordl_object.invoke("GetAttributes", (attributeType, inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -46,15 +44,13 @@ impl crate::Newtonsoft::Json::Serialization::IAttributeProvider {
         &mut self,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<*mut crate::System::Attribute>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         > = __cordl_object.invoke("GetAttributes", (inherit))?;
         Ok(__cordl_ret.into())
     }

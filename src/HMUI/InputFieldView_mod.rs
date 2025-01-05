@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputFieldView {
-    __cordl_parent: crate::UnityEngine::UI::Selectable,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
     pub _textView: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _textViewCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
     pub _blinkingCaret: quest_hook::libil2cpp::Gc<crate::HMUI::ImageViewBase>,
@@ -14,7 +14,7 @@ pub struct InputFieldView {
     pub _textLengthLimit: i32,
     pub _caretOffset: f32,
     pub selectionStateDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
+        crate::HMUI::InputFieldView_SelectionState,
     >,
     pub _selectionState: crate::HMUI::InputFieldView_SelectionState,
     pub _text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+InputFieldView")]
 impl std::ops::Deref for crate::HMUI::InputFieldView {
-    type Target = crate::UnityEngine::UI::Selectable;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -219,9 +219,7 @@ impl crate::HMUI::InputFieldView {
     }
     pub fn add_selectionStateDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView_SelectionState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -285,9 +283,7 @@ impl crate::HMUI::InputFieldView {
     }
     pub fn remove_selectionStateDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView_SelectionState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -332,8 +328,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::InputFieldView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputFieldView_InputFieldChanged {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::HMUI::InputFieldView,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
     >,
 }
 #[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
@@ -343,8 +339,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
 impl std::ops::Deref for crate::HMUI::InputFieldView_InputFieldChanged {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::HMUI::InputFieldView,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArmoredInputStream {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
+    >,
     pub input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub start: bool,
     pub outBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -25,7 +27,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+ArmoredInputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::ArmoredInputStream {
-    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseInputStream;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,14 +91,18 @@ impl crate::Org::BouncyCastle::Bcpg::ArmoredInputStream {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("GetArmorHeaders", ())?;
         Ok(__cordl_ret.into())
     }
@@ -112,7 +120,7 @@ impl crate::Org::BouncyCastle::Bcpg::ArmoredInputStream {
         let __cordl_ret: bool = __cordl_object.invoke("IsEndOfStream", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Stream0(
+    pub fn New_Gc0(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -191,7 +199,7 @@ impl crate::Org::BouncyCastle::Bcpg::ArmoredInputStream {
         let __cordl_ret: i32 = __cordl_object.invoke("ReadIgnoreWhitespace", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Stream0(
+    pub fn _ctor_Gc0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleMath {
-    __cordl_parent: crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<f64>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f64>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::KdTree::Math::DoubleMath {
-    type Target = crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<f64>;
+    type Target = quest_hook::libil2cpp::Gc<f64>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

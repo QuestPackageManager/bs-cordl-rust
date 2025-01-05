@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NullableMethodCallInstruction_HasValue {
-    __cordl_parent: crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction,
+    >,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
@@ -18,7 +20,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
     feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::NullableMethodCallInstruction_HasValue {
-    type Target = crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -24,7 +24,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::u
 }
 #[cfg(feature = "Unity+Mathematics+uint2x4")]
 impl crate::Unity::Mathematics::uint2x4 {
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Gc1(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -64,7 +64,7 @@ impl crate::Unity::Mathematics::uint2x4 {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Il2CppString_IFormatProvider1(
+    pub fn ToString_Gc_Gc1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -674,32 +674,32 @@ impl crate::Unity::Mathematics::uint2x4 {
     }
 }
 #[cfg(feature = "Unity+Mathematics+uint2x4")]
-impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::uint2x4>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
 for crate::Unity::Mathematics::uint2x4 {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::Unity::Mathematics::uint2x4> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Mathematics+uint2x4")]
-impl AsMut<crate::System::IEquatable_1<crate::Unity::Mathematics::uint2x4>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+for crate::Unity::Mathematics::uint2x4 {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+uint2x4")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::uint2x4>>
+for crate::Unity::Mathematics::uint2x4 {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::uint2x4> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+uint2x4")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::uint2x4>>
 for crate::Unity::Mathematics::uint2x4 {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::Unity::Mathematics::uint2x4> {
-        todo!()
-    }
-}
-#[cfg(feature = "Unity+Mathematics+uint2x4")]
-impl AsRef<crate::System::IFormattable> for crate::Unity::Mathematics::uint2x4 {
-    fn as_ref(&self) -> &crate::System::IFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "Unity+Mathematics+uint2x4")]
-impl AsMut<crate::System::IFormattable> for crate::Unity::Mathematics::uint2x4 {
-    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::uint2x4> {
         todo!()
     }
 }

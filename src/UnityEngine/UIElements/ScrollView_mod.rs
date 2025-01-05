@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollView {
-    __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_FirstLayoutPass: i32,
     pub m_HorizontalScrollerVisibility: crate::UnityEngine::UIElements::ScrollerVisibility,
     pub m_VerticalScrollerVisibility: crate::UnityEngine::UIElements::ScrollerVisibility,
@@ -58,14 +60,10 @@ pub struct ScrollView {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub m_CapturedTargetPointerMoveCallback: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallback_1<
-            *mut crate::UnityEngine::UIElements::PointerMoveEvent,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerMoveEvent>,
     >,
     pub m_CapturedTargetPointerUpCallback: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallback_1<
-            *mut crate::UnityEngine::UIElements::PointerUpEvent,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
     >,
     pub m_PostPointerUpAnimation: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::IVisualElementScheduledItem,
@@ -78,7 +76,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ScrollView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ScrollView {
-    type Target = crate::UnityEngine::UIElements::VisualElement;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1024,9 +1024,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollView_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::ScrollView,
-        *mut crate::UnityEngine::UIElements::ScrollView_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView_UxmlTraits>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
@@ -1036,9 +1036,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::ScrollView,
-        *mut crate::UnityEngine::UIElements::ScrollView_UxmlTraits,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView_UxmlTraits>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -1084,16 +1084,14 @@ for crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollView_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+    >,
     pub m_ScrollViewMode: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::ScrollViewMode,
-        >,
+        crate::UnityEngine::UIElements::ScrollViewMode,
     >,
     pub m_NestedInteractionKind: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
-        >,
+        crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
     >,
     pub m_ShowHorizontal: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
@@ -1102,14 +1100,10 @@ pub struct ScrollView_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
     pub m_HorizontalScrollerVisibility: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::ScrollerVisibility,
-        >,
+        crate::UnityEngine::UIElements::ScrollerVisibility,
     >,
     pub m_VerticalScrollerVisibility: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::ScrollerVisibility,
-        >,
+        crate::UnityEngine::UIElements::ScrollerVisibility,
     >,
     pub m_HorizontalPageSize: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
@@ -1121,9 +1115,7 @@ pub struct ScrollView_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
     pub m_TouchScrollBehavior: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
-        >,
+        crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
     >,
     pub m_ScrollDecelerationRate: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
@@ -1142,7 +1134,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ScrollView_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

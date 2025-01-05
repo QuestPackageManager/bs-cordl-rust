@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RespData {
-    __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::X509ExtensionBase,
+    >,
     pub data: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Ocsp::ResponseData,
     >,
@@ -14,7 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Ocsp+RespData")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::RespData {
-    type Target = crate::Org::BouncyCastle::X509::X509ExtensionBase;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::X509ExtensionBase,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +49,7 @@ impl crate::Org::BouncyCastle::Ocsp::RespData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Ocsp::SingleResp,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::SingleResp>,
             >,
         >,
     > {
@@ -54,7 +58,7 @@ impl crate::Org::BouncyCastle::Ocsp::RespData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Ocsp::SingleResp,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::SingleResp>,
             >,
         > = __cordl_object.invoke("GetResponses", ())?;
         Ok(__cordl_ret.into())

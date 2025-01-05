@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HelpFlowCoordinator {
-    __cordl_parent: crate::HMUI::FlowCoordinator,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     pub _helpMenuViewController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::HelpMenuViewController,
     >,
@@ -22,7 +22,7 @@ pub struct HelpFlowCoordinator {
         crate::GlobalNamespace::PlayerDataModel,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<*mut crate::GlobalNamespace::HelpFlowCoordinator>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HelpFlowCoordinator>,
     >,
 }
 #[cfg(feature = "HelpFlowCoordinator")]
@@ -32,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HelpFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::HelpFlowCoordinator {
-    type Target = crate::HMUI::FlowCoordinator;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -142,7 +142,7 @@ impl crate::GlobalNamespace::HelpFlowCoordinator {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::HelpFlowCoordinator>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HelpFlowCoordinator>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -155,7 +155,7 @@ impl crate::GlobalNamespace::HelpFlowCoordinator {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<*mut crate::GlobalNamespace::HelpFlowCoordinator>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HelpFlowCoordinator>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

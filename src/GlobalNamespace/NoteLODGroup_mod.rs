@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteLODGroup {
-    __cordl_parent: crate::GlobalNamespace::CustomLODGroup,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CustomLODGroup>,
     pub _postProcessEnabled: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,
 }
 #[cfg(feature = "NoteLODGroup")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteLODGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteLODGroup {
-    type Target = crate::GlobalNamespace::CustomLODGroup;
+    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CustomLODGroup>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

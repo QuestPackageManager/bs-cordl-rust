@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OfbBlockCipher {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub IV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub ofbV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub ofbOutV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+OfbBlockCipher")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Modes::OfbBlockCipher {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -147,16 +147,20 @@ for crate::Org::BouncyCastle::Crypto::Modes::OfbBlockCipher {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+OfbBlockCipher")]
-impl AsRef<crate::Org::BouncyCastle::Crypto::IBlockCipher>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>>
 for crate::Org::BouncyCastle::Crypto::Modes::OfbBlockCipher {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IBlockCipher {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+OfbBlockCipher")]
-impl AsMut<crate::Org::BouncyCastle::Crypto::IBlockCipher>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>>
 for crate::Org::BouncyCastle::Crypto::Modes::OfbBlockCipher {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IBlockCipher {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher> {
         unsafe { std::mem::transmute(self) }
     }
 }

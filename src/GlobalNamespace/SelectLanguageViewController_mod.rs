@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectLanguageViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _languageSettingsController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LanguageSettingsController,
     >,
     pub didChangeLanguageEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::BGLib::Polyglot::Language>,
+        crate::BGLib::Polyglot::Language,
     >,
     pub didPressContinueButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SelectLanguageViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectLanguageViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -97,9 +97,7 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
     }
     pub fn add_didChangeLanguageEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::BGLib::Polyglot::Language>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -121,9 +119,7 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
     }
     pub fn remove_didChangeLanguageEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::BGLib::Polyglot::Language>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

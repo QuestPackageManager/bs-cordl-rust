@@ -2,14 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AttributesStore {
-    __cordl_parent: crate::UnityEngine::ScriptableObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     pub _geoID: i32,
     pub _partID: i32,
     pub _geoName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _attributeDatas: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::HEU_AttributeData,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributeData>,
     >,
     pub _hasColorAttribute: bool,
     pub _localMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -23,7 +21,9 @@ pub struct HEU_AttributesStore {
     pub _outputGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _outputMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub _outputMaterials: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     >,
     pub _outputCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshCollider>,
     pub _outputColliderMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -39,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AttributesStore {
-    type Target = crate::UnityEngine::ScriptableObject;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -168,7 +168,7 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
             .invoke("FillAttribute", (attributeData, sourceTools))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttributeData_Il2CppString0(
+    pub fn GetAttributeData_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -200,18 +200,14 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetAttributeNames", ())?;
         Ok(__cordl_ret.into())
     }
@@ -235,9 +231,7 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
         geoID: i32,
         partID: i32,
         attributesList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_AttributeData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributeData>,
         >,
         ownerType: crate::HoudiniEngineUnity::HAPI_AttributeOwner,
         attributeCount: i32,
@@ -267,7 +261,9 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
     pub fn GetPositionAttributeValues(
         &mut self,
         positionArray: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -280,7 +276,7 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
     pub fn GetVertexIndices(
         &mut self,
         indices: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -513,7 +509,9 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
         >,
         startIndex: i32,
         values: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -644,9 +642,7 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
         geoID: i32,
         partID: i32,
         attributeDataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::HoudiniEngineUnity::HEU_AttributeData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributeData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -743,28 +739,28 @@ for crate::HoudiniEngineUnity::HEU_AttributesStore {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_AttributesStore,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
     >,
 > for crate::HoudiniEngineUnity::HEU_AttributesStore {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_AttributesStore,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_AttributesStore,
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
     >,
 > for crate::HoudiniEngineUnity::HEU_AttributesStore {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
-        *mut crate::HoudiniEngineUnity::HEU_AttributesStore,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
     > {
         unsafe { std::mem::transmute(self) }
     }
@@ -773,7 +769,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AttributesStore_SetAttributeValueFunc {
-    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -784,7 +780,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc {
-    type Target = crate::System::MulticastDelegate;
+    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

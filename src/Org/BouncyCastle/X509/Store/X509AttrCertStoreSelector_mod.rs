@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509AttrCertStoreSelector {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub attributeCert: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
     >,
@@ -34,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509AttrCertStoreSelector")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,7 @@ for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509AttrCertStoreSelector")]
 impl crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
-    pub fn AddTargetGroup_GeneralName0(
+    pub fn AddTargetGroup_Gc0(
         &mut self,
         group: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -61,7 +61,7 @@ impl crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
             .invoke("AddTargetGroup", (group))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddTargetGroup_Il2CppArray1(
+    pub fn AddTargetGroup_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -72,7 +72,7 @@ impl crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
             .invoke("AddTargetGroup", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddTargetName_GeneralName0(
+    pub fn AddTargetName_Gc0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -85,7 +85,7 @@ impl crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
             .invoke("AddTargetName", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddTargetName_Il2CppArray1(
+    pub fn AddTargetName_Gc1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -166,7 +166,7 @@ impl crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_X509AttrCertStoreSelector1(
+    pub fn New_Gc1(
         o: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector,
         >,
@@ -209,7 +209,7 @@ impl crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_X509AttrCertStoreSelector1(
+    pub fn _ctor_Gc1(
         &mut self,
         o: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector,
@@ -398,30 +398,40 @@ for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509AttrCertStoreSelector")]
-impl AsRef<crate::Org::BouncyCastle::X509::Store::IX509Selector>
-for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
-    fn as_ref(&self) -> &crate::Org::BouncyCastle::X509::Store::IX509Selector {
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::Store::IX509Selector>,
+> for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Selector,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509AttrCertStoreSelector")]
-impl AsMut<crate::Org::BouncyCastle::X509::Store::IX509Selector>
-for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
-    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::X509::Store::IX509Selector {
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::Store::IX509Selector>,
+> for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Selector,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509AttrCertStoreSelector")]
-impl AsRef<crate::System::ICloneable>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
-    fn as_ref(&self) -> &crate::System::ICloneable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509AttrCertStoreSelector")]
-impl AsMut<crate::System::ICloneable>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
 for crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector {
-    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
         unsafe { std::mem::transmute(self) }
     }
 }

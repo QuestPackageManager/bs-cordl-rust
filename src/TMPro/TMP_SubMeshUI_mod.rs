@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_SubMeshUI {
-    __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>,
     pub m_fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     pub m_spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     pub m_material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_SubMeshUI")]
 impl std::ops::Deref for crate::TMPro::TMP_SubMeshUI {
-    type Target = crate::UnityEngine::UI::MaskableGraphic;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -86,7 +86,7 @@ impl crate::TMPro::TMP_SubMeshUI {
             .invoke("GetMaterial", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMaterial_Material1(
+    pub fn GetMaterial_Gc1(
         &mut self,
         mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<
@@ -119,7 +119,7 @@ impl crate::TMPro::TMP_SubMeshUI {
         let __cordl_ret: f32 = __cordl_object.invoke("GetPaddingForMaterial", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPaddingForMaterial_Material1(
+    pub fn GetPaddingForMaterial_Gc1(
         &mut self,
         mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<f32> {

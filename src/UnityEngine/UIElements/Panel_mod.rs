@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Panel {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    >,
     pub m_RootContainer: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -57,7 +59,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Panel")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Panel {
-    type Target = crate::UnityEngine::UIElements::BaseVisualElementPanel;
+    type Target = quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -180,9 +184,7 @@ impl crate::UnityEngine::UIElements::Panel {
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         point: crate::UnityEngine::Vector2,
         picked: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::VisualElement,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
         includeIgnoredElement: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -208,13 +210,27 @@ impl crate::UnityEngine::UIElements::Panel {
         > = __cordl_object.invoke("Pick", (point))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PickAll_Vector2_List_1_1(
+    pub fn PickAll_Gc_Vector2_Gc__cordl_bool0(
+        root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        point: crate::UnityEngine::Vector2,
+        picked: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
+        includeIgnoredElement: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PickAll", (root, point, picked, includeIgnoredElement))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PickAll_Vector2_Gc1(
         &mut self,
         point: crate::UnityEngine::Vector2,
         picked: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::VisualElement,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -225,24 +241,6 @@ impl crate::UnityEngine::UIElements::Panel {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
         > = __cordl_object.invoke("PickAll", (point, picked))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn PickAll_VisualElement_Vector2_List_1__cordl_bool0(
-        root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        point: crate::UnityEngine::Vector2,
-        picked: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                *mut crate::UnityEngine::UIElements::VisualElement,
-            >,
-        >,
-        includeIgnoredElement: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElement,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PickAll", (root, point, picked, includeIgnoredElement))?;
         Ok(__cordl_ret.into())
     }
     pub fn Repaint(

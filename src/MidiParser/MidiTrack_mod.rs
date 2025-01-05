@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MidiTrack {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Index: i32,
-    pub MidiEvents: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::MidiParser::MidiEvent>,
-    >,
+    pub MidiEvents: quest_hook::libil2cpp::Gc<crate::MidiParser::MidiEvent>,
 }
 #[cfg(feature = "MidiParser+MidiTrack")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MidiParser+MidiTrack")]
 impl std::ops::Deref for crate::MidiParser::MidiTrack {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalStringComparer {
-    __cordl_parent: crate::System::Collections::Generic::EqualityComparer_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "System+Collections+Generic+InternalStringComparer")]
@@ -14,8 +14,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Generic+InternalStringComparer")]
 impl std::ops::Deref for crate::System::Collections::Generic::InternalStringComparer {
-    type Target = crate::System::Collections::Generic::EqualityComparer_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -53,7 +53,9 @@ impl crate::System::Collections::Generic::InternalStringComparer {
     pub fn IndexOf(
         &mut self,
         array: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         startIndex: i32,
