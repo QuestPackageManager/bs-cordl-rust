@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct StateEvent {
-    padding: [u8; 25usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<25usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

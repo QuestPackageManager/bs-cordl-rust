@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct ifreq {
-    padding: [u8; 18usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<18usize>,
 }
 #[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

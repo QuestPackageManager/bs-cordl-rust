@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct ENetAddress {
-    padding: [u8; 18usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<18usize>,
 }
 #[cfg(feature = "ENet+ENetAddress")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

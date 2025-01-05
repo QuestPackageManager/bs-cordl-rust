@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct PaddedHeadAndTail {
-    padding: [u8; 260usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<260usize>,
 }
 #[cfg(feature = "System+Collections+Concurrent+PaddedHeadAndTail")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

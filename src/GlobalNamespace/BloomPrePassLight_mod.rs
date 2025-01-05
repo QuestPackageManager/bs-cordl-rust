@@ -303,7 +303,7 @@ for crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct BloomPrePassLight_QuadData {
-    padding: [u8; 208usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<208usize>,
 }
 #[cfg(feature = "BloomPrePassLight+QuadData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -327,7 +327,7 @@ impl crate::GlobalNamespace::BloomPrePassLight_QuadData {}
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct BloomPrePassLight_VertexData {
-    padding: [u8; 52usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<52usize>,
 }
 #[cfg(feature = "BloomPrePassLight+VertexData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

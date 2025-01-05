@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct NativeInputEvent {
-    padding: [u8; 20usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<20usize>,
 }
 #[cfg(feature = "UnityEngineInternal+Input+NativeInputEvent")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

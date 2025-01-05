@@ -1611,7 +1611,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {}
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct InputActionState_BindingState {
-    padding: [u8; 32usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<32usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -2060,7 +2060,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_GlobalState {}
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct InputActionState_InteractionState {
-    padding: [u8; 48usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<48usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -2286,7 +2286,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct InputActionState_TriggerState {
-    padding: [u8; 48usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<48usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct SetSamplingFrequencyCommand {
-    padding: [u8; 12usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<12usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+SetSamplingFrequencyCommand")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

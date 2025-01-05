@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct PenState {
-    padding: [u8; 36usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<36usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+PenState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

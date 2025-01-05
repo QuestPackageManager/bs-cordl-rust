@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct ifa_ifu {
-    padding: [u8; 8usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "System+Net+NetworkInformation+ifa_ifu")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

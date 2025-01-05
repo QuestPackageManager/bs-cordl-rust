@@ -23,33 +23,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SR {
 }
 #[cfg(feature = "SR")]
 impl crate::GlobalNamespace::SR {
-    pub fn Format_Il2CppArray0(
-        resourceFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Format", (resourceFormat, args))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn Format_Il2CppObject1(
-        resourceFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Format", (resourceFormat, p1))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Format_Il2CppObject_Il2CppObject2(
         resourceFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         p2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -62,28 +36,16 @@ impl crate::GlobalNamespace::SR {
             .invoke("Format", (resourceFormat, p1, p2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Format_Il2CppObject_Il2CppObject_Il2CppObject3(
+    pub fn Format_Il2CppString_Il2CppObject0(
         resourceFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        p2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        p3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Format", (resourceFormat, p1, p2, p3))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetString(
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetString", (name))?;
+            .invoke("Format", (resourceFormat, p1))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -703,7 +703,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVRSystem {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct CVRSystem_GetControllerStateUnion {
-    padding: [u8; 8usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -727,7 +727,7 @@ impl crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {}
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct CVRSystem_GetControllerStateWithPoseUnion {
-    padding: [u8; 8usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -752,7 +752,7 @@ impl crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {}
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct CVRSystem_PollNextEventUnion {
-    padding: [u8; 8usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

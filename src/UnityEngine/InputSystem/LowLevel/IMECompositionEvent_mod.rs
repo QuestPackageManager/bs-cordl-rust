@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct IMECompositionEvent {
-    padding: [u8; 152usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<152usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionEvent")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::Mono::Security::Cryptography::KeyBuilder {
 }
 #[cfg(feature = "Mono+Security+Cryptography+KeyBuilder")]
 impl crate::Mono::Security::Cryptography::KeyBuilder {
+    pub fn IV(
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("IV", (_cordl_size))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Key(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<

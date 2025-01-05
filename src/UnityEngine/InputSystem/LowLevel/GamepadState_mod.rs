@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct GamepadState {
-    padding: [u8; 28usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<28usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+GamepadState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

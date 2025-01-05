@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct Color32 {
-    padding: [u8; 4usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
 #[cfg(feature = "UnityEngine+Color32")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

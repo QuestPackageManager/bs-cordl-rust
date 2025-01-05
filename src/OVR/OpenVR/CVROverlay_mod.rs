@@ -1247,7 +1247,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVROverlay {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct CVROverlay_PollNextOverlayEventUnion {
-    padding: [u8; 8usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

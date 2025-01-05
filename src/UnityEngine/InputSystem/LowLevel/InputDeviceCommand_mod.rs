@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct InputDeviceCommand {
-    padding: [u8; 8usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputDeviceCommand")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

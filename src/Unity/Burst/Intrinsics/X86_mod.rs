@@ -45,7 +45,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct Fma_X86_Union {
-    padding: [u8; 4usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

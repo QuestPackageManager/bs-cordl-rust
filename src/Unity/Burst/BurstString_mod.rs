@@ -1000,7 +1000,7 @@ impl crate::Unity::Burst::BurstString_tBigInt {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct BurstString_tFloatUnion32 {
-    padding: [u8; 4usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
 #[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1049,7 +1049,7 @@ impl crate::Unity::Burst::BurstString_tFloatUnion32 {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct BurstString_tFloatUnion64 {
-    padding: [u8; 8usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

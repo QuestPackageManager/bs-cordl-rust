@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct GetHapticCapabilitiesCommand {
-    padding: [u8; 20usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<20usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetHapticCapabilitiesCommand")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

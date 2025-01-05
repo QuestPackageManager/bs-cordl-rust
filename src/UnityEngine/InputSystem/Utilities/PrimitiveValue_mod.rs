@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct PrimitiveValue {
-    padding: [u8; 16usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

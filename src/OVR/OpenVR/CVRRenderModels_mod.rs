@@ -380,7 +380,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVRRenderModels {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct CVRRenderModels_GetComponentStateUnion {
-    padding: [u8; 8usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct ProfilerCategory {
-    padding: [u8; 2usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<2usize>,
 }
 #[cfg(feature = "Unity+Profiling+ProfilerCategory")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

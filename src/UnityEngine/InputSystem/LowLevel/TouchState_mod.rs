@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct TouchState {
-    padding: [u8; 56usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<56usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

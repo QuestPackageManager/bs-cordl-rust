@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct Register {
-    padding: [u8; 16usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
 #[cfg(feature = "System+Numerics+Register")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

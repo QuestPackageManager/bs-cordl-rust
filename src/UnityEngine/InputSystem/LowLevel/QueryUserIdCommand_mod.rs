@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct QueryUserIdCommand {
-    padding: [u8; 520usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<520usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryUserIdCommand")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct QueryKeyboardLayoutCommand {
-    padding: [u8; 264usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<264usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

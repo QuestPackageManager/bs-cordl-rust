@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct DeviceResetEvent {
-    padding: [u8; 9usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<9usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeviceResetEvent")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

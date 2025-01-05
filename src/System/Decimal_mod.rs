@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct DecCalc_Decimal_Buf12 {
-    padding: [u8; 16usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf12")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -65,7 +65,7 @@ impl crate::System::DecCalc_Decimal_Buf12 {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct DecCalc_Decimal_Buf16 {
-    padding: [u8; 16usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf16")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -128,7 +128,7 @@ impl crate::System::DecCalc_Decimal_Buf16 {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct DecCalc_Decimal_Buf24 {
-    padding: [u8; 24usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<24usize>,
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf24")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -249,7 +249,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct Decimal {
-    padding: [u8; 16usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
 #[cfg(feature = "System+Decimal")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1231,7 +1231,7 @@ for crate::System::Decimal {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct Decimal_DecCalc {
-    padding: [u8; 16usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
 #[cfg(feature = "System+Decimal+DecCalc")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

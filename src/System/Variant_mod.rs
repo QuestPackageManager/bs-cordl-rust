@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct Variant {
-    padding: [u8; 24usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<24usize>,
 }
 #[cfg(feature = "System+Variant")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

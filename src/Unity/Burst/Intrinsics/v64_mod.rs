@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct v64 {
-    padding: [u8; 8usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+v64")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

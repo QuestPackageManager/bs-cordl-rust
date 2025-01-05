@@ -14661,7 +14661,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Mathematics::math {
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct math_IntFloatUnion {
-    padding: [u8; 4usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
 #[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -14685,7 +14685,7 @@ impl crate::Unity::Mathematics::math_IntFloatUnion {}
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct math_LongDoubleUnion {
-    padding: [u8; 8usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

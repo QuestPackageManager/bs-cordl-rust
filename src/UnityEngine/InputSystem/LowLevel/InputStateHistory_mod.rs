@@ -1169,7 +1169,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct InputStateHistory_RecordHeader {
-    padding: [u8; 17usize],
+    padding: quest_hook::libil2cpp::ValueTypePadding<17usize>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
