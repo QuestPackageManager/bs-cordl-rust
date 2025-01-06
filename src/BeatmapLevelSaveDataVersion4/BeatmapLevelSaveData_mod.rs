@@ -96,7 +96,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapLevelSaveData_AudioData {
     pub songFilename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub songDuration: f32,
@@ -129,7 +129,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
 impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {}
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapLevelSaveData_BeatmapAuthors {
     pub mappers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -308,7 +308,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap 
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapLevelSaveData_SongData {
     pub title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub subTitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

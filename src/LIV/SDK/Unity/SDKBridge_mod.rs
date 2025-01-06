@@ -302,7 +302,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LIV::SDK::Unity::SDKBridge {
 }
 #[cfg(feature = "LIV+SDK+Unity+SDKBridge+SDKInjection_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKBridge_SDKInjection_1<T: quest_hook::libil2cpp::Type> {
     pub active: bool,
     pub action: quest_hook::libil2cpp::Gc<crate::System::Action>,

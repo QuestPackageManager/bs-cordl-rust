@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ClosestPointCommand")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ClosestPointCommand {
     pub _point_k__BackingField: crate::UnityEngine::Vector3,
     pub _colliderInstanceID_k__BackingField: i32,

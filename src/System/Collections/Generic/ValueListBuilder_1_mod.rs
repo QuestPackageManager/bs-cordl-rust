@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Collections+Generic+ValueListBuilder_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueListBuilder_1<T: quest_hook::libil2cpp::Type> {
     pub _span: crate::System::Span_1<T>,
     pub _arrayFromPool: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,

@@ -88,7 +88,7 @@ for crate::UnityEngine::UIElements::TemplateAsset {
 }
 #[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TemplateAsset_AttributeOverride {
     pub m_ElementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_AttributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

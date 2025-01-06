@@ -1,6 +1,6 @@
 #[cfg(feature = "NetworkStatisticsState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NetworkStatisticsState {
     pub packetsSent: i64,
     pub packetsReceived: i64,

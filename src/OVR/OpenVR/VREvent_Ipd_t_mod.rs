@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_Ipd_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_Ipd_t {
     pub ipdMeters: f32,
 }

@@ -141,7 +141,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRBoundary {
 }
 #[cfg(feature = "OVRBoundary+BoundaryTestResult")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRBoundary_BoundaryTestResult {
     pub IsTriggering: bool,
     pub ClosestDistance: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_Data_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_Data_t {
     padding: quest_hook::libil2cpp::ValueTypePadding<32usize>,
 }

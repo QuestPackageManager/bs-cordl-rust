@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Reflection+CustomAttributeNamedArgument")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CustomAttributeNamedArgument {
     pub _TypedValue_k__BackingField: crate::System::Reflection::CustomAttributeTypedArgument,
     pub _IsField_k__BackingField: bool,

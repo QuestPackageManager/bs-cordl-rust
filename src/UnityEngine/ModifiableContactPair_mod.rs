@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ModifiableContactPair")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ModifiableContactPair {
     pub actor: crate::System::IntPtr,
     pub otherActor: crate::System::IntPtr,

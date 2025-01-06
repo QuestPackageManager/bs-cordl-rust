@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+RecPlay+PoseNoise")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PoseNoise {
     pub frequency: f32,
     pub _cordl_move: f32,

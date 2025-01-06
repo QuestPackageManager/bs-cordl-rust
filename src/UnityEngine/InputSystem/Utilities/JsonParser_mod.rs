@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonParser {
     pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Length: i32,
@@ -232,7 +232,7 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonParser_JsonString {
     pub text: crate::UnityEngine::InputSystem::Utilities::Substring,
     pub hasEscapes: bool,
@@ -352,7 +352,7 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonParser_JsonValue {
     pub _cordl_type: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType,
     pub boolValue: bool,

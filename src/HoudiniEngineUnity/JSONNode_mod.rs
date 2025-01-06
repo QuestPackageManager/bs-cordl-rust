@@ -1127,7 +1127,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::JSONNode {
 }
 #[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JSONNode_Enumerator {
     pub _cordl_type: crate::HoudiniEngineUnity::Enumerator_JSONNode_Type,
     pub m_Object: crate::System::Collections::Generic::Dictionary_2_Enumerator<
@@ -1218,7 +1218,7 @@ impl crate::HoudiniEngineUnity::JSONNode_Enumerator {
 }
 #[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JSONNode_KeyEnumerator {
     pub m_Enumerator: crate::HoudiniEngineUnity::JSONNode_Enumerator,
 }
@@ -1587,7 +1587,7 @@ for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
 }
 #[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JSONNode_ValueEnumerator {
     pub m_Enumerator: crate::HoudiniEngineUnity::JSONNode_Enumerator,
 }

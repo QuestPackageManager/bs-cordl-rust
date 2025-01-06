@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+bool4x3")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct bool4x3 {
     pub c0: crate::Unity::Mathematics::bool4,
     pub c1: crate::Unity::Mathematics::bool4,

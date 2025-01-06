@@ -121,7 +121,7 @@ for crate::GlobalNamespace::MultiplierValuesRecorder {
 }
 #[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MultiplierValuesRecorder_MultiplierValue {
     pub multiplier: i32,
     pub _cordl_time: f32,

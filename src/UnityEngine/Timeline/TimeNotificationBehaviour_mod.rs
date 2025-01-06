@@ -211,7 +211,7 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
 }
 #[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeNotificationBehaviour_NotificationEntry {
     pub _cordl_time: f64,
     pub payload: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification>,

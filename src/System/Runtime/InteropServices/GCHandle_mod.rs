@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+InteropServices+GCHandle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GCHandle {
     pub handle: crate::System::IntPtr,
 }

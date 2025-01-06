@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LocalKeyword {
     pub m_SpaceInfo: crate::UnityEngine::Rendering::LocalKeywordSpace,
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

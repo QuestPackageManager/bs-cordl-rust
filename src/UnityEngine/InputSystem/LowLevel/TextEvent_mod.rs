@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+TextEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextEvent {
     padding: quest_hook::libil2cpp::ValueTypePadding<24usize>,
 }

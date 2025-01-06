@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+BackgroundRepeat")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BackgroundRepeat {
     pub x: crate::UnityEngine::UIElements::Repeat,
     pub y: crate::UnityEngine::UIElements::Repeat,

@@ -156,7 +156,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::SpookyHash {
 }
 #[cfg(feature = "UnityEngine+SpookyHash+U")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SpookyHash_U {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }

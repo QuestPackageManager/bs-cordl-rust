@@ -521,7 +521,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlEventCache {
 }
 #[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlEventCache_XmlEvent {
     pub eventType: crate::System::Xml::XmlEventCache_XmlEventType,
     pub s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

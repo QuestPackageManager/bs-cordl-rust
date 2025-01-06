@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainStatus")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct X509ChainStatus {
     pub status: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
     pub info: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VideoClipPlayable {
     pub m_Handle: crate::UnityEngine::Playables::PlayableHandle,
 }

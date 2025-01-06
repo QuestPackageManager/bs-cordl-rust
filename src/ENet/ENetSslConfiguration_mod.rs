@@ -1,6 +1,6 @@
 #[cfg(feature = "ENet+ENetSslConfiguration")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ENetSslConfiguration {
     pub mode: crate::ENet::SslMode,
     pub certificatePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -4442,7 +4442,7 @@ for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualElement_Hierarchy {
     pub m_Owner: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,

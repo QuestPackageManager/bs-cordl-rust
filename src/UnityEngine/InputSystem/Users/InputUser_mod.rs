@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputUser {
     pub m_Id: u32,
 }
@@ -745,7 +745,7 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputUser_CompareDevicesByUserAccount {
     pub platformUserAccountHandle: crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
 }
@@ -824,7 +824,7 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputUser_ControlSchemeChangeSyntax {
     pub m_UserIndex: i32,
 }
@@ -862,7 +862,7 @@ impl crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputUser_GlobalState {
     pub pairingStateVersion: i32,
     pub lastUserId: u32,
@@ -962,7 +962,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
 impl crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {}
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputUser_OngoingAccountSelection {
     pub device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     pub userId: u32,
@@ -988,7 +988,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {
 impl crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {}
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputUser_UserData {
     pub platformUserAccountHandle: crate::System::Nullable_1<
         crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,

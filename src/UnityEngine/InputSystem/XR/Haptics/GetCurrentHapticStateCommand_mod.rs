@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetCurrentHapticStateCommand")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GetCurrentHapticStateCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CertificateData {
     pub RawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub SubjectPublicKeyInfo: quest_hook::libil2cpp::Gc<
@@ -140,7 +140,7 @@ impl crate::Internal::Cryptography::Pal::CertificateData {
 }
 #[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CertificateData_AlgorithmIdentifier {
     pub AlgorithmId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Parameters: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

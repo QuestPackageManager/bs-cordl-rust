@@ -1424,7 +1424,7 @@ for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,

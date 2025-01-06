@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleFloat")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleFloat {
     pub m_Value: f32,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,

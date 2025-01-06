@@ -383,7 +383,7 @@ for crate::System::Globalization::FormatProvider_Number {
 }
 #[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Number_FormatProvider_NumberBuffer {
     pub precision: i32,
     pub scale: i32,

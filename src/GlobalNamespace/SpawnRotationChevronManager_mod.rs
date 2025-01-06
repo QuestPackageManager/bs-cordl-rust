@@ -236,7 +236,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
 }
 #[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SpawnRotationChevronManager_QueuedDirectionData {
     pub _cordl_time: f32,
     pub duration: f32,

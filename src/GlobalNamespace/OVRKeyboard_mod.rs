@@ -63,7 +63,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRKeyboard {
 }
 #[cfg(feature = "OVRKeyboard+TrackedKeyboardInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRKeyboard_TrackedKeyboardInfo {
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Identifier: u64,
@@ -91,7 +91,7 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
 impl crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {}
 #[cfg(feature = "OVRKeyboard+TrackedKeyboardState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRKeyboard_TrackedKeyboardState {
     pub isPositionValid: bool,
     pub isPositionTracked: bool,

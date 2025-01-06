@@ -578,7 +578,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
 }
 #[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ThreadLocal_1_LinkedSlotVolatile<T: quest_hook::libil2cpp::Type> {
     pub Value: quest_hook::libil2cpp::Gc<
         crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,

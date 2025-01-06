@@ -72,7 +72,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Jobs::IJobExtensions {
 }
 #[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IJobExtensions_JobStruct_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+FontDefinition")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FontDefinition {
     pub m_Font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     pub m_FontAsset: quest_hook::libil2cpp::Gc<

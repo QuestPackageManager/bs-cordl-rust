@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VRActiveActionSet_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VRActiveActionSet_t {
     pub ulActionSet: u64,
     pub ulRestrictedToDevice: u64,

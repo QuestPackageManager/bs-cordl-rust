@@ -686,7 +686,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIRStylePainter_ClosingInfo {
     pub needsClosing: bool,
     pub popViewMatrix: bool,
@@ -724,7 +724,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Closing
 impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo {}
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIRStylePainter_Entry {
     pub vertices: crate::Unity::Collections::NativeSlice_1<
         crate::UnityEngine::UIElements::Vertex,
@@ -767,7 +767,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry 
     feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIRStylePainter_RepeatRectUV {
     pub rect: crate::UnityEngine::Rect,
     pub uv: crate::UnityEngine::Rect,

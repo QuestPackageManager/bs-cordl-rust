@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRBounded3D")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRBounded3D {
     pub _Handle_k__BackingField: u64,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+RoomSettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RoomSettings {
     pub center: crate::Unity::Mathematics::float3,
     pub rotation: f32,

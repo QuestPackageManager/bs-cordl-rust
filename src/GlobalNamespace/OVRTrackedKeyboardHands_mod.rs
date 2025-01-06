@@ -300,7 +300,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands {
 }
 #[cfg(feature = "OVRTrackedKeyboardHands+HandBoneMapping")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTrackedKeyboardHands_HandBoneMapping {
     pub LeftHandTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub LeftPresenceTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -335,7 +335,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {
 impl crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {}
 #[cfg(feature = "OVRTrackedKeyboardHands+TrackedKeyboardHandsVisibilityChangedEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibilityChangedEvent {
     pub leftVisible: bool,
     pub rightVisible: bool,

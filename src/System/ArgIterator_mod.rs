@@ -1,6 +1,6 @@
 #[cfg(feature = "System+ArgIterator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ArgIterator {
     pub sig: crate::System::IntPtr,
     pub args: crate::System::IntPtr,

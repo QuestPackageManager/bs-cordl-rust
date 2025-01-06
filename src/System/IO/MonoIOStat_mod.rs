@@ -1,6 +1,6 @@
 #[cfg(feature = "System+IO+MonoIOStat")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MonoIOStat {
     pub fileAttributes: crate::System::IO::FileAttributes,
     pub Length: i64,

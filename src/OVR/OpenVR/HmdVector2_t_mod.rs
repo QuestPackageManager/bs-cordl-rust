@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+HmdVector2_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HmdVector2_t {
     pub v0: f32,
     pub v1: f32,

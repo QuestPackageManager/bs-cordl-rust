@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Vector2Int")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Vector2Int {
     pub m_X: i32,
     pub m_Y: i32,

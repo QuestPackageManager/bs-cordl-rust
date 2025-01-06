@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVREnumerable_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVREnumerable_1<T: quest_hook::libil2cpp::Type> {
     pub _enumerable: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::IEnumerable_1<T>,
@@ -148,7 +148,7 @@ for crate::GlobalNamespace::OVREnumerable_1<T> {
 }
 #[cfg(feature = "OVREnumerable_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVREnumerable_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _listIndex: i32,
     pub _type: crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType<T>,

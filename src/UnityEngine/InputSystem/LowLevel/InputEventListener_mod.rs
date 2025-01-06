@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputEventListener {}
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

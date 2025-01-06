@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleEnum_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleEnum_1<T: quest_hook::libil2cpp::Type> {
     pub m_Value: T,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,

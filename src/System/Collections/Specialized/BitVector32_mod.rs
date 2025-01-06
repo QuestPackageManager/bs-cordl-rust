@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Collections+Specialized+BitVector32")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BitVector32 {
     pub _data: u32,
 }

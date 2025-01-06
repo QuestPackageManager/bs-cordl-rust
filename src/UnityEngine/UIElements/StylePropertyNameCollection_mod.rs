@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StylePropertyNameCollection {
     pub propertiesList: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
@@ -135,7 +135,7 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StylePropertyNameCollection_Enumerator {
     pub m_Enumerator: crate::System::Collections::Generic::List_1_Enumerator<
         crate::UnityEngine::UIElements::StylePropertyName,

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+D3D12TextureData_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct D3D12TextureData_t {
     pub m_pResource: crate::System::IntPtr,
     pub m_pCommandQueue: crate::System::IntPtr,

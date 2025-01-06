@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+CompilerServices+TaskAwaiter_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TaskAwaiter_1<TResult: quest_hook::libil2cpp::Type> {
     pub m_task: quest_hook::libil2cpp::Gc<
         crate::System::Threading::Tasks::Task_1<TResult>,

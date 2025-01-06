@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+CaretInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CaretInfo {
     pub index: i32,
     pub position: crate::TMPro::CaretPosition,

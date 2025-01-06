@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+GamepadState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GamepadState {
     padding: quest_hook::libil2cpp::ValueTypePadding<28usize>,
 }

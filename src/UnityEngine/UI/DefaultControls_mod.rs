@@ -365,7 +365,7 @@ for crate::UnityEngine::UI::DefaultControls_IFactoryControls {
 }
 #[cfg(feature = "UnityEngine+UI+DefaultControls+Resources")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DefaultControls_Resources {
     pub standard: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub background: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

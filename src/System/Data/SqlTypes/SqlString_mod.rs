@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlString")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SqlString {
     pub m_value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_cmpInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+ComputedTransitionProperty")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ComputedTransitionProperty {
     pub id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     pub durationMs: i32,

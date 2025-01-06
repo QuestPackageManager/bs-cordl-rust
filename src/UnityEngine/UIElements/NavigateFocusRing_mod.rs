@@ -223,7 +223,7 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NavigateFocusRing_FocusableHierarchyTraversal {
     pub currentFocusable: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,

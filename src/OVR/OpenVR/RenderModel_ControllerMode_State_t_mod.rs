@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+RenderModel_ControllerMode_State_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderModel_ControllerMode_State_t {
     pub bScrollWheelVisible: bool,
 }

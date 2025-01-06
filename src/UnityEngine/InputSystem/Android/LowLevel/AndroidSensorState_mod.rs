@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AndroidSensorState {
     pub data: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer,
 }
@@ -73,7 +73,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AndroidSensorState__data_e__FixedBuffer {
     pub FixedElementField: f32,
 }

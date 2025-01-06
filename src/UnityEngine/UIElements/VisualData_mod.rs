@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+VisualData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualData {
     pub backgroundColor: crate::UnityEngine::Color,
     pub backgroundImage: crate::UnityEngine::UIElements::Background,

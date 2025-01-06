@@ -43,7 +43,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::RuntimeStructs {
 }
 #[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeStructs_GPtrArray {
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub len: i32,
@@ -68,7 +68,7 @@ for crate::Mono::RuntimeStructs_GPtrArray {
 impl crate::Mono::RuntimeStructs_GPtrArray {}
 #[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeStructs_GenericParamInfo {
     pub pklass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub name: crate::System::IntPtr,
@@ -96,7 +96,7 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
 impl crate::Mono::RuntimeStructs_GenericParamInfo {}
 #[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeStructs_MonoClass {}
 #[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -118,7 +118,7 @@ for crate::Mono::RuntimeStructs_MonoClass {
 impl crate::Mono::RuntimeStructs_MonoClass {}
 #[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeStructs_RemoteClass {
     pub default_vtable: crate::System::IntPtr,
     pub xdomain_vtable: crate::System::IntPtr,

@@ -198,7 +198,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataError {
 }
 #[cfg(feature = "System+Data+DataError+ColumnError")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DataError_ColumnError {
     pub _column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     pub _error: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

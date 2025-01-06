@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+FrameTiming")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FrameTiming {
     pub cpuFrameTime: f64,
     pub cpuMainThreadFrameTime: f64,

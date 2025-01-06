@@ -711,7 +711,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputStateHistory_Enumerator {
     pub m_History: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory,
@@ -863,7 +863,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputStateHistory_Record {
     pub m_Owner: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory,
@@ -1167,7 +1167,7 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputStateHistory_RecordHeader {
     padding: quest_hook::libil2cpp::ValueTypePadding<17usize>,
 }
@@ -1233,7 +1233,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
     pub FixedElementField: u8,
 }
@@ -1267,7 +1267,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__
     feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
     pub FixedElementField: u8,
 }

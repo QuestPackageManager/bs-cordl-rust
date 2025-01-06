@@ -806,7 +806,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::IO::Stream {
 }
 #[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Stream_ReadWriteParameters {
     pub Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub Offset: i32,
@@ -1177,7 +1177,7 @@ for crate::System::IO::Stream_SynchronousAsyncResult {
 }
 #[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder_1<

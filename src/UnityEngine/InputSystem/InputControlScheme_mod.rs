@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlScheme {
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_BindingGroup: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -317,7 +317,7 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlScheme_DeviceRequirement {
     pub m_ControlPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Flags: crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags,
@@ -510,7 +510,7 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlScheme_MatchResult {
     pub m_Result: crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result,
     pub m_Score: f32,
@@ -711,7 +711,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlScheme_SchemeJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub bindingGroup: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -807,7 +807,7 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MatchResult_InputControlScheme_Enumerator {
     pub m_Index: i32,
     pub m_Requirements: quest_hook::libil2cpp::Gc<
@@ -951,7 +951,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Match")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MatchResult_InputControlScheme_Match {
     pub m_RequirementIndex: i32,
     pub m_Requirements: quest_hook::libil2cpp::Gc<
@@ -1048,7 +1048,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson+DeviceJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SchemeJson_InputControlScheme_DeviceJson {
     pub devicePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isOptional: bool,

@@ -254,7 +254,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3<
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BaseCompositeField_3_FieldDescription<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,

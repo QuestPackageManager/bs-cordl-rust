@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+GlyphValueRecord_Legacy")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GlyphValueRecord_Legacy {
     pub xPlacement: f32,
     pub yPlacement: f32,

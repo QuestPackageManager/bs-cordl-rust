@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+Edge")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Edge {
     pub a: i32,
     pub b: i32,

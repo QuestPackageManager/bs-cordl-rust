@@ -416,7 +416,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SectionTableView_IDataSo
 }
 #[cfg(feature = "HMUI+SectionTableView+Section")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SectionTableView_Section {
     pub unfolded: bool,
     pub startBaseRow: i32,

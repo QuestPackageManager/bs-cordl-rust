@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputEventBuffer {
     pub m_Buffer: crate::Unity::Collections::NativeArray_1<u8>,
     pub m_SizeInBytes: i64,
@@ -318,7 +318,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputEventBuffer_Enumerator {
     pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_EventCount: i32,

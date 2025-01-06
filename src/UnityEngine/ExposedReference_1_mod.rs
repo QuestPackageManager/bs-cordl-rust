@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ExposedReference_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ExposedReference_1<T: quest_hook::libil2cpp::Type> {
     pub exposedName: crate::UnityEngine::PropertyName,
     pub defaultValue: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,

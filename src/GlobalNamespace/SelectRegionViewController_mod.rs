@@ -168,7 +168,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SelectRegionViewController_RegionToLocalizationKeyPair {
     pub region: crate::GlobalNamespace::SelectRegionViewController_Region,
     pub localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

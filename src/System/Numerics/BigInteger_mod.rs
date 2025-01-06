@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Numerics+BigInteger")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BigInteger {
     pub _sign: i32,
     pub _bits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,

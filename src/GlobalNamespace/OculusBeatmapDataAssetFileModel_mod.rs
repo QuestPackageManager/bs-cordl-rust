@@ -310,7 +310,7 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
 }
 #[cfg(feature = "OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData {
     pub levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

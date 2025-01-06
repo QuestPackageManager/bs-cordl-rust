@@ -76,7 +76,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache {
 }
 #[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PhysicsRaycasterWithCache_CachedRaycast {
     pub wasHit: bool,
     pub ray: crate::UnityEngine::Ray,

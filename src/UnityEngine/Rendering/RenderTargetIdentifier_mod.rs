@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderTargetIdentifier {
     pub m_Type: crate::UnityEngine::Rendering::BuiltinRenderTextureType,
     pub m_NameID: i32,

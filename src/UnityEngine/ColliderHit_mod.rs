@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ColliderHit")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColliderHit {
     pub m_ColliderInstanceID: i32,
 }

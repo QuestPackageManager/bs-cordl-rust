@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+XR+InputDevice")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputDevice {
     pub m_DeviceId: u64,
     pub m_Initialized: bool,

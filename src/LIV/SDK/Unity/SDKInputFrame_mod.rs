@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKInputFrame")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKInputFrame {
     pub pose: crate::LIV::SDK::Unity::SDKPose,
     pub clipPlane: crate::LIV::SDK::Unity::SDKClipPlane,

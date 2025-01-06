@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Color")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Color {
     pub r: f32,
     pub g: f32,

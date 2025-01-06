@@ -1021,7 +1021,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2<TKey, TValue> 
     feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ReadOnlyDictionary_2_DictionaryEnumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

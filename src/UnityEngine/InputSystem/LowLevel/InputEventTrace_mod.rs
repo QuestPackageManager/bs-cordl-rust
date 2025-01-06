@@ -687,7 +687,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputEventTrace_DeviceInfo {
     pub m_DeviceId: i32,
     pub m_Layout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

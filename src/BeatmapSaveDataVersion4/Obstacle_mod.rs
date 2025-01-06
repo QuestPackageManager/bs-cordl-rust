@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+Obstacle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Obstacle {
     pub x: i32,
     pub y: i32,

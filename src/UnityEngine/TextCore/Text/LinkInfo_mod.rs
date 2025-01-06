@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+LinkInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LinkInfo {
     pub hashCode: i32,
     pub linkIdFirstCharacterIndex: i32,

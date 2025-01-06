@@ -2,7 +2,7 @@
     feature = "UnityEngine+InputSystem+InputSystem+DeltaStateEventBuffer+_data_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DeltaStateEventBuffer_InputSystem__data_e__FixedBuffer {
     pub FixedElementField: u8,
 }
@@ -1081,7 +1081,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Inpu
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputSystem+DeltaStateEventBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputSystem_DeltaStateEventBuffer {
     pub stateEvent: crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent,
     pub data: crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e__FixedBuffer,
@@ -1113,7 +1113,7 @@ impl crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputSystem+StateEventBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputSystem_StateEventBuffer {
     pub stateEvent: crate::UnityEngine::InputSystem::LowLevel::StateEvent,
     pub data: crate::UnityEngine::InputSystem::StateEventBuffer_InputSystem__data_e__FixedBuffer,
@@ -1147,7 +1147,7 @@ impl crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer {
     feature = "UnityEngine+InputSystem+InputSystem+StateEventBuffer+_data_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StateEventBuffer_InputSystem__data_e__FixedBuffer {
     pub FixedElementField: u8,
 }

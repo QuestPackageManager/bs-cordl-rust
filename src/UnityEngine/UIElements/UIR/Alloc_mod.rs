@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+Alloc")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Alloc {
     pub start: u32,
     pub _cordl_size: u32,

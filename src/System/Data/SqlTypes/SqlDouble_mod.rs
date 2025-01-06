@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlDouble")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SqlDouble {
     pub m_fNotNull: bool,
     pub m_value: f64,

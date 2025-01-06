@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRChaperoneSetup {
     pub CommitWorkingCopy: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy,

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ConfiguredTaskAwaitable_1<TResult: quest_hook::libil2cpp::Type> {
     pub m_configuredTaskAwaiter: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
         TResult,
@@ -73,7 +73,7 @@ impl<
     feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
     TResult: quest_hook::libil2cpp::Type,
 > {

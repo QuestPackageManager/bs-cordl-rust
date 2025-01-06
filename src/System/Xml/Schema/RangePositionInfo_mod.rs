@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+Schema+RangePositionInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RangePositionInfo {
     pub curpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     pub rangeCounters: quest_hook::libil2cpp::Gc<

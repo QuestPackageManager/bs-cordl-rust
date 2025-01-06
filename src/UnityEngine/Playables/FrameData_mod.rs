@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Playables+FrameData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FrameData {
     pub m_FrameID: u64,
     pub m_DeltaTime: f64,

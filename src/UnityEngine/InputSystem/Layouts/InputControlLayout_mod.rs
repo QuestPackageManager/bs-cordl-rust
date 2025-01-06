@@ -2,7 +2,7 @@
     feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder+ControlBuilder"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Builder_InputControlLayout_ControlBuilder {
     pub builder: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
@@ -299,7 +299,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
     feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+LayoutMatcher"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Collection_InputControlLayout_LayoutMatcher {
     pub layoutName: crate::UnityEngine::InputSystem::Utilities::InternedString,
     pub deviceMatcher: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
@@ -333,7 +333,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Lay
     feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+PrecompiledLayout"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Collection_InputControlLayout_PrecompiledLayout {
     pub factoryMethod: quest_hook::libil2cpp::Gc<
         crate::System::Func_1<
@@ -1453,7 +1453,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Cache")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlLayout_Cache {
     pub table: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
@@ -1514,7 +1514,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+CacheRefInstance")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlLayout_CacheRefInstance {
     pub valid: bool,
 }
@@ -1564,7 +1564,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstanc
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlLayout_Collection {
     pub layoutTypes: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
@@ -1878,7 +1878,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlLayout_ControlItem {
     pub _name_k__BackingField: crate::UnityEngine::InputSystem::Utilities::InternedString,
     pub _layout_k__BackingField: crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2630,7 +2630,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlLayout_LayoutJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub extend: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2708,7 +2708,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
     feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJsonNameAndDescriptorOnly"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlLayout_LayoutJsonNameAndDescriptorOnly {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub extend: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Ray2D")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Ray2D {
     pub m_Origin: crate::UnityEngine::Vector2,
     pub m_Direction: crate::UnityEngine::Vector2,

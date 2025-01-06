@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRMeshData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRMeshData {
     pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,

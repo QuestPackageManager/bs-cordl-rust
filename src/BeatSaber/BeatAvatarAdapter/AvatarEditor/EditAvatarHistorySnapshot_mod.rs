@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarHistorySnapshot")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct EditAvatarHistorySnapshot {
     pub avatarEditPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
     pub avatarData: quest_hook::libil2cpp::Gc<

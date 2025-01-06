@@ -785,7 +785,7 @@ for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallb
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextGenerator_SpecialCharacter {
     pub character: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TextCore::Text::Character,

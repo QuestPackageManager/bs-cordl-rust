@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LocalDefinition")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LocalDefinition {
     pub _Index_k__BackingField: i32,
     pub _Parameter_k__BackingField: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+CharacterInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CharacterInfo {
     pub index: i32,
     pub uv: crate::UnityEngine::Rect,

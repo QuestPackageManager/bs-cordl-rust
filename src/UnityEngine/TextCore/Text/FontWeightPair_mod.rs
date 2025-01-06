@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+FontWeightPair")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FontWeightPair {
     pub regularTypeface: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TextCore::Text::FontAsset,

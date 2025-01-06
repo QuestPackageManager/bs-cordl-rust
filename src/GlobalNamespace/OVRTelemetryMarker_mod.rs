@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRTelemetryMarker")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTelemetryMarker {
     pub _State_k__BackingField: crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState,
     pub _MarkerId_k__BackingField: i32,
@@ -197,7 +197,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRTelemetryM
 }
 #[cfg(feature = "OVRTelemetryMarker+OVRTelemetryMarkerState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTelemetryMarker_OVRTelemetryMarkerState {
     pub _Sent_k__BackingField: bool,
     pub _Result_k__BackingField: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,

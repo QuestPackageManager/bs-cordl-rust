@@ -271,7 +271,7 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TrackedDeviceRaycaster_RaycastHitData {
     pub _graphic_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::Graphic,

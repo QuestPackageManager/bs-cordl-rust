@@ -1,6 +1,6 @@
 #[cfg(feature = "Zenject+SignalSubscriptionId")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SignalSubscriptionId {
     pub _signalId: crate::Zenject::BindingId,
     pub _callback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

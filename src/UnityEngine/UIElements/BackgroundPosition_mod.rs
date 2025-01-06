@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+BackgroundPosition")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BackgroundPosition {
     pub keyword: crate::UnityEngine::UIElements::BackgroundPositionKeyword,
     pub offset: crate::UnityEngine::UIElements::Length,

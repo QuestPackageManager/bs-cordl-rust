@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UQueryState_1<T: quest_hook::libil2cpp::Type> {
     pub m_Element: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
@@ -359,7 +359,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UQueryState_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub iterationList: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<

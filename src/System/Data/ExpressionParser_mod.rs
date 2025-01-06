@@ -323,7 +323,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::ExpressionParser
 }
 #[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ExpressionParser_ReservedWords {
     pub _word: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _token: crate::System::Data::Tokens,

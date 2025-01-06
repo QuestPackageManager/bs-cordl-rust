@@ -1,6 +1,6 @@
 #[cfg(feature = "Mono+ValueTuple")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueTuple {}
 #[cfg(feature = "Mono+ValueTuple")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "IgnoranceCore+IgnoranceConnectionEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IgnoranceConnectionEvent {
     pub EventType: u8,
     pub Port: u16,

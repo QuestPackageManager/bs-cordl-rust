@@ -2848,7 +2848,7 @@ for crate::System::Data::DataTable {
 }
 #[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DataTable_DSRowDiffIdUsageSection {
     pub _targetDS: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
 }
@@ -2884,7 +2884,7 @@ impl crate::System::Data::DataTable_DSRowDiffIdUsageSection {
 }
 #[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DataTable_RowDiffIdUsageSection {
     pub _targetTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
 }

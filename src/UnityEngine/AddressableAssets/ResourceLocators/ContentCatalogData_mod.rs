@@ -391,7 +391,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData 
     feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ContentCatalogData_Bucket {
     pub dataOffset: i32,
     pub entries: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

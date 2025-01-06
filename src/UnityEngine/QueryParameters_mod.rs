@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+QueryParameters")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct QueryParameters {
     pub layerMask: i32,
     pub hitMultipleFaces: bool,

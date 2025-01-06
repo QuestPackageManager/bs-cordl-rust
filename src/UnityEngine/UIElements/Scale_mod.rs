@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+Scale")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Scale {
     pub m_Scale: crate::UnityEngine::Vector3,
     pub m_IsNone: bool,

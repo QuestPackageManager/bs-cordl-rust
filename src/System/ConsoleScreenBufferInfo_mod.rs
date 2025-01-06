@@ -1,6 +1,6 @@
 #[cfg(feature = "System+ConsoleScreenBufferInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ConsoleScreenBufferInfo {
     pub Size: crate::System::Coord,
     pub CursorPosition: crate::System::Coord,

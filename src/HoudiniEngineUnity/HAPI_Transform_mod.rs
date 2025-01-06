@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_Transform")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_Transform {
     pub position: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub rotationQuaternion: quest_hook::libil2cpp::Gc<

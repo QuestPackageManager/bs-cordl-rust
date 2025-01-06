@@ -95,7 +95,7 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs {
 }
 #[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PackedPlayModeBuildLogs_RuntimeBuildLog {
     pub Type: crate::UnityEngine::LogType,
     pub Message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

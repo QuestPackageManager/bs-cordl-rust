@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRTriangleMesh")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTriangleMesh {
     pub _Handle_k__BackingField: u64,
 }
@@ -276,7 +276,7 @@ for crate::GlobalNamespace::OVRTriangleMesh {
 }
 #[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTriangleMesh_FlipTriangleWindingJob {
     pub Triangles: crate::Unity::Collections::NativeArray_1<
         crate::GlobalNamespace::OVRTriangleMesh_Triangle,
@@ -329,7 +329,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
 }
 #[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTriangleMesh_GetMeshJob {
     pub Space: u64,
     pub Positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
@@ -380,7 +380,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
 }
 #[cfg(feature = "OVRTriangleMesh+NegateXJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTriangleMesh_NegateXJob {
     pub Positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
 }
@@ -430,7 +430,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
 }
 #[cfg(feature = "OVRTriangleMesh+Triangle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTriangleMesh_Triangle {
     pub A: i32,
     pub B: i32,

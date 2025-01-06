@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngineInternal+Input+NativeInputEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeInputEvent {
     padding: quest_hook::libil2cpp::ValueTypePadding<20usize>,
 }

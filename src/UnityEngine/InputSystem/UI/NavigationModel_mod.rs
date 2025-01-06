@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+UI+NavigationModel")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NavigationModel {
     pub _cordl_move: crate::UnityEngine::Vector2,
     pub consecutiveMoveCount: i32,

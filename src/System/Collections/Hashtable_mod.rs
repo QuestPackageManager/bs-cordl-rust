@@ -1310,7 +1310,7 @@ for crate::System::Collections::Hashtable_ValueCollection {
 }
 #[cfg(feature = "System+Collections+Hashtable+bucket")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Hashtable_bucket {
     pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

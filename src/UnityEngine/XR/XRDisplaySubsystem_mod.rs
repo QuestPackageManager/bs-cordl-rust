@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XRDisplaySubsystem_XRBlitParams {
     pub srcTex: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     pub srcTexArraySlice: i32,
@@ -46,7 +46,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
 impl crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {}
 #[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XRDisplaySubsystem_XRMirrorViewBlitDesc {
     pub displaySubsystemInstance: crate::System::IntPtr,
     pub nativeBlitAvailable: bool,
@@ -74,7 +74,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
 impl crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {}
 #[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XRDisplaySubsystem_XRRenderPass {
     pub displaySubsystemInstance: crate::System::IntPtr,
     pub renderPassIndex: i32,

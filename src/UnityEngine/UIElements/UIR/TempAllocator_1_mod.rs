@@ -196,7 +196,7 @@ for crate::UnityEngine::UIElements::UIR::TempAllocator_1<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TempAllocator_1_Page<T: quest_hook::libil2cpp::Type> {
     pub array: crate::Unity::Collections::NativeArray_1<T>,
     pub used: i32,

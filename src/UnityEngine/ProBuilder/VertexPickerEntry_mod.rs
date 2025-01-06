@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+VertexPickerEntry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VertexPickerEntry {
     pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     pub vertex: i32,

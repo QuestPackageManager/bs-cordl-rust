@@ -1,6 +1,6 @@
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentOption")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ArgumentOption {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub identifiers: quest_hook::libil2cpp::Gc<

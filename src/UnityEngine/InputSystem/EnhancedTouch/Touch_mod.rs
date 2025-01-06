@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Touch {
     pub m_Finger: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
@@ -510,7 +510,7 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Touch_ExtraDataPerTouchState {
     pub accumulatedDelta: crate::UnityEngine::Vector2,
     pub uniqueId: u32,
@@ -536,7 +536,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState
 impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState {}
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Touch_FingerAndTouchState {
     pub updateMask: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     pub fingers: quest_hook::libil2cpp::Gc<
@@ -644,7 +644,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Touch_GlobalState {
     pub touchscreens: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,

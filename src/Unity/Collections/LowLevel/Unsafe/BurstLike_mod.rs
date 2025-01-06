@@ -100,7 +100,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BurstLike_SharedStatic_1<T: quest_hook::libil2cpp::Type> {
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_T: std::marker::PhantomData<T>,

@@ -1213,7 +1213,7 @@ impl AsMut<
 }
 #[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NetManager_NetPeerEnumerator {
     pub _initialPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     pub _p: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,

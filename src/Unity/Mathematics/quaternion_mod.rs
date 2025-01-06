@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+quaternion")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct quaternion {
     pub value: crate::Unity::Mathematics::float4,
 }

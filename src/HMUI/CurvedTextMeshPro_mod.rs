@@ -198,7 +198,7 @@ for crate::HMUI::CurvedTextMeshPro {
 }
 #[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CurvedTextMeshPro_CurvedMeshInfo {
     pub uvs3: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,

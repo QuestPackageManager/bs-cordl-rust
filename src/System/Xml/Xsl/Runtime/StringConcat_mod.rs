@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+Xsl+Runtime+StringConcat")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StringConcat {
     pub s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub s2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

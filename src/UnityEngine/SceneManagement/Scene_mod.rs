@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+SceneManagement+Scene")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Scene {
     pub m_Handle: i32,
 }

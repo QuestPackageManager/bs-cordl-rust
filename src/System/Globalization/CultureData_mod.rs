@@ -782,7 +782,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::Culture
 }
 #[cfg(feature = "System+Globalization+CultureData+NumberFormatEntryManaged")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CultureData_NumberFormatEntryManaged {
     pub currency_decimal_digits: i32,
     pub currency_decimal_separator: i32,

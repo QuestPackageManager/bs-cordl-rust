@@ -373,7 +373,7 @@ for crate::UnityEngine::UIElements::ListViewDragger {
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ListViewDragger_DragPosition {
     pub insertAtIndex: i32,
     pub parentId: i32,

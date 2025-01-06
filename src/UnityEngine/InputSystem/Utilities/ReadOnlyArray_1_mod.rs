@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ReadOnlyArray_1<TValue: quest_hook::libil2cpp::Type> {
     pub m_Array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
     pub m_StartIndex: i32,
@@ -263,7 +263,7 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ReadOnlyArray_1_Enumerator<TValue: quest_hook::libil2cpp::Type> {
     pub m_Array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
     pub m_IndexStart: i32,

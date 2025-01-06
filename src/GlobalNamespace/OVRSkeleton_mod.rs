@@ -667,7 +667,7 @@ for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
 }
 #[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSkeleton_SkeletonPoseData {
     pub _RootPose_k__BackingField: crate::GlobalNamespace::OVRPlugin_Posef,
     pub _RootScale_k__BackingField: f32,

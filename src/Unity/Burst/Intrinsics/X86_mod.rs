@@ -43,7 +43,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Fma_X86_Union {
     padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
 }
@@ -89,7 +89,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Sse4_2_X86_StrBoolArray {
     pub Bits: crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer,
 }
@@ -144,7 +144,7 @@ impl crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer {
     pub FixedElementField: u16,
 }
@@ -4531,7 +4531,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct X86_RoundingScope {
     pub OldBits: crate::Unity::Burst::Intrinsics::X86_MXCSRBits,
 }

@@ -114,7 +114,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CloudsMeshGen
 }
 #[cfg(feature = "CloudsMeshGenerator+Cloud")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CloudsMeshGenerator_Cloud {
     pub precisionOpaqueMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub lowPolyMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -145,7 +145,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
 impl crate::GlobalNamespace::CloudsMeshGenerator_Cloud {}
 #[cfg(feature = "CloudsMeshGenerator+ProhibitedRadius")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CloudsMeshGenerator_ProhibitedRadius {
     pub transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub distance: f32,
@@ -172,7 +172,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
 impl crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {}
 #[cfg(feature = "CloudsMeshGenerator+RadiusChunk")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CloudsMeshGenerator_RadiusChunk {
     pub normalizedStart: f32,
     pub normalizedEnd: f32,
@@ -199,7 +199,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
 impl crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {}
 #[cfg(feature = "CloudsMeshGenerator+Ring")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CloudsMeshGenerator_Ring {
     pub radius: f32,
     pub normalizedRadius: f32,

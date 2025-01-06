@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Reflection+MonoPropertyInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MonoPropertyInfo {
     pub parent: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub declaring_type: quest_hook::libil2cpp::Gc<crate::System::Type>,

@@ -272,7 +272,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
 }
 #[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRGLTFAnimatinonNode_InputNodeState {
     pub down: bool,
     pub t: f32,

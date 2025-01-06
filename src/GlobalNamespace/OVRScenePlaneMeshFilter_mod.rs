@@ -112,7 +112,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     pub Boundary: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
     pub Triangles: crate::Unity::Collections::NativeArray_1<i32>,
@@ -183,7 +183,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     pub _Count_k__BackingField: i32,
     pub _data: crate::Unity::Collections::NativeArray_1<i32>,

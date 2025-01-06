@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+DriverDirectMode_FrameTiming")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DriverDirectMode_FrameTiming {
     pub m_nSize: u32,
     pub m_nNumFramePresents: u32,

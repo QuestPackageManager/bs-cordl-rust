@@ -171,7 +171,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO {
 }
 #[cfg(feature = "PyramidBloomRendererSO+Level")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PyramidBloomRendererSO_Level {
     pub down: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     pub up: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,

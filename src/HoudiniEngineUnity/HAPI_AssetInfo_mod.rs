@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_AssetInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_AssetInfo {
     pub nodeId: i32,
     pub objectNodeId: i32,

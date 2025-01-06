@@ -1,6 +1,6 @@
 #[cfg(feature = "ENet+Address")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Address {
     pub nativeAddress: crate::ENet::ENetAddress,
 }

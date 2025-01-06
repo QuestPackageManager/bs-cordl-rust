@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DeltaStateEvent {
     padding: quest_hook::libil2cpp::ValueTypePadding<29usize>,
 }
@@ -125,7 +125,7 @@ for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
     feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent+_stateData_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DeltaStateEvent__stateData_e__FixedBuffer {
     pub FixedElementField: u8,
 }

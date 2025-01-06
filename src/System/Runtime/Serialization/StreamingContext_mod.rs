@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+Serialization+StreamingContext")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StreamingContext {
     pub m_additionalContext: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,

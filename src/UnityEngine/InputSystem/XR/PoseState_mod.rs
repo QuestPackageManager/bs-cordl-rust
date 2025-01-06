@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+PoseState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PoseState {
     padding: quest_hook::libil2cpp::ValueTypePadding<60usize>,
 }

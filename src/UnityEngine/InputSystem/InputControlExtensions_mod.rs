@@ -605,7 +605,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlExtensions_ControlBuilder {
     pub _control_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputControl,
@@ -896,7 +896,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlExtensions_DeviceBuilder {
     pub _device_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputDevice,
@@ -1126,7 +1126,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlExtensions_InputEventControlCollection {
     pub m_Device: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputDevice,
@@ -1275,7 +1275,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCol
     feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputControlExtensions_InputEventControlEnumerator {
     pub m_Flags: crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate,
     pub m_Device: quest_hook::libil2cpp::Gc<

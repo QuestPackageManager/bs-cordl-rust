@@ -1,6 +1,6 @@
 #[cfg(feature = "ENet+Event")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Event {
     pub nativeEvent: crate::ENet::ENetEvent,
 }

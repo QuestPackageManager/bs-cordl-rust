@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+State")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct State {
     pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub texture: crate::UnityEngine::UIElements::TextureId,

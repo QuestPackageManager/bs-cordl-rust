@@ -164,7 +164,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PointerDeviceState_PointerLocation {
     pub _Position_k__BackingField: crate::UnityEngine::Vector2,
     pub _Panel_k__BackingField: quest_hook::libil2cpp::Gc<

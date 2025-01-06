@@ -1,6 +1,6 @@
 #[cfg(feature = "LufsMetering+SplitAudioJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SplitAudioJob {
     pub channelData: crate::Unity::Collections::NativeArray_1<f32>,
     pub interleavedData: crate::Unity::Collections::NativeArray_1<f32>,

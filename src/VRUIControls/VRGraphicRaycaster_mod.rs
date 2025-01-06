@@ -127,7 +127,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::VRGraphicRaycast
 }
 #[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VRGraphicRaycaster_VRGraphicRaycastResult {
     pub graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     pub distance: f32,

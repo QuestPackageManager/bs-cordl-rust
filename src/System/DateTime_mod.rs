@@ -1,6 +1,6 @@
 #[cfg(feature = "System+DateTime")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DateTime {
     pub _dateData: u64,
 }

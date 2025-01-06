@@ -647,7 +647,7 @@ for crate::GlobalNamespace::PSVR2Helper {
 }
 #[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PSVR2Helper_HeadsetHapticFrequencyLimit {
     pub maxTimePlayed: f32,
     pub maximumFrequency: i32,

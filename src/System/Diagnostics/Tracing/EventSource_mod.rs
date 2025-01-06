@@ -305,7 +305,7 @@ for crate::System::Diagnostics::Tracing::EventSource {
 }
 #[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventSource_EventData {
     pub _DataPointer_k__BackingField: crate::System::IntPtr,
     pub _Size_k__BackingField: i32,

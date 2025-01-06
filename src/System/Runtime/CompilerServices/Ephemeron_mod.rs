@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+CompilerServices+Ephemeron")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Ephemeron {
     pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

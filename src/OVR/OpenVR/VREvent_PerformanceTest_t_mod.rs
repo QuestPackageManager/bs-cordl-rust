@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_PerformanceTest_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_PerformanceTest_t {
     pub m_nFidelityLevel: u32,
 }

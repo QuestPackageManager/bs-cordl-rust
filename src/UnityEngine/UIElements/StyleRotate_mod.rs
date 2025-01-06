@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleRotate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleRotate {
     pub m_Value: crate::UnityEngine::UIElements::Rotate,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,

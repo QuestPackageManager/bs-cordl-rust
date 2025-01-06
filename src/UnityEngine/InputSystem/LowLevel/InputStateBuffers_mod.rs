@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputStateBuffers {
     pub sizePerBuffer: u32,
     pub totalSize: u32,
@@ -193,7 +193,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers+DoubleBuffers")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputStateBuffers_DoubleBuffers {
     pub deviceToBufferMapping: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,

@@ -243,7 +243,7 @@ for crate::GlobalNamespace::OVRRaycaster {
 }
 #[cfg(feature = "OVRRaycaster+RaycastHit")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRRaycaster_RaycastHit {
     pub graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     pub worldPos: crate::UnityEngine::Vector3,

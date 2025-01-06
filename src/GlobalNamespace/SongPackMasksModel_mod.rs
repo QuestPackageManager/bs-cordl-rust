@@ -148,7 +148,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPackMasks
 }
 #[cfg(feature = "SongPackMasksModel+LocalizedText")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SongPackMasksModel_LocalizedText {
     pub textKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isPlural: bool,
@@ -197,7 +197,7 @@ impl crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
 }
 #[cfg(feature = "SongPackMasksModel+MaskInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SongPackMasksModel_MaskInfo {
     pub localizedText: crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
     pub mask: crate::GlobalNamespace::SongPackMask,

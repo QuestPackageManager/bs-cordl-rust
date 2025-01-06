@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleFontDefinition")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleFontDefinition {
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,
     pub m_Value: crate::UnityEngine::UIElements::FontDefinition,

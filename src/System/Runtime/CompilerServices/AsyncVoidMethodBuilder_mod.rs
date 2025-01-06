@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncVoidMethodBuilder")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AsyncVoidMethodBuilder {
     pub m_synchronizationContext: quest_hook::libil2cpp::Gc<
         crate::System::Threading::SynchronizationContext,

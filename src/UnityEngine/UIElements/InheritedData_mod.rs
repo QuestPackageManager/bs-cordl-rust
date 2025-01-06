@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+InheritedData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InheritedData {
     pub color: crate::UnityEngine::Color,
     pub fontSize: crate::UnityEngine::UIElements::Length,

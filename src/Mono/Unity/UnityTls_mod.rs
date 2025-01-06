@@ -138,7 +138,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_errorstate {
     pub magic: u32,
     pub code: crate::Mono::Unity::UnityTls_unitytls_error_code,
@@ -431,7 +431,7 @@ for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_key {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -453,7 +453,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key {
 impl crate::Mono::Unity::UnityTls_unitytls_key {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_key_ref {
     pub handle: u64,
 }
@@ -492,7 +492,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_tlsctx {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -514,7 +514,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
 impl crate::Mono::Unity::UnityTls_unitytls_tlsctx {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_tlsctx_callbacks {
     pub read: quest_hook::libil2cpp::Gc<
         crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback,
@@ -628,7 +628,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_tlsctx_protocolrange {
     pub min: crate::Mono::Unity::UnityTls_unitytls_protocol,
     pub max: crate::Mono::Unity::UnityTls_unitytls_protocol,
@@ -953,7 +953,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_x509_ref {
     pub handle: u64,
 }
@@ -977,7 +977,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
 impl crate::Mono::Unity::UnityTls_unitytls_x509_ref {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_x509list {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -999,7 +999,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
 impl crate::Mono::Unity::UnityTls_unitytls_x509list {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_x509list_ref {
     pub handle: u64,
 }
@@ -1023,7 +1023,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
 impl crate::Mono::Unity::UnityTls_unitytls_x509list_ref {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_x509name {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SelectorMatchRecord {
     pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
     pub styleSheetIndexInStack: i32,

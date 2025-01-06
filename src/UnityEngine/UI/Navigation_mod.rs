@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UI+Navigation")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Navigation {
     pub m_Mode: crate::UnityEngine::UI::Navigation_Mode,
     pub m_WrapAround: bool,

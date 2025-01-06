@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+PageInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PageInfo {
     pub firstCharacterIndex: i32,
     pub lastCharacterIndex: i32,

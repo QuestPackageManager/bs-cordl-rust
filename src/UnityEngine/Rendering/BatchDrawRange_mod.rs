@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+BatchDrawRange")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BatchDrawRange {
     pub drawCommandsBegin: u32,
     pub drawCommandsCount: u32,

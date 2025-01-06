@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventStream")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputEventStream {
     pub m_NativeBuffer: crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer,
     pub m_CurrentNativeEventReadPtr: quest_hook::libil2cpp::Gc<

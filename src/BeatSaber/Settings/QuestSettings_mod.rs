@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+QuestSettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct QuestSettings {
     pub cpuLevel: crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel,
     pub gpuLevel: crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel,

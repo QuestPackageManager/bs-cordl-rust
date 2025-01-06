@@ -117,7 +117,7 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AnimationOutputWeightProcessor_WeightInfo {
     pub mixer: crate::UnityEngine::Playables::Playable,
     pub parentMixer: crate::UnityEngine::Playables::Playable,

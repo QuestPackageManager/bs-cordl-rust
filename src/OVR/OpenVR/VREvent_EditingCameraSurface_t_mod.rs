@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_EditingCameraSurface_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_EditingCameraSurface_t {
     pub overlayHandle: u64,
     pub nVisualMode: u32,

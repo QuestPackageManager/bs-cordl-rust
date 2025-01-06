@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRTask_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTask_1<TResult: quest_hook::libil2cpp::Type> {
     pub _id: crate::System::Guid,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -417,7 +417,7 @@ for crate::GlobalNamespace::OVRTask_1<TResult> {
 }
 #[cfg(feature = "OVRTask_1+Awaiter")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTask_1_Awaiter<TResult: quest_hook::libil2cpp::Type> {
     pub _task: crate::GlobalNamespace::OVRTask_1<TResult>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -519,7 +519,7 @@ for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
 }
 #[cfg(feature = "OVRTask_1+Callback")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTask_1_Callback<TResult: quest_hook::libil2cpp::Type> {
     pub _delegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -861,7 +861,7 @@ for crate::GlobalNamespace::OVRTask_1_CallbackRemover<TResult> {
 }
 #[cfg(feature = "OVRTask_1+CallbackWithState_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTask_1_CallbackWithState_1<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+Bone")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Bone {
     pub m_ParentBoneIndex: u32,
     pub m_Position: crate::UnityEngine::Vector3,

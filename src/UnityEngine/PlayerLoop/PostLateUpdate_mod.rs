@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -135,7 +135,7 @@ impl crate::UnityEngine::PlayerLoop::PostLateUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_BatchModeUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -158,7 +158,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ClearImmediateRenderers {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -181,7 +181,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_DirectorLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -204,7 +204,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_DirectorRenderImage {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -229,7 +229,7 @@ impl crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {}
     feature = "UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate {}
 #[cfg(
     feature = "UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
@@ -258,7 +258,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLat
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_EnlightenRuntimeUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -281,7 +281,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ExecuteGameCenterCallbacks {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -304,7 +304,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_FinishFrameRendering {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -327,7 +327,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_GUIClearEvents {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -350,7 +350,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_GraphicsWarmupPreloadedShaders {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -373,7 +373,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShader
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShaders {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_InputEndFrame {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -396,7 +396,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_MemoryFrameMaintenance {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -419,7 +419,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ObjectDispatcherPostLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -442,7 +442,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdat
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ParticleSystemEndUpdateAll {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -465,7 +465,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PhysicsSkinnedClothBeginUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -488,7 +488,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdat
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PhysicsSkinnedClothFinishUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -511,7 +511,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpda
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PlayerEmitCanvasGeometry {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -536,7 +536,7 @@ impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {}
     feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PlayerRenderUIEBatchModeOffscreen {}
 #[cfg(
     feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
@@ -565,7 +565,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffsc
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffscreen {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PlayerSendFrameComplete {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -588,7 +588,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PlayerSendFramePostPresent {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -611,7 +611,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PlayerSendFrameStarted {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -634,7 +634,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PlayerUpdateCanvases {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -657,7 +657,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_PresentAfterDraw {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -680,7 +680,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ProcessWebSendMessages {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -703,7 +703,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ProfilerEndFrame {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -726,7 +726,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ProfilerSynchronizeStats {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -749,7 +749,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ResetInputAxis {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -774,7 +774,7 @@ impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {}
     feature = "UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ScriptRunDelayedDynamicFrameRate {}
 #[cfg(
     feature = "UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
@@ -803,7 +803,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameR
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameRate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ShaderHandleErrors {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -826,7 +826,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_SortingGroupsUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -849,7 +849,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_ThreadedLoadingDebug {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -872,7 +872,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_TriggerEndOfFrameCallbacks {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -895,7 +895,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateAllRenderers {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -918,7 +918,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateAllSkinnedMeshes {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -941,7 +941,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateAudio {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -964,7 +964,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateCanvasRectTransform {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -987,7 +987,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateCaptureScreenshot {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1010,7 +1010,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateCustomRenderTextures {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1033,7 +1033,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateLightProbeProxyVolumes {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1056,7 +1056,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes 
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateRectTransform {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1079,7 +1079,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateResolution {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1102,7 +1102,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateSubstance {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1125,7 +1125,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateVideo {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1148,7 +1148,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_UpdateVideoTextures {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1171,7 +1171,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_VFXUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1194,7 +1194,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_XRPostLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1217,7 +1217,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_XRPostPresent {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1240,7 +1240,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PostLateUpdate_XRPreEndFrame {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

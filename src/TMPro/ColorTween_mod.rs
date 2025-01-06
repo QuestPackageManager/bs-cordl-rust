@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+ColorTween")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorTween {
     pub m_Target: quest_hook::libil2cpp::Gc<crate::TMPro::ColorTween_ColorTweenCallback>,
     pub m_StartColor: crate::UnityEngine::Color,

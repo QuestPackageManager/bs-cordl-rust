@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ModifiableContactPatch")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ModifiableContactPatch {
     pub massProperties: crate::UnityEngine::ModifiableMassProperties,
     pub normal: crate::UnityEngine::Vector3,

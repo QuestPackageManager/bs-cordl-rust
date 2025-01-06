@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+TrackedDevicePose_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TrackedDevicePose_t {
     pub mDeviceToAbsoluteTracking: crate::OVR::OpenVR::HmdMatrix34_t,
     pub vVelocity: crate::OVR::OpenVR::HmdVector3_t,

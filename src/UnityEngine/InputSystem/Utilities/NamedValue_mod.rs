@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+NamedValue")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NamedValue {
     pub _name_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,

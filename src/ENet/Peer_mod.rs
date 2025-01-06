@@ -1,6 +1,6 @@
 #[cfg(feature = "ENet+Peer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Peer {
     pub nativePeer: crate::System::IntPtr,
     pub nativeID: u32,

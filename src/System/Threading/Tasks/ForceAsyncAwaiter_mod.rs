@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ForceAsyncAwaiter {
     pub _task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }

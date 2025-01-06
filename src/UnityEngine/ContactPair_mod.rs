@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ContactPair")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ContactPair {
     pub m_ColliderID: i32,
     pub m_OtherColliderID: i32,

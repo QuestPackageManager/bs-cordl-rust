@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+Linq+ElementWriter")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ElementWriter {
     pub _writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     pub _resolver: crate::System::Xml::Linq::NamespaceResolver,

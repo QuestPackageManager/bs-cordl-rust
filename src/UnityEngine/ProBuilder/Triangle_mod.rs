@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+Triangle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Triangle {
     pub m_A: i32,
     pub m_B: i32,

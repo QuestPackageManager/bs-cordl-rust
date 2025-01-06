@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_Session")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_Session {
     pub _cordl_type: crate::HoudiniEngineUnity::HAPI_SessionType,
     pub id: i64,

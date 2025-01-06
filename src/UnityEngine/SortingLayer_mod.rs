@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+SortingLayer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SortingLayer {
     pub m_Id: i32,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GlyphPairAdjustmentRecord {
     pub m_FirstAdjustmentRecord: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
     pub m_SecondAdjustmentRecord: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,

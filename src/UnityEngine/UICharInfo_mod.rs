@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UICharInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UICharInfo {
     pub cursorPos: crate::UnityEngine::Vector2,
     pub charWidth: f32,

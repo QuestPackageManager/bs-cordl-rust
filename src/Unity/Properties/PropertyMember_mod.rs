@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Properties+PropertyMember")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PropertyMember {
     pub m_PropertyInfo: quest_hook::libil2cpp::Gc<
         crate::System::Reflection::PropertyInfo,

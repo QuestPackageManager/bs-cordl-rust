@@ -113,7 +113,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpa
 }
 #[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeSpanFormat_FormatLiterals {
     pub AppCompatLiteral: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub dd: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Mathf")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Mathf {}
 #[cfg(feature = "UnityEngine+Mathf")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

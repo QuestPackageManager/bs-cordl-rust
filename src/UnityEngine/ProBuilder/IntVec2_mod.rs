@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+IntVec2")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IntVec2 {
     pub value: crate::UnityEngine::Vector2,
 }

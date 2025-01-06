@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxToken")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleSyntaxToken {
     pub _cordl_type: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType,
     pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

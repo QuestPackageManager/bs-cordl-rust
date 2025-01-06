@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Collections+DictionaryEntry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DictionaryEntry {
     pub _key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

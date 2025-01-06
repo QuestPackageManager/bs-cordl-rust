@@ -127,7 +127,7 @@ for crate::GlobalNamespace::DefaultScenesTransitionsFromInit {
     feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct __c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder,

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Buffers+MemoryHandle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MemoryHandle {
     pub _pointer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _handle: crate::System::Runtime::InteropServices::GCHandle,

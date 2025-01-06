@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_PageInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_PageInfo {
     pub firstCharacterIndex: i32,
     pub lastCharacterIndex: i32,

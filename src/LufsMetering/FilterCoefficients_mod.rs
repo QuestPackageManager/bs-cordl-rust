@@ -1,6 +1,6 @@
 #[cfg(feature = "LufsMetering+FilterCoefficients")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FilterCoefficients {
     pub a0: f32,
     pub a1: f32,

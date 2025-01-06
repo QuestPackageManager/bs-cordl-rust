@@ -3688,7 +3688,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Text {
 }
 #[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Text_CharacterSubstitution {
     pub index: i32,
     pub unicode: u32,
@@ -3726,7 +3726,7 @@ impl crate::TMPro::TMP_Text_CharacterSubstitution {
 }
 #[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Text_SpecialCharacter {
     pub character: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
     pub fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
@@ -3766,7 +3766,7 @@ impl crate::TMPro::TMP_Text_SpecialCharacter {
 }
 #[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Text_TextBackingContainer {
     pub m_Array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub m_Count: i32,
@@ -3876,7 +3876,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Text_UnicodeChar {
     pub unicode: i32,
     pub stringIndex: i32,

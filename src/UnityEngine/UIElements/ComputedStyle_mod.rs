@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+ComputedStyle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ComputedStyle {
     pub inheritedData: crate::UnityEngine::UIElements::StyleDataRef_1<
         crate::UnityEngine::UIElements::InheritedData,

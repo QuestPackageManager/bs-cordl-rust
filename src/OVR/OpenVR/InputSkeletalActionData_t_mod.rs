@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+InputSkeletalActionData_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputSkeletalActionData_t {
     pub bActive: bool,
     pub activeOrigin: u64,

@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+VertexGradient")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VertexGradient {
     pub topLeft: crate::UnityEngine::Color,
     pub topRight: crate::UnityEngine::Color,

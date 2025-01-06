@@ -983,7 +983,7 @@ for crate::System::Data::RBTree_1<K> {
 }
 #[cfg(feature = "System+Data+RBTree_1+Node")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RBTree_1_Node<K: quest_hook::libil2cpp::Type> {
     pub _selfId: i32,
     pub _leftId: i32,
@@ -1028,7 +1028,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Data+RBTree_1+NodePath")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RBTree_1_NodePath<K: quest_hook::libil2cpp::Type> {
     pub _nodeID: i32,
     pub _mainTreeNodeID: i32,
@@ -1071,7 +1071,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
 }
 #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RBTree_1_RBTreeEnumerator<K: quest_hook::libil2cpp::Type> {
     pub _tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
     pub _version: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+XR+Eyes")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Eyes {
     pub m_DeviceId: u64,
     pub m_FeatureIndex: u32,

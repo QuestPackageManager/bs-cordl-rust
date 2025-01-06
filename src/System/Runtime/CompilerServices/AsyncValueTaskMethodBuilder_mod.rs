@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncValueTaskMethodBuilder")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AsyncValueTaskMethodBuilder {
     pub _methodBuilder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
     pub _haveResult: bool,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+PlayerLoop+Update")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Update {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Update")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -31,7 +31,7 @@ impl crate::UnityEngine::PlayerLoop::Update {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+DirectorUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Update_DirectorUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+DirectorUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -53,7 +53,7 @@ for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
 impl crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Update_ScriptRunBehaviourUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -76,7 +76,7 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
 impl crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Update_ScriptRunDelayedDynamicFrameRate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -99,7 +99,7 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
 impl crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Update_ScriptRunDelayedTasks {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -230,7 +230,7 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LogicalCallContext_Reader {
     pub m_ctx: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Remoting::Messaging::LogicalCallContext,

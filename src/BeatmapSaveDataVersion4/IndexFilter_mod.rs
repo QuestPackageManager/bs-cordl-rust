@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+IndexFilter")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IndexFilter {
     pub f: crate::BeatmapSaveDataCommon::IndexFilterType,
     pub p: i32,

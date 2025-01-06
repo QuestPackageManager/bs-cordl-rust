@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobRanges")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JobRanges {
     pub BatchSize: i32,
     pub NumJobs: i32,

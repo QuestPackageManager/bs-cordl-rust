@@ -2,7 +2,7 @@
     feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DebugView_InstructionList_InstructionView {
     pub _index: i32,
     pub _stackDepth: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+InputAnalogActionData_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputAnalogActionData_t {
     pub bActive: bool,
     pub activeOrigin: u64,

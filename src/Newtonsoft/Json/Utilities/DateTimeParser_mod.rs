@@ -1,6 +1,6 @@
 #[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeParser")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DateTimeParser {
     pub Year: i32,
     pub Month: i32,

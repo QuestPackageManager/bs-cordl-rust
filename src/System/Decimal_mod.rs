@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Decimal+DecCalc+Buf12")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DecCalc_Decimal_Buf12 {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
@@ -63,7 +63,7 @@ impl crate::System::DecCalc_Decimal_Buf12 {
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf16")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DecCalc_Decimal_Buf16 {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
@@ -126,7 +126,7 @@ impl crate::System::DecCalc_Decimal_Buf16 {
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf24")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DecCalc_Decimal_Buf24 {
     padding: quest_hook::libil2cpp::ValueTypePadding<24usize>,
 }
@@ -192,7 +192,7 @@ impl crate::System::DecCalc_Decimal_Buf24 {
 }
 #[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DecCalc_Decimal_PowerOvfl {
     pub Hi: u32,
     pub MidLo: u64,
@@ -247,7 +247,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Decimal")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Decimal {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }
@@ -1229,7 +1229,7 @@ for crate::System::Decimal {
 }
 #[cfg(feature = "System+Decimal+DecCalc")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Decimal_DecCalc {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }

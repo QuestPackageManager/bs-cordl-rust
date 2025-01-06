@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_SpriteInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_SpriteInfo {
     pub spriteIndex: i32,
     pub characterIndex: i32,

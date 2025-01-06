@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+EventBox")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventBox {
     pub f: i32,
     pub e: i32,

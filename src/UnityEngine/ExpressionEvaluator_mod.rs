@@ -426,7 +426,7 @@ for crate::UnityEngine::ExpressionEvaluator_Operator {
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ExpressionEvaluator_PcgRandom {
     pub increment: u64,
     pub state: u64,

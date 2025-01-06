@@ -1,6 +1,6 @@
 #[cfg(feature = "System+DTSubString")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DTSubString {
     pub s: crate::System::ReadOnlySpan_1<char>,
     pub index: i32,

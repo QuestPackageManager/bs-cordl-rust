@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+HumanDescription")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HumanDescription {
     pub human: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::HumanBone>,

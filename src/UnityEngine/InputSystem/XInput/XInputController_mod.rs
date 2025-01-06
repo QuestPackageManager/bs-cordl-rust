@@ -172,7 +172,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController {
 }
 #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+Capabilities")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XInputController_Capabilities {
     pub _cordl_type: crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType,
     pub subType: crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType,

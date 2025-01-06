@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+TreeViewItemWrapper")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TreeViewItemWrapper {
     pub item: crate::UnityEngine::UIElements::TreeItem,
     pub depth: i32,

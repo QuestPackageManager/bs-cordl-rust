@@ -777,7 +777,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputAction_CallbackContext {
     pub m_State: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputActionState,

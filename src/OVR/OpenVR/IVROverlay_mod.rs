@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVROverlay")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVROverlay {
     pub FindOverlay: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVROverlay__FindOverlay,

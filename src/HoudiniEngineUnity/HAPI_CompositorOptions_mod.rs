@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_CompositorOptions")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_CompositorOptions {
     pub maximumResolutionX: i32,
     pub maximumResolutionY: i32,

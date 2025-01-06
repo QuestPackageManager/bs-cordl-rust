@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Int32")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Int32 {
     pub m_value: i32,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Vector2")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Vector2 {
     pub x: f32,
     pub y: f32,

@@ -78,7 +78,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HIDParser_HIDItemStateGlobal {
     pub usagePage: crate::System::Nullable_1<i32>,
     pub logicalMinimum: crate::System::Nullable_1<i32>,
@@ -145,7 +145,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HIDParser_HIDItemStateLocal {
     pub usage: crate::System::Nullable_1<i32>,
     pub usageMinimum: crate::System::Nullable_1<i32>,
@@ -249,7 +249,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HIDParser_HIDReportData {
     pub reportId: i32,
     pub reportType: crate::UnityEngine::InputSystem::HID::HID_HIDReportType,

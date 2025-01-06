@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+IL2CPP+Metadata+__Il2CppFullySharedGenericStructType")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct __Il2CppFullySharedGenericStructType {}
 #[cfg(feature = "Unity+IL2CPP+Metadata+__Il2CppFullySharedGenericStructType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -531,7 +531,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
 }
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlAtomicValue_Union {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }

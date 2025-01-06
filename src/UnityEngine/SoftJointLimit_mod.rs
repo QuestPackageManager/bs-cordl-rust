@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+SoftJointLimit")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SoftJointLimit {
     pub m_Limit: f32,
     pub m_Bounciness: f32,

@@ -2,7 +2,7 @@
     feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+InteractorRootOverrideData"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData {
     pub root: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub originalPose: crate::GlobalNamespace::OVRPose,

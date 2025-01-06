@@ -1,6 +1,6 @@
 #[cfg(feature = "IgnoranceCore+PeerConnectionData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PeerConnectionData {
     pub Port: u16,
     pub NativePeerId: u32,

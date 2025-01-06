@@ -171,7 +171,7 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CrossAppDomainSink_ProcessMessageRes {
     pub arrResponse: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub cadMrm: quest_hook::libil2cpp::Gc<

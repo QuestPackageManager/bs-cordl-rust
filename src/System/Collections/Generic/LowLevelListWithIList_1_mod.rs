@@ -217,7 +217,7 @@ for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
 }
 #[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LowLevelListWithIList_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _list: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::LowLevelListWithIList_1<T>,

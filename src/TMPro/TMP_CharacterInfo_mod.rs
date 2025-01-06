@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_CharacterInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_CharacterInfo {
     pub character: char,
     pub index: i32,

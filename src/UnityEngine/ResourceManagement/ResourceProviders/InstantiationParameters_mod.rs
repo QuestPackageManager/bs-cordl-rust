@@ -2,7 +2,7 @@
     feature = "UnityEngine+ResourceManagement+ResourceProviders+InstantiationParameters"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InstantiationParameters {
     pub m_Position: crate::UnityEngine::Vector3,
     pub m_Rotation: crate::UnityEngine::Quaternion,

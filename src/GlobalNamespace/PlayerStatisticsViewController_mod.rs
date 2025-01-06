@@ -212,7 +212,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController {
 }
 #[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlayerStatisticsViewController_StatsScopeData {
     pub _text_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,

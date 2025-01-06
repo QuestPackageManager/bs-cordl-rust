@@ -239,7 +239,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MirrorRendere
 }
 #[cfg(feature = "MirrorRendererSO+CameraTransformData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MirrorRendererSO_CameraTransformData {
     pub position: crate::UnityEngine::Vector3,
     pub rotation: crate::UnityEngine::Quaternion,

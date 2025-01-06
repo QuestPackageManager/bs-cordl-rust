@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Initialization {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -37,7 +37,7 @@ impl crate::UnityEngine::PlayerLoop::Initialization {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+AsyncUploadTimeSlicedUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Initialization_AsyncUploadTimeSlicedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+AsyncUploadTimeSlicedUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -60,7 +60,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_AsyncUploadTimeSlicedUpdate {
 impl crate::UnityEngine::PlayerLoop::Initialization_AsyncUploadTimeSlicedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+DirectorSampleTime")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Initialization_DirectorSampleTime {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+DirectorSampleTime")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -83,7 +83,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_DirectorSampleTime {
 impl crate::UnityEngine::PlayerLoop::Initialization_DirectorSampleTime {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+ProfilerStartFrame")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Initialization_ProfilerStartFrame {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+ProfilerStartFrame")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -106,7 +106,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_ProfilerStartFrame {
 impl crate::UnityEngine::PlayerLoop::Initialization_ProfilerStartFrame {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeInputs")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Initialization_SynchronizeInputs {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeInputs")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -129,7 +129,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_SynchronizeInputs {
 impl crate::UnityEngine::PlayerLoop::Initialization_SynchronizeInputs {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Initialization_SynchronizeState {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -152,7 +152,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_SynchronizeState {
 impl crate::UnityEngine::PlayerLoop::Initialization_SynchronizeState {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+UpdateCameraMotionVectors")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Initialization_UpdateCameraMotionVectors {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+UpdateCameraMotionVectors")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -175,7 +175,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_UpdateCameraMotionVectors {
 impl crate::UnityEngine::PlayerLoop::Initialization_UpdateCameraMotionVectors {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+XREarlyUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Initialization_XREarlyUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+XREarlyUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

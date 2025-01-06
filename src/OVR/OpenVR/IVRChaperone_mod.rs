@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRChaperone")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRChaperone {
     pub GetCalibrationState: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRChaperone__GetCalibrationState,

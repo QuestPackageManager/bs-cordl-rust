@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OptionalAvatarData {
     pub dataType: u32,
     pub length: i32,

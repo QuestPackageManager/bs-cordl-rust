@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRGLTFScene")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRGLTFScene {
     pub root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub nodes: quest_hook::libil2cpp::Gc<

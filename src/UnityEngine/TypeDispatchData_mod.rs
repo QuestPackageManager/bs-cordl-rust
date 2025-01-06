@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TypeDispatchData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TypeDispatchData {
     pub changed: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<

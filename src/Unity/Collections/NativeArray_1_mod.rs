@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Collections+NativeArray_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeArray_1<T: quest_hook::libil2cpp::Type> {
     pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Length: i32,
@@ -567,7 +567,7 @@ for crate::Unity::Collections::NativeArray_1<T> {
 }
 #[cfg(feature = "Unity+Collections+NativeArray_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeArray_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub m_Array: crate::Unity::Collections::NativeArray_1<T>,
     pub m_Index: i32,
@@ -728,7 +728,7 @@ for crate::Unity::Collections::NativeArray_1_Enumerator<T> {
 }
 #[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeArray_1_ReadOnly<T: quest_hook::libil2cpp::Type> {
     pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Length: i32,
@@ -897,7 +897,7 @@ for crate::Unity::Collections::NativeArray_1_ReadOnly<T> {
 }
 #[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ReadOnly_NativeArray_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub m_Array: crate::Unity::Collections::NativeArray_1_ReadOnly<T>,
     pub m_Index: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Playables+FrameRate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FrameRate {
     pub m_Rate: i32,
 }

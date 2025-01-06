@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BatchQueryJob_2<
     CommandT: quest_hook::libil2cpp::Type,
     ResultT: quest_hook::libil2cpp::Type,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+GradientSettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GradientSettings {
     pub gradientType: crate::UnityEngine::UIElements::GradientType,
     pub addressMode: crate::UnityEngine::UIElements::AddressMode,

@@ -1165,7 +1165,7 @@ for crate::System::Collections::Generic::List_1<T> {
 }
 #[cfg(feature = "System+Collections+Generic+List_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct List_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     pub _index: i32,

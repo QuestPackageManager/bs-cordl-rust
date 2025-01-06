@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Ray")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Ray {
     pub m_Origin: crate::UnityEngine::Vector3,
     pub m_Direction: crate::UnityEngine::Vector3,

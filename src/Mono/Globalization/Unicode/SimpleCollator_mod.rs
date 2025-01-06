@@ -846,7 +846,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator {
 }
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SimpleCollator_Context {
     pub Option: crate::System::Globalization::CompareOptions,
     pub NeverMatchFlags: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -894,7 +894,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator_Context {
 }
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SimpleCollator_Escape {
     pub Source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Index: i32,
@@ -940,7 +940,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SimpleCollator_PreviousInfo {
     pub Code: i32,
     pub SortKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

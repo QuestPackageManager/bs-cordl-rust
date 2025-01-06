@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleValueHandle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleValueHandle {
     pub m_ValueType: crate::UnityEngine::UIElements::StyleValueType,
     pub valueIndex: i32,

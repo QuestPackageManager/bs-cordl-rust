@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputDeviceDescription {
     pub m_InterfaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_DeviceClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -308,7 +308,7 @@ impl AsMut<
     feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputDeviceDescription_DeviceDescriptionJson {
     pub interface: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

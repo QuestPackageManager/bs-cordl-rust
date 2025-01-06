@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ChangeUsageMsg_InputRemoting_Data {
     pub deviceId: i32,
     pub usages: quest_hook::libil2cpp::Gc<
@@ -649,7 +649,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputRemoting_Message {
     pub participantId: i32,
     pub _cordl_type: crate::UnityEngine::InputSystem::InputRemoting_MessageType,
@@ -897,7 +897,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputRemoting_RemoteInputDevice {
     pub remoteId: i32,
     pub localId: i32,
@@ -924,7 +924,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
 impl crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputRemoting_RemoteSender {
     pub senderId: i32,
     pub layouts: quest_hook::libil2cpp::Gc<
@@ -1198,7 +1198,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NewDeviceMsg_InputRemoting_Data {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub layout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1231,7 +1231,7 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
 impl crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NewLayoutMsg_InputRemoting_Data {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub layoutJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

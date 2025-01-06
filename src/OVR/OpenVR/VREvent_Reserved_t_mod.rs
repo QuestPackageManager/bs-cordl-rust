@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_Reserved_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_Reserved_t {
     pub reserved0: u64,
     pub reserved1: u64,

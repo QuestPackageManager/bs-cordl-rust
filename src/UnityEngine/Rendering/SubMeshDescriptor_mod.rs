@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+SubMeshDescriptor")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SubMeshDescriptor {
     pub _bounds_k__BackingField: crate::UnityEngine::Bounds,
     pub _topology_k__BackingField: crate::UnityEngine::MeshTopology,

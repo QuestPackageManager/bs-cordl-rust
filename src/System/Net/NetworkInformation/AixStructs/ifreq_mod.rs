@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ifreq {
     padding: quest_hook::libil2cpp::ValueTypePadding<18usize>,
 }
@@ -32,7 +32,7 @@ impl crate::System::Net::NetworkInformation::AixStructs::ifreq {
     feature = "System+Net+NetworkInformation+AixStructs+ifreq+_ifr_name_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ifreq__ifr_name_e__FixedBuffer {
     pub FixedElementField: u8,
 }

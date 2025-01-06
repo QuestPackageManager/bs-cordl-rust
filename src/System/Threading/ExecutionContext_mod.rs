@@ -533,7 +533,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Threading+ExecutionContext+Reader")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ExecutionContext_Reader {
     pub m_ec: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
 }

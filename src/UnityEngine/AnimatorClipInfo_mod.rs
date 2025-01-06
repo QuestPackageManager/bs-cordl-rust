@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+AnimatorClipInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AnimatorClipInfo {
     pub m_ClipInstanceID: i32,
     pub m_Weight: f32,

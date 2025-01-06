@@ -1,6 +1,6 @@
 #[cfg(feature = "SliderSpawnData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SliderSpawnData {
     pub headNoteOffset: crate::UnityEngine::Vector3,
     pub headGravityBase: f32,

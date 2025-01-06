@@ -148,7 +148,7 @@ for crate::System::Linq::Set_1<TElement> {
 }
 #[cfg(feature = "System+Linq+Set_1+Slot")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Set_1_Slot<TElement: quest_hook::libil2cpp::Type> {
     pub hashCode: i32,
     pub value: TElement,

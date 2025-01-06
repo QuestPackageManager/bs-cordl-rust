@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+NoteJumpMovementSpeedEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NoteJumpMovementSpeedEvent {
     pub d: f32,
     pub p: i32,

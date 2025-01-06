@@ -289,7 +289,7 @@ for crate::System::Dynamic::BindingRestrictions_TestBuilder {
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TestBuilder_BindingRestrictions_AndNode {
     pub Depth: i32,
     pub Node: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,

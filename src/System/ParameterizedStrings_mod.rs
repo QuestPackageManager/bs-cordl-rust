@@ -180,7 +180,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ParameterizedStrings {
 }
 #[cfg(feature = "System+ParameterizedStrings+FormatParam")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParameterizedStrings_FormatParam {
     pub _int32: i32,
     pub _string: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

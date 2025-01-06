@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleDataRef_1<T: quest_hook::libil2cpp::Type> {
     pub m_Ref: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T>,

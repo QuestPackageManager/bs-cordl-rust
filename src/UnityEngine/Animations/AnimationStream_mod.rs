@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Animations+AnimationStream")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AnimationStream {
     pub m_AnimatorBindingsVersion: u32,
     pub constant: crate::System::IntPtr,

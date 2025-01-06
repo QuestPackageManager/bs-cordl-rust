@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -49,7 +49,7 @@ impl crate::UnityEngine::PlayerLoop::FixedUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_AudioFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -72,7 +72,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate {
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_ClearLines {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -94,7 +94,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines {
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_DirectorFixedSampleTime {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -117,7 +117,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime {
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_DirectorFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -140,7 +140,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate {
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_DirectorFixedUpdatePostPhysics {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -163,7 +163,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_LegacyFixedAnimationUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -186,7 +186,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate {
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+NewInputFixedUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_NewInputFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+NewInputFixedUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -209,7 +209,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate {
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+Physics2DFixedUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_Physics2DFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+Physics2DFixedUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -232,7 +232,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate {
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_PhysicsClothFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -255,7 +255,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate {
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_PhysicsFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -278,7 +278,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate {
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_ScriptRunBehaviourFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -301,7 +301,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate {
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_ScriptRunDelayedFixedFrameRate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -324,7 +324,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate {
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+XRFixedUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FixedUpdate_XRFixedUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+XRFixedUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

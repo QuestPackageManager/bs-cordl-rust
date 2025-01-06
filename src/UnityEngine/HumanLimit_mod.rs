@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+HumanLimit")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HumanLimit {
     pub m_Min: crate::UnityEngine::Vector3,
     pub m_Max: crate::UnityEngine::Vector3,

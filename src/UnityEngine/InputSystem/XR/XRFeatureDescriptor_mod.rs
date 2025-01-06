@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XRFeatureDescriptor {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub usageHints: quest_hook::libil2cpp::Gc<

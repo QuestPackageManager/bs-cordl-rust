@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+EventSystems+RaycastResult")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RaycastResult {
     pub m_GameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _cordl_module: quest_hook::libil2cpp::Gc<

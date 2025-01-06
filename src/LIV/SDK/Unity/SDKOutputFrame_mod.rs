@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKOutputFrame")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKOutputFrame {
     pub renderingPipeline: crate::LIV::SDK::Unity::RENDERING_PIPELINE,
     pub trackedSpace: crate::LIV::SDK::Unity::SDKTrackedSpace,

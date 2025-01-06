@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Double")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Double {
     pub m_value: f64,
 }

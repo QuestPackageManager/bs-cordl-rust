@@ -452,7 +452,7 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionSetupExtensions_BindingSyntax {
     pub m_ActionMap: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputActionMap,
@@ -826,7 +826,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionSetupExtensions_CompositeSyntax {
     pub m_Action: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputAction,
@@ -897,7 +897,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax
     feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionSetupExtensions_ControlSchemeSyntax {
     pub m_Asset: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputActionAsset,

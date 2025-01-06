@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Numerics+Register")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Register {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }

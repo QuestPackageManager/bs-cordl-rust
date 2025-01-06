@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_SessionSyncInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_SessionSyncInfo {
     pub cookUsingHoudiniTime: bool,
     pub syncViewport: bool,

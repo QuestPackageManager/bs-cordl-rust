@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Playables+PlayableBinding")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlayableBinding {
     pub m_StreamName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_SourceObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,

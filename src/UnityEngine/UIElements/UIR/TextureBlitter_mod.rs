@@ -208,7 +208,7 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextureBlitter_BlitInfo {
     pub src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub srcRect: crate::UnityEngine::RectInt,

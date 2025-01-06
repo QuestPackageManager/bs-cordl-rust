@@ -80,7 +80,7 @@ for crate::Mono::Globalization::Unicode::CodePointIndexer {
 }
 #[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CodePointIndexer_TableRange {
     pub Start: i32,
     pub End: i32,

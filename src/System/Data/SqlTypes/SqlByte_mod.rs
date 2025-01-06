@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlByte")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SqlByte {
     pub m_fNotNull: bool,
     pub m_value: u8,

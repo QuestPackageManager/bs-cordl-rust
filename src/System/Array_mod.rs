@@ -2254,7 +2254,7 @@ for crate::System::Array_EmptyInternalEnumerator_1<T> {
 }
 #[cfg(feature = "System+Array+InternalEnumerator_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Array_InternalEnumerator_1<T: quest_hook::libil2cpp::Type> {
     pub array: quest_hook::libil2cpp::Gc<crate::System::Array>,
     pub idx: i32,
@@ -2450,7 +2450,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Array_RawData {
 }
 #[cfg(feature = "System+Array+SorterGenericArray")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Array_SorterGenericArray {
     pub keys: quest_hook::libil2cpp::Gc<crate::System::Array>,
     pub items: quest_hook::libil2cpp::Gc<crate::System::Array>,
@@ -2600,7 +2600,7 @@ impl crate::System::Array_SorterGenericArray {
 }
 #[cfg(feature = "System+Array+SorterObjectArray")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Array_SorterObjectArray {
     pub keys: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<

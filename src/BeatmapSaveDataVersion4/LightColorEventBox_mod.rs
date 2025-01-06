@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+LightColorEventBox")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LightColorEventBox {
     pub w: f32,
     pub d: crate::BeatmapSaveDataCommon::DistributionParamType,

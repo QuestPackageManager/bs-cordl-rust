@@ -251,7 +251,7 @@ for crate::UnityEngine::Timeline::IntervalTree_1<T> {
 }
 #[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IntervalTree_1_Entry<T: quest_hook::libil2cpp::Type> {
     pub intervalStart: i64,
     pub intervalEnd: i64,

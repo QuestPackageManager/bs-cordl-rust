@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Resolution")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Resolution {
     pub m_Width: i32,
     pub m_Height: i32,

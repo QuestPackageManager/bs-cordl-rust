@@ -1,6 +1,6 @@
 #[cfg(feature = "Zenject+BindingId")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BindingId {
     pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

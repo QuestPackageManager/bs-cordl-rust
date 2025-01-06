@@ -48,7 +48,7 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextResourceManager_FontAssetRef {
     pub nameHashCode: i32,
     pub familyNameHashCode: i32,

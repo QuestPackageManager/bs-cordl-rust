@@ -1470,7 +1470,7 @@ for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
 }
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Dictionary_2_Entry<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1509,7 +1509,7 @@ impl<
 > crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {}
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Dictionary_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2690,7 +2690,7 @@ for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TVal
 }
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct KeyCollection_Dictionary_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2918,7 +2918,7 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
 }
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueCollection_Dictionary_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

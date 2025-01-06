@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_MaterialReference")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_MaterialReference {
     pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub referenceCount: i32,

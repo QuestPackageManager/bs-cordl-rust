@@ -173,7 +173,7 @@ for crate::GlobalNamespace::TrailElementCollection {
 }
 #[cfg(feature = "TrailElementCollection+InterpolationState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TrailElementCollection_InterpolationState {
     pub segmentIndex: i32,
     pub segmentLerp: f32,

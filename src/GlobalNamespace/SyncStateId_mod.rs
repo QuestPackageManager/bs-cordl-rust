@@ -1,6 +1,6 @@
 #[cfg(feature = "SyncStateId")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SyncStateId {
     pub _id: u8,
 }

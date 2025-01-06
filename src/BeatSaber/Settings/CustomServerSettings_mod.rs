@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+CustomServerSettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CustomServerSettings {
     pub useCustomEnvironment: bool,
     pub forceGameLiftEnvironment: bool,

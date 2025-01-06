@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Collections+Generic+KeyValuePair_2")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct KeyValuePair_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

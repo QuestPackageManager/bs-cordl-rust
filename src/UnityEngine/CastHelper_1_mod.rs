@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+CastHelper_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CastHelper_1<T: quest_hook::libil2cpp::Type> {
     pub t: T,
     pub onePointerFurtherThanT: crate::System::IntPtr,

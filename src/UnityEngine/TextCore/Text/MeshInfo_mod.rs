@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+MeshInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MeshInfo {
     pub vertexCount: i32,
     pub vertices: quest_hook::libil2cpp::Gc<

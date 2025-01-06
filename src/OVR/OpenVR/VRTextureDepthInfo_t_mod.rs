@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VRTextureDepthInfo_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VRTextureDepthInfo_t {
     pub handle: crate::System::IntPtr,
     pub mProjection: crate::OVR::OpenVR::HmdMatrix44_t,

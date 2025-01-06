@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+PenData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PenData {
     pub position: crate::UnityEngine::Vector2,
     pub tilt: crate::UnityEngine::Vector2,

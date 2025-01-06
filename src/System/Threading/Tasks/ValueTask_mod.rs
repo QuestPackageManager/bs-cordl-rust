@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Threading+Tasks+ValueTask")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueTask {
     pub _obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _token: i16,

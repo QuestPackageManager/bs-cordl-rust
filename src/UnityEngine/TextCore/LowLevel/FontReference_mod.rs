@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontReference")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FontReference {
     pub familyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub styleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

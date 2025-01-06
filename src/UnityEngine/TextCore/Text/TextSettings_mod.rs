@@ -555,7 +555,7 @@ for crate::UnityEngine::TextCore::Text::TextSettings {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextSettings_FontReferenceMap {
     pub font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     pub fontAsset: quest_hook::libil2cpp::Gc<

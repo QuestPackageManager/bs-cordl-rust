@@ -1,6 +1,6 @@
 #[cfg(feature = "NoteSpawnData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NoteSpawnData {
     pub moveStartOffset: crate::UnityEngine::Vector3,
     pub moveEndOffset: crate::UnityEngine::Vector3,

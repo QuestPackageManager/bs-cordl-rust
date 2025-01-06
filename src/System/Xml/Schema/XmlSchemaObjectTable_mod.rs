@@ -633,7 +633,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlSchemaObjectTable_XmlSchemaObjectEntry {
     pub qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub xso: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,

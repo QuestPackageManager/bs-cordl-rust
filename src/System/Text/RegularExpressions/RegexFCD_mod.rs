@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Text+RegularExpressions+RegexFCD")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RegexFCD {
     pub _fcStack: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<

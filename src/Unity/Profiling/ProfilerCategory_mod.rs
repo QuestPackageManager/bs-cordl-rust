@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Profiling+ProfilerCategory")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ProfilerCategory {
     padding: quest_hook::libil2cpp::ValueTypePadding<2usize>,
 }

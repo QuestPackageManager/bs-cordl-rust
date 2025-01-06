@@ -270,7 +270,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
 }
 #[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRMeshRenderer_MeshRendererData {
     pub _IsDataValid_k__BackingField: bool,
     pub _IsDataHighConfidence_k__BackingField: bool,

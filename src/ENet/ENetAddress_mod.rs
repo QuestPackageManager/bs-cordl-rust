@@ -1,6 +1,6 @@
 #[cfg(feature = "ENet+ENetAddress")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ENetAddress {
     padding: quest_hook::libil2cpp::ValueTypePadding<18usize>,
 }

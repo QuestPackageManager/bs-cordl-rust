@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRVEShaderInfoAllocator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIRVEShaderInfoAllocator {
     pub m_Storage: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,

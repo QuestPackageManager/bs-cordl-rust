@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+QualitySettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct QualitySettings {
     pub renderViewportScale: f32,
     pub vrResolutionScale: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_GlyphValueRecord")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_GlyphValueRecord {
     pub m_XPlacement: f32,
     pub m_YPlacement: f32,

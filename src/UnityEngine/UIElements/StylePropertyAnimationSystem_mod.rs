@@ -781,7 +781,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StylePropertyAnimationSystem_AnimationDataSet_2<
     TTimingData: quest_hook::libil2cpp::Type,
     TStyleData: quest_hook::libil2cpp::Type,
@@ -1049,7 +1049,7 @@ impl<
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StylePropertyAnimationSystem_ElementPropertyPair {
     pub element: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
@@ -3793,7 +3793,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T> {
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Values_1_StylePropertyAnimationSystem_EmptyData<
     T: quest_hook::libil2cpp::Type,
 > {
@@ -3830,7 +3830,7 @@ impl<
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Values_1_StylePropertyAnimationSystem_StyleData<
     T: quest_hook::libil2cpp::Type,
 > {
@@ -3871,7 +3871,7 @@ impl<
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Values_1_StylePropertyAnimationSystem_TimingData<
     T: quest_hook::libil2cpp::Type,
 > {

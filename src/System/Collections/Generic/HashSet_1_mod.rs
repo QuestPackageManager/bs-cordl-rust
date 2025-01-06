@@ -948,7 +948,7 @@ for crate::System::Collections::Generic::HashSet_1<T> {
 }
 #[cfg(feature = "System+Collections+Generic+HashSet_1+ElementCount")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HashSet_1_ElementCount<T: quest_hook::libil2cpp::Type> {
     pub uniqueCount: i32,
     pub unfoundCount: i32,
@@ -977,7 +977,7 @@ impl<
 > crate::System::Collections::Generic::HashSet_1_ElementCount<T> {}
 #[cfg(feature = "System+Collections+Generic+HashSet_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HashSet_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _set: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::HashSet_1<T>,
@@ -1142,7 +1142,7 @@ for crate::System::Collections::Generic::HashSet_1_Enumerator<T> {
 }
 #[cfg(feature = "System+Collections+Generic+HashSet_1+Slot")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HashSet_1_Slot<T: quest_hook::libil2cpp::Type> {
     pub hashCode: i32,
     pub next: i32,

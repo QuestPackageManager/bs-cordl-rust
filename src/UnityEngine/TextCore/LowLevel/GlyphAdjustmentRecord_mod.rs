@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphAdjustmentRecord")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GlyphAdjustmentRecord {
     pub m_GlyphIndex: u32,
     pub m_GlyphValueRecord: crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord,

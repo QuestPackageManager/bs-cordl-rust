@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Coord")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Coord {
     pub X: i16,
     pub Y: i16,

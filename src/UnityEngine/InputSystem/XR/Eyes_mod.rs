@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+Eyes")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Eyes {
     pub m_LeftEyePosition: crate::UnityEngine::Vector3,
     pub m_LeftEyeRotation: crate::UnityEngine::Quaternion,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+AudioConfiguration")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AudioConfiguration {
     pub speakerMode: crate::UnityEngine::AudioSpeakerMode,
     pub dspBufferSize: i32,

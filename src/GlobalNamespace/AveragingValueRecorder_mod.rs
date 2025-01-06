@@ -124,7 +124,7 @@ for crate::GlobalNamespace::AveragingValueRecorder {
 }
 #[cfg(feature = "AveragingValueRecorder+AverageValueData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AveragingValueRecorder_AverageValueData {
     pub _value_k__BackingField: f32,
     pub _time_k__BackingField: f32,

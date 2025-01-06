@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Variant")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Variant {
     padding: quest_hook::libil2cpp::ValueTypePadding<24usize>,
 }

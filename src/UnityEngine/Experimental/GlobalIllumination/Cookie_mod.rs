@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Cookie")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Cookie {
     pub instanceID: i32,
     pub scale: f32,

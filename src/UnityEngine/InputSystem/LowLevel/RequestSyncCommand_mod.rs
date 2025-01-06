@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+RequestSyncCommand")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RequestSyncCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }

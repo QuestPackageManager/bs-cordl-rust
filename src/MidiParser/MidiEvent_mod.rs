@@ -1,6 +1,6 @@
 #[cfg(feature = "MidiParser+MidiEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MidiEvent {
     pub AbsoluteTicksTime: i32,
     pub Type: u8,

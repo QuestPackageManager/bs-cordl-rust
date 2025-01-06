@@ -450,7 +450,7 @@ for crate::UnityEngine::UIElements::FocusController {
 }
 #[cfg(feature = "UnityEngine+UIElements+FocusController+FocusedElement")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FocusController_FocusedElement {
     pub m_SubTreeRoot: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,

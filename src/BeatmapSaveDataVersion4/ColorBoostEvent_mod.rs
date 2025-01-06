@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+ColorBoostEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorBoostEvent {
     pub b: i32,
 }

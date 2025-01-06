@@ -1,6 +1,6 @@
 #[cfg(feature = "LufsMetering+CalculateRmsJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CalculateRmsJob {
     pub inputData: crate::Unity::Collections::NativeArray_1<f32>,
     pub outputData: crate::Unity::Collections::NativeArray_1<f32>,

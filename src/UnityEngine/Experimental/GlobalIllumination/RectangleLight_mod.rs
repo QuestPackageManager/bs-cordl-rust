@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+RectangleLight")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RectangleLight {
     pub instanceID: i32,
     pub shadow: bool,

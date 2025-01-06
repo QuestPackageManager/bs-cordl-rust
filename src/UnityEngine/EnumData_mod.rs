@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+EnumData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct EnumData {
     pub values: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<

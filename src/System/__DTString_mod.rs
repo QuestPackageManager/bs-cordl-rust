@@ -1,6 +1,6 @@
 #[cfg(feature = "System+__DTString")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct __DTString {
     pub Value: crate::System::ReadOnlySpan_1<char>,
     pub Index: i32,

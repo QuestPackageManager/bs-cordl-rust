@@ -390,7 +390,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GraphyDebugger_DebugCondition {
     pub Variable: crate::Tayx::Graphy::GraphyDebugger_DebugVariable,
     pub Comparer: crate::Tayx::Graphy::GraphyDebugger_DebugComparer,

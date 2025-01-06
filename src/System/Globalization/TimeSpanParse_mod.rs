@@ -274,7 +274,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeSpanParse_StringParser {
     pub _str: crate::System::ReadOnlySpan_1<char>,
     pub _ch: char,
@@ -390,7 +390,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeSpanParse_TimeSpanRawInfo {
     pub _lastSeenTTT: crate::System::Globalization::TimeSpanParse_TTT,
     pub _tokenCount: i32,
@@ -638,7 +638,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanResult")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeSpanParse_TimeSpanResult {
     pub parsedTimeSpan: crate::System::TimeSpan,
     pub _throwOnFailure: bool,
@@ -707,7 +707,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeSpanParse_TimeSpanToken {
     pub _ttt: crate::System::Globalization::TimeSpanParse_TTT,
     pub _num: i32,
@@ -792,7 +792,7 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeSpanParse_TimeSpanTokenizer {
     pub _value: crate::System::ReadOnlySpan_1<char>,
     pub _pos: i32,

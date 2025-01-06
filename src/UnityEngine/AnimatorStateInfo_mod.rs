@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+AnimatorStateInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AnimatorStateInfo {
     pub m_Name: i32,
     pub m_Path: i32,

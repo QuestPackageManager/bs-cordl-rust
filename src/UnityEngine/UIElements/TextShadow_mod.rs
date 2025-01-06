@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+TextShadow")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextShadow {
     pub offset: crate::UnityEngine::Vector2,
     pub blurRadius: f32,

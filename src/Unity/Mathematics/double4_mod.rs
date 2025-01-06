@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+double4")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct double4 {
     pub x: f64,
     pub y: f64,

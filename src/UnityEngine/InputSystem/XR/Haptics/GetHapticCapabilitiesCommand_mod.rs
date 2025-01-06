@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetHapticCapabilitiesCommand")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GetHapticCapabilitiesCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<20usize>,
 }

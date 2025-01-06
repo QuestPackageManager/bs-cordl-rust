@@ -1,6 +1,6 @@
 #[cfg(feature = "BladeMovementDataElement")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BladeMovementDataElement {
     pub _cordl_time: f32,
     pub segmentAngle: f32,

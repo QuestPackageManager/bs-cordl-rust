@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+RectInt")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RectInt {
     pub m_XMin: i32,
     pub m_YMin: i32,

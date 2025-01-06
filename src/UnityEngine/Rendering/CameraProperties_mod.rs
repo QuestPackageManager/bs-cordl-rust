@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CameraProperties {
     pub screenRect: crate::UnityEngine::Rect,
     pub viewDir: crate::UnityEngine::Vector3,
@@ -142,7 +142,7 @@ for crate::UnityEngine::Rendering::CameraProperties {
     feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CameraProperties__layerCullDistances_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -175,7 +175,7 @@ impl crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixe
     feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
     pub FixedElementField: u8,
 }
@@ -208,7 +208,7 @@ impl crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixe
     feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
     pub FixedElementField: u8,
 }

@@ -183,7 +183,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
     pub _textCommitField: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::InputField>,
     pub _position: crate::UnityEngine::Vector3,

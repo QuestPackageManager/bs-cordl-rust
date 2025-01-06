@@ -578,7 +578,7 @@ for crate::GlobalNamespace::OVRSceneManager_Development {
 }
 #[cfg(feature = "OVRSceneManager+LogForwarder")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSceneManager_LogForwarder {}
 #[cfg(feature = "OVRSceneManager+LogForwarder")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

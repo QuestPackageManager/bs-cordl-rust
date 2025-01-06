@@ -748,7 +748,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
 }
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Regex_CachedCodeEntryKey {
     pub _options: crate::System::Text::RegularExpressions::RegexOptions,
     pub _cultureKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

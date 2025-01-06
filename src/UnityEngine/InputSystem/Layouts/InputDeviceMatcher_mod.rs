@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputDeviceMatcher {
     pub m_Patterns: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -287,7 +287,7 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputDeviceMatcher_MatcherJson {
     pub interface: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub interfaces: quest_hook::libil2cpp::Gc<
@@ -374,7 +374,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MatcherJson_InputDeviceMatcher_Capability {
     pub path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

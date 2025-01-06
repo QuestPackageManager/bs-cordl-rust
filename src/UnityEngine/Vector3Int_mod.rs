@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Vector3Int")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Vector3Int {
     pub m_X: i32,
     pub m_Y: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+IO+LowLevel+Unsafe+AsyncReadManagerRequestMetric")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AsyncReadManagerRequestMetric {
     pub _AssetName_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,

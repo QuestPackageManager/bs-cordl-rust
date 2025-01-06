@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rect")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Rect {
     pub m_XMin: f32,
     pub m_YMin: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+AssemblyFullName")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AssemblyFullName {
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Version: crate::UnityEngine::AssemblyVersion,

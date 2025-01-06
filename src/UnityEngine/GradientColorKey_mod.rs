@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+GradientColorKey")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GradientColorKey {
     pub color: crate::UnityEngine::Color,
     pub _cordl_time: f32,

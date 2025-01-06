@@ -377,7 +377,7 @@ for crate::UnityEngine::UIElements::DefaultEventSystem {
     feature = "UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DefaultEventSystem_FocusBasedEventSequenceContext {
     pub es: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::DefaultEventSystem,

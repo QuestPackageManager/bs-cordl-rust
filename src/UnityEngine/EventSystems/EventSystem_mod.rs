@@ -453,7 +453,7 @@ for crate::UnityEngine::EventSystems::EventSystem {
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventSystem_UIToolkitOverrideConfig {
     pub activeEventSystem: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::EventSystem,

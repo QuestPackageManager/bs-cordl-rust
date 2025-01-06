@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Touch")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Touch {
     pub m_FingerId: i32,
     pub m_Position: crate::UnityEngine::Vector2,

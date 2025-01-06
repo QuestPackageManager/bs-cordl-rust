@@ -1,6 +1,6 @@
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParserResult")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CommandLineParserResult {
     pub applicationPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _parsed: quest_hook::libil2cpp::Gc<

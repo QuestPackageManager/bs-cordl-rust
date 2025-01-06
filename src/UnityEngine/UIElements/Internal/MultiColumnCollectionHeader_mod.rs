@@ -833,7 +833,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Column
     feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MultiColumnCollectionHeader_SortedColumnState {
     pub columnDesc: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::SortColumnDescription,
@@ -984,7 +984,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewSt
     feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ViewState_MultiColumnCollectionHeader_ColumnState {
     pub index: i32,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

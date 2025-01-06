@@ -1,6 +1,6 @@
 #[cfg(feature = "ENet+SslConfiguration")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SslConfiguration {
     pub nativeSslConfiguration: crate::ENet::ENetSslConfiguration,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+ParsingInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParsingInfo {
     pub calendar: quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
     pub dayOfWeek: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Text+ValueUtf8Converter")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueUtf8Converter {
     pub _arrayToReturnToPool: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<u8>,

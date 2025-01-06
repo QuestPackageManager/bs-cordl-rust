@@ -1,6 +1,6 @@
 #[cfg(feature = "System+DateTimeResult")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DateTimeResult {
     pub Year: i32,
     pub Month: i32,

@@ -96,7 +96,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MeshGenerationContextUtils_BorderParams {
     pub rect: crate::UnityEngine::Rect,
     pub playmodeTintColor: crate::UnityEngine::Color,
@@ -152,7 +152,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MeshGenerationContextUtils_RectangleParams {
     pub rect: crate::UnityEngine::Rect,
     pub uv: crate::UnityEngine::Rect,

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRRenderModels {
     pub LoadRenderModel_Async: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRRenderModels__LoadRenderModel_Async,

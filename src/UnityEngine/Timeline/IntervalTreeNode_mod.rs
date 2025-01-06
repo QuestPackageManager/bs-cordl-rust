@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Timeline+IntervalTreeNode")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IntervalTreeNode {
     pub center: i64,
     pub first: i32,

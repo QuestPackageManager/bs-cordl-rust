@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+CustomStyleProperty_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CustomStyleProperty_1<T: quest_hook::libil2cpp::Type> {
     pub _name_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,

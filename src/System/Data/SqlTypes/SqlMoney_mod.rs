@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlMoney")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SqlMoney {
     pub _fNotNull: bool,
     pub _value: i64,

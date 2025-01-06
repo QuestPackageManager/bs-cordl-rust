@@ -1,6 +1,6 @@
 #[cfg(feature = "System+UInt64")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UInt64 {
     pub m_value: u64,
 }

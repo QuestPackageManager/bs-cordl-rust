@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_LinkInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_LinkInfo {
     pub textComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     pub hashCode: i32,

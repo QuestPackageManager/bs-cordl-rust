@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSelectorPart")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleSelectorPart {
     pub m_Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Type: crate::UnityEngine::UIElements::StyleSelectorType,

@@ -967,7 +967,7 @@ for crate::UnityEngine::InputSystem::InputActionMap {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionMap_BindingJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1022,7 +1022,7 @@ impl crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionMap_BindingOverrideJson {
     pub action: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1078,7 +1078,7 @@ impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionMap_BindingOverrideListJson {
     pub bindings: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
@@ -1107,7 +1107,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {
 impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionMap_DeviceArray {
     pub m_HaveValue: bool,
     pub m_DeviceCount: i32,
@@ -1207,7 +1207,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadActionJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionMap_ReadActionJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1261,7 +1261,7 @@ impl crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadFileJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionMap_ReadFileJson {
     pub actions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -1316,7 +1316,7 @@ impl crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadMapJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionMap_ReadMapJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1352,7 +1352,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson {
 impl crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson {}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteActionJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionMap_WriteActionJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1395,7 +1395,7 @@ impl crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteFileJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionMap_WriteFileJson {
     pub maps: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -1449,7 +1449,7 @@ impl crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteMapJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionMap_WriteMapJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

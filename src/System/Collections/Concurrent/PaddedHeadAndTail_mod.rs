@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Collections+Concurrent+PaddedHeadAndTail")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PaddedHeadAndTail {
     padding: quest_hook::libil2cpp::ValueTypePadding<260usize>,
 }

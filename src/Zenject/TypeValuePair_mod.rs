@@ -1,6 +1,6 @@
 #[cfg(feature = "Zenject+TypeValuePair")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TypeValuePair {
     pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

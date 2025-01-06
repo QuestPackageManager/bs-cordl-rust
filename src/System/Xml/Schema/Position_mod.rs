@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+Schema+Position")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Position {
     pub symbol: i32,
     pub particle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

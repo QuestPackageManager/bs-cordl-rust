@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+ScalableImage")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ScalableImage {
     pub normalImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub highResolutionImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,

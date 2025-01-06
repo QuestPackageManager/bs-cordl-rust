@@ -405,7 +405,7 @@ for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BaseStyleMatcher_MatchContext {
     pub valueIndex: i32,
     pub matchedVariableCount: i32,

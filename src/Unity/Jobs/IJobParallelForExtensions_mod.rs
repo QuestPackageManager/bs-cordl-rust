@@ -64,7 +64,7 @@ for crate::Unity::Jobs::IJobParallelForExtensions {
 }
 #[cfg(feature = "Unity+Jobs+IJobParallelForExtensions+ParallelForJobStruct_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IJobParallelForExtensions_ParallelForJobStruct_1<
     T: quest_hook::libil2cpp::Type,
 > {

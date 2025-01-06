@@ -763,7 +763,7 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1<T> {
     feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ContentHeightCacheInfo"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
     T: quest_hook::libil2cpp::Type,
 > {

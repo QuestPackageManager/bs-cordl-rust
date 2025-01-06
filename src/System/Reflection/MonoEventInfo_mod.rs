@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Reflection+MonoEventInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MonoEventInfo {
     pub declaring_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub reflected_type: quest_hook::libil2cpp::Gc<crate::System::Type>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRInput")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRInput {
     pub SetActionManifestPath: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRInput__SetActionManifestPath,

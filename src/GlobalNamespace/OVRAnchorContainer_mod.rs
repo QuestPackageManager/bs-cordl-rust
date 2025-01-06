@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRAnchorContainer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRAnchorContainer {
     pub _Handle_k__BackingField: u64,
 }

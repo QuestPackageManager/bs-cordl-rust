@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Vector2MagnitudeComparer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Vector2MagnitudeComparer {}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Vector2MagnitudeComparer")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

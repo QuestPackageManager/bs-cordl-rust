@@ -113,7 +113,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter {
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+BakeMeshJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSceneVolumeMeshFilter_BakeMeshJob {
     pub MeshID: i32,
     pub Convex: bool,
@@ -164,7 +164,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
     pub Space: crate::GlobalNamespace::OVRSpace,
     pub Results: crate::Unity::Collections::NativeArray_1<i32>,
@@ -215,7 +215,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
     pub Space: crate::GlobalNamespace::OVRSpace,
     pub Vertices: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
@@ -267,7 +267,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
     pub Vertices: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
     pub Triangles: crate::Unity::Collections::NativeArray_1<i32>,

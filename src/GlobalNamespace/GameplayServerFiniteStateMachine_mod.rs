@@ -273,7 +273,7 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine {
 }
 #[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GameplayServerFiniteStateMachine_InitParams {
     pub taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     pub multiplayerSessionManager: quest_hook::libil2cpp::Gc<

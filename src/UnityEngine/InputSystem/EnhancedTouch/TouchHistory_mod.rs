@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TouchHistory {
     pub m_History: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<

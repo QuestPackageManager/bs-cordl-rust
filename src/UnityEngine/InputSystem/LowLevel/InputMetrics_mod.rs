@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputMetrics {
     pub _maxNumDevices_k__BackingField: i32,
     pub _currentNumDevices_k__BackingField: i32,

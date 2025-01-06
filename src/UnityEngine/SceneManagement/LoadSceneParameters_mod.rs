@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+SceneManagement+LoadSceneParameters")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LoadSceneParameters {
     pub m_LoadSceneMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
     pub m_LocalPhysicsMode: crate::UnityEngine::SceneManagement::LocalPhysicsMode,

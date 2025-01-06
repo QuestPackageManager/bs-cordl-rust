@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+sockaddr_ll")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct sockaddr_ll {
     pub sll_family: u16,
     pub sll_protocol: u16,

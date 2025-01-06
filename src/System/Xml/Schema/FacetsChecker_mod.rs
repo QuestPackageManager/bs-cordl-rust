@@ -341,7 +341,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::FacetsChe
 }
 #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FacetsChecker_FacetsCompiler {
     pub datatype: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::DatatypeImplementation,
@@ -664,7 +664,7 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
 }
 #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FacetsCompiler_FacetsChecker_Map {
     pub _cordl_match: char,
     pub replacement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "LoadBeatmapLevelDataResult")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LoadBeatmapLevelDataResult {
     pub isError: bool,
     pub beatmapLevelData: quest_hook::libil2cpp::Gc<

@@ -134,7 +134,7 @@ for crate::GlobalNamespace::RotationTimeProcessor {
 }
 #[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RotationTimeProcessor_RotationChangeData {
     pub beat: f32,
     pub rotation: i32,

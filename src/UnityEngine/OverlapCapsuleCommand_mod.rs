@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+OverlapCapsuleCommand")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OverlapCapsuleCommand {
     pub _point0_k__BackingField: crate::UnityEngine::Vector3,
     pub _point1_k__BackingField: crate::UnityEngine::Vector3,

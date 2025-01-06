@@ -1,6 +1,6 @@
 #[cfg(feature = "AuthenticationToken")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AuthenticationToken {
     pub platform: crate::GlobalNamespace::AuthenticationToken_Platform,
     pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

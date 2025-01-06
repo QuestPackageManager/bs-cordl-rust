@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+PerformanceToolSettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceToolSettings {
     pub recordFps: bool,
     pub showFps: bool,

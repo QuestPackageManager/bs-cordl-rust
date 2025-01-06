@@ -320,7 +320,7 @@ for crate::GlobalNamespace::DebugConsoleController {
 }
 #[cfg(feature = "DebugConsoleController+ConsoleMessage")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DebugConsoleController_ConsoleMessage {
     pub Message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Type: crate::UnityEngine::LogType,

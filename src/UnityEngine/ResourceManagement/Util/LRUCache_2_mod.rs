@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LRUCache_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -104,7 +104,7 @@ impl<
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LRUCache_2_Entry<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

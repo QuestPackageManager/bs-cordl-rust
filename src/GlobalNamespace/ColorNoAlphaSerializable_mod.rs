@@ -1,6 +1,6 @@
 #[cfg(feature = "ColorNoAlphaSerializable")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorNoAlphaSerializable {
     pub _color: crate::UnityEngine::Color,
 }

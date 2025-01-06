@@ -1,6 +1,6 @@
 #[cfg(feature = "XPlatformAccessTokenData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XPlatformAccessTokenData {
     pub token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub platformEnvironment: crate::GlobalNamespace::PlatformEnvironment,

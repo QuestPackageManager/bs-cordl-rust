@@ -627,7 +627,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardSetActiveEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
     pub IsEnabled: bool,
 }
@@ -684,7 +684,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardVisibilityChangedEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent {
     pub ActiveKeyboardName: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,

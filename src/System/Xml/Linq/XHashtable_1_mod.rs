@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+XHashtableState+Entry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XHashtableState_XHashtable_1_Entry<TValue: quest_hook::libil2cpp::Type> {
     pub Value: TValue,
     pub HashCode: i32,

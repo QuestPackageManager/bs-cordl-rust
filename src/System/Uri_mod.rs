@@ -1690,7 +1690,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Uri_MoreInfo {
 }
 #[cfg(feature = "System+Uri+Offset")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Uri_Offset {
     pub Scheme: u16,
     pub User: u16,

@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKMatrix4x4")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKMatrix4x4 {
     pub m00: f32,
     pub m01: f32,

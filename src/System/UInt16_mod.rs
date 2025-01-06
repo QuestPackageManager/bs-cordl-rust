@@ -1,6 +1,6 @@
 #[cfg(feature = "System+UInt16")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UInt16 {
     pub m_value: u16,
 }

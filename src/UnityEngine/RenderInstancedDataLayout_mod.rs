@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+RenderInstancedDataLayout")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderInstancedDataLayout {
     pub _size_k__BackingField: i32,
     pub _offsetObjectToWorld_k__BackingField: i32,

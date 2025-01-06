@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapKey")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapKey {
     pub beatmapCharacteristic: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCharacteristicSO,

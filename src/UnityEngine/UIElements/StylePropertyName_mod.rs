@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StylePropertyName {
     pub _id_k__BackingField: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     pub _name_k__BackingField: quest_hook::libil2cpp::Gc<

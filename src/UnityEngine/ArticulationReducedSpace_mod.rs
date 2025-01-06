@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ArticulationReducedSpace")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ArticulationReducedSpace {
     pub x: crate::UnityEngine::ArticulationReducedSpace__x_e__FixedBuffer,
     pub dofCount: i32,
@@ -84,7 +84,7 @@ impl crate::UnityEngine::ArticulationReducedSpace {
 }
 #[cfg(feature = "UnityEngine+ArticulationReducedSpace+_x_e__FixedBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ArticulationReducedSpace__x_e__FixedBuffer {
     pub FixedElementField: f32,
 }

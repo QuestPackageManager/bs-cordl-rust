@@ -316,7 +316,7 @@ for crate::System::Xml::XmlNamedNodeMap {
 }
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlNamedNodeMap_SmallXmlNodeList {
     pub field: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }

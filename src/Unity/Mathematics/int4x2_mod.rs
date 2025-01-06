@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+int4x2")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct int4x2 {
     pub c0: crate::Unity::Mathematics::int4,
     pub c1: crate::Unity::Mathematics::int4,

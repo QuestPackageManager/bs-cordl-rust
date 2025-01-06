@@ -145,7 +145,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BezierSpline 
 }
 #[cfg(feature = "BezierSpline+ComputeControlPointsResults")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BezierSpline_ComputeControlPointsResults {
     pub p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub p2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,

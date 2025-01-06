@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Timeline+MarkerList")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MarkerList {
     pub m_Objects: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<

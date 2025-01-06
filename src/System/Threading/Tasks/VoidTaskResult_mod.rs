@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Threading+Tasks+VoidTaskResult")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VoidTaskResult {}
 #[cfg(feature = "System+Threading+Tasks+VoidTaskResult")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

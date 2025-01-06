@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRLocatable")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRLocatable {
     pub _Handle_k__BackingField: u64,
 }
@@ -243,7 +243,7 @@ for crate::GlobalNamespace::OVRLocatable {
 }
 #[cfg(feature = "OVRLocatable+TrackingSpacePose")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRLocatable_TrackingSpacePose {
     pub _Position_k__BackingField: crate::System::Nullable_1<
         crate::UnityEngine::Vector3,

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+Linq+NamespaceCache")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NamespaceCache {
     pub _ns: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
     pub _namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

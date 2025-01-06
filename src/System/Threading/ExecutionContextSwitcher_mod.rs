@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Threading+ExecutionContextSwitcher")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ExecutionContextSwitcher {
     pub outerEC: crate::System::Threading::ExecutionContext_Reader,
     pub outerECBelongsToScope: bool,

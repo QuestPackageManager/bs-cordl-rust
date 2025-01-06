@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlGuid")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SqlGuid {
     pub m_value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }

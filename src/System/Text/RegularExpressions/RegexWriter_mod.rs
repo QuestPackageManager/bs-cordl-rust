@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Text+RegularExpressions+RegexWriter")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RegexWriter {
     pub _emitted: crate::System::Collections::Generic::ValueListBuilder_1<i32>,
     pub _intStack: crate::System::Collections::Generic::ValueListBuilder_1<i32>,

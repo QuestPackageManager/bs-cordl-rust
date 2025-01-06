@@ -1817,7 +1817,7 @@ for crate::UnityEngine::InputSystem::InputManager {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputManager_AvailableDevice {
     pub description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
     pub deviceId: i32,
@@ -1860,7 +1860,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputManager_StateChangeMonitorListener {
     pub control: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputControl,
@@ -1892,7 +1892,7 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
 impl crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {}
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputManager_StateChangeMonitorTimeout {
     pub control: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputControl,
@@ -1925,7 +1925,7 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
 impl crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {}
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputManager_StateChangeMonitorsForDevice {
     pub memoryRegions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<

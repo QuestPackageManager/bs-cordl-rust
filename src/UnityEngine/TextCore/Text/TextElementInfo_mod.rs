@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+TextElementInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextElementInfo {
     pub character: char,
     pub index: i32,

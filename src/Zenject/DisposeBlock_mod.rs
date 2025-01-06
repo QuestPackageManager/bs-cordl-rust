@@ -481,7 +481,7 @@ impl AsMut<crate::System::IDisposable> for crate::Zenject::DisposeBlock {
 }
 #[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DisposeBlock_SpawnedObjectPoolPair {
     pub Pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
     pub Object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

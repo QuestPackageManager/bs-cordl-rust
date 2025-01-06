@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+Serialization+SerializationEntry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SerializationEntry {
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

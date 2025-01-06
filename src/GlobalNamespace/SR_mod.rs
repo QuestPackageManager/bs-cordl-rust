@@ -23,16 +23,37 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SR {
 }
 #[cfg(feature = "SR")]
 impl crate::GlobalNamespace::SR {
-    pub fn Format(
-        resourceFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub fn GetString_CultureInfo_Il2CppString_Il2CppArray1(
+        culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Format", (resourceFormat, p1))?;
+            .invoke("GetString", (culture, name, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetString_Il2CppString_Il2CppArray0(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetString", (name, args))?;
         Ok(__cordl_ret.into())
     }
 }

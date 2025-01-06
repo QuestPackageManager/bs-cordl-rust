@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Nullable_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Nullable_1<T: quest_hook::libil2cpp::Type> {
     pub hasValue: bool,
     pub value: T,

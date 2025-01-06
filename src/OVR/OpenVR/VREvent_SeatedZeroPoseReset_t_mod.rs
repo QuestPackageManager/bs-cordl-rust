@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_SeatedZeroPoseReset_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_SeatedZeroPoseReset_t {
     pub bResetBySystemMenu: bool,
 }

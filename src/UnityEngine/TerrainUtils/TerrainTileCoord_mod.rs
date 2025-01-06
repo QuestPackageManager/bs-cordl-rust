@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TerrainUtils+TerrainTileCoord")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TerrainTileCoord {
     pub tileX: i32,
     pub tileZ: i32,

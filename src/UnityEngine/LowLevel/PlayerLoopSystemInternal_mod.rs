@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystemInternal")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlayerLoopSystemInternal {
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub updateDelegate: quest_hook::libil2cpp::Gc<

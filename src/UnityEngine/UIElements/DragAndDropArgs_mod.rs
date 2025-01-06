@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DragAndDropArgs {
     pub _target_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,

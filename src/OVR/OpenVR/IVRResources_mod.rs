@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRResources")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRResources {
     pub LoadSharedResource: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRResources__LoadSharedResource,

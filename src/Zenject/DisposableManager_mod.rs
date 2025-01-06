@@ -248,7 +248,7 @@ impl AsMut<crate::System::IDisposable> for crate::Zenject::DisposableManager {
 }
 #[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DisposableManager_DisposableInfo {
     pub Disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     pub Priority: i32,

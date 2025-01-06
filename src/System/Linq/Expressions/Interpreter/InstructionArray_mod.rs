@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InstructionArray {
     pub MaxStackDepth: i32,
     pub MaxContinuationDepth: i32,

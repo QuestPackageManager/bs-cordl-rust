@@ -152,7 +152,7 @@ for crate::UnityEngine::UIElements::UIR::MeshBuilder {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+MeshBuilder+AllocMeshData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MeshBuilder_AllocMeshData {
     pub alloc: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator,

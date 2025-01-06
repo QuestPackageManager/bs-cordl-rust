@@ -85,7 +85,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputUpdate_SerializedState {
     pub lastUpdateType: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     pub playerUpdateStepCount: crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount,
@@ -111,7 +111,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
 impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {}
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputUpdate_UpdateStepCount {
     pub m_WasUpdated: bool,
     pub _value_k__BackingField: u32,

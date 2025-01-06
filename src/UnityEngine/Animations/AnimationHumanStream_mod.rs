@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Animations+AnimationHumanStream")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AnimationHumanStream {
     pub stream: crate::System::IntPtr,
 }

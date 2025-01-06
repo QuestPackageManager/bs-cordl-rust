@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+CoreCameraValues")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CoreCameraValues {
     pub filterMode: i32,
     pub cullingMask: u32,

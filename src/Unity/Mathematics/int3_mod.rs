@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+int3")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct int3 {
     pub x: i32,
     pub y: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+TreeData_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TreeData_1<T: quest_hook::libil2cpp::Type> {
     pub m_RootItemIds: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::IList_1<i32>,

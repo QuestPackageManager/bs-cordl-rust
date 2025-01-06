@@ -1,6 +1,6 @@
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeRef")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XPathNodeRef {
     pub _page: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::MS::Internal::Xml::Cache::XPathNode>,

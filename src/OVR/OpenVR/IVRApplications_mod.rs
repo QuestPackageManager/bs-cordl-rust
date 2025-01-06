@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRApplications")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRApplications {
     pub AddApplicationManifest: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRApplications__AddApplicationManifest,

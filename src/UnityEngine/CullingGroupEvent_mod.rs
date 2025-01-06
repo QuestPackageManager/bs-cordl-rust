@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+CullingGroupEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CullingGroupEvent {
     pub m_Index: i32,
     pub m_PrevState: u8,

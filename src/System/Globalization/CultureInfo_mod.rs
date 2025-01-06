@@ -910,7 +910,7 @@ for crate::System::Globalization::CultureInfo {
 }
 #[cfg(feature = "System+Globalization+CultureInfo+Data")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CultureInfo_Data {
     pub ansi: i32,
     pub ebcdic: i32,

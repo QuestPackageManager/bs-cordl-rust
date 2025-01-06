@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+RichTextTagAttribute")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RichTextTagAttribute {
     pub nameHashCode: i32,
     pub valueHashCode: i32,

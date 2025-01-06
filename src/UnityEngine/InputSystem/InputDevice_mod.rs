@@ -756,7 +756,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Inpu
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputDevice_ControlBitRangeNode {
     pub endBitOffset: u16,
     pub leftChildIndex: i16,

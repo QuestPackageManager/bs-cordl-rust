@@ -129,7 +129,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTracker {
 }
 #[cfg(feature = "OVRTracker+Frustum")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTracker_Frustum {
     pub nearZ: f32,
     pub farZ: f32,

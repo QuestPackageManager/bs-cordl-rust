@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+SafeHandleAccess")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SafeHandleAccess {
     pub m_Handle: crate::System::IntPtr,
 }

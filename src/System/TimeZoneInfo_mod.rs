@@ -1955,7 +1955,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+TimeZoneInfo+TZifHead")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeZoneInfo_TZifHead {
     pub Magic: u32,
     pub Version: crate::System::TimeZoneInfo_TZVersion,
@@ -1999,7 +1999,7 @@ impl crate::System::TimeZoneInfo_TZifHead {
 }
 #[cfg(feature = "System+TimeZoneInfo+TZifType")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeZoneInfo_TZifType {
     pub UtcOffset: crate::System::TimeSpan,
     pub IsDst: bool,
@@ -2038,7 +2038,7 @@ impl crate::System::TimeZoneInfo_TZifType {
 }
 #[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TimeZoneInfo_TransitionTime {
     pub _timeOfDay: crate::System::DateTime,
     pub _month: u8,

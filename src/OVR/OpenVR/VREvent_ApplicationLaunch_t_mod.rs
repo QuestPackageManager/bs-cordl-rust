@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_ApplicationLaunch_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_ApplicationLaunch_t {
     pub pid: u32,
     pub unArgsHandle: u32,

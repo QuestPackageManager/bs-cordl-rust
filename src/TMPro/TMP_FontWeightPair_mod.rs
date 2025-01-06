@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_FontWeightPair")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_FontWeightPair {
     pub regularTypeface: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     pub italicTypeface: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+SimpleTuple_2")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SimpleTuple_2<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

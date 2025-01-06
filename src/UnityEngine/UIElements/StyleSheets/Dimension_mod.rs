@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Dimension {
     pub unit: crate::UnityEngine::UIElements::StyleSheets::Dimension_Unit,
     pub value: f32,

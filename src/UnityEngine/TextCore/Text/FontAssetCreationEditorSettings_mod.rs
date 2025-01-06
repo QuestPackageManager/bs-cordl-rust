@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+FontAssetCreationEditorSettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FontAssetCreationEditorSettings {
     pub sourceFontFileGUID: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,

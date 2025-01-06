@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+SendBufferedHapticCommand")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SendBufferedHapticCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<1040usize>,
 }
@@ -80,7 +80,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::SendBufferedHapticCommand {
     feature = "UnityEngine+InputSystem+XR+Haptics+SendBufferedHapticCommand+_buffer_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SendBufferedHapticCommand__buffer_e__FixedBuffer {
     pub FixedElementField: u8,
 }

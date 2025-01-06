@@ -239,7 +239,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRDisplay {
 }
 #[cfg(feature = "OVRDisplay+EyeFov")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDisplay_EyeFov {
     pub UpFov: f32,
     pub DownFov: f32,
@@ -266,7 +266,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeFov {
 impl crate::GlobalNamespace::OVRDisplay_EyeFov {}
 #[cfg(feature = "OVRDisplay+EyeRenderDesc")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDisplay_EyeRenderDesc {
     pub resolution: crate::UnityEngine::Vector2,
     pub fov: crate::UnityEngine::Vector2,
@@ -292,7 +292,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
 impl crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {}
 #[cfg(feature = "OVRDisplay+LatencyData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDisplay_LatencyData {
     pub render: f32,
     pub timeWarp: f32,

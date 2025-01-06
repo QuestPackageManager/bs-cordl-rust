@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeParticleData {
     pub count: i32,
     pub positions: crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3,
@@ -45,7 +45,7 @@ impl crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
 }
 #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeParticleData_Array3 {
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -72,7 +72,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
 impl crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {}
 #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeParticleData_Array4 {
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

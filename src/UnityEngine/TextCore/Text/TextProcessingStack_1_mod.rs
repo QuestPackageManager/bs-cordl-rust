@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+TextProcessingStack_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextProcessingStack_1<T: quest_hook::libil2cpp::Type> {
     pub itemStack: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub index: i32,

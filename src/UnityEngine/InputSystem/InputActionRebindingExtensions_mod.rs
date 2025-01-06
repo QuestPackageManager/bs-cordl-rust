@@ -747,7 +747,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBinding
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionRebindingExtensions_Parameter {
     pub instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
@@ -776,7 +776,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
     feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionRebindingExtensions_ParameterEnumerable {
     pub m_State: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputActionState,
@@ -927,7 +927,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionRebindingExtensions_ParameterEnumerator {
     pub m_State: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputActionState,
@@ -1155,7 +1155,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionRebindingExtensions_ParameterOverride {
     pub objectRegistrationName: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,

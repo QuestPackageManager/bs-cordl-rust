@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TouchscreenState {
     padding: quest_hook::libil2cpp::ValueTypePadding<616usize>,
 }
@@ -93,7 +93,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
     feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TouchscreenState__primaryTouchData_e__FixedBuffer {
     pub FixedElementField: u8,
 }
@@ -127,7 +127,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchDa
     feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TouchscreenState__touchData_e__FixedBuffer {
     pub FixedElementField: u8,
 }

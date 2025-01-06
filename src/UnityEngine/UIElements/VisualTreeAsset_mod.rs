@@ -685,7 +685,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualTreeAsset_AssetEntry {
     pub path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub typeFullName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -737,7 +737,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualTreeAsset_SlotDefinition {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub insertionPointId: i32,
@@ -763,7 +763,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
 impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {}
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualTreeAsset_SlotUsageEntry {
     pub slotName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub assetId: i32,
@@ -789,7 +789,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
 impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {}
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualTreeAsset_UsingEntry {
     pub alias: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -927,7 +927,7 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VisualTreeAsset_UxmlObjectEntry {
     pub parentId: i32,
     pub uxmlObjectAssets: quest_hook::libil2cpp::Gc<

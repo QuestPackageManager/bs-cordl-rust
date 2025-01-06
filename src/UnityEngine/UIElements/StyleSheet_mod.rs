@@ -652,7 +652,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Style
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleSheet_ImportStruct {
     pub styleSheet: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::StyleSheet,

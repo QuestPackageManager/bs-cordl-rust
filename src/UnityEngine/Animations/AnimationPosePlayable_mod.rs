@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Animations+AnimationPosePlayable")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AnimationPosePlayable {
     pub m_Handle: crate::UnityEngine::Playables::PlayableHandle,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+half4")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct half4 {
     pub x: crate::Unity::Mathematics::half,
     pub y: crate::Unity::Mathematics::half,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UILineInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UILineInfo {
     pub startCharIdx: i32,
     pub height: i32,

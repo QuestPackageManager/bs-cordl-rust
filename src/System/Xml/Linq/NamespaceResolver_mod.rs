@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NamespaceResolver {
     pub _scope: i32,
     pub _declaration: quest_hook::libil2cpp::Gc<

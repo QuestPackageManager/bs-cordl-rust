@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+AnimatorTransitionInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AnimatorTransitionInfo {
     pub m_FullPath: i32,
     pub m_UserName: i32,

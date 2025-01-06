@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+NudgeJobData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NudgeJobData {
     pub src: crate::System::IntPtr,
     pub dst: crate::System::IntPtr,

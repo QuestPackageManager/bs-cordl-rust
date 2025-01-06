@@ -43,7 +43,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ScriptingUtility 
 }
 #[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ScriptingUtility_TestClass {
     pub value: i32,
 }

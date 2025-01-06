@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+DownloadStatus")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DownloadStatus {
     pub TotalBytes: i64,
     pub DownloadedBytes: i64,

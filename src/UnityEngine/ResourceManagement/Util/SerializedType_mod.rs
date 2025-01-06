@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SerializedType {
     pub m_AssemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_ClassName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

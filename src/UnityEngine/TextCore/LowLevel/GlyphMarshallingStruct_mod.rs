@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphMarshallingStruct")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GlyphMarshallingStruct {
     pub index: u32,
     pub metrics: crate::UnityEngine::TextCore::GlyphMetrics,

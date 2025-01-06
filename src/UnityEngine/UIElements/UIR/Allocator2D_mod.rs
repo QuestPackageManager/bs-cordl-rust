@@ -162,7 +162,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Allocator2D_Alloc2D {
     pub rect: crate::UnityEngine::RectInt,
     pub row: quest_hook::libil2cpp::Gc<

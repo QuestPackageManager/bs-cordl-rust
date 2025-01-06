@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_Mouse_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_Mouse_t {
     pub x: f32,
     pub y: f32,

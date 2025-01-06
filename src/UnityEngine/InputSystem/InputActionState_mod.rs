@@ -1575,7 +1575,7 @@ for crate::UnityEngine::InputSystem::InputActionState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_ActionMapIndices {
     pub actionStartIndex: i32,
     pub actionCount: i32,
@@ -1611,7 +1611,7 @@ for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
 impl crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_BindingState {
     padding: quest_hook::libil2cpp::ValueTypePadding<32usize>,
 }
@@ -2018,7 +2018,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_GlobalState {
     pub globalList: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         crate::System::Runtime::InteropServices::GCHandle,
@@ -2060,7 +2060,7 @@ for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
 impl crate::UnityEngine::InputSystem::InputActionState_GlobalState {}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_InteractionState {
     padding: quest_hook::libil2cpp::ValueTypePadding<48usize>,
 }
@@ -2286,7 +2286,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_TriggerState {
     padding: quest_hook::libil2cpp::ValueTypePadding<48usize>,
 }
@@ -2738,7 +2738,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_UnmanagedMemory {
     pub basePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mapCount: i32,

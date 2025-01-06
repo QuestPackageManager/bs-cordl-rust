@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VRTextureWithDepth_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VRTextureWithDepth_t {
     pub depth: crate::OVR::OpenVR::VRTextureDepthInfo_t,
 }

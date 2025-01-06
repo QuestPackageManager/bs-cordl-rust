@@ -422,7 +422,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Array
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility+SearchRange")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ArrayUtility_SearchRange {
     pub begin: i32,
     pub end: i32,

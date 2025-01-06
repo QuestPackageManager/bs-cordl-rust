@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Timeline+DiscreteTime")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DiscreteTime {
     pub m_DiscreteTime: i64,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogExecuteDefaultAction")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventDebuggerLogExecuteDefaultAction {}
 #[cfg(feature = "UnityEngine+UIElements+EventDebuggerLogExecuteDefaultAction")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

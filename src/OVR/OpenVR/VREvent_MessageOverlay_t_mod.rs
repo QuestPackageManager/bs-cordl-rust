@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_MessageOverlay_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_MessageOverlay_t {
     pub unVRMessageOverlayResponse: u32,
 }

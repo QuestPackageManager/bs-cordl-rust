@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+OverlapSphereCommand")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OverlapSphereCommand {
     pub _point_k__BackingField: crate::UnityEngine::Vector3,
     pub _radius_k__BackingField: f32,

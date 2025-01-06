@@ -76,7 +76,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRNetwork+FrameHeader")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRNetwork_FrameHeader {
     pub protocolIdentifier: u32,
     pub payloadType: i32,

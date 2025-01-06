@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRScreenshots {
     pub RequestScreenshot: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot,

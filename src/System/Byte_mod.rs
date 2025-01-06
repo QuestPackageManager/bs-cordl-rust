@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Byte")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Byte {
     pub m_value: u8,
 }

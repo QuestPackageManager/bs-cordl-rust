@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VRTextureWithPose_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VRTextureWithPose_t {
     pub mDeviceToAbsoluteTracking: crate::OVR::OpenVR::HmdMatrix34_t,
 }

@@ -179,7 +179,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect {
 }
 #[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GhostDuplicationEffect_GhostEffectParams {
     pub startAlpha: f32,
     pub startPosition: crate::UnityEngine::Vector3,

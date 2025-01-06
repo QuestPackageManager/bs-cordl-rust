@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_Overlay_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_Overlay_t {
     pub overlayHandle: u64,
     pub devicePath: u64,

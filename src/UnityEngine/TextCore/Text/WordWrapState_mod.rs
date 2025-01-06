@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+WordWrapState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct WordWrapState {
     pub previousWordBreak: i32,
     pub totalCharacterCount: i32,

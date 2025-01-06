@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapLevelChecksums")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapLevelChecksums {
     pub beatmapLevelChecksum: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -99,7 +99,7 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums {
 }
 #[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapLevelChecksums_DifficultyBeatmapChecksums {
     pub beatmapDifficulty: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,

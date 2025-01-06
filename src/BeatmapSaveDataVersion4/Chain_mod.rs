@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+Chain")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Chain {
     pub tx: i32,
     pub ty: i32,

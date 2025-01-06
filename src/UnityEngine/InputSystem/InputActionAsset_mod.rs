@@ -546,7 +546,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionAsset_ReadFileJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub maps: quest_hook::libil2cpp::Gc<
@@ -595,7 +595,7 @@ impl crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionAsset_WriteFileJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub maps: quest_hook::libil2cpp::Gc<

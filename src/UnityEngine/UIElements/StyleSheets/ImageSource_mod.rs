@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+ImageSource")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ImageSource {
     pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

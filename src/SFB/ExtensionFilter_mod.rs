@@ -1,6 +1,6 @@
 #[cfg(feature = "SFB+ExtensionFilter")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ExtensionFilter {
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _extensions: quest_hook::libil2cpp::Gc<

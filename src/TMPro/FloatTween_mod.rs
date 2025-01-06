@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+FloatTween")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FloatTween {
     pub m_Target: quest_hook::libil2cpp::Gc<crate::TMPro::FloatTween_FloatTweenCallback>,
     pub m_StartValue: f32,

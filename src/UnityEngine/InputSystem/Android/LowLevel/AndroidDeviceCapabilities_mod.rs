@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AndroidDeviceCapabilities {
     pub deviceDescriptor: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub productId: i32,

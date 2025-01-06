@@ -1,6 +1,6 @@
 #[cfg(feature = "Newtonsoft+Json+JsonPosition")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonPosition {
     pub Type: crate::Newtonsoft::Json::JsonContainerType,
     pub Position: i32,

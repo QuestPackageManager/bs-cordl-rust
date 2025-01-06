@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputDeviceBuilder {
     pub m_Device: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputDevice,
@@ -499,7 +499,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputDeviceBuilder_RefInstance {}
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

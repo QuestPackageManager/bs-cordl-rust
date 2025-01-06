@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionProperty {
     pub m_UseReference: bool,
     pub m_Action: quest_hook::libil2cpp::Gc<

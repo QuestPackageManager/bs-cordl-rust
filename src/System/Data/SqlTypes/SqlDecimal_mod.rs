@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlDecimal")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SqlDecimal {
     pub _bStatus: u8,
     pub _bLen: u8,

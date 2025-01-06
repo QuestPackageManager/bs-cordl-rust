@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+RecPlay+FrameSample")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FrameSample {
     pub previous: i32,
     pub next: i32,

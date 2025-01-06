@@ -872,7 +872,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlWellFormedWrit
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttrName")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlWellFormedWriter_AttrName {
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1170,7 +1170,7 @@ for crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+ElementScope")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlWellFormedWriter_ElementScope {
     pub prevNSTop: i32,
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1236,7 +1236,7 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+Namespace")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlWellFormedWriter_Namespace {
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

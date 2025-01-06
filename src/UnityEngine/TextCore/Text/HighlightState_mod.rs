@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+HighlightState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HighlightState {
     pub color: crate::UnityEngine::Color32,
     pub padding: crate::UnityEngine::TextCore::Text::Offset,

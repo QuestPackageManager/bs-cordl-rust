@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_MeshInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_MeshInfo {
     pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub vertexCount: i32,

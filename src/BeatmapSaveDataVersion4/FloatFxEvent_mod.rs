@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+FloatFxEvent")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FloatFxEvent {
     pub p: i32,
     pub e: crate::BeatmapSaveDataCommon::EaseType,

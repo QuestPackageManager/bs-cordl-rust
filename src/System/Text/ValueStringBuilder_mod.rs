@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Text+ValueStringBuilder")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueStringBuilder {
     pub _arrayToReturnToPool: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<char>,

@@ -3004,7 +3004,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Camera+GateFitParameters")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Camera_GateFitParameters {
     pub _mode_k__BackingField: crate::UnityEngine::Camera_GateFitMode,
     pub _aspect_k__BackingField: f32,
@@ -3076,7 +3076,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Camera+RenderRequest")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Camera_RenderRequest {
     pub m_CameraRenderMode: crate::UnityEngine::Camera_RenderRequestMode,
     pub m_ResultRT: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,

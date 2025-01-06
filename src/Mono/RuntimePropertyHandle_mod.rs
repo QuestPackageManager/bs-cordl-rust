@@ -1,6 +1,6 @@
 #[cfg(feature = "Mono+RuntimePropertyHandle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimePropertyHandle {
     pub value: crate::System::IntPtr,
 }

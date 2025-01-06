@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ShaderTagId {
     pub m_Id: i32,
 }

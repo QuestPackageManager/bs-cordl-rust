@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TagAttribute")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TagAttribute {
     pub startIndex: i32,
     pub length: i32,

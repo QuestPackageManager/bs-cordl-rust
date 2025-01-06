@@ -170,7 +170,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VertexPath {
 }
 #[cfg(feature = "VertexPath+Vertex")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VertexPath_Vertex {
     pub position: crate::UnityEngine::Vector3,
     pub tangent: crate::UnityEngine::Vector3,

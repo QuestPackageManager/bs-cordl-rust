@@ -229,7 +229,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::ProfilerMetri
 }
 #[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ProfilerMetrics_ProfilerMetric {
     pub category: crate::Unity::Profiling::ProfilerCategory,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

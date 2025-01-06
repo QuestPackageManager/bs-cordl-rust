@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ArticulationJacobian")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ArticulationJacobian {
     pub rowsCount: i32,
     pub colsCount: i32,

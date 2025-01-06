@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_FontStyleStack")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_FontStyleStack {
     pub bold: u8,
     pub italic: u8,

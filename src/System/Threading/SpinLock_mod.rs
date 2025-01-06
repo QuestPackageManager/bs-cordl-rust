@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Threading+SpinLock")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SpinLock {
     pub m_owner: i32,
 }

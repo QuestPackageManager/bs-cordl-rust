@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+SetupDragAndDropArgs")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SetupDragAndDropArgs {
     pub draggedElement: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,

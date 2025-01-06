@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Globalization+HebrewNumberParsingContext")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HebrewNumberParsingContext {
     pub state: crate::System::Globalization::HebrewNumber_HS,
     pub result: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "LevelSelectionOptions")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LevelSelectionOptions {
     pub preferredCharacteristic: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCharacteristicSO,

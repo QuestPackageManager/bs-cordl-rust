@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MultipleSubstitutionRecord {
     pub m_TargetGlyphID: u32,
     pub m_SubstituteGlyphIDs: quest_hook::libil2cpp::Gc<

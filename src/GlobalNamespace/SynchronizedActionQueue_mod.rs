@@ -94,7 +94,7 @@ for crate::GlobalNamespace::SynchronizedActionQueue {
 }
 #[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SynchronizedActionQueue_SynchronizedAction {
     pub _cordl_time: f32,
     pub action: quest_hook::libil2cpp::Gc<crate::System::Action>,

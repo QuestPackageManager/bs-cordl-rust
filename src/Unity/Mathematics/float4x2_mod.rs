@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+float4x2")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct float4x2 {
     pub c0: crate::Unity::Mathematics::float4,
     pub c1: crate::Unity::Mathematics::float4,

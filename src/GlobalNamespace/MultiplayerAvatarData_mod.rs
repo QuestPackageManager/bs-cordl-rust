@@ -1,6 +1,6 @@
 #[cfg(feature = "MultiplayerAvatarData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MultiplayerAvatarData {
     pub avatarTypeIdentifierHash: u32,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+RenderBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderBuffer {
     pub m_RenderTextureInstanceID: i32,
     pub m_BufferPtr: crate::System::IntPtr,

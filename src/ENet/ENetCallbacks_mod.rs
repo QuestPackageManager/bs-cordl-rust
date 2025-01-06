@@ -1,6 +1,6 @@
 #[cfg(feature = "ENet+ENetCallbacks")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ENetCallbacks {
     pub malloc: quest_hook::libil2cpp::Gc<crate::ENet::AllocCallback>,
     pub free: quest_hook::libil2cpp::Gc<crate::ENet::FreeCallback>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Reflection+CustomAttributeTypedArgument")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CustomAttributeTypedArgument {
     pub _ArgumentType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _Value_k__BackingField: quest_hook::libil2cpp::Gc<

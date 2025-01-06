@@ -1,6 +1,6 @@
 #[cfg(feature = "LiteNetLib+DisconnectInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DisconnectInfo {
     pub Reason: crate::LiteNetLib::DisconnectReason,
     pub SocketErrorCode: crate::System::Net::Sockets::SocketError,

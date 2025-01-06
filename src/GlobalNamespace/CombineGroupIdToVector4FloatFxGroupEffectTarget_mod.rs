@@ -149,7 +149,7 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
 }
 #[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex {
     pub lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     pub index: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IMECompositionString {
     padding: quest_hook::libil2cpp::ValueTypePadding<132usize>,
 }
@@ -125,7 +125,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IMECompositionString_Enumerator {
     pub m_CompositionString: crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
     pub m_CurrentCharacter: char,
@@ -260,7 +260,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
     feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IMECompositionString__buffer_e__FixedBuffer {
     pub FixedElementField: char,
 }

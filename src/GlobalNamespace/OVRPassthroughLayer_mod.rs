@@ -1041,7 +1041,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub updateTransform: bool,
@@ -1618,7 +1618,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
 }
 #[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRPassthroughLayer_PassthroughMeshInstance {
     pub meshHandle: u64,
     pub instanceHandle: u64,
@@ -1660,7 +1660,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRPassthroughLayer_SerializedSurfaceGeometry {
     pub meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub updateTransform: bool,
@@ -1686,7 +1686,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
 impl crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {}
 #[cfg(feature = "OVRPassthroughLayer+Settings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRPassthroughLayer_Settings {
     pub colorLutTargetTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub colorLutSourceTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,

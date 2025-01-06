@@ -385,7 +385,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue> {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputStateHistory_1_Enumerator<TValue: quest_hook::libil2cpp::Type> {
     pub m_History: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue>,
@@ -565,7 +565,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TV
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Record")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputStateHistory_1_Record<TValue: quest_hook::libil2cpp::Type> {
     pub m_Owner: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Plane {
     pub NormalAndDistance: crate::Unity::Mathematics::float4,
 }

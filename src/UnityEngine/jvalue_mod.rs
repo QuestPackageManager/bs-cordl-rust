@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+jvalue")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct jvalue {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }

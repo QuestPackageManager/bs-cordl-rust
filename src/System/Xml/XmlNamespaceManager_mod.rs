@@ -259,7 +259,7 @@ for crate::System::Xml::XmlNamespaceManager {
 }
 #[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlNamespaceManager_NamespaceDeclaration {
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

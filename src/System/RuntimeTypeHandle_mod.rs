@@ -1,6 +1,6 @@
 #[cfg(feature = "System+RuntimeTypeHandle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeTypeHandle {
     pub value: crate::System::IntPtr,
 }

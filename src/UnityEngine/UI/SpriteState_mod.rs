@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UI+SpriteState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SpriteState {
     pub m_HighlightedSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub m_PressedSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

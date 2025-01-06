@@ -136,7 +136,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_DefaultControls {
 }
 #[cfg(feature = "TMPro+TMP_DefaultControls+Resources")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_DefaultControls_Resources {
     pub standard: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub background: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

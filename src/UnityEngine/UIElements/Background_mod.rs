@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+Background")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Background {
     pub m_Texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub m_Sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+CompilerServices+ValueTaskAwaiter_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ValueTaskAwaiter_1<TResult: quest_hook::libil2cpp::Type> {
     pub _value: crate::System::Threading::Tasks::ValueTask_1<TResult>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,

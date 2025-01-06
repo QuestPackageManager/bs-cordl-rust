@@ -7481,7 +7481,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::CAPI_FilterC
 }
 #[cfg(feature = "Oculus+Platform+CAPI+OculusInitParams")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CAPI_OculusInitParams {
     pub sType: i32,
     pub email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -7511,7 +7511,7 @@ for crate::Oculus::Platform::CAPI_OculusInitParams {
 impl crate::Oculus::Platform::CAPI_OculusInitParams {}
 #[cfg(feature = "Oculus+Platform+CAPI+ovrKeyValuePair")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CAPI_ovrKeyValuePair {
     pub key_: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub valueType_: crate::Oculus::Platform::KeyValuePairType,
@@ -7576,7 +7576,7 @@ impl crate::Oculus::Platform::CAPI_ovrKeyValuePair {
 }
 #[cfg(feature = "Oculus+Platform+CAPI+ovrNetSyncVec3")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CAPI_ovrNetSyncVec3 {
     pub x: f32,
     pub y: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+DistortionCoordinates_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DistortionCoordinates_t {
     pub rfRed0: f32,
     pub rfRed1: f32,

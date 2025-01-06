@@ -1,6 +1,6 @@
 #[cfg(feature = "System+ParamsArray")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParamsArray {
     pub _arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

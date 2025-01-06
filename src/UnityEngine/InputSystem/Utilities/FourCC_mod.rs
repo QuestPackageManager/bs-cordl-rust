@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+FourCC")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FourCC {
     pub m_Code: i32,
 }

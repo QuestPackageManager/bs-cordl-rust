@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct QueryPairedUserAccountCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<1040usize>,
 }
@@ -145,7 +145,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+_idBuffer_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct QueryPairedUserAccountCommand__idBuffer_e__FixedBuffer {
     pub FixedElementField: u8,
 }
@@ -179,7 +179,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand__i
     feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+_nameBuffer_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct QueryPairedUserAccountCommand__nameBuffer_e__FixedBuffer {
     pub FixedElementField: u8,
 }

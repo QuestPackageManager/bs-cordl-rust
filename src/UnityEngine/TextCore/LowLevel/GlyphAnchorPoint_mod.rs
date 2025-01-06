@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphAnchorPoint")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GlyphAnchorPoint {
     pub m_XCoordinate: f32,
     pub m_YCoordinate: f32,

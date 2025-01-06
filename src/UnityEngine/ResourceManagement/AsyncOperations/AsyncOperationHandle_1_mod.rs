@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AsyncOperationHandle_1<TObject: quest_hook::libil2cpp::Type> {
     pub m_InternalOp: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<

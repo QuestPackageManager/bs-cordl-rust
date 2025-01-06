@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+MacOsStructs+sockaddr_in6")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct sockaddr_in6 {
     pub sin6_len: u8,
     pub sin6_family: u8,

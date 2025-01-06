@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+XR+MeshGenerationResult")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MeshGenerationResult {
     pub _MeshId_k__BackingField: crate::UnityEngine::XR::MeshId,
     pub _Mesh_k__BackingField: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,

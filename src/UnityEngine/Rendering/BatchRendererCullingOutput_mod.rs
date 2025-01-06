@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+BatchRendererCullingOutput")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BatchRendererCullingOutput {
     pub cullingJobsFence: crate::Unity::Jobs::JobHandle,
     pub localToWorldMatrix: crate::UnityEngine::Matrix4x4,

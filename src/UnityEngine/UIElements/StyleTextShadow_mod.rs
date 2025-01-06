@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleTextShadow")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleTextShadow {
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,
     pub m_Value: crate::UnityEngine::UIElements::TextShadow,

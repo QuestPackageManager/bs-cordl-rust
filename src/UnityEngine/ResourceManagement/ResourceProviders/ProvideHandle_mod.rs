@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ProvideHandle {
     pub m_Version: i32,
     pub m_InternalOp: quest_hook::libil2cpp::Gc<

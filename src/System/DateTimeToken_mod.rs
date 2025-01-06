@@ -1,6 +1,6 @@
 #[cfg(feature = "System+DateTimeToken")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DateTimeToken {
     pub dtt: crate::System::DateTimeParse_DTT,
     pub suffix: crate::System::TokenType,

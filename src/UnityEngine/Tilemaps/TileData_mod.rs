@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Tilemaps+TileData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TileData {
     pub m_Sprite: i32,
     pub m_Color: crate::UnityEngine::Color,

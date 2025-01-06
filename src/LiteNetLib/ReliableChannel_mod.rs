@@ -117,7 +117,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::ReliableChannel {
 }
 #[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ReliableChannel_PendingPacket {
     pub _packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     pub _timeStamp: i64,

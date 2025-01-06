@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+TextVertex")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextVertex {
     pub position: crate::UnityEngine::Vector3,
     pub uv: crate::UnityEngine::Vector4,

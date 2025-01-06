@@ -311,7 +311,7 @@ for crate::GlobalNamespace::OVRScenePlane {
 }
 #[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRScenePlane_GetBoundaryJob {
     pub Space: crate::GlobalNamespace::OVRSpace,
     pub Boundary: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
@@ -379,7 +379,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
 }
 #[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRScenePlane_GetBoundaryLengthJob {
     pub Space: crate::GlobalNamespace::OVRSpace,
     pub Length: crate::Unity::Collections::NativeArray_1<i32>,

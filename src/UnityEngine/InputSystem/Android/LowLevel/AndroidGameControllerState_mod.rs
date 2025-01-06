@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AndroidGameControllerState {
     pub buttons: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__buttons_e__FixedBuffer,
     pub axis: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer,
@@ -173,7 +173,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AndroidGameControllerState__axis_e__FixedBuffer {
     pub FixedElementField: f32,
 }
@@ -207,7 +207,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AndroidGameControllerState__buttons_e__FixedBuffer {
     pub FixedElementField: u32,
 }

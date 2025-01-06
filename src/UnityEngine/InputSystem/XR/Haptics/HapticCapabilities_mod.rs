@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+HapticCapabilities")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HapticCapabilities {
     pub _numChannels_k__BackingField: u32,
     pub _frequencyHz_k__BackingField: u32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "LastUsedBeatmapDataCache")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LastUsedBeatmapDataCache {
     pub cachedReadonlyBeatmapData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IReadonlyBeatmapData,

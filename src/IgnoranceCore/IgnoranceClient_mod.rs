@@ -149,7 +149,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::IgnoranceCore::IgnoranceClient
 }
 #[cfg(feature = "IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IgnoranceClient_ThreadParamInfo {
     pub Channels: i32,
     pub PollTime: i32,

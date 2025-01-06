@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeVisualInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_VolumeVisualInfo {
     pub _cordl_type: crate::HoudiniEngineUnity::HAPI_VolumeVisualType,
     pub iso: f32,

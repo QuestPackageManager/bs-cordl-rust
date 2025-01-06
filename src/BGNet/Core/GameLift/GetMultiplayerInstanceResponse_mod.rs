@@ -1,6 +1,6 @@
 #[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceResponse")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GetMultiplayerInstanceResponse {
     pub errorCode: crate::GlobalNamespace::MultiplayerPlacementErrorCode,
     pub playerSessionInfo: quest_hook::libil2cpp::Gc<

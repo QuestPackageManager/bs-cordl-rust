@@ -1,6 +1,6 @@
 #[cfg(feature = "System+IO+FileStatus")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FileStatus {
     pub _fileStatus: crate::GlobalNamespace::Sys_Interop_FileStatus,
     pub _fileStatusInitialized: i32,

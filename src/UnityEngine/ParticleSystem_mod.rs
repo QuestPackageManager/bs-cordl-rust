@@ -1727,7 +1727,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ParticleSystem {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+CollisionModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_CollisionModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -1763,7 +1763,7 @@ impl crate::UnityEngine::ParticleSystem_CollisionModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+ColorBySpeedModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_ColorBySpeedModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -1799,7 +1799,7 @@ impl crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+ColorOverLifetimeModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_ColorOverLifetimeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -1836,7 +1836,7 @@ impl crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+CustomDataModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_CustomDataModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -1872,7 +1872,7 @@ impl crate::UnityEngine::ParticleSystem_CustomDataModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+EmissionModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_EmissionModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -1986,7 +1986,7 @@ impl crate::UnityEngine::ParticleSystem_EmissionModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+EmitParams")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_EmitParams {
     pub m_Particle: crate::UnityEngine::ParticleSystem_Particle,
     pub m_PositionSet: bool,
@@ -2066,7 +2066,7 @@ impl crate::UnityEngine::ParticleSystem_EmitParams {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+ExternalForcesModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_ExternalForcesModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -2102,7 +2102,7 @@ impl crate::UnityEngine::ParticleSystem_ExternalForcesModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+ForceOverLifetimeModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_ForceOverLifetimeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -2139,7 +2139,7 @@ impl crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+InheritVelocityModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_InheritVelocityModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -2176,7 +2176,7 @@ impl crate::UnityEngine::ParticleSystem_InheritVelocityModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+LifetimeByEmitterSpeedModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_LifetimeByEmitterSpeedModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -2213,7 +2213,7 @@ impl crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+LightsModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_LightsModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -2249,7 +2249,7 @@ impl crate::UnityEngine::ParticleSystem_LightsModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+LimitVelocityOverLifetimeModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_LimitVelocityOverLifetimeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -2286,7 +2286,7 @@ impl crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+MainModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_MainModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -3018,7 +3018,7 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurve")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_MinMaxCurve {
     pub m_Mode: crate::UnityEngine::ParticleSystemCurveMode,
     pub m_CurveMultiplier: f32,
@@ -3100,7 +3100,7 @@ impl crate::UnityEngine::ParticleSystem_MinMaxCurve {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradient")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_MinMaxGradient {
     pub m_Mode: crate::UnityEngine::ParticleSystemGradientMode,
     pub m_GradientMin: quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
@@ -3159,7 +3159,7 @@ impl crate::UnityEngine::ParticleSystem_MinMaxGradient {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+NoiseModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_NoiseModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -3195,7 +3195,7 @@ impl crate::UnityEngine::ParticleSystem_NoiseModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+Particle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_Particle {
     pub m_Position: crate::UnityEngine::Vector3,
     pub m_Velocity: crate::UnityEngine::Vector3,
@@ -3346,7 +3346,7 @@ impl crate::UnityEngine::ParticleSystem_Particle {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_PlaybackState {
     pub m_AccumulatedDt: f32,
     pub m_StartDelay: f32,
@@ -3402,7 +3402,7 @@ impl crate::UnityEngine::ParticleSystem_PlaybackState {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+RotationBySpeedModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_RotationBySpeedModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -3439,7 +3439,7 @@ impl crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+RotationOverLifetimeModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_RotationOverLifetimeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -3476,7 +3476,7 @@ impl crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+ShapeModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_ShapeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -3577,7 +3577,7 @@ impl crate::UnityEngine::ParticleSystem_ShapeModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+SizeBySpeedModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_SizeBySpeedModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -3613,7 +3613,7 @@ impl crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+SizeOverLifetimeModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_SizeOverLifetimeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -3650,7 +3650,7 @@ impl crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+SubEmittersModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_SubEmittersModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -3728,7 +3728,7 @@ impl crate::UnityEngine::ParticleSystem_SubEmittersModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+TextureSheetAnimationModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_TextureSheetAnimationModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -3765,7 +3765,7 @@ impl crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+TrailModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_TrailModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -3801,7 +3801,7 @@ impl crate::UnityEngine::ParticleSystem_TrailModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+Trails")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_Trails {
     pub positions: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
@@ -3852,7 +3852,7 @@ impl crate::UnityEngine::ParticleSystem_Trails {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+TriggerModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_TriggerModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -3888,7 +3888,7 @@ impl crate::UnityEngine::ParticleSystem_TriggerModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+VelocityOverLifetimeModule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_VelocityOverLifetimeModule {
     pub m_ParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
@@ -3925,7 +3925,7 @@ impl crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
 }
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Collision")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Collision {
     pub m_Random: crate::UnityEngine::PlaybackState_ParticleSystem_Seed4,
 }
@@ -3950,7 +3950,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Collision {}
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Emission")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Emission {
     pub m_ParticleSpacing: f32,
     pub m_ToEmitAccumulator: f32,
@@ -3977,7 +3977,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Emission {}
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Force")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Force {
     pub m_Random: crate::UnityEngine::PlaybackState_ParticleSystem_Seed4,
 }
@@ -4001,7 +4001,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Force {}
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Initial")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Initial {
     pub m_Random: crate::UnityEngine::PlaybackState_ParticleSystem_Seed4,
 }
@@ -4026,7 +4026,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Initial {}
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Lights")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Lights {
     pub m_Random: crate::UnityEngine::PlaybackState_ParticleSystem_Seed,
     pub m_ParticleEmissionCounter: f32,
@@ -4051,7 +4051,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Lights {}
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Noise")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Noise {
     pub m_ScrollOffset: f32,
 }
@@ -4075,7 +4075,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Noise {}
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Seed {
     pub x: u32,
     pub y: u32,
@@ -4102,7 +4102,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Seed {}
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Seed4")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Seed4 {
     pub x: crate::UnityEngine::PlaybackState_ParticleSystem_Seed,
     pub y: crate::UnityEngine::PlaybackState_ParticleSystem_Seed,
@@ -4129,7 +4129,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {}
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Shape")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Shape {
     pub m_Random: crate::UnityEngine::PlaybackState_ParticleSystem_Seed4,
     pub m_RadiusTimer: f32,
@@ -4160,7 +4160,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
 impl crate::UnityEngine::PlaybackState_ParticleSystem_Shape {}
 #[cfg(feature = "UnityEngine+ParticleSystem+PlaybackState+Trail")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlaybackState_ParticleSystem_Trail {
     pub m_Timer: f32,
 }

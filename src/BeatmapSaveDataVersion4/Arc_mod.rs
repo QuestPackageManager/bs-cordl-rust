@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+Arc")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Arc {
     pub m: f32,
     pub tm: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+WordWrapState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct WordWrapState {
     pub previous_WordBreak: i32,
     pub total_CharacterCount: i32,

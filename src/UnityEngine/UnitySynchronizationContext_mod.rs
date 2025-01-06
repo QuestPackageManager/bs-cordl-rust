@@ -198,7 +198,7 @@ for crate::UnityEngine::UnitySynchronizationContext {
 }
 #[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnitySynchronizationContext_WorkRequest {
     pub m_DelagateCallback: quest_hook::libil2cpp::Gc<
         crate::System::Threading::SendOrPostCallback,

@@ -81,7 +81,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetry 
 }
 #[cfg(feature = "OVRTelemetry+MarkerPoint")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTelemetry_MarkerPoint {
     pub _NameHandle_k__BackingField: i32,
 }

@@ -239,7 +239,7 @@ for crate::System::ComponentModel::AttributeCollection {
 }
 #[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AttributeCollection_AttributeEntry {
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub index: i32,

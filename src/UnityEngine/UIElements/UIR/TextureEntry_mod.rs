@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+TextureEntry")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextureEntry {
     pub source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub actual: crate::UnityEngine::UIElements::TextureId,

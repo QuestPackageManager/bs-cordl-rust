@@ -1,6 +1,6 @@
 #[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GetMultiplayerInstanceRequest {
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub serviceEnvironment: crate::GlobalNamespace::ServiceEnvironment,

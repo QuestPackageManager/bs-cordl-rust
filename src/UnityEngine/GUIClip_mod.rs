@@ -160,7 +160,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUIClip {
 }
 #[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GUIClip_ParentClipScope {
     pub m_Disposed: bool,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+MaterialReference")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MaterialReference {
     pub index: i32,
     pub fontAsset: quest_hook::libil2cpp::Gc<

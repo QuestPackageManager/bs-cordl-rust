@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+TextCoreSettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextCoreSettings {
     pub faceColor: crate::UnityEngine::Color,
     pub outlineColor: crate::UnityEngine::Color,

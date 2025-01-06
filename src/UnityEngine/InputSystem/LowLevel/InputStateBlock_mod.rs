@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBlock")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputStateBlock {
     pub _format_k__BackingField: crate::UnityEngine::InputSystem::Utilities::FourCC,
     pub m_ByteOffset: u32,

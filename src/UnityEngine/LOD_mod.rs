@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+LOD")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LOD {
     pub screenRelativeTransitionHeight: f32,
     pub fadeTransitionWidth: f32,

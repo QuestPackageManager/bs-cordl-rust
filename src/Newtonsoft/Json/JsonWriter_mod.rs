@@ -2625,7 +2625,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
@@ -2698,7 +2698,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
     feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
@@ -2782,7 +2782,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
     feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
@@ -2866,7 +2866,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
     feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,

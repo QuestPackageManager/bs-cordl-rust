@@ -277,7 +277,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::TypeUtility
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+Cache_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TypeUtility_Cache_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

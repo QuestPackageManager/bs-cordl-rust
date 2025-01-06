@@ -1,6 +1,6 @@
 #[cfg(feature = "Mono+RuntimeEventHandle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeEventHandle {
     pub value: crate::System::IntPtr,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapLevelSelectionMask")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapLevelSelectionMask {
     pub difficulties: crate::GlobalNamespace::BeatmapDifficultyMask,
     pub modifiers: crate::GlobalNamespace::GameplayModifierMask,

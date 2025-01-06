@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+DisableDeviceCommand")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DisableDeviceCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }

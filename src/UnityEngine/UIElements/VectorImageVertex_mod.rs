@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+VectorImageVertex")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VectorImageVertex {
     pub position: crate::UnityEngine::Vector3,
     pub tint: crate::UnityEngine::Color32,

@@ -1355,7 +1355,7 @@ for crate::System::Net::HttpWebRequest {
 }
 #[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HttpWebRequest_AuthorizationState {
     pub request: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebRequest>,
     pub isProxy: bool,
@@ -1469,7 +1469,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HttpWebRequest___GetRewriteHandler_b__271_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+BezierPoint")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BezierPoint {
     pub position: crate::UnityEngine::Vector3,
     pub tangentIn: crate::UnityEngine::Vector3,

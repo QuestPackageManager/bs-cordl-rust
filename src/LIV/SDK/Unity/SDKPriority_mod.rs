@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKPriority")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKPriority {
     pub pose: i8,
     pub clipPlane: i8,

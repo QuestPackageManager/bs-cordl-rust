@@ -1,6 +1,6 @@
 #[cfg(feature = "NoteCutInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NoteCutInfo {
     pub noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     pub speedOK: bool,

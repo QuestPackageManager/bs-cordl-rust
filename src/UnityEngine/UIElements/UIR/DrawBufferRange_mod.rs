@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+DrawBufferRange")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DrawBufferRange {
     pub firstIndex: i32,
     pub indexCount: i32,

@@ -182,7 +182,7 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OnScreenControl_OnScreenDeviceInfo {
     pub eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     pub buffer: crate::Unity::Collections::NativeArray_1<u8>,

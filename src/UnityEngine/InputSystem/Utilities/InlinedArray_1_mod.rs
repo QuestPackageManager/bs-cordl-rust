@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InlinedArray_1<TValue: quest_hook::libil2cpp::Type> {
     pub length: i32,
     pub firstValue: TValue,
@@ -461,7 +461,7 @@ for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue> {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InlinedArray_1_Enumerator<TValue: quest_hook::libil2cpp::Type> {
     pub array: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue>,
     pub index: i32,

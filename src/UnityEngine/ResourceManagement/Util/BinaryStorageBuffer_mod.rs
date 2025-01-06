@@ -474,7 +474,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTyp
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BinaryStorageBuffer_DynamicString {
     pub stringId: u32,
     pub nextId: u32,
@@ -716,7 +716,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BinaryStorageBuffer_ObjectTypeData {
     pub typeId: u32,
     pub objectId: u32,
@@ -1741,7 +1741,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
     pub stringId: u32,
     pub separator: char,
@@ -1776,7 +1776,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_Binary
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TypeSerializer_BinaryStorageBuffer_Data {
     pub assemblyId: u32,
     pub classId: u32,
@@ -1869,7 +1869,7 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chu
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Writer_BinaryStorageBuffer_StringParts {
     pub str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub dataSize: u32,

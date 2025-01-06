@@ -1,6 +1,6 @@
 #[cfg(feature = "LevelDataAssetDownloadUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LevelDataAssetDownloadUpdate {
     pub levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub bytesTotal: u32,

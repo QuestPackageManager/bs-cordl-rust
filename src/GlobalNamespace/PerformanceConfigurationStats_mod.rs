@@ -109,7 +109,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats {
 }
 #[cfg(feature = "PerformanceConfigurationStats+BoolStats")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceConfigurationStats_BoolStats {
     pub off: i32,
     pub on: i32,
@@ -157,7 +157,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
 }
 #[cfg(feature = "PerformanceConfigurationStats+EnumStats_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceConfigurationStats_EnumStats_1<T: quest_hook::libil2cpp::Type> {
     pub flags: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -215,7 +215,7 @@ impl<
 }
 #[cfg(feature = "PerformanceConfigurationStats+FloatStats")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceConfigurationStats_FloatStats {
     pub min: f32,
     pub max: f32,
@@ -263,7 +263,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
 }
 #[cfg(feature = "PerformanceConfigurationStats+IntStats")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PerformanceConfigurationStats_IntStats {
     pub min: i32,
     pub max: i32,

@@ -309,7 +309,7 @@ for crate::GlobalNamespace::OculusPlatformUserModel {
 }
 #[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<

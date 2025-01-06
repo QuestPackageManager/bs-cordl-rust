@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+RuleMatcher")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuleMatcher {
     pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
     pub complexSelector: quest_hook::libil2cpp::Gc<

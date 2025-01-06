@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRCompositor")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRCompositor {
     pub SetTrackingSpace: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace,

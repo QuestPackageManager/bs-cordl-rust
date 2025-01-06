@@ -295,7 +295,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleVariableResolver_ResolveContext {
     pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
     pub handles: quest_hook::libil2cpp::Gc<

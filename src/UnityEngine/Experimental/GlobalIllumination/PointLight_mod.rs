@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+PointLight")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PointLight {
     pub instanceID: i32,
     pub shadow: bool,

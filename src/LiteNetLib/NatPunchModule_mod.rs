@@ -566,7 +566,7 @@ for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NatPunchModule_RequestEventData {
     pub LocalEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     pub RemoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -592,7 +592,7 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
 impl crate::LiteNetLib::NatPunchModule_RequestEventData {}
 #[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NatPunchModule_SuccessEventData {
     pub TargetEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     pub Type: crate::LiteNetLib::NatAddressType,

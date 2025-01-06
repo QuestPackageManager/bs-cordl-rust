@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Burst+Intrinsics+v256")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct v256 {
     padding: quest_hook::libil2cpp::ValueTypePadding<32usize>,
 }

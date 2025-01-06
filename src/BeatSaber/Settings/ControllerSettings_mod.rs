@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+ControllerSettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ControllerSettings {
     pub position: crate::Unity::Mathematics::float3,
     pub rotation: crate::Unity::Mathematics::float3,

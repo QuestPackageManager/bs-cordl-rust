@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VROverlayIntersectionResults_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VROverlayIntersectionResults_t {
     pub vPoint: crate::OVR::OpenVR::HmdVector3_t,
     pub vNormal: crate::OVR::OpenVR::HmdVector3_t,

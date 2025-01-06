@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingResolver")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputBindingResolver {
     pub totalProcessorCount: i32,
     pub totalCompositeCount: i32,

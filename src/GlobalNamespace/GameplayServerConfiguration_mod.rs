@@ -1,6 +1,6 @@
 #[cfg(feature = "GameplayServerConfiguration")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GameplayServerConfiguration {
     pub maxPlayerCount: i32,
     pub discoveryPolicy: crate::GlobalNamespace::DiscoveryPolicy,

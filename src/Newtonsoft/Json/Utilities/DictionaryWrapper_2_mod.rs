@@ -898,7 +898,7 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DictionaryWrapper_2_DictionaryEnumerator_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

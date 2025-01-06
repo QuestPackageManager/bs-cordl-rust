@@ -218,7 +218,7 @@ for crate::UnityEngine::UIElements::EventDispatcher {
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventDispatcher_DispatchContext {
     pub m_GateCount: u32,
     pub m_Queue: quest_hook::libil2cpp::Gc<
@@ -248,7 +248,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
 impl crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {}
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventDispatcher_EventRecord {
     pub m_Event: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     pub m_Panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,

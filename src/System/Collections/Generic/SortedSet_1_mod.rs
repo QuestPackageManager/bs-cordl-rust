@@ -809,7 +809,7 @@ for crate::System::Collections::Generic::SortedSet_1<T> {
 }
 #[cfg(feature = "System+Collections+Generic+SortedSet_1+ElementCount")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SortedSet_1_ElementCount<T: quest_hook::libil2cpp::Type> {
     pub UniqueCount: i32,
     pub UnfoundCount: i32,
@@ -838,7 +838,7 @@ impl<
 > crate::System::Collections::Generic::SortedSet_1_ElementCount<T> {}
 #[cfg(feature = "System+Collections+Generic+SortedSet_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SortedSet_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _tree: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::SortedSet_1<T>,

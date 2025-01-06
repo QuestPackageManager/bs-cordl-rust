@@ -1332,7 +1332,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput_Hapt
 }
 #[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRInput_HapticsAmplitudeEnvelopeVibration {
     pub SamplesCount: i32,
     pub Samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -1374,7 +1374,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+HapticsPcmVibration")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRInput_HapticsPcmVibration {
     pub SamplesCount: i32,
     pub Samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -2737,7 +2737,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+OpenVRControllerDetails")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRInput_OpenVRControllerDetails {
     pub state: crate::OVR::OpenVR::VRControllerState_t,
     pub controllerType: crate::GlobalNamespace::OVRInput_OpenVRController,

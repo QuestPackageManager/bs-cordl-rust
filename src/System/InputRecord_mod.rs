@@ -1,6 +1,6 @@
 #[cfg(feature = "System+InputRecord")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputRecord {
     pub EventType: i16,
     pub KeyDown: bool,

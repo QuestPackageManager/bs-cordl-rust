@@ -150,7 +150,7 @@ for crate::UnityEngine::UIElements::TextureRegistry {
 }
 #[cfg(feature = "UnityEngine+UIElements+TextureRegistry+TextureInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextureRegistry_TextureInfo {
     pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub dynamic: bool,

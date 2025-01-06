@@ -386,7 +386,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Timer_Sched
 }
 #[cfg(feature = "System+Threading+Timer+TimerComparer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Timer_TimerComparer {}
 #[cfg(feature = "System+Threading+Timer+TimerComparer")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

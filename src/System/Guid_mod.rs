@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Guid")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Guid {
     pub _a: i32,
     pub _b: i16,
@@ -535,7 +535,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Guid+GuidResult")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Guid_GuidResult {
     pub _parsedGuid: crate::System::Guid,
     pub _throwStyle: crate::System::Guid_GuidParseThrowStyle,

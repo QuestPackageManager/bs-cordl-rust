@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRNotifications")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRNotifications {
     pub CreateNotification: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRNotifications__CreateNotification,

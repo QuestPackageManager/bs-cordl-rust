@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ManipulatorActivationFilter {
     pub _button_k__BackingField: crate::UnityEngine::UIElements::MouseButton,
     pub _modifiers_k__BackingField: crate::UnityEngine::EventModifiers,

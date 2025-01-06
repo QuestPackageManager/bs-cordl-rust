@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleValueManaged")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleValueManaged {
     pub id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     pub keyword: crate::UnityEngine::UIElements::StyleKeyword,

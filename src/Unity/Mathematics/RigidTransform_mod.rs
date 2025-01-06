@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+RigidTransform")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RigidTransform {
     pub rot: crate::Unity::Mathematics::quaternion,
     pub pos: crate::Unity::Mathematics::float3,

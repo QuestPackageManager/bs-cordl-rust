@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+JointSpring")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JointSpring {
     pub spring: f32,
     pub damper: f32,

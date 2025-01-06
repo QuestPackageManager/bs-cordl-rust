@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+MiscSettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MiscSettings {
     pub language: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub pauseButtonResponse: crate::BeatSaber::Settings::MiscSettings_ResponseLevel,

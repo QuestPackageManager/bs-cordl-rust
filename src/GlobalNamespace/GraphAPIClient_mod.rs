@@ -147,7 +147,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GraphAPIClien
 }
 #[cfg(feature = "GraphAPIClient+PostOptions")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct GraphAPIClient_PostOptions {
     pub MaxRetries: i32,
     pub MinWaitTimeForRetryMs: i32,

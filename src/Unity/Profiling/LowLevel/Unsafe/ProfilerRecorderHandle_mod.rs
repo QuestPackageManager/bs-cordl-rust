@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderHandle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ProfilerRecorderHandle {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }

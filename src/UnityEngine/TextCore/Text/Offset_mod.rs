@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+Offset")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Offset {
     pub m_Left: f32,
     pub m_Right: f32,

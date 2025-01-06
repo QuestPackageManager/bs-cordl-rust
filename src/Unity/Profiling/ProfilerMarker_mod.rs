@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Profiling+ProfilerMarker")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ProfilerMarker {
     pub m_Ptr: crate::System::IntPtr,
 }
@@ -62,7 +62,7 @@ impl crate::Unity::Profiling::ProfilerMarker {
 }
 #[cfg(feature = "Unity+Profiling+ProfilerMarker+AutoScope")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ProfilerMarker_AutoScope {
     pub m_Ptr: crate::System::IntPtr,
 }

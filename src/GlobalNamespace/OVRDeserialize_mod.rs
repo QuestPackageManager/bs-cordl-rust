@@ -67,7 +67,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRDeserializ
 }
 #[cfg(feature = "OVRDeserialize+DisplayRefreshRateChangedData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDeserialize_DisplayRefreshRateChangedData {
     pub FromRefreshRate: f32,
     pub ToRefreshRate: f32,
@@ -93,7 +93,7 @@ for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
 impl crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {}
 #[cfg(feature = "OVRDeserialize+SceneCaptureCompleteData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDeserialize_SceneCaptureCompleteData {
     pub RequestId: u64,
     pub Result: i32,
@@ -119,7 +119,7 @@ for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
 impl crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {}
 #[cfg(feature = "OVRDeserialize+SpaceEraseCompleteData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDeserialize_SpaceEraseCompleteData {
     pub RequestId: u64,
     pub Result: i32,
@@ -147,7 +147,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
 impl crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {}
 #[cfg(feature = "OVRDeserialize+SpaceListSaveResultData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDeserialize_SpaceListSaveResultData {
     pub RequestId: u64,
     pub Result: i32,
@@ -173,7 +173,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
 impl crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {}
 #[cfg(feature = "OVRDeserialize+SpaceQueryCompleteData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDeserialize_SpaceQueryCompleteData {
     pub RequestId: u64,
     pub Result: i32,
@@ -199,7 +199,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
 impl crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {}
 #[cfg(feature = "OVRDeserialize+SpaceQueryResultsData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDeserialize_SpaceQueryResultsData {
     pub RequestId: u64,
 }
@@ -224,7 +224,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
 impl crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {}
 #[cfg(feature = "OVRDeserialize+SpaceSaveCompleteData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDeserialize_SpaceSaveCompleteData {
     pub RequestId: u64,
     pub Space: u64,
@@ -252,7 +252,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
 impl crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {}
 #[cfg(feature = "OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDeserialize_SpaceSetComponentStatusCompleteData {
     pub RequestId: u64,
     pub Result: i32,
@@ -282,7 +282,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
 impl crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {}
 #[cfg(feature = "OVRDeserialize+SpaceShareResultData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDeserialize_SpaceShareResultData {
     pub RequestId: u64,
     pub Result: i32,
@@ -308,7 +308,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
 impl crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {}
 #[cfg(feature = "OVRDeserialize+SpatialAnchorCreateCompleteData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRDeserialize_SpatialAnchorCreateCompleteData {
     pub RequestId: u64,
     pub Result: i32,

@@ -621,7 +621,7 @@ for crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<TStateTable, TType, 
 }
 #[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StateBuffer_3_TimestampedStateTable<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

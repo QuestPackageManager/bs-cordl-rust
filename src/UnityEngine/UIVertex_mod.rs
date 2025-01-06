@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIVertex")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIVertex {
     pub position: crate::UnityEngine::Vector3,
     pub normal: crate::UnityEngine::Vector3,

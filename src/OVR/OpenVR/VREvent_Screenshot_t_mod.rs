@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_Screenshot_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VREvent_Screenshot_t {
     pub handle: u32,
     pub _cordl_type: u32,

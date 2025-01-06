@@ -509,7 +509,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
 }
 #[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSkeletonRenderer_SkeletonRendererData {
     pub _RootScale_k__BackingField: f32,
     pub _IsDataValid_k__BackingField: bool,

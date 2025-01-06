@@ -205,7 +205,7 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DelayedActionManager_DelegateInfo {
     pub m_Id: i32,
     pub m_Delegate: quest_hook::libil2cpp::Gc<crate::System::Delegate>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+MatchTargetWeightMask")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MatchTargetWeightMask {
     pub m_PositionXYZWeight: crate::UnityEngine::Vector3,
     pub m_RotationWeight: f32,

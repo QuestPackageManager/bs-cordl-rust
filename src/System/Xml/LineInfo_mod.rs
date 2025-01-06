@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+LineInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LineInfo {
     pub lineNo: i32,
     pub linePos: i32,

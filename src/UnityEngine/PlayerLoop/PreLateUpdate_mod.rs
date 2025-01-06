@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -53,7 +53,7 @@ impl crate::UnityEngine::PlayerLoop::PreLateUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+AIUpdatePostScript")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_AIUpdatePostScript {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+AIUpdatePostScript")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -76,7 +76,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript {
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ConstraintManagerUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_ConstraintManagerUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ConstraintManagerUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -99,7 +99,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate {
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorDeferredEvaluate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_DirectorDeferredEvaluate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorDeferredEvaluate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -122,7 +122,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate {
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationBegin")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_DirectorUpdateAnimationBegin {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationBegin")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -145,7 +145,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin {
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationEnd")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_DirectorUpdateAnimationEnd {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationEnd")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -168,7 +168,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd {
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+EndGraphicsJobsAfterScriptUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_EndGraphicsJobsAfterScriptUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+EndGraphicsJobsAfterScriptUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -191,7 +191,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpda
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+LegacyAnimationUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_LegacyAnimationUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+LegacyAnimationUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -214,7 +214,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate {
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ParticleSystemBeginUpdateAll")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_ParticleSystemBeginUpdateAll {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ParticleSystemBeginUpdateAll")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -237,7 +237,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll {
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+Physics2DLateUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_Physics2DLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+Physics2DLateUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -260,7 +260,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate {
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+PhysicsLateUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_PhysicsLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+PhysicsLateUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -283,7 +283,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ScriptRunBehaviourLateUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_ScriptRunBehaviourLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ScriptRunBehaviourLateUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -306,7 +306,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate {
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UIElementsUpdatePanels")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_UIElementsUpdatePanels {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UIElementsUpdatePanels")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -329,7 +329,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels {
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateMasterServerInterface")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_UpdateMasterServerInterface {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateMasterServerInterface")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -352,7 +352,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface {
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateNetworkManager")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PreLateUpdate_UpdateNetworkManager {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateNetworkManager")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

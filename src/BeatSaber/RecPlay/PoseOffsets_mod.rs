@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+RecPlay+PoseOffsets")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PoseOffsets {
     pub room: crate::UnityEngine::Pose,
     pub leftController: crate::UnityEngine::Pose,

@@ -219,7 +219,7 @@ for crate::UnityEngine::UIElements::StyleComplexSelector {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleComplexSelector_PseudoStateData {
     pub state: crate::UnityEngine::UIElements::PseudoStates,
     pub negate: bool,

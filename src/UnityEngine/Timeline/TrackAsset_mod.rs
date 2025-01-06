@@ -1346,7 +1346,7 @@ for crate::UnityEngine::Timeline::TrackAsset_TrackAssetUpgrade {
 }
 #[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TrackAsset_TransientBuildData {
     pub trackList: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+TreeItem")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TreeItem {
     pub _id_k__BackingField: i32,
     pub _parentId_k__BackingField: i32,

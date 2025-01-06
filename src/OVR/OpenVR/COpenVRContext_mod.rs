@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+COpenVRContext")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct COpenVRContext {
     pub m_pVRSystem: crate::System::IntPtr,
     pub m_pVRChaperone: crate::System::IntPtr,

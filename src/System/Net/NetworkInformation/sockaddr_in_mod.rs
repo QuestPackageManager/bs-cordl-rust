@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+sockaddr_in")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct sockaddr_in {
     pub sin_family: u16,
     pub sin_port: u16,

@@ -428,7 +428,7 @@ for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
 }
 #[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapLevelLoader_LevelDownloadingUpdate {
     pub levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub progress: f32,

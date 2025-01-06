@@ -2,7 +2,7 @@
     feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
     pub _node: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
@@ -260,7 +260,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExt
     feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
     pub _node: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,

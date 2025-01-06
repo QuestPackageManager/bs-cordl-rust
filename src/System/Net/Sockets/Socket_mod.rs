@@ -2583,7 +2583,7 @@ for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
 }
 #[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Socket_WSABUF {
     pub len: i32,
     pub buf: crate::System::IntPtr,

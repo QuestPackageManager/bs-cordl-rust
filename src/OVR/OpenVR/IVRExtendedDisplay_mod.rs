@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRExtendedDisplay {
     pub GetWindowBounds: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds,

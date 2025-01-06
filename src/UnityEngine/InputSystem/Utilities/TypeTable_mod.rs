@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TypeTable")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TypeTable {
     pub table: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<

@@ -61,7 +61,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriverDataDescription {
 }
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriverDataDescription+PoseData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TrackedPoseDriverDataDescription_PoseData {
     pub PoseNames: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<

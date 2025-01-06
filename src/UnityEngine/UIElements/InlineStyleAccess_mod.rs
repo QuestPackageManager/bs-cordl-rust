@@ -1008,7 +1008,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccess {
 }
 #[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct InlineStyleAccess_InlineRule {
     pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
     pub rule: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,

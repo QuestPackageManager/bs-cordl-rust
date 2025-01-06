@@ -64,7 +64,7 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HIDSupport_HIDPageUsage {
     pub page: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
     pub usage: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+JointMotor")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JointMotor {
     pub m_TargetVelocity: f32,
     pub m_Force: f32,

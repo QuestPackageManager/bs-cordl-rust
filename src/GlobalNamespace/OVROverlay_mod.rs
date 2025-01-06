@@ -588,7 +588,7 @@ for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
 }
 #[cfg(feature = "OVROverlay+LayerTexture")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVROverlay_LayerTexture {
     pub appTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub appTexturePtr: crate::System::IntPtr,

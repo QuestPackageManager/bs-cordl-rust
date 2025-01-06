@@ -1,6 +1,6 @@
 #[cfg(feature = "CreateServerFormData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CreateServerFormData {
     pub usePassword: bool,
     pub password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

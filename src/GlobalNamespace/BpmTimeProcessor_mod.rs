@@ -178,7 +178,7 @@ for crate::GlobalNamespace::BpmTimeProcessor {
 }
 #[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BpmTimeProcessor_BpmChangeData {
     pub bpmChangeStartTime: f32,
     pub bpmChangeStartBpmTime: f32,

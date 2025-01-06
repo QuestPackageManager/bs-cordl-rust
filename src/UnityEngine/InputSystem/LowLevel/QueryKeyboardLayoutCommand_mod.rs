@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct QueryKeyboardLayoutCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<264usize>,
 }
@@ -98,7 +98,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyboardLayoutCommand {
     feature = "UnityEngine+InputSystem+LowLevel+QueryKeyboardLayoutCommand+_nameBuffer_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct QueryKeyboardLayoutCommand__nameBuffer_e__FixedBuffer {
     pub FixedElementField: u8,
 }

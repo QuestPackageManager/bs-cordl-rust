@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct QueryDimensionsCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }

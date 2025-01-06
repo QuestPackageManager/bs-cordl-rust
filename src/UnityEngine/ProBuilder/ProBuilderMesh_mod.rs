@@ -2171,7 +2171,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ProBuilderMesh_NonVersionedEditScope {
     pub m_Mesh: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ProBuilder::ProBuilderMesh,

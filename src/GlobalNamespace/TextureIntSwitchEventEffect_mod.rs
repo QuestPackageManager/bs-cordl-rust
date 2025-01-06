@@ -127,7 +127,7 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect {
 }
 #[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextureIntSwitchEventEffect_TextureValueTuple {
     pub value: i32,
     pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,

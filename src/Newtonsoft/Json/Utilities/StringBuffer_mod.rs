@@ -1,6 +1,6 @@
 #[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StringBuffer {
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _position: i32,

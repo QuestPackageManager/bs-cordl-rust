@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+InteropServices+OSPlatform")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OSPlatform {
     pub _osPlatform: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+CreationContext")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CreationContext {
     pub _target_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,

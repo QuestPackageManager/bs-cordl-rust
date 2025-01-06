@@ -65,7 +65,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::SendMouseEvents {
 }
 #[cfg(feature = "UnityEngine+SendMouseEvents+HitInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SendMouseEvents_HitInfo {
     pub target: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifconf")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ifconf {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
 }

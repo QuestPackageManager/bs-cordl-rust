@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UI+ColorBlock")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorBlock {
     pub m_NormalColor: crate::UnityEngine::Color,
     pub m_HighlightedColor: crate::UnityEngine::Color,

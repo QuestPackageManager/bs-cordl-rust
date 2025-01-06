@@ -1,6 +1,6 @@
 #[cfg(feature = "NetworkStatisticsDelta")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NetworkStatisticsDelta {
     pub packetsSentDelta: i64,
     pub packetsReceivedDelta: i64,

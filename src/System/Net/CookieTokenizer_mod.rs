@@ -238,7 +238,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CookieTokenizer {
 }
 #[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CookieTokenizer_RecognizedAttribute {
     pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_token: crate::System::Net::CookieToken,

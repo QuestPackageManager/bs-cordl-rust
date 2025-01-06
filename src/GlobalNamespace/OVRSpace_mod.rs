@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRSpace")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSpace {
     pub _Handle_k__BackingField: u64,
 }

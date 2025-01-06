@@ -143,7 +143,7 @@ for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+OpacityIdAccelerator+OpacityIdUpdateJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OpacityIdAccelerator_OpacityIdUpdateJob {
     pub oldVerts: crate::Unity::Collections::NativeSlice_1<
         crate::UnityEngine::UIElements::Vertex,

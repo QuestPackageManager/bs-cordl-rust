@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+CullingSplit")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct CullingSplit {
     pub sphereCenter: crate::UnityEngine::Vector3,
     pub sphereRadius: f32,

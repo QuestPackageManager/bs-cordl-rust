@@ -1,6 +1,6 @@
 #[cfg(feature = "IgnoranceCore+IgnoranceCommandPacket")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IgnoranceCommandPacket {
     pub Type: crate::IgnoranceCore::IgnoranceCommandType,
     pub PeerId: u32,

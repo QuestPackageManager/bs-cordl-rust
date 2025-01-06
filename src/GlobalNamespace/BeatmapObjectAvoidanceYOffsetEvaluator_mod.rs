@@ -131,7 +131,7 @@ for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
 }
 #[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
     pub songTime: f32,
     pub yOffset: f32,

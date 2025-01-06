@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRSemanticLabels")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSemanticLabels {
     pub _Handle_k__BackingField: u64,
 }

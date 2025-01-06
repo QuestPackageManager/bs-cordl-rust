@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Span_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Span_1<T: quest_hook::libil2cpp::Type> {
     pub _pointer: crate::System::ByReference_1<T>,
     pub _length: i32,

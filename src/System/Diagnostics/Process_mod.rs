@@ -646,7 +646,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Diagnostics::Process {
 }
 #[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Process_ProcInfo {
     pub process_handle: crate::System::IntPtr,
     pub pid: i32,

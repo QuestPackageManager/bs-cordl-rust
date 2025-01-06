@@ -364,7 +364,7 @@ for crate::System::Collections::Generic::Stack_1<T> {
 }
 #[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Stack_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _stack: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Stack_1<T>,

@@ -156,7 +156,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongRunningHe
 }
 #[cfg(feature = "SongRunningHelper+QueuedSongParams")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SongRunningHelper_QueuedSongParams {
     pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,

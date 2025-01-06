@@ -340,7 +340,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider {
 }
 #[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VariableMovementDataProvider_InterpolationData {
     pub _fromValue: f32,
     pub _toValue: f32,

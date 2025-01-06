@@ -793,7 +793,7 @@ impl AsMut<crate::System::IFormattable> for crate::System::Enum {
 }
 #[cfg(feature = "System+Enum+EnumResult")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Enum_EnumResult {
     pub parsedEnum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub canThrow: bool,

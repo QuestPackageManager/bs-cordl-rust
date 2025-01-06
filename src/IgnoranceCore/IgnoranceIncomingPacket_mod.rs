@@ -1,6 +1,6 @@
 #[cfg(feature = "IgnoranceCore+IgnoranceIncomingPacket")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IgnoranceIncomingPacket {
     pub Channel: u8,
     pub NativePeerId: u32,

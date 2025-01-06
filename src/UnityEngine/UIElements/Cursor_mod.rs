@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+Cursor")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Cursor {
     pub _texture_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Texture2D,

@@ -383,7 +383,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager 
     feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData {
     pub _cordl_time: f32,
     pub beatmapObjectEventData: quest_hook::libil2cpp::Gc<

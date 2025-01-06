@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Properties+FieldMember")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct FieldMember {
     pub m_FieldInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
     pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<

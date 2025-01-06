@@ -1084,7 +1084,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVRSimpleJSON::JSONNode {
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JSONNode_Enumerator {
     pub _cordl_type: crate::OVRSimpleJSON::Enumerator_JSONNode_Type,
     pub m_Object: crate::System::Collections::Generic::Dictionary_2_Enumerator<
@@ -1175,7 +1175,7 @@ impl crate::OVRSimpleJSON::JSONNode_Enumerator {
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+KeyEnumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JSONNode_KeyEnumerator {
     pub m_Enumerator: crate::OVRSimpleJSON::JSONNode_Enumerator,
 }
@@ -1542,7 +1542,7 @@ for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+ValueEnumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JSONNode_ValueEnumerator {
     pub m_Enumerator: crate::OVRSimpleJSON::JSONNode_Enumerator,
 }

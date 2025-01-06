@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Hash128")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Hash128 {
     pub u64_0: u64,
     pub u64_1: u64,

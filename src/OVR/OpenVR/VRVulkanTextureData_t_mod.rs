@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VRVulkanTextureData_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct VRVulkanTextureData_t {
     pub m_nImage: u64,
     pub m_pDevice: crate::System::IntPtr,

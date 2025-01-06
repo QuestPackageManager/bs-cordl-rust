@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Cache")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Cache {
     pub m_Handle: i32,
 }

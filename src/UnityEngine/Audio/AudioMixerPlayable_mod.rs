@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Audio+AudioMixerPlayable")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AudioMixerPlayable {
     pub m_Handle: crate::UnityEngine::Playables::PlayableHandle,
 }

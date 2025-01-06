@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+Range")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Range {
     pub _min: i32,
     pub _max: i32,

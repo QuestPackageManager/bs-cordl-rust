@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleTranslate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleTranslate {
     pub m_Value: crate::UnityEngine::UIElements::Translate,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,

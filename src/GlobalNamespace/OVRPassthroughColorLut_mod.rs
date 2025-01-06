@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
     pub settings: crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings,
     pub target: crate::Unity::Collections::NativeArray_1<u8>,
@@ -53,7 +53,7 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapC
 }
 #[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings {
     pub _Width_k__BackingField: i32,
     pub _Height_k__BackingField: i32,
@@ -795,7 +795,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
 }
 #[cfg(feature = "OVRPassthroughColorLut+WriteColorsAsBytesJob")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRPassthroughColorLut_WriteColorsAsBytesJob {
     pub target: crate::Unity::Collections::NativeArray_1<u8>,
     pub source: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Color>,

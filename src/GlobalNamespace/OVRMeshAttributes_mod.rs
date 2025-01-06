@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRMeshAttributes")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRMeshAttributes {
     pub vertices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,

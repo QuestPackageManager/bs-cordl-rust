@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PointerModel {
     pub changedThisFrame: bool,
     pub leftButton: crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState,
@@ -271,7 +271,7 @@ impl crate::UnityEngine::InputSystem::UI::PointerModel {
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PointerModel_ButtonState {
     pub m_IsPressed: bool,
     pub m_FramePressState: crate::UnityEngine::EventSystems::PointerEventData_FramePressState,

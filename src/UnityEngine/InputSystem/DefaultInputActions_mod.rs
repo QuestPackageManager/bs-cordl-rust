@@ -730,7 +730,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
 }
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DefaultInputActions_PlayerActions {
     pub m_Wrapper: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::DefaultInputActions,
@@ -862,7 +862,7 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
 }
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DefaultInputActions_UIActions {
     pub m_Wrapper: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::DefaultInputActions,

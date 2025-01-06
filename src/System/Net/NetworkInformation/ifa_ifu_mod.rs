@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+ifa_ifu")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ifa_ifu {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }

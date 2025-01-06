@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+LigatureSubstitutionRecord")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LigatureSubstitutionRecord {
     pub m_ComponentGlyphIDs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<u32>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Collections+Generic+LargeArrayBuilder_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LargeArrayBuilder_1<T: quest_hook::libil2cpp::Type> {
     pub _maxCapacity: i32,
     pub _first: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,

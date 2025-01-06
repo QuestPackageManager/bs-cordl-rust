@@ -189,7 +189,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneLoade
 }
 #[cfg(feature = "OVRSceneLoader+SceneInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSceneLoader_SceneInfo {
     pub scenes: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<

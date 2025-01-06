@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_GeoInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct HAPI_GeoInfo {
     pub _cordl_type: crate::HoudiniEngineUnity::HAPI_GeoType,
     pub nameSH: i32,

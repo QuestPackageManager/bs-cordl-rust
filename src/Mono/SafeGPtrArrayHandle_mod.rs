@@ -1,6 +1,6 @@
 #[cfg(feature = "Mono+SafeGPtrArrayHandle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SafeGPtrArrayHandle {
     pub handle: crate::Mono::RuntimeGPtrArrayHandle,
 }

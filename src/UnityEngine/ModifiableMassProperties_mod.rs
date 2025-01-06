@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ModifiableMassProperties")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ModifiableMassProperties {
     pub inverseMassScale: f32,
     pub inverseInertiaScale: f32,

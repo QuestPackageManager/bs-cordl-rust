@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightDataGI")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LightDataGI {
     pub instanceID: i32,
     pub cookieID: i32,

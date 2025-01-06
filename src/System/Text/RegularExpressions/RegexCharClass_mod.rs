@@ -480,7 +480,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass {
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RegexCharClass_LowerCaseMapping {
     pub ChMin: char,
     pub ChMax: char,
@@ -523,7 +523,7 @@ impl crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RegexCharClass_SingleRange {
     pub First: char,
     pub Last: char,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+DiscLight")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct DiscLight {
     pub instanceID: i32,
     pub shadow: bool,

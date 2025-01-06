@@ -710,7 +710,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIRenderDevice_AllocToFree {
     pub alloc: crate::UnityEngine::UIElements::UIR::Alloc,
     pub page: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
@@ -737,7 +737,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
 impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {}
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIRenderDevice_AllocToUpdate {
     pub id: u32,
     pub allocTime: u32,
@@ -770,7 +770,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
 impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {}
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIRenderDevice_DeviceToFree {
     pub handle: u32,
     pub page: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
@@ -807,7 +807,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIRenderDevice_DrawStatistics {
     pub currentFrameIndex: i32,
     pub totalIndices: u32,
@@ -840,7 +840,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
 impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {}
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIRenderDevice_EvaluationState {
     pub stateMatProps: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::MaterialPropertyBlock,

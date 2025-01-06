@@ -1,6 +1,6 @@
 #[cfg(feature = "StandardScoreSyncState")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StandardScoreSyncState {
     pub _modifiedScore: i32,
     pub _multipliedScore: i32,

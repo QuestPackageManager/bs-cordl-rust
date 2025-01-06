@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleInt")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleInt {
     pub m_Value: i32,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,

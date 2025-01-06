@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+PanelClearSettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PanelClearSettings {
     pub clearDepthStencil: bool,
     pub clearColor: bool,

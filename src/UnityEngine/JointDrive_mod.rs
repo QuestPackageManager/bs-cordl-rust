@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+JointDrive")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct JointDrive {
     pub m_PositionSpring: f32,
     pub m_PositionDamper: f32,

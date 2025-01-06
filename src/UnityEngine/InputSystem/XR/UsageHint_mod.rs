@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+UsageHint")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct UsageHint {
     pub content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }

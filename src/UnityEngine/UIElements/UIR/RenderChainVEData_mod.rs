@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainVEData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderChainVEData {
     pub prev: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     pub next: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,

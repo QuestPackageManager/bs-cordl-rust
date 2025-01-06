@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRSystem")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRSystem {
     pub GetRecommendedRenderTargetSize: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRSystem__GetRecommendedRenderTargetSize,

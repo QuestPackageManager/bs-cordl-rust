@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_Offset")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Offset {
     pub m_Left: f32,
     pub m_Right: f32,

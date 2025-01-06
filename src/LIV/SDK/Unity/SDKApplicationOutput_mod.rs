@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SDKApplicationOutput {
     pub supportedFeatures: crate::LIV::SDK::Unity::FEATURES,
     pub engineName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

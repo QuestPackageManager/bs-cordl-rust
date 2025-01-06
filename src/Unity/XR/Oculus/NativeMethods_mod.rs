@@ -465,7 +465,7 @@ for crate::Unity::XR::Oculus::NativeMethods_Internal {
 }
 #[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeMethods_UserDefinedSettings {
     pub sharedDepthBuffer: u16,
     pub dashSupport: u16,

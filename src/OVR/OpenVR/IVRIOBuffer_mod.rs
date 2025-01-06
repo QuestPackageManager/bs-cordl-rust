@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRIOBuffer {
     pub Open: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRIOBuffer__Open>,
     pub Close: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRIOBuffer__Close>,

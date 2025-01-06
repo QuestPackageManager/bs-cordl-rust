@@ -675,7 +675,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNodeReaderNavi
 }
 #[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlNodeReaderNavigator_VirtualAttribute {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

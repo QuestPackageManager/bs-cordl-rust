@@ -1,6 +1,6 @@
 #[cfg(feature = "System+RuntimeArgumentHandle")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RuntimeArgumentHandle {
     pub args: crate::System::IntPtr,
 }

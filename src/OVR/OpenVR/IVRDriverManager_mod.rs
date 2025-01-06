@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRDriverManager {
     pub GetDriverCount: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRDriverManager__GetDriverCount,

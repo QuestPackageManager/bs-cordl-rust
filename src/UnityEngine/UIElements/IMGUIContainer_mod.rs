@@ -544,7 +544,7 @@ for crate::UnityEngine::UIElements::IMGUIContainer {
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IMGUIContainer_GUIGlobals {
     pub matrix: crate::UnityEngine::Matrix4x4,
     pub color: crate::UnityEngine::Color,

@@ -747,7 +747,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlTextWriter {
 }
 #[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlTextWriter_Namespace {
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -839,7 +839,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct XmlTextWriter_TagInfo {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

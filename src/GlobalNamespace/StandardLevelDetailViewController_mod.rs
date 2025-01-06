@@ -785,7 +785,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
@@ -860,7 +860,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
     feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
@@ -943,7 +943,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
 }
 #[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
@@ -1018,7 +1018,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
     feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,

@@ -1,6 +1,6 @@
 #[cfg(feature = "LevelFilter")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct LevelFilter {
     pub songOwned: bool,
     pub songNotOwned: bool,

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+ImuSample_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ImuSample_t {
     pub fSampleTime: f64,
     pub vAccel: crate::OVR::OpenVR::HmdVector3d_t,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleTransformOrigin")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleTransformOrigin {
     pub m_Value: crate::UnityEngine::UIElements::TransformOrigin,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,

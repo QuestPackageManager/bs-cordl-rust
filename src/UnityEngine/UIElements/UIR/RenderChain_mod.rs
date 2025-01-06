@@ -862,7 +862,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderChain_DepthOrderedDirtyTracking {
     pub heads: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
@@ -948,7 +948,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking 
     feature = "UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderChain_RenderChainStaticIndexAllocator {}
 #[cfg(
     feature = "UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
@@ -1005,7 +1005,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAllo
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderChain_RenderNodeData {
     pub standardMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub initialMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,

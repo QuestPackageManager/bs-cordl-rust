@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlInt32")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct SqlInt32 {
     pub m_fNotNull: bool,
     pub m_value: i32,

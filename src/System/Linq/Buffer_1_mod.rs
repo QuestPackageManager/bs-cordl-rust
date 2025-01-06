@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Linq+Buffer_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Buffer_1<TElement: quest_hook::libil2cpp::Type> {
     pub items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TElement>>,
     pub count: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Threading+AsyncLocalValueChangedArgs_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AsyncLocalValueChangedArgs_1<T: quest_hook::libil2cpp::Type> {
     pub _PreviousValue_k__BackingField: T,
     pub _CurrentValue_k__BackingField: T,

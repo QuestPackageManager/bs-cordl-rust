@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Tilemaps+TileAnimationData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TileAnimationData {
     pub m_AnimatedSprites: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<

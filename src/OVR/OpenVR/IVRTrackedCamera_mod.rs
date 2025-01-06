@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct IVRTrackedCamera {
     pub GetCameraErrorNameFromEnum: quest_hook::libil2cpp::Gc<
         crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+Experimental+StyleValues")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleValues {
     pub m_StyleValues: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::StyleValueCollection,

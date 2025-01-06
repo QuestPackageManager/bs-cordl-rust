@@ -154,7 +154,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PoolableManager {
 }
 #[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PoolableManager_PoolableInfo {
     pub Poolable: quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
     pub Priority: i32,

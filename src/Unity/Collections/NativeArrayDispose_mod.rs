@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Collections+NativeArrayDispose")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct NativeArrayDispose {
     pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_AllocatorLabel: crate::Unity::Collections::Allocator,

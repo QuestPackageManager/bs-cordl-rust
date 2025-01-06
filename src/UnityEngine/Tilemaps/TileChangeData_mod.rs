@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Tilemaps+TileChangeData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct TileChangeData {
     pub m_Position: crate::UnityEngine::Vector3Int,
     pub m_TileAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,

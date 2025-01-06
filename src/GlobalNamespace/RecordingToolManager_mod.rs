@@ -162,7 +162,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RecordingTool
 }
 #[cfg(feature = "RecordingToolManager+SetupData")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct RecordingToolManager_SetupData {
     pub profileSong: bool,
     pub runAutopilot: bool,

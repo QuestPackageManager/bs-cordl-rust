@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlayerLoopSystem {
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub subSystemList: quest_hook::libil2cpp::Gc<

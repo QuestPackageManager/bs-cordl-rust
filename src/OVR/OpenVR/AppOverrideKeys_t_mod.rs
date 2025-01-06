@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+AppOverrideKeys_t")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct AppOverrideKeys_t {
     pub pchKey: crate::System::IntPtr,
     pub pchValue: crate::System::IntPtr,

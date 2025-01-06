@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+Compositor_CumulativeStats")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct Compositor_CumulativeStats {
     pub m_nPid: u32,
     pub m_nNumFramePresents: u32,

@@ -1669,7 +1669,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1
     feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
 )]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ResourceManager_DeferredCallbackRegisterRequest {
     pub operation: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
@@ -1703,7 +1703,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegi
 impl crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {}
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ResourceManager_DiagnosticEventContext {
     pub _OperationHandle_k__BackingField: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     pub _Type_k__BackingField: crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,

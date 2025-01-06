@@ -1,6 +1,6 @@
 #[cfg(feature = "System+ArraySegment_1")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ArraySegment_1<T: quest_hook::libil2cpp::Type> {
     pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _offset: i32,
@@ -504,7 +504,7 @@ for crate::System::ArraySegment_1<T> {
 }
 #[cfg(feature = "System+ArraySegment_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ArraySegment_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _start: i32,

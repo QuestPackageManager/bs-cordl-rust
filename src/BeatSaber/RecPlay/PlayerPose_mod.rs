@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+RecPlay+PlayerPose")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct PlayerPose {
     pub head: crate::UnityEngine::Pose,
     pub leftHand: crate::UnityEngine::Pose,

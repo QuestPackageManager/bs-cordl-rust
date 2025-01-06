@@ -565,7 +565,7 @@ for crate::System::Threading::ReaderWriterLockSlim {
 }
 #[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 #[repr(C)]
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, PartialEq)]
 pub struct ReaderWriterLockSlim_TimeoutTracker {
     pub m_total: i32,
     pub m_start: i32,
