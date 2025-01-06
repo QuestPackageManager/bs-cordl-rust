@@ -23,16 +23,22 @@ pub struct StandardLevelInfoSaveData {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _environmentNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _colorSchemes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
+            >,
         >,
     >,
     pub _difficultyBeatmapSets: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
+            >,
         >,
     >,
 }
@@ -93,16 +99,22 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData {
             quest_hook::libil2cpp::Il2CppString,
         >,
         environmentNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         colorSchemes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
+                >,
             >,
         >,
         difficultyBeatmapSets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -154,16 +166,22 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData {
             quest_hook::libil2cpp::Il2CppString,
         >,
         environmentNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         colorSchemes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
+                >,
             >,
         >,
         difficultyBeatmapSets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -220,7 +238,9 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
+                >,
             >,
         >,
     > {
@@ -229,7 +249,9 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
+                >,
             >,
         > = __cordl_object.invoke("get_colorSchemes", ())?;
         Ok(__cordl_ret.into())
@@ -252,7 +274,9 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
+                >,
             >,
         >,
     > {
@@ -261,7 +285,9 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
+                >,
             >,
         > = __cordl_object.invoke("get_difficultyBeatmapSets", ())?;
         Ok(__cordl_ret.into())
@@ -283,14 +309,18 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("get_environmentNames", ())?;
         Ok(__cordl_ret.into())
     }
@@ -597,7 +627,9 @@ pub struct StandardLevelInfoSaveData_DifficultyBeatmapSet {
     >,
     pub _difficultyBeatmaps: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+            >,
         >,
     >,
 }
@@ -630,7 +662,9 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
         >,
         difficultyBeatmaps: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -647,7 +681,9 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
         >,
         difficultyBeatmaps: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -676,7 +712,9 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+                >,
             >,
         >,
     > {
@@ -685,7 +723,9 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+                >,
             >,
         > = __cordl_object.invoke("get_difficultyBeatmaps", ())?;
         Ok(__cordl_ret.into())

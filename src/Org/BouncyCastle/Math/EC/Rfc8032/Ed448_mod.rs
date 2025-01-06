@@ -414,13 +414,17 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PointPrecompVar", (p, count))?;

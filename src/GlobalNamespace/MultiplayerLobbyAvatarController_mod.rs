@@ -13,7 +13,9 @@ pub struct MultiplayerLobbyAvatarController {
     pub _despawnAvatarDelay: f32,
     pub _destroyAvatarDelay: f32,
     pub _visualObjects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController")]

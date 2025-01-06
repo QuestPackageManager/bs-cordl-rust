@@ -8,7 +8,9 @@ pub struct XmlSchemaAnnotated {
         crate::System::Xml::Schema::XmlSchemaAnnotation,
     >,
     pub moreAttributes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAnnotated")]
@@ -54,7 +56,9 @@ impl crate::System::Xml::Schema::XmlSchemaAnnotated {
     pub fn SetUnhandledAttributes(
         &mut self,
         moreAttributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -117,14 +121,18 @@ impl crate::System::Xml::Schema::XmlSchemaAnnotated {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
+            >,
         > = __cordl_object.invoke("get_UnhandledAttributes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -164,7 +172,9 @@ impl crate::System::Xml::Schema::XmlSchemaAnnotated {
     pub fn set_UnhandledAttributes(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

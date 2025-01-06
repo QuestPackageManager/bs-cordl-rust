@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         missionObjectives: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjective,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
             >,
         >,
         overrideColorScheme: quest_hook::libil2cpp::Gc<
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         missionObjectives: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjective,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
             >,
         >,
         overrideColorScheme: quest_hook::libil2cpp::Gc<

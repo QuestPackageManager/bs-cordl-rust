@@ -8,7 +8,9 @@ pub struct HEU_Parameters {
     pub _paramInts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _paramFloats: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub _paramStrings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _paramChoices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<

@@ -47,7 +47,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevReqContent {
     pub fn New_Il2CppArray1(
         revDetails: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -75,7 +77,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevReqContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+                >,
             >,
         >,
     > {
@@ -84,7 +88,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevReqContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+                >,
             >,
         > = __cordl_object.invoke("ToRevDetailsArray", ())?;
         Ok(__cordl_ret.into())
@@ -104,7 +110,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevReqContent {
         &mut self,
         revDetails: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

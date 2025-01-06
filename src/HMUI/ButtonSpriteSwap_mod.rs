@@ -9,7 +9,9 @@ pub struct ButtonSpriteSwap {
     pub _disabledStateSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _button: quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsButton>,
     pub _images: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Image>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+        >,
     >,
     pub _didStart: bool,
 }

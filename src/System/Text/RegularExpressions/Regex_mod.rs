@@ -12,7 +12,9 @@ pub struct Regex {
     pub caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub capnames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub capslist: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub capsize: i32,
     pub _runnerref: quest_hook::libil2cpp::Gc<
@@ -396,14 +398,18 @@ impl crate::System::Text::RegularExpressions::Regex {
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("Split", (input))?;
         Ok(__cordl_ret.into())
     }
@@ -414,14 +420,18 @@ impl crate::System::Text::RegularExpressions::Regex {
         startat: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("Split", (input, count, startat))?;
         Ok(__cordl_ret.into())
     }
@@ -432,11 +442,15 @@ impl crate::System::Text::RegularExpressions::Regex {
         startat: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Split", (regex, input, count, startat))?;
         Ok(__cordl_ret.into())
@@ -615,7 +629,9 @@ pub struct Regex_CachedCodeEntry {
     pub Caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub Capnames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub Capslist: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub Capsize: i32,
     pub Runnerref: quest_hook::libil2cpp::Gc<
@@ -655,7 +671,9 @@ impl crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
         key: crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey,
         capnames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
         capslist: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         code: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::RegexCode,
@@ -687,7 +705,9 @@ impl crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
         key: crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey,
         capnames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
         capslist: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         code: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::RegexCode,

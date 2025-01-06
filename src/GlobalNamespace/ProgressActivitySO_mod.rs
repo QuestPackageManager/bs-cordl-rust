@@ -5,7 +5,7 @@ pub struct ProgressActivitySO {
     __cordl_parent: crate::GlobalNamespace::PS5ActivityDataSO,
     pub subtasks: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::ProgressActivitySubtaskSO,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProgressActivitySubtaskSO>,
         >,
     >,
 }

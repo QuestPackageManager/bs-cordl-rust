@@ -75,23 +75,8 @@ impl crate::System::Reflection::FieldInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
-        > = __cordl_object.invoke("GetPseudoCustomAttributes", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetPseudoCustomAttributesData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::CustomAttributeData,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
     > {
@@ -100,7 +85,26 @@ impl crate::System::Reflection::FieldInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::CustomAttributeData,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        > = __cordl_object.invoke("GetPseudoCustomAttributes", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPseudoCustomAttributesData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
             >,
         > = __cordl_object.invoke("GetPseudoCustomAttributesData", ())?;
         Ok(__cordl_ret.into())

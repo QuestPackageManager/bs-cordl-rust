@@ -17,10 +17,14 @@ pub struct GhostEffectBehaviour {
     pub _endBehavior: crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior,
     pub progress: f32,
     pub textMeshPros: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshPro>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
+        >,
     >,
     pub _canvasGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::CanvasGroup>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+        >,
     >,
     pub _ghostEffectType: crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType,
     pub _ghostEffectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

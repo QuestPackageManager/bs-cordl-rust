@@ -11,7 +11,9 @@ pub struct FirstPersonFlyingController {
     pub _controller0: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
     pub _controller1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
     pub _controllerModels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _mouseLook: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MouseLook>,
     pub _trackedPoseDriver: quest_hook::libil2cpp::Gc<

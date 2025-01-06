@@ -5,7 +5,9 @@ pub struct Asn1InputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::FilterStream,
     pub limit: i32,
     pub tmpBuffers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1InputStream")]
@@ -83,7 +85,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1InputStream {
         >,
         tmpBuffers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -121,7 +123,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1InputStream {
         >,
         tmpBuffers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

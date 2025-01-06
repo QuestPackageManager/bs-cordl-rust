@@ -9,7 +9,9 @@ pub struct EnvironmentOverrideSettingsPanelController {
     pub _elementsGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _elements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements,
+            >,
         >,
     >,
     pub _presentPanelAnimation: quest_hook::libil2cpp::Gc<crate::HMUI::PanelAnimationSO>,

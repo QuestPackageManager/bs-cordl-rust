@@ -8,7 +8,9 @@ pub struct AlphabetScrollbar {
     pub _normalColor: crate::UnityEngine::Color,
     pub _textPrefab: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _prealocatedTexts: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshProUGUI>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+        >,
     >,
     pub _highlightImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub _characterScrollData: quest_hook::libil2cpp::Gc<

@@ -5,7 +5,9 @@ pub struct NamedIntListController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _textValuePairs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::NamedIntListController_TextValuePair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NamedIntListController_TextValuePair,
+            >,
         >,
     >,
     pub _value: i32,
@@ -60,7 +62,9 @@ impl crate::GlobalNamespace::NamedIntListController {
         &mut self,
         values: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::NamedIntListController_TextValuePair,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::NamedIntListController_TextValuePair,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

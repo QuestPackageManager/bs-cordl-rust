@@ -12,12 +12,16 @@ pub struct SkeinEngine {
     pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub preMessageParameters: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+            quest_hook::libil2cpp::Gc<
+                crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+            >,
         >,
     >,
     pub postMessageParameters: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+            quest_hook::libil2cpp::Gc<
+                crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+            >,
         >,
     >,
     pub ubi: quest_hook::libil2cpp::Gc<
@@ -73,24 +77,32 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
     pub fn Clone(
         data: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+                >,
             >,
         >,
         existing: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Clone", (data, existing))?;

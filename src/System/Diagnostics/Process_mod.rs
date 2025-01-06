@@ -651,7 +651,9 @@ pub struct Process_ProcInfo {
     pub process_handle: crate::System::IntPtr,
     pub pid: i32,
     pub envVariables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub UserName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

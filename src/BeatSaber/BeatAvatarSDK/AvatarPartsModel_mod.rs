@@ -44,7 +44,7 @@ pub struct AvatarPartsModel {
     >,
     pub _skinColors_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::SkinColorSO>,
         >,
     >,
     pub _indexById: quest_hook::libil2cpp::Gc<
@@ -307,7 +307,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::SkinColorSO>,
             >,
         >,
     > {
@@ -316,7 +316,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::SkinColorSO>,
             >,
         > = __cordl_object.invoke("get_skinColors", ())?;
         Ok(__cordl_ret.into())

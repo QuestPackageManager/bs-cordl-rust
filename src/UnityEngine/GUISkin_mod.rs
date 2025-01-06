@@ -44,7 +44,9 @@ pub struct GUISkin {
     >,
     pub m_ScrollView: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
     pub m_CustomStyles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUIStyle>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+        >,
     >,
     pub m_Settings: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUISettings>,
     pub m_Styles: quest_hook::libil2cpp::Gc<
@@ -204,14 +206,18 @@ impl crate::UnityEngine::GUISkin {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUIStyle>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUIStyle>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+            >,
         > = __cordl_object.invoke("get_customStyles", ())?;
         Ok(__cordl_ret.into())
     }
@@ -523,7 +529,9 @@ impl crate::UnityEngine::GUISkin {
     pub fn set_customStyles(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUIStyle>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

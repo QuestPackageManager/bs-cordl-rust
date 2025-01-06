@@ -19,7 +19,9 @@ pub struct OVRGLTFScene {
             i32,
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::OVRGLTFAnimatinonNode,
+                    >,
                 >,
             >,
         >,

@@ -127,7 +127,9 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievement
         &mut self,
         result: crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult,
         unlockedAchievementsIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -156,7 +158,9 @@ impl crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievement
         &mut self,
         result: crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult,
         unlockedAchievementsIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

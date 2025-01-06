@@ -9,7 +9,9 @@ pub struct DropdownDialogPromptViewController {
     pub _dropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
     pub _buttons: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel,
+            >,
         >,
     >,
     pub _didFinishAction: quest_hook::libil2cpp::Gc<
@@ -92,7 +94,9 @@ impl crate::GlobalNamespace::DropdownDialogPromptViewController {
             crate::System::Action_1<crate::System::ValueTuple_2<i32, i32>>,
         >,
         buttonTexts: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

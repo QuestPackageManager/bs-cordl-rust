@@ -6,7 +6,9 @@ pub struct Task_WhenAllPromise {
         crate::System::Threading::Tasks::VoidTaskResult,
     >,
     pub m_tasks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Threading::Tasks::Task>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        >,
     >,
     pub m_count: i32,
 }
@@ -46,7 +48,7 @@ impl crate::GlobalNamespace::Task_WhenAllPromise {
     pub fn New(
         tasks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task,
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -60,7 +62,7 @@ impl crate::GlobalNamespace::Task_WhenAllPromise {
         &mut self,
         tasks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task,
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

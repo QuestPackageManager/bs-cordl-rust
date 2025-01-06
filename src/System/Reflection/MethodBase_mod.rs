@@ -26,7 +26,9 @@ impl std::ops::DerefMut for crate::System::Reflection::MethodBase {
 impl crate::System::Reflection::MethodBase {
     pub fn ConstructParameters(
         parameterTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         callingConvention: crate::System::Reflection::CallingConventions,
         serialization: bool,
@@ -70,14 +72,18 @@ impl crate::System::Reflection::MethodBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = __cordl_object.invoke("GetGenericArguments", ())?;
         Ok(__cordl_ret.into())
     }
@@ -113,23 +119,8 @@ impl crate::System::Reflection::MethodBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-        > = __cordl_object.invoke("GetParameterTypes", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetParameters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
             >,
         >,
     > {
@@ -138,7 +129,26 @@ impl crate::System::Reflection::MethodBase {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        > = __cordl_object.invoke("GetParameterTypes", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetParameters(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         > = __cordl_object.invoke("GetParameters", ())?;
         Ok(__cordl_ret.into())
@@ -155,7 +165,7 @@ impl crate::System::Reflection::MethodBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
     > {
@@ -164,7 +174,7 @@ impl crate::System::Reflection::MethodBase {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         > = __cordl_object.invoke("GetParametersInternal", ())?;
         Ok(__cordl_ret.into())
@@ -174,7 +184,7 @@ impl crate::System::Reflection::MethodBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
     > {
@@ -183,7 +193,7 @@ impl crate::System::Reflection::MethodBase {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         > = __cordl_object.invoke("GetParametersNoCopy", ())?;
         Ok(__cordl_ret.into())
@@ -194,7 +204,9 @@ impl crate::System::Reflection::MethodBase {
         invokeAttr: crate::System::Reflection::BindingFlags,
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<
@@ -213,7 +225,9 @@ impl crate::System::Reflection::MethodBase {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

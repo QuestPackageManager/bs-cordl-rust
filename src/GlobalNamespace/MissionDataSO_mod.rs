@@ -10,7 +10,9 @@ pub struct MissionDataSO {
     >,
     pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub _missionObjectives: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionObjective>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
+        >,
     >,
     pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiers,
@@ -118,7 +120,7 @@ impl crate::GlobalNamespace::MissionDataSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjective,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
             >,
         >,
     > {
@@ -127,7 +129,7 @@ impl crate::GlobalNamespace::MissionDataSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjective,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
             >,
         > = __cordl_object.invoke("get_missionObjectives", ())?;
         Ok(__cordl_ret.into())

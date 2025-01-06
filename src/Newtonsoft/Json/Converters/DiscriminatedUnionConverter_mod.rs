@@ -217,7 +217,9 @@ pub struct DiscriminatedUnionConverter_UnionCase {
     pub Tag: i32,
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Fields: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::PropertyInfo>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        >,
     >,
     pub FieldReader: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Utilities::FSharpFunction,
@@ -254,7 +256,7 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase 
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fields: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::PropertyInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
             >,
         >,
         fieldReader: quest_hook::libil2cpp::Gc<
@@ -276,7 +278,7 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase 
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fields: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::PropertyInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
             >,
         >,
         fieldReader: quest_hook::libil2cpp::Gc<

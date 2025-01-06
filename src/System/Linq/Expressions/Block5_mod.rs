@@ -86,7 +86,7 @@ impl crate::System::Linq::Expressions::Block5 {
         >,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

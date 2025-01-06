@@ -157,7 +157,7 @@ pub struct ThreadPoolWorkQueue_QueueSegment {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nodes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Threading::IThreadPoolWorkItem,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
         >,
     >,
     pub indexes: i32,
@@ -394,7 +394,7 @@ pub struct ThreadPoolWorkQueue_WorkStealingQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_array: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Threading::IThreadPoolWorkItem,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
         >,
     >,
     pub m_mask: i32,

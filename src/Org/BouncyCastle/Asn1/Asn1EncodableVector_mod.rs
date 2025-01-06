@@ -5,7 +5,7 @@ pub struct Asn1EncodableVector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub elements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
         >,
     >,
     pub elementCount: i32,
@@ -49,7 +49,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
         &mut self,
         objs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -88,7 +88,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
         &mut self,
         objs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -102,19 +102,19 @@ impl crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
     pub fn CloneElements(
         elements: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CloneElements", (elements))?;
@@ -125,7 +125,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     > {
@@ -134,7 +134,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         > = __cordl_object.invoke("CopyElements", ())?;
         Ok(__cordl_ret.into())
@@ -173,7 +173,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
     pub fn New_Il2CppArray2(
         v: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -208,7 +208,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     > {
@@ -217,7 +217,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         > = __cordl_object.invoke("TakeElements", ())?;
         Ok(__cordl_ret.into())
@@ -236,7 +236,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
         &mut self,
         v: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

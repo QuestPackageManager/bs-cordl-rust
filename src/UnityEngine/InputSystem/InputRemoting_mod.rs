@@ -4,7 +4,9 @@
 pub struct ChangeUsageMsg_InputRemoting_Data {
     pub deviceId: i32,
     pub usages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
@@ -37,7 +39,9 @@ pub struct InputRemoting {
     >,
     pub m_Subscribers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputRemoting_Subscriber,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::InputRemoting_Subscriber,
+            >,
         >,
     >,
     pub m_Senders: quest_hook::libil2cpp::Gc<
@@ -1200,7 +1204,9 @@ pub struct NewDeviceMsg_InputRemoting_Data {
     pub layout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub deviceId: i32,
     pub usages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
 }

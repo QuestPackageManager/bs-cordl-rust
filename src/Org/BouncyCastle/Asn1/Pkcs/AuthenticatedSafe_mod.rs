@@ -5,7 +5,7 @@ pub struct AuthenticatedSafe {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub info: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo>,
         >,
     >,
     pub isBer: bool,
@@ -33,19 +33,25 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::AuthenticatedSafe {
     pub fn Copy(
         info: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Copy", (info))?;
         Ok(__cordl_ret.into())
@@ -55,7 +61,9 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::AuthenticatedSafe {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                >,
             >,
         >,
     > {
@@ -64,7 +72,9 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::AuthenticatedSafe {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                >,
             >,
         > = __cordl_object.invoke("GetContentInfo", ())?;
         Ok(__cordl_ret.into())
@@ -93,7 +103,9 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::AuthenticatedSafe {
     pub fn New_Il2CppArray1(
         info: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -131,7 +143,9 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::AuthenticatedSafe {
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -22,10 +22,14 @@ pub struct MultiplayerResultsPyramidViewAvatar {
     pub _nameBackground: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     pub _badgeCanvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
     pub _badgeTitles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshProUGUI>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+        >,
     >,
     pub _badgeImages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ImageView>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+        >,
     >,
     pub _badgeSubtitleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _badgeSubtitleCanvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,

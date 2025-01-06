@@ -8,7 +8,7 @@ pub struct MissionCompletionResults {
     >,
     pub missionObjectiveResults: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MissionObjectiveResult,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveResult>,
         >,
     >,
 }
@@ -38,7 +38,7 @@ impl crate::GlobalNamespace::MissionCompletionResults {
         >,
         missionObjectiveResults: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjectiveResult,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveResult>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::MissionCompletionResults {
         >,
         missionObjectiveResults: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjectiveResult,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveResult>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

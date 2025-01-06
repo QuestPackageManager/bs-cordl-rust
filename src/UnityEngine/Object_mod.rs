@@ -289,11 +289,15 @@ impl crate::UnityEngine::Object {
         sortMode: crate::UnityEngine::FindObjectsSortMode,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsByType", (_cordl_type, findObjectsInactive, sortMode))?;
         Ok(__cordl_ret.into())
@@ -303,11 +307,15 @@ impl crate::UnityEngine::Object {
         sortMode: crate::UnityEngine::FindObjectsSortMode,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsByType", (_cordl_type, sortMode))?;
         Ok(__cordl_ret.into())
@@ -316,11 +324,15 @@ impl crate::UnityEngine::Object {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsOfTypeAll", (_cordl_type))?;
         Ok(__cordl_ret.into())
@@ -329,11 +341,15 @@ impl crate::UnityEngine::Object {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsOfTypeIncludingAssets", (_cordl_type))?;
         Ok(__cordl_ret.into())
@@ -355,11 +371,15 @@ impl crate::UnityEngine::Object {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsOfType", (_cordl_type))?;
         Ok(__cordl_ret.into())
@@ -369,11 +389,15 @@ impl crate::UnityEngine::Object {
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindObjectsOfType", (_cordl_type, includeInactive))?;
         Ok(__cordl_ret.into())
@@ -397,11 +421,15 @@ impl crate::UnityEngine::Object {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FindSceneObjectsOfType", (_cordl_type))?;
         Ok(__cordl_ret.into())

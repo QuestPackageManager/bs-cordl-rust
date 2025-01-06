@@ -129,7 +129,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::ExtendedKeyUsage {
     pub fn New_Il2CppArray1(
         usages: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::KeyPurposeID,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::KeyPurposeID,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -189,7 +191,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::ExtendedKeyUsage {
         &mut self,
         usages: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::KeyPurposeID,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::KeyPurposeID,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

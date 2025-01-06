@@ -7,7 +7,9 @@ pub struct AlphaFloatFxGroupEffectTarget {
     pub _property: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MaterialPropertyBlockController,
+            >,
         >,
     >,
     pub _propertyId: i32,

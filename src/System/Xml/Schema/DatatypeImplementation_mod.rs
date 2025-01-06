@@ -122,7 +122,9 @@ impl crate::System::Xml::Schema::DatatypeImplementation {
     pub fn DeriveByUnion(
         types: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         >,
         schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
@@ -194,13 +196,17 @@ impl crate::System::Xml::Schema::DatatypeImplementation {
     pub fn GetBuiltInTypes() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetBuiltInTypes", ())?;

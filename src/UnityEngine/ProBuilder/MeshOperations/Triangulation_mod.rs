@@ -64,7 +64,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         >,
         holes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {

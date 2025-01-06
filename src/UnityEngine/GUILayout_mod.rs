@@ -44,7 +44,9 @@ impl crate::UnityEngine::GUILayout {
         content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
         style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -53,7 +55,9 @@ impl crate::UnityEngine::GUILayout {
     }
     pub fn BeginHorizontal_Il2CppArray0(
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -64,7 +68,9 @@ impl crate::UnityEngine::GUILayout {
         content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
         style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -73,7 +79,9 @@ impl crate::UnityEngine::GUILayout {
     }
     pub fn BeginVertical_Il2CppArray0(
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -84,7 +92,9 @@ impl crate::UnityEngine::GUILayout {
         content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
         style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -114,7 +124,9 @@ impl crate::UnityEngine::GUILayout {
     pub fn Label(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

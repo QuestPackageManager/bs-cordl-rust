@@ -26,18 +26,20 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_MeshFilter_Extension
 impl crate::HoudiniEngineUnity::Test_MeshFilter_Extensions {
     pub fn ToTestObject_Il2CppArray1(
         _cordl_self: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshFilter>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::Test_MeshFilter,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_MeshFilter>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::Test_MeshFilter,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_MeshFilter>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToTestObject", (_cordl_self))?;

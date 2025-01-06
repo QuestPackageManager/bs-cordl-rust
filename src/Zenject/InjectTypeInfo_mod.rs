@@ -6,12 +6,12 @@ pub struct InjectTypeInfo {
     pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub InjectMethods: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Zenject::InjectTypeInfo_InjectMethodInfo,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo_InjectMethodInfo>,
         >,
     >,
     pub InjectMembers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Zenject::InjectTypeInfo_InjectMemberInfo,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo_InjectMemberInfo>,
         >,
     >,
     pub InjectConstructor: quest_hook::libil2cpp::Gc<
@@ -54,12 +54,16 @@ impl crate::Zenject::InjectTypeInfo {
         >,
         injectMethods: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Zenject::InjectTypeInfo_InjectMethodInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::InjectTypeInfo_InjectMethodInfo,
+                >,
             >,
         >,
         injectMembers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Zenject::InjectTypeInfo_InjectMemberInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::InjectTypeInfo_InjectMemberInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -80,12 +84,16 @@ impl crate::Zenject::InjectTypeInfo {
         >,
         injectMethods: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Zenject::InjectTypeInfo_InjectMethodInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::InjectTypeInfo_InjectMethodInfo,
+                >,
             >,
         >,
         injectMembers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Zenject::InjectTypeInfo_InjectMemberInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::InjectTypeInfo_InjectMemberInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -184,7 +192,9 @@ pub struct InjectTypeInfo_InjectConstructorInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Factory: quest_hook::libil2cpp::Gc<crate::Zenject::ZenFactoryMethod>,
     pub Parameters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::InjectableInfo>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+InjectTypeInfo+InjectConstructorInfo")]
@@ -210,7 +220,9 @@ impl crate::Zenject::InjectTypeInfo_InjectConstructorInfo {
     pub fn New(
         factory: quest_hook::libil2cpp::Gc<crate::Zenject::ZenFactoryMethod>,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::InjectableInfo>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -223,7 +235,9 @@ impl crate::Zenject::InjectTypeInfo_InjectConstructorInfo {
         &mut self,
         factory: quest_hook::libil2cpp::Gc<crate::Zenject::ZenFactoryMethod>,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::InjectableInfo>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -313,7 +327,9 @@ pub struct InjectTypeInfo_InjectMethodInfo {
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Action: quest_hook::libil2cpp::Gc<crate::Zenject::ZenInjectMethod>,
     pub Parameters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::InjectableInfo>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+InjectTypeInfo+InjectMethodInfo")]
@@ -339,7 +355,9 @@ impl crate::Zenject::InjectTypeInfo_InjectMethodInfo {
     pub fn New(
         action: quest_hook::libil2cpp::Gc<crate::Zenject::ZenInjectMethod>,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::InjectableInfo>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
+            >,
         >,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -353,7 +371,9 @@ impl crate::Zenject::InjectTypeInfo_InjectMethodInfo {
         &mut self,
         action: quest_hook::libil2cpp::Gc<crate::Zenject::ZenInjectMethod>,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::InjectableInfo>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
+            >,
         >,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

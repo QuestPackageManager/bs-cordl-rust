@@ -21,7 +21,9 @@ pub struct PlayerInput {
     >,
     pub m_ActionEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::PlayerInput_ActionEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::PlayerInput_ActionEvent,
+            >,
         >,
     >,
     pub m_NeverAutoSwitchControlSchemes: bool,
@@ -318,7 +320,7 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
         splitScreenIndex: i32,
         pairWithDevices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -491,7 +493,7 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
         >,
         devices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -517,7 +519,7 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
         &mut self,
         devices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -533,7 +535,7 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
         controlScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         devices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

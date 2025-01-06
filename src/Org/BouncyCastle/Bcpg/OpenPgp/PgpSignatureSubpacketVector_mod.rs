@@ -5,7 +5,7 @@ pub struct PgpSignatureSubpacketVector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub packets: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::SignatureSubpacket>,
         >,
     >,
 }
@@ -90,7 +90,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::Sig::NotationData,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::Sig::NotationData,
+                >,
             >,
         >,
     > {
@@ -99,7 +101,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::Sig::NotationData,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::Sig::NotationData,
+                >,
             >,
         > = __cordl_object.invoke("GetNotationDataOccurences", ())?;
         Ok(__cordl_ret.into())
@@ -109,7 +113,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::Sig::NotationData,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::Sig::NotationData,
+                >,
             >,
         >,
     > {
@@ -118,7 +124,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::Sig::NotationData,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::Sig::NotationData,
+                >,
             >,
         > = __cordl_object.invoke("GetNotationDataOccurrences", ())?;
         Ok(__cordl_ret.into())
@@ -212,7 +220,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         >,
     > {
@@ -221,7 +231,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         > = __cordl_object.invoke("GetSubpackets", (_cordl_type))?;
         Ok(__cordl_ret.into())
@@ -253,7 +265,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
     pub fn New(
         packets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -268,7 +282,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         >,
     > {
@@ -277,7 +293,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         > = __cordl_object.invoke("ToSubpacketArray", ())?;
         Ok(__cordl_ret.into())
@@ -286,7 +304,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
         &mut self,
         packets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

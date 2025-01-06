@@ -5,12 +5,16 @@ pub struct DefaultEnvironmentEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _basicBeatmapEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+            >,
         >,
     >,
     pub _lightGroupEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+            >,
         >,
     >,
 }
@@ -64,7 +68,9 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+                >,
             >,
         >,
     > {
@@ -73,7 +79,9 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+                >,
             >,
         > = __cordl_object.invoke("get_basicBeatmapEvents", ())?;
         Ok(__cordl_ret.into())
@@ -90,7 +98,9 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+                >,
             >,
         >,
     > {
@@ -99,7 +109,9 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+                >,
             >,
         > = __cordl_object.invoke("get_lightGroupEvents", ())?;
         Ok(__cordl_ret.into())

@@ -85,7 +85,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Gost3410ParametersGenerator {
         c: i32,
         pq: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         _cordl_size: i32,
@@ -103,7 +103,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Gost3410ParametersGenerator {
         c: i64,
         pq: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         _cordl_size: i32,
@@ -121,7 +121,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Gost3410ParametersGenerator {
         c: i32,
         pq: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -138,7 +138,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Gost3410ParametersGenerator {
         c: i64,
         pq: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

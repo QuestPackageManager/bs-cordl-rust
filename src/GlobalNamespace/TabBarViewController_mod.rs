@@ -8,11 +8,15 @@ pub struct TabBarViewController {
         crate::UnityEngine::UI::ContentSizeFitter,
     >,
     pub _labels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _items: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::TabBarViewController_TabBarItem,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::TabBarViewController_TabBarItem,
+            >,
         >,
     >,
     pub _shouldReloadData: bool,
@@ -109,7 +113,9 @@ impl crate::GlobalNamespace::TabBarViewController {
         &mut self,
         items: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::TabBarViewController_TabBarItem,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::TabBarViewController_TabBarItem,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -4,17 +4,23 @@
 pub struct BufferedLightColorGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroup>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,
+        >,
     >,
     pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MaterialPropertyBlockController,
+            >,
         >,
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _bufferedLightColorGroupEffects: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BufferedLightColorGroupEffect,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BufferedLightColorGroupEffect,
+            >,
         >,
     >,
 }

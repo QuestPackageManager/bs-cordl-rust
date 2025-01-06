@@ -101,7 +101,9 @@ impl crate::HMUI::StackedController {
     pub fn _PushViewController_g__AnimationLayouter_3_0(
         t: f32,
         viewControllers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ViewController>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

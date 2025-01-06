@@ -135,7 +135,9 @@ pub struct OVRNetwork_OVRNetworkTcpClient {
     >,
     pub tcpClient: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,
     pub receivedBuffers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        >,
     >,
     pub receivedBufferIndex: i32,
     pub receivedBufferDataSize: i32,

@@ -5,11 +5,13 @@ pub struct LightsAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lights: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
         >,
     >,
     pub _directionalLights: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::DirectionalLight>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLight>,
+        >,
     >,
     pub _tweeningManager: quest_hook::libil2cpp::Gc<
         crate::Tweening::TimeTweeningManager,

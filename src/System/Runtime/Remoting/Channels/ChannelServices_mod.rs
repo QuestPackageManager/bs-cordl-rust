@@ -62,7 +62,9 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
         >,
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         channelDataArray: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         objectUri: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -116,11 +118,15 @@ impl crate::System::Runtime::Remoting::Channels::ChannelServices {
     }
     pub fn GetCurrentChannelInfo() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetCurrentChannelInfo", ())?;
         Ok(__cordl_ret.into())

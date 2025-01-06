@@ -66,11 +66,15 @@ impl crate::UnityEngine::Terrain {
     }
     pub fn get_activeTerrains() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Terrain>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Terrain>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_activeTerrains", ())?;
         Ok(__cordl_ret.into())

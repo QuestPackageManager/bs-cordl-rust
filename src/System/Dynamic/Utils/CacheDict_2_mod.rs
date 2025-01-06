@@ -9,7 +9,9 @@ pub struct CacheDict_2<
     pub _mask: i32,
     pub _entries: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Dynamic::Utils::CacheDict_2_Entry<TKey, TValue>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Dynamic::Utils::CacheDict_2_Entry<TKey, TValue>,
+            >,
         >,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,

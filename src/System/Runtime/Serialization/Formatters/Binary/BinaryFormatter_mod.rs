@@ -14,7 +14,9 @@ pub struct BinaryFormatter {
     pub m_assemblyFormat: crate::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle,
     pub m_securityLevel: crate::System::Runtime::Serialization::Formatters::TypeFilterLevel,
     pub m_crossAppDomainArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryFormatter")]
@@ -128,7 +130,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter 
         graph: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         headers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::Remoting::Messaging::Header,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Remoting::Messaging::Header,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -145,7 +149,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter 
         graph: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         headers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::Remoting::Messaging::Header,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Remoting::Messaging::Header,
+                >,
             >,
         >,
         fCheck: bool,

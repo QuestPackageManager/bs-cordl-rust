@@ -4,11 +4,15 @@
 pub struct NoteCutter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _colliders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+        >,
     >,
     pub _cuttableBySaberSortParams: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams,
+            >,
         >,
     >,
     pub _comparer: quest_hook::libil2cpp::Gc<

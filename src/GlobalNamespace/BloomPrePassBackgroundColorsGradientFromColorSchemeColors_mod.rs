@@ -8,7 +8,9 @@ pub struct BloomPrePassBackgroundColorsGradientFromColorSchemeColors {
     >,
     pub _elements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_Element,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_Element,
+            >,
         >,
     >,
     pub _colorProvider: quest_hook::libil2cpp::Gc<

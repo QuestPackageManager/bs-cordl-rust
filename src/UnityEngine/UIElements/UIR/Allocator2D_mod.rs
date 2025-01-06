@@ -9,7 +9,9 @@ pub struct Allocator2D {
     pub m_RowHeightBias: i32,
     pub m_Rows: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+            >,
         >,
     >,
     pub m_Areas: quest_hook::libil2cpp::Gc<
@@ -67,13 +69,17 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("BuildRowArray", (maxRowHeight, rowHeightBias))?;

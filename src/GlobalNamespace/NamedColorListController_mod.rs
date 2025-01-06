@@ -5,7 +5,9 @@ pub struct NamedColorListController {
     __cordl_parent: crate::GlobalNamespace::ListColorController,
     pub _textValuePairs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+            >,
         >,
     >,
     pub _value: i32,
@@ -71,7 +73,9 @@ impl crate::GlobalNamespace::NamedColorListController {
         &mut self,
         values: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+                >,
             >,
         >,
         value: i32,

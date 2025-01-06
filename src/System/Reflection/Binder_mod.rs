@@ -28,7 +28,9 @@ impl crate::System::Reflection::Binder {
         &mut self,
         bindingAttr: crate::System::Reflection::BindingFlags,
         _cordl_match: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::FieldInfo>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+            >,
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
@@ -49,13 +51,13 @@ impl crate::System::Reflection::Binder {
         bindingAttr: crate::System::Reflection::BindingFlags,
         _cordl_match: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MethodBase,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
             >,
         >,
         args: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut quest_hook::libil2cpp::Il2CppObject,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 >,
             >,
         >,
@@ -66,7 +68,9 @@ impl crate::System::Reflection::Binder {
         >,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         state: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -114,7 +118,7 @@ impl crate::System::Reflection::Binder {
         args: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut quest_hook::libil2cpp::Il2CppObject,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 >,
             >,
         >,
@@ -132,11 +136,13 @@ impl crate::System::Reflection::Binder {
         bindingAttr: crate::System::Reflection::BindingFlags,
         _cordl_match: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MethodBase,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
             >,
         >,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         modifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -160,12 +166,14 @@ impl crate::System::Reflection::Binder {
         bindingAttr: crate::System::Reflection::BindingFlags,
         _cordl_match: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::PropertyInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
             >,
         >,
         returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         indexes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         modifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<

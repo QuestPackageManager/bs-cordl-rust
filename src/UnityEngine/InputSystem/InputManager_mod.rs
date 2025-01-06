@@ -12,7 +12,7 @@ pub struct InputManager {
     pub m_DevicesCount: i32,
     pub m_Devices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     >,
     pub m_DevicesById: quest_hook::libil2cpp::Gc<
@@ -30,7 +30,7 @@ pub struct InputManager {
     pub m_DisconnectedDevicesCount: i32,
     pub m_DisconnectedDevices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     >,
     pub m_UpdateMask: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,

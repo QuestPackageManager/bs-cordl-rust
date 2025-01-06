@@ -236,7 +236,9 @@ pub struct OVRUnityHumanoidSkeletonRetargeter {
     pub _lastSkelChangeCount: i32,
     pub _adjustments: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment,
+            >,
         >,
     >,
     pub _bodySectionsToAlign: quest_hook::libil2cpp::Gc<
@@ -435,7 +437,9 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment,
+                >,
             >,
         >,
     > {
@@ -444,7 +448,9 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment,
+                >,
             >,
         > = __cordl_object.invoke("get_Adjustments", ())?;
         Ok(__cordl_ret.into())

@@ -22,7 +22,7 @@ pub struct SocketAsyncEventArgs {
     pub _ReceiveMessageFromPacketInfo_k__BackingField: crate::System::Net::Sockets::IPPacketInformation,
     pub _SendPacketsElements_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Net::Sockets::SendPacketsElement,
+            quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SendPacketsElement>,
         >,
     >,
     pub _SendPacketsFlags_k__BackingField: crate::System::Net::Sockets::TransmitFileOptions,

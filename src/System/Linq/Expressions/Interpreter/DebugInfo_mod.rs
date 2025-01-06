@@ -35,7 +35,9 @@ impl crate::System::Linq::Expressions::Interpreter::DebugInfo {
     pub fn GetMatchingDebugInfo(
         debugInfos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::DebugInfo,
+                >,
             >,
         >,
         index: i32,

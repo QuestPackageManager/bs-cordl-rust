@@ -14,12 +14,16 @@ pub struct LogicalCallContext {
     pub m_IsCorrelationMgr: bool,
     pub _sendHeaders: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::Remoting::Messaging::Header,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::Remoting::Messaging::Header,
+            >,
         >,
     >,
     pub _recvHeaders: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::Remoting::Messaging::Header,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::Remoting::Messaging::Header,
+            >,
         >,
     >,
 }

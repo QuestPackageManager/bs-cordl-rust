@@ -198,7 +198,7 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
         &mut self,
         schemas: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchema,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
             >,
         >,
         index: i32,

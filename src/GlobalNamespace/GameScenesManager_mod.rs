@@ -492,7 +492,7 @@ impl crate::GlobalNamespace::GameScenesManager {
         >,
         beforeNewScenesActivateRoutines: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Collections::IEnumerator,
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
             >,
         >,
         minDuration: f32,
@@ -522,7 +522,9 @@ impl crate::GlobalNamespace::GameScenesManager {
     pub fn SceneNamesFromSceneInfoArray(
         &mut self,
         sceneInfos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::SceneInfo>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<

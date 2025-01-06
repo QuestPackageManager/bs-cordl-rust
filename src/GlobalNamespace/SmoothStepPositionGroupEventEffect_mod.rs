@@ -5,7 +5,9 @@ pub struct SmoothStepPositionGroupEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _event: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _elements: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        >,
     >,
     pub _clampValue: bool,
     pub _eventValueMin: i32,

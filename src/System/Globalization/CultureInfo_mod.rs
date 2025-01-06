@@ -25,7 +25,9 @@ pub struct CultureInfo {
     pub win3lang: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub territory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub native_calendar_names: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub compareInfo: quest_hook::libil2cpp::Gc<
         crate::System::Globalization::CompareInfo,
@@ -260,13 +262,13 @@ impl crate::System::Globalization::CultureInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Globalization::CultureInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Globalization::CultureInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetCultures", (types))?;
@@ -806,13 +808,13 @@ impl crate::System::Globalization::CultureInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Globalization::CultureInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Globalization::CultureInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("internal_get_cultures", (neutral, specific, installed))?;

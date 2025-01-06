@@ -24,11 +24,15 @@ pub struct OVRTrackedKeyboard {
         crate::GlobalNamespace::OVROverlay,
     >,
     pub activeKeyboardRenderers_: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+        >,
     >,
     pub activeKeyboardMesh_: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub keyboardMeshNodes_: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub activeKeyboardMeshRenderer_: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::MeshRenderer,

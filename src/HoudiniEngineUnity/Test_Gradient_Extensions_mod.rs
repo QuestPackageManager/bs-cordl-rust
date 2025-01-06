@@ -37,18 +37,20 @@ impl crate::HoudiniEngineUnity::Test_Gradient_Extensions {
     }
     pub fn ToTestObject_Il2CppArray1(
         _cordl_self: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Gradient>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::Test_Gradient,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::Test_Gradient,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToTestObject", (_cordl_self))?;

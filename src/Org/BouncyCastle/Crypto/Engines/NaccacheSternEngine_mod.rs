@@ -8,7 +8,9 @@ pub struct NaccacheSternEngine {
         crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters,
     >,
     pub lookup: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Collections::IList>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+NaccacheSternEngine")]

@@ -5,7 +5,9 @@ pub struct BTSCharacterMaterialSwitcher {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rendererMaterialsPairs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs,
+            >,
         >,
     >,
 }

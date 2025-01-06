@@ -47,7 +47,9 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::Controls {
     pub fn New_Il2CppArray1(
         atvs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -75,7 +77,9 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::Controls {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                >,
             >,
         >,
     > {
@@ -84,7 +88,9 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::Controls {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                >,
             >,
         > = __cordl_object.invoke("ToAttributeTypeAndValueArray", ())?;
         Ok(__cordl_ret.into())
@@ -104,7 +110,9 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::Controls {
         &mut self,
         atvs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

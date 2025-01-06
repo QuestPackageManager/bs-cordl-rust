@@ -8,7 +8,9 @@ pub struct OVRGrabbable {
     pub m_snapOrientation: bool,
     pub m_snapOffset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub m_grabPoints: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+        >,
     >,
     pub m_grabbedKinematic: bool,
     pub m_grabbedCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
@@ -116,14 +118,18 @@ impl crate::GlobalNamespace::OVRGrabbable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = __cordl_object.invoke("get_grabPoints", ())?;
         Ok(__cordl_ret.into())
     }

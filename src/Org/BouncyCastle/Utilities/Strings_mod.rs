@@ -60,7 +60,9 @@ impl crate::Org::BouncyCastle::Utilities::Strings {
     pub fn IsOneOf(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         candidates: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()

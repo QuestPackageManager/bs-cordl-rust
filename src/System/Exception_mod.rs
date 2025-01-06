@@ -23,7 +23,9 @@ pub struct Exception {
         crate::System::Runtime::Serialization::SafeSerializationManager,
     >,
     pub captured_traces: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Diagnostics::StackTrace>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackTrace>,
+        >,
     >,
     pub native_trace_ips: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,

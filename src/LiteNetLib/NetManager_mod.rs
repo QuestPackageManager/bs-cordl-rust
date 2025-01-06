@@ -44,7 +44,9 @@ pub struct NetManager {
         >,
     >,
     pub _peersArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::LiteNetLib::NetPeer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+        >,
     >,
     pub _extraPacketLayer: quest_hook::libil2cpp::Gc<
         crate::LiteNetLib::Layers::PacketLayerBase,

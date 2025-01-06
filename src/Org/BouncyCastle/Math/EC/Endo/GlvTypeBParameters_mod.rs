@@ -36,12 +36,12 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters {
         lambda: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         v1: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         v2: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         g1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -73,12 +73,12 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters {
         lambda: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         v1: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         v2: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         g1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -186,7 +186,7 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
@@ -195,7 +195,7 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = __cordl_object.invoke("get_V1", ())?;
         Ok(__cordl_ret.into())
@@ -205,7 +205,7 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
@@ -214,7 +214,7 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = __cordl_object.invoke("get_V2", ())?;
         Ok(__cordl_ret.into())

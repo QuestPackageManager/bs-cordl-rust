@@ -5,7 +5,7 @@ pub struct Asn1Sequence {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
     pub elements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
         >,
     >,
 }
@@ -113,7 +113,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
     pub fn New_Il2CppArray2(
         elements: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -128,7 +128,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     > {
@@ -137,7 +137,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         > = __cordl_object.invoke("ToArray", ())?;
         Ok(__cordl_ret.into())
@@ -193,7 +193,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Sequence {
         &mut self,
         elements: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

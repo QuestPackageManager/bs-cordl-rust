@@ -11,7 +11,9 @@ pub struct BeatmapLevelPack {
     pub packBuyOption: crate::GlobalNamespace::PackBuyOption,
     pub contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
     pub _beatmapLevels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevel>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        >,
     >,
     pub _additionalBeatmapLevels: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
@@ -87,7 +89,9 @@ impl crate::GlobalNamespace::BeatmapLevelPack {
     }
     pub fn CreateLevelPackForFiltering(
         beatmapLevels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevel>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
@@ -106,7 +110,9 @@ impl crate::GlobalNamespace::BeatmapLevelPack {
         smallCoverImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         packBuyOption: crate::GlobalNamespace::PackBuyOption,
         beatmapLevels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevel>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            >,
         >,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -152,7 +158,9 @@ impl crate::GlobalNamespace::BeatmapLevelPack {
         smallCoverImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         packBuyOption: crate::GlobalNamespace::PackBuyOption,
         beatmapLevels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevel>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            >,
         >,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

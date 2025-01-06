@@ -603,7 +603,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,

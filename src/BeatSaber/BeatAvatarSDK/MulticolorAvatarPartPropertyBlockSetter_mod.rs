@@ -5,7 +5,9 @@ pub struct MulticolorAvatarPartPropertyBlockSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _colorDataList: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_ColorData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_ColorData,
+            >,
         >,
     >,
     pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,

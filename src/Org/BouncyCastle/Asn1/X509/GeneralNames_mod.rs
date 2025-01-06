@@ -5,7 +5,7 @@ pub struct GeneralNames {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub names: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::GeneralName>,
         >,
     >,
 }
@@ -32,19 +32,25 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralNames {
     pub fn Copy(
         names: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Copy", (names))?;
         Ok(__cordl_ret.into())
@@ -92,7 +98,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralNames {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         >,
     > {
@@ -101,7 +109,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralNames {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         > = __cordl_object.invoke("GetNames", ())?;
         Ok(__cordl_ret.into())
@@ -129,7 +139,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralNames {
     pub fn New_Il2CppArray1(
         names: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -193,7 +205,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralNames {
         &mut self,
         names: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

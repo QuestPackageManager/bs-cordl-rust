@@ -5,7 +5,9 @@ pub struct Interpreter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _instructions: crate::System::Linq::Expressions::Interpreter::InstructionArray,
     pub _objects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _labels: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -14,7 +16,9 @@ pub struct Interpreter {
     >,
     pub _debugInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::DebugInfo,
+            >,
         >,
     >,
     pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -61,7 +65,9 @@ impl crate::System::Linq::Expressions::Interpreter::Interpreter {
         instructions: crate::System::Linq::Expressions::Interpreter::InstructionArray,
         debugInfos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::DebugInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -93,7 +99,9 @@ impl crate::System::Linq::Expressions::Interpreter::Interpreter {
         instructions: crate::System::Linq::Expressions::Interpreter::InstructionArray,
         debugInfos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::DebugInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

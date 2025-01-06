@@ -18,11 +18,13 @@ pub struct ObstacleSaberSparkleEffectManager {
     >,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _sabers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::Saber>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+        >,
     >,
     pub _effects: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::ObstacleSaberSparkleEffect,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleSaberSparkleEffect>,
         >,
     >,
     pub sparkleEffectDidStartEvent: quest_hook::libil2cpp::Gc<

@@ -58,7 +58,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                >,
             >,
         >,
     > {
@@ -67,7 +69,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                >,
             >,
         > = __cordl_object.invoke("GetProfessionItems", ())?;
         Ok(__cordl_ret.into())
@@ -77,7 +81,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
     > {
@@ -86,7 +92,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         > = __cordl_object.invoke("GetProfessionOids", ())?;
         Ok(__cordl_ret.into())
@@ -106,12 +114,16 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo {
         >,
         professionItems: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                >,
             >,
         >,
         professionOids: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
         registrationNumber: quest_hook::libil2cpp::Gc<
@@ -167,12 +179,16 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo {
         >,
         professionItems: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                >,
             >,
         >,
         professionOids: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
         registrationNumber: quest_hook::libil2cpp::Gc<

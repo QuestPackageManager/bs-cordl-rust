@@ -11,15 +11,21 @@ pub struct KawaseBlurRendererSO {
     pub _tintMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _commandBuffersMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _kernels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<i32>>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        >,
     >,
     pub _bloomKernels: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel,
+            >,
         >,
     >,
     pub _blurTextures: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        >,
     >,
 }
 #[cfg(feature = "KawaseBlurRendererSO")]

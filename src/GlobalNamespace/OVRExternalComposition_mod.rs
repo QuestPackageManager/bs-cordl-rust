@@ -21,12 +21,16 @@ pub struct OVRExternalComposition {
     pub audioListener: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioListener>,
     pub audioFilter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRMRAudioFilter>,
     pub mrcRenderTextureArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        >,
     >,
     pub frameIndex: i32,
     pub lastMrcEncodeFrameSyncId: i32,
     pub mrcForegroundRenderTextureArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        >,
     >,
     pub cameraPoseTimeArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<f64>,

@@ -22,12 +22,12 @@ pub struct InputDevice {
     >,
     pub m_UsageToControl: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputControl,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         >,
     >,
     pub m_ChildrenForEachControl: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputControl,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         >,
     >,
     pub m_StateOffsetToControlMap: quest_hook::libil2cpp::Gc<

@@ -6,7 +6,9 @@ pub struct MissionHelpViewController {
     pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _missionHelpGameObjectPairs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair,
+            >,
         >,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<

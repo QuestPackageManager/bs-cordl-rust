@@ -5,7 +5,9 @@ pub struct PerceivedLoudnessSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _perceivedLoudnessPerLevel: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            >,
         >,
     >,
 }

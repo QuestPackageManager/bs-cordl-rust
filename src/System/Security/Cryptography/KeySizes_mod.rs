@@ -37,7 +37,9 @@ impl crate::System::Security::Cryptography::KeySizes {
     pub fn IsLegalKeySize(
         legalKeys: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Security::Cryptography::KeySizes,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::KeySizes,
+                >,
             >,
         >,
         _cordl_size: i32,

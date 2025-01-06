@@ -12,7 +12,9 @@ pub struct ClassMap {
     >,
     pub _attributeMembersArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Serialization::XmlTypeMapMemberAttribute,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Xml::Serialization::XmlTypeMapMemberAttribute,
+            >,
         >,
     >,
     pub _flatLists: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

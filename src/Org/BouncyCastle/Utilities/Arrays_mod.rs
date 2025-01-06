@@ -227,7 +227,7 @@ impl crate::Org::BouncyCastle::Utilities::Arrays {
     pub fn ConcatenateAll(
         vs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -348,7 +348,7 @@ impl crate::Org::BouncyCastle::Utilities::Arrays {
     pub fn CopyOfRange_Il2CppArray_i32_i32_3(
         data: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         from: i32,
@@ -356,13 +356,13 @@ impl crate::Org::BouncyCastle::Utilities::Arrays {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CopyOfRange", (data, from, to))?;
@@ -419,20 +419,20 @@ impl crate::Org::BouncyCastle::Utilities::Arrays {
     pub fn CopyOf_Il2CppArray_i32_4(
         data: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         newLength: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CopyOf", (data, newLength))?;
@@ -567,7 +567,9 @@ impl crate::Org::BouncyCastle::Utilities::Arrays {
     }
     pub fn IsNullOrContainsNull(
         array: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -583,7 +585,9 @@ impl crate::Org::BouncyCastle::Utilities::Arrays {
     }
     pub fn IsNullOrEmpty_Il2CppArray1(
         array: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -652,7 +656,9 @@ impl crate::Org::BouncyCastle::Utilities::Arrays {
     }
     pub fn ToString(
         a: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

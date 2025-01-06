@@ -33,7 +33,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertRepMessage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                >,
             >,
         >,
     > {
@@ -42,7 +44,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertRepMessage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                >,
             >,
         > = __cordl_object.invoke("GetCAPubs", ())?;
         Ok(__cordl_ret.into())
@@ -62,7 +66,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertRepMessage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CertResponse,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CertResponse,
+                >,
             >,
         >,
     > {
@@ -71,7 +77,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertRepMessage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CertResponse,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CertResponse,
+                >,
             >,
         > = __cordl_object.invoke("GetResponse", ())?;
         Ok(__cordl_ret.into())
@@ -88,12 +96,16 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertRepMessage {
     pub fn New_Il2CppArray_Il2CppArray1(
         caPubs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                >,
             >,
         >,
         response: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CertResponse,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CertResponse,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -131,12 +143,16 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertRepMessage {
         &mut self,
         caPubs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                >,
             >,
         >,
         response: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CertResponse,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CertResponse,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

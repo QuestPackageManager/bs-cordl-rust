@@ -65,7 +65,7 @@ impl crate::System::Dynamic::DynamicMetaObject {
         binder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::CreateInstanceBinder>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -84,7 +84,7 @@ impl crate::System::Dynamic::DynamicMetaObject {
         binder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DeleteIndexBinder>,
         indexes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -117,7 +117,7 @@ impl crate::System::Dynamic::DynamicMetaObject {
         binder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::GetIndexBinder>,
         indexes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -150,7 +150,7 @@ impl crate::System::Dynamic::DynamicMetaObject {
         binder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::InvokeBinder>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -169,7 +169,7 @@ impl crate::System::Dynamic::DynamicMetaObject {
         binder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::InvokeMemberBinder>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -188,7 +188,7 @@ impl crate::System::Dynamic::DynamicMetaObject {
         binder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::SetIndexBinder>,
         indexes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
         value: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,

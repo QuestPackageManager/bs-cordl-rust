@@ -7,12 +7,12 @@ pub struct XsdCachingReader {
     pub coreReaderNameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     pub contentEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::ValidatingReaderNodeData,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::ValidatingReaderNodeData>,
         >,
     >,
     pub attributeEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::ValidatingReaderNodeData,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::ValidatingReaderNodeData>,
         >,
     >,
     pub cachedNode: quest_hook::libil2cpp::Gc<

@@ -21,7 +21,9 @@ pub struct StandardLevelInfoSaveData_V100 {
     pub _environmentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _difficultyBeatmaps: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap,
+            >,
         >,
     >,
 }
@@ -90,7 +92,9 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap,
+                >,
             >,
         >,
     > {
@@ -99,7 +103,9 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap,
+                >,
             >,
         > = __cordl_object.invoke("get_difficultyBeatmaps", ())?;
         Ok(__cordl_ret.into())

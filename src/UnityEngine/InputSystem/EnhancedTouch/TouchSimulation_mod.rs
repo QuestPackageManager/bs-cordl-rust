@@ -8,7 +8,9 @@ pub struct TouchSimulation {
     >,
     pub m_NumPointers: i32,
     pub m_Pointers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::InputSystem::Pointer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pointer>,
+        >,
     >,
     pub m_CurrentPositions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
@@ -18,7 +20,9 @@ pub struct TouchSimulation {
     >,
     pub m_Touches: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::Controls::ButtonControl,
+            >,
         >,
     >,
     pub m_LastTouchId: i32,

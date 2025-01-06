@@ -134,7 +134,7 @@ impl crate::UnityEngine::UIElements::Columns {
         &mut self,
         array: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::Column,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
             >,
         >,
         arrayIndex: i32,

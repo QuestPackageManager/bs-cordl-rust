@@ -4,7 +4,9 @@
 pub struct TriggerFloatFxGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _floatFxGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::FloatFxGroup>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxGroup>,
+        >,
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _floatFxGroupEffects: quest_hook::libil2cpp::Gc<

@@ -34,7 +34,9 @@ impl crate::Org::BouncyCastle::Asn1::Ess::SigningCertificateV2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+                >,
             >,
         >,
     > {
@@ -43,7 +45,9 @@ impl crate::Org::BouncyCastle::Asn1::Ess::SigningCertificateV2 {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+                >,
             >,
         > = __cordl_object.invoke("GetCerts", ())?;
         Ok(__cordl_ret.into())
@@ -65,7 +69,9 @@ impl crate::Org::BouncyCastle::Asn1::Ess::SigningCertificateV2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         >,
     > {
@@ -74,7 +80,9 @@ impl crate::Org::BouncyCastle::Asn1::Ess::SigningCertificateV2 {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         > = __cordl_object.invoke("GetPolicies", ())?;
         Ok(__cordl_ret.into())
@@ -100,7 +108,9 @@ impl crate::Org::BouncyCastle::Asn1::Ess::SigningCertificateV2 {
     pub fn New_Il2CppArray2(
         certs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -113,12 +123,16 @@ impl crate::Org::BouncyCastle::Asn1::Ess::SigningCertificateV2 {
     pub fn New_Il2CppArray_Il2CppArray3(
         certs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+                >,
             >,
         >,
         policies: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -167,7 +181,9 @@ impl crate::Org::BouncyCastle::Asn1::Ess::SigningCertificateV2 {
         &mut self,
         certs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -182,12 +198,16 @@ impl crate::Org::BouncyCastle::Asn1::Ess::SigningCertificateV2 {
         &mut self,
         certs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+                >,
             >,
         >,
         policies: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

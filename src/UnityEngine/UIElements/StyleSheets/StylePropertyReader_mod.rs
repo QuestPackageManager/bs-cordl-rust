@@ -17,7 +17,7 @@ pub struct StylePropertyReader {
     pub m_Sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
     pub m_Properties: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleProperty,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleProperty>,
         >,
     >,
     pub m_PropertyIds: quest_hook::libil2cpp::Gc<
@@ -552,7 +552,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleProperty,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleProperty>,
             >,
         >,
         propertyIds: quest_hook::libil2cpp::Gc<

@@ -5,22 +5,22 @@ pub struct ElementUnderPointer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_PendingTopElementUnderPointer: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::VisualElement,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     >,
     pub m_TopElementUnderPointer: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::VisualElement,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     >,
     pub m_TriggerPointerEvent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::IPointerEvent,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
         >,
     >,
     pub m_TriggerMouseEvent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::IMouseEvent,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMouseEvent>,
         >,
     >,
     pub m_PickingPointerPositions: quest_hook::libil2cpp::Gc<

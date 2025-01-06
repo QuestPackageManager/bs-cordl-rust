@@ -6,7 +6,7 @@ pub struct BerOctetString {
     pub chunkSize: i32,
     pub octs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
         >,
     >,
 }
@@ -103,7 +103,9 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
     pub fn New_Il2CppArray2(
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -117,7 +119,9 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
         chunkSize: i32,
@@ -141,7 +145,9 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
     pub fn New_Il2CppArray_i32_4(
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
         chunkSize: i32,
@@ -155,7 +161,9 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
     pub fn ToBytes(
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -171,13 +179,17 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToOctetStringArray", (e))?;
@@ -209,7 +221,9 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
         &mut self,
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -225,7 +239,9 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
         chunkSize: i32,
@@ -253,7 +269,9 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
         &mut self,
         octs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+                >,
             >,
         >,
         chunkSize: i32,

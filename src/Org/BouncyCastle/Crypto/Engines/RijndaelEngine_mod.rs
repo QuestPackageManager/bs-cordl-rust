@@ -8,7 +8,9 @@ pub struct RijndaelEngine {
     pub ROUNDS: i32,
     pub blockBits: i32,
     pub workingKey: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<i64>>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+        >,
     >,
     pub A0: i64,
     pub A1: i64,
@@ -54,7 +56,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RijndaelEngine {
         &mut self,
         rk: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -69,7 +71,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RijndaelEngine {
         &mut self,
         rk: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -86,7 +88,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RijndaelEngine {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
             >,
         >,
     > {
@@ -95,7 +97,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RijndaelEngine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
             >,
         > = __cordl_object.invoke("GenerateWorkingKey", (key))?;
         Ok(__cordl_ret.into())

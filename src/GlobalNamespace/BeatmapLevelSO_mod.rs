@@ -26,12 +26,14 @@ pub struct BeatmapLevelSO {
     >,
     pub _colorSchemes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO_ColorScheme>,
         >,
     >,
     pub _previewDifficultyBeatmapSets: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
+            >,
         >,
     >,
     pub _contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
@@ -112,7 +114,9 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
         >,
         colorSchemes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -170,7 +174,9 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
         &mut self,
         previewDifficultyBeatmapSets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

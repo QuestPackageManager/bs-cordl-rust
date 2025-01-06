@@ -51,13 +51,13 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetLucas", (mu, k, doV))?;
@@ -94,13 +94,17 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetPreComp", (p, a))?;
         Ok(__cordl_ret.into())
@@ -119,13 +123,13 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetSi", (curve))?;
         Ok(__cordl_ret.into())
@@ -137,13 +141,13 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetSi", (fieldSize, curveA, cofactor))?;
@@ -248,7 +252,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         a: i8,
         s: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         mu: i8,
@@ -315,7 +319,9 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::Tnaf {
         tw: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         alpha: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::Abc::ZTauElement,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

@@ -8,7 +8,7 @@ pub struct ProModeTrailingCollidersController {
     >,
     pub _trailingSmallCuttableBySaberList: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BoxCuttableBySaber,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoxCuttableBySaber>,
         >,
     >,
     pub _noteMovement: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,

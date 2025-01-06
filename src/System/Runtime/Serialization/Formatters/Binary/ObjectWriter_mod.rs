@@ -22,7 +22,9 @@ pub struct ObjectWriter {
     pub topName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub headers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::Remoting::Messaging::Header,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::Remoting::Messaging::Header,
+            >,
         >,
     >,
     pub formatterEnums: quest_hook::libil2cpp::Gc<
@@ -38,7 +40,9 @@ pub struct ObjectWriter {
         crate::System::Runtime::Serialization::IFormatterConverter,
     >,
     pub crossAppDomainArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub previousObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub previousId: i64,
@@ -258,7 +262,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectWriter {
         graph: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         inHeaders: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::Remoting::Messaging::Header,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Remoting::Messaging::Header,
+                >,
             >,
         >,
         serWriter: quest_hook::libil2cpp::Gc<
@@ -582,17 +588,25 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectWriter {
             crate::System::Runtime::Serialization::Formatters::Binary::NameInfo,
         >,
         memberNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         memberTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         memberData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         memberObjectInfos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

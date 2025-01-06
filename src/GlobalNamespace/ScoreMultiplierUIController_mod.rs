@@ -4,7 +4,9 @@
 pub struct ScoreMultiplierUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _multiplierTexts: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshProUGUI>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+        >,
     >,
     pub _multiplierProgressImage: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::Image,

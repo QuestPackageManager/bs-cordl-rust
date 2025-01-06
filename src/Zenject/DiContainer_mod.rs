@@ -21,7 +21,11 @@ pub struct DiContainer {
     >,
     pub _containerLookups: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                >,
+            >,
         >,
     >,
     pub _resolvesInProgress: quest_hook::libil2cpp::Gc<
@@ -1631,7 +1635,9 @@ impl crate::Zenject::DiContainer {
     pub fn BindInstances(
         &mut self,
         instances: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2060,7 +2066,9 @@ impl crate::Zenject::DiContainer {
     pub fn Bind_Il2CppArray2(
         &mut self,
         contractTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConcreteIdBinderNonGeneric>,
@@ -2777,7 +2785,9 @@ impl crate::Zenject::DiContainer {
     pub fn Install_Il2CppArray1<TInstaller>(
         &mut self,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -4642,14 +4652,18 @@ impl crate::Zenject::DiContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         > = __cordl_object.invoke("get_AncestorContainers", ())?;
         Ok(__cordl_ret.into())
     }
@@ -4724,14 +4738,18 @@ impl crate::Zenject::DiContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         > = __cordl_object.invoke("get_ParentContainers", ())?;
         Ok(__cordl_ret.into())
     }
@@ -4870,7 +4888,9 @@ impl crate::Zenject::DiContainer_ProviderInfo {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

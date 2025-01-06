@@ -5,7 +5,9 @@ pub struct SelectLevelCategoryViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _allLevelCategoryInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo,
+            >,
         >,
     >,
     pub _levelFilterCategoryIconSegmentedControl: quest_hook::libil2cpp::Gc<
@@ -25,7 +27,9 @@ pub struct SelectLevelCategoryViewController {
     pub _prevSelectedLevelCategory: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     pub _levelCategoryInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo,
+            >,
         >,
     >,
 }

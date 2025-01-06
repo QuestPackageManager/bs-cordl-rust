@@ -6,20 +6,28 @@ pub struct TimelineArrayReference {
     pub arrayType: crate::GlobalNamespace::TimelineArrayReference_ArrayTypes,
     pub _tubeLightArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
         >,
     >,
     pub _canvasGroupArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::CanvasGroup>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+        >,
     >,
     pub _tmproArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshPro>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
+        >,
     >,
     pub _transformArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        >,
     >,
     pub _directionalLights: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::DirectionalLight>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLight>,
+        >,
     >,
 }
 #[cfg(feature = "TimelineArrayReference")]

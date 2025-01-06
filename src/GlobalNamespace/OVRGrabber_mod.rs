@@ -9,7 +9,9 @@ pub struct OVRGrabber {
     pub m_moveHandPosition: bool,
     pub m_gripTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub m_grabVolumes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+        >,
     >,
     pub m_controller: crate::GlobalNamespace::OVRInput_Controller,
     pub m_parentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

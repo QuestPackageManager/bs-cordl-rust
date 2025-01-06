@@ -61,14 +61,18 @@ impl crate::System::Xml::Serialization::XmlSerializerNamespaces {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            >,
         > = __cordl_object.invoke("ToArray", ())?;
         Ok(__cordl_ret.into())
     }

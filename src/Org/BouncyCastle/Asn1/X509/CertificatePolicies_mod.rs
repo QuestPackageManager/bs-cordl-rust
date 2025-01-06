@@ -5,7 +5,9 @@ pub struct CertificatePolicies {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub policyInformation: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+            quest_hook::libil2cpp::Gc<
+                crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+            >,
         >,
     >,
 }
@@ -33,19 +35,25 @@ impl crate::Org::BouncyCastle::Asn1::X509::CertificatePolicies {
     pub fn Copy(
         policyInfo: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Copy", (policyInfo))?;
         Ok(__cordl_ret.into())
@@ -96,7 +104,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::CertificatePolicies {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         >,
     > {
@@ -105,7 +115,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::CertificatePolicies {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         > = __cordl_object.invoke("GetPolicyInformation", ())?;
         Ok(__cordl_ret.into())
@@ -140,7 +152,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::CertificatePolicies {
     pub fn New_Il2CppArray1(
         policyInformation: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -202,7 +216,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::CertificatePolicies {
         &mut self,
         policyInformation: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

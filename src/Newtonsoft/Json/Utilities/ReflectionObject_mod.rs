@@ -40,7 +40,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
     pub fn Create_Il2CppArray0(
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
         memberNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::ReflectionObject>,
@@ -55,7 +57,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
         creator: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
         memberNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::ReflectionObject>,

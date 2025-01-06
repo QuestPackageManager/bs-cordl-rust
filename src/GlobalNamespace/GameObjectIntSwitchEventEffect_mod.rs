@@ -7,7 +7,9 @@ pub struct GameObjectIntSwitchEventEffect {
     pub _defaultValue: i32,
     pub _gameObjectsValueLists: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList,
+            >,
         >,
     >,
     pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
@@ -117,7 +119,9 @@ pub struct GameObjectIntSwitchEventEffect_GameObjectValueList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub value: i32,
     pub gameObjects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _isActive_k__BackingField: bool,
 }

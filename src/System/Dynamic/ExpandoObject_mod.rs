@@ -711,7 +711,9 @@ pub struct ExpandoObject_ExpandoData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Class: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
     pub _dataArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _version: i32,
 }
@@ -750,7 +752,9 @@ impl crate::System::Dynamic::ExpandoObject_ExpandoData {
     pub fn New_ExpandoClass_Il2CppArray_i32_1(
         klass: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
         data: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         version: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -788,7 +792,9 @@ impl crate::System::Dynamic::ExpandoObject_ExpandoData {
         &mut self,
         klass: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
         data: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         version: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -926,7 +932,9 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
     pub fn CopyTo(
         &mut self,
         array: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         arrayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1240,7 +1248,7 @@ impl crate::System::Dynamic::ExpandoObject_MetaExpando {
         binder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::InvokeMemberBinder>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -1461,7 +1469,9 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
     pub fn CopyTo(
         &mut self,
         array: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         arrayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -6,7 +6,9 @@ pub struct CscaMasterList {
     pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
     pub certList: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+            quest_hook::libil2cpp::Gc<
+                crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+            >,
         >,
     >,
 }
@@ -33,19 +35,25 @@ impl crate::Org::BouncyCastle::Asn1::Icao::CscaMasterList {
     pub fn CopyCertList(
         orig: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CopyCertList", (orig))?;
@@ -56,7 +64,9 @@ impl crate::Org::BouncyCastle::Asn1::Icao::CscaMasterList {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         >,
     > {
@@ -65,7 +75,9 @@ impl crate::Org::BouncyCastle::Asn1::Icao::CscaMasterList {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         > = __cordl_object.invoke("GetCertStructs", ())?;
         Ok(__cordl_ret.into())
@@ -92,7 +104,9 @@ impl crate::Org::BouncyCastle::Asn1::Icao::CscaMasterList {
     pub fn New_Il2CppArray1(
         certStructs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -130,7 +144,9 @@ impl crate::Org::BouncyCastle::Asn1::Icao::CscaMasterList {
         &mut self,
         certStructs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -4,7 +4,9 @@
 pub struct ZenjectBinding {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _components: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+        >,
     >,
     pub _identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _useSceneContext: bool,
@@ -82,14 +84,18 @@ impl crate::Zenject::ZenjectBinding {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         > = __cordl_object.invoke("get_Components", ())?;
         Ok(__cordl_ret.into())
     }

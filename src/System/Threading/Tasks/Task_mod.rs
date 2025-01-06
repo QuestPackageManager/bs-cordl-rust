@@ -170,7 +170,7 @@ impl crate::System::Threading::Tasks::Task {
     pub fn AnyTaskRequiresNotifyDebuggerOfWaitCompletion(
         tasks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task,
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -853,7 +853,7 @@ impl crate::System::Threading::Tasks::Task {
     pub fn InternalWhenAll_Il2CppArray0(
         tasks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task,
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -868,7 +868,9 @@ impl crate::System::Threading::Tasks::Task {
     pub fn InternalWhenAll_Il2CppArray1<TResult>(
         tasks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task_1<TResult>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<TResult>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -1473,7 +1475,7 @@ impl crate::System::Threading::Tasks::Task {
     pub fn WhenAll_Il2CppArray1(
         tasks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task,
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -1487,7 +1489,9 @@ impl crate::System::Threading::Tasks::Task {
     pub fn WhenAll_Il2CppArray3<TResult>(
         tasks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task_1<TResult>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<TResult>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -1561,7 +1565,7 @@ impl crate::System::Threading::Tasks::Task {
     pub fn WhenAny_Il2CppArray0(
         tasks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task,
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -1581,7 +1585,9 @@ impl crate::System::Threading::Tasks::Task {
     pub fn WhenAny_Il2CppArray2<TResult>(
         tasks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task_1<TResult>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<TResult>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

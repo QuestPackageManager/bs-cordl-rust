@@ -4,7 +4,9 @@
 pub struct ColorSchemeColorToggleController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _colorGraphics: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Graphic>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+        >,
     >,
     pub _toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
 }

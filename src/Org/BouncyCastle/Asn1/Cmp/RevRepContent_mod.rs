@@ -34,7 +34,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+                >,
             >,
         >,
     > {
@@ -43,7 +45,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+                >,
             >,
         > = __cordl_object.invoke("GetCrls", ())?;
         Ok(__cordl_ret.into())
@@ -63,7 +67,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Crmf::CertId,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::CertId>,
             >,
         >,
     > {
@@ -72,7 +76,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Crmf::CertId,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::CertId>,
             >,
         > = __cordl_object.invoke("GetRevCerts", ())?;
         Ok(__cordl_ret.into())
@@ -82,7 +86,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
+                >,
             >,
         >,
     > {
@@ -91,7 +97,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
+                >,
             >,
         > = __cordl_object.invoke("GetStatus", ())?;
         Ok(__cordl_ret.into())

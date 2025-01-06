@@ -14,7 +14,7 @@ pub struct XmlTextReaderImpl {
     pub nextNextParsingFunction: crate::System::Xml::XmlTextReaderImpl_ParsingFunction,
     pub nodes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl_NodeData>,
         >,
     >,
     pub curNode: quest_hook::libil2cpp::Gc<
@@ -29,7 +29,7 @@ pub struct XmlTextReaderImpl {
     pub fullAttrCleanup: bool,
     pub attrDuplSortingArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl_NodeData>,
         >,
     >,
     pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
@@ -237,7 +237,7 @@ impl crate::System::Xml::XmlTextReaderImpl {
         definedInDtd: bool,
         nameSortedNodeData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl_NodeData>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -2389,7 +2389,9 @@ impl crate::System::Xml::XmlTextReaderImpl {
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2449,7 +2451,9 @@ impl crate::System::Xml::XmlTextReaderImpl {
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2463,7 +2467,9 @@ impl crate::System::Xml::XmlTextReaderImpl {
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2543,7 +2549,9 @@ impl crate::System::Xml::XmlTextReaderImpl {
         pos: i32,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

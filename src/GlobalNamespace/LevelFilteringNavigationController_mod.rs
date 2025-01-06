@@ -72,10 +72,14 @@ pub struct LevelFilteringNavigationController {
         >,
     >,
     pub _ostBeatmapLevelPacks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevelPack>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        >,
     >,
     pub _musicPacksBeatmapLevelPacks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevelPack>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        >,
     >,
     pub _customLevelPacks: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::IReadOnlyList_1<
@@ -83,10 +87,14 @@ pub struct LevelFilteringNavigationController {
         >,
     >,
     pub _allOfficialBeatmapLevelPacks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevelPack>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        >,
     >,
     pub _allBeatmapLevelPacks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevelPack>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        >,
     >,
 }
 #[cfg(feature = "LevelFilteringNavigationController")]

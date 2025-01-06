@@ -382,7 +382,9 @@ impl crate::System::Xml::Schema::SchemaCollectionCompiler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         >,
     > {
@@ -391,7 +393,9 @@ impl crate::System::Xml::Schema::SchemaCollectionCompiler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         > = __cordl_object.invoke("CompileBaseMemberTypes", (simpleType))?;
         Ok(__cordl_ret.into())

@@ -6,7 +6,9 @@ pub struct DataRelationCollection_DataSetRelationCollection {
     pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     pub _relations: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _delayLoadingRelations: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRelation>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+        >,
     >,
 }
 #[cfg(feature = "System+Data+DataRelationCollection+DataSetRelationCollection")]

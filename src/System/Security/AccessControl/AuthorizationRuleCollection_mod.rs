@@ -30,7 +30,9 @@ impl crate::System::Security::AccessControl::AuthorizationRuleCollection {
     pub fn New(
         rules: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Security::AccessControl::AuthorizationRule,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::AccessControl::AuthorizationRule,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -44,7 +46,9 @@ impl crate::System::Security::AccessControl::AuthorizationRuleCollection {
         &mut self,
         rules: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Security::AccessControl::AuthorizationRule,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::AccessControl::AuthorizationRule,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -21,7 +21,9 @@ pub struct ResourceReader {
         quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _typeTable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::RuntimeType>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+        >,
     >,
     pub _typeNamePositions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,

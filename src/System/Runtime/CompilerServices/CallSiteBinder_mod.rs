@@ -38,7 +38,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     pub fn Bind(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         parameters: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
@@ -67,7 +69,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
             crate::System::Runtime::CompilerServices::CallSite_1<T>,
         >,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -86,7 +90,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
             crate::System::Runtime::CompilerServices::CallSite_1<T>,
         >,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where

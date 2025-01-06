@@ -627,7 +627,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         &mut self,
         array: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
         >,
         arrayIndex: i32,
@@ -1086,7 +1086,9 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         &mut self,
         listAccessors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::PropertyDescriptor,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -1110,7 +1112,9 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         &mut self,
         listAccessors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::PropertyDescriptor,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

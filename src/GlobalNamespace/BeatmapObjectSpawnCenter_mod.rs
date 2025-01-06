@@ -5,7 +5,9 @@ pub struct BeatmapObjectSpawnCenter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _distances: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter_PlayerCountToDistance,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapObjectSpawnCenter_PlayerCountToDistance,
+            >,
         >,
     >,
     pub _defaultDistnace: f32,

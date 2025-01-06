@@ -8,7 +8,9 @@ pub struct XmlDataTreeWriter {
     pub _dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _dTables: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _topLevelTables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        >,
     >,
     pub _fFromTable: bool,
     pub _isDiffgram: bool,
@@ -50,14 +52,18 @@ impl crate::System::Data::XmlDataTreeWriter {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         > = __cordl_object.invoke("CreateToplevelTables", ())?;
         Ok(__cordl_ret.into())
     }

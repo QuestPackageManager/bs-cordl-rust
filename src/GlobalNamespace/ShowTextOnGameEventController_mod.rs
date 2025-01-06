@@ -8,7 +8,9 @@ pub struct ShowTextOnGameEventController {
     >,
     pub _eventTextBindings: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding,
+            >,
         >,
     >,
 }

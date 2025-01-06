@@ -14,12 +14,12 @@ pub struct PgpSignatureGenerator {
     pub lastb: u8,
     pub unhashed: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::SignatureSubpacket>,
         >,
     >,
     pub hashed: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::SignatureSubpacket>,
         >,
     >,
 }
@@ -336,7 +336,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
         &mut self,
         packets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         >,
         subpacket: quest_hook::libil2cpp::Gc<
@@ -345,7 +347,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         >,
     > {
@@ -354,7 +358,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         > = __cordl_object.invoke("insertSubpacket", (packets, subpacket))?;
         Ok(__cordl_ret.into())
@@ -363,7 +369,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureGenerator {
         &mut self,
         packets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         >,
         _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,

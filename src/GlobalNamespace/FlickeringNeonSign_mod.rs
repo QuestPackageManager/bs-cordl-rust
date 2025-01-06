@@ -6,7 +6,9 @@ pub struct FlickeringNeonSign {
     pub _flickeringSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
     pub _light: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
     pub _particleSystems: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ParticleSystem>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+        >,
     >,
     pub _minOnDelay: f32,
     pub _maxOnDelay: f32,
@@ -17,7 +19,9 @@ pub struct FlickeringNeonSign {
     pub _onMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _offMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _sparksAudioClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
     pub _sparksAudioClipPicker: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::RandomObjectPicker_1<

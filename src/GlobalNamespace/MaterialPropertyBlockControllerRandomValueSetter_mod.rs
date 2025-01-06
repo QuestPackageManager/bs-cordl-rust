@@ -11,7 +11,7 @@ pub struct MaterialPropertyBlockControllerRandomValueSetter {
     pub _max: f32,
     pub _materialPropertyBlocks: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::MaterialPropertyBlock,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
         >,
     >,
     pub _propertyId: i32,

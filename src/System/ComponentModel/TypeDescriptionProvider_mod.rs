@@ -39,10 +39,14 @@ impl crate::System::ComponentModel::TypeDescriptionProvider {
         provider: quest_hook::libil2cpp::Gc<crate::System::IServiceProvider>,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         argTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -90,7 +94,9 @@ impl crate::System::ComponentModel::TypeDescriptionProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::IExtenderProvider,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::IExtenderProvider,
+                >,
             >,
         >,
     > {
@@ -99,7 +105,9 @@ impl crate::System::ComponentModel::TypeDescriptionProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::IExtenderProvider,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::IExtenderProvider,
+                >,
             >,
         > = __cordl_object.invoke("GetExtenderProviders", (instance))?;
         Ok(__cordl_ret.into())

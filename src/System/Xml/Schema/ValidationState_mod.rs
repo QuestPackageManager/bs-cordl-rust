@@ -20,13 +20,15 @@ pub struct ValidationState {
     pub Namespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Constr: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::ConstraintStruct,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ConstraintStruct>,
         >,
     >,
     pub CurrentState: crate::System::Xml::Schema::StateUnion,
     pub HasMatched: bool,
     pub CurPos: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+        >,
     >,
     pub AllElementsSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     pub RunningPositions: quest_hook::libil2cpp::Gc<

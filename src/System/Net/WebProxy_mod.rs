@@ -11,7 +11,7 @@ pub struct WebProxy {
     pub _Credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
     pub _RegExBypassList: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Text::RegularExpressions::Regex,
+            quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
         >,
     >,
     pub _ProxyHostAddresses: quest_hook::libil2cpp::Gc<
@@ -183,7 +183,9 @@ impl crate::System::Net::WebProxy {
         Address: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         BypassOnLocal: bool,
         BypassList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         Credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -276,7 +278,9 @@ impl crate::System::Net::WebProxy {
         Address: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         BypassOnLocal: bool,
         BypassList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         Credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

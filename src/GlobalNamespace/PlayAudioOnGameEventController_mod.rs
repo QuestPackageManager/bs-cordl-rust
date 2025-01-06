@@ -8,7 +8,9 @@ pub struct PlayAudioOnGameEventController {
     >,
     pub _eventAudioBindings: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding,
+            >,
         >,
     >,
 }
@@ -91,7 +93,7 @@ pub struct PlayAudioOnGameEventController_EventAudioBinding {
     pub _delay: f32,
     pub _localizedAudioClips: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::LocalizedAudioClipSO,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LocalizedAudioClipSO>,
         >,
     >,
     pub _audioClipQueue: quest_hook::libil2cpp::Gc<

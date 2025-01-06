@@ -8,7 +8,9 @@ pub struct ObstacleController {
     >,
     pub _endDistanceOffset: f32,
     pub _visualWrappers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _obstacleMaterialSetter: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ObstacleMaterialSetter,

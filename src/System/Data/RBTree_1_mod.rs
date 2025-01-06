@@ -5,7 +5,7 @@ pub struct RBTree_1<K: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pageTable: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Data::RBTree_1_TreePage<K>,
+            quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
         >,
     >,
     pub _pageTableMap: quest_hook::libil2cpp::Gc<

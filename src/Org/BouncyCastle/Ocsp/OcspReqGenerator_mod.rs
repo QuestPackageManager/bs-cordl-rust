@@ -68,7 +68,9 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
         >,
         chain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         >,
         random: quest_hook::libil2cpp::Gc<
@@ -107,7 +109,9 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
         >,
         chain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -129,7 +133,9 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
         >,
         chain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         >,
         random: quest_hook::libil2cpp::Gc<

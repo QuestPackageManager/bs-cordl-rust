@@ -67,7 +67,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::IEquivable_1<T>,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::IEquivable_1<T>>,
             >,
         >,
     >
@@ -77,7 +77,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
     {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::IEquivable_1<T>,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::IEquivable_1<T>>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ConvertArrayToEquivable", (_cordl_self))?;

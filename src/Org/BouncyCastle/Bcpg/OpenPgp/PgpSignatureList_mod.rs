@@ -5,7 +5,9 @@ pub struct PgpSignatureList {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObject,
     pub sigs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+            quest_hook::libil2cpp::Gc<
+                crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+            >,
         >,
     >,
 }
@@ -47,7 +49,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureList {
     pub fn New_Il2CppArray0(
         sigs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -72,7 +76,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureList {
         &mut self,
         sigs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

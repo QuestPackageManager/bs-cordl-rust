@@ -160,7 +160,7 @@ pub struct VisualTreeUpdater_UpdaterArray {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_VisualTreeUpdaters: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::IVisualTreeUpdater,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IVisualTreeUpdater>,
         >,
     >,
 }

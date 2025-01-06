@@ -29,7 +29,9 @@ impl crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
     pub type OutputMode = crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode;
     pub fn ApplyUVLayoutTo(
         gameObjects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
         outputMode: crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode,
         output_name_suffix: quest_hook::libil2cpp::Gc<

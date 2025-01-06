@@ -5,7 +5,7 @@ pub struct LightRotationGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightRotationGroups: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::LightRotationGroup,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationGroup>,
         >,
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,

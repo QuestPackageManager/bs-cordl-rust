@@ -49,7 +49,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightDelegateCreator {
         &mut self,
         closure: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

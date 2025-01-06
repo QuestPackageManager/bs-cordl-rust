@@ -4,7 +4,9 @@
 pub struct MultiplayerIntroCountdownTextController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _texts: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshPro>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerIntroCountdownTextController")]

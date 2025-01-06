@@ -5,12 +5,14 @@ pub struct FireworkItemController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _particleSystems: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem,
+            >,
         >,
     >,
     pub _lights: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
         >,
     >,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
@@ -26,7 +28,9 @@ pub struct FireworkItemController {
     pub _minSpeedMultiplier: f32,
     pub _maxSpeedMultiplier: f32,
     pub _explosionClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
     pub _randomAudioPicker: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::RandomObjectPicker_1<

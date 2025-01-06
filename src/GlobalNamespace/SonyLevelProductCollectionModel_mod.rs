@@ -279,7 +279,9 @@ pub struct SonyLevelProductCollectionModel_LevelPackProductData {
     pub _packLevelPriceDiscountMul: f32,
     pub _levelProductsData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+            >,
         >,
     >,
     pub _packIndex: i32,
@@ -328,7 +330,9 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
         packLevelPriceDiscountMul: f32,
         levelProductsData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+                >,
             >,
         >,
         packIndex: i32,
@@ -355,7 +359,9 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
         packLevelPriceDiscountMul: f32,
         levelProductsData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+                >,
             >,
         >,
         packIndex: i32,

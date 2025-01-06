@@ -39,7 +39,9 @@ impl crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::NetworkInformation::NetworkInterface,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::NetworkInformation::NetworkInterface,
+                >,
             >,
         >,
     > {
@@ -48,7 +50,9 @@ impl crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::NetworkInformation::NetworkInterface,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::NetworkInformation::NetworkInterface,
+                >,
             >,
         > = __cordl_object.invoke("GetAllNetworkInterfaces", ())?;
         Ok(__cordl_ret.into())

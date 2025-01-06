@@ -807,7 +807,9 @@ impl crate::UnityEngine::Texture2D {
     pub fn PackTextures_Il2CppArray_i32_2(
         &mut self,
         textures: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture2D>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            >,
         >,
         padding: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -826,7 +828,9 @@ impl crate::UnityEngine::Texture2D {
     pub fn PackTextures_i32_1(
         &mut self,
         textures: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture2D>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            >,
         >,
         padding: i32,
         maximumAtlasSize: i32,
@@ -847,7 +851,9 @@ impl crate::UnityEngine::Texture2D {
     pub fn PackTextures_i32__cordl_bool0(
         &mut self,
         textures: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture2D>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            >,
         >,
         padding: i32,
         maximumAtlasSize: i32,

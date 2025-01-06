@@ -6,11 +6,15 @@ pub struct ControllerProfilesSettingsViewController {
     pub _profilesDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
     pub _handlingToggle: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleWithCallbacks>,
     pub _interactableCanvasGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::CanvasGroup>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+        >,
     >,
     pub _transformSettingsViewControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatSaber::GameSettings::ControllersTransformSettings,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllersTransformSettings,
+            >,
         >,
     >,
     pub _buttonsContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

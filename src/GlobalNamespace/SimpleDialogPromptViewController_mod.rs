@@ -6,10 +6,14 @@ pub struct SimpleDialogPromptViewController {
     pub _titleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _messageText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _buttons: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Button>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+        >,
     >,
     pub _buttonTexts: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshProUGUI>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+        >,
     >,
     pub _didFinishAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
 }

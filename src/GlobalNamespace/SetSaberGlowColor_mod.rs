@@ -9,7 +9,9 @@ pub struct SetSaberGlowColor {
     pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
     pub _propertyTintColorPairs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair,
+            >,
         >,
     >,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,

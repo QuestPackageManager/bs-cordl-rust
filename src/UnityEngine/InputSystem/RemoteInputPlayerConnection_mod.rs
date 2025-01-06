@@ -8,7 +8,9 @@ pub struct RemoteInputPlayerConnection {
     >,
     pub m_Subscribers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber,
+            >,
         >,
     >,
     pub m_ConnectedIds: quest_hook::libil2cpp::Gc<

@@ -9,11 +9,13 @@ pub struct PropertyDescriptorCollection {
     pub _cachedIgnoreCase: bool,
     pub _properties: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::ComponentModel::PropertyDescriptor,
+            quest_hook::libil2cpp::Gc<crate::System::ComponentModel::PropertyDescriptor>,
         >,
     >,
     pub _namedSort: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     pub _propsOwned: bool,
@@ -184,7 +186,9 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     pub fn InternalSort_Il2CppArray0(
         &mut self,
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -197,7 +201,9 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     pub fn New_Il2CppArray0(
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::PropertyDescriptor,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -210,7 +216,9 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     pub fn New__cordl_bool1(
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::PropertyDescriptor,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
             >,
         >,
         readOnly: bool,
@@ -224,12 +232,16 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     pub fn New_i32_Il2CppArray_IComparer2(
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::PropertyDescriptor,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
             >,
         >,
         propCount: i32,
         namedSort: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -266,7 +278,9 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     pub fn Sort(
         &mut self,
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -583,7 +597,9 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
         &mut self,
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::PropertyDescriptor,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -598,7 +614,9 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
         &mut self,
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::PropertyDescriptor,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
             >,
         >,
         readOnly: bool,
@@ -614,12 +632,16 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
         &mut self,
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::PropertyDescriptor,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
             >,
         >,
         propCount: i32,
         namedSort: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

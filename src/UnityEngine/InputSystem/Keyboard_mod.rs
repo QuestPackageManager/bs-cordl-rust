@@ -26,7 +26,9 @@ pub struct Keyboard {
     >,
     pub m_Keys: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::Controls::KeyControl,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::Controls::KeyControl,
+            >,
         >,
     >,
     pub m_ImeCompositionListeners: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
@@ -929,7 +931,9 @@ impl crate::UnityEngine::InputSystem::Keyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::Controls::KeyControl,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::KeyControl,
+                >,
             >,
         >,
     > {
@@ -938,7 +942,9 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::Controls::KeyControl,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::KeyControl,
+                >,
             >,
         > = __cordl_object.invoke("get_keys", ())?;
         Ok(__cordl_ret.into())
@@ -1955,7 +1961,9 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::Controls::KeyControl,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::KeyControl,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

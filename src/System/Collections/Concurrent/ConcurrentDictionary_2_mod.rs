@@ -166,7 +166,9 @@ impl<
     pub fn CopyToObjects(
         &mut self,
         array: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -1924,14 +1926,18 @@ pub struct ConcurrentDictionary_2_Tables<
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _buckets: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
-                TKey,
-                TValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
+                    TKey,
+                    TValue,
+                >,
             >,
         >,
     >,
     pub _locks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _countPerLock: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -1974,14 +1980,18 @@ impl<
     pub fn New(
         buckets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
-                    TKey,
-                    TValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
+                        TKey,
+                        TValue,
+                    >,
                 >,
             >,
         >,
         locks: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         countPerLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -2001,14 +2011,18 @@ impl<
         &mut self,
         buckets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
-                    TKey,
-                    TValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
+                        TKey,
+                        TValue,
+                    >,
                 >,
             >,
         >,
         locks: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         countPerLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

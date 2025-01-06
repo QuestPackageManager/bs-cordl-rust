@@ -8,7 +8,9 @@ pub struct BloomPrePassBackgroundColorsGradientElementWithLightId {
     >,
     pub _elements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId_Elements,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId_Elements,
+            >,
         >,
     >,
 }

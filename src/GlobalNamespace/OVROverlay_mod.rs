@@ -29,7 +29,9 @@ pub struct OVROverlay {
     pub currentOverlayShape: crate::GlobalNamespace::OVROverlay_OverlayShape,
     pub prevOverlayShape: crate::GlobalNamespace::OVROverlay_OverlayShape,
     pub textures: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        >,
     >,
     pub isAlphaPremultiplied: bool,
     pub useBicubicFiltering: bool,
@@ -591,7 +593,9 @@ pub struct OVROverlay_LayerTexture {
     pub appTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub appTexturePtr: crate::System::IntPtr,
     pub swapChain: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        >,
     >,
     pub swapChainPtr: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,

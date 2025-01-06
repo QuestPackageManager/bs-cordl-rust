@@ -69,7 +69,9 @@ impl crate::HoudiniEngineUnity::HEU_GeometryUtility {
     pub fn GetInstanceOutputName(
         partName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userPrefix: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<

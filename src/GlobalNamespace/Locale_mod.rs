@@ -26,7 +26,9 @@ impl crate::GlobalNamespace::Locale {
     pub fn GetText_Il2CppArray1(
         fmt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

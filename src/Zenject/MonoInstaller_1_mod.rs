@@ -41,7 +41,9 @@ impl<TDerived: quest_hook::libil2cpp::Type> crate::Zenject::MonoInstaller_1<TDer
     pub fn InstallFromResource_DiContainer_Il2CppArray2(
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<TDerived>
     where
@@ -68,7 +70,9 @@ impl<TDerived: quest_hook::libil2cpp::Type> crate::Zenject::MonoInstaller_1<TDer
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<TDerived>
     where

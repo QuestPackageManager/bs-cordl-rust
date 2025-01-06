@@ -5,7 +5,9 @@ pub struct RangeContentValidator {
     __cordl_parent: crate::System::Xml::Schema::ContentValidator,
     pub firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     pub followpos: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+        >,
     >,
     pub positionsWithRangeTerminals: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::BitSet,
@@ -93,7 +95,9 @@ impl crate::System::Xml::Schema::RangeContentValidator {
     pub fn New(
         firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         followpos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
         symbols: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::SymbolsDictionary,
@@ -146,7 +150,9 @@ impl crate::System::Xml::Schema::RangeContentValidator {
         &mut self,
         firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         followpos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
         symbols: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::SymbolsDictionary,

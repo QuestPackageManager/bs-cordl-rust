@@ -80,7 +80,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         &mut self,
         array: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::Linq::JToken,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
         >,
         arrayIndex: i32,
@@ -270,7 +270,9 @@ impl crate::Newtonsoft::Json::Linq::JArray {
     }
     pub fn New_Il2CppArray3(
         content: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -359,7 +361,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::JsonConverter,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -376,7 +378,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         cancellationToken: crate::System::Threading::CancellationToken,
         converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::JsonConverter,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -404,7 +406,9 @@ impl crate::Newtonsoft::Json::Linq::JArray {
     pub fn _ctor_Il2CppArray3(
         &mut self,
         content: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

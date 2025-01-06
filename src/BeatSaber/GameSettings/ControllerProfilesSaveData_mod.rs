@@ -6,7 +6,9 @@ pub struct ControllerProfilesSaveData {
     pub version: i32,
     pub profiles: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatSaber::GameSettings::ControllerProfileSaveData,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllerProfileSaveData,
+            >,
         >,
     >,
 }

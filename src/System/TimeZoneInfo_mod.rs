@@ -15,7 +15,7 @@ pub struct TimeZoneInfo {
     pub _supportsDaylightSavingTime: bool,
     pub _adjustmentRules: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::TimeZoneInfo_AdjustmentRule,
+            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
         >,
     >,
 }
@@ -191,7 +191,7 @@ impl crate::System::TimeZoneInfo {
         names: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut quest_hook::libil2cpp::Il2CppString,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 >,
             >,
         >,
@@ -222,7 +222,7 @@ impl crate::System::TimeZoneInfo {
         >,
         adjustmentRules: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::TimeZoneInfo_AdjustmentRule,
+                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
             >,
         >,
         disableDaylightSavingTime: bool,
@@ -359,7 +359,7 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::TimeZoneInfo_AdjustmentRule,
+                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
             >,
         >,
     > {
@@ -368,7 +368,7 @@ impl crate::System::TimeZoneInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::TimeZoneInfo_AdjustmentRule,
+                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
             >,
         > = __cordl_object.invoke("GetAdjustmentRules", ())?;
         Ok(__cordl_ret.into())
@@ -703,7 +703,7 @@ impl crate::System::TimeZoneInfo {
         >,
         adjustmentRules: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::TimeZoneInfo_AdjustmentRule,
+                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
             >,
         >,
         disableDaylightSavingTime: bool,
@@ -866,7 +866,7 @@ impl crate::System::TimeZoneInfo {
         rules: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::System::TimeZoneInfo_AdjustmentRule,
+                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
                 >,
             >,
         >,
@@ -1210,7 +1210,7 @@ impl crate::System::TimeZoneInfo {
         baseUtcOffset: crate::System::TimeSpan,
         adjustmentRules: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::TimeZoneInfo_AdjustmentRule,
+                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
             >,
         >,
         adjustmentRulesSupportDst: quest_hook::libil2cpp::ByRefMut<bool>,
@@ -1258,7 +1258,7 @@ impl crate::System::TimeZoneInfo {
         >,
         adjustmentRules: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::TimeZoneInfo_AdjustmentRule,
+                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
             >,
         >,
         disableDaylightSavingTime: bool,

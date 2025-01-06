@@ -4,7 +4,9 @@
 pub struct NetPacketPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pool: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::LiteNetLib::NetPacket>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+        >,
     >,
     pub _lock: quest_hook::libil2cpp::Gc<crate::System::Threading::ReaderWriterLockSlim>,
     pub _count: i32,

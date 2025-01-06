@@ -5,7 +5,9 @@ pub struct MaterialController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _renderers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Renderer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+        >,
     >,
 }
 #[cfg(feature = "MaterialController")]

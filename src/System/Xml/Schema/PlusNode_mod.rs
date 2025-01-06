@@ -29,7 +29,9 @@ impl crate::System::Xml::Schema::PlusNode {
         firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         lastpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         followpos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

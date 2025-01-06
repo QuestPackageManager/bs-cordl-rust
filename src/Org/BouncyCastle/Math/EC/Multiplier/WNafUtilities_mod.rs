@@ -236,20 +236,20 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities {
     pub fn ResizeTable(
         a: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ResizeTable", (a, length))?;
@@ -584,7 +584,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCal
         &mut self,
         table: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         reqLen: i32,
@@ -737,7 +737,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWit
         &mut self,
         table: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         reqLen: i32,

@@ -8,7 +8,9 @@ pub struct NoteCutSoundEffect {
         crate::UnityEngine::AnimationCurve,
     >,
     pub _badCutSoundEffectAudioClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
     pub _badCutVolume: f32,
     pub _goodCutVolume: f32,

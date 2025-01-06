@@ -24,12 +24,16 @@ pub struct DlcPromoPanelModel {
     >,
     pub _notOwnedMusicPackPromoInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            >,
         >,
     >,
     pub _ownedMusicPackPromoInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            >,
         >,
     >,
     pub _updatingNotOwnedPacks: bool,

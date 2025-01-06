@@ -162,7 +162,7 @@ pub struct QuickPlaySetupModel_QuickPlaySetupDataFB {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub data: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::QuickPlaySetupData,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
         >,
     >,
 }

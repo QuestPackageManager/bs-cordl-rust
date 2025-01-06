@@ -7,12 +7,14 @@ pub struct StyleSheet {
     pub m_ImportedWithWarnings: bool,
     pub m_Rules: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleRule,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
         >,
     >,
     pub m_ComplexSelectors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StyleComplexSelector,
+            >,
         >,
     >,
     pub floats: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -25,10 +27,14 @@ pub struct StyleSheet {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
     >,
     pub strings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub assets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        >,
     >,
     pub imports: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -474,7 +480,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleComplexSelector,
+                >,
             >,
         >,
     > {
@@ -483,7 +491,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleComplexSelector,
+                >,
             >,
         > = __cordl_object.invoke("get_complexSelectors", ())?;
         Ok(__cordl_ret.into())
@@ -540,7 +550,7 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleRule,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
             >,
         >,
     > {
@@ -549,7 +559,7 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleRule,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
             >,
         > = __cordl_object.invoke("get_rules", ())?;
         Ok(__cordl_ret.into())
@@ -558,7 +568,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleComplexSelector,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -617,7 +629,7 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleRule,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -646,7 +658,9 @@ pub struct StyleSheet_ImportStruct {
         crate::UnityEngine::UIElements::StyleSheet,
     >,
     pub mediaQueries: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]

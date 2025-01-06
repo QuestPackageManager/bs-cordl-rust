@@ -119,12 +119,16 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         >,
         depthObjects: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                >,
             >,
         >,
         pickerObjects: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -156,11 +160,15 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GenerateFacePickingObjects", (selection, map))?;
         Ok(__cordl_ret.into())
@@ -187,12 +195,16 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         >,
         depthObjects: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                >,
             >,
         >,
         pickerObjects: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

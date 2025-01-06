@@ -4,7 +4,9 @@
 pub struct NameTable {
     __cordl_parent: crate::System::Xml::XmlNameTable,
     pub entries: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::NameTable_Entry>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::NameTable_Entry>,
+        >,
     >,
     pub count: i32,
     pub mask: i32,

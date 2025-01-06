@@ -5,12 +5,16 @@ pub struct BloomPrePassBackgroundNonLightInstancedGroupRenderer {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassNonLightPass,
     pub _renderers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer,
+            >,
         >,
     >,
     pub _supportedProperties: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty,
+            >,
         >,
     >,
     pub _reusableFloatArrays: quest_hook::libil2cpp::Gc<

@@ -211,7 +211,9 @@ impl crate::System::Linq::Expressions::Expression {
     pub fn ApplyTypeArgs(
         m: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         typeArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -242,7 +244,7 @@ impl crate::System::Linq::Expressions::Expression {
         array: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         indexes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -413,7 +415,7 @@ impl crate::System::Linq::Expressions::Expression {
         >,
         expressions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -475,7 +477,7 @@ impl crate::System::Linq::Expressions::Expression {
         >,
         expressions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -491,7 +493,7 @@ impl crate::System::Linq::Expressions::Expression {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         expressions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -519,11 +521,13 @@ impl crate::System::Linq::Expressions::Expression {
         >,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         typeArguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         arguments: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -623,7 +627,7 @@ impl crate::System::Linq::Expressions::Expression {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         arguments: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -735,7 +739,7 @@ impl crate::System::Linq::Expressions::Expression {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         arguments: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -1029,11 +1033,13 @@ impl crate::System::Linq::Expressions::Expression {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         typeArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
         flags: crate::System::Reflection::BindingFlags,
@@ -1185,13 +1191,13 @@ impl crate::System::Linq::Expressions::Expression {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetParametersForValidation", (method, nodeKind))?;
@@ -1536,7 +1542,7 @@ impl crate::System::Linq::Expressions::Expression {
         m: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
         arguments: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1613,7 +1619,7 @@ impl crate::System::Linq::Expressions::Expression {
         right: quest_hook::libil2cpp::Gc<crate::System::Type>,
         pms: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1714,7 +1720,9 @@ impl crate::System::Linq::Expressions::Expression {
         body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -1788,7 +1796,9 @@ impl crate::System::Linq::Expressions::Expression {
         body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -2220,7 +2230,7 @@ impl crate::System::Linq::Expressions::Expression {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         initializers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -2842,7 +2852,7 @@ impl crate::System::Linq::Expressions::Expression {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         indexes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
         arguments: quest_hook::libil2cpp::ByRefMut<
@@ -2867,7 +2877,7 @@ impl crate::System::Linq::Expressions::Expression {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         indexes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
         arguments: quest_hook::libil2cpp::ByRefMut<
@@ -2894,7 +2904,7 @@ impl crate::System::Linq::Expressions::Expression {
         count: i32,
         pis: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -3012,13 +3022,13 @@ impl crate::System::Linq::Expressions::Expression {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ValidateMethodAndGetParameters", (instance, method))?;

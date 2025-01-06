@@ -6,7 +6,9 @@ pub struct CanvasUpdateRegistry {
     pub m_PerformingLayoutUpdate: bool,
     pub m_PerformingGraphicUpdate: bool,
     pub m_CanvasUpdateProfilerStrings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub m_LayoutRebuildQueue: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::Collections::IndexedSet_1<

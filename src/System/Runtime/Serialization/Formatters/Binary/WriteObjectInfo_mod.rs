@@ -17,7 +17,9 @@ pub struct WriteObjectInfo {
         crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache,
     >,
     pub memberData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub serializationSurrogate: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::ISerializationSurrogate,
@@ -90,19 +92,21 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
         outMemberNames: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut quest_hook::libil2cpp::Il2CppString,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 >,
             >,
         >,
         outMemberTypes: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                >,
             >,
         >,
         outMemberData: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut quest_hook::libil2cpp::Il2CppObject,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 >,
             >,
         >,

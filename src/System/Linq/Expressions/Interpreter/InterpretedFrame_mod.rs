@@ -16,11 +16,15 @@ pub struct InterpretedFrame {
     pub _pendingContinuation: i32,
     pub _pendingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Data: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub Closure: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::CompilerServices::IStrongBox,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::CompilerServices::IStrongBox,
+            >,
         >,
     >,
     pub StackIndex: i32,
@@ -145,7 +149,9 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
         >,
         closure: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -342,7 +348,9 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
         >,
         closure: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

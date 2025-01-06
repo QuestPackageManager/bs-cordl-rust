@@ -13,7 +13,11 @@ pub struct FloorLightTilesGrid {
     >,
     pub _grid: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::Ice::FloorLightTile>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
+                >,
+            >,
         >,
     >,
     pub _tileWidth: f32,

@@ -29,7 +29,9 @@ for crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
 impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
     pub fn CreateArrayResult_Il2CppArray1<TObject>(
         allAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<TObject>
     where
@@ -43,7 +45,9 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
     pub fn CreateArrayResult_Type_Il2CppArray0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         allAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
@@ -52,7 +56,9 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
     }
     pub fn CreateListResult_Il2CppArray1<TObject>(
         allAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<TObject>
     where
@@ -66,7 +72,9 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
     pub fn CreateListResult_Type_Il2CppArray0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         allAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,

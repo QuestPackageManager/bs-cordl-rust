@@ -22,7 +22,7 @@ pub struct TrackAsset {
     pub m_ItemsHash: i32,
     pub m_ClipsCache: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Timeline::TimelineClip,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
         >,
     >,
     pub m_Start: crate::UnityEngine::Timeline::DiscreteTime,
@@ -987,7 +987,7 @@ impl crate::UnityEngine::Timeline::TrackAsset {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Timeline::TimelineClip,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
             >,
         >,
     > {
@@ -996,7 +996,7 @@ impl crate::UnityEngine::Timeline::TrackAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Timeline::TimelineClip,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
             >,
         > = __cordl_object.invoke("get_clips", ())?;
         Ok(__cordl_ret.into())

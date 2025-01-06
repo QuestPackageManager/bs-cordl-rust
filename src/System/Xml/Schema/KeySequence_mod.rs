@@ -4,7 +4,9 @@
 pub struct KeySequence {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::TypedObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::TypedObject>,
+        >,
     >,
     pub dim: i32,
     pub hashcode: i32,

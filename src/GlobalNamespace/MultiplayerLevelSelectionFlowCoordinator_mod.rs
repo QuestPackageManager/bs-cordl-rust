@@ -5,7 +5,7 @@ pub struct MultiplayerLevelSelectionFlowCoordinator {
     __cordl_parent: crate::GlobalNamespace::LevelSelectionFlowCoordinator,
     pub _notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
         >,
     >,
     pub _lobbyGameStateController: quest_hook::libil2cpp::Gc<
@@ -279,7 +279,9 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
             >,
         >,
     > {
@@ -288,7 +290,9 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
             >,
         > = __cordl_object.invoke("get_notAllowedCharacteristics", ())?;
         Ok(__cordl_ret.into())

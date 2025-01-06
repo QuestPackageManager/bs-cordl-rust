@@ -14,7 +14,9 @@ pub struct BeatmapLevelsModel {
         crate::GlobalNamespace::IBeatmapLevelLoader,
     >,
     pub _packDefinitions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::PackDefinitionSO>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
+        >,
     >,
     pub _playerDataModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IPlayerDataModel,

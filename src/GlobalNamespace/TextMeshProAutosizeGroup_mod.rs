@@ -4,7 +4,9 @@
 pub struct TextMeshProAutosizeGroup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _texts: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TMP_Text>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+        >,
     >,
 }
 #[cfg(feature = "TextMeshProAutosizeGroup")]

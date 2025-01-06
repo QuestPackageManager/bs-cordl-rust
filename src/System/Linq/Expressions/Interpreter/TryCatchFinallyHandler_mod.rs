@@ -10,7 +10,9 @@ pub struct TryCatchFinallyHandler {
     pub GotoEndTargetIndex: i32,
     pub _handlers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+            >,
         >,
     >,
 }
@@ -80,7 +82,9 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         gotoEndTargetIndex: i32,
         handlers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -98,7 +102,9 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         finallyEnd: i32,
         handlers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -118,7 +124,9 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         gotoEndTargetIndex: i32,
         handlers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -138,7 +146,9 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         finallyEnd: i32,
         handlers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -157,7 +167,9 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+                >,
             >,
         >,
     > {
@@ -166,7 +178,9 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+                >,
             >,
         > = __cordl_object.invoke("get_Handlers", ())?;
         Ok(__cordl_ret.into())

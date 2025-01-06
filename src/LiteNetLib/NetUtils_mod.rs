@@ -111,11 +111,15 @@ impl crate::LiteNetLib::NetUtils {
         hostStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ResolveAddresses", (hostStr))?;
         Ok(__cordl_ret.into())

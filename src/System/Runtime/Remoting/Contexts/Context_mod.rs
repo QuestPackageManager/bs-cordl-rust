@@ -381,7 +381,9 @@ impl crate::System::Runtime::Remoting::Contexts::Context {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::Remoting::Contexts::IContextProperty,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Remoting::Contexts::IContextProperty,
+                >,
             >,
         >,
     > {
@@ -390,7 +392,9 @@ impl crate::System::Runtime::Remoting::Contexts::Context {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::Remoting::Contexts::IContextProperty,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Remoting::Contexts::IContextProperty,
+                >,
             >,
         > = __cordl_object.invoke("get_ContextProperties", ())?;
         Ok(__cordl_ret.into())

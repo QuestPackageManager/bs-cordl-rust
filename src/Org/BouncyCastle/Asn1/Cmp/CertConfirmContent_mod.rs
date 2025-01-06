@@ -64,7 +64,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CertStatus,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CertStatus,
+                >,
             >,
         >,
     > {
@@ -73,7 +75,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CertStatus,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CertStatus,
+                >,
             >,
         > = __cordl_object.invoke("ToCertStatusArray", ())?;
         Ok(__cordl_ret.into())

@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Ocsp::RespData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Ocsp::SingleResp,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::SingleResp>,
             >,
         >,
     > {
@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Ocsp::RespData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Ocsp::SingleResp,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::SingleResp>,
             >,
         > = __cordl_object.invoke("GetResponses", ())?;
         Ok(__cordl_ret.into())

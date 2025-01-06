@@ -7,7 +7,9 @@ pub struct ConsoleCommandBase {
         crate::GlobalNamespace::DebugConsoleController,
     >,
     pub _arguments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::ArgumentBase>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
+        >,
     >,
 }
 #[cfg(feature = "ConsoleCommandBase")]
@@ -33,7 +35,9 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
     pub fn AreArgumentsValid(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         messages: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
@@ -61,7 +65,9 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
     pub fn ExecuteAsync_Il2CppArray_List_1_0(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         messages: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
@@ -101,14 +107,18 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::ArgumentBase>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::ArgumentBase>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
+            >,
         > = __cordl_object.invoke("GetArguments", ())?;
         Ok(__cordl_ret.into())
     }
@@ -201,7 +211,9 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
     pub fn ParseMatchedArguments(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         messages: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
@@ -228,7 +240,9 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
     pub fn ParseUnmatchedArguments(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         matchedArguments: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<

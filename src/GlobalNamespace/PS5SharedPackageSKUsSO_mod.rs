@@ -5,7 +5,7 @@ pub struct PS5SharedPackageSKUsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _availableSKUs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PS5PublisherSKUSettingsSO>,
         >,
     >,
     pub _conceptId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -76,7 +76,9 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+                >,
             >,
         >,
     > {
@@ -85,7 +87,9 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+                >,
             >,
         > = __cordl_object.invoke("get_availableSKUs", ())?;
         Ok(__cordl_ret.into())

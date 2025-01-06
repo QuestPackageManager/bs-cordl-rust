@@ -9,7 +9,7 @@ pub struct ScrollViewItemsVisibilityController {
     >,
     pub _items: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::HMUI::ScrollViewItemForVisibilityController,
+            quest_hook::libil2cpp::Gc<crate::HMUI::ScrollViewItemForVisibilityController>,
         >,
     >,
     pub _lastContentAnchoredPositionY: f32,
@@ -18,21 +18,25 @@ pub struct ScrollViewItemsVisibilityController {
     >,
     pub _upperItemsCornes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Tuple_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::HMUI::ScrollViewItemForVisibilityController,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Tuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::HMUI::ScrollViewItemForVisibilityController,
+                    >,
+                    f32,
                 >,
-                f32,
             >,
         >,
     >,
     pub _lowerItemsCornes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Tuple_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::HMUI::ScrollViewItemForVisibilityController,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Tuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::HMUI::ScrollViewItemForVisibilityController,
+                    >,
+                    f32,
                 >,
-                f32,
             >,
         >,
     >,

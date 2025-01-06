@@ -318,7 +318,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         >,
     > {
@@ -327,7 +327,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         > = __cordl_object
             .invoke("ExtractIPsAndSubnetMasks", (ipWithSubmask1, ipWithSubmask2))?;
@@ -775,7 +775,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         >,
     > {
@@ -784,7 +784,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         > = __cordl_object.invoke("MinMaxIPs", (ip1, subnetmask1, ip2, subnetmask2))?;
         Ok(__cordl_ret.into())

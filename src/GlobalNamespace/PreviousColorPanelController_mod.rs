@@ -4,7 +4,9 @@
 pub struct PreviousColorPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _graphics: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Graphic>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+        >,
     >,
     pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub colorWasSelectedEvent: quest_hook::libil2cpp::Gc<

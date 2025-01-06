@@ -47,7 +47,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessages {
     pub fn New_Il2CppArray1(
         msgs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -75,7 +77,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessages {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
+                >,
             >,
         >,
     > {
@@ -84,7 +88,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessages {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
+                >,
             >,
         > = __cordl_object.invoke("ToPkiMessageArray", ())?;
         Ok(__cordl_ret.into())
@@ -104,7 +110,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessages {
         &mut self,
         msgs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

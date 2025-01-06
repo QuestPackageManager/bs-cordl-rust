@@ -51,7 +51,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Admissions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo,
+                >,
             >,
         >,
     > {
@@ -60,7 +62,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Admissions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo,
+                >,
             >,
         > = __cordl_object.invoke("GetProfessionInfos", ())?;
         Ok(__cordl_ret.into())
@@ -83,7 +87,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Admissions {
         >,
         professionInfos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -130,7 +136,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Admissions {
         >,
         professionInfos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

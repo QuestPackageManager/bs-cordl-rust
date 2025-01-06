@@ -4,7 +4,9 @@
 pub struct UnitySerializationHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_instantiation: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
     pub m_elementTypes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,

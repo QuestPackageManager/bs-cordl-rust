@@ -7,7 +7,9 @@ pub struct SetSaberBladeParams {
     pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
     pub _propertyTintColorPairs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SetSaberBladeParams_PropertyTintColorPair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SetSaberBladeParams_PropertyTintColorPair,
+            >,
         >,
     >,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,

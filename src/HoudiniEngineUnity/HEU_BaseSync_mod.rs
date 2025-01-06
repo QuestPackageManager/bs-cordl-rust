@@ -121,7 +121,9 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
             crate::HoudiniEngineUnity::HAPI_Transform,
         >,
         instancePrefixes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         instanceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         collisionSourceGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

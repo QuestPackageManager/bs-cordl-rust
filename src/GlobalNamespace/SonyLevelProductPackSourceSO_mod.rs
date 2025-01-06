@@ -8,7 +8,9 @@ pub struct SonyLevelProductPackSourceSO {
     >,
     pub _levelProductRedirectionSources: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+            >,
         >,
     >,
 }
@@ -128,7 +130,9 @@ pub struct SonyLevelProductPackSourceSO_LevelProductPackSource {
     >,
     pub _levelProductsData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+            >,
         >,
     >,
 }
@@ -195,7 +199,9 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+                >,
             >,
         >,
     > {
@@ -204,7 +210,9 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+                >,
             >,
         > = __cordl_object.invoke("get_levelProductsData", ())?;
         Ok(__cordl_ret.into())
@@ -220,7 +228,9 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

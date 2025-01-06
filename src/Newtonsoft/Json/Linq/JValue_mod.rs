@@ -622,7 +622,7 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::JsonConverter,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -639,7 +639,7 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         cancellationToken: crate::System::Threading::CancellationToken,
         converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::JsonConverter,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

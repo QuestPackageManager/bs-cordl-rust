@@ -5,7 +5,9 @@ pub struct ColorArrayLightWithIds {
     __cordl_parent: crate::GlobalNamespace::LightWithIds,
     pub _colorArrayLightWithIds: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId,
+            >,
         >,
     >,
     pub _materialController: quest_hook::libil2cpp::Gc<
@@ -13,7 +15,9 @@ pub struct ColorArrayLightWithIds {
     >,
     pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MaterialPropertyBlockController,
+            >,
         >,
     >,
     pub _colorsArrayPropertyName: quest_hook::libil2cpp::Gc<

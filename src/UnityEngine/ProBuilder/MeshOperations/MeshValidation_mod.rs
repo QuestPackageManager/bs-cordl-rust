@@ -235,7 +235,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         faces: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::UnityEngine::ProBuilder::Face,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
                 >,
             >,
         >,

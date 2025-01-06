@@ -5,7 +5,7 @@ pub struct Datatype_union {
     __cordl_parent: crate::System::Xml::Schema::Datatype_anySimpleType,
     pub types: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
         >,
     >,
 }
@@ -76,7 +76,9 @@ impl crate::System::Xml::Schema::Datatype_union {
     pub fn New(
         types: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -126,7 +128,9 @@ impl crate::System::Xml::Schema::Datatype_union {
         &mut self,
         types: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -142,7 +146,9 @@ impl crate::System::Xml::Schema::Datatype_union {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         >,
     > {
@@ -151,7 +157,9 @@ impl crate::System::Xml::Schema::Datatype_union {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         > = __cordl_object.invoke("get_BaseMemberTypes", ())?;
         Ok(__cordl_ret.into())

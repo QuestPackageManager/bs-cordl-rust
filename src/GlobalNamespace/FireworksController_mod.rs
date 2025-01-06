@@ -7,7 +7,9 @@ pub struct FireworksController {
     pub _minSpawnInterval: f32,
     pub _maxSpawnInterval: f32,
     pub _directionalLights: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::DirectionalLight>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLight>,
+        >,
     >,
     pub _lightsIntensity: f32,
     pub _currentLightId: i32,

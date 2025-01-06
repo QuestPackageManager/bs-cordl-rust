@@ -4,7 +4,9 @@
 pub struct SpectrogramRow {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _meshRenderers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+        >,
     >,
     pub _dataIndex: i32,
     pub _spectrogramData: quest_hook::libil2cpp::Gc<

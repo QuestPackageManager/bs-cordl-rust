@@ -11,7 +11,9 @@ pub struct Lookup_2<
     >,
     pub groupings: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+            >,
         >,
     >,
     pub lastGrouping: quest_hook::libil2cpp::Gc<

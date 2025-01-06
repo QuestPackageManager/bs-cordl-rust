@@ -42,7 +42,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OcspListID {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::OcspResponsesID,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::OcspResponsesID,
+                >,
             >,
         >,
     > {
@@ -51,7 +53,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OcspListID {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::OcspResponsesID,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::OcspResponsesID,
+                >,
             >,
         > = __cordl_object.invoke("GetOcspResponses", ())?;
         Ok(__cordl_ret.into())
@@ -77,7 +81,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OcspListID {
     pub fn New_Il2CppArray1(
         ocspResponses: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::OcspResponsesID,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::OcspResponsesID,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -126,7 +132,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OcspListID {
         &mut self,
         ocspResponses: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::OcspResponsesID,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::OcspResponsesID,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

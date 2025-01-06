@@ -15,7 +15,9 @@ pub struct LevelFilter {
     pub sensitivity: crate::GlobalNamespace::PlayerSensitivityFlag,
     pub searchText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub limitIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "LevelFilter")]
@@ -51,7 +53,9 @@ impl crate::GlobalNamespace::LevelFilter {
             >,
         >,
         searchTerms: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -87,7 +91,7 @@ impl crate::GlobalNamespace::LevelFilter {
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
-                        *mut crate::GlobalNamespace::BeatmapLevel,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
                     >,
                 >,
             >,
@@ -97,7 +101,7 @@ impl crate::GlobalNamespace::LevelFilter {
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
-                        *mut crate::GlobalNamespace::BeatmapLevel,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
                     >,
                 >,
             >,
@@ -111,7 +115,7 @@ impl crate::GlobalNamespace::LevelFilter {
     pub fn FilterLevelsAsync_Il2CppArray0(
         packs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapLevelPack,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
             >,
         >,
         filter: crate::GlobalNamespace::LevelFilter,
@@ -127,7 +131,7 @@ impl crate::GlobalNamespace::LevelFilter {
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
-                        *mut crate::GlobalNamespace::BeatmapLevel,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
                     >,
                 >,
             >,
@@ -137,7 +141,7 @@ impl crate::GlobalNamespace::LevelFilter {
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
-                        *mut crate::GlobalNamespace::BeatmapLevel,
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
                     >,
                 >,
             >,
@@ -159,7 +163,9 @@ impl crate::GlobalNamespace::LevelFilter {
     pub fn _FilterLevelByText_g__CalculateMatchScore_15_1(
         levelString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         searchTerms: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()

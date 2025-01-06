@@ -5,7 +5,9 @@ pub struct ParticleSystemContinuousEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _particleSystems: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ParticleSystem>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+        >,
     >,
     pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCallbacksController,

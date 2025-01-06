@@ -35,7 +35,9 @@ impl crate::UnityEngine::Timeline::TimelineUndo {
     }
     pub fn PushUndo_Il2CppArray0(
         thingsToDirty: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
         operation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

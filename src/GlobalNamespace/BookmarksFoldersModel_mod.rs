@@ -4,10 +4,14 @@
 pub struct BookmarksFoldersModel {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub myFolders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _bookmarksFolders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::FileBrowserItem>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
+        >,
     >,
 }
 #[cfg(feature = "BookmarksFoldersModel")]
@@ -52,7 +56,7 @@ impl crate::GlobalNamespace::BookmarksFoldersModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::FileBrowserItem,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
             >,
         >,
     > {
@@ -61,7 +65,7 @@ impl crate::GlobalNamespace::BookmarksFoldersModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::FileBrowserItem,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
             >,
         > = __cordl_object.invoke("get_bookmarksFolders", ())?;
         Ok(__cordl_ret.into())

@@ -177,7 +177,9 @@ impl crate::System::Data::DataView {
     pub fn CopyTo_Il2CppArray1(
         &mut self,
         array: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRowView>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRowView>,
+            >,
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -834,7 +836,9 @@ impl crate::System::Data::DataView {
         &mut self,
         listAccessors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::PropertyDescriptor,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -858,7 +862,9 @@ impl crate::System::Data::DataView {
         &mut self,
         listAccessors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::PropertyDescriptor,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

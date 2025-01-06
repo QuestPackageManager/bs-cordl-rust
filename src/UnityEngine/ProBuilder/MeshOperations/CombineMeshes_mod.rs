@@ -184,7 +184,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             crate::System::Collections::Generic::Dictionary_2<i32, i32>,
         >,
         materials: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,

@@ -35,7 +35,9 @@ pub struct SchemaElementDecl {
     pub block: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub constraints: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::CompiledIdentityConstraint,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Xml::Schema::CompiledIdentityConstraint,
+            >,
         >,
     >,
     pub schemaElement: quest_hook::libil2cpp::Gc<
@@ -280,7 +282,9 @@ impl crate::System::Xml::Schema::SchemaElementDecl {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::CompiledIdentityConstraint,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::CompiledIdentityConstraint,
+                >,
             >,
         >,
     > {
@@ -289,7 +293,9 @@ impl crate::System::Xml::Schema::SchemaElementDecl {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::CompiledIdentityConstraint,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::CompiledIdentityConstraint,
+                >,
             >,
         > = __cordl_object.invoke("get_Constraints", ())?;
         Ok(__cordl_ret.into())
@@ -437,7 +443,9 @@ impl crate::System::Xml::Schema::SchemaElementDecl {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::CompiledIdentityConstraint,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::CompiledIdentityConstraint,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

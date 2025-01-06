@@ -4,7 +4,9 @@
 pub struct InputSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_SupportedDevices: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub m_UpdateMode: crate::UnityEngine::InputSystem::InputSettings_UpdateMode,
     pub m_MaxEventBytesPerUpdate: i32,

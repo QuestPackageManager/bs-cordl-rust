@@ -32,13 +32,13 @@ impl crate::Org::BouncyCastle::Crypto::Generators::DHParametersHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ConstructBigPrimeProducts", (primeProducts))?;
@@ -53,13 +53,13 @@ impl crate::Org::BouncyCastle::Crypto::Generators::DHParametersHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GenerateSafePrimes", (_cordl_size, certainty, random))?;

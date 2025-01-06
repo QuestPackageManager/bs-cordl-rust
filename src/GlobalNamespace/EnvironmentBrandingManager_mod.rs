@@ -4,10 +4,14 @@
 pub struct EnvironmentBrandingManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _brandingObjects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _replacementBrandingObjects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _initData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::EnvironmentBrandingManager_InitData,

@@ -14,10 +14,14 @@ pub struct CreditsController {
     pub _overflowHeight: f32,
     pub _contentWrapper: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _beforeMusicPacksCredits: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _afterMusicPacksCredits: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IVRPlatformHelper,

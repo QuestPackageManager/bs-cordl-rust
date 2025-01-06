@@ -8,7 +8,7 @@ pub struct SemanticsInformation {
     >,
     pub nameRegistrationAuthorities: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::GeneralName>,
         >,
     >,
 }
@@ -52,7 +52,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::Qualified::SemanticsInformation {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         >,
     > {
@@ -61,7 +63,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::Qualified::SemanticsInformation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         > = __cordl_object.invoke("GetNameRegistrationAuthorities", ())?;
         Ok(__cordl_ret.into())
@@ -92,7 +96,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::Qualified::SemanticsInformation {
         >,
         generalNames: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -105,7 +111,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::Qualified::SemanticsInformation {
     pub fn New_Il2CppArray3(
         generalNames: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -159,7 +167,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::Qualified::SemanticsInformation {
         >,
         generalNames: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -174,7 +184,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::Qualified::SemanticsInformation {
         &mut self,
         generalNames: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

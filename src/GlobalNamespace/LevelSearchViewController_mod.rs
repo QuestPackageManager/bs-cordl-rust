@@ -56,7 +56,9 @@ pub struct LevelSearchViewController {
         crate::System::Threading::CancellationTokenSource,
     >,
     pub _beatmapLevelPacks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevelPack>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        >,
     >,
 }
 #[cfg(feature = "LevelSearchViewController")]
@@ -236,7 +238,7 @@ impl crate::GlobalNamespace::LevelSearchViewController {
         &mut self,
         beatmapLevelPacks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapLevelPack,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

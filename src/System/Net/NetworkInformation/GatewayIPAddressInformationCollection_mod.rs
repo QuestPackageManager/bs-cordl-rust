@@ -73,7 +73,9 @@ impl crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollecti
         &mut self,
         array: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+                >,
             >,
         >,
         offset: i32,

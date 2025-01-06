@@ -6,7 +6,7 @@ pub struct AsymmetricAlgorithm {
     pub KeySizeValue: i32,
     pub LegalKeySizesValue: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Security::Cryptography::KeySizes,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::KeySizes>,
         >,
     >,
 }

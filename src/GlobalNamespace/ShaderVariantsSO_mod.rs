@@ -91,7 +91,9 @@ pub struct ShaderVariantsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _shaderVariants: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant,
+            >,
         >,
     >,
 }
@@ -121,7 +123,9 @@ impl crate::GlobalNamespace::ShaderVariantsSO {
         &mut self,
         shaderVariants: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -154,7 +158,9 @@ impl crate::GlobalNamespace::ShaderVariantsSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant,
+                >,
             >,
         >,
     > {
@@ -163,7 +169,9 @@ impl crate::GlobalNamespace::ShaderVariantsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant,
+                >,
             >,
         > = __cordl_object.invoke("get_shaderVariants", ())?;
         Ok(__cordl_ret.into())
@@ -185,7 +193,9 @@ pub struct ShaderVariantsSO_ShaderVariant {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _variants: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
+            >,
         >,
     >,
     pub _shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -216,7 +226,9 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         variants: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -231,7 +243,9 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         variants: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -259,7 +273,9 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
+                >,
             >,
         >,
     > {
@@ -268,7 +284,9 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
+                >,
             >,
         > = __cordl_object.invoke("get_variants", ())?;
         Ok(__cordl_ret.into())

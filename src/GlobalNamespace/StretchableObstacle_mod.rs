@@ -11,7 +11,9 @@ pub struct StretchableObstacle {
     pub _obstacleCore: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MaterialPropertyBlockController,
+            >,
         >,
     >,
     pub _obstacleFrame: quest_hook::libil2cpp::Gc<

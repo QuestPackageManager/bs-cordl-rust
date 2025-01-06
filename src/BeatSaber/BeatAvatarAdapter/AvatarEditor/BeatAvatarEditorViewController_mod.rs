@@ -115,13 +115,15 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
         &mut self,
         colors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::SkinColorSO>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+                >,
             >,
         >,
     > {
@@ -130,7 +132,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+                >,
             >,
         > = __cordl_object
             .invoke("CreateColorValuePairsForAvatarPartCollection", (colors))?;
@@ -143,7 +147,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::NamedIntListController_TextValuePair,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::NamedIntListController_TextValuePair,
+                >,
             >,
         >,
     >
@@ -153,7 +159,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
     {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::NamedIntListController_TextValuePair,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::NamedIntListController_TextValuePair,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateTextValuePairsForAvatarPartCollection", (partCollection))?;

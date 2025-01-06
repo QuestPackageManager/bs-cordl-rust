@@ -29,7 +29,7 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -46,7 +46,9 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
     pub fn Bind_Il2CppArray_ReadOnlyCollection_1_LabelTarget0(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         parameters: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
@@ -71,7 +73,9 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
     }
     pub fn CreateArgumentMetaObjects(
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         parameters: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
@@ -83,13 +87,13 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateArgumentMetaObjects", (args, parameters))?;

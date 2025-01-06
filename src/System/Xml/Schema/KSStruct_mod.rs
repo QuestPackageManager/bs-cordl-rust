@@ -7,7 +7,7 @@ pub struct KSStruct {
     pub ks: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::KeySequence>,
     pub fields: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::LocatedActiveAxis,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::LocatedActiveAxis>,
         >,
     >,
 }

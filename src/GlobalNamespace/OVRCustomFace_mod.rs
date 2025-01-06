@@ -39,7 +39,7 @@ impl crate::GlobalNamespace::OVRCustomFace {
         crate::System::ValueTuple_2<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut quest_hook::libil2cpp::Il2CppString,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 >,
             >,
             quest_hook::libil2cpp::Gc<
@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::OVRCustomFace {
         let __cordl_ret: crate::System::ValueTuple_2<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut quest_hook::libil2cpp::Il2CppString,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 >,
             >,
             quest_hook::libil2cpp::Gc<

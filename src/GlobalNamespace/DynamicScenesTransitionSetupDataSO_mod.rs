@@ -35,11 +35,13 @@ impl crate::GlobalNamespace::DynamicScenesTransitionSetupDataSO {
     pub fn SetScenes(
         &mut self,
         scenes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::SceneInfo>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
+            >,
         >,
         sceneSetupData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SceneSetupData,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneSetupData>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

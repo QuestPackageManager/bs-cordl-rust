@@ -4,7 +4,9 @@
 pub struct AssetReferenceUILabelRestriction {
     __cordl_parent: crate::UnityEngine::AssetReferenceUIRestriction,
     pub m_AllowedLabels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub m_CachedToString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -30,7 +32,9 @@ impl std::ops::DerefMut for crate::UnityEngine::AssetReferenceUILabelRestriction
 impl crate::UnityEngine::AssetReferenceUILabelRestriction {
     pub fn New(
         allowedLabels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -75,7 +79,9 @@ impl crate::UnityEngine::AssetReferenceUILabelRestriction {
     pub fn _ctor(
         &mut self,
         allowedLabels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -6,7 +6,9 @@ pub struct XmlMembersMapping {
     pub _hasWrapperElement: bool,
     pub _mapping: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Serialization::XmlMemberMapping,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Xml::Serialization::XmlMemberMapping,
+            >,
         >,
     >,
 }

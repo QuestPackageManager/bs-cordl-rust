@@ -4,7 +4,9 @@
 pub struct CutoutAnimateEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _cuttoutEffects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::CutoutEffect>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CutoutEffect>,
+        >,
     >,
     pub _transitionCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _animating_k__BackingField: bool,

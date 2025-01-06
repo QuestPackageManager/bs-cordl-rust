@@ -5,13 +5,17 @@ pub struct MeshImporter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_SourceMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub m_SourceMaterials: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     >,
     pub m_Destination: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ProBuilder::ProBuilderMesh,
     >,
     pub m_Vertices: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Vertex>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImporter")]
@@ -74,7 +78,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter {
     pub fn New_Mesh_Il2CppArray_ProBuilderMesh1(
         sourceMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         sourceMaterials: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         >,
         destination: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -112,7 +118,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter {
         &mut self,
         sourceMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         sourceMaterials: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         >,
         destination: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,

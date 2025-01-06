@@ -225,7 +225,9 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::Polygon {
     pub fn New_Il2CppArray2(
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -299,7 +301,9 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::Polygon {
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

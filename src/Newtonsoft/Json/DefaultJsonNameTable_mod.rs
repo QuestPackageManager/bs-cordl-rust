@@ -6,7 +6,9 @@ pub struct DefaultJsonNameTable {
     pub _count: i32,
     pub _entries: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Newtonsoft::Json::DefaultJsonNameTable_Entry,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::DefaultJsonNameTable_Entry,
+            >,
         >,
     >,
     pub _mask: i32,

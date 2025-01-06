@@ -9,12 +9,12 @@ pub struct SimpleCollator {
     >,
     pub contractions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Mono::Globalization::Unicode::Contraction,
+            quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::Contraction>,
         >,
     >,
     pub level2Maps: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Mono::Globalization::Unicode::Level2Map,
+            quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::Level2Map>,
         >,
     >,
     pub unsafeFlags: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -200,7 +200,9 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         end: i32,
         clist: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Mono::Globalization::Unicode::Contraction,
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Globalization::Unicode::Contraction,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -310,7 +312,9 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         end: i32,
         clist: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Mono::Globalization::Unicode::Contraction,
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Globalization::Unicode::Contraction,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

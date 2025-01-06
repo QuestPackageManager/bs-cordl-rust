@@ -39,7 +39,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::SigI::NameOrPseudonym {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                >,
             >,
         >,
     > {
@@ -48,7 +50,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::SigI::NameOrPseudonym {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+                >,
             >,
         > = __cordl_object.invoke("GetGivenName", ())?;
         Ok(__cordl_ret.into())

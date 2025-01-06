@@ -5,7 +5,7 @@ pub struct SimpleLookupTable {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
     pub points: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
         >,
     >,
 }
@@ -32,7 +32,7 @@ impl crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
     pub fn Copy(
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         off: i32,
@@ -40,13 +40,13 @@ impl crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Copy", (points, off, len))?;
@@ -83,7 +83,7 @@ impl crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
     pub fn New(
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         off: i32,
@@ -99,7 +99,7 @@ impl crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         off: i32,

@@ -14,7 +14,9 @@ pub struct HEU_PDGAssetLink {
         >,
     >,
     pub _topNetworkNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _selectedTOPNetwork: i32,
     pub _linkState: crate::HoudiniEngineUnity::HEU_PDGAssetLink_LinkState,

@@ -280,7 +280,9 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
     pub fn WithUsages_Il2CppArray2(
         &mut self,
         usages: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder,
@@ -498,7 +500,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         attributes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::Layouts::InputControlAttribute,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Layouts::InputControlAttribute,
+                >,
             >,
         >,
         controlItems: quest_hook::libil2cpp::Gc<
@@ -514,7 +518,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
     pub fn AddControlItemsFromMembers(
         members: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         >,
         controlItems: quest_hook::libil2cpp::Gc<
@@ -2498,10 +2502,14 @@ pub struct InputControlLayout_ControlItemJson {
     pub format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub arraySize: i32,
     pub usages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub aliases: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub parameters: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub processors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2546,13 +2554,17 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJso
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FromControlItems", (items))?;
@@ -2623,13 +2635,17 @@ pub struct InputControlLayout_LayoutJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub extend: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub extendMultiple: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub beforeRender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub runInBackground: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub commonUsages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2639,7 +2655,9 @@ pub struct InputControlLayout_LayoutJson {
     pub hideInUI: bool,
     pub controls: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson,
+            >,
         >,
     >,
 }
@@ -2695,7 +2713,9 @@ pub struct InputControlLayout_LayoutJsonNameAndDescriptorOnly {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub extend: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub extendMultiple: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub device: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson,
 }

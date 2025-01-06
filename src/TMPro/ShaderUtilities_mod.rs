@@ -33,7 +33,9 @@ impl crate::TMPro::ShaderUtilities {
     }
     pub fn GetPadding_Il2CppArray1(
         materials: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            >,
         >,
         enableExtraPadding: bool,
         isBold: bool,

@@ -10,7 +10,7 @@ pub struct InputActionMap {
     >,
     pub m_Actions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputAction,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
         >,
     >,
     pub m_Bindings: quest_hook::libil2cpp::Gc<
@@ -21,7 +21,7 @@ pub struct InputActionMap {
     >,
     pub m_ControlsForEachAction: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputControl,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         >,
     >,
     pub m_EnabledActionsCount: i32,
@@ -251,13 +251,17 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputActionMap,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionMap,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputActionMap,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionMap,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromJson", (json))?;
         Ok(__cordl_ret.into())
@@ -1109,7 +1113,7 @@ pub struct InputActionMap_DeviceArray {
     pub m_DeviceCount: i32,
     pub m_DeviceArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     >,
 }
@@ -1294,13 +1298,17 @@ impl crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputActionMap,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionMap,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputActionMap,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionMap,
+                >,
             >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToMaps", ())?;
         Ok(__cordl_ret.into())

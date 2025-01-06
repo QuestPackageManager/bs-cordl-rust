@@ -46,7 +46,9 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::PkiPublicationInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Crmf::SinglePubInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Crmf::SinglePubInfo,
+                >,
             >,
         >,
     > {
@@ -55,7 +57,9 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::PkiPublicationInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Crmf::SinglePubInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Crmf::SinglePubInfo,
+                >,
             >,
         > = __cordl_object.invoke("GetPubInfos", ())?;
         Ok(__cordl_ret.into())

@@ -220,7 +220,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         &mut self,
         v: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::BcpgObject,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

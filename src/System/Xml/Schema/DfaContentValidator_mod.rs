@@ -4,7 +4,9 @@
 pub struct DfaContentValidator {
     __cordl_parent: crate::System::Xml::Schema::ContentValidator,
     pub transitionTable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<i32>>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        >,
     >,
     pub symbols: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::SymbolsDictionary,
@@ -86,7 +88,7 @@ impl crate::System::Xml::Schema::DfaContentValidator {
     pub fn New(
         transitionTable: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
             >,
         >,
         symbols: quest_hook::libil2cpp::Gc<
@@ -125,7 +127,7 @@ impl crate::System::Xml::Schema::DfaContentValidator {
         &mut self,
         transitionTable: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
             >,
         >,
         symbols: quest_hook::libil2cpp::Gc<

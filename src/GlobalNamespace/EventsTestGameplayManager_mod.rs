@@ -16,7 +16,9 @@ pub struct EventsTestGameplayManager {
     pub _floatValue: f32,
     pub _beatmapEventDataBoxGroupLists: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroupList,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapEventDataBoxGroupList,
+            >,
         >,
     >,
     pub groupState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,

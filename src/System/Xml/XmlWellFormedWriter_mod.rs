@@ -935,7 +935,9 @@ pub struct XmlWellFormedWriter_AttributeValueCache {
     >,
     pub items: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item,
+            >,
         >,
     >,
     pub firstItem: i32,

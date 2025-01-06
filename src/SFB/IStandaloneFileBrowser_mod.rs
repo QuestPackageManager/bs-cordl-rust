@@ -34,14 +34,18 @@ impl crate::SFB::IStandaloneFileBrowser {
         multiselect: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object
             .invoke("OpenFilePanel", (title, directory, extensions, multiselect))?;
         Ok(__cordl_ret.into())
@@ -58,7 +62,7 @@ impl crate::SFB::IStandaloneFileBrowser {
             crate::System::Action_1<
                 quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
-                        *mut quest_hook::libil2cpp::Il2CppString,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                     >,
                 >,
             >,
@@ -81,14 +85,18 @@ impl crate::SFB::IStandaloneFileBrowser {
         multiselect: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("OpenFolderPanel", (title, directory, multiselect))?;
         Ok(__cordl_ret.into())
     }
@@ -101,7 +109,7 @@ impl crate::SFB::IStandaloneFileBrowser {
             crate::System::Action_1<
                 quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
-                        *mut quest_hook::libil2cpp::Il2CppString,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                     >,
                 >,
             >,

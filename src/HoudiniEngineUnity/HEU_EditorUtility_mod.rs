@@ -50,7 +50,9 @@ impl crate::HoudiniEngineUnity::HEU_EditorUtility {
     pub fn BakeAndReplaceAssets(
         rootAssets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -76,11 +78,15 @@ impl crate::HoudiniEngineUnity::HEU_EditorUtility {
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CollectDependencies", (obj))?;
         Ok(__cordl_ret.into())
@@ -93,7 +99,9 @@ impl crate::HoudiniEngineUnity::HEU_EditorUtility {
     pub fn CookAssets(
         rootAssets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -165,7 +173,9 @@ impl crate::HoudiniEngineUnity::HEU_EditorUtility {
     pub fn ExportAssetsToGeoFiles(
         rootAssets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -183,13 +193,17 @@ impl crate::HoudiniEngineUnity::HEU_EditorUtility {
     pub fn GetAllAssetRoots() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetAllAssetRoots", ())?;
@@ -245,13 +259,17 @@ impl crate::HoudiniEngineUnity::HEU_EditorUtility {
     pub fn GetSelectedAssetRoots() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetSelectedAssetRoots", ())?;
@@ -259,11 +277,15 @@ impl crate::HoudiniEngineUnity::HEU_EditorUtility {
     }
     pub fn GetSelectedObjects() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetSelectedObjects", ())?;
         Ok(__cordl_ret.into())
@@ -399,7 +421,9 @@ impl crate::HoudiniEngineUnity::HEU_EditorUtility {
     pub fn RebuildAssets(
         rootAssets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -461,7 +485,9 @@ impl crate::HoudiniEngineUnity::HEU_EditorUtility {
     }
     pub fn SelectObjects(
         gameObjects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

@@ -4,7 +4,9 @@
 pub struct MaterialPropertyBlockController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _renderers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Renderer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+        >,
     >,
     pub _materialPropertyBlock: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::MaterialPropertyBlock,
@@ -85,14 +87,18 @@ impl crate::GlobalNamespace::MaterialPropertyBlockController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Renderer>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Renderer>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+            >,
         > = __cordl_object.invoke("get_renderers", ())?;
         Ok(__cordl_ret.into())
     }

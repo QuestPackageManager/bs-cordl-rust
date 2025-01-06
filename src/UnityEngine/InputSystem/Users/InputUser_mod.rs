@@ -881,12 +881,12 @@ pub struct InputUser_GlobalState {
     >,
     pub allPairedDevices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     >,
     pub allLostDevices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         >,
     >,
     pub ongoingAccountSelections: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<

@@ -151,7 +151,9 @@ pub struct QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPack {
     pub order: i32,
     pub localizedNames: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPackName,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPackName,
+            >,
         >,
     >,
     pub packIds: quest_hook::libil2cpp::Gc<

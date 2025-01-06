@@ -12,8 +12,10 @@ pub struct HEU_GeoGroup {
     >,
     pub _sharedNormalIndices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VertexEntry>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VertexEntry>,
+                >,
             >,
         >,
     >,

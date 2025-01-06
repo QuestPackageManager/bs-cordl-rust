@@ -83,7 +83,9 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Point {
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         zs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                >,
             >,
         >,
         withCompression: bool,
@@ -166,7 +168,9 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Point {
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         zs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                >,
             >,
         >,
         withCompression: bool,

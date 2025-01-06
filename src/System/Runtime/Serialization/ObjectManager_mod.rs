@@ -11,7 +11,9 @@ pub struct ObjectManager {
     >,
     pub m_objects: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::Serialization::ObjectHolder,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::Serialization::ObjectHolder,
+            >,
         >,
     >,
     pub m_topObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

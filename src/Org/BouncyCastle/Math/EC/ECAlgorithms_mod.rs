@@ -107,23 +107,23 @@ impl crate::Org::BouncyCastle::Math::EC::ECAlgorithms {
     pub fn ImplShamirsTrickWNaf_Il2CppArray_Il2CppArray_Il2CppArray_Il2CppArray_Il2CppArray_Il2CppArray2(
         preCompP: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         preCompNegP: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         wnafP: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         preCompQ: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         preCompNegQ: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         wnafQ: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -142,12 +142,12 @@ impl crate::Org::BouncyCastle::Math::EC::ECAlgorithms {
     pub fn ImplSumOfMultipliesGlv(
         ps: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         ks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         glvEndomorphism: quest_hook::libil2cpp::Gc<
@@ -168,12 +168,12 @@ impl crate::Org::BouncyCastle::Math::EC::ECAlgorithms {
         >,
         ps: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         ks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -188,12 +188,12 @@ impl crate::Org::BouncyCastle::Math::EC::ECAlgorithms {
     pub fn ImplSumOfMultiplies_Il2CppArray0(
         ps: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         ks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -209,12 +209,14 @@ impl crate::Org::BouncyCastle::Math::EC::ECAlgorithms {
         negs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
         infos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+                >,
             >,
         >,
         wnafs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -273,7 +275,9 @@ impl crate::Org::BouncyCastle::Math::EC::ECAlgorithms {
     pub fn MontgomeryTrick_ECFieldElement1(
         zs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                >,
             >,
         >,
         off: i32,
@@ -289,7 +293,9 @@ impl crate::Org::BouncyCastle::Math::EC::ECAlgorithms {
     pub fn MontgomeryTrick_Il2CppArray_i32_i32_0(
         zs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                >,
             >,
         >,
         off: i32,
@@ -335,12 +341,12 @@ impl crate::Org::BouncyCastle::Math::EC::ECAlgorithms {
     pub fn SumOfMultiplies(
         ps: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         ks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

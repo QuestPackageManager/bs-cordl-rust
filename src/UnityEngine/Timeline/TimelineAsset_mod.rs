@@ -11,7 +11,9 @@ pub struct TimelineAsset {
     >,
     pub m_FixedDuration: f64,
     pub m_CacheOutputTracks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Timeline::TrackAsset>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+        >,
     >,
     pub m_CacheRootTracks: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
@@ -19,7 +21,9 @@ pub struct TimelineAsset {
         >,
     >,
     pub m_CacheFlattenedTracks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Timeline::TrackAsset>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+        >,
     >,
     pub m_EditorSettings: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Timeline::TimelineAsset_EditorSettings,
@@ -509,7 +513,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Timeline::TrackAsset,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
             >,
         >,
     > {
@@ -518,7 +522,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Timeline::TrackAsset,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
             >,
         > = __cordl_object.invoke("get_flattenedTracks", ())?;
         Ok(__cordl_ret.into())

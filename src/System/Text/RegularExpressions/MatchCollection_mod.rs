@@ -57,7 +57,7 @@ impl crate::System::Text::RegularExpressions::MatchCollection {
         &mut self,
         array: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Text::RegularExpressions::Match,
+                quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Match>,
             >,
         >,
         arrayIndex: i32,

@@ -4,7 +4,9 @@
 pub struct EnableEmmisionOnVisible {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _particleSystems: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ParticleSystem>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+        >,
     >,
     pub _emmisionModules: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<

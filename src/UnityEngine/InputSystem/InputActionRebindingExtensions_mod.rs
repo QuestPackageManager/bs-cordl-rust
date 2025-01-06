@@ -1323,11 +1323,15 @@ pub struct InputActionRebindingExtensions_RebindingOperation {
     pub m_ExpectedLayout: crate::UnityEngine::InputSystem::Utilities::InternedString,
     pub m_IncludePathCount: i32,
     pub m_IncludePaths: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub m_ExcludePathCount: i32,
     pub m_ExcludePaths: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub m_TargetBindingIndex: i32,
     pub m_BindingGroupForNewBinding: quest_hook::libil2cpp::Gc<
@@ -1513,7 +1517,9 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputControl,
         >,
         paths: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         pathCount: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {

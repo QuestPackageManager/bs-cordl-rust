@@ -43,7 +43,7 @@ impl crate::System::Dynamic::Utils::TypeUtils {
     pub fn FindConversionOperator(
         methods: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MethodInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
             >,
         >,
         typeFrom: quest_hook::libil2cpp::Gc<crate::System::Type>,

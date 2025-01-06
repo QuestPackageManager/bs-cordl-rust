@@ -8,7 +8,9 @@ pub struct TubeBloomPrePassLightReflectionEffect {
     >,
     pub _tubeBloomPrePassLightBounces: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint,
+            >,
         >,
     >,
     pub _environmentLayerMask: crate::UnityEngine::LayerMask,

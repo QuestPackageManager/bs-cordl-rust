@@ -4,14 +4,18 @@
 pub struct IntroTutorialRing {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _progressImages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Image>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+        >,
     >,
     pub _saberType: crate::GlobalNamespace::SaberType,
     pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
     pub _canvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
     pub _activationDuration: f32,
     pub _ringGLowImages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Image>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+        >,
     >,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _highlighted: bool,

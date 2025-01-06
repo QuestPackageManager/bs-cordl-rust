@@ -8,7 +8,9 @@ pub struct LightmapLightWithIds {
     pub _probeIntensity: f32,
     pub _lightIntensityData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::LightmapLightWithIds_LightIntensitiesWithId,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LightmapLightWithIds_LightIntensitiesWithId,
+            >,
         >,
     >,
     pub _mixType: crate::GlobalNamespace::ColorMixAndWeightingApproach,

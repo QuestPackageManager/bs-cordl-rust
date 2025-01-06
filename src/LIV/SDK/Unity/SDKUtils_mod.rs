@@ -34,7 +34,9 @@ impl crate::LIV::SDK::Unity::SDKUtils {
     pub fn CleanCameraBehaviours(
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         excludeBehaviours: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -102,7 +104,7 @@ impl crate::LIV::SDK::Unity::SDKUtils {
         behaviours: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::UnityEngine::MonoBehaviour,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
                 >,
             >,
         >,
@@ -202,7 +204,7 @@ impl crate::LIV::SDK::Unity::SDKUtils {
         behaviours: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::UnityEngine::MonoBehaviour,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
                 >,
             >,
         >,

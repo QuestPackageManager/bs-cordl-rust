@@ -73,7 +73,9 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
         &mut self,
         array: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+                >,
             >,
         >,
         offset: i32,

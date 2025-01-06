@@ -213,7 +213,9 @@ pub struct MultiplayerStatusData_UserMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub localizations: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage,
+            >,
         >,
     >,
 }

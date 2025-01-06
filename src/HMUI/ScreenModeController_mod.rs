@@ -4,7 +4,9 @@
 pub struct ScreenModeController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _curvedCanvases: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::CurvedCanvasSettings>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::HMUI::CurvedCanvasSettings>,
+        >,
     >,
     pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IVRPlatformHelper,

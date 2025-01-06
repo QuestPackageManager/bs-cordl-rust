@@ -36,7 +36,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::RevocationValues {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+                >,
             >,
         >,
     > {
@@ -45,7 +47,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::RevocationValues {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+                >,
             >,
         > = __cordl_object.invoke("GetCrlVals", ())?;
         Ok(__cordl_ret.into())
@@ -65,7 +69,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::RevocationValues {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+                >,
             >,
         >,
     > {
@@ -74,7 +80,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::RevocationValues {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+                >,
             >,
         > = __cordl_object.invoke("GetOcspVals", ())?;
         Ok(__cordl_ret.into())
@@ -104,12 +112,16 @@ impl crate::Org::BouncyCastle::Asn1::Esf::RevocationValues {
     pub fn New_Il2CppArray_Il2CppArray_OtherRevVals1(
         crlVals: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+                >,
             >,
         >,
         ocspVals: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+                >,
             >,
         >,
         otherRevVals: quest_hook::libil2cpp::Gc<
@@ -165,12 +177,16 @@ impl crate::Org::BouncyCastle::Asn1::Esf::RevocationValues {
         &mut self,
         crlVals: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+                >,
             >,
         >,
         ocspVals: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+                >,
             >,
         >,
         otherRevVals: quest_hook::libil2cpp::Gc<

@@ -5,7 +5,9 @@ pub struct VideoProjectionDataModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _videoClipsWithId: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId,
+            >,
         >,
     >,
 }
@@ -53,7 +55,9 @@ impl crate::GlobalNamespace::VideoProjectionDataModelSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId,
+                >,
             >,
         >,
     > {
@@ -62,7 +66,9 @@ impl crate::GlobalNamespace::VideoProjectionDataModelSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId,
+                >,
             >,
         > = __cordl_object.invoke("get_videoClipWithIds", ())?;
         Ok(__cordl_ret.into())

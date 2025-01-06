@@ -5,7 +5,9 @@ pub struct AllElementsContentValidator {
     __cordl_parent: crate::System::Xml::Schema::ContentValidator,
     pub elements: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub particles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub isRequired: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     pub countRequired: i32,

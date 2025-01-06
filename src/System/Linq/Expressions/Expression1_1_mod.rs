@@ -69,7 +69,9 @@ impl<
         body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

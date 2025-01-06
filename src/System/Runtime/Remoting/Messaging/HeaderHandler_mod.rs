@@ -29,7 +29,9 @@ impl crate::System::Runtime::Remoting::Messaging::HeaderHandler {
         &mut self,
         headers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::Remoting::Messaging::Header,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Remoting::Messaging::Header,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

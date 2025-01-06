@@ -7,7 +7,9 @@ pub struct LightGroupDuplicationGroup {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _lightGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroupSO>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
+        >,
     >,
 }
 #[cfg(feature = "BeatSaber+TrackDefinitions+LightGroupDuplicationGroup")]
@@ -66,14 +68,18 @@ impl crate::BeatSaber::TrackDefinitions::LightGroupDuplicationGroup {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroupSO>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroupSO>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
+            >,
         > = __cordl_object.invoke("get_lightGroups", ())?;
         Ok(__cordl_ret.into())
     }

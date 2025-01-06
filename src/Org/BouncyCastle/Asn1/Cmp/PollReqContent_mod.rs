@@ -30,8 +30,12 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PollReqContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::DerInteger,
+                        >,
+                    >,
                 >,
             >,
         >,
@@ -41,8 +45,12 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PollReqContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::DerInteger,
+                        >,
+                    >,
                 >,
             >,
         > = __cordl_object.invoke("GetCertReqIDs", ())?;
@@ -72,13 +80,13 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PollReqContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SequenceToDerIntegerArray", (seq))?;

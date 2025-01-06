@@ -5,7 +5,9 @@ pub struct MenuEnvironmentManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _data: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects,
+            >,
         >,
     >,
     pub _prevMenuEnvironmentType: crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType,

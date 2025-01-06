@@ -8,7 +8,9 @@ pub struct RegexBoyerMoore {
         quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
     pub NegativeUnicode: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<i32>>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        >,
     >,
     pub Pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub LowASCII: i32,

@@ -5,7 +5,7 @@ pub struct MissionObjectiveCheckersManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _missionObjectiveCheckers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MissionObjectiveChecker,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveChecker>,
         >,
     >,
     pub _initData: quest_hook::libil2cpp::Gc<
@@ -19,7 +19,7 @@ pub struct MissionObjectiveCheckersManager {
     pub objectivesListDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _activeMissionObjectiveCheckers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MissionObjectiveChecker,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveChecker>,
         >,
     >,
 }
@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjectiveResult,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveResult>,
             >,
         >,
     > {
@@ -75,7 +75,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjectiveResult,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveResult>,
             >,
         > = __cordl_object.invoke("GetResults", ())?;
         Ok(__cordl_ret.into())
@@ -201,7 +201,9 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjectiveChecker,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionObjectiveChecker,
+                >,
             >,
         >,
     > {
@@ -210,7 +212,9 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjectiveChecker,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionObjectiveChecker,
+                >,
             >,
         > = __cordl_object.invoke("get_activeMissionObjectiveCheckers", ())?;
         Ok(__cordl_ret.into())
@@ -265,7 +269,9 @@ for crate::GlobalNamespace::MissionObjectiveCheckersManager {
 pub struct MissionObjectiveCheckersManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub missionObjectives: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionObjective>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
+        >,
     >,
 }
 #[cfg(feature = "MissionObjectiveCheckersManager+InitData")]
@@ -294,7 +300,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
     pub fn New(
         missionObjectives: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjective,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -308,7 +314,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
         &mut self,
         missionObjectives: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjective,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -313,12 +313,14 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
         byrefArgs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -336,12 +338,14 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
         >,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
         updaters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -357,7 +361,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -934,7 +938,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
         >,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1019,7 +1023,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

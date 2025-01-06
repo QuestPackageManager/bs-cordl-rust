@@ -26,18 +26,20 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_LODGroup_Extensions 
 impl crate::HoudiniEngineUnity::Test_LODGroup_Extensions {
     pub fn ToTestObject_Il2CppArray1(
         _cordl_self: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::LODGroup>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::LODGroup>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::Test_LODGroup,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_LODGroup>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::Test_LODGroup,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_LODGroup>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToTestObject", (_cordl_self))?;

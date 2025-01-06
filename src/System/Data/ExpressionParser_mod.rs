@@ -14,13 +14,17 @@ pub struct ExpressionParser {
     pub _token: crate::System::Data::Tokens,
     pub _op: i32,
     pub _ops: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::OperatorInfo>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::OperatorInfo>,
+        >,
     >,
     pub _topOperator: i32,
     pub _topNode: i32,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _nodeStack: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::ExpressionNode>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+        >,
     >,
     pub _prevOperand: i32,
     pub _expression: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,

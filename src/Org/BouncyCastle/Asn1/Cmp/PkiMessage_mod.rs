@@ -39,7 +39,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                >,
             >,
         >,
     > {
@@ -48,7 +50,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                >,
             >,
         > = __cordl_object.invoke("GetExtraCerts", ())?;
         Ok(__cordl_ret.into())
@@ -109,7 +113,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
         >,
         extraCerts: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -185,7 +191,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
         >,
         extraCerts: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

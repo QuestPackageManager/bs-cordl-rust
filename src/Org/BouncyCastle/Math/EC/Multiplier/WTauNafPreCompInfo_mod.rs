@@ -5,7 +5,9 @@ pub struct WTauNafPreCompInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_preComp: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+            quest_hook::libil2cpp::Gc<
+                crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+            >,
         >,
     >,
 }
@@ -54,7 +56,9 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafPreCompInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                >,
             >,
         >,
     > {
@@ -63,7 +67,9 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafPreCompInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                >,
             >,
         > = __cordl_object.invoke("get_PreComp", ())?;
         Ok(__cordl_ret.into())
@@ -72,7 +78,9 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafPreCompInfo {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

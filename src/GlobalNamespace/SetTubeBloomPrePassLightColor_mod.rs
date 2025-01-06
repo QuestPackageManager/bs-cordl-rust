@@ -6,7 +6,7 @@ pub struct SetTubeBloomPrePassLightColor {
     pub _color: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
     pub _tubeLights: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
         >,
     >,
 }

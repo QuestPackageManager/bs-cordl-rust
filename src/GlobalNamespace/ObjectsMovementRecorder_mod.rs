@@ -4,7 +4,9 @@
 pub struct ObjectsMovementRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _poseObjects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::PoseObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseObject>,
+        >,
     >,
     pub _livPoseObjectId: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PoseObjectIdSO,
@@ -31,7 +33,9 @@ pub struct ObjectsMovementRecorder {
     pub _externalCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _playbackScreenshots: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+            >,
         >,
     >,
     pub _logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
@@ -152,7 +156,9 @@ pub struct ObjectsMovementRecorder_InitData {
     pub framerate: i32,
     pub playbackScreenshots: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+            >,
         >,
     >,
     pub saveToOldFormat: bool,
@@ -193,7 +199,9 @@ impl crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
         framerate: i32,
         playbackScreenshots: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                >,
             >,
         >,
         saveToOldFormat: bool,
@@ -236,7 +244,9 @@ impl crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
         framerate: i32,
         playbackScreenshots: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                >,
             >,
         >,
         saveToOldFormat: bool,

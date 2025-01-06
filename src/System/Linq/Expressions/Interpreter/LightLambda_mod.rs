@@ -5,7 +5,9 @@ pub struct LightLambda {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _closure: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::CompilerServices::IStrongBox,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::CompilerServices::IStrongBox,
+            >,
         >,
     >,
     pub _interpreter: quest_hook::libil2cpp::Gc<
@@ -1090,7 +1092,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         >,
         closure: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1103,7 +1107,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
     pub fn Run(
         &mut self,
         arguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1769,7 +1775,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
     pub fn RunVoid(
         &mut self,
         arguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -2433,7 +2441,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         >,
         closure: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

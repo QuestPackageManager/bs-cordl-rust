@@ -21,11 +21,13 @@ pub struct MissionNodesManager {
     >,
     pub _allMissionNodeConnections: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MissionNodeConnection,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNodeConnection>,
         >,
     >,
     pub _allMissionNodes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+        >,
     >,
     pub _isInitialized: bool,
 }
@@ -123,7 +125,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionNodeConnection,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNodeConnection>,
             >,
         >,
     > {
@@ -132,7 +134,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionNodeConnection,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNodeConnection>,
             >,
         > = __cordl_object.invoke("GetNewEnabledConnection", ())?;
         Ok(__cordl_ret.into())
@@ -309,14 +311,18 @@ impl crate::GlobalNamespace::MissionNodesManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+            >,
         > = __cordl_object.invoke("get_allMissionNodes", ())?;
         Ok(__cordl_ret.into())
     }

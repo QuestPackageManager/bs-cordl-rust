@@ -721,7 +721,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         attributeNames: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut quest_hook::libil2cpp::Il2CppString,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 >,
             >,
         >,
@@ -2471,7 +2471,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         data: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         start: i32,
         length: i32,

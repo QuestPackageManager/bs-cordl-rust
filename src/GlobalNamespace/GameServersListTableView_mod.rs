@@ -20,7 +20,9 @@ pub struct GameServersListTableView {
     >,
     pub _isInitialized: bool,
     pub _gamesList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::INetworkPlayer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+        >,
     >,
     pub _selectedServer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::INetworkPlayer,

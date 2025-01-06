@@ -9,14 +9,20 @@ pub struct ColorNoteVisuals {
     >,
     pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MaterialPropertyBlockController,
+            >,
         >,
     >,
     pub _arrowMeshRenderers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+        >,
     >,
     pub _circleMeshRenderers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+        >,
     >,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub didInitEvent: quest_hook::libil2cpp::Gc<

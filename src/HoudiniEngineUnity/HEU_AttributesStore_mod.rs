@@ -23,7 +23,9 @@ pub struct HEU_AttributesStore {
     pub _outputGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _outputMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub _outputMaterials: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     >,
     pub _outputCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshCollider>,
     pub _outputColliderMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -515,7 +517,9 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
         >,
         startIndex: i32,
         values: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

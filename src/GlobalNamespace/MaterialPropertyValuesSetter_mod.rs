@@ -8,22 +8,30 @@ pub struct MaterialPropertyValuesSetter {
     >,
     pub _floats: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair,
+            >,
         >,
     >,
     pub _vectors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair,
+            >,
         >,
     >,
     pub _colors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair,
+            >,
         >,
     >,
     pub _ints: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair,
+            >,
         >,
     >,
 }

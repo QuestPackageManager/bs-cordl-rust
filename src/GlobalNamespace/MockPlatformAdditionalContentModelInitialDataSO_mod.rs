@@ -5,12 +5,12 @@ pub struct MockPlatformAdditionalContentModelInitialDataSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _levelsEntitlements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MockPlatformEntitlement,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlatformEntitlement>,
         >,
     >,
     pub _levelPacksEntitlements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MockPlatformEntitlement,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlatformEntitlement>,
         >,
     >,
     pub _packBetterBuyThanLevel: bool,

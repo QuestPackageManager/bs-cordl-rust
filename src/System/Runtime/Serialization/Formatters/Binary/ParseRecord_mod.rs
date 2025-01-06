@@ -48,14 +48,18 @@ pub struct ParseRecord {
     pub PRisValueTypeFixup: bool,
     pub PRnewObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub PRobjectA: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub PRprimitiveArray: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::Formatters::Binary::PrimitiveArray,
     >,
     pub PRisRegistered: bool,
     pub PRmemberData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub PRsi: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::SerializationInfo,

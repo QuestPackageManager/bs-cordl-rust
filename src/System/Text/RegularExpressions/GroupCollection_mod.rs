@@ -9,7 +9,7 @@ pub struct GroupCollection {
     pub _captureMap: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _groups: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Text::RegularExpressions::Group,
+            quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
         >,
     >,
 }
@@ -52,7 +52,7 @@ impl crate::System::Text::RegularExpressions::GroupCollection {
         &mut self,
         array: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Text::RegularExpressions::Group,
+                quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
             >,
         >,
         arrayIndex: i32,

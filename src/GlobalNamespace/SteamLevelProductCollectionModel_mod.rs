@@ -247,7 +247,9 @@ pub struct SteamLevelProductCollectionModel_LevelPackProductData {
     pub _bundleId: u32,
     pub _levelProductsData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+            >,
         >,
     >,
 }

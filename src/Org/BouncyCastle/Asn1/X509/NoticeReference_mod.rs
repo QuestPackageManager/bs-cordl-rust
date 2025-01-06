@@ -56,7 +56,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
             >,
         >,
     > {
@@ -65,7 +65,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
             >,
         > = __cordl_object.invoke("GetNoticeNumbers", ())?;
         Ok(__cordl_ret.into())

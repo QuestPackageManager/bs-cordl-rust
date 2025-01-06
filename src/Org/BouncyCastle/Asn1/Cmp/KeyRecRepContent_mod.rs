@@ -39,7 +39,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                >,
             >,
         >,
     > {
@@ -48,7 +50,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+                >,
             >,
         > = __cordl_object.invoke("GetCACerts", ())?;
         Ok(__cordl_ret.into())
@@ -68,7 +72,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair,
+                >,
             >,
         >,
     > {
@@ -77,7 +83,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::CertifiedKeyPair,
+                >,
             >,
         > = __cordl_object.invoke("GetKeyPairHist", ())?;
         Ok(__cordl_ret.into())

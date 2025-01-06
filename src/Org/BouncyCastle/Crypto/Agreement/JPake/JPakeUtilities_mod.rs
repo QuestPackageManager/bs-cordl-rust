@@ -188,13 +188,13 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -407,7 +407,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
         gx: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         zeroKnowledgeProof: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

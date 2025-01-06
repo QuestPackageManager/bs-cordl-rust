@@ -130,7 +130,9 @@ impl crate::System::Threading::WaitHandle {
     }
     pub fn WaitAny_TimeSpan1(
         waitHandles: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Threading::WaitHandle>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,
+            >,
         >,
         timeout: crate::System::TimeSpan,
         exitContext: bool,
@@ -141,7 +143,9 @@ impl crate::System::Threading::WaitHandle {
     }
     pub fn WaitAny_i32_0(
         waitHandles: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Threading::WaitHandle>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,
+            >,
         >,
         millisecondsTimeout: i32,
         exitContext: bool,
@@ -152,7 +156,9 @@ impl crate::System::Threading::WaitHandle {
     }
     pub fn WaitMultiple(
         waitHandles: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Threading::WaitHandle>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,
+            >,
         >,
         millisecondsTimeout: i32,
         exitContext: bool,

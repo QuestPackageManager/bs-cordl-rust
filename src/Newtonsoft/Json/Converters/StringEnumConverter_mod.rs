@@ -70,7 +70,9 @@ impl crate::Newtonsoft::Json::Converters::StringEnumConverter {
     pub fn New_Type_Il2CppArray4(
         namingStrategyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         namingStrategyParameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -82,7 +84,9 @@ impl crate::Newtonsoft::Json::Converters::StringEnumConverter {
     pub fn New_Type_Il2CppArray__cordl_bool5(
         namingStrategyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         namingStrategyParameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         allowIntegerValues: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -174,7 +178,9 @@ impl crate::Newtonsoft::Json::Converters::StringEnumConverter {
         &mut self,
         namingStrategyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         namingStrategyParameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -188,7 +194,9 @@ impl crate::Newtonsoft::Json::Converters::StringEnumConverter {
         &mut self,
         namingStrategyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         namingStrategyParameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         allowIntegerValues: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

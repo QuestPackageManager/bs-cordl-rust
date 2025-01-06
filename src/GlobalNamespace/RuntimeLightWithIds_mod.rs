@@ -5,7 +5,9 @@ pub struct RuntimeLightWithIds {
     __cordl_parent: crate::GlobalNamespace::LightWithIds,
     pub _lightIntensityData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::RuntimeLightWithIds_LightIntensitiesWithId,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::RuntimeLightWithIds_LightIntensitiesWithId,
+            >,
         >,
     >,
     pub _intensity: f32,

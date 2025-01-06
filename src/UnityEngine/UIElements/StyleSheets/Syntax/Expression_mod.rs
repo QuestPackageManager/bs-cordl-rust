@@ -9,7 +9,9 @@ pub struct Expression {
     pub combinator: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator,
     pub subExpressions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+            >,
         >,
     >,
     pub keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

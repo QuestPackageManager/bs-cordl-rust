@@ -4,7 +4,9 @@
 pub struct SliderParticleInteractionEffect {
     __cordl_parent: crate::GlobalNamespace::SliderInteractionEffect,
     pub _particleSystems: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ParticleSystem>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+        >,
     >,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,

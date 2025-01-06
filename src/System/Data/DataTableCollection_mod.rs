@@ -7,7 +7,9 @@ pub struct DataTableCollection {
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _defaultNameIndex: i32,
     pub _delayedAddRangeTables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        >,
     >,
     pub _onCollectionChangedDelegate: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::CollectionChangeEventHandler,
@@ -86,11 +88,15 @@ impl crate::System::Data::DataTableCollection {
     pub fn BaseGroupSwitch(
         &mut self,
         oldArray: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         >,
         oldLength: i32,
         newArray: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         >,
         newLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

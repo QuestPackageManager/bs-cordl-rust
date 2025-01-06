@@ -8,7 +8,9 @@ pub struct XmlSchemaAnnotation {
         crate::System::Xml::Schema::XmlSchemaObjectCollection,
     >,
     pub moreAttributes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAnnotation")]
@@ -41,7 +43,9 @@ impl crate::System::Xml::Schema::XmlSchemaAnnotation {
     pub fn SetUnhandledAttributes(
         &mut self,
         moreAttributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

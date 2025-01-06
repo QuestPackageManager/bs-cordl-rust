@@ -21,7 +21,7 @@ pub struct GameplayModifiersPanelController {
     pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
     pub _gameplayModifierToggles: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::GameplayModifierToggle,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierToggle>,
         >,
     >,
     pub _changingGameplayModifierToggles: bool,

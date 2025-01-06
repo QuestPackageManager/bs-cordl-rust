@@ -5,7 +5,9 @@ pub struct Spectrogram {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _setAsGlobal: bool,
     pub _meshRenderers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+        >,
     >,
     pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MaterialPropertyBlockController,

@@ -33,7 +33,7 @@ impl crate::System::Dynamic::DeleteMemberBinder {
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Dynamic::DynamicMetaObject,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

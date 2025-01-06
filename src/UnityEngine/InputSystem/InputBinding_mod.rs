@@ -103,7 +103,9 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn MaskByGroups(
         groups: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputBinding> {
         let __cordl_ret: crate::UnityEngine::InputSystem::InputBinding = <Self as quest_hook::libil2cpp::Type>::class()

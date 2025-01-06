@@ -4,7 +4,9 @@
 pub struct LightColorGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroup>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,
+        >,
     >,
     pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCallbacksController,

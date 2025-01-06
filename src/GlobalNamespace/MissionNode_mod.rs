@@ -11,7 +11,9 @@ pub struct MissionNode {
         crate::GlobalNamespace::MissionNodeVisualController,
     >,
     pub _childNodes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+        >,
     >,
 }
 #[cfg(feature = "MissionNode")]
@@ -54,14 +56,18 @@ impl crate::GlobalNamespace::MissionNode {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+            >,
         > = __cordl_object.invoke("get_childNodes", ())?;
         Ok(__cordl_ret.into())
     }

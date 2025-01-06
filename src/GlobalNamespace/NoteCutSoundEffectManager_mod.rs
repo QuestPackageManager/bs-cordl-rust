@@ -6,10 +6,14 @@ pub struct NoteCutSoundEffectManager {
     pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
     pub _audioSamplesBeatAlignOffset: f32,
     pub _longCutEffectsAudioClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
     pub _shortCutEffectsAudioClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
     pub _testAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub _initData: quest_hook::libil2cpp::Gc<

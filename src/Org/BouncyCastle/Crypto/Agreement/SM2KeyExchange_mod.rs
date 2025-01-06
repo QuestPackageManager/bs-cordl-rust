@@ -116,7 +116,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         >,
     > {
@@ -125,7 +125,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         > = __cordl_object
             .invoke("CalculateKeyWithConfirmation", (kLen, confirmationTag, pubParam))?;

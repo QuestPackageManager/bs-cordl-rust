@@ -3,7 +3,9 @@
 #[derive(Debug, Clone, Default)]
 pub struct TypeDispatchData {
     pub changed: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        >,
     >,
     pub changedID: crate::Unity::Collections::NativeArray_1<i32>,
     pub destroyedID: crate::Unity::Collections::NativeArray_1<i32>,

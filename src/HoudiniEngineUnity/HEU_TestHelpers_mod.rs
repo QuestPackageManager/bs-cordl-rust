@@ -99,10 +99,14 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
     }
     pub fn AssertTrueLogEquivalent_Il2CppArray_Il2CppArray10(
         a: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         b: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         result: quest_hook::libil2cpp::ByRefMut<bool>,
         header: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -121,12 +125,12 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
     pub fn AssertTrueLogEquivalent_Il2CppArray_Il2CppArray11<T>(
         a: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::IEquivable_1<T>,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::IEquivable_1<T>>,
             >,
         >,
         b: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::IEquivable_1<T>,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::IEquivable_1<T>>,
             >,
         >,
         result: quest_hook::libil2cpp::ByRefMut<bool>,
@@ -150,12 +154,16 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
     pub fn AssertTrueLogEquivalent_Il2CppArray_Il2CppArray12<T>(
         a: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::IEquivableWrapperClass_1<T>,
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<T>,
+                >,
             >,
         >,
         b: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HoudiniEngineUnity::IEquivableWrapperClass_1<T>,
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<T>,
+                >,
             >,
         >,
         result: quest_hook::libil2cpp::ByRefMut<bool>,

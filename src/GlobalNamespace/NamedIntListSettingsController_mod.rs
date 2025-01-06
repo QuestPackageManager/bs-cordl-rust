@@ -5,7 +5,9 @@ pub struct NamedIntListSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _textValuePairs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::NamedIntListSettingsController_TextValuePair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NamedIntListSettingsController_TextValuePair,
+            >,
         >,
     >,
     pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,

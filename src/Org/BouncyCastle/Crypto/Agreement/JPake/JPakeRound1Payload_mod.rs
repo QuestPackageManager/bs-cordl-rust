@@ -8,12 +8,12 @@ pub struct JPakeRound1Payload {
     pub gx2: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub knowledgeProofForX1: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::BigInteger,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         >,
     >,
     pub knowledgeProofForX2: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::BigInteger,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         >,
     >,
 }
@@ -46,12 +46,12 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload {
         gx2: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         knowledgeProofForX1: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         knowledgeProofForX2: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -71,12 +71,12 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload {
         gx2: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         knowledgeProofForX1: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
         knowledgeProofForX2: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -121,7 +121,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
@@ -130,7 +130,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = __cordl_object.invoke("get_KnowledgeProofForX1", ())?;
         Ok(__cordl_ret.into())
@@ -140,7 +140,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         >,
     > {
@@ -149,7 +149,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::BigInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
         > = __cordl_object.invoke("get_KnowledgeProofForX2", ())?;
         Ok(__cordl_ret.into())

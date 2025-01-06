@@ -8,7 +8,9 @@ pub struct SonyLevelProductPackSO {
     >,
     pub _levelPackRedirectionData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+            >,
         >,
     >,
 }

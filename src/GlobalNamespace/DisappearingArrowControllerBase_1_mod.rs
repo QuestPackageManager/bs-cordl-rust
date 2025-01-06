@@ -5,7 +5,9 @@ pub struct DisappearingArrowControllerBase_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _transparentObjectMaterialPropertyBlocks: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MaterialPropertyBlockController,
+            >,
         >,
     >,
     pub _cubeMeshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,

@@ -22,7 +22,9 @@ pub struct SongPreviewPlayer {
     pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
     pub _audioSourceControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController,
+            >,
         >,
     >,
     pub _activeChannel: i32,

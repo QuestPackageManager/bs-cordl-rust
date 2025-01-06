@@ -56,7 +56,9 @@ impl crate::UnityEngine::Animator {
     }
     pub fn ConvertStateMachineBehaviour<T>(
         rawObjects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ScriptableObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -503,7 +505,7 @@ impl crate::UnityEngine::Animator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::StateMachineBehaviour,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::StateMachineBehaviour>,
             >,
         >,
     > {
@@ -512,7 +514,7 @@ impl crate::UnityEngine::Animator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::StateMachineBehaviour,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::StateMachineBehaviour>,
             >,
         > = __cordl_object.invoke("GetBehaviours", (fullPathHash, layerIndex))?;
         Ok(__cordl_ret.into())
@@ -1106,14 +1108,18 @@ impl crate::UnityEngine::Animator {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ScriptableObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ScriptableObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            >,
         > = __cordl_object.invoke("InternalGetBehaviours", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
@@ -1124,14 +1130,18 @@ impl crate::UnityEngine::Animator {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ScriptableObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ScriptableObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            >,
         > = __cordl_object
             .invoke(
                 "InternalGetBehavioursByKey",
@@ -2704,7 +2714,9 @@ impl crate::UnityEngine::Animator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::AnimatorControllerParameter,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::AnimatorControllerParameter,
+                >,
             >,
         >,
     > {
@@ -2713,7 +2725,9 @@ impl crate::UnityEngine::Animator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::AnimatorControllerParameter,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::AnimatorControllerParameter,
+                >,
             >,
         > = __cordl_object.invoke("get_parameters", ())?;
         Ok(__cordl_ret.into())

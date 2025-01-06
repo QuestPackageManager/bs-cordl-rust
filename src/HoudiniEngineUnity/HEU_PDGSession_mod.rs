@@ -21,7 +21,9 @@ pub struct HEU_PDGSession {
     pub _pdgState: crate::HoudiniEngineUnity::HAPI_PDG_State,
     pub _pdgEventMessages: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _eventMessageColorCode: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession")]

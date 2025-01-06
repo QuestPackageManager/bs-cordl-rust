@@ -5,7 +5,7 @@ pub struct RecordingToolSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub recordingSettings: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::RecordingSettings,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecordingSettings>,
         >,
     >,
 }
@@ -32,7 +32,7 @@ impl crate::GlobalNamespace::RecordingToolSettings {
     pub fn New(
         recordingSettings: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::RecordingSettings,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecordingSettings>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::RecordingToolSettings {
         &mut self,
         recordingSettings: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::RecordingSettings,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecordingSettings>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

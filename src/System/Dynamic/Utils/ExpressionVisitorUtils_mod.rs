@@ -34,13 +34,13 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("VisitArguments", (visitor, nodes))?;
@@ -56,13 +56,13 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("VisitBlockExpressions", (visitor, block))?;
@@ -79,13 +79,17 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("VisitParameters", (visitor, nodes, callerName))?;

@@ -378,13 +378,13 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputControl,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputControl,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryFindControls", (control, path, indexInPath))?;
@@ -434,11 +434,15 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryGetDeviceUsages", (path))?;
         Ok(__cordl_ret.into())

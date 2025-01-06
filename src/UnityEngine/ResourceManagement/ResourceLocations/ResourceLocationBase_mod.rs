@@ -69,7 +69,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocation
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
         dependencies: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -100,7 +102,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocation
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
         dependencies: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

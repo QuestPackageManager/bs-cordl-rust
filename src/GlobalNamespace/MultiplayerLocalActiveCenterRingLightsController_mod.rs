@@ -7,7 +7,9 @@ pub struct MultiplayerLocalActiveCenterRingLightsController {
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
     pub _horizontalLines: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        >,
     >,
     pub _centerResizeController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerCenterResizeController,

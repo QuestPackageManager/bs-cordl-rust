@@ -63,7 +63,9 @@ impl crate::UnityEngine::AndroidJavaProxy {
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
@@ -81,7 +83,7 @@ impl crate::UnityEngine::AndroidJavaProxy {
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         javaArgs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::AndroidJavaObject,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

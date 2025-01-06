@@ -11,7 +11,7 @@ pub struct MainSettingsMenuViewController {
     >,
     pub _settingsSubMenuInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SettingsSubMenuInfo,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsSubMenuInfo>,
         >,
     >,
     pub _settingsMenuSegmentedControl: quest_hook::libil2cpp::Gc<

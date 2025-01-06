@@ -9,7 +9,7 @@ pub struct CaptureCollection {
     pub _capcount: i32,
     pub _captures: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Text::RegularExpressions::Capture,
+            quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Capture>,
         >,
     >,
 }

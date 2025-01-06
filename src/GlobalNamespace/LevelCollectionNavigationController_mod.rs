@@ -77,7 +77,7 @@ pub struct LevelCollectionNavigationController {
     pub _hideDetailViewController: bool,
     pub _notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
         >,
     >,
     pub _floatTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
@@ -380,7 +380,9 @@ impl crate::GlobalNamespace::LevelCollectionNavigationController {
         allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
         notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
             >,
         >,
         isFiltered: bool,

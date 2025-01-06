@@ -7,7 +7,9 @@ pub struct PosesRecorder {
         crate::GlobalNamespace::AudioTimeSyncController,
     >,
     pub _transforms: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        >,
     >,
     pub _data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
 }
@@ -34,7 +36,9 @@ impl crate::GlobalNamespace::PosesRecorder {
     pub fn Init(
         &mut self,
         poseObjects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::PoseObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseObject>,
+            >,
         >,
         externalCameraCalibration: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration,

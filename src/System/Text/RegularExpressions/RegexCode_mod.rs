@@ -5,7 +5,9 @@ pub struct RegexCode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Codes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub Strings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub TrackCount: i32,
     pub Caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,

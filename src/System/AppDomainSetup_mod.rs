@@ -36,7 +36,9 @@ pub struct AppDomainSetup {
         quest_hook::libil2cpp::Il2CppObject,
     >,
     pub domain_initializer_args: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub disallow_appbase_probe: bool,
     pub configuration_bytes: quest_hook::libil2cpp::Gc<
@@ -48,7 +50,9 @@ pub struct AppDomainSetup {
     pub manager_assembly: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub manager_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub partial_visible_assemblies: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _TargetFrameworkName_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,

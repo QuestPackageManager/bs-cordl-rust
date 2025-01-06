@@ -82,7 +82,9 @@ impl crate::System::Xml::Schema::XmlSchemaDatatype {
     pub fn DeriveByUnion(
         types: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >,
             >,
         >,
         schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,

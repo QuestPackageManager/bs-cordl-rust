@@ -419,7 +419,9 @@ impl crate::UnityEngine::ParticleSystemRenderer {
         &mut self,
         meshes: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -515,7 +517,9 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn SetMeshes_Il2CppArray1(
         &mut self,
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -528,7 +532,9 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn SetMeshes_i32_0(
         &mut self,
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+            >,
         >,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

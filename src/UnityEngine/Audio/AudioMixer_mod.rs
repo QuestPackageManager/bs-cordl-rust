@@ -40,7 +40,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Audio::AudioMixerGroup,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Audio::AudioMixerGroup>,
             >,
         >,
     > {
@@ -49,7 +49,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Audio::AudioMixerGroup,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Audio::AudioMixerGroup>,
             >,
         > = __cordl_object.invoke("FindMatchingGroups", (subPath))?;
         Ok(__cordl_ret.into())
@@ -140,7 +140,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         &mut self,
         snapshots: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Audio::AudioMixerSnapshot,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Audio::AudioMixerSnapshot>,
             >,
         >,
         weights: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,

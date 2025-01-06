@@ -138,13 +138,15 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         &mut self,
         firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         followpos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
         endMarkerPos: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
             >,
         >,
     > {
@@ -153,7 +155,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
             >,
         > = __cordl_object
             .invoke("BuildTransitionTable", (firstpos, followpos, endMarkerPos))?;
@@ -163,21 +165,27 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         &mut self,
         firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         followpos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
         posWithRangeTerminals: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         > = __cordl_object
             .invoke(
                 "CalculateTotalFollowposForRangeNodes",
@@ -211,7 +219,9 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         &mut self,
         firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         followpos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -283,7 +293,9 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             crate::System::Xml::Schema::BitSet,
         >,
         minmaxFollowPos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,

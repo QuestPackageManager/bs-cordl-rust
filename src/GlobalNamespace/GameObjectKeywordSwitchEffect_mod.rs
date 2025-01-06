@@ -6,7 +6,9 @@ pub struct GameObjectKeywordSwitchEffect {
     pub _defaultGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _gameObjectKeywordItems: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem,
+            >,
         >,
     >,
 }

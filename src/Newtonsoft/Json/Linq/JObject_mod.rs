@@ -331,7 +331,9 @@ impl crate::Newtonsoft::Json::Linq::JObject {
     }
     pub fn New_Il2CppArray3(
         content: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -758,7 +760,9 @@ impl crate::Newtonsoft::Json::Linq::JObject {
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetEvents_Il2CppArray0(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -796,7 +800,9 @@ impl crate::Newtonsoft::Json::Linq::JObject {
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetProperties_Il2CppArray1(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -879,7 +885,7 @@ impl crate::Newtonsoft::Json::Linq::JObject {
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::JsonConverter,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -896,7 +902,7 @@ impl crate::Newtonsoft::Json::Linq::JObject {
         cancellationToken: crate::System::Threading::CancellationToken,
         converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::JsonConverter,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -919,7 +925,7 @@ impl crate::Newtonsoft::Json::Linq::JObject {
         CancellationToken: crate::System::Threading::CancellationToken,
         Converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::JsonConverter,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -950,7 +956,9 @@ impl crate::Newtonsoft::Json::Linq::JObject {
     pub fn _ctor_Il2CppArray3(
         &mut self,
         content: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1426,7 +1434,9 @@ pub struct JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     pub Writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
     pub CancellationToken: crate::System::Threading::CancellationToken,
     pub Converters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::Newtonsoft::Json::JsonConverter>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+        >,
     >,
     pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
 }

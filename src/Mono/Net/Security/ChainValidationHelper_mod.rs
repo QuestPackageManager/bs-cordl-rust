@@ -69,7 +69,9 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
         acceptableIssuers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -159,7 +161,9 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
         acceptableIssuers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         clientCertificate: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<

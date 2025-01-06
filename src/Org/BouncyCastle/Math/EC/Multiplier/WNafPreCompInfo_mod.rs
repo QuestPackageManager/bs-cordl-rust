@@ -7,12 +7,12 @@ pub struct WNafPreCompInfo {
     pub m_confWidth: i32,
     pub m_preComp: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
         >,
     >,
     pub m_preCompNeg: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
         >,
     >,
     pub m_twice: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
@@ -84,7 +84,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
     > {
@@ -93,7 +93,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         > = __cordl_object.invoke("get_PreComp", ())?;
         Ok(__cordl_ret.into())
@@ -103,7 +103,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
     > {
@@ -112,7 +112,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         > = __cordl_object.invoke("get_PreCompNeg", ())?;
         Ok(__cordl_ret.into())
@@ -159,7 +159,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -174,7 +174,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -33,8 +33,10 @@ impl crate::GlobalNamespace::AutoRecord {
         trackOrientation: crate::UnityEngine::Quaternion,
         handFrames: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Collections::Generic::List_1<
-                    crate::BeatSaber::RecPlay::PoseFrame,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::BeatSaber::RecPlay::PoseFrame,
+                    >,
                 >,
             >,
         >,
@@ -65,8 +67,10 @@ impl crate::GlobalNamespace::AutoRecord {
         trackOrientation: crate::UnityEngine::Quaternion,
         handFrames: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Collections::Generic::List_1<
-                    crate::BeatSaber::RecPlay::PoseFrame,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::BeatSaber::RecPlay::PoseFrame,
+                    >,
                 >,
             >,
         >,
@@ -122,7 +126,9 @@ pub struct AutoRecord_Beatmap {
     pub beatsPerMinute: f32,
     pub noteLineCount: i32,
     pub items: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapDataItem>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+        >,
     >,
 }
 #[cfg(feature = "AutoRecord+Beatmap")]

@@ -42,7 +42,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::Targets,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Targets>,
             >,
         >,
     > {
@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::Targets,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Targets>,
             >,
         > = __cordl_object.invoke("GetTargetsObjects", ())?;
         Ok(__cordl_ret.into())
@@ -68,7 +68,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
     pub fn New_Il2CppArray2(
         targets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::Target,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Target>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -115,7 +115,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
         &mut self,
         targets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::Target,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Target>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

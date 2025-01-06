@@ -33,7 +33,9 @@ pub struct XsdValidatingReader {
     pub coreReaderAttributeCount: i32,
     pub currentAttrIndex: i32,
     pub attributePSVINodes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::AttributePSVIInfo>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::AttributePSVIInfo>,
+        >,
     >,
     pub defaultAttributes: quest_hook::libil2cpp::Gc<
         crate::System::Collections::ArrayList,

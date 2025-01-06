@@ -46,7 +46,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteCertificateRefs {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
+                >,
             >,
         >,
     > {
@@ -55,7 +57,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteCertificateRefs {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
+                >,
             >,
         > = __cordl_object.invoke("GetOtherCertIDs", ())?;
         Ok(__cordl_ret.into())
@@ -81,7 +85,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteCertificateRefs {
     pub fn New_Il2CppArray1(
         otherCertIDs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -130,7 +136,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteCertificateRefs {
         &mut self,
         otherCertIDs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

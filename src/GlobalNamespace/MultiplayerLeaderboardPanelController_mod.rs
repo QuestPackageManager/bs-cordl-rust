@@ -5,7 +5,9 @@ pub struct MultiplayerLeaderboardPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _items: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MultiplayerLeaderboardPanelItem,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLeaderboardPanelItem,
+            >,
         >,
     >,
     pub _scoreProvider: quest_hook::libil2cpp::Gc<

@@ -10,7 +10,9 @@ pub struct Function {
     pub _isVariantArgumentList: bool,
     pub _argumentCount: i32,
     pub _parameters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
 }
 #[cfg(feature = "System+Data+Function")]

@@ -5,7 +5,9 @@ pub struct LocalizedTextAsset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _textInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::LocalizedTextAsset_TextInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LocalizedTextAsset_TextInfo,
+            >,
         >,
     >,
     pub _lastTextInfo: quest_hook::libil2cpp::Gc<
@@ -69,7 +71,9 @@ impl crate::GlobalNamespace::LocalizedTextAsset {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::LocalizedTextAsset_TextInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalizedTextAsset_TextInfo,
+                >,
             >,
         >,
     > {
@@ -78,7 +82,9 @@ impl crate::GlobalNamespace::LocalizedTextAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::LocalizedTextAsset_TextInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalizedTextAsset_TextInfo,
+                >,
             >,
         > = __cordl_object.invoke("get_textInfos", ())?;
         Ok(__cordl_ret.into())

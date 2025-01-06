@@ -541,12 +541,16 @@ pub struct Touch_FingerAndTouchState {
     pub updateMask: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     pub fingers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+            >,
         >,
     >,
     pub activeFingers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+            >,
         >,
     >,
     pub activeTouches: quest_hook::libil2cpp::Gc<

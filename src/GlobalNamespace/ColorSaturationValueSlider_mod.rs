@@ -5,7 +5,9 @@ pub struct ColorSaturationValueSlider {
     __cordl_parent: crate::HMUI::Slider2D,
     pub _hue: f32,
     pub _graphics: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Graphic>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+        >,
     >,
     pub _darkColor: crate::UnityEngine::Color,
     pub _lightColor: crate::UnityEngine::Color,

@@ -6,7 +6,9 @@ pub struct LightmapLightsWithIds {
     pub _maxTotalIntensity: f32,
     pub _lightIntensityData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId,
+            >,
         >,
     >,
 }

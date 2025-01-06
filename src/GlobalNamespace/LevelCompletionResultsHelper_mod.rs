@@ -30,7 +30,9 @@ impl crate::GlobalNamespace::LevelCompletionResultsHelper {
         >,
         beatmapObjectExecutionRatings: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BeatmapObjectExecutionRating,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapObjectExecutionRating,
+                >,
             >,
         >,
         gameplayModifiers: quest_hook::libil2cpp::Gc<

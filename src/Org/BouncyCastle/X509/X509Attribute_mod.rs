@@ -32,7 +32,7 @@ impl crate::Org::BouncyCastle::X509::X509Attribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         >,
     > {
@@ -41,7 +41,7 @@ impl crate::Org::BouncyCastle::X509::X509Attribute {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
             >,
         > = __cordl_object.invoke("GetValues", ())?;
         Ok(__cordl_ret.into())

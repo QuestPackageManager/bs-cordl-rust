@@ -9,7 +9,7 @@ pub struct CommandStream {
     pub _aborted: bool,
     pub _commands: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Net::CommandStream_PipelineEntry,
+            quest_hook::libil2cpp::Gc<crate::System::Net::CommandStream_PipelineEntry>,
         >,
     >,
     pub _index: i32,
@@ -66,7 +66,9 @@ impl crate::System::Net::CommandStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::CommandStream_PipelineEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::CommandStream_PipelineEntry,
+                >,
             >,
         >,
     > {
@@ -75,7 +77,9 @@ impl crate::System::Net::CommandStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::CommandStream_PipelineEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::CommandStream_PipelineEntry,
+                >,
             >,
         > = __cordl_object.invoke("BuildCommandsList", (request))?;
         Ok(__cordl_ret.into())
@@ -173,7 +177,9 @@ impl crate::System::Net::CommandStream {
         request: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
         commands: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::CommandStream_PipelineEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::CommandStream_PipelineEntry,
+                >,
             >,
         >,
         isAsync: bool,

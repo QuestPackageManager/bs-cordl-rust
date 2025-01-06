@@ -5,7 +5,9 @@ pub struct UserAttributePacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
     pub subpackets: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+            quest_hook::libil2cpp::Gc<
+                crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+            >,
         >,
     >,
 }
@@ -47,7 +49,9 @@ impl crate::Org::BouncyCastle::Bcpg::UserAttributePacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+                >,
             >,
         >,
     > {
@@ -56,7 +60,9 @@ impl crate::Org::BouncyCastle::Bcpg::UserAttributePacket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+                >,
             >,
         > = __cordl_object.invoke("GetSubpackets", ())?;
         Ok(__cordl_ret.into())
@@ -75,7 +81,9 @@ impl crate::Org::BouncyCastle::Bcpg::UserAttributePacket {
     pub fn New_Il2CppArray1(
         subpackets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -102,7 +110,9 @@ impl crate::Org::BouncyCastle::Bcpg::UserAttributePacket {
         &mut self,
         subpackets: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

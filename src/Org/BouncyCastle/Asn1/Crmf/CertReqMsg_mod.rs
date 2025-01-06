@@ -58,7 +58,9 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                >,
             >,
         >,
     > {
@@ -67,7 +69,9 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                >,
             >,
         > = __cordl_object.invoke("GetRegInfo", ())?;
         Ok(__cordl_ret.into())
@@ -90,7 +94,9 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
         >,
         regInfo: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -134,7 +140,9 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
         >,
         regInfo: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

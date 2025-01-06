@@ -23,12 +23,12 @@ pub struct InputActionState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub maps: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputActionMap,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
         >,
     >,
     pub controls: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputControl,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         >,
     >,
     pub interactions: quest_hook::libil2cpp::Gc<
@@ -36,12 +36,14 @@ pub struct InputActionState {
     >,
     pub processors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputProcessor,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputProcessor>,
         >,
     >,
     pub composites: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputBindingComposite,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::InputBindingComposite,
+            >,
         >,
     >,
     pub totalProcessorCount: i32,

@@ -351,7 +351,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         glyphs: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::UnityEngine::TextCore::Glyph,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
                 >,
             >,
         >,

@@ -55,7 +55,7 @@ impl crate::Newtonsoft::Json::JsonConvert {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::JsonConverter,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -134,7 +134,7 @@ impl crate::Newtonsoft::Json::JsonConvert {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::JsonConverter,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -379,7 +379,7 @@ impl crate::Newtonsoft::Json::JsonConvert {
         formatting: crate::Newtonsoft::Json::Formatting,
         converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::JsonConverter,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -410,7 +410,7 @@ impl crate::Newtonsoft::Json::JsonConvert {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Newtonsoft::Json::JsonConverter,
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

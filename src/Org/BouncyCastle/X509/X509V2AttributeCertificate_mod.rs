@@ -79,7 +79,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Attribute,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Attribute>,
             >,
         >,
     > {
@@ -88,7 +88,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Attribute,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Attribute>,
             >,
         > = __cordl_object.invoke("GetAttributes", ())?;
         Ok(__cordl_ret.into())
@@ -99,7 +99,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Attribute,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Attribute>,
             >,
         >,
     > {
@@ -108,7 +108,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Attribute,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Attribute>,
             >,
         > = __cordl_object.invoke("GetAttributes", (oid))?;
         Ok(__cordl_ret.into())

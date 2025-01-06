@@ -28,7 +28,7 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         vertices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -78,13 +78,13 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GeneratePerTriangleMesh", (mesh))?;
@@ -137,13 +137,13 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetVertices", (mesh))?;

@@ -7,7 +7,9 @@ pub struct FunctionNode {
     pub _info: i32,
     pub _argumentCount: i32,
     pub _arguments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::ExpressionNode>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+        >,
     >,
     pub _capturedLimiter: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter>,
 }
@@ -82,7 +84,9 @@ impl crate::System::Data::FunctionNode {
         &mut self,
         id: crate::System::Data::FunctionId,
         argumentValues: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,

@@ -89,7 +89,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
     pub fn MakeGeneralInfoSeq_Il2CppArray1(
         generalInfos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -178,7 +180,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         &mut self,
         genInfos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

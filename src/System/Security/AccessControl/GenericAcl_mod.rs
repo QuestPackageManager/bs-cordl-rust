@@ -28,7 +28,9 @@ impl crate::System::Security::AccessControl::GenericAcl {
         &mut self,
         array: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Security::AccessControl::GenericAce,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::AccessControl::GenericAce,
+                >,
             >,
         >,
         index: i32,

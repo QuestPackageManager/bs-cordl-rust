@@ -71,7 +71,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CertificateList {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::CrlEntry,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlEntry>,
             >,
         >,
     > {
@@ -80,7 +80,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CertificateList {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::CrlEntry,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlEntry>,
             >,
         > = __cordl_object.invoke("GetRevokedCertificates", ())?;
         Ok(__cordl_ret.into())

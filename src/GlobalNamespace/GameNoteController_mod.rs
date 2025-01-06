@@ -5,12 +5,12 @@ pub struct GameNoteController {
     __cordl_parent: crate::GlobalNamespace::NoteController,
     pub _bigCuttableBySaberList: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BoxCuttableBySaber,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoxCuttableBySaber>,
         >,
     >,
     pub _smallCuttableBySaberList: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BoxCuttableBySaber,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoxCuttableBySaber>,
         >,
     >,
     pub _wrapperGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

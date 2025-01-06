@@ -33,7 +33,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
+                >,
             >,
         >,
     > {
@@ -42,7 +44,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
+                >,
             >,
         > = __cordl_object.invoke("GetCrlOcspRefs", ())?;
         Ok(__cordl_ret.into())
@@ -80,7 +84,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
     pub fn New_Il2CppArray1(
         crlOcspRefs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -129,7 +135,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
         &mut self,
         crlOcspRefs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

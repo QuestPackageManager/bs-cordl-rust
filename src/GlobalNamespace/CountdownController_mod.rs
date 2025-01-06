@@ -6,7 +6,7 @@ pub struct CountdownController {
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _countdownElementControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::CountdownElementController,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CountdownElementController>,
         >,
     >,
     pub _timeProvider: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ITimeProvider>,

@@ -90,11 +90,15 @@ impl crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeP
     }
     pub fn GetAssemblies() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetAssemblies", ())?;
         Ok(__cordl_ret.into())
     }

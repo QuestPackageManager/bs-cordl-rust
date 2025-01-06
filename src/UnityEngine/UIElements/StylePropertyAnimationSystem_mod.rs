@@ -788,7 +788,7 @@ pub struct StylePropertyAnimationSystem_AnimationDataSet_2<
 > {
     pub elements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::VisualElement,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     >,
     pub properties: quest_hook::libil2cpp::Gc<

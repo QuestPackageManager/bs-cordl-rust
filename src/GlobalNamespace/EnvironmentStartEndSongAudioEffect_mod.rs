@@ -9,13 +9,19 @@ pub struct EnvironmentStartEndSongAudioEffect {
     pub _songFinishedAudioClipVolume: f32,
     pub _songFailedAudioClipVolume: f32,
     pub _songStartAudioClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
     pub _songFinishedAudioClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
     pub _songFailedAudioClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
     pub _levelEndActions: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ILevelEndActions,

@@ -5,7 +5,9 @@ pub struct AesEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ROUNDS: i32,
     pub WorkingKey: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u32>>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        >,
     >,
     pub C0: u32,
     pub C1: u32,
@@ -44,7 +46,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::AesEngine {
         &mut self,
         KW: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,7 +61,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::AesEngine {
         &mut self,
         KW: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -87,7 +89,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::AesEngine {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
             >,
         >,
     > {
@@ -96,7 +98,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::AesEngine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
             >,
         > = __cordl_object.invoke("GenerateWorkingKey", (key, forEncryption))?;
         Ok(__cordl_ret.into())

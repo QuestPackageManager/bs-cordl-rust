@@ -374,7 +374,9 @@ impl<
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+                >,
             >,
         >,
     >
@@ -387,7 +389,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+                >,
             >,
         > = __cordl_object.invoke("get_processors", ())?;
         Ok(__cordl_ret.into())

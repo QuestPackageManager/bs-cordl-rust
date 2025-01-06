@@ -6,11 +6,15 @@ pub struct InstructionArray {
     pub MaxContinuationDepth: i32,
     pub Instructions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::Instruction,
+            >,
         >,
     >,
     pub Objects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub Labels: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -53,11 +57,15 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
         maxContinuationDepth: i32,
         instructions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::Instruction,
+                >,
             >,
         >,
         objects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         labels: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<

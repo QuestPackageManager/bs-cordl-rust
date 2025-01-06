@@ -200,7 +200,9 @@ impl crate::GlobalNamespace::LevelCollectionViewController {
     pub fn SetData(
         &mut self,
         beatmapLevels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevel>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            >,
         >,
         headerText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         headerSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

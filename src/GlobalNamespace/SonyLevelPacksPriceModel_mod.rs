@@ -6,7 +6,9 @@ pub struct SonyLevelPacksPriceModel {
     pub _pricePerLevel: f32,
     pub _pricePairBundlePairs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+            >,
         >,
     >,
 }
@@ -70,7 +72,9 @@ impl crate::GlobalNamespace::SonyLevelPacksPriceModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+                >,
             >,
         >,
     > {
@@ -79,7 +83,9 @@ impl crate::GlobalNamespace::SonyLevelPacksPriceModel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+                >,
             >,
         > = __cordl_object.invoke("get_pricePairBundlePairs", ())?;
         Ok(__cordl_ret.into())

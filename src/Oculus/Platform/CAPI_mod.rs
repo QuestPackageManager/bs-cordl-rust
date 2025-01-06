@@ -540,7 +540,9 @@ impl crate::Oculus::Platform::CAPI {
     }
     pub fn ovr_Achievements_GetDefinitionsByName(
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -550,7 +552,9 @@ impl crate::Oculus::Platform::CAPI {
     }
     pub fn ovr_Achievements_GetProgressByName(
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -3059,7 +3063,9 @@ impl crate::Oculus::Platform::CAPI {
     }
     pub fn ovr_IAP_GetProductsBySKU(
         skus: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -5201,7 +5207,9 @@ impl crate::Oculus::Platform::CAPI {
     pub fn ovr_NetSync_SetVoipListentoChannels(
         connection_id: i64,
         listento_channels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         count: crate::System::UIntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -5235,7 +5243,9 @@ impl crate::Oculus::Platform::CAPI {
     pub fn ovr_NetSync_SetVoipSpeaktoChannels(
         connection_id: i64,
         speakto_channels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         count: crate::System::UIntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {

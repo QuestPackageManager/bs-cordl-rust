@@ -9,7 +9,7 @@ pub struct AudioSaveData {
     pub songFrequency: i32,
     pub bpmData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapLevelSaveDataVersion4::BpmData,
+            quest_hook::libil2cpp::Gc<crate::BeatmapLevelSaveDataVersion4::BpmData>,
         >,
     >,
     pub lufsData: quest_hook::libil2cpp::Gc<

@@ -55,7 +55,9 @@ pub struct XRManagementAnalytics_BuildEvent {
     pub buildTarget: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub buildTargetGroup: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub assigned_loaders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent")]

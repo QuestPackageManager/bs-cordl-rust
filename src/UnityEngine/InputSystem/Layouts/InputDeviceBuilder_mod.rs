@@ -232,7 +232,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         controlIndex: i32,
         allControls: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::InputControl,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
             >,
         >,
         noisy: bool,

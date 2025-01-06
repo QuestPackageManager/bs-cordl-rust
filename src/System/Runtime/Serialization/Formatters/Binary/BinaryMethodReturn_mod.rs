@@ -5,11 +5,15 @@ pub struct BinaryMethodReturn {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub returnValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub args: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub callContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub argTypes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
     pub bArgsPrimitive: bool,
     pub messageEnum: crate::System::Runtime::Serialization::Formatters::Binary::MessageEnum,

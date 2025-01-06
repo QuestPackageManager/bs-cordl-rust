@@ -31,14 +31,18 @@ impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
         contractions: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::Mono::Globalization::Unicode::Contraction,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Globalization::Unicode::Contraction,
+                    >,
                 >,
             >,
         >,
         diacriticals: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::Mono::Globalization::Unicode::Level2Map,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Globalization::Unicode::Level2Map,
+                    >,
                 >,
             >,
         >,

@@ -16,7 +16,9 @@ pub struct SimpleLevelStarter {
     pub _overrideStrobeFilterSettingsToAllEffects: bool,
     pub _recordingTextAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     pub _prefabBindings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+        >,
     >,
     pub _forceOverrideEnvironment: bool,
     pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

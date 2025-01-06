@@ -43,7 +43,9 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
     }
     pub fn RequestLights(
         lights: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Light>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
+            >,
         >,
         outLightsPtr: crate::System::IntPtr,
         outLightsCount: i32,
@@ -121,7 +123,9 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestL
     pub fn Invoke(
         &mut self,
         requests: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Light>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
+            >,
         >,
         lightsOutput: crate::Unity::Collections::NativeArray_1<
             crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI,

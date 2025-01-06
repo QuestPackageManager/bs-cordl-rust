@@ -13,7 +13,9 @@ pub struct SocketAsyncResult {
     pub SockFlags: crate::System::Net::Sockets::SocketFlags,
     pub AcceptSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub Addresses: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+        >,
     >,
     pub Port: i32,
     pub Buffers: quest_hook::libil2cpp::Gc<

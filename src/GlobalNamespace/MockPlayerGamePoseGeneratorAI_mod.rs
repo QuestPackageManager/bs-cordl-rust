@@ -20,16 +20,24 @@ pub struct MockPlayerGamePoseGeneratorAI {
     pub _lastSongTime: f32,
     pub _lineCount: i32,
     pub _leftNotes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+        >,
     >,
     pub _rightNotes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+        >,
     >,
     pub _bombNotes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+        >,
     >,
     pub _obstacles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockObstacleData>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockObstacleData>,
+        >,
     >,
     pub _leftNoteIndex: i32,
     pub _rightNoteIndex: i32,
@@ -207,14 +215,18 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
     pub fn ProcessNotes(
         &mut self,
         notes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+            >,
         >,
         handDirection: crate::UnityEngine::Vector3,
         noteIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         prevHitScore: quest_hook::libil2cpp::ByRefMut<i32>,
         nextHitScore: quest_hook::libil2cpp::ByRefMut<i32>,
         bombs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+            >,
         >,
         bombIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         lineCount: i32,
@@ -246,7 +258,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
         &mut self,
         obstacles: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MockObstacleData,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockObstacleData>,
             >,
         >,
         obstacleIndex: quest_hook::libil2cpp::ByRefMut<i32>,

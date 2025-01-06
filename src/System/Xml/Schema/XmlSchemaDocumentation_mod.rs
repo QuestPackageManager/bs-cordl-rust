@@ -6,7 +6,9 @@ pub struct XmlSchemaDocumentation {
     pub source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub language: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub markup: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlNode>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaDocumentation")]
@@ -60,7 +62,9 @@ impl crate::System::Xml::Schema::XmlSchemaDocumentation {
     pub fn set_Markup(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlNode>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

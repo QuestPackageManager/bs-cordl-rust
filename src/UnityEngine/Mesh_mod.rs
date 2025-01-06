@@ -29,7 +29,9 @@ impl crate::UnityEngine::Mesh {
     pub type MeshDataArray = crate::UnityEngine::Mesh_MeshDataArray;
     pub fn AcquireReadOnlyMeshData_Il2CppArray1(
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
         let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = <Self as quest_hook::libil2cpp::Type>::class()
@@ -88,7 +90,9 @@ impl crate::UnityEngine::Mesh {
     pub fn ApplyAndDisposeWritableMeshData_Il2CppArray1(
         data: crate::UnityEngine::Mesh_MeshDataArray,
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+            >,
         >,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -4970,7 +4974,9 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
     }
     pub fn AcquireReadOnlyMeshDatas(
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+            >,
         >,
         datas: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
@@ -5003,7 +5009,9 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
     pub fn ApplyToMeshesAndDispose(
         &mut self,
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+            >,
         >,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -5016,7 +5024,9 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
     }
     pub fn ApplyToMeshesImpl(
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+            >,
         >,
         datas: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
@@ -5055,7 +5065,9 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
     pub fn _ctor_Il2CppArray_i32__cordl_bool1(
         &mut self,
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+            >,
         >,
         meshesCount: i32,
         checkReadWrite: bool,

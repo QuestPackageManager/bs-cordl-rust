@@ -58,7 +58,9 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReq {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         >,
     > {
@@ -67,7 +69,9 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReq {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         > = __cordl_object.invoke("GetCerts", ())?;
         Ok(__cordl_ret.into())
@@ -89,14 +93,18 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReq {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::Org::BouncyCastle::Ocsp::Req>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::Req>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::Org::BouncyCastle::Ocsp::Req>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::Req>,
+            >,
         > = __cordl_object.invoke("GetRequestList", ())?;
         Ok(__cordl_ret.into())
     }

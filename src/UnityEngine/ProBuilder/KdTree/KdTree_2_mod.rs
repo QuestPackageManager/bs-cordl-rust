@@ -123,7 +123,9 @@ impl<
         &mut self,
         nodes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+                >,
             >,
         >,
         byDimension: i32,
@@ -271,7 +273,9 @@ impl<
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+                >,
             >,
         >,
     >
@@ -286,7 +290,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+                >,
             >,
         > = __cordl_object.invoke("GetNearestNeighbours", (point, count))?;
         Ok(__cordl_ret.into())
@@ -355,7 +361,9 @@ impl<
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+                >,
             >,
         >,
     >
@@ -370,7 +378,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+                >,
             >,
         > = __cordl_object.invoke("RadialSearch", (center, radius, count))?;
         Ok(__cordl_ret.into())
@@ -451,7 +461,9 @@ impl<
         &mut self,
         nodes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+                >,
             >,
         >,
         byDimension: i32,

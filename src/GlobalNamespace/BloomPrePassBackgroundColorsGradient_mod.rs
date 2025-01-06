@@ -5,7 +5,9 @@ pub struct BloomPrePassBackgroundColorsGradient {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
     pub _elements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+            >,
         >,
     >,
 }
@@ -78,7 +80,9 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+                >,
             >,
         >,
     > {
@@ -87,7 +91,9 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+                >,
             >,
         > = __cordl_object.invoke("get_elements", ())?;
         Ok(__cordl_ret.into())

@@ -12,7 +12,9 @@ pub struct HEU_ToolsInfo {
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
     pub _paintStringValue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _lastAttributesGeoID: i32,
     pub _lastAttributesPartID: i32,

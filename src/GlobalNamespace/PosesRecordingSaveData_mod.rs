@@ -4,11 +4,15 @@
 pub struct PosesRecordingSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub objectIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub keyframes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
+            >,
         >,
     >,
     pub externalCameraCalibration: quest_hook::libil2cpp::Gc<
@@ -43,11 +47,15 @@ impl crate::GlobalNamespace::PosesRecordingSaveData {
     pub type TransformsSaveKeyframe = crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe;
     pub fn New(
         objectIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         keyframes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
+                >,
             >,
         >,
         externalCameraCalibration: quest_hook::libil2cpp::Gc<
@@ -63,11 +71,15 @@ impl crate::GlobalNamespace::PosesRecordingSaveData {
     pub fn _ctor(
         &mut self,
         objectIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         keyframes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
+                >,
             >,
         >,
         externalCameraCalibration: quest_hook::libil2cpp::Gc<
@@ -252,7 +264,9 @@ pub struct PosesRecordingSaveData_TransformsSaveKeyframe {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub poses: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
+            >,
         >,
     >,
     pub _cordl_time: f32,
@@ -283,7 +297,9 @@ impl crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
     pub fn New(
         poses: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
+                >,
             >,
         >,
         _cordl_time: f32,
@@ -298,7 +314,9 @@ impl crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
         &mut self,
         poses: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
+                >,
             >,
         >,
         _cordl_time: f32,

@@ -50,7 +50,9 @@ impl crate::UnityEngine::UI::Selectable {
     pub type Transition = crate::UnityEngine::UI::Selectable_Transition;
     pub fn AllSelectablesNoAlloc(
         selectables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Selectable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -458,11 +460,15 @@ impl crate::UnityEngine::UI::Selectable {
     }
     pub fn get_allSelectablesArray() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Selectable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Selectable>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_allSelectablesArray", ())?;
         Ok(__cordl_ret.into())

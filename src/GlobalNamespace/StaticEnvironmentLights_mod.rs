@@ -7,7 +7,9 @@ pub struct StaticEnvironmentLights {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
     >,
     pub _materials: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     >,
 }
 #[cfg(feature = "StaticEnvironmentLights")]

@@ -12,7 +12,9 @@ pub struct MissionLevelNoTransitionInstaller {
     pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
     pub _missionObjectives: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionObjective>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
+        >,
     >,
     pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiers,

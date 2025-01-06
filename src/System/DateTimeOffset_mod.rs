@@ -258,7 +258,9 @@ impl crate::System::DateTimeOffset {
     pub fn TryParseExact_Il2CppArray1(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formats: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
         styles: crate::System::Globalization::DateTimeStyles,

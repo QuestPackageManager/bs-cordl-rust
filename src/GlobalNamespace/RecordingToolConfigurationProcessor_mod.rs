@@ -166,7 +166,9 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     pub fn GetLayersMask(
         &mut self,
         layerNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -372,10 +374,14 @@ pub struct RecordingToolConfigurationProcessor_PlaybackScreenshot {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub includedLayers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub excludedLayers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub backgroundColor: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData,
@@ -454,7 +460,9 @@ pub struct RecordingToolConfigurationProcessor_RecordingConfiguration {
     pub framerate: i32,
     pub playbackScreenshots: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreenshot,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreenshot,
+            >,
         >,
     >,
     pub practice: bool,
@@ -523,7 +531,9 @@ pub struct RecordingToolConfigurationProcessor_RecordingToolConfiguration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub recordingConfigurations: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfiguration,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfiguration,
+            >,
         >,
     >,
 }

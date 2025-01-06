@@ -33,7 +33,7 @@ impl crate::Org::BouncyCastle::Asn1::Ess::SigningCertificate {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Ess::EssCertID,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ess::EssCertID>,
             >,
         >,
     > {
@@ -42,7 +42,7 @@ impl crate::Org::BouncyCastle::Asn1::Ess::SigningCertificate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Ess::EssCertID,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ess::EssCertID>,
             >,
         > = __cordl_object.invoke("GetCerts", ())?;
         Ok(__cordl_ret.into())
@@ -64,7 +64,9 @@ impl crate::Org::BouncyCastle::Asn1::Ess::SigningCertificate {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         >,
     > {
@@ -73,7 +75,9 @@ impl crate::Org::BouncyCastle::Asn1::Ess::SigningCertificate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+                >,
             >,
         > = __cordl_object.invoke("GetPolicies", ())?;
         Ok(__cordl_ret.into())

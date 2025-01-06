@@ -19,10 +19,14 @@ pub struct Tokenizer {
         crate::System::Security::Util::Tokenizer_StringMaker,
     >,
     pub _searchStrings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _replaceStrings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _inNestedIndex: i32,
     pub _inNestedSize: i32,
@@ -288,7 +292,9 @@ for crate::System::Security::Util::Tokenizer_StreamTokenReader {
 pub struct Tokenizer_StringMaker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub aStrings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub cStringsMax: u32,
     pub cStringsUsed: u32,

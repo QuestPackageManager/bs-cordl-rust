@@ -10,7 +10,9 @@ pub struct ReliableChannel {
         >,
     >,
     pub _receivedPackets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::LiteNetLib::NetPacket>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+        >,
     >,
     pub _earlyReceived: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<bool>,

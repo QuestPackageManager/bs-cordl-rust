@@ -27,7 +27,9 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
     pub fn AutoGenerateMapping(
         skinnedMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         blendShapeNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         faceExpressions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -92,8 +94,10 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
     pub fn FindBestMatch(
         tokenizedOptions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Collections::Generic::HashSet_1<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
                 >,
             >,
         >,

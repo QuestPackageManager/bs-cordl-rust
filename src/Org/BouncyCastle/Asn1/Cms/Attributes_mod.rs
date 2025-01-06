@@ -30,7 +30,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::Attributes {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cms::Attribute,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::Attribute>,
             >,
         >,
     > {
@@ -39,7 +39,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::Attributes {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cms::Attribute,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::Attribute>,
             >,
         > = __cordl_object.invoke("GetAttributes", ())?;
         Ok(__cordl_ret.into())

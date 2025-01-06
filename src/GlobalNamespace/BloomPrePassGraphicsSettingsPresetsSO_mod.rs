@@ -5,7 +5,9 @@ pub struct BloomPrePassGraphicsSettingsPresetsSO {
     __cordl_parent: crate::GlobalNamespace::NamedPresetsSO,
     pub _presets: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset,
+            >,
         >,
     >,
 }
@@ -54,23 +56,8 @@ impl crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::NamedPreset>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::NamedPreset>,
-        > = __cordl_object.invoke("get_namedPresets", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_presets(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NamedPreset>,
             >,
         >,
     > {
@@ -79,7 +66,30 @@ impl crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NamedPreset>,
+            >,
+        > = __cordl_object.invoke("get_namedPresets", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_presets(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset,
+                >,
             >,
         > = __cordl_object.invoke("get_presets", ())?;
         Ok(__cordl_ret.into())

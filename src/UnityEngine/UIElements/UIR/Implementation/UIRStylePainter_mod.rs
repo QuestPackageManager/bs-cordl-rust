@@ -37,8 +37,10 @@ pub struct UIRStylePainter {
     pub m_NextMeshWriteDataPoolItem: i32,
     pub m_RepeatRectUVList: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV,
+                >,
             >,
         >,
     >,

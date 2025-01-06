@@ -84,7 +84,9 @@ pub struct TutorialSongController {
     >,
     pub _normalModeTutorialObjectsSpawnData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+            >,
         >,
     >,
 }

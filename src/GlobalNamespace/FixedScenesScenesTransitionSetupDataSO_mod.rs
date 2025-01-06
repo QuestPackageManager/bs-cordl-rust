@@ -4,7 +4,9 @@
 pub struct FixedScenesScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     pub _sceneInfos: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::SceneInfo>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
+        >,
     >,
 }
 #[cfg(feature = "FixedScenesScenesTransitionSetupDataSO")]

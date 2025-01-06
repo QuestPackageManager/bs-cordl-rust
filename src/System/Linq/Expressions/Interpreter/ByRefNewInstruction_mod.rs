@@ -5,7 +5,9 @@ pub struct ByRefNewInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NewInstruction,
     pub _byrefArgs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+            >,
         >,
     >,
 }
@@ -37,7 +39,9 @@ impl crate::System::Linq::Expressions::Interpreter::ByRefNewInstruction {
         argumentCount: i32,
         byrefArgs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -65,7 +69,9 @@ impl crate::System::Linq::Expressions::Interpreter::ByRefNewInstruction {
         argumentCount: i32,
         byrefArgs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

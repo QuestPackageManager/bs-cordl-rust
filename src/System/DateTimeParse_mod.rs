@@ -532,7 +532,9 @@ impl crate::System::DateTimeParse {
     pub fn ParseExactMultiple(
         s: crate::System::ReadOnlySpan_1<char>,
         formats: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         dtfi: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::DateTimeFormatInfo,
@@ -743,7 +745,9 @@ impl crate::System::DateTimeParse {
     pub fn TryParseExactMultiple_ByRefMut0(
         s: crate::System::ReadOnlySpan_1<char>,
         formats: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         dtfi: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::DateTimeFormatInfo,
@@ -759,7 +763,9 @@ impl crate::System::DateTimeParse {
     pub fn TryParseExactMultiple_ReadOnlySpan_1_Il2CppArray_DateTimeFormatInfo_DateTimeStyles_ByRefMut1(
         s: crate::System::ReadOnlySpan_1<char>,
         formats: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         dtfi: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::DateTimeFormatInfo,

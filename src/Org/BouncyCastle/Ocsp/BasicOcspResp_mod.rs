@@ -71,7 +71,9 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspResp {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         >,
     > {
@@ -80,7 +82,9 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspResp {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         > = __cordl_object.invoke("GetCerts", ())?;
         Ok(__cordl_ret.into())
@@ -234,7 +238,7 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspResp {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Ocsp::SingleResp,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::SingleResp>,
             >,
         >,
     > {
@@ -243,7 +247,7 @@ impl crate::Org::BouncyCastle::Ocsp::BasicOcspResp {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Ocsp::SingleResp,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::SingleResp>,
             >,
         > = __cordl_object.invoke("get_Responses", ())?;
         Ok(__cordl_ret.into())

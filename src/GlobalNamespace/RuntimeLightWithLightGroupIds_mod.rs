@@ -4,14 +4,18 @@
 pub struct RuntimeLightWithLightGroupIds {
     __cordl_parent: crate::GlobalNamespace::LightWithIds,
     pub _lightGroupList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroup>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,
+        >,
     >,
     pub _intensity: f32,
     pub _maxIntensity: f32,
     pub _multiplyColorByAlpha: bool,
     pub _lightIntensityData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId,
+            >,
         >,
     >,
 }

@@ -5,11 +5,13 @@ pub struct EventDescriptorCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _events: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::ComponentModel::EventDescriptor,
+            quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
         >,
     >,
     pub _namedSort: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     pub _eventsOwned: bool,
@@ -157,7 +159,9 @@ impl crate::System::ComponentModel::EventDescriptorCollection {
     pub fn InternalSort_Il2CppArray0(
         &mut self,
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -170,7 +174,7 @@ impl crate::System::ComponentModel::EventDescriptorCollection {
     pub fn New_Il2CppArray0(
         events: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::EventDescriptor,
+                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -183,7 +187,7 @@ impl crate::System::ComponentModel::EventDescriptorCollection {
     pub fn New__cordl_bool1(
         events: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::EventDescriptor,
+                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
             >,
         >,
         readOnly: bool,
@@ -401,7 +405,7 @@ impl crate::System::ComponentModel::EventDescriptorCollection {
         &mut self,
         events: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::EventDescriptor,
+                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -416,7 +420,7 @@ impl crate::System::ComponentModel::EventDescriptorCollection {
         &mut self,
         events: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::ComponentModel::EventDescriptor,
+                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
             >,
         >,
         readOnly: bool,

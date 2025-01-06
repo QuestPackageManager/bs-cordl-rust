@@ -5,7 +5,9 @@ pub struct TimeStampTokenEvidence {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub timeStampAndCrls: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl,
+            quest_hook::libil2cpp::Gc<
+                crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl,
+            >,
         >,
     >,
 }
@@ -70,7 +72,9 @@ impl crate::Org::BouncyCastle::Asn1::Cms::TimeStampTokenEvidence {
     pub fn New_Il2CppArray0(
         timeStampAndCrls: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -109,7 +113,9 @@ impl crate::Org::BouncyCastle::Asn1::Cms::TimeStampTokenEvidence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl,
+                >,
             >,
         >,
     > {
@@ -118,7 +124,9 @@ impl crate::Org::BouncyCastle::Asn1::Cms::TimeStampTokenEvidence {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl,
+                >,
             >,
         > = __cordl_object.invoke("ToTimeStampAndCrlArray", ())?;
         Ok(__cordl_ret.into())
@@ -138,7 +146,9 @@ impl crate::Org::BouncyCastle::Asn1::Cms::TimeStampTokenEvidence {
         &mut self,
         timeStampAndCrls: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

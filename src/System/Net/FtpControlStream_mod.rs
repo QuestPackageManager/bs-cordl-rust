@@ -73,7 +73,9 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::CommandStream_PipelineEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::CommandStream_PipelineEntry,
+                >,
             >,
         >,
     > {
@@ -82,7 +84,9 @@ impl crate::System::Net::FtpControlStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Net::CommandStream_PipelineEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::CommandStream_PipelineEntry,
+                >,
             >,
         > = __cordl_object.invoke("BuildCommandsList", (req))?;
         Ok(__cordl_ret.into())

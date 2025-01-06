@@ -358,7 +358,9 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandle
         result: crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult,
         scores: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+                >,
             >,
         >,
         referencePlayerScoreIndex: i32,
@@ -393,7 +395,9 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandle
         result: crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult,
         scores: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
+                >,
             >,
         >,
         referencePlayerScoreIndex: i32,

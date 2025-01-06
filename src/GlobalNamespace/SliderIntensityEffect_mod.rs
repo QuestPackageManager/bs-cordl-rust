@@ -24,12 +24,16 @@ pub struct SliderIntensityEffect {
     >,
     pub _dipEffectFadeElements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+            >,
         >,
     >,
     pub _fadeInEffectFadeElements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+            >,
         >,
     >,
 }

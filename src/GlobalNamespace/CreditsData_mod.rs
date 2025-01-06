@@ -5,7 +5,9 @@ pub struct CreditsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub creditsItems: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::CreditsData_RootCreditsItem,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::CreditsData_RootCreditsItem,
+            >,
         >,
     >,
 }
@@ -154,7 +156,9 @@ pub struct CreditsData_RootCreditsItem {
     pub rowCountOverride: i32,
     pub creditsItems: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::CreditsData_ChildCreditsItem,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::CreditsData_ChildCreditsItem,
+            >,
         >,
     >,
 }

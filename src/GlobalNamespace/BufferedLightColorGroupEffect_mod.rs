@@ -15,7 +15,7 @@ pub struct BufferedLightColorGroupEffect {
     >,
     pub _lightColorBeatmapEventCallbackWrappers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
         >,
     >,
     pub _lastIndex: i32,

@@ -119,7 +119,7 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
     > {
@@ -128,7 +128,7 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::Expression,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         > = __cordl_object.invoke("VisitArguments", (nodes))?;
         Ok(__cordl_ret.into())
@@ -424,7 +424,9 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
     > {
@@ -433,7 +435,9 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Linq::Expressions::ParameterExpression,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         > = __cordl_object.invoke("VisitParameters", (nodes, callerName))?;
         Ok(__cordl_ret.into())

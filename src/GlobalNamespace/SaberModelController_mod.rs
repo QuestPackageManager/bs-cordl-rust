@@ -6,12 +6,12 @@ pub struct SaberModelController {
     pub _saberTrail: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberTrail>,
     pub _setSaberGlowColors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SetSaberGlowColor,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SetSaberGlowColor>,
         >,
     >,
     pub _setSaberFakeGlowColors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SetSaberFakeGlowColor,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SetSaberFakeGlowColor>,
         >,
     >,
     pub _saberLight: quest_hook::libil2cpp::Gc<

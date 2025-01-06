@@ -37,7 +37,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdmissionSyntax {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Admissions,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Admissions,
+                >,
             >,
         >,
     > {
@@ -46,7 +48,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdmissionSyntax {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Admissions,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::IsisMtt::X509::Admissions,
+                >,
             >,
         > = __cordl_object.invoke("GetContentsOfAdmissions", ())?;
         Ok(__cordl_ret.into())

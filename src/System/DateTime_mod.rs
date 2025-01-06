@@ -309,7 +309,9 @@ impl crate::System::DateTime {
     pub fn ParseExact_Il2CppArray_DateTimeStyles2(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formats: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
         style: crate::System::Globalization::DateTimeStyles,

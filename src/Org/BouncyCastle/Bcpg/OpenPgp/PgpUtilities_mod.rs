@@ -60,13 +60,13 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DsaSigToMpi", (encoding))?;
@@ -264,13 +264,13 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("RsaSigToMpi", (encoding))?;

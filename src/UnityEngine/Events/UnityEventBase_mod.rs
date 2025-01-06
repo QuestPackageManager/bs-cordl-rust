@@ -125,7 +125,9 @@ impl crate::UnityEngine::Events::UnityEventBase {
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         functionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         argumentTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,

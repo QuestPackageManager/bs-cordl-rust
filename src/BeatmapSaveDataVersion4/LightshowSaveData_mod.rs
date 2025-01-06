@@ -6,7 +6,7 @@ pub struct LightshowSaveData {
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub waypoints: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatmapBeatIndex>,
         >,
     >,
     pub waypointsData: quest_hook::libil2cpp::Gc<
@@ -14,7 +14,7 @@ pub struct LightshowSaveData {
     >,
     pub basicEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapSaveDataVersion4::BeatIndex,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatIndex>,
         >,
     >,
     pub basicEventsData: quest_hook::libil2cpp::Gc<
@@ -22,7 +22,7 @@ pub struct LightshowSaveData {
     >,
     pub colorBoostEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapSaveDataVersion4::BeatIndex,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatIndex>,
         >,
     >,
     pub colorBoostEventsData: quest_hook::libil2cpp::Gc<
@@ -32,7 +32,7 @@ pub struct LightshowSaveData {
     >,
     pub eventBoxGroups: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapSaveDataVersion4::EventBoxGroup,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::EventBoxGroup>,
         >,
     >,
     pub indexFilters: quest_hook::libil2cpp::Gc<

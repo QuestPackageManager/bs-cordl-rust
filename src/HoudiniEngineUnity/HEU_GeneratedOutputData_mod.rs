@@ -5,7 +5,9 @@ pub struct HEU_GeneratedOutputData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _renderMaterials: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     >,
     pub _colliders: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<

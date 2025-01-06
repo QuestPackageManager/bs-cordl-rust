@@ -375,7 +375,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         >,
         missionObjectives: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjective,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
             >,
         >,
         playerSpecificSettings: quest_hook::libil2cpp::Gc<

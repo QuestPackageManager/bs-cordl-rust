@@ -34,19 +34,19 @@ impl crate::UnityEngine::Timeline::Extrapolation {
     pub fn SortClipsByStartTime(
         clips: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Timeline::TimelineClip,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Timeline::TimelineClip,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Timeline::TimelineClip,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SortClipsByStartTime", (clips))?;

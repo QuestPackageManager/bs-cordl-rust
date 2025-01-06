@@ -14,7 +14,9 @@ pub struct MissionNodeSelectionManager {
         >,
     >,
     pub _missionNodes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+        >,
     >,
     pub _selectedNode: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MissionNodeVisualController,

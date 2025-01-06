@@ -4,7 +4,9 @@
 pub struct HWStack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub stack: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub growthRate: i32,
     pub used: i32,
@@ -56,7 +58,9 @@ impl crate::System::Xml::HWStack {
     }
     pub fn New_Il2CppArray_i32_i32_i32_2(
         stack: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         growthRate: i32,
         used: i32,
@@ -129,7 +133,9 @@ impl crate::System::Xml::HWStack {
     pub fn _ctor_Il2CppArray_i32_i32_i32_2(
         &mut self,
         stack: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         growthRate: i32,
         used: i32,

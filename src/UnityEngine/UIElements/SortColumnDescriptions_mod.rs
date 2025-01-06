@@ -79,7 +79,9 @@ impl crate::UnityEngine::UIElements::SortColumnDescriptions {
         &mut self,
         array: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::SortColumnDescription,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::SortColumnDescription,
+                >,
             >,
         >,
         arrayIndex: i32,

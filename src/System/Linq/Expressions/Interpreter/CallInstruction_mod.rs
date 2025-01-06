@@ -60,7 +60,7 @@ impl crate::System::Linq::Expressions::Interpreter::CallInstruction {
         info: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::ParameterInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -106,7 +106,9 @@ impl crate::System::Linq::Expressions::Interpreter::CallInstruction {
             crate::System::Linq::Expressions::Interpreter::LightLambda,
         >,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

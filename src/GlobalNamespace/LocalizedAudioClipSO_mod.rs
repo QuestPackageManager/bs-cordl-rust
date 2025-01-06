@@ -5,7 +5,9 @@ pub struct LocalizedAudioClipSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _localizedAudioClipInfo: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo,
+            >,
         >,
     >,
     pub _lastLocalizedAudioClipInfo: quest_hook::libil2cpp::Gc<

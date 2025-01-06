@@ -312,7 +312,9 @@ impl crate::UnityEngine::Camera {
     }
     pub fn GetAllCameras(
         cameras: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -327,7 +329,9 @@ impl crate::UnityEngine::Camera {
     pub fn GetAllCamerasImpl(
         cam: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -339,14 +343,18 @@ impl crate::UnityEngine::Camera {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("GetCameraBufferWarnings", ())?;
         Ok(__cordl_ret.into())
     }
@@ -356,7 +364,7 @@ impl crate::UnityEngine::Camera {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Rendering::CommandBuffer,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
             >,
         >,
     > {
@@ -365,7 +373,7 @@ impl crate::UnityEngine::Camera {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::Rendering::CommandBuffer,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
             >,
         > = __cordl_object.invoke("GetCommandBuffers", (evt))?;
         Ok(__cordl_ret.into())
@@ -1104,14 +1112,18 @@ impl crate::UnityEngine::Camera {
         depthSlice: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
         > = __cordl_object
             .invoke(
                 "SubmitBuiltInObjectIDRenderRequest",
@@ -1416,11 +1428,15 @@ impl crate::UnityEngine::Camera {
     }
     pub fn get_allCameras() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_allCameras", ())?;
         Ok(__cordl_ret.into())
     }

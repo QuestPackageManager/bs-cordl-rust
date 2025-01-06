@@ -148,7 +148,9 @@ impl crate::System::Xml::Schema::BaseProcessor {
         &mut self,
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,

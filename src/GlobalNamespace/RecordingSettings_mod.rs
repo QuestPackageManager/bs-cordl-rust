@@ -22,7 +22,9 @@ pub struct RecordingSettings {
     pub framerate: i32,
     pub playbackScreenshots: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+            >,
         >,
     >,
     pub practice: bool,
@@ -77,7 +79,9 @@ impl crate::GlobalNamespace::RecordingSettings {
         framerate: i32,
         playbackScreenshots: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                >,
             >,
         >,
         practice: bool,
@@ -159,7 +163,9 @@ impl crate::GlobalNamespace::RecordingSettings {
         framerate: i32,
         playbackScreenshots: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                >,
             >,
         >,
         practice: bool,

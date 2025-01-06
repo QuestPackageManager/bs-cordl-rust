@@ -118,7 +118,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ISonyCommerce
 pub struct ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     pub result: crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult,
     pub entitlementsLabels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]

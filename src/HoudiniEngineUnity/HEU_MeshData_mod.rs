@@ -20,7 +20,9 @@ pub struct HEU_MeshData {
     >,
     pub _uvs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+            >,
         >,
     >,
     pub _triangleNormals: quest_hook::libil2cpp::Gc<

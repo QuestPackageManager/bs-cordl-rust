@@ -8,7 +8,9 @@ pub struct PackPromoInfoSO {
     >,
     pub _levelsPromoInfo: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
+            >,
         >,
     >,
 }
@@ -56,7 +58,9 @@ impl crate::GlobalNamespace::PackPromoInfoSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
+                >,
             >,
         >,
     > {
@@ -65,7 +69,9 @@ impl crate::GlobalNamespace::PackPromoInfoSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
+                >,
             >,
         > = __cordl_object.invoke("get_levelPromoInfos", ())?;
         Ok(__cordl_ret.into())

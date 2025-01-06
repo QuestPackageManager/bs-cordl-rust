@@ -4,7 +4,9 @@
 pub struct MenuLightsPresetSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _lightIdColorPairs: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightIdColorPair>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightIdColorPair>,
+        >,
     >,
 }
 #[cfg(feature = "MenuLightsPresetSO")]
@@ -49,7 +51,7 @@ impl crate::GlobalNamespace::MenuLightsPresetSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::LightIdColorPair,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightIdColorPair>,
             >,
         >,
     > {
@@ -58,7 +60,7 @@ impl crate::GlobalNamespace::MenuLightsPresetSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::LightIdColorPair,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightIdColorPair>,
             >,
         > = __cordl_object.invoke("get_lightIdColorPairs", ())?;
         Ok(__cordl_ret.into())
@@ -67,7 +69,7 @@ impl crate::GlobalNamespace::MenuLightsPresetSO {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::LightIdColorPair,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightIdColorPair>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

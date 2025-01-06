@@ -15,7 +15,9 @@ pub struct FileBrowserTableView {
         >,
     >,
     pub _items: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::FileBrowserItem>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
+        >,
     >,
 }
 #[cfg(feature = "FileBrowserTableView")]
@@ -88,7 +90,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         &mut self,
         items: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::FileBrowserItem,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -139,7 +141,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         &mut self,
         items: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::FileBrowserItem,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

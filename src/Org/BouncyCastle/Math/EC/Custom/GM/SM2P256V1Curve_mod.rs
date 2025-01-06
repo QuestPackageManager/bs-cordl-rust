@@ -52,7 +52,7 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve {
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
             >,
         >,
         off: i32,
@@ -74,7 +74,9 @@ impl crate::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1Curve {
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         zs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+                >,
             >,
         >,
         withCompression: bool,

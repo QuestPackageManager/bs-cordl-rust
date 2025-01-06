@@ -9,7 +9,9 @@ pub struct LdsSecurityObject {
     >,
     pub datagroupHash: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+            quest_hook::libil2cpp::Gc<
+                crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+            >,
         >,
     >,
     pub versionInfo: quest_hook::libil2cpp::Gc<
@@ -53,7 +55,9 @@ impl crate::Org::BouncyCastle::Asn1::Icao::LdsSecurityObject {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+                >,
             >,
         >,
     > {
@@ -62,7 +66,9 @@ impl crate::Org::BouncyCastle::Asn1::Icao::LdsSecurityObject {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+                >,
             >,
         > = __cordl_object.invoke("GetDatagroupHash", ())?;
         Ok(__cordl_ret.into())
@@ -85,7 +91,9 @@ impl crate::Org::BouncyCastle::Asn1::Icao::LdsSecurityObject {
         >,
         datagroupHash: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -101,7 +109,9 @@ impl crate::Org::BouncyCastle::Asn1::Icao::LdsSecurityObject {
         >,
         datagroupHash: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+                >,
             >,
         >,
         versionInfo: quest_hook::libil2cpp::Gc<
@@ -146,7 +156,9 @@ impl crate::Org::BouncyCastle::Asn1::Icao::LdsSecurityObject {
         >,
         datagroupHash: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -164,7 +176,9 @@ impl crate::Org::BouncyCastle::Asn1::Icao::LdsSecurityObject {
         >,
         datagroupHash: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+                >,
             >,
         >,
         versionInfo: quest_hook::libil2cpp::Gc<

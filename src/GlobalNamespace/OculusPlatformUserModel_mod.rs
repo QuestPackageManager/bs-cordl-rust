@@ -11,7 +11,9 @@ pub struct OculusPlatformUserModel {
     >,
     pub _userInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
     pub _friendsUserIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _lastXPlatformTokenStatusChange: f32,
     pub platformUserInfoDidChangeEvent: quest_hook::libil2cpp::Gc<

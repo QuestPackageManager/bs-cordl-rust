@@ -125,16 +125,20 @@ impl crate::Newtonsoft::Json::JsonWriter {
     pub fn BuildStateArray() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<
-                    crate::Newtonsoft::Json::JsonWriter_State,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::Newtonsoft::Json::JsonWriter_State,
+                    >,
                 >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<
-                    crate::Newtonsoft::Json::JsonWriter_State,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::Newtonsoft::Json::JsonWriter_State,
+                    >,
                 >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()

@@ -5,7 +5,7 @@ pub struct StyleRule {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Properties: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleProperty,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleProperty>,
         >,
     >,
     pub line: i32,
@@ -53,7 +53,7 @@ impl crate::UnityEngine::UIElements::StyleRule {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleProperty,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleProperty>,
             >,
         >,
     > {
@@ -62,7 +62,7 @@ impl crate::UnityEngine::UIElements::StyleRule {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleProperty,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleProperty>,
             >,
         > = __cordl_object.invoke("get_properties", ())?;
         Ok(__cordl_ret.into())

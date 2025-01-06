@@ -46,7 +46,9 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
     pub fn CreateJsonConverterInstance(
         converterType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
@@ -60,7 +62,9 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
     pub fn CreateNamingStrategyInstance(
         namingStrategyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::NamingStrategy>,
@@ -149,7 +153,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             crate::System::Func_2<
                 quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
-                        *mut quest_hook::libil2cpp::Il2CppObject,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                     >,
                 >,
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -160,7 +164,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             crate::System::Func_2<
                 quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
-                        *mut quest_hook::libil2cpp::Il2CppObject,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                     >,
                 >,
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

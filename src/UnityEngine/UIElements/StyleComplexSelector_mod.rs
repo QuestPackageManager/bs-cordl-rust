@@ -11,7 +11,7 @@ pub struct StyleComplexSelector {
     pub m_isSimple: bool,
     pub m_Selectors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::StyleSelector,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
         >,
     >,
     pub ruleIndex: i32,
@@ -145,7 +145,7 @@ impl crate::UnityEngine::UIElements::StyleComplexSelector {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleSelector,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
             >,
         >,
     > {
@@ -154,7 +154,7 @@ impl crate::UnityEngine::UIElements::StyleComplexSelector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleSelector,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
             >,
         > = __cordl_object.invoke("get_selectors", ())?;
         Ok(__cordl_ret.into())
@@ -181,7 +181,7 @@ impl crate::UnityEngine::UIElements::StyleComplexSelector {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::UIElements::StyleSelector,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

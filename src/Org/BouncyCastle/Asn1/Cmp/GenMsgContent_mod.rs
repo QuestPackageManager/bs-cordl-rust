@@ -47,7 +47,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::GenMsgContent {
     pub fn New_Il2CppArray1(
         itv: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -75,7 +77,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::GenMsgContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                >,
             >,
         >,
     > {
@@ -84,7 +88,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::GenMsgContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                >,
             >,
         > = __cordl_object.invoke("ToInfoTypeAndValueArray", ())?;
         Ok(__cordl_ret.into())
@@ -104,7 +110,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::GenMsgContent {
         &mut self,
         itv: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

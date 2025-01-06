@@ -7,7 +7,9 @@ pub struct PublicKeyEncSessionPacket {
     pub keyId: i64,
     pub algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
     pub data: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+PublicKeyEncSessionPacket")]
@@ -49,7 +51,7 @@ impl crate::Org::BouncyCastle::Bcpg::PublicKeyEncSessionPacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         >,
     > {
@@ -58,7 +60,7 @@ impl crate::Org::BouncyCastle::Bcpg::PublicKeyEncSessionPacket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         > = __cordl_object.invoke("GetEncSessionKey", ())?;
         Ok(__cordl_ret.into())
@@ -79,7 +81,7 @@ impl crate::Org::BouncyCastle::Bcpg::PublicKeyEncSessionPacket {
         algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         data: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -108,7 +110,7 @@ impl crate::Org::BouncyCastle::Bcpg::PublicKeyEncSessionPacket {
         algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         data: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

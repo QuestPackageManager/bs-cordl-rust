@@ -219,7 +219,9 @@ impl crate::UnityEngine::InputSystem::Touchscreen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::TouchControl,
+                >,
             >,
         >,
     > {
@@ -228,7 +230,9 @@ impl crate::UnityEngine::InputSystem::Touchscreen {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::TouchControl,
+                >,
             >,
         > = __cordl_object.invoke("get_touchControlArray", ())?;
         Ok(__cordl_ret.into())
@@ -276,7 +280,9 @@ impl crate::UnityEngine::InputSystem::Touchscreen {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::TouchControl,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

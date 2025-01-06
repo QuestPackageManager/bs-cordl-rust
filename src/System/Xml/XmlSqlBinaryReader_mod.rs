@@ -1895,7 +1895,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug, Clone, Default)]
 pub struct XmlSqlBinaryReader_SymbolTables {
     pub symtable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub symCount: i32,
     pub qnametable: quest_hook::libil2cpp::Gc<

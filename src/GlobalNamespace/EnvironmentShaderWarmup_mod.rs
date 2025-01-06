@@ -4,7 +4,9 @@
 pub struct EnvironmentShaderWarmup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _materials: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     >,
     pub _mainCamera: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainCamera>,
     pub _gameScenesManager: quest_hook::libil2cpp::Gc<

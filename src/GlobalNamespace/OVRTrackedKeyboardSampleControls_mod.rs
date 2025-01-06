@@ -20,7 +20,9 @@ pub struct OVRTrackedKeyboardSampleControls {
     pub ConnectionToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub RemoteKeyboardToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub ShaderButtons: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Button>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+        >,
     >,
 }
 #[cfg(feature = "OVRTrackedKeyboardSampleControls")]

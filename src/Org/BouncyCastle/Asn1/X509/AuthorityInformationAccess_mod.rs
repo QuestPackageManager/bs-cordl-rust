@@ -5,7 +5,9 @@ pub struct AuthorityInformationAccess {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub descriptions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+            quest_hook::libil2cpp::Gc<
+                crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+            >,
         >,
     >,
 }
@@ -35,19 +37,25 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
     pub fn Copy(
         descriptions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Copy", (descriptions))?;
@@ -73,7 +81,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                >,
             >,
         >,
     > {
@@ -82,7 +92,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                >,
             >,
         > = __cordl_object.invoke("GetAccessDescriptions", ())?;
         Ok(__cordl_ret.into())
@@ -136,7 +148,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
     pub fn New_Il2CppArray2(
         descriptions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -216,7 +230,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
         &mut self,
         descriptions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

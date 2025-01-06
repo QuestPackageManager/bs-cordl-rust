@@ -5,7 +5,9 @@ pub struct MaterialPropertyBlockControllerArrayRandomValueSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MaterialPropertyBlockController,
+            >,
         >,
     >,
     pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -13,7 +15,7 @@ pub struct MaterialPropertyBlockControllerArrayRandomValueSetter {
     pub _max: crate::UnityEngine::Vector3,
     pub _materialPropertyBlocks: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::MaterialPropertyBlock,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
         >,
     >,
     pub _propertyId: i32,

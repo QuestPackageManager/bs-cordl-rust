@@ -713,7 +713,9 @@ pub struct NetSerializer_ClassInfo_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _serializers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+            quest_hook::libil2cpp::Gc<
+                crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+            >,
         >,
     >,
     pub _membersCount: i32,

@@ -843,7 +843,9 @@ pub struct VRControllersRecorder_SavedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _keyframes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable,
+            >,
         >,
     >,
 }

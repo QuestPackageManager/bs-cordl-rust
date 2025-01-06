@@ -162,11 +162,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Connect", (mesh, faces))?;
         Ok(__cordl_ret.into())
@@ -182,7 +186,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements {
         crate::UnityEngine::ProBuilder::SimpleTuple_2<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::UnityEngine::ProBuilder::Face,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
                 >,
             >,
             quest_hook::libil2cpp::Gc<
@@ -193,7 +197,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements {
         let __cordl_ret: crate::UnityEngine::ProBuilder::SimpleTuple_2<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::UnityEngine::ProBuilder::Face,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
                 >,
             >,
             quest_hook::libil2cpp::Gc<
@@ -213,7 +217,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements {
         addedFaces: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::UnityEngine::ProBuilder::Face,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
                 >,
             >,
         >,

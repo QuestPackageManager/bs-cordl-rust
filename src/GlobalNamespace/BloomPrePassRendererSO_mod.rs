@@ -6,7 +6,9 @@ pub struct BloomPrePassRendererSO {
     pub _bloomFog: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogSO>,
     pub _preallocationData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData,
+            >,
         >,
     >,
     pub _lightsRenderingData: quest_hook::libil2cpp::Gc<

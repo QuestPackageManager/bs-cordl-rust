@@ -43,13 +43,13 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
     pub fn CreateInt32Tasks() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task_1<i32>,
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Threading::Tasks::Task_1<i32>,
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateInt32Tasks", ())?;

@@ -1287,7 +1287,7 @@ pub struct InputControlExtensions_InputEventControlEnumerator {
     pub m_StateOffsetToControlIndexLength: i32,
     pub m_AllControls: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputControl,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         >,
     >,
     pub m_DefaultState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

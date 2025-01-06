@@ -10,7 +10,9 @@ pub struct OVRSceneRoom {
         crate::GlobalNamespace::OVRScenePlane,
     >,
     pub _Walls_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::OVRScenePlane>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+        >,
     >,
     pub _walls: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
@@ -219,7 +221,7 @@ impl crate::GlobalNamespace::OVRSceneRoom {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::OVRScenePlane,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
             >,
         >,
     > {
@@ -228,7 +230,7 @@ impl crate::GlobalNamespace::OVRSceneRoom {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::OVRScenePlane,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
             >,
         > = __cordl_object.invoke("get_Walls", ())?;
         Ok(__cordl_ret.into())
@@ -259,7 +261,7 @@ impl crate::GlobalNamespace::OVRSceneRoom {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::OVRScenePlane,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -189,7 +189,9 @@ impl<
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Collections::Generic::LinkedListNode_1<TBase>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::LinkedListNode_1<TBase>,
+                >,
             >,
         >,
     >
@@ -202,7 +204,9 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Collections::Generic::LinkedListNode_1<TBase>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::LinkedListNode_1<TBase>,
+                >,
             >,
         > = __cordl_object.invoke("get_sortedListHeads", ())?;
         Ok(__cordl_ret.into())

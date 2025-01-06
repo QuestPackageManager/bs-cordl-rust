@@ -5,11 +5,13 @@ pub struct ProBuilderMesh {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_MeshFormatVersion: i32,
     pub m_Faces: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+        >,
     >,
     pub m_SharedVertices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
         >,
     >,
     pub m_CacheValid: crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState,
@@ -18,7 +20,7 @@ pub struct ProBuilderMesh {
     >,
     pub m_SharedTextures: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
         >,
     >,
     pub m_SharedTextureLookup: quest_hook::libil2cpp::Gc<
@@ -470,14 +472,18 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         > = __cordl_object.invoke("GetSelectedFaces", ())?;
         Ok(__cordl_ret.into())
     }
@@ -574,7 +580,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
             >,
         >,
     > {
@@ -583,7 +589,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Vertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
             >,
         > = __cordl_object.invoke("GetVertices", (indexes))?;
         Ok(__cordl_ret.into())
@@ -1191,14 +1197,18 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         > = __cordl_object.invoke("get_facesInternal", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1461,14 +1471,18 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         > = __cordl_object.invoke("get_selectedFacesInternal", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1552,7 +1566,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
             >,
         >,
     > {
@@ -1561,7 +1575,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
             >,
         > = __cordl_object.invoke("get_sharedTextures", ())?;
         Ok(__cordl_ret.into())
@@ -1605,7 +1619,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
             >,
         >,
     > {
@@ -1614,7 +1628,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
             >,
         > = __cordl_object.invoke("get_sharedVerticesInternal", ())?;
         Ok(__cordl_ret.into())
@@ -1849,7 +1863,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn set_facesInternal(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1958,7 +1974,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn set_selectedFacesInternal(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1983,7 +2001,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2013,7 +2031,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -46,7 +46,9 @@ pub struct NumberFormatInfo {
     pub percentSymbol: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub perMilleSymbol: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub nativeDigits: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub m_dataItem: i32,
     pub numberDecimalDigits: i32,

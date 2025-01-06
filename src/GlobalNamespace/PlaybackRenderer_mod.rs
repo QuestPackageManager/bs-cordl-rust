@@ -15,7 +15,9 @@ pub struct PlaybackRenderer {
     pub _clipMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _screenshots: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+            >,
         >,
     >,
 }
@@ -148,7 +150,9 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         textureHeight: i32,
         screenshots: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -195,7 +199,9 @@ impl crate::GlobalNamespace::PlaybackRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                >,
             >,
         >,
     > {
@@ -204,7 +210,9 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                >,
             >,
         > = __cordl_object.invoke("get_screenshots", ())?;
         Ok(__cordl_ret.into())

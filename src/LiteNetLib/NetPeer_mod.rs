@@ -24,7 +24,9 @@ pub struct NetPeer {
         >,
     >,
     pub _channels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::LiteNetLib::BaseChannel>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>,
+        >,
     >,
     pub _headChannel: quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>,
     pub _mtu: i32,
@@ -684,7 +686,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetPeer {
 pub struct NetPeer_IncomingFragments {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Fragments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::LiteNetLib::NetPacket>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+        >,
     >,
     pub ReceivedCount: i32,
     pub TotalSize: i32,

@@ -8,9 +8,11 @@ pub struct CancellationTokenSource {
     >,
     pub _registeredCallbacksLists: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Threading::SparselyPopulatedArray_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::CancellationCallbackInfo,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Threading::SparselyPopulatedArray_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::CancellationCallbackInfo,
+                    >,
                 >,
             >,
         >,

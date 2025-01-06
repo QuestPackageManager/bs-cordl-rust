@@ -5,7 +5,9 @@ pub struct RuntimeVariables {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _boxes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::CompilerServices::IStrongBox,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::CompilerServices::IStrongBox,
+            >,
         >,
     >,
 }
@@ -35,7 +37,9 @@ impl crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
     pub fn Create(
         boxes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -51,7 +55,9 @@ impl crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
     pub fn New(
         boxes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -65,7 +71,9 @@ impl crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
         &mut self,
         boxes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IStrongBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

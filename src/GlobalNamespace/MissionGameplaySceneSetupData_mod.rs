@@ -4,7 +4,9 @@
 pub struct MissionGameplaySceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub missionObjectives: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionObjective>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
+        >,
     >,
     pub autoRestart: bool,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
@@ -37,7 +39,7 @@ impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
     pub fn New(
         missionObjectives: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjective,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
             >,
         >,
         autoRestart: bool,
@@ -68,7 +70,7 @@ impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
         &mut self,
         missionObjectives: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::MissionObjective,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
             >,
         >,
         autoRestart: bool,

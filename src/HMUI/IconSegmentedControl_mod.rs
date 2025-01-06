@@ -21,7 +21,7 @@ pub struct IconSegmentedControl {
     >,
     pub _dataItems: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::HMUI::IconSegmentedControl_DataItem,
+            quest_hook::libil2cpp::Gc<crate::HMUI::IconSegmentedControl_DataItem>,
         >,
     >,
     pub _isInitialized: bool,
@@ -89,7 +89,7 @@ impl crate::HMUI::IconSegmentedControl {
         &mut self,
         dataItems: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::HMUI::IconSegmentedControl_DataItem,
+                quest_hook::libil2cpp::Gc<crate::HMUI::IconSegmentedControl_DataItem>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

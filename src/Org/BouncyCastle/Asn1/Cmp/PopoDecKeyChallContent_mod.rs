@@ -65,7 +65,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PopoDecKeyChallContent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::Challenge,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::Challenge>,
             >,
         >,
     > {
@@ -74,7 +74,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PopoDecKeyChallContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::Challenge,
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::Challenge>,
             >,
         > = __cordl_object.invoke("ToChallengeArray", ())?;
         Ok(__cordl_ret.into())

@@ -301,7 +301,9 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
     pub fn GetTerrainLayerIndex(
         layer: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
         terrainLayers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::TerrainLayer>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -311,7 +313,9 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
     pub fn GetTerrainLayerIndexByName(
         layerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         terrainLayers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::TerrainLayer>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()

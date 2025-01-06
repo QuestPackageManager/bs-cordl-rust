@@ -5,7 +5,7 @@ pub struct InputActionAsset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_ActionMaps: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputActionMap,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
         >,
     >,
     pub m_ControlSchemes: quest_hook::libil2cpp::Gc<

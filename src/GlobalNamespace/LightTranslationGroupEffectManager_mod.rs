@@ -5,7 +5,7 @@ pub struct LightTranslationGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightTranslationGroups: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::LightTranslationGroup,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightTranslationGroup>,
         >,
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,

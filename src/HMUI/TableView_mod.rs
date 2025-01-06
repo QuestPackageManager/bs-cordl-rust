@@ -13,7 +13,9 @@ pub struct TableView {
     pub _canSelectSelectedCell: bool,
     pub _spawnCellsThatAreNotVisible: bool,
     pub _preallocatedCells: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::TableView_CellsGroup>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView_CellsGroup>,
+        >,
     >,
     pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_2<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>, i32>,

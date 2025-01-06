@@ -43,7 +43,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::DistributionPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::DistributionPoint,
+                >,
             >,
         >,
     > {
@@ -52,7 +54,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::DistributionPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::DistributionPoint,
+                >,
             >,
         > = __cordl_object.invoke("GetDistributionPoints", ())?;
         Ok(__cordl_ret.into())
@@ -91,7 +95,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
     pub fn New_Il2CppArray1(
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::DistributionPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::DistributionPoint,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -142,7 +148,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::CrlDistPoint {
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::DistributionPoint,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::DistributionPoint,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

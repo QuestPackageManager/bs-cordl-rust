@@ -9,12 +9,12 @@ pub struct SymmetricAlgorithm {
     pub KeyValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub LegalBlockSizesValue: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Security::Cryptography::KeySizes,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::KeySizes>,
         >,
     >,
     pub LegalKeySizesValue: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Security::Cryptography::KeySizes,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::KeySizes>,
         >,
     >,
     pub KeySizeValue: i32,
@@ -248,7 +248,9 @@ impl crate::System::Security::Cryptography::SymmetricAlgorithm {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Security::Cryptography::KeySizes,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::KeySizes,
+                >,
             >,
         >,
     > {
@@ -257,7 +259,9 @@ impl crate::System::Security::Cryptography::SymmetricAlgorithm {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Security::Cryptography::KeySizes,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::KeySizes,
+                >,
             >,
         > = __cordl_object.invoke("get_LegalKeySizes", ())?;
         Ok(__cordl_ret.into())

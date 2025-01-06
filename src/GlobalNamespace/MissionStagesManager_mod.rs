@@ -7,7 +7,9 @@ pub struct MissionStagesManager {
         crate::GlobalNamespace::MissionStageLockView,
     >,
     pub _missionStages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionStage>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionStage>,
+        >,
     >,
     pub _firstLockedMissionStage: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MissionStage,

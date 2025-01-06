@@ -26,7 +26,9 @@ impl std::ops::DerefMut for crate::Zenject::ValidationUtil {
 impl crate::Zenject::ValidationUtil {
     pub fn CreateDefaultArgs(
         argTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<

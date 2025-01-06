@@ -48,7 +48,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::SignaturePolicyId {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::SigPolicyQualifierInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::SigPolicyQualifierInfo,
+                >,
             >,
         >,
     > {
@@ -57,7 +59,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::SignaturePolicyId {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::SigPolicyQualifierInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::SigPolicyQualifierInfo,
+                >,
             >,
         > = __cordl_object.invoke("GetSigPolicyQualifiers", ())?;
         Ok(__cordl_ret.into())
@@ -114,7 +118,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::SignaturePolicyId {
         >,
         sigPolicyQualifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::SigPolicyQualifierInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::SigPolicyQualifierInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -196,7 +202,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::SignaturePolicyId {
         >,
         sigPolicyQualifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Esf::SigPolicyQualifierInfo,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Esf::SigPolicyQualifierInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

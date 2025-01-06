@@ -257,7 +257,9 @@ pub struct OculusLevelProductCollectionModel_LevelPackProductData {
     >,
     pub _levelProductsData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+            >,
         >,
     >,
 }

@@ -43,7 +43,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
     > {
@@ -52,7 +54,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         > = __cordl_object.invoke("GetCriticalExtensionOids", ())?;
         Ok(__cordl_ret.into())
@@ -62,7 +66,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
     > {
@@ -71,7 +77,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         > = __cordl_object.invoke("GetExtensionOids", ())?;
         Ok(__cordl_ret.into())
@@ -82,7 +90,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
     > {
@@ -91,7 +101,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         > = __cordl_object.invoke("GetExtensionOids", (isCritical))?;
         Ok(__cordl_ret.into())
@@ -187,7 +199,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
     > {
@@ -196,7 +210,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         > = __cordl_object.invoke("GetNonCriticalExtensionOids", ())?;
         Ok(__cordl_ret.into())
@@ -299,13 +315,17 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToOidArray", (oids))?;
         Ok(__cordl_ret.into())

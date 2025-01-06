@@ -163,7 +163,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
     pub fn SetAutoUV(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
         _cordl_auto: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

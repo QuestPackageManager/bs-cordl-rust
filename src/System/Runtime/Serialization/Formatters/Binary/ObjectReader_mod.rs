@@ -23,7 +23,9 @@ pub struct ObjectReader {
     pub m_topObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub headers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::Remoting::Messaging::Header,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::Remoting::Messaging::Header,
+            >,
         >,
     >,
     pub handler: quest_hook::libil2cpp::Gc<
@@ -42,7 +44,9 @@ pub struct ObjectReader {
         crate::System::Runtime::Serialization::Formatters::Binary::SerStack,
     >,
     pub crossAppDomainArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub bFullDeserialization: bool,
     pub bOldFormatDetected: bool,
@@ -128,10 +132,14 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
         &mut self,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         memberNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         memberTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<

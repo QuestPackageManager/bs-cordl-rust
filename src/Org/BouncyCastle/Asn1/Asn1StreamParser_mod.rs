@@ -6,7 +6,9 @@ pub struct Asn1StreamParser {
     pub _in: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _limit: i32,
     pub tmpBuffers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1StreamParser")]

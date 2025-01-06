@@ -63,7 +63,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                >,
             >,
         >,
     > {
@@ -72,7 +74,9 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+                >,
             >,
         > = __cordl_object.invoke("GetGeneralInfo", ())?;
         Ok(__cordl_ret.into())

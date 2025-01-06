@@ -180,7 +180,9 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Pkcs::X509CertificateEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Pkcs::X509CertificateEntry,
+                >,
             >,
         >,
     > {
@@ -189,7 +191,9 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Pkcs::X509CertificateEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Pkcs::X509CertificateEntry,
+                >,
             >,
         > = __cordl_object.invoke("GetCertificateChain", (alias))?;
         Ok(__cordl_ret.into())
@@ -386,7 +390,9 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
         >,
         chain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Pkcs::X509CertificateEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Pkcs::X509CertificateEntry,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

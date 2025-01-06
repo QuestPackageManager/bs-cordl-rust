@@ -99,7 +99,9 @@ pub struct XsdBuilder {
     >,
     pub facet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaFacet>,
     pub markup: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlNode>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+        >,
     >,
     pub redefine: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaRedefine,
@@ -1106,7 +1108,9 @@ impl crate::System::Xml::Schema::XsdBuilder {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         attributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         values: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1190,7 +1194,9 @@ impl crate::System::Xml::Schema::XsdBuilder {
     pub fn ProcessMarkup(
         &mut self,
         markup: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlNode>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1224,7 +1230,9 @@ impl crate::System::Xml::Schema::XsdBuilder {
         &mut self,
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         severity: crate::System::Xml::Schema::XmlSeverityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1756,7 +1764,9 @@ pub struct XsdBuilder_XsdEntry {
     >,
     pub Attributes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry,
+            >,
         >,
     >,
     pub InitFunc: quest_hook::libil2cpp::Gc<
@@ -1797,7 +1807,9 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdEntry {
         >,
         attributes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry,
+                >,
             >,
         >,
         init: quest_hook::libil2cpp::Gc<
@@ -1828,7 +1840,9 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdEntry {
         >,
         attributes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry,
+                >,
             >,
         >,
         init: quest_hook::libil2cpp::Gc<

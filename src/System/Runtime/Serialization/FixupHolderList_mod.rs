@@ -5,7 +5,7 @@ pub struct FixupHolderList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_values: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Runtime::Serialization::FixupHolder,
+            quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::FixupHolder>,
         >,
     >,
     pub m_count: i32,

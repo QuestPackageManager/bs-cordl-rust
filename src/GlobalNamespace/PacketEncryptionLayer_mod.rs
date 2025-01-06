@@ -342,7 +342,9 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         encryptionStates: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                    >,
                 >,
             >,
         >,
@@ -701,7 +703,9 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                >,
             >,
         >,
     > {
@@ -710,7 +714,9 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                >,
             >,
         > = __cordl_object.invoke("GetSortedEncryptionStates", (port))?;
         Ok(__cordl_ret.into())

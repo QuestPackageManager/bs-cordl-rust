@@ -45,7 +45,9 @@ impl crate::System::Xml::Serialization::XmlSerializerFactory {
             crate::System::Xml::Serialization::XmlAttributeOverrides,
         >,
         extraTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         root: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Serialization::XmlRootAttribute,

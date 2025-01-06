@@ -1284,7 +1284,9 @@ impl crate::UnityEngine::Physics {
         center: crate::UnityEngine::Vector3,
         halfExtents: crate::UnityEngine::Vector3,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         orientation: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -1296,7 +1298,9 @@ impl crate::UnityEngine::Physics {
         center: crate::UnityEngine::Vector3,
         halfExtents: crate::UnityEngine::Vector3,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         orientation: crate::UnityEngine::Quaternion,
         mask: i32,
@@ -1312,7 +1316,9 @@ impl crate::UnityEngine::Physics {
         center: crate::UnityEngine::Vector3,
         halfExtents: crate::UnityEngine::Vector3,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         orientation: crate::UnityEngine::Quaternion,
         mask: i32,
@@ -1336,7 +1342,9 @@ impl crate::UnityEngine::Physics {
         center: crate::UnityEngine::Vector3,
         halfExtents: crate::UnityEngine::Vector3,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1352,11 +1360,15 @@ impl crate::UnityEngine::Physics {
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "OverlapBox_Internal",
@@ -1380,11 +1392,15 @@ impl crate::UnityEngine::Physics {
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "OverlapBox_Internal_Injected",
@@ -1405,11 +1421,15 @@ impl crate::UnityEngine::Physics {
         orientation: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("OverlapBox", (center, halfExtents, orientation))?;
         Ok(__cordl_ret.into())
@@ -1421,11 +1441,15 @@ impl crate::UnityEngine::Physics {
         layerMask: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("OverlapBox", (center, halfExtents, orientation, layerMask))?;
         Ok(__cordl_ret.into())
@@ -1438,11 +1462,15 @@ impl crate::UnityEngine::Physics {
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "OverlapBox",
@@ -1455,11 +1483,15 @@ impl crate::UnityEngine::Physics {
         halfExtents: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("OverlapBox", (center, halfExtents))?;
         Ok(__cordl_ret.into())
@@ -1469,7 +1501,9 @@ impl crate::UnityEngine::Physics {
         point1: crate::UnityEngine::Vector3,
         radius: f32,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1481,7 +1515,9 @@ impl crate::UnityEngine::Physics {
         point1: crate::UnityEngine::Vector3,
         radius: f32,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         layerMask: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -1497,7 +1533,9 @@ impl crate::UnityEngine::Physics {
         point1: crate::UnityEngine::Vector3,
         radius: f32,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
@@ -1518,11 +1556,15 @@ impl crate::UnityEngine::Physics {
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "OverlapCapsule_Internal",
@@ -1546,11 +1588,15 @@ impl crate::UnityEngine::Physics {
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "OverlapCapsule_Internal_Injected",
@@ -1571,11 +1617,15 @@ impl crate::UnityEngine::Physics {
         radius: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("OverlapCapsule", (point0, point1, radius))?;
         Ok(__cordl_ret.into())
@@ -1587,11 +1637,15 @@ impl crate::UnityEngine::Physics {
         layerMask: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("OverlapCapsule", (point0, point1, radius, layerMask))?;
         Ok(__cordl_ret.into())
@@ -1604,11 +1658,15 @@ impl crate::UnityEngine::Physics {
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "OverlapCapsule",
@@ -1620,7 +1678,9 @@ impl crate::UnityEngine::Physics {
         position: crate::UnityEngine::Vector3,
         radius: f32,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1631,7 +1691,9 @@ impl crate::UnityEngine::Physics {
         position: crate::UnityEngine::Vector3,
         radius: f32,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         layerMask: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -1643,7 +1705,9 @@ impl crate::UnityEngine::Physics {
         position: crate::UnityEngine::Vector3,
         radius: f32,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
         layerMask: i32,
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
@@ -1663,11 +1727,15 @@ impl crate::UnityEngine::Physics {
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "OverlapSphere_Internal",
@@ -1683,11 +1751,15 @@ impl crate::UnityEngine::Physics {
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "OverlapSphere_Internal_Injected",
@@ -1700,11 +1772,15 @@ impl crate::UnityEngine::Physics {
         radius: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("OverlapSphere", (position, radius))?;
         Ok(__cordl_ret.into())
@@ -1715,11 +1791,15 @@ impl crate::UnityEngine::Physics {
         layerMask: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("OverlapSphere", (position, radius, layerMask))?;
         Ok(__cordl_ret.into())
@@ -1731,11 +1811,15 @@ impl crate::UnityEngine::Physics {
         queryTriggerInteraction: crate::UnityEngine::QueryTriggerInteraction,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "OverlapSphere",

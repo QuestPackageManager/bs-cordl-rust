@@ -7,11 +7,15 @@ pub struct MovementBeatmapEventEffect {
     pub _transitionSpeed: f32,
     pub _movementData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MovementBeatmapEventEffect_MovementData,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MovementBeatmapEventEffect_MovementData,
+            >,
         >,
     >,
     pub _transforms: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        >,
     >,
     pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCallbacksController,

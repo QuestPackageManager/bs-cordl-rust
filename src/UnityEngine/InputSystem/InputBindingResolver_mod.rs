@@ -7,12 +7,12 @@ pub struct InputBindingResolver {
     pub totalInteractionCount: i32,
     pub maps: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputActionMap,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
         >,
     >,
     pub controls: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputControl,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         >,
     >,
     pub memory: crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory,
@@ -21,12 +21,14 @@ pub struct InputBindingResolver {
     >,
     pub processors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputProcessor,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputProcessor>,
         >,
     >,
     pub composites: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::InputSystem::InputBindingComposite,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::InputBindingComposite,
+            >,
         >,
     >,
     pub bindingMask: crate::System::Nullable_1<

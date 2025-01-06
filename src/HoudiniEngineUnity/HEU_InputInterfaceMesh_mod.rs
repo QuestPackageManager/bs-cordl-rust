@@ -156,7 +156,9 @@ pub struct HEU_InputInterfaceMesh_HEU_InputDataMesh {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub _materials: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     >,
     pub _meshPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _meshName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

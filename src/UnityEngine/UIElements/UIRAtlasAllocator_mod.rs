@@ -15,7 +15,9 @@ pub struct UIRAtlasAllocator {
     >,
     pub m_OpenRows: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::UIElements::UIRAtlasAllocator_Row,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIRAtlasAllocator_Row,
+            >,
         >,
     >,
     pub m_1SidePadding: i32,

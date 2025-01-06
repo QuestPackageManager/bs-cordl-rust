@@ -5,7 +5,9 @@ pub struct Certificate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mCertificateList: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+            quest_hook::libil2cpp::Gc<
+                crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+            >,
         >,
     >,
 }
@@ -34,7 +36,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Certificate {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         >,
     > {
@@ -43,7 +47,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Certificate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         > = __cordl_object.invoke("CloneCertificateList", ())?;
         Ok(__cordl_ret.into())
@@ -80,7 +86,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Certificate {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         >,
     > {
@@ -89,7 +97,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Certificate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         > = __cordl_object.invoke("GetCertificateList", ())?;
         Ok(__cordl_ret.into())
@@ -97,7 +107,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Certificate {
     pub fn New(
         certificateList: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -121,7 +133,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Certificate {
         &mut self,
         certificateList: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

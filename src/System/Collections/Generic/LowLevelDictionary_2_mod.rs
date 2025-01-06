@@ -8,9 +8,11 @@ pub struct LowLevelDictionary_2<
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _buckets: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Collections::Generic::LowLevelDictionary_2_Entry<
-                TKey,
-                TValue,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::LowLevelDictionary_2_Entry<
+                    TKey,
+                    TValue,
+                >,
             >,
         >,
     >,

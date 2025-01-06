@@ -151,7 +151,7 @@ pub struct MultiplayerStatusModel_MultiplayerStatusDataFB {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub data: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::MultiplayerStatusData,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
         >,
     >,
 }

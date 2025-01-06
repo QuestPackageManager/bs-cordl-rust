@@ -5,7 +5,7 @@ pub struct XmlUnionConverter {
     __cordl_parent: crate::System::Xml::Schema::XmlBaseConverter,
     pub converters: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Xml::Schema::XmlValueConverter,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlValueConverter>,
         >,
     >,
     pub hasAtomicMember: bool,

@@ -404,7 +404,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
         &mut self,
         pcks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

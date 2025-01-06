@@ -13,16 +13,22 @@ pub struct BeatmapLevelSaveData {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub environmentNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub colorSchemes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme,
+            >,
         >,
     >,
     pub difficultyBeatmaps: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap,
+            >,
         >,
     >,
 }
@@ -126,10 +132,14 @@ impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {}
 #[derive(Debug, Clone, Default)]
 pub struct BeatmapLevelSaveData_BeatmapAuthors {
     pub mappers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub lighters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]

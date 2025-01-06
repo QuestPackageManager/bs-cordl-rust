@@ -45,13 +45,13 @@ impl crate::UnityEngine::ProBuilder::Submesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Submesh,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Submesh>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::UnityEngine::ProBuilder::Submesh,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Submesh>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetSubmeshes", (faces, submeshCount, preferredTopology))?;

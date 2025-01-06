@@ -4,7 +4,9 @@
 pub struct GhostDuplicationEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _canvases: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::CanvasGroup>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+        >,
     >,
     pub isInitialized: bool,
     pub _tweeningManager: quest_hook::libil2cpp::Gc<

@@ -32,7 +32,9 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         >,
     > {
@@ -41,7 +43,9 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::Org::BouncyCastle::X509::X509Certificate,
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >,
             >,
         > = __cordl_object.invoke("GetCertificates", ())?;
         Ok(__cordl_ret.into())

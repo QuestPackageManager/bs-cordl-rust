@@ -4,10 +4,14 @@
 pub struct StackTrace {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub frames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Diagnostics::StackFrame>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackFrame>,
+        >,
     >,
     pub captured_traces: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Diagnostics::StackTrace>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackTrace>,
+        >,
     >,
     pub debug_info: bool,
 }
@@ -266,13 +270,13 @@ impl crate::System::Diagnostics::StackTrace {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Diagnostics::StackFrame,
+                quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackFrame>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Diagnostics::StackFrame,
+                quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackFrame>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_trace", (e, skipFrames, fNeedFileInfo))?;

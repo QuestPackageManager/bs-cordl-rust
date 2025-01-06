@@ -86,16 +86,20 @@ impl crate::System::Runtime::Serialization::FormatterServices {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         members: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetObjectData", (obj, members))?;
         Ok(__cordl_ret.into())
@@ -104,7 +108,9 @@ impl crate::System::Runtime::Serialization::FormatterServices {
         parentType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
         parentTypes: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<*mut crate::System::RuntimeType>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+                >,
             >,
         >,
         parentTypeCount: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -118,13 +124,13 @@ impl crate::System::Runtime::Serialization::FormatterServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetSerializableMembers", (_cordl_type))?;
@@ -136,13 +142,13 @@ impl crate::System::Runtime::Serialization::FormatterServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetSerializableMembers", (_cordl_type, context))?;
@@ -172,13 +178,13 @@ impl crate::System::Runtime::Serialization::FormatterServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InternalGetSerializableMembers", (_cordl_type))?;
@@ -210,11 +216,13 @@ impl crate::System::Runtime::Serialization::FormatterServices {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         members: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                *mut crate::System::Reflection::MemberInfo,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
             >,
         >,
         data: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
