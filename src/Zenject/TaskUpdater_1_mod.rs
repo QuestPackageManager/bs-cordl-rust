@@ -16,10 +16,38 @@ pub struct TaskUpdater_1<TTask: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TTask: std::marker::PhantomData<TTask>,
 }
 #[cfg(feature = "Zenject+TaskUpdater_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Zenject::TaskUpdater_1 < TTask > => "Zenject"
-    ."TaskUpdater`1" < TTask >
-);
+unsafe impl<TTask: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::Zenject::TaskUpdater_1<TTask> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Zenject";
+    const CLASS_NAME: &'static str = "TaskUpdater`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("Zenject", "TaskUpdater`1")
+                    .unwrap()
+                    .make_generic::<(TTask)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Zenject+TaskUpdater_1")]
 impl<TTask: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::TaskUpdater_1<TTask> {
@@ -295,10 +323,38 @@ pub struct TaskUpdater_1_TaskInfo<TTask: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TTask: std::marker::PhantomData<TTask>,
 }
 #[cfg(feature = "Zenject+TaskUpdater_1+TaskInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Zenject::TaskUpdater_1_TaskInfo < TTask > =>
-    "Zenject"."TaskUpdater`1/TaskInfo" < TTask >
-);
+unsafe impl<TTask: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::Zenject::TaskUpdater_1_TaskInfo<TTask> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Zenject";
+    const CLASS_NAME: &'static str = "TaskInfo";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("Zenject", "TaskInfo")
+                    .unwrap()
+                    .make_generic::<(TTask)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Zenject+TaskUpdater_1+TaskInfo")]
 impl<TTask: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::TaskUpdater_1_TaskInfo<TTask> {

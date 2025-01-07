@@ -28,10 +28,25 @@ pub struct BeatmapCallbacksController {
     pub _processingCallbacks: bool,
 }
 #[cfg(feature = "BeatmapCallbacksController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapCallbacksController =>
-    ""."BeatmapCallbacksController"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapCallbacksController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BeatmapCallbacksController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapCallbacksController")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCallbacksController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -385,11 +400,25 @@ pub struct BeatmapCallbacksController_CallCallbacksBehavior {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehavior")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior => ""
-    ."BeatmapCallbacksController/CallCallbacksBehavior"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "CallCallbacksBehavior";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehavior")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
@@ -501,11 +530,25 @@ pub struct BeatmapCallbacksController_CallCallbacksBehaviorWithLastState {
     >,
 }
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehaviorWithLastState")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWithLastState =>
-    ""."BeatmapCallbacksController/CallCallbacksBehaviorWithLastState"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWithLastState {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "CallCallbacksBehaviorWithLastState";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehaviorWithLastState")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWithLastState {
@@ -608,11 +651,25 @@ pub struct BeatmapCallbacksController_ICallCallbacksBehavior {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatmapCallbacksController+ICallCallbacksBehavior")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior => ""
-    ."BeatmapCallbacksController/ICallCallbacksBehavior"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ICallCallbacksBehavior";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapCallbacksController+ICallCallbacksBehavior")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior {
@@ -690,11 +747,25 @@ pub struct BeatmapCallbacksController_InitData {
     pub shouldKeepReplayState: bool,
 }
 #[cfg(feature = "BeatmapCallbacksController+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BeatmapCallbacksController_InitData => ""
-    ."BeatmapCallbacksController/InitData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapCallbacksController_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapCallbacksController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCallbacksController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;

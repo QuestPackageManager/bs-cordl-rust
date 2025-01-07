@@ -115,10 +115,24 @@ pub struct XsdBuilder {
     pub namespaces: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XsdBuilder =>
-    "System.Xml.Schema"."XsdBuilder"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XsdBuilder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Schema";
+    const CLASS_NAME: &'static str = "XsdBuilder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Schema+XsdBuilder")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder {
     type Target = crate::System::Xml::Schema::SchemaBuilder;
@@ -1415,11 +1429,25 @@ pub struct XsdBuilder_BuilderNamespaceManager {
     pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager => "System.Xml.Schema"
-    ."XsdBuilder/BuilderNamespaceManager"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Schema";
+    const CLASS_NAME: &'static str = "BuilderNamespaceManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
     type Target = crate::System::Xml::XmlNamespaceManager;
@@ -1538,10 +1566,85 @@ pub enum XsdBuilder_State {
     WhiteSpace = 44i32,
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XsdBuilder_State =>
-    "System.Xml.Schema"."XsdBuilder/State"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Schema::XsdBuilder_State {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.Xml.Schema";
+    const CLASS_NAME: &'static str = "State";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::System::Xml::Schema::XsdBuilder_State {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::System::Xml::Schema::XsdBuilder_State {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::System::Xml::Schema::XsdBuilder_State {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::System::Xml::Schema::XsdBuilder_State {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1553,11 +1656,25 @@ pub struct XsdBuilder_XsdAttributeEntry {
     >,
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Schema::XsdBuilder_XsdAttributeEntry => "System.Xml.Schema"
-    ."XsdBuilder/XsdAttributeEntry"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Schema";
+    const CLASS_NAME: &'static str = "XsdAttributeEntry";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1617,10 +1734,25 @@ pub struct XsdBuilder_XsdBuildFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XsdBuilder_XsdBuildFunction
-    => "System.Xml.Schema"."XsdBuilder/XsdBuildFunction"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Schema";
+    const CLASS_NAME: &'static str = "XsdBuildFunction";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
     type Target = crate::System::MulticastDelegate;
@@ -1688,11 +1820,25 @@ pub struct XsdBuilder_XsdEndChildFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Schema::XsdBuilder_XsdEndChildFunction => "System.Xml.Schema"
-    ."XsdBuilder/XsdEndChildFunction"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Schema";
+    const CLASS_NAME: &'static str = "XsdEndChildFunction";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
     type Target = crate::System::MulticastDelegate;
@@ -1778,10 +1924,25 @@ pub struct XsdBuilder_XsdEntry {
     pub ParseContent: bool,
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEntry")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XsdBuilder_XsdEntry =>
-    "System.Xml.Schema"."XsdBuilder/XsdEntry"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Schema::XsdBuilder_XsdEntry {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Schema";
+    const CLASS_NAME: &'static str = "XsdEntry";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEntry")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder_XsdEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1881,10 +2042,25 @@ pub struct XsdBuilder_XsdInitFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdInitFunction")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XsdBuilder_XsdInitFunction
-    => "System.Xml.Schema"."XsdBuilder/XsdInitFunction"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Schema";
+    const CLASS_NAME: &'static str = "XsdInitFunction";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdInitFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
     type Target = crate::System::MulticastDelegate;

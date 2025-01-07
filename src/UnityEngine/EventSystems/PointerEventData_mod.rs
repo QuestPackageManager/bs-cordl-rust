@@ -53,10 +53,25 @@ pub struct PointerEventData {
     pub _reentered_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerEventData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::EventSystems::PointerEventData =>
-    "UnityEngine.EventSystems"."PointerEventData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::PointerEventData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "PointerEventData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+PointerEventData")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::PointerEventData {
     type Target = crate::UnityEngine::EventSystems::BaseEventData;
@@ -838,11 +853,85 @@ pub enum PointerEventData_FramePressState {
     Released = 1i32,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::EventSystems::PointerEventData_FramePressState =>
-    "UnityEngine.EventSystems"."PointerEventData/FramePressState"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "FramePressState";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -853,8 +942,82 @@ pub enum PointerEventData_InputButton {
     Right = 1i32,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::EventSystems::PointerEventData_InputButton =>
-    "UnityEngine.EventSystems"."PointerEventData/InputButton"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "InputButton";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}

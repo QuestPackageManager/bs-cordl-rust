@@ -16,10 +16,25 @@ pub struct HttpHeaders {
     pub transferEncodingChunked: crate::System::Nullable_1<bool>,
 }
 #[cfg(feature = "System+Net+Http+Headers+HttpHeaders")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::Headers::HttpHeaders =>
-    "System.Net.Http.Headers"."HttpHeaders"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Http::Headers::HttpHeaders {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http.Headers";
+    const CLASS_NAME: &'static str = "HttpHeaders";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+HttpHeaders")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::HttpHeaders {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -439,11 +454,25 @@ pub struct HttpHeaders_HeaderBucket {
     >,
 }
 #[cfg(feature = "System+Net+Http+Headers+HttpHeaders+HeaderBucket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Net::Http::Headers::HttpHeaders_HeaderBucket => "System.Net.Http.Headers"
-    ."HttpHeaders/HeaderBucket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Http::Headers::HttpHeaders_HeaderBucket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http.Headers";
+    const CLASS_NAME: &'static str = "HeaderBucket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+HttpHeaders+HeaderBucket")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::HttpHeaders_HeaderBucket {
     type Target = quest_hook::libil2cpp::Il2CppObject;

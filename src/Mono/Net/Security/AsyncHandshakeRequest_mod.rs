@@ -5,10 +5,25 @@ pub struct AsyncHandshakeRequest {
     __cordl_parent: crate::Mono::Net::Security::AsyncProtocolRequest,
 }
 #[cfg(feature = "Mono+Net+Security+AsyncHandshakeRequest")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Net::Security::AsyncHandshakeRequest =>
-    "Mono.Net.Security"."AsyncHandshakeRequest"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Net::Security::AsyncHandshakeRequest {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Net.Security";
+    const CLASS_NAME: &'static str = "AsyncHandshakeRequest";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Net+Security+AsyncHandshakeRequest")]
 impl std::ops::Deref for crate::Mono::Net::Security::AsyncHandshakeRequest {
     type Target = crate::Mono::Net::Security::AsyncProtocolRequest;

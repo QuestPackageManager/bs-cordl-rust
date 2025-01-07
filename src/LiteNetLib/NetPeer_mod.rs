@@ -66,9 +66,24 @@ pub struct NetPeer {
     pub Statistics: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetStatistics>,
 }
 #[cfg(feature = "LiteNetLib+NetPeer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::NetPeer => "LiteNetLib"."NetPeer"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetPeer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "NetPeer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+NetPeer")]
 impl std::ops::Deref for crate::LiteNetLib::NetPeer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -695,10 +710,25 @@ pub struct NetPeer_IncomingFragments {
     pub ChannelId: u8,
 }
 #[cfg(feature = "LiteNetLib+NetPeer+IncomingFragments")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::NetPeer_IncomingFragments =>
-    "LiteNetLib"."NetPeer/IncomingFragments"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::NetPeer_IncomingFragments {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "IncomingFragments";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+NetPeer+IncomingFragments")]
 impl std::ops::Deref for crate::LiteNetLib::NetPeer_IncomingFragments {
     type Target = quest_hook::libil2cpp::Il2CppObject;

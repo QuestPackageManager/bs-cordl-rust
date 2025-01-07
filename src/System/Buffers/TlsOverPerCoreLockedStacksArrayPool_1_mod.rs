@@ -19,11 +19,41 @@ pub struct TlsOverPerCoreLockedStacksArrayPool_1<T: quest_hook::libil2cpp::Type>
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1 < T > => "System.Buffers"
-    ."TlsOverPerCoreLockedStacksArrayPool`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Buffers";
+    const CLASS_NAME: &'static str = "TlsOverPerCoreLockedStacksArrayPool`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Buffers",
+                        "TlsOverPerCoreLockedStacksArrayPool`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
@@ -221,11 +251,38 @@ pub struct TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack < T > =>
-    "System.Buffers"."TlsOverPerCoreLockedStacksArrayPool`1/LockedStack" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Buffers";
+    const CLASS_NAME: &'static str = "LockedStack";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System.Buffers", "LockedStack")
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T> {
@@ -340,11 +397,85 @@ pub enum TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure {
     Medium = 1i32,
 }
 #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+MemoryPressure")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure =>
-    "System.Buffers"."TlsOverPerCoreLockedStacksArrayPool`1/MemoryPressure<T>"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.Buffers";
+    const CLASS_NAME: &'static str = "MemoryPressure";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(
     feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+PerCoreLockedStacks"
 )]
@@ -368,11 +499,43 @@ pub struct TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
 #[cfg(
     feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+PerCoreLockedStacks"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks < T > =>
-    "System.Buffers"."TlsOverPerCoreLockedStacksArrayPool`1/PerCoreLockedStacks" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
+    T,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Buffers";
+    const CLASS_NAME: &'static str = "PerCoreLockedStacks";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Buffers",
+                        "PerCoreLockedStacks",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+PerCoreLockedStacks"
 )]

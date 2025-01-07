@@ -152,10 +152,24 @@ pub struct HEU_HoudiniAsset {
     pub _pendingAutoCookOnMouseRelease: bool,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::HEU_HoudiniAsset =>
-    "HoudiniEngineUnity"."HEU_HoudiniAsset"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_HoudiniAsset {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "HEU_HoudiniAsset";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -2959,11 +2973,85 @@ pub enum HEU_HoudiniAsset_AssetBuildAction {
     STRIP_HEDATA = 4i32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetBuildAction")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction => "HoudiniEngineUnity"
-    ."HEU_HoudiniAsset/AssetBuildAction"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "AssetBuildAction";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -2974,11 +3062,85 @@ pub enum HEU_HoudiniAsset_AssetCookResult {
     SUCCESS = 1i32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult => "HoudiniEngineUnity"
-    ."HEU_HoudiniAsset/AssetCookResult"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "AssetCookResult";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -2993,11 +3155,85 @@ pub enum HEU_HoudiniAsset_AssetCookStatus {
     SELECT_SUBASSET = 6i32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus => "HoudiniEngineUnity"
-    ."HEU_HoudiniAsset/AssetCookStatus"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "AssetCookStatus";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetInstantiationMethod")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -3008,11 +3244,85 @@ pub enum HEU_HoudiniAsset_AssetInstantiationMethod {
     UNDO = 2i32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetInstantiationMethod")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod =>
-    "HoudiniEngineUnity"."HEU_HoudiniAsset/AssetInstantiationMethod"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "AssetInstantiationMethod";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -3024,11 +3334,85 @@ pub enum HEU_HoudiniAsset_HEU_AssetType {
     TYPE_INVALID = 0i32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType => "HoudiniEngineUnity"
-    ."HEU_HoudiniAsset/HEU_AssetType"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "HEU_AssetType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+UpdateUIDelegate")]
 #[repr(C)]
 #[derive(Debug)]
@@ -3036,11 +3420,25 @@ pub struct HEU_HoudiniAsset_UpdateUIDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+UpdateUIDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate => "HoudiniEngineUnity"
-    ."HEU_HoudiniAsset/UpdateUIDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "UpdateUIDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+UpdateUIDelegate")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate {
     type Target = crate::System::MulticastDelegate;

@@ -8,10 +8,25 @@ pub struct AnimatorOverrideController {
     >,
 }
 #[cfg(feature = "UnityEngine+AnimatorOverrideController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::AnimatorOverrideController =>
-    "UnityEngine"."AnimatorOverrideController"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::AnimatorOverrideController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "AnimatorOverrideController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+AnimatorOverrideController")]
 impl std::ops::Deref for crate::UnityEngine::AnimatorOverrideController {
     type Target = crate::UnityEngine::RuntimeAnimatorController;
@@ -139,11 +154,25 @@ pub struct AnimatorOverrideController_OnOverrideControllerDirtyCallback {
 #[cfg(
     feature = "UnityEngine+AnimatorOverrideController+OnOverrideControllerDirtyCallback"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCallback =>
-    "UnityEngine"."AnimatorOverrideController/OnOverrideControllerDirtyCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "OnOverrideControllerDirtyCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+AnimatorOverrideController+OnOverrideControllerDirtyCallback"
 )]

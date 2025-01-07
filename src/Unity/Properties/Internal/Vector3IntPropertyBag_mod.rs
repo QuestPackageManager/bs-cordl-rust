@@ -7,11 +7,25 @@ pub struct Vector3IntPropertyBag {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector3IntPropertyBag")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::Vector3IntPropertyBag => "Unity.Properties.Internal"
-    ."Vector3IntPropertyBag"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::Vector3IntPropertyBag {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "Vector3IntPropertyBag";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+Vector3IntPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::Vector3IntPropertyBag {
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
@@ -73,11 +87,25 @@ pub struct Vector3IntPropertyBag_XProperty {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector3IntPropertyBag+XProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::Vector3IntPropertyBag_XProperty =>
-    "Unity.Properties.Internal"."Vector3IntPropertyBag/XProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::Vector3IntPropertyBag_XProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "XProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+Vector3IntPropertyBag+XProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector3IntPropertyBag_XProperty {
@@ -149,11 +177,25 @@ pub struct Vector3IntPropertyBag_YProperty {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector3IntPropertyBag+YProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::Vector3IntPropertyBag_YProperty =>
-    "Unity.Properties.Internal"."Vector3IntPropertyBag/YProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::Vector3IntPropertyBag_YProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "YProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+Vector3IntPropertyBag+YProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector3IntPropertyBag_YProperty {
@@ -225,11 +267,25 @@ pub struct Vector3IntPropertyBag_ZProperty {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector3IntPropertyBag+ZProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::Vector3IntPropertyBag_ZProperty =>
-    "Unity.Properties.Internal"."Vector3IntPropertyBag/ZProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::Vector3IntPropertyBag_ZProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "ZProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+Vector3IntPropertyBag+ZProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector3IntPropertyBag_ZProperty {

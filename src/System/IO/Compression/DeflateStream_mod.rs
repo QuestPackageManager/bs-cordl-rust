@@ -12,10 +12,25 @@ pub struct DeflateStream {
     >,
 }
 #[cfg(feature = "System+IO+Compression+DeflateStream")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::IO::Compression::DeflateStream =>
-    "System.IO.Compression"."DeflateStream"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::IO::Compression::DeflateStream {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO.Compression";
+    const CLASS_NAME: &'static str = "DeflateStream";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+Compression+DeflateStream")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStream {
     type Target = crate::System::IO::Stream;
@@ -431,11 +446,25 @@ pub struct DeflateStream_ReadMethod {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+IO+Compression+DeflateStream+ReadMethod")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::IO::Compression::DeflateStream_ReadMethod => "System.IO.Compression"
-    ."DeflateStream/ReadMethod"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::IO::Compression::DeflateStream_ReadMethod {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO.Compression";
+    const CLASS_NAME: &'static str = "ReadMethod";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+Compression+DeflateStream+ReadMethod")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStream_ReadMethod {
     type Target = crate::System::MulticastDelegate;
@@ -530,11 +559,25 @@ pub struct DeflateStream_WriteMethod {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+IO+Compression+DeflateStream+WriteMethod")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::IO::Compression::DeflateStream_WriteMethod => "System.IO.Compression"
-    ."DeflateStream/WriteMethod"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::IO::Compression::DeflateStream_WriteMethod {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO.Compression";
+    const CLASS_NAME: &'static str = "WriteMethod";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+Compression+DeflateStream+WriteMethod")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStream_WriteMethod {
     type Target = crate::System::MulticastDelegate;

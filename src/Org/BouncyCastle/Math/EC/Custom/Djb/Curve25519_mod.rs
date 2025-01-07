@@ -8,11 +8,25 @@ pub struct Curve25519 {
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519 =>
-    "Org.BouncyCastle.Math.EC.Custom.Djb"."Curve25519"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Custom.Djb";
+    const CLASS_NAME: &'static str = "Curve25519";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519 {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractFpCurve;
@@ -232,11 +246,25 @@ pub struct Curve25519_Curve25519LookupTable {
     pub m_size: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519+Curve25519LookupTable")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519_Curve25519LookupTable =>
-    "Org.BouncyCastle.Math.EC.Custom.Djb"."Curve25519/Curve25519LookupTable"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519_Curve25519LookupTable {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Custom.Djb";
+    const CLASS_NAME: &'static str = "Curve25519LookupTable";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519+Curve25519LookupTable")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519_Curve25519LookupTable {

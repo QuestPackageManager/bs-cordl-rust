@@ -5,10 +5,25 @@ pub struct AndroidAssetPacks {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPacks")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Android::AndroidAssetPacks =>
-    "UnityEngine.Android"."AndroidAssetPacks"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Android::AndroidAssetPacks {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Android";
+    const CLASS_NAME: &'static str = "AndroidAssetPacks";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPacks")]
 impl std::ops::Deref for crate::UnityEngine::Android::AndroidAssetPacks {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -77,11 +92,25 @@ pub struct AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
 #[cfg(
     feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback =>
-    "UnityEngine.Android"."AndroidAssetPacks/AssetPackManagerDownloadStatusCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Android";
+    const CLASS_NAME: &'static str = "AssetPackManagerDownloadStatusCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
 )]
@@ -204,12 +233,25 @@ pub struct AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback {
 #[cfg(
     feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerMobileDataConfirmationCallback"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback
-    => "UnityEngine.Android"
-    ."AndroidAssetPacks/AssetPackManagerMobileDataConfirmationCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Android";
+    const CLASS_NAME: &'static str = "AssetPackManagerMobileDataConfirmationCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerMobileDataConfirmationCallback"
 )]
@@ -323,11 +365,25 @@ pub struct AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
 #[cfg(
     feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback =>
-    "UnityEngine.Android"."AndroidAssetPacks/AssetPackManagerStatusQueryCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Android";
+    const CLASS_NAME: &'static str = "AssetPackManagerStatusQueryCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
 )]

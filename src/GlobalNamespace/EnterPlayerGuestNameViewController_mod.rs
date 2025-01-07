@@ -19,11 +19,25 @@ pub struct EnterPlayerGuestNameViewController {
     >,
 }
 #[cfg(feature = "EnterPlayerGuestNameViewController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::EnterPlayerGuestNameViewController => ""
-    ."EnterPlayerGuestNameViewController"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "EnterPlayerGuestNameViewController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "EnterPlayerGuestNameViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
     type Target = crate::HMUI::ViewController;
@@ -129,11 +143,25 @@ pub struct EnterPlayerGuestNameViewController_FinishDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate => ""
-    ."EnterPlayerGuestNameViewController/FinishDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "FinishDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {

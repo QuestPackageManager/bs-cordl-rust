@@ -5,10 +5,24 @@ pub struct WebUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+WebUtility")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::WebUtility => "System.Net"
-    ."WebUtility"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebUtility {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "WebUtility";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+WebUtility")]
 impl std::ops::Deref for crate::System::Net::WebUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -124,10 +138,24 @@ pub struct WebUtility_UrlDecoder {
     pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
 }
 #[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::WebUtility_UrlDecoder =>
-    "System.Net"."WebUtility/UrlDecoder"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebUtility_UrlDecoder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "UrlDecoder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
 impl std::ops::Deref for crate::System::Net::WebUtility_UrlDecoder {
     type Target = quest_hook::libil2cpp::Il2CppObject;

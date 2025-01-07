@@ -11,10 +11,25 @@ pub struct OnePassSignaturePacket {
     pub nested: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OnePassSignaturePacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Bcpg::OnePassSignaturePacket
-    => "Org.BouncyCastle.Bcpg"."OnePassSignaturePacket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Bcpg";
+    const CLASS_NAME: &'static str = "OnePassSignaturePacket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OnePassSignaturePacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
     type Target = crate::Org::BouncyCastle::Bcpg::ContainedPacket;

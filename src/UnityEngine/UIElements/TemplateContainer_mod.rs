@@ -14,10 +14,25 @@ pub struct TemplateContainer {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TemplateContainer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::TemplateContainer =>
-    "UnityEngine.UIElements"."TemplateContainer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::TemplateContainer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "TemplateContainer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+TemplateContainer")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TemplateContainer {
     type Target = crate::UnityEngine::UIElements::BindableElement;
@@ -156,11 +171,25 @@ pub struct TemplateContainer_UxmlFactory {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TemplateContainer+UxmlFactory")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::TemplateContainer_UxmlFactory => "UnityEngine.UIElements"
-    ."TemplateContainer/UxmlFactory"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::TemplateContainer_UxmlFactory {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UxmlFactory";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+TemplateContainer+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TemplateContainer_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
@@ -246,11 +275,25 @@ pub struct TemplateContainer_UxmlTraits {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TemplateContainer+UxmlTraits")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::TemplateContainer_UxmlTraits => "UnityEngine.UIElements"
-    ."TemplateContainer/UxmlTraits"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::TemplateContainer_UxmlTraits {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UxmlTraits";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+TemplateContainer+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TemplateContainer_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;

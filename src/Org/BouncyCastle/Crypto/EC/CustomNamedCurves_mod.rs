@@ -5,10 +5,25 @@ pub struct CustomNamedCurves {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves
-    => "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "CustomNamedCurves";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -245,11 +260,25 @@ pub struct CustomNamedCurves_Curve25519Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/Curve25519Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "Curve25519Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
@@ -315,11 +344,25 @@ pub struct CustomNamedCurves_SM2P256V1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SM2P256V1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SM2P256V1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
@@ -385,11 +428,25 @@ pub struct CustomNamedCurves_SecP128R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecP128R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecP128R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
@@ -455,11 +512,25 @@ pub struct CustomNamedCurves_SecP160K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecP160K1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecP160K1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
@@ -525,11 +596,25 @@ pub struct CustomNamedCurves_SecP160R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecP160R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecP160R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
@@ -595,11 +680,25 @@ pub struct CustomNamedCurves_SecP160R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecP160R2Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecP160R2Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
@@ -665,11 +764,25 @@ pub struct CustomNamedCurves_SecP192K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecP192K1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecP192K1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
@@ -735,11 +848,25 @@ pub struct CustomNamedCurves_SecP192R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecP192R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecP192R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
@@ -805,11 +932,25 @@ pub struct CustomNamedCurves_SecP224K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecP224K1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecP224K1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
@@ -875,11 +1016,25 @@ pub struct CustomNamedCurves_SecP224R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecP224R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecP224R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
@@ -945,11 +1100,25 @@ pub struct CustomNamedCurves_SecP256K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecP256K1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecP256K1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
@@ -1015,11 +1184,25 @@ pub struct CustomNamedCurves_SecP256R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecP256R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecP256R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
@@ -1085,11 +1268,25 @@ pub struct CustomNamedCurves_SecP384R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecP384R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecP384R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
@@ -1155,11 +1352,25 @@ pub struct CustomNamedCurves_SecP521R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecP521R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecP521R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
@@ -1225,11 +1436,25 @@ pub struct CustomNamedCurves_SecT113R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT113R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT113R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
@@ -1295,11 +1520,25 @@ pub struct CustomNamedCurves_SecT113R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT113R2Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT113R2Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
@@ -1365,11 +1604,25 @@ pub struct CustomNamedCurves_SecT131R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT131R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT131R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
@@ -1435,11 +1688,25 @@ pub struct CustomNamedCurves_SecT131R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT131R2Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT131R2Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
@@ -1505,11 +1772,25 @@ pub struct CustomNamedCurves_SecT163K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT163K1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT163K1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
@@ -1575,11 +1856,25 @@ pub struct CustomNamedCurves_SecT163R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT163R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT163R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
@@ -1645,11 +1940,25 @@ pub struct CustomNamedCurves_SecT163R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT163R2Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT163R2Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
@@ -1715,11 +2024,25 @@ pub struct CustomNamedCurves_SecT193R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT193R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT193R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
@@ -1785,11 +2108,25 @@ pub struct CustomNamedCurves_SecT193R2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT193R2Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT193R2Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
@@ -1855,11 +2192,25 @@ pub struct CustomNamedCurves_SecT233K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT233K1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT233K1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
@@ -1925,11 +2276,25 @@ pub struct CustomNamedCurves_SecT233R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT233R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT233R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
@@ -1995,11 +2360,25 @@ pub struct CustomNamedCurves_SecT239K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT239K1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT239K1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
@@ -2065,11 +2444,25 @@ pub struct CustomNamedCurves_SecT283K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT283K1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT283K1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
@@ -2135,11 +2528,25 @@ pub struct CustomNamedCurves_SecT283R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT283R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT283R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
@@ -2205,11 +2612,25 @@ pub struct CustomNamedCurves_SecT409K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT409K1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT409K1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
@@ -2275,11 +2696,25 @@ pub struct CustomNamedCurves_SecT409R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT409R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT409R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
@@ -2345,11 +2780,25 @@ pub struct CustomNamedCurves_SecT571K1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT571K1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT571K1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
@@ -2415,11 +2864,25 @@ pub struct CustomNamedCurves_SecT571R1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder =>
-    "Org.BouncyCastle.Crypto.EC"."CustomNamedCurves/SecT571R1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.EC";
+    const CLASS_NAME: &'static str = "SecT571R1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {

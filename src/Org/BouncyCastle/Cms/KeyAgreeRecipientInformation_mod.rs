@@ -11,11 +11,25 @@ pub struct KeyAgreeRecipientInformation {
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+KeyAgreeRecipientInformation")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation => "Org.BouncyCastle.Cms"
-    ."KeyAgreeRecipientInformation"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Cms";
+    const CLASS_NAME: &'static str = "KeyAgreeRecipientInformation";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Cms+KeyAgreeRecipientInformation")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
     type Target = crate::Org::BouncyCastle::Cms::RecipientInformation;

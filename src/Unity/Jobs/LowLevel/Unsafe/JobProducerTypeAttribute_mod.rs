@@ -6,11 +6,25 @@ pub struct JobProducerTypeAttribute {
     pub _ProducerType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobProducerTypeAttribute")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Jobs::LowLevel::Unsafe::JobProducerTypeAttribute =>
-    "Unity.Jobs.LowLevel.Unsafe"."JobProducerTypeAttribute"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Jobs::LowLevel::Unsafe::JobProducerTypeAttribute {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Jobs.LowLevel.Unsafe";
+    const CLASS_NAME: &'static str = "JobProducerTypeAttribute";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobProducerTypeAttribute")]
 impl std::ops::Deref for crate::Unity::Jobs::LowLevel::Unsafe::JobProducerTypeAttribute {
     type Target = crate::System::Attribute;

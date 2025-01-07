@@ -16,10 +16,25 @@ pub struct DeflateStreamNative {
     pub last_error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
 }
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::IO::Compression::DeflateStreamNative =>
-    "System.IO.Compression"."DeflateStreamNative"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::IO::Compression::DeflateStreamNative {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO.Compression";
+    const CLASS_NAME: &'static str = "DeflateStreamNative";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStreamNative {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -250,11 +265,25 @@ pub struct DeflateStreamNative_SafeDeflateStreamHandle {
     __cordl_parent: crate::System::Runtime::InteropServices::SafeHandle,
 }
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative+SafeDeflateStreamHandle")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle =>
-    "System.IO.Compression"."DeflateStreamNative/SafeDeflateStreamHandle"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO.Compression";
+    const CLASS_NAME: &'static str = "SafeDeflateStreamHandle";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative+SafeDeflateStreamHandle")]
 impl std::ops::Deref
 for crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle {
@@ -321,11 +350,25 @@ pub struct DeflateStreamNative_UnmanagedReadOrWrite {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative+UnmanagedReadOrWrite")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite =>
-    "System.IO.Compression"."DeflateStreamNative/UnmanagedReadOrWrite"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO.Compression";
+    const CLASS_NAME: &'static str = "UnmanagedReadOrWrite";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative+UnmanagedReadOrWrite")]
 impl std::ops::Deref
 for crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {

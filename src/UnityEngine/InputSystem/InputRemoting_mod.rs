@@ -10,11 +10,85 @@ pub struct ChangeUsageMsg_InputRemoting_Data {
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data =>
-    "UnityEngine.InputSystem"."InputRemoting/ChangeUsageMsg/Data"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "Data";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
@@ -51,10 +125,25 @@ pub struct InputRemoting {
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::InputRemoting =>
-    "UnityEngine.InputSystem"."InputRemoting"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "InputRemoting";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -485,11 +574,25 @@ pub struct InputRemoting_ChangeUsageMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg => "UnityEngine.InputSystem"
-    ."InputRemoting/ChangeUsageMsg"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "ChangeUsageMsg";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -545,11 +648,25 @@ pub struct InputRemoting_ConnectMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_ConnectMsg => "UnityEngine.InputSystem"
-    ."InputRemoting/ConnectMsg"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "ConnectMsg";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -592,11 +709,25 @@ pub struct InputRemoting_DisconnectMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_DisconnectMsg => "UnityEngine.InputSystem"
-    ."InputRemoting/DisconnectMsg"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "DisconnectMsg";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -643,10 +774,85 @@ pub enum InputRemoting_Flags {
     StartSendingOnConnect = 2i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Flags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::InputRemoting_Flags =>
-    "UnityEngine.InputSystem"."InputRemoting/Flags"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_Flags {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "Flags";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::InputSystem::InputRemoting_Flags {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::InputSystem::InputRemoting_Flags {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::InputSystem::InputRemoting_Flags {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::InputSystem::InputRemoting_Flags {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -656,10 +862,85 @@ pub struct InputRemoting_Message {
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::InputRemoting_Message
-    => "UnityEngine.InputSystem"."InputRemoting/Message"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_Message {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "Message";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::InputSystem::InputRemoting_Message {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::InputSystem::InputRemoting_Message {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::InputSystem::InputRemoting_Message {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::InputSystem::InputRemoting_Message {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputRemoting_Message {
@@ -690,11 +971,85 @@ pub enum InputRemoting_MessageType {
     StopSending = 9i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+MessageType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_MessageType => "UnityEngine.InputSystem"
-    ."InputRemoting/MessageType"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "MessageType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 #[repr(C)]
 #[derive(Debug)]
@@ -702,11 +1057,25 @@ pub struct InputRemoting_NewDeviceMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg => "UnityEngine.InputSystem"
-    ."InputRemoting/NewDeviceMsg"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "NewDeviceMsg";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -761,11 +1130,25 @@ pub struct InputRemoting_NewEventsMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_NewEventsMsg => "UnityEngine.InputSystem"
-    ."InputRemoting/NewEventsMsg"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "NewEventsMsg";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -838,11 +1221,25 @@ pub struct InputRemoting_NewLayoutMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg => "UnityEngine.InputSystem"
-    ."InputRemoting/NewLayoutMsg"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "NewLayoutMsg";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -904,11 +1301,85 @@ pub struct InputRemoting_RemoteInputDevice {
     pub description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice =>
-    "UnityEngine.InputSystem"."InputRemoting/RemoteInputDevice"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "RemoteInputDevice";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
@@ -939,11 +1410,85 @@ pub struct InputRemoting_RemoteSender {
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_RemoteSender => "UnityEngine.InputSystem"
-    ."InputRemoting/RemoteSender"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "RemoteSender";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
@@ -964,11 +1509,25 @@ pub struct InputRemoting_RemoveDeviceMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg =>
-    "UnityEngine.InputSystem"."InputRemoting/RemoveDeviceMsg"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "RemoveDeviceMsg";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1022,11 +1581,25 @@ pub struct InputRemoting_StartSendingMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_StartSendingMsg =>
-    "UnityEngine.InputSystem"."InputRemoting/StartSendingMsg"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "StartSendingMsg";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1070,11 +1643,25 @@ pub struct InputRemoting_StopSendingMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_StopSendingMsg => "UnityEngine.InputSystem"
-    ."InputRemoting/StopSendingMsg"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "StopSendingMsg";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1124,11 +1711,25 @@ pub struct InputRemoting_Subscriber {
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputRemoting_Subscriber => "UnityEngine.InputSystem"
-    ."InputRemoting/Subscriber"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "Subscriber";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1211,11 +1812,85 @@ pub struct NewDeviceMsg_InputRemoting_Data {
     pub description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data =>
-    "UnityEngine.InputSystem"."InputRemoting/NewDeviceMsg/Data"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "Data";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
@@ -1238,11 +1913,85 @@ pub struct NewLayoutMsg_InputRemoting_Data {
     pub isOverride: bool,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data =>
-    "UnityEngine.InputSystem"."InputRemoting/NewLayoutMsg/Data"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "Data";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {

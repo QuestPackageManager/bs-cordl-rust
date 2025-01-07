@@ -5,10 +5,25 @@ pub struct SceneManagerAPI {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+SceneManagement+SceneManagerAPI")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::SceneManagement::SceneManagerAPI =>
-    "UnityEngine.SceneManagement"."SceneManagerAPI"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::SceneManagement::SceneManagerAPI {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.SceneManagement";
+    const CLASS_NAME: &'static str = "SceneManagerAPI";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+SceneManagement+SceneManagerAPI")]
 impl std::ops::Deref for crate::UnityEngine::SceneManagement::SceneManagerAPI {
     type Target = quest_hook::libil2cpp::Il2CppObject;

@@ -9,11 +9,25 @@ pub struct XmlSerializationReaderInterpreter {
     pub _format: crate::System::Xml::Serialization::SerializationFormat,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Serialization::XmlSerializationReaderInterpreter =>
-    "System.Xml.Serialization"."XmlSerializationReaderInterpreter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Serialization";
+    const CLASS_NAME: &'static str = "XmlSerializationReaderInterpreter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
@@ -643,11 +657,25 @@ pub struct XmlSerializationReaderInterpreter_FixupCallbackInfo {
 #[cfg(
     feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCallbackInfo =>
-    "System.Xml.Serialization"."XmlSerializationReaderInterpreter/FixupCallbackInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCallbackInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Serialization";
+    const CLASS_NAME: &'static str = "FixupCallbackInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
 )]
@@ -740,11 +768,25 @@ pub struct XmlSerializationReaderInterpreter_ReaderCallbackInfo {
 #[cfg(
     feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderCallbackInfo =>
-    "System.Xml.Serialization"."XmlSerializationReaderInterpreter/ReaderCallbackInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderCallbackInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Serialization";
+    const CLASS_NAME: &'static str = "ReaderCallbackInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
 )]

@@ -5,10 +5,25 @@ pub struct Expression {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Linq::Expressions::Expression =>
-    "System.Linq.Expressions"."Expression"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "Expression";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Expression {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3243,11 +3258,25 @@ pub struct Expression_BinaryExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_BinaryExpressionProxy =>
-    "System.Linq.Expressions"."Expression/BinaryExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "BinaryExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
@@ -3282,11 +3311,25 @@ pub struct Expression_BlockExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+BlockExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_BlockExpressionProxy =>
-    "System.Linq.Expressions"."Expression/BlockExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "BlockExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+BlockExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
@@ -3321,11 +3364,25 @@ pub struct Expression_CatchBlockProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+CatchBlockProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_CatchBlockProxy => "System.Linq.Expressions"
-    ."Expression/CatchBlockProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_CatchBlockProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "CatchBlockProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+CatchBlockProxy")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Expression_CatchBlockProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3359,11 +3416,25 @@ pub struct Expression_ConditionalExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_ConditionalExpressionProxy =>
-    "System.Linq.Expressions"."Expression/ConditionalExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "ConditionalExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
@@ -3398,11 +3469,25 @@ pub struct Expression_ConstantExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ConstantExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_ConstantExpressionProxy =>
-    "System.Linq.Expressions"."Expression/ConstantExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "ConstantExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+ConstantExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
@@ -3437,11 +3522,25 @@ pub struct Expression_DebugInfoExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_DebugInfoExpressionProxy =>
-    "System.Linq.Expressions"."Expression/DebugInfoExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "DebugInfoExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
@@ -3476,11 +3575,25 @@ pub struct Expression_DefaultExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_DefaultExpressionProxy =>
-    "System.Linq.Expressions"."Expression/DefaultExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "DefaultExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
@@ -3517,11 +3630,25 @@ pub struct Expression_ExtensionInfo {
     pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ExtensionInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_ExtensionInfo => "System.Linq.Expressions"
-    ."Expression/ExtensionInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_ExtensionInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "ExtensionInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+ExtensionInfo")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Expression_ExtensionInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3554,11 +3681,25 @@ pub struct Expression_GotoExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+GotoExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_GotoExpressionProxy =>
-    "System.Linq.Expressions"."Expression/GotoExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "GotoExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+GotoExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
@@ -3593,11 +3734,25 @@ pub struct Expression_IndexExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+IndexExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_IndexExpressionProxy =>
-    "System.Linq.Expressions"."Expression/IndexExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "IndexExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+IndexExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
@@ -3632,11 +3787,25 @@ pub struct Expression_InvocationExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+InvocationExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_InvocationExpressionProxy =>
-    "System.Linq.Expressions"."Expression/InvocationExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "InvocationExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+InvocationExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
@@ -3671,11 +3840,25 @@ pub struct Expression_LabelExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+LabelExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_LabelExpressionProxy =>
-    "System.Linq.Expressions"."Expression/LabelExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "LabelExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+LabelExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
@@ -3710,11 +3893,25 @@ pub struct Expression_LambdaExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+LambdaExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_LambdaExpressionProxy =>
-    "System.Linq.Expressions"."Expression/LambdaExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "LambdaExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+LambdaExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
@@ -3749,11 +3946,25 @@ pub struct Expression_ListInitExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ListInitExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_ListInitExpressionProxy =>
-    "System.Linq.Expressions"."Expression/ListInitExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "ListInitExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+ListInitExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
@@ -3788,11 +3999,25 @@ pub struct Expression_LoopExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+LoopExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_LoopExpressionProxy =>
-    "System.Linq.Expressions"."Expression/LoopExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "LoopExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+LoopExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
@@ -3827,11 +4052,25 @@ pub struct Expression_MemberExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+MemberExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_MemberExpressionProxy =>
-    "System.Linq.Expressions"."Expression/MemberExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "MemberExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+MemberExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
@@ -3866,11 +4105,25 @@ pub struct Expression_MemberInitExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_MemberInitExpressionProxy =>
-    "System.Linq.Expressions"."Expression/MemberInitExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "MemberInitExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
@@ -3905,11 +4158,25 @@ pub struct Expression_MethodCallExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_MethodCallExpressionProxy =>
-    "System.Linq.Expressions"."Expression/MethodCallExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "MethodCallExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
@@ -3944,11 +4211,25 @@ pub struct Expression_NewArrayExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_NewArrayExpressionProxy =>
-    "System.Linq.Expressions"."Expression/NewArrayExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "NewArrayExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
@@ -3983,11 +4264,25 @@ pub struct Expression_NewExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+NewExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_NewExpressionProxy =>
-    "System.Linq.Expressions"."Expression/NewExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "NewExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+NewExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
@@ -4022,11 +4317,25 @@ pub struct Expression_ParameterExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ParameterExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_ParameterExpressionProxy =>
-    "System.Linq.Expressions"."Expression/ParameterExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "ParameterExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+ParameterExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
@@ -4061,11 +4370,25 @@ pub struct Expression_RuntimeVariablesExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy =>
-    "System.Linq.Expressions"."Expression/RuntimeVariablesExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "RuntimeVariablesExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy {
@@ -4100,11 +4423,25 @@ pub struct Expression_SwitchCaseProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+SwitchCaseProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_SwitchCaseProxy => "System.Linq.Expressions"
-    ."Expression/SwitchCaseProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_SwitchCaseProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "SwitchCaseProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+SwitchCaseProxy")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Expression_SwitchCaseProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -4138,11 +4475,25 @@ pub struct Expression_SwitchExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+SwitchExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_SwitchExpressionProxy =>
-    "System.Linq.Expressions"."Expression/SwitchExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "SwitchExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+SwitchExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
@@ -4177,11 +4528,25 @@ pub struct Expression_TryExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+TryExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_TryExpressionProxy =>
-    "System.Linq.Expressions"."Expression/TryExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "TryExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+TryExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
@@ -4216,11 +4581,25 @@ pub struct Expression_TypeBinaryExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy =>
-    "System.Linq.Expressions"."Expression/TypeBinaryExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "TypeBinaryExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
@@ -4255,11 +4634,25 @@ pub struct Expression_UnaryExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+UnaryExpressionProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Expression_UnaryExpressionProxy =>
-    "System.Linq.Expressions"."Expression/UnaryExpressionProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression_UnaryExpressionProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "UnaryExpressionProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+UnaryExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_UnaryExpressionProxy {

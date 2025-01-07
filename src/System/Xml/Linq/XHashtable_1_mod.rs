@@ -8,11 +8,98 @@ pub struct XHashtableState_XHashtable_1_Entry<TValue: quest_hook::libil2cpp::Typ
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+XHashtableState+Entry")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Linq::XHashtableState_XHashtable_1_Entry < TValue > =>
-    "System.Xml.Linq"."XHashtable`1/XHashtableState/Entry<TValue>" < TValue >
-);
+unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Xml::Linq::XHashtableState_XHashtable_1_Entry<TValue> {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.Xml.Linq";
+    const CLASS_NAME: &'static str = "Entry";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System.Xml.Linq", "Entry")
+                    .unwrap()
+                    .make_generic::<(TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
+for crate::System::Xml::Linq::XHashtableState_XHashtable_1_Entry<TValue> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
+for crate::System::Xml::Linq::XHashtableState_XHashtable_1_Entry<TValue> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
+for crate::System::Xml::Linq::XHashtableState_XHashtable_1_Entry<TValue> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
+for crate::System::Xml::Linq::XHashtableState_XHashtable_1_Entry<TValue> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+XHashtableState+Entry")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Xml::Linq::XHashtableState_XHashtable_1_Entry<TValue> {
@@ -39,10 +126,41 @@ pub struct XHashtable_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Xml+Linq+XHashtable_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Linq::XHashtable_1 < TValue > =>
-    "System.Xml.Linq"."XHashtable`1" < TValue >
-);
+unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Xml::Linq::XHashtable_1<TValue> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Linq";
+    const CLASS_NAME: &'static str = "XHashtable`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Xml.Linq",
+                        "XHashtable`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Linq+XHashtable_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Xml::Linq::XHashtable_1<TValue> {
@@ -152,11 +270,41 @@ pub struct XHashtable_1_ExtractKeyDelegate<TValue: quest_hook::libil2cpp::Type> 
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+ExtractKeyDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate < TValue > => "System.Xml.Linq"
-    ."XHashtable`1/ExtractKeyDelegate" < TValue >
-);
+unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Linq";
+    const CLASS_NAME: &'static str = "ExtractKeyDelegate";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Xml.Linq",
+                        "ExtractKeyDelegate",
+                    )
+                    .unwrap()
+                    .make_generic::<(TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+ExtractKeyDelegate")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue> {
@@ -253,10 +401,41 @@ pub struct XHashtable_1_XHashtableState<TValue: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+XHashtableState")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Linq::XHashtable_1_XHashtableState
-    < TValue > => "System.Xml.Linq"."XHashtable`1/XHashtableState" < TValue >
-);
+unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Linq";
+    const CLASS_NAME: &'static str = "XHashtableState";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Xml.Linq",
+                        "XHashtableState",
+                    )
+                    .unwrap()
+                    .make_generic::<(TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+XHashtableState")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue> {

@@ -25,10 +25,24 @@ pub struct SortedList {
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+SortedList")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Collections::SortedList =>
-    "System.Collections"."SortedList"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::SortedList {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "SortedList";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+SortedList")]
 impl std::ops::Deref for crate::System::Collections::SortedList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -529,10 +543,25 @@ pub struct SortedList_KeyList {
     pub sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
 }
 #[cfg(feature = "System+Collections+SortedList+KeyList")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Collections::SortedList_KeyList =>
-    "System.Collections"."SortedList/KeyList"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::SortedList_KeyList {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "KeyList";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+SortedList+KeyList")]
 impl std::ops::Deref for crate::System::Collections::SortedList_KeyList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -794,11 +823,25 @@ pub struct SortedList_SortedListDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::SortedList_SortedListDebugView => "System.Collections"
-    ."SortedList/SortedListDebugView"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::SortedList_SortedListDebugView {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "SortedListDebugView";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
 impl std::ops::Deref for crate::System::Collections::SortedList_SortedListDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -840,11 +883,25 @@ pub struct SortedList_SortedListEnumerator {
     pub _getObjectRetType: i32,
 }
 #[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::SortedList_SortedListEnumerator => "System.Collections"
-    ."SortedList/SortedListEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::SortedList_SortedListEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "SortedListEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
 impl std::ops::Deref for crate::System::Collections::SortedList_SortedListEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1026,10 +1083,25 @@ pub struct SortedList_ValueList {
     pub sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
 }
 #[cfg(feature = "System+Collections+SortedList+ValueList")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Collections::SortedList_ValueList =>
-    "System.Collections"."SortedList/ValueList"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::SortedList_ValueList {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "ValueList";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+SortedList+ValueList")]
 impl std::ops::Deref for crate::System::Collections::SortedList_ValueList {
     type Target = quest_hook::libil2cpp::Il2CppObject;

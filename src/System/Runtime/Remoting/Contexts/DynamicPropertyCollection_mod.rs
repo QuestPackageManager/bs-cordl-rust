@@ -6,11 +6,25 @@ pub struct DynamicPropertyCollection {
     pub _properties: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Runtime::Remoting::Contexts::DynamicPropertyCollection =>
-    "System.Runtime.Remoting.Contexts"."DynamicPropertyCollection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.Remoting.Contexts";
+    const CLASS_NAME: &'static str = "DynamicPropertyCollection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
@@ -134,11 +148,25 @@ pub struct DynamicPropertyCollection_DynamicPropertyReg {
 #[cfg(
     feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Runtime::Remoting::Contexts::DynamicPropertyCollection_DynamicPropertyReg
-    => "System.Runtime.Remoting.Contexts"."DynamicPropertyCollection/DynamicPropertyReg"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection_DynamicPropertyReg {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.Remoting.Contexts";
+    const CLASS_NAME: &'static str = "DynamicPropertyReg";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
 )]

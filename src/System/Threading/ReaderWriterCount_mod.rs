@@ -10,10 +10,24 @@ pub struct ReaderWriterCount {
     pub next: quest_hook::libil2cpp::Gc<crate::System::Threading::ReaderWriterCount>,
 }
 #[cfg(feature = "System+Threading+ReaderWriterCount")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Threading::ReaderWriterCount =>
-    "System.Threading"."ReaderWriterCount"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::ReaderWriterCount {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading";
+    const CLASS_NAME: &'static str = "ReaderWriterCount";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+ReaderWriterCount")]
 impl std::ops::Deref for crate::System::Threading::ReaderWriterCount {
     type Target = quest_hook::libil2cpp::Il2CppObject;

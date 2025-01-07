@@ -35,9 +35,24 @@ pub struct GridView {
     >,
 }
 #[cfg(feature = "GridView")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GridView => ""."GridView"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GridView {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "GridView";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GridView")]
 impl std::ops::Deref for crate::GlobalNamespace::GridView {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -244,11 +259,25 @@ pub struct GridView_GridViewCellsEnumerator {
     pub _gridView: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GridView>,
 }
 #[cfg(feature = "GridView+GridViewCellsEnumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GridView_GridViewCellsEnumerator => ""
-    ."GridView/GridViewCellsEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "GridViewCellsEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GridView+GridViewCellsEnumerator")]
 impl std::ops::Deref for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -376,10 +405,25 @@ pub struct GridView_IDataSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "GridView+IDataSource")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GridView_IDataSource => ""
-    ."GridView/IDataSource"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GridView_IDataSource {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "IDataSource";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GridView+IDataSource")]
 impl std::ops::Deref for crate::GlobalNamespace::GridView_IDataSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;

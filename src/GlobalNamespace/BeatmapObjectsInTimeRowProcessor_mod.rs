@@ -40,11 +40,25 @@ pub struct BeatmapObjectsInTimeRowProcessor {
     pub _numberOfLines: i32,
 }
 #[cfg(feature = "BeatmapObjectsInTimeRowProcessor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BeatmapObjectsInTimeRowProcessor => ""
-    ."BeatmapObjectsInTimeRowProcessor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BeatmapObjectsInTimeRowProcessor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapObjectsInTimeRowProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -257,11 +271,25 @@ pub struct BeatmapObjectsInTimeRowProcessor_SliderTailData {
     pub slider: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
 }
 #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+SliderTailData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData => ""
-    ."BeatmapObjectsInTimeRowProcessor/SliderTailData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SliderTailData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+SliderTailData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
@@ -367,11 +395,38 @@ pub struct BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1 < T > => ""
-    ."BeatmapObjectsInTimeRowProcessor/TimeSliceContainer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TimeSliceContainer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("", "TimeSliceContainer`1")
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<T> {

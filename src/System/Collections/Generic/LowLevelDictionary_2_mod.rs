@@ -25,11 +25,44 @@ pub struct LowLevelDictionary_2<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Generic::LowLevelDictionary_2 < TKey, TValue > =>
-    "System.Collections.Generic"."LowLevelDictionary`2" < TKey, TValue >
-);
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Collections::Generic::LowLevelDictionary_2<TKey, TValue> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Generic";
+    const CLASS_NAME: &'static str = "LowLevelDictionary`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Collections.Generic",
+                        "LowLevelDictionary`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -288,12 +321,49 @@ pub struct LowLevelDictionary_2_DefaultComparer_1<
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1 < TKey,
-    TValue, T > => "System.Collections.Generic"."LowLevelDictionary`2/DefaultComparer`1"
-    < TKey, TValue, T >
-);
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+    T: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
+    TKey,
+    TValue,
+    T,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Generic";
+    const CLASS_NAME: &'static str = "DefaultComparer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Collections.Generic",
+                        "DefaultComparer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TKey, TValue, T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -464,11 +534,44 @@ pub struct LowLevelDictionary_2_Entry<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+Entry")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Generic::LowLevelDictionary_2_Entry < TKey, TValue > =>
-    "System.Collections.Generic"."LowLevelDictionary`2/Entry" < TKey, TValue >
-);
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Generic";
+    const CLASS_NAME: &'static str = "Entry";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Collections.Generic",
+                        "Entry",
+                    )
+                    .unwrap()
+                    .make_generic::<(TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+Entry")]
 impl<
     TKey: quest_hook::libil2cpp::Type,

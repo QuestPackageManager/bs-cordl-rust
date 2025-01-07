@@ -6,11 +6,25 @@ pub struct TextDataProvider {
     pub _IgnoreFailures_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider =>
-    "UnityEngine.ResourceManagement.ResourceProviders"."TextDataProvider"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.ResourceProviders";
+    const CLASS_NAME: &'static str = "TextDataProvider";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider {
@@ -128,11 +142,25 @@ pub struct TextDataProvider_InternalOp {
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider_InternalOp =>
-    "UnityEngine.ResourceManagement.ResourceProviders"."TextDataProvider/InternalOp"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider_InternalOp {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.ResourceProviders";
+    const CLASS_NAME: &'static str = "InternalOp";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
 )]

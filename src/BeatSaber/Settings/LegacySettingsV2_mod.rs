@@ -11,10 +11,25 @@ pub struct LegacySettingsV2 {
     >,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::BeatSaber::Settings::LegacySettingsV2 =>
-    "BeatSaber.Settings"."LegacySettingsV2"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "LegacySettingsV2";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -111,11 +126,25 @@ pub struct LegacySettingsV2_AudioSettings {
     pub audioLatency: f32,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_AudioSettings => "BeatSaber.Settings"
-    ."LegacySettingsV2/AudioSettings"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "AudioSettings";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -168,11 +197,85 @@ pub enum LegacySettingsV2_BloomPrepassTextureEffectPreset {
     HDWithoutToneMapping = 1i32,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset =>
-    "BeatSaber.Settings"."LegacySettingsV2/BloomPrepassTextureEffectPreset"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "BloomPrepassTextureEffectPreset";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
 #[repr(C)]
 #[derive(Debug)]
@@ -182,11 +285,25 @@ pub struct LegacySettingsV2_ControllerSettings {
     pub rotationOffset: crate::Unity::Mathematics::float3,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_ControllerSettings => "BeatSaber.Settings"
-    ."LegacySettingsV2/ControllerSettings"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "ControllerSettings";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
 impl std::ops::Deref
 for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
@@ -244,11 +361,25 @@ pub struct LegacySettingsV2_CustomServerSettings {
     >,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings => "BeatSaber.Settings"
-    ."LegacySettingsV2/CustomServerSettings"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "CustomServerSettings";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
 impl std::ops::Deref
 for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
@@ -304,11 +435,25 @@ pub struct LegacySettingsV2_DebugSettings {
     pub enableMemoryTracker: bool,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_DebugSettings => "BeatSaber.Settings"
-    ."LegacySettingsV2/DebugSettings"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "DebugSettings";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -364,11 +509,85 @@ pub enum LegacySettingsV2_FoveatedRenderingLevel {
     Off = 0i32,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel =>
-    "BeatSaber.Settings"."LegacySettingsV2/FoveatedRenderingLevel"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "FoveatedRenderingLevel";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
 #[repr(C)]
 #[derive(Debug)]
@@ -384,11 +603,25 @@ pub struct LegacySettingsV2_GraphicSettings {
     pub windowResolution: crate::Unity::Mathematics::int2,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_GraphicSettings => "BeatSaber.Settings"
-    ."LegacySettingsV2/GraphicSettings"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "GraphicSettings";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -443,11 +676,85 @@ pub enum LegacySettingsV2_MainEffectPreset {
     PyramidForBaking = 2i32,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset => "BeatSaber.Settings"
-    ."LegacySettingsV2/MainEffectPreset"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "MainEffectPreset";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainSettings")]
 #[repr(C)]
 #[derive(Debug)]
@@ -476,11 +783,25 @@ pub struct LegacySettingsV2_MainSettings {
     pub createScreenshotDuringTheGame: bool,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainSettings")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_MainSettings => "BeatSaber.Settings"
-    ."LegacySettingsV2/MainSettings"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "MainSettings";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -535,11 +856,85 @@ pub enum LegacySettingsV2_MirrorQualityPreset {
     RenderedLQ = 2i32,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset => "BeatSaber.Settings"
-    ."LegacySettingsV2/MirrorQualityPreset"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "MirrorQualityPreset";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -551,11 +946,85 @@ pub enum LegacySettingsV2_ObstaclesQuality {
     TexturedObstacle = 1i32,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality => "BeatSaber.Settings"
-    ."LegacySettingsV2/ObstaclesQuality"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "ObstaclesQuality";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
 #[repr(C)]
 #[derive(Debug)]
@@ -583,11 +1052,25 @@ pub struct LegacySettingsV2_PerformancePreset {
     pub obstaclesQuality: crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_PerformancePreset => "BeatSaber.Settings"
-    ."LegacySettingsV2/PerformancePreset"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "PerformancePreset";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -644,11 +1127,85 @@ pub enum LegacySettingsV2_ProcessorPerformanceLevel {
     Unknown = -1i32,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel =>
-    "BeatSaber.Settings"."LegacySettingsV2/ProcessorPerformanceLevel"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "ProcessorPerformanceLevel";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
 #[repr(C)]
 #[derive(Debug)]
@@ -663,11 +1220,25 @@ pub struct LegacySettingsV2_SmoothCameraSettings {
     pub thirdPersonEulerAngles: crate::Unity::Mathematics::float3,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings => "BeatSaber.Settings"
-    ."LegacySettingsV2/SmoothCameraSettings"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "SmoothCameraSettings";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
 impl std::ops::Deref
 for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
@@ -722,7 +1293,82 @@ pub enum LegacySettingsV2_WindowMode {
     Windowed = 0i32,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+WindowMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::BeatSaber::Settings::LegacySettingsV2_WindowMode
-    => "BeatSaber.Settings"."LegacySettingsV2/WindowMode"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "BeatSaber.Settings";
+    const CLASS_NAME: &'static str = "WindowMode";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}

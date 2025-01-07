@@ -23,10 +23,25 @@ pub struct ReflectionMethodsCache {
     >,
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::ReflectionMethodsCache =>
-    "UnityEngine.UI"."ReflectionMethodsCache"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::ReflectionMethodsCache {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "ReflectionMethodsCache";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache")]
 impl std::ops::Deref for crate::UnityEngine::UI::ReflectionMethodsCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -101,11 +116,25 @@ pub struct ReflectionMethodsCache_GetRayIntersectionAllCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback =>
-    "UnityEngine.UI"."ReflectionMethodsCache/GetRayIntersectionAllCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "GetRayIntersectionAllCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback {
@@ -218,11 +247,25 @@ pub struct ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback {
 #[cfg(
     feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback =>
-    "UnityEngine.UI"."ReflectionMethodsCache/GetRayIntersectionAllNonAllocCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "GetRayIntersectionAllNonAllocCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
 )]
@@ -333,11 +376,25 @@ pub struct ReflectionMethodsCache_GetRaycastNonAllocCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback =>
-    "UnityEngine.UI"."ReflectionMethodsCache/GetRaycastNonAllocCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "GetRaycastNonAllocCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
@@ -440,11 +497,25 @@ pub struct ReflectionMethodsCache_Raycast2DCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback => "UnityEngine.UI"
-    ."ReflectionMethodsCache/Raycast2DCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "Raycast2DCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
@@ -545,11 +616,25 @@ pub struct ReflectionMethodsCache_Raycast3DCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback => "UnityEngine.UI"
-    ."ReflectionMethodsCache/Raycast3DCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "Raycast3DCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
@@ -649,11 +734,25 @@ pub struct ReflectionMethodsCache_RaycastAllCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback => "UnityEngine.UI"
-    ."ReflectionMethodsCache/RaycastAllCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "RaycastAllCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {

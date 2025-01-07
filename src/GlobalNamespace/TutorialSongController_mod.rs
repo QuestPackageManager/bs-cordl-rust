@@ -8,11 +8,85 @@ pub enum SequenceCutInfo_TutorialSongController_NoteType {
     Normal = 0i32,
 }
 #[cfg(feature = "TutorialSongController+SequenceCutInfo+NoteType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SequenceCutInfo_TutorialSongController_NoteType => ""
-    ."TutorialSongController/SequenceCutInfo/NoteType"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SequenceCutInfo_TutorialSongController_NoteType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "NoteType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::SequenceCutInfo_TutorialSongController_NoteType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::SequenceCutInfo_TutorialSongController_NoteType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::SequenceCutInfo_TutorialSongController_NoteType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::SequenceCutInfo_TutorialSongController_NoteType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "TutorialSongController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -91,10 +165,25 @@ pub struct TutorialSongController {
     >,
 }
 #[cfg(feature = "TutorialSongController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::TutorialSongController => ""
-    ."TutorialSongController"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TutorialSongController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TutorialSongController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TutorialSongController")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialSongController {
     type Target = crate::GlobalNamespace::SongController;
@@ -431,10 +520,25 @@ pub struct TutorialSongController_InitData {
     pub beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
 }
 #[cfg(feature = "TutorialSongController+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::TutorialSongController_InitData
-    => ""."TutorialSongController/InitData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TutorialSongController_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TutorialSongController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialSongController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -498,11 +602,25 @@ pub struct TutorialSongController_SequenceCutInfo {
     pub missedObjects: i32,
 }
 #[cfg(feature = "TutorialSongController+SequenceCutInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TutorialSongController_SequenceCutInfo => ""
-    ."TutorialSongController/SequenceCutInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SequenceCutInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TutorialSongController+SequenceCutInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -609,11 +727,25 @@ pub struct TutorialSongController_TutorialArcSpawnData {
     >,
 }
 #[cfg(feature = "TutorialSongController+TutorialArcSpawnData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TutorialSongController_TutorialArcSpawnData => ""
-    ."TutorialSongController/TutorialArcSpawnData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TutorialSongController_TutorialArcSpawnData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TutorialArcSpawnData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TutorialSongController+TutorialArcSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialArcSpawnData {
@@ -683,11 +815,25 @@ pub struct TutorialSongController_TutorialBasicNoteSpawnData {
     pub colorType: crate::GlobalNamespace::ColorType,
 }
 #[cfg(feature = "TutorialSongController+TutorialBasicNoteSpawnData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData => ""
-    ."TutorialSongController/TutorialBasicNoteSpawnData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TutorialBasicNoteSpawnData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TutorialSongController+TutorialBasicNoteSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
@@ -777,11 +923,25 @@ pub struct TutorialSongController_TutorialBombNoteSpawnData {
     __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData,
 }
 #[cfg(feature = "TutorialSongController+TutorialBombNoteSpawnData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData => ""
-    ."TutorialSongController/TutorialBombNoteSpawnData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TutorialBombNoteSpawnData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TutorialSongController+TutorialBombNoteSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
@@ -859,11 +1019,25 @@ pub struct TutorialSongController_TutorialChainSpawnData {
     pub tailTimeOffset: f32,
 }
 #[cfg(feature = "TutorialSongController+TutorialChainSpawnData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TutorialSongController_TutorialChainSpawnData => ""
-    ."TutorialSongController/TutorialChainSpawnData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TutorialChainSpawnData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TutorialSongController+TutorialChainSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData {
@@ -981,11 +1155,25 @@ pub struct TutorialSongController_TutorialJumpingNoteSpawnData {
     pub noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
 }
 #[cfg(feature = "TutorialSongController+TutorialJumpingNoteSpawnData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData => ""
-    ."TutorialSongController/TutorialJumpingNoteSpawnData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TutorialJumpingNoteSpawnData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TutorialSongController+TutorialJumpingNoteSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData {
@@ -1059,11 +1247,25 @@ pub struct TutorialSongController_TutorialObjectSpawnData {
     pub lineIndex: i32,
 }
 #[cfg(feature = "TutorialSongController+TutorialObjectSpawnData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData => ""
-    ."TutorialSongController/TutorialObjectSpawnData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TutorialObjectSpawnData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TutorialSongController+TutorialObjectSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
@@ -1128,11 +1330,25 @@ pub struct TutorialSongController_TutorialObstacleSpawnData {
     pub height: i32,
 }
 #[cfg(feature = "TutorialSongController+TutorialObstacleSpawnData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData => ""
-    ."TutorialSongController/TutorialObstacleSpawnData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TutorialObstacleSpawnData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TutorialSongController+TutorialObstacleSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {

@@ -21,10 +21,24 @@ pub struct SmallXmlParser {
     pub resetColumn: bool,
 }
 #[cfg(feature = "Mono+Xml+SmallXmlParser")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Xml::SmallXmlParser => "Mono.Xml"
-    ."SmallXmlParser"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Xml::SmallXmlParser {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Xml";
+    const CLASS_NAME: &'static str = "SmallXmlParser";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Xml+SmallXmlParser")]
 impl std::ops::Deref for crate::Mono::Xml::SmallXmlParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -319,10 +333,25 @@ pub struct SmallXmlParser_AttrListImpl {
     >,
 }
 #[cfg(feature = "Mono+Xml+SmallXmlParser+AttrListImpl")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Xml::SmallXmlParser_AttrListImpl =>
-    "Mono.Xml"."SmallXmlParser/AttrListImpl"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Xml::SmallXmlParser_AttrListImpl {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Xml";
+    const CLASS_NAME: &'static str = "AttrListImpl";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Xml+SmallXmlParser+AttrListImpl")]
 impl std::ops::Deref for crate::Mono::Xml::SmallXmlParser_AttrListImpl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -496,10 +525,24 @@ pub struct SmallXmlParser_IAttrList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Mono+Xml+SmallXmlParser+IAttrList")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Xml::SmallXmlParser_IAttrList =>
-    "Mono.Xml"."SmallXmlParser/IAttrList"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Xml::SmallXmlParser_IAttrList {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Xml";
+    const CLASS_NAME: &'static str = "IAttrList";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Xml+SmallXmlParser+IAttrList")]
 impl std::ops::Deref for crate::Mono::Xml::SmallXmlParser_IAttrList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -624,10 +667,25 @@ pub struct SmallXmlParser_IContentHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Mono+Xml+SmallXmlParser+IContentHandler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Xml::SmallXmlParser_IContentHandler =>
-    "Mono.Xml"."SmallXmlParser/IContentHandler"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Xml::SmallXmlParser_IContentHandler {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Xml";
+    const CLASS_NAME: &'static str = "IContentHandler";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Xml+SmallXmlParser+IContentHandler")]
 impl std::ops::Deref for crate::Mono::Xml::SmallXmlParser_IContentHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;

@@ -15,10 +15,24 @@ pub struct Scroller {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Scroller")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::Scroller =>
-    "UnityEngine.UIElements"."Scroller"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Scroller {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "Scroller";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Scroller")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller {
     type Target = crate::UnityEngine::UIElements::VisualElement;
@@ -325,10 +339,25 @@ pub struct Scroller_ScrollerSlider {
     __cordl_parent: crate::UnityEngine::UIElements::Slider,
 }
 #[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::Scroller_ScrollerSlider
-    => "UnityEngine.UIElements"."Scroller/ScrollerSlider"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "ScrollerSlider";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
     type Target = crate::UnityEngine::UIElements::Slider;
@@ -404,10 +433,25 @@ pub struct Scroller_UxmlFactory {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlFactory")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::Scroller_UxmlFactory =>
-    "UnityEngine.UIElements"."Scroller/UxmlFactory"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UxmlFactory";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
@@ -475,10 +519,25 @@ pub struct Scroller_UxmlTraits {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlTraits")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::Scroller_UxmlTraits =>
-    "UnityEngine.UIElements"."Scroller/UxmlTraits"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::Scroller_UxmlTraits {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UxmlTraits";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;

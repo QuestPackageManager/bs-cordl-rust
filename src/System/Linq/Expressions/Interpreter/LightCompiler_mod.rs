@@ -40,11 +40,25 @@ pub struct LightCompiler {
     pub _guard: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::StackGuard>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Interpreter::LightCompiler =>
-    "System.Linq.Expressions.Interpreter"."LightCompiler"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Interpreter::LightCompiler {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions.Interpreter";
+    const CLASS_NAME: &'static str = "LightCompiler";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::LightCompiler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1285,11 +1299,25 @@ pub struct LightCompiler_QuoteVisitor {
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor =>
-    "System.Linq.Expressions.Interpreter"."LightCompiler/QuoteVisitor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions.Interpreter";
+    const CLASS_NAME: &'static str = "QuoteVisitor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {

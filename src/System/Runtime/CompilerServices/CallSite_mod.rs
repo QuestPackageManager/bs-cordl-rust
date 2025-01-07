@@ -9,10 +9,25 @@ pub struct CallSite {
     pub _match: bool,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+CallSite")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Runtime::CompilerServices::CallSite =>
-    "System.Runtime.CompilerServices"."CallSite"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Runtime::CompilerServices::CallSite {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
+    const CLASS_NAME: &'static str = "CallSite";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Runtime+CompilerServices+CallSite")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::CallSite {
     type Target = quest_hook::libil2cpp::Il2CppObject;

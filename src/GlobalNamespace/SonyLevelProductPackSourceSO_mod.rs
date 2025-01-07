@@ -15,10 +15,25 @@ pub struct SonyLevelProductPackSourceSO {
     >,
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::SonyLevelProductPackSourceSO =>
-    ""."SonyLevelProductPackSourceSO"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SonyLevelProductPackSourceSO {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SonyLevelProductPackSourceSO";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SonyLevelProductPackSourceSO")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLevelProductPackSourceSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
@@ -137,11 +152,25 @@ pub struct SonyLevelProductPackSourceSO_LevelProductPackSource {
     >,
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductPackSource")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource => ""
-    ."SonyLevelProductPackSourceSO/LevelProductPackSource"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LevelProductPackSource";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductPackSource")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource {
@@ -266,11 +295,25 @@ pub struct SonyLevelProductPackSourceSO_LevelProductRedirectionSource {
     pub _validUntilDate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductRedirectionSource")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource => ""
-    ."SonyLevelProductPackSourceSO/LevelProductRedirectionSource"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LevelProductRedirectionSource";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductRedirectionSource")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource {
@@ -368,11 +411,25 @@ pub struct SonyLevelProductPackSourceSO_LevelProductSource {
     pub _level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductSource")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource => ""
-    ."SonyLevelProductPackSourceSO/LevelProductSource"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LevelProductSource";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductSource")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {

@@ -25,10 +25,80 @@ pub struct IVRScreenshots {
     >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRScreenshots => "OVR.OpenVR"
-    ."IVRScreenshots"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRScreenshots {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "IVRScreenshots";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRScreenshots {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRScreenshots {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRScreenshots {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRScreenshots {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRScreenshots {
     type Type = Self;
@@ -63,11 +133,25 @@ pub struct IVRScreenshots__GetScreenshotPropertyFilename {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyFilename")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename => "OVR.OpenVR"
-    ."IVRScreenshots/_GetScreenshotPropertyFilename"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetScreenshotPropertyFilename";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyFilename")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
@@ -184,11 +268,25 @@ pub struct IVRScreenshots__GetScreenshotPropertyType {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyType")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType => "OVR.OpenVR"
-    ."IVRScreenshots/_GetScreenshotPropertyType"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetScreenshotPropertyType";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyType")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
     type Target = crate::System::MulticastDelegate;
@@ -285,10 +383,25 @@ pub struct IVRScreenshots__HookScreenshot {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_HookScreenshot")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRScreenshots__HookScreenshot =>
-    "OVR.OpenVR"."IVRScreenshots/_HookScreenshot"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_HookScreenshot";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_HookScreenshot")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
     type Target = crate::System::MulticastDelegate;
@@ -391,10 +504,25 @@ pub struct IVRScreenshots__RequestScreenshot {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_RequestScreenshot")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRScreenshots__RequestScreenshot
-    => "OVR.OpenVR"."IVRScreenshots/_RequestScreenshot"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_RequestScreenshot";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_RequestScreenshot")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
     type Target = crate::System::MulticastDelegate;
@@ -511,10 +639,25 @@ pub struct IVRScreenshots__SubmitScreenshot {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_SubmitScreenshot")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRScreenshots__SubmitScreenshot =>
-    "OVR.OpenVR"."IVRScreenshots/_SubmitScreenshot"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_SubmitScreenshot";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_SubmitScreenshot")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
     type Target = crate::System::MulticastDelegate;
@@ -639,11 +782,25 @@ pub struct IVRScreenshots__TakeStereoScreenshot {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_TakeStereoScreenshot")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot => "OVR.OpenVR"
-    ."IVRScreenshots/_TakeStereoScreenshot"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_TakeStereoScreenshot";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_TakeStereoScreenshot")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
     type Target = crate::System::MulticastDelegate;
@@ -757,11 +914,25 @@ pub struct IVRScreenshots__UpdateScreenshotProgress {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_UpdateScreenshotProgress")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress => "OVR.OpenVR"
-    ."IVRScreenshots/_UpdateScreenshotProgress"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_UpdateScreenshotProgress";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_UpdateScreenshotProgress")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
     type Target = crate::System::MulticastDelegate;

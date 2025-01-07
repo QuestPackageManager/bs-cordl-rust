@@ -5,11 +5,25 @@ pub struct CDSCollectionETWBCLProvider {
     __cordl_parent: crate::System::Diagnostics::Tracing::EventSource,
 }
 #[cfg(feature = "System+Collections+Concurrent+CDSCollectionETWBCLProvider")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Concurrent::CDSCollectionETWBCLProvider =>
-    "System.Collections.Concurrent"."CDSCollectionETWBCLProvider"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Concurrent";
+    const CLASS_NAME: &'static str = "CDSCollectionETWBCLProvider";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Concurrent+CDSCollectionETWBCLProvider")]
 impl std::ops::Deref
 for crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
@@ -27,24 +41,15 @@ for crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
 }
 #[cfg(feature = "System+Collections+Concurrent+CDSCollectionETWBCLProvider")]
 impl crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
-    pub fn ConcurrentBag_TryPeekSteals(
+    pub fn ConcurrentDictionary_AcquiringAllLocks(
         &mut self,
+        numOfBuckets: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConcurrentBag_TryPeekSteals", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ConcurrentBag_TryTakeSteals(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConcurrentBag_TryTakeSteals", ())?;
+            .invoke("ConcurrentDictionary_AcquiringAllLocks", (numOfBuckets))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

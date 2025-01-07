@@ -7,11 +7,25 @@ pub struct ShaderVariant_ShaderVariantsSO_Variant {
     pub _keywords: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant => ""
-    ."ShaderVariantsSO/ShaderVariant/Variant"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "Variant";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
 impl std::ops::Deref for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -98,10 +112,24 @@ pub struct ShaderVariantsSO {
     >,
 }
 #[cfg(feature = "ShaderVariantsSO")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::ShaderVariantsSO => ""
-    ."ShaderVariantsSO"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ShaderVariantsSO {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ShaderVariantsSO";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ShaderVariantsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::ShaderVariantsSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
@@ -201,10 +229,25 @@ pub struct ShaderVariantsSO_ShaderVariant {
     pub _shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
 }
 #[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::ShaderVariantsSO_ShaderVariant
-    => ""."ShaderVariantsSO/ShaderVariant"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ShaderVariant";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
 impl std::ops::Deref for crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
     type Target = quest_hook::libil2cpp::Il2CppObject;

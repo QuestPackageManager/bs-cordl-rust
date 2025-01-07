@@ -5,10 +5,24 @@ pub struct DaydreamHMD {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRHMD,
 }
 #[cfg(feature = "Unity+XR+GoogleVr+DaydreamHMD")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::XR::GoogleVr::DaydreamHMD =>
-    "Unity.XR.GoogleVr"."DaydreamHMD"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::GoogleVr::DaydreamHMD {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.XR.GoogleVr";
+    const CLASS_NAME: &'static str = "DaydreamHMD";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+XR+GoogleVr+DaydreamHMD")]
 impl std::ops::Deref for crate::Unity::XR::GoogleVr::DaydreamHMD {
     type Target = crate::UnityEngine::InputSystem::XR::XRHMD;

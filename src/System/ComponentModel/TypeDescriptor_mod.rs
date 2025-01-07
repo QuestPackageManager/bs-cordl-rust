@@ -12,12 +12,85 @@ pub struct TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
 #[cfg(
     feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
 )]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor
-    => "System.ComponentModel"
-    ."TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "DefaultExtendedTypeDescriptor";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(
     feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
 )]
@@ -271,11 +344,85 @@ pub struct TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
 #[cfg(
     feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor =>
-    "System.ComponentModel"."TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "DefaultTypeDescriptor";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(
     feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
@@ -522,10 +669,25 @@ pub struct TypeDescriptor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::ComponentModel::TypeDescriptor =>
-    "System.ComponentModel"."TypeDescriptor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeDescriptor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "TypeDescriptor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeDescriptor")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeDescriptor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1095,11 +1257,25 @@ pub struct TypeDescriptor_AttributeFilterCacheItem {
     >,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem =>
-    "System.ComponentModel"."TypeDescriptor/AttributeFilterCacheItem"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "AttributeFilterCacheItem";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
@@ -1189,11 +1365,25 @@ pub struct TypeDescriptor_FilterCacheItem {
     >,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::TypeDescriptor_FilterCacheItem => "System.ComponentModel"
-    ."TypeDescriptor/FilterCacheItem"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "FilterCacheItem";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1270,11 +1460,25 @@ pub struct TypeDescriptor_IUnimplemented {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+IUnimplemented")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::TypeDescriptor_IUnimplemented => "System.ComponentModel"
-    ."TypeDescriptor/IUnimplemented"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "IUnimplemented";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+IUnimplemented")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1314,11 +1518,25 @@ pub struct TypeDescriptor_MemberDescriptorComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer =>
-    "System.ComponentModel"."TypeDescriptor/MemberDescriptorComparer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "MemberDescriptorComparer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
@@ -1402,11 +1620,25 @@ pub struct TypeDescriptor_MergedTypeDescriptor {
     >,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor =>
-    "System.ComponentModel"."TypeDescriptor/MergedTypeDescriptor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "MergedTypeDescriptor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
@@ -1695,11 +1927,25 @@ pub struct TypeDescriptor_TypeDescriptionNode {
     >,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::TypeDescriptor_TypeDescriptionNode =>
-    "System.ComponentModel"."TypeDescriptor/TypeDescriptionNode"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "TypeDescriptionNode";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
@@ -1872,11 +2118,25 @@ pub struct TypeDescriptor_TypeDescriptorComObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject =>
-    "System.ComponentModel"."TypeDescriptor/TypeDescriptorComObject"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "TypeDescriptorComObject";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
@@ -1911,11 +2171,25 @@ pub struct TypeDescriptor_TypeDescriptorInterface {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface =>
-    "System.ComponentModel"."TypeDescriptor/TypeDescriptorInterface"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "TypeDescriptorInterface";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {

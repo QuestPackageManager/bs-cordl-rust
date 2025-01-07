@@ -42,10 +42,24 @@ pub struct SongPreviewPlayer {
     >,
 }
 #[cfg(feature = "SongPreviewPlayer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongPreviewPlayer => ""
-    ."SongPreviewPlayer"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongPreviewPlayer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SongPreviewPlayer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SongPreviewPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer {
     type Target = crate::GlobalNamespace::AudioPlayerBase;
@@ -300,11 +314,25 @@ pub struct SongPreviewPlayer_AudioSourceParams {
     pub _spread: f32,
 }
 #[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SongPreviewPlayer_AudioSourceParams => ""
-    ."SongPreviewPlayer/AudioSourceParams"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "AudioSourceParams";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -389,11 +417,25 @@ pub struct SongPreviewPlayer_AudioSourceVolumeController {
     pub _volume: f32,
 }
 #[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController => ""
-    ."SongPreviewPlayer/AudioSourceVolumeController"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "AudioSourceVolumeController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
@@ -486,10 +528,25 @@ pub struct SongPreviewPlayer_InitData {
     pub ambientVolumeScale: f32,
 }
 #[cfg(feature = "SongPreviewPlayer+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongPreviewPlayer_InitData =>
-    ""."SongPreviewPlayer/InitData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SongPreviewPlayer_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SongPreviewPlayer+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;

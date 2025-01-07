@@ -34,10 +34,25 @@ pub struct LevelFailedTextOverride {
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
 }
 #[cfg(feature = "LevelFailedTextOverride")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelFailedTextOverride => ""
-    ."LevelFailedTextOverride"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LevelFailedTextOverride {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LevelFailedTextOverride";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LevelFailedTextOverride")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelFailedTextOverride {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -102,11 +117,25 @@ pub struct LevelFailedTextOverride_LanguageOverride {
     pub _overrideText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "LevelFailedTextOverride+LanguageOverride")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LevelFailedTextOverride_LanguageOverride => ""
-    ."LevelFailedTextOverride/LanguageOverride"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LevelFailedTextOverride_LanguageOverride {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LanguageOverride";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LevelFailedTextOverride+LanguageOverride")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LevelFailedTextOverride_LanguageOverride {

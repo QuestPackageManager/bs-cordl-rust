@@ -12,10 +12,25 @@ pub struct ClickDetector {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ClickDetector")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::ClickDetector =>
-    "UnityEngine.UIElements"."ClickDetector"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::ClickDetector {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "ClickDetector";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+ClickDetector")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ClickDetector {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -155,11 +170,25 @@ pub struct ClickDetector_ButtonClickStatus {
     pub m_ClickCount: i32,
 }
 #[cfg(feature = "UnityEngine+UIElements+ClickDetector+ButtonClickStatus")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::ClickDetector_ButtonClickStatus =>
-    "UnityEngine.UIElements"."ClickDetector/ButtonClickStatus"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::ClickDetector_ButtonClickStatus {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "ButtonClickStatus";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+ClickDetector+ButtonClickStatus")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::ClickDetector_ButtonClickStatus {

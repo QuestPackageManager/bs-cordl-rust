@@ -14,10 +14,25 @@ pub struct FileSystemFileStorage {
     >,
 }
 #[cfg(feature = "FileSystemFileStorage")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::FileSystemFileStorage => ""
-    ."FileSystemFileStorage"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::FileSystemFileStorage {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "FileSystemFileStorage";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "FileSystemFileStorage")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -209,11 +224,25 @@ pub struct FileSystemFileStorage_DeleteFileCommand {
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand => ""
-    ."FileSystemFileStorage/DeleteFileCommand"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "DeleteFileCommand";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
@@ -280,11 +309,25 @@ pub struct FileSystemFileStorage_FileExistsCommand {
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::FileSystemFileStorage_FileExistsCommand => ""
-    ."FileSystemFileStorage/FileExistsCommand"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "FileExistsCommand";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
@@ -350,11 +393,25 @@ pub struct FileSystemFileStorage_LoadFileCommand {
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::FileSystemFileStorage_LoadFileCommand => ""
-    ."FileSystemFileStorage/LoadFileCommand"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LoadFileCommand";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
     type Target = crate::GlobalNamespace::SyncBackgroundCommand_1<
@@ -426,11 +483,25 @@ pub struct FileSystemFileStorage_SaveFileCommand {
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::FileSystemFileStorage_SaveFileCommand => ""
-    ."FileSystemFileStorage/SaveFileCommand"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SaveFileCommand";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
     type Target = crate::GlobalNamespace::SyncBackgroundCommand;

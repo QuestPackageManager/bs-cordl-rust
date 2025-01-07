@@ -5,10 +5,24 @@ pub struct Haptics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Oculus+Haptics+Haptics")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Oculus::Haptics::Haptics => "Oculus.Haptics"
-    ."Haptics"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Haptics {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Oculus.Haptics";
+    const CLASS_NAME: &'static str = "Haptics";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Oculus+Haptics+Haptics")]
 impl std::ops::Deref for crate::Oculus::Haptics::Haptics {
     type Target = quest_hook::libil2cpp::Il2CppObject;

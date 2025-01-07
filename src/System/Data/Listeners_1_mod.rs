@@ -14,10 +14,38 @@ pub struct Listeners_1<TElem: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TElem: std::marker::PhantomData<TElem>,
 }
 #[cfg(feature = "System+Data+Listeners_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::Listeners_1 < TElem > =>
-    "System.Data"."Listeners`1" < TElem >
-);
+unsafe impl<TElem: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Data::Listeners_1<TElem> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "Listeners`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "Listeners`1")
+                    .unwrap()
+                    .make_generic::<(TElem)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Data+Listeners_1")]
 impl<TElem: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Data::Listeners_1<TElem> {
@@ -206,10 +234,44 @@ pub struct Listeners_1_Action_4<
     __cordl_phantom_T4: std::marker::PhantomData<T4>,
 }
 #[cfg(feature = "System+Data+Listeners_1+Action_4")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::Listeners_1_Action_4 < TElem, T1,
-    T2, T3, T4 > => "System.Data"."Listeners`1/Action`4" < TElem, T1, T2, T3, T4 >
-);
+unsafe impl<
+    TElem: quest_hook::libil2cpp::Type,
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+    T4: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Data::Listeners_1_Action_4<TElem, T1, T2, T3, T4> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "Action`4";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "Action`4")
+                    .unwrap()
+                    .make_generic::<(TElem, T1, T2, T3, T4)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Data+Listeners_1+Action_4")]
 impl<
     TElem: quest_hook::libil2cpp::Type,
@@ -347,10 +409,42 @@ pub struct Listeners_1_Func_2<
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+Data+Listeners_1+Func_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::Listeners_1_Func_2 < TElem, T1,
-    TResult > => "System.Data"."Listeners`1/Func`2" < TElem, T1, TResult >
-);
+unsafe impl<
+    TElem: quest_hook::libil2cpp::Type,
+    T1: quest_hook::libil2cpp::Type,
+    TResult: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Data::Listeners_1_Func_2<TElem, T1, TResult> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "Func`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "Func`2")
+                    .unwrap()
+                    .make_generic::<(TElem, T1, TResult)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Data+Listeners_1+Func_2")]
 impl<
     TElem: quest_hook::libil2cpp::Type,

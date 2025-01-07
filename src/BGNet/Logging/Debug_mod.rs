@@ -5,9 +5,24 @@ pub struct Debug {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BGNet+Logging+Debug")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::BGNet::Logging::Debug => "BGNet.Logging"."Debug"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Logging::Debug {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BGNet.Logging";
+    const CLASS_NAME: &'static str = "Debug";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BGNet+Logging+Debug")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -94,10 +109,24 @@ pub struct Debug_ILogger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BGNet+Logging+Debug+ILogger")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::BGNet::Logging::Debug_ILogger => "BGNet.Logging"
-    ."Debug/ILogger"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Logging::Debug_ILogger {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BGNet.Logging";
+    const CLASS_NAME: &'static str = "ILogger";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BGNet+Logging+Debug+ILogger")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug_ILogger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -182,10 +211,25 @@ pub struct Debug_LoggerLinkedList {
     pub next: quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_LoggerLinkedList>,
 }
 #[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::BGNet::Logging::Debug_LoggerLinkedList =>
-    "BGNet.Logging"."Debug/LoggerLinkedList"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BGNet::Logging::Debug_LoggerLinkedList {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BGNet.Logging";
+    const CLASS_NAME: &'static str = "LoggerLinkedList";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug_LoggerLinkedList {
     type Target = quest_hook::libil2cpp::Il2CppObject;

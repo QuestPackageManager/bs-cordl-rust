@@ -5,9 +5,24 @@ pub struct ModalViewBase {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
 #[cfg(feature = "HMUI+ModalViewBase")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::ModalViewBase => "HMUI"."ModalViewBase"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ModalViewBase {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HMUI";
+    const CLASS_NAME: &'static str = "ModalViewBase";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HMUI+ModalViewBase")]
 impl std::ops::Deref for crate::HMUI::ModalViewBase {
     type Target = crate::UnityEngine::MonoBehaviour;

@@ -20,10 +20,25 @@ pub struct PosesRecordingSaveData {
     >,
 }
 #[cfg(feature = "PosesRecordingSaveData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PosesRecordingSaveData => ""
-    ."PosesRecordingSaveData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PosesRecordingSaveData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PosesRecordingSaveData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PosesRecordingSaveData")]
 impl std::ops::Deref for crate::GlobalNamespace::PosesRecordingSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -116,11 +131,25 @@ pub struct PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
     pub nearOffset: f32,
 }
 #[cfg(feature = "PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData => ""
-    ."PosesRecordingSaveData/ExternalCameraCalibrationSaveData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ExternalCameraCalibrationSaveData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
@@ -194,11 +223,25 @@ pub struct PosesRecordingSaveData_PoseSaveData {
     pub rotW: f32,
 }
 #[cfg(feature = "PosesRecordingSaveData+PoseSaveData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PosesRecordingSaveData_PoseSaveData => ""
-    ."PosesRecordingSaveData/PoseSaveData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PoseSaveData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PosesRecordingSaveData+PoseSaveData")]
 impl std::ops::Deref for crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -272,11 +315,25 @@ pub struct PosesRecordingSaveData_TransformsSaveKeyframe {
     pub _cordl_time: f32,
 }
 #[cfg(feature = "PosesRecordingSaveData+TransformsSaveKeyframe")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe => ""
-    ."PosesRecordingSaveData/TransformsSaveKeyframe"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TransformsSaveKeyframe";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PosesRecordingSaveData+TransformsSaveKeyframe")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {

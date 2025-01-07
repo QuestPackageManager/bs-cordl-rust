@@ -5,10 +5,24 @@ pub struct Enumerable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Enumerable")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Linq::Enumerable => "System.Linq"
-    ."Enumerable"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Linq::Enumerable {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq";
+    const CLASS_NAME: &'static str = "Enumerable";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Enumerable")]
 impl std::ops::Deref for crate::System::Linq::Enumerable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1550,10 +1564,38 @@ pub struct Enumerable_Iterator_1<TSource: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
 }
 #[cfg(feature = "System+Linq+Enumerable+Iterator_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Linq::Enumerable_Iterator_1 < TSource >
-    => "System.Linq"."Enumerable/Iterator`1" < TSource >
-);
+unsafe impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Linq::Enumerable_Iterator_1<TSource> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq";
+    const CLASS_NAME: &'static str = "Iterator`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System.Linq", "Iterator`1")
+                    .unwrap()
+                    .make_generic::<(TSource)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Enumerable+Iterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Enumerable_Iterator_1<TSource> {
@@ -1862,10 +1904,41 @@ pub struct Enumerable_WhereArrayIterator_1<TSource: quest_hook::libil2cpp::Type>
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereArrayIterator_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Linq::Enumerable_WhereArrayIterator_1 <
-    TSource > => "System.Linq"."Enumerable/WhereArrayIterator`1" < TSource >
-);
+unsafe impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Linq::Enumerable_WhereArrayIterator_1<TSource> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq";
+    const CLASS_NAME: &'static str = "WhereArrayIterator`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Linq",
+                        "WhereArrayIterator`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TSource)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Enumerable+WhereArrayIterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Enumerable_WhereArrayIterator_1<TSource> {
@@ -2011,11 +2084,41 @@ pub struct Enumerable_WhereEnumerableIterator_1<TSource: quest_hook::libil2cpp::
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereEnumerableIterator_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Enumerable_WhereEnumerableIterator_1 < TSource > => "System.Linq"
-    ."Enumerable/WhereEnumerableIterator`1" < TSource >
-);
+unsafe impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Linq::Enumerable_WhereEnumerableIterator_1<TSource> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq";
+    const CLASS_NAME: &'static str = "WhereEnumerableIterator`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Linq",
+                        "WhereEnumerableIterator`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TSource)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Enumerable+WhereEnumerableIterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Enumerable_WhereEnumerableIterator_1<TSource> {
@@ -2177,10 +2280,41 @@ pub struct Enumerable_WhereListIterator_1<TSource: quest_hook::libil2cpp::Type> 
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereListIterator_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Linq::Enumerable_WhereListIterator_1 <
-    TSource > => "System.Linq"."Enumerable/WhereListIterator`1" < TSource >
-);
+unsafe impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Linq::Enumerable_WhereListIterator_1<TSource> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq";
+    const CLASS_NAME: &'static str = "WhereListIterator`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Linq",
+                        "WhereListIterator`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TSource)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Enumerable+WhereListIterator_1")]
 impl<TSource: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Enumerable_WhereListIterator_1<TSource> {
@@ -2331,11 +2465,44 @@ pub struct Enumerable_WhereSelectArrayIterator_2<
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereSelectArrayIterator_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Enumerable_WhereSelectArrayIterator_2 < TSource, TResult > =>
-    "System.Linq"."Enumerable/WhereSelectArrayIterator`2" < TSource, TResult >
-);
+unsafe impl<
+    TSource: quest_hook::libil2cpp::Type,
+    TResult: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<TSource, TResult> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq";
+    const CLASS_NAME: &'static str = "WhereSelectArrayIterator`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Linq",
+                        "WhereSelectArrayIterator`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TSource, TResult)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Enumerable+WhereSelectArrayIterator_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
@@ -2510,11 +2677,44 @@ pub struct Enumerable_WhereSelectEnumerableIterator_2<
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Enumerable_WhereSelectEnumerableIterator_2 < TSource, TResult > =>
-    "System.Linq"."Enumerable/WhereSelectEnumerableIterator`2" < TSource, TResult >
-);
+unsafe impl<
+    TSource: quest_hook::libil2cpp::Type,
+    TResult: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<TSource, TResult> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq";
+    const CLASS_NAME: &'static str = "WhereSelectEnumerableIterator`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Linq",
+                        "WhereSelectEnumerableIterator`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TSource, TResult)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
@@ -2707,11 +2907,44 @@ pub struct Enumerable_WhereSelectListIterator_2<
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereSelectListIterator_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Enumerable_WhereSelectListIterator_2 < TSource, TResult > =>
-    "System.Linq"."Enumerable/WhereSelectListIterator`2" < TSource, TResult >
-);
+unsafe impl<
+    TSource: quest_hook::libil2cpp::Type,
+    TResult: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Linq::Enumerable_WhereSelectListIterator_2<TSource, TResult> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq";
+    const CLASS_NAME: &'static str = "WhereSelectListIterator`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Linq",
+                        "WhereSelectListIterator`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TSource, TResult)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Enumerable+WhereSelectListIterator_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,

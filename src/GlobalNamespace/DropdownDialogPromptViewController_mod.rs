@@ -27,11 +27,25 @@ pub struct DropdownDialogPromptViewController {
     >,
 }
 #[cfg(feature = "DropdownDialogPromptViewController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::DropdownDialogPromptViewController => ""
-    ."DropdownDialogPromptViewController"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::DropdownDialogPromptViewController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "DropdownDialogPromptViewController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "DropdownDialogPromptViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::DropdownDialogPromptViewController {
     type Target = crate::HMUI::ViewController;
@@ -197,11 +211,25 @@ pub struct DropdownDialogPromptViewController_ButtonAndLabel {
     pub _label: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "DropdownDialogPromptViewController+ButtonAndLabel")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel => ""
-    ."DropdownDialogPromptViewController/ButtonAndLabel"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ButtonAndLabel";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "DropdownDialogPromptViewController+ButtonAndLabel")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel {

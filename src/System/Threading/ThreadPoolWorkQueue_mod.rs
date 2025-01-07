@@ -12,10 +12,25 @@ pub struct ThreadPoolWorkQueue {
     pub numOutstandingThreadRequests: i32,
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Threading::ThreadPoolWorkQueue =>
-    "System.Threading"."ThreadPoolWorkQueue"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Threading::ThreadPoolWorkQueue {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading";
+    const CLASS_NAME: &'static str = "ThreadPoolWorkQueue";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue")]
 impl std::ops::Deref for crate::System::Threading::ThreadPoolWorkQueue {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -166,11 +181,25 @@ pub struct ThreadPoolWorkQueue_QueueSegment {
     >,
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+QueueSegment")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Threading::ThreadPoolWorkQueue_QueueSegment => "System.Threading"
-    ."ThreadPoolWorkQueue/QueueSegment"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading";
+    const CLASS_NAME: &'static str = "QueueSegment";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+QueueSegment")]
 impl std::ops::Deref for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -281,11 +310,41 @@ pub struct ThreadPoolWorkQueue_SparseArray_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Threading::ThreadPoolWorkQueue_SparseArray_1 < T > => "System.Threading"
-    ."ThreadPoolWorkQueue/SparseArray`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading";
+    const CLASS_NAME: &'static str = "SparseArray`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Threading",
+                        "SparseArray`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
@@ -403,11 +462,25 @@ pub struct ThreadPoolWorkQueue_WorkStealingQueue {
     pub m_foreignLock: crate::System::Threading::SpinLock,
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue => "System.Threading"
-    ."ThreadPoolWorkQueue/WorkStealingQueue"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading";
+    const CLASS_NAME: &'static str = "WorkStealingQueue";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
 impl std::ops::Deref
 for crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {

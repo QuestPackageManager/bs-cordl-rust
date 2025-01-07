@@ -5,10 +5,24 @@ pub struct TaskToApm {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Threading+Tasks+TaskToApm")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Threading::Tasks::TaskToApm =>
-    "System.Threading.Tasks"."TaskToApm"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Tasks::TaskToApm {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading.Tasks";
+    const CLASS_NAME: &'static str = "TaskToApm";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+TaskToApm")]
 impl std::ops::Deref for crate::System::Threading::Tasks::TaskToApm {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -87,11 +101,25 @@ pub struct TaskToApm_TaskWrapperAsyncResult {
     pub _completedSynchronously: bool,
 }
 #[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult =>
-    "System.Threading.Tasks"."TaskToApm/TaskWrapperAsyncResult"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading.Tasks";
+    const CLASS_NAME: &'static str = "TaskWrapperAsyncResult";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
 impl std::ops::Deref
 for crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult {

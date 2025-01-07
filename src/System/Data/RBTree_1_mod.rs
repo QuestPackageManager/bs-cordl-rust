@@ -21,10 +21,38 @@ pub struct RBTree_1<K: quest_hook::libil2cpp::Type> {
     __cordl_phantom_K: std::marker::PhantomData<K>,
 }
 #[cfg(feature = "System+Data+RBTree_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1 < K > => "System.Data"
-    ."RBTree`1" < K >
-);
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Data::RBTree_1<K> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "RBTree`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "RBTree`1")
+                    .unwrap()
+                    .make_generic::<(K)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Data+RBTree_1")]
 impl<K: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Data::RBTree_1<K> {
@@ -996,10 +1024,98 @@ pub struct RBTree_1_Node<K: quest_hook::libil2cpp::Type> {
     __cordl_phantom_K: std::marker::PhantomData<K>,
 }
 #[cfg(feature = "System+Data+RBTree_1+Node")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_Node < K > =>
-    "System.Data"."RBTree`1/Node<K>" < K >
-);
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Data::RBTree_1_Node<K> {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "Node";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "Node")
+                    .unwrap()
+                    .make_generic::<(K)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
+for crate::System::Data::RBTree_1_Node<K> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
+for crate::System::Data::RBTree_1_Node<K> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
+for crate::System::Data::RBTree_1_Node<K> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
+for crate::System::Data::RBTree_1_Node<K> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "System+Data+RBTree_1+Node")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::RBTree_1_Node<K> {
@@ -1022,10 +1138,81 @@ pub enum RBTree_1_NodeColor {
     red = 0i32,
 }
 #[cfg(feature = "System+Data+RBTree_1+NodeColor")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_NodeColor =>
-    "System.Data"."RBTree`1/NodeColor<K>"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::RBTree_1_NodeColor {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "NodeColor";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::RBTree_1_NodeColor {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::System::Data::RBTree_1_NodeColor {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::RBTree_1_NodeColor {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::RBTree_1_NodeColor {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "System+Data+RBTree_1+NodePath")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -1035,10 +1222,98 @@ pub struct RBTree_1_NodePath<K: quest_hook::libil2cpp::Type> {
     __cordl_phantom_K: std::marker::PhantomData<K>,
 }
 #[cfg(feature = "System+Data+RBTree_1+NodePath")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_NodePath < K > =>
-    "System.Data"."RBTree`1/NodePath<K>" < K >
-);
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Data::RBTree_1_NodePath<K> {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "NodePath";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "NodePath")
+                    .unwrap()
+                    .make_generic::<(K)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
+for crate::System::Data::RBTree_1_NodePath<K> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
+for crate::System::Data::RBTree_1_NodePath<K> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
+for crate::System::Data::RBTree_1_NodePath<K> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
+for crate::System::Data::RBTree_1_NodePath<K> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "System+Data+RBTree_1+NodePath")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::RBTree_1_NodePath<K> {
@@ -1081,10 +1356,101 @@ pub struct RBTree_1_RBTreeEnumerator<K: quest_hook::libil2cpp::Type> {
     __cordl_phantom_K: std::marker::PhantomData<K>,
 }
 #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_RBTreeEnumerator < K > =>
-    "System.Data"."RBTree`1/RBTreeEnumerator<K>" < K >
-);
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "RBTreeEnumerator";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Data",
+                        "RBTreeEnumerator",
+                    )
+                    .unwrap()
+                    .make_generic::<(K)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
@@ -1261,10 +1627,38 @@ pub struct RBTree_1_TreePage<K: quest_hook::libil2cpp::Type> {
     __cordl_phantom_K: std::marker::PhantomData<K>,
 }
 #[cfg(feature = "System+Data+RBTree_1+TreePage")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_TreePage < K > =>
-    "System.Data"."RBTree`1/TreePage" < K >
-);
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Data::RBTree_1_TreePage<K> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "TreePage";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "TreePage")
+                    .unwrap()
+                    .make_generic::<(K)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Data+RBTree_1+TreePage")]
 impl<K: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Data::RBTree_1_TreePage<K> {

@@ -10,10 +10,44 @@ pub struct ScriptableObjectInstaller_2<
     __cordl_phantom_TDerived: std::marker::PhantomData<TDerived>,
 }
 #[cfg(feature = "Zenject+ScriptableObjectInstaller_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Zenject::ScriptableObjectInstaller_2 < TParam1,
-    TDerived > => "Zenject"."ScriptableObjectInstaller`2" < TParam1, TDerived >
-);
+unsafe impl<
+    TParam1: quest_hook::libil2cpp::Type,
+    TDerived: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::Zenject::ScriptableObjectInstaller_2<TParam1, TDerived> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Zenject";
+    const CLASS_NAME: &'static str = "ScriptableObjectInstaller`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Zenject",
+                        "ScriptableObjectInstaller`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TParam1, TDerived)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Zenject+ScriptableObjectInstaller_2")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,

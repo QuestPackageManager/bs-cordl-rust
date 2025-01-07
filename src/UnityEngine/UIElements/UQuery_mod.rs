@@ -5,10 +5,24 @@ pub struct UQuery {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::UQuery =>
-    "UnityEngine.UIElements"."UQuery"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UQuery {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UQuery";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UQuery")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -53,11 +67,25 @@ pub struct UQuery_FirstQueryMatcher {
     __cordl_parent: crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UQuery_FirstQueryMatcher => "UnityEngine.UIElements"
-    ."UQuery/FirstQueryMatcher"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "FirstQueryMatcher";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher {
     type Target = crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher;
@@ -135,11 +163,25 @@ pub struct UQuery_IVisualPredicateWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+IVisualPredicateWrapper")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper => "UnityEngine.UIElements"
-    ."UQuery/IVisualPredicateWrapper"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "IVisualPredicateWrapper";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UQuery+IVisualPredicateWrapper")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -190,10 +232,41 @@ pub struct UQuery_IsOfType_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::UQuery_IsOfType_1 < T >
-    => "UnityEngine.UIElements"."UQuery/IsOfType`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "IsOfType`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.UIElements",
+                        "IsOfType`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
@@ -291,11 +364,25 @@ pub struct UQuery_SingleQueryMatcher {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UQuery_SingleQueryMatcher => "UnityEngine.UIElements"
-    ."UQuery/SingleQueryMatcher"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "SingleQueryMatcher";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
     type Target = crate::UnityEngine::UIElements::UQuery_UQueryMatcher;
@@ -413,10 +500,25 @@ pub struct UQuery_UQueryMatcher {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::UQuery_UQueryMatcher =>
-    "UnityEngine.UIElements"."UQuery/UQueryMatcher"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UQueryMatcher";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
     type Target = crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal;

@@ -8,10 +8,25 @@ pub struct Hash128Field {
     pub m_UpdateTextFromValue: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::Hash128Field =>
-    "UnityEngine.UIElements"."Hash128Field"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::Hash128Field {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "Hash128Field";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1<
@@ -181,11 +196,25 @@ pub struct Hash128Field_Hash128Input {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+Hash128Input")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::Hash128Field_Hash128Input => "UnityEngine.UIElements"
-    ."Hash128Field/Hash128Input"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "Hash128Input";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+Hash128Input")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
@@ -281,11 +310,25 @@ pub struct Hash128Field_UxmlFactory {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlFactory")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::Hash128Field_UxmlFactory => "UnityEngine.UIElements"
-    ."Hash128Field/UxmlFactory"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::Hash128Field_UxmlFactory {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UxmlFactory";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
@@ -346,10 +389,25 @@ pub struct Hash128Field_UxmlTraits {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlTraits")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::Hash128Field_UxmlTraits
-    => "UnityEngine.UIElements"."Hash128Field/UxmlTraits"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::Hash128Field_UxmlTraits {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UxmlTraits";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextValueFieldTraits_2<

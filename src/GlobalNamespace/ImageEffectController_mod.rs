@@ -8,10 +8,25 @@ pub struct ImageEffectController {
     >,
 }
 #[cfg(feature = "ImageEffectController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::ImageEffectController => ""
-    ."ImageEffectController"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ImageEffectController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ImageEffectController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ImageEffectController")]
 impl std::ops::Deref for crate::GlobalNamespace::ImageEffectController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -89,11 +104,25 @@ pub struct ImageEffectController_RenderImageCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "ImageEffectController+RenderImageCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ImageEffectController_RenderImageCallback => ""
-    ."ImageEffectController/RenderImageCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ImageEffectController_RenderImageCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "RenderImageCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ImageEffectController+RenderImageCallback")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ImageEffectController_RenderImageCallback {

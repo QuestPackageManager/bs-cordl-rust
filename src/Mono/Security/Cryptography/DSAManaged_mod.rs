@@ -22,10 +22,25 @@ pub struct DSAManaged {
     >,
 }
 #[cfg(feature = "Mono+Security+Cryptography+DSAManaged")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::Cryptography::DSAManaged =>
-    "Mono.Security.Cryptography"."DSAManaged"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Security::Cryptography::DSAManaged {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.Cryptography";
+    const CLASS_NAME: &'static str = "DSAManaged";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+Cryptography+DSAManaged")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::DSAManaged {
     type Target = crate::System::Security::Cryptography::DSA;
@@ -251,11 +266,25 @@ pub struct DSAManaged_KeyGeneratedEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler =>
-    "Mono.Security.Cryptography"."DSAManaged/KeyGeneratedEventHandler"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.Cryptography";
+    const CLASS_NAME: &'static str = "KeyGeneratedEventHandler";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler")]
 impl std::ops::Deref
 for crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {

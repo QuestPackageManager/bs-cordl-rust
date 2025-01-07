@@ -5,10 +5,24 @@ pub struct EncryptionUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "EncryptionUtility")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::EncryptionUtility => ""
-    ."EncryptionUtility"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EncryptionUtility {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "EncryptionUtility";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "EncryptionUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::EncryptionUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -186,11 +200,25 @@ pub struct EncryptionUtility_EncryptionState {
     >,
 }
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::EncryptionUtility_EncryptionState => ""
-    ."EncryptionUtility/EncryptionState"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "EncryptionState";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
 impl std::ops::Deref for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -424,11 +452,25 @@ pub struct EncryptionUtility_IEncryptionState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "EncryptionUtility+IEncryptionState")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::EncryptionUtility_IEncryptionState => ""
-    ."EncryptionUtility/IEncryptionState"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "IEncryptionState";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "EncryptionUtility+IEncryptionState")]
 impl std::ops::Deref for crate::GlobalNamespace::EncryptionUtility_IEncryptionState {
     type Target = quest_hook::libil2cpp::Il2CppObject;

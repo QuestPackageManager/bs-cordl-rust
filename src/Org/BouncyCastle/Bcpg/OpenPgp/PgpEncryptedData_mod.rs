@@ -12,11 +12,25 @@ pub struct PgpEncryptedData {
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData =>
-    "Org.BouncyCastle.Bcpg.OpenPgp"."PgpEncryptedData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Bcpg.OpenPgp";
+    const CLASS_NAME: &'static str = "PgpEncryptedData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedData")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -106,11 +120,25 @@ pub struct PgpEncryptedData_TruncatedStream {
     pub bufEnd: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedData+TruncatedStream")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData_TruncatedStream =>
-    "Org.BouncyCastle.Bcpg.OpenPgp"."PgpEncryptedData/TruncatedStream"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData_TruncatedStream {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Bcpg.OpenPgp";
+    const CLASS_NAME: &'static str = "TruncatedStream";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedData+TruncatedStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData_TruncatedStream {

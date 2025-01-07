@@ -19,10 +19,25 @@ pub struct BTSCharacterDataModel {
     >,
 }
 #[cfg(feature = "BTSCharacterDataModel")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::BTSCharacterDataModel => ""
-    ."BTSCharacterDataModel"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BTSCharacterDataModel {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BTSCharacterDataModel";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BTSCharacterDataModel")]
 impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterDataModel {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -127,11 +142,25 @@ pub struct BTSCharacterDataModel_AnimationClipWithId {
     >,
 }
 #[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId => ""
-    ."BTSCharacterDataModel/AnimationClipWithId"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "AnimationClipWithId";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
@@ -208,11 +237,25 @@ pub struct BTSCharacterDataModel_PrefabWithId {
     >,
 }
 #[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BTSCharacterDataModel_PrefabWithId => ""
-    ."BTSCharacterDataModel/PrefabWithId"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PrefabWithId";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
     type Target = quest_hook::libil2cpp::Il2CppObject;

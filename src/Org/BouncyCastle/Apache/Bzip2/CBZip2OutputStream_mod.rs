@@ -40,11 +40,25 @@ pub struct CBZip2OutputStream {
     pub incs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream =>
-    "Org.BouncyCastle.Apache.Bzip2"."CBZip2OutputStream"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Apache.Bzip2";
+    const CLASS_NAME: &'static str = "CBZip2OutputStream";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
     type Target = crate::System::IO::Stream;
@@ -551,11 +565,25 @@ pub struct CBZip2OutputStream_StackElem {
     pub dd: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem =>
-    "Org.BouncyCastle.Apache.Bzip2"."CBZip2OutputStream/StackElem"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Apache.Bzip2";
+    const CLASS_NAME: &'static str = "StackElem";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {

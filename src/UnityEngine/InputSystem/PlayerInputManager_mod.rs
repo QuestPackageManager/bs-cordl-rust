@@ -48,10 +48,25 @@ pub struct PlayerInputManager {
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::PlayerInputManager =>
-    "UnityEngine.InputSystem"."PlayerInputManager"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::PlayerInputManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "PlayerInputManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInputManager {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -590,11 +605,25 @@ pub struct PlayerInputManager_PlayerJoinedEvent {
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent =>
-    "UnityEngine.InputSystem"."PlayerInputManager/PlayerJoinedEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "PlayerJoinedEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
@@ -651,11 +680,25 @@ pub struct PlayerInputManager_PlayerLeftEvent {
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent =>
-    "UnityEngine.InputSystem"."PlayerInputManager/PlayerLeftEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "PlayerLeftEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {

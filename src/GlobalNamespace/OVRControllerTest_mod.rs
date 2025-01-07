@@ -5,11 +5,25 @@ pub struct BoolMonitor_OVRControllerTest_BoolGenerator {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVRControllerTest+BoolMonitor+BoolGenerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator => ""
-    ."OVRControllerTest/BoolMonitor/BoolGenerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BoolGenerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVRControllerTest+BoolMonitor+BoolGenerator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator {
@@ -107,10 +121,24 @@ pub struct OVRControllerTest {
     pub data: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
 #[cfg(feature = "OVRControllerTest")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRControllerTest => ""
-    ."OVRControllerTest"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRControllerTest {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRControllerTest";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVRControllerTest")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRControllerTest {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -191,10 +219,25 @@ pub struct OVRControllerTest_BoolMonitor {
     pub m_displayTimer: f32,
 }
 #[cfg(feature = "OVRControllerTest+BoolMonitor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRControllerTest_BoolMonitor
-    => ""."OVRControllerTest/BoolMonitor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRControllerTest_BoolMonitor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BoolMonitor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVRControllerTest+BoolMonitor")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRControllerTest_BoolMonitor {
     type Target = quest_hook::libil2cpp::Il2CppObject;

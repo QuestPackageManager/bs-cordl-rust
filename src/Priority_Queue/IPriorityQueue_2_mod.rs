@@ -10,10 +10,44 @@ pub struct IPriorityQueue_2<
     __cordl_phantom_TPriority: std::marker::PhantomData<TPriority>,
 }
 #[cfg(feature = "Priority_Queue+IPriorityQueue_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Priority_Queue::IPriorityQueue_2 < TItem,
-    TPriority > => "Priority_Queue"."IPriorityQueue`2" < TItem, TPriority >
-);
+unsafe impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::Priority_Queue::IPriorityQueue_2<TItem, TPriority> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Priority_Queue";
+    const CLASS_NAME: &'static str = "IPriorityQueue`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Priority_Queue",
+                        "IPriorityQueue`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TItem, TPriority)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Priority_Queue+IPriorityQueue_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,

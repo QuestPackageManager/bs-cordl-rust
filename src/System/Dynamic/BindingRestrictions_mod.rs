@@ -5,10 +5,24 @@ pub struct BindingRestrictions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Dynamic::BindingRestrictions =>
-    "System.Dynamic"."BindingRestrictions"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::BindingRestrictions {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic";
+    const CLASS_NAME: &'static str = "BindingRestrictions";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+BindingRestrictions")]
 impl std::ops::Deref for crate::System::Dynamic::BindingRestrictions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -151,11 +165,25 @@ pub struct BindingRestrictions_BindingRestrictionsProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy => "System.Dynamic"
-    ."BindingRestrictions/BindingRestrictionsProxy"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic";
+    const CLASS_NAME: &'static str = "BindingRestrictionsProxy";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
 impl std::ops::Deref
 for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
@@ -200,10 +228,25 @@ pub struct BindingRestrictions_TestBuilder {
     >,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Dynamic::BindingRestrictions_TestBuilder
-    => "System.Dynamic"."BindingRestrictions/TestBuilder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Dynamic::BindingRestrictions_TestBuilder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic";
+    const CLASS_NAME: &'static str = "TestBuilder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
 impl std::ops::Deref for crate::System::Dynamic::BindingRestrictions_TestBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -295,11 +338,85 @@ pub struct TestBuilder_BindingRestrictions_AndNode {
     pub Node: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Dynamic::TestBuilder_BindingRestrictions_AndNode => "System.Dynamic"
-    ."BindingRestrictions/TestBuilder/AndNode"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.Dynamic";
+    const CLASS_NAME: &'static str = "AndNode";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {

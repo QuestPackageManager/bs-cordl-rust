@@ -10,10 +10,24 @@ pub struct Asn1Set {
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Asn1::Asn1Set =>
-    "Org.BouncyCastle.Asn1"."Asn1Set"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Asn1::Asn1Set {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1";
+    const CLASS_NAME: &'static str = "Asn1Set";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Asn1Set {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Object;
@@ -284,11 +298,25 @@ pub struct Asn1Set_Asn1SetParserImpl {
     pub index: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+Asn1SetParserImpl")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::Asn1Set_Asn1SetParserImpl => "Org.BouncyCastle.Asn1"
-    ."Asn1Set/Asn1SetParserImpl"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::Asn1Set_Asn1SetParserImpl {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1";
+    const CLASS_NAME: &'static str = "Asn1SetParserImpl";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+Asn1SetParserImpl")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Asn1Set_Asn1SetParserImpl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -396,10 +424,25 @@ pub struct Asn1Set_DerComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+DerComparer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Asn1::Asn1Set_DerComparer =>
-    "Org.BouncyCastle.Asn1"."Asn1Set/DerComparer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::Asn1Set_DerComparer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1";
+    const CLASS_NAME: &'static str = "DerComparer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+DerComparer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Asn1Set_DerComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;

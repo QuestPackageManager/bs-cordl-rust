@@ -19,11 +19,25 @@ pub struct MatchCollection {
     pub _prevlen: i32,
 }
 #[cfg(feature = "System+Text+RegularExpressions+MatchCollection")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Text::RegularExpressions::MatchCollection =>
-    "System.Text.RegularExpressions"."MatchCollection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Text::RegularExpressions::MatchCollection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Text.RegularExpressions";
+    const CLASS_NAME: &'static str = "MatchCollection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Text+RegularExpressions+MatchCollection")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::MatchCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -670,11 +684,25 @@ pub struct MatchCollection_Enumerator {
     pub _index: i32,
 }
 #[cfg(feature = "System+Text+RegularExpressions+MatchCollection+Enumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Text::RegularExpressions::MatchCollection_Enumerator =>
-    "System.Text.RegularExpressions"."MatchCollection/Enumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Text::RegularExpressions::MatchCollection_Enumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Text.RegularExpressions";
+    const CLASS_NAME: &'static str = "Enumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Text+RegularExpressions+MatchCollection+Enumerator")]
 impl std::ops::Deref
 for crate::System::Text::RegularExpressions::MatchCollection_Enumerator {

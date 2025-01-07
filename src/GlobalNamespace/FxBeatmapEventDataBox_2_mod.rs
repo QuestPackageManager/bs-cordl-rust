@@ -14,10 +14,41 @@ pub struct FxBeatmapEventDataBox_2<
     __cordl_phantom_TOut: std::marker::PhantomData<TOut>,
 }
 #[cfg(feature = "FxBeatmapEventDataBox_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::FxBeatmapEventDataBox_2 < TIn,
-    TOut > => ""."FxBeatmapEventDataBox`2" < TIn, TOut >
-);
+unsafe impl<
+    TIn: quest_hook::libil2cpp::Type,
+    TOut: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::FxBeatmapEventDataBox_2<TIn, TOut> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "FxBeatmapEventDataBox`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("", "FxBeatmapEventDataBox`2")
+                    .unwrap()
+                    .make_generic::<(TIn, TOut)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "FxBeatmapEventDataBox_2")]
 impl<TIn: quest_hook::libil2cpp::Type, TOut: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::FxBeatmapEventDataBox_2<TIn, TOut> {

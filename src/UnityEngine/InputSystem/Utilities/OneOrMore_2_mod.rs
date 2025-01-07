@@ -12,11 +12,116 @@ pub struct OneOrMore_2<
     __cordl_phantom_TList: std::marker::PhantomData<TList>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::Utilities::OneOrMore_2
-    < TValue, TList > => "UnityEngine.InputSystem.Utilities"."OneOrMore`2<TValue,TList>"
-    < TValue, TList >
-);
+unsafe impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
+    const CLASS_NAME: &'static str = "OneOrMore`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.InputSystem.Utilities",
+                        "OneOrMore`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TValue, TList)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Argument
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Returned
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Return
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 unsafe impl<
     TValue: quest_hook::libil2cpp::Type,
@@ -280,11 +385,44 @@ pub struct OneOrMore_2_Enumerator<
     __cordl_phantom_TList: std::marker::PhantomData<TList>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator < TValue, TList > =>
-    "UnityEngine.InputSystem.Utilities"."OneOrMore`2/Enumerator" < TValue, TList >
-);
+unsafe impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, TList> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
+    const CLASS_NAME: &'static str = "Enumerator";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.InputSystem.Utilities",
+                        "Enumerator",
+                    )
+                    .unwrap()
+                    .make_generic::<(TValue, TList)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
 impl<
     TValue: quest_hook::libil2cpp::Type,

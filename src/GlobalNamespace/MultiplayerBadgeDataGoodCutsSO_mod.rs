@@ -5,10 +5,25 @@ pub struct MultiplayerBadgeDataGoodCutsSO {
     __cordl_parent: crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO,
 }
 #[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO
-    => ""."MultiplayerBadgeDataGoodCutsSO"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "MultiplayerBadgeDataGoodCutsSO";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
     type Target = crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO;

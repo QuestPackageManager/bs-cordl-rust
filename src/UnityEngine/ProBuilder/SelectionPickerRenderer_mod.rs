@@ -5,10 +5,25 @@ pub struct SelectionPickerRenderer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::ProBuilder::SelectionPickerRenderer
-    => "UnityEngine.ProBuilder"."SelectionPickerRenderer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
+    const CLASS_NAME: &'static str = "SelectionPickerRenderer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -503,11 +518,25 @@ pub struct SelectionPickerRenderer_ISelectionPickerRenderer {
 #[cfg(
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer =>
-    "UnityEngine.ProBuilder"."SelectionPickerRenderer/ISelectionPickerRenderer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
+    const CLASS_NAME: &'static str = "ISelectionPickerRenderer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
 )]
@@ -577,11 +606,25 @@ pub struct SelectionPickerRenderer_SelectionPickerRendererHDRP {
 #[cfg(
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP =>
-    "UnityEngine.ProBuilder"."SelectionPickerRenderer/SelectionPickerRendererHDRP"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
+    const CLASS_NAME: &'static str = "SelectionPickerRendererHDRP";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
 )]
@@ -689,11 +732,25 @@ pub struct SelectionPickerRenderer_SelectionPickerRendererStandard {
 #[cfg(
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard =>
-    "UnityEngine.ProBuilder"."SelectionPickerRenderer/SelectionPickerRendererStandard"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
+    const CLASS_NAME: &'static str = "SelectionPickerRendererStandard";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
 )]

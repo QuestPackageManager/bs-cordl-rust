@@ -16,11 +16,25 @@ pub struct OrderedDictionary {
     >,
 }
 #[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Specialized::OrderedDictionary =>
-    "System.Collections.Specialized"."OrderedDictionary"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Specialized::OrderedDictionary {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Specialized";
+    const CLASS_NAME: &'static str = "OrderedDictionary";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
 impl std::ops::Deref for crate::System::Collections::Specialized::OrderedDictionary {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -488,11 +502,25 @@ pub struct OrderedDictionary_OrderedDictionaryEnumerator {
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryEnumerator =>
-    "System.Collections.Specialized"."OrderedDictionary/OrderedDictionaryEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Specialized";
+    const CLASS_NAME: &'static str = "OrderedDictionaryEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
 )]
@@ -666,12 +694,25 @@ pub struct OrderedDictionary_OrderedDictionaryKeyValueCollection {
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryKeyValueCollection
-    => "System.Collections.Specialized"
-    ."OrderedDictionary/OrderedDictionaryKeyValueCollection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryKeyValueCollection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Specialized";
+    const CLASS_NAME: &'static str = "OrderedDictionaryKeyValueCollection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
 )]

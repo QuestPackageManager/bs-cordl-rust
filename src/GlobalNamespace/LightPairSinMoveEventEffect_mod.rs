@@ -31,10 +31,25 @@ pub struct LightPairSinMoveEventEffect {
     >,
 }
 #[cfg(feature = "LightPairSinMoveEventEffect")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightPairSinMoveEventEffect =>
-    ""."LightPairSinMoveEventEffect"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LightPairSinMoveEventEffect {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LightPairSinMoveEventEffect";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LightPairSinMoveEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::LightPairSinMoveEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -156,11 +171,25 @@ pub struct LightPairSinMoveEventEffect_MovementData {
     pub side: f32,
 }
 #[cfg(feature = "LightPairSinMoveEventEffect+MovementData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LightPairSinMoveEventEffect_MovementData => ""
-    ."LightPairSinMoveEventEffect/MovementData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "MovementData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LightPairSinMoveEventEffect+MovementData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData {

@@ -5,10 +5,24 @@ pub struct TerrainCallbacks {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+TerrainCallbacks")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::TerrainCallbacks => "UnityEngine"
-    ."TerrainCallbacks"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TerrainCallbacks {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "TerrainCallbacks";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+TerrainCallbacks")]
 impl std::ops::Deref for crate::UnityEngine::TerrainCallbacks {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -70,11 +84,25 @@ pub struct TerrainCallbacks_HeightmapChangedCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+TerrainCallbacks+HeightmapChangedCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::TerrainCallbacks_HeightmapChangedCallback => "UnityEngine"
-    ."TerrainCallbacks/HeightmapChangedCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::TerrainCallbacks_HeightmapChangedCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "HeightmapChangedCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+TerrainCallbacks+HeightmapChangedCallback")]
 impl std::ops::Deref for crate::UnityEngine::TerrainCallbacks_HeightmapChangedCallback {
     type Target = crate::System::MulticastDelegate;
@@ -144,11 +172,25 @@ pub struct TerrainCallbacks_TextureChangedCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+TerrainCallbacks+TextureChangedCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::TerrainCallbacks_TextureChangedCallback => "UnityEngine"
-    ."TerrainCallbacks/TextureChangedCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::TerrainCallbacks_TextureChangedCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "TextureChangedCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+TerrainCallbacks+TextureChangedCallback")]
 impl std::ops::Deref for crate::UnityEngine::TerrainCallbacks_TextureChangedCallback {
     type Target = crate::System::MulticastDelegate;

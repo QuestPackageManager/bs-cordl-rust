@@ -11,10 +11,25 @@ pub struct EventBasedNatPunchListener {
     >,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::EventBasedNatPunchListener =>
-    "LiteNetLib"."EventBasedNatPunchListener"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::EventBasedNatPunchListener {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "EventBasedNatPunchListener";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNatPunchListener {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -167,11 +182,25 @@ pub struct EventBasedNatPunchListener_OnNatIntroductionRequest {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionRequest")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionRequest => "LiteNetLib"
-    ."EventBasedNatPunchListener/OnNatIntroductionRequest"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionRequest {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "OnNatIntroductionRequest";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionRequest")]
 impl std::ops::Deref
 for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionRequest {
@@ -273,11 +302,25 @@ pub struct EventBasedNatPunchListener_OnNatIntroductionSuccess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionSuccess")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionSuccess => "LiteNetLib"
-    ."EventBasedNatPunchListener/OnNatIntroductionSuccess"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionSuccess {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "OnNatIntroductionSuccess";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionSuccess")]
 impl std::ops::Deref
 for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionSuccess {

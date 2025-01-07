@@ -22,10 +22,41 @@ pub struct FileSystemEnumerable_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::IO::Enumeration::FileSystemEnumerable_1
-    < TResult > => "System.IO.Enumeration"."FileSystemEnumerable`1" < TResult >
-);
+unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO.Enumeration";
+    const CLASS_NAME: &'static str = "FileSystemEnumerable`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.IO.Enumeration",
+                        "FileSystemEnumerable`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TResult)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
@@ -242,11 +273,41 @@ pub struct FileSystemEnumerable_1_DelegateEnumerator<
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator < TResult > =>
-    "System.IO.Enumeration"."FileSystemEnumerable`1/DelegateEnumerator" < TResult >
-);
+unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO.Enumeration";
+    const CLASS_NAME: &'static str = "DelegateEnumerator";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.IO.Enumeration",
+                        "DelegateEnumerator",
+                    )
+                    .unwrap()
+                    .make_generic::<(TResult)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
@@ -366,11 +427,41 @@ pub struct FileSystemEnumerable_1_FindPredicate<TResult: quest_hook::libil2cpp::
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate < TResult > =>
-    "System.IO.Enumeration"."FileSystemEnumerable`1/FindPredicate" < TResult >
-);
+unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO.Enumeration";
+    const CLASS_NAME: &'static str = "FindPredicate";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.IO.Enumeration",
+                        "FindPredicate",
+                    )
+                    .unwrap()
+                    .make_generic::<(TResult)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult> {
@@ -455,11 +546,41 @@ pub struct FileSystemEnumerable_1_FindTransform<TResult: quest_hook::libil2cpp::
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform < TResult > =>
-    "System.IO.Enumeration"."FileSystemEnumerable`1/FindTransform" < TResult >
-);
+unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO.Enumeration";
+    const CLASS_NAME: &'static str = "FindTransform";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.IO.Enumeration",
+                        "FindTransform",
+                    )
+                    .unwrap()
+                    .make_generic::<(TResult)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult> {

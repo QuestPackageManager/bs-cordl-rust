@@ -6,10 +6,24 @@ pub struct CVRSystem {
     pub FnTable: crate::OVR::OpenVR::IVRSystem,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::CVRSystem => "OVR.OpenVR"
-    ."CVRSystem"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::CVRSystem {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "CVRSystem";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+CVRSystem")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSystem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -706,10 +720,85 @@ pub struct CVRSystem_GetControllerStateUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::CVRSystem_GetControllerStateUnion
-    => "OVR.OpenVR"."CVRSystem/GetControllerStateUnion"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "GetControllerStateUnion";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
@@ -730,11 +819,85 @@ pub struct CVRSystem_GetControllerStateWithPoseUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion => "OVR.OpenVR"
-    ."CVRSystem/GetControllerStateWithPoseUnion"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "GetControllerStateWithPoseUnion";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
@@ -755,10 +918,85 @@ pub struct CVRSystem_PollNextEventUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::CVRSystem_PollNextEventUnion =>
-    "OVR.OpenVR"."CVRSystem/PollNextEventUnion"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "PollNextEventUnion";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
@@ -779,10 +1017,25 @@ pub struct CVRSystem__GetControllerStatePacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::CVRSystem__GetControllerStatePacked
-    => "OVR.OpenVR"."CVRSystem/_GetControllerStatePacked"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetControllerStatePacked";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
     type Target = crate::System::MulticastDelegate;
@@ -898,11 +1151,25 @@ pub struct CVRSystem__GetControllerStateWithPosePacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked => "OVR.OpenVR"
-    ."CVRSystem/_GetControllerStateWithPosePacked"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetControllerStateWithPosePacked";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
@@ -1039,10 +1306,25 @@ pub struct CVRSystem__PollNextEventPacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::CVRSystem__PollNextEventPacked =>
-    "OVR.OpenVR"."CVRSystem/_PollNextEventPacked"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_PollNextEventPacked";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
     type Target = crate::System::MulticastDelegate;

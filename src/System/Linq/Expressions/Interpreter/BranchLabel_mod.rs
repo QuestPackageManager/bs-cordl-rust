@@ -12,11 +12,25 @@ pub struct BranchLabel {
     pub _LabelIndex_k__BackingField: i32,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+BranchLabel")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Interpreter::BranchLabel =>
-    "System.Linq.Expressions.Interpreter"."BranchLabel"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Interpreter::BranchLabel {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions.Interpreter";
+    const CLASS_NAME: &'static str = "BranchLabel";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Interpreter+BranchLabel")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::BranchLabel {
     type Target = quest_hook::libil2cpp::Il2CppObject;

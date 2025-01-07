@@ -5,9 +5,24 @@ pub struct OVRHaptics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRHaptics")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRHaptics => ""."OVRHaptics"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHaptics {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRHaptics";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVRHaptics")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHaptics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -55,11 +70,25 @@ pub struct OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
     >,
 }
 #[cfg(feature = "OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker => ""
-    ."OVRHaptics/OVRHapticsOutput/ClipPlaybackTracker"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ClipPlaybackTracker";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
@@ -157,10 +186,24 @@ pub struct OVRHaptics_Config {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRHaptics+Config")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRHaptics_Config => ""
-    ."OVRHaptics/Config"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHaptics_Config {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "Config";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVRHaptics+Config")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHaptics_Config {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -273,10 +316,25 @@ pub struct OVRHaptics_OVRHapticsChannel {
     >,
 }
 #[cfg(feature = "OVRHaptics+OVRHapticsChannel")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRHaptics_OVRHapticsChannel =>
-    ""."OVRHaptics/OVRHapticsChannel"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRHapticsChannel";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVRHaptics+OVRHapticsChannel")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -391,10 +449,25 @@ pub struct OVRHaptics_OVRHapticsOutput {
     pub PrevSampleRateHz: i32,
 }
 #[cfg(feature = "OVRHaptics+OVRHapticsOutput")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRHaptics_OVRHapticsOutput =>
-    ""."OVRHaptics/OVRHapticsOutput"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRHapticsOutput";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVRHaptics+OVRHapticsOutput")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
     type Target = quest_hook::libil2cpp::Il2CppObject;

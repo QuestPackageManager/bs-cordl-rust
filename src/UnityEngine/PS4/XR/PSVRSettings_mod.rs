@@ -5,10 +5,24 @@ pub struct PSVRSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
 }
 #[cfg(feature = "UnityEngine+PS4+XR+PSVRSettings")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::PS4::XR::PSVRSettings =>
-    "UnityEngine.PS4.XR"."PSVRSettings"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PS4::XR::PSVRSettings {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.PS4.XR";
+    const CLASS_NAME: &'static str = "PSVRSettings";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+PS4+XR+PSVRSettings")]
 impl std::ops::Deref for crate::UnityEngine::PS4::XR::PSVRSettings {
     type Target = crate::UnityEngine::ScriptableObject;

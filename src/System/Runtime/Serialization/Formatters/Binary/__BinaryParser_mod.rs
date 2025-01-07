@@ -62,11 +62,25 @@ pub struct __BinaryParser {
     >,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryParser")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Runtime::Serialization::Formatters::Binary::__BinaryParser =>
-    "System.Runtime.Serialization.Formatters.Binary"."__BinaryParser"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.Serialization.Formatters.Binary";
+    const CLASS_NAME: &'static str = "__BinaryParser";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryParser")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {

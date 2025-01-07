@@ -5,10 +5,25 @@ pub struct AspMvcViewAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(feature = "JetBrains+Annotations+AspMvcViewAttribute")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::JetBrains::Annotations::AspMvcViewAttribute =>
-    "JetBrains.Annotations"."AspMvcViewAttribute"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::JetBrains::Annotations::AspMvcViewAttribute {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "JetBrains.Annotations";
+    const CLASS_NAME: &'static str = "AspMvcViewAttribute";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "JetBrains+Annotations+AspMvcViewAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::AspMvcViewAttribute {
     type Target = crate::System::Attribute;

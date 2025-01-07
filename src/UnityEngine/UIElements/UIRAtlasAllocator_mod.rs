@@ -25,10 +25,25 @@ pub struct UIRAtlasAllocator {
     pub _disposed_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::UIRAtlasAllocator =>
-    "UnityEngine.UIElements"."UIRAtlasAllocator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UIRAtlasAllocator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UIRAtlasAllocator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRAtlasAllocator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -287,11 +302,25 @@ pub struct UIRAtlasAllocator_AreaNode {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode => "UnityEngine.UIElements"
-    ."UIRAtlasAllocator/AreaNode"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "AreaNode";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -392,10 +421,25 @@ pub struct UIRAtlasAllocator_Row {
     pub Cursor: i32,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::UIRAtlasAllocator_Row
-    => "UnityEngine.UIElements"."UIRAtlasAllocator/Row"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "Row";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
     type Target = quest_hook::libil2cpp::Il2CppObject;

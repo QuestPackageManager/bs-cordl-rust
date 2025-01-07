@@ -5,10 +5,24 @@ pub struct SliderInt {
     __cordl_parent: crate::UnityEngine::UIElements::BaseSlider_1<i32>,
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::SliderInt =>
-    "UnityEngine.UIElements"."SliderInt"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::SliderInt {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "SliderInt";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+SliderInt")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::SliderInt {
     type Target = crate::UnityEngine::UIElements::BaseSlider_1<i32>;
@@ -191,10 +205,25 @@ pub struct SliderInt_UxmlFactory {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlFactory")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::SliderInt_UxmlFactory
-    => "UnityEngine.UIElements"."SliderInt/UxmlFactory"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::SliderInt_UxmlFactory {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UxmlFactory";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::SliderInt_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
@@ -268,10 +297,25 @@ pub struct SliderInt_UxmlTraits {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlTraits")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::SliderInt_UxmlTraits =>
-    "UnityEngine.UIElements"."SliderInt/UxmlTraits"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::SliderInt_UxmlTraits {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UxmlTraits";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::SliderInt_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<i32>;

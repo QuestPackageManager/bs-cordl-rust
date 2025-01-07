@@ -30,10 +30,25 @@ pub struct LocalLeaderboardViewController {
     pub _enableClear: bool,
 }
 #[cfg(feature = "LocalLeaderboardViewController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::LocalLeaderboardViewController
-    => ""."LocalLeaderboardViewController"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LocalLeaderboardViewController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LocalLeaderboardViewController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LocalLeaderboardViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardViewController {
     type Target = crate::GlobalNamespace::LeaderboardViewController;

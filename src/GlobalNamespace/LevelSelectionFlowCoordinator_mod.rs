@@ -20,10 +20,25 @@ pub struct LevelSelectionFlowCoordinator {
     >,
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelSelectionFlowCoordinator
-    => ""."LevelSelectionFlowCoordinator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LevelSelectionFlowCoordinator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LevelSelectionFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
@@ -559,11 +574,25 @@ pub struct LevelSelectionFlowCoordinator_State {
     pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator+State")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LevelSelectionFlowCoordinator_State => ""
-    ."LevelSelectionFlowCoordinator/State"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "State";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LevelSelectionFlowCoordinator+State")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
     type Target = quest_hook::libil2cpp::Il2CppObject;

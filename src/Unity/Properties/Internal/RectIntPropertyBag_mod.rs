@@ -7,10 +7,25 @@ pub struct RectIntPropertyBag {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Properties::Internal::RectIntPropertyBag
-    => "Unity.Properties.Internal"."RectIntPropertyBag"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::RectIntPropertyBag {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "RectIntPropertyBag";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::RectIntPropertyBag {
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
@@ -74,11 +89,25 @@ pub struct RectIntPropertyBag_HeightProperty {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+HeightProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::RectIntPropertyBag_HeightProperty =>
-    "Unity.Properties.Internal"."RectIntPropertyBag/HeightProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::RectIntPropertyBag_HeightProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "HeightProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+HeightProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::RectIntPropertyBag_HeightProperty {
@@ -147,11 +176,25 @@ pub struct RectIntPropertyBag_WidthProperty {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+WidthProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::RectIntPropertyBag_WidthProperty =>
-    "Unity.Properties.Internal"."RectIntPropertyBag/WidthProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::RectIntPropertyBag_WidthProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "WidthProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+WidthProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::RectIntPropertyBag_WidthProperty {
@@ -220,11 +263,25 @@ pub struct RectIntPropertyBag_XProperty {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+XProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::RectIntPropertyBag_XProperty =>
-    "Unity.Properties.Internal"."RectIntPropertyBag/XProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::RectIntPropertyBag_XProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "XProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+XProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::RectIntPropertyBag_XProperty {
@@ -293,11 +350,25 @@ pub struct RectIntPropertyBag_YProperty {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+YProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::RectIntPropertyBag_YProperty =>
-    "Unity.Properties.Internal"."RectIntPropertyBag/YProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::RectIntPropertyBag_YProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "YProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+YProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::RectIntPropertyBag_YProperty {

@@ -13,12 +13,25 @@ pub struct DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescrip
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::Design::DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescriptor
-    => "System.ComponentModel.Design"
-    ."DesignerOptionService/DesignerOptionCollection/WrappedPropertyDescriptor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescriptor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel.Design";
+    const CLASS_NAME: &'static str = "WrappedPropertyDescriptor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
 )]
@@ -193,12 +206,25 @@ pub struct DesignerOptionConverter_DesignerOptionService_OptionPropertyDescripto
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptionService_OptionPropertyDescriptor
-    => "System.ComponentModel.Design"
-    ."DesignerOptionService/DesignerOptionConverter/OptionPropertyDescriptor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptionService_OptionPropertyDescriptor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel.Design";
+    const CLASS_NAME: &'static str = "OptionPropertyDescriptor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
 )]
@@ -351,11 +377,25 @@ pub struct DesignerOptionService {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+Design+DesignerOptionService")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::Design::DesignerOptionService =>
-    "System.ComponentModel.Design"."DesignerOptionService"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::Design::DesignerOptionService {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel.Design";
+    const CLASS_NAME: &'static str = "DesignerOptionService";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+Design+DesignerOptionService")]
 impl std::ops::Deref for crate::System::ComponentModel::Design::DesignerOptionService {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -424,11 +464,25 @@ pub struct DesignerOptionService_DesignerOptionCollection {
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection =>
-    "System.ComponentModel.Design"."DesignerOptionService/DesignerOptionCollection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel.Design";
+    const CLASS_NAME: &'static str = "DesignerOptionCollection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
 )]
@@ -591,11 +645,25 @@ pub struct DesignerOptionService_DesignerOptionConverter {
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::Design::DesignerOptionService_DesignerOptionConverter =>
-    "System.ComponentModel.Design"."DesignerOptionService/DesignerOptionConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel.Design";
+    const CLASS_NAME: &'static str = "DesignerOptionConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
 )]

@@ -61,10 +61,80 @@ pub struct IVRRenderModels {
     >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRRenderModels => "OVR.OpenVR"
-    ."IVRRenderModels"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRRenderModels {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "IVRRenderModels";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRRenderModels {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRRenderModels {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRRenderModels {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRRenderModels {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRRenderModels {
     type Type = Self;
@@ -123,10 +193,25 @@ pub struct IVRRenderModels__FreeRenderModel {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeRenderModel")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRRenderModels__FreeRenderModel =>
-    "OVR.OpenVR"."IVRRenderModels/_FreeRenderModel"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__FreeRenderModel {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_FreeRenderModel";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeRenderModel")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__FreeRenderModel {
     type Target = crate::System::MulticastDelegate;
@@ -219,10 +304,25 @@ pub struct IVRRenderModels__FreeTexture {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeTexture")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRRenderModels__FreeTexture =>
-    "OVR.OpenVR"."IVRRenderModels/_FreeTexture"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__FreeTexture {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_FreeTexture";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeTexture")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__FreeTexture {
     type Target = crate::System::MulticastDelegate;
@@ -315,10 +415,25 @@ pub struct IVRRenderModels__FreeTextureD3D11 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeTextureD3D11")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRRenderModels__FreeTextureD3D11
-    => "OVR.OpenVR"."IVRRenderModels/_FreeTextureD3D11"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__FreeTextureD3D11 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_FreeTextureD3D11";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeTextureD3D11")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__FreeTextureD3D11 {
     type Target = crate::System::MulticastDelegate;
@@ -411,11 +526,25 @@ pub struct IVRRenderModels__GetComponentButtonMask {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentButtonMask")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRRenderModels__GetComponentButtonMask => "OVR.OpenVR"
-    ."IVRRenderModels/_GetComponentButtonMask"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__GetComponentButtonMask {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetComponentButtonMask";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentButtonMask")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetComponentButtonMask {
     type Target = crate::System::MulticastDelegate;
@@ -516,10 +645,25 @@ pub struct IVRRenderModels__GetComponentCount {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentCount")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRRenderModels__GetComponentCount
-    => "OVR.OpenVR"."IVRRenderModels/_GetComponentCount"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__GetComponentCount {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetComponentCount";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentCount")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetComponentCount {
     type Target = crate::System::MulticastDelegate;
@@ -614,10 +758,25 @@ pub struct IVRRenderModels__GetComponentName {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentName")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRRenderModels__GetComponentName
-    => "OVR.OpenVR"."IVRRenderModels/_GetComponentName"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__GetComponentName {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetComponentName";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetComponentName {
     type Target = crate::System::MulticastDelegate;
@@ -737,11 +896,25 @@ pub struct IVRRenderModels__GetComponentRenderModelName {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentRenderModelName")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRRenderModels__GetComponentRenderModelName => "OVR.OpenVR"
-    ."IVRRenderModels/_GetComponentRenderModelName"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__GetComponentRenderModelName {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetComponentRenderModelName";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentRenderModelName")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetComponentRenderModelName {
@@ -867,10 +1040,25 @@ pub struct IVRRenderModels__GetComponentState {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentState")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRRenderModels__GetComponentState
-    => "OVR.OpenVR"."IVRRenderModels/_GetComponentState"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__GetComponentState {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetComponentState";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentState")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetComponentState {
     type Target = crate::System::MulticastDelegate;
@@ -1016,11 +1204,25 @@ pub struct IVRRenderModels__GetComponentStateForDevicePath {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentStateForDevicePath")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRRenderModels__GetComponentStateForDevicePath => "OVR.OpenVR"
-    ."IVRRenderModels/_GetComponentStateForDevicePath"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__GetComponentStateForDevicePath {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetComponentStateForDevicePath";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentStateForDevicePath")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetComponentStateForDevicePath {
@@ -1161,11 +1363,25 @@ pub struct IVRRenderModels__GetRenderModelCount {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelCount")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRRenderModels__GetRenderModelCount => "OVR.OpenVR"
-    ."IVRRenderModels/_GetRenderModelCount"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelCount {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetRenderModelCount";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelCount")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelCount {
     type Target = crate::System::MulticastDelegate;
@@ -1252,11 +1468,25 @@ pub struct IVRRenderModels__GetRenderModelErrorNameFromEnum {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelErrorNameFromEnum")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRRenderModels__GetRenderModelErrorNameFromEnum => "OVR.OpenVR"
-    ."IVRRenderModels/_GetRenderModelErrorNameFromEnum"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelErrorNameFromEnum {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetRenderModelErrorNameFromEnum";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelErrorNameFromEnum")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelErrorNameFromEnum {
@@ -1351,10 +1581,25 @@ pub struct IVRRenderModels__GetRenderModelName {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelName")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRRenderModels__GetRenderModelName
-    => "OVR.OpenVR"."IVRRenderModels/_GetRenderModelName"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelName {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetRenderModelName";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelName {
     type Target = crate::System::MulticastDelegate;
@@ -1466,11 +1711,25 @@ pub struct IVRRenderModels__GetRenderModelOriginalPath {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelOriginalPath")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRRenderModels__GetRenderModelOriginalPath => "OVR.OpenVR"
-    ."IVRRenderModels/_GetRenderModelOriginalPath"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelOriginalPath {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetRenderModelOriginalPath";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelOriginalPath")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelOriginalPath {
@@ -1592,11 +1851,25 @@ pub struct IVRRenderModels__GetRenderModelThumbnailURL {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelThumbnailURL")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRRenderModels__GetRenderModelThumbnailURL => "OVR.OpenVR"
-    ."IVRRenderModels/_GetRenderModelThumbnailURL"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelThumbnailURL {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetRenderModelThumbnailURL";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelThumbnailURL")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelThumbnailURL {
@@ -1718,11 +1991,25 @@ pub struct IVRRenderModels__LoadIntoTextureD3D11_Async {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadIntoTextureD3D11_Async")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRRenderModels__LoadIntoTextureD3D11_Async => "OVR.OpenVR"
-    ."IVRRenderModels/_LoadIntoTextureD3D11_Async"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__LoadIntoTextureD3D11_Async {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_LoadIntoTextureD3D11_Async";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadIntoTextureD3D11_Async")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__LoadIntoTextureD3D11_Async {
@@ -1819,11 +2106,25 @@ pub struct IVRRenderModels__LoadRenderModel_Async {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadRenderModel_Async")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRRenderModels__LoadRenderModel_Async => "OVR.OpenVR"
-    ."IVRRenderModels/_LoadRenderModel_Async"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__LoadRenderModel_Async {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_LoadRenderModel_Async";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadRenderModel_Async")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__LoadRenderModel_Async {
     type Target = crate::System::MulticastDelegate;
@@ -1926,11 +2227,25 @@ pub struct IVRRenderModels__LoadTextureD3D11_Async {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadTextureD3D11_Async")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRRenderModels__LoadTextureD3D11_Async => "OVR.OpenVR"
-    ."IVRRenderModels/_LoadTextureD3D11_Async"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__LoadTextureD3D11_Async {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_LoadTextureD3D11_Async";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadTextureD3D11_Async")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__LoadTextureD3D11_Async {
     type Target = crate::System::MulticastDelegate;
@@ -2031,10 +2346,25 @@ pub struct IVRRenderModels__LoadTexture_Async {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadTexture_Async")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRRenderModels__LoadTexture_Async
-    => "OVR.OpenVR"."IVRRenderModels/_LoadTexture_Async"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__LoadTexture_Async {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_LoadTexture_Async";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadTexture_Async")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__LoadTexture_Async {
     type Target = crate::System::MulticastDelegate;
@@ -2130,11 +2460,25 @@ pub struct IVRRenderModels__RenderModelHasComponent {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_RenderModelHasComponent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRRenderModels__RenderModelHasComponent => "OVR.OpenVR"
-    ."IVRRenderModels/_RenderModelHasComponent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRRenderModels__RenderModelHasComponent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_RenderModelHasComponent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_RenderModelHasComponent")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__RenderModelHasComponent {
     type Target = crate::System::MulticastDelegate;

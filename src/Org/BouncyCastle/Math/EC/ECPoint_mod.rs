@@ -21,10 +21,24 @@ pub struct ECPoint {
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECPoint")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Math::EC::ECPoint =>
-    "Org.BouncyCastle.Math.EC"."ECPoint"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Math::EC::ECPoint {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC";
+    const CLASS_NAME: &'static str = "ECPoint";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECPoint")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECPoint {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -697,11 +711,25 @@ pub struct ECPoint_ValidityCallback {
     pub m_checkOrder: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECPoint+ValidityCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Math::EC::ECPoint_ValidityCallback => "Org.BouncyCastle.Math.EC"
-    ."ECPoint/ValidityCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Math::EC::ECPoint_ValidityCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC";
+    const CLASS_NAME: &'static str = "ValidityCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECPoint+ValidityCallback")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECPoint_ValidityCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;

@@ -17,11 +17,25 @@ pub struct XmlSerializationWriter {
     >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Serialization::XmlSerializationWriter => "System.Xml.Serialization"
-    ."XmlSerializationWriter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Serialization::XmlSerializationWriter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Serialization";
+    const CLASS_NAME: &'static str = "XmlSerializationWriter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlSerializationWriter {
     type Target = crate::System::Xml::Serialization::XmlSerializationGeneratedCode;
@@ -718,11 +732,25 @@ pub struct XmlSerializationWriter_WriteCallbackInfo {
     >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Serialization::XmlSerializationWriter_WriteCallbackInfo =>
-    "System.Xml.Serialization"."XmlSerializationWriter/WriteCallbackInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Serialization::XmlSerializationWriter_WriteCallbackInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Serialization";
+    const CLASS_NAME: &'static str = "WriteCallbackInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationWriter_WriteCallbackInfo {

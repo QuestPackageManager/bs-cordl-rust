@@ -12,10 +12,25 @@ pub struct RuntimePropertyInfo {
     >,
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Reflection::RuntimePropertyInfo =>
-    "System.Reflection"."RuntimePropertyInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Reflection::RuntimePropertyInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Reflection";
+    const CLASS_NAME: &'static str = "RuntimePropertyInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
 impl std::ops::Deref for crate::System::Reflection::RuntimePropertyInfo {
     type Target = crate::System::Reflection::PropertyInfo;
@@ -523,11 +538,25 @@ pub struct RuntimePropertyInfo_GetterAdapter {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Reflection::RuntimePropertyInfo_GetterAdapter => "System.Reflection"
-    ."RuntimePropertyInfo/GetterAdapter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Reflection";
+    const CLASS_NAME: &'static str = "GetterAdapter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
 impl std::ops::Deref for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
     type Target = crate::System::MulticastDelegate;
@@ -603,10 +632,41 @@ pub struct RuntimePropertyInfo_Getter_2<
     __cordl_phantom_R: std::marker::PhantomData<R>,
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Reflection::RuntimePropertyInfo_Getter_2
-    < T, R > => "System.Reflection"."RuntimePropertyInfo/Getter`2" < T, R >
-);
+unsafe impl<
+    T: quest_hook::libil2cpp::Type,
+    R: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Reflection";
+    const CLASS_NAME: &'static str = "Getter`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System.Reflection", "Getter`2")
+                    .unwrap()
+                    .make_generic::<(T, R)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
 impl<T: quest_hook::libil2cpp::Type, R: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
@@ -696,11 +756,41 @@ pub struct RuntimePropertyInfo_StaticGetter_1<R: quest_hook::libil2cpp::Type> {
     __cordl_phantom_R: std::marker::PhantomData<R>,
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Reflection::RuntimePropertyInfo_StaticGetter_1 < R > => "System.Reflection"
-    ."RuntimePropertyInfo/StaticGetter`1" < R >
-);
+unsafe impl<R: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Reflection";
+    const CLASS_NAME: &'static str = "StaticGetter`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Reflection",
+                        "StaticGetter`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(R)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
 impl<R: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {

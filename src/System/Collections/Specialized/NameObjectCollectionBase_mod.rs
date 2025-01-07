@@ -19,11 +19,25 @@ pub struct NameObjectCollectionBase {
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Specialized::NameObjectCollectionBase =>
-    "System.Collections.Specialized"."NameObjectCollectionBase"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Specialized::NameObjectCollectionBase {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Specialized";
+    const CLASS_NAME: &'static str = "NameObjectCollectionBase";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NameObjectCollectionBase {
@@ -467,11 +481,25 @@ pub struct NameObjectCollectionBase_NameObjectEntry {
 #[cfg(
     feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry =>
-    "System.Collections.Specialized"."NameObjectCollectionBase/NameObjectEntry"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Specialized";
+    const CLASS_NAME: &'static str = "NameObjectEntry";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
 )]
@@ -546,12 +574,25 @@ pub struct NameObjectCollectionBase_NameObjectKeysEnumerator {
 #[cfg(
     feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Specialized::NameObjectCollectionBase_NameObjectKeysEnumerator
-    => "System.Collections.Specialized"
-    ."NameObjectCollectionBase/NameObjectKeysEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectKeysEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Specialized";
+    const CLASS_NAME: &'static str = "NameObjectKeysEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
 )]

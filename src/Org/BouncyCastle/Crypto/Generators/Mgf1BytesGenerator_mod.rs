@@ -8,11 +8,25 @@ pub struct Mgf1BytesGenerator {
     pub hLen: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Mgf1BytesGenerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Generators::Mgf1BytesGenerator =>
-    "Org.BouncyCastle.Crypto.Generators"."Mgf1BytesGenerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Generators::Mgf1BytesGenerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Generators";
+    const CLASS_NAME: &'static str = "Mgf1BytesGenerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Mgf1BytesGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::Mgf1BytesGenerator {

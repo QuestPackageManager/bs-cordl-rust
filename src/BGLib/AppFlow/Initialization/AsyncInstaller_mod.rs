@@ -5,10 +5,25 @@ pub struct AsyncInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::BGLib::AppFlow::Initialization::AsyncInstaller
-    => "BGLib.AppFlow.Initialization"."AsyncInstaller"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BGLib::AppFlow::Initialization::AsyncInstaller {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BGLib.AppFlow.Initialization";
+    const CLASS_NAME: &'static str = "AsyncInstaller";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller")]
 impl std::ops::Deref for crate::BGLib::AppFlow::Initialization::AsyncInstaller {
     type Target = crate::Zenject::MonoInstaller;
@@ -93,11 +108,25 @@ pub struct AsyncInstaller_IInstallerRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry =>
-    "BGLib.AppFlow.Initialization"."AsyncInstaller/IInstallerRegistry"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BGLib.AppFlow.Initialization";
+    const CLASS_NAME: &'static str = "IInstallerRegistry";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry")]
 impl std::ops::Deref
 for crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry {

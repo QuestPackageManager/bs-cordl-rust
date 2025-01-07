@@ -5,10 +5,24 @@ pub struct BurstCompiler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Burst::BurstCompiler => "Unity.Burst"
-    ."BurstCompiler"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstCompiler {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Burst";
+    const CLASS_NAME: &'static str = "BurstCompiler";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Burst+BurstCompiler")]
 impl std::ops::Deref for crate::Unity::Burst::BurstCompiler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -401,11 +415,25 @@ pub struct BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegate =>
-    "Unity.Burst"."BurstCompiler/BurstCompilerHelper/IsBurstEnabledDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Burst";
+    const CLASS_NAME: &'static str = "IsBurstEnabledDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate")]
 impl std::ops::Deref
 for crate::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegate {
@@ -494,10 +522,25 @@ pub struct BurstCompiler_BurstCompilerHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Burst::BurstCompiler_BurstCompilerHelper
-    => "Unity.Burst"."BurstCompiler/BurstCompilerHelper"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Burst::BurstCompiler_BurstCompilerHelper {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Burst";
+    const CLASS_NAME: &'static str = "BurstCompilerHelper";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper")]
 impl std::ops::Deref for crate::Unity::Burst::BurstCompiler_BurstCompilerHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -556,10 +599,25 @@ pub struct BurstCompiler_CommandBuilder {
     pub _hasArgs: bool,
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Burst::BurstCompiler_CommandBuilder =>
-    "Unity.Burst"."BurstCompiler/CommandBuilder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Burst::BurstCompiler_CommandBuilder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Burst";
+    const CLASS_NAME: &'static str = "CommandBuilder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
 impl std::ops::Deref for crate::Unity::Burst::BurstCompiler_CommandBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -682,10 +740,25 @@ pub struct BurstCompiler_FakeDelegate {
     >,
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Burst::BurstCompiler_FakeDelegate =>
-    "Unity.Burst"."BurstCompiler/FakeDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Burst::BurstCompiler_FakeDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Burst";
+    const CLASS_NAME: &'static str = "FakeDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
 impl std::ops::Deref for crate::Unity::Burst::BurstCompiler_FakeDelegate {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -753,11 +826,25 @@ pub struct BurstCompiler_StaticTypeReinitAttribute {
     pub reinitType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute => "Unity.Burst"
-    ."BurstCompiler/StaticTypeReinitAttribute"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Burst";
+    const CLASS_NAME: &'static str = "StaticTypeReinitAttribute";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
 impl std::ops::Deref for crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute {
     type Target = crate::System::Attribute;

@@ -8,10 +8,24 @@ pub struct XmlQualifiedName {
     pub hash: i32,
 }
 #[cfg(feature = "System+Xml+XmlQualifiedName")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlQualifiedName => "System.Xml"
-    ."XmlQualifiedName"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlQualifiedName {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml";
+    const CLASS_NAME: &'static str = "XmlQualifiedName";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+XmlQualifiedName")]
 impl std::ops::Deref for crate::System::Xml::XmlQualifiedName {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -293,11 +307,25 @@ pub struct XmlQualifiedName_HashCodeOfStringDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Xml+XmlQualifiedName+HashCodeOfStringDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::XmlQualifiedName_HashCodeOfStringDelegate => "System.Xml"
-    ."XmlQualifiedName/HashCodeOfStringDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::XmlQualifiedName_HashCodeOfStringDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml";
+    const CLASS_NAME: &'static str = "HashCodeOfStringDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+XmlQualifiedName+HashCodeOfStringDelegate")]
 impl std::ops::Deref for crate::System::Xml::XmlQualifiedName_HashCodeOfStringDelegate {
     type Target = crate::System::MulticastDelegate;

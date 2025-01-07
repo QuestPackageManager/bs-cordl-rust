@@ -30,11 +30,25 @@ pub struct SteamLevelProductCollectionModel {
     pub _maxPossibleInstalledDepots: i32,
 }
 #[cfg(feature = "SteamLevelProductCollectionModel")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SteamLevelProductCollectionModel => ""
-    ."SteamLevelProductCollectionModel"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SteamLevelProductCollectionModel {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SteamLevelProductCollectionModel";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SteamLevelProductCollectionModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SteamLevelProductCollectionModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -188,11 +202,25 @@ pub struct SteamLevelProductCollectionModel_LevelDepotData {
     pub noEnvironmentKeywordsDepotId: u32,
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelDepotData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData => ""
-    ."SteamLevelProductCollectionModel/LevelDepotData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LevelDepotData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelDepotData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
@@ -254,11 +282,25 @@ pub struct SteamLevelProductCollectionModel_LevelPackProductData {
     >,
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData => ""
-    ."SteamLevelProductCollectionModel/LevelPackProductData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LevelPackProductData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData {
@@ -417,11 +459,25 @@ pub struct SteamLevelProductCollectionModel_LevelPackRedirectionData {
     pub _validUntilDate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData => ""
-    ."SteamLevelProductCollectionModel/LevelPackRedirectionData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LevelPackRedirectionData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData {
@@ -525,11 +581,25 @@ pub struct SteamLevelProductCollectionModel_LevelProductData {
     >,
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData => ""
-    ."SteamLevelProductCollectionModel/LevelProductData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LevelProductData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {

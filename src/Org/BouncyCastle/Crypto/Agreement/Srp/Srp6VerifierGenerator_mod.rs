@@ -8,11 +8,25 @@ pub struct Srp6VerifierGenerator {
     pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Srp+Srp6VerifierGenerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6VerifierGenerator =>
-    "Org.BouncyCastle.Crypto.Agreement.Srp"."Srp6VerifierGenerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6VerifierGenerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Agreement.Srp";
+    const CLASS_NAME: &'static str = "Srp6VerifierGenerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Srp+Srp6VerifierGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6VerifierGenerator {

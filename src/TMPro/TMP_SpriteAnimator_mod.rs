@@ -9,10 +9,24 @@ pub struct TMP_SpriteAnimator {
     pub m_TextComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
 }
 #[cfg(feature = "TMPro+TMP_SpriteAnimator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_SpriteAnimator => "TMPro"
-    ."TMP_SpriteAnimator"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_SpriteAnimator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "TMPro";
+    const CLASS_NAME: &'static str = "TMP_SpriteAnimator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TMPro+TMP_SpriteAnimator")]
 impl std::ops::Deref for crate::TMPro::TMP_SpriteAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;

@@ -5,10 +5,25 @@ pub struct INoteVisualModifierTypeProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "INoteVisualModifierTypeProvider")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::INoteVisualModifierTypeProvider
-    => ""."INoteVisualModifierTypeProvider"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::INoteVisualModifierTypeProvider {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "INoteVisualModifierTypeProvider";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "INoteVisualModifierTypeProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::INoteVisualModifierTypeProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;

@@ -5,11 +5,25 @@ pub struct HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+HttpApi+HTTP_REQUEST_HEADER_ID")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Net::HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID => "System.Net"
-    ."UnsafeNclNativeMethods/HttpApi/HTTP_REQUEST_HEADER_ID"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "HTTP_REQUEST_HEADER_ID";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+HttpApi+HTTP_REQUEST_HEADER_ID")]
 impl std::ops::Deref
 for crate::System::Net::HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
@@ -56,10 +70,24 @@ pub struct UnsafeNclNativeMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::UnsafeNclNativeMethods =>
-    "System.Net"."UnsafeNclNativeMethods"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::UnsafeNclNativeMethods {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "UnsafeNclNativeMethods";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods")]
 impl std::ops::Deref for crate::System::Net::UnsafeNclNativeMethods {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -96,10 +124,25 @@ pub struct UnsafeNclNativeMethods_HttpApi {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+HttpApi")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::UnsafeNclNativeMethods_HttpApi =>
-    "System.Net"."UnsafeNclNativeMethods/HttpApi"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::UnsafeNclNativeMethods_HttpApi {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "HttpApi";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+HttpApi")]
 impl std::ops::Deref for crate::System::Net::UnsafeNclNativeMethods_HttpApi {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -135,11 +178,25 @@ pub struct UnsafeNclNativeMethods_SecureStringHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+SecureStringHelper")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Net::UnsafeNclNativeMethods_SecureStringHelper => "System.Net"
-    ."UnsafeNclNativeMethods/SecureStringHelper"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::UnsafeNclNativeMethods_SecureStringHelper {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "SecureStringHelper";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+SecureStringHelper")]
 impl std::ops::Deref for crate::System::Net::UnsafeNclNativeMethods_SecureStringHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;

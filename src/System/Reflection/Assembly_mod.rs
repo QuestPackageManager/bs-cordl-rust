@@ -5,10 +5,24 @@ pub struct Assembly {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Reflection+Assembly")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Reflection::Assembly =>
-    "System.Reflection"."Assembly"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::Assembly {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Reflection";
+    const CLASS_NAME: &'static str = "Assembly";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Reflection+Assembly")]
 impl std::ops::Deref for crate::System::Reflection::Assembly {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -540,10 +554,25 @@ pub struct Assembly_ResolveEventHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Reflection+Assembly+ResolveEventHolder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Reflection::Assembly_ResolveEventHolder
-    => "System.Reflection"."Assembly/ResolveEventHolder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Reflection::Assembly_ResolveEventHolder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Reflection";
+    const CLASS_NAME: &'static str = "ResolveEventHolder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Reflection+Assembly+ResolveEventHolder")]
 impl std::ops::Deref for crate::System::Reflection::Assembly_ResolveEventHolder {
     type Target = quest_hook::libil2cpp::Il2CppObject;

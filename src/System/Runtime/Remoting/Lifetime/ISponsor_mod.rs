@@ -5,10 +5,25 @@ pub struct ISponsor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+ISponsor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Runtime::Remoting::Lifetime::ISponsor =>
-    "System.Runtime.Remoting.Lifetime"."ISponsor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Runtime::Remoting::Lifetime::ISponsor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.Remoting.Lifetime";
+    const CLASS_NAME: &'static str = "ISponsor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+ISponsor")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Lifetime::ISponsor {
     type Target = quest_hook::libil2cpp::Il2CppObject;

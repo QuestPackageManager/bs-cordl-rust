@@ -12,10 +12,24 @@ pub struct NetSocket {
     pub IsRunning: bool,
 }
 #[cfg(feature = "LiteNetLib+NetSocket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::NetSocket => "LiteNetLib"
-    ."NetSocket"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetSocket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "NetSocket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+NetSocket")]
 impl std::ops::Deref for crate::LiteNetLib::NetSocket {
     type Target = quest_hook::libil2cpp::Il2CppObject;

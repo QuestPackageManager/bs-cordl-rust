@@ -13,10 +13,24 @@ pub struct ExpandoObject {
     >,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Dynamic::ExpandoObject =>
-    "System.Dynamic"."ExpandoObject"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::ExpandoObject {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic";
+    const CLASS_NAME: &'static str = "ExpandoObject";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+ExpandoObject")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -718,10 +732,25 @@ pub struct ExpandoObject_ExpandoData {
     pub _version: i32,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ExpandoData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Dynamic::ExpandoObject_ExpandoData =>
-    "System.Dynamic"."ExpandoObject/ExpandoData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Dynamic::ExpandoObject_ExpandoData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic";
+    const CLASS_NAME: &'static str = "ExpandoData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+ExpandoObject+ExpandoData")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_ExpandoData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -869,10 +898,25 @@ pub struct ExpandoObject_KeyCollection {
     >,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Dynamic::ExpandoObject_KeyCollection =>
-    "System.Dynamic"."ExpandoObject/KeyCollection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Dynamic::ExpandoObject_KeyCollection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic";
+    const CLASS_NAME: &'static str = "KeyCollection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_KeyCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1109,11 +1153,25 @@ pub struct ExpandoObject_KeyCollectionDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollectionDebugView")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Dynamic::ExpandoObject_KeyCollectionDebugView => "System.Dynamic"
-    ."ExpandoObject/KeyCollectionDebugView"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Dynamic::ExpandoObject_KeyCollectionDebugView {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic";
+    const CLASS_NAME: &'static str = "KeyCollectionDebugView";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollectionDebugView")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_KeyCollectionDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1147,10 +1205,25 @@ pub struct ExpandoObject_MetaExpando {
     __cordl_parent: crate::System::Dynamic::DynamicMetaObject,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+MetaExpando")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Dynamic::ExpandoObject_MetaExpando =>
-    "System.Dynamic"."ExpandoObject/MetaExpando"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Dynamic::ExpandoObject_MetaExpando {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic";
+    const CLASS_NAME: &'static str = "MetaExpando";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+ExpandoObject+MetaExpando")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_MetaExpando {
     type Target = crate::System::Dynamic::DynamicMetaObject;
@@ -1406,10 +1479,25 @@ pub struct ExpandoObject_ValueCollection {
     >,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Dynamic::ExpandoObject_ValueCollection
-    => "System.Dynamic"."ExpandoObject/ValueCollection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Dynamic::ExpandoObject_ValueCollection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic";
+    const CLASS_NAME: &'static str = "ValueCollection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_ValueCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1646,11 +1734,25 @@ pub struct ExpandoObject_ValueCollectionDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollectionDebugView")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Dynamic::ExpandoObject_ValueCollectionDebugView => "System.Dynamic"
-    ."ExpandoObject/ValueCollectionDebugView"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Dynamic::ExpandoObject_ValueCollectionDebugView {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic";
+    const CLASS_NAME: &'static str = "ValueCollectionDebugView";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollectionDebugView")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_ValueCollectionDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;

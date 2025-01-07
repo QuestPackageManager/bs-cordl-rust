@@ -5,10 +5,25 @@ pub struct TypeConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::ComponentModel::TypeConverter =>
-    "System.ComponentModel"."TypeConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "TypeConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -630,11 +645,25 @@ pub struct TypeConverter_SimplePropertyDescriptor {
     pub propertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter+SimplePropertyDescriptor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::TypeConverter_SimplePropertyDescriptor =>
-    "System.ComponentModel"."TypeConverter/SimplePropertyDescriptor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "SimplePropertyDescriptor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeConverter+SimplePropertyDescriptor")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
@@ -789,11 +818,25 @@ pub struct TypeConverter_StandardValuesCollection {
     pub valueArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::TypeConverter_StandardValuesCollection =>
-    "System.ComponentModel"."TypeConverter/StandardValuesCollection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "StandardValuesCollection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {

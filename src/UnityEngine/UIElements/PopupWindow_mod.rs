@@ -8,10 +8,24 @@ pub struct PopupWindow {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PopupWindow")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::PopupWindow =>
-    "UnityEngine.UIElements"."PopupWindow"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::PopupWindow {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "PopupWindow";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+PopupWindow")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PopupWindow {
     type Target = crate::UnityEngine::UIElements::TextElement;
@@ -81,10 +95,25 @@ pub struct PopupWindow_UxmlFactory {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlFactory")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::PopupWindow_UxmlFactory
-    => "UnityEngine.UIElements"."PopupWindow/UxmlFactory"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UxmlFactory";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
@@ -138,10 +167,25 @@ pub struct PopupWindow_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement_UxmlTraits,
 }
 #[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlTraits")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::PopupWindow_UxmlTraits
-    => "UnityEngine.UIElements"."PopupWindow/UxmlTraits"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::PopupWindow_UxmlTraits {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UxmlTraits";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PopupWindow_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextElement_UxmlTraits;

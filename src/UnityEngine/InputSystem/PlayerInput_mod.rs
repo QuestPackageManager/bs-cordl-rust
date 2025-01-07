@@ -108,10 +108,25 @@ pub struct PlayerInput {
     pub m_OnDeviceChangeHooked: bool,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::PlayerInput =>
-    "UnityEngine.InputSystem"."PlayerInput"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::PlayerInput {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "PlayerInput";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -1103,11 +1118,25 @@ pub struct PlayerInput_ActionEvent {
     pub m_ActionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::PlayerInput_ActionEvent => "UnityEngine.InputSystem"
-    ."PlayerInput/ActionEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "ActionEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
@@ -1230,11 +1259,25 @@ pub struct PlayerInput_ControlsChangedEvent {
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent =>
-    "UnityEngine.InputSystem"."PlayerInput/ControlsChangedEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "ControlsChangedEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
@@ -1291,11 +1334,25 @@ pub struct PlayerInput_DeviceLostEvent {
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent => "UnityEngine.InputSystem"
-    ."PlayerInput/DeviceLostEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "DeviceLostEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
@@ -1351,11 +1408,25 @@ pub struct PlayerInput_DeviceRegainedEvent {
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent =>
-    "UnityEngine.InputSystem"."PlayerInput/DeviceRegainedEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "DeviceRegainedEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {

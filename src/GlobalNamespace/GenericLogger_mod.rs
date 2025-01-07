@@ -5,10 +5,24 @@ pub struct GenericLogger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "GenericLogger")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GenericLogger => ""
-    ."GenericLogger"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GenericLogger {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "GenericLogger";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GenericLogger")]
 impl std::ops::Deref for crate::GlobalNamespace::GenericLogger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -85,10 +99,25 @@ pub struct GenericLogger_ScopedStopwatch {
     pub _stopwatch: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Stopwatch>,
 }
 #[cfg(feature = "GenericLogger+ScopedStopwatch")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GenericLogger_ScopedStopwatch
-    => ""."GenericLogger/ScopedStopwatch"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GenericLogger_ScopedStopwatch {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ScopedStopwatch";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GenericLogger+ScopedStopwatch")]
 impl std::ops::Deref for crate::GlobalNamespace::GenericLogger_ScopedStopwatch {
     type Target = quest_hook::libil2cpp::Il2CppObject;

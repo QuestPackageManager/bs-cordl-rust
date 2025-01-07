@@ -5,9 +5,24 @@ pub struct Canvas {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }
 #[cfg(feature = "UnityEngine+Canvas")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Canvas => "UnityEngine"."Canvas"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Canvas {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "Canvas";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Canvas")]
 impl std::ops::Deref for crate::UnityEngine::Canvas {
     type Target = crate::UnityEngine::Behaviour;
@@ -623,10 +638,25 @@ pub struct Canvas_WillRenderCanvases {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+Canvas+WillRenderCanvases")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Canvas_WillRenderCanvases =>
-    "UnityEngine"."Canvas/WillRenderCanvases"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Canvas_WillRenderCanvases {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "WillRenderCanvases";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Canvas+WillRenderCanvases")]
 impl std::ops::Deref for crate::UnityEngine::Canvas_WillRenderCanvases {
     type Target = crate::System::MulticastDelegate;

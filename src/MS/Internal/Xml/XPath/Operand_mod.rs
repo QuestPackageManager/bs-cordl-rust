@@ -7,10 +7,24 @@ pub struct Operand {
     pub _val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Operand")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::MS::Internal::Xml::XPath::Operand =>
-    "MS.Internal.Xml.XPath"."Operand"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::MS::Internal::Xml::XPath::Operand {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "MS.Internal.Xml.XPath";
+    const CLASS_NAME: &'static str = "Operand";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MS+Internal+Xml+XPath+Operand")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::Operand {
     type Target = crate::MS::Internal::Xml::XPath::AstNode;

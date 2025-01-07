@@ -5,10 +5,25 @@ pub struct HMACSHA1 {
     __cordl_parent: crate::System::Security::Cryptography::HMAC,
 }
 #[cfg(feature = "System+Security+Cryptography+HMACSHA1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Security::Cryptography::HMACSHA1 =>
-    "System.Security.Cryptography"."HMACSHA1"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Security::Cryptography::HMACSHA1 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Security.Cryptography";
+    const CLASS_NAME: &'static str = "HMACSHA1";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Security+Cryptography+HMACSHA1")]
 impl std::ops::Deref for crate::System::Security::Cryptography::HMACSHA1 {
     type Target = crate::System::Security::Cryptography::HMAC;

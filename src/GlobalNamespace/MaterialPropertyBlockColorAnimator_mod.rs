@@ -6,11 +6,25 @@ pub struct MaterialPropertyBlockColorAnimator {
     pub _color: crate::UnityEngine::Color,
 }
 #[cfg(feature = "MaterialPropertyBlockColorAnimator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MaterialPropertyBlockColorAnimator => ""
-    ."MaterialPropertyBlockColorAnimator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MaterialPropertyBlockColorAnimator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "MaterialPropertyBlockColorAnimator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MaterialPropertyBlockColorAnimator")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyBlockColorAnimator {
     type Target = crate::GlobalNamespace::MaterialPropertyBlockAnimator;

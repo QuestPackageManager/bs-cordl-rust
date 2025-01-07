@@ -27,10 +27,25 @@ pub struct TutorialBeatmapObjectManager {
     pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
 }
 #[cfg(feature = "TutorialBeatmapObjectManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::TutorialBeatmapObjectManager =>
-    ""."TutorialBeatmapObjectManager"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TutorialBeatmapObjectManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TutorialBeatmapObjectManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TutorialBeatmapObjectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialBeatmapObjectManager {
     type Target = crate::GlobalNamespace::BeatmapObjectManager;
@@ -220,11 +235,25 @@ pub struct TutorialBeatmapObjectManager_InitData {
     pub cutAngleTolerance: f32,
 }
 #[cfg(feature = "TutorialBeatmapObjectManager+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TutorialBeatmapObjectManager_InitData => ""
-    ."TutorialBeatmapObjectManager/InitData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TutorialBeatmapObjectManager+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;

@@ -18,10 +18,25 @@ pub struct AudioClipAsyncLoader {
     >,
 }
 #[cfg(feature = "AudioClipAsyncLoader")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::AudioClipAsyncLoader => ""
-    ."AudioClipAsyncLoader"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::AudioClipAsyncLoader {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "AudioClipAsyncLoader";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "AudioClipAsyncLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioClipAsyncLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -377,11 +392,25 @@ pub struct AudioClipAsyncLoader_LoadMethodDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "AudioClipAsyncLoader+LoadMethodDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::AudioClipAsyncLoader_LoadMethodDelegate => ""
-    ."AudioClipAsyncLoader/LoadMethodDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::AudioClipAsyncLoader_LoadMethodDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LoadMethodDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "AudioClipAsyncLoader+LoadMethodDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::AudioClipAsyncLoader_LoadMethodDelegate {

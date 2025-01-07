@@ -8,10 +8,25 @@ pub struct Type2Message {
     pub _targetInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+Protocol+Ntlm+Type2Message")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::Protocol::Ntlm::Type2Message =>
-    "Mono.Security.Protocol.Ntlm"."Type2Message"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Security::Protocol::Ntlm::Type2Message {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.Protocol.Ntlm";
+    const CLASS_NAME: &'static str = "Type2Message";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+Protocol+Ntlm+Type2Message")]
 impl std::ops::Deref for crate::Mono::Security::Protocol::Ntlm::Type2Message {
     type Target = crate::Mono::Security::Protocol::Ntlm::MessageBase;

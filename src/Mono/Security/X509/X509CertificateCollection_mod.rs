@@ -5,10 +5,25 @@ pub struct X509CertificateCollection {
     __cordl_parent: crate::System::Collections::CollectionBase,
 }
 #[cfg(feature = "Mono+Security+X509+X509CertificateCollection")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::X509::X509CertificateCollection
-    => "Mono.Security.X509"."X509CertificateCollection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Security::X509::X509CertificateCollection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.X509";
+    const CLASS_NAME: &'static str = "X509CertificateCollection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+X509+X509CertificateCollection")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509CertificateCollection {
     type Target = crate::System::Collections::CollectionBase;
@@ -185,11 +200,25 @@ pub struct X509CertificateCollection_X509CertificateEnumerator {
 #[cfg(
     feature = "Mono+Security+X509+X509CertificateCollection+X509CertificateEnumerator"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Security::X509::X509CertificateCollection_X509CertificateEnumerator =>
-    "Mono.Security.X509"."X509CertificateCollection/X509CertificateEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Security::X509::X509CertificateCollection_X509CertificateEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.X509";
+    const CLASS_NAME: &'static str = "X509CertificateEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Security+X509+X509CertificateCollection+X509CertificateEnumerator"
 )]

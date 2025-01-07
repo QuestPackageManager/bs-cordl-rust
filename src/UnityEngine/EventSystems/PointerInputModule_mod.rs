@@ -14,10 +14,25 @@ pub struct PointerInputModule {
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::EventSystems::PointerInputModule =>
-    "UnityEngine.EventSystems"."PointerInputModule"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::PointerInputModule {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "PointerInputModule";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::PointerInputModule {
     type Target = crate::UnityEngine::EventSystems::BaseInputModule;
@@ -286,11 +301,25 @@ pub struct PointerInputModule_ButtonState {
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+ButtonState")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::EventSystems::PointerInputModule_ButtonState =>
-    "UnityEngine.EventSystems"."PointerInputModule/ButtonState"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "ButtonState";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+ButtonState")]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
@@ -398,11 +427,25 @@ pub struct PointerInputModule_MouseButtonEventData {
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData =>
-    "UnityEngine.EventSystems"."PointerInputModule/MouseButtonEventData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "MouseButtonEventData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
@@ -476,11 +519,25 @@ pub struct PointerInputModule_MouseState {
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseState")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::EventSystems::PointerInputModule_MouseState =>
-    "UnityEngine.EventSystems"."PointerInputModule/MouseState"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::PointerInputModule_MouseState {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "MouseState";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseState")]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::PointerInputModule_MouseState {

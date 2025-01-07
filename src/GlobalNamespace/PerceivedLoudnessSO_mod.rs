@@ -12,10 +12,24 @@ pub struct PerceivedLoudnessSO {
     >,
 }
 #[cfg(feature = "PerceivedLoudnessSO")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PerceivedLoudnessSO => ""
-    ."PerceivedLoudnessSO"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PerceivedLoudnessSO {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PerceivedLoudnessSO";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PerceivedLoudnessSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PerceivedLoudnessSO {
     type Target = crate::UnityEngine::ScriptableObject;
@@ -146,11 +160,25 @@ pub struct PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
     pub _checkSum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "PerceivedLoudnessSO+PerceivedLevelLoudnessPair")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair => ""
-    ."PerceivedLoudnessSO/PerceivedLevelLoudnessPair"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PerceivedLevelLoudnessPair";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PerceivedLoudnessSO+PerceivedLevelLoudnessPair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {

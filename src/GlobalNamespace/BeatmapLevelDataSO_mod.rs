@@ -15,10 +15,24 @@ pub struct BeatmapLevelDataSO {
     >,
 }
 #[cfg(feature = "BeatmapLevelDataSO")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelDataSO => ""
-    ."BeatmapLevelDataSO"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevelDataSO {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BeatmapLevelDataSO";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapLevelDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelDataSO {
     type Target = crate::UnityEngine::ScriptableObject;
@@ -445,11 +459,25 @@ pub struct BeatmapLevelDataSO_DifficultyBeatmap {
     pub _lightshowAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
 }
 #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap => ""
-    ."BeatmapLevelDataSO/DifficultyBeatmap"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "DifficultyBeatmap";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmap")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -667,11 +695,25 @@ pub struct BeatmapLevelDataSO_DifficultyBeatmapSet {
     >,
 }
 #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmapSet")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet => ""
-    ."BeatmapLevelDataSO/DifficultyBeatmapSet"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "DifficultyBeatmapSet";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmapSet")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet {

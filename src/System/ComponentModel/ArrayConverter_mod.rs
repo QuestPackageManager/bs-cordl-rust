@@ -5,10 +5,25 @@ pub struct ArrayConverter {
     __cordl_parent: crate::System::ComponentModel::CollectionConverter,
 }
 #[cfg(feature = "System+ComponentModel+ArrayConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::ComponentModel::ArrayConverter =>
-    "System.ComponentModel"."ArrayConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::ArrayConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "ArrayConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+ArrayConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::ArrayConverter {
     type Target = crate::System::ComponentModel::CollectionConverter;
@@ -119,11 +134,25 @@ pub struct ArrayConverter_ArrayPropertyDescriptor {
     pub _index: i32,
 }
 #[cfg(feature = "System+ComponentModel+ArrayConverter+ArrayPropertyDescriptor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor =>
-    "System.ComponentModel"."ArrayConverter/ArrayPropertyDescriptor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "ArrayPropertyDescriptor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+ArrayConverter+ArrayPropertyDescriptor")]
 impl std::ops::Deref
 for crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {

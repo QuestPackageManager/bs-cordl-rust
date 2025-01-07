@@ -129,10 +129,80 @@ pub struct IVRCompositor {
     >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor => "OVR.OpenVR"
-    ."IVRCompositor"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRCompositor {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "IVRCompositor";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRCompositor {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRCompositor {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRCompositor {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRCompositor {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor")]
 unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRCompositor {
     type Type = Self;
@@ -239,10 +309,25 @@ pub struct IVRCompositor__CanRenderScene {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_CanRenderScene")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__CanRenderScene =>
-    "OVR.OpenVR"."IVRCompositor/_CanRenderScene"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__CanRenderScene {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_CanRenderScene";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_CanRenderScene")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__CanRenderScene {
     type Target = crate::System::MulticastDelegate;
@@ -329,11 +414,25 @@ pub struct IVRCompositor__ClearLastSubmittedFrame {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame => "OVR.OpenVR"
-    ."IVRCompositor/_ClearLastSubmittedFrame"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_ClearLastSubmittedFrame";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame {
     type Target = crate::System::MulticastDelegate;
@@ -424,10 +523,25 @@ pub struct IVRCompositor__ClearSkyboxOverride {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride
-    => "OVR.OpenVR"."IVRCompositor/_ClearSkyboxOverride"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_ClearSkyboxOverride";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride {
     type Target = crate::System::MulticastDelegate;
@@ -518,11 +632,25 @@ pub struct IVRCompositor__CompositorBringToFront {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__CompositorBringToFront => "OVR.OpenVR"
-    ."IVRCompositor/_CompositorBringToFront"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__CompositorBringToFront {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_CompositorBringToFront";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__CompositorBringToFront {
     type Target = crate::System::MulticastDelegate;
@@ -613,10 +741,25 @@ pub struct IVRCompositor__CompositorDumpImages {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__CompositorDumpImages
-    => "OVR.OpenVR"."IVRCompositor/_CompositorDumpImages"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__CompositorDumpImages {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_CompositorDumpImages";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__CompositorDumpImages {
     type Target = crate::System::MulticastDelegate;
@@ -707,10 +850,25 @@ pub struct IVRCompositor__CompositorGoToBack {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__CompositorGoToBack
-    => "OVR.OpenVR"."IVRCompositor/_CompositorGoToBack"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__CompositorGoToBack {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_CompositorGoToBack";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__CompositorGoToBack {
     type Target = crate::System::MulticastDelegate;
@@ -801,10 +959,25 @@ pub struct IVRCompositor__CompositorQuit {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorQuit")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__CompositorQuit =>
-    "OVR.OpenVR"."IVRCompositor/_CompositorQuit"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__CompositorQuit {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_CompositorQuit";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_CompositorQuit")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__CompositorQuit {
     type Target = crate::System::MulticastDelegate;
@@ -895,10 +1068,24 @@ pub struct IVRCompositor__FadeGrid {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeGrid")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__FadeGrid =>
-    "OVR.OpenVR"."IVRCompositor/_FadeGrid"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRCompositor__FadeGrid {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_FadeGrid";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeGrid")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__FadeGrid {
     type Target = crate::System::MulticastDelegate;
@@ -992,10 +1179,25 @@ pub struct IVRCompositor__FadeToColor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeToColor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__FadeToColor =>
-    "OVR.OpenVR"."IVRCompositor/_FadeToColor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__FadeToColor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_FadeToColor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_FadeToColor")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__FadeToColor {
     type Target = crate::System::MulticastDelegate;
@@ -1101,11 +1303,25 @@ pub struct IVRCompositor__ForceInterleavedReprojectionOn {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn => "OVR.OpenVR"
-    ."IVRCompositor/_ForceInterleavedReprojectionOn"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_ForceInterleavedReprojectionOn";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn {
@@ -1200,11 +1416,25 @@ pub struct IVRCompositor__ForceReconnectProcess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__ForceReconnectProcess => "OVR.OpenVR"
-    ."IVRCompositor/_ForceReconnectProcess"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__ForceReconnectProcess {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_ForceReconnectProcess";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__ForceReconnectProcess {
     type Target = crate::System::MulticastDelegate;
@@ -1295,10 +1525,25 @@ pub struct IVRCompositor__GetCumulativeStats {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__GetCumulativeStats
-    => "OVR.OpenVR"."IVRCompositor/_GetCumulativeStats"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetCumulativeStats {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetCumulativeStats";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetCumulativeStats {
     type Target = crate::System::MulticastDelegate;
@@ -1400,10 +1645,25 @@ pub struct IVRCompositor__GetCurrentFadeColor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor
-    => "OVR.OpenVR"."IVRCompositor/_GetCurrentFadeColor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetCurrentFadeColor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor {
     type Target = crate::System::MulticastDelegate;
@@ -1496,10 +1756,25 @@ pub struct IVRCompositor__GetCurrentGridAlpha {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha
-    => "OVR.OpenVR"."IVRCompositor/_GetCurrentGridAlpha"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetCurrentGridAlpha";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha {
     type Target = crate::System::MulticastDelegate;
@@ -1586,11 +1861,25 @@ pub struct IVRCompositor__GetCurrentSceneFocusProcess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess => "OVR.OpenVR"
-    ."IVRCompositor/_GetCurrentSceneFocusProcess"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetCurrentSceneFocusProcess";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess {
     type Target = crate::System::MulticastDelegate;
@@ -1678,11 +1967,25 @@ pub struct IVRCompositor__GetFrameTimeRemaining {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining => "OVR.OpenVR"
-    ."IVRCompositor/_GetFrameTimeRemaining"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetFrameTimeRemaining";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining {
     type Target = crate::System::MulticastDelegate;
@@ -1769,10 +2072,25 @@ pub struct IVRCompositor__GetFrameTiming {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__GetFrameTiming =>
-    "OVR.OpenVR"."IVRCompositor/_GetFrameTiming"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetFrameTiming {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetFrameTiming";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetFrameTiming {
     type Target = crate::System::MulticastDelegate;
@@ -1872,10 +2190,25 @@ pub struct IVRCompositor__GetFrameTimings {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__GetFrameTimings =>
-    "OVR.OpenVR"."IVRCompositor/_GetFrameTimings"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetFrameTimings {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetFrameTimings";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetFrameTimings {
     type Target = crate::System::MulticastDelegate;
@@ -1975,10 +2308,25 @@ pub struct IVRCompositor__GetLastFrameRenderer {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer
-    => "OVR.OpenVR"."IVRCompositor/_GetLastFrameRenderer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetLastFrameRenderer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer {
     type Target = crate::System::MulticastDelegate;
@@ -2065,11 +2413,25 @@ pub struct IVRCompositor__GetLastPoseForTrackedDeviceIndex {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex => "OVR.OpenVR"
-    ."IVRCompositor/_GetLastPoseForTrackedDeviceIndex"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetLastPoseForTrackedDeviceIndex";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex {
@@ -2185,10 +2547,25 @@ pub struct IVRCompositor__GetLastPoses {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoses")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__GetLastPoses =>
-    "OVR.OpenVR"."IVRCompositor/_GetLastPoses"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetLastPoses {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetLastPoses";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetLastPoses")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetLastPoses {
     type Target = crate::System::MulticastDelegate;
@@ -2329,11 +2706,25 @@ pub struct IVRCompositor__GetMirrorTextureD3D11 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11 => "OVR.OpenVR"
-    ."IVRCompositor/_GetMirrorTextureD3D11"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetMirrorTextureD3D11";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11 {
     type Target = crate::System::MulticastDelegate;
@@ -2447,10 +2838,25 @@ pub struct IVRCompositor__GetMirrorTextureGL {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL
-    => "OVR.OpenVR"."IVRCompositor/_GetMirrorTextureGL"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetMirrorTextureGL";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL {
     type Target = crate::System::MulticastDelegate;
@@ -2551,10 +2957,25 @@ pub struct IVRCompositor__GetTrackingSpace {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__GetTrackingSpace =>
-    "OVR.OpenVR"."IVRCompositor/_GetTrackingSpace"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetTrackingSpace {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetTrackingSpace";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__GetTrackingSpace {
     type Target = crate::System::MulticastDelegate;
@@ -2645,11 +3066,25 @@ pub struct IVRCompositor__GetVulkanDeviceExtensionsRequired {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired => "OVR.OpenVR"
-    ."IVRCompositor/_GetVulkanDeviceExtensionsRequired"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetVulkanDeviceExtensionsRequired";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired {
@@ -2750,11 +3185,25 @@ pub struct IVRCompositor__GetVulkanInstanceExtensionsRequired {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired => "OVR.OpenVR"
-    ."IVRCompositor/_GetVulkanInstanceExtensionsRequired"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_GetVulkanInstanceExtensionsRequired";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired {
@@ -2850,10 +3299,25 @@ pub struct IVRCompositor__HideMirrorWindow {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__HideMirrorWindow =>
-    "OVR.OpenVR"."IVRCompositor/_HideMirrorWindow"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__HideMirrorWindow {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_HideMirrorWindow";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__HideMirrorWindow {
     type Target = crate::System::MulticastDelegate;
@@ -2944,10 +3408,25 @@ pub struct IVRCompositor__IsFullscreen {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsFullscreen")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__IsFullscreen =>
-    "OVR.OpenVR"."IVRCompositor/_IsFullscreen"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__IsFullscreen {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_IsFullscreen";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsFullscreen")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__IsFullscreen {
     type Target = crate::System::MulticastDelegate;
@@ -3034,11 +3513,25 @@ pub struct IVRCompositor__IsMirrorWindowVisible {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible => "OVR.OpenVR"
-    ."IVRCompositor/_IsMirrorWindowVisible"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_IsMirrorWindowVisible";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible {
     type Target = crate::System::MulticastDelegate;
@@ -3125,11 +3618,25 @@ pub struct IVRCompositor__LockGLSharedTextureForAccess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess => "OVR.OpenVR"
-    ."IVRCompositor/_LockGLSharedTextureForAccess"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_LockGLSharedTextureForAccess";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess {
@@ -3224,10 +3731,25 @@ pub struct IVRCompositor__PostPresentHandoff {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__PostPresentHandoff
-    => "OVR.OpenVR"."IVRCompositor/_PostPresentHandoff"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__PostPresentHandoff {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_PostPresentHandoff";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__PostPresentHandoff {
     type Target = crate::System::MulticastDelegate;
@@ -3318,11 +3840,25 @@ pub struct IVRCompositor__ReleaseMirrorTextureD3D11 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11 => "OVR.OpenVR"
-    ."IVRCompositor/_ReleaseMirrorTextureD3D11"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_ReleaseMirrorTextureD3D11";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11 {
     type Target = crate::System::MulticastDelegate;
@@ -3416,11 +3952,25 @@ pub struct IVRCompositor__ReleaseSharedGLTexture {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture => "OVR.OpenVR"
-    ."IVRCompositor/_ReleaseSharedGLTexture"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_ReleaseSharedGLTexture";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture {
     type Target = crate::System::MulticastDelegate;
@@ -3517,11 +4067,25 @@ pub struct IVRCompositor__SetExplicitTimingMode {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode => "OVR.OpenVR"
-    ."IVRCompositor/_SetExplicitTimingMode"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_SetExplicitTimingMode";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode {
     type Target = crate::System::MulticastDelegate;
@@ -3614,10 +4178,25 @@ pub struct IVRCompositor__SetSkyboxOverride {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__SetSkyboxOverride =>
-    "OVR.OpenVR"."IVRCompositor/_SetSkyboxOverride"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__SetSkyboxOverride {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_SetSkyboxOverride";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__SetSkyboxOverride {
     type Target = crate::System::MulticastDelegate;
@@ -3720,10 +4299,25 @@ pub struct IVRCompositor__SetTrackingSpace {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__SetTrackingSpace =>
-    "OVR.OpenVR"."IVRCompositor/_SetTrackingSpace"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_SetTrackingSpace";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace {
     type Target = crate::System::MulticastDelegate;
@@ -3816,11 +4410,25 @@ pub struct IVRCompositor__ShouldAppRenderWithLowResources {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources => "OVR.OpenVR"
-    ."IVRCompositor/_ShouldAppRenderWithLowResources"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_ShouldAppRenderWithLowResources";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources {
@@ -3909,10 +4517,25 @@ pub struct IVRCompositor__ShowMirrorWindow {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__ShowMirrorWindow =>
-    "OVR.OpenVR"."IVRCompositor/_ShowMirrorWindow"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__ShowMirrorWindow {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_ShowMirrorWindow";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__ShowMirrorWindow {
     type Target = crate::System::MulticastDelegate;
@@ -4003,10 +4626,24 @@ pub struct IVRCompositor__Submit {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_Submit")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__Submit =>
-    "OVR.OpenVR"."IVRCompositor/_Submit"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRCompositor__Submit {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_Submit";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_Submit")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__Submit {
     type Target = crate::System::MulticastDelegate;
@@ -4109,11 +4746,25 @@ pub struct IVRCompositor__SubmitExplicitTimingData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData => "OVR.OpenVR"
-    ."IVRCompositor/_SubmitExplicitTimingData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_SubmitExplicitTimingData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData {
     type Target = crate::System::MulticastDelegate;
@@ -4204,10 +4855,25 @@ pub struct IVRCompositor__SuspendRendering {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_SuspendRendering")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__SuspendRendering =>
-    "OVR.OpenVR"."IVRCompositor/_SuspendRendering"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__SuspendRendering {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_SuspendRendering";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_SuspendRendering")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__SuspendRendering {
     type Target = crate::System::MulticastDelegate;
@@ -4300,11 +4966,25 @@ pub struct IVRCompositor__UnlockGLSharedTextureForAccess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess => "OVR.OpenVR"
-    ."IVRCompositor/_UnlockGLSharedTextureForAccess"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_UnlockGLSharedTextureForAccess";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess {
@@ -4399,10 +5079,25 @@ pub struct IVRCompositor__WaitGetPoses {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::IVRCompositor__WaitGetPoses =>
-    "OVR.OpenVR"."IVRCompositor/_WaitGetPoses"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::OVR::OpenVR::IVRCompositor__WaitGetPoses {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "_WaitGetPoses";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRCompositor__WaitGetPoses {
     type Target = crate::System::MulticastDelegate;

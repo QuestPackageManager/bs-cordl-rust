@@ -16,11 +16,25 @@ pub struct RecordingToolConfigurationProcessor {
     >,
 }
 #[cfg(feature = "RecordingToolConfigurationProcessor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::RecordingToolConfigurationProcessor => ""
-    ."RecordingToolConfigurationProcessor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::RecordingToolConfigurationProcessor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "RecordingToolConfigurationProcessor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "RecordingToolConfigurationProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -316,11 +330,25 @@ pub struct RecordingToolConfigurationProcessor_ColorSaveData {
     pub b: f32,
 }
 #[cfg(feature = "RecordingToolConfigurationProcessor+ColorSaveData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData => ""
-    ."RecordingToolConfigurationProcessor/ColorSaveData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ColorSaveData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "RecordingToolConfigurationProcessor+ColorSaveData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData {
@@ -388,11 +416,25 @@ pub struct RecordingToolConfigurationProcessor_PlaybackScreenshot {
     >,
 }
 #[cfg(feature = "RecordingToolConfigurationProcessor+PlaybackScreenshot")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreenshot => ""
-    ."RecordingToolConfigurationProcessor/PlaybackScreenshot"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreenshot {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PlaybackScreenshot";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "RecordingToolConfigurationProcessor+PlaybackScreenshot")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreenshot {
@@ -474,11 +516,25 @@ pub struct RecordingToolConfigurationProcessor_RecordingConfiguration {
     pub saveToOldFormat: bool,
 }
 #[cfg(feature = "RecordingToolConfigurationProcessor+RecordingConfiguration")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfiguration => ""
-    ."RecordingToolConfigurationProcessor/RecordingConfiguration"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfiguration {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "RecordingConfiguration";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "RecordingToolConfigurationProcessor+RecordingConfiguration")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfiguration {
@@ -538,11 +594,25 @@ pub struct RecordingToolConfigurationProcessor_RecordingToolConfiguration {
     >,
 }
 #[cfg(feature = "RecordingToolConfigurationProcessor+RecordingToolConfiguration")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration =>
-    ""."RecordingToolConfigurationProcessor/RecordingToolConfiguration"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "RecordingToolConfiguration";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "RecordingToolConfigurationProcessor+RecordingToolConfiguration")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration {

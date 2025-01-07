@@ -14,10 +14,113 @@ pub struct ValueTuple_3<
     __cordl_phantom_T3: std::marker::PhantomData<T3>,
 }
 #[cfg(feature = "System+ValueTuple_3")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::ValueTuple_3 < T1, T2, T3 > => "System"
-    ."ValueTuple`3<T1,T2,T3>" < T1, T2, T3 >
-);
+unsafe impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type for crate::System::ValueTuple_3<T1, T2, T3> {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System";
+    const CLASS_NAME: &'static str = "ValueTuple`3";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System", "ValueTuple`3")
+                    .unwrap()
+                    .make_generic::<(T1, T2, T3)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Argument for crate::System::ValueTuple_3<T1, T2, T3> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Parameter for crate::System::ValueTuple_3<T1, T2, T3> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Returned for crate::System::ValueTuple_3<T1, T2, T3> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Return for crate::System::ValueTuple_3<T1, T2, T3> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "System+ValueTuple_3")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,

@@ -138,10 +138,25 @@ pub struct ResourceManager {
     >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::ResourceManagement::ResourceManager
-    => "UnityEngine.ResourceManagement"."ResourceManager"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement";
+    const CLASS_NAME: &'static str = "ResourceManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
 impl std::ops::Deref for crate::UnityEngine::ResourceManagement::ResourceManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1520,12 +1535,43 @@ pub struct ResourceManager_CompletedOperation_1<TObject: quest_hook::libil2cpp::
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1 < TObject >
-    => "UnityEngine.ResourceManagement"."ResourceManager/CompletedOperation`1" < TObject
-    >
-);
+unsafe impl<TObject: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
+    TObject,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement";
+    const CLASS_NAME: &'static str = "CompletedOperation`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.ResourceManagement",
+                        "CompletedOperation`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TObject)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
@@ -1679,11 +1725,85 @@ pub struct ResourceManager_DeferredCallbackRegisterRequest {
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
 )]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest =>
-    "UnityEngine.ResourceManagement"."ResourceManager/DeferredCallbackRegisterRequest"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement";
+    const CLASS_NAME: &'static str = "DeferredCallbackRegisterRequest";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
 )]
@@ -1719,11 +1839,85 @@ pub struct ResourceManager_DiagnosticEventContext {
     >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext =>
-    "UnityEngine.ResourceManagement"."ResourceManager/DiagnosticEventContext"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement";
+    const CLASS_NAME: &'static str = "DiagnosticEventContext";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
@@ -1830,11 +2024,85 @@ pub enum ResourceManager_DiagnosticEventType {
     AsyncOperationReferenceCount = 4i32,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType =>
-    "UnityEngine.ResourceManagement"."ResourceManager/DiagnosticEventType"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement";
+    const CLASS_NAME: &'static str = "DiagnosticEventType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1853,11 +2121,25 @@ pub struct ResourceManager_InstanceOperation {
     pub m_scene: crate::UnityEngine::SceneManagement::Scene,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation =>
-    "UnityEngine.ResourceManagement"."ResourceManager/InstanceOperation"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement";
+    const CLASS_NAME: &'static str = "InstanceOperation";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {

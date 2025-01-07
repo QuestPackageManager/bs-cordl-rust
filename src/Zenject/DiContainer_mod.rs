@@ -77,9 +77,24 @@ pub struct DiContainer {
     pub _AssertOnNewGameObjects_k__BackingField: bool,
 }
 #[cfg(feature = "Zenject+DiContainer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Zenject::DiContainer => "Zenject"."DiContainer"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::DiContainer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Zenject";
+    const CLASS_NAME: &'static str = "DiContainer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Zenject+DiContainer")]
 impl std::ops::Deref for crate::Zenject::DiContainer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -4855,10 +4870,24 @@ pub struct DiContainer_ProviderInfo {
     pub Condition: quest_hook::libil2cpp::Gc<crate::Zenject::BindingCondition>,
 }
 #[cfg(feature = "Zenject+DiContainer+ProviderInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Zenject::DiContainer_ProviderInfo => "Zenject"
-    ."DiContainer/ProviderInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::DiContainer_ProviderInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Zenject";
+    const CLASS_NAME: &'static str = "ProviderInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Zenject+DiContainer+ProviderInfo")]
 impl std::ops::Deref for crate::Zenject::DiContainer_ProviderInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;

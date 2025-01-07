@@ -18,10 +18,44 @@ pub struct CacheDict_2<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Dynamic+Utils+CacheDict_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Dynamic::Utils::CacheDict_2 < TKey,
-    TValue > => "System.Dynamic.Utils"."CacheDict`2" < TKey, TValue >
-);
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Dynamic::Utils::CacheDict_2<TKey, TValue> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic.Utils";
+    const CLASS_NAME: &'static str = "CacheDict`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Dynamic.Utils",
+                        "CacheDict`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+Utils+CacheDict_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -173,10 +207,41 @@ pub struct CacheDict_2_Entry<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Dynamic+Utils+CacheDict_2+Entry")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Dynamic::Utils::CacheDict_2_Entry <
-    TKey, TValue > => "System.Dynamic.Utils"."CacheDict`2/Entry" < TKey, TValue >
-);
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Dynamic::Utils::CacheDict_2_Entry<TKey, TValue> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic.Utils";
+    const CLASS_NAME: &'static str = "Entry";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System.Dynamic.Utils", "Entry")
+                    .unwrap()
+                    .make_generic::<(TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+Utils+CacheDict_2+Entry")]
 impl<
     TKey: quest_hook::libil2cpp::Type,

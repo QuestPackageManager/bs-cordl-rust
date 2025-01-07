@@ -57,9 +57,24 @@ pub struct GUISkin {
     >,
 }
 #[cfg(feature = "UnityEngine+GUISkin")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::GUISkin => "UnityEngine"."GUISkin"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUISkin {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "GUISkin";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+GUISkin")]
 impl std::ops::Deref for crate::UnityEngine::GUISkin {
     type Target = crate::UnityEngine::ScriptableObject;
@@ -800,10 +815,25 @@ pub struct GUISkin_SkinChangedDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+GUISkin+SkinChangedDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::GUISkin_SkinChangedDelegate =>
-    "UnityEngine"."GUISkin/SkinChangedDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::GUISkin_SkinChangedDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "SkinChangedDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+GUISkin+SkinChangedDelegate")]
 impl std::ops::Deref for crate::UnityEngine::GUISkin_SkinChangedDelegate {
     type Target = crate::System::MulticastDelegate;

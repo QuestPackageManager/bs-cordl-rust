@@ -5,9 +5,24 @@ pub struct ScoreModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "ScoreModel")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScoreModel => ""."ScoreModel"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScoreModel {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ScoreModel";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ScoreModel")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -113,11 +128,25 @@ pub struct ScoreModel_MaxScoreCounterElement {
     pub _cordl_time: f32,
 }
 #[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ScoreModel_MaxScoreCounterElement => ""
-    ."ScoreModel/MaxScoreCounterElement"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "MaxScoreCounterElement";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -227,10 +256,25 @@ pub struct ScoreModel_NoteScoreDefinition {
     pub fixedCutScore: i32,
 }
 #[cfg(feature = "ScoreModel+NoteScoreDefinition")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScoreModel_NoteScoreDefinition
-    => ""."ScoreModel/NoteScoreDefinition"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "NoteScoreDefinition";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ScoreModel+NoteScoreDefinition")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
     type Target = quest_hook::libil2cpp::Il2CppObject;

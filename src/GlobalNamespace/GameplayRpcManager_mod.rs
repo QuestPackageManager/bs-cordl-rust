@@ -127,10 +127,24 @@ pub struct GameplayRpcManager {
     >,
 }
 #[cfg(feature = "GameplayRpcManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameplayRpcManager => ""
-    ."GameplayRpcManager"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameplayRpcManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "GameplayRpcManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1228,11 +1242,25 @@ pub struct GameplayRpcManager_GetGameplaySceneReadyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "GameplayRpcManager+GetGameplaySceneReadyRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_GetGameplaySceneReadyRpc => ""
-    ."GameplayRpcManager/GetGameplaySceneReadyRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_GetGameplaySceneReadyRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "GetGameplaySceneReadyRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+GetGameplaySceneReadyRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayRpcManager_GetGameplaySceneReadyRpc {
@@ -1285,11 +1313,25 @@ pub struct GameplayRpcManager_GetGameplaySongReadyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "GameplayRpcManager+GetGameplaySongReadyRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_GetGameplaySongReadyRpc => ""
-    ."GameplayRpcManager/GetGameplaySongReadyRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_GetGameplaySongReadyRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "GetGameplaySongReadyRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+GetGameplaySongReadyRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayRpcManager_GetGameplaySongReadyRpc {
@@ -1346,11 +1388,25 @@ pub struct GameplayRpcManager_LevelFinishedRpc {
     >,
 }
 #[cfg(feature = "GameplayRpcManager+LevelFinishedRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_LevelFinishedRpc => ""
-    ."GameplayRpcManager/LevelFinishedRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_LevelFinishedRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LevelFinishedRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+LevelFinishedRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_LevelFinishedRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
@@ -1408,10 +1464,25 @@ pub struct GameplayRpcManager_NoteCutRpc {
     >,
 }
 #[cfg(feature = "GameplayRpcManager+NoteCutRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameplayRpcManager_NoteCutRpc
-    => ""."GameplayRpcManager/NoteCutRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_NoteCutRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "NoteCutRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+NoteCutRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_NoteCutRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_2<
@@ -1468,11 +1539,25 @@ pub struct GameplayRpcManager_NoteMissedRpc {
     >,
 }
 #[cfg(feature = "GameplayRpcManager+NoteMissedRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_NoteMissedRpc => ""
-    ."GameplayRpcManager/NoteMissedRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_NoteMissedRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "NoteMissedRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+NoteMissedRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_NoteMissedRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_2<
@@ -1529,11 +1614,25 @@ pub struct GameplayRpcManager_NoteSpawnedRpc {
     >,
 }
 #[cfg(feature = "GameplayRpcManager+NoteSpawnedRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_NoteSpawnedRpc => ""
-    ."GameplayRpcManager/NoteSpawnedRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_NoteSpawnedRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "NoteSpawnedRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+NoteSpawnedRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_NoteSpawnedRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_2<
@@ -1592,11 +1691,25 @@ pub struct GameplayRpcManager_ObstacleSpawnedRpc {
     >,
 }
 #[cfg(feature = "GameplayRpcManager+ObstacleSpawnedRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_ObstacleSpawnedRpc => ""
-    ."GameplayRpcManager/ObstacleSpawnedRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_ObstacleSpawnedRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ObstacleSpawnedRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+ObstacleSpawnedRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_ObstacleSpawnedRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_2<
@@ -1653,11 +1766,25 @@ pub struct GameplayRpcManager_RequestReturnToMenuRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "GameplayRpcManager+RequestReturnToMenuRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_RequestReturnToMenuRpc => ""
-    ."GameplayRpcManager/RequestReturnToMenuRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_RequestReturnToMenuRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "RequestReturnToMenuRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+RequestReturnToMenuRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayRpcManager_RequestReturnToMenuRpc {
@@ -1710,11 +1837,25 @@ pub struct GameplayRpcManager_ReturnToMenuRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "GameplayRpcManager+ReturnToMenuRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_ReturnToMenuRpc => ""
-    ."GameplayRpcManager/ReturnToMenuRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_ReturnToMenuRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ReturnToMenuRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+ReturnToMenuRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_ReturnToMenuRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -1780,10 +1921,85 @@ pub enum GameplayRpcManager_RpcType {
     SliderSpawned = 14u8,
 }
 #[cfg(feature = "GameplayRpcManager+RpcType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameplayRpcManager_RpcType =>
-    ""."GameplayRpcManager/RpcType"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_RpcType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "RpcType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::GameplayRpcManager_RpcType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::GameplayRpcManager_RpcType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::GameplayRpcManager_RpcType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::GameplayRpcManager_RpcType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "GameplayRpcManager+SetGameplaySceneReadyRpc")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1795,11 +2011,25 @@ pub struct GameplayRpcManager_SetGameplaySceneReadyRpc {
     >,
 }
 #[cfg(feature = "GameplayRpcManager+SetGameplaySceneReadyRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_SetGameplaySceneReadyRpc => ""
-    ."GameplayRpcManager/SetGameplaySceneReadyRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySceneReadyRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SetGameplaySceneReadyRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+SetGameplaySceneReadyRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySceneReadyRpc {
@@ -1861,11 +2091,25 @@ pub struct GameplayRpcManager_SetGameplaySceneSyncFinishedRpc {
     >,
 }
 #[cfg(feature = "GameplayRpcManager+SetGameplaySceneSyncFinishedRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_SetGameplaySceneSyncFinishedRpc => ""
-    ."GameplayRpcManager/SetGameplaySceneSyncFinishedRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySceneSyncFinishedRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SetGameplaySceneSyncFinishedRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+SetGameplaySceneSyncFinishedRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySceneSyncFinishedRpc {
@@ -1923,11 +2167,25 @@ pub struct GameplayRpcManager_SetGameplaySongReadyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "GameplayRpcManager+SetGameplaySongReadyRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_SetGameplaySongReadyRpc => ""
-    ."GameplayRpcManager/SetGameplaySongReadyRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySongReadyRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SetGameplaySongReadyRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+SetGameplaySongReadyRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySongReadyRpc {
@@ -1986,11 +2244,25 @@ pub struct GameplayRpcManager_SetPlayerDidConnectLateRpc {
     >,
 }
 #[cfg(feature = "GameplayRpcManager+SetPlayerDidConnectLateRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_SetPlayerDidConnectLateRpc => ""
-    ."GameplayRpcManager/SetPlayerDidConnectLateRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_SetPlayerDidConnectLateRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SetPlayerDidConnectLateRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+SetPlayerDidConnectLateRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayRpcManager_SetPlayerDidConnectLateRpc {
@@ -2049,11 +2321,25 @@ pub struct GameplayRpcManager_SetSongStartTimeRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<i64>,
 }
 #[cfg(feature = "GameplayRpcManager+SetSongStartTimeRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_SetSongStartTimeRpc => ""
-    ."GameplayRpcManager/SetSongStartTimeRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_SetSongStartTimeRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SetSongStartTimeRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+SetSongStartTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_SetSongStartTimeRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<i64>;
@@ -2108,11 +2394,25 @@ pub struct GameplayRpcManager_SliderSpawnedRpc {
     >,
 }
 #[cfg(feature = "GameplayRpcManager+SliderSpawnedRpc")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayRpcManager_SliderSpawnedRpc => ""
-    ."GameplayRpcManager/SliderSpawnedRpc"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameplayRpcManager_SliderSpawnedRpc {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SliderSpawnedRpc";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameplayRpcManager+SliderSpawnedRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_SliderSpawnedRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_2<

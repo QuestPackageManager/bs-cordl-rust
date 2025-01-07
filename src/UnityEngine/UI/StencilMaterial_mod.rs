@@ -5,10 +5,24 @@ pub struct StencilMaterial {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UI+StencilMaterial")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::StencilMaterial =>
-    "UnityEngine.UI"."StencilMaterial"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::StencilMaterial {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "StencilMaterial";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+StencilMaterial")]
 impl std::ops::Deref for crate::UnityEngine::UI::StencilMaterial {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -125,10 +139,25 @@ pub struct StencilMaterial_MatEntry {
     pub colorMask: crate::UnityEngine::Rendering::ColorWriteMask,
 }
 #[cfg(feature = "UnityEngine+UI+StencilMaterial+MatEntry")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::StencilMaterial_MatEntry =>
-    "UnityEngine.UI"."StencilMaterial/MatEntry"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::StencilMaterial_MatEntry {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "MatEntry";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+StencilMaterial+MatEntry")]
 impl std::ops::Deref for crate::UnityEngine::UI::StencilMaterial_MatEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;

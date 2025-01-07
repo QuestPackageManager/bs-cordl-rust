@@ -11,10 +11,25 @@ pub struct TaskFactory {
     pub m_defaultContinuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
 }
 #[cfg(feature = "System+Threading+Tasks+TaskFactory")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Threading::Tasks::TaskFactory =>
-    "System.Threading.Tasks"."TaskFactory"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Threading::Tasks::TaskFactory {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading.Tasks";
+    const CLASS_NAME: &'static str = "TaskFactory";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+TaskFactory")]
 impl std::ops::Deref for crate::System::Threading::Tasks::TaskFactory {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -389,11 +404,25 @@ pub struct TaskFactory_CompleteOnInvokePromise {
     >,
 }
 #[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise =>
-    "System.Threading.Tasks"."TaskFactory/CompleteOnInvokePromise"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading.Tasks";
+    const CLASS_NAME: &'static str = "CompleteOnInvokePromise";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
 impl std::ops::Deref
 for crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise {

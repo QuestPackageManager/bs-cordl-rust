@@ -21,10 +21,24 @@ pub struct SetSaberGlowColor {
     pub _saberType: crate::GlobalNamespace::SaberType,
 }
 #[cfg(feature = "SetSaberGlowColor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::SetSaberGlowColor => ""
-    ."SetSaberGlowColor"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SetSaberGlowColor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SetSaberGlowColor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SetSaberGlowColor")]
 impl std::ops::Deref for crate::GlobalNamespace::SetSaberGlowColor {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -109,11 +123,25 @@ pub struct SetSaberGlowColor_PropertyTintColorPair {
     pub property: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair => ""
-    ."SetSaberGlowColor/PropertyTintColorPair"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PropertyTintColorPair";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {

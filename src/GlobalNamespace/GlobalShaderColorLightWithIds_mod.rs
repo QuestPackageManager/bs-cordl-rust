@@ -14,10 +14,25 @@ pub struct GlobalShaderColorLightWithIds {
     pub _saturation: f32,
 }
 #[cfg(feature = "GlobalShaderColorLightWithIds")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GlobalShaderColorLightWithIds
-    => ""."GlobalShaderColorLightWithIds"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GlobalShaderColorLightWithIds {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "GlobalShaderColorLightWithIds";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GlobalShaderColorLightWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::GlobalShaderColorLightWithIds {
     type Target = crate::GlobalNamespace::LightWithIds;
@@ -104,11 +119,25 @@ pub struct GlobalShaderColorLightWithIds_LightIntensitiesWithId {
     pub _intensity: f32,
 }
 #[cfg(feature = "GlobalShaderColorLightWithIds+LightIntensitiesWithId")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GlobalShaderColorLightWithIds_LightIntensitiesWithId => ""
-    ."GlobalShaderColorLightWithIds/LightIntensitiesWithId"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GlobalShaderColorLightWithIds_LightIntensitiesWithId {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LightIntensitiesWithId";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GlobalShaderColorLightWithIds+LightIntensitiesWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GlobalShaderColorLightWithIds_LightIntensitiesWithId {

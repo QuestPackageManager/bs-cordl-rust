@@ -19,10 +19,24 @@ pub struct Task {
     >,
 }
 #[cfg(feature = "System+Threading+Tasks+Task")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Threading::Tasks::Task =>
-    "System.Threading.Tasks"."Task"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Tasks::Task {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading.Tasks";
+    const CLASS_NAME: &'static str = "Task";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+Task")]
 impl std::ops::Deref for crate::System::Threading::Tasks::Task {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2038,11 +2052,25 @@ pub struct Task_ContingentProperties {
     >,
 }
 #[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Threading::Tasks::Task_ContingentProperties => "System.Threading.Tasks"
-    ."Task/ContingentProperties"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Threading::Tasks::Task_ContingentProperties {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading.Tasks";
+    const CLASS_NAME: &'static str = "ContingentProperties";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
 impl std::ops::Deref for crate::System::Threading::Tasks::Task_ContingentProperties {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2113,10 +2141,25 @@ pub struct Task_SetOnInvokeMres {
     __cordl_parent: crate::System::Threading::ManualResetEventSlim,
 }
 #[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Threading::Tasks::Task_SetOnInvokeMres
-    => "System.Threading.Tasks"."Task/SetOnInvokeMres"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading.Tasks";
+    const CLASS_NAME: &'static str = "SetOnInvokeMres";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
 impl std::ops::Deref for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
     type Target = crate::System::Threading::ManualResetEventSlim;

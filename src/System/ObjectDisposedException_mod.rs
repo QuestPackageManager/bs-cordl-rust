@@ -6,10 +6,24 @@ pub struct ObjectDisposedException {
     pub _objectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+ObjectDisposedException")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::ObjectDisposedException => "System"
-    ."ObjectDisposedException"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::ObjectDisposedException {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System";
+    const CLASS_NAME: &'static str = "ObjectDisposedException";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ObjectDisposedException")]
 impl std::ops::Deref for crate::System::ObjectDisposedException {
     type Target = crate::System::InvalidOperationException;

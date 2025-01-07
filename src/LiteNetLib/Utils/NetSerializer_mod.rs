@@ -13,10 +13,24 @@ pub struct NetSerializer {
     >,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::Utils::NetSerializer =>
-    "LiteNetLib.Utils"."NetSerializer"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::NetSerializer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "NetSerializer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetSerializer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -350,11 +364,41 @@ pub struct NetSerializer_BoolSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+BoolSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_BoolSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/BoolSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "BoolSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "BoolSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+BoolSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<T> {
@@ -480,11 +524,41 @@ pub struct NetSerializer_ByteSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ByteSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_ByteSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/ByteSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "ByteSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "ByteSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ByteSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<T> {
@@ -613,11 +687,41 @@ pub struct NetSerializer_CharSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CharSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_CharSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/CharSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "CharSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "CharSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CharSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<T> {
@@ -722,10 +826,41 @@ pub struct NetSerializer_ClassInfo_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ClassInfo_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::Utils::NetSerializer_ClassInfo_1 < T
-    > => "LiteNetLib.Utils"."NetSerializer/ClassInfo`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "ClassInfo`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "ClassInfo`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ClassInfo_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> {
@@ -835,10 +970,25 @@ pub struct NetSerializer_CustomType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomType")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::Utils::NetSerializer_CustomType =>
-    "LiteNetLib.Utils"."NetSerializer/CustomType"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_CustomType {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "CustomType";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomType")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetSerializer_CustomType {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -908,11 +1058,41 @@ pub struct NetSerializer_CustomTypeClass_1<TProperty: quest_hook::libil2cpp::Typ
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeClass_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1 < TProperty > =>
-    "LiteNetLib.Utils"."NetSerializer/CustomTypeClass`1" < TProperty >
-);
+unsafe impl<TProperty: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<TProperty> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "CustomTypeClass`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "CustomTypeClass`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TProperty)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeClass_1")]
 impl<TProperty: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<TProperty> {
@@ -1010,11 +1190,41 @@ pub struct NetSerializer_CustomTypeStatic_1<TProperty: quest_hook::libil2cpp::Ty
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStatic_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1 < TProperty > =>
-    "LiteNetLib.Utils"."NetSerializer/CustomTypeStatic`1" < TProperty >
-);
+unsafe impl<TProperty: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1<TProperty> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "CustomTypeStatic`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "CustomTypeStatic`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TProperty)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStatic_1")]
 impl<TProperty: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1<TProperty> {
@@ -1122,11 +1332,41 @@ pub struct NetSerializer_CustomTypeStruct_1<TProperty: quest_hook::libil2cpp::Ty
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStruct_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1 < TProperty > =>
-    "LiteNetLib.Utils"."NetSerializer/CustomTypeStruct`1" < TProperty >
-);
+unsafe impl<TProperty: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<TProperty> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "CustomTypeStruct`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "CustomTypeStruct`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TProperty)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStruct_1")]
 impl<TProperty: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<TProperty> {
@@ -1207,11 +1447,41 @@ pub struct NetSerializer_DoubleSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+DoubleSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/DoubleSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "DoubleSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "DoubleSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+DoubleSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
@@ -1339,11 +1609,41 @@ pub struct NetSerializer_EnumByteSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumByteSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/EnumByteSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "EnumByteSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "EnumByteSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumByteSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T> {
@@ -1444,11 +1744,41 @@ pub struct NetSerializer_EnumIntSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumIntSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/EnumIntSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "EnumIntSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "EnumIntSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumIntSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<T> {
@@ -1557,11 +1887,44 @@ pub struct NetSerializer_FastCallClass_2<
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallClass_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::Utils::NetSerializer_FastCallClass_2
-    < TClass, TProperty > => "LiteNetLib.Utils"."NetSerializer/FastCallClass`2" < TClass,
-    TProperty >
-);
+unsafe impl<
+    TClass: quest_hook::libil2cpp::Type,
+    TProperty: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_FastCallClass_2<TClass, TProperty> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "FastCallClass`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "FastCallClass`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TClass, TProperty)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallClass_2")]
 impl<
     TClass: quest_hook::libil2cpp::Type,
@@ -1724,11 +2087,44 @@ pub struct NetSerializer_FastCallSpecificAuto_2<
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecificAuto_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2 < TClass, TProperty > =>
-    "LiteNetLib.Utils"."NetSerializer/FastCallSpecificAuto`2" < TClass, TProperty >
-);
+unsafe impl<
+    TClass: quest_hook::libil2cpp::Type,
+    TProperty: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<TClass, TProperty> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "FastCallSpecificAuto`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "FastCallSpecificAuto`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TClass, TProperty)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecificAuto_2")]
 impl<
     TClass: quest_hook::libil2cpp::Type,
@@ -1933,11 +2329,44 @@ pub struct NetSerializer_FastCallSpecific_2<
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecific_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2 < TClass, TProperty > =>
-    "LiteNetLib.Utils"."NetSerializer/FastCallSpecific`2" < TClass, TProperty >
-);
+unsafe impl<
+    TClass: quest_hook::libil2cpp::Type,
+    TProperty: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<TClass, TProperty> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "FastCallSpecific`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "FastCallSpecific`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TClass, TProperty)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecific_2")]
 impl<
     TClass: quest_hook::libil2cpp::Type,
@@ -2093,11 +2522,44 @@ pub struct NetSerializer_FastCallStatic_2<
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallStatic_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_FastCallStatic_2 < TClass, TProperty > =>
-    "LiteNetLib.Utils"."NetSerializer/FastCallStatic`2" < TClass, TProperty >
-);
+unsafe impl<
+    TClass: quest_hook::libil2cpp::Type,
+    TProperty: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_FastCallStatic_2<TClass, TProperty> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "FastCallStatic`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "FastCallStatic`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TClass, TProperty)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallStatic_2")]
 impl<
     TClass: quest_hook::libil2cpp::Type,
@@ -2283,11 +2745,44 @@ pub struct NetSerializer_FastCallStruct_2<
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallStruct_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_FastCallStruct_2 < TClass, TProperty > =>
-    "LiteNetLib.Utils"."NetSerializer/FastCallStruct`2" < TClass, TProperty >
-);
+unsafe impl<
+    TClass: quest_hook::libil2cpp::Type,
+    TProperty: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_FastCallStruct_2<TClass, TProperty> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "FastCallStruct`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "FastCallStruct`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TClass, TProperty)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallStruct_2")]
 impl<
     TClass: quest_hook::libil2cpp::Type,
@@ -2439,10 +2934,41 @@ pub struct NetSerializer_FastCall_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCall_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::Utils::NetSerializer_FastCall_1 < T
-    > => "LiteNetLib.Utils"."NetSerializer/FastCall`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "FastCall`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "FastCall`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCall_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> {
@@ -2585,11 +3111,41 @@ pub struct NetSerializer_FloatSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FloatSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_FloatSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/FloatSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "FloatSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "FloatSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FloatSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<T> {
@@ -2718,11 +3274,41 @@ pub struct NetSerializer_IPEndPointSerializer_1<T: quest_hook::libil2cpp::Type> 
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IPEndPointSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/IPEndPointSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "IPEndPointSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "IPEndPointSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IPEndPointSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<T> {
@@ -2823,10 +3409,41 @@ pub struct NetSerializer_IntSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IntSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::Utils::NetSerializer_IntSerializer_1
-    < T > => "LiteNetLib.Utils"."NetSerializer/IntSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "IntSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "IntSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IntSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<T> {
@@ -2952,11 +3569,41 @@ pub struct NetSerializer_LongSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+LongSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_LongSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/LongSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "LongSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "LongSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+LongSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
@@ -3082,11 +3729,41 @@ pub struct NetSerializer_SByteSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+SByteSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_SByteSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/SByteSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "SByteSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "SByteSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+SByteSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<T> {
@@ -3212,11 +3889,41 @@ pub struct NetSerializer_ShortSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ShortSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_ShortSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/ShortSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "ShortSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "ShortSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ShortSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
@@ -3346,11 +4053,41 @@ pub struct NetSerializer_StringSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+StringSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_StringSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/StringSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "StringSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "StringSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+StringSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<T> {
@@ -3484,11 +4221,41 @@ pub struct NetSerializer_UIntSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UIntSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_UIntSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/UIntSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "UIntSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "UIntSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UIntSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<T> {
@@ -3614,11 +4381,41 @@ pub struct NetSerializer_ULongSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ULongSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_ULongSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/ULongSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "ULongSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "ULongSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ULongSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<T> {
@@ -3744,11 +4541,41 @@ pub struct NetSerializer_UShortSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UShortSerializer_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::Utils::NetSerializer_UShortSerializer_1 < T > => "LiteNetLib.Utils"
-    ."NetSerializer/UShortSerializer`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib.Utils";
+    const CLASS_NAME: &'static str = "UShortSerializer`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "LiteNetLib.Utils",
+                        "UShortSerializer`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UShortSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<T> {

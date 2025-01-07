@@ -31,10 +31,24 @@ pub struct Dropdown {
     pub validTemplate: bool,
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Dropdown => "UnityEngine.UI"
-    ."Dropdown"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Dropdown {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "Dropdown";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+Dropdown")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown {
     type Target = crate::UnityEngine::UI::Selectable;
@@ -726,10 +740,25 @@ pub struct Dropdown_DropdownEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Dropdown_DropdownEvent =>
-    "UnityEngine.UI"."Dropdown/DropdownEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::Dropdown_DropdownEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "DropdownEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_DropdownEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<i32>;
@@ -784,10 +813,25 @@ pub struct Dropdown_DropdownItem {
     pub m_Toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Dropdown_DropdownItem =>
-    "UnityEngine.UI"."Dropdown/DropdownItem"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::Dropdown_DropdownItem {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "DropdownItem";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_DropdownItem {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -1000,10 +1044,24 @@ pub struct Dropdown_OptionData {
     pub m_Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Dropdown_OptionData =>
-    "UnityEngine.UI"."Dropdown/OptionData"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Dropdown_OptionData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "OptionData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionData")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_OptionData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1167,10 +1225,25 @@ pub struct Dropdown_OptionDataList {
     >,
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Dropdown_OptionDataList =>
-    "UnityEngine.UI"."Dropdown/OptionDataList"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::Dropdown_OptionDataList {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "OptionDataList";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_OptionDataList {
     type Target = quest_hook::libil2cpp::Il2CppObject;

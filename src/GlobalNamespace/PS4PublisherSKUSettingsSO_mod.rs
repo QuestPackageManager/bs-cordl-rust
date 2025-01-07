@@ -17,10 +17,25 @@ pub struct PS4PublisherSKUSettingsSO {
     pub _applicationCategory: crate::GlobalNamespace::PS4ApplicationCategory,
 }
 #[cfg(feature = "PS4PublisherSKUSettingsSO")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PS4PublisherSKUSettingsSO => ""
-    ."PS4PublisherSKUSettingsSO"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PS4PublisherSKUSettingsSO";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PS4PublisherSKUSettingsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
     type Target = crate::GlobalNamespace::SonyPublisherSKUSettingsSO;
@@ -144,11 +159,25 @@ pub struct PS4PublisherSKUSettingsSO_PS4BuildVersion {
     >,
 }
 #[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion => ""
-    ."PS4PublisherSKUSettingsSO/PS4BuildVersion"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PS4BuildVersion";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {

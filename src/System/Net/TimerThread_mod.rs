@@ -9,10 +9,85 @@ pub enum TimerNode_TimerThread_TimerState {
     Sentinel = 3i32,
 }
 #[cfg(feature = "System+Net+TimerThread+TimerNode+TimerState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::TimerNode_TimerThread_TimerState =>
-    "System.Net"."TimerThread/TimerNode/TimerState"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::TimerNode_TimerThread_TimerState {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "TimerState";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::System::Net::TimerNode_TimerThread_TimerState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::System::Net::TimerNode_TimerThread_TimerState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::System::Net::TimerNode_TimerThread_TimerState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::System::Net::TimerNode_TimerThread_TimerState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "System+Net+TimerThread")]
 #[repr(C)]
 #[derive(Debug)]
@@ -20,10 +95,24 @@ pub struct TimerThread {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+TimerThread")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::TimerThread => "System.Net"
-    ."TimerThread"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TimerThread {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "TimerThread";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+TimerThread")]
 impl std::ops::Deref for crate::System::Net::TimerThread {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -126,10 +215,24 @@ pub struct TimerThread_Callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Net+TimerThread+Callback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::TimerThread_Callback =>
-    "System.Net"."TimerThread/Callback"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TimerThread_Callback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "Callback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+TimerThread+Callback")]
 impl std::ops::Deref for crate::System::Net::TimerThread_Callback {
     type Target = crate::System::MulticastDelegate;
@@ -198,10 +301,25 @@ pub struct TimerThread_InfiniteTimer {
     pub cancelled: i32,
 }
 #[cfg(feature = "System+Net+TimerThread+InfiniteTimer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::TimerThread_InfiniteTimer =>
-    "System.Net"."TimerThread/InfiniteTimer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::TimerThread_InfiniteTimer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "InfiniteTimer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+TimerThread+InfiniteTimer")]
 impl std::ops::Deref for crate::System::Net::TimerThread_InfiniteTimer {
     type Target = crate::System::Net::TimerThread_Timer;
@@ -266,10 +384,25 @@ pub struct TimerThread_InfiniteTimerQueue {
     __cordl_parent: crate::System::Net::TimerThread_Queue,
 }
 #[cfg(feature = "System+Net+TimerThread+InfiniteTimerQueue")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::TimerThread_InfiniteTimerQueue =>
-    "System.Net"."TimerThread/InfiniteTimerQueue"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::TimerThread_InfiniteTimerQueue {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "InfiniteTimerQueue";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+TimerThread+InfiniteTimerQueue")]
 impl std::ops::Deref for crate::System::Net::TimerThread_InfiniteTimerQueue {
     type Target = crate::System::Net::TimerThread_Queue;
@@ -336,10 +469,24 @@ pub struct TimerThread_Queue {
     pub m_DurationMilliseconds: i32,
 }
 #[cfg(feature = "System+Net+TimerThread+Queue")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::TimerThread_Queue => "System.Net"
-    ."TimerThread/Queue"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TimerThread_Queue {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "Queue";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+TimerThread+Queue")]
 impl std::ops::Deref for crate::System::Net::TimerThread_Queue {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -416,10 +563,24 @@ pub struct TimerThread_Timer {
     pub m_DurationMilliseconds: i32,
 }
 #[cfg(feature = "System+Net+TimerThread+Timer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::TimerThread_Timer => "System.Net"
-    ."TimerThread/Timer"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TimerThread_Timer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "Timer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+TimerThread+Timer")]
 impl std::ops::Deref for crate::System::Net::TimerThread_Timer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -528,10 +689,24 @@ pub struct TimerThread_TimerNode {
     pub prev: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_TimerNode>,
 }
 #[cfg(feature = "System+Net+TimerThread+TimerNode")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::TimerThread_TimerNode =>
-    "System.Net"."TimerThread/TimerNode"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TimerThread_TimerNode {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "TimerNode";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+TimerThread+TimerNode")]
 impl std::ops::Deref for crate::System::Net::TimerThread_TimerNode {
     type Target = crate::System::Net::TimerThread_Timer;
@@ -680,10 +855,24 @@ pub struct TimerThread_TimerQueue {
     pub m_Timers: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_TimerNode>,
 }
 #[cfg(feature = "System+Net+TimerThread+TimerQueue")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::TimerThread_TimerQueue =>
-    "System.Net"."TimerThread/TimerQueue"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TimerThread_TimerQueue {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "TimerQueue";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+TimerThread+TimerQueue")]
 impl std::ops::Deref for crate::System::Net::TimerThread_TimerQueue {
     type Target = crate::System::Net::TimerThread_Queue;

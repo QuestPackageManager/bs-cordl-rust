@@ -9,10 +9,25 @@ pub struct XPathParser {
     pub _parseDepth: i32,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::MS::Internal::Xml::XPath::XPathParser =>
-    "MS.Internal.Xml.XPath"."XPathParser"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::MS::Internal::Xml::XPath::XPathParser {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "MS.Internal.Xml.XPath";
+    const CLASS_NAME: &'static str = "XPathParser";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::XPathParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -460,10 +475,25 @@ pub struct XPathParser_ParamInfo {
     >,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::MS::Internal::Xml::XPath::XPathParser_ParamInfo
-    => "MS.Internal.Xml.XPath"."XPathParser/ParamInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "MS.Internal.Xml.XPath";
+    const CLASS_NAME: &'static str = "ParamInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;

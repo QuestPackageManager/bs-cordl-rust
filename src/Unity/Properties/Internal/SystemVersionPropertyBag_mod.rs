@@ -7,11 +7,25 @@ pub struct SystemVersionPropertyBag {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::SystemVersionPropertyBag =>
-    "Unity.Properties.Internal"."SystemVersionPropertyBag"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "SystemVersionPropertyBag";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
@@ -78,11 +92,25 @@ pub struct SystemVersionPropertyBag_BuildProperty {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty =>
-    "Unity.Properties.Internal"."SystemVersionPropertyBag/BuildProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "BuildProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
@@ -154,11 +182,25 @@ pub struct SystemVersionPropertyBag_MajorProperty {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty =>
-    "Unity.Properties.Internal"."SystemVersionPropertyBag/MajorProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "MajorProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
@@ -230,11 +272,25 @@ pub struct SystemVersionPropertyBag_MinorProperty {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty =>
-    "Unity.Properties.Internal"."SystemVersionPropertyBag/MinorProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "MinorProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
@@ -306,11 +362,25 @@ pub struct SystemVersionPropertyBag_RevisionProperty {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty =>
-    "Unity.Properties.Internal"."SystemVersionPropertyBag/RevisionProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "RevisionProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty {

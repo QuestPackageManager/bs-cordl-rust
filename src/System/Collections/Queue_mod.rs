@@ -16,10 +16,24 @@ pub struct Queue {
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+Queue")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Collections::Queue =>
-    "System.Collections"."Queue"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::Queue {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "Queue";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Queue")]
 impl std::ops::Deref for crate::System::Collections::Queue {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -302,10 +316,25 @@ pub struct Queue_QueueDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+Queue+QueueDebugView")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Collections::Queue_QueueDebugView =>
-    "System.Collections"."Queue/QueueDebugView"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Queue_QueueDebugView {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "QueueDebugView";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Queue+QueueDebugView")]
 impl std::ops::Deref for crate::System::Collections::Queue_QueueDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -342,10 +371,25 @@ pub struct Queue_QueueEnumerator {
     pub _currentElement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+Queue+QueueEnumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Collections::Queue_QueueEnumerator =>
-    "System.Collections"."Queue/QueueEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Queue_QueueEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "QueueEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Queue+QueueEnumerator")]
 impl std::ops::Deref for crate::System::Collections::Queue_QueueEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;

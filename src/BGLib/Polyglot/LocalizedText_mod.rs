@@ -7,10 +7,24 @@ pub struct LocalizedText {
     >,
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizedText")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::BGLib::Polyglot::LocalizedText =>
-    "BGLib.Polyglot"."LocalizedText"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::LocalizedText {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BGLib.Polyglot";
+    const CLASS_NAME: &'static str = "LocalizedText";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BGLib+Polyglot+LocalizedText")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizedText {
     type Target = crate::BGLib::Polyglot::LocalizedTextComponent_1<

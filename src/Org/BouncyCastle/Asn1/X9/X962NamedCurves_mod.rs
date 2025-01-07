@@ -5,10 +5,25 @@ pub struct X962NamedCurves {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Asn1::X9::X962NamedCurves =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "X962NamedCurves";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -203,11 +218,25 @@ pub struct X962NamedCurves_C2pnb163v1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2pnb163v1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2pnb163v1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v1Holder {
@@ -273,11 +302,25 @@ pub struct X962NamedCurves_C2pnb163v2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v2Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v2Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2pnb163v2Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v2Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2pnb163v2Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v2Holder {
@@ -343,11 +386,25 @@ pub struct X962NamedCurves_C2pnb163v3Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v3Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v3Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2pnb163v3Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v3Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2pnb163v3Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v3Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v3Holder {
@@ -413,11 +470,25 @@ pub struct X962NamedCurves_C2pnb176w1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb176w1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb176w1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2pnb176w1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb176w1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2pnb176w1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb176w1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb176w1Holder {
@@ -483,11 +554,25 @@ pub struct X962NamedCurves_C2pnb208w1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb208w1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb208w1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2pnb208w1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb208w1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2pnb208w1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb208w1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb208w1Holder {
@@ -553,11 +638,25 @@ pub struct X962NamedCurves_C2pnb272w1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb272w1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb272w1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2pnb272w1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb272w1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2pnb272w1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb272w1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb272w1Holder {
@@ -623,11 +722,25 @@ pub struct X962NamedCurves_C2pnb304w1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb304w1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb304w1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2pnb304w1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb304w1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2pnb304w1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb304w1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb304w1Holder {
@@ -693,11 +806,25 @@ pub struct X962NamedCurves_C2pnb368w1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb368w1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb368w1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2pnb368w1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb368w1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2pnb368w1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb368w1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb368w1Holder {
@@ -763,11 +890,25 @@ pub struct X962NamedCurves_C2tnb191v1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2tnb191v1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2tnb191v1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v1Holder {
@@ -833,11 +974,25 @@ pub struct X962NamedCurves_C2tnb191v2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v2Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v2Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2tnb191v2Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v2Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2tnb191v2Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v2Holder {
@@ -903,11 +1058,25 @@ pub struct X962NamedCurves_C2tnb191v3Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v3Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v3Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2tnb191v3Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v3Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2tnb191v3Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v3Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v3Holder {
@@ -973,11 +1142,25 @@ pub struct X962NamedCurves_C2tnb239v1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2tnb239v1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2tnb239v1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v1Holder {
@@ -1043,11 +1226,25 @@ pub struct X962NamedCurves_C2tnb239v2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v2Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v2Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2tnb239v2Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v2Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2tnb239v2Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v2Holder {
@@ -1113,11 +1310,25 @@ pub struct X962NamedCurves_C2tnb239v3Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v3Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v3Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2tnb239v3Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v3Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2tnb239v3Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v3Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v3Holder {
@@ -1183,11 +1394,25 @@ pub struct X962NamedCurves_C2tnb359v1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb359v1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb359v1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2tnb359v1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb359v1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2tnb359v1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb359v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb359v1Holder {
@@ -1253,11 +1478,25 @@ pub struct X962NamedCurves_C2tnb431r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb431r1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb431r1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/C2tnb431r1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb431r1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "C2tnb431r1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb431r1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb431r1Holder {
@@ -1323,11 +1562,25 @@ pub struct X962NamedCurves_Prime192v1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/Prime192v1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "Prime192v1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v1Holder {
@@ -1393,11 +1646,25 @@ pub struct X962NamedCurves_Prime192v2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v2Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v2Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/Prime192v2Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v2Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "Prime192v2Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v2Holder {
@@ -1463,11 +1730,25 @@ pub struct X962NamedCurves_Prime192v3Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v3Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v3Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/Prime192v3Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v3Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "Prime192v3Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v3Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v3Holder {
@@ -1533,11 +1814,25 @@ pub struct X962NamedCurves_Prime239v1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/Prime239v1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "Prime239v1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v1Holder {
@@ -1603,11 +1898,25 @@ pub struct X962NamedCurves_Prime239v2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v2Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v2Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/Prime239v2Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v2Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "Prime239v2Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v2Holder {
@@ -1673,11 +1982,25 @@ pub struct X962NamedCurves_Prime239v3Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v3Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v3Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/Prime239v3Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v3Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "Prime239v3Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v3Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v3Holder {
@@ -1743,11 +2066,25 @@ pub struct X962NamedCurves_Prime256v1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime256v1Holder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime256v1Holder =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves/Prime256v1Holder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime256v1Holder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X9";
+    const CLASS_NAME: &'static str = "Prime256v1Holder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime256v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime256v1Holder {

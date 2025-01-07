@@ -39,10 +39,24 @@ pub struct BeatmapLevelSO {
     pub _contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
 }
 #[cfg(feature = "BeatmapLevelSO")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelSO => ""
-    ."BeatmapLevelSO"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevelSO {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BeatmapLevelSO";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapLevelSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
@@ -516,10 +530,25 @@ pub struct BeatmapLevelSO_ColorScheme {
     pub _environmentColor1Boost: crate::UnityEngine::Color,
 }
 #[cfg(feature = "BeatmapLevelSO+ColorScheme")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelSO_ColorScheme =>
-    ""."BeatmapLevelSO/ColorScheme"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ColorScheme";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapLevelSO+ColorScheme")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelSO_ColorScheme {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -725,11 +754,25 @@ pub struct BeatmapLevelSO_PreviewDifficultyBeatmap {
     pub _cuttableBeatmapObjectsCount: i32,
 }
 #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap => ""
-    ."BeatmapLevelSO/PreviewDifficultyBeatmap"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PreviewDifficultyBeatmap";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmap")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
@@ -906,11 +949,25 @@ pub struct BeatmapLevelSO_PreviewDifficultyBeatmapSet {
     >,
 }
 #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet => ""
-    ."BeatmapLevelSO/PreviewDifficultyBeatmapSet"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PreviewDifficultyBeatmapSet";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {

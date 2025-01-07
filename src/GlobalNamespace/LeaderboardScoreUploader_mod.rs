@@ -26,10 +26,25 @@ pub struct LeaderboardScoreUploader {
     pub _fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
 }
 #[cfg(feature = "LeaderboardScoreUploader")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::LeaderboardScoreUploader => ""
-    ."LeaderboardScoreUploader"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LeaderboardScoreUploader {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LeaderboardScoreUploader";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LeaderboardScoreUploader")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardScoreUploader {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -218,11 +233,25 @@ pub struct LeaderboardScoreUploader_ScoreData {
     pub currentUploadAttemptCount: i32,
 }
 #[cfg(feature = "LeaderboardScoreUploader+ScoreData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LeaderboardScoreUploader_ScoreData => ""
-    ."LeaderboardScoreUploader/ScoreData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ScoreData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LeaderboardScoreUploader+ScoreData")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -528,11 +557,25 @@ pub struct LeaderboardScoreUploader_ScoresToUploadData {
     >,
 }
 #[cfg(feature = "LeaderboardScoreUploader+ScoresToUploadData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData => ""
-    ."LeaderboardScoreUploader/ScoresToUploadData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ScoresToUploadData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LeaderboardScoreUploader+ScoresToUploadData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
@@ -585,11 +628,25 @@ pub struct LeaderboardScoreUploader_UploadScoreCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LeaderboardScoreUploader+UploadScoreCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback => ""
-    ."LeaderboardScoreUploader/UploadScoreCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "UploadScoreCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LeaderboardScoreUploader+UploadScoreCallback")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {

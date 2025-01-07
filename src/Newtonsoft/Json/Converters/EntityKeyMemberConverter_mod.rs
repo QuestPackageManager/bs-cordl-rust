@@ -5,11 +5,25 @@ pub struct EntityKeyMemberConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+EntityKeyMemberConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Newtonsoft::Json::Converters::EntityKeyMemberConverter =>
-    "Newtonsoft.Json.Converters"."EntityKeyMemberConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Newtonsoft::Json::Converters::EntityKeyMemberConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Newtonsoft.Json.Converters";
+    const CLASS_NAME: &'static str = "EntityKeyMemberConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Converters+EntityKeyMemberConverter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::EntityKeyMemberConverter {
     type Target = crate::Newtonsoft::Json::JsonConverter;

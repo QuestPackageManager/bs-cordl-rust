@@ -5,11 +5,25 @@ pub struct SceneProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider =>
-    "UnityEngine.ResourceManagement.ResourceProviders"."SceneProvider"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.ResourceProviders";
+    const CLASS_NAME: &'static str = "SceneProvider";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
@@ -238,11 +252,25 @@ pub struct SceneProvider_SceneOp {
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp =>
-    "UnityEngine.ResourceManagement.ResourceProviders"."SceneProvider/SceneOp"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.ResourceProviders";
+    const CLASS_NAME: &'static str = "SceneOp";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
@@ -528,11 +556,25 @@ pub struct SceneProvider_UnloadSceneOp {
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp =>
-    "UnityEngine.ResourceManagement.ResourceProviders"."SceneProvider/UnloadSceneOp"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.ResourceProviders";
+    const CLASS_NAME: &'static str = "UnloadSceneOp";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
 )]

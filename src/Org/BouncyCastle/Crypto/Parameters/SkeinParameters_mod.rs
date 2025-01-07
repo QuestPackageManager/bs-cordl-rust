@@ -6,11 +6,25 @@ pub struct SkeinParameters {
     pub parameters: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Parameters::SkeinParameters =>
-    "Org.BouncyCastle.Crypto.Parameters"."SkeinParameters"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Parameters";
+    const CLASS_NAME: &'static str = "SkeinParameters";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -185,11 +199,25 @@ pub struct SkeinParameters_Builder {
     pub parameters: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder =>
-    "Org.BouncyCastle.Crypto.Parameters"."SkeinParameters/Builder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Parameters";
+    const CLASS_NAME: &'static str = "Builder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {

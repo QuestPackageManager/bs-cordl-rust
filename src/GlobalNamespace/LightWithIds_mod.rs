@@ -15,10 +15,24 @@ pub struct LightWithIds {
     pub _childrenColorWasSet: bool,
 }
 #[cfg(feature = "LightWithIds")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightWithIds => ""
-    ."LightWithIds"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LightWithIds {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LightWithIds";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LightWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::LightWithIds {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -229,10 +243,25 @@ pub struct LightWithIds_LightWithId {
     >,
 }
 #[cfg(feature = "LightWithIds+LightWithId")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightWithIds_LightWithId => ""
-    ."LightWithIds/LightWithId"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LightWithIds_LightWithId {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LightWithId";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LightWithIds+LightWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::LightWithIds_LightWithId {
     type Target = quest_hook::libil2cpp::Il2CppObject;

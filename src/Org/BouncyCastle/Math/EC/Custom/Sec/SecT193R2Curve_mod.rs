@@ -8,11 +8,25 @@ pub struct SecT193R2Curve {
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT193R2Curve")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Math::EC::Custom::Sec::SecT193R2Curve =>
-    "Org.BouncyCastle.Math.EC.Custom.Sec"."SecT193R2Curve"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT193R2Curve {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Custom.Sec";
+    const CLASS_NAME: &'static str = "SecT193R2Curve";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT193R2Curve")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT193R2Curve {
@@ -239,11 +253,25 @@ pub struct SecT193R2Curve_SecT193R2LookupTable {
 #[cfg(
     feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT193R2Curve+SecT193R2LookupTable"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Math::EC::Custom::Sec::SecT193R2Curve_SecT193R2LookupTable =>
-    "Org.BouncyCastle.Math.EC.Custom.Sec"."SecT193R2Curve/SecT193R2LookupTable"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT193R2Curve_SecT193R2LookupTable {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Custom.Sec";
+    const CLASS_NAME: &'static str = "SecT193R2LookupTable";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT193R2Curve+SecT193R2LookupTable"
 )]

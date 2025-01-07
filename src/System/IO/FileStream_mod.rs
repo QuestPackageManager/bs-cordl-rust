@@ -22,10 +22,24 @@ pub struct FileStream {
     pub buf_start: i64,
 }
 #[cfg(feature = "System+IO+FileStream")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::IO::FileStream => "System.IO"
-    ."FileStream"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileStream {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO";
+    const CLASS_NAME: &'static str = "FileStream";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+FileStream")]
 impl std::ops::Deref for crate::System::IO::FileStream {
     type Target = crate::System::IO::Stream;
@@ -839,10 +853,24 @@ pub struct FileStream_ReadDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+IO+FileStream+ReadDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::IO::FileStream_ReadDelegate =>
-    "System.IO"."FileStream/ReadDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileStream_ReadDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO";
+    const CLASS_NAME: &'static str = "ReadDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+FileStream+ReadDelegate")]
 impl std::ops::Deref for crate::System::IO::FileStream_ReadDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -936,10 +964,24 @@ pub struct FileStream_WriteDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+IO+FileStream+WriteDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::IO::FileStream_WriteDelegate =>
-    "System.IO"."FileStream/WriteDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileStream_WriteDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.IO";
+    const CLASS_NAME: &'static str = "WriteDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+IO+FileStream+WriteDelegate")]
 impl std::ops::Deref for crate::System::IO::FileStream_WriteDelegate {
     type Target = crate::System::MulticastDelegate;

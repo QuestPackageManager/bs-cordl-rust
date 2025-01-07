@@ -5,11 +5,25 @@ pub struct AndroidLightSensor {
     __cordl_parent: crate::UnityEngine::InputSystem::LightSensor,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLightSensor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::Android::AndroidLightSensor =>
-    "UnityEngine.InputSystem.Android"."AndroidLightSensor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::Android::AndroidLightSensor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem.Android";
+    const CLASS_NAME: &'static str = "AndroidLightSensor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLightSensor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Android::AndroidLightSensor {
     type Target = crate::UnityEngine::InputSystem::LightSensor;

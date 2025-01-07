@@ -12,10 +12,25 @@ pub struct SonyLeaderboardIdsSO {
     >,
 }
 #[cfg(feature = "SonyLeaderboardIdsSO")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::SonyLeaderboardIdsSO => ""
-    ."SonyLeaderboardIdsSO"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SonyLeaderboardIdsSO {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SonyLeaderboardIdsSO";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SonyLeaderboardIdsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLeaderboardIdsSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
@@ -144,11 +159,25 @@ pub struct SonyLeaderboardIdsSO_LeaderboardIdData {
     pub _sonyLeaderboardId: u32,
 }
 #[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData => ""
-    ."SonyLeaderboardIdsSO/LeaderboardIdData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LeaderboardIdData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
     type Target = quest_hook::libil2cpp::Il2CppObject;

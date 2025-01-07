@@ -5,10 +5,25 @@ pub struct ProcessWaitHandle {
     __cordl_parent: crate::System::Threading::WaitHandle,
 }
 #[cfg(feature = "System+Diagnostics+ProcessWaitHandle")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Diagnostics::ProcessWaitHandle =>
-    "System.Diagnostics"."ProcessWaitHandle"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Diagnostics::ProcessWaitHandle {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Diagnostics";
+    const CLASS_NAME: &'static str = "ProcessWaitHandle";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Diagnostics+ProcessWaitHandle")]
 impl std::ops::Deref for crate::System::Diagnostics::ProcessWaitHandle {
     type Target = crate::System::Threading::WaitHandle;

@@ -6,9 +6,24 @@ pub struct Display {
     pub nativeDisplay: crate::System::IntPtr,
 }
 #[cfg(feature = "UnityEngine+Display")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Display => "UnityEngine"."Display"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Display {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "Display";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Display")]
 impl std::ops::Deref for crate::UnityEngine::Display {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -166,10 +181,25 @@ pub struct Display_DisplaysUpdatedDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+Display+DisplaysUpdatedDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Display_DisplaysUpdatedDelegate =>
-    "UnityEngine"."Display/DisplaysUpdatedDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Display_DisplaysUpdatedDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "DisplaysUpdatedDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Display+DisplaysUpdatedDelegate")]
 impl std::ops::Deref for crate::UnityEngine::Display_DisplaysUpdatedDelegate {
     type Target = crate::System::MulticastDelegate;

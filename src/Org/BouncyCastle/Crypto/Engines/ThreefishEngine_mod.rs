@@ -14,11 +14,25 @@ pub struct ThreefishEngine {
     pub forEncryption: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Engines::ThreefishEngine =>
-    "Org.BouncyCastle.Crypto.Engines"."ThreefishEngine"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Engines";
+    const CLASS_NAME: &'static str = "ThreefishEngine";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -257,11 +271,25 @@ pub struct ThreefishEngine_Threefish1024Cipher {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish1024Cipher")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Cipher =>
-    "Org.BouncyCastle.Crypto.Engines"."ThreefishEngine/Threefish1024Cipher"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Cipher {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Engines";
+    const CLASS_NAME: &'static str = "Threefish1024Cipher";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish1024Cipher")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Cipher {
@@ -407,11 +435,25 @@ pub struct ThreefishEngine_Threefish256Cipher {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish256Cipher")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Cipher =>
-    "Org.BouncyCastle.Crypto.Engines"."ThreefishEngine/Threefish256Cipher"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Cipher {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Engines";
+    const CLASS_NAME: &'static str = "Threefish256Cipher";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish256Cipher")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Cipher {
@@ -509,11 +551,25 @@ pub struct ThreefishEngine_Threefish512Cipher {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish512Cipher")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Cipher =>
-    "Org.BouncyCastle.Crypto.Engines"."ThreefishEngine/Threefish512Cipher"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Cipher {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Engines";
+    const CLASS_NAME: &'static str = "Threefish512Cipher";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish512Cipher")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Cipher {
@@ -629,11 +685,25 @@ pub struct ThreefishEngine_ThreefishCipher {
     pub kw: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher =>
-    "Org.BouncyCastle.Crypto.Engines"."ThreefishEngine/ThreefishCipher"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Engines";
+    const CLASS_NAME: &'static str = "ThreefishCipher";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher {

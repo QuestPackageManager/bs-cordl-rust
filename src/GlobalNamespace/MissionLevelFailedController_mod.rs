@@ -32,10 +32,25 @@ pub struct MissionLevelFailedController {
     >,
 }
 #[cfg(feature = "MissionLevelFailedController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionLevelFailedController =>
-    ""."MissionLevelFailedController"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MissionLevelFailedController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "MissionLevelFailedController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MissionLevelFailedController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelFailedController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -132,11 +147,25 @@ pub struct MissionLevelFailedController_InitData {
     pub autoRestart: bool,
 }
 #[cfg(feature = "MissionLevelFailedController+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MissionLevelFailedController_InitData => ""
-    ."MissionLevelFailedController/InitData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MissionLevelFailedController_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MissionLevelFailedController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelFailedController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;

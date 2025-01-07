@@ -8,10 +8,25 @@ pub struct BeatmapLevelsPromoDataSO {
     >,
 }
 #[cfg(feature = "BeatmapLevelsPromoDataSO")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelsPromoDataSO => ""
-    ."BeatmapLevelsPromoDataSO"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapLevelsPromoDataSO {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BeatmapLevelsPromoDataSO";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapLevelsPromoDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelsPromoDataSO {
     type Target = crate::UnityEngine::ScriptableObject;
@@ -112,11 +127,25 @@ pub struct BeatmapLevelsPromoDataSO_BeatmapLevelsPromo {
     >,
 }
 #[cfg(feature = "BeatmapLevelsPromoDataSO+BeatmapLevelsPromo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BeatmapLevelsPromoDataSO_BeatmapLevelsPromo => ""
-    ."BeatmapLevelsPromoDataSO/BeatmapLevelsPromo"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatmapLevelsPromoDataSO_BeatmapLevelsPromo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BeatmapLevelsPromo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapLevelsPromoDataSO+BeatmapLevelsPromo")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapLevelsPromoDataSO_BeatmapLevelsPromo {

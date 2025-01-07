@@ -8,10 +8,24 @@ pub struct CuttableBySaber {
     >,
 }
 #[cfg(feature = "CuttableBySaber")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::CuttableBySaber => ""
-    ."CuttableBySaber"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CuttableBySaber {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "CuttableBySaber";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "CuttableBySaber")]
 impl std::ops::Deref for crate::GlobalNamespace::CuttableBySaber {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -145,11 +159,25 @@ pub struct CuttableBySaber_WasCutBySaberDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "CuttableBySaber+WasCutBySaberDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate => ""
-    ."CuttableBySaber/WasCutBySaberDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "WasCutBySaberDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "CuttableBySaber+WasCutBySaberDelegate")]
 impl std::ops::Deref for crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate {
     type Target = crate::System::MulticastDelegate;

@@ -13,10 +13,25 @@ pub struct SonyLevelPacksPriceModel {
     >,
 }
 #[cfg(feature = "SonyLevelPacksPriceModel")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::SonyLevelPacksPriceModel => ""
-    ."SonyLevelPacksPriceModel"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SonyLevelPacksPriceModel {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SonyLevelPacksPriceModel";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SonyLevelPacksPriceModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLevelPacksPriceModel {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
@@ -117,11 +132,25 @@ pub struct SonyLevelPacksPriceModel_PricePerBundlePair {
     pub _levelsCount: i32,
 }
 #[cfg(feature = "SonyLevelPacksPriceModel+PricePerBundlePair")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair => ""
-    ."SonyLevelPacksPriceModel/PricePerBundlePair"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PricePerBundlePair";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SonyLevelPacksPriceModel+PricePerBundlePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair {

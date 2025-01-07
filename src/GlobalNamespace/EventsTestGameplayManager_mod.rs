@@ -49,10 +49,25 @@ pub struct EventsTestGameplayManager {
     pub _rotatingLasers: bool,
 }
 #[cfg(feature = "EventsTestGameplayManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::EventsTestGameplayManager => ""
-    ."EventsTestGameplayManager"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::EventsTestGameplayManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "EventsTestGameplayManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "EventsTestGameplayManager")]
 impl std::ops::Deref for crate::GlobalNamespace::EventsTestGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -171,11 +186,25 @@ pub struct EventsTestGameplayManager_MockBeatToTimeConverter {
     pub _bpm: f32,
 }
 #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter => ""
-    ."EventsTestGameplayManager/MockBeatToTimeConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "MockBeatToTimeConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {

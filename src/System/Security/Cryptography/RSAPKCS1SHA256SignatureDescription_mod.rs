@@ -5,11 +5,25 @@ pub struct RSAPKCS1SHA256SignatureDescription {
     __cordl_parent: crate::System::Security::Cryptography::RSAPKCS1SignatureDescription,
 }
 #[cfg(feature = "System+Security+Cryptography+RSAPKCS1SHA256SignatureDescription")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Security::Cryptography::RSAPKCS1SHA256SignatureDescription =>
-    "System.Security.Cryptography"."RSAPKCS1SHA256SignatureDescription"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Security::Cryptography::RSAPKCS1SHA256SignatureDescription {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Security.Cryptography";
+    const CLASS_NAME: &'static str = "RSAPKCS1SHA256SignatureDescription";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Security+Cryptography+RSAPKCS1SHA256SignatureDescription")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RSAPKCS1SHA256SignatureDescription {

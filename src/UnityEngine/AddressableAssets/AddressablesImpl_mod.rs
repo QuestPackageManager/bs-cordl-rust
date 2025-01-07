@@ -73,10 +73,25 @@ pub struct AddressablesImpl {
     pub hasStartedInitialization: bool,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::AddressableAssets::AddressablesImpl
-    => "UnityEngine.AddressableAssets"."AddressablesImpl"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::AddressableAssets::AddressablesImpl {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.AddressableAssets";
+    const CLASS_NAME: &'static str = "AddressablesImpl";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AddressablesImpl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2602,11 +2617,25 @@ pub struct AddressablesImpl_LoadResourceLocationKeyOp {
 #[cfg(
     feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeyOp =>
-    "UnityEngine.AddressableAssets"."AddressablesImpl/LoadResourceLocationKeyOp"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeyOp {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.AddressableAssets";
+    const CLASS_NAME: &'static str = "LoadResourceLocationKeyOp";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
 )]
@@ -2745,11 +2774,25 @@ pub struct AddressablesImpl_LoadResourceLocationKeysOp {
 #[cfg(
     feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeysOp =>
-    "UnityEngine.AddressableAssets"."AddressablesImpl/LoadResourceLocationKeysOp"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeysOp {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.AddressableAssets";
+    const CLASS_NAME: &'static str = "LoadResourceLocationKeysOp";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
 )]

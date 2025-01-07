@@ -36,10 +36,25 @@ pub struct MaterialPropertyValuesSetter {
     >,
 }
 #[cfg(feature = "MaterialPropertyValuesSetter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::MaterialPropertyValuesSetter =>
-    ""."MaterialPropertyValuesSetter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MaterialPropertyValuesSetter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "MaterialPropertyValuesSetter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MaterialPropertyValuesSetter")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyValuesSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -141,11 +156,25 @@ pub struct MaterialPropertyValuesSetter_PropertyNameColorValuePair {
     pub color: crate::UnityEngine::Color,
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameColorValuePair")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair => ""
-    ."MaterialPropertyValuesSetter/PropertyNameColorValuePair"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PropertyNameColorValuePair";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameColorValuePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair {
@@ -199,11 +228,25 @@ pub struct MaterialPropertyValuesSetter_PropertyNameFloatValuePair {
     pub value: f32,
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameFloatValuePair")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair => ""
-    ."MaterialPropertyValuesSetter/PropertyNameFloatValuePair"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PropertyNameFloatValuePair";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameFloatValuePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair {
@@ -257,11 +300,25 @@ pub struct MaterialPropertyValuesSetter_PropertyNameIntValuePair {
     pub value: i32,
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameIntValuePair")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair => ""
-    ."MaterialPropertyValuesSetter/PropertyNameIntValuePair"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PropertyNameIntValuePair";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameIntValuePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair {
@@ -315,11 +372,25 @@ pub struct MaterialPropertyValuesSetter_PropertyNameVectorValuePair {
     pub vector: crate::UnityEngine::Vector4,
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameVectorValuePair")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair => ""
-    ."MaterialPropertyValuesSetter/PropertyNameVectorValuePair"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PropertyNameVectorValuePair";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameVectorValuePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair {
@@ -374,11 +445,25 @@ pub struct MaterialPropertyValuesSetter_PropertyValuePairBase {
     pub _propertyId_k__BackingField: i32,
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyValuePairBase")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase => ""
-    ."MaterialPropertyValuesSetter/PropertyValuePairBase"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PropertyValuePairBase";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyValuePairBase")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {

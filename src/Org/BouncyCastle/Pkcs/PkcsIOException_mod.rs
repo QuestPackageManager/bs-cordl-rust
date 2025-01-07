@@ -5,10 +5,25 @@ pub struct PkcsIOException {
     __cordl_parent: crate::System::IO::IOException,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+PkcsIOException")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Pkcs::PkcsIOException =>
-    "Org.BouncyCastle.Pkcs"."PkcsIOException"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Pkcs::PkcsIOException {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Pkcs";
+    const CLASS_NAME: &'static str = "PkcsIOException";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Pkcs+PkcsIOException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::PkcsIOException {
     type Target = crate::System::IO::IOException;

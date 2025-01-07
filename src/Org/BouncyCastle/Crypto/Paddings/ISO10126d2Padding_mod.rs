@@ -8,11 +8,25 @@ pub struct ISO10126d2Padding {
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+ISO10126d2Padding")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Paddings::ISO10126d2Padding =>
-    "Org.BouncyCastle.Crypto.Paddings"."ISO10126d2Padding"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Paddings::ISO10126d2Padding {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Paddings";
+    const CLASS_NAME: &'static str = "ISO10126d2Padding";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+ISO10126d2Padding")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Paddings::ISO10126d2Padding {
     type Target = quest_hook::libil2cpp::Il2CppObject;

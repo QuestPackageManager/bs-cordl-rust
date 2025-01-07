@@ -8,11 +8,25 @@ pub struct OSSpecificSynchronizationContext {
     >,
 }
 #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Threading::OSSpecificSynchronizationContext => "System.Threading"
-    ."OSSpecificSynchronizationContext"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Threading::OSSpecificSynchronizationContext {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading";
+    const CLASS_NAME: &'static str = "OSSpecificSynchronizationContext";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext")]
 impl std::ops::Deref for crate::System::Threading::OSSpecificSynchronizationContext {
     type Target = crate::System::Threading::SynchronizationContext;
@@ -151,11 +165,25 @@ pub struct OSSpecificSynchronizationContext_InvocationContext {
     pub m_State: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext+InvocationContext")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Threading::OSSpecificSynchronizationContext_InvocationContext =>
-    "System.Threading"."OSSpecificSynchronizationContext/InvocationContext"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Threading::OSSpecificSynchronizationContext_InvocationContext {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading";
+    const CLASS_NAME: &'static str = "InvocationContext";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext+InvocationContext")]
 impl std::ops::Deref
 for crate::System::Threading::OSSpecificSynchronizationContext_InvocationContext {
@@ -227,11 +255,25 @@ pub struct OSSpecificSynchronizationContext_InvocationEntryDelegate {
 #[cfg(
     feature = "System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Threading::OSSpecificSynchronizationContext_InvocationEntryDelegate =>
-    "System.Threading"."OSSpecificSynchronizationContext/InvocationEntryDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Threading::OSSpecificSynchronizationContext_InvocationEntryDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Threading";
+    const CLASS_NAME: &'static str = "InvocationEntryDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
 )]

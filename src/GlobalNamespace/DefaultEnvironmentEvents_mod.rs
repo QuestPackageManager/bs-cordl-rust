@@ -19,10 +19,25 @@ pub struct DefaultEnvironmentEvents {
     >,
 }
 #[cfg(feature = "DefaultEnvironmentEvents")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::DefaultEnvironmentEvents => ""
-    ."DefaultEnvironmentEvents"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::DefaultEnvironmentEvents {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "DefaultEnvironmentEvents";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "DefaultEnvironmentEvents")]
 impl std::ops::Deref for crate::GlobalNamespace::DefaultEnvironmentEvents {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -137,11 +152,25 @@ pub struct DefaultEnvironmentEvents_BasicBeatmapEvent {
     pub _floatValue: f32,
 }
 #[cfg(feature = "DefaultEnvironmentEvents+BasicBeatmapEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent => ""
-    ."DefaultEnvironmentEvents/BasicBeatmapEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BasicBeatmapEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "DefaultEnvironmentEvents+BasicBeatmapEvent")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
@@ -221,11 +250,25 @@ pub struct DefaultEnvironmentEvents_LightGroupDistribution {
     pub _distributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupDistribution")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution => ""
-    ."DefaultEnvironmentEvents/LightGroupDistribution"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LightGroupDistribution";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupDistribution")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
@@ -350,11 +393,25 @@ pub struct DefaultEnvironmentEvents_LightGroupEvent {
     >,
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent => ""
-    ."DefaultEnvironmentEvents/LightGroupEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LightGroupEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupEvent")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
@@ -672,11 +729,25 @@ pub struct DefaultEnvironmentEvents_LightGroupFiltering {
     pub _chunks: i32,
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupFiltering")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering => ""
-    ."DefaultEnvironmentEvents/LightGroupFiltering"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LightGroupFiltering";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupFiltering")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {

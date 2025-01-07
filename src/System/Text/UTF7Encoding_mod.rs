@@ -11,10 +11,24 @@ pub struct UTF7Encoding {
     pub _allowOptionals: bool,
 }
 #[cfg(feature = "System+Text+UTF7Encoding")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Text::UTF7Encoding => "System.Text"
-    ."UTF7Encoding"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UTF7Encoding {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Text";
+    const CLASS_NAME: &'static str = "UTF7Encoding";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Text+UTF7Encoding")]
 impl std::ops::Deref for crate::System::Text::UTF7Encoding {
     type Target = crate::System::Text::Encoding;
@@ -379,10 +393,24 @@ pub struct UTF7Encoding_Decoder {
     pub firstByte: bool,
 }
 #[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Text::UTF7Encoding_Decoder =>
-    "System.Text"."UTF7Encoding/Decoder"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UTF7Encoding_Decoder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Text";
+    const CLASS_NAME: &'static str = "Decoder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
 impl std::ops::Deref for crate::System::Text::UTF7Encoding_Decoder {
     type Target = crate::System::Text::DecoderNLS;
@@ -452,10 +480,25 @@ pub struct UTF7Encoding_DecoderUTF7Fallback {
     __cordl_parent: crate::System::Text::DecoderFallback,
 }
 #[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Text::UTF7Encoding_DecoderUTF7Fallback
-    => "System.Text"."UTF7Encoding/DecoderUTF7Fallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Text";
+    const CLASS_NAME: &'static str = "DecoderUTF7Fallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
 impl std::ops::Deref for crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
     type Target = crate::System::Text::DecoderFallback;
@@ -546,11 +589,25 @@ pub struct UTF7Encoding_DecoderUTF7FallbackBuffer {
     pub iSize: i32,
 }
 #[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer => "System.Text"
-    ."UTF7Encoding/DecoderUTF7FallbackBuffer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Text";
+    const CLASS_NAME: &'static str = "DecoderUTF7FallbackBuffer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
 impl std::ops::Deref for crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
     type Target = crate::System::Text::DecoderFallbackBuffer;
@@ -658,10 +715,24 @@ pub struct UTF7Encoding_Encoder {
     pub bitCount: i32,
 }
 #[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Text::UTF7Encoding_Encoder =>
-    "System.Text"."UTF7Encoding/Encoder"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UTF7Encoding_Encoder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Text";
+    const CLASS_NAME: &'static str = "Encoder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
 impl std::ops::Deref for crate::System::Text::UTF7Encoding_Encoder {
     type Target = crate::System::Text::EncoderNLS;

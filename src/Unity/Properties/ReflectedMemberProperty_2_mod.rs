@@ -40,11 +40,44 @@ pub struct ReflectedMemberProperty_2<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Properties::ReflectedMemberProperty_2 <
-    TContainer, TValue > => "Unity.Properties"."ReflectedMemberProperty`2" < TContainer,
-    TValue >
-);
+unsafe impl<
+    TContainer: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::Unity::Properties::ReflectedMemberProperty_2<TContainer, TValue> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties";
+    const CLASS_NAME: &'static str = "ReflectedMemberProperty`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Unity.Properties",
+                        "ReflectedMemberProperty`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TContainer, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
@@ -170,12 +203,47 @@ pub struct ReflectedMemberProperty_2_GetClassValueAction<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction < TContainer,
-    TValue > => "Unity.Properties"."ReflectedMemberProperty`2/GetClassValueAction" <
-    TContainer, TValue >
-);
+unsafe impl<
+    TContainer: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
+    TContainer,
+    TValue,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties";
+    const CLASS_NAME: &'static str = "GetClassValueAction";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Unity.Properties",
+                        "GetClassValueAction",
+                    )
+                    .unwrap()
+                    .make_generic::<(TContainer, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
@@ -290,12 +358,47 @@ pub struct ReflectedMemberProperty_2_GetStructValueAction<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction < TContainer,
-    TValue > => "Unity.Properties"."ReflectedMemberProperty`2/GetStructValueAction" <
-    TContainer, TValue >
-);
+unsafe impl<
+    TContainer: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
+    TContainer,
+    TValue,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties";
+    const CLASS_NAME: &'static str = "GetStructValueAction";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Unity.Properties",
+                        "GetStructValueAction",
+                    )
+                    .unwrap()
+                    .make_generic::<(TContainer, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
@@ -410,12 +513,47 @@ pub struct ReflectedMemberProperty_2_SetClassValueAction<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction < TContainer,
-    TValue > => "Unity.Properties"."ReflectedMemberProperty`2/SetClassValueAction" <
-    TContainer, TValue >
-);
+unsafe impl<
+    TContainer: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
+    TContainer,
+    TValue,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties";
+    const CLASS_NAME: &'static str = "SetClassValueAction";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Unity.Properties",
+                        "SetClassValueAction",
+                    )
+                    .unwrap()
+                    .make_generic::<(TContainer, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
@@ -532,12 +670,47 @@ pub struct ReflectedMemberProperty_2_SetStructValueAction<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction < TContainer,
-    TValue > => "Unity.Properties"."ReflectedMemberProperty`2/SetStructValueAction" <
-    TContainer, TValue >
-);
+unsafe impl<
+    TContainer: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
+    TContainer,
+    TValue,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties";
+    const CLASS_NAME: &'static str = "SetStructValueAction";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Unity.Properties",
+                        "SetStructValueAction",
+                    )
+                    .unwrap()
+                    .make_generic::<(TContainer, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,

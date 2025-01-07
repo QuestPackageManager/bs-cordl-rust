@@ -28,11 +28,44 @@ pub struct ConcurrentDictionary_2<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Concurrent::ConcurrentDictionary_2 < TKey, TValue > =>
-    "System.Collections.Concurrent"."ConcurrentDictionary`2" < TKey, TValue >
-);
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Collections::Concurrent::ConcurrentDictionary_2<TKey, TValue> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Concurrent";
+    const CLASS_NAME: &'static str = "ConcurrentDictionary`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Collections.Concurrent",
+                        "ConcurrentDictionary`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -1543,12 +1576,47 @@ pub struct ConcurrentDictionary_2_DictionaryEnumerator<
 #[cfg(
     feature = "System+Collections+Concurrent+ConcurrentDictionary_2+DictionaryEnumerator"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Concurrent::ConcurrentDictionary_2_DictionaryEnumerator <
-    TKey, TValue > => "System.Collections.Concurrent"
-    ."ConcurrentDictionary`2/DictionaryEnumerator" < TKey, TValue >
-);
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Collections::Concurrent::ConcurrentDictionary_2_DictionaryEnumerator<
+    TKey,
+    TValue,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Concurrent";
+    const CLASS_NAME: &'static str = "DictionaryEnumerator";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Collections.Concurrent",
+                        "DictionaryEnumerator",
+                    )
+                    .unwrap()
+                    .make_generic::<(TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Collections+Concurrent+ConcurrentDictionary_2+DictionaryEnumerator"
 )]
@@ -1823,11 +1891,44 @@ pub struct ConcurrentDictionary_2_Node<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Node")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Concurrent::ConcurrentDictionary_2_Node < TKey, TValue > =>
-    "System.Collections.Concurrent"."ConcurrentDictionary`2/Node" < TKey, TValue >
-);
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<TKey, TValue> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Concurrent";
+    const CLASS_NAME: &'static str = "Node";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Collections.Concurrent",
+                        "Node",
+                    )
+                    .unwrap()
+                    .make_generic::<(TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Node")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -1946,11 +2047,44 @@ pub struct ConcurrentDictionary_2_Tables<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Tables")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Concurrent::ConcurrentDictionary_2_Tables < TKey, TValue > =>
-    "System.Collections.Concurrent"."ConcurrentDictionary`2/Tables" < TKey, TValue >
-);
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<TKey, TValue> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Concurrent";
+    const CLASS_NAME: &'static str = "Tables";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Collections.Concurrent",
+                        "Tables",
+                    )
+                    .unwrap()
+                    .make_generic::<(TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Tables")]
 impl<
     TKey: quest_hook::libil2cpp::Type,

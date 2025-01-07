@@ -10,10 +10,41 @@ pub struct Expression2_1<TDelegate: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TDelegate: std::marker::PhantomData<TDelegate>,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression2_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Linq::Expressions::Expression2_1 <
-    TDelegate > => "System.Linq.Expressions"."Expression2`1" < TDelegate >
-);
+unsafe impl<TDelegate: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::Expression2_1<TDelegate> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "Expression2`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Linq.Expressions",
+                        "Expression2`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TDelegate)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression2_1")]
 impl<TDelegate: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Expressions::Expression2_1<TDelegate> {

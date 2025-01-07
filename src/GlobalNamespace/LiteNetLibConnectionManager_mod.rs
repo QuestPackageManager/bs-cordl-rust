@@ -91,10 +91,25 @@ pub struct LiteNetLibConnectionManager {
     >,
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::LiteNetLibConnectionManager =>
-    ""."LiteNetLibConnectionManager"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LiteNetLibConnectionManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LiteNetLibConnectionManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLibConnectionManager")]
 impl std::ops::Deref for crate::GlobalNamespace::LiteNetLibConnectionManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1187,11 +1202,25 @@ pub struct LiteNetLibConnectionManager_ConnectToServerParams {
     pub serverIsConnectionOwner: bool,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams => ""
-    ."LiteNetLibConnectionManager/ConnectToServerParams"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ConnectToServerParams";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
@@ -1248,11 +1277,85 @@ pub enum LiteNetLibConnectionManager_ConnectionState {
     Unconnected = 0i32,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState => ""
-    ."LiteNetLibConnectionManager/ConnectionState"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ConnectionState";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1269,11 +1372,25 @@ pub struct LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
     pub disconnectTimeoutMs: i32,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase => ""
-    ."LiteNetLibConnectionManager/LiteNetLibConnectionParamsBase"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LiteNetLibConnectionParamsBase";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
@@ -1360,11 +1477,25 @@ pub struct LiteNetLibConnectionManager_NetPeerConnection {
     pub netPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection => ""
-    ."LiteNetLibConnectionManager/NetPeerConnection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "NetPeerConnection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
@@ -1564,11 +1695,25 @@ pub struct LiteNetLibConnectionManager_NetPeerConnectionRequest {
     pub _request: quest_hook::libil2cpp::Gc<crate::LiteNetLib::ConnectionRequest>,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest => ""
-    ."LiteNetLibConnectionManager/NetPeerConnectionRequest"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "NetPeerConnectionRequest";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
@@ -1690,11 +1835,85 @@ pub enum LiteNetLibConnectionManager_NetworkMode {
     Server = 2i32,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode => ""
-    ."LiteNetLibConnectionManager/NetworkMode"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "NetworkMode";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1702,11 +1921,25 @@ pub struct LiteNetLibConnectionManager_StartClientParams {
     __cordl_parent: crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams => ""
-    ."LiteNetLibConnectionManager/StartClientParams"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "StartClientParams";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
@@ -1761,11 +1994,25 @@ pub struct LiteNetLibConnectionManager_StartServerParams {
     pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams => ""
-    ."LiteNetLibConnectionManager/StartServerParams"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "StartServerParams";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {

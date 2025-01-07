@@ -26,10 +26,25 @@ pub struct LightmapLightWithIdsGroupEntry {
     pub _groupLightsWeighting: crate::GlobalNamespace::ColorMixAndWeightingApproach,
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightmapLightWithIdsGroupEntry
-    => ""."LightmapLightWithIdsGroupEntry"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LightmapLightWithIdsGroupEntry";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LightmapLightWithIdsGroupEntry")]
 impl std::ops::Deref for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -158,11 +173,25 @@ pub struct LightmapLightWithIdsGroupEntry_GroupLightData {
     pub _groupProbeHighlightsIntensityMultiplier: f32,
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry+GroupLightData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData => ""
-    ."LightmapLightWithIdsGroupEntry/GroupLightData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "GroupLightData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LightmapLightWithIdsGroupEntry+GroupLightData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
@@ -261,11 +290,25 @@ pub struct LightmapLightWithIdsGroupEntry_LightIntensitiesWithId {
     pub _probeHighlightsIntensityMultiplier: f32,
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId => ""
-    ."LightmapLightWithIdsGroupEntry/LightIntensitiesWithId"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LightIntensitiesWithId";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId {

@@ -18,10 +18,25 @@ pub struct DatatypeImplementation {
     >,
 }
 #[cfg(feature = "System+Xml+Schema+DatatypeImplementation")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::DatatypeImplementation =>
-    "System.Xml.Schema"."DatatypeImplementation"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Schema::DatatypeImplementation {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Schema";
+    const CLASS_NAME: &'static str = "DatatypeImplementation";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Schema+DatatypeImplementation")]
 impl std::ops::Deref for crate::System::Xml::Schema::DatatypeImplementation {
     type Target = crate::System::Xml::Schema::XmlSchemaDatatype;
@@ -583,11 +598,25 @@ pub struct DatatypeImplementation_SchemaDatatypeMap {
     pub parentIndex: i32,
 }
 #[cfg(feature = "System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap =>
-    "System.Xml.Schema"."DatatypeImplementation/SchemaDatatypeMap"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Schema";
+    const CLASS_NAME: &'static str = "SchemaDatatypeMap";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap")]
 impl std::ops::Deref
 for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {

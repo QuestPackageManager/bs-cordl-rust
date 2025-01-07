@@ -15,10 +15,25 @@ pub struct PosesRecordingInfoSaveData {
     pub _dataFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "PosesRecordingInfoSaveData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PosesRecordingInfoSaveData =>
-    ""."PosesRecordingInfoSaveData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PosesRecordingInfoSaveData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PosesRecordingInfoSaveData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PosesRecordingInfoSaveData")]
 impl std::ops::Deref for crate::GlobalNamespace::PosesRecordingInfoSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -156,11 +171,25 @@ pub struct PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData {
     pub _nearOffset: f32,
 }
 #[cfg(feature = "PosesRecordingInfoSaveData+ExternalCameraCalibrationSaveData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData => ""
-    ."PosesRecordingInfoSaveData/ExternalCameraCalibrationSaveData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ExternalCameraCalibrationSaveData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PosesRecordingInfoSaveData+ExternalCameraCalibrationSaveData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData {

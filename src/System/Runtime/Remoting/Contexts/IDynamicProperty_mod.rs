@@ -5,11 +5,25 @@ pub struct IDynamicProperty {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Runtime+Remoting+Contexts+IDynamicProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Runtime::Remoting::Contexts::IDynamicProperty =>
-    "System.Runtime.Remoting.Contexts"."IDynamicProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Runtime::Remoting::Contexts::IDynamicProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.Remoting.Contexts";
+    const CLASS_NAME: &'static str = "IDynamicProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Runtime+Remoting+Contexts+IDynamicProperty")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Contexts::IDynamicProperty {
     type Target = quest_hook::libil2cpp::Il2CppObject;

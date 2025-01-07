@@ -5,11 +5,25 @@ pub struct IResourceLocator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+IResourceLocator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator =>
-    "UnityEngine.AddressableAssets.ResourceLocators"."IResourceLocator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.AddressableAssets.ResourceLocators";
+    const CLASS_NAME: &'static str = "IResourceLocator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+IResourceLocator")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator {

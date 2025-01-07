@@ -19,9 +19,24 @@ pub struct FloorLightTile {
     pub _fadeOutTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
 }
 #[cfg(feature = "Ice+FloorLightTile")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Ice::FloorLightTile => "Ice"."FloorLightTile"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightTile {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Ice";
+    const CLASS_NAME: &'static str = "FloorLightTile";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Ice+FloorLightTile")]
 impl std::ops::Deref for crate::Ice::FloorLightTile {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -139,10 +154,24 @@ pub struct FloorLightTile_Pool {
     >,
 }
 #[cfg(feature = "Ice+FloorLightTile+Pool")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Ice::FloorLightTile_Pool => "Ice"
-    ."FloorLightTile/Pool"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightTile_Pool {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Ice";
+    const CLASS_NAME: &'static str = "Pool";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Ice+FloorLightTile+Pool")]
 impl std::ops::Deref for crate::Ice::FloorLightTile_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<

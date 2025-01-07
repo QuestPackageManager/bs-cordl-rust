@@ -5,10 +5,24 @@ pub struct HEU_AssetUpdater {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetUpdater")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::HEU_AssetUpdater =>
-    "HoudiniEngineUnity"."HEU_AssetUpdater"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_AssetUpdater {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "HEU_AssetUpdater";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetUpdater")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AssetUpdater {
     type Target = quest_hook::libil2cpp::Il2CppObject;

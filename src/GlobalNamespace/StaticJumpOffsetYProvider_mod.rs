@@ -8,10 +8,25 @@ pub struct StaticJumpOffsetYProvider {
     >,
 }
 #[cfg(feature = "StaticJumpOffsetYProvider")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::StaticJumpOffsetYProvider => ""
-    ."StaticJumpOffsetYProvider"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::StaticJumpOffsetYProvider {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "StaticJumpOffsetYProvider";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "StaticJumpOffsetYProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::StaticJumpOffsetYProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -86,11 +101,25 @@ pub struct StaticJumpOffsetYProvider_InitData {
     pub jumpyYOffset: f32,
 }
 #[cfg(feature = "StaticJumpOffsetYProvider+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::StaticJumpOffsetYProvider_InitData => ""
-    ."StaticJumpOffsetYProvider/InitData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "StaticJumpOffsetYProvider+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;

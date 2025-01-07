@@ -7,10 +7,25 @@ pub struct UsedImplicitlyAttribute {
     pub _TargetFlags_k__BackingField: crate::JetBrains::Annotations::ImplicitUseTargetFlags,
 }
 #[cfg(feature = "JetBrains+Annotations+UsedImplicitlyAttribute")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::JetBrains::Annotations::UsedImplicitlyAttribute
-    => "JetBrains.Annotations"."UsedImplicitlyAttribute"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::JetBrains::Annotations::UsedImplicitlyAttribute {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "JetBrains.Annotations";
+    const CLASS_NAME: &'static str = "UsedImplicitlyAttribute";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "JetBrains+Annotations+UsedImplicitlyAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::UsedImplicitlyAttribute {
     type Target = crate::System::Attribute;
@@ -33,16 +48,7 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ImplicitUseKindFlags1(
-        useKindFlags: crate::JetBrains::Annotations::ImplicitUseKindFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (useKindFlags))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_ImplicitUseKindFlags_ImplicitUseTargetFlags3(
+    pub fn New_ImplicitUseKindFlags_ImplicitUseTargetFlags1(
         useKindFlags: crate::JetBrains::Annotations::ImplicitUseKindFlags,
         targetFlags: crate::JetBrains::Annotations::ImplicitUseTargetFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -50,15 +56,6 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (useKindFlags, targetFlags))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_ImplicitUseTargetFlags2(
-        targetFlags: crate::JetBrains::Annotations::ImplicitUseTargetFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (targetFlags))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
@@ -71,18 +68,7 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ImplicitUseKindFlags1(
-        &mut self,
-        useKindFlags: crate::JetBrains::Annotations::ImplicitUseKindFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (useKindFlags))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_ImplicitUseKindFlags_ImplicitUseTargetFlags3(
+    pub fn _ctor_ImplicitUseKindFlags_ImplicitUseTargetFlags1(
         &mut self,
         useKindFlags: crate::JetBrains::Annotations::ImplicitUseKindFlags,
         targetFlags: crate::JetBrains::Annotations::ImplicitUseTargetFlags,
@@ -92,63 +78,6 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (useKindFlags, targetFlags))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_ImplicitUseTargetFlags2(
-        &mut self,
-        targetFlags: crate::JetBrains::Annotations::ImplicitUseTargetFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (targetFlags))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_TargetFlags(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::JetBrains::Annotations::ImplicitUseTargetFlags,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::JetBrains::Annotations::ImplicitUseTargetFlags = __cordl_object
-            .invoke("get_TargetFlags", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_UseKindFlags(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::JetBrains::Annotations::ImplicitUseKindFlags,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::JetBrains::Annotations::ImplicitUseKindFlags = __cordl_object
-            .invoke("get_UseKindFlags", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_TargetFlags(
-        &mut self,
-        value: crate::JetBrains::Annotations::ImplicitUseTargetFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_TargetFlags", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_UseKindFlags(
-        &mut self,
-        value: crate::JetBrains::Annotations::ImplicitUseKindFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_UseKindFlags", (value))?;
         Ok(__cordl_ret.into())
     }
 }

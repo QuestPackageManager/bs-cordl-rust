@@ -32,10 +32,25 @@ pub struct DynamicAtlas {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlas")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::DynamicAtlas =>
-    "UnityEngine.UIElements"."DynamicAtlas"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::DynamicAtlas {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "DynamicAtlas";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlas")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlas {
     type Target = crate::UnityEngine::UIElements::AtlasBase;
@@ -286,11 +301,25 @@ pub struct DynamicAtlas_TextureInfo {
     pub rect: crate::UnityEngine::RectInt,
 }
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::DynamicAtlas_TextureInfo => "UnityEngine.UIElements"
-    ."DynamicAtlas/TextureInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "TextureInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<

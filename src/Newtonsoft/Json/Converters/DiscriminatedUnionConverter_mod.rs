@@ -5,11 +5,25 @@ pub struct DiscriminatedUnionConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Newtonsoft::Json::Converters::DiscriminatedUnionConverter =>
-    "Newtonsoft.Json.Converters"."DiscriminatedUnionConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Newtonsoft.Json.Converters";
+    const CLASS_NAME: &'static str = "DiscriminatedUnionConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
@@ -138,11 +152,25 @@ pub struct DiscriminatedUnionConverter_Union {
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union =>
-    "Newtonsoft.Json.Converters"."DiscriminatedUnionConverter/Union"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Newtonsoft.Json.Converters";
+    const CLASS_NAME: &'static str = "Union";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
@@ -229,11 +257,25 @@ pub struct DiscriminatedUnionConverter_UnionCase {
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase =>
-    "Newtonsoft.Json.Converters"."DiscriminatedUnionConverter/UnionCase"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Newtonsoft.Json.Converters";
+    const CLASS_NAME: &'static str = "UnionCase";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {

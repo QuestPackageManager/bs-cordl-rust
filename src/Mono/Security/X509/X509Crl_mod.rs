@@ -17,10 +17,24 @@ pub struct X509Crl {
     pub hash_value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+X509+X509Crl")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::X509::X509Crl =>
-    "Mono.Security.X509"."X509Crl"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::X509::X509Crl {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.X509";
+    const CLASS_NAME: &'static str = "X509Crl";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+X509+X509Crl")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509Crl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -211,10 +225,25 @@ pub struct X509Crl_X509CrlEntry {
     >,
 }
 #[cfg(feature = "Mono+Security+X509+X509Crl+X509CrlEntry")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::X509::X509Crl_X509CrlEntry =>
-    "Mono.Security.X509"."X509Crl/X509CrlEntry"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Security::X509::X509Crl_X509CrlEntry {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.X509";
+    const CLASS_NAME: &'static str = "X509CrlEntry";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+X509+X509Crl+X509CrlEntry")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509Crl_X509CrlEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;

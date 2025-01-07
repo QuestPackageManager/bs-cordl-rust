@@ -8,10 +8,25 @@ pub struct BcpgInputStream {
     pub nextB: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Bcpg::BcpgInputStream =>
-    "Org.BouncyCastle.Bcpg"."BcpgInputStream"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Bcpg";
+    const CLASS_NAME: &'static str = "BcpgInputStream";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
     type Target = crate::Org::BouncyCastle::Utilities::IO::BaseInputStream;
@@ -169,11 +184,25 @@ pub struct BcpgInputStream_PartialInputStream {
     pub dataLength: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream =>
-    "Org.BouncyCastle.Bcpg"."BcpgInputStream/PartialInputStream"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Bcpg";
+    const CLASS_NAME: &'static str = "PartialInputStream";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::BcpgInputStream_PartialInputStream {

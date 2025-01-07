@@ -11,10 +11,24 @@ pub struct AudioClip {
     >,
 }
 #[cfg(feature = "UnityEngine+AudioClip")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::AudioClip => "UnityEngine"
-    ."AudioClip"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioClip {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "AudioClip";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+AudioClip")]
 impl std::ops::Deref for crate::UnityEngine::AudioClip {
     type Target = crate::UnityEngine::Object;
@@ -446,10 +460,25 @@ pub struct AudioClip_PCMReaderCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+AudioClip+PCMReaderCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::AudioClip_PCMReaderCallback =>
-    "UnityEngine"."AudioClip/PCMReaderCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::AudioClip_PCMReaderCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "PCMReaderCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+AudioClip+PCMReaderCallback")]
 impl std::ops::Deref for crate::UnityEngine::AudioClip_PCMReaderCallback {
     type Target = crate::System::MulticastDelegate;
@@ -516,10 +545,25 @@ pub struct AudioClip_PCMSetPositionCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+AudioClip+PCMSetPositionCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::AudioClip_PCMSetPositionCallback =>
-    "UnityEngine"."AudioClip/PCMSetPositionCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::AudioClip_PCMSetPositionCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "PCMSetPositionCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+AudioClip+PCMSetPositionCallback")]
 impl std::ops::Deref for crate::UnityEngine::AudioClip_PCMSetPositionCallback {
     type Target = crate::System::MulticastDelegate;

@@ -5,9 +5,24 @@ pub struct PKCS7 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Mono+Security+PKCS7")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::PKCS7 => "Mono.Security"."PKCS7"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::PKCS7 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security";
+    const CLASS_NAME: &'static str = "PKCS7";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+PKCS7")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -50,10 +65,24 @@ pub struct PKCS7_ContentInfo {
     pub content: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
 }
 #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::PKCS7_ContentInfo =>
-    "Mono.Security"."PKCS7/ContentInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::PKCS7_ContentInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security";
+    const CLASS_NAME: &'static str = "ContentInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_ContentInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -240,10 +269,24 @@ pub struct PKCS7_EncryptedData {
     pub _encrypted: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::PKCS7_EncryptedData =>
-    "Mono.Security"."PKCS7/EncryptedData"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::PKCS7_EncryptedData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security";
+    const CLASS_NAME: &'static str = "EncryptedData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_EncryptedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -348,10 +391,24 @@ pub struct PKCS7_SignedData {
     pub mda: bool,
 }
 #[cfg(feature = "Mono+Security+PKCS7+SignedData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::PKCS7_SignedData =>
-    "Mono.Security"."PKCS7/SignedData"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::PKCS7_SignedData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security";
+    const CLASS_NAME: &'static str = "SignedData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+PKCS7+SignedData")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_SignedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -480,10 +537,24 @@ pub struct PKCS7_SignerInfo {
     pub ski: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::PKCS7_SignerInfo =>
-    "Mono.Security"."PKCS7/SignerInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::PKCS7_SignerInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security";
+    const CLASS_NAME: &'static str = "SignerInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_SignerInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;

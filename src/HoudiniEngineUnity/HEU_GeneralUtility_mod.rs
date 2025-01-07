@@ -5,10 +5,25 @@ pub struct HEU_GeneralUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::HEU_GeneralUtility =>
-    "HoudiniEngineUnity"."HEU_GeneralUtility"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_GeneralUtility {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "HEU_GeneralUtility";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GeneralUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1259,11 +1274,41 @@ pub struct HEU_GeneralUtility_GetArray1ArgDel_1<T: quest_hook::libil2cpp::Type> 
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray1ArgDel_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1 < T > =>
-    "HoudiniEngineUnity"."HEU_GeneralUtility/GetArray1ArgDel`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "GetArray1ArgDel`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "HoudiniEngineUnity",
+                        "GetArray1ArgDel`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray1ArgDel_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<T> {
@@ -1394,11 +1439,44 @@ pub struct HEU_GeneralUtility_GetArray2ArgDel_2<
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray2ArgDel_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2 < ARG2, T > =>
-    "HoudiniEngineUnity"."HEU_GeneralUtility/GetArray2ArgDel`2" < ARG2, T >
-);
+unsafe impl<
+    ARG2: quest_hook::libil2cpp::Type,
+    T: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "GetArray2ArgDel`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "HoudiniEngineUnity",
+                        "GetArray2ArgDel`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(ARG2, T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray2ArgDel_2")]
 impl<ARG2: quest_hook::libil2cpp::Type, T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T> {
@@ -1550,11 +1628,45 @@ pub struct HEU_GeneralUtility_GetArray3ArgDel_3<
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray3ArgDel_3")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3 < ARG3, ARG2, T > =>
-    "HoudiniEngineUnity"."HEU_GeneralUtility/GetArray3ArgDel`3" < ARG3, ARG2, T >
-);
+unsafe impl<
+    ARG3: quest_hook::libil2cpp::Type,
+    ARG2: quest_hook::libil2cpp::Type,
+    T: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3<ARG3, ARG2, T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "GetArray3ArgDel`3";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "HoudiniEngineUnity",
+                        "GetArray3ArgDel`3",
+                    )
+                    .unwrap()
+                    .make_generic::<(ARG3, ARG2, T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray3ArgDel_3")]
 impl<
     ARG3: quest_hook::libil2cpp::Type,
@@ -1724,11 +1836,41 @@ pub struct HEU_GeneralUtility_GetAttributeArrayInputFunc_1<
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetAttributeArrayInputFunc_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1 < T > =>
-    "HoudiniEngineUnity"."HEU_GeneralUtility/GetAttributeArrayInputFunc`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "GetAttributeArrayInputFunc`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "HoudiniEngineUnity",
+                        "GetAttributeArrayInputFunc`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetAttributeArrayInputFunc_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<T> {
@@ -1871,11 +2013,41 @@ pub struct HEU_GeneralUtility_SetAttributeArrayFunc_1<T: quest_hook::libil2cpp::
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+SetAttributeArrayFunc_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1 < T > =>
-    "HoudiniEngineUnity"."HEU_GeneralUtility/SetAttributeArrayFunc`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "SetAttributeArrayFunc`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "HoudiniEngineUnity",
+                        "SetAttributeArrayFunc`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+SetAttributeArrayFunc_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<T> {

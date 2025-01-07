@@ -27,10 +27,24 @@ pub struct GameNoteController {
     pub _cutAngleTolerance: f32,
 }
 #[cfg(feature = "GameNoteController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameNoteController => ""
-    ."GameNoteController"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameNoteController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "GameNoteController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameNoteController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameNoteController {
     type Target = crate::GlobalNamespace::NoteController;
@@ -383,10 +397,25 @@ pub struct GameNoteController_Pool {
     >,
 }
 #[cfg(feature = "GameNoteController+Pool")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameNoteController_Pool => ""
-    ."GameNoteController/Pool"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameNoteController_Pool {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "Pool";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameNoteController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::GameNoteController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<

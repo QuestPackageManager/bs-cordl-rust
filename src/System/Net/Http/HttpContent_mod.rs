@@ -12,10 +12,24 @@ pub struct HttpContent {
     >,
 }
 #[cfg(feature = "System+Net+Http+HttpContent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::HttpContent =>
-    "System.Net.Http"."HttpContent"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Http::HttpContent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http";
+    const CLASS_NAME: &'static str = "HttpContent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+HttpContent")]
 impl std::ops::Deref for crate::System::Net::Http::HttpContent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -257,10 +271,25 @@ pub struct HttpContent_FixedMemoryStream {
     pub maxSize: i64,
 }
 #[cfg(feature = "System+Net+Http+HttpContent+FixedMemoryStream")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::HttpContent_FixedMemoryStream
-    => "System.Net.Http"."HttpContent/FixedMemoryStream"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Http::HttpContent_FixedMemoryStream {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http";
+    const CLASS_NAME: &'static str = "FixedMemoryStream";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+HttpContent+FixedMemoryStream")]
 impl std::ops::Deref for crate::System::Net::Http::HttpContent_FixedMemoryStream {
     type Target = crate::System::IO::MemoryStream;

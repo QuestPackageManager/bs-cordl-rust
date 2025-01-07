@@ -17,10 +17,25 @@ pub struct AudioSaveData {
     >,
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+AudioSaveData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::BeatmapLevelSaveDataVersion4::AudioSaveData =>
-    "BeatmapLevelSaveDataVersion4"."AudioSaveData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapLevelSaveDataVersion4::AudioSaveData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapLevelSaveDataVersion4";
+    const CLASS_NAME: &'static str = "AudioSaveData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+AudioSaveData")]
 impl std::ops::Deref for crate::BeatmapLevelSaveDataVersion4::AudioSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;

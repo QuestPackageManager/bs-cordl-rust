@@ -9,10 +9,25 @@ pub struct EventHandlerList {
     pub _parent: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::Component>,
 }
 #[cfg(feature = "System+ComponentModel+EventHandlerList")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::ComponentModel::EventHandlerList =>
-    "System.ComponentModel"."EventHandlerList"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::EventHandlerList {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "EventHandlerList";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+EventHandlerList")]
 impl std::ops::Deref for crate::System::ComponentModel::EventHandlerList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -82,11 +97,25 @@ pub struct EventHandlerList_ListEntry {
     pub _handler: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
 }
 #[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::EventHandlerList_ListEntry => "System.ComponentModel"
-    ."EventHandlerList/ListEntry"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::EventHandlerList_ListEntry {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "ListEntry";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
 impl std::ops::Deref for crate::System::ComponentModel::EventHandlerList_ListEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;

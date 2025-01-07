@@ -18,10 +18,24 @@ pub struct FlyingScoreEffect {
     >,
 }
 #[cfg(feature = "FlyingScoreEffect")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::FlyingScoreEffect => ""
-    ."FlyingScoreEffect"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingScoreEffect {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "FlyingScoreEffect";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "FlyingScoreEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingScoreEffect {
     type Target = crate::GlobalNamespace::FlyingObjectEffect;
@@ -178,10 +192,25 @@ pub struct FlyingScoreEffect_Pool {
     >,
 }
 #[cfg(feature = "FlyingScoreEffect+Pool")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::FlyingScoreEffect_Pool => ""
-    ."FlyingScoreEffect/Pool"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::FlyingScoreEffect_Pool {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "Pool";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "FlyingScoreEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingScoreEffect_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<

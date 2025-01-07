@@ -12,10 +12,25 @@ pub struct VideoProjectionDataModelSO {
     >,
 }
 #[cfg(feature = "VideoProjectionDataModelSO")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::VideoProjectionDataModelSO =>
-    ""."VideoProjectionDataModelSO"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VideoProjectionDataModelSO {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "VideoProjectionDataModelSO";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VideoProjectionDataModelSO")]
 impl std::ops::Deref for crate::GlobalNamespace::VideoProjectionDataModelSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
@@ -95,11 +110,25 @@ pub struct VideoProjectionDataModelSO_VideoClipWithId {
     >,
 }
 #[cfg(feature = "VideoProjectionDataModelSO+VideoClipWithId")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId => ""
-    ."VideoProjectionDataModelSO/VideoClipWithId"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "VideoClipWithId";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VideoProjectionDataModelSO+VideoClipWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId {

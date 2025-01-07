@@ -19,10 +19,25 @@ pub struct ClothRandomFluctuation {
     pub _speed: f32,
 }
 #[cfg(feature = "ClothRandomFluctuation")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::ClothRandomFluctuation => ""
-    ."ClothRandomFluctuation"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ClothRandomFluctuation {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ClothRandomFluctuation";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ClothRandomFluctuation")]
 impl std::ops::Deref for crate::GlobalNamespace::ClothRandomFluctuation {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -109,11 +124,25 @@ pub struct ClothRandomFluctuation_SineLayer {
     pub offset: f32,
 }
 #[cfg(feature = "ClothRandomFluctuation+SineLayer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ClothRandomFluctuation_SineLayer => ""
-    ."ClothRandomFluctuation/SineLayer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ClothRandomFluctuation_SineLayer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SineLayer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ClothRandomFluctuation+SineLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::ClothRandomFluctuation_SineLayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;

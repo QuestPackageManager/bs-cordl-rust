@@ -18,10 +18,42 @@ pub struct Tuple_4<
     __cordl_phantom_T4: std::marker::PhantomData<T4>,
 }
 #[cfg(feature = "System+Tuple_4")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Tuple_4 < T1, T2, T3, T4 > => "System"
-    ."Tuple`4" < T1, T2, T3, T4 >
-);
+unsafe impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+    T4: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type for crate::System::Tuple_4<T1, T2, T3, T4> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System";
+    const CLASS_NAME: &'static str = "Tuple`4";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System", "Tuple`4")
+                    .unwrap()
+                    .make_generic::<(T1, T2, T3, T4)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Tuple_4")]
 impl<
     T1: quest_hook::libil2cpp::Type,

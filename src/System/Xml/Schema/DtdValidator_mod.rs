@@ -11,10 +11,24 @@ pub struct DtdValidator {
     pub processIdentityConstraints: bool,
 }
 #[cfg(feature = "System+Xml+Schema+DtdValidator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::DtdValidator =>
-    "System.Xml.Schema"."DtdValidator"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::DtdValidator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Schema";
+    const CLASS_NAME: &'static str = "DtdValidator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Schema+DtdValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::DtdValidator {
     type Target = crate::System::Xml::Schema::BaseValidator;
@@ -314,11 +328,25 @@ pub struct DtdValidator_NamespaceManager {
     __cordl_parent: crate::System::Xml::XmlNamespaceManager,
 }
 #[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Schema::DtdValidator_NamespaceManager => "System.Xml.Schema"
-    ."DtdValidator/NamespaceManager"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::Schema::DtdValidator_NamespaceManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml.Schema";
+    const CLASS_NAME: &'static str = "NamespaceManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]
 impl std::ops::Deref for crate::System::Xml::Schema::DtdValidator_NamespaceManager {
     type Target = crate::System::Xml::XmlNamespaceManager;

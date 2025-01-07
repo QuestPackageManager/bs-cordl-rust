@@ -11,11 +11,25 @@ pub struct AudioSampleProvider {
     >,
 }
 #[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Experimental::Audio::AudioSampleProvider =>
-    "UnityEngine.Experimental.Audio"."AudioSampleProvider"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Experimental.Audio";
+    const CLASS_NAME: &'static str = "AudioSampleProvider";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider")]
 impl std::ops::Deref for crate::UnityEngine::Experimental::Audio::AudioSampleProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -80,11 +94,25 @@ pub struct AudioSampleProvider_SampleFramesHandler {
 #[cfg(
     feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler =>
-    "UnityEngine.Experimental.Audio"."AudioSampleProvider/SampleFramesHandler"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Experimental.Audio";
+    const CLASS_NAME: &'static str = "SampleFramesHandler";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
 )]

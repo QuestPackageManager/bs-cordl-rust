@@ -17,10 +17,47 @@ pub struct PrefabResourceFactory_5<
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Zenject+PrefabResourceFactory_5")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Zenject::PrefabResourceFactory_5 < P1, P2, P3,
-    P4, T > => "Zenject"."PrefabResourceFactory`5" < P1, P2, P3, P4, T >
-);
+unsafe impl<
+    P1: quest_hook::libil2cpp::Type,
+    P2: quest_hook::libil2cpp::Type,
+    P3: quest_hook::libil2cpp::Type,
+    P4: quest_hook::libil2cpp::Type,
+    T: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::Zenject::PrefabResourceFactory_5<P1, P2, P3, P4, T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Zenject";
+    const CLASS_NAME: &'static str = "PrefabResourceFactory`5";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Zenject",
+                        "PrefabResourceFactory`5",
+                    )
+                    .unwrap()
+                    .make_generic::<(P1, P2, P3, P4, T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Zenject+PrefabResourceFactory_5")]
 impl<
     P1: quest_hook::libil2cpp::Type,

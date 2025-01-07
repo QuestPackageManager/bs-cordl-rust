@@ -6,11 +6,25 @@ pub struct SystemGatewayIPAddressInformation {
     pub address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
 }
 #[cfg(feature = "System+Net+NetworkInformation+SystemGatewayIPAddressInformation")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Net::NetworkInformation::SystemGatewayIPAddressInformation =>
-    "System.Net.NetworkInformation"."SystemGatewayIPAddressInformation"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.NetworkInformation";
+    const CLASS_NAME: &'static str = "SystemGatewayIPAddressInformation";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+NetworkInformation+SystemGatewayIPAddressInformation")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {

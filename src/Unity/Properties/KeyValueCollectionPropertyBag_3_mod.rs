@@ -19,11 +19,49 @@ pub struct KeyValueCollectionPropertyBag_3<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::KeyValueCollectionPropertyBag_3 < TDictionary, TKey, TValue > =>
-    "Unity.Properties"."KeyValueCollectionPropertyBag`3" < TDictionary, TKey, TValue >
-);
+unsafe impl<
+    TDictionary: quest_hook::libil2cpp::Type,
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
+    TDictionary,
+    TKey,
+    TValue,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties";
+    const CLASS_NAME: &'static str = "KeyValueCollectionPropertyBag`3";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Unity.Properties",
+                        "KeyValueCollectionPropertyBag`3",
+                    )
+                    .unwrap()
+                    .make_generic::<(TDictionary, TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
 impl<
     TDictionary: quest_hook::libil2cpp::Type,
@@ -197,12 +235,49 @@ pub struct KeyValueCollectionPropertyBag_3_KeyValuePairProperty<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::KeyValueCollectionPropertyBag_3_KeyValuePairProperty <
-    TDictionary, TKey, TValue > => "Unity.Properties"
-    ."KeyValueCollectionPropertyBag`3/KeyValuePairProperty" < TDictionary, TKey, TValue >
-);
+unsafe impl<
+    TDictionary: quest_hook::libil2cpp::Type,
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::Unity::Properties::KeyValueCollectionPropertyBag_3_KeyValuePairProperty<
+    TDictionary,
+    TKey,
+    TValue,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties";
+    const CLASS_NAME: &'static str = "KeyValuePairProperty";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Unity.Properties",
+                        "KeyValuePairProperty",
+                    )
+                    .unwrap()
+                    .make_generic::<(TDictionary, TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty")]
 impl<
     TDictionary: quest_hook::libil2cpp::Type,

@@ -11,10 +11,25 @@ pub struct ListDictionaryInternal {
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+ListDictionaryInternal")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Collections::ListDictionaryInternal =>
-    "System.Collections"."ListDictionaryInternal"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::ListDictionaryInternal {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "ListDictionaryInternal";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+ListDictionaryInternal")]
 impl std::ops::Deref for crate::System::Collections::ListDictionaryInternal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -292,11 +307,25 @@ pub struct ListDictionaryInternal_DictionaryNode {
     >,
 }
 #[cfg(feature = "System+Collections+ListDictionaryInternal+DictionaryNode")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::ListDictionaryInternal_DictionaryNode => "System.Collections"
-    ."ListDictionaryInternal/DictionaryNode"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::ListDictionaryInternal_DictionaryNode {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "DictionaryNode";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+ListDictionaryInternal+DictionaryNode")]
 impl std::ops::Deref
 for crate::System::Collections::ListDictionaryInternal_DictionaryNode {
@@ -357,11 +386,25 @@ pub struct ListDictionaryInternal_NodeEnumerator {
     pub start: bool,
 }
 #[cfg(feature = "System+Collections+ListDictionaryInternal+NodeEnumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::ListDictionaryInternal_NodeEnumerator => "System.Collections"
-    ."ListDictionaryInternal/NodeEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::ListDictionaryInternal_NodeEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "NodeEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+ListDictionaryInternal+NodeEnumerator")]
 impl std::ops::Deref
 for crate::System::Collections::ListDictionaryInternal_NodeEnumerator {
@@ -519,11 +562,25 @@ pub struct ListDictionaryInternal_NodeKeyValueCollection {
     pub isKeys: bool,
 }
 #[cfg(feature = "System+Collections+ListDictionaryInternal+NodeKeyValueCollection")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::ListDictionaryInternal_NodeKeyValueCollection =>
-    "System.Collections"."ListDictionaryInternal/NodeKeyValueCollection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::ListDictionaryInternal_NodeKeyValueCollection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "NodeKeyValueCollection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+ListDictionaryInternal+NodeKeyValueCollection")]
 impl std::ops::Deref
 for crate::System::Collections::ListDictionaryInternal_NodeKeyValueCollection {
@@ -688,12 +745,25 @@ pub struct NodeKeyValueCollection_ListDictionaryInternal_NodeKeyValueEnumerator 
 #[cfg(
     feature = "System+Collections+ListDictionaryInternal+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::NodeKeyValueCollection_ListDictionaryInternal_NodeKeyValueEnumerator
-    => "System.Collections"
-    ."ListDictionaryInternal/NodeKeyValueCollection/NodeKeyValueEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::NodeKeyValueCollection_ListDictionaryInternal_NodeKeyValueEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections";
+    const CLASS_NAME: &'static str = "NodeKeyValueEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Collections+ListDictionaryInternal+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]

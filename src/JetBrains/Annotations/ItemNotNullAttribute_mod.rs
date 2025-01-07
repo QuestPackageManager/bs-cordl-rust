@@ -5,10 +5,25 @@ pub struct ItemNotNullAttribute {
     __cordl_parent: crate::System::Attribute,
 }
 #[cfg(feature = "JetBrains+Annotations+ItemNotNullAttribute")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::JetBrains::Annotations::ItemNotNullAttribute =>
-    "JetBrains.Annotations"."ItemNotNullAttribute"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::JetBrains::Annotations::ItemNotNullAttribute {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "JetBrains.Annotations";
+    const CLASS_NAME: &'static str = "ItemNotNullAttribute";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "JetBrains+Annotations+ItemNotNullAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::ItemNotNullAttribute {
     type Target = crate::System::Attribute;

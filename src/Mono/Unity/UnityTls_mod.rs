@@ -5,9 +5,24 @@ pub struct UnityTls {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Mono+Unity+UnityTls")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls => "Mono.Unity"."UnityTls"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTls {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "UnityTls";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -104,10 +119,85 @@ pub enum UnityTls_unitytls_ciphersuite {
     UNITYTLS_CIPHERSUITE_INVALID = 4294967232u32,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_ciphersuite =>
-    "Mono.Unity"."UnityTls/unitytls_ciphersuite"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_ciphersuite";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -132,10 +222,85 @@ pub enum UnityTls_unitytls_error_code {
     UNITYTLS_USER_WRITE_FAILED = 50335936u32,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_error_code =>
-    "Mono.Unity"."UnityTls/unitytls_error_code"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_error_code {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_error_code";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_error_code {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_error_code {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_error_code {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_error_code {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -145,10 +310,85 @@ pub struct UnityTls_unitytls_errorstate {
     pub reserved: u64,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_errorstate =>
-    "Mono.Unity"."UnityTls/unitytls_errorstate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_errorstate {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_errorstate";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_errorstate {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_errorstate {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_errorstate {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_errorstate {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_errorstate {
@@ -264,10 +504,25 @@ pub struct UnityTls_unitytls_interface_struct {
     >,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_interface_struct
-    => "Mono.Unity"."UnityTls/unitytls_interface_struct"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_interface_struct";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -434,10 +689,83 @@ for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_key {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_key =>
-    "Mono.Unity"."UnityTls/unitytls_key"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTls_unitytls_key {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_key";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_key {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_key {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_key {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return for crate::Mono::Unity::UnityTls_unitytls_key {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_key {
@@ -458,10 +786,85 @@ pub struct UnityTls_unitytls_key_ref {
     pub handle: u64,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_key_ref =>
-    "Mono.Unity"."UnityTls/unitytls_key_ref"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_key_ref {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_key_ref";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_key_ref {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_key_ref {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_key_ref {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_key_ref {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_key_ref {
@@ -486,19 +889,169 @@ pub enum UnityTls_unitytls_protocol {
     UNITYTLS_PROTOCOL_TLS_1_2 = 5243650u32,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_protocol =>
-    "Mono.Unity"."UnityTls/unitytls_protocol"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_protocol {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_protocol";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_protocol {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_protocol {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_protocol {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_protocol {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_tlsctx {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_tlsctx =>
-    "Mono.Unity"."UnityTls/unitytls_tlsctx"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
@@ -525,10 +1078,85 @@ pub struct UnityTls_unitytls_tlsctx_callbacks {
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks
-    => "Mono.Unity"."UnityTls/unitytls_tlsctx_callbacks"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_callbacks";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
@@ -549,11 +1177,25 @@ pub struct UnityTls_unitytls_tlsctx_certificate_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback => "Mono.Unity"
-    ."UnityTls/unitytls_tlsctx_certificate_callback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_certificate_callback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 impl std::ops::Deref
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
@@ -634,11 +1276,85 @@ pub struct UnityTls_unitytls_tlsctx_protocolrange {
     pub max: crate::Mono::Unity::UnityTls_unitytls_protocol,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange => "Mono.Unity"
-    ."UnityTls/unitytls_tlsctx_protocolrange"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_protocolrange";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
@@ -659,11 +1375,25 @@ pub struct UnityTls_unitytls_tlsctx_read_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback => "Mono.Unity"
-    ."UnityTls/unitytls_tlsctx_read_callback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_read_callback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
     type Target = crate::System::MulticastDelegate;
@@ -733,11 +1463,25 @@ pub struct UnityTls_unitytls_tlsctx_trace_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback => "Mono.Unity"
-    ."UnityTls/unitytls_tlsctx_trace_callback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_trace_callback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
     type Target = crate::System::MulticastDelegate;
@@ -807,11 +1551,25 @@ pub struct UnityTls_unitytls_tlsctx_write_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback => "Mono.Unity"
-    ."UnityTls/unitytls_tlsctx_write_callback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_write_callback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
     type Target = crate::System::MulticastDelegate;
@@ -881,11 +1639,25 @@ pub struct UnityTls_unitytls_tlsctx_x509verify_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback => "Mono.Unity"
-    ."UnityTls/unitytls_tlsctx_x509verify_callback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_x509verify_callback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
 impl std::ops::Deref
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
@@ -958,10 +1730,85 @@ pub struct UnityTls_unitytls_x509_ref {
     pub handle: u64,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_x509_ref =>
-    "Mono.Unity"."UnityTls/unitytls_x509_ref"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509_ref";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
@@ -980,10 +1827,85 @@ impl crate::Mono::Unity::UnityTls_unitytls_x509_ref {}
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_x509list {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_x509list =>
-    "Mono.Unity"."UnityTls/unitytls_x509list"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_x509list {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509list";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_x509list {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_x509list {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_x509list {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_x509list {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_x509list {
@@ -1004,10 +1926,85 @@ pub struct UnityTls_unitytls_x509list_ref {
     pub handle: u64,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_x509list_ref =>
-    "Mono.Unity"."UnityTls/unitytls_x509list_ref"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509list_ref";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
@@ -1026,10 +2023,85 @@ impl crate::Mono::Unity::UnityTls_unitytls_x509list_ref {}
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UnityTls_unitytls_x509name {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_x509name =>
-    "Mono.Unity"."UnityTls/unitytls_x509name"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_x509name {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509name";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_x509name {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_x509name {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_x509name {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_x509name {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::Mono::Unity::UnityTls_unitytls_x509name {
@@ -1050,11 +2122,25 @@ pub struct UnityTls_unitytls_x509verify_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::UnityTls_unitytls_x509verify_callback => "Mono.Unity"
-    ."UnityTls/unitytls_x509verify_callback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509verify_callback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
     type Target = crate::System::MulticastDelegate;
@@ -1142,10 +2228,85 @@ pub enum UnityTls_unitytls_x509verify_result {
     UNITYTLS_X509VERIFY_SUCCESS = 61440u32,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Unity::UnityTls_unitytls_x509verify_result
-    => "Mono.Unity"."UnityTls/unitytls_x509verify_result"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509verify_result";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
 )]
@@ -1157,11 +2318,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_errorstate_create_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_errorstate_create_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
 )]
@@ -1243,12 +2418,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t 
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t
-    => "Mono.Unity"
-    ."UnityTls/unitytls_interface_struct/unitytls_errorstate_raise_error_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_errorstate_raise_error_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
 )]
@@ -1326,11 +2514,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_key_free_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t => "Mono.Unity"
-    ."UnityTls/unitytls_interface_struct/unitytls_key_free_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_key_free_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
@@ -1399,11 +2601,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_key_get_ref_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_key_get_ref_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
@@ -1477,11 +2693,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_key_parse_der_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_key_parse_der_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
 )]
@@ -1570,11 +2800,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_key_parse_pem_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_key_parse_pem_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
 )]
@@ -1663,11 +2907,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_random_generate_bytes_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_random_generate_bytes_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
 )]
@@ -1750,11 +3008,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_tlsctx_create_client_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_create_client_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
 )]
@@ -1843,11 +3115,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_tlsctx_create_server_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_create_server_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
 )]
@@ -1941,11 +3227,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_tlsctx_free_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_free_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
@@ -2018,12 +3318,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t 
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t
-    => "Mono.Unity"
-    ."UnityTls/unitytls_interface_struct/unitytls_tlsctx_get_ciphersuite_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_get_ciphersuite_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
 )]
@@ -2107,11 +3420,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_tlsctx_get_protocol_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_get_protocol_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
 )]
@@ -2193,11 +3520,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_tlsctx_notify_close_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_notify_close_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
 )]
@@ -2279,12 +3620,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t
-    => "Mono.Unity"
-    ."UnityTls/unitytls_interface_struct/unitytls_tlsctx_process_handshake_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_process_handshake_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
 )]
@@ -2364,11 +3718,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_tlsctx_read_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_read_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
@@ -2444,12 +3812,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_cli
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t
-    => "Mono.Unity"
-    ."UnityTls/unitytls_interface_struct/unitytls_tlsctx_server_require_client_authentication_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_server_require_client_authentication_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
 )]
@@ -2532,12 +3913,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_ca
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t
-    => "Mono.Unity"
-    ."UnityTls/unitytls_interface_struct/unitytls_tlsctx_set_certificate_callback_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_set_certificate_callback_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
 )]
@@ -2623,12 +4017,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciph
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t
-    => "Mono.Unity"
-    ."UnityTls/unitytls_interface_struct/unitytls_tlsctx_set_supported_ciphersuites_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_set_supported_ciphersuites_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
 )]
@@ -2717,12 +4124,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t
-    => "Mono.Unity"
-    ."UnityTls/unitytls_interface_struct/unitytls_tlsctx_set_trace_callback_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_set_trace_callback_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
 )]
@@ -2808,12 +4228,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_cal
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t
-    => "Mono.Unity"
-    ."UnityTls/unitytls_interface_struct/unitytls_tlsctx_set_x509verify_callback_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_set_x509verify_callback_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
 )]
@@ -2895,11 +4328,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_tlsctx_write_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_tlsctx_write_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
@@ -2975,11 +4422,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_x509_export_der_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509_export_der_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
 )]
@@ -3063,11 +4524,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_x509list_append_der_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509list_append_der_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
 )]
@@ -3151,11 +4626,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_x509list_append_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509list_append_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
 )]
@@ -3238,11 +4727,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_x509list_create_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509list_create_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
 )]
@@ -3326,11 +4829,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_x509list_free_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509list_free_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
 )]
@@ -3411,11 +4928,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_x509list_get_ref_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509list_get_ref_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
 )]
@@ -3499,11 +5030,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_x509list_get_x509_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509list_get_x509_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
 )]
@@ -3586,11 +5131,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t =>
-    "Mono.Unity"."UnityTls/unitytls_interface_struct/unitytls_x509verify_default_ca_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509verify_default_ca_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
 )]
@@ -3680,12 +5239,25 @@ pub struct unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t 
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t
-    => "Mono.Unity"
-    ."UnityTls/unitytls_interface_struct/unitytls_x509verify_explicit_ca_t"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "unitytls_x509verify_explicit_ca_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
 )]

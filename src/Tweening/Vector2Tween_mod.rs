@@ -5,10 +5,24 @@ pub struct Vector2Tween {
     __cordl_parent: crate::Tweening::Tween_1<crate::UnityEngine::Vector2>,
 }
 #[cfg(feature = "Tweening+Vector2Tween")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Tweening::Vector2Tween => "Tweening"
-    ."Vector2Tween"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::Vector2Tween {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Tweening";
+    const CLASS_NAME: &'static str = "Vector2Tween";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Tweening+Vector2Tween")]
 impl std::ops::Deref for crate::Tweening::Vector2Tween {
     type Target = crate::Tweening::Tween_1<crate::UnityEngine::Vector2>;

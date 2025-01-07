@@ -29,10 +29,24 @@ pub struct VideoPlayer {
     >,
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Video::VideoPlayer =>
-    "UnityEngine.Video"."VideoPlayer"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Video::VideoPlayer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Video";
+    const CLASS_NAME: &'static str = "VideoPlayer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Video+VideoPlayer")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer {
     type Target = crate::UnityEngine::Behaviour;
@@ -1227,11 +1241,25 @@ pub struct VideoPlayer_ErrorEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Video::VideoPlayer_ErrorEventHandler => "UnityEngine.Video"
-    ."VideoPlayer/ErrorEventHandler"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Video";
+    const CLASS_NAME: &'static str = "ErrorEventHandler";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
     type Target = crate::System::MulticastDelegate;
@@ -1299,10 +1327,25 @@ pub struct VideoPlayer_EventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Video::VideoPlayer_EventHandler =>
-    "UnityEngine.Video"."VideoPlayer/EventHandler"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Video::VideoPlayer_EventHandler {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Video";
+    const CLASS_NAME: &'static str = "EventHandler";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_EventHandler {
     type Target = crate::System::MulticastDelegate;
@@ -1369,11 +1412,25 @@ pub struct VideoPlayer_FrameReadyEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler => "UnityEngine.Video"
-    ."VideoPlayer/FrameReadyEventHandler"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Video";
+    const CLASS_NAME: &'static str = "FrameReadyEventHandler";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
     type Target = crate::System::MulticastDelegate;
@@ -1442,10 +1499,25 @@ pub struct VideoPlayer_TimeEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Video::VideoPlayer_TimeEventHandler
-    => "UnityEngine.Video"."VideoPlayer/TimeEventHandler"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Video";
+    const CLASS_NAME: &'static str = "TimeEventHandler";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
     type Target = crate::System::MulticastDelegate;

@@ -31,11 +31,25 @@ pub struct MultiplayerLocalInactivePlayerSongSyncController {
     pub _lastLatencyOffsetTime: i64,
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController => ""
-    ."MultiplayerLocalInactivePlayerSongSyncController"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "MultiplayerLocalInactivePlayerSongSyncController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
@@ -258,11 +272,25 @@ pub struct MultiplayerLocalInactivePlayerSongSyncController_InitData {
     pub timeScale: f32,
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData => ""
-    ."MultiplayerLocalInactivePlayerSongSyncController/InitData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData {

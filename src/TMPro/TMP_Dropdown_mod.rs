@@ -29,9 +29,24 @@ pub struct TMP_Dropdown {
     pub m_Coroutine: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
 }
 #[cfg(feature = "TMPro+TMP_Dropdown")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown => "TMPro"."TMP_Dropdown"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Dropdown {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "TMPro";
+    const CLASS_NAME: &'static str = "TMP_Dropdown";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TMPro+TMP_Dropdown")]
 impl std::ops::Deref for crate::TMPro::TMP_Dropdown {
     type Target = crate::UnityEngine::UI::Selectable;
@@ -747,10 +762,24 @@ pub struct TMP_Dropdown_DropdownEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
 }
 #[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown_DropdownEvent => "TMPro"
-    ."TMP_Dropdown/DropdownEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Dropdown_DropdownEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "TMPro";
+    const CLASS_NAME: &'static str = "DropdownEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_Dropdown_DropdownEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<i32>;
@@ -804,10 +833,24 @@ pub struct TMP_Dropdown_DropdownItem {
     pub m_Toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
 }
 #[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown_DropdownItem => "TMPro"
-    ."TMP_Dropdown/DropdownItem"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Dropdown_DropdownItem {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "TMPro";
+    const CLASS_NAME: &'static str = "DropdownItem";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
 impl std::ops::Deref for crate::TMPro::TMP_Dropdown_DropdownItem {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -1019,10 +1062,24 @@ pub struct TMP_Dropdown_OptionData {
     pub m_Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
 #[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown_OptionData => "TMPro"
-    ."TMP_Dropdown/OptionData"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Dropdown_OptionData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "TMPro";
+    const CLASS_NAME: &'static str = "OptionData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
 impl std::ops::Deref for crate::TMPro::TMP_Dropdown_OptionData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1186,10 +1243,24 @@ pub struct TMP_Dropdown_OptionDataList {
     >,
 }
 #[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown_OptionDataList => "TMPro"
-    ."TMP_Dropdown/OptionDataList"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Dropdown_OptionDataList {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "TMPro";
+    const CLASS_NAME: &'static str = "OptionDataList";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
 impl std::ops::Deref for crate::TMPro::TMP_Dropdown_OptionDataList {
     type Target = quest_hook::libil2cpp::Il2CppObject;

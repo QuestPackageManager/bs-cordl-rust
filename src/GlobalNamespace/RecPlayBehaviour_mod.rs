@@ -33,10 +33,24 @@ pub struct RecPlayBehaviour {
     pub _playback: bool,
 }
 #[cfg(feature = "RecPlayBehaviour")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::RecPlayBehaviour => ""
-    ."RecPlayBehaviour"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RecPlayBehaviour {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "RecPlayBehaviour";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "RecPlayBehaviour")]
 impl std::ops::Deref for crate::GlobalNamespace::RecPlayBehaviour {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -258,10 +272,25 @@ pub struct RecPlayBehaviour_State {
     pub playback: bool,
 }
 #[cfg(feature = "RecPlayBehaviour+State")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::RecPlayBehaviour_State => ""
-    ."RecPlayBehaviour/State"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::RecPlayBehaviour_State {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "State";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "RecPlayBehaviour+State")]
 impl std::ops::Deref for crate::GlobalNamespace::RecPlayBehaviour_State {
     type Target = quest_hook::libil2cpp::Il2CppObject;

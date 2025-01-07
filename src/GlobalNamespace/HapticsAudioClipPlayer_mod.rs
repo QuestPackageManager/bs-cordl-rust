@@ -9,10 +9,25 @@ pub struct HapticsAudioClipPlayer {
     pub _lastTriggerTime: f32,
 }
 #[cfg(feature = "HapticsAudioClipPlayer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::HapticsAudioClipPlayer => ""
-    ."HapticsAudioClipPlayer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::HapticsAudioClipPlayer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "HapticsAudioClipPlayer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HapticsAudioClipPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::HapticsAudioClipPlayer {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -204,10 +219,25 @@ pub struct HapticsAudioClipPlayer_Pool {
     >,
 }
 #[cfg(feature = "HapticsAudioClipPlayer+Pool")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::HapticsAudioClipPlayer_Pool =>
-    ""."HapticsAudioClipPlayer/Pool"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "Pool";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HapticsAudioClipPlayer+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
     type Target = crate::Zenject::MemoryPool_1<

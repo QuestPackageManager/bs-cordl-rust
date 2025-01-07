@@ -11,11 +11,25 @@ pub struct EventBoxGroupConverter {
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+EventBoxGroupConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion4::EventBoxGroupConverter => "BeatmapDataLoaderVersion4"
-    ."EventBoxGroupConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion4";
+    const CLASS_NAME: &'static str = "EventBoxGroupConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion4+EventBoxGroupConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;

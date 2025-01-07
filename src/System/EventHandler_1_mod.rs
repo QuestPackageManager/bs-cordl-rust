@@ -6,10 +6,38 @@ pub struct EventHandler_1<TEventArgs: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TEventArgs: std::marker::PhantomData<TEventArgs>,
 }
 #[cfg(feature = "System+EventHandler_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::EventHandler_1 < TEventArgs > =>
-    "System"."EventHandler`1" < TEventArgs >
-);
+unsafe impl<TEventArgs: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::EventHandler_1<TEventArgs> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System";
+    const CLASS_NAME: &'static str = "EventHandler`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System", "EventHandler`1")
+                    .unwrap()
+                    .make_generic::<(TEventArgs)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+EventHandler_1")]
 impl<TEventArgs: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::EventHandler_1<TEventArgs> {

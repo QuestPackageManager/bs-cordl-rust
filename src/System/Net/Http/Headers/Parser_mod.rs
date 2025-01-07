@@ -5,10 +5,24 @@ pub struct Parser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::Headers::Parser =>
-    "System.Net.Http.Headers"."Parser"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Http::Headers::Parser {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http.Headers";
+    const CLASS_NAME: &'static str = "Parser";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -59,10 +73,25 @@ pub struct Parser_DateTime {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::Headers::Parser_DateTime =>
-    "System.Net.Http.Headers"."Parser/DateTime"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Http::Headers::Parser_DateTime {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http.Headers";
+    const CLASS_NAME: &'static str = "DateTime";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_DateTime {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -104,10 +133,25 @@ pub struct Parser_EmailAddress {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+EmailAddress")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::Headers::Parser_EmailAddress
-    => "System.Net.Http.Headers"."Parser/EmailAddress"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Http::Headers::Parser_EmailAddress {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http.Headers";
+    const CLASS_NAME: &'static str = "EmailAddress";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+EmailAddress")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_EmailAddress {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -151,10 +195,25 @@ pub struct Parser_Host {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Host")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::Headers::Parser_Host =>
-    "System.Net.Http.Headers"."Parser/Host"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Http::Headers::Parser_Host {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http.Headers";
+    const CLASS_NAME: &'static str = "Host";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+Host")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_Host {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -198,10 +257,25 @@ pub struct Parser_Int {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Int")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::Headers::Parser_Int =>
-    "System.Net.Http.Headers"."Parser/Int"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Http::Headers::Parser_Int {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http.Headers";
+    const CLASS_NAME: &'static str = "Int";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+Int")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_Int {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -243,10 +317,25 @@ pub struct Parser_Long {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Long")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::Headers::Parser_Long =>
-    "System.Net.Http.Headers"."Parser/Long"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Http::Headers::Parser_Long {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http.Headers";
+    const CLASS_NAME: &'static str = "Long";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+Long")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_Long {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -288,10 +377,25 @@ pub struct Parser_MD5 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+MD5")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::Headers::Parser_MD5 =>
-    "System.Net.Http.Headers"."Parser/MD5"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Http::Headers::Parser_MD5 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http.Headers";
+    const CLASS_NAME: &'static str = "MD5";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+MD5")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_MD5 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -335,11 +439,25 @@ pub struct Parser_TimeSpanSeconds {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+TimeSpanSeconds")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Net::Http::Headers::Parser_TimeSpanSeconds => "System.Net.Http.Headers"
-    ."Parser/TimeSpanSeconds"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Http::Headers::Parser_TimeSpanSeconds {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http.Headers";
+    const CLASS_NAME: &'static str = "TimeSpanSeconds";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+TimeSpanSeconds")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_TimeSpanSeconds {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -381,10 +499,25 @@ pub struct Parser_Token {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Token")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::Headers::Parser_Token =>
-    "System.Net.Http.Headers"."Parser/Token"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Http::Headers::Parser_Token {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http.Headers";
+    const CLASS_NAME: &'static str = "Token";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+Token")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_Token {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -432,10 +565,25 @@ pub struct Parser_Uri {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Uri")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::Headers::Parser_Uri =>
-    "System.Net.Http.Headers"."Parser/Uri"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Http::Headers::Parser_Uri {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Http.Headers";
+    const CLASS_NAME: &'static str = "Uri";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+Uri")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Parser_Uri {
     type Target = quest_hook::libil2cpp::Il2CppObject;

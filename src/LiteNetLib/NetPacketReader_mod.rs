@@ -8,10 +8,24 @@ pub struct NetPacketReader {
     pub _evt: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetEvent>,
 }
 #[cfg(feature = "LiteNetLib+NetPacketReader")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::NetPacketReader => "LiteNetLib"
-    ."NetPacketReader"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetPacketReader {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "NetPacketReader";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+NetPacketReader")]
 impl std::ops::Deref for crate::LiteNetLib::NetPacketReader {
     type Target = crate::LiteNetLib::Utils::NetDataReader;

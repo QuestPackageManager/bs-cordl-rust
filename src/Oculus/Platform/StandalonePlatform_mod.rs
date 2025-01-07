@@ -5,10 +5,24 @@ pub struct StandalonePlatform {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Oculus+Platform+StandalonePlatform")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Oculus::Platform::StandalonePlatform =>
-    "Oculus.Platform"."StandalonePlatform"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::StandalonePlatform {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Oculus.Platform";
+    const CLASS_NAME: &'static str = "StandalonePlatform";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Oculus+Platform+StandalonePlatform")]
 impl std::ops::Deref for crate::Oculus::Platform::StandalonePlatform {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -143,11 +157,25 @@ pub struct StandalonePlatform_UnityLogDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Oculus+Platform+StandalonePlatform+UnityLogDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Oculus::Platform::StandalonePlatform_UnityLogDelegate => "Oculus.Platform"
-    ."StandalonePlatform/UnityLogDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Oculus.Platform";
+    const CLASS_NAME: &'static str = "UnityLogDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Oculus+Platform+StandalonePlatform+UnityLogDelegate")]
 impl std::ops::Deref for crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate {
     type Target = crate::System::MulticastDelegate;

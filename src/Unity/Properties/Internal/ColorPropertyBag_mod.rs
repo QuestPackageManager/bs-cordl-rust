@@ -7,10 +7,25 @@ pub struct ColorPropertyBag {
     >,
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Properties::Internal::ColorPropertyBag =>
-    "Unity.Properties.Internal"."ColorPropertyBag"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::ColorPropertyBag {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "ColorPropertyBag";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag {
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
@@ -71,11 +86,25 @@ pub struct ColorPropertyBag_AProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>,
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+AProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::ColorPropertyBag_AProperty =>
-    "Unity.Properties.Internal"."ColorPropertyBag/AProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::ColorPropertyBag_AProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "AProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+AProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag_AProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>;
@@ -140,11 +169,25 @@ pub struct ColorPropertyBag_BProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>,
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+BProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::ColorPropertyBag_BProperty =>
-    "Unity.Properties.Internal"."ColorPropertyBag/BProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::ColorPropertyBag_BProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "BProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+BProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag_BProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>;
@@ -209,11 +252,25 @@ pub struct ColorPropertyBag_GProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>,
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+GProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::ColorPropertyBag_GProperty =>
-    "Unity.Properties.Internal"."ColorPropertyBag/GProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::ColorPropertyBag_GProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "GProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+GProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag_GProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>;
@@ -278,11 +335,25 @@ pub struct ColorPropertyBag_RProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>,
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+RProperty")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::Properties::Internal::ColorPropertyBag_RProperty =>
-    "Unity.Properties.Internal"."ColorPropertyBag/RProperty"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::Properties::Internal::ColorPropertyBag_RProperty {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.Properties.Internal";
+    const CLASS_NAME: &'static str = "RProperty";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+RProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag_RProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>;

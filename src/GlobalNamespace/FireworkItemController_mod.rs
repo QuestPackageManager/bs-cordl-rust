@@ -49,10 +49,25 @@ pub struct FireworkItemController {
     >,
 }
 #[cfg(feature = "FireworkItemController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::FireworkItemController => ""
-    ."FireworkItemController"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::FireworkItemController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "FireworkItemController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "FireworkItemController")]
 impl std::ops::Deref for crate::GlobalNamespace::FireworkItemController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -239,11 +254,25 @@ pub struct FireworkItemController_FireworkItemParticleSystem {
     pub _randomizeSpeed: bool,
 }
 #[cfg(feature = "FireworkItemController+FireworkItemParticleSystem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem => ""
-    ."FireworkItemController/FireworkItemParticleSystem"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "FireworkItemParticleSystem";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "FireworkItemController+FireworkItemParticleSystem")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
@@ -298,10 +327,25 @@ pub struct FireworkItemController_Pool {
     >,
 }
 #[cfg(feature = "FireworkItemController+Pool")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::FireworkItemController_Pool =>
-    ""."FireworkItemController/Pool"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::FireworkItemController_Pool {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "Pool";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "FireworkItemController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::FireworkItemController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<

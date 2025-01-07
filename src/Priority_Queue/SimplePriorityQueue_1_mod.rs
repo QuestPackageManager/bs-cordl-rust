@@ -6,10 +6,41 @@ pub struct SimplePriorityQueue_1<TItem: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
 }
 #[cfg(feature = "Priority_Queue+SimplePriorityQueue_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Priority_Queue::SimplePriorityQueue_1 < TItem >
-    => "Priority_Queue"."SimplePriorityQueue`1" < TItem >
-);
+unsafe impl<TItem: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::Priority_Queue::SimplePriorityQueue_1<TItem> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Priority_Queue";
+    const CLASS_NAME: &'static str = "SimplePriorityQueue`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Priority_Queue",
+                        "SimplePriorityQueue`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TItem)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Priority_Queue+SimplePriorityQueue_1")]
 impl<TItem: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Priority_Queue::SimplePriorityQueue_1<TItem> {

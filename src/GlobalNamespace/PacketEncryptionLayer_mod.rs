@@ -30,10 +30,25 @@ pub struct PacketEncryptionLayer {
     pub _enableStatistics_k__BackingField: bool,
 }
 #[cfg(feature = "PacketEncryptionLayer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PacketEncryptionLayer => ""
-    ."PacketEncryptionLayer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PacketEncryptionLayer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PacketEncryptionLayer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PacketEncryptionLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::PacketEncryptionLayer {
     type Target = crate::LiteNetLib::Layers::PacketLayerBase;
@@ -436,11 +451,25 @@ pub struct PacketEncryptionLayer_EncryptionStatistics {
     pub _decryptionProcessingTime: i64,
 }
 #[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics => ""
-    ."PacketEncryptionLayer/EncryptionStatistics"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "EncryptionStatistics";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
@@ -651,11 +680,25 @@ pub struct PacketEncryptionLayer_PendingEncryptionStateList {
     >,
 }
 #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList => ""
-    ."PacketEncryptionLayer/PendingEncryptionStateList"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PendingEncryptionStateList";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {

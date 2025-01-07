@@ -12,10 +12,25 @@ pub struct ListDictionary {
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+Specialized+ListDictionary")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Collections::Specialized::ListDictionary
-    => "System.Collections.Specialized"."ListDictionary"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Specialized::ListDictionary {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Specialized";
+    const CLASS_NAME: &'static str = "ListDictionary";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Specialized+ListDictionary")]
 impl std::ops::Deref for crate::System::Collections::Specialized::ListDictionary {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -315,11 +330,25 @@ pub struct ListDictionary_DictionaryNode {
     >,
 }
 #[cfg(feature = "System+Collections+Specialized+ListDictionary+DictionaryNode")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Specialized::ListDictionary_DictionaryNode =>
-    "System.Collections.Specialized"."ListDictionary/DictionaryNode"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Specialized::ListDictionary_DictionaryNode {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Specialized";
+    const CLASS_NAME: &'static str = "DictionaryNode";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Specialized+ListDictionary+DictionaryNode")]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::ListDictionary_DictionaryNode {
@@ -380,11 +409,25 @@ pub struct ListDictionary_NodeEnumerator {
     pub _start: bool,
 }
 #[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Specialized::ListDictionary_NodeEnumerator =>
-    "System.Collections.Specialized"."ListDictionary/NodeEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Specialized";
+    const CLASS_NAME: &'static str = "NodeEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
@@ -542,11 +585,25 @@ pub struct ListDictionary_NodeKeyValueCollection {
     pub _isKeys: bool,
 }
 #[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Specialized::ListDictionary_NodeKeyValueCollection =>
-    "System.Collections.Specialized"."ListDictionary/NodeKeyValueCollection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Specialized";
+    const CLASS_NAME: &'static str = "NodeKeyValueCollection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollection {
@@ -711,12 +768,25 @@ pub struct NodeKeyValueCollection_ListDictionary_NodeKeyValueEnumerator {
 #[cfg(
     feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Collections::Specialized::NodeKeyValueCollection_ListDictionary_NodeKeyValueEnumerator
-    => "System.Collections.Specialized"
-    ."ListDictionary/NodeKeyValueCollection/NodeKeyValueEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Collections::Specialized::NodeKeyValueCollection_ListDictionary_NodeKeyValueEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Collections.Specialized";
+    const CLASS_NAME: &'static str = "NodeKeyValueEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]

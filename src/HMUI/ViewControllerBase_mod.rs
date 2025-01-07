@@ -11,10 +11,24 @@ pub struct ViewControllerBase {
     >,
 }
 #[cfg(feature = "HMUI+ViewControllerBase")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::ViewControllerBase => "HMUI"
-    ."ViewControllerBase"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ViewControllerBase {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HMUI";
+    const CLASS_NAME: &'static str = "ViewControllerBase";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HMUI+ViewControllerBase")]
 impl std::ops::Deref for crate::HMUI::ViewControllerBase {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -148,10 +162,25 @@ pub struct ViewControllerBase_DidActivateDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "HMUI+ViewControllerBase+DidActivateDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::ViewControllerBase_DidActivateDelegate =>
-    "HMUI"."ViewControllerBase/DidActivateDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HMUI::ViewControllerBase_DidActivateDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HMUI";
+    const CLASS_NAME: &'static str = "DidActivateDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HMUI+ViewControllerBase+DidActivateDelegate")]
 impl std::ops::Deref for crate::HMUI::ViewControllerBase_DidActivateDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -260,10 +289,25 @@ pub struct ViewControllerBase_DidDeactivateDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "HMUI+ViewControllerBase+DidDeactivateDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::ViewControllerBase_DidDeactivateDelegate
-    => "HMUI"."ViewControllerBase/DidDeactivateDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HMUI::ViewControllerBase_DidDeactivateDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HMUI";
+    const CLASS_NAME: &'static str = "DidDeactivateDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HMUI+ViewControllerBase+DidDeactivateDelegate")]
 impl std::ops::Deref for crate::HMUI::ViewControllerBase_DidDeactivateDelegate {
     type Target = crate::System::MulticastDelegate;

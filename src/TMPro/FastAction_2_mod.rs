@@ -22,10 +22,40 @@ pub struct FastAction_2<A: quest_hook::libil2cpp::Type, B: quest_hook::libil2cpp
     __cordl_phantom_B: std::marker::PhantomData<B>,
 }
 #[cfg(feature = "TMPro+FastAction_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::FastAction_2 < A, B > => "TMPro"
-    ."FastAction`2" < A, B >
-);
+unsafe impl<
+    A: quest_hook::libil2cpp::Type,
+    B: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type for crate::TMPro::FastAction_2<A, B> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "TMPro";
+    const CLASS_NAME: &'static str = "FastAction`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("TMPro", "FastAction`2")
+                    .unwrap()
+                    .make_generic::<(A, B)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TMPro+FastAction_2")]
 impl<A: quest_hook::libil2cpp::Type, B: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::TMPro::FastAction_2<A, B> {

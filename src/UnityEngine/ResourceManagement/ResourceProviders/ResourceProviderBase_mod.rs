@@ -7,11 +7,25 @@ pub struct ResourceProviderBase {
     pub m_BehaviourFlags: crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviourFlags,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase =>
-    "UnityEngine.ResourceManagement.ResourceProviders"."ResourceProviderBase"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.ResourceProviders";
+    const CLASS_NAME: &'static str = "ResourceProviderBase";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
@@ -234,12 +248,25 @@ pub struct ResourceProviderBase_BaseInitAsyncOp {
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp
-    => "UnityEngine.ResourceManagement.ResourceProviders"
-    ."ResourceProviderBase/BaseInitAsyncOp"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.ResourceProviders";
+    const CLASS_NAME: &'static str = "BaseInitAsyncOp";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
 )]

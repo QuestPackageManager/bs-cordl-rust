@@ -16,10 +16,24 @@ pub struct WebRequest {
     >,
 }
 #[cfg(feature = "System+Net+WebRequest")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::WebRequest => "System.Net"
-    ."WebRequest"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebRequest {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "WebRequest";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+WebRequest")]
 impl std::ops::Deref for crate::System::Net::WebRequest {
     type Target = crate::System::MarshalByRefObject;
@@ -581,10 +595,25 @@ pub struct WebRequest_DesignerWebRequestCreate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::WebRequest_DesignerWebRequestCreate
-    => "System.Net"."WebRequest/DesignerWebRequestCreate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::WebRequest_DesignerWebRequestCreate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "DesignerWebRequestCreate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
 impl std::ops::Deref for crate::System::Net::WebRequest_DesignerWebRequestCreate {
     type Target = quest_hook::libil2cpp::Il2CppObject;

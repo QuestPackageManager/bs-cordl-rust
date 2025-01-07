@@ -11,11 +11,25 @@ pub struct TlsDeflateCompression {
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression =>
-    "Org.BouncyCastle.Crypto.Tls"."TlsDeflateCompression"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Tls";
+    const CLASS_NAME: &'static str = "TlsDeflateCompression";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -135,11 +149,25 @@ pub struct TlsDeflateCompression_DeflateOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression+DeflateOutputStream")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression_DeflateOutputStream =>
-    "Org.BouncyCastle.Crypto.Tls"."TlsDeflateCompression/DeflateOutputStream"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression_DeflateOutputStream {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Tls";
+    const CLASS_NAME: &'static str = "DeflateOutputStream";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression+DeflateOutputStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression_DeflateOutputStream {

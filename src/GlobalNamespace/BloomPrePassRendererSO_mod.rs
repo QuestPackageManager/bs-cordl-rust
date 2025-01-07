@@ -29,10 +29,25 @@ pub struct BloomPrePassRendererSO {
     >,
 }
 #[cfg(feature = "BloomPrePassRendererSO")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomPrePassRendererSO => ""
-    ."BloomPrePassRendererSO"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BloomPrePassRendererSO {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BloomPrePassRendererSO";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BloomPrePassRendererSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassRendererSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
@@ -306,11 +321,25 @@ pub struct BloomPrePassRendererSO_LightsRenderingData {
     pub subMeshDescriptor: crate::UnityEngine::Rendering::SubMeshDescriptor,
 }
 #[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData => ""
-    ."BloomPrePassRendererSO/LightsRenderingData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LightsRenderingData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
@@ -367,11 +396,25 @@ pub struct BloomPrePassRendererSO_PreallocationData {
     pub preallocateCount: i32,
 }
 #[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BloomPrePassRendererSO_PreallocationData => ""
-    ."BloomPrePassRendererSO/PreallocationData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PreallocationData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData {

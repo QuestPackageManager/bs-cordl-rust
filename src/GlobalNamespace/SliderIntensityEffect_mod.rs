@@ -38,10 +38,25 @@ pub struct SliderIntensityEffect {
     >,
 }
 #[cfg(feature = "SliderIntensityEffect")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::SliderIntensityEffect => ""
-    ."SliderIntensityEffect"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SliderIntensityEffect {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SliderIntensityEffect";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SliderIntensityEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderIntensityEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -234,11 +249,25 @@ pub struct SliderIntensityEffect_FadeElement {
     pub startCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "SliderIntensityEffect+FadeElement")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SliderIntensityEffect_FadeElement => ""
-    ."SliderIntensityEffect/FadeElement"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "FadeElement";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SliderIntensityEffect+FadeElement")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -303,10 +332,25 @@ pub struct SliderIntensityEffect_InitData {
     pub hapticFeedback: f32,
 }
 #[cfg(feature = "SliderIntensityEffect+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::SliderIntensityEffect_InitData
-    => ""."SliderIntensityEffect/InitData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SliderIntensityEffect_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SliderIntensityEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderIntensityEffect_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -362,11 +406,25 @@ pub struct SliderIntensityEffect_IntensityCalculationDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate => ""
-    ."SliderIntensityEffect/IntensityCalculationDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "IntensityCalculationDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {

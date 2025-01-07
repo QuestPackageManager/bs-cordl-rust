@@ -36,10 +36,24 @@ pub struct ResourceReader {
     pub _version: i32,
 }
 #[cfg(feature = "System+Resources+ResourceReader")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Resources::ResourceReader =>
-    "System.Resources"."ResourceReader"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Resources::ResourceReader {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Resources";
+    const CLASS_NAME: &'static str = "ResourceReader";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Resources+ResourceReader")]
 impl std::ops::Deref for crate::System::Resources::ResourceReader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -457,11 +471,25 @@ pub struct ResourceReader_ResourceEnumerator {
     pub _dataPosition: i32,
 }
 #[cfg(feature = "System+Resources+ResourceReader+ResourceEnumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Resources::ResourceReader_ResourceEnumerator => "System.Resources"
-    ."ResourceReader/ResourceEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Resources::ResourceReader_ResourceEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Resources";
+    const CLASS_NAME: &'static str = "ResourceEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Resources+ResourceReader+ResourceEnumerator")]
 impl std::ops::Deref for crate::System::Resources::ResourceReader_ResourceEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;

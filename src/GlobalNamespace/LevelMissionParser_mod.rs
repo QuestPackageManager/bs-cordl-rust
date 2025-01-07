@@ -13,10 +13,24 @@ pub struct LevelMissionParser {
     >,
 }
 #[cfg(feature = "LevelMissionParser")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelMissionParser => ""
-    ."LevelMissionParser"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LevelMissionParser {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LevelMissionParser";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LevelMissionParser")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelMissionParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -117,11 +131,25 @@ pub struct LevelMissionParser_ParserFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LevelMissionParser+ParserFunction")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LevelMissionParser_ParserFunction => ""
-    ."LevelMissionParser/ParserFunction"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LevelMissionParser_ParserFunction {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ParserFunction";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LevelMissionParser+ParserFunction")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelMissionParser_ParserFunction {
     type Target = crate::System::MulticastDelegate;

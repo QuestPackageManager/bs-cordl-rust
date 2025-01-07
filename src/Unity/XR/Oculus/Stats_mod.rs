@@ -5,10 +5,24 @@ pub struct Stats {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+XR+Oculus+Stats")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::XR::Oculus::Stats => "Unity.XR.Oculus"
-    ."Stats"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::Stats {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.XR.Oculus";
+    const CLASS_NAME: &'static str = "Stats";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+XR+Oculus+Stats")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Stats {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -82,10 +96,25 @@ pub struct Stats_AdaptivePerformance {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+XR+Oculus+Stats+AdaptivePerformance")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::XR::Oculus::Stats_AdaptivePerformance =>
-    "Unity.XR.Oculus"."Stats/AdaptivePerformance"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.XR.Oculus";
+    const CLASS_NAME: &'static str = "AdaptivePerformance";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+XR+Oculus+Stats+AdaptivePerformance")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -169,10 +198,24 @@ pub struct Stats_AppMetrics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+XR+Oculus+Stats+AppMetrics")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::XR::Oculus::Stats_AppMetrics =>
-    "Unity.XR.Oculus"."Stats/AppMetrics"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::Stats_AppMetrics {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.XR.Oculus";
+    const CLASS_NAME: &'static str = "AppMetrics";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+XR+Oculus+Stats+AppMetrics")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Stats_AppMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -247,10 +290,24 @@ pub struct Stats_PerfMetrics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+XR+Oculus+Stats+PerfMetrics")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::XR::Oculus::Stats_PerfMetrics =>
-    "Unity.XR.Oculus"."Stats/PerfMetrics"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::Stats_PerfMetrics {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Unity.XR.Oculus";
+    const CLASS_NAME: &'static str = "PerfMetrics";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Unity+XR+Oculus+Stats+PerfMetrics")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Stats_PerfMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;

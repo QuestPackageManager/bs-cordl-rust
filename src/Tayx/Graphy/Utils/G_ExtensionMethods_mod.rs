@@ -5,10 +5,25 @@ pub struct G_ExtensionMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Tayx+Graphy+Utils+G_ExtensionMethods")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Tayx::Graphy::Utils::G_ExtensionMethods =>
-    "Tayx.Graphy.Utils"."G_ExtensionMethods"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Tayx::Graphy::Utils::G_ExtensionMethods {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Tayx.Graphy.Utils";
+    const CLASS_NAME: &'static str = "G_ExtensionMethods";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Tayx+Graphy+Utils+G_ExtensionMethods")]
 impl std::ops::Deref for crate::Tayx::Graphy::Utils::G_ExtensionMethods {
     type Target = quest_hook::libil2cpp::Il2CppObject;

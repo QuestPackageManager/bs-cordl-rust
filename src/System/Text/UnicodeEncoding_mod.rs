@@ -8,10 +8,24 @@ pub struct UnicodeEncoding {
     pub byteOrderMark: bool,
 }
 #[cfg(feature = "System+Text+UnicodeEncoding")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Text::UnicodeEncoding => "System.Text"
-    ."UnicodeEncoding"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UnicodeEncoding {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Text";
+    const CLASS_NAME: &'static str = "UnicodeEncoding";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Text+UnicodeEncoding")]
 impl std::ops::Deref for crate::System::Text::UnicodeEncoding {
     type Target = crate::System::Text::Encoding;
@@ -408,10 +422,25 @@ pub struct UnicodeEncoding_Decoder {
     pub lastChar: char,
 }
 #[cfg(feature = "System+Text+UnicodeEncoding+Decoder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Text::UnicodeEncoding_Decoder =>
-    "System.Text"."UnicodeEncoding/Decoder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Text::UnicodeEncoding_Decoder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Text";
+    const CLASS_NAME: &'static str = "Decoder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Text+UnicodeEncoding+Decoder")]
 impl std::ops::Deref for crate::System::Text::UnicodeEncoding_Decoder {
     type Target = crate::System::Text::DecoderNLS;

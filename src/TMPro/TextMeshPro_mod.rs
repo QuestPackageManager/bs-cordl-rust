@@ -30,9 +30,24 @@ pub struct TextMeshPro {
     pub m_isRegisteredForEvents: bool,
 }
 #[cfg(feature = "TMPro+TextMeshPro")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TextMeshPro => "TMPro"."TextMeshPro"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TextMeshPro {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "TMPro";
+    const CLASS_NAME: &'static str = "TextMeshPro";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TMPro+TextMeshPro")]
 impl std::ops::Deref for crate::TMPro::TextMeshPro {
     type Target = crate::TMPro::TMP_Text;

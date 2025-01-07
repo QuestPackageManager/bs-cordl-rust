@@ -40,11 +40,42 @@ pub struct LocalStateBuffer_3<
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
 }
 #[cfg(feature = "LocalStateBuffer_3")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::LocalStateBuffer_3 <
-    TStateTable, TType, TState > => ""."LocalStateBuffer`3" < TStateTable, TType, TState
-    >
-);
+unsafe impl<
+    TStateTable: quest_hook::libil2cpp::Type,
+    TType: quest_hook::libil2cpp::Type,
+    TState: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::LocalStateBuffer_3<TStateTable, TType, TState> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "LocalStateBuffer`3";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("", "LocalStateBuffer`3")
+                    .unwrap()
+                    .make_generic::<(TStateTable, TType, TState)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LocalStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,

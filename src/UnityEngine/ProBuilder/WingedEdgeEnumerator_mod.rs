@@ -7,10 +7,25 @@ pub struct WingedEdgeEnumerator {
     pub m_Current: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::ProBuilder::WingedEdgeEnumerator =>
-    "UnityEngine.ProBuilder"."WingedEdgeEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
+    const CLASS_NAME: &'static str = "WingedEdgeEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;

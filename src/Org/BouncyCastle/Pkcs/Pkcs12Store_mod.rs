@@ -30,10 +30,24 @@ pub struct Pkcs12Store {
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Pkcs::Pkcs12Store =>
-    "Org.BouncyCastle.Pkcs"."Pkcs12Store"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Pkcs";
+    const CLASS_NAME: &'static str = "Pkcs12Store";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -519,10 +533,25 @@ pub struct Pkcs12Store_CertId {
     pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId =>
-    "Org.BouncyCastle.Pkcs"."Pkcs12Store/CertId"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Pkcs";
+    const CLASS_NAME: &'static str = "CertId";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -632,11 +661,25 @@ pub struct Pkcs12Store_IgnoresCaseHashtable {
     pub keys: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable =>
-    "Org.BouncyCastle.Pkcs"."Pkcs12Store/IgnoresCaseHashtable"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Pkcs";
+    const CLASS_NAME: &'static str = "IgnoresCaseHashtable";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {

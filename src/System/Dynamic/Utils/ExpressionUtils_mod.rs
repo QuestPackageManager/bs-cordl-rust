@@ -5,10 +5,25 @@ pub struct ExpressionUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Dynamic+Utils+ExpressionUtils")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Dynamic::Utils::ExpressionUtils =>
-    "System.Dynamic.Utils"."ExpressionUtils"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Dynamic::Utils::ExpressionUtils {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Dynamic.Utils";
+    const CLASS_NAME: &'static str = "ExpressionUtils";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Dynamic+Utils+ExpressionUtils")]
 impl std::ops::Deref for crate::System::Dynamic::Utils::ExpressionUtils {
     type Target = quest_hook::libil2cpp::Il2CppObject;

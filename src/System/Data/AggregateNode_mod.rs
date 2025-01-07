@@ -13,10 +13,24 @@ pub struct AggregateNode {
     pub _relation: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
 }
 #[cfg(feature = "System+Data+AggregateNode")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::AggregateNode => "System.Data"
-    ."AggregateNode"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::AggregateNode {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "AggregateNode";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Data+AggregateNode")]
 impl std::ops::Deref for crate::System::Data::AggregateNode {
     type Target = crate::System::Data::ExpressionNode;

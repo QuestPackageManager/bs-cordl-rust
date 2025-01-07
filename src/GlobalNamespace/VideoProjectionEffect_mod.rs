@@ -25,10 +25,25 @@ pub struct VideoProjectionEffect {
     >,
 }
 #[cfg(feature = "VideoProjectionEffect")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::VideoProjectionEffect => ""
-    ."VideoProjectionEffect"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VideoProjectionEffect {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "VideoProjectionEffect";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VideoProjectionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::VideoProjectionEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -113,11 +128,25 @@ pub struct VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior {
     >,
 }
 #[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior => ""
-    ."VideoProjectionEffect/BeatmapEditorVideoProjectionBehavior"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BeatmapEditorVideoProjectionBehavior";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior {
@@ -240,11 +269,25 @@ pub struct VideoProjectionEffect_GameplayVideoProjectionBehavior {
     __cordl_parent: crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior,
 }
 #[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior => ""
-    ."VideoProjectionEffect/GameplayVideoProjectionBehavior"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "GameplayVideoProjectionBehavior";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior {
@@ -327,10 +370,25 @@ pub struct VideoProjectionEffect_InitData {
     pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
 #[cfg(feature = "VideoProjectionEffect+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::VideoProjectionEffect_InitData
-    => ""."VideoProjectionEffect/InitData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VideoProjectionEffect_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VideoProjectionEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::VideoProjectionEffect_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -396,11 +454,25 @@ pub struct VideoProjectionEffect_VideoProjectionBehavior {
     pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
 #[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior => ""
-    ."VideoProjectionEffect/VideoProjectionBehavior"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "VideoProjectionBehavior";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {

@@ -39,10 +39,41 @@ pub struct NetworkPacketSerializer_2<
     __cordl_phantom_TData: std::marker::PhantomData<TData>,
 }
 #[cfg(feature = "NetworkPacketSerializer_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::NetworkPacketSerializer_2 <
-    TType, TData > => ""."NetworkPacketSerializer`2" < TType, TData >
-);
+unsafe impl<
+    TType: quest_hook::libil2cpp::Type,
+    TData: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "NetworkPacketSerializer`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("", "NetworkPacketSerializer`2")
+                    .unwrap()
+                    .make_generic::<(TType, TData)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "NetworkPacketSerializer_2")]
 impl<
     TType: quest_hook::libil2cpp::Type,

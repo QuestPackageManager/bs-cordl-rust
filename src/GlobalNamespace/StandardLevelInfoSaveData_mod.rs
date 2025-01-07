@@ -43,10 +43,25 @@ pub struct StandardLevelInfoSaveData {
     >,
 }
 #[cfg(feature = "StandardLevelInfoSaveData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandardLevelInfoSaveData => ""
-    ."StandardLevelInfoSaveData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::StandardLevelInfoSaveData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "StandardLevelInfoSaveData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "StandardLevelInfoSaveData")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelInfoSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -469,11 +484,25 @@ pub struct StandardLevelInfoSaveData_DifficultyBeatmap {
     pub _environmentNameIdx: i32,
 }
 #[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap => ""
-    ."StandardLevelInfoSaveData/DifficultyBeatmap"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "DifficultyBeatmap";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
@@ -634,11 +663,25 @@ pub struct StandardLevelInfoSaveData_DifficultyBeatmapSet {
     >,
 }
 #[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet => ""
-    ."StandardLevelInfoSaveData/DifficultyBeatmapSet"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "DifficultyBeatmapSet";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {

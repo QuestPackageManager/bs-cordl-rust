@@ -19,11 +19,47 @@ pub struct SelectManyObservable_2<
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::Utilities::SelectManyObservable_2 < TSource, TResult > =>
-    "UnityEngine.InputSystem.Utilities"."SelectManyObservable`2" < TSource, TResult >
-);
+unsafe impl<
+    TSource: quest_hook::libil2cpp::Type,
+    TResult: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
+    TSource,
+    TResult,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
+    const CLASS_NAME: &'static str = "SelectManyObservable`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.InputSystem.Utilities",
+                        "SelectManyObservable`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TSource, TResult)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
@@ -190,12 +226,47 @@ pub struct SelectManyObservable_2_Select<
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::Utilities::SelectManyObservable_2_Select < TSource,
-    TResult > => "UnityEngine.InputSystem.Utilities"."SelectManyObservable`2/Select" <
-    TSource, TResult >
-);
+unsafe impl<
+    TSource: quest_hook::libil2cpp::Type,
+    TResult: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2_Select<
+    TSource,
+    TResult,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
+    const CLASS_NAME: &'static str = "Select";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.InputSystem.Utilities",
+                        "Select",
+                    )
+                    .unwrap()
+                    .make_generic::<(TSource, TResult)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SelectManyObservable_2+Select")]
 impl<
     TSource: quest_hook::libil2cpp::Type,

@@ -18,11 +18,25 @@ pub struct RemoteInputPlayerConnection {
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::RemoteInputPlayerConnection => "UnityEngine.InputSystem"
-    ."RemoteInputPlayerConnection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "RemoteInputPlayerConnection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
     type Target = crate::UnityEngine::ScriptableObject;
@@ -331,11 +345,25 @@ pub struct RemoteInputPlayerConnection_Subscriber {
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber =>
-    "UnityEngine.InputSystem"."RemoteInputPlayerConnection/Subscriber"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "Subscriber";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {

@@ -49,10 +49,24 @@ pub struct ServicePointScheduler {
     pub _cordl_ID: i32,
 }
 #[cfg(feature = "System+Net+ServicePointScheduler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::ServicePointScheduler =>
-    "System.Net"."ServicePointScheduler"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::ServicePointScheduler {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "ServicePointScheduler";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+ServicePointScheduler")]
 impl std::ops::Deref for crate::System::Net::ServicePointScheduler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -344,11 +358,25 @@ pub struct ServicePointScheduler_AsyncManualResetEvent {
     >,
 }
 #[cfg(feature = "System+Net+ServicePointScheduler+AsyncManualResetEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Net::ServicePointScheduler_AsyncManualResetEvent => "System.Net"
-    ."ServicePointScheduler/AsyncManualResetEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::ServicePointScheduler_AsyncManualResetEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "AsyncManualResetEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+ServicePointScheduler+AsyncManualResetEvent")]
 impl std::ops::Deref
 for crate::System::Net::ServicePointScheduler_AsyncManualResetEvent {
@@ -452,11 +480,25 @@ pub struct ServicePointScheduler_ConnectionGroup {
     >,
 }
 #[cfg(feature = "System+Net+ServicePointScheduler+ConnectionGroup")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Net::ServicePointScheduler_ConnectionGroup => "System.Net"
-    ."ServicePointScheduler/ConnectionGroup"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::ServicePointScheduler_ConnectionGroup {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "ConnectionGroup";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+ServicePointScheduler+ConnectionGroup")]
 impl std::ops::Deref for crate::System::Net::ServicePointScheduler_ConnectionGroup {
     type Target = quest_hook::libil2cpp::Il2CppObject;

@@ -9,10 +9,24 @@ pub struct HEU_AssetSync {
     pub _assetPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::HEU_AssetSync =>
-    "HoudiniEngineUnity"."HEU_AssetSync"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_AssetSync {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "HEU_AssetSync";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AssetSync {
     type Target = crate::HoudiniEngineUnity::HEU_BaseSync;
@@ -162,11 +176,25 @@ pub struct HEU_AssetSync_AssetSyncCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback => "HoudiniEngineUnity"
-    ."HEU_AssetSync/AssetSyncCallback"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "AssetSyncCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync+AssetSyncCallback")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback {
     type Target = crate::System::MulticastDelegate;

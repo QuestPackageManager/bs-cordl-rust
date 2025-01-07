@@ -20,9 +20,24 @@ pub struct NoteCutter {
     >,
 }
 #[cfg(feature = "NoteCutter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteCutter => ""."NoteCutter"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "NoteCutter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "NoteCutter")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -93,11 +108,25 @@ pub struct NoteCutter_CuttableBySaberSortParams {
     pub pos: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "NoteCutter+CuttableBySaberSortParams")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::NoteCutter_CuttableBySaberSortParams => ""
-    ."NoteCutter/CuttableBySaberSortParams"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "CuttableBySaberSortParams";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "NoteCutter+CuttableBySaberSortParams")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -149,11 +178,25 @@ pub struct NoteCutter_CuttableBySaberSortParamsComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "NoteCutter+CuttableBySaberSortParamsComparer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer => ""
-    ."NoteCutter/CuttableBySaberSortParamsComparer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "CuttableBySaberSortParamsComparer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "NoteCutter+CuttableBySaberSortParamsComparer")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {

@@ -5,9 +5,24 @@ pub struct OpenVR {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVR+OpenVR+OpenVR")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::OpenVR => "OVR.OpenVR"."OpenVR"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::OpenVR {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "OpenVR";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+OpenVR")]
 impl std::ops::Deref for crate::OVR::OpenVR::OpenVR {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -513,10 +528,24 @@ pub struct OpenVR_COpenVRContext {
     >,
 }
 #[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::OVR::OpenVR::OpenVR_COpenVRContext =>
-    "OVR.OpenVR"."OpenVR/COpenVRContext"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::OpenVR_COpenVRContext {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "OVR.OpenVR";
+    const CLASS_NAME: &'static str = "COpenVRContext";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
 impl std::ops::Deref for crate::OVR::OpenVR::OpenVR_COpenVRContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;

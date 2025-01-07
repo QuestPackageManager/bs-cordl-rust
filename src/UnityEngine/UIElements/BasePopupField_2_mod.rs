@@ -36,11 +36,44 @@ pub struct BasePopupField_2<
     __cordl_phantom_TValueChoice: std::marker::PhantomData<TValueChoice>,
 }
 #[cfg(feature = "UnityEngine+UIElements+BasePopupField_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::BasePopupField_2 <
-    TValueType, TValueChoice > => "UnityEngine.UIElements"."BasePopupField`2" <
-    TValueType, TValueChoice >
-);
+unsafe impl<
+    TValueType: quest_hook::libil2cpp::Type,
+    TValueChoice: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::BasePopupField_2<TValueType, TValueChoice> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "BasePopupField`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.UIElements",
+                        "BasePopupField`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TValueType, TValueChoice)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+BasePopupField_2")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
@@ -363,12 +396,47 @@ pub struct BasePopupField_2_PopupTextElement<
     __cordl_phantom_TValueChoice: std::marker::PhantomData<TValueChoice>,
 }
 #[cfg(feature = "UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::BasePopupField_2_PopupTextElement < TValueType,
-    TValueChoice > => "UnityEngine.UIElements"."BasePopupField`2/PopupTextElement" <
-    TValueType, TValueChoice >
-);
+unsafe impl<
+    TValueType: quest_hook::libil2cpp::Type,
+    TValueChoice: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::BasePopupField_2_PopupTextElement<
+    TValueType,
+    TValueChoice,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "PopupTextElement";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.UIElements",
+                        "PopupTextElement",
+                    )
+                    .unwrap()
+                    .make_generic::<(TValueType, TValueChoice)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,

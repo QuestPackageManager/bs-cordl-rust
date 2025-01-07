@@ -5,10 +5,25 @@ pub struct WeakHashtable {
     __cordl_parent: crate::System::Collections::Hashtable,
 }
 #[cfg(feature = "System+ComponentModel+WeakHashtable")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::ComponentModel::WeakHashtable =>
-    "System.ComponentModel"."WeakHashtable"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::WeakHashtable {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "WeakHashtable";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+WeakHashtable")]
 impl std::ops::Deref for crate::System::ComponentModel::WeakHashtable {
     type Target = crate::System::Collections::Hashtable;
@@ -81,11 +96,25 @@ pub struct WeakHashtable_WeakKeyComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::WeakHashtable_WeakKeyComparer => "System.ComponentModel"
-    ."WeakHashtable/WeakKeyComparer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "WeakKeyComparer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
 impl std::ops::Deref for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;

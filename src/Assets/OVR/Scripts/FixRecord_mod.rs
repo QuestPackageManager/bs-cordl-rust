@@ -16,10 +16,24 @@ pub struct FixRecord {
     pub complete: bool,
 }
 #[cfg(feature = "Assets+OVR+Scripts+FixRecord")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Assets::OVR::Scripts::FixRecord =>
-    "Assets.OVR.Scripts"."FixRecord"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Assets::OVR::Scripts::FixRecord {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Assets.OVR.Scripts";
+    const CLASS_NAME: &'static str = "FixRecord";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Assets+OVR+Scripts+FixRecord")]
 impl std::ops::Deref for crate::Assets::OVR::Scripts::FixRecord {
     type Target = crate::Assets::OVR::Scripts::Record;

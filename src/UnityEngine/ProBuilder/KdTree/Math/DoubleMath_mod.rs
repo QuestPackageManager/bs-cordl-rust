@@ -5,11 +5,25 @@ pub struct DoubleMath {
     __cordl_parent: crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<f64>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ProBuilder::KdTree::Math::DoubleMath =>
-    "UnityEngine.ProBuilder.KdTree.Math"."DoubleMath"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ProBuilder::KdTree::Math::DoubleMath {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.ProBuilder.KdTree.Math";
+    const CLASS_NAME: &'static str = "DoubleMath";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::KdTree::Math::DoubleMath {
     type Target = crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<f64>;

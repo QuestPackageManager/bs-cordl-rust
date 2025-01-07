@@ -6,10 +6,25 @@ pub struct RuntimeThread {
     pub thread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
 }
 #[cfg(feature = "Internal+Runtime+Augments+RuntimeThread")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Internal::Runtime::Augments::RuntimeThread =>
-    "Internal.Runtime.Augments"."RuntimeThread"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Internal::Runtime::Augments::RuntimeThread {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Internal.Runtime.Augments";
+    const CLASS_NAME: &'static str = "RuntimeThread";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Internal+Runtime+Augments+RuntimeThread")]
 impl std::ops::Deref for crate::Internal::Runtime::Augments::RuntimeThread {
     type Target = quest_hook::libil2cpp::Il2CppObject;

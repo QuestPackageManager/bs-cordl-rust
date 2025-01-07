@@ -23,9 +23,24 @@ pub struct DroneHover {
     pub _cloth: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cloth>,
 }
 #[cfg(feature = "DroneHover")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::DroneHover => ""."DroneHover"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DroneHover {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "DroneHover";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "DroneHover")]
 impl std::ops::Deref for crate::GlobalNamespace::DroneHover {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -131,10 +146,25 @@ pub struct DroneHover_SineLayer {
     pub offset: f32,
 }
 #[cfg(feature = "DroneHover+SineLayer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::DroneHover_SineLayer => ""
-    ."DroneHover/SineLayer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::DroneHover_SineLayer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SineLayer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "DroneHover+SineLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::DroneHover_SineLayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;

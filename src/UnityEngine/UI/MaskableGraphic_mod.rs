@@ -19,10 +19,24 @@ pub struct MaskableGraphic {
     >,
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::MaskableGraphic =>
-    "UnityEngine.UI"."MaskableGraphic"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::MaskableGraphic {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "MaskableGraphic";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
 impl std::ops::Deref for crate::UnityEngine::UI::MaskableGraphic {
     type Target = crate::UnityEngine::UI::Graphic;
@@ -341,11 +355,25 @@ pub struct MaskableGraphic_CullStateChangedEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<bool>,
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent => "UnityEngine.UI"
-    ."MaskableGraphic/CullStateChangedEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "CullStateChangedEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<bool>;

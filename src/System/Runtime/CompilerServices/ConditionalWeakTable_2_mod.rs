@@ -17,11 +17,44 @@ pub struct ConditionalWeakTable_2<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Runtime::CompilerServices::ConditionalWeakTable_2 < TKey, TValue > =>
-    "System.Runtime.CompilerServices"."ConditionalWeakTable`2" < TKey, TValue >
-);
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValue> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
+    const CLASS_NAME: &'static str = "ConditionalWeakTable`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Runtime.CompilerServices",
+                        "ConditionalWeakTable`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -358,12 +391,47 @@ pub struct ConditionalWeakTable_2_CreateValueCallback<
 #[cfg(
     feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Runtime::CompilerServices::ConditionalWeakTable_2_CreateValueCallback <
-    TKey, TValue > => "System.Runtime.CompilerServices"
-    ."ConditionalWeakTable`2/CreateValueCallback" < TKey, TValue >
-);
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_CreateValueCallback<
+    TKey,
+    TValue,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
+    const CLASS_NAME: &'static str = "CreateValueCallback";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Runtime.CompilerServices",
+                        "CreateValueCallback",
+                    )
+                    .unwrap()
+                    .make_generic::<(TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
 )]
@@ -488,12 +556,47 @@ pub struct ConditionalWeakTable_2_Enumerator<
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator < TKey, TValue
-    > => "System.Runtime.CompilerServices"."ConditionalWeakTable`2/Enumerator" < TKey,
-    TValue >
-);
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
+    const CLASS_NAME: &'static str = "Enumerator";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Runtime.CompilerServices",
+                        "Enumerator",
+                    )
+                    .unwrap()
+                    .make_generic::<(TKey, TValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator")]
 impl<
     TKey: quest_hook::libil2cpp::Type,

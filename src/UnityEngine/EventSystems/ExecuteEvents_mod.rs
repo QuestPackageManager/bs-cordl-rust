@@ -5,10 +5,25 @@ pub struct ExecuteEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::EventSystems::ExecuteEvents =>
-    "UnityEngine.EventSystems"."ExecuteEvents"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::ExecuteEvents {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "ExecuteEvents";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::ExecuteEvents {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -705,11 +720,41 @@ pub struct ExecuteEvents_EventFunction_1<T1: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
 }
 #[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents+EventFunction_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1 < T1 > =>
-    "UnityEngine.EventSystems"."ExecuteEvents/EventFunction`1" < T1 >
-);
+unsafe impl<T1: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T1> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "EventFunction`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.EventSystems",
+                        "EventFunction`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T1)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents+EventFunction_1")]
 impl<T1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T1> {

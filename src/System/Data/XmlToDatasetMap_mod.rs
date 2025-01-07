@@ -11,10 +11,24 @@ pub struct XmlToDatasetMap {
     >,
 }
 #[cfg(feature = "System+Data+XmlToDatasetMap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::XmlToDatasetMap => "System.Data"
-    ."XmlToDatasetMap"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::XmlToDatasetMap {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "XmlToDatasetMap";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Data+XmlToDatasetMap")]
 impl std::ops::Deref for crate::System::Data::XmlToDatasetMap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -350,10 +364,25 @@ pub struct XmlToDatasetMap_TableSchemaInfo {
     >,
 }
 #[cfg(feature = "System+Data+XmlToDatasetMap+TableSchemaInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::XmlToDatasetMap_TableSchemaInfo =>
-    "System.Data"."XmlToDatasetMap/TableSchemaInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Data::XmlToDatasetMap_TableSchemaInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "TableSchemaInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Data+XmlToDatasetMap+TableSchemaInfo")]
 impl std::ops::Deref for crate::System::Data::XmlToDatasetMap_TableSchemaInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -410,10 +439,25 @@ pub struct XmlToDatasetMap_XmlNodeIdHashtable {
     >,
 }
 #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdHashtable")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::XmlToDatasetMap_XmlNodeIdHashtable
-    => "System.Data"."XmlToDatasetMap/XmlNodeIdHashtable"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "XmlNodeIdHashtable";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdHashtable")]
 impl std::ops::Deref for crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
     type Target = crate::System::Collections::Hashtable;
@@ -525,10 +569,25 @@ pub struct XmlToDatasetMap_XmlNodeIdentety {
     pub NamespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdentety")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::XmlToDatasetMap_XmlNodeIdentety =>
-    "System.Data"."XmlToDatasetMap/XmlNodeIdentety"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Data";
+    const CLASS_NAME: &'static str = "XmlNodeIdentety";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdentety")]
 impl std::ops::Deref for crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
     type Target = quest_hook::libil2cpp::Il2CppObject;

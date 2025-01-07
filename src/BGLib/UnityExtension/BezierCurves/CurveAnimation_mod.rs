@@ -27,11 +27,25 @@ pub struct CurveAnimation {
     pub _isPlaying_k__BackingField: bool,
 }
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BGLib::UnityExtension::BezierCurves::CurveAnimation =>
-    "BGLib.UnityExtension.BezierCurves"."CurveAnimation"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BGLib.UnityExtension.BezierCurves";
+    const CLASS_NAME: &'static str = "CurveAnimation";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -152,11 +166,25 @@ pub struct CurveAnimation_CurveEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent,
 }
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent =>
-    "BGLib.UnityExtension.BezierCurves"."CurveAnimation/CurveEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BGLib.UnityExtension.BezierCurves";
+    const CLASS_NAME: &'static str = "CurveEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent")]
 impl std::ops::Deref
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent {
@@ -210,11 +238,41 @@ pub struct CurveAnimation_CurveEvent_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1 < T > =>
-    "BGLib.UnityExtension.BezierCurves"."CurveAnimation/CurveEvent`1" < T >
-);
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<T> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BGLib.UnityExtension.BezierCurves";
+    const CLASS_NAME: &'static str = "CurveEvent`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "BGLib.UnityExtension.BezierCurves",
+                        "CurveEvent`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<T> {

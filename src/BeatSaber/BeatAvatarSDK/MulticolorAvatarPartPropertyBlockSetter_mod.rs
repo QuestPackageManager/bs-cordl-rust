@@ -25,11 +25,25 @@ pub struct MulticolorAvatarPartPropertyBlockSetter {
     pub _uvSegment: i32,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter =>
-    "BeatSaber.BeatAvatarSDK"."MulticolorAvatarPartPropertyBlockSetter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.BeatAvatarSDK";
+    const CLASS_NAME: &'static str = "MulticolorAvatarPartPropertyBlockSetter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter")]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
@@ -138,11 +152,25 @@ pub struct MulticolorAvatarPartPropertyBlockSetter_ColorData {
 #[cfg(
     feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_ColorData =>
-    "BeatSaber.BeatAvatarSDK"."MulticolorAvatarPartPropertyBlockSetter/ColorData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_ColorData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.BeatAvatarSDK";
+    const CLASS_NAME: &'static str = "ColorData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "BeatSaber+BeatAvatarSDK+MulticolorAvatarPartPropertyBlockSetter+ColorData"
 )]

@@ -19,10 +19,25 @@ pub struct CustomAttributeData {
     >,
 }
 #[cfg(feature = "System+Reflection+CustomAttributeData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Reflection::CustomAttributeData =>
-    "System.Reflection"."CustomAttributeData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Reflection::CustomAttributeData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Reflection";
+    const CLASS_NAME: &'static str = "CustomAttributeData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Reflection+CustomAttributeData")]
 impl std::ops::Deref for crate::System::Reflection::CustomAttributeData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -396,11 +411,25 @@ pub struct CustomAttributeData_LazyCAttrData {
     pub data_length: u32,
 }
 #[cfg(feature = "System+Reflection+CustomAttributeData+LazyCAttrData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Reflection::CustomAttributeData_LazyCAttrData => "System.Reflection"
-    ."CustomAttributeData/LazyCAttrData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Reflection::CustomAttributeData_LazyCAttrData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Reflection";
+    const CLASS_NAME: &'static str = "LazyCAttrData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Reflection+CustomAttributeData+LazyCAttrData")]
 impl std::ops::Deref for crate::System::Reflection::CustomAttributeData_LazyCAttrData {
     type Target = quest_hook::libil2cpp::Il2CppObject;

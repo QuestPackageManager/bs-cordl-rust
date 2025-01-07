@@ -5,10 +5,25 @@ pub struct BeatmapDataLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::BeatmapDataLoaderVersion3::BeatmapDataLoader =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "BeatmapDataLoader";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -347,11 +362,25 @@ pub struct BeatmapDataLoader_BasicEventConverter {
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BasicEventConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/BasicEventConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "BasicEventConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BasicEventConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter {
@@ -451,11 +480,25 @@ pub struct BeatmapDataLoader_BeatmapDataItemConverter {
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BeatmapDataItemConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/BeatmapDataItemConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "BeatmapDataItemConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BeatmapDataItemConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter {
@@ -535,11 +578,25 @@ pub struct BeatmapDataLoader_BombNoteConverter {
     __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BombNoteConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/BombNoteConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "BombNoteConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BombNoteConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter {
@@ -621,11 +678,25 @@ pub struct BeatmapDataLoader_BpmEventConverter {
     __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BpmEventConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_BpmEventConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/BpmEventConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BpmEventConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "BpmEventConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BpmEventConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BpmEventConverter {
@@ -707,11 +778,25 @@ pub struct BeatmapDataLoader_BurstSliderConverter {
     __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BurstSliderConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/BurstSliderConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "BurstSliderConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BurstSliderConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter {
@@ -793,11 +878,25 @@ pub struct BeatmapDataLoader_ColorBoostEventConverter {
     __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorBoostEventConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/ColorBoostEventConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "ColorBoostEventConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorBoostEventConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter {
@@ -879,11 +978,25 @@ pub struct BeatmapDataLoader_ColorNoteConverter {
     __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorNoteConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/ColorNoteConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "ColorNoteConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorNoteConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter {
@@ -965,11 +1078,25 @@ pub struct BeatmapDataLoader_FloatVfxBaseDataConvertor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxBaseDataConvertor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConvertor =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/FloatVfxBaseDataConvertor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConvertor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "FloatVfxBaseDataConvertor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxBaseDataConvertor")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConvertor {
@@ -1022,11 +1149,25 @@ pub struct BeatmapDataLoader_FloatVfxEventBoxConverter {
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxEventBoxConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/FloatVfxEventBoxConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "FloatVfxEventBoxConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxEventBoxConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConverter {
@@ -1101,11 +1242,25 @@ pub struct BeatmapDataLoader_IndexFilterConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IndexFilterConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/IndexFilterConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "IndexFilterConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IndexFilterConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter {
@@ -1155,11 +1310,25 @@ pub struct BeatmapDataLoader_IntVfxBaseDataConvertor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxBaseDataConvertor")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/IntVfxBaseDataConvertor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "IntVfxBaseDataConvertor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxBaseDataConvertor")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor {
@@ -1212,11 +1381,25 @@ pub struct BeatmapDataLoader_IntVfxEventBoxConverter {
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxEventBoxConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/IntVfxEventBoxConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "IntVfxEventBoxConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxEventBoxConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter {
@@ -1295,11 +1478,25 @@ pub struct BeatmapDataLoader_LightColoBaseDataConvertor {
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColoBaseDataConvertor"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvertor =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/LightColoBaseDataConvertor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvertor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "LightColoBaseDataConvertor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColoBaseDataConvertor"
 )]
@@ -1360,11 +1557,25 @@ pub struct BeatmapDataLoader_LightColorEventBoxConverter {
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColorEventBoxConverter"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/LightColorEventBoxConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "LightColorEventBoxConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColorEventBoxConverter"
 )]
@@ -1443,11 +1654,25 @@ pub struct BeatmapDataLoader_LightRotationBaseDataConvertor {
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationBaseDataConvertor"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationBaseDataConvertor =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/LightRotationBaseDataConvertor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationBaseDataConvertor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "LightRotationBaseDataConvertor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationBaseDataConvertor"
 )]
@@ -1508,11 +1733,25 @@ pub struct BeatmapDataLoader_LightRotationEventBoxConverter {
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationEventBoxConverter"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/LightRotationEventBoxConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "LightRotationEventBoxConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationEventBoxConverter"
 )]
@@ -1591,11 +1830,25 @@ pub struct BeatmapDataLoader_LightTranslationBaseDataConvertor {
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationBaseDataConvertor"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseDataConvertor =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/LightTranslationBaseDataConvertor"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseDataConvertor {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "LightTranslationBaseDataConvertor";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationBaseDataConvertor"
 )]
@@ -1656,11 +1909,25 @@ pub struct BeatmapDataLoader_LightTranslationEventBoxConverter {
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationEventBoxConverter"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBoxConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/LightTranslationEventBoxConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBoxConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "LightTranslationEventBoxConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationEventBoxConverter"
 )]
@@ -1735,11 +2002,25 @@ pub struct BeatmapDataLoader_ObstacleConverter {
     __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ObstacleConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/ObstacleConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "ObstacleConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ObstacleConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter {
@@ -1828,11 +2109,25 @@ pub struct BeatmapDataLoader_SliderConverter {
     __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SliderConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/SliderConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "SliderConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SliderConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter {
@@ -1919,11 +2214,25 @@ pub struct BeatmapDataLoader_SpecialEventsFilter {
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/SpecialEventsFilter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "SpecialEventsFilter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter {
@@ -2000,11 +2309,25 @@ pub struct BeatmapDataLoader_WaypointConverter {
     __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter =>
-    "BeatmapDataLoaderVersion3"."BeatmapDataLoader/WaypointConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapDataLoaderVersion3";
+    const CLASS_NAME: &'static str = "WaypointConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter {

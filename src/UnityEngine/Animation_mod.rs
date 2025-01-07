@@ -5,10 +5,24 @@ pub struct Animation {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }
 #[cfg(feature = "UnityEngine+Animation")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Animation => "UnityEngine"
-    ."Animation"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Animation {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "Animation";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Animation")]
 impl std::ops::Deref for crate::UnityEngine::Animation {
     type Target = crate::UnityEngine::Behaviour;
@@ -732,10 +746,24 @@ pub struct Animation_Enumerator {
     pub m_CurrentIndex: i32,
 }
 #[cfg(feature = "UnityEngine+Animation+Enumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Animation_Enumerator =>
-    "UnityEngine"."Animation/Enumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Animation_Enumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "Enumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Animation+Enumerator")]
 impl std::ops::Deref for crate::UnityEngine::Animation_Enumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;

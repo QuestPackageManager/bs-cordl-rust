@@ -6,11 +6,25 @@ pub struct MethodBinaryExpression {
     pub _method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
 }
 #[cfg(feature = "System+Linq+Expressions+MethodBinaryExpression")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::MethodBinaryExpression => "System.Linq.Expressions"
-    ."MethodBinaryExpression"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Linq::Expressions::MethodBinaryExpression {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq.Expressions";
+    const CLASS_NAME: &'static str = "MethodBinaryExpression";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+MethodBinaryExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::MethodBinaryExpression {
     type Target = crate::System::Linq::Expressions::SimpleBinaryExpression;

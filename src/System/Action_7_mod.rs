@@ -20,10 +20,45 @@ pub struct Action_7<
     __cordl_phantom_T7: std::marker::PhantomData<T7>,
 }
 #[cfg(feature = "System+Action_7")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Action_7 < T1, T2, T3, T4, T5, T6, T7 >
-    => "System"."Action`7" < T1, T2, T3, T4, T5, T6, T7 >
-);
+unsafe impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+    T4: quest_hook::libil2cpp::Type,
+    T5: quest_hook::libil2cpp::Type,
+    T6: quest_hook::libil2cpp::Type,
+    T7: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type for crate::System::Action_7<T1, T2, T3, T4, T5, T6, T7> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System";
+    const CLASS_NAME: &'static str = "Action`7";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find("System", "Action`7")
+                    .unwrap()
+                    .make_generic::<(T1, T2, T3, T4, T5, T6, T7)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Action_7")]
 impl<
     T1: quest_hook::libil2cpp::Type,

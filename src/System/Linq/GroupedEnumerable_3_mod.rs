@@ -22,10 +22,45 @@ pub struct GroupedEnumerable_3<
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
 #[cfg(feature = "System+Linq+GroupedEnumerable_3")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Linq::GroupedEnumerable_3 < TSource,
-    TKey, TElement > => "System.Linq"."GroupedEnumerable`3" < TSource, TKey, TElement >
-);
+unsafe impl<
+    TSource: quest_hook::libil2cpp::Type,
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::System::Linq::GroupedEnumerable_3<TSource, TKey, TElement> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Linq";
+    const CLASS_NAME: &'static str = "GroupedEnumerable`3";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Linq",
+                        "GroupedEnumerable`3",
+                    )
+                    .unwrap()
+                    .make_generic::<(TSource, TKey, TElement)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Linq+GroupedEnumerable_3")]
 impl<
     TSource: quest_hook::libil2cpp::Type,

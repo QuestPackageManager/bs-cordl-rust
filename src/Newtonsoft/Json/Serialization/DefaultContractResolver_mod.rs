@@ -25,11 +25,25 @@ pub struct DefaultContractResolver {
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Newtonsoft::Json::Serialization::DefaultContractResolver =>
-    "Newtonsoft.Json.Serialization"."DefaultContractResolver"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Newtonsoft.Json.Serialization";
+    const CLASS_NAME: &'static str = "DefaultContractResolver";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
@@ -1048,13 +1062,47 @@ pub struct DefaultContractResolver_EnumerableDictionaryWrapper_2<
 #[cfg(
     feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2
-    < TEnumeratorKey, TEnumeratorValue > => "Newtonsoft.Json.Serialization"
-    ."DefaultContractResolver/EnumerableDictionaryWrapper`2" < TEnumeratorKey,
-    TEnumeratorValue >
-);
+unsafe impl<
+    TEnumeratorKey: quest_hook::libil2cpp::Type,
+    TEnumeratorValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2<
+    TEnumeratorKey,
+    TEnumeratorValue,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Newtonsoft.Json.Serialization";
+    const CLASS_NAME: &'static str = "EnumerableDictionaryWrapper`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Newtonsoft.Json.Serialization",
+                        "EnumerableDictionaryWrapper`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TEnumeratorKey, TEnumeratorValue)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
 )]

@@ -16,12 +16,55 @@ pub struct INodePoseSyncStateManager_5<
     __cordl_phantom_TDeltaSerializable: std::marker::PhantomData<TDeltaSerializable>,
 }
 #[cfg(feature = "INodePoseSyncStateManager_5")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::INodePoseSyncStateManager_5 <
-    TStateTable, TType, TState, TSerializable, TDeltaSerializable > => ""
-    ."INodePoseSyncStateManager`5" < TStateTable, TType, TState, TSerializable,
-    TDeltaSerializable >
-);
+unsafe impl<
+    TStateTable: quest_hook::libil2cpp::Type,
+    TType: quest_hook::libil2cpp::Type,
+    TState: quest_hook::libil2cpp::Type,
+    TSerializable: quest_hook::libil2cpp::Type,
+    TDeltaSerializable: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::INodePoseSyncStateManager_5<
+    TStateTable,
+    TType,
+    TState,
+    TSerializable,
+    TDeltaSerializable,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "INodePoseSyncStateManager`5";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "INodePoseSyncStateManager`5",
+                    )
+                    .unwrap()
+                    .make_generic::<
+                        (TStateTable, TType, TState, TSerializable, TDeltaSerializable),
+                    >()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "INodePoseSyncStateManager_5")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,

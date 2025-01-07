@@ -15,10 +15,24 @@ pub struct QuickPlaySetupModel {
     pub _lastRequestTime: crate::System::DateTime,
 }
 #[cfg(feature = "QuickPlaySetupModel")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::QuickPlaySetupModel => ""
-    ."QuickPlaySetupModel"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::QuickPlaySetupModel {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "QuickPlaySetupModel";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "QuickPlaySetupModel")]
 impl std::ops::Deref for crate::GlobalNamespace::QuickPlaySetupModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -167,11 +181,25 @@ pub struct QuickPlaySetupModel_QuickPlaySetupDataFB {
     >,
 }
 #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB => ""
-    ."QuickPlaySetupModel/QuickPlaySetupDataFB"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "QuickPlaySetupDataFB";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
 impl std::ops::Deref
 for crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {

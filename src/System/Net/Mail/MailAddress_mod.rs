@@ -9,10 +9,24 @@ pub struct MailAddress {
     pub _host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+Mail+MailAddress")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Mail::MailAddress =>
-    "System.Net.Mail"."MailAddress"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Mail::MailAddress {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Mail";
+    const CLASS_NAME: &'static str = "MailAddress";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Mail+MailAddress")]
 impl std::ops::Deref for crate::System::Net::Mail::MailAddress {
     type Target = quest_hook::libil2cpp::Il2CppObject;

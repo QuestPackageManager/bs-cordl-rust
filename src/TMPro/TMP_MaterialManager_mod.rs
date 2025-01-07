@@ -5,10 +5,24 @@ pub struct TMP_MaterialManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "TMPro+TMP_MaterialManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_MaterialManager => "TMPro"
-    ."TMP_MaterialManager"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_MaterialManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "TMPro";
+    const CLASS_NAME: &'static str = "TMP_MaterialManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TMPro+TMP_MaterialManager")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -204,10 +218,25 @@ pub struct TMP_MaterialManager_FallbackMaterial {
     pub count: i32,
 }
 #[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_MaterialManager_FallbackMaterial =>
-    "TMPro"."TMP_MaterialManager/FallbackMaterial"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "TMPro";
+    const CLASS_NAME: &'static str = "FallbackMaterial";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -262,10 +291,25 @@ pub struct TMP_MaterialManager_MaskingMaterial {
     pub stencilID: i32,
 }
 #[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_MaterialManager_MaskingMaterial =>
-    "TMPro"."TMP_MaterialManager/MaskingMaterial"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "TMPro";
+    const CLASS_NAME: &'static str = "MaskingMaterial";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
     type Target = quest_hook::libil2cpp::Il2CppObject;

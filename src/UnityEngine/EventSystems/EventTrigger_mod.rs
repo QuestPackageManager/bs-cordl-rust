@@ -12,10 +12,25 @@ pub struct EventTrigger {
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::EventSystems::EventTrigger =>
-    "UnityEngine.EventSystems"."EventTrigger"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::EventTrigger {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "EventTrigger";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::EventTrigger {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -647,10 +662,25 @@ pub struct EventTrigger_Entry {
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+Entry")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::EventSystems::EventTrigger_Entry =>
-    "UnityEngine.EventSystems"."EventTrigger/Entry"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::EventTrigger_Entry {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "Entry";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+Entry")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::EventTrigger_Entry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -703,11 +733,25 @@ pub struct EventTrigger_TriggerEvent {
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+TriggerEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::EventSystems::EventTrigger_TriggerEvent => "UnityEngine.EventSystems"
-    ."EventTrigger/TriggerEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "TriggerEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+TriggerEvent")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<

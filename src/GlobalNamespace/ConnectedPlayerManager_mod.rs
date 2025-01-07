@@ -97,10 +97,25 @@ pub struct ConnectedPlayerManager {
     >,
 }
 #[cfg(feature = "ConnectedPlayerManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::ConnectedPlayerManager => ""
-    ."ConnectedPlayerManager"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1429,11 +1444,25 @@ pub struct ConnectedPlayerManager_ConnectedPlayer {
     pub _latency: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LongRollingAverage>,
 }
 #[cfg(feature = "ConnectedPlayerManager+ConnectedPlayer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer => ""
-    ."ConnectedPlayerManager/ConnectedPlayer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ConnectedPlayer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+ConnectedPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2046,11 +2075,85 @@ pub enum ConnectedPlayerManager_InternalMessageType {
     SyncTime = 0u8,
 }
 #[cfg(feature = "ConnectedPlayerManager+InternalMessageType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_InternalMessageType => ""
-    ."ConnectedPlayerManager/InternalMessageType"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InternalMessageType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+KickPlayerPacket")]
 #[repr(C)]
 #[derive(Debug)]
@@ -2059,11 +2162,25 @@ pub struct ConnectedPlayerManager_KickPlayerPacket {
     pub disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
 }
 #[cfg(feature = "ConnectedPlayerManager+KickPlayerPacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket => ""
-    ."ConnectedPlayerManager/KickPlayerPacket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "KickPlayerPacket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+KickPlayerPacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
@@ -2212,11 +2329,85 @@ pub enum ConnectedPlayerManager_MessageType {
     Party = 6u8,
 }
 #[cfg(feature = "ConnectedPlayerManager+MessageType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_MessageType => ""
-    ."ConnectedPlayerManager/MessageType"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "MessageType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PingPacket")]
 #[repr(C)]
 #[derive(Debug)]
@@ -2225,11 +2416,25 @@ pub struct ConnectedPlayerManager_PingPacket {
     pub pingTime: i64,
 }
 #[cfg(feature = "ConnectedPlayerManager+PingPacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_PingPacket => ""
-    ."ConnectedPlayerManager/PingPacket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PingPacket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PingPacket")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2375,11 +2580,25 @@ pub struct ConnectedPlayerManager_PlayerAvatarPacket {
     pub playerAvatar: crate::GlobalNamespace::MultiplayerAvatarsData,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerAvatarPacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket => ""
-    ."ConnectedPlayerManager/PlayerAvatarPacket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PlayerAvatarPacket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PlayerAvatarPacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
@@ -2530,11 +2749,25 @@ pub struct ConnectedPlayerManager_PlayerConnectedPacket {
     pub isConnectionOwner: bool,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerConnectedPacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket => ""
-    ."ConnectedPlayerManager/PlayerConnectedPacket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PlayerConnectedPacket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PlayerConnectedPacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
@@ -2686,11 +2919,25 @@ pub struct ConnectedPlayerManager_PlayerDisconnectedPacket {
     pub disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerDisconnectedPacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket => ""
-    ."ConnectedPlayerManager/PlayerDisconnectedPacket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PlayerDisconnectedPacket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PlayerDisconnectedPacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
@@ -2845,11 +3092,25 @@ pub struct ConnectedPlayerManager_PlayerIdentityPacket {
     >,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerIdentityPacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket => ""
-    ."ConnectedPlayerManager/PlayerIdentityPacket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PlayerIdentityPacket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PlayerIdentityPacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
@@ -3004,11 +3265,25 @@ pub struct ConnectedPlayerManager_PlayerSortOrderPacket {
     pub sortIndex: i32,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerSortOrderPacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket => ""
-    ."ConnectedPlayerManager/PlayerSortOrderPacket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PlayerSortOrderPacket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PlayerSortOrderPacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
@@ -3157,11 +3432,25 @@ pub struct ConnectedPlayerManager_PlayerStatePacket {
     pub playerState: crate::GlobalNamespace::PlayerStateHash,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerStatePacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket => ""
-    ."ConnectedPlayerManager/PlayerStatePacket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PlayerStatePacket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PlayerStatePacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
@@ -3309,11 +3598,25 @@ pub struct ConnectedPlayerManager_PongPacket {
     pub pingTime: i64,
 }
 #[cfg(feature = "ConnectedPlayerManager+PongPacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_PongPacket => ""
-    ."ConnectedPlayerManager/PongPacket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PongPacket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+PongPacket")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3459,11 +3762,25 @@ pub struct ConnectedPlayerManager_SyncTimePacket {
     pub syncTime: i64,
 }
 #[cfg(feature = "ConnectedPlayerManager+SyncTimePacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket => ""
-    ."ConnectedPlayerManager/SyncTimePacket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SyncTimePacket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ConnectedPlayerManager+SyncTimePacket")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;

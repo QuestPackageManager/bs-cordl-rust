@@ -5,10 +5,25 @@ pub struct MultiplayerScoreRingItem {
     __cordl_parent: crate::GlobalNamespace::MultiplayerScoreItem,
 }
 #[cfg(feature = "MultiplayerScoreRingItem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerScoreRingItem => ""
-    ."MultiplayerScoreRingItem"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MultiplayerScoreRingItem {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "MultiplayerScoreRingItem";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MultiplayerScoreRingItem")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreRingItem {
     type Target = crate::GlobalNamespace::MultiplayerScoreItem;
@@ -63,10 +78,25 @@ pub struct MultiplayerScoreRingItem_Pool {
     >,
 }
 #[cfg(feature = "MultiplayerScoreRingItem+Pool")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerScoreRingItem_Pool
-    => ""."MultiplayerScoreRingItem/Pool"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MultiplayerScoreRingItem_Pool {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "Pool";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MultiplayerScoreRingItem+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreRingItem_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<

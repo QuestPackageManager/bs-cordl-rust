@@ -17,10 +17,24 @@ pub struct FtpWebResponse {
     pub _exitMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+FtpWebResponse")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::FtpWebResponse => "System.Net"
-    ."FtpWebResponse"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::FtpWebResponse {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "FtpWebResponse";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+FtpWebResponse")]
 impl std::ops::Deref for crate::System::Net::FtpWebResponse {
     type Target = crate::System::Net::WebResponse;
@@ -208,10 +222,25 @@ pub struct FtpWebResponse_EmptyStream {
     __cordl_parent: crate::System::IO::MemoryStream,
 }
 #[cfg(feature = "System+Net+FtpWebResponse+EmptyStream")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::FtpWebResponse_EmptyStream =>
-    "System.Net"."FtpWebResponse/EmptyStream"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::FtpWebResponse_EmptyStream {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net";
+    const CLASS_NAME: &'static str = "EmptyStream";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+FtpWebResponse+EmptyStream")]
 impl std::ops::Deref for crate::System::Net::FtpWebResponse_EmptyStream {
     type Target = crate::System::IO::MemoryStream;

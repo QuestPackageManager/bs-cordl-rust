@@ -17,11 +17,25 @@ pub struct MessageDictionary {
     pub _ownProperties: bool,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+MessageDictionary")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Runtime::Remoting::Messaging::MessageDictionary =>
-    "System.Runtime.Remoting.Messaging"."MessageDictionary"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Runtime::Remoting::Messaging::MessageDictionary {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.Remoting.Messaging";
+    const CLASS_NAME: &'static str = "MessageDictionary";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Runtime+Remoting+Messaging+MessageDictionary")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::MessageDictionary {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -408,11 +422,25 @@ pub struct MessageDictionary_DictionaryEnumerator {
 #[cfg(
     feature = "System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEnumerator =>
-    "System.Runtime.Remoting.Messaging"."MessageDictionary/DictionaryEnumerator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Runtime::Remoting::Messaging::MessageDictionary_DictionaryEnumerator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.Remoting.Messaging";
+    const CLASS_NAME: &'static str = "DictionaryEnumerator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(
     feature = "System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
 )]

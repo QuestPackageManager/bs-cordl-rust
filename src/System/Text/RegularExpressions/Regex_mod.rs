@@ -33,10 +33,25 @@ pub struct Regex {
     pub _refsInitialized: bool,
 }
 #[cfg(feature = "System+Text+RegularExpressions+Regex")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Text::RegularExpressions::Regex =>
-    "System.Text.RegularExpressions"."Regex"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Text::RegularExpressions::Regex {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Text.RegularExpressions";
+    const CLASS_NAME: &'static str = "Regex";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Text+RegularExpressions+Regex")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::Regex {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -646,11 +661,25 @@ pub struct Regex_CachedCodeEntry {
     >,
 }
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntry")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Text::RegularExpressions::Regex_CachedCodeEntry =>
-    "System.Text.RegularExpressions"."Regex/CachedCodeEntry"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Text.RegularExpressions";
+    const CLASS_NAME: &'static str = "CachedCodeEntry";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntry")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -755,11 +784,85 @@ pub struct Regex_CachedCodeEntryKey {
     pub _pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Text::RegularExpressions::Regex_CachedCodeEntryKey =>
-    "System.Text.RegularExpressions"."Regex/CachedCodeEntryKey"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.Text.RegularExpressions";
+    const CLASS_NAME: &'static str = "CachedCodeEntryKey";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {

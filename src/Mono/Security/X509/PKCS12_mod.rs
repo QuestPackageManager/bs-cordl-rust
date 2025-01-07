@@ -19,10 +19,24 @@ pub struct PKCS12 {
     >,
 }
 #[cfg(feature = "Mono+Security+X509+PKCS12")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::X509::PKCS12 =>
-    "Mono.Security.X509"."PKCS12"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::X509::PKCS12 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.X509";
+    const CLASS_NAME: &'static str = "PKCS12";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+X509+PKCS12")]
 impl std::ops::Deref for crate::Mono::Security::X509::PKCS12 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -463,10 +477,25 @@ pub struct PKCS12_DeriveBytes {
     pub _salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::X509::PKCS12_DeriveBytes =>
-    "Mono.Security.X509"."PKCS12/DeriveBytes"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Security::X509::PKCS12_DeriveBytes {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.X509";
+    const CLASS_NAME: &'static str = "DeriveBytes";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
 impl std::ops::Deref for crate::Mono::Security::X509::PKCS12_DeriveBytes {
     type Target = quest_hook::libil2cpp::Il2CppObject;

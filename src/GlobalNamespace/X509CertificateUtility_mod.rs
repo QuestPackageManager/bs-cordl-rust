@@ -5,10 +5,25 @@ pub struct X509CertificateUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "X509CertificateUtility")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::X509CertificateUtility => ""
-    ."X509CertificateUtility"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::X509CertificateUtility {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "X509CertificateUtility";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "X509CertificateUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::X509CertificateUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -172,11 +187,25 @@ pub struct X509CertificateUtility_PasswordFinder {
     pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
 }
 #[cfg(feature = "X509CertificateUtility+PasswordFinder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::X509CertificateUtility_PasswordFinder => ""
-    ."X509CertificateUtility/PasswordFinder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PasswordFinder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "X509CertificateUtility+PasswordFinder")]
 impl std::ops::Deref for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -279,11 +308,25 @@ pub struct X509CertificateUtility_RSACertificateEncryptionProvider {
     pub _signer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider => ""
-    ."X509CertificateUtility/RSACertificateEncryptionProvider"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "RSACertificateEncryptionProvider";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl std::ops::Deref
 for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {

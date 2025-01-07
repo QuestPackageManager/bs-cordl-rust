@@ -78,10 +78,25 @@ pub struct IgnoranceConnectionManager {
     >,
 }
 #[cfg(feature = "IgnoranceConnectionManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::IgnoranceConnectionManager =>
-    ""."IgnoranceConnectionManager"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::IgnoranceConnectionManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "IgnoranceConnectionManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "IgnoranceConnectionManager")]
 impl std::ops::Deref for crate::GlobalNamespace::IgnoranceConnectionManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -830,11 +845,25 @@ pub struct IgnoranceConnectionManager_ConnectToServerParams {
     pub rootCertificate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "IgnoranceConnectionManager+ConnectToServerParams")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::IgnoranceConnectionManager_ConnectToServerParams => ""
-    ."IgnoranceConnectionManager/ConnectToServerParams"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectToServerParams {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ConnectToServerParams";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "IgnoranceConnectionManager+ConnectToServerParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectToServerParams {
@@ -892,11 +921,85 @@ pub enum IgnoranceConnectionManager_ConnectionState {
     Disposed = 4i32,
 }
 #[cfg(feature = "IgnoranceConnectionManager+ConnectionState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::IgnoranceConnectionManager_ConnectionState => ""
-    ."IgnoranceConnectionManager/ConnectionState"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ConnectionState";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnection")]
 #[repr(C)]
 #[derive(Debug)]
@@ -915,11 +1018,25 @@ pub struct IgnoranceConnectionManager_IgnoranceConnection {
     pub _isConnectionOwner_k__BackingField: bool,
 }
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnection")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection => ""
-    ."IgnoranceConnectionManager/IgnoranceConnection"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "IgnoranceConnection";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnection")]
 impl std::ops::Deref
 for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
@@ -1102,11 +1219,25 @@ pub struct IgnoranceConnectionManager_IgnoranceConnectionParamsBase {
     pub enableBackgroundSentry: bool,
 }
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase => ""
-    ."IgnoranceConnectionManager/IgnoranceConnectionParamsBase"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "IgnoranceConnectionParamsBase";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
 impl std::ops::Deref
 for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase {
@@ -1192,11 +1323,25 @@ pub struct IgnoranceConnectionManager_StartServerParams {
     pub privateKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "IgnoranceConnectionManager+StartServerParams")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::IgnoranceConnectionManager_StartServerParams => ""
-    ."IgnoranceConnectionManager/StartServerParams"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::IgnoranceConnectionManager_StartServerParams {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "StartServerParams";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "IgnoranceConnectionManager+StartServerParams")]
 impl std::ops::Deref
 for crate::GlobalNamespace::IgnoranceConnectionManager_StartServerParams {

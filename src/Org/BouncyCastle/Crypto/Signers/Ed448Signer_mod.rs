@@ -16,10 +16,25 @@ pub struct Ed448Signer {
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed448Signer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Crypto::Signers::Ed448Signer
-    => "Org.BouncyCastle.Crypto.Signers"."Ed448Signer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Signers::Ed448Signer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Signers";
+    const CLASS_NAME: &'static str = "Ed448Signer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed448Signer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Signers::Ed448Signer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -173,11 +188,25 @@ pub struct Ed448Signer_Buffer {
     __cordl_parent: crate::System::IO::MemoryStream,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed448Signer+Buffer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Signers::Ed448Signer_Buffer =>
-    "Org.BouncyCastle.Crypto.Signers"."Ed448Signer/Buffer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Crypto::Signers::Ed448Signer_Buffer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Signers";
+    const CLASS_NAME: &'static str = "Buffer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed448Signer+Buffer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Signers::Ed448Signer_Buffer {
     type Target = crate::System::IO::MemoryStream;

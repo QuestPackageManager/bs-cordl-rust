@@ -29,10 +29,24 @@ pub struct EventBasedNetListener {
     >,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::EventBasedNetListener =>
-    "LiteNetLib"."EventBasedNetListener"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::EventBasedNetListener {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "EventBasedNetListener";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNetListener")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -528,11 +542,25 @@ pub struct EventBasedNetListener_OnConnectionRequest {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnConnectionRequest")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::EventBasedNetListener_OnConnectionRequest => "LiteNetLib"
-    ."EventBasedNetListener/OnConnectionRequest"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "OnConnectionRequest";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnConnectionRequest")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest {
     type Target = crate::System::MulticastDelegate;
@@ -626,11 +654,25 @@ pub struct EventBasedNetListener_OnDeliveryEvent {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnDeliveryEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::EventBasedNetListener_OnDeliveryEvent => "LiteNetLib"
-    ."EventBasedNetListener/OnDeliveryEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "OnDeliveryEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnDeliveryEvent")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent {
     type Target = crate::System::MulticastDelegate;
@@ -725,10 +767,25 @@ pub struct EventBasedNetListener_OnNetworkError {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkError")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::EventBasedNetListener_OnNetworkError
-    => "LiteNetLib"."EventBasedNetListener/OnNetworkError"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::EventBasedNetListener_OnNetworkError {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "OnNetworkError";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkError")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener_OnNetworkError {
     type Target = crate::System::MulticastDelegate;
@@ -823,11 +880,25 @@ pub struct EventBasedNetListener_OnNetworkLatencyUpdate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkLatencyUpdate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate => "LiteNetLib"
-    ."EventBasedNetListener/OnNetworkLatencyUpdate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "OnNetworkLatencyUpdate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkLatencyUpdate")]
 impl std::ops::Deref
 for crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate {
@@ -924,11 +995,25 @@ pub struct EventBasedNetListener_OnNetworkReceive {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceive")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::EventBasedNetListener_OnNetworkReceive => "LiteNetLib"
-    ."EventBasedNetListener/OnNetworkReceive"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "OnNetworkReceive";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceive")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive {
     type Target = crate::System::MulticastDelegate;
@@ -1025,11 +1110,25 @@ pub struct EventBasedNetListener_OnNetworkReceiveUnconnected {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceiveUnconnected")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected => "LiteNetLib"
-    ."EventBasedNetListener/OnNetworkReceiveUnconnected"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "OnNetworkReceiveUnconnected";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceiveUnconnected")]
 impl std::ops::Deref
 for crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected {
@@ -1131,11 +1230,25 @@ pub struct EventBasedNetListener_OnPeerConnected {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerConnected")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::EventBasedNetListener_OnPeerConnected => "LiteNetLib"
-    ."EventBasedNetListener/OnPeerConnected"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::EventBasedNetListener_OnPeerConnected {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "OnPeerConnected";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerConnected")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener_OnPeerConnected {
     type Target = crate::System::MulticastDelegate;
@@ -1228,11 +1341,25 @@ pub struct EventBasedNetListener_OnPeerDisconnected {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerDisconnected")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::LiteNetLib::EventBasedNetListener_OnPeerDisconnected => "LiteNetLib"
-    ."EventBasedNetListener/OnPeerDisconnected"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "LiteNetLib";
+    const CLASS_NAME: &'static str = "OnPeerDisconnected";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerDisconnected")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected {
     type Target = crate::System::MulticastDelegate;

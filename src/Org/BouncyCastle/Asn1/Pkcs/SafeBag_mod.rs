@@ -12,10 +12,25 @@ pub struct SafeBag {
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+SafeBag")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Asn1::Pkcs::SafeBag =>
-    "Org.BouncyCastle.Asn1.Pkcs"."SafeBag"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Asn1::Pkcs::SafeBag {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.Pkcs";
+    const CLASS_NAME: &'static str = "SafeBag";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+SafeBag")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Pkcs::SafeBag {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;

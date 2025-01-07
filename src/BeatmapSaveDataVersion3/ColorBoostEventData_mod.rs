@@ -6,10 +6,25 @@ pub struct ColorBoostEventData {
     pub o: bool,
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+ColorBoostEventData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::BeatmapSaveDataVersion3::ColorBoostEventData =>
-    "BeatmapSaveDataVersion3"."ColorBoostEventData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatmapSaveDataVersion3::ColorBoostEventData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatmapSaveDataVersion3";
+    const CLASS_NAME: &'static str = "ColorBoostEventData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatmapSaveDataVersion3+ColorBoostEventData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::ColorBoostEventData {
     type Target = crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem;

@@ -69,10 +69,25 @@ pub struct Deflate {
     pub bi_valid: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Deflate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Utilities::Zlib::Deflate =>
-    "Org.BouncyCastle.Utilities.Zlib"."Deflate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Utilities.Zlib";
+    const CLASS_NAME: &'static str = "Deflate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Deflate")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -615,11 +630,25 @@ pub struct Deflate_Config {
     pub func: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Deflate+Config")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Utilities::Zlib::Deflate_Config =>
-    "Org.BouncyCastle.Utilities.Zlib"."Deflate/Config"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Utilities::Zlib::Deflate_Config {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Utilities.Zlib";
+    const CLASS_NAME: &'static str = "Config";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Deflate+Config")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Zlib::Deflate_Config {
     type Target = quest_hook::libil2cpp::Il2CppObject;

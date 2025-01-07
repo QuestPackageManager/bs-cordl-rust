@@ -8,10 +8,24 @@ pub struct ProfanityFilter {
     >,
 }
 #[cfg(feature = "ProfanityFilter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::ProfanityFilter => ""
-    ."ProfanityFilter"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ProfanityFilter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ProfanityFilter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ProfanityFilter")]
 impl std::ops::Deref for crate::GlobalNamespace::ProfanityFilter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -109,10 +123,25 @@ pub struct ProfanityFilter_TrieNode {
     pub _shortestWord: i32,
 }
 #[cfg(feature = "ProfanityFilter+TrieNode")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::ProfanityFilter_TrieNode => ""
-    ."ProfanityFilter/TrieNode"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ProfanityFilter_TrieNode {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TrieNode";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ProfanityFilter+TrieNode")]
 impl std::ops::Deref for crate::GlobalNamespace::ProfanityFilter_TrieNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;

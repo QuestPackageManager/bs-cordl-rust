@@ -5,10 +5,25 @@ pub struct UnsignedIntegerField {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<u32>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::UnsignedIntegerField =>
-    "UnityEngine.UIElements"."UnsignedIntegerField"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UnsignedIntegerField {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UnsignedIntegerField";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UnsignedIntegerField {
     type Target = crate::UnityEngine::UIElements::TextValueField_1<u32>;
@@ -149,11 +164,25 @@ pub struct UnsignedIntegerField_UnsignedIntegerInput {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<u32>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UnsignedIntegerInput")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UnsignedIntegerField_UnsignedIntegerInput =>
-    "UnityEngine.UIElements"."UnsignedIntegerField/UnsignedIntegerInput"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UnsignedIntegerField_UnsignedIntegerInput {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UnsignedIntegerInput";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UnsignedIntegerInput")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UnsignedIntegerField_UnsignedIntegerInput {
@@ -274,11 +303,25 @@ pub struct UnsignedIntegerField_UxmlFactory {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UxmlFactory")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UnsignedIntegerField_UxmlFactory =>
-    "UnityEngine.UIElements"."UnsignedIntegerField/UxmlFactory"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlFactory {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UxmlFactory";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UxmlFactory")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlFactory {
@@ -341,11 +384,25 @@ pub struct UnsignedIntegerField_UxmlTraits {
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UxmlTraits")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UnsignedIntegerField_UxmlTraits =>
-    "UnityEngine.UIElements"."UnsignedIntegerField/UxmlTraits"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlTraits {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "UxmlTraits";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UxmlTraits")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlTraits {

@@ -8,10 +8,25 @@ pub struct CultureInfoConverter {
     >,
 }
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::ComponentModel::CultureInfoConverter =>
-    "System.ComponentModel"."CultureInfoConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::CultureInfoConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "CultureInfoConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::CultureInfoConverter {
     type Target = crate::System::ComponentModel::TypeConverter;
@@ -207,11 +222,25 @@ pub struct CultureInfoConverter_CultureComparer {
     >,
 }
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::CultureInfoConverter_CultureComparer =>
-    "System.ComponentModel"."CultureInfoConverter/CultureComparer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "CultureComparer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
 impl std::ops::Deref
 for crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
@@ -296,11 +325,25 @@ pub struct CultureInfoConverter_CultureInfoMapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::CultureInfoConverter_CultureInfoMapper =>
-    "System.ComponentModel"."CultureInfoConverter/CultureInfoMapper"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "CultureInfoMapper";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
 impl std::ops::Deref
 for crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {

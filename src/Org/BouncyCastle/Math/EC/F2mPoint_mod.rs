@@ -5,10 +5,25 @@ pub struct F2mPoint {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mPoint")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Math::EC::F2mPoint =>
-    "Org.BouncyCastle.Math.EC"."F2mPoint"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Org::BouncyCastle::Math::EC::F2mPoint {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC";
+    const CLASS_NAME: &'static str = "F2mPoint";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mPoint")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::F2mPoint {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint;

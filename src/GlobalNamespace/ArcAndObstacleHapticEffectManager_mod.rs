@@ -26,11 +26,25 @@ pub struct ArcAndObstacleHapticEffectManager {
     >,
 }
 #[cfg(feature = "ArcAndObstacleHapticEffectManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ArcAndObstacleHapticEffectManager => ""
-    ."ArcAndObstacleHapticEffectManager"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ArcAndObstacleHapticEffectManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ArcAndObstacleHapticEffectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -230,11 +244,25 @@ pub struct ArcAndObstacleHapticEffectManager_EffectState {
     pub isSliderActive: bool,
 }
 #[cfg(feature = "ArcAndObstacleHapticEffectManager+EffectState")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState => ""
-    ."ArcAndObstacleHapticEffectManager/EffectState"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "EffectState";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "ArcAndObstacleHapticEffectManager+EffectState")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {

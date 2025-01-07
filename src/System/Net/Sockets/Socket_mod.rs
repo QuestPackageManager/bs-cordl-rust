@@ -27,10 +27,24 @@ pub struct Socket {
     pub _cordl_ID: i32,
 }
 #[cfg(feature = "System+Net+Sockets+Socket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Sockets::Socket =>
-    "System.Net.Sockets"."Socket"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::Socket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Sockets";
+    const CLASS_NAME: &'static str = "Socket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Sockets+Socket")]
 impl std::ops::Deref for crate::System::Net::Sockets::Socket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2091,11 +2105,25 @@ pub struct Socket_AwaitableSocketAsyncEventArgs {
     pub _WrapExceptionsInIOExceptions_k__BackingField: bool,
 }
 #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs => "System.Net.Sockets"
-    ."Socket/AwaitableSocketAsyncEventArgs"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Sockets";
+    const CLASS_NAME: &'static str = "AwaitableSocketAsyncEventArgs";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 impl std::ops::Deref
 for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
@@ -2387,10 +2415,25 @@ pub struct Socket_CachedEventArgs {
     >,
 }
 #[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Sockets::Socket_CachedEventArgs =>
-    "System.Net.Sockets"."Socket/CachedEventArgs"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Sockets::Socket_CachedEventArgs {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Sockets";
+    const CLASS_NAME: &'static str = "CachedEventArgs";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]
 impl std::ops::Deref for crate::System::Net::Sockets::Socket_CachedEventArgs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2442,11 +2485,25 @@ pub struct Socket_Int32TaskSocketAsyncEventArgs {
     pub _wrapExceptionsInIOExceptions: bool,
 }
 #[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs => "System.Net.Sockets"
-    ."Socket/Int32TaskSocketAsyncEventArgs"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Sockets";
+    const CLASS_NAME: &'static str = "Int32TaskSocketAsyncEventArgs";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
 impl std::ops::Deref
 for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
@@ -2504,11 +2561,41 @@ pub struct Socket_TaskSocketAsyncEventArgs_1<TResult: quest_hook::libil2cpp::Typ
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1 < TResult > =>
-    "System.Net.Sockets"."Socket/TaskSocketAsyncEventArgs`1" < TResult >
-);
+unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Net.Sockets";
+    const CLASS_NAME: &'static str = "TaskSocketAsyncEventArgs`1";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Net.Sockets",
+                        "TaskSocketAsyncEventArgs`1",
+                    )
+                    .unwrap()
+                    .make_generic::<(TResult)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
@@ -2589,10 +2676,84 @@ pub struct Socket_WSABUF {
     pub buf: crate::System::IntPtr,
 }
 #[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Sockets::Socket_WSABUF =>
-    "System.Net.Sockets"."Socket/WSABUF"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::Socket_WSABUF {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "System.Net.Sockets";
+    const CLASS_NAME: &'static str = "WSABUF";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::System::Net::Sockets::Socket_WSABUF {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::System::Net::Sockets::Socket_WSABUF {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::System::Net::Sockets::Socket_WSABUF {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::System::Net::Sockets::Socket_WSABUF {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
 for crate::System::Net::Sockets::Socket_WSABUF {

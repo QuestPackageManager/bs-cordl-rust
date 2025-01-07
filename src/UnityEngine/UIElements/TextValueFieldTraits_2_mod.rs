@@ -21,11 +21,47 @@ pub struct TextValueFieldTraits_2<
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextValueFieldTraits_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::TextValueFieldTraits_2
-    < TValueType, TValueUxmlAttributeType > => "UnityEngine.UIElements"
-    ."TextValueFieldTraits`2" < TValueType, TValueUxmlAttributeType >
-);
+unsafe impl<
+    TValueType: quest_hook::libil2cpp::Type,
+    TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::TextValueFieldTraits_2<
+    TValueType,
+    TValueUxmlAttributeType,
+> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "TextValueFieldTraits`2";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.UIElements",
+                        "TextValueFieldTraits`2",
+                    )
+                    .unwrap()
+                    .make_generic::<(TValueType, TValueUxmlAttributeType)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+TextValueFieldTraits_2")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,

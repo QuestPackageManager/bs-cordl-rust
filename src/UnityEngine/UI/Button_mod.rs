@@ -8,10 +8,24 @@ pub struct Button {
     >,
 }
 #[cfg(feature = "UnityEngine+UI+Button")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Button => "UnityEngine.UI"
-    ."Button"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Button {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "Button";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+Button")]
 impl std::ops::Deref for crate::UnityEngine::UI::Button {
     type Target = crate::UnityEngine::UI::Selectable;
@@ -180,10 +194,25 @@ pub struct Button_ButtonClickedEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent,
 }
 #[cfg(feature = "UnityEngine+UI+Button+ButtonClickedEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Button_ButtonClickedEvent =>
-    "UnityEngine.UI"."Button/ButtonClickedEvent"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UI::Button_ButtonClickedEvent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "ButtonClickedEvent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+Button+ButtonClickedEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Button_ButtonClickedEvent {
     type Target = crate::UnityEngine::Events::UnityEvent;

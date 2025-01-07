@@ -8,10 +8,25 @@ pub struct HEU_InputInterfaceTilemap {
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::HEU_InputInterfaceTilemap =>
-    "HoudiniEngineUnity"."HEU_InputInterfaceTilemap"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "HEU_InputInterfaceTilemap";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
     type Target = crate::HoudiniEngineUnity::HEU_InputInterface;
@@ -136,11 +151,25 @@ pub struct HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap =>
-    "HoudiniEngineUnity"."HEU_InputInterfaceTilemap/HEU_InputDataTilemap"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "HEU_InputDataTilemap";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {

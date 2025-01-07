@@ -5,10 +5,24 @@ pub struct PKCS1 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Mono+Security+Cryptography+PKCS1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::Cryptography::PKCS1 =>
-    "Mono.Security.Cryptography"."PKCS1"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::Cryptography::PKCS1 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.Cryptography";
+    const CLASS_NAME: &'static str = "PKCS1";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+Cryptography+PKCS1")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::PKCS1 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -43,17 +57,6 @@ impl crate::Mono::Security::Cryptography::PKCS1 {
             .invoke("CreateFromName", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateFromOid(
-        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::HashAlgorithm>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::HashAlgorithm,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateFromOid", (oid))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn Encode_v15(
         hash: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::HashAlgorithm,
@@ -67,18 +70,6 @@ impl crate::Mono::Security::Cryptography::PKCS1 {
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Encode_v15", (hash, hashValue, emLength))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn HashNameFromOid(
-        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        throwOnError: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("HashNameFromOid", (oid, throwOnError))?;
         Ok(__cordl_ret.into())
     }
     pub fn I2OSP(
@@ -114,7 +105,19 @@ impl crate::Mono::Security::Cryptography::PKCS1 {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("RSAVP1", (rsa, s))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Verify_v15(
+    pub fn Verify_v15_HashAlgorithm0(
+        rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+        hash: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::HashAlgorithm,
+        >,
+        hashValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Verify_v15", (rsa, hash, hashValue, signature))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Verify_v15_HashAlgorithm__cordl_bool2(
         rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
         hash: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::HashAlgorithm,
@@ -128,6 +131,16 @@ impl crate::Mono::Security::Cryptography::PKCS1 {
                 "Verify_v15",
                 (rsa, hash, hashValue, signature, tryNonStandardEncoding),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Verify_v15_Il2CppString1(
+        rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+        hashName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hashValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Verify_v15", (rsa, hashName, hashValue, signature))?;
         Ok(__cordl_ret.into())
     }
 }

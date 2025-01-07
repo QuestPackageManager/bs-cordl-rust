@@ -9,10 +9,25 @@ pub struct MonoBehaviourCallbackHooks {
     pub m_OnLateUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
 }
 #[cfg(feature = "MonoBehaviourCallbackHooks")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::MonoBehaviourCallbackHooks =>
-    ""."MonoBehaviourCallbackHooks"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::MonoBehaviourCallbackHooks {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "MonoBehaviourCallbackHooks";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "MonoBehaviourCallbackHooks")]
 impl std::ops::Deref for crate::GlobalNamespace::MonoBehaviourCallbackHooks {
     type Target = crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<

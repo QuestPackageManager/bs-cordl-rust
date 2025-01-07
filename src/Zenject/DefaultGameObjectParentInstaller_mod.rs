@@ -9,10 +9,25 @@ pub struct DefaultGameObjectParentInstaller {
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Zenject::DefaultGameObjectParentInstaller =>
-    "Zenject"."DefaultGameObjectParentInstaller"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Zenject::DefaultGameObjectParentInstaller {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Zenject";
+    const CLASS_NAME: &'static str = "DefaultGameObjectParentInstaller";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
 impl std::ops::Deref for crate::Zenject::DefaultGameObjectParentInstaller {
     type Target = crate::Zenject::Installer_2<
@@ -105,11 +120,25 @@ pub struct DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
     pub _gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer => "Zenject"
-    ."DefaultGameObjectParentInstaller/DefaultParentObjectDestroyer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Zenject";
+    const CLASS_NAME: &'static str = "DefaultParentObjectDestroyer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
 impl std::ops::Deref
 for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {

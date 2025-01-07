@@ -21,10 +21,25 @@ pub struct RumbleHapticFeedbackPlayer {
     >,
 }
 #[cfg(feature = "RumbleHapticFeedbackPlayer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::RumbleHapticFeedbackPlayer =>
-    ""."RumbleHapticFeedbackPlayer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "RumbleHapticFeedbackPlayer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "RumbleHapticFeedbackPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -162,11 +177,25 @@ pub struct RumbleHapticFeedbackPlayer_RumbleData {
     pub frequency: f32,
 }
 #[cfg(feature = "RumbleHapticFeedbackPlayer+RumbleData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData => ""
-    ."RumbleHapticFeedbackPlayer/RumbleData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "RumbleData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "RumbleHapticFeedbackPlayer+RumbleData")]
 impl std::ops::Deref for crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData {
     type Target = quest_hook::libil2cpp::Il2CppObject;

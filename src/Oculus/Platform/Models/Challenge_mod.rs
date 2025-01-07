@@ -27,10 +27,24 @@ pub struct Challenge {
     pub Visibility: crate::Oculus::Platform::ChallengeVisibility,
 }
 #[cfg(feature = "Oculus+Platform+Models+Challenge")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Oculus::Platform::Models::Challenge =>
-    "Oculus.Platform.Models"."Challenge"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Models::Challenge {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Oculus.Platform.Models";
+    const CLASS_NAME: &'static str = "Challenge";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Oculus+Platform+Models+Challenge")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::Challenge {
     type Target = quest_hook::libil2cpp::Il2CppObject;

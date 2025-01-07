@@ -14,10 +14,25 @@ pub struct TriggerFloatFxGroupEffect {
     >,
 }
 #[cfg(feature = "TriggerFloatFxGroupEffect")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::TriggerFloatFxGroupEffect => ""
-    ."TriggerFloatFxGroupEffect"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TriggerFloatFxGroupEffect {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TriggerFloatFxGroupEffect";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TriggerFloatFxGroupEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::TriggerFloatFxGroupEffect {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -111,11 +126,25 @@ pub struct TriggerFloatFxGroupEffect_InitData {
     >,
 }
 #[cfg(feature = "TriggerFloatFxGroupEffect+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TriggerFloatFxGroupEffect_InitData => ""
-    ."TriggerFloatFxGroupEffect/InitData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::TriggerFloatFxGroupEffect_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "TriggerFloatFxGroupEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::TriggerFloatFxGroupEffect_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;

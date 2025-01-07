@@ -6,11 +6,25 @@ pub struct MovedFromAttribute {
     pub data: crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData,
 }
 #[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Scripting::APIUpdating::MovedFromAttribute =>
-    "UnityEngine.Scripting.APIUpdating"."MovedFromAttribute"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Scripting.APIUpdating";
+    const CLASS_NAME: &'static str = "MovedFromAttribute";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
     type Target = crate::System::Attribute;

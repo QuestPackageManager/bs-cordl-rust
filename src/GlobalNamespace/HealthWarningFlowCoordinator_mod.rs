@@ -57,10 +57,25 @@ pub struct HealthWarningFlowCoordinator {
     pub _openedWithLanguage: crate::BGLib::Polyglot::Language,
 }
 #[cfg(feature = "HealthWarningFlowCoordinator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::HealthWarningFlowCoordinator =>
-    ""."HealthWarningFlowCoordinator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::HealthWarningFlowCoordinator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "HealthWarningFlowCoordinator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HealthWarningFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::HealthWarningFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
@@ -333,11 +348,25 @@ pub struct HealthWarningFlowCoordinator_InitData {
     >,
 }
 #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::HealthWarningFlowCoordinator_InitData => ""
-    ."HealthWarningFlowCoordinator/InitData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;

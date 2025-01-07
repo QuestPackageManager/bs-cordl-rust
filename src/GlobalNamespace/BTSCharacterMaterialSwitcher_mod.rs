@@ -12,10 +12,25 @@ pub struct BTSCharacterMaterialSwitcher {
     >,
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::BTSCharacterMaterialSwitcher =>
-    ""."BTSCharacterMaterialSwitcher"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BTSCharacterMaterialSwitcher";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BTSCharacterMaterialSwitcher")]
 impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -84,11 +99,25 @@ pub struct BTSCharacterMaterialSwitcher_MaterialPairs {
     pub alternativeMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs => ""
-    ."BTSCharacterMaterialSwitcher/MaterialPairs"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "MaterialPairs";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
@@ -149,11 +178,25 @@ pub struct BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
     >,
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs => ""
-    ."BTSCharacterMaterialSwitcher/RendererMaterialsPairs"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "RendererMaterialsPairs";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs {

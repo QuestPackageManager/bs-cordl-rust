@@ -14,10 +14,25 @@ pub struct NamedColorListController {
     pub valueChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
 }
 #[cfg(feature = "NamedColorListController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::NamedColorListController => ""
-    ."NamedColorListController"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::NamedColorListController {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "NamedColorListController";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "NamedColorListController")]
 impl std::ops::Deref for crate::GlobalNamespace::NamedColorListController {
     type Target = crate::GlobalNamespace::ListColorController;
@@ -171,11 +186,25 @@ pub struct NamedColorListController_ColorValuePair {
     pub value: i32,
 }
 #[cfg(feature = "NamedColorListController+ColorValuePair")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::NamedColorListController_ColorValuePair => ""
-    ."NamedColorListController/ColorValuePair"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::NamedColorListController_ColorValuePair {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ColorValuePair";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "NamedColorListController+ColorValuePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NamedColorListController_ColorValuePair {

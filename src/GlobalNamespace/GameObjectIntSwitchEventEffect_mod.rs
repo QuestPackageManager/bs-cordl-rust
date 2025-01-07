@@ -29,10 +29,25 @@ pub struct GameObjectIntSwitchEventEffect {
     pub _previousActiveIdx: i32,
 }
 #[cfg(feature = "GameObjectIntSwitchEventEffect")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameObjectIntSwitchEventEffect
-    => ""."GameObjectIntSwitchEventEffect"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "GameObjectIntSwitchEventEffect";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameObjectIntSwitchEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -126,11 +141,25 @@ pub struct GameObjectIntSwitchEventEffect_GameObjectValueList {
     pub _isActive_k__BackingField: bool,
 }
 #[cfg(feature = "GameObjectIntSwitchEventEffect+GameObjectValueList")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList => ""
-    ."GameObjectIntSwitchEventEffect/GameObjectValueList"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "GameObjectValueList";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "GameObjectIntSwitchEventEffect+GameObjectValueList")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList {

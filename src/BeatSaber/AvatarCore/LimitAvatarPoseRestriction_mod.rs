@@ -8,11 +8,25 @@ pub struct LimitAvatarPoseRestriction {
     >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::AvatarCore::LimitAvatarPoseRestriction => "BeatSaber.AvatarCore"
-    ."LimitAvatarPoseRestriction"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.AvatarCore";
+    const CLASS_NAME: &'static str = "LimitAvatarPoseRestriction";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -132,11 +146,25 @@ pub struct LimitAvatarPoseRestriction_Parameters {
     pub centerHeadOffset: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction+Parameters")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters =>
-    "BeatSaber.AvatarCore"."LimitAvatarPoseRestriction/Parameters"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.AvatarCore";
+    const CLASS_NAME: &'static str = "Parameters";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction+Parameters")]
 impl std::ops::Deref
 for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters {

@@ -19,10 +19,25 @@ pub struct HEU_InputNodeUICache {
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::HEU_InputNodeUICache =>
-    "HoudiniEngineUnity"."HEU_InputNodeUICache"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_InputNodeUICache {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "HEU_InputNodeUICache";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputNodeUICache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -77,11 +92,25 @@ pub struct HEU_InputNodeUICache_HEU_InputAssetUICache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache =>
-    "HoudiniEngineUnity"."HEU_InputNodeUICache/HEU_InputAssetUICache"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "HEU_InputAssetUICache";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache {
@@ -134,11 +163,25 @@ pub struct HEU_InputNodeUICache_HEU_InputObjectUICache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache =>
-    "HoudiniEngineUnity"."HEU_InputNodeUICache/HEU_InputObjectUICache"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HoudiniEngineUnity";
+    const CLASS_NAME: &'static str = "HEU_InputObjectUICache";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache {

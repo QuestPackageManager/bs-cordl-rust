@@ -15,10 +15,25 @@ pub struct Lease {
     >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Runtime::Remoting::Lifetime::Lease =>
-    "System.Runtime.Remoting.Lifetime"."Lease"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Runtime::Remoting::Lifetime::Lease {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.Remoting.Lifetime";
+    const CLASS_NAME: &'static str = "Lease";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Lifetime::Lease {
     type Target = crate::System::MarshalByRefObject;
@@ -183,11 +198,25 @@ pub struct Lease_RenewalDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate =>
-    "System.Runtime.Remoting.Lifetime"."Lease/RenewalDelegate"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Runtime.Remoting.Lifetime";
+    const CLASS_NAME: &'static str = "RenewalDelegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {

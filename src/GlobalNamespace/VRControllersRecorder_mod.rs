@@ -27,11 +27,25 @@ pub struct SavedData_VRControllersRecorder_KeyframeSerializable {
     pub _time: f32,
 }
 #[cfg(feature = "VRControllersRecorder+SavedData+KeyframeSerializable")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable => ""
-    ."VRControllersRecorder/SavedData/KeyframeSerializable"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "KeyframeSerializable";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VRControllersRecorder+SavedData+KeyframeSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable {
@@ -119,10 +133,25 @@ pub struct VRControllersRecorder {
     pub _keyframeIndex: i32,
 }
 #[cfg(feature = "VRControllersRecorder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::VRControllersRecorder => ""
-    ."VRControllersRecorder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VRControllersRecorder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "VRControllersRecorder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VRControllersRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -571,10 +600,25 @@ pub struct VRControllersRecorder_Keyframe {
     pub _cordl_time: f32,
 }
 #[cfg(feature = "VRControllersRecorder+Keyframe")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::VRControllersRecorder_Keyframe
-    => ""."VRControllersRecorder/Keyframe"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "Keyframe";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VRControllersRecorder+Keyframe")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -832,10 +876,85 @@ pub enum VRControllersRecorder_Mode {
     Record = 0i32,
 }
 #[cfg(feature = "VRControllersRecorder+Mode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::VRControllersRecorder_Mode =>
-    ""."VRControllersRecorder/Mode"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VRControllersRecorder_Mode {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "Mode";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::VRControllersRecorder_Mode {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::VRControllersRecorder_Mode {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+}
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::VRControllersRecorder_Mode {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::VRControllersRecorder_Mode {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> Self::Actual {
+        self
+    }
+    fn from_actual(actual: Self::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "VRControllersRecorder+SavedData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -850,10 +969,25 @@ pub struct VRControllersRecorder_SavedData {
     >,
 }
 #[cfg(feature = "VRControllersRecorder+SavedData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::VRControllersRecorder_SavedData
-    => ""."VRControllersRecorder/SavedData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VRControllersRecorder_SavedData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SavedData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VRControllersRecorder+SavedData")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_SavedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -916,10 +1050,25 @@ pub struct VRControllersRecorder_State {
     pub _version: u32,
 }
 #[cfg(feature = "VRControllersRecorder+State")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::VRControllersRecorder_State =>
-    ""."VRControllersRecorder/State"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VRControllersRecorder_State {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "State";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VRControllersRecorder+State")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_State {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1190,11 +1339,25 @@ pub struct VRControllersRecorder_TypeSerializationBinder {
     __cordl_parent: crate::System::Runtime::Serialization::SerializationBinder,
 }
 #[cfg(feature = "VRControllersRecorder+TypeSerializationBinder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder => ""
-    ."VRControllersRecorder/TypeSerializationBinder"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "TypeSerializationBinder";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "VRControllersRecorder+TypeSerializationBinder")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {

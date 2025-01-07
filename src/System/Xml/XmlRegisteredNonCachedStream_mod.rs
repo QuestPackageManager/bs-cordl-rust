@@ -10,10 +10,25 @@ pub struct XmlRegisteredNonCachedStream {
     pub host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+XmlRegisteredNonCachedStream")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlRegisteredNonCachedStream =>
-    "System.Xml"."XmlRegisteredNonCachedStream"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Xml::XmlRegisteredNonCachedStream {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml";
+    const CLASS_NAME: &'static str = "XmlRegisteredNonCachedStream";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Xml+XmlRegisteredNonCachedStream")]
 impl std::ops::Deref for crate::System::Xml::XmlRegisteredNonCachedStream {
     type Target = crate::System::IO::Stream;

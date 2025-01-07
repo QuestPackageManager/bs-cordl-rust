@@ -23,10 +23,24 @@ pub struct IconAndTextSegmentedControl {
     pub _isInitialized: bool,
 }
 #[cfg(feature = "HMUI+IconAndTextSegmentedControl")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::IconAndTextSegmentedControl => "HMUI"
-    ."IconAndTextSegmentedControl"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::IconAndTextSegmentedControl {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HMUI";
+    const CLASS_NAME: &'static str = "IconAndTextSegmentedControl";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HMUI+IconAndTextSegmentedControl")]
 impl std::ops::Deref for crate::HMUI::IconAndTextSegmentedControl {
     type Target = crate::HMUI::SegmentedControl;
@@ -155,10 +169,25 @@ pub struct IconAndTextSegmentedControl_DataItem {
     pub _interactable_k__BackingField: bool,
 }
 #[cfg(feature = "HMUI+IconAndTextSegmentedControl+DataItem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::IconAndTextSegmentedControl_DataItem =>
-    "HMUI"."IconAndTextSegmentedControl/DataItem"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::HMUI::IconAndTextSegmentedControl_DataItem {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "HMUI";
+    const CLASS_NAME: &'static str = "DataItem";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "HMUI+IconAndTextSegmentedControl+DataItem")]
 impl std::ops::Deref for crate::HMUI::IconAndTextSegmentedControl_DataItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;

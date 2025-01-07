@@ -6,10 +6,25 @@ pub struct ReferenceConverter {
     pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+ComponentModel+ReferenceConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::ComponentModel::ReferenceConverter =>
-    "System.ComponentModel"."ReferenceConverter"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::ReferenceConverter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "ReferenceConverter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+ReferenceConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::ReferenceConverter {
     type Target = crate::System::ComponentModel::TypeConverter;
@@ -178,11 +193,25 @@ pub struct ReferenceConverter_ReferenceComparer {
     >,
 }
 #[cfg(feature = "System+ComponentModel+ReferenceConverter+ReferenceComparer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::ComponentModel::ReferenceConverter_ReferenceComparer =>
-    "System.ComponentModel"."ReferenceConverter/ReferenceComparer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::ComponentModel::ReferenceConverter_ReferenceComparer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.ComponentModel";
+    const CLASS_NAME: &'static str = "ReferenceComparer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+ComponentModel+ReferenceConverter+ReferenceComparer")]
 impl std::ops::Deref
 for crate::System::ComponentModel::ReferenceConverter_ReferenceComparer {

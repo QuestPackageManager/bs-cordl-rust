@@ -12,10 +12,25 @@ pub struct PhysicsRaycaster {
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::EventSystems::PhysicsRaycaster =>
-    "UnityEngine.EventSystems"."PhysicsRaycaster"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::PhysicsRaycaster {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "PhysicsRaycaster";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::PhysicsRaycaster {
     type Target = crate::UnityEngine::EventSystems::BaseRaycaster;
@@ -171,11 +186,25 @@ pub struct PhysicsRaycaster_RaycastHitComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer =>
-    "UnityEngine.EventSystems"."PhysicsRaycaster/RaycastHitComparer"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.EventSystems";
+    const CLASS_NAME: &'static str = "RaycastHitComparer";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {

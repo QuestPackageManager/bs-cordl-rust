@@ -9,10 +9,24 @@ pub struct JTokenWriter {
     pub _current: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JTokenWriter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Newtonsoft::Json::Linq::JTokenWriter =>
-    "Newtonsoft.Json.Linq"."JTokenWriter"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Linq::JTokenWriter {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Newtonsoft.Json.Linq";
+    const CLASS_NAME: &'static str = "JTokenWriter";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Linq+JTokenWriter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JTokenWriter {
     type Target = crate::Newtonsoft::Json::JsonWriter;

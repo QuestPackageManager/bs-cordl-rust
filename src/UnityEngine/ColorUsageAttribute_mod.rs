@@ -11,10 +11,24 @@ pub struct ColorUsageAttribute {
     pub maxExposureValue: f32,
 }
 #[cfg(feature = "UnityEngine+ColorUsageAttribute")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::ColorUsageAttribute =>
-    "UnityEngine"."ColorUsageAttribute"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ColorUsageAttribute {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "ColorUsageAttribute";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+ColorUsageAttribute")]
 impl std::ops::Deref for crate::UnityEngine::ColorUsageAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;

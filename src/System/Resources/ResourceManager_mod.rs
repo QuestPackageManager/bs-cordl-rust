@@ -29,10 +29,24 @@ pub struct ResourceManager {
     >,
 }
 #[cfg(feature = "System+Resources+ResourceManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Resources::ResourceManager =>
-    "System.Resources"."ResourceManager"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Resources::ResourceManager {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Resources";
+    const CLASS_NAME: &'static str = "ResourceManager";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Resources+ResourceManager")]
 impl std::ops::Deref for crate::System::Resources::ResourceManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -138,11 +152,25 @@ pub struct ResourceManager_CultureNameResourceSetPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Resources+ResourceManager+CultureNameResourceSetPair")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Resources::ResourceManager_CultureNameResourceSetPair => "System.Resources"
-    ."ResourceManager/CultureNameResourceSetPair"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Resources";
+    const CLASS_NAME: &'static str = "CultureNameResourceSetPair";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Resources+ResourceManager+CultureNameResourceSetPair")]
 impl std::ops::Deref
 for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
@@ -196,11 +224,25 @@ pub struct ResourceManager_ResourceManagerMediator {
     pub _rm: quest_hook::libil2cpp::Gc<crate::System::Resources::ResourceManager>,
 }
 #[cfg(feature = "System+Resources+ResourceManager+ResourceManagerMediator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Resources::ResourceManager_ResourceManagerMediator => "System.Resources"
-    ."ResourceManager/ResourceManagerMediator"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::System::Resources::ResourceManager_ResourceManagerMediator {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Resources";
+    const CLASS_NAME: &'static str = "ResourceManagerMediator";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "System+Resources+ResourceManager+ResourceManagerMediator")]
 impl std::ops::Deref
 for crate::System::Resources::ResourceManager_ResourceManagerMediator {

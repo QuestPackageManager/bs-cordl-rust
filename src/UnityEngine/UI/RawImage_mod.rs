@@ -7,10 +7,24 @@ pub struct RawImage {
     pub m_UVRect: crate::UnityEngine::Rect,
 }
 #[cfg(feature = "UnityEngine+UI+RawImage")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::RawImage => "UnityEngine.UI"
-    ."RawImage"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::RawImage {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UI";
+    const CLASS_NAME: &'static str = "RawImage";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+UI+RawImage")]
 impl std::ops::Deref for crate::UnityEngine::UI::RawImage {
     type Target = crate::UnityEngine::UI::MaskableGraphic;

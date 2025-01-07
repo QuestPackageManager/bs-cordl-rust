@@ -15,10 +15,45 @@ pub struct InvokableCall_3<
     __cordl_phantom_T3: std::marker::PhantomData<T3>,
 }
 #[cfg(feature = "UnityEngine+Events+InvokableCall_3")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Events::InvokableCall_3 < T1, T2,
-    T3 > => "UnityEngine.Events"."InvokableCall`3" < T1, T2, T3 >
-);
+unsafe impl<
+    T1: quest_hook::libil2cpp::Type,
+    T2: quest_hook::libil2cpp::Type,
+    T3: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::UnityEngine::Events::InvokableCall_3<T1, T2, T3> {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Events";
+    const CLASS_NAME: &'static str = "InvokableCall`3";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.Events",
+                        "InvokableCall`3",
+                    )
+                    .unwrap()
+                    .make_generic::<(T1, T2, T3)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "UnityEngine+Events+InvokableCall_3")]
 impl<
     T1: quest_hook::libil2cpp::Type,

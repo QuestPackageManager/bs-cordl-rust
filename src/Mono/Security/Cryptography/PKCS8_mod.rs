@@ -5,10 +5,24 @@ pub struct PKCS8 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Mono+Security+Cryptography+PKCS8")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::Cryptography::PKCS8 =>
-    "Mono.Security.Cryptography"."PKCS8"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::Cryptography::PKCS8 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.Cryptography";
+    const CLASS_NAME: &'static str = "PKCS8";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+Cryptography+PKCS8")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::PKCS8 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -49,11 +63,25 @@ pub struct PKCS8_EncryptedPrivateKeyInfo {
     pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo =>
-    "Mono.Security.Cryptography"."PKCS8/EncryptedPrivateKeyInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.Cryptography";
+    const CLASS_NAME: &'static str = "EncryptedPrivateKeyInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
 impl std::ops::Deref
 for crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
@@ -187,11 +215,25 @@ pub struct PKCS8_PrivateKeyInfo {
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo => "Mono.Security.Cryptography"
-    ."PKCS8/PrivateKeyInfo"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Security.Cryptography";
+    const CLASS_NAME: &'static str = "PrivateKeyInfo";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;

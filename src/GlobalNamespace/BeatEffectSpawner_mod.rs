@@ -26,10 +26,24 @@ pub struct BeatEffectSpawner {
     >,
 }
 #[cfg(feature = "BeatEffectSpawner")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatEffectSpawner => ""
-    ."BeatEffectSpawner"
-);
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatEffectSpawner {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BeatEffectSpawner";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatEffectSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -161,10 +175,25 @@ pub struct BeatEffectSpawner_InitData {
     pub hideNoteSpawnEffect: bool,
 }
 #[cfg(feature = "BeatEffectSpawner+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatEffectSpawner_InitData =>
-    ""."BeatEffectSpawner/InitData"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BeatEffectSpawner_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatEffectSpawner+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatEffectSpawner_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;

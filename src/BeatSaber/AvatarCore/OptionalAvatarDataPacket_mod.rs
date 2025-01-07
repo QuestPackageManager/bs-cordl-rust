@@ -9,10 +9,25 @@ pub struct OptionalAvatarDataPacket {
     >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataPacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::BeatSaber::AvatarCore::OptionalAvatarDataPacket
-    => "BeatSaber.AvatarCore"."OptionalAvatarDataPacket"
-);
+unsafe impl quest_hook::libil2cpp::Type
+for crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "BeatSaber.AvatarCore";
+    const CLASS_NAME: &'static str = "OptionalAvatarDataPacket";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
 #[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataPacket")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
